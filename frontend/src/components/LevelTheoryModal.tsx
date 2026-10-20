@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, X, Sparkles, CheckCircle2, Target, ArrowRight } from 'lucide-react';
+import { BookOpen, X, Sparkles, Target, ArrowRight } from 'lucide-react';
 
 interface LevelTheoryModalProps {
   isOpen: boolean;

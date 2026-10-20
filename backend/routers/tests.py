@@ -255,16 +255,25 @@ def list_tests(
     }
 
 def find_test_file(test_id: str):
-    clean_id = test_id.removesuffix(".json")
-    
+    clean_id = re.sub(r'[^a-zA-Z0-9_\-]', '', str(test_id or "").removesuffix(".json"))
+    if not clean_id:
+        return None
+
+    def _safe_mock_file(path_obj: Path):
+        try:
+            if path_obj.exists() and path_obj.resolve().is_relative_to(MOCK_DIR.resolve()):
+                return path_obj
+        except (ValueError, RuntimeError):
+            pass
+        return None
+
     # 1. Direct file check
-    p = MOCK_DIR / f"{clean_id}.json"
-    if p.exists():
+    p = _safe_mock_file(MOCK_DIR / f"{clean_id}.json")
+    if p:
         return p
 
     # 2. Match by catalog entry
     catalog = get_catalog()
-    # Check by id, test_id, slug, or file_name
     for t in catalog:
         if (
             t.get("id") == clean_id
@@ -272,11 +281,11 @@ def find_test_file(test_id: str):
             or t.get("slug") == clean_id
             or t.get("file_name", "").removesuffix(".json") == clean_id
         ):
-            candidate = MOCK_DIR / t.get("file_name", f"{t['id']}.json")
-            if candidate.exists():
+            candidate = _safe_mock_file(MOCK_DIR / t.get("file_name", f"{t['id']}.json"))
+            if candidate:
                 return candidate
-            p2 = MOCK_DIR / f"{t['id']}.json"
-            if p2.exists():
+            p2 = _safe_mock_file(MOCK_DIR / f"{t['id']}.json")
+            if p2:
                 return p2
 
     # 3. Handle numeric index like test-1
@@ -286,8 +295,8 @@ def find_test_file(test_id: str):
             idx = int(parts[1]) - 1
             if 0 <= idx < len(catalog):
                 entry = catalog[idx]
-                p3 = MOCK_DIR / entry.get("file_name", f"{entry['id']}.json")
-                if p3.exists():
+                p3 = _safe_mock_file(MOCK_DIR / entry.get("file_name", f"{entry['id']}.json"))
+                if p3:
                     return p3
 
     return None

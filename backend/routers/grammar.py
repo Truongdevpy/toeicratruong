@@ -1,4 +1,4 @@
-﻿import sqlite3
+import sqlite3
 from fastapi import APIRouter, HTTPException, Query
 import json
 from pathlib import Path

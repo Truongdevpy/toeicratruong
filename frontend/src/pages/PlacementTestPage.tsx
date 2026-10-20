@@ -1,6 +1,6 @@
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Clock,
   GraduationCap,
@@ -49,6 +49,8 @@ export const PlacementTestPage: React.FC<PlacementTestPageProps> = ({ onNavigate
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const handleSubmitTestRef = useRef<() => void>(() => {});
+
   // Timer countdown
   useEffect(() => {
     if (testMode !== 'testing') return;
@@ -56,7 +58,7 @@ export const PlacementTestPage: React.FC<PlacementTestPageProps> = ({ onNavigate
       setTimeLeft((prev) => {
         if (prev <= 1) {
           clearInterval(interval);
-          handleSubmitTest();
+          handleSubmitTestRef.current();
           return 0;
         }
         return prev - 1;
@@ -117,6 +119,7 @@ export const PlacementTestPage: React.FC<PlacementTestPageProps> = ({ onNavigate
       setIsSubmitModalOpen(false);
     }
   };
+  handleSubmitTestRef.current = handleSubmitTest;
 
   const formatTimer = (sec: number) => {
     const mins = Math.floor(sec / 60);

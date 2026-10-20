@@ -4,8 +4,6 @@ import { MorphPlayPause } from './MorphIcon';
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   ArrowLeft,
-  Play,
-  Pause,
   RotateCcw,
   Volume2,
   VolumeX,
@@ -28,7 +26,6 @@ import {
   Trash2,
   CheckCircle2,
   XCircle,
-  HelpCircle,
   LayoutGrid,
   Bell,
   Sparkles,
@@ -45,7 +42,7 @@ import { historyStore } from '../services/historyStore';
 import { useSettings } from '../context/SettingsContext';
 import { practiceProgressStore } from '../services/practiceProgressStore';
 import { VocabBasketModal } from './VocabBasketModal';
-import { RichDictionaryCard, TranslateResult, WordDetail } from './RichDictionaryCard';
+import { RichDictionaryCard, TranslateResult } from './RichDictionaryCard';
 import { extractEvidenceFromQuestion, highlightPassageWithEvidence, EvidenceItem } from '../utils/evidenceExtractor';
 
 
@@ -62,12 +59,12 @@ function cleanDisplayQuestionText(text?: string, part?: number, qNum?: number | 
     }
   }
   if (part === 6) {
-    if (/^[A-D][\.\)]/i.test(clean) || !clean || /^[A-D.\s]+$/.test(clean)) {
+    if (/^[A-D][.)]/i.test(clean) || !clean || /^[A-D.\s]+$/.test(clean)) {
       return `Chọn từ hoặc câu thích hợp nhất để điền vào vị trí [${qNum || ''}].`;
     }
   }
   // Strip trailing embedded options like " A. of B. from C. in D. for"
-  clean = clean.replace(/\s+[A-D][\.\)]\s+.*$/i, '').trim();
+  clean = clean.replace(/\s+[A-D][.)]\s+.*$/i, '').trim();
   return clean;
 }
 
@@ -876,7 +873,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
 
     const unanswered = Math.max(0, totalQs - (correct + incorrect));
     return { correct, incorrect, unanswered, totalQs };
-  }, [isPassageMode, passages, questions, userAnswers]);
+  }, [isPassageMode, effectivePassages, questions, userAnswers]);
 
   const handleSelectOption = useCallback((qTarget: Question, chosenLetter: string) => {
     const qKey = String(qTarget.id || qTarget.question_number || (currentIndex + 1));
@@ -909,16 +906,18 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
         selectedOption: chosenLetter,
         correctOption: correctLetter
       });
-      const nextStreak = streak + 1;
-      setStreak(nextStreak);
-      if (nextStreak > 0 && nextStreak % 5 === 0) {
-        confetti({
-          particleCount: 50,
-          spread: 60,
-          origin: { y: 0.6 }
-        });
-        showNotification(`🔥 Chuỗi ${nextStreak} câu trả lời đúng liên tiếp!`);
-      }
+      setStreak((prev) => {
+        const nextStreak = prev + 1;
+        if (nextStreak > 0 && nextStreak % 5 === 0) {
+          confetti({
+            particleCount: 50,
+            spread: 60,
+            origin: { y: 0.6 }
+          });
+          showNotification(`🔥 Chuỗi ${nextStreak} câu trả lời đúng liên tiếp!`);
+        }
+        return nextStreak;
+      });
     } else {
       historyStore.markQuestionIncorrect(qTarget.id || qKey, {
         questionNumber: qTarget.question_number,
@@ -944,7 +943,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
         }
       }, 1400);
     }
-  }, [userAnswers, isSfxEnabled, streak, isAutoAdvance, isPassageMode, currentPassageIndex, effectivePassages.length, currentIndex, questions.length]);
+  }, [userAnswers, isSfxEnabled, isAutoAdvance, isPassageMode, currentPassageIndex, effectivePassages.length, currentIndex, questions.length, totalItems, levelKey, partNumber, levelBadge]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {

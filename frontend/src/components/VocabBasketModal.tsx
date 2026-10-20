@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useSyncExternalStore } from 'react';
 import {
   ShoppingBag,
   X,
@@ -6,9 +6,7 @@ import {
   Volume2,
   Trash2,
   Layers,
-  Sparkles,
   BookOpen,
-  ArrowRight,
   Crown
 } from 'lucide-react';
 import { practiceProgressStore, SavedVocabItem } from '../services/practiceProgressStore';
@@ -29,18 +27,12 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
 }) => {
   const { user } = useAuth();
   const isVip = user?.role === 'vip' || user?.role === 'admin' || user?.is_vip;
-  const [items, setItems] = useState<SavedVocabItem[]>(() => practiceProgressStore.getSavedVocabs());
+  const items = useSyncExternalStore<SavedVocabItem[]>(
+    practiceProgressStore.subscribe,
+    practiceProgressStore.getSavedVocabs,
+    practiceProgressStore.getSavedVocabs
+  );
   const [search, setSearch] = useState('');
-
-  useEffect(() => {
-    if (isOpen) {
-      setItems(practiceProgressStore.getSavedVocabs());
-    }
-    const unsub = practiceProgressStore.subscribe(() => {
-      setItems(practiceProgressStore.getSavedVocabs());
-    });
-    return unsub;
-  }, [isOpen]);
 
   if (!isOpen) return null;
 
@@ -58,7 +50,6 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
 
   const handleRemove = (word: string) => {
     practiceProgressStore.removeSavedVocab(word);
-    setItems(practiceProgressStore.getSavedVocabs());
   };
 
   const filtered = items.filter(

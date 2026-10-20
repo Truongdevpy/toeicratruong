@@ -913,7 +913,18 @@ def _write_admin_catalog(catalog_data: list):
         pass
 
 def _get_test_file(test_id: str):
-    clean_id = str(test_id or "").removesuffix(".json")
+    clean_id = re.sub(r'[^a-zA-Z0-9_\-]', '', str(test_id or "").removesuffix(".json"))
+    if not clean_id:
+        return None
+
+    def _safe_admin_file(p: Path):
+        try:
+            if p.exists() and p.resolve().is_relative_to(ADMIN_MOCK_DIR.resolve()):
+                return p
+        except (ValueError, RuntimeError):
+            pass
+        return None
+
     try:
         from routers.tests import find_test_file
         found = find_test_file(clean_id)
@@ -928,8 +939,9 @@ def _get_test_file(test_id: str):
         ADMIN_MOCK_DIR / f"{clean_id.replace('dautoeic_', '')}.json"
     ]
     for c in candidates:
-        if c.exists():
-            return c
+        safe_c = _safe_admin_file(c)
+        if safe_c:
+            return safe_c
 
     catalog = _read_admin_catalog()
     for t in catalog:
@@ -939,11 +951,11 @@ def _get_test_file(test_id: str):
             or t.get("slug") == clean_id
             or t.get("file_name", "").removesuffix(".json") == clean_id
         ):
-            cand = ADMIN_MOCK_DIR / t.get("file_name", f"{t['id']}.json")
-            if cand.exists():
+            cand = _safe_admin_file(ADMIN_MOCK_DIR / t.get("file_name", f"{t['id']}.json"))
+            if cand:
                 return cand
-            cand2 = ADMIN_MOCK_DIR / f"{t['id']}.json"
-            if cand2.exists():
+            cand2 = _safe_admin_file(ADMIN_MOCK_DIR / f"{t['id']}.json")
+            if cand2:
                 return cand2
     return None
 

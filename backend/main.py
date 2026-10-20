@@ -34,6 +34,31 @@ def run_db_migrations():
         except Exception as err:
             print("DB migration check:", err)
 
+        # Ensure simulated community members exist for foreign key integrity
+        try:
+            bot_users = [
+                (101, 'community_101@toeicai.vn', 'simulated_account', 'Nguyễn Thu Hà', 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150', 'student'),
+                (102, 'community_102@toeicai.vn', 'simulated_account', 'Trần Minh Quân', 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150', 'student'),
+                (103, 'community_103@toeicai.vn', 'simulated_account', 'Lê Bảo Anh', 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150', 'student'),
+                (104, 'community_104@toeicai.vn', 'simulated_account', 'Phạm Hoàng Long', 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150', 'student'),
+                (105, 'community_105@toeicai.vn', 'simulated_account', 'Vũ Mai Phương', 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150', 'student'),
+            ]
+            for b in bot_users:
+                conn.execute(text("""
+                    INSERT OR IGNORE INTO users (id, email, password_hash, full_name, avatar_url, role, is_active, token_version)
+                    VALUES (:id, :email, :password_hash, :full_name, :avatar_url, :role, 1, 1)
+                """), {
+                    'id': b[0],
+                    'email': b[1],
+                    'password_hash': b[2],
+                    'full_name': b[3],
+                    'avatar_url': b[4],
+                    'role': b[5]
+                })
+            conn.commit()
+        except Exception as err:
+            print('DB bot seed check:', err)
+
 run_db_migrations()
 
 app = FastAPI(
@@ -42,10 +67,21 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Enable CORS for frontend
+# Robust CORS Configuration supporting localhost development across any port
+allowed_origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://localhost:8001",
+    "http://127.0.0.1:8001",
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins,
+    allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -99,11 +135,17 @@ DATA_DIR = BASE_DIR / "data" / "data"
 
 class CORSStaticFiles(StaticFiles):
     async def get_response(self, path: str, scope):
+        # Prevent access to sensitive directories and file types
+        normalized_path = path.replace("\\", "/").lower()
+        if "sessions" in normalized_path or normalized_path.endswith((".db", ".env", ".py")):
+            return Response(status_code=403, content="Access Denied")
         response = await super().get_response(path, scope)
         response.headers["Access-Control-Allow-Origin"] = "*"
         response.headers["Access-Control-Allow-Methods"] = "GET, HEAD, OPTIONS"
         response.headers["Access-Control-Allow-Headers"] = "*"
         response.headers["Accept-Ranges"] = "bytes"
+        if response.status_code == 200:
+            response.headers["Cache-Control"] = "public, max-age=86400"
         return response
 
 # 1. Mount Study4 Media: /media/...

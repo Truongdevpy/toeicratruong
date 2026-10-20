@@ -1,4 +1,5 @@
-﻿import time
+import os
+import time
 import re
 import threading
 from collections import defaultdict, deque
@@ -19,7 +20,7 @@ RATE_LIMIT_RULES: Dict[str, Tuple[int, int, bool]] = {
     r"^/api/learning-path/recalculate$": (10, 60, True),                # 10 roadmap recalculations / 60s by user_id
 }
 
-JWT_SECRET = "super-toeic-secret-key-edtech-platform-2026"
+JWT_SECRET = os.getenv("JWT_SECRET", "super-toeic-secret-key-edtech-platform-2026")
 JWT_ALGORITHM = "HS256"
 
 class SlidingWindowLimiter:

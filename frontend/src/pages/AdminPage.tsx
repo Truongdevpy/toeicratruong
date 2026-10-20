@@ -6,7 +6,6 @@ import {
   CreditCard,
   ChevronLeft,
   ChevronRight,
-  UserCheck,
   Key,
   Zap,
   AlertCircle,
@@ -19,7 +18,6 @@ import {
   Plus,
   RefreshCw,
   Search,
-  Filter,
   Check,
   X,
   BookOpen,
@@ -32,11 +30,9 @@ import {
   Eye,
   FileText,
   Save,
-  Music,
   Image as ImageIcon,
   Play,
-  Pause,
-  Volume2
+  Pause
 } from 'lucide-react';
 import { api } from '../services/api';
 import { AIReviewItem } from '../types';
@@ -190,21 +186,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onNavigate }) => {
     }
   };
 
-  useEffect(() => {
-    if (activeTab === 'users') {
-      loadAdminUsers(1, userSearch);
-    } else if (activeTab === 'gemini') {
-      loadGeminiKeys();
-    } else if (activeTab === 'revenue') {
-      loadAdminRevenue();
-    } else if (activeTab === 'groups') {
-      loadAdminGroups();
-    } else if (activeTab === 'tests') {
-      loadAdminTestsList(1, testsSearch);
-    } else if (activeTab === 'overview') {
-      loadPoolStats();
-    }
-  }, [activeTab]);
+
 
 
   // ========== CRUD Test & Question State ==========
@@ -373,7 +355,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onNavigate }) => {
     }
   };
 
-  const handleRoleChange = async (userId: number, newRole: string) => {
+  const _handleRoleChange = async (userId: number, newRole: string) => {
     try {
       await api.updateUserRole(userId, newRole);
       setUserActionToast(`Đã chuyển vai trò người dùng thành ${newRole}`);
@@ -516,6 +498,22 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onNavigate }) => {
     }
   };
 
+  useEffect(() => {
+    if (activeTab === 'users') {
+      loadAdminUsers(1, userSearch);
+    } else if (activeTab === 'gemini') {
+      loadGeminiKeys();
+    } else if (activeTab === 'revenue') {
+      loadAdminRevenue();
+    } else if (activeTab === 'groups') {
+      loadAdminGroups();
+    } else if (activeTab === 'tests') {
+      loadAdminTestsList(1, testsSearch);
+    } else if (activeTab === 'overview') {
+      loadPoolStats();
+    }
+  }, [activeTab]);
+
   const handleOpenCreateGroup = () => {
     setEditingGroupId(null);
     setGroupFormData({
@@ -568,10 +566,6 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onNavigate }) => {
     }
   };
 
-  useEffect(() => {
-    loadData();
-  }, [statusFilter]);
-
   const loadData = async () => {
     try {
       setLoading(true);
@@ -591,6 +585,10 @@ export const AdminPage: React.FC<AdminPageProps> = ({ onNavigate }) => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    loadData();
+  }, [statusFilter]);
 
   const handleAction = async (itemId: number, action: 'approve' | 'reject') => {
     try {

@@ -2,24 +2,12 @@ import React, { useState, useEffect } from 'react';
 import {
   Play,
   Clock,
-  BookOpen,
-  Headphones,
-  Sparkles,
   Search,
   CheckCircle2,
-  Lock,
-  Crown,
-  Bookmark,
-  Share2,
-  Eye,
-  Filter,
   ArrowRight,
   X,
-  ShieldCheck,
   Maximize2,
   Minimize2,
-  ExternalLink,
-  Volume2,
   Edit3
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';

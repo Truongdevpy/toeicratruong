@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Anti-Mojibake Guard Module for TOEIC Master Platform.
 Guarantees 100% UTF-8 integrity across database, requests, responses, and file I/O.

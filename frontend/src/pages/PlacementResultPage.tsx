@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Award,
   ArrowRight,
   Sparkles,
-  TrendingUp,
   AlertTriangle,
   CheckCircle2,
   Layers,
@@ -61,7 +59,7 @@ export const PlacementResultPage: React.FC<PlacementResultPageProps> = ({ onNavi
   const strengths = result?.strengths || ['Reading Part 5 Basic Grammar', 'Listening Part 1 Photos', 'Everyday Vocabulary'];
   const weakAreas = result?.weak_areas || ['Listening Part 3 (Conversations)', 'Word Form (Suffixes)', 'Reading Part 7 (Passages)'];
   const errorPatterns = result?.error_patterns || [];
-  const partAnalysis = result?.part_analysis || {};
+  const _partAnalysis = result?.part_analysis || {};
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] py-10 px-4 sm:px-6 lg:px-8">

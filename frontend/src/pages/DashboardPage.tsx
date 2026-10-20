@@ -2,7 +2,6 @@ import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import React, { useEffect, useState } from 'react';
 import {
-  Flame,
   Clock,
   Target,
   ArrowRight,
@@ -13,7 +12,6 @@ import {
   FileText,
   Layers,
   AlertTriangle,
-  CheckCircle2,
   Sparkles,
   TrendingUp,
   Trophy

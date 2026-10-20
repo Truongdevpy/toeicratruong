@@ -29,7 +29,6 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
 }) => {
   const {
     settings,
-    updateSettings,
     toggleFloatingAITutor,
     toggleFloatingChat,
     toggleSfx,

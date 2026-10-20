@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Lock, Sparkles, Crown, Shield, ArrowRight, CheckCircle2, User, Key } from 'lucide-react';
+import { Lock, Crown, Shield, User, Key } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 interface AuthRequiredGateProps {

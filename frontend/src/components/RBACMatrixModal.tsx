@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, Check, Crown, User, Sparkles, Zap, ArrowRight, Lock, ChevronDown, ChevronUp } from 'lucide-react';
+import { X, Check, Crown, User, ChevronDown, ChevronUp } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 interface RBACMatrixModalProps {

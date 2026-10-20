@@ -21,7 +21,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [user, setUser] = useState<User | null>(null);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [unreadNotifications, setUnreadNotifications] = useState(3);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(() => Boolean(getAuthToken()));
 
   const refreshMe = async () => {
     try {
@@ -42,7 +42,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       });
       setProfile(data.profile);
       setUnreadNotifications(data.unread_notifications || 0);
-    } catch (err) {
+    } catch {
       console.warn('Could not refresh user session, clearing invalid auth state');
       removeAuthToken();
       setUser(null);

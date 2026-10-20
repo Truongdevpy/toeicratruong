@@ -1,4 +1,5 @@
-﻿import json
+import hmac
+import json
 import logging
 from typing import Any, Dict, List, Optional
 from datetime import datetime
@@ -254,10 +255,19 @@ async def payment_webhook(request: Request, db: Session = Depends(get_db)):
     cfg = PaymentService.get_banking_config(db)
     secret = (cfg.get("webhook_secret") or "").strip()
     if secret:
-        received_sig = request.headers.get("X-Webhook-Signature") or request.headers.get("X-SePay-Signature") or request.headers.get("Authorization") or ""
-        if secret not in received_sig:
+        received_sig = (
+            request.headers.get("X-Webhook-Signature") or
+            request.headers.get("X-SePay-Signature") or
+            request.headers.get("Authorization") or ""
+        ).strip()
+        if received_sig.lower().startswith("bearer "):
+            received_sig = received_sig[7:].strip()
+        elif received_sig.lower().startswith("apikey "):
+            received_sig = received_sig[7:].strip()
+
+        if not hmac.compare_digest(secret, received_sig):
             logger.warning("Webhook unauthorized: secret mismatch")
-            # Don't strictly reject if not configured strictly, but log
+            raise HTTPException(status_code=401, detail="Webhook signature verification failed")
     
     # Extract transaction data (compatible with SePay, ThueAPI, MBBank webhook payloads)
     content = str(body.get("content") or body.get("description") or body.get("transaction_code") or body.get("memo") or "").strip()

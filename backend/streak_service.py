@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from datetime import datetime, date, timedelta
 from typing import Dict, Any, Set, List
 from sqlalchemy.orm import Session

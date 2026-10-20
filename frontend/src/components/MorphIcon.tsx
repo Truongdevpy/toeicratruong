@@ -1,6 +1,6 @@
 import React from 'react';
 import { MorphIcon as CoreMorphIcon, MorphIconProps } from 'morphicons/react';
-import { Play, Pause, Volume2, VolumeX, Menu, X, Check, Bookmark, MessageSquare } from 'lucide';
+import { Play, Pause, Volume2, VolumeX, Menu, X, Check, Bookmark } from 'lucide';
 
 export { CoreMorphIcon as MorphIcon };
 

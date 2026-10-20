@@ -1,3 +1,4 @@
+import re
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 import json
@@ -161,24 +162,12 @@ def get_mock_test_detail(
             status_code=403,
             detail="Gói Thường chỉ được thi thử Đề cơ bản Test 01. Vui lòng nâng cấp VIP Pro để mở khóa toàn bộ đề thi!"
         )
-    catalog = load_catalog()
-    target_file = None
+    clean_id = re.sub(r'[^a-zA-Z0-9_\-]', '', str(test_id or "").removesuffix(".json"))
+    if not clean_id:
+        raise HTTPException(status_code=404, detail="Đề thi không tồn tại")
 
-    # Handle test-1 ... test-10 legacy aliases
-    if test_id.startswith("test-") and test_id.split("-")[1].isdigit():
-        idx = int(test_id.split("-")[1]) - 1
-        if 0 <= idx < len(catalog):
-            target_file = MOCK_DIR / f"{catalog[idx]['id']}.json"
-
-    if not target_file or not target_file.exists():
-        direct_path = MOCK_DIR / f"{test_id}.json"
-        if direct_path.exists():
-            target_file = direct_path
-        else:
-            # Match by slug or partial id
-            matched = next((t for t in catalog if t["id"] == test_id or t.get("slug") == test_id or t.get("test_id") == test_id), None)
-            if matched:
-                target_file = MOCK_DIR / f"{matched['id']}.json"
+    from routers.tests import find_test_file
+    target_file = find_test_file(clean_id)
 
     if target_file and target_file.exists():
         try:
@@ -269,21 +258,9 @@ def submit_mock_test(
     time_spent = data.get("time_spent_seconds", 7200)
 
     # Load test detail to grade accurately
-    catalog = load_catalog()
-    target_file = None
-    if test_id.startswith("test-") and test_id.split("-")[1].isdigit():
-        idx = int(test_id.split("-")[1]) - 1
-        if 0 <= idx < len(catalog):
-            target_file = MOCK_DIR / f"{catalog[idx]['id']}.json"
-
-    if not target_file or not target_file.exists():
-        direct_path = MOCK_DIR / f"{test_id}.json"
-        if direct_path.exists():
-            target_file = direct_path
-        else:
-            matched = next((t for t in catalog if t["id"] == test_id or t.get("slug") == test_id or t.get("test_id") == test_id), None)
-            if matched:
-                target_file = MOCK_DIR / f"{matched['id']}.json"
+    clean_id = re.sub(r'[^a-zA-Z0-9_\-]', '', str(test_id or "").removesuffix(".json"))
+    from routers.tests import find_test_file
+    target_file = find_test_file(clean_id) if clean_id else None
 
     real_qs = []
     if target_file and target_file.exists():

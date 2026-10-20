@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 from datetime import datetime
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session

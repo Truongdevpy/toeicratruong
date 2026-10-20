@@ -5,7 +5,6 @@ import {
   Crown,
   Flame,
   Bell,
-  User,
   LogOut,
   Compass,
   BookOpen,
@@ -15,8 +14,6 @@ import {
   Users,
   Shield,
   ChevronDown,
-  Menu,
-  X,
   Clock,
   Layers,
   Award,
@@ -49,10 +46,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   currentPath,
   onNavigate,
   onOpenAuth,
-  onOpenChat,
+  onOpenChat: _onOpenChat,
   onOpenRBAC,
   onOpenSettings,
-  unreadMessagesCount = 0
+  unreadMessagesCount: _unreadMessagesCount = 0
 }) => {
   const { user, profile, unreadNotifications, logout } = useAuth();
   const [isNotifOpen, setIsNotifOpen] = useState(false);

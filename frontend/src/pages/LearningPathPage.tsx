@@ -6,14 +6,10 @@ import {
   CheckCircle2,
   Lock,
   Play,
-  Clock,
   ArrowRight,
   Sparkles,
   RefreshCw,
   TrendingUp,
-  BookOpen,
-  Headphones,
-  Award,
   X
 } from 'lucide-react';
 import { api } from '../services/api';
@@ -170,7 +166,6 @@ export const LearningPathPage: React.FC<LearningPathPageProps> = ({ onNavigate }
             {pathData.nodes.map((node, idx) => {
               const isCompleted = node.status === 'completed';
               const isInProgress = node.status === 'in_progress';
-              const isLocked = node.status === 'locked';
 
               return (
                 <div

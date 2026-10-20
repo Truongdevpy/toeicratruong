@@ -2,9 +2,7 @@ import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import React, { useState, useEffect } from 'react';
 import {
-  PenTool,
   Clock,
-  CheckCircle2,
   ChevronRight,
   ChevronLeft,
   Search,
@@ -14,12 +12,10 @@ import {
   Eye,
   EyeOff,
   ArrowRight,
-  ArrowLeft,
   Copy,
   FileCheck,
   Bot,
-  Loader2,
-  Check
+  Loader2
 } from 'lucide-react';
 import { api } from '../services/api';
 
@@ -47,8 +43,7 @@ interface SWTest {
   duration_minutes: number;
 }
 
-const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onNavigate, onFocusModeChange, onOpenAuth, onOpenRBAC }) => {
-  const { user } = useAuth();
+const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusModeChange }) => {
 
 
   const [tests, setTests] = useState<SWTest[]>([]);
@@ -131,10 +126,6 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onNaviga
     }
   };
 
-  useEffect(() => {
-    loadWritingTests();
-  }, []);
-
   const loadWritingTests = async () => {
     try {
       setLoading(true);
@@ -166,6 +157,10 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onNaviga
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    loadWritingTests();
+  }, []);
 
   const handleStartTest = async (test: SWTest) => {
     try {

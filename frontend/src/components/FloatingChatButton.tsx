@@ -24,12 +24,7 @@ export const FloatingChatButton: React.FC<FloatingChatButtonProps> = ({ isOpen, 
     };
   }, [isOpen]);
 
-  // Reset unread count when modal is opened
-  useEffect(() => {
-    if (isOpen) {
-      setUnreadCount(0);
-    }
-  }, [isOpen]);
+
 
   if (isOpen || isModalOpen) return null;
 
@@ -37,7 +32,7 @@ export const FloatingChatButton: React.FC<FloatingChatButtonProps> = ({ isOpen, 
     <aside aria-label="Tin nhắn toàn web" className="fixed bottom-[calc(16px+env(safe-area-inset-bottom,0px))] right-4 sm:bottom-6 sm:right-6 z-[60] print:hidden">
       <button
         type="button"
-        onClick={onToggle}
+        onClick={() => { setUnreadCount(0); onToggle(); }}
         className="group relative flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-4 py-2.5 min-h-[44px] min-w-[44px] rounded-full shadow-lg shadow-blue-500/25 transition-all hover:scale-105 active:scale-95 cursor-pointer select-none"
         title="Mở tin nhắn toàn hệ thống"
       >

@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 import sys
 sys.path.insert(0, "C:/Users/truon/Downloads/toeicratruong/backend")
 from routers.tests import submit_test, get_test_detail

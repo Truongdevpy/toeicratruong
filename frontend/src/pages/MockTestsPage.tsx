@@ -168,12 +168,12 @@ const cleanDisplayQuestionText = (text?: string, part?: number, qNum?: number | 
     }
   }
   if (part === 6) {
-    if (/^[A-D][\.\)]/i.test(clean) || !clean || /^[A-D.\s]+$/.test(clean) || clean.toLowerCase().startsWith('câu hỏi')) {
+    if (/^[A-D][.)]/i.test(clean) || !clean || /^[A-D.\s]+$/.test(clean) || clean.toLowerCase().startsWith('câu hỏi')) {
       return `Chọn từ hoặc câu thích hợp nhất để điền vào vị trí [${qNum || ''}].`;
     }
   }
   // Strip trailing embedded options like " A. of B. from C. in D. for"
-  clean = clean.replace(/\s+[A-D][\.\)]\s+.*$/i, '').trim();
+  clean = clean.replace(/\s+[A-D][.)]\s+.*$/i, '').trim();
   return clean;
 };
 

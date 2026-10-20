@@ -2,13 +2,9 @@ import React, { useEffect, useState } from 'react';
 import {
   Crown,
   X,
-  Award,
-  Trophy,
   Flame,
-  Target,
   MessageSquare,
   Heart,
-  ShieldCheck,
   CheckCircle2,
   AlertCircle,
   UserPlus,
@@ -49,19 +45,6 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
   const [friendActionLoading, setFriendActionLoading] = useState(false);
   const [friendSuccessMsg, setFriendSuccessMsg] = useState<string | null>(null);
 
-  useEffect(() => {
-    if (isOpen && userId) {
-      loadProfile(userId);
-      checkFriendship(userId);
-    } else {
-      setProfile(null);
-      setCheered(false);
-      setFriendshipStatus('none');
-      setRequestId(undefined);
-      setFriendSuccessMsg(null);
-    }
-  }, [isOpen, userId]);
-
   const loadProfile = async (id: number) => {
     try {
       setLoading(true);
@@ -101,6 +84,21 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
       setFriendshipStatus('none');
     }
   };
+
+  useEffect(() => {
+    if (isOpen && userId) {
+      loadProfile(userId);
+      checkFriendship(userId);
+    } else {
+      setProfile(null);
+      setCheered(false);
+      setFriendshipStatus('none');
+      setRequestId(undefined);
+      setFriendSuccessMsg(null);
+    }
+  }, [isOpen, userId]);
+
+
 
   const handleSendFriendRequest = async () => {
     const targetId = profile?.user_id || profile?.id || userId;

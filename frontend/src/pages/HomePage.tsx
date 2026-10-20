@@ -4,12 +4,8 @@ import {
   Crown,
   Trophy,
   Flame,
-  Users,
-  Shield,
-  Sparkles,
   ArrowRight,
   CheckCircle2,
-  TrendingUp,
   Bot,
   Headphones,
   BookOpen,
@@ -17,9 +13,6 @@ import {
   Layers,
   BarChart3,
   GraduationCap,
-  Play,
-  Star,
-  Check,
   Video
 } from 'lucide-react';
 
