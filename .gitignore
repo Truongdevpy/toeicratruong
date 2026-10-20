@@ -48,28 +48,22 @@ backend/.env
 dau_auth_token.txt
 dau_refresh_token.txt
 dau_extracted_jwt.txt
+data/data/sessions/
 
-# Crawler Raw Data, Downloads & Media (> 3GB / binary files)
-data/data/
-data/export/
-data/logs/
-data/temp_js/
-data/extracted_test1/
-data/shadow_cookies.db
-data/*.db
-data/*.txt
-data/*.json
-!data/study4_discovered_catalog.json
-*.mp3
-*.wav
-*.m4a
-*.ogg
-
-# SQLite Databases: ignore all except the seed platform.db
+# SQLite Databases & Files exceeding GitHub 100MB Hard Limit
 *.db
 *.sqlite
 *.sqlite3
 !backend/platform.db
+data/data/crawler.db
+data/crawler.db
+data/shadow_cookies.db
+
+# Large Crawler Dumps & Redundant Artifacts
+data/export/
+data/logs/
+data/temp_js/
+data/extracted_test1/
 
 # Temporary Development & Extraction Folders
 extracted_anh_giao_dien/
