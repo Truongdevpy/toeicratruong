@@ -19,20 +19,9 @@ interface OnboardingPageProps {
 }
 
 export const OnboardingPage: React.FC<OnboardingPageProps> = ({ onNavigate }) => {
-  const { user } = useAuth();
-
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Cài đặt mục tiêu học tập"
-        featureDesc="Cá nhân hóa mục tiêu điểm TOEIC và thời gian học mỗi ngày."
-        onNavigate={onNavigate}
-      />
-    );
-  }
+  const { user, refreshMe } = useAuth();
 
 
-  const { refreshMe } = useAuth();
   const [currentStep, setCurrentStep] = useState(1);
   const [purpose, setPurpose] = useState('TOEIC');
   const [targetScore, setTargetScore] = useState(650);
@@ -104,6 +93,16 @@ export const OnboardingPage: React.FC<OnboardingPageProps> = ({ onNavigate }) =>
       setIsSubmitting(false);
     }
   };
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Cài đặt mục tiêu học tập"
+        featureDesc="Cá nhân hóa mục tiêu điểm TOEIC và thời gian học mỗi ngày."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   return (
     <div className="min-h-[calc(100vh-4rem)] bg-slate-50 py-12 px-4 sm:px-6 flex items-center justify-center">

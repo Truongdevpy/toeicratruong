@@ -49,17 +49,6 @@ const DEFAULT_TOPICS: TopicOption[] = [
 export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFocusModeChange }) => {
   const { user } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Flashcards SRS Lặp lại ngắt quãng"
-        featureDesc="Ghi nhớ từ vựng vĩnh viễn với thuật toán SuperMemo SM-2 và phát âm chuẩn IPA."
-        onNavigate={onNavigate}
-      />
-    );
-  }
-
-
   const [deck, setDeck] = useState<Flashcard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -264,6 +253,16 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [currentCard, currentIndex, deck.length]);
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Flashcards SRS Lặp lại ngắt quãng"
+        featureDesc="Ghi nhớ từ vựng vĩnh viễn với thuật toán SuperMemo SM-2 và phát âm chuẩn IPA."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] py-8 px-4 sm:px-6 lg:px-8">

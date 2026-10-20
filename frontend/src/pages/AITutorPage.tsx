@@ -42,15 +42,6 @@ interface ChatMessage {
 export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
   const { user, profile } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Gia sư AI cá nhân hóa"
-        featureDesc="Hỏi đáp thắc mắc ngữ pháp, phân tích bẫy câu hỏi và làm mini-quiz củng cố 1-kèm-1."
-        onNavigate={onNavigate}
-      />
-    );
-  }
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
@@ -60,9 +51,10 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!user) return;
     loadConversations();
     initGreeting();
-  }, [profile]);
+  }, [user, profile]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -192,6 +184,16 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
   const handleQuizAnswer = (msgId: string, choiceLetter: string) => {
     setSelectedQuizAnswers((prev) => ({ ...prev, [msgId]: choiceLetter }));
   };
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Gia sư AI cá nhân hóa"
+        featureDesc="Hỏi đáp thắc mắc ngữ pháp, phân tích bẫy câu hỏi và làm mini-quiz củng cố 1-kèm-1."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 py-6">

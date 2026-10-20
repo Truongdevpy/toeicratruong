@@ -16,31 +16,33 @@ import { useAuth } from './context/AuthContext';
 import { SettingsProvider, useSettings } from './context/SettingsContext';
 import { GeneralSettingsModal } from './components/GeneralSettingsModal';
 
-// Pages
+// Eagerly loaded landing page
 import { HomePage } from './pages/HomePage';
-import { OnboardingPage } from './pages/OnboardingPage';
-import { PlacementTestPage } from './pages/PlacementTestPage';
-import { PlacementResultPage } from './pages/PlacementResultPage';
-import { LearningPathPage } from './pages/LearningPathPage';
-import { DashboardPage } from './pages/DashboardPage';
-import { PracticeHubPage } from './pages/PracticeHubPage';
-import { ListeningPracticePage } from './pages/ListeningPracticePage';
-import { ReadingPracticePage } from './pages/ReadingPracticePage';
-import { DictationPracticePage } from './pages/DictationPracticePage';
-import { FlashcardsPage } from './pages/FlashcardsPage';
-import { VocabularyPage } from './pages/VocabularyPage';
-import { GrammarPage } from './pages/GrammarPage';
-import { AITutorPage } from './pages/AITutorPage';
-import { MockTestsPage } from './pages/MockTestsPage';
-import { StatisticsPage } from './pages/StatisticsPage';
-import { CommunityPage } from './pages/CommunityPage';
-import { AchievementsPage } from './pages/AchievementsPage';
-import { AdminPage } from './pages/AdminPage';
-import { LeaderboardPage } from './pages/LeaderboardPage';
-import { SpeakingPracticePage } from './pages/SpeakingPracticePage';
-import { WritingPracticePage } from './pages/WritingPracticePage';
-import { VideoLessonsPage } from './pages/VideoLessonsPage';
-import { PaymentPage } from './pages/PaymentPage';
+
+// Code-split lazy-loaded pages for high performance
+const OnboardingPage = React.lazy(() => import('./pages/OnboardingPage').then(m => ({ default: m.OnboardingPage })));
+const PlacementTestPage = React.lazy(() => import('./pages/PlacementTestPage').then(m => ({ default: m.PlacementTestPage })));
+const PlacementResultPage = React.lazy(() => import('./pages/PlacementResultPage').then(m => ({ default: m.PlacementResultPage })));
+const LearningPathPage = React.lazy(() => import('./pages/LearningPathPage').then(m => ({ default: m.LearningPathPage })));
+const DashboardPage = React.lazy(() => import('./pages/DashboardPage').then(m => ({ default: m.DashboardPage })));
+const PracticeHubPage = React.lazy(() => import('./pages/PracticeHubPage').then(m => ({ default: m.PracticeHubPage })));
+const ListeningPracticePage = React.lazy(() => import('./pages/ListeningPracticePage').then(m => ({ default: m.ListeningPracticePage })));
+const ReadingPracticePage = React.lazy(() => import('./pages/ReadingPracticePage').then(m => ({ default: m.ReadingPracticePage })));
+const DictationPracticePage = React.lazy(() => import('./pages/DictationPracticePage').then(m => ({ default: m.DictationPracticePage })));
+const FlashcardsPage = React.lazy(() => import('./pages/FlashcardsPage').then(m => ({ default: m.FlashcardsPage })));
+const VocabularyPage = React.lazy(() => import('./pages/VocabularyPage').then(m => ({ default: m.VocabularyPage })));
+const GrammarPage = React.lazy(() => import('./pages/GrammarPage').then(m => ({ default: m.GrammarPage })));
+const AITutorPage = React.lazy(() => import('./pages/AITutorPage').then(m => ({ default: m.AITutorPage })));
+const MockTestsPage = React.lazy(() => import('./pages/MockTestsPage').then(m => ({ default: m.MockTestsPage })));
+const StatisticsPage = React.lazy(() => import('./pages/StatisticsPage').then(m => ({ default: m.StatisticsPage })));
+const CommunityPage = React.lazy(() => import('./pages/CommunityPage').then(m => ({ default: m.CommunityPage })));
+const AchievementsPage = React.lazy(() => import('./pages/AchievementsPage').then(m => ({ default: m.AchievementsPage })));
+const AdminPage = React.lazy(() => import('./pages/AdminPage').then(m => ({ default: m.AdminPage })));
+const LeaderboardPage = React.lazy(() => import('./pages/LeaderboardPage').then(m => ({ default: m.LeaderboardPage })));
+const SpeakingPracticePage = React.lazy(() => import('./pages/SpeakingPracticePage').then(m => ({ default: m.SpeakingPracticePage })));
+const WritingPracticePage = React.lazy(() => import('./pages/WritingPracticePage').then(m => ({ default: m.WritingPracticePage })));
+const VideoLessonsPage = React.lazy(() => import('./pages/VideoLessonsPage').then(m => ({ default: m.VideoLessonsPage })));
+const PaymentPage = React.lazy(() => import('./pages/PaymentPage').then(m => ({ default: m.PaymentPage })));
 
 function AppContent() {
   const { user } = useAuth();
@@ -461,10 +463,17 @@ function AppContent() {
         />
       )}
 
-      {/* Main Page Area with ErrorBoundary */}
+      {/* Main Page Area with ErrorBoundary & Lazy Suspense */}
       <main className="flex-1">
         <ErrorBoundary key={currentPath}>
-          {renderCurrentPage()}
+          <React.Suspense fallback={
+            <div className="min-h-[50vh] flex flex-col items-center justify-center space-y-3 py-16">
+              <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+              <p className="text-xs font-semibold text-slate-500 animate-pulse">Đang tải nội dung...</p>
+            </div>
+          }>
+            {renderCurrentPage()}
+          </React.Suspense>
         </ErrorBoundary>
       </main>
 

@@ -24,24 +24,14 @@ interface AchievementsPageProps {
 export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onNavigate }) => {
   const { user } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Bộ sưu tập Huy hiệu & Thành tích"
-        featureDesc="Ghi nhận nỗ lực học tập, chuỗi ngày liên tục và các cột mốc bứt phá điểm số."
-        onNavigate={onNavigate}
-      />
-    );
-  }
-
-
   const [achievements, setAchievements] = useState<AchievementItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   useEffect(() => {
+    if (!user) return;
     loadAchievements();
-  }, []);
+  }, [user]);
 
   const loadAchievements = async () => {
     try {
@@ -157,6 +147,16 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onNavigate }
       default: return Sparkles;
     }
   };
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Bộ sưu tập Huy hiệu & Thành tích"
+        featureDesc="Ghi nhận nỗ lực học tập, chuỗi ngày liên tục và các cột mốc bứt phá điểm số."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 py-8">

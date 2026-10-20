@@ -23,28 +23,18 @@ interface StatisticsPageProps {
 }
 
 export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) => {
-  const { user } = useAuth();
-
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Thống kê & Phân tích điểm số"
-        featureDesc="Biểu đồ tiến độ tăng điểm, tỷ lệ chính xác 7 Parts và gợi ý tối ưu thời gian học."
-        onNavigate={onNavigate}
-      />
-    );
-  }
+  const { user, profile } = useAuth();
 
 
-  const { profile } = useAuth();
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState<any | null>(null);
   const [timePeriod, setTimePeriod] = useState<'day' | 'week' | 'month'>('day');
   const [timeBreakdown, setTimeBreakdown] = useState<any>({ by_day: [], by_week: [], by_month: [] });
 
   useEffect(() => {
+    if (!user) return;
     loadStatistics();
-  }, []);
+  }, [user]);
 
   const loadStatistics = async () => {
     try {
@@ -98,6 +88,16 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
   const targetScore = profile?.target_score || 750;
   const initialScore = 425;
   const gainedPoints = currentScore - initialScore;
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Thống kê & Phân tích điểm số"
+        featureDesc="Biểu đồ tiến độ tăng điểm, tỷ lệ chính xác 7 Parts và gợi ý tối ưu thời gian học."
+        onNavigate={onNavigate}
+      />
+    );
+  }
+
   return (
     <div className="min-h-screen bg-slate-50 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">

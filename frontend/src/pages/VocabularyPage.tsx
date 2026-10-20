@@ -30,17 +30,6 @@ const SAVED_VOCAB_STORAGE_KEY = 'toeic_saved_vocab_list_v2';
 export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFocusModeChange }) => {
   const { user } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Kho Từ vựng theo lộ trình"
-        featureDesc="5,000+ từ vựng cốt lõi phân theo band điểm, chủ đề thương mại và collocations thi thật."
-        onNavigate={onNavigate}
-      />
-    );
-  }
-
-
   const [activeTab, setActiveTab] = useState<'all' | 'saved' | 'review'>('all');
   const [level, setLevel] = useState('all');
   const [category, setCategory] = useState('all');
@@ -300,6 +289,16 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
       (w.source_context && w.source_context.toLowerCase().includes(q))
     );
   }, [savedList, savedSearch]);
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Kho Từ vựng theo lộ trình"
+        featureDesc="5,000+ từ vựng cốt lõi phân theo band điểm, chủ đề thương mại và collocations thi thật."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] py-8 px-4 sm:px-6 lg:px-8">

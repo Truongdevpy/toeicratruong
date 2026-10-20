@@ -28,17 +28,6 @@ interface GrammarPageProps {
 export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusModeChange }) => {
   const { user } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Ngữ pháp TOEIC 38 chuyên đề"
-        featureDesc="Lý thuyết từ loại, thì, mệnh đề quan hệ và bài tập phân tích bẫy đề thi ETS."
-        onNavigate={onNavigate}
-      />
-    );
-  }
-
-
   const [topics, setTopics] = useState<GrammarTopic[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedTopicId, setSelectedTopicId] = useState<string>('');
@@ -59,9 +48,7 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusMod
     };
   }, [selectedTopicId, onFocusModeChange]);
 
-  useEffect(() => {
-    loadTopics();
-  }, []);
+
   const loadTopics = async () => {
     try {
       setLoading(true);
@@ -113,6 +100,11 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusMod
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (!user) return;
+    loadTopics();
+  }, [user]);
 
   const categories = ['all', ...Array.from(new Set(topics.map((t) => t.category)))];
 
@@ -182,6 +174,16 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusMod
       setQuizSubmitted(false);
     }
   };
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Ngữ pháp TOEIC 38 chuyên đề"
+        featureDesc="Lý thuyết từ loại, thì, mệnh đề quan hệ và bài tập phân tích bẫy đề thi ETS."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   return (
     <div className="min-h-screen bg-slate-50 py-8">

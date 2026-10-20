@@ -29,17 +29,6 @@ interface PlacementTestPageProps {
 export const PlacementTestPage: React.FC<PlacementTestPageProps> = ({ onNavigate, onFocusModeChange }) => {
   const { user } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Đánh giá năng lực TOEIC"
-        featureDesc="Kiểm tra trình độ nhanh 20-30 phút để AI chẩn đoán điểm số và xếp lớp lộ trình chuẩn."
-        onNavigate={onNavigate}
-      />
-    );
-  }
-
-
   const [testMode, setTestMode] = useState<'intro' | 'testing'>('intro');
   const [assessmentType, setAssessmentType] = useState<'full' | 'custom'>('full');
   const [customSkills, setCustomSkills] = useState<string[]>(['Listening', 'Reading', 'Grammar']);
@@ -139,6 +128,16 @@ export const PlacementTestPage: React.FC<PlacementTestPageProps> = ({ onNavigate
   const answeredCount = Object.keys(answers).length;
 
   // INTRO SCREEN: Choose Full vs Custom Assessment
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Đánh giá năng lực TOEIC"
+        featureDesc="Kiểm tra trình độ nhanh 20-30 phút để AI chẩn đoán điểm số và xếp lớp lộ trình chuẩn."
+        onNavigate={onNavigate}
+      />
+    );
+  }
+
   if (testMode === 'intro') {
     return (
       <div className="min-h-[calc(100vh-4rem)] bg-slate-50 py-12 px-4 sm:px-6 flex items-center justify-center">

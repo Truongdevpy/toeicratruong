@@ -26,17 +26,6 @@ interface LearningPathPageProps {
 export const LearningPathPage: React.FC<LearningPathPageProps> = ({ onNavigate }) => {
   const { user } = useAuth();
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Lộ trình học thích ứng AI"
-        featureDesc="Kế hoạch học tập cá nhân hóa dựa trên band điểm đầu vào và mục tiêu điểm ra trường."
-        onNavigate={onNavigate}
-      />
-    );
-  }
-
-
   const [pathData, setPathData] = useState<LearningPath | null>(null);
   const [selectedNode, setSelectedNode] = useState<LearningNode | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -54,8 +43,9 @@ export const LearningPathPage: React.FC<LearningPathPageProps> = ({ onNavigate }
   };
 
   useEffect(() => {
+    if (!user) return;
     loadPath();
-  }, []);
+  }, [user]);
 
   const handleRecalculate = async () => {
     setIsAdapting(true);
@@ -68,6 +58,16 @@ export const LearningPathPage: React.FC<LearningPathPageProps> = ({ onNavigate }
       setIsAdapting(false);
     }
   };
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Lộ trình học thích ứng AI"
+        featureDesc="Kế hoạch học tập cá nhân hóa dựa trên band điểm đầu vào và mục tiêu điểm ra trường."
+        onNavigate={onNavigate}
+      />
+    );
+  }
 
   if (isLoading || !pathData) {
     return (
