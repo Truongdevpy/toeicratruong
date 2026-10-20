@@ -28,9 +28,9 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
   const { user } = useAuth();
   const isVip = user?.role === 'vip' || user?.role === 'admin' || user?.is_vip;
   const items = useSyncExternalStore<SavedVocabItem[]>(
-    practiceProgressStore.subscribe,
-    practiceProgressStore.getSavedVocabs,
-    practiceProgressStore.getSavedVocabs
+    (cb) => practiceProgressStore.subscribe(cb),
+    () => practiceProgressStore.getSavedVocabs(),
+    () => practiceProgressStore.getSavedVocabs()
   );
   const [search, setSearch] = useState('');
 

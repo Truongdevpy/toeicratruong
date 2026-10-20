@@ -61,6 +61,15 @@ class PracticeProgressStore {
   private listeners: Set<() => void> = new Set();
 
   constructor() {
+    this.subscribe = this.subscribe.bind(this);
+    this.getSavedVocabs = this.getSavedVocabs.bind(this);
+    this.addSavedVocab = this.addSavedVocab.bind(this);
+    this.removeSavedVocab = this.removeSavedVocab.bind(this);
+    this.getLevelData = this.getLevelData.bind(this);
+    this.getLevelStats = this.getLevelStats.bind(this);
+    this.recordAnswer = this.recordAnswer.bind(this);
+    this.resetLevel = this.resetLevel.bind(this);
+    this.updateTotalQuestions = this.updateTotalQuestions.bind(this);
     this.loadFromStorage();
   }
 
