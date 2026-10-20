@@ -1,8 +1,7 @@
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  Award,
   Flame,
   BookOpen,
   FileText,
@@ -26,12 +25,6 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onNavigate }
 
   const [achievements, setAchievements] = useState<AchievementItem[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState<string>('all');
-
-  useEffect(() => {
-    if (!user) return;
-    loadAchievements();
-  }, [user]);
 
   const loadAchievements = async () => {
     try {
@@ -134,6 +127,11 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onNavigate }
     }
   };
 
+  useEffect(() => {
+    if (!user) return;
+    loadAchievements();
+  }, [user]);
+
   const unlockedCount = achievements.filter((a) => a.unlocked).length;
   const totalCount = achievements.length || 8;
   const completionPct = Math.round((unlockedCount / totalCount) * 100);
@@ -147,6 +145,14 @@ export const AchievementsPage: React.FC<AchievementsPageProps> = ({ onNavigate }
       default: return Sparkles;
     }
   };
+
+  if (loading && achievements.length === 0) {
+    return (
+      <div className="min-h-[500px] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
 
   if (!user) {
     return (

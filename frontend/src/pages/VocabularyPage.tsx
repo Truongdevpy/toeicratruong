@@ -15,7 +15,6 @@ import {
   Calendar,
   Layers,
   Tag,
-  Info
 } from 'lucide-react';
 import { api } from '../services/api';
 import { VocabWord } from '../types';
@@ -51,7 +50,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
   // Spaced Repetition (SRS) Review State (Group D)
   const [srsDueCards, setSrsDueCards] = useState<any[]>([]);
   const [srsIndex, setSrsIndex] = useState(0);
-  const [isMeaningRevealed, setIsMeaningRevealed] = useState(false);
+  const [_isMeaningRevealed, setIsMeaningRevealed] = useState(false);
   const [selectedTopic, setSelectedTopic] = useState('all');
 
   const VOCAB_TOPICS = [
@@ -75,7 +74,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
     } catch {}
   };
 
-  const handleSrsReview = async (grade: number) => {
+  const _handleSrsReview = async (grade: number) => {
     if (srsIndex >= srsDueCards.length) return;
     const currentCard = srsDueCards[srsIndex];
     try {

@@ -8,11 +8,7 @@ import {
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
-  AlertCircle,
   X,
-  Headphones,
-  BookOpen,
-  Sparkles,
   Send
 } from 'lucide-react';
 import { api } from '../services/api';
@@ -119,7 +115,9 @@ export const PlacementTestPage: React.FC<PlacementTestPageProps> = ({ onNavigate
       setIsSubmitModalOpen(false);
     }
   };
-  handleSubmitTestRef.current = handleSubmitTest;
+  useEffect(() => {
+    handleSubmitTestRef.current = handleSubmitTest;
+  });
 
   const formatTimer = (sec: number) => {
     const mins = Math.floor(sec / 60);

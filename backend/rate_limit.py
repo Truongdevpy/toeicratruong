@@ -13,7 +13,8 @@ import jwt
 # require_user_id=True: rate limits per user_id if Bearer token present, falls back to IP.
 # require_user_id=False: rate limits strictly per client IP (e.g. login).
 RATE_LIMIT_RULES: Dict[str, Tuple[int, int, bool]] = {
-    r"^/api/auth/login$": (5, 60, False),                                # 5 requests / 60s by IP
+    r"^/api/auth/login$": (5, 60, False),
+    r"^/api/auth/register$": (5, 60, False),                             # 5 registrations / 60s by IP
     r"^/api/(mock-)?tests/[^/]+/submit$": (10, 60, True),                # 10 test submits / 60s by user_id
     r"^/api/placement-test/submit$": (10, 60, True),                    # 10 placement submits / 60s by user_id
     r"^/api/ai-tutor/chat$": (20, 60, True),                            # 20 AI chats / 60s by user_id

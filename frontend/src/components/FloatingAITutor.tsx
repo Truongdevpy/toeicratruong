@@ -96,7 +96,7 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
   onToggle,
   onClose,
   onOpenAuth,
-  onNavigate,
+  onNavigate: _onNavigate,
   showFloatingChat = true
 }) => {
   const { user, profile, refreshMe } = useAuth();
@@ -131,25 +131,6 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
       }
     }
   }, [profile]);
-
-  useEffect(() => {
-    if (user) {
-      loadMemoryData();
-      loadConversations();
-    }
-  }, [user]);
-
-  useEffect(() => {
-    if (messages.length === 0) {
-      initWelcomeMessage();
-    }
-  }, [targetScore, weakAreas, user]);
-
-  useEffect(() => {
-    if (isOpen && activeTab === 'chat') {
-      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [messages, loading, isOpen, activeTab]);
 
   const loadMemoryData = async () => {
     try {
@@ -188,6 +169,27 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
       }
     ]);
   };
+
+  useEffect(() => {
+    if (user) {
+      loadMemoryData();
+      loadConversations();
+    }
+  }, [user]);
+
+  useEffect(() => {
+    if (messages.length === 0) {
+      initWelcomeMessage();
+    }
+  }, [targetScore, weakAreas, user]);
+
+  useEffect(() => {
+    if (isOpen && activeTab === 'chat') {
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [messages, loading, isOpen, activeTab]);
+
+
   const handleSendMessage = async (textToSend?: string, actionType?: string) => {
     const text = textToSend || inputText;
     if (!text.trim() || loading) return;

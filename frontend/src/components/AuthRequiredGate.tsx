@@ -15,7 +15,7 @@ export const AuthRequiredGate: React.FC<AuthRequiredGateProps> = ({
   featureDesc,
   onNavigate,
   onOpenAuth,
-  onOpenRBAC,
+  onOpenRBAC: _onOpenRBAC,
 }) => {
   const { loginDemo } = useAuth();
   const [loggingInRole, setLoggingInRole] = useState<string | null>(null);

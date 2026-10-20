@@ -1,22 +1,13 @@
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import React, { useState, useEffect, useRef } from 'react';
 import {
-  Headphones,
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
   XCircle,
-  Bookmark,
-  Sparkles,
   RotateCcw,
-  Play,
-  Pause,
-  Copy,
-  Flag,
-  AlertCircle,
   ChevronRight,
   BarChart3,
-  CheckCheck,
   ShoppingBag,
   FileText,
   Trash2
@@ -27,7 +18,6 @@ import { LevelTheoryModal } from '../components/LevelTheoryModal';
 import { historyStore } from '../services/historyStore';
 import { api } from '../services/api';
 import { Question } from '../types';
-import { QuestionImage } from '../components/QuestionImage';
 import { FocusedPracticeRoom } from '../components/FocusedPracticeRoom';
 import { useAuth } from '../context/AuthContext';
 
@@ -59,7 +49,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   onNavigate,
   onFocusModeChange,
   onOpenAuth,
-  onOpenRBAC,
+  onOpenRBAC: _onOpenRBAC,
 }) => {
   const { user } = useAuth();
 
@@ -79,7 +69,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const [isVocabBasketOpen, setIsVocabBasketOpen] = useState(false);
   const [theoryModalData, setTheoryModalData] = useState<{ isOpen: boolean; title: string; levelKey: string } | null>(null);
   const [resetConfirmModal, setResetConfirmModal] = useState<{ isOpen: boolean; levelKey: string; title: string } | null>(null);
-  const [activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
+  const [_activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
 
   useEffect(() => {
     const unsub = practiceProgressStore.subscribe(() => {
@@ -105,25 +95,25 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const [runnerQuestions, setRunnerQuestions] = useState<Question[]>([]);
   const [runnerPassages, setRunnerPassages] = useState<any[]>([]);
   const [currentPassageIndex, setCurrentPassageIndex] = useState(0);
-  const [passageAnswers, setPassageAnswers] = useState<Record<string, string>>({});
-  const [submittedPassages, setSubmittedPassages] = useState<Record<number, boolean>>({});
-  const [showPassageTranscript, setShowPassageTranscript] = useState(false);
+  const [_passageAnswers, setPassageAnswers] = useState<Record<string, string>>({});
+  const [_submittedPassages, setSubmittedPassages] = useState<Record<number, boolean>>({});
+  const [_showPassageTranscript, setShowPassageTranscript] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [submittedQuestions, setSubmittedQuestions] = useState<Record<number, boolean>>({});
-  const [flaggedQuestions, setFlaggedQuestions] = useState<Record<number, boolean>>({});
-  const [showTranscript, setShowTranscript] = useState(false);
-  const [hideChoicesWhileListening, setHideChoicesWhileListening] = useState(false);
-  const [savedVocabs, setSavedVocabs] = useState<Record<string, boolean>>({});
+  const [_flaggedQuestions, setFlaggedQuestions] = useState<Record<number, boolean>>({});
+  const [_showTranscript, setShowTranscript] = useState(false);
+  const [_hideChoicesWhileListening, _setHideChoicesWhileListening] = useState(false);
+  const [_savedVocabs, setSavedVocabs] = useState<Record<string, boolean>>({});
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [isRunnerLoading, setIsRunnerLoading] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [audioCurrentTime, setAudioCurrentTime] = useState(0);
-  const [audioDuration, setAudioDuration] = useState(0);
+  const [_audioCurrentTime, setAudioCurrentTime] = useState(0);
+  const [_audioDuration, setAudioDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState<number>(1.0);
-  const [listenCount, setListenCount] = useState<number>(0);
+  const [_listenCount, setListenCount] = useState<number>(0);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -315,7 +305,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     }
   };
 
-  const handleReplay5s = () => {
+  const _handleReplay5s = () => {
     if (!audioRef.current) return;
     audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - 5);
     if (!isPlaying) {
@@ -324,11 +314,39 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     }
   };
 
-  const handleRateChange = (rate: number) => {
+  const _handleRateChange = (rate: number) => {
     setPlaybackRate(rate);
     if (audioRef.current) {
       audioRef.current.playbackRate = rate;
     }
+  };
+
+  const handleCheckAnswer = async () => {
+    if (!userAnswers[currentIndex] || !currentQ) return;
+    setSubmittedQuestions((prev) => ({ ...prev, [currentIndex]: true }));
+    try {
+      await api.submitPracticeAnswer({
+        question_id: currentQ.id,
+        selected_option: userAnswers[currentIndex],
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
+  const handleNextQuestion = () => {
+    if (currentIndex < runnerQuestions.length - 1) {
+      setCurrentIndex((prev) => prev + 1);
+      setShowTranscript(false);
+    }
+  };
+
+  const toggleFlagCurrent = () => {
+    setFlaggedQuestions((prev) => {
+      const next = !prev[currentIndex];
+      showToast(next ? `Đã đánh dấu câu ${currentIndex + 1}` : `Bỏ đánh dấu câu ${currentIndex + 1}`);
+      return { ...prev, [currentIndex]: next };
+    });
   };
 
   useEffect(() => {
@@ -385,35 +403,9 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [viewMode, currentIndex, userAnswers, submittedQuestions, runnerQuestions.length]);
 
-  const handleCheckAnswer = async () => {
-    if (!userAnswers[currentIndex] || !currentQ) return;
-    setSubmittedQuestions((prev) => ({ ...prev, [currentIndex]: true }));
-    try {
-      await api.submitPracticeAnswer({
-        question_id: currentQ.id,
-        selected_option: userAnswers[currentIndex],
-      });
-    } catch (err) {
-      console.error(err);
-    }
-  };
 
-  const handleNextQuestion = () => {
-    if (currentIndex < runnerQuestions.length - 1) {
-      setCurrentIndex((prev) => prev + 1);
-      setShowTranscript(false);
-    }
-  };
 
-  const toggleFlagCurrent = () => {
-    setFlaggedQuestions((prev) => {
-      const next = !prev[currentIndex];
-      showToast(next ? `Đã đánh dấu câu ${currentIndex + 1}` : `Bỏ đánh dấu câu ${currentIndex + 1}`);
-      return { ...prev, [currentIndex]: next };
-    });
-  };
-
-  const handleSaveVocab = async (word: string, meaning: string) => {
+  const _handleSaveVocab = async (word: string, meaning: string) => {
     try {
       await api.addToFlashcards({ word, meaning });
       setSavedVocabs((prev) => ({ ...prev, [word]: true }));
@@ -423,7 +415,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     }
   };
 
-  const handleCopyLink = (label: string) => {
+  const _handleCopyLink = (label: string) => {
     const url = window.location.origin + `/practice/listening?tab=${activeTab}`;
     navigator.clipboard?.writeText(url);
     showToast(`Đã sao chép liên kết ${label}!`);

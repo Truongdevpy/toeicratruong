@@ -1,23 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import {
   Building2,
-  QrCode,
   Save,
   RefreshCw,
   CheckCircle2,
-  AlertCircle,
   Eye,
   EyeOff,
   Copy,
   Check,
   Zap,
-  Clock,
-  Shield,
-  ExternalLink,
   Play,
   CreditCard,
-  DollarSign,
-  UserCheck,
   History as HistoryIcon
 } from 'lucide-react';
 import { api } from '../services/api';
@@ -68,13 +61,10 @@ export function AdminBankingCard() {
   const [testingFetch, setTestingFetch] = useState<boolean>(false);
   const [testModalData, setTestModalData] = useState<any | null>(null);
   const [showToken, setShowToken] = useState<boolean>(false);
-  const [showSecret, setShowSecret] = useState<boolean>(false);
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
-  useEffect(() => {
-    loadAllData();
-  }, []);
+
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -112,6 +102,10 @@ export function AdminBankingCard() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    loadAllData();
+  }, []);
 
   const handleSelectBankPreset = (bankCode: string) => {
     const found = bankDirectory.find((b: any) => b.code === bankCode);

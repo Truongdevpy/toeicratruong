@@ -105,12 +105,8 @@ const ACCENT_TABS = [
   { id: 'US', label: 'Anh – Mỹ (US)' },
 ];
 export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
-  onNavigate,
   onFocusModeChange,
-  onOpenAuth,
-  onOpenRBAC,
 }) => {
-  const { user } = useAuth();
   const [activeMode, setActiveMode] = useState<'shadowing' | 'ets_tests'>('shadowing');
 
   // Shadowing Catalog state
@@ -126,7 +122,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
 
   // Shadowing Studio state
   const [activeShadowingLesson, setActiveShadowingLesson] = useState<ShadowingLessonDetail | null>(null);
-  const [loadingLessonDetail, setLoadingLessonDetail] = useState(false);
+  const [_loadingLessonDetail, setLoadingLessonDetail] = useState(false);
   const [currentSentenceIndex, setCurrentSentenceIndex] = useState(0);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
   const [autoNextOnSuccess, setAutoNextOnSuccess] = useState(true);
@@ -163,7 +159,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
   const [activeTest, setActiveTest] = useState<SWTest | null>(null);
   const [questions, setQuestions] = useState<SWQuestion[]>([]);
   const [currentQIndex, setCurrentQIndex] = useState(0);
-  const [recordingsMap, setRecordingsMap] = useState<Record<number, string>>({});
+  const [_recordingsMap, setRecordingsMap] = useState<Record<number, string>>({});
   const [transcriptMap, setTranscriptMap] = useState<Record<number, string>>({});
   const [questionAIFeedback, setQuestionAIFeedback] = useState<Record<number, any>>({});
   const [gradingQuestionLoading, setGradingQuestionLoading] = useState(false);
@@ -178,12 +174,6 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
       onFocusModeChange?.(false);
     };
   }, [activeShadowingLesson, activeTest, onFocusModeChange]);
-
-  useEffect(() => {
-    if (activeMode === 'shadowing') {
-      loadShadowingLessons();
-    }
-  }, [activeMode, selectedCategory, selectedAccent, searchQuery, page]);
 
   const loadShadowingLessons = async () => {
     try {
@@ -207,6 +197,12 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
       setShadowingLoading(false);
     }
   };
+
+  useEffect(() => {
+    if (activeMode === 'shadowing') {
+      loadShadowingLessons();
+    }
+  }, [activeMode, selectedCategory, selectedAccent, searchQuery, page]);
   const handleOpenShadowingLesson = async (lesson: ShadowingLessonSummary) => {
     try {
       setLoadingLessonDetail(true);
@@ -517,12 +513,6 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
     return { avg, completed, total };
   }, [activeShadowingLesson, sentenceScores]);
 
-  useEffect(() => {
-    if (activeMode === 'ets_tests' && tests.length === 0) {
-      loadETSTests();
-    }
-  }, [activeMode]);
-
   const loadETSTests = async () => {
     try {
       setLoadingTests(true);
@@ -536,6 +526,12 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
       setLoadingTests(false);
     }
   };
+
+  useEffect(() => {
+    if (activeMode === 'ets_tests' && tests.length === 0) {
+      loadETSTests();
+    }
+  }, [activeMode, tests.length]);
 
   const handleStartETSTest = async (test: SWTest) => {
     try {

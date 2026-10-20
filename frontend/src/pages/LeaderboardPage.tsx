@@ -44,10 +44,6 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({ onNavigate, on
 
   const myRankRef = useRef<HTMLTableRowElement>(null);
 
-  useEffect(() => {
-    fetchLeaderboard();
-  }, [activeCategory, activePeriod, activeLeague, searchQuery]);
-
   const fetchLeaderboard = async () => {
     try {
       setLoading(true);
@@ -64,6 +60,10 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({ onNavigate, on
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    fetchLeaderboard();
+  }, [activeCategory, activePeriod, activeLeague, searchQuery]);
 
   const openRulesModal = async () => {
     setIsRulesOpen(true);

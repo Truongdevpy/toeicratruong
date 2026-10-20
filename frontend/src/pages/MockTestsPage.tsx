@@ -1,7 +1,6 @@
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import DOMPurify from 'dompurify';
-import { MorphPlayPause } from '../components/MorphIcon';
-import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   GraduationCap,
   Send,
@@ -9,7 +8,6 @@ import {
   Trophy,
   Clock,
   CheckCircle2,
-  AlertCircle,
   Award,
   ChevronRight,
   ChevronLeft,
@@ -18,19 +16,14 @@ import {
   Flag,
   RotateCcw,
   Sparkles,
-  BarChart2,
   Play,
-  Pause,
   Check,
   X,
-  ArrowRight,
   Search,
   Filter,
   SlidersHorizontal,
   Volume2,
   VolumeX,
-  FastForward,
-  Rewind,
   BookOpen,
   Headphones,
   Image as ImageIcon,
@@ -39,15 +32,10 @@ import {
   FileText,
   Target,
   Layers,
-  RotateCw,
   LayoutGrid,
-  CheckSquare,
   Eye,
   Trash2,
   Calendar,
-  CheckCheck,
-  TrendingUp,
-  XCircle
 } from 'lucide-react';
 import { api } from '../services/api';
 import { historyStore, TestHistoryRecord, QuestionHistoryRecord } from '../services/historyStore';
@@ -288,7 +276,7 @@ const DEFAULT_PRACTICE_SESSIONS: PracticeSessionRecord[] = [
   },
 ];
 
-const formatSessionDateTime = (dateStr?: any): string => {
+const _formatSessionDateTime = (dateStr?: any): string => {
   if (!dateStr) return '--';
   try {
     const d = new Date(dateStr);
@@ -321,10 +309,10 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
     return initialTab === 'test_history' || initialTab === 'question_history' ? initialTab : 'catalog';
   });
-  const [progressSubtab, setProgressSubtab] = useState<'practice' | 'exam'>('practice');
-  const [progressPartFilter, setProgressPartFilter] = useState<'all' | number>('all');
-  const [reviewPracticeSession, setReviewPracticeSession] = useState<PracticeSessionRecord | null>(null);
-  const [practiceSessions, setPracticeSessions] = useState<PracticeSessionRecord[]>(() => {
+  const [_progressSubtab, _setProgressSubtab] = useState<'practice' | 'exam'>('practice');
+  const [progressPartFilter, _setProgressPartFilter] = useState<'all' | number>('all');
+  const [_reviewPracticeSession, _setReviewPracticeSession] = useState<PracticeSessionRecord | null>(null);
+  const [_practiceSessions, _setPracticeSessions] = useState<PracticeSessionRecord[]>(() => {
     try {
       const raw = localStorage.getItem(PRACTICE_SESSIONS_STORAGE_KEY);
       if (raw) {
@@ -371,7 +359,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const [isCustomExamTime, setIsCustomExamTime] = useState<boolean>(false);
   const [customExamMinutes, setCustomExamMinutes] = useState<number>(5);
   const [practiceSelectedParts, setPracticeSelectedParts] = useState<number[]>([1]);
-  const [partModalTest, setPartModalTest] = useState<TestItem | null>(null);
+  const [_partModalTest, setPartModalTest] = useState<TestItem | null>(null);
 
   // Practice session state (FocusedPracticeRoom runner)
   const [practiceSession, setPracticeSession] = useState<{
@@ -401,9 +389,10 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [flagged, setFlagged] = useState<Record<number, boolean>>({});
   const [timeLeft, setTimeLeft] = useState(7200);
-  const [isPaused, setIsPaused] = useState(false);
+  const [isPaused, _setIsPaused] = useState(false);
   const [isSubmitModalOpen, setIsSubmitModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const handleSubmitTestRef = useRef<() => void>(() => {});
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [navPartFilter, setNavPartFilter] = useState<'all' | number>('all');
 
@@ -411,10 +400,10 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const [overallAudio, setOverallAudio] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
-  const [audioProgress, setAudioProgress] = useState(0);
+  const [_audioProgress, setAudioProgress] = useState(0);
   const [audioDuration, setAudioDuration] = useState(0);
-  const [playbackSpeed, setPlaybackSpeed] = useState(1.0);
-  const [isMuted, setIsMuted] = useState(false);
+  const [_playbackSpeed, setPlaybackSpeed] = useState(1.0);
+  const [_isMuted, _setIsMuted] = useState(false);
 
   // Result state
   const [testResult, setTestResult] = useState<any | null>(null);
@@ -546,7 +535,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   };
 
   // Helper stats for each test
-  const getTestStats = (testId: string) => {
+  const getTestStats = useCallback((testId: string) => {
     const attempts = userHistory.filter((h) => h.testId === testId);
     const inProg = inProgressMap[testId] || null;
     const isCompleted = attempts.length > 0;
@@ -565,7 +554,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
       recentScore,
       highestScore,
     };
-  };
+  }, [userHistory, inProgressMap]);
 
   const matchesScore = (score: number | null, range: ScoreRangeFilter) => {
     if (range === 'all') return true;
@@ -576,6 +565,22 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     if (range === '855_990') return score > 850;
     return true;
   };
+
+  const loadTestsCatalog = async () => {
+    try {
+      setLoading(true);
+      const res = await api.getTests({ limit: 200, page: 1, sort: 'name_asc' });
+      setTests(res?.tests || []);
+    } catch {
+      // Fallback
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadTestsCatalog();
+  }, []);
 
   const handleReviewPastAttempt = async (attempt: TestHistoryRecord) => {
     setLoading(true);
@@ -613,6 +618,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
   };
 
+
   const handleDeleteAttempt = async (id: number | string) => {
     if (!window.confirm('Bạn có chắc chắn muốn xóa bài làm này khỏi lịch sử?')) return;
     historyStore.deleteTestAttempt(id);
@@ -631,6 +637,28 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
     }
+  };
+
+  const handleSelectAnswer = (qId: string, choiceLetter: string) => {
+    setAnswers((prev) => {
+      const updated = { ...prev, [qId]: choiceLetter };
+      if (activeTestId) {
+        updateInProgressRecord({
+          testId: activeTestId,
+          testTitle: testTitle,
+          startedAt: inProgressMap[activeTestId]?.startedAt || new Date().toISOString(),
+          answeredCount: Object.keys(updated).length,
+          totalQuestions: questions.length,
+          answers: updated,
+          timeLeft: timeLeft,
+        });
+      }
+      return updated;
+    });
+  };
+
+  const toggleFlag = (idx: number) => {
+    setFlagged((prev) => ({ ...prev, [idx]: !prev[idx] }));
   };
 
   const startRecording = async () => {
@@ -696,9 +724,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     });
   }, []);
 
-  useEffect(() => {
-    loadTestsCatalog();
-  }, []);
 
   // Save active exam state continuously to localStorage
   useEffect(() => {
@@ -740,7 +765,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
       setTimeLeft((prev) => {
         if (prev <= 1) {
           clearInterval(timer);
-          handleSubmitTest();
+          handleSubmitTestRef.current();
           return 0;
         }
         return prev - 1;
@@ -769,17 +794,8 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     };
   }, [overallAudio]);
 
-  const loadTestsCatalog = async () => {
-    try {
-      setLoading(true);
-      const res = await api.getTests({ limit: 200, page: 1, sort: 'name_asc' });
-      setTests(res?.tests || []);
-    } catch {
-      // Fallback
-    } finally {
-      setLoading(false);
-    }
-  };
+
+
 
   const handleStartExam = async (
     testId: string,
@@ -886,7 +902,8 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
   };
 
-  const togglePlayAudio = () => {
+
+  const _togglePlayAudio = () => {
     if (!audioRef.current) return;
     if (isPlayingAudio) {
       audioRef.current.pause();
@@ -896,7 +913,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
   };
 
-  const seekAudio = (secondsDelta: number) => {
+  const _seekAudio = (secondsDelta: number) => {
     if (!audioRef.current) return;
     audioRef.current.currentTime = Math.max(0, Math.min(audioDuration, audioRef.current.currentTime + secondsDelta));
   };
@@ -938,34 +955,14 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     return () => window.removeEventListener('keydown', handleExamKeyDown);
   }, [activeTestId, currentIndex, questions, overallAudio, isPlayingAudio, audioDuration]);
 
-  const handleSpeedChange = (spd: number) => {
+  const _handleSpeedChange = (spd: number) => {
     setPlaybackSpeed(spd);
     if (audioRef.current) {
       audioRef.current.playbackRate = spd;
     }
   };
 
-  const handleSelectAnswer = (qId: string, choiceLetter: string) => {
-    setAnswers((prev) => {
-      const updated = { ...prev, [qId]: choiceLetter };
-      if (activeTestId) {
-        updateInProgressRecord({
-          testId: activeTestId,
-          testTitle: testTitle,
-          startedAt: inProgressMap[activeTestId]?.startedAt || new Date().toISOString(),
-          answeredCount: Object.keys(updated).length,
-          totalQuestions: questions.length,
-          answers: updated,
-          timeLeft: timeLeft,
-        });
-      }
-      return updated;
-    });
-  };
 
-  const toggleFlag = (idx: number) => {
-    setFlagged((prev) => ({ ...prev, [idx]: !prev[idx] }));
-  };
 
   const handleSubmitTest = async () => {
     if (!activeTestId) return;
@@ -1061,6 +1058,10 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
       setIsSubmitting(false);
     }
   };
+
+  useEffect(() => {
+    handleSubmitTestRef.current = handleSubmitTest;
+  });
 
   const formatTimer = (secs: number) => {
     const h = Math.floor(secs / 3600);
@@ -1164,7 +1165,9 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   };
 
   const currentQ = questions[currentIndex] || null;
-  const currentAudioGroup = currentQ ? getAudioGroup(currentIndex) : [];
+  const currentAudioGroup = useMemo(() => {
+    return currentQ ? getAudioGroup(currentIndex) : [];
+  }, [currentQ, currentIndex]);
 
   // Active audio URL for exam mode
   const activeExamAudioUrl = useMemo(() => {
@@ -1276,7 +1279,8 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
   };
 
-  const handleRedoWrongQuestions = async (session: PracticeSessionRecord) => {
+
+  const _handleRedoWrongQuestions = async (session: PracticeSessionRecord) => {
     if (session.wrongQuestions && session.wrongQuestions.length > 0) {
       setPracticeSession({
         title: `${cleanBranding(session.testTitle || 'Buổi luyện tập')} · Làm lại ${session.wrongQuestions.length} câu sai`,
@@ -1312,7 +1316,8 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
   };
 
-  const partStatsList = useMemo(() => {
+
+  const _partStatsList = useMemo(() => {
     return [
       { part: 1, title: 'Part 1', icon: Headphones, correct: 18, total: 24, percent: 75 },
       {
@@ -1331,14 +1336,14 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     ];
   }, [progressPartFilter]);
 
-  const filteredSessions = useMemo(() => {
-    if (progressPartFilter === 'all') return practiceSessions;
-    return practiceSessions.filter((s) => s.parts.includes(progressPartFilter));
-  }, [practiceSessions, progressPartFilter]);
+  const _filteredSessions = useMemo(() => {
+    if (progressPartFilter === 'all') return _practiceSessions;
+    return _practiceSessions.filter((s: any) => s.parts.includes(progressPartFilter));
+  }, [_practiceSessions, progressPartFilter]);
 
-  const isPart3or4 = currentQ && (currentQ.part === 3 || currentQ.part === 4);
+  const _isPart3or4 = currentQ && (currentQ.part === 3 || currentQ.part === 4);
   const currentPassageGroup = currentQ ? getPassageGroup(currentIndex) : [];
-  const isPart6or7Group =
+  const _isPart6or7Group =
     currentQ &&
     (currentQ.part === 6 || currentQ.part === 7) &&
     (currentPassageGroup.length > 1 || (currentQ.passage_text && currentQ.passage_text.trim().length > 0));
@@ -1467,8 +1472,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     selectedHighestScore,
     searchQuery,
     sortBy,
-    userHistory,
-    inProgressMap,
+    getTestStats,
   ]);
 
   const activeFiltersCount = useMemo(() => {
@@ -1510,9 +1514,9 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     setSortBy('name_asc');
   };
 
-  const completedCountTotal = userHistory.length;
-  const inProgressCountTotal = Object.keys(inProgressMap).length;
-  const bestScoreTotal = userHistory.length > 0 ? Math.max(...userHistory.map((h) => h.score)) : 0;
+  const _completedCountTotal = userHistory.length;
+  const _inProgressCountTotal = Object.keys(inProgressMap).length;
+  const _bestScoreTotal = userHistory.length > 0 ? Math.max(...userHistory.map((h) => h.score)) : 0;
 
   const filteredTestHistory = useMemo(() => {
     return testHistoryList
@@ -1936,7 +1940,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   if (activeTestId && questions.length > 0) {
     const isSpeakingTest = questions.some((q) => q.part === 11 || q.is_speaking);
     const isWritingTest = questions.some((q) => q.part === 8 || q.is_writing);
-    const progressPercent = Math.round((answeredCount / questions.length) * 100);
+    const _progressPercent = Math.round((answeredCount / questions.length) * 100);
 
     const isListeningSection = currentQ?.part ? currentQ.part <= 4 : true;
     const currentQKey = currentQ?.id || `sim-${activeTestId}-q${currentQ?.question_number || currentIndex + 1}`;

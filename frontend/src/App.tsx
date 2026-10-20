@@ -360,8 +360,6 @@ function AppContent() {
         return <AITutorPage onNavigate={handleNavigate} />;
 
       case '/placement-test':
-      case '/placement-result':
-      case '/placement-test/result':
         if (!user) {
           return (
             <AuthRequiredGate
@@ -374,6 +372,21 @@ function AppContent() {
           );
         }
         return <PlacementTestPage onNavigate={handleNavigate} onFocusModeChange={setIsFocusMode} />;
+
+      case '/placement-result':
+      case '/placement-test/result':
+        if (!user) {
+          return (
+            <AuthRequiredGate
+              featureName="Kết quả Đánh giá năng lực"
+              featureDesc="Xem phân tích chi tiết điểm mạnh, điểm yếu và gợi ý lộ trình học tập cá nhân hóa."
+              onNavigate={handleNavigate}
+              onOpenAuth={handleOpenAuth}
+              onOpenRBAC={handleOpenRBAC}
+            />
+          );
+        }
+        return <PlacementResultPage onNavigate={handleNavigate} />;
 
       case '/achievements':
         if (!user) {

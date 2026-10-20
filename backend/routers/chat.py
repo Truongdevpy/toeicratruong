@@ -714,6 +714,13 @@ async def chat_websocket(
         })
     except Exception:
         manager.disconnect(websocket, user_id)
+        try:
+            await manager.broadcast({
+                "type": "online_count",
+                "total_online": manager.get_total_online()
+            })
+        except Exception:
+            pass
 
 
 # -------------------------------------------------------------

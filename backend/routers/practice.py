@@ -148,9 +148,10 @@ def get_practice_by_part(
             test_id = q.get("test_id")
             q_num = q.get("question_number")
             q_id = q.get("id")
-            if test_id and (MOCK_TESTS_DIR / f"{test_id}.json").exists():
+            clean_tid = re.sub(r"[^a-zA-Z0-9_\-]", "", str(test_id or "").removesuffix(".json"))
+            if clean_tid and (MOCK_TESTS_DIR / f"{clean_tid}.json").exists():
                 try:
-                    mt_data = json.loads((MOCK_TESTS_DIR / f"{test_id}.json").read_text(encoding="utf-8"))
+                    mt_data = json.loads((MOCK_TESTS_DIR / f"{clean_tid}.json").read_text(encoding="utf-8"))
                     found_sliced = False
                     for mq in mt_data.get("questions", []):
                         if (q_id and mq.get("id") == q_id) or (q_num and mq.get("question_number") == q_num):
@@ -171,9 +172,10 @@ def get_practice_by_part(
             test_id = q.get("test_id")
             q_num = q.get("question_number")
             q_id = q.get("id")
-            if test_id and (MOCK_TESTS_DIR / f"{test_id}.json").exists():
+            clean_tid = re.sub(r"[^a-zA-Z0-9_\-]", "", str(test_id or "").removesuffix(".json"))
+            if clean_tid and (MOCK_TESTS_DIR / f"{clean_tid}.json").exists():
                 try:
-                    mt_data = json.loads((MOCK_TESTS_DIR / f"{test_id}.json").read_text(encoding="utf-8"))
+                    mt_data = json.loads((MOCK_TESTS_DIR / f"{clean_tid}.json").read_text(encoding="utf-8"))
                     for mq in mt_data.get("questions", []):
                         if (q_id and mq.get("id") == q_id) or (q_num and mq.get("question_number") == q_num):
                             cand_img = mq.get("local_image") or mq.get("image_url")

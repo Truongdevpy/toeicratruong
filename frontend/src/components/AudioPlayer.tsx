@@ -1,12 +1,7 @@
 import { MorphPlayPause, MorphVolume } from './MorphIcon';
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import {
-  Play,
-  Pause,
   RotateCcw,
-  Volume2,
-  VolumeX,
-  Volume1,
   AlertCircle,
   RefreshCw,
   FastForward,

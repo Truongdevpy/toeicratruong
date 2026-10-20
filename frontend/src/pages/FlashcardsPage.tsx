@@ -10,12 +10,9 @@ import {
   CheckCircle2,
   Sparkles,
   BookOpen,
-  Clock,
   Shuffle,
   ChevronLeft,
   ChevronRight,
-  BookmarkCheck,
-  Award,
   GraduationCap
 } from 'lucide-react';
 import { api } from '../services/api';
@@ -111,6 +108,14 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
 
   const currentCard = deck[currentIndex];
 
+  const speakFallback = (text?: string) => {
+    if (!text || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'en-US';
+    window.speechSynthesis.speak(utt);
+  };
+
   const playAudio = useCallback((url?: string, text?: string) => {
     if (url) {
       const audio = new Audio(url);
@@ -121,14 +126,6 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
       speakFallback(text);
     }
   }, []);
-
-  const speakFallback = (text?: string) => {
-    if (!text || !window.speechSynthesis) return;
-    window.speechSynthesis.cancel();
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang = 'en-US';
-    window.speechSynthesis.speak(utt);
-  };
 
   const handleRating = async (rating: 'again' | 'hard' | 'good' | 'easy') => {
     if (!currentCard) return;

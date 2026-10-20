@@ -1,43 +1,26 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
 import {
   Headphones,
-  BookOpen,
   Clock,
   CheckCircle2,
   AlertCircle,
-  HelpCircle,
-  X,
-  Keyboard,
   RotateCcw,
   Play,
-  Pause,
-  Volume2,
   Send,
   Sparkles,
-  ChevronLeft,
   ChevronRight,
   Bookmark,
   Check,
-  Flame,
   ArrowRight,
   ArrowLeft,
-  Filter,
   Search,
-  SlidersHorizontal,
-  Layers,
-  Award,
-  Trophy,
-  Eye,
   Lock,
   FileText,
-  BookmarkCheck,
-  RefreshCw,
-  Sliders
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { MorphPlayPause } from '../components/MorphIcon';
 import { api } from '../services/api';
-import { DictationChallenge, DictationCheckResponse, DictationWordDiff, DictationLineDiff } from '../types';
+import { DictationChallenge, DictationCheckResponse } from '../types';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 
@@ -158,7 +141,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState<number>(1.0);
-  const [autoPlayOnNext, setAutoPlayOnNext] = useState<boolean>(true);
+  const [autoPlayOnNext, _setAutoPlayOnNext] = useState<boolean>(true);
 
   // Saved Vocab & Toast State
   const [savedVocabWords, setSavedVocabWords] = useState<Record<string, boolean>>({});
@@ -222,7 +205,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
       }
       return 0;
     });
-  }, [allChallenges, categoryFilter, partFilter, difficultyFilter, lengthFilter, durationFilter, statusFilter, searchQuery, sortOption, historyMap]);
+  }, [allChallenges, partFilter, difficultyFilter, lengthFilter, durationFilter, statusFilter, searchQuery, sortOption, historyMap]);
 
   // Paginated Catalog items
   const PAGE_SIZE = 12;
@@ -258,6 +241,24 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
     setActiveSegmentIndex(null);
   };
 
+  // Audio Controls
+  const handlePlayAudio = () => {
+    if (!user) {
+      onOpenAuth?.('login');
+      return;
+    }
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (isPlaying) {
+      audio.pause();
+      setIsPlaying(false);
+    } else {
+      audio.playbackRate = playbackRate;
+      audio.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+      setListenCount((prev) => prev + 1);
+    }
+  };
+
   // Switch challenge in runner
   useEffect(() => {
     if (viewMode === 'runner') {
@@ -278,21 +279,6 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
   }, [activeChallengeIndex, viewMode]);
 
   // Audio Controls
-  const handlePlayAudio = () => {
-    if (!user) {
-      onOpenAuth?.('login');
-      return;
-    }
-    if (!audioRef.current) return;
-    audioRef.current.playbackRate = playbackRate;
-    audioRef.current
-      .play()
-      .then(() => {
-        setIsPlaying(true);
-        setListenCount((prev) => prev + 1);
-      })
-      .catch(() => {});
-  };
 
   const handlePauseAudio = () => {
     if (!audioRef.current) return;

@@ -1,29 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Users,
   MessageSquare,
   Heart,
   Plus,
   Search,
   Sparkles,
-  Share2,
   Send,
   X,
-  User,
   CheckCircle2,
   Clock,
-  Filter,
-  Trophy,
-  TrendingUp,
   Hash,
-  BookOpen,
   Award,
   ChevronRight,
   Flame,
-  Check,
   Compass,
   Lightbulb,
-  ExternalLink,
   Trash2
 } from 'lucide-react';
 import { api } from '../services/api';
@@ -46,7 +37,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
 }) => {
   const { user } = useAuth();
   const [posts, setPosts] = useState<CommunityPost[]>([]);
-  const [totalLearners, setTotalLearners] = useState<number>(0);
+  const [_totalLearners, setTotalLearners] = useState<number>(0);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -93,11 +84,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
   const [commentInputs, setCommentInputs] = useState<Record<number, string>>({});
   const [likedPosts, setLikedPosts] = useState<Record<number, boolean>>({});
 
-  useEffect(() => {
-    loadPosts();
-    loadStudyGroups();
-    loadTopLearners();
-  }, []);
+
 
   const loadStudyGroups = async () => {
     try {
@@ -253,6 +240,12 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    loadPosts();
+    loadStudyGroups();
+    loadTopLearners();
+  }, []);
   const handleLike = async (postId: number) => {
     if (!user) {
       showToast('Vui lòng đăng nhập để thích bài viết!');

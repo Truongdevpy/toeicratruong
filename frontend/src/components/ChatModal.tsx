@@ -12,7 +12,6 @@ import {
   ChevronLeft,
   CornerDownRight,
   UserPlus,
-  UserCheck,
   UserMinus,
   Clock,
   Sparkles,
@@ -88,7 +87,7 @@ export const ChatModal: React.FC<ChatModalProps> = ({
   const [activeFriend, setActiveFriend] = useState<ChatUser | null>(null);
   const [friendMessages, setFriendMessages] = useState<ChatMessage[]>([]);
   const [friendSearch, setFriendSearch] = useState('');
-  const [isFriendLoading, setIsFriendLoading] = useState(false);
+  const [_isFriendLoading, setIsFriendLoading] = useState(false);
   const [typingUsers, setTypingUsers] = useState<Record<number, boolean>>({});
   const [actionNotice, setActionNotice] = useState<string | null>(null);
   const [friendActionLoading, setFriendActionLoading] = useState<Record<number, boolean>>({});
@@ -113,6 +112,29 @@ export const ChatModal: React.FC<ChatModalProps> = ({
     } catch {}
   }, [activeFriendId]);
 
+  const scrollToBottom = () => {
+    setTimeout(() => {
+      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }, 80);
+  };
+
+  const loadFriendThread = async (friendId: number) => {
+    setIsFriendLoading(true);
+    try {
+      const res = await chatService.getMessages(friendId);
+      setFriendMessages(res.messages || []);
+      setActiveFriend(res.other_user);
+      scrollToBottom();
+      setConversations((prev) =>
+        prev.map((c) => (c.user_id === friendId ? { ...c, unread_count: 0 } : c))
+      );
+    } catch (err) {
+      console.error('Failed to load friend messages', err);
+    } finally {
+      setIsFriendLoading(false);
+    }
+  };
+
   useEffect(() => {
     if (initialUserId) {
       setActiveFriendId(initialUserId);
@@ -123,11 +145,7 @@ export const ChatModal: React.FC<ChatModalProps> = ({
     }
   }, [initialUserId, isOpen]);
 
-  const scrollToBottom = () => {
-    setTimeout(() => {
-      messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, 80);
-  };
+
 
   const loadCommunityData = async () => {
     try {
@@ -168,22 +186,7 @@ export const ChatModal: React.FC<ChatModalProps> = ({
     setTimeout(() => setIsRefreshing(false), 500);
   };
 
-  const loadFriendThread = async (friendId: number) => {
-    setIsFriendLoading(true);
-    try {
-      const res = await chatService.getMessages(friendId);
-      setFriendMessages(res.messages || []);
-      setActiveFriend(res.other_user);
-      scrollToBottom();
-      setConversations((prev) =>
-        prev.map((c) => (c.user_id === friendId ? { ...c, unread_count: 0 } : c))
-      );
-    } catch (err) {
-      console.error('Failed to load friend messages', err);
-    } finally {
-      setIsFriendLoading(false);
-    }
-  };
+
 
   const handleSendFriendRequest = async (targetId: number) => {
     if (!user) {

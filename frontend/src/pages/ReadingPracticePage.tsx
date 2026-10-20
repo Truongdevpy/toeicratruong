@@ -1,20 +1,11 @@
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import React, { useState, useEffect } from 'react';
 import {
-  BookOpen,
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
-  XCircle,
-  Bookmark,
-  Sparkles,
   RotateCcw,
-  Copy,
-  Flag,
-  AlertCircle,
-  ChevronRight,
   BarChart3,
-  CheckCheck,
   FileText,
   ShoppingBag,
   Trash2
@@ -88,7 +79,7 @@ const ReadingPracticePageInner: React.FC<ReadingPracticePageProps> = ({
   onNavigate,
   onFocusModeChange,
   onOpenAuth,
-  onOpenRBAC,
+  onOpenRBAC: _onOpenRBAC,
 }) => {
   const { user } = useAuth();
 

@@ -1,11 +1,10 @@
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
-﻿import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BarChart3,
   TrendingUp,
   Clock,
   Target,
-  Award,
   Sparkles,
   AlertTriangle,
   ArrowRight,
@@ -13,7 +12,6 @@ import {
   CheckCircle2,
   Calendar,
   Layers,
-  ChevronRight
 } from 'lucide-react';
 import { api } from '../services/api';
 import { useAuth } from '../context/AuthContext';
@@ -30,11 +28,6 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
   const [stats, setStats] = useState<any | null>(null);
   const [timePeriod, setTimePeriod] = useState<'day' | 'week' | 'month'>('day');
   const [timeBreakdown, setTimeBreakdown] = useState<any>({ by_day: [], by_week: [], by_month: [] });
-
-  useEffect(() => {
-    if (!user) return;
-    loadStatistics();
-  }, [user]);
 
   const loadStatistics = async () => {
     try {
@@ -84,10 +77,23 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
     }
   };
 
+  useEffect(() => {
+    if (!user) return;
+    loadStatistics();
+  }, [user]);
+
   const currentScore = profile?.current_score || 620;
   const targetScore = profile?.target_score || 750;
   const initialScore = 425;
   const gainedPoints = currentScore - initialScore;
+  if (loading && !stats) {
+    return (
+      <div className="min-h-[500px] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
   if (!user) {
     return (
       <AuthRequiredGate

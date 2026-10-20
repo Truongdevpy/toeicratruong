@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageSquare, X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight } from 'lucide-react';
 import { chatService, ChatMessage } from '../services/chatService';
 
 interface MessageToastProps {

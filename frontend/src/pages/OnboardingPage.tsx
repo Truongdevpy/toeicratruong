@@ -1,15 +1,10 @@
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import React, { useState } from 'react';
 import {
-  Target,
-  Clock,
-  Compass,
   CheckCircle2,
   ArrowRight,
   ArrowLeft,
   Sparkles,
-  GraduationCap,
-  Award
 } from 'lucide-react';
 import { api } from '../services/api';
 import { useAuth } from '../context/AuthContext';

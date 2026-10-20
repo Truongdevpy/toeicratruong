@@ -7,10 +7,8 @@ import {
   Lightbulb,
   CheckCircle2,
   AlertTriangle,
-  RotateCcw,
   Target,
   Flame,
-  ChevronRight,
   BookOpen,
   MessageSquare,
   Plus,
@@ -50,16 +48,6 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
   const [selectedQuizAnswers, setSelectedQuizAnswers] = useState<Record<string, string>>({});
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (!user) return;
-    loadConversations();
-    initGreeting();
-  }, [user, profile]);
-
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages, loading]);
-
   const loadConversations = async () => {
     try {
       const res = await api.getTutorConversations();
@@ -92,6 +80,18 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
       }
     ]);
   };
+
+
+  useEffect(() => {
+    if (!user) return;
+    loadConversations();
+    initGreeting();
+  }, [user, profile]);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages, loading]);
+
 
   const handleSendMessage = async (textToSend?: string, actionType?: string) => {
     const text = textToSend || inputText;

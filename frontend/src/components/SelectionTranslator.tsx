@@ -65,6 +65,36 @@ export const SelectionTranslator: React.FC = () => {
     }
   }, [isOpen]);
 
+  const fetchTranslate = async (textToTranslate: string, sentenceOverride?: string) => {
+    const text = textToTranslate.trim();
+    if (!text) return;
+
+    setLoading(true);
+    setError(null);
+    setSavedInBasket(false);
+
+    try {
+      const res: TranslateResult = await api.translateLookup({
+        text,
+        sentence: sentenceOverride || sentenceContext || ''
+      });
+      setResult(res);
+
+      try {
+        const stored = localStorage.getItem('toeic_saved_vocab');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          const exists = parsed.some((v: any) => v.word.toLowerCase() === text.toLowerCase());
+          if (exists) setSavedInBasket(true);
+        }
+      } catch {}
+    } catch {
+      setError('Không thể kết nối đến máy chủ dịch. Vui lòng thử lại.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     const handleMouseUp = () => {
       setTimeout(handleSelectionChange, 20);
@@ -118,36 +148,6 @@ export const SelectionTranslator: React.FC = () => {
       window.removeEventListener('toeic:open-translator' as any, handleGlobalOpen);
     };
   }, [handleSelectionChange]);
-
-  const fetchTranslate = async (textToTranslate: string, sentenceOverride?: string) => {
-    const text = textToTranslate.trim();
-    if (!text) return;
-
-    setLoading(true);
-    setError(null);
-    setSavedInBasket(false);
-
-    try {
-      const res: TranslateResult = await api.translateLookup({
-        text,
-        sentence: sentenceOverride || sentenceContext || ''
-      });
-      setResult(res);
-
-      try {
-        const stored = localStorage.getItem('toeic_saved_vocab');
-        if (stored) {
-          const parsed = JSON.parse(stored);
-          const exists = parsed.some((v: any) => v.word.toLowerCase() === text.toLowerCase());
-          if (exists) setSavedInBasket(true);
-        }
-      } catch {}
-    } catch {
-      setError('Không thể kết nối đến máy chủ dịch. Vui lòng thử lại.');
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleOpenTranslate = async (wordOverride?: string) => {
     const text = wordOverride || selectedText;

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   Crown, Check, Copy, CheckCircle2, Clock, Sparkles, ArrowRight,
   ArrowLeft, RefreshCw, AlertCircle, QrCode, Shield, Zap, Building2,
-  CreditCard, History as HistoryIcon, Lock
+  History as HistoryIcon, Lock
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { api } from '../services/api';
@@ -59,7 +59,7 @@ export const PaymentPage: React.FC<PaymentPageProps> = ({ onNavigate, onOpenAuth
   const { user, refreshMe } = useAuth();
 
   const [plans, setPlans] = useState<VipPlan[]>([]);
-  const [bankInfo, setBankInfo] = useState<BankInfo | null>(null);
+  const [_bankInfo, setBankInfo] = useState<BankInfo | null>(null);
   const [selectedPlanId, setSelectedPlanId] = useState<string>('vip_6m');
   const [activeTab, setActiveTab] = useState<'checkout' | 'history'>('checkout');
 
@@ -75,10 +75,6 @@ export const PaymentPage: React.FC<PaymentPageProps> = ({ onNavigate, onOpenAuth
 
   const pollingTimerRef = useRef<any>(null);
   const [timeLeft, setTimeLeft] = useState<number>(900);
-
-  useEffect(() => {
-    loadPlansAndBank();
-  }, []);
 
   const loadPlansAndBank = async () => {
     try {
@@ -98,10 +94,8 @@ export const PaymentPage: React.FC<PaymentPageProps> = ({ onNavigate, onOpenAuth
   };
 
   useEffect(() => {
-    if (activeTab === 'history' && user) {
-      loadHistory();
-    }
-  }, [activeTab, user]);
+    loadPlansAndBank();
+  }, []);
 
   const loadHistory = async () => {
     setLoadingHistory(true);
@@ -116,6 +110,12 @@ export const PaymentPage: React.FC<PaymentPageProps> = ({ onNavigate, onOpenAuth
       setLoadingHistory(false);
     }
   };
+
+  useEffect(() => {
+    if (activeTab === 'history' && user) {
+      loadHistory();
+    }
+  }, [activeTab, user]);
 
   useEffect(() => {
     if (!currentOrder || currentOrder.status === 'COMPLETED') return;
@@ -146,7 +146,7 @@ export const PaymentPage: React.FC<PaymentPageProps> = ({ onNavigate, onOpenAuth
           setIsSuccessModalOpen(true);
           await refreshMe();
         }
-      } catch (e) {
+      } catch {
         // silence polling error
       }
     }, 3000);
