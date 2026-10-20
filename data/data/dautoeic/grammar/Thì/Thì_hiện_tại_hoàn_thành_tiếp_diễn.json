@@ -1,0 +1,347 @@
+{
+  "subtopic": {
+    "id": "2c4bbb5f-855e-489f-bee2-69870c6faa95",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì hiện tại hoàn thành tiếp diễn",
+    "title_vi": "Thì hiện tại hoàn thành tiếp diễn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 82,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-hien-tai-hoan-thanh-tiep-dien"
+  },
+  "lessons": [
+    {
+      "id": "561bfe30-3e79-496c-a2c2-0a80cadd2743",
+      "subtopic_id": "2c4bbb5f-855e-489f-bee2-69870c6faa95",
+      "title_en": "Thì hiện tại hoàn thành tiếp diễn",
+      "title_vi": "Thì hiện tại hoàn thành tiếp diễn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 7 · Câu 130",
+          "options": {
+            "A": "to have hosted",
+            "B": "has been hosting",
+            "C": "was hosted",
+            "D": "will be hosting"
+          },
+          "question": "Ever since the Unicycle Café opened for business last May, it ------- weekly live music events.",
+          "translation": "Kể từ khi quán Unicycle Café khai trương vào tháng Năm năm ngoái, quán đã và đang tổ chức các buổi nhạc sống hằng tuần."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “host”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Ever since",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the Unicycle Café opened for business last May,",
+                    "label": "mệnh đề since"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "weekly live music events.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau chủ ngữ “it” và trước tân ngữ “weekly live music events”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“Ever since … last May” cho biết việc kéo dài từ lúc nào",
+                  "động từ chia thế nào khi việc kéo dài từ quá khứ đến nay",
+                  "khi nào dùng chủ động, khi nào dùng bị động"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì hiện tại hoàn thành tiếp diễn nói về việc bắt đầu trong quá khứ, kéo dài liên tục đến bây giờ và có thể vẫn đang tiếp tục.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "Chủ ngữ số ít + has been + V-ing"
+                  },
+                  {
+                    "formula": "I, you, we, they, chủ ngữ số nhiều + have been + V-ing"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.25,
+                    "label": "tháng Ba"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.6,
+                    "from": 0.25,
+                    "label": "has been leading",
+                    "style": "solid"
+                  },
+                  {
+                    "to": 0.8,
+                    "from": 0.6,
+                    "label": "có thể còn tiếp",
+                    "style": "dashed"
+                  }
+                ],
+                "points": [],
+                "caption": "*Ms. Kim has been leading the sales team since March.*: nét liền từ tháng Ba đến bây giờ, nét đứt là phần có thể còn tiếp."
+              },
+              {
+                "rows": [
+                  [
+                    "việc kéo dài từ một mốc đến nay",
+                    "*Ms. Kim has been leading the sales team since March.* — Bà Kim dẫn dắt nhóm bán hàng từ tháng Ba đến nay."
+                  ],
+                  [
+                    "việc kéo dài một khoảng đến nay, chưa xong",
+                    "*The auditors have been checking our files for three days.* — Các kiểm toán viên đã kiểm tra hồ sơ của chúng tôi suốt ba ngày nay."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Mệnh đề sau since nêu mốc bắt đầu nên chia quá khứ đơn: *since the new homepage went live in June*.",
+                  "Chỗ trống là động từ chính thì cần dạng có chia thì; to V không làm được động từ chính.",
+                  "Chủ ngữ tự làm hành động và có tân ngữ theo sau thì dùng chủ động."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chỉ nói việc đang diễn ra, không nối được với since, for để nói việc kéo dài đến nay.",
+                    "form": "am/is/are + V-ing (hiện tại tiếp diễn)",
+                    "example": "“are complaining”, “is working”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc lặp lại, sự thật; không nối được với since, for kéo dài đến nay.",
+                    "form": "V, V-s (hiện tại đơn)",
+                    "example": "“works”, “focuses”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc thuộc về một lúc đã qua, không kéo đến nay.",
+                    "form": "V-ed (quá khứ đơn), was/were + V-ing (quá khứ tiếp diễn)",
+                    "example": "“complained”, “was working”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Kéo dài đến một mốc trong quá khứ; cần mốc quá khứ đó trong câu.",
+                    "form": "had been + V-ing (quá khứ hoàn thành tiếp diễn)",
+                    "example": "“had been complaining”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "since + mốc",
+                    "example": "*since January*, *since early this morning*, *since lunch*"
+                  },
+                  {
+                    "signal": "since / ever since + mệnh đề quá khứ",
+                    "example": "*ever since the holiday campaign began last month*"
+                  },
+                  {
+                    "signal": "for + khoảng thời gian",
+                    "example": "*for several weeks*, *for six months now*"
+                  },
+                  {
+                    "signal": "for the past + khoảng thời gian",
+                    "example": "*for the past two months*, *for the past two weeks*"
+                  },
+                  {
+                    "signal": "all + khoảng thời gian",
+                    "example": "*all week, but the supplier has not responded*"
+                  },
+                  {
+                    "signal": "vế sau cho thấy việc vẫn tiếp diễn",
+                    "example": "*and is still at her desk*, *and they are not finished yet*, *and about half remain untouched*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ, có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm chủ ngữ số ít hay số nhiều; tìm dấu hiệu since, for, for the past, all + khoảng thời gian, và vế sau cho thấy việc vẫn tiếp diễn.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc kéo dài từ quá khứ đến nay thì chọn has/have been + V-ing; loại hiện tại tiếp diễn, hiện tại đơn, quá khứ đơn, quá khứ tiếp diễn và had been + V-ing khi câu không có mốc quá khứ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Ever since",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the Unicycle Café opened for business last May,",
+                    "label": "mệnh đề quá khứ (mốc)"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ số ít"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has been hosting",
+                    "label": "has been + V-ing"
+                  },
+                  {
+                    "role": "O",
+                    "text": "weekly live music events.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Câu hoàn chỉnh"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng của động từ “host”, có dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ chính của vế sau, chủ ngữ “it”, sau là tân ngữ “weekly live music events”; có dấu hiệu “since / ever since + mệnh đề quá khứ”: “Ever since the Unicycle Café opened”.",
+                  "Bước 3: Việc tổ chức kéo dài từ mốc đó đến nay nên dùng has been + V-ing, vì vậy chọn “has been hosting” (đã và đang tổ chức).",
+                  "“to have hosted” (A) là dạng to V, không làm được động từ chính của vế “it -------”, nên loại.",
+                  "“was hosted” (C) là bị động quá khứ, nhưng quán tự tổ chức và sau chỗ trống có tân ngữ, nên loại.",
+                  "“will be hosting” (D) là tương lai tiếp diễn, không nối được với mốc “Ever since … last May” kéo đến nay, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“for + khoảng thời gian” và “all + khoảng thời gian” cũng đi với quá khứ đơn khi việc đã kết thúc, ví dụ *We worked on the budget report all afternoon yesterday.* — Chiều hôm qua chúng tôi làm báo cáo ngân sách suốt cả buổi. Chỉ chọn has/have been + V-ing khi câu cho thấy việc kéo đến nay (since, the past, now, hoặc vế sau ở hiện tại)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Việc kéo dài từ quá khứ đến nay, còn tiếp diễn: has/have been + V-ing.",
+                  "Chủ ngữ số ít dùng has been, số nhiều dùng have been."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

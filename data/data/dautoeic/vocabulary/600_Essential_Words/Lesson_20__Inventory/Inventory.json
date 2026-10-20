@@ -1,0 +1,652 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "14c8dfc0-c4ff-4e1c-bf27-38de9e0602c9",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 20: Inventory",
+    "order_index": 20,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:44.563095+00:00",
+    "updated_at": "2026-09-18T08:51:44.563095+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+    "test_id": "14c8dfc0-c4ff-4e1c-bf27-38de9e0602c9",
+    "name": "Inventory",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:44.563095+00:00",
+    "updated_at": "2026-09-18T08:51:44.563095+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "82b95c13-9dee-4365-8bd7-8b987d9ae144",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "disturb",
+      "ipa": "UK: /dɪˈstɜːb/ | US: /dɪˈstɝːb/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Let's see how many products we can count in advance of inventory so we disturb fewer customers.",
+          "meaning": "làm phiền, quấy rầy; làm gián đoạn",
+          "toeic_tip": "Biển Do not disturb ở khách sạn hay xuất hiện trong Part 1 và 4.",
+          "example_vi": "Mình đếm trước được món nào hay món nấy để đỡ làm phiền khách lúc kiểm kê.",
+          "word_family": [
+            "disturbance (n) sự quấy rầy",
+            "disturbing (adj) gây khó chịu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:05:36.07386+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/82b95c13-9dee-4365-8bd7-8b987d9ae144-wm.jpg?v=1789798365333",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disturb-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disturb-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "disturb customers",
+          "meaning": "làm phiền khách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82b95c13-9dee-4365-8bd7-8b987d9ae144-0-wm.jpg?v=1789801525354"
+        },
+        {
+          "phrase": "do not disturb",
+          "meaning": "xin đừng làm phiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82b95c13-9dee-4365-8bd7-8b987d9ae144-1-wm.jpg?v=1789801535939"
+        },
+        {
+          "phrase": "disturb the peace",
+          "meaning": "gây mất trật tự"
+        }
+      ],
+      "synonyms": [
+        "interrupt (làm gián đoạn)",
+        "bother (quấy rầy)",
+        "interfere with (can thiệp vào)"
+      ]
+    },
+    {
+      "id": "8b9e806c-5ede-40cc-b9c1-ea2ca804c9c1",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "automatically",
+      "ipa": "UK: /ˌɔː.təˈmæt.ɪ.kəl.i/ | US: /ˌɑː.t̬əˈmæt̬.ɪ.kəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The program automatically sends an e-mail response to all messages while she's out of town.",
+          "meaning": "một cách tự động, không cần tác động bên ngoài",
+          "antonyms": [
+            "manually (bằng tay)"
+          ],
+          "toeic_tip": "Cặp trái nghĩa hay ra Part 5: automatically và manually.",
+          "example_vi": "Khi cô ấy đi công tác, phần mềm tự gửi thư trả lời cho mọi tin nhắn đến.",
+          "word_family": [
+            "automatic (adj) tự động",
+            "automate (v) tự động hóa"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:09:02.156253+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8b9e806c-5ede-40cc-b9c1-ea2ca804c9c1-wm.jpg?v=1789798023610",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/automatically-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/automatically-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "open automatically",
+          "meaning": "mở tự động",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b9e806c-5ede-40cc-b9c1-ea2ca804c9c1-0-wm.jpg?v=1789801713889"
+        },
+        {
+          "phrase": "automatically generate",
+          "meaning": "tự động tạo ra",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b9e806c-5ede-40cc-b9c1-ea2ca804c9c1-1-wm.jpg?v=1789801742008"
+        },
+        {
+          "phrase": "automatically renew",
+          "meaning": "tự động gia hạn"
+        }
+      ],
+      "synonyms": [
+        "mechanically (một cách máy móc)",
+        "by itself (tự nó)"
+      ]
+    },
+    {
+      "id": "92ad6e2a-8515-4528-91d3-a1170b86ecf6",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "run",
+      "ipa": "/rʌn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "As long as the computer is running, you can keep adding new data.",
+          "meaning": "vận hành, chạy; điều hành",
+          "antonyms": [
+            "shut down (tắt, ngừng hoạt động)"
+          ],
+          "toeic_tip": "Nghĩa hay bị bỏ qua: run a business là điều hành, không phải chạy.",
+          "example_vi": "Máy còn đang chạy thì bạn cứ nhập thêm dữ liệu.",
+          "word_family": [
+            "running (n) việc vận hành",
+            "runner (n) người chạy"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:13:24.655668+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/92ad6e2a-8515-4528-91d3-a1170b86ecf6-wm.jpg?v=1789798028474",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/run-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/run-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "run a program",
+          "meaning": "chạy chương trình",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/92ad6e2a-8515-4528-91d3-a1170b86ecf6-0-wm.jpg?v=1789801991130"
+        },
+        {
+          "phrase": "run a business",
+          "meaning": "điều hành doanh nghiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/92ad6e2a-8515-4528-91d3-a1170b86ecf6-1-wm.jpg?v=1789802004522"
+        },
+        {
+          "phrase": "run inventory",
+          "meaning": "tiến hành kiểm kê"
+        }
+      ],
+      "synonyms": [
+        "operate (vận hành)",
+        "manage (quản lý)",
+        "function (hoạt động)"
+      ]
+    },
+    {
+      "id": "d06077c5-f501-448a-8f27-14197eca9fba",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "discrepancy",
+      "ipa": "/dɪˈskrep.ən.si/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We easily explained the discrepancy between the two counts.",
+          "meaning": "sự chênh lệch, điểm không khớp",
+          "antonyms": [
+            "agreement (sự khớp nhau)",
+            "consistency (sự nhất quán)"
+          ],
+          "toeic_tip": "Đi với between hoặc in: a discrepancy in the figures.",
+          "example_vi": "Chúng tôi giải thích được ngay vì sao hai lần đếm ra số khác nhau.",
+          "word_family": [
+            "discrepant (adj) không khớp nhau"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:43:35.946422+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d06077c5-f501-448a-8f27-14197eca9fba-wm.jpg?v=1789798028722",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/discrepancy-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/discrepancy-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a discrepancy between the two counts",
+          "meaning": "chênh lệch giữa hai lần đếm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d06077c5-f501-448a-8f27-14197eca9fba-0-wm.jpg?v=1789803806321"
+        },
+        {
+          "phrase": "explain a discrepancy",
+          "meaning": "giải thích sai lệch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d06077c5-f501-448a-8f27-14197eca9fba-1-wm.jpg?v=1789803815798"
+        },
+        {
+          "phrase": "find a discrepancy",
+          "meaning": "phát hiện điểm không khớp"
+        }
+      ],
+      "synonyms": [
+        "difference (sự khác biệt)",
+        "inconsistency (sự bất nhất)",
+        "disagreement (sự không khớp)"
+      ]
+    },
+    {
+      "id": "5f1b1f26-89bc-4c1b-a078-7d2012e56ed1",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "crucial",
+      "ipa": "/ˈkruː.ʃəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Knowing how many products we have in stock is crucial to our shipping procedures.",
+          "meaning": "cực kỳ quan trọng, mang tính quyết định",
+          "antonyms": [
+            "trivial (vụn vặt)",
+            "insignificant (không đáng kể)"
+          ],
+          "toeic_tip": "Đi với to hoặc for: be crucial to something.",
+          "example_vi": "Nắm được còn bao nhiêu hàng trong kho là điều sống còn với khâu giao hàng.",
+          "word_family": [
+            "crucially (adv) một cách trọng yếu"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T06:45:51.812894+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5f1b1f26-89bc-4c1b-a078-7d2012e56ed1-wm.jpg?v=1789798019506",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/crucial-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/crucial-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "crucial to success",
+          "meaning": "quyết định sự thành công",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5f1b1f26-89bc-4c1b-a078-7d2012e56ed1-0-wm.jpg?v=1789800341521"
+        },
+        {
+          "phrase": "a crucial role",
+          "meaning": "vai trò then chốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5f1b1f26-89bc-4c1b-a078-7d2012e56ed1-1-wm.jpg?v=1789800351675"
+        },
+        {
+          "phrase": "a crucial decision",
+          "meaning": "quyết định trọng yếu"
+        }
+      ],
+      "synonyms": [
+        "vital (sống còn)",
+        "critical (then chốt)",
+        "essential (thiết yếu)"
+      ]
+    },
+    {
+      "id": "ddd888ba-eb90-40dc-9e3b-e26c9765f37a",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "subtract",
+      "ipa": "/səbˈtrækt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Once you ring up an item, the computer automatically subtracts it from the inventory log.",
+          "meaning": "trừ đi, khấu trừ",
+          "antonyms": [
+            "add (cộng thêm)"
+          ],
+          "toeic_tip": "Cấu trúc subtract A from B; cặp add - subtract hay ra Part 5.",
+          "example_vi": "Cứ tính tiền một món là máy tự trừ luôn món đó khỏi sổ kho.",
+          "word_family": [
+            "subtraction (n) phép trừ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:51:35.256575+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ddd888ba-eb90-40dc-9e3b-e26c9765f37a-wm.jpg?v=1789798388602",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/subtract-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/subtract-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "subtract an item",
+          "meaning": "trừ một món ra",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ddd888ba-eb90-40dc-9e3b-e26c9765f37a-0-wm.jpg?v=1789804278827"
+        },
+        {
+          "phrase": "subtract from the total",
+          "meaning": "trừ vào tổng số",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ddd888ba-eb90-40dc-9e3b-e26c9765f37a-1-wm.jpg?v=1789804295105"
+        },
+        {
+          "phrase": "subtract expenses",
+          "meaning": "khấu trừ chi phí"
+        }
+      ],
+      "synonyms": [
+        "deduct (khấu trừ)",
+        "take away (lấy bớt)",
+        "remove (bớt ra)"
+      ]
+    },
+    {
+      "id": "e27bf6e4-9447-4128-b89a-c464b4f24285",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "tedious",
+      "ipa": "/ˈtiː.di.əs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This may be tedious work but you will be glad the inventory is accurate when you hit the busy holiday sales season.",
+          "meaning": "tẻ nhạt, nhàm chán vì dài dòng hoặc chậm chạp",
+          "antonyms": [
+            "interesting (thú vị)",
+            "stimulating (kích thích hứng thú)"
+          ],
+          "toeic_tip": "Tả công việc, không tả người; người thấy chán dùng bored.",
+          "example_vi": "Việc này tuy nhàm chán nhưng đến mùa bán hàng lễ cao điểm bạn sẽ mừng vì số liệu kho chính xác.",
+          "word_family": [
+            "tediously (adv) một cách tẻ nhạt",
+            "tedium (n) sự buồn tẻ"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:53:07.008682+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e27bf6e4-9447-4128-b89a-c464b4f24285-wm.jpg?v=1789798034805",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/tedious-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/tedious-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "tedious work",
+          "meaning": "công việc tẻ nhạt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e27bf6e4-9447-4128-b89a-c464b4f24285-0-wm.jpg?v=1789804357543"
+        },
+        {
+          "phrase": "a tedious process",
+          "meaning": "quy trình lê thê",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e27bf6e4-9447-4128-b89a-c464b4f24285-1-wm.jpg?v=1789804386875"
+        },
+        {
+          "phrase": "tedious but necessary",
+          "meaning": "nhàm chán nhưng cần thiết"
+        }
+      ],
+      "synonyms": [
+        "boring (chán)",
+        "monotonous (đơn điệu)",
+        "dull (buồn tẻ)"
+      ]
+    },
+    {
+      "id": "a405d8d2-155c-4edb-a2c7-711c44ad34e6",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "reflection",
+      "ipa": "/rɪˈflek.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "She saw her reflection in the mirror.",
+          "meaning": "hình phản chiếu, bóng; sự phản ánh",
+          "toeic_tip": "Còn nghĩa suy ngẫm: on reflection là sau khi cân nhắc lại.",
+          "example_vi": "Cô ấy nhìn thấy mình trong gương.",
+          "word_family": [
+            "reflect (v) phản chiếu, phản ánh",
+            "reflective (adj) phản quang"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:20:44.101894+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a405d8d2-155c-4edb-a2c7-711c44ad34e6-wm.jpg?v=1789798023908",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reflection-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reflection-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "see one's reflection",
+          "meaning": "nhìn thấy hình mình phản chiếu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a405d8d2-155c-4edb-a2c7-711c44ad34e6-0-wm.jpg?v=1789802441724"
+        },
+        {
+          "phrase": "a reflection in the mirror",
+          "meaning": "bóng trong gương",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a405d8d2-155c-4edb-a2c7-711c44ad34e6-1-wm.jpg?v=1789802443956"
+        },
+        {
+          "phrase": "a reflection of quality",
+          "meaning": "sự phản ánh chất lượng"
+        }
+      ],
+      "synonyms": [
+        "image (hình ảnh)",
+        "likeness (hình giống hệt)",
+        "mirror image (ảnh trong gương)"
+      ]
+    },
+    {
+      "id": "718f99e6-24a5-436c-b683-e5055e02d15e",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "verify",
+      "ipa": "UK: /ˈver.ɪ.faɪ/ | US: /ˈver.ə.faɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I can't verify the accuracy of these numbers, since I was not present for inventory weekend.",
+          "meaning": "xác minh, kiểm chứng tính đúng đắn",
+          "antonyms": [
+            "refute (bác bỏ)",
+            "disprove (chứng minh là sai)"
+          ],
+          "toeic_tip": "Theo sau là danh từ hoặc mệnh đề that; trang trọng hơn check.",
+          "example_vi": "Tôi không xác nhận được mấy con số này vì cuối tuần kiểm kê tôi không có mặt.",
+          "word_family": [
+            "verification (n) sự xác minh",
+            "verifiable (adj) có thể kiểm chứng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T06:54:14.51701+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/718f99e6-24a5-436c-b683-e5055e02d15e-wm.jpg?v=1789798026743",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/verify-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/verify-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "verify the accuracy",
+          "meaning": "xác minh độ chính xác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/718f99e6-24a5-436c-b683-e5055e02d15e-0-wm.jpg?v=1789800841868"
+        },
+        {
+          "phrase": "verify information",
+          "meaning": "kiểm chứng thông tin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/718f99e6-24a5-436c-b683-e5055e02d15e-1-wm.jpg?v=1789800854381"
+        },
+        {
+          "phrase": "verify that",
+          "meaning": "xác nhận rằng"
+        }
+      ],
+      "synonyms": [
+        "confirm (xác nhận)",
+        "validate (kiểm chứng)",
+        "substantiate (chứng thực)"
+      ]
+    },
+    {
+      "id": "26836633-eca2-44f7-8417-023a1fc3c8d0",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "liability",
+      "ipa": "UK: /ˌlaɪ.əˈbɪl.ə.ti/ | US: /ˌlaɪ.əˈbɪl.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The store's insured liability protects against theft and damaged inventory.",
+          "meaning": "trách nhiệm pháp lý, nghĩa vụ; khoản nợ, điều bất lợi",
+          "antonyms": [
+            "asset (tài sản, thế mạnh)"
+          ],
+          "toeic_tip": "Trong kế toán, liabilities đối lập với assets; hay ra ở Part 7.",
+          "example_vi": "Cửa hàng có bảo hiểm trách nhiệm cho các rủi ro mất trộm và hư hỏng hàng.",
+          "word_family": [
+            "liable (adj) chịu trách nhiệm, dễ gặp phải"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T06:20:54.127297+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/26836633-eca2-44f7-8417-023a1fc3c8d0-wm.jpg?v=1789798481906",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/liability-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/liability-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "limited liability",
+          "meaning": "trách nhiệm hữu hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/26836633-eca2-44f7-8417-023a1fc3c8d0-0-wm.jpg?v=1789798853379"
+        },
+        {
+          "phrase": "liability insurance",
+          "meaning": "bảo hiểm trách nhiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/26836633-eca2-44f7-8417-023a1fc3c8d0-1-wm.jpg?v=1789798853986"
+        },
+        {
+          "phrase": "assets and liabilities",
+          "meaning": "tài sản và nợ phải trả"
+        }
+      ],
+      "synonyms": [
+        "obligation (nghĩa vụ)",
+        "responsibility (trách nhiệm)",
+        "debt (khoản nợ)"
+      ]
+    },
+    {
+      "id": "404280da-7a9d-45ad-9663-c8b3ca15e62d",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "adjustment",
+      "ipa": "/əˈdʒʌst.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "With these adjustments to the numbers of screws and nuts, we are close to having an accurate count.",
+          "meaning": "sự điều chỉnh, thay đổi cho khớp",
+          "toeic_tip": "Đi với to khi nói điều chỉnh cái gì: an adjustment to the figures.",
+          "example_vi": "Chỉnh lại số ốc vít và đai ốc thế này là con số đã gần chuẩn rồi.",
+          "word_family": [
+            "adjust (v) điều chỉnh",
+            "adjustable (adj) có thể điều chỉnh"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T06:30:00.288043+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/404280da-7a9d-45ad-9663-c8b3ca15e62d-wm.jpg?v=1789798305232",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/adjustment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/adjustment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make an adjustment",
+          "meaning": "thực hiện điều chỉnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/404280da-7a9d-45ad-9663-c8b3ca15e62d-0-wm.jpg?v=1789799398932"
+        },
+        {
+          "phrase": "a minor adjustment",
+          "meaning": "điều chỉnh nhỏ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/404280da-7a9d-45ad-9663-c8b3ca15e62d-1-wm.jpg?v=1789799400016"
+        },
+        {
+          "phrase": "price adjustment",
+          "meaning": "điều chỉnh giá"
+        }
+      ],
+      "synonyms": [
+        "modification (sự sửa đổi)",
+        "correction (sự chỉnh sửa)",
+        "change (thay đổi)"
+      ]
+    },
+    {
+      "id": "b6648b56-2bc7-4461-b76d-52aae19885c0",
+      "part_id": "77edc7c9-cca5-461a-ab7d-16577a9d8652",
+      "word": "scan",
+      "ipa": "/skæn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Jasmine quickly scanned the list to see if any information was missing.",
+          "meaning": "lướt qua, xem nhanh; quét mã",
+          "antonyms": [
+            "scrutinize (xem xét kỹ lưỡng)",
+            "pore over (nghiền ngẫm)"
+          ],
+          "toeic_tip": "Hai nghĩa trái ngược nhau: đọc lướt và quét kỹ bằng máy.",
+          "example_vi": "Jasmine lướt nhanh danh sách xem có thiếu thông tin nào không.",
+          "word_family": [
+            "scanner (n) máy quét",
+            "scanning (n) việc quét, đọc lướt"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:44.563095+00:00",
+      "updated_at": "2026-09-19T07:30:44.259491+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b6648b56-2bc7-4461-b76d-52aae19885c0-wm.jpg?v=1789798387469",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/scan-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/scan-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "scan a list",
+          "meaning": "lướt qua danh sách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b6648b56-2bc7-4461-b76d-52aae19885c0-0-wm.jpg?v=1789803030784"
+        },
+        {
+          "phrase": "scan a document",
+          "meaning": "quét tài liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b6648b56-2bc7-4461-b76d-52aae19885c0-1-wm.jpg?v=1789803044127"
+        },
+        {
+          "phrase": "scan the headlines",
+          "meaning": "đọc lướt tiêu đề"
+        }
+      ],
+      "synonyms": [
+        "skim (đọc lướt)",
+        "glance over (liếc qua)",
+        "browse (xem qua)"
+      ]
+    }
+  ]
+}

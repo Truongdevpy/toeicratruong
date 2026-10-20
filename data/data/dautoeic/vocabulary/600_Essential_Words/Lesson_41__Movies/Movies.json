@@ -1,0 +1,642 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "f2600b5e-6cf2-46ba-ae67-db4341a63baf",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 41: Movies",
+    "order_index": 41,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:25.750902+00:00",
+    "updated_at": "2026-09-18T08:53:25.750902+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+    "test_id": "f2600b5e-6cf2-46ba-ae67-db4341a63baf",
+    "name": "Movies",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:25.750902+00:00",
+    "updated_at": "2026-09-18T08:53:25.750902+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "e0bf71c4-ebe8-40e7-ae70-0d07a535f3d7",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "combine",
+      "ipa": "/kəmˈbaɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The director combined two previously separate visual techniques.",
+          "meaning": "kết hợp, hợp lại",
+          "antonyms": [
+            "separate (tách ra)",
+            "divide (chia tách)"
+          ],
+          "toeic_tip": "Combine A with/and B; danh từ combination hay ra ở Part 5.",
+          "example_vi": "Đạo diễn đã kết hợp hai kỹ thuật hình ảnh vốn tách rời nhau.",
+          "word_family": [
+            "combination (n) sự kết hợp",
+            "combined (adj) kết hợp lại"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T07:52:11.234629+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e0bf71c4-ebe8-40e7-ae70-0d07a535f3d7-wm.jpg?v=1789798302166",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/combine-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/combine-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "combine two techniques",
+          "meaning": "kết hợp hai kỹ thuật",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e0bf71c4-ebe8-40e7-ae70-0d07a535f3d7-0-wm.jpg?v=1789804328901"
+        },
+        {
+          "phrase": "combine A with B",
+          "meaning": "kết hợp A với B",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e0bf71c4-ebe8-40e7-ae70-0d07a535f3d7-1-wm.jpg?v=1789804331102"
+        },
+        {
+          "phrase": "combine efforts",
+          "meaning": "chung sức"
+        }
+      ],
+      "synonyms": [
+        "merge (hợp nhất)",
+        "blend (pha trộn)",
+        "unite (hợp lại)"
+      ]
+    },
+    {
+      "id": "8aa796fa-c81a-4c9d-a06e-0147bd9bbe18",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "attainment",
+      "ipa": "/əˈteɪn.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The actress received a lot of attention for her many professional attainments.",
+          "meaning": "thành tựu, thành tích đạt được",
+          "antonyms": [
+            "failure (sự thất bại)"
+          ],
+          "toeic_tip": "Attainment thường đi với of; đừng nhầm với attention (sự chú ý).",
+          "example_vi": "Nữ diễn viên được chú ý nhiều nhờ hàng loạt thành tựu trong nghề.",
+          "word_family": [
+            "attain (v) đạt được",
+            "attainable (adj) có thể đạt được"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T07:09:36.32355+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8aa796fa-c81a-4c9d-a06e-0147bd9bbe18-wm.jpg?v=1789798290550",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attainment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attainment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "professional attainments",
+          "meaning": "thành tựu nghề nghiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8aa796fa-c81a-4c9d-a06e-0147bd9bbe18-0-wm.jpg?v=1789801774308"
+        },
+        {
+          "phrase": "the attainment of a goal",
+          "meaning": "việc đạt được mục tiêu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8aa796fa-c81a-4c9d-a06e-0147bd9bbe18-1-wm.jpg?v=1789801776168"
+        },
+        {
+          "phrase": "educational attainment",
+          "meaning": "trình độ học vấn đạt được"
+        }
+      ],
+      "synonyms": [
+        "achievement (thành tựu)",
+        "accomplishment (thành tích)"
+      ]
+    },
+    {
+      "id": "d065bd70-687b-4dbc-bf48-4856983cd0a1",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "separately",
+      "ipa": "UK: /ˈsep.ər.ət.li/ | US: /ˈsep.ɚ.ət.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Each scene of the movie was filmed separately from the others.",
+          "meaning": "một cách riêng rẽ, tách riêng",
+          "antonyms": [
+            "together (cùng nhau)",
+            "jointly (chung với nhau)"
+          ],
+          "toeic_tip": "Separately là trạng từ; đừng nhầm với tính từ separate đứng trước danh từ.",
+          "example_vi": "Mỗi cảnh trong phim đều được quay tách riêng ra.",
+          "word_family": [
+            "separate (adj) riêng biệt",
+            "separate (v) tách ra",
+            "separation (n) sự tách rời"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T07:44:14.955801+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d065bd70-687b-4dbc-bf48-4856983cd0a1-wm.jpg?v=1789798108297",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/separately-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/separately-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "filmed separately",
+          "meaning": "quay riêng từng phần",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d065bd70-687b-4dbc-bf48-4856983cd0a1-0-wm.jpg?v=1789803854056"
+        },
+        {
+          "phrase": "sold separately",
+          "meaning": "bán riêng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d065bd70-687b-4dbc-bf48-4856983cd0a1-1-wm.jpg?v=1789803854801"
+        },
+        {
+          "phrase": "pay separately",
+          "meaning": "trả tiền riêng"
+        }
+      ],
+      "synonyms": [
+        "individually (riêng từng cái)",
+        "independently (một cách độc lập)"
+      ]
+    },
+    {
+      "id": "d4ed36d0-33a2-444d-a596-1ca2afafa5db",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "continue",
+      "ipa": "/kənˈtɪn.juː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The film continues the story set out in an earlier film.",
+          "meaning": "tiếp tục, duy trì không gián đoạn",
+          "antonyms": [
+            "stop (dừng lại)",
+            "discontinue (ngừng hẳn)"
+          ],
+          "toeic_tip": "Continue + to V hoặc V-ing đều đúng, nghĩa không đổi.",
+          "example_vi": "Bộ phim này kể tiếp câu chuyện đã mở ra trong phần trước.",
+          "word_family": [
+            "continuous (adj) liên tục",
+            "continuation (n) sự tiếp nối",
+            "continually (adv) liên tục"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T07:45:25.52408+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d4ed36d0-33a2-444d-a596-1ca2afafa5db-wm.jpg?v=1789798313902",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/continue-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/continue-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "continue the story",
+          "meaning": "tiếp nối câu chuyện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d4ed36d0-33a2-444d-a596-1ca2afafa5db-0-wm.jpg?v=1789803909343"
+        },
+        {
+          "phrase": "continue to grow",
+          "meaning": "tiếp tục tăng trưởng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d4ed36d0-33a2-444d-a596-1ca2afafa5db-1-wm.jpg?v=1789803925296"
+        },
+        {
+          "phrase": "continue until",
+          "meaning": "kéo dài cho đến khi"
+        }
+      ],
+      "synonyms": [
+        "carry on (tiếp tục)",
+        "proceed (tiến hành tiếp)",
+        "resume (tiếp tục lại)"
+      ]
+    },
+    {
+      "id": "ed61aa27-fa07-4af7-8b64-fc4908c362b4",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "description",
+      "ipa": "/dɪˈskrɪp.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The description of the film did not match what we saw on screen.",
+          "meaning": "sự mô tả, lời mô tả bằng lời hoặc hình ảnh",
+          "toeic_tip": "Description of something; động từ describe không có giới từ sau.",
+          "example_vi": "Phần giới thiệu phim chẳng ăn nhập gì với những gì chiếu trên màn ảnh.",
+          "word_family": [
+            "describe (v) mô tả",
+            "descriptive (adj) mang tính mô tả"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T08:00:15.139729+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ed61aa27-fa07-4af7-8b64-fc4908c362b4-wm.jpg?v=1789798101928",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/description-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/description-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "job description",
+          "meaning": "bản mô tả công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ed61aa27-fa07-4af7-8b64-fc4908c362b4-0-wm.jpg?v=1789804814996"
+        },
+        {
+          "phrase": "a detailed description",
+          "meaning": "mô tả chi tiết",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ed61aa27-fa07-4af7-8b64-fc4908c362b4-1-wm.jpg?v=1789804814558"
+        },
+        {
+          "phrase": "description of the product",
+          "meaning": "mô tả sản phẩm"
+        }
+      ],
+      "synonyms": [
+        "account (bản tường thuật)",
+        "portrayal (sự khắc họa)"
+      ]
+    },
+    {
+      "id": "82c7f3c2-5e4c-4c03-8ae2-03fb4ba48d55",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "representation",
+      "ipa": "/ˌrep.rɪ.zenˈteɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The actor's representation of his character did not seem authentic.",
+          "meaning": "sự thể hiện, sự khắc họa, sự tượng trưng",
+          "toeic_tip": "Phân biệt representation (sự thể hiện) và representative (người đại diện).",
+          "example_vi": "Cách nam diễn viên khắc họa nhân vật nghe cứ giả giả thế nào.",
+          "word_family": [
+            "represent (v) thể hiện, đại diện",
+            "representative (n) người đại diện"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T07:02:41.217444+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/82c7f3c2-5e4c-4c03-8ae2-03fb4ba48d55-wm.jpg?v=1789798102607",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/representation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/representation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a faithful representation",
+          "meaning": "sự khắc họa trung thực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82c7f3c2-5e4c-4c03-8ae2-03fb4ba48d55-0-wm.jpg?v=1789801361082"
+        },
+        {
+          "phrase": "visual representation",
+          "meaning": "hình thức thể hiện bằng hình ảnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82c7f3c2-5e4c-4c03-8ae2-03fb4ba48d55-1-wm.jpg?v=1789801360719"
+        },
+        {
+          "phrase": "representation of a character",
+          "meaning": "cách thể hiện nhân vật"
+        }
+      ],
+      "synonyms": [
+        "portrayal (sự khắc họa)",
+        "depiction (sự mô tả)"
+      ]
+    },
+    {
+      "id": "26c0d584-fc42-4dba-847f-fc7427d3a69d",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "influence",
+      "ipa": "/ˈɪn.flu.əns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The editor's style influenced a generation of film editors.",
+          "meaning": "ảnh hưởng, tác động làm thay đổi",
+          "toeic_tip": "Influence + O trực tiếp; dạng danh từ đi với on: influence on someone.",
+          "example_vi": "Phong cách của nhà dựng phim đó đã ảnh hưởng đến cả một thế hệ làm nghề.",
+          "word_family": [
+            "influential (adj) có sức ảnh hưởng",
+            "influence (n) sự ảnh hưởng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T06:17:22.009841+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/26c0d584-fc42-4dba-847f-fc7427d3a69d-wm.jpg?v=1789797942161",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/influence-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/influence-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "influence a decision",
+          "meaning": "tác động đến quyết định",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/26c0d584-fc42-4dba-847f-fc7427d3a69d-0-wm.jpg?v=1789798640633"
+        },
+        {
+          "phrase": "influence a generation",
+          "meaning": "ảnh hưởng cả một thế hệ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/26c0d584-fc42-4dba-847f-fc7427d3a69d-1-wm.jpg?v=1789798641851"
+        },
+        {
+          "phrase": "heavily influenced by",
+          "meaning": "chịu ảnh hưởng nặng từ"
+        }
+      ],
+      "synonyms": [
+        "affect (tác động)",
+        "shape (định hình)",
+        "sway (làm lung lay)"
+      ]
+    },
+    {
+      "id": "1dbca4a8-debb-44fb-b587-4fec75981ee2",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "successive",
+      "ipa": "/səkˈses.ɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The script went through successive rewrites.",
+          "meaning": "liên tiếp, nối tiếp nhau",
+          "toeic_tip": "Phân biệt successive (liên tiếp) với successful (thành công) ở Part 5.",
+          "example_vi": "Kịch bản bị viết đi viết lại hết lần này đến lần khác.",
+          "word_family": [
+            "succession (n) sự nối tiếp",
+            "successively (adv) một cách liên tiếp"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T06:19:21.068825+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1dbca4a8-debb-44fb-b587-4fec75981ee2-wm.jpg?v=1789798259431",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/successive-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/successive-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "successive rewrites",
+          "meaning": "những lần viết lại liên tiếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1dbca4a8-debb-44fb-b587-4fec75981ee2-0-wm.jpg?v=1789798760473"
+        },
+        {
+          "phrase": "three successive years",
+          "meaning": "ba năm liên tiếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1dbca4a8-debb-44fb-b587-4fec75981ee2-1-wm.jpg?v=1789798760925"
+        },
+        {
+          "phrase": "successive attempts",
+          "meaning": "các lần thử nối tiếp"
+        }
+      ],
+      "synonyms": [
+        "consecutive (liên tiếp)",
+        "sequential (theo trình tự)"
+      ]
+    },
+    {
+      "id": "04ff16c3-bbca-4535-84c2-0bb25cdab393",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "disperse",
+      "ipa": "UK: /dɪˈspɜːs/ | US: /dɪˈspɝːs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The reporters dispersed after the press agent cancelled the interview with the film director.",
+          "meaning": "giải tán, phân tán, tản ra",
+          "antonyms": [
+            "gather (tụ tập)",
+            "assemble (tập hợp lại)"
+          ],
+          "toeic_tip": "Phân biệt disperse (giải tán) và dispose of (vứt bỏ).",
+          "example_vi": "Đám phóng viên tản đi sau khi người phụ trách truyền thông hủy buổi phỏng vấn đạo diễn.",
+          "word_family": [
+            "dispersal (n) sự giải tán",
+            "dispersion (n) sự phát tán"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T06:20:08.68708+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/04ff16c3-bbca-4535-84c2-0bb25cdab393-wm.jpg?v=1789798365815",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disperse-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disperse-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the crowd dispersed",
+          "meaning": "đám đông giải tán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/04ff16c3-bbca-4535-84c2-0bb25cdab393-0-wm.jpg?v=1789798807771"
+        },
+        {
+          "phrase": "disperse widely",
+          "meaning": "lan rộng ra",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/04ff16c3-bbca-4535-84c2-0bb25cdab393-1-wm.jpg?v=1789798808519"
+        },
+        {
+          "phrase": "disperse the audience",
+          "meaning": "giải tán khán giả"
+        }
+      ],
+      "synonyms": [
+        "scatter (tản ra)",
+        "break up (giải tán)"
+      ]
+    },
+    {
+      "id": "7daa3155-13b8-48d3-8bb1-65ab19e5afb5",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "release",
+      "ipa": "/rɪˈliːs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The film was finally released to movie theaters after many delays.",
+          "meaning": "phát hành, công bố, cho ra mắt",
+          "antonyms": [
+            "withhold (giữ lại không công bố)"
+          ],
+          "toeic_tip": "Nghĩa thứ hai: release là bản phát hành, new release ở rạp.",
+          "example_vi": "Sau bao lần hoãn, cuối cùng bộ phim cũng ra rạp.",
+          "word_family": [
+            "release (n) bản phát hành, sự công bố",
+            "released (adj) đã phát hành"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T07:01:56.861191+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7daa3155-13b8-48d3-8bb1-65ab19e5afb5-wm.jpg?v=1789798108004",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/release-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/release-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "release a film",
+          "meaning": "phát hành phim",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7daa3155-13b8-48d3-8bb1-65ab19e5afb5-0-wm.jpg?v=1789801316724"
+        },
+        {
+          "phrase": "release a statement",
+          "meaning": "đưa ra thông cáo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7daa3155-13b8-48d3-8bb1-65ab19e5afb5-1-wm.jpg?v=1789801314220"
+        },
+        {
+          "phrase": "be released to the public",
+          "meaning": "được công bố rộng rãi"
+        }
+      ],
+      "synonyms": [
+        "issue (phát hành)",
+        "publish (công bố)",
+        "launch (tung ra)"
+      ]
+    },
+    {
+      "id": "477d6f73-e32f-4026-a155-5b7027902afe",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "range",
+      "ipa": "/reɪndʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The range of the director's vision is impressive.",
+          "meaning": "phạm vi, tầm, khoảng",
+          "toeic_tip": "Cụm a wide range of + danh từ số nhiều, rất hay ra Part 5.",
+          "example_vi": "Tầm nhìn của vị đạo diễn này rộng đến mức đáng nể.",
+          "word_family": [
+            "range (v) trải dài, dao động",
+            "wide-ranging (adj) trên diện rộng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T06:34:28.115136+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/477d6f73-e32f-4026-a155-5b7027902afe-wm.jpg?v=1789798360435",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/range-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/range-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a wide range of products",
+          "meaning": "nhiều loại sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/477d6f73-e32f-4026-a155-5b7027902afe-0-wm.jpg?v=1789799657282"
+        },
+        {
+          "phrase": "price range",
+          "meaning": "khoảng giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/477d6f73-e32f-4026-a155-5b7027902afe-1-wm.jpg?v=1789799667969"
+        },
+        {
+          "phrase": "the range of services",
+          "meaning": "phạm vi dịch vụ"
+        }
+      ],
+      "synonyms": [
+        "scope (phạm vi)",
+        "extent (mức độ bao quát)",
+        "variety (sự đa dạng)"
+      ]
+    },
+    {
+      "id": "402e567c-de01-44cb-8dfc-8e97c435f52d",
+      "part_id": "9bed12e4-dc5a-473b-b92c-abcfceab141c",
+      "word": "entertainment",
+      "ipa": "UK: /ˌen.təˈteɪn.mənt/ | US: /ˌen.t̬ɚˈteɪn.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The movie was provided for our entertainment.",
+          "meaning": "sự giải trí, hoạt động giải trí",
+          "toeic_tip": "Danh từ không đếm được; entertaining nghĩa là thú vị, không phải giải trí.",
+          "example_vi": "Người ta chiếu bộ phim đó để chúng tôi giải trí.",
+          "word_family": [
+            "entertain (v) mua vui, tiếp đãi",
+            "entertaining (adj) thú vị, hấp dẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:25.750902+00:00",
+      "updated_at": "2026-09-19T06:30:00.680191+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/402e567c-de01-44cb-8dfc-8e97c435f52d-wm.jpg?v=1789798384222",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/entertainment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/entertainment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the entertainment industry",
+          "meaning": "ngành giải trí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/402e567c-de01-44cb-8dfc-8e97c435f52d-0-wm.jpg?v=1789799384054"
+        },
+        {
+          "phrase": "provide entertainment",
+          "meaning": "mang lại giải trí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/402e567c-de01-44cb-8dfc-8e97c435f52d-1-wm.jpg?v=1789799400524"
+        },
+        {
+          "phrase": "live entertainment",
+          "meaning": "giải trí trực tiếp"
+        }
+      ],
+      "synonyms": [
+        "amusement (trò tiêu khiển)",
+        "recreation (hoạt động thư giãn)"
+      ]
+    }
+  ]
+}

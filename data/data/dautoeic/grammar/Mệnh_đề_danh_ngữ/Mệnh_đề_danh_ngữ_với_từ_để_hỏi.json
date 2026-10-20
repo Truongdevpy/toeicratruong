@@ -1,0 +1,399 @@
+{
+  "subtopic": {
+    "id": "0abfe157-8ebb-4c3e-b09c-34d997b6ba1f",
+    "topic_id": "d6667723-0099-4348-b365-017ea30685d1",
+    "title_en": "Mệnh đề danh ngữ với từ để hỏi",
+    "title_vi": "Mệnh đề danh ngữ với từ để hỏi",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 61,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-danh-ngu-voi-tu-de-hoi"
+  },
+  "lessons": [
+    {
+      "id": "70d2bd19-0158-4f06-b7e1-39a4e2ff9008",
+      "subtopic_id": "0abfe157-8ebb-4c3e-b09c-34d997b6ba1f",
+      "title_en": "Mệnh đề danh ngữ với từ để hỏi",
+      "title_vi": "Mệnh đề danh ngữ với từ để hỏi",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 2 · Câu 125",
+          "options": {
+            "A": "if",
+            "B": "which",
+            "C": "before",
+            "D": "because"
+          },
+          "question": "Two Australian companies are developing new smartphones, but it is unclear ------- phone will become available first.",
+          "translation": "Hai công ty của Úc đang phát triển điện thoại thông minh mới, nhưng vẫn chưa rõ chiếc điện thoại nào sẽ được bán ra trước."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm “if”, từ để hỏi “which” và hai liên từ “before”, “because”. Chỗ trống đứng sau “it is unclear”, ngay trước danh từ số ít “phone” (không có mạo từ) và động từ “will become”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "Two Australian companies are developing new smartphones,",
+                    "label": "vế thứ nhất"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ giả"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "unclear",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "phone",
+                    "label": "danh từ số ít"
+                  },
+                  {
+                    "role": "X",
+                    "text": "will become available first.",
+                    "label": "động từ của mệnh đề sau"
+                  }
+                ],
+                "caption": "Chỗ trống mở đầu mệnh đề nêu điều “chưa rõ”; “it” đứng thay cho mệnh đề này."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Mệnh đề bắt đầu bằng từ để hỏi đứng ở đâu trong câu.",
+                  "Từ để hỏi nào thay cho chủ ngữ, tân ngữ, từ nào đi liền với danh từ.",
+                  "Các liên từ như if, before, because có mở được mệnh đề này không."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Từ để hỏi (who, whom, what, which, whose, when, where, why, how) mở đầu mệnh đề danh ngữ nêu một câu hỏi gián tiếp (ai, cái gì, khi nào…). Mệnh đề này làm chủ ngữ, làm tân ngữ (sau know, explain, decide, show…) hoặc đứng sau “It is unclear”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Thiếu chủ ngữ",
+                    "formula": "who / what + V"
+                  },
+                  {
+                    "label": "Thiếu tân ngữ",
+                    "formula": "what / whom + S + V"
+                  },
+                  {
+                    "label": "Đi liền với danh từ",
+                    "formula": "which / whose + N + …"
+                  },
+                  {
+                    "label": "Mệnh đề đầy đủ",
+                    "formula": "when / where / why / how + S + V"
+                  },
+                  {
+                    "label": "Hỏi lượng",
+                    "formula": "how much / how long / how often + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "who / whom",
+                    "ai: who làm chủ ngữ, whom làm tân ngữ",
+                    "who + động từ; whom + S + V còn thiếu tân ngữ",
+                    "*Who will replace Ms. Brandt has not been announced yet.*"
+                  ],
+                  [
+                    "what",
+                    "cái gì, điều mà",
+                    "động từ, hoặc S + V còn thiếu tân ngữ",
+                    "*What the customers want most is faster delivery.*; *what employees should do*"
+                  ],
+                  [
+                    "which / whose",
+                    "cái nào (trong một nhóm) / của ai",
+                    "danh từ (không cần mạo từ)",
+                    "*which candidate will be chosen*; *whose vehicle was parked*; *which products to promote*"
+                  ],
+                  [
+                    "when / where / why / how",
+                    "khi nào / ở đâu / tại sao / như thế nào",
+                    "S + V đầy đủ",
+                    "*when the awards ceremony will begin*; *why their refunds have been delayed*"
+                  ],
+                  [
+                    "how much / how long / how often",
+                    "bao nhiêu (tiền, lượng không đếm được) / bao lâu / bao lâu một lần",
+                    "S + V",
+                    "*how much the new printers will cost*; *how often they use the fitness center*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ để hỏi",
+                  "Nghĩa",
+                  "Sau nó là",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "Một số động từ bắt buộc có thêm thành phần: **put** + tân ngữ + nơi chốn, **be located** + nơi chốn, **cost** + số tiền, **take** + khoảng thời gian. Khi phần này còn thiếu, từ để hỏi thay cho nó: where, how much, how long.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chúng phải thay một chủ ngữ hoặc tân ngữ còn thiếu. Mệnh đề như “their refunds have been delayed” không thiếu gì.",
+                    "form": "who, whom, what, which khi mệnh đề đã đầy đủ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "whom chỉ thay tân ngữ. Ngay sau chỗ trống là động từ (will replace, will lead) thì cần who.",
+                    "form": "whom khi thiếu chủ ngữ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải đi liền với danh từ (whose vehicle), không đứng trước the + N, đại từ hay động từ; cụm whose + N chỉ lấp một chỗ, nên “whose employees should do” (whose employees làm chủ ngữ) vẫn thiếu tân ngữ của do.",
+                    "form": "whose",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chúng không thay chủ ngữ hay tân ngữ, và không đứng liền trước danh từ (không nói “when candidate”).",
+                    "form": "when, where, why, how khi mệnh đề còn thiếu",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "how many đi với danh từ đếm được số nhiều (how many printers); cost cần số tiền nên dùng how much.",
+                    "form": "how many ở chỗ hỏi tiền",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "how hỏi cách thức; take cần khoảng thời gian nên dùng how long.",
+                    "form": "how ở chỗ cần khoảng thời gian",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "that mở mệnh đề đầy đủ, không thay thành phần còn thiếu: “That the customers want most” thiếu tân ngữ của want.",
+                    "form": "that",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "if (liệu … không) cần mệnh đề đầy đủ; before, because là liên từ trạng ngữ. Không từ nào đi liền với danh từ số ít không mạo từ như “phone”.",
+                    "form": "if, before, because",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + động từ",
+                    "example": "*___ will replace Ms. Brandt*; *___ will lead the training sessions*"
+                  },
+                  {
+                    "signal": "mệnh đề thiếu tân ngữ",
+                    "example": "*___ the customers want most*; *___ employees should do*"
+                  },
+                  {
+                    "signal": "___ + danh từ",
+                    "example": "*___ phone will become available*; *___ candidate will be chosen*; *___ vehicle was parked*; *___ products to promote*"
+                  },
+                  {
+                    "signal": "mệnh đề đầy đủ",
+                    "example": "*___ Mr. Cole called the main office*; *___ the awards ceremony will begin*; *___ the scheduling software works*"
+                  },
+                  {
+                    "signal": "động từ cần nơi chốn: put, be located",
+                    "example": "*___ Mr. Park put the signed contracts*; *___ the visitor parking area is located*"
+                  },
+                  {
+                    "signal": "cost / take chưa có lượng",
+                    "example": "*___ the new printers will cost*; *___ the repairs to the elevator would take*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các từ để hỏi (who, whom, what, which, whose, when, where, why, how…), có thể trộn với if, that hay liên từ khác thì đây là câu mệnh đề danh ngữ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Nhìn ngay sau chỗ trống là động từ, danh từ hay S + V; rồi xem mệnh đề đó còn thiếu chủ ngữ, tân ngữ, nơi chốn, số tiền hay khoảng thời gian không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Thiếu chủ ngữ chọn who/what; thiếu tân ngữ chọn what/whom; có danh từ theo sau chọn which/whose; mệnh đề đầy đủ chọn when/where/why/how theo nghĩa. Loại từ không khớp với phần còn thiếu.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "Two Australian companies are developing new smartphones,",
+                    "label": "vế thứ nhất"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ giả"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "unclear",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "which",
+                    "label": "từ để hỏi + danh từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "phone",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "will become available first.",
+                    "label": "động từ của mệnh đề sau"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “which phone will become available first” là điều “chưa rõ”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm “if”, từ để hỏi “which” và liên từ “before”, “because” nên đây là câu mệnh đề danh ngữ.",
+                  "Bước 2: Chỗ trống đứng sau “it is unclear”; dấu hiệu “___ + danh từ”: “------- phone will become available first”, “phone” số ít không có mạo từ.",
+                  "Bước 3: Chọn một trong hai chiếc điện thoại nên dùng which + N + V, vì vậy chọn “which” (chiếc … nào).",
+                  "“if” (A) cần mệnh đề đầy đủ (liệu … không), không đi liền với “phone” số ít thiếu mạo từ, nên loại.",
+                  "“before” (C) là liên từ trạng ngữ (trước khi), không nêu điều “unclear” và không đi liền với “phone”, nên loại.",
+                  "“because” (D) là liên từ trạng ngữ (vì), không nêu điều “unclear” và không đi liền với “phone”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau từ để hỏi trong mệnh đề danh ngữ, dùng trật tự S + V như câu kể, không đảo trợ động từ: *announce when the ceremony will begin*, không viết *when will the ceremony begin*.",
+                  "which + N + to V cũng làm tân ngữ được: *The survey will help us decide which products to promote.* — Khảo sát sẽ giúp chúng tôi quyết định nên quảng bá sản phẩm nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Thiếu chủ ngữ: who/what; thiếu tân ngữ: what/whom; có danh từ theo sau: which/whose.",
+                  "Mệnh đề đầy đủ: when, where, why, how, chọn theo nghĩa.",
+                  "Hỏi tiền: how much; hỏi khoảng thời gian (bao lâu): how long; hỏi tần suất: how often."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

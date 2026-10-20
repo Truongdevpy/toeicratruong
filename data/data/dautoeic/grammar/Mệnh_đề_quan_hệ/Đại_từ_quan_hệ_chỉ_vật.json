@@ -1,0 +1,351 @@
+{
+  "subtopic": {
+    "id": "1fd9f552-da73-4b53-8e12-e5f171b94b45",
+    "topic_id": "aac6ad8a-58ee-4bcc-9acf-c6c675f6beae",
+    "title_en": "Đại từ quan hệ chỉ vật",
+    "title_vi": "Đại từ quan hệ chỉ vật",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 63,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-quan-he-dai-tu-quan-he-chi-vat"
+  },
+  "lessons": [
+    {
+      "id": "38965f2e-db91-451b-a4f3-6bd9964652d7",
+      "subtopic_id": "1fd9f552-da73-4b53-8e12-e5f171b94b45",
+      "title_en": "Đại từ quan hệ chỉ vật",
+      "title_vi": "Đại từ quan hệ chỉ vật",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 4 · Câu 117",
+          "options": {
+            "A": "that",
+            "B": "they",
+            "C": "what",
+            "D": "whoever"
+          },
+          "question": "Small businesses ------- participate in the Get Ahead program will receive marketing tools to help them attract customers.",
+          "translation": "Các doanh nghiệp nhỏ tham gia chương trình Get Ahead sẽ nhận được các công cụ tiếp thị giúp họ thu hút khách hàng."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm “that”, “they”, “what” và “whoever”. Chỗ trống đứng ngay sau danh từ “Small businesses” (doanh nghiệp, một loại tổ chức), ngay trước động từ “participate”; câu đã có động từ chính “will receive”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Small businesses",
+                    "label": "chủ ngữ (vật, tổ chức)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "participate in the Get Ahead program",
+                    "label": "động từ participate + phần sau, nói rõ doanh nghiệp nào"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will receive",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "marketing tools",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "…",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu có hai động từ: “participate” thuộc phần nói rõ doanh nghiệp nào, “will receive” là động từ chính. Chỗ trống phải nối phần “participate in…” vào danh từ “Small businesses”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Đại từ quan hệ nào dùng cho vật, đại từ nào dùng cho người.",
+                  "Khi nào dùng which, khi nào dùng được that (sau dấu phẩy, sau giới từ).",
+                  "Cách nối bằng lượng từ + of which / of whom, và vì sao đại từ thường không nối được mệnh đề."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Mệnh đề quan hệ đứng ngay sau danh từ để nói rõ đó là cái gì. Danh từ chỉ vật (đồ vật, công ty, tổ chức, sự việc) dùng **which** hoặc **that**; danh từ chỉ người dùng **who**, **whom**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "which/that làm chủ ngữ",
+                    "formula": "vật + which/that + V"
+                  },
+                  {
+                    "label": "which/that làm tân ngữ",
+                    "formula": "vật + which/that + S + V"
+                  },
+                  {
+                    "label": "sau dấu phẩy, có lượng từ",
+                    "formula": "…, lượng từ + of which / of whom + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "không có dấu phẩy: which hoặc that",
+                    "*The printer that we bought last year is broken.* — Chiếc máy in mà chúng tôi mua năm ngoái đã hỏng."
+                  ],
+                  [
+                    "sau dấu phẩy: which (vật), who (người); không dùng that",
+                    "*Our new office, which opened in May, is near the station.* — Văn phòng mới của chúng tôi, khai trương vào tháng Năm, nằm gần nhà ga."
+                  ],
+                  [
+                    "lượng từ + of which (vật)",
+                    "*We received ten orders, three of which arrived late.* — Chúng tôi nhận mười đơn hàng, ba đơn trong số đó đến muộn."
+                  ],
+                  [
+                    "lượng từ + of whom (người)",
+                    "*We hired five interns, two of whom speak Korean.* — Chúng tôi tuyển năm thực tập sinh, hai người trong số đó nói tiếng Hàn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Lượng từ có trong bài tập: one, two, some, many, most, all, none, each, both, neither, several, half.",
+                  "Sau giới từ chỉ dùng **whom** (người) hoặc **which** (vật), không dùng who, that: *The new supervisor, with whom the staff will work…*",
+                  "Sau chỗ trống là danh từ không có mạo từ, danh từ đó thuộc về danh từ đứng trước, thì dùng **whose + N**: *Mr. Delgado, whose department handles…*"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối mệnh đề vào danh từ chỉ vật; sau dấu phẩy chỉ dùng which.",
+                    "form": "which, that cho vật; lượng từ + of which",
+                    "example": "*four safety notices, all of which were posted*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Sai loại danh từ đứng trước: which chỉ vật; who, whom chỉ người.",
+                    "form": "who, whom, of whom cho vật; which, of which cho người",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "whose phải có danh từ đi ngay sau (whose + N), không đứng trước động từ hay trước chủ ngữ + động từ.",
+                    "form": "whose khi sau chỗ trống không phải danh từ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "that không mở mệnh đề sau dấu phẩy và không đứng ngay sau giới từ trong mệnh đề quan hệ.",
+                    "form": "that sau dấu phẩy hoặc sau giới từ (of that)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau giới từ, người phải dùng whom.",
+                    "form": "who sau giới từ (of who, with who)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đại từ nhân xưng không nối được mệnh đề; hai mệnh đề chỉ nối bằng dấu phẩy là sai.",
+                    "form": "of them, they, it",
+                    "example": "sai: *…four notices, all of them were posted*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "what (cái mà), whoever (bất cứ ai) không đứng sau một danh từ để bổ nghĩa cho danh từ đó.",
+                    "form": "what, whoever",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "vật + ___ + động từ",
+                    "example": "*Small businesses ___ participate*; *The new product ___ was launched*"
+                  },
+                  {
+                    "signal": "vật + ___ + chủ ngữ + động từ",
+                    "example": "*The materials ___ we ordered*; *The policies ___ the board approved*"
+                  },
+                  {
+                    "signal": "danh từ, ___ + động từ",
+                    "example": "*The Riverside plant, ___ opened in May*; *Ms. Tanaka, ___ joined*"
+                  },
+                  {
+                    "signal": "dấu phẩy + lượng từ + of ___",
+                    "example": "*four safety notices, ___ were posted* (all of …); *sixty participants, ___ came* (many of …)"
+                  },
+                  {
+                    "signal": "giới từ + ___",
+                    "example": "*The new supervisor, with ___ the staff will work closely*"
+                  },
+                  {
+                    "signal": "___ + danh từ không có mạo từ",
+                    "example": "*Mr. Delgado, ___ department handles*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là which, that, who, whom, whose (có thể kèm lượng từ + of), hoặc có đại từ it, they, them, what, whoever lẫn vào, thì đây là câu đại từ quan hệ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem danh từ được nói đến là vật hay người; trước chỗ trống có dấu phẩy, giới từ không; sau chỗ trống là động từ, chủ ngữ + động từ hay danh từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Vật chọn which/that, người chọn who/whom; sau dấu phẩy, sau giới từ bỏ that; có lượng từ thì chọn of which (vật), of whom (người). Loại đại từ thường vì không nối được mệnh đề.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Small businesses",
+                    "label": "chủ ngữ (vật, tổ chức)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that participate in the Get Ahead program",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho businesses"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will receive",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "marketing tools",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "…",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “that” làm chủ ngữ của “participate”, cả mệnh đề nói rõ doanh nghiệp nào."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm “that”, “what”, “whoever” và đại từ “they” nên đây là câu đại từ quan hệ.",
+                  "Bước 2: Chỗ trống đứng sau “Small businesses”, câu đã có động từ chính “will receive”; dấu hiệu “vật + ___ + động từ”: “businesses ------- participate”.",
+                  "Bước 3: Doanh nghiệp là vật (tổ chức), mệnh đề thiếu chủ ngữ nên dùng vật + which/that + V, vì vậy chọn “that” (mà, thay cho “businesses”).",
+                  "“they” (B) là đại từ nhân xưng, không nối được mệnh đề “participate in…” vào câu, nên loại.",
+                  "“what” (C) nghĩa là “cái mà”, không đứng sau danh từ “Small businesses” để bổ nghĩa cho nó, nên loại.",
+                  "“whoever” (D) nghĩa là “bất cứ ai”, không đứng sau danh từ “Small businesses” để bổ nghĩa cho nó, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Khi which/that làm tân ngữ trong mệnh đề không có dấu phẩy thì có thể bỏ: *The report you submitted yesterday…* — Bản báo cáo bạn nộp hôm qua…",
+                  "Động từ sau “one of which”, “each of whom” chia theo “one”, “each” (số ít): *five guest speakers, each of whom was given fifteen minutes*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Vật: which/that; người: who/whom.",
+                  "Sau dấu phẩy và sau giới từ không dùng that.",
+                  "…, lượng từ + of which (vật) / of whom (người); không dùng of them."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

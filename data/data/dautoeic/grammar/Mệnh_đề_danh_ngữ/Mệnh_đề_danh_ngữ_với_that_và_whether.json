@@ -1,0 +1,351 @@
+{
+  "subtopic": {
+    "id": "efaf056b-54d8-451b-a404-8cf12426be61",
+    "topic_id": "d6667723-0099-4348-b365-017ea30685d1",
+    "title_en": "Mệnh đề danh ngữ với that và whether",
+    "title_vi": "Mệnh đề danh ngữ với that và whether",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 60,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-danh-ngu-voi-that-va-whether"
+  },
+  "lessons": [
+    {
+      "id": "a3c35021-1591-4941-af81-24054a15ee51",
+      "subtopic_id": "efaf056b-54d8-451b-a404-8cf12426be61",
+      "title_en": "Mệnh đề danh ngữ với that và whether",
+      "title_vi": "Mệnh đề danh ngữ với that và whether",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 9 · Câu 119",
+          "options": {
+            "A": "whether",
+            "B": "who",
+            "C": "since",
+            "D": "that"
+          },
+          "question": "Chat Mobile will determine, based on end-of-the-year sales numbers, ------- the company will open any additional stores.",
+          "translation": "Chat Mobile sẽ căn cứ vào số liệu doanh số cuối năm để xác định liệu công ty có mở thêm cửa hàng nào hay không."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm “whether”, “that”, từ để hỏi “who” và liên từ “since”. Chỗ trống đứng sau động từ “will determine” (có cụm “based on …” chen giữa), trước một mệnh đề có đủ chủ ngữ, động từ, tân ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Chat Mobile",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will determine,",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "based on end-of-the-year sales numbers,",
+                    "label": "cụm chen giữa"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the company will open any additional stores.",
+                    "label": "mệnh đề đầy đủ S + V + tân ngữ"
+                  }
+                ],
+                "caption": "Chỗ trống mở đầu mệnh đề làm tân ngữ của “will determine”; cụm “based on …” chỉ chen vào giữa."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Mệnh đề danh ngữ là gì, đứng ở những vị trí nào trong câu.",
+                  "Sau chỗ trống là mệnh đề đầy đủ thì từ nối nào đứng được.",
+                  "Khi nào dùng “that”, khi nào dùng “whether”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Mệnh đề danh ngữ là một mệnh đề (S + V) đóng vai một danh từ: làm chủ ngữ, tân ngữ, bổ ngữ sau be, đứng sau giới từ, sau tính từ hoặc sau danh từ như “the fact”. “that” và “whether” mở đầu mệnh đề danh ngữ **đầy đủ**: sau chúng là S + V không thiếu chủ ngữ hay tân ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Điều được khẳng định (rằng, là)",
+                    "formula": "that + S + V"
+                  },
+                  {
+                    "label": "Điều chưa biết (liệu … hay không)",
+                    "formula": "whether + S + V"
+                  },
+                  {
+                    "label": "Có “or not” ngay sau",
+                    "formula": "whether or not + S + V"
+                  },
+                  {
+                    "label": "Có hai khả năng nối bằng “or”",
+                    "formula": "whether + S + V + or + …"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "that",
+                    "nêu nội dung một ý kiến, lời cam đoan, lời đề nghị, cảm xúc hoặc một sự thật",
+                    "believe, assure + người, show, recommend; be confident, be pleased; It is important; the fact; danh từ + is",
+                    "*Our manager believes that the new schedule works well.* — Quản lý của chúng tôi tin rằng lịch mới hiệu quả."
+                  ],
+                  [
+                    "whether",
+                    "nêu điều chưa biết, còn hai khả năng có / không",
+                    "check, ask + người, wonder, be unsure, depend on, discuss, has not decided; đầu câu làm chủ ngữ",
+                    "*Please check whether the invoice has been paid.* — Vui lòng kiểm tra xem hóa đơn đã được thanh toán chưa."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ nối",
+                  "Dùng khi",
+                  "Đi sau (trong bài tập)",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Một số động từ đi được với cả hai, như decide, determine, know. Khi đó chọn theo nghĩa: câu cho thấy việc còn chưa rõ (has not yet decided, will determine based on …, let us know … or not) thì dùng **whether**.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Mở đầu mệnh đề danh ngữ; sau chúng là S + V không thiếu thành phần nào.",
+                    "form": "that / whether + mệnh đề đầy đủ",
+                    "example": "*check whether their orders have been shipped*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Phải thay cho một chủ ngữ hoặc tân ngữ còn thiếu trong mệnh đề. Sau chỗ trống là mệnh đề đầy đủ nên không còn chỗ cho chúng.",
+                    "form": "who, whom, what, which đứng một mình",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải đi liền với danh từ (whose + N), không đứng trước the + N, đại từ như they hay từ hạn định như most.",
+                    "form": "whose",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Theo sau là danh từ hoặc cụm danh từ, không theo sau S + V.",
+                    "form": "Giới từ (despite, about, during)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Mở đầu mệnh đề chỉ điều kiện, thời gian, lý do; không làm chủ ngữ, tân ngữ hay đứng sau giới từ.",
+                    "form": "Liên từ trạng ngữ (unless, since, because)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "that nêu điều đã khẳng định, không hợp khi câu cho thấy việc còn chưa rõ (or not, or, has not yet decided); that cũng không đứng ngay sau giới từ.",
+                    "form": "that ở chỗ cần whether",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "whether nêu điều chưa biết, không hợp với nghĩa tin, cam đoan, vui mừng, đề nghị hay một sự thật (believe, assure, pleased, recommend, the fact).",
+                    "form": "whether ở chỗ cần that",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + mệnh đề đầy đủ",
+                    "example": "*___ the company will open any additional stores*; *___ their orders have been shipped*"
+                  },
+                  {
+                    "signal": "believe / assure / show / recommend + ___",
+                    "example": "*believes ___*; *assured the client ___*; *results show ___*; *recommended ___*"
+                  },
+                  {
+                    "signal": "confident / pleased / It is important + ___",
+                    "example": "*is confident ___*; *were pleased ___*; *It is important ___*"
+                  },
+                  {
+                    "signal": "the fact / danh từ + is + ___",
+                    "example": "*The fact ___ sales rose*; *The good news is ___*"
+                  },
+                  {
+                    "signal": "từ chỉ điều chưa biết + ___",
+                    "example": "*check online ___*; *unsure ___*; *asked the supplier ___*; *wondered ___*; *has not yet decided ___*; *still discussing ___*; *will determine, based on …, ___*"
+                  },
+                  {
+                    "signal": "___ or not / ___ … or …",
+                    "example": "*let us know ___ or not*; *___ it will interview candidates in person or by video call*"
+                  },
+                  {
+                    "signal": "giới từ + ___",
+                    "example": "*depend on ___ customers respond*"
+                  },
+                  {
+                    "signal": "___ + S + V + động từ chính",
+                    "example": "*___ the store stays open late … depends on staff availability*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có “that” hoặc “whether” trộn với từ để hỏi (who, what, whose…), giới từ hay liên từ khác thì đây là câu mệnh đề danh ngữ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống đứng ở đâu (chủ ngữ, tân ngữ, sau be, sau giới từ, sau tính từ, sau the fact) và mệnh đề sau nó có đầy đủ S + V không. Tìm từ cho biết đó là điều khẳng định hay điều chưa biết.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Mệnh đề đầy đủ thì chỉ còn that hoặc whether: điều khẳng định chọn that; điều chưa biết, có or not, có hai khả năng còn chưa chọn nối bằng or, hoặc sau giới từ chọn whether. Loại what, who, whose, which, giới từ và liên từ trạng ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Chat Mobile",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will determine,",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "based on end-of-the-year sales numbers,",
+                    "label": "cụm chen giữa"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "whether",
+                    "label": "từ nối: điều chưa biết"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the company will open any additional stores.",
+                    "label": "mệnh đề đầy đủ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “whether the company will open any additional stores” là tân ngữ của “will determine”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm “whether”, “that”, từ để hỏi “who” và liên từ “since” nên đây là câu mệnh đề danh ngữ.",
+                  "Bước 2: Chỗ trống làm tân ngữ của “will determine”; dấu hiệu “___ + mệnh đề đầy đủ”: “the company will open any additional stores”; “từ chỉ điều chưa biết + ___”: “will determine, based on…”.",
+                  "Bước 3: Việc mở thêm cửa hàng còn chờ số liệu cuối năm nên dùng whether + S + V, vì vậy chọn “whether” (liệu … có … hay không).",
+                  "“who” (B) là từ để hỏi, phải thay chủ ngữ hoặc tân ngữ còn thiếu, mà mệnh đề sau đã đầy đủ, nên loại.",
+                  "“since” (C) là liên từ trạng ngữ (vì, từ khi), không làm tân ngữ cho “will determine”, nên loại.",
+                  "“that” (D) đúng cấu trúc nhưng nêu điều đã khẳng định, không hợp với việc còn chờ “end-of-the-year sales numbers”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau recommend + that, động từ trong mệnh đề that dùng V nguyên mẫu với mọi chủ ngữ: *The director recommended that each department submit its budget request.* — Giám đốc đề nghị mỗi phòng ban nộp đề xuất ngân sách.",
+                  "Mệnh đề that không đứng ngay sau giới từ (trừ vài cụm cố định như in that, except that). Sau giới từ, mệnh đề đầy đủ dùng whether: *depend on whether customers respond*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống là mệnh đề đầy đủ: chọn that hoặc whether, loại what, who, whose.",
+                  "Điều khẳng định (rằng, là): that; điều chưa biết (liệu … hay không): whether.",
+                  "Có or not, có hai khả năng còn chưa chọn nối bằng or, hoặc đứng sau giới từ: dùng whether."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,342 @@
+{
+  "subtopic": {
+    "id": "ee505de7-3165-4d64-9ab4-22b67ad5fe2a",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ trong thì hoàn thành và bị động",
+    "title_vi": "Trạng từ trong thì hoàn thành và bị động",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 18,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-trong-thi-hoan-thanh-va-bi-dong"
+  },
+  "lessons": [
+    {
+      "id": "0e68ad63-6ff4-471c-898a-eea67e74e770",
+      "subtopic_id": "ee505de7-3165-4d64-9ab4-22b67ad5fe2a",
+      "title_en": "Trạng từ trong thì hoàn thành và bị động",
+      "title_vi": "Trạng từ trong thì hoàn thành và bị động",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 1 · Câu 121",
+          "options": {
+            "A": "accident",
+            "B": "accidental",
+            "C": "accidents",
+            "D": "accidentally"
+          },
+          "question": "The meeting notes were ------- deleted, but Mr. Hahm was able to recreate them from memory.",
+          "translation": "Biên bản cuộc họp đã vô tình bị xóa, nhưng ông Hahm đã viết lại được từ trí nhớ."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “accident”: danh từ “accident”, “accidents”, tính từ “accidental” và trạng từ “accidentally”. Chỗ trống đứng giữa “were” và V3 “deleted” của động từ bị động.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The meeting notes",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "be"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "V",
+                    "text": "deleted,",
+                    "label": "V3"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "but Mr. Hahm was able to recreate them from memory.",
+                    "label": "vế sau but"
+                  }
+                ],
+                "caption": "Động từ bị động “were … deleted” (be + V3) có chỗ trống chen vào giữa."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào chen được vào giữa be và V3.",
+                  "Loại từ nào bổ nghĩa cho động từ “deleted”.",
+                  "Vì sao danh từ, tính từ không đứng được ở đây."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ bị động (be + V3) và động từ hoàn thành (has/have + V3) gồm nhiều phần. Trạng từ bổ nghĩa cho động từ đó có thể chen vào giữa trợ động từ và V3, hoặc đứng sau cả cụm động từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Bị động, trạng từ ở giữa",
+                    "formula": "be + trạng từ + V3"
+                  },
+                  {
+                    "label": "Bị động, trạng từ ở sau",
+                    "formula": "be + V3 + trạng từ"
+                  },
+                  {
+                    "label": "Bị động tiếp diễn",
+                    "formula": "are + trạng từ + being + V3"
+                  },
+                  {
+                    "label": "Hoàn thành",
+                    "formula": "has/have + trạng từ + V3"
+                  },
+                  {
+                    "label": "Hoàn thành, trạng từ ở sau",
+                    "formula": "has/have + V3 + trạng từ"
+                  },
+                  {
+                    "label": "Hoàn thành bị động",
+                    "formula": "has + trạng từ + been + V3"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "be + trạng từ + V3",
+                    "*The room is fully booked for Friday.* — Phòng đã được đặt kín cho thứ Sáu."
+                  ],
+                  [
+                    "be + V3 + trạng từ",
+                    "*All forms must be completed carefully.* — Mọi biểu mẫu phải được điền cẩn thận."
+                  ],
+                  [
+                    "has/have + trạng từ + V3",
+                    "*Sales have steadily increased this year.* — Doanh số đã tăng đều trong năm nay."
+                  ],
+                  [
+                    "has + trạng từ + been + V3",
+                    "*The contract has finally been signed.* — Hợp đồng cuối cùng đã được ký."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra trạng từ qua đuôi**: trạng từ ở vị trí này trong bài tập là tính từ + -ly (accidental, accidentally; strict, strictly; current, currently), riêng tính từ -ic thêm -ally (dramatic, dramatically).",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chen giữa trợ động từ và V3, hoặc đứng sau cụm động từ; bổ nghĩa cho động từ.",
+                    "form": "Trạng từ (accidentally, strictly, recently)",
+                    "example": "*were accidentally deleted*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ không bổ nghĩa cho động từ: *were accidental deleted*, *must be followed strict* sai.",
+                    "form": "Tính từ (accidental, strict, punctual, proper, current)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ nên không bổ nghĩa cho động từ.",
+                    "form": "Dạng so sánh của tính từ (preciser, stricter, more gradual, most gradual)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chen được vào giữa be, has và V3; đứng sau câu bị động đã đủ thành phần cũng không có vai trò.",
+                    "form": "Danh từ (accident, punctuality, recency, currency, property)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính. Động từ (convene, dramatize) đặt vào thì câu có hai động từ chính; V3 “frequented” đặt giữa “is” và “described” thành hai V3 liền nhau, sai.",
+                    "form": "Động từ, V3 khác (convene, dramatize, frequented)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "be + ___ + V3",
+                    "example": "*were ___ deleted*; *are ___ placed*; *was ___ hired*"
+                  },
+                  {
+                    "signal": "bị động + ___",
+                    "example": "*must be followed ___ to ensure safety*; *will be installed in branch stores ___*"
+                  },
+                  {
+                    "signal": "has + ___ + been + V3",
+                    "example": "*has ___ been completed*"
+                  },
+                  {
+                    "signal": "are + ___ + being + V3",
+                    "example": "*are ___ being distributed*"
+                  },
+                  {
+                    "signal": "has/have + V3 + ___",
+                    "example": "*has expanded ___ in the past two years*"
+                  },
+                  {
+                    "signal": "has/have + ___ + V3",
+                    "example": "*Tabrino’s has ___ increased the number of almonds*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, dạng so sánh) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm cụm động từ nhiều phần (be + V3, has/have + V3, has been + V3, are being + V3). Chỗ trống chen giữa các phần đó, hoặc đứng sau cả cụm khi câu đã đủ thành phần, thì bổ nghĩa cho động từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo công thức; loại tính từ, dạng so sánh, danh từ, và loại dạng động từ vì câu đã có động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The meeting notes",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "be"
+                  },
+                  {
+                    "role": "X",
+                    "text": "accidentally",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "deleted,",
+                    "label": "V3"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "but Mr. Hahm was able to recreate them from memory.",
+                    "label": "vế sau but"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “accidentally” chen giữa “were” và “deleted”, bổ nghĩa cho động từ bị động."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “accident” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa “were” và V3 “deleted”; dấu hiệu “be + ___ + V3”: “were ------- deleted”.",
+                  "Bước 3: Cần be + trạng từ + V3; “accidentally” là trạng từ (đuôi -ly), vì vậy chọn “accidentally” (vô tình).",
+                  "“accident” (A) là danh từ (tai nạn), không chen vào giữa “were” và “deleted”, nên loại.",
+                  "“accidental” (B) là tính từ, không bổ nghĩa cho động từ “deleted”, nên loại.",
+                  "“accidents” (C) là danh từ số nhiều, không chen vào giữa “were” và “deleted”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau V3 trong câu bị động không cần tân ngữ, nên chỗ trống ngay sau cụm bị động bổ nghĩa cho động từ. Ngoại lệ là động từ hai tân ngữ như give, offer: *She was given a prize.* — Cô ấy được trao một giải thưởng.",
+                  "Sau make, keep, find, consider ở dạng bị động là tính từ, không phải trạng từ, vì tính từ đó nói về chủ ngữ: *The room was kept clean.* — Căn phòng được giữ sạch sẽ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống giữa be, has, have và V3 thì chọn trạng từ.",
+                  "Câu bị động đã đủ thành phần, chỗ trống sau cụm động từ cũng là trạng từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,38 @@
+{
+  "module": "mod-speak",
+  "name": "Kỹ năng Nói (Speaking)",
+  "status": "In Development (Đang phát triển / Sắp ra mắt)",
+  "sub_parts": [
+    {
+      "slug": "pronunciation",
+      "label": "Luyện phát âm căn bản"
+    },
+    {
+      "slug": "1",
+      "label": "Part 1: Đọc to một đoạn văn",
+      "question_count_target": 2
+    },
+    {
+      "slug": "2",
+      "label": "Part 2: Miêu tả một bức tranh",
+      "question_count_target": 2
+    },
+    {
+      "slug": "3",
+      "label": "Part 3: Trả lời câu hỏi với thông tin cho trước",
+      "question_count_target": 3
+    },
+    {
+      "slug": "4",
+      "label": "Part 4: Trả lời câu hỏi dùng thông tin bảng biểu",
+      "question_count_target": 3
+    },
+    {
+      "slug": "5",
+      "label": "Part 5: Đưa ra giải pháp",
+      "question_count_target": 1
+    }
+  ],
+  "storage_bucket": "speaking-media",
+  "note": "Platform UI is ready; backend question tables are currently awaiting content deployment."
+}

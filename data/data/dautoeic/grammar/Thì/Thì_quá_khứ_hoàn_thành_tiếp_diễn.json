@@ -1,0 +1,330 @@
+{
+  "subtopic": {
+    "id": "54876ca8-ee17-45d0-8417-c1ec5c992482",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì quá khứ hoàn thành tiếp diễn",
+    "title_vi": "Thì quá khứ hoàn thành tiếp diễn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 85,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-qua-khu-hoan-thanh-tiep-dien"
+  },
+  "lessons": [
+    {
+      "id": "027fcfa7-c8b1-4c84-84ab-e470e7d1e12c",
+      "subtopic_id": "54876ca8-ee17-45d0-8417-c1ec5c992482",
+      "title_en": "Thì quá khứ hoàn thành tiếp diễn",
+      "title_vi": "Thì quá khứ hoàn thành tiếp diễn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2019 · Câu 26",
+          "options": {
+            "A": "is buying",
+            "B": "will be buying",
+            "C": "has been buying",
+            "D": "had been buying"
+          },
+          "question": "The grocery store ------- vegetables from out of town until local prices went down last month.",
+          "translation": "Cửa hàng tạp hóa đã mua rau củ từ nơi khác về cho đến khi giá ở địa phương giảm xuống vào tháng trước."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng chia thì của động từ “buy”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The grocery store",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "vegetables",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from out of town",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "until",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "local prices went down last month.",
+                    "label": "mệnh đề làm mốc"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, sau chủ ngữ “The grocery store”, trước tân ngữ “vegetables”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "vế “until local prices went down last month” cho biết mốc nào",
+                  "dạng động từ nói việc kéo dài đến một mốc quá khứ",
+                  "các dạng tiếp diễn còn lại nói về lúc nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì quá khứ hoàn thành tiếp diễn nói về một việc **kéo dài liên tục** (hoặc lặp lại nhiều lần) trong một khoảng thời gian, **đến một mốc trong quá khứ**. Trong bài tập, mốc đó là một việc khác, chia quá khứ đơn.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Dùng “had been” cho mọi chủ ngữ, số ít hay số nhiều",
+                    "formula": "S + had been + V-ing"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.4,
+                    "label": "lúc được thăng chức"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.4,
+                    "from": 0.1,
+                    "label": "had been working (năm năm)",
+                    "style": "solid"
+                  }
+                ],
+                "points": [
+                  {
+                    "at": 0.4,
+                    "label": "was promoted"
+                  }
+                ],
+                "caption": "“had been working” kéo dài năm năm, dừng ở một việc khác trong quá khứ (“was promoted”), trước “bây giờ”."
+              },
+              {
+                "rows": [
+                  [
+                    "việc kéo dài liên tục đến một việc khác trong quá khứ",
+                    "*She had been working there for five years before she was promoted.* — Cô ấy đã làm việc ở đó năm năm trước khi được thăng chức."
+                  ],
+                  [
+                    "việc lặp lại nhiều lần trong một thời gian, đến một mốc quá khứ",
+                    "*He had been visiting the client weekly until the contract ended.* — Anh ấy đã đến gặp khách hàng hằng tuần cho đến khi hợp đồng kết thúc."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Việc kéo dài đến bây giờ, không dừng ở một mốc quá khứ.",
+                    "form": "has/have been + V-ing (hiện tại hoàn thành tiếp diễn)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc đang diễn ra lúc nói.",
+                    "form": "am/is/are + V-ing (hiện tại tiếp diễn)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc sẽ đang diễn ra sau lúc nói.",
+                    "form": "will be + V-ing (tương lai tiếp diễn)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "before + mệnh đề quá khứ đơn",
+                    "example": "*before the store finally opened its doors*"
+                  },
+                  {
+                    "signal": "until + mệnh đề quá khứ đơn",
+                    "example": "*until local prices went down last month*"
+                  },
+                  {
+                    "signal": "for + khoảng thời gian",
+                    "example": "*for nearly an hour*, *for two years*"
+                  },
+                  {
+                    "signal": "all + khoảng thời gian",
+                    "example": "*all afternoon*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng chia thì của một động từ thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm vế “before …” hoặc “until …” và xem động từ ở vế đó có chia quá khứ đơn không; tìm thêm “for + khoảng thời gian” hoặc “all + khoảng thời gian”.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc kéo dài đến một mốc quá khứ thì chọn had been + V-ing; loại has/have been + V-ing, am/is/are + V-ing và will be + V-ing vì không dừng ở mốc quá khứ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The grocery store",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "had been buying",
+                    "label": "động từ: had been + V-ing"
+                  },
+                  {
+                    "role": "O",
+                    "text": "vegetables",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from out of town",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "until",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "local prices went down last month.",
+                    "label": "mốc quá khứ"
+                  }
+                ],
+                "caption": "Câu mẫu sau khi điền đáp án"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng chia thì của động từ “buy” nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “The grocery store”; có dấu hiệu “until + mệnh đề quá khứ đơn”: “until local prices went down last month”.",
+                  "Bước 3: Việc mua kéo dài đến lúc giá giảm vào tháng trước nên dùng had been + V-ing, vì vậy chọn “had been buying” (đã mua).",
+                  "“is buying” (A) là hiện tại tiếp diễn, chỉ việc đang diễn ra lúc nói, không hợp mốc quá khứ “went down”, nên loại.",
+                  "“will be buying” (B) là tương lai tiếp diễn, chỉ việc sẽ đang diễn ra, trái với mốc quá khứ “went down”, nên loại.",
+                  "“has been buying” (C) là hiện tại hoàn thành tiếp diễn, kéo dài đến bây giờ, không hợp mốc quá khứ “went down”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“for + khoảng thời gian” đi được với cả has/have been + V-ing và had been + V-ing; chính mốc quá khứ sau “before” hoặc “until” mới cho biết phải dùng had been + V-ing.",
+                  "Vế làm mốc có thể ở dạng bị động quá khứ (was/were + V3), ví dụ “before the upgrade was finally approved”; đó vẫn là mốc quá khứ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Kéo dài đến một việc đã xảy ra (before/until + quá khứ đơn) thì dùng had been + V-ing.",
+                  "has/have been + V-ing kéo dài đến bây giờ, không dùng khi việc dừng ở một mốc quá khứ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

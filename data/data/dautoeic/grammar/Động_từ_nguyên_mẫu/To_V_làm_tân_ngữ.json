@@ -1,0 +1,335 @@
+{
+  "subtopic": {
+    "id": "a45cda5b-95cc-41d9-bbd6-ddbd6503271b",
+    "topic_id": "6ec8bdde-0b2d-4c88-aafd-4710d123edba",
+    "title_en": "To V làm tân ngữ",
+    "title_vi": "To V làm tân ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 108,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-nguyen-mau-to-v-lam-tan-ngu"
+  },
+  "lessons": [
+    {
+      "id": "a573ac3a-4f2d-4865-8dff-8520d68e0381",
+      "subtopic_id": "a45cda5b-95cc-41d9-bbd6-ddbd6503271b",
+      "title_en": "To V làm tân ngữ",
+      "title_vi": "To V làm tân ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 6 · Câu 116",
+          "options": {
+            "A": "resigning",
+            "B": "to resign",
+            "C": "resigns",
+            "D": "to have resigned"
+          },
+          "question": "Carly Logan plans -------, so Alan Zill has volunteered to be the stamp club’s next treasurer.",
+          "translation": "Carly Logan dự định từ chức, vì vậy Alan Zill đã xung phong làm thủ quỹ tiếp theo của câu lạc bộ sưu tầm tem."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “resign”: V-ing, to V, một dạng chia thì và to have + V3. Chỗ trống đứng ngay sau động từ chính “plans”, trước dấu phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Carly Logan",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "plans",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": ", so",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "Alan Zill has volunteered …",
+                    "label": "vế sau"
+                  }
+                ],
+                "caption": "“plans” là động từ chính của vế đầu; chỗ trống là điều được dự định, tức tân ngữ của “plans”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ nào nhận to V làm tân ngữ.",
+                  "Vì sao sau các động từ đó không dùng V-ing, V nguyên mẫu hay động từ chia thì.",
+                  "to V và to have + V3 khác nhau thế nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Một số động từ nhận một hành động khác làm tân ngữ. Hành động đó để ở dạng to V, đứng ngay sau động từ chính.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "S + V + to V (+ tân ngữ của to V)"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "decided",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "to hire",
+                    "label": "tân ngữ của decided (to V)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "two more assistants.",
+                    "label": "tân ngữ của to hire"
+                  }
+                ],
+                "caption": "“to hire” là điều được quyết định, tức tân ngữ của “decided”; “two more assistants” là tân ngữ của “to hire”."
+              },
+              {
+                "rows": [
+                  [
+                    "dự định, mong muốn",
+                    "plan, intend, aim, hope, wish, would like, prefer",
+                    "*We plan to open a new branch next year.* — Chúng tôi dự định mở chi nhánh mới vào năm tới."
+                  ],
+                  [
+                    "quyết định, sắp xếp, đồng ý, từ chối, hứa, đề nghị",
+                    "decide, arrange, agree, refuse, promise, offer",
+                    "*The supplier agreed to lower its prices.* — Nhà cung cấp đã đồng ý giảm giá."
+                  ],
+                  [
+                    "cố gắng, làm được hay không",
+                    "manage, fail, strive, can afford",
+                    "*She managed to finish the report on time.* — Cô ấy đã xoay xở hoàn thành báo cáo đúng hạn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nhóm nghĩa",
+                  "Động từ + to V",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Là tân ngữ của động từ chính, nói việc được dự định, quyết định, cố gắng làm.",
+                    "form": "to V ngay sau các động từ trên",
+                    "example": "*The board decided to move the conference.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Các động từ trên (trừ intend, prefer, xem Lưu ý) không nhận V-ing làm tân ngữ. V-ing chỉ đi sau chúng khi có giới từ xen giữa: plan on, aim at, decide on.",
+                    "form": "V-ing (maintaining, purchasing, resigning)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thiếu “to”: hai động từ không đứng liền nhau như vậy (trừ sau động từ khuyết thiếu như can, should).",
+                    "form": "V nguyên mẫu (maintain, lose, purchase)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính; thêm một động từ chia thì mà không có liên từ là sai.",
+                    "form": "Quá khứ đơn, V3, V-s (maintained, lost, resigns)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc đã xong trước một mốc; câu mẫu không có mốc nào như vậy, chỉ nói điều dự định làm.",
+                    "form": "to have + V3 (câu mẫu)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "plan / intend / aim / hope / wish + ___",
+                    "example": "*Meridian Logistics plans ___*; *The company aims ___*; *We hope ___*"
+                  },
+                  {
+                    "signal": "would like / prefer + ___",
+                    "example": "*Mr. Kim would like ___*; *Mr. Ozawa generally prefers ___*"
+                  },
+                  {
+                    "signal": "decide / arrange / agree / refuse / promise / offer + ___",
+                    "example": "*The board decided ___*; *Several employees refused ___*; *The vendor kindly offered ___*"
+                  },
+                  {
+                    "signal": "manage / fail / strive / can afford + ___",
+                    "example": "*Ms. Alvarez managed ___*; *The courier failed ___*; *cannot afford ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (to V, V-ing, V3, V nguyên mẫu), không có hoặc chỉ có một dạng chia thì, nên đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính; chỗ trống đứng ngay sau nó, không có giới từ xen giữa, là tân ngữ của động từ đó. Xem động từ chính có thuộc nhóm nhận to V không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Động từ chính nhận to V thì chọn to V. Loại V-ing, V nguyên mẫu, dạng chia thì và V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Carly Logan",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "plans",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "to resign",
+                    "label": "tân ngữ của plans (to V)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": ", so",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "Alan Zill has volunteered …",
+                    "label": "vế sau"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “to resign” là tân ngữ của “plans”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “resign” (V-ing, to V, V-s, to have + V3) nên đây là câu dạng động từ.",
+                  "Bước 2: Chỗ trống đứng ngay sau động từ chính “plans” của vế đầu, trước dấu phẩy; dấu hiệu “plan / intend / aim / hope / wish + ___”.",
+                  "Bước 3: “plan” nhận to V làm tân ngữ: plan + to V, vì vậy chọn “to resign” (từ chức).",
+                  "“resigning” (A) là V-ing, “plan” không nhận V-ing làm tân ngữ khi không có “on”, nên loại.",
+                  "“resigns” (C) là động từ chia thì (V-s), vế đầu đã có động từ chính “plans”, nên loại.",
+                  "“to have resigned” (D) là to have + V3, nói việc đã xong trước một mốc; câu chỉ nói dự định, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "intend và prefer đi được với cả to V lẫn V-ing: *We intend to hire / intend hiring two more staff.* — Chúng tôi dự định tuyển thêm hai nhân viên. Các động từ khác trong bảng chỉ đi với to V.",
+                  "Một số động từ có dạng đi với giới từ: plan on + V-ing, aim at + V-ing, decide on + danh từ hoặc V-ing. Không có giới từ thì dùng to V."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau plan, hope, decide, agree, manage, fail… dùng to V làm tân ngữ.",
+                  "Câu đã có động từ chính thì chỗ trống ngay sau nó không phải động từ chia thì."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

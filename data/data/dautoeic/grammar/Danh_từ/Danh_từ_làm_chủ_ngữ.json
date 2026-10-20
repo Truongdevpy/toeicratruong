@@ -1,0 +1,381 @@
+{
+  "subtopic": {
+    "id": "11615460-4f2f-4a98-aece-a91b3bedb17d",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ làm chủ ngữ",
+    "title_vi": "Danh từ làm chủ ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 1,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-lam-chu-ngu"
+  },
+  "lessons": [
+    {
+      "id": "2d7d4450-46a9-4317-ad6e-577cf78e2402",
+      "subtopic_id": "11615460-4f2f-4a98-aece-a91b3bedb17d",
+      "title_en": "Danh từ làm chủ ngữ",
+      "title_vi": "Danh từ làm chủ ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 3 · Câu 126",
+          "options": {
+            "A": "part",
+            "B": "parted",
+            "C": "parting",
+            "D": "partial"
+          },
+          "question": "The first ------- of the training will introduce staff to certain workplace responsibilities.",
+          "translation": "Phần đầu tiên của khóa đào tạo sẽ giới thiệu cho nhân viên một số trách nhiệm tại nơi làm việc."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “part” nhưng khác loại từ. Chỗ trống đứng sau “The first”, trước cụm giới từ “of the training” và động từ chính “will introduce”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "The first",
+                    "label": "mạo từ + số thứ tự"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the training",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will introduce",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "staff",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to certain workplace responsibilities.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Cụm “The first ------- of the training” đứng trước động từ chính “will introduce” nên là chủ ngữ của câu."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ đứng ở đâu và là loại từ gì.",
+                  "Nhận ra danh từ qua đuôi.",
+                  "Vì sao động từ, tính từ, trạng từ không làm chủ ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Chủ ngữ là người, vật hay việc làm chủ của động từ chính và đứng trước động từ chính. Chủ ngữ là danh từ hoặc cụm danh từ; trước danh từ có thể có mạo từ, sở hữu, tính từ, sau nó có thể có cụm giới từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ ngữ",
+                    "formula": "(mạo từ / sở hữu / tính từ) + N + (giới từ + cụm danh từ)"
+                  },
+                  {
+                    "label": "Cả câu",
+                    "formula": "chủ ngữ + động từ chính + …"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "The",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "approval",
+                    "label": "danh từ chính của chủ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the budget",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will take",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "two weeks.",
+                    "label": ""
+                  }
+                ],
+                "caption": "*The approval of the budget will take two weeks.* — Việc phê duyệt ngân sách sẽ mất hai tuần. Cả cụm “The approval of the budget” là chủ ngữ; danh từ chính là “approval”."
+              },
+              {
+                "text": "**Nhận ra danh từ qua đuôi** (các từ có trong bài tập)",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "-tion, -sion",
+                    "implementation, intervention, decision, assumption"
+                  ],
+                  [
+                    "-ment",
+                    "enrollment, adjustment, announcement"
+                  ],
+                  [
+                    "-ance, -ence",
+                    "maintenance, persistence"
+                  ],
+                  [
+                    "-ity, -th",
+                    "flexibility, growth"
+                  ],
+                  [
+                    "không có đuôi riêng",
+                    "receipt, part"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "V-ing và to V cũng làm được chủ ngữ nhưng vẫn giữ cách dùng của động từ: động từ cần tân ngữ thì tân ngữ đi thẳng sau nó, không qua “of”. Khi đã có danh từ cùng nghĩa (maintenance, decision, intervention), sau mạo từ, sở hữu, tính từ dùng danh từ đó.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm chủ ngữ, đứng trước động từ chính.",
+                    "form": "Danh từ (growth, decision, part)",
+                    "example": "*The first part of the training will introduce …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Là động từ, không làm chủ ngữ; câu đã có động từ chính.",
+                    "form": "Động từ nguyên mẫu, V-s (grow, grows, decide, announce)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm chủ ngữ.",
+                    "form": "V-ed, V3 (grown, enrolled, maintained)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng trước “of”, thiếu tân ngữ, hoặc đã có danh từ cùng nghĩa (xem đoạn trên).",
+                    "form": "V-ing (implementing, maintaining, deciding)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ hành động, không hợp nghĩa với động từ nói về số lượng như “has increased”.",
+                    "form": "to V (to enroll)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm chủ ngữ; sau mạo từ, sở hữu, tính từ phải có danh từ.",
+                    "form": "Tính từ (flexible, receivable, decisive, assumable, partial)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm chủ ngữ.",
+                    "form": "Trạng từ (flexibly, persistently)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + giới từ + … + động từ chính",
+                    "example": "*___ in online sales has exceeded …*; *___ of the shipment should be expected …*"
+                  },
+                  {
+                    "signal": "___ + động từ chính",
+                    "example": "*___ is necessary for handling …*"
+                  },
+                  {
+                    "signal": "mạo từ + ___",
+                    "example": "*The first ___ of the training will introduce …*; *An ___ in our return policy will take effect …*"
+                  },
+                  {
+                    "signal": "sở hữu + ___",
+                    "example": "*The CEO’s ___ will take place …*; *Mr. Montrose’s ___ in his job search has resulted …*"
+                  },
+                  {
+                    "signal": "tính từ + ___",
+                    "example": "*the common ___ was that …*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính. Chỗ trống đứng trước động từ chính (có thể qua cụm giới từ), ở đầu câu hoặc sau mạo từ, sở hữu, tính từ thì chỗ trống là chủ ngữ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ, nhận ra qua đuôi; loại động từ, V-ed, tính từ, trạng từ; loại V-ing, to V theo quy tắc ở phần Kiến thức.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "The first",
+                    "label": "mạo từ + số thứ tự"
+                  },
+                  {
+                    "role": "S",
+                    "text": "part",
+                    "label": "danh từ chính của chủ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the training",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will introduce",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "staff",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to certain workplace responsibilities.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “The first part of the training” là chủ ngữ của “will introduce”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “part” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “The first”, trước “of the training” và động từ chính “will introduce”; dấu hiệu “mạo từ + ___”: “The first -------”.",
+                  "Bước 3: Cần danh từ làm chủ ngữ; “part” là danh từ, vì vậy chọn “part” (phần).",
+                  "“parted” (B) là V-ed, không làm chủ ngữ của “will introduce”, nên loại.",
+                  "“parting” (C) là V-ing hoặc danh từ nghĩa sự chia tay, không hợp nghĩa “of the training”, nên loại.",
+                  "“partial” (D) là tính từ (đuôi -al), sau nó không có danh từ, không làm chủ ngữ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Có danh từ không mang đuôi quen thuộc, như *receipt* (việc nhận được), *part* (phần). Khi đó loại dần: động từ, V-ed, tính từ (-able, -al) không làm chủ ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Trước động từ chính, ở đầu câu hoặc sau mạo từ, sở hữu, tính từ: cần danh từ.",
+                  "Động từ, tính từ, trạng từ không làm chủ ngữ.",
+                  "Đã có danh từ cùng nghĩa thì không chọn V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

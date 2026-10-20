@@ -1,0 +1,331 @@
+{
+  "subtopic": {
+    "id": "184c161a-4c83-4d40-af1f-b9d4d32d428e",
+    "topic_id": "e17d4d8f-0799-4778-91ac-00bfb1044280",
+    "title_en": "Giới từ chỉ lý do",
+    "title_vi": "Giới từ chỉ lý do",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 40,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-gioi-tu-chi-ly-do"
+  },
+  "lessons": [
+    {
+      "id": "0bbc989d-f288-4bfd-ba7a-1bf2da1daa9b",
+      "subtopic_id": "184c161a-4c83-4d40-af1f-b9d4d32d428e",
+      "title_en": "Giới từ chỉ lý do",
+      "title_vi": "Giới từ chỉ lý do",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 1 · Câu 129",
+          "options": {
+            "A": "In spite of",
+            "B": "Just as",
+            "C": "In light of",
+            "D": "According to"
+          },
+          "question": "------- the closure of Verdigold Transport Services, we are looking for a new shipping company.",
+          "translation": "Vì công ty Verdigold Transport Services đóng cửa, chúng tôi đang tìm một công ty vận chuyển mới."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm ba cụm giới từ “In spite of”, “In light of”, “According to” và liên từ “Just as”. Chỗ trống đứng đầu câu, trước cụm danh từ “the closure of Verdigold Transport Services”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "the closure of Verdigold Transport Services,",
+                    "label": "cụm danh từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "we",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are looking for",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a new shipping company.",
+                    "label": "tân ngữ của look for"
+                  }
+                ],
+                "caption": "Phần trước dấu phẩy (chỗ trống + cụm danh từ) không có động từ chia; mệnh đề chính là “we are looking for a new shipping company”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trước cụm danh từ dùng giới từ hay liên từ.",
+                  "Nghĩa của các giới từ chỉ lý do và căn cứ.",
+                  "Việc công ty kia đóng cửa quan hệ thế nào với việc tìm công ty mới."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Giới từ chỉ lý do nối một nguyên nhân vào câu; vế chính là kết quả. Nguyên nhân đó là **cụm danh từ**, không phải mệnh đề có chủ ngữ và động từ riêng.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Giới từ chỉ lý do",
+                    "formula": "because of / due to / owing to / on account of / as a result of / thanks to + cụm danh từ"
+                  },
+                  {
+                    "label": "Giới từ chỉ căn cứ",
+                    "formula": "in view of / in light of + cụm danh từ"
+                  },
+                  {
+                    "label": "Liên từ chỉ lý do",
+                    "formula": "because / since / now that + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "because of, due to, owing to, on account of",
+                    "vì, do",
+                    "*The factory tour was canceled because of a staff shortage.* — Chuyến tham quan nhà máy bị hủy vì thiếu người."
+                  ],
+                  [
+                    "as a result of",
+                    "do, là kết quả của",
+                    "*The picnic was moved indoors as a result of the rain.* — Buổi dã ngoại được chuyển vào trong nhà do trời mưa."
+                  ],
+                  [
+                    "thanks to",
+                    "nhờ (nêu nguyên nhân của một kết quả tốt)",
+                    "*Thanks to the new packaging, sales rose sharply.* — Nhờ bao bì mới, doanh số tăng mạnh."
+                  ],
+                  [
+                    "in view of, in light of",
+                    "vì, xét đến (căn cứ để đưa ra quyết định)",
+                    "*In light of the poor results, the board cut the budget.* — Xét đến kết quả kém, hội đồng quản trị cắt giảm ngân sách."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Giới từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau chỗ trống chỉ có cụm danh từ, không có động từ chia, thì chọn giới từ.",
+                  "Cụm danh từ có thể kèm mệnh đề quan hệ, như *the redesigned packaging that customers found easier to open*: “found” thuộc mệnh đề quan hệ, cả cụm vẫn là cụm danh từ.",
+                  "Liên từ phải đi với mệnh đề S + V: because, since, now that, although, though, even though, while, whereas, whenever, just as, in case, so that, in order that."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nêu nguyên nhân bằng cụm danh từ; vế chính là kết quả.",
+                    "form": "Giới từ chỉ lý do + cụm danh từ",
+                    "example": "*because of a shortage of staff*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Cùng nghĩa “vì” nhưng phải đi với mệnh đề S + V, không đứng trước cụm danh từ.",
+                    "form": "Liên từ chỉ lý do (because, since, now that)",
+                    "example": "*because there was a staff shortage*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cần mệnh đề S + V, và nghĩa không chỉ lý do: nhượng bộ, đối lập, thời gian, phòng khi, mục đích.",
+                    "form": "Liên từ nghĩa khác (although, though, even though, while, whereas, whenever, just as, in case, so that, in order that)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng được trước cụm danh từ nhưng sai nghĩa: despite, in spite of là “mặc dù”; according to là “theo” (dẫn nguồn).",
+                    "form": "Giới từ nghĩa khác (despite, in spite of, according to)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + cụm danh từ",
+                    "example": "*___ a scheduling conflict, Mr. Pham asked…*; *was postponed ___ the unexpected resignation of the director*"
+                  },
+                  {
+                    "signal": "___ + cụm danh từ kèm mệnh đề quan hệ",
+                    "example": "*___ the redesigned packaging that customers found much easier to open*; *___ the disappointing results reported in the second half*"
+                  },
+                  {
+                    "signal": "cụm danh từ là nguyên nhân của vế chính",
+                    "example": "*___ the sudden power outage, the warehouse closed three hours earlier than usual*"
+                  },
+                  {
+                    "signal": "nguyên nhân của kết quả tốt",
+                    "example": "*___ the generous support of local sponsors, the training workshop remained free*"
+                  },
+                  {
+                    "signal": "căn cứ để quyết định",
+                    "example": "*The board approved a smaller budget ___ the disappointing results*; *___ the closure of Verdigold…, we are looking for a new shipping company*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn giới từ và liên từ thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống là cụm danh từ hay mệnh đề S + V, rồi xem cụm đó quan hệ thế nào với vế chính: nguyên nhân, căn cứ, hay nghĩa khác.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Trước cụm danh từ chọn giới từ, loại liên từ; trong các giới từ, chọn giới từ chỉ lý do khi cụm danh từ là nguyên nhân hoặc căn cứ của vế chính, loại giới từ nghĩa khác.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "In light of",
+                    "label": "giới từ chỉ căn cứ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "the closure of Verdigold Transport Services,",
+                    "label": "cụm danh từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "we",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are looking for",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a new shipping company.",
+                    "label": "tân ngữ của look for"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “In light of the closure…” nêu căn cứ cho việc tìm công ty vận chuyển mới."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Ba đáp án là giới từ, “Just as” là liên từ, nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Chỗ trống đứng đầu câu, trước dấu phẩy và mệnh đề chính “we are looking for…”; dấu hiệu “___ + cụm danh từ”: “------- the closure of Verdigold Transport Services”.",
+                  "Bước 3: Cần giới từ + cụm danh từ; việc đóng cửa là căn cứ để quyết định tìm công ty mới, vì vậy chọn “In light of” (vì, xét đến).",
+                  "“In spite of” (A) là giới từ nhượng bộ (mặc dù), đúng vị trí nhưng hai việc trong câu không trái nhau, nên loại.",
+                  "“Just as” (B) là liên từ (đúng lúc, cũng như), cần mệnh đề S + V, không đi với cụm danh từ, nên loại.",
+                  "“According to” (D) là giới từ dẫn nguồn (theo), đúng vị trí nhưng “the closure…” không phải nguồn thông tin, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“Since” vừa là liên từ vừa là giới từ. Làm liên từ, “since” nghĩa là “vì” và cần mệnh đề S + V; làm giới từ, “since” chỉ đi với mốc thời gian (kể từ), như *since 2020*, không chỉ lý do."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Trước cụm danh từ dùng giới từ; trước mệnh đề S + V dùng liên từ.",
+                  "Cụm danh từ là nguyên nhân của vế chính: because of, due to, owing to, thanks to…",
+                  "Cụm danh từ kèm mệnh đề quan hệ vẫn là cụm danh từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

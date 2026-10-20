@@ -1,0 +1,359 @@
+{
+  "subtopic": {
+    "id": "ec69c728-3f4d-45f8-b375-297901ca43e7",
+    "topic_id": "c051a2ff-9bf0-44af-a173-d89691d28027",
+    "title_en": "Từ hạn định với danh từ đếm được",
+    "title_vi": "Từ hạn định với danh từ đếm được",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 59,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-mao-tu-va-tu-han-dinh-tu-han-dinh-voi-danh-tu-dem-duoc"
+  },
+  "lessons": [
+    {
+      "id": "86383445-5368-4fc7-9e15-61c29aead9bc",
+      "subtopic_id": "ec69c728-3f4d-45f8-b375-297901ca43e7",
+      "title_en": "Từ hạn định với danh từ đếm được",
+      "title_vi": "Từ hạn định với danh từ đếm được",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 6 · Câu 121",
+          "options": {
+            "A": "Each",
+            "B": "All",
+            "C": "Some",
+            "D": "Most"
+          },
+          "question": "------- client is assigned to a personal financial adviser to whom inquiries should be addressed.",
+          "translation": "Mỗi khách hàng được phân cho một cố vấn tài chính riêng, và các thắc mắc nên được gửi đến cố vấn đó."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn từ hạn định đứng trước danh từ. Chỗ trống đứng đầu câu, ngay trước danh từ “client” làm chủ ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "client",
+                    "label": "chủ ngữ (danh từ)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is assigned",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to a personal financial adviser",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to whom inquiries should be addressed.",
+                    "label": "mệnh đề quan hệ"
+                  }
+                ],
+                "caption": "Chủ ngữ là “___ client”; động từ chính “is assigned”; phần sau là cụm giới từ và mệnh đề quan hệ nói về “adviser”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ “client” là số ít hay số nhiều.",
+                  "Từ hạn định nào đi với danh từ đếm được số ít, từ nào đi với số nhiều.",
+                  "Động từ chính chia số ít hay số nhiều để kiểm lại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Danh từ đếm được có dạng số ít (a client) và số nhiều (clients). Từ hạn định phải hợp với dạng đó: có từ chỉ đi với số nhiều, có từ chỉ đi với số ít.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "nhiều",
+                    "formula": "many / a number of / numerous / various + N số nhiều"
+                  },
+                  {
+                    "label": "một vài",
+                    "formula": "a few / several + N số nhiều"
+                  },
+                  {
+                    "label": "rất ít",
+                    "formula": "few / very few + N số nhiều"
+                  },
+                  {
+                    "label": "ít hơn",
+                    "formula": "fewer + N số nhiều (+ than)"
+                  },
+                  {
+                    "label": "tất cả, phần lớn",
+                    "formula": "all / most + N số nhiều"
+                  },
+                  {
+                    "label": "từng cái",
+                    "formula": "each / every + N số ít + V số ít"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "many, a number of, numerous",
+                    "nhiều, một số",
+                    "*We received many applications for the position.* — Chúng tôi nhận được nhiều hồ sơ cho vị trí này."
+                  ],
+                  [
+                    "various",
+                    "nhiều … khác nhau",
+                    "*The hotel offers various meeting rooms for rent.* — Khách sạn cho thuê nhiều loại phòng họp khác nhau."
+                  ],
+                  [
+                    "a few, several",
+                    "một vài",
+                    "*Please wait a few minutes for the manager.* — Vui lòng đợi quản lý vài phút."
+                  ],
+                  [
+                    "few, very few",
+                    "rất ít (gần như không)",
+                    "*Few customers complained about the new prices.* — Rất ít khách hàng phàn nàn về giá mới."
+                  ],
+                  [
+                    "fewer",
+                    "ít … hơn",
+                    "*We had fewer visitors this month than last month.* — Tháng này chúng tôi có ít khách hơn tháng trước."
+                  ],
+                  [
+                    "each, every",
+                    "mỗi, mọi",
+                    "*Each client receives a monthly report.* — Mỗi khách hàng nhận một bản báo cáo hằng tháng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ chính có thể đứng sau tính từ: several seasonal workers, a few small changes, fewer late deliveries.",
+                  "a number of + danh từ số nhiều đi với động từ số nhiều: *A number of customers have …*",
+                  "very, not đứng trước few, many không đổi loại danh từ: very few employees, not many vendors."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Dành cho danh từ đếm được số nhiều.",
+                    "form": "many, a number of, numerous, various, several, a few, few, fewer + danh từ số nhiều",
+                    "example": "*several branches*; *fewer complaints than …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chỉ đi với danh từ không đếm được.",
+                    "form": "much, little, a little, a great deal of, an amount of",
+                    "example": "*much time*, không nói *much awards*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "less là so sánh cho danh từ không đếm được; danh từ đếm được số nhiều dùng fewer.",
+                    "form": "less + danh từ số nhiều",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Các từ này đi với danh từ đếm được số ít (ngoại lệ: every / another + số đếm + danh từ số nhiều, như every two weeks, another three days).",
+                    "form": "each, every, another + danh từ số nhiều",
+                    "example": "*another change*, *every vendor*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "all, most đi với danh từ số nhiều hoặc không đếm được; some + danh từ số ít mang nghĩa “một … nào đó”.",
+                    "form": "all, most, some + danh từ số ít",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + danh từ số nhiều",
+                    "example": "*___ branches of Norwood Bank*; *___ seasonal workers*; *in ___ ways*; *there are ___ opportunities*"
+                  },
+                  {
+                    "signal": "___ + danh từ số ít",
+                    "example": "*___ client is assigned*"
+                  },
+                  {
+                    "signal": "động từ chính số nhiều",
+                    "example": "*___ customers have requested*; *Not ___ vendors were able*"
+                  },
+                  {
+                    "signal": "động từ chính số ít",
+                    "example": "*___ client is assigned*"
+                  },
+                  {
+                    "signal": "___ + danh từ + than",
+                    "example": "*___ complaints than it did*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các từ chỉ số lượng hoặc từ hạn định (many, few, each, much…) thì đây là câu từ hạn định.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm danh từ chính sau chỗ trống (có thể có tính từ xen giữa), xem nó số ít hay số nhiều; xem động từ chính chia số ít hay số nhiều, câu có “than” không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Danh từ số nhiều thì chọn từ đi với số nhiều, danh từ số ít thì chọn each, every; loại từ chỉ dành cho danh từ không đếm được và từ đi với dạng số còn lại.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "Each",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "S",
+                    "text": "client",
+                    "label": "chủ ngữ (danh từ số ít)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is assigned",
+                    "label": "động từ số ít"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to a personal financial adviser",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to whom inquiries should be addressed.",
+                    "label": "mệnh đề quan hệ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “Each” + danh từ số ít “client” + động từ số ít “is assigned”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án “Each”, “All”, “Some”, “Most” là từ hạn định nên đây là câu từ hạn định.",
+                  "Bước 2: Chỗ trống đứng đầu câu, trước danh từ “client”; dấu hiệu “___ + danh từ số ít”: “client” không có -s, và “động từ chính số ít”: “is assigned”.",
+                  "Bước 3: Cần each + danh từ số ít + động từ số ít, vì vậy chọn “Each” (mỗi).",
+                  "“All” (B) đi với danh từ số nhiều (all clients are), không hợp với “client” số ít, nên loại.",
+                  "“Some” (C) đi với danh từ số nhiều; với “client” số ít thì nghĩa là “một khách hàng nào đó”, không hợp câu, nên loại.",
+                  "“Most” (D) đi với danh từ số nhiều (most clients), không hợp với “client” số ít, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Trong văn viết chuẩn, danh từ đếm được số nhiều đi với fewer, không đi với less: *fewer late deliveries*, không viết *less late deliveries*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Danh từ đếm được số nhiều: many, a number of, numerous, various, several, a few, few, fewer.",
+                  "Danh từ đếm được số ít: each, every, another.",
+                  "much, little, a little, a great deal of, an amount of, less chỉ dành cho danh từ không đếm được."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

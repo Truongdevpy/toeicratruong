@@ -1,0 +1,379 @@
+{
+  "subtopic": {
+    "id": "a1d1095f-fecc-4096-bd58-c0e0578b973b",
+    "topic_id": "e17d4d8f-0799-4778-91ac-00bfb1044280",
+    "title_en": "Giới từ trước V-ing",
+    "title_vi": "Giới từ trước V-ing",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 43,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-gioi-tu-truoc-v-ing"
+  },
+  "lessons": [
+    {
+      "id": "459730e5-708b-4751-bc6b-0b8c0776f1c5",
+      "subtopic_id": "a1d1095f-fecc-4096-bd58-c0e0578b973b",
+      "title_en": "Giới từ trước V-ing",
+      "title_vi": "Giới từ trước V-ing",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 1 · Câu 106",
+          "options": {
+            "A": "so",
+            "B": "how",
+            "C": "like",
+            "D": "before"
+          },
+          "question": "It is wise to check a company's dress code ------- visiting its head office.",
+          "translation": "Nên xem trước quy định trang phục của một công ty trước khi đến thăm trụ sở chính của công ty đó."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm liên từ “so”, từ để hỏi “how”, giới từ “like” và “before”. Chỗ trống đứng sau “It is wise to check a company's dress code”, trước cụm V-ing “visiting its head office”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "It",
+                    "label": "chủ ngữ giả"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "wise",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to check a company's dress code",
+                    "label": "to V (chủ ngữ thật)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "visiting its head office.",
+                    "label": "cụm V-ing"
+                  }
+                ],
+                "caption": "“It” là chủ ngữ giả, chủ ngữ thật là “to check a company's dress code”; sau chỗ trống là cụm V-ing không có chủ ngữ riêng."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trước V-ing dùng giới từ hay liên từ.",
+                  "Nghĩa của các giới từ đi với V-ing.",
+                  "Việc xem quy định và việc đến thăm xảy ra theo thứ tự nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Sau giới từ, động từ phải ở dạng **V-ing**. Cụm V-ing có thể có tân ngữ riêng; người làm hành động V-ing được hiểu từ mệnh đề chính.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Giới từ + V-ing",
+                    "formula": "before / after / upon / by / without / instead of / despite / besides / in addition to + V-ing"
+                  },
+                  {
+                    "label": "Liên từ",
+                    "formula": "because / so that / whereas / unless + S + V"
+                  },
+                  {
+                    "label": "Chỉ mục đích",
+                    "formula": "in order to + V nguyên mẫu"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "before / after + V-ing",
+                    "trước / sau khi làm gì",
+                    "*Back up your files before installing the software.* — Hãy sao lưu tệp trước khi cài phần mềm."
+                  ],
+                  [
+                    "upon + V-ing",
+                    "khi, ngay khi làm gì",
+                    "*Upon receiving your form, we will call you.* — Khi nhận được đơn, chúng tôi sẽ gọi cho bạn."
+                  ],
+                  [
+                    "by + V-ing",
+                    "bằng cách làm gì",
+                    "*You can book a room by filling out the form.* — Bạn có thể đặt phòng bằng cách điền mẫu đơn."
+                  ],
+                  [
+                    "without + V-ing",
+                    "mà không làm gì",
+                    "*She finished the report without asking for help.* — Cô ấy làm xong báo cáo mà không nhờ ai giúp."
+                  ],
+                  [
+                    "instead of + V-ing",
+                    "thay vì làm gì",
+                    "*Many customers pay online instead of visiting a branch.* — Nhiều khách trả tiền trực tuyến thay vì đến chi nhánh."
+                  ],
+                  [
+                    "besides / in addition to + V-ing",
+                    "ngoài việc làm gì",
+                    "*Besides updating the website, he reorganized the files.* — Ngoài việc cập nhật trang web, anh ấy còn sắp xếp lại hồ sơ."
+                  ],
+                  [
+                    "despite + V-ing",
+                    "mặc dù",
+                    "*Despite having little experience, he sold very well.* — Dù ít kinh nghiệm, anh ấy bán hàng rất giỏi."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Giới từ + V-ing",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "before, after vừa là giới từ vừa là liên từ; trong bài này chúng đứng trước V-ing.",
+                  "Liên từ because, so that, whereas, unless, as soon as cần mệnh đề S + V, không đứng trước cụm V-ing không có chủ ngữ. Riêng when, while, once, whenever và whether … or đứng được trước V-ing (mệnh đề rút gọn): *while waiting for the bus*, *whether working at home or in the office*.",
+                  "“in order to” đi với V nguyên mẫu, không đi với V-ing.",
+                  "Còn hơn một giới từ đúng vị trí thì chọn theo nghĩa: *beside* là “bên cạnh” (vị trí), *besides* là “ngoài … ra”; *except* là “ngoại trừ”; *like* là “giống như”."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "V-ing sau giới từ nói một việc liên quan đến vế chính; nghĩa giới từ hợp với quan hệ giữa hai việc.",
+                    "form": "Giới từ đúng nghĩa + V-ing",
+                    "example": "*before signing the contract*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Cần mệnh đề S + V; phía sau chỉ có V-ing, không có chủ ngữ. “whether” chỉ đi với V-ing khi có vế “or”, câu trong bài tập không có.",
+                    "form": "Liên từ (because, so that, whereas, unless, whether, as soon as)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối cụm V-ing vào câu.",
+                    "form": "Trạng từ, cụm trạng từ (therefore, moreover, however, instead, in addition, besides that)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi với V nguyên mẫu (in order to sign), không đi với V-ing.",
+                    "form": "in order to",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng nghĩa không hợp với quan hệ giữa hai việc.",
+                    "form": "Giới từ sai nghĩa (beside, except, like)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“rather” phải có “than” (rather than + V-ing); “neither” đi với “nor” hoặc đứng trước danh từ; “how” cần mệnh đề hoặc to V; “so” là liên từ.",
+                    "form": "Từ không làm giới từ ở đây (rather, neither, how, so)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + V-ing",
+                    "example": "*___ installing the new accounting software*; *___ visiting its head office*"
+                  },
+                  {
+                    "signal": "thứ tự hai việc",
+                    "example": "*back up their files ___ installing…*; *turn off all the lights ___ finishing your work*"
+                  },
+                  {
+                    "signal": "việc xảy ra khi làm xong việc khác",
+                    "example": "*___ completing the safety course, each technician receives a certificate*; *___ receiving your application, our hiring team will contact you*"
+                  },
+                  {
+                    "signal": "cách thực hiện vế chính",
+                    "example": "*can reserve a meeting room ___ filling out the form*"
+                  },
+                  {
+                    "signal": "việc không xảy ra",
+                    "example": "*finished the quarterly report on time ___ asking her colleagues for help*; *No one may enter… ___ notifying the security desk*"
+                  },
+                  {
+                    "signal": "việc bị thay thế",
+                    "example": "*pay their bills online ___ visiting one of our branch offices*; *train current staff ___ hiring additional temporary workers*"
+                  },
+                  {
+                    "signal": "việc cộng thêm",
+                    "example": "*___ updating the company website, the intern also reorganized…*; *___ offering free delivery, the store now gives members a discount*"
+                  },
+                  {
+                    "signal": "vế chính trái mong đợi",
+                    "example": "*___ having little experience in sales, Mr. Oduya quickly became one of the top performers*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn giới từ, liên từ, trạng từ (có thể có in order to) thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống có phải cụm V-ing không có chủ ngữ riêng; rồi xem V-ing quan hệ thế nào với vế chính: trước, sau, cách làm, không làm, thay thế, cộng thêm, trái mong đợi.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Trước V-ing chọn giới từ đúng nghĩa; loại liên từ, trạng từ, in order to và các từ không làm giới từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "It",
+                    "label": "chủ ngữ giả"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "wise",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to check a company's dress code",
+                    "label": "to V (chủ ngữ thật)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "before",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "visiting its head office.",
+                    "label": "cụm V-ing"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “before visiting its head office” cho biết xem quy định phải làm trước."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm liên từ “so”, từ để hỏi “how”, giới từ “like” và “before” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Chỗ trống đứng sau “It is wise to check a company's dress code”; dấu hiệu “___ + V-ing”: “------- visiting its head office”, không có chủ ngữ riêng.",
+                  "Bước 3: Trước V-ing cần giới từ; xem quy định phải làm trước chuyến thăm (thứ tự hai việc), vì vậy chọn “before” (trước khi).",
+                  "“so” (A) là liên từ (nên, vì vậy), cần mệnh đề S + V, không đi với V-ing “visiting”, nên loại.",
+                  "“how” (B) là từ để hỏi, cần mệnh đề S + V hoặc to V, không đi với V-ing “visiting”, nên loại.",
+                  "“like” (C) là giới từ (giống như), đúng vị trí nhưng nghĩa “giống như việc đến thăm” không hợp, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“rather than” + V-ing cũng nghĩa “thay vì”: *train current staff rather than hiring new workers*. “rather” đứng một mình không nối được V-ing vào câu.",
+                  "“by” + V-ing chỉ cách làm; “by” + mốc thời gian chỉ hạn chót (học ở bài “Giới từ chỉ thời gian”)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau giới từ, động từ ở dạng V-ing.",
+                  "Trước V-ing không chủ ngữ, không dùng because, so that, unless hay trạng từ nối.",
+                  "in order to + V nguyên mẫu, không + V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

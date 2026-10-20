@@ -1,0 +1,368 @@
+{
+  "subtopic": {
+    "id": "f39ad598-23bc-4b8b-9190-d608c4baa9be",
+    "topic_id": "baee7534-1736-48df-a951-8d40f9d0f7a4",
+    "title_en": "Mệnh đề phân từ",
+    "title_vi": "Mệnh đề phân từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 70,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-rut-gon-menh-de-menh-de-phan-tu"
+  },
+  "lessons": [
+    {
+      "id": "6170f942-9ea5-47e6-9504-7b425fd44ec5",
+      "subtopic_id": "f39ad598-23bc-4b8b-9190-d608c4baa9be",
+      "title_en": "Mệnh đề phân từ",
+      "title_vi": "Mệnh đề phân từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 4 · Câu 129",
+          "options": {
+            "A": "displays",
+            "B": "had displayed",
+            "C": "displaying",
+            "D": "was displayed"
+          },
+          "question": "Mia Daushvili performed with the Bayhead Orchestra on Monday evening, ------- her virtuosic skills on the piccolo.",
+          "translation": "Mia Daushvili đã biểu diễn cùng Dàn nhạc Bayhead vào tối thứ Hai, thể hiện kỹ năng điêu luyện của cô trên cây sáo piccolo."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “display”. Câu đã có chủ ngữ “Mia Daushvili” và động từ chính “performed”; chỗ trống đứng sau dấu phẩy, trước cụm danh từ “her virtuosic skills”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mia Daushvili",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "performed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the Bayhead Orchestra",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Monday evening,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "her virtuosic skills",
+                    "label": "tân ngữ của chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the piccolo.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Mệnh đề chính kết thúc ở dấu phẩy; chỗ trống mở đầu phần sau dấu phẩy, không có liên từ nào nối vào."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Câu đã có động từ chính thì phần sau dấu phẩy, không có liên từ, dùng dạng động từ nào.",
+                  "Mệnh đề phân từ V-ing và Having + V3 dùng khi nào.",
+                  "Tân ngữ sau chỗ trống cho biết chủ động hay bị động."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Mệnh đề phân từ là cụm bắt đầu bằng phân từ (trong bài này là V-ing hoặc Having + V3), không có chủ ngữ riêng và không chia thì. Trong các câu của bài, nó ngăn với mệnh đề chính bằng dấu phẩy, không cần liên từ, nên cả câu vẫn chỉ có một động từ chính.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Kết quả, việc đi kèm",
+                    "formula": "S + V (chia thì) + … , + V-ing + …"
+                  },
+                  {
+                    "label": "Việc xong trước",
+                    "formula": "Having + V3 + … , + S + V (chia thì)"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The printer",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "broke down,",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "delaying",
+                    "label": "V-ing: kết quả"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the report",
+                    "label": "tân ngữ của delaying"
+                  },
+                  {
+                    "role": "X",
+                    "text": "by a day.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Động từ chính là “broke down”; cụm V-ing sau dấu phẩy nói kết quả của việc máy in hỏng."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "V-ing mang nghĩa **chủ động**: chủ ngữ của mệnh đề chính (hoặc sự việc ở mệnh đề chính) tự làm việc đó. Sau V-ing có thể có tân ngữ.",
+                  "**Having + V3** đứng đầu câu: việc này xong trước việc ở mệnh đề chính; chủ ngữ ngầm là chủ ngữ của mệnh đề chính sau dấu phẩy.",
+                  "Dạng bị động **Having been + V3** chỉ dùng khi chủ ngữ chịu hành động; phía sau có tân ngữ, hoặc động từ là nội động từ (work, result), thì không dùng bị động."
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "V-ing sau dấu phẩy: kết quả của việc ở mệnh đề chính",
+                    "*The printer broke down, delaying the report by a day.* — Máy in bị hỏng, khiến báo cáo chậm một ngày."
+                  ],
+                  [
+                    "V-ing sau dấu phẩy: việc đi kèm của cùng chủ ngữ",
+                    "*Ms. Lee left early, saying she felt unwell.* — Bà Lee về sớm, nói rằng bà thấy không khỏe."
+                  ],
+                  [
+                    "V-ing sau dấu phẩy: nói thêm về danh từ ngay trước dấu phẩy",
+                    "*The report has a table on page two, listing all suppliers.* — Báo cáo có một bảng ở trang hai, liệt kê mọi nhà cung cấp."
+                  ],
+                  [
+                    "Having + V3 đầu câu: xong việc này rồi mới đến việc ở mệnh đề chính",
+                    "*Having finished the report, Ken sent it to his manager.* — Sau khi đã làm xong báo cáo, Ken gửi nó cho quản lý."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Là mệnh đề phân từ, không chia thì, mượn chủ ngữ của mệnh đề chính; câu vẫn chỉ có một động từ chính.",
+                    "form": "V-ing sau dấu phẩy; Having + V3 đầu câu",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính. Thêm một động từ chia thì mà không có liên từ và chủ ngữ riêng thì câu có hai động từ chính.",
+                    "form": "Động từ chia thì (leaves, causes, displays, had displayed, was displayed, Have reviewed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải V-ing nên không làm mệnh đề phân từ; hiểu là động từ chia thì thì câu có hai động từ chính.",
+                    "form": "V nguyên mẫu (leave, cause, give)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là quá khứ đơn thì thành động từ chính thứ hai. Là V3 thì mang nghĩa bị động, không hợp khi chủ thể tự làm và phía sau có tân ngữ; nội động từ (result) không có bị động.",
+                    "form": "Quá khứ đơn hoặc V3 (left, caused, made, shown, resulted)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là bị động; không dùng khi phía sau có tân ngữ hoặc khi động từ là nội động từ.",
+                    "form": "Having been + V3 (Having been reviewed, Having been worked)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không mang nghĩa “sau khi đã …”. To V đứng đầu câu, trước dấu phẩy, dùng để chỉ mục đích “để …”; nghĩa này không hợp các câu trong bài.",
+                    "form": "To have + V3 (To have reviewed)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "mệnh đề chính + dấu phẩy + ___",
+                    "example": "*A software error deleted several customer records, ___ delays in the billing department*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*___ her virtuosic skills*; *___ managers to see all bookings*; *___ the contract on Friday*"
+                  },
+                  {
+                    "signal": "___ đầu câu + dấu phẩy + chủ ngữ + động từ chính",
+                    "example": "*___ all the applications twice, the hiring panel chose …*"
+                  },
+                  {
+                    "signal": "nội động từ",
+                    "example": "*___ at Caldwell Consulting for fifteen years*; *___ in higher costs*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-ing, Having + V3, V3, dạng chia thì). Có từ hai dạng chia thì là câu chia động từ; nhiều nhất một dạng chia thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính đã chia thì của mệnh đề chính. Xem chỗ trống đứng sau dấu phẩy hay ở đầu câu, có liên từ nối vào không, và sau chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau mệnh đề chính và dấu phẩy, chủ thể tự làm (có tân ngữ, hoặc là nội động từ) thì chọn V-ing; đầu câu, việc xong trước việc ở mệnh đề chính thì chọn Having + V3. Loại dạng chia thì và V nguyên mẫu; loại V3, Having been + V3 khi có tân ngữ hoặc khi là nội động từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mia Daushvili",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "performed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the Bayhead Orchestra",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Monday evening,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "displaying her virtuosic skills on the piccolo.",
+                    "label": "mệnh đề phân từ: việc đi kèm"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “displaying her virtuosic skills on the piccolo” là mệnh đề phân từ nói việc đi kèm; động từ chính vẫn là “performed”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “display”, có dạng chia thì (displays, had displayed, was displayed), nên đây là câu chia động từ.",
+                  "Bước 2: Mệnh đề chính đã có động từ chính “performed”, sau dấu phẩy không có liên từ; dấu hiệu “mệnh đề chính + dấu phẩy + ___” và “___ + tân ngữ”: “her virtuosic skills”.",
+                  "Bước 3: Phần sau dấu phẩy nói việc đi kèm, cô Daushvili tự thể hiện kỹ năng, nên dùng V-ing, vì vậy chọn “displaying” (thể hiện).",
+                  "“displays” (A) là hiện tại đơn chia thì, câu đã có động từ chính “performed” mà không có liên từ, nên loại.",
+                  "“had displayed” (B) là quá khứ hoàn thành chia thì, câu đã có động từ chính “performed” mà không có liên từ, nên loại.",
+                  "“was displayed” (D) là bị động chia thì; câu đã có “performed”, và phía sau có tân ngữ “her virtuosic skills”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Muốn dùng động từ chia thì sau dấu phẩy thì phải có liên từ, ví dụ *…, and gave the team extra time*. Không có liên từ thì dùng V-ing: *…, giving the team extra time*.",
+                  "Nội động từ (work, result) không có bị động, nên không có dạng V3 hay Having been + V3 mang nghĩa bị động."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu đã có động từ chính, sau dấu phẩy không có liên từ, chủ thể tự làm: dùng V-ing.",
+                  "Having + V3 đầu câu: việc xong trước việc ở mệnh đề chính.",
+                  "Chủ thể tự làm, có tân ngữ phía sau: không dùng V3 hay Having been + V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

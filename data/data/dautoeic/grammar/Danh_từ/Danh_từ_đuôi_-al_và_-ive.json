@@ -1,0 +1,352 @@
+{
+  "subtopic": {
+    "id": "942736cb-2333-4b5f-b4ad-0f0249873624",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ đuôi -al và -ive",
+    "title_vi": "Danh từ đuôi -al và -ive",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 3,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-duoi-al-va-ive"
+  },
+  "lessons": [
+    {
+      "id": "8a757ae0-35ef-4f02-8d6e-f721314e0bbb",
+      "subtopic_id": "942736cb-2333-4b5f-b4ad-0f0249873624",
+      "title_en": "Danh từ đuôi -al và -ive",
+      "title_vi": "Danh từ đuôi -al và -ive",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "initiative",
+            "B": "initiate",
+            "C": "initiator",
+            "D": "initiating"
+          },
+          "question": "The team presented an innovative ------- to reduce costs and save time.",
+          "translation": "Nhóm đã trình bày một sáng kiến đổi mới để giảm chi phí và tiết kiệm thời gian."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “initiate”: động từ, V-ing và hai từ có đuôi -or, -ive. Chỗ trống đứng sau mạo từ “an” và tính từ “innovative”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "presented",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "an",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "innovative",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to reduce costs and save time.",
+                    "label": "cụm chỉ mục đích"
+                  }
+                ],
+                "caption": "Cụm “an innovative -------” là tân ngữ của “presented”; phía sau là cụm to V chỉ mục đích."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau mạo từ và tính từ cần loại từ nào.",
+                  "Từ có đuôi -al, -ive nào là danh từ.",
+                  "Hai danh từ cùng gốc thì chọn theo nghĩa thế nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đuôi -al và -ive có ở nhiều tính từ (national, active), nhưng một số từ mang đuôi này lại là danh từ. Ở vị trí cần danh từ, các từ đó là đáp án.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Vị trí cần danh từ",
+                    "formula": "từ hạn định + (adj) + N"
+                  },
+                  {
+                    "label": "Danh từ đuôi -al",
+                    "formula": "động từ + -al"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "approv(e)",
+                    "label": "gốc động từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "-al",
+                    "label": "đuôi tạo danh từ"
+                  }
+                ],
+                "caption": "Tách từ “approval”: gốc là động từ “approve”, thêm đuôi -al thành danh từ “sự phê duyệt”."
+              },
+              {
+                "rows": [
+                  [
+                    "động từ + -al",
+                    "approval (approve), proposal (propose), removal (remove), renewal (renew), referral (refer), arrival (arrive), withdrawal (withdraw)",
+                    "sự phê duyệt, bản đề xuất, việc dọn bỏ, việc gia hạn, lần giới thiệu, việc đến, việc rút lui"
+                  ],
+                  [
+                    "-ive (học thuộc)",
+                    "initiative, representative, incentive",
+                    "sáng kiến, sự chủ động; người đại diện; khoản khuyến khích"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đuôi",
+                  "Danh từ trong bài tập",
+                  "Nghĩa"
+                ]
+              },
+              {
+                "text": "Đuôi -al gắn sau **động từ** tạo danh từ (approve, approval); gắn sau **danh từ** thì tạo tính từ (nation, national). Đây chỉ là cách nhận ra, không đúng cho mọi từ: *continual* là tính từ, *professional* vừa là tính từ vừa là danh từ.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Danh từ đuôi -ive trong bài tập: *a representative*, *a cash incentive* là danh từ đếm được; *initiative* đếm được khi nghĩa là “sáng kiến” (*an initiative*), không đếm được khi nghĩa là “sự chủ động”.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng sau từ hạn định, tính từ, danh từ; làm chủ ngữ, tân ngữ hoặc đứng sau giới từ.",
+                    "form": "Danh từ đuôi -al, -ive (approval, proposal, initiative, representative)",
+                    "example": "*the written approval*, *a new recycling initiative*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không đứng sau từ hạn định hay tính từ, không làm phần chính của cụm danh từ.",
+                    "form": "Động từ, V-s, quá khứ đơn (approve, renews, withdrew, incentivize)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 không làm danh từ; phía sau cũng không có danh từ để nó bổ nghĩa.",
+                    "form": "V3 (approved, renewed, withdrawn, incentivized)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing không thay cho danh từ riêng cùng nghĩa như approval (xem Lưu ý); representing, initiating cũng không chỉ người hay sáng kiến.",
+                    "form": "V-ing (approving, initiating, representing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng khác nghĩa: initiator là người khởi xướng, representation là sự đại diện.",
+                    "form": "Danh từ khác nghĩa (initiator, representation)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "a đi với danh từ đếm được số ít.",
+                    "form": "Danh từ số nhiều sau a (incentives)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "adj + ___",
+                    "example": "*an innovative ___*; *a detailed ___*; *The sudden ___*; *final ___ from…*; *each successful ___*"
+                  },
+                  {
+                    "signal": "danh từ + ___",
+                    "example": "*A customer service ___*; *a new recycling ___*; *a cash ___*"
+                  },
+                  {
+                    "signal": "the + ___ + of",
+                    "example": "*the ___ of your membership*; *The ___ of the proposal*; *the ___ of all old furniture*"
+                  },
+                  {
+                    "signal": "sở hữu + ___",
+                    "example": "*after their ___ at the hotel*; *The employee's ___*"
+                  },
+                  {
+                    "signal": "chủ ngữ làm việc của người",
+                    "example": "*The regional ___ will attend the sales conference*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ, trong đó có từ đuôi -al hoặc -ive, thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống có đứng sau từ hạn định, tính từ, danh từ, hoặc giữa “the” và “of” không; phía sau không còn danh từ thì chỗ trống cần danh từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn từ đuôi -al gắn sau động từ hoặc danh từ đuôi -ive đã học; loại động từ, V-ing, V3. Còn hai danh từ thì chọn theo số và nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "presented",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "an",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "innovative",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "initiative",
+                    "label": "danh từ đuôi -ive"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to reduce costs and save time.",
+                    "label": "cụm chỉ mục đích"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: danh từ đuôi -ive “initiative” là phần chính của tân ngữ."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “initiate” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “an innovative”, là tân ngữ của “presented”; dấu hiệu “adj + ___”: “an innovative -------”.",
+                  "Bước 3: Cần adj + N chỉ thứ được trình bày để giảm chi phí; “initiative” là danh từ đuôi -ive, vì vậy chọn “initiative” (sáng kiến).",
+                  "“initiate” (B) là động từ, không đứng sau tính từ “innovative”, nên loại.",
+                  "“initiator” (C) là danh từ chỉ người khởi xướng, không phải thứ được “presented” để giảm chi phí, nên loại.",
+                  "“initiating” (D) là V-ing, không phải thứ được trình bày sau “an innovative”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“representative” vừa là danh từ (người đại diện) vừa là tính từ (tiêu biểu); ở vị trí danh từ, như trong bài tập, nó chỉ người đại diện.",
+                  "V-ing có thể làm danh từ, nhưng khi cùng gốc đã có danh từ riêng cùng nghĩa thì dùng danh từ đó: *the approval of the proposal*, không nói *the approving of the proposal*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "approval, proposal, removal, renewal, arrival là danh từ, dạng động từ + -al.",
+                  "initiative, representative, incentive là danh từ dù có đuôi -ive."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

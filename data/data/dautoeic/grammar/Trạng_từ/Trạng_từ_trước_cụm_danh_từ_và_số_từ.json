@@ -1,0 +1,443 @@
+{
+  "subtopic": {
+    "id": "1e2fc1e5-9da6-448f-bfe0-2cdc30986fb9",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ trước cụm danh từ và số từ",
+    "title_vi": "Trạng từ trước cụm danh từ và số từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 16,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-truoc-cum-danh-tu-va-so-tu"
+  },
+  "lessons": [
+    {
+      "id": "7cb1e48d-bfb3-4d1d-8dfb-f8df823cd0b4",
+      "subtopic_id": "1e2fc1e5-9da6-448f-bfe0-2cdc30986fb9",
+      "title_en": "Trạng từ trước cụm danh từ và số từ",
+      "title_vi": "Trạng từ trước cụm danh từ và số từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2019 · Câu 8",
+          "options": {
+            "A": "parts",
+            "B": "parted",
+            "C": "partly",
+            "D": "parting"
+          },
+          "question": "Even the CEO had to admit that Prasma Designs' win was ------- the result of fortunate timing.",
+          "translation": "Ngay cả giám đốc điều hành cũng phải thừa nhận rằng chiến thắng của Prasma Designs một phần là nhờ thời điểm may mắn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “part” nhưng khác loại từ. Chỗ trống đứng sau “was” và đứng trước cả cụm danh từ “the result of fortunate timing”, tức là đứng trước cả mạo từ “the”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Even the CEO",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "had to admit",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Prasma Designs' win",
+                    "label": "chủ ngữ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was",
+                    "label": "động từ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "the",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "result",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of fortunate timing.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Sau “had to admit that” là một mệnh đề có chủ ngữ và động từ riêng; chỗ trống nằm giữa “was” và cụm danh từ bắt đầu bằng “the”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào đứng được trước cả một cụm danh từ có mạo từ, hoặc trước một con số.",
+                  "Trạng từ và tính từ khác nhau ở vị trí so với mạo từ.",
+                  "Nhận ra loại từ qua đuôi."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trạng từ không chỉ bổ nghĩa cho động từ, tính từ mà còn đứng trước số từ hoặc trước cả một cụm danh từ để ước lượng, giới hạn hay nhấn mạnh. Khi đó trạng từ đứng **trước** mạo từ, từ hạn định hoặc con số; tính từ thì đứng **sau** mạo từ, ngay trước danh từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Trước số từ (20, 75 percent, 6 p.m., half, a third)",
+                    "formula": "trạng từ + số từ + N"
+                  },
+                  {
+                    "label": "Trước cả cụm danh từ",
+                    "formula": "trạng từ + mạo từ / từ hạn định + (adj) + N"
+                  },
+                  {
+                    "label": "Trước over, less than, fewer than",
+                    "formula": "trạng từ + over / less than / fewer than + số"
+                  },
+                  {
+                    "label": "Cụm cố định với số",
+                    "formula": "at least / up to / as many as / no fewer than + số"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "(trạng từ)",
+                    "label": "trạng từ: nearly, exactly, purely"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "the / a / all / every / số từ",
+                    "label": "từ hạn định hoặc số từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "(adj)",
+                    "label": "tính từ (nếu có)"
+                  },
+                  {
+                    "role": "N",
+                    "text": "N",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Trạng từ đứng ngoài, trước cả cụm; tính từ nằm trong cụm, sau mạo từ: *purely a coincidence* nhưng *a pure coincidence*."
+              },
+              {
+                "rows": [
+                  [
+                    "ước lượng: khoảng, gần",
+                    "approximately, roughly (khoảng); nearly, almost, practically (gần, gần như)",
+                    "*Nearly half of our staff work from home.* — Gần một nửa nhân viên của chúng tôi làm việc tại nhà."
+                  ],
+                  [
+                    "chính xác, giới hạn",
+                    "exactly, precisely (đúng); just (chỉ); barely (chỉ vỏn vẹn); fully (trọn, tròn)",
+                    "*The meeting starts at precisely 9 a.m. tomorrow.* — Cuộc họp bắt đầu đúng 9 giờ sáng mai."
+                  ],
+                  [
+                    "mức hơn kém, trước over / less than / fewer than",
+                    "slightly, marginally (nhỉnh hơn một chút); well, easily (hơn hẳn, dư sức); considerably, significantly (đáng kể)",
+                    "*Sales rose to well over 5,000 units last month.* — Tháng trước doanh số tăng lên hơn hẳn 5.000 sản phẩm."
+                  ],
+                  [
+                    "nhấn mạnh, giới hạn cả cụm danh từ",
+                    "partly (một phần); largely, primarily (chủ yếu); purely (hoàn toàn chỉ); basically, essentially (về cơ bản); technically (về mặt nguyên tắc); particularly (đặc biệt); certainly, definitely, easily (chắc chắn, rõ ràng); arguably (có thể nói là)",
+                    "*This is arguably the best quarter in our history.* — Đây có thể nói là quý tốt nhất trong lịch sử công ty."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Ý nghĩa",
+                  "Trạng từ trong bài tập",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "at least + số",
+                    "ít nhất",
+                    "*Please arrive at least 15 minutes before the interview.* — Vui lòng đến trước buổi phỏng vấn ít nhất 15 phút."
+                  ],
+                  [
+                    "up to + số",
+                    "tối đa, lên tới",
+                    "*The meeting room holds up to 40 people.* — Phòng họp chứa được tối đa 40 người."
+                  ],
+                  [
+                    "as many as + số + danh từ đếm được số nhiều",
+                    "tới, nhiều đến",
+                    "*As many as 200 employees joined the training.* — Có tới 200 nhân viên tham gia khóa đào tạo."
+                  ],
+                  [
+                    "no fewer than + số + danh từ đếm được số nhiều",
+                    "không dưới",
+                    "*No fewer than 30 clients attended the product launch.* — Không dưới 30 khách hàng đã dự buổi ra mắt sản phẩm."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cụm cố định",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước số từ, trước over / less than / fewer than, hoặc trước cả cụm danh từ có mạo từ, từ hạn định.",
+                    "form": "Trạng từ (nearly, exactly, partly, purely)",
+                    "example": "*roughly 300 invoices*; *purely a scheduling error*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đứng sau mạo từ, ngay trước danh từ. Không có mạo từ đứng trước thì tính từ không bổ nghĩa cho số từ, không đứng trước the / a / all / every hay trước over, less than, fewer than.",
+                    "form": "Tính từ (bare, pure, partial, exact, significant)",
+                    "example": "*a pure coincidence*, không nói *pure a coincidence*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ nên không đứng được ở vị trí này; so sánh nhất còn cần “the” đứng trước.",
+                    "form": "So sánh hơn, so sánh nhất của tính từ (barer, fuller, nearest, easier)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho số từ hay cụm danh từ đứng sau; đặt vào chỗ trống thì thành hai danh từ đứng liền nhau không có nghĩa, như *purity a coincidence*.",
+                    "form": "Danh từ (fullness, purity, precision, particulars)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho số từ hay cụm danh từ; câu đã có động từ chính. Riêng “was parting / was easing + cụm danh từ” đúng cấu trúc tiếp diễn nhưng nghĩa không hợp câu.",
+                    "form": "Động từ, V-ing, V-ed (purify, argue, approximated, parting, easing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng loại từ nhưng sai nghĩa: mostly là “chủ yếu”, justly là “một cách công bằng”, không dùng để ước lượng hay giới hạn một con số.",
+                    "form": "Trạng từ khác nghĩa (mostly, justly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“as … as” cần dạng gốc, danh từ đếm được dùng many; “than” cần dạng so sánh hơn, danh từ đếm được dùng fewer; at least, up to, well over là cụm cố định, không thay bằng từ khác.",
+                    "form": "Sai từ trong cụm cố định (as much as, as more as, at less, upper to, no few than, good over)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + số từ",
+                    "example": "*___ 20 guests*; *processed ___ 200 online orders*; *at ___ 6 p.m.*"
+                  },
+                  {
+                    "signal": "___ + half / a third / all / every",
+                    "example": "*___ half the orders*; *___ a third of the conference seats*; *___ all of the staff*; *___ every department*"
+                  },
+                  {
+                    "signal": "___ + mạo từ + danh từ",
+                    "example": "*was ___ the result of fortunate timing*; *was ___ a coincidence*; *costs ___ the same amount*"
+                  },
+                  {
+                    "signal": "___ + the + so sánh nhất",
+                    "example": "*is ___ the busiest month*; *is ___ the most valuable contract*"
+                  },
+                  {
+                    "signal": "___ + over / less than / fewer than + số",
+                    "example": "*___ over 30 percent*; *cost ___ less than 50 cents*; *received ___ fewer than 100 returns*"
+                  },
+                  {
+                    "signal": "cụm cố định với số",
+                    "example": "*as ___ as 300 volunteers*; *at ___ 40 percent*; *___ to 25 dollars*; *no ___ than 12 participants*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại; nếu là các dạng so sánh của một từ (many, more, most; few, fewer, fewest) thì đây là câu so sánh.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống là gì: số từ, half / a third / all / every, mạo từ + danh từ, the + so sánh nhất, hay over / less than / fewer than + số. Xem thêm các từ quanh chỗ trống (as … as, at, to, no … than) để nhận ra cụm cố định.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo công thức trạng từ + số từ hoặc trạng từ + mạo từ + N, nhận ra trạng từ qua đuôi -ly; cụm cố định thì điền đúng từ của cụm. Loại tính từ, danh từ, động từ; còn hai trạng từ thì chọn theo nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Even the CEO",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "had to admit",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Prasma Designs' win",
+                    "label": "chủ ngữ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was",
+                    "label": "động từ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "partly",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "the",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "result",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of fortunate timing.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: trạng từ “partly” đứng trước cả cụm danh từ “the result of fortunate timing”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “part” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “was”, trước cả cụm danh từ “the result of fortunate timing”; dấu hiệu “___ + mạo từ + danh từ”: “------- the result”.",
+                  "Bước 3: Cần trạng từ + mạo từ + N; “partly” là trạng từ (đuôi -ly), vì vậy chọn “partly” (một phần).",
+                  "“parts” (A) là danh từ số nhiều hoặc V-s, “was parts the result” không thành câu, nên loại.",
+                  "“parted” (B) là V3, “was parted” là bị động, không nhận thêm “the result” phía sau, nên loại.",
+                  "“parting” (D) là V-ing; “was parting the result” (đang chia tách kết quả) đúng cấu trúc nhưng không hợp nghĩa câu, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Tính từ đi được với số từ khi có mạo từ “a/an” đứng trước cả cụm: *We received a full 50 applications.* — Chúng tôi nhận được trọn 50 đơn ứng tuyển. Trong bài tập, trước chỗ trống không có mạo từ nên chọn trạng từ.",
+                  "Một số trạng từ không có đuôi -ly: just, well, almost. Ngược lại, mostly, justly có đuôi -ly nhưng nghĩa khác (chủ yếu; một cách công bằng), phải chọn theo nghĩa."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu đã có động từ chính, chỗ trống trước số từ hoặc trước cả cụm the / a / all / every + N thì chọn trạng từ.",
+                  "Trạng từ đứng trước mạo từ: purely a coincidence; tính từ đứng sau: a pure coincidence.",
+                  "Cụm cố định với số: at least, up to, as many as, no fewer than, well over."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

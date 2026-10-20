@@ -1,0 +1,610 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "eb3fede5-3e7c-4f6f-b874-ff6eea477dbe",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 34: Cooking as a Career",
+    "order_index": 34,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:53.612701+00:00",
+    "updated_at": "2026-09-18T08:52:53.612701+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+    "test_id": "eb3fede5-3e7c-4f6f-b874-ff6eea477dbe",
+    "name": "Cooking as a Career",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:53.612701+00:00",
+    "updated_at": "2026-09-18T08:52:53.612701+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "8423eaee-3e97-4ec1-8dd6-9b8d9688b3fb",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "profession",
+      "ipa": "/prəˈfeʃ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Cooking is considered as much a profession as is law or medicine.",
+          "meaning": "nghề chuyên môn, nghề đòi hỏi đào tạo bài bản",
+          "toeic_tip": "profession cần đào tạo chuyên sâu, còn job và occupation thì chung chung hơn.",
+          "example_vi": "Nấu ăn cũng được coi là một nghề chuyên môn chẳng kém gì luật hay y.",
+          "word_family": [
+            "professional (adj) chuyên nghiệp",
+            "professionally (adv) một cách chuyên nghiệp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T07:06:47.915056+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8423eaee-3e97-4ec1-8dd6-9b8d9688b3fb-wm.jpg?v=1789798394790",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/profession-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/profession-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "by profession",
+          "meaning": "theo nghề nghiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8423eaee-3e97-4ec1-8dd6-9b8d9688b3fb-0-wm.jpg?v=1789801605264"
+        },
+        {
+          "phrase": "enter a profession",
+          "meaning": "vào nghề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8423eaee-3e97-4ec1-8dd6-9b8d9688b3fb-1-wm.jpg?v=1789801607777"
+        },
+        {
+          "phrase": "the medical profession",
+          "meaning": "ngành y"
+        }
+      ],
+      "synonyms": [
+        "occupation (nghề nghiệp)",
+        "career (sự nghiệp)"
+      ]
+    },
+    {
+      "id": "538ff865-8fb4-45db-b315-e8149c0c56b2",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "draw",
+      "ipa": "UK: /drɔː/ | US: /drɑː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We hope the new restaurant will draw other business to the area.",
+          "meaning": "thu hút, lôi cuốn, kéo đến",
+          "antonyms": [
+            "repel (làm cho xa lánh)"
+          ],
+          "toeic_tip": "Trong TOEIC draw thường mang nghĩa thu hút chứ không phải vẽ.",
+          "example_vi": "Chúng tôi mong quán mới sẽ kéo thêm nhiều cửa hàng khác về khu này.",
+          "word_family": [
+            "draw (n) yếu tố thu hút, điểm hút khách"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T06:40:39.721073+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/538ff865-8fb4-45db-b315-e8149c0c56b2-wm.jpg?v=1789798368683",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/draw-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/draw-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "draw a crowd",
+          "meaning": "thu hút đám đông",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/538ff865-8fb4-45db-b315-e8149c0c56b2-0-wm.jpg?v=1789800029601"
+        },
+        {
+          "phrase": "draw attention",
+          "meaning": "thu hút sự chú ý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/538ff865-8fb4-45db-b315-e8149c0c56b2-1-wm.jpg?v=1789800039588"
+        },
+        {
+          "phrase": "draw customers",
+          "meaning": "kéo khách đến"
+        }
+      ],
+      "synonyms": [
+        "attract (thu hút)",
+        "lure (lôi kéo)"
+      ]
+    },
+    {
+      "id": "c6f4c0db-2d90-4bda-9e0e-fbaf3f4ae293",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "method",
+      "ipa": "/ˈmeθ.əd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Gloria perfected a simple method for making croissants.",
+          "meaning": "phương pháp, cách thức",
+          "toeic_tip": "Dùng a method of hoặc for + V-ing khi nói cách làm việc gì.",
+          "example_vi": "Gloria đã hoàn thiện được một cách làm bánh sừng bò rất đơn giản.",
+          "word_family": [
+            "methodical (adj) có phương pháp, bài bản",
+            "methodically (adv) một cách bài bản"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T07:37:47.561559+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c6f4c0db-2d90-4bda-9e0e-fbaf3f4ae293-wm.jpg?v=1789798359508",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/method-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/method-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a method of payment",
+          "meaning": "phương thức thanh toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c6f4c0db-2d90-4bda-9e0e-fbaf3f4ae293-0-wm.jpg?v=1789803464758"
+        },
+        {
+          "phrase": "cooking methods",
+          "meaning": "cách nấu nướng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c6f4c0db-2d90-4bda-9e0e-fbaf3f4ae293-1-wm.jpg?v=1789803467421"
+        },
+        {
+          "phrase": "an effective method",
+          "meaning": "phương pháp hiệu quả"
+        }
+      ],
+      "synonyms": [
+        "procedure (quy trình)",
+        "technique (kỹ thuật)"
+      ]
+    },
+    {
+      "id": "42932a2e-b21b-44b6-9aa4-0b73989b8b7c",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "accustom to",
+      "ipa": "/əˈkʌs.təm tuː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Chefs must accustom themselves to working long hours.",
+          "meaning": "làm quen với, tập quen với",
+          "toeic_tip": "Sau to là danh từ hoặc V-ing, không phải động từ nguyên mẫu.",
+          "example_vi": "Đầu bếp phải tập quen với chuyện làm việc nhiều giờ liền.",
+          "word_family": [
+            "accustomed (adj) đã quen, quen thuộc"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T06:29:47.2541+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/42932a2e-b21b-44b6-9aa4-0b73989b8b7c-wm.jpg?v=1789798130821",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accustom-to-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accustom-to-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accustom oneself to",
+          "meaning": "tự tập quen với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/42932a2e-b21b-44b6-9aa4-0b73989b8b7c-0-wm.jpg?v=1789799385927"
+        },
+        {
+          "phrase": "be accustomed to",
+          "meaning": "đã quen với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/42932a2e-b21b-44b6-9aa4-0b73989b8b7c-1-wm.jpg?v=1789799387106"
+        },
+        {
+          "phrase": "accustom to a routine",
+          "meaning": "quen với nếp làm việc"
+        }
+      ],
+      "synonyms": [
+        "get used to (quen dần với)",
+        "adapt to (thích nghi với)"
+      ]
+    },
+    {
+      "id": "65737946-ecbb-4553-ae20-a30aa3eaedd9",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "demand",
+      "ipa": "UK: /dɪˈmɑːnd/ | US: /dɪˈmænd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Theodore was always exhausted because his new job at the restaurant demanded so much of him.",
+          "meaning": "đòi hỏi, yêu cầu",
+          "toeic_tip": "demand that S + V nguyên mẫu dạng giả định, không thêm to.",
+          "example_vi": "Theodore lúc nào cũng rã rời vì công việc mới ở nhà hàng vắt kiệt sức anh.",
+          "word_family": [
+            "demanding (adj) đòi hỏi cao, vất vả",
+            "demand (n) nhu cầu, yêu cầu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T06:47:34.486637+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/65737946-ecbb-4553-ae20-a30aa3eaedd9-wm.jpg?v=1789798428498",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/demand-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/demand-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "demand attention",
+          "meaning": "đòi hỏi sự chú ý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/65737946-ecbb-4553-ae20-a30aa3eaedd9-0-wm.jpg?v=1789800435906"
+        },
+        {
+          "phrase": "demand payment",
+          "meaning": "yêu cầu thanh toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/65737946-ecbb-4553-ae20-a30aa3eaedd9-1-wm.jpg?v=1789800454314"
+        },
+        {
+          "phrase": "demand an explanation",
+          "meaning": "yêu cầu giải thích"
+        }
+      ],
+      "synonyms": [
+        "require (đòi hỏi)",
+        "call for (cần đến)"
+      ]
+    },
+    {
+      "id": "9e5d48cc-4bee-425a-8a99-326d0f437a4f",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "apprentice",
+      "ipa": "UK: /əˈpren.tɪs/ | US: /əˈpren.t̬ɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Instead of attending cooking school, Raul chose to work as an apprentice with an experienced chef.",
+          "meaning": "người học việc, thợ tập sự",
+          "antonyms": [
+            "master (thợ cả, bậc thầy)"
+          ],
+          "toeic_tip": "apprentice là người, còn apprenticeship là quá trình học việc.",
+          "example_vi": "Thay vì vào trường dạy nấu ăn, Raul chọn theo học việc với một đầu bếp lâu năm.",
+          "word_family": [
+            "apprenticeship (n) thời gian học việc"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T07:18:12.703218+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9e5d48cc-4bee-425a-8a99-326d0f437a4f-wm.jpg?v=1789798122241",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/apprentice-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/apprentice-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "work as an apprentice",
+          "meaning": "làm học việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9e5d48cc-4bee-425a-8a99-326d0f437a4f-0-wm.jpg?v=1789802275407"
+        },
+        {
+          "phrase": "an apprentice program",
+          "meaning": "chương trình học việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9e5d48cc-4bee-425a-8a99-326d0f437a4f-1-wm.jpg?v=1789802292561"
+        },
+        {
+          "phrase": "a chef's apprentice",
+          "meaning": "phụ bếp học việc"
+        }
+      ],
+      "synonyms": [
+        "trainee (người được đào tạo)",
+        "intern (thực tập sinh)"
+      ]
+    },
+    {
+      "id": "bb2cb14d-deca-4124-9142-2b5d2ae8157a",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "culinary",
+      "ipa": "UK: /ˈkʌl.ɪ.nər.i/ | US: /ˈkʌl.ə.ner.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The chef was widely known for his culinary artistry.",
+          "meaning": "thuộc về nấu ăn, thuộc về ẩm thực",
+          "toeic_tip": "Chỉ đứng trước danh từ; cụm hay gặp nhất là culinary arts.",
+          "example_vi": "Vị bếp trưởng nổi tiếng khắp nơi nhờ tài nấu nướng điêu luyện.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T07:32:37.86486+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bb2cb14d-deca-4124-9142-2b5d2ae8157a-wm.jpg?v=1789798126359",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/culinary-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/culinary-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "culinary arts",
+          "meaning": "nghệ thuật ẩm thực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb2cb14d-deca-4124-9142-2b5d2ae8157a-0-wm.jpg?v=1789803148889"
+        },
+        {
+          "phrase": "a culinary school",
+          "meaning": "trường dạy nấu ăn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb2cb14d-deca-4124-9142-2b5d2ae8157a-1-wm.jpg?v=1789803157731"
+        },
+        {
+          "phrase": "culinary skills",
+          "meaning": "kỹ năng nấu nướng"
+        }
+      ],
+      "synonyms": [
+        "gastronomic (thuộc ẩm thực)",
+        "cooking-related (liên quan đến nấu ăn)"
+      ]
+    },
+    {
+      "id": "1a39b9d1-9063-452b-aae0-f1cfd6e9146c",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "relinquish",
+      "ipa": "/rɪˈlɪŋ.kwɪʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "People find it hard to relinquish their accustomed food preferences and try something new.",
+          "meaning": "từ bỏ, buông bỏ, nhượng lại",
+          "antonyms": [
+            "retain (giữ lại)",
+            "keep (giữ)"
+          ],
+          "toeic_tip": "Là ngoại động từ, có tân ngữ ngay sau và không kèm giới từ.",
+          "example_vi": "Người ta khó mà bỏ được khẩu vị quen thuộc để thử món gì mới.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T06:19:19.212728+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1a39b9d1-9063-452b-aae0-f1cfd6e9146c-wm.jpg?v=1789798257917",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/relinquish-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/relinquish-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "relinquish control",
+          "meaning": "nhường quyền kiểm soát",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1a39b9d1-9063-452b-aae0-f1cfd6e9146c-0-wm.jpg?v=1789798758352"
+        },
+        {
+          "phrase": "relinquish a position",
+          "meaning": "từ bỏ vị trí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1a39b9d1-9063-452b-aae0-f1cfd6e9146c-1-wm.jpg?v=1789798759073"
+        },
+        {
+          "phrase": "relinquish rights",
+          "meaning": "từ bỏ quyền lợi"
+        }
+      ],
+      "synonyms": [
+        "surrender (giao nộp, nhượng lại)",
+        "give up (từ bỏ)"
+      ]
+    },
+    {
+      "id": "35fec3d0-5122-4e79-8d29-00c9d4bbb3fb",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "theme",
+      "ipa": "/θiːm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The caterers prepared food for a party with a tropical island theme.",
+          "meaning": "chủ đề, mô-típ, ý tưởng xuyên suốt",
+          "toeic_tip": "Phát âm là /θiːm/ một âm tiết, đừng nhầm với đại từ them.",
+          "example_vi": "Bên lo tiệc chuẩn bị đồ ăn cho bữa tiệc theo chủ đề đảo nhiệt đới.",
+          "word_family": [
+            "thematic (adj) thuộc về chủ đề"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T06:08:40.113471+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/35fec3d0-5122-4e79-8d29-00c9d4bbb3fb-wm.jpg?v=1789798120045",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/theme-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/theme-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a party theme",
+          "meaning": "chủ đề bữa tiệc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/35fec3d0-5122-4e79-8d29-00c9d4bbb3fb-0-wm.jpg?v=1789797595095"
+        },
+        {
+          "phrase": "a recurring theme",
+          "meaning": "mô-típ lặp lại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/35fec3d0-5122-4e79-8d29-00c9d4bbb3fb-1-wm.jpg?v=1789797611018"
+        },
+        {
+          "phrase": "a theme park",
+          "meaning": "công viên chủ đề"
+        }
+      ],
+      "synonyms": [
+        "topic (chủ đề)",
+        "motif (mô-típ)"
+      ]
+    },
+    {
+      "id": "7d7d48fa-2d2b-40dd-a7cd-d36396003177",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "outlet",
+      "ipa": "/ˈaʊt.let/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Even before he became a professional baker, Jacob used baking as an outlet for frustration.",
+          "meaning": "cách giải tỏa, lối thoát cho cảm xúc; cửa hàng phân phối",
+          "toeic_tip": "Nghĩa hay bị bỏ qua: outlet còn là cửa hàng bán lẻ và ổ cắm điện.",
+          "example_vi": "Ngay từ trước khi thành thợ bánh chuyên nghiệp, Jacob đã lấy việc làm bánh để xả bớt căng thẳng.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T07:00:16.564957+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7d7d48fa-2d2b-40dd-a7cd-d36396003177-wm.jpg?v=1789798121704",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/outlet-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/outlet-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an outlet for frustration",
+          "meaning": "cách xả bực bội",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7d7d48fa-2d2b-40dd-a7cd-d36396003177-0-wm.jpg?v=1789801216418"
+        },
+        {
+          "phrase": "a creative outlet",
+          "meaning": "nơi thể hiện sáng tạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7d7d48fa-2d2b-40dd-a7cd-d36396003177-1-wm.jpg?v=1789801215657"
+        },
+        {
+          "phrase": "a retail outlet",
+          "meaning": "cửa hàng bán lẻ"
+        }
+      ],
+      "synonyms": [
+        "release (sự giải tỏa)",
+        "channel (kênh thể hiện)"
+      ]
+    },
+    {
+      "id": "429d88f0-9947-4090-9314-8630c630f484",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "influx",
+      "ipa": "/ˈɪn.flʌks/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "An influx of new chefs is constantly needed to fill open jobs.",
+          "meaning": "sự đổ vào, luồng đổ về, sự tràn vào",
+          "antonyms": [
+            "outflow (dòng chảy ra)",
+            "exodus (sự rời đi hàng loạt)"
+          ],
+          "toeic_tip": "Luôn đi với of: an influx of + danh từ số nhiều hoặc không đếm được.",
+          "example_vi": "Ngành này lúc nào cũng cần một lượng đầu bếp mới đổ về để lấp chỗ trống.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T06:31:27.490322+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/429d88f0-9947-4090-9314-8630c630f484-wm.jpg?v=1789798116487",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/influx-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/influx-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an influx of applications",
+          "meaning": "lượng hồ sơ đổ về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/429d88f0-9947-4090-9314-8630c630f484-0-wm.jpg?v=1789799486817"
+        },
+        {
+          "phrase": "an influx of tourists",
+          "meaning": "dòng khách du lịch đổ tới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/429d88f0-9947-4090-9314-8630c630f484-1-wm.jpg?v=1789799487354"
+        },
+        {
+          "phrase": "a sudden influx",
+          "meaning": "đợt tràn vào đột ngột"
+        }
+      ],
+      "synonyms": [
+        "inflow (dòng chảy vào)",
+        "arrival (sự đổ đến)"
+      ]
+    },
+    {
+      "id": "fda4ba5e-c596-4464-952b-06f5d53a774d",
+      "part_id": "4b82f55a-3a9f-400e-a206-c6ca68c163f7",
+      "word": "incorporate",
+      "ipa": "UK: /ɪnˈkɔː.pər.eɪt/ | US: /ɪnˈkɔːr.pɚ.eɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Coca incorporated the patron's suggestions into her new menu.",
+          "meaning": "kết hợp vào, đưa vào, hợp nhất",
+          "antonyms": [
+            "exclude (loại ra)",
+            "omit (bỏ sót)"
+          ],
+          "toeic_tip": "Cấu trúc cố định: incorporate A into B, không dùng giới từ khác.",
+          "example_vi": "Coca đưa những góp ý của khách vào thực đơn mới của mình.",
+          "word_family": [
+            "incorporation (n) sự hợp nhất, sự đưa vào"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:53.612701+00:00",
+      "updated_at": "2026-09-19T08:06:29.382726+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fda4ba5e-c596-4464-952b-06f5d53a774d-wm.jpg?v=1789798386322",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/incorporate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/incorporate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "incorporate suggestions",
+          "meaning": "tiếp thu góp ý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fda4ba5e-c596-4464-952b-06f5d53a774d-0-wm.jpg?v=1789805189238"
+        },
+        {
+          "phrase": "incorporate feedback",
+          "meaning": "đưa phản hồi vào",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fda4ba5e-c596-4464-952b-06f5d53a774d-1-wm.jpg?v=1789805160810"
+        },
+        {
+          "phrase": "incorporate A into B",
+          "meaning": "đưa A vào B"
+        }
+      ],
+      "synonyms": [
+        "include (đưa vào)",
+        "integrate (tích hợp)"
+      ]
+    }
+  ]
+}

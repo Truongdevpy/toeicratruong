@@ -1,0 +1,638 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "3349a0c1-de48-4623-a5f7-f8515975254b",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 28: Quality Control",
+    "order_index": 28,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:20.395018+00:00",
+    "updated_at": "2026-09-18T08:52:20.395018+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+    "test_id": "3349a0c1-de48-4623-a5f7-f8515975254b",
+    "name": "Quality Control",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:20.395018+00:00",
+    "updated_at": "2026-09-18T08:52:20.395018+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "bdfb1f89-b257-4e38-82bd-a17b3ba36063",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "garment",
+      "ipa": "UK: /ˈɡɑː.mənt/ | US: /ˈɡɑːr.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Every garment must be carefully inspected for defects before it is shipped.",
+          "meaning": "món đồ may mặc, quần áo",
+          "toeic_tip": "garment đếm được, còn clothing và apparel thì không đếm được.",
+          "example_vi": "Mọi món đồ may đều phải được soi lỗi kỹ trước khi xuất hàng.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T07:34:20.015881+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bdfb1f89-b257-4e38-82bd-a17b3ba36063-wm.jpg?v=1789798070749",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/garment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/garment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the garment industry",
+          "meaning": "ngành may mặc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bdfb1f89-b257-4e38-82bd-a17b3ba36063-0-wm.jpg?v=1789803258930"
+        },
+        {
+          "phrase": "garment workers",
+          "meaning": "công nhân may",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bdfb1f89-b257-4e38-82bd-a17b3ba36063-1-wm.jpg?v=1789803259868"
+        },
+        {
+          "phrase": "inspect a garment",
+          "meaning": "kiểm tra sản phẩm may"
+        }
+      ],
+      "synonyms": [
+        "clothing (quần áo)",
+        "apparel (trang phục)",
+        "attire (y phục)"
+      ]
+    },
+    {
+      "id": "4e4b69f0-a75b-460f-a706-ed8fe4db18be",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "enhance",
+      "ipa": "UK: /ɪnˈhɑːns/ | US: /ɪnˈhæns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The reason behind quality control is to enhance the company's reputation for superior products.",
+          "meaning": "nâng cao, làm tăng giá trị",
+          "antonyms": [
+            "diminish (làm giảm)",
+            "undermine (làm suy yếu)"
+          ],
+          "toeic_tip": "enhance đi với danh từ trừu tượng: reputation, value, image.",
+          "example_vi": "Kiểm định chất lượng suy cho cùng là để giữ tiếng cho công ty về sản phẩm vượt trội.",
+          "word_family": [
+            "enhancement (n) sự nâng cao, cải tiến"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:36:52.32573+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4e4b69f0-a75b-460f-a706-ed8fe4db18be-wm.jpg?v=1789798328877",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/enhance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/enhance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "enhance the reputation",
+          "meaning": "nâng cao uy tín",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4e4b69f0-a75b-460f-a706-ed8fe4db18be-0-wm.jpg?v=1789799796908"
+        },
+        {
+          "phrase": "enhance the appeal",
+          "meaning": "làm tăng sức hấp dẫn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4e4b69f0-a75b-460f-a706-ed8fe4db18be-1-wm.jpg?v=1789799812178"
+        },
+        {
+          "phrase": "enhance productivity",
+          "meaning": "nâng cao năng suất"
+        }
+      ],
+      "synonyms": [
+        "improve (cải thiện)",
+        "boost (thúc đẩy)",
+        "heighten (làm tăng)"
+      ]
+    },
+    {
+      "id": "2f1fa387-5018-4917-bead-89dc2bd9668b",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "brand",
+      "ipa": "/brænd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Consumers often buy highly advertised brands of athletic shoes.",
+          "meaning": "nhãn hiệu, thương hiệu",
+          "toeic_tip": "Phân biệt brand (nhãn hiệu) với brand-new (hoàn toàn mới).",
+          "example_vi": "Người tiêu dùng thường mua những hãng giày thể thao được quảng cáo rầm rộ.",
+          "word_family": [
+            "brand (v) gắn nhãn hiệu",
+            "branding (n) việc xây dựng thương hiệu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:23:32.298815+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2f1fa387-5018-4917-bead-89dc2bd9668b-wm.jpg?v=1789798578115",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/brand-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/brand-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a brand name",
+          "meaning": "tên thương hiệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f1fa387-5018-4917-bead-89dc2bd9668b-0-wm.jpg?v=1789799011872"
+        },
+        {
+          "phrase": "brand loyalty",
+          "meaning": "sự trung thành với thương hiệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f1fa387-5018-4917-bead-89dc2bd9668b-1-wm.jpg?v=1789799012160"
+        },
+        {
+          "phrase": "a leading brand",
+          "meaning": "thương hiệu dẫn đầu"
+        }
+      ],
+      "synonyms": [
+        "trademark (nhãn hiệu)",
+        "label (nhãn)",
+        "make (hiệu, hãng)"
+      ]
+    },
+    {
+      "id": "3aa2ad20-f2fd-4e61-896f-34c7eb702036",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "throw out",
+      "ipa": "UK: /ˌθrəʊ ˈaʊt/ | US: /ˌθroʊ ˈaʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is cheaper to throw out shoddy products than to lose customers.",
+          "meaning": "vứt bỏ, loại bỏ",
+          "antonyms": [
+            "keep (giữ lại)",
+            "retain (giữ lại)"
+          ],
+          "toeic_tip": "Tách được: throw it out; nghĩa khác là bác bỏ một đề xuất.",
+          "example_vi": "Bỏ đi hàng kém chất lượng vẫn rẻ hơn là để mất khách.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:07:29.885111+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3aa2ad20-f2fd-4e61-896f-34c7eb702036-wm.jpg?v=1789798049818",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/throw-out-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/throw-out-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "throw out defective products",
+          "meaning": "loại bỏ hàng lỗi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3aa2ad20-f2fd-4e61-896f-34c7eb702036-0-wm.jpg?v=1789797846481"
+        },
+        {
+          "phrase": "throw out the trash",
+          "meaning": "đổ rác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3aa2ad20-f2fd-4e61-896f-34c7eb702036-1-wm.jpg?v=1789797846832"
+        },
+        {
+          "phrase": "throw out a proposal",
+          "meaning": "bác bỏ đề xuất"
+        }
+      ],
+      "synonyms": [
+        "discard (vứt bỏ)",
+        "dispose of (thải bỏ)",
+        "get rid of (loại bỏ)"
+      ]
+    },
+    {
+      "id": "5fb64f65-df20-4f27-a1d5-ce8cb2a954df",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "repel",
+      "ipa": "/rɪˈpel/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Umbrellas that do not repel water should never be passed through quality control.",
+          "meaning": "đẩy lùi, ngăn không cho lại gần, làm quay lưng",
+          "antonyms": [
+            "attract (thu hút)"
+          ],
+          "toeic_tip": "Gấp đôi phụ âm khi chia: repelled, repelling; trái nghĩa là attract.",
+          "example_vi": "Ô mà không cản được nước thì tuyệt đối không được cho qua khâu kiểm định.",
+          "word_family": [
+            "repellent (n/adj) chất xua đuổi",
+            "gây khó chịu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:43:11.753483+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5fb64f65-df20-4f27-a1d5-ce8cb2a954df-wm.jpg?v=1789798065914",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/repel-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/repel-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "repel water",
+          "meaning": "chống thấm nước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5fb64f65-df20-4f27-a1d5-ce8cb2a954df-0-wm.jpg?v=1789800176974"
+        },
+        {
+          "phrase": "repel insects",
+          "meaning": "xua côn trùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5fb64f65-df20-4f27-a1d5-ce8cb2a954df-1-wm.jpg?v=1789800191592"
+        },
+        {
+          "phrase": "repel customers",
+          "meaning": "làm khách hàng quay lưng"
+        }
+      ],
+      "synonyms": [
+        "keep away (giữ cho tránh xa)",
+        "drive off (đẩy lùi)",
+        "resist (chống lại)"
+      ]
+    },
+    {
+      "id": "f2e938ae-0e18-4f04-b0d1-59f4d61e70e6",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "take back",
+      "ipa": "/ˌteɪk ˈbæk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Good quality control significantly limits the number of products taken back for a refund.",
+          "meaning": "nhận lại hàng, thu hồi, rút lại lời",
+          "antonyms": [
+            "keep (giữ lại)"
+          ],
+          "toeic_tip": "Tách được tân ngữ: take it back; nghĩa thứ hai là rút lại lời đã nói.",
+          "example_vi": "Kiểm định chất lượng tốt sẽ giảm hẳn số hàng bị trả lại để hoàn tiền.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T08:02:51.476945+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f2e938ae-0e18-4f04-b0d1-59f4d61e70e6-wm.jpg?v=1789798082269",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/take-back-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/take-back-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take back a product",
+          "meaning": "nhận lại sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f2e938ae-0e18-4f04-b0d1-59f4d61e70e6-0-wm.jpg?v=1789804970467"
+        },
+        {
+          "phrase": "take back for a refund",
+          "meaning": "nhận lại để hoàn tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f2e938ae-0e18-4f04-b0d1-59f4d61e70e6-1-wm.jpg?v=1789804971343"
+        },
+        {
+          "phrase": "take back a statement",
+          "meaning": "rút lại phát biểu"
+        }
+      ],
+      "synonyms": [
+        "return (trả lại)",
+        "retract (rút lại)",
+        "withdraw (thu hồi)"
+      ]
+    },
+    {
+      "id": "124bb265-f26c-4060-9d8d-703397bba158",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "inspect",
+      "ipa": "/ɪnˈspekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A quality control agent who does not inspect every product carefully can ruin his company's reputation.",
+          "meaning": "kiểm tra, xem xét kỹ",
+          "antonyms": [
+            "overlook (bỏ sót)",
+            "ignore (phớt lờ)"
+          ],
+          "toeic_tip": "inspect + tân ngữ trực tiếp, không có to; inspect something for defects.",
+          "example_vi": "Một nhân viên kiểm định mà không soi kỹ từng sản phẩm thì có thể làm hỏng danh tiếng cả công ty.",
+          "word_family": [
+            "inspection (n) sự kiểm tra",
+            "inspector (n) thanh tra viên"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:17:04.093219+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/124bb265-f26c-4060-9d8d-703397bba158-wm.jpg?v=1789797708220",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/inspect-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/inspect-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "inspect the products",
+          "meaning": "kiểm tra sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/124bb265-f26c-4060-9d8d-703397bba158-0-wm.jpg?v=1789798623144"
+        },
+        {
+          "phrase": "thoroughly inspect",
+          "meaning": "kiểm tra kỹ lưỡng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/124bb265-f26c-4060-9d8d-703397bba158-1-wm.jpg?v=1789798623952"
+        },
+        {
+          "phrase": "inspect something for defects",
+          "meaning": "soi lỗi của thứ gì"
+        }
+      ],
+      "synonyms": [
+        "examine (kiểm tra)",
+        "check (rà soát)",
+        "scrutinize (soi xét)"
+      ]
+    },
+    {
+      "id": "64909d4c-4e9c-4d0e-98c6-c67f2b19be50",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "perceptive",
+      "ipa": "UK: /pəˈsep.tɪv/ | US: /pɚˈsep.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Dora always hires good workers because she is very perceptive about people's abilities.",
+          "meaning": "tinh ý, nhạy bén, sắc sảo",
+          "antonyms": [
+            "oblivious (không để ý gì)"
+          ],
+          "toeic_tip": "Phân biệt perceptive (tinh ý) và perceptible (có thể nhận thấy được).",
+          "example_vi": "Dora luôn tuyển được người giỏi vì cô rất tinh ý trong việc nhìn ra năng lực của người khác.",
+          "word_family": [
+            "perceive (v) nhận thấy",
+            "perception (n) sự nhận thức"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:48:19.308064+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/64909d4c-4e9c-4d0e-98c6-c67f2b19be50-wm.jpg?v=1789798072349",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/perceptive-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/perceptive-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a perceptive manager",
+          "meaning": "người quản lý tinh tường",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/64909d4c-4e9c-4d0e-98c6-c67f2b19be50-0-wm.jpg?v=1789800487801"
+        },
+        {
+          "phrase": "perceptive about people",
+          "meaning": "tinh ý về con người",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/64909d4c-4e9c-4d0e-98c6-c67f2b19be50-1-wm.jpg?v=1789800499174"
+        },
+        {
+          "phrase": "a perceptive comment",
+          "meaning": "nhận xét sắc sảo"
+        }
+      ],
+      "synonyms": [
+        "insightful (sâu sắc)",
+        "observant (tinh ý)",
+        "astute (nhạy bén)"
+      ]
+    },
+    {
+      "id": "6a2d82fc-188d-4029-ae00-4d354061fb27",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "wrinkle",
+      "ipa": "/ˈrɪŋ.kəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A wrinkle that is ironed into a permanent-press product will annoy the consumer each time the garment is worn.",
+          "meaning": "nếp nhăn, vết nhàu",
+          "toeic_tip": "Nhớ wrinkle-free và iron out the wrinkles (xử lý các trục trặc nhỏ).",
+          "example_vi": "Một nếp nhăn bị là chết vào loại vải chống nhàu sẽ khiến người mặc khó chịu mỗi lần dùng tới.",
+          "word_family": [
+            "wrinkle (v) làm nhăn, bị nhăn",
+            "wrinkled (adj) nhăn nhúm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:50:19.979841+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6a2d82fc-188d-4029-ae00-4d354061fb27-wm.jpg?v=1789798075656",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/wrinkle-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/wrinkle-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a wrinkle in the fabric",
+          "meaning": "nếp nhăn trên vải",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6a2d82fc-188d-4029-ae00-4d354061fb27-0-wm.jpg?v=1789800619843"
+        },
+        {
+          "phrase": "iron out the wrinkles",
+          "meaning": "là phẳng nếp nhăn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6a2d82fc-188d-4029-ae00-4d354061fb27-1-wm.jpg?v=1789800619150"
+        },
+        {
+          "phrase": "wrinkle-free fabric",
+          "meaning": "vải chống nhăn"
+        }
+      ],
+      "synonyms": [
+        "crease (nếp gấp)",
+        "fold (nếp gập)",
+        "furrow (rãnh, vết hằn)"
+      ]
+    },
+    {
+      "id": "71f5971c-b693-4541-8fcc-208259bc7bfc",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "defect",
+      "ipa": "/ˈdiː.fekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Because of a defect in stitching, the entire suit was thrown out.",
+          "meaning": "lỗi, khiếm khuyết, chỗ hỏng",
+          "toeic_tip": "Tính từ defective hay ra ở Part 7 chủ đề đổi trả hàng.",
+          "example_vi": "Chỉ vì lỗi đường may mà cả bộ vest bị loại bỏ.",
+          "word_family": [
+            "defective (adj) bị lỗi, hỏng hóc"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:55:00.039263+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/71f5971c-b693-4541-8fcc-208259bc7bfc-wm.jpg?v=1789798075091",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/defect-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/defect-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a defect in stitching",
+          "meaning": "lỗi đường may",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/71f5971c-b693-4541-8fcc-208259bc7bfc-0-wm.jpg?v=1789800885466"
+        },
+        {
+          "phrase": "a manufacturing defect",
+          "meaning": "lỗi sản xuất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/71f5971c-b693-4541-8fcc-208259bc7bfc-1-wm.jpg?v=1789800899886"
+        },
+        {
+          "phrase": "free of defects",
+          "meaning": "không có lỗi"
+        }
+      ],
+      "synonyms": [
+        "flaw (khiếm khuyết)",
+        "imperfection (chỗ chưa hoàn hảo)",
+        "fault (lỗi)"
+      ]
+    },
+    {
+      "id": "b3eb1a2e-8f38-4518-8e79-73028cb07d0c",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "conform",
+      "ipa": "UK: /kənˈfɔːm/ | US: /kənˈfɔːrm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The quality control manager insisted that every product that left the plant conform to the company's rigorous standards.",
+          "meaning": "tuân theo, phù hợp với tiêu chuẩn",
+          "antonyms": [
+            "violate (vi phạm)",
+            "deviate from (đi chệch khỏi)"
+          ],
+          "toeic_tip": "conform to/with + N; đừng nhầm với confirm (xác nhận).",
+          "example_vi": "Trưởng bộ phận kiểm định yêu cầu mọi sản phẩm xuất xưởng đều phải đạt chuẩn khắt khe của công ty.",
+          "word_family": [
+            "conformity (n) sự tuân thủ, sự phù hợp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T07:29:37.413834+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b3eb1a2e-8f38-4518-8e79-73028cb07d0c-wm.jpg?v=1789798299976",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/conform-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/conform-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "conform to standards",
+          "meaning": "đạt tiêu chuẩn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b3eb1a2e-8f38-4518-8e79-73028cb07d0c-0-wm.jpg?v=1789802960286"
+        },
+        {
+          "phrase": "conform to regulations",
+          "meaning": "tuân thủ quy định",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b3eb1a2e-8f38-4518-8e79-73028cb07d0c-1-wm.jpg?v=1789802977224"
+        },
+        {
+          "phrase": "conform with specifications",
+          "meaning": "đúng với thông số"
+        }
+      ],
+      "synonyms": [
+        "comply with (tuân thủ)",
+        "adhere to (tuân theo)",
+        "meet (đáp ứng)"
+      ]
+    },
+    {
+      "id": "0b2a5961-3ec4-4e0d-8e6b-5925f894f4d1",
+      "part_id": "2a587c99-6e99-4336-9b75-ddf16c006619",
+      "word": "uniformly",
+      "ipa": "UK: /ˈjuː.nɪ.fɔːm.li/ | US: /ˈjuː.nə.fɔːrm.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The products are checked to make sure they are uniformly packaged before they leave the factory.",
+          "meaning": "một cách đồng đều, một cách nhất quán",
+          "antonyms": [
+            "inconsistently (thiếu nhất quán)",
+            "unevenly (không đều)"
+          ],
+          "toeic_tip": "uniform còn là danh từ đồng phục, phải đọc ngữ cảnh ở Part 5.",
+          "example_vi": "Sản phẩm được kiểm tra để bảo đảm đóng gói đồng đều trước khi rời nhà máy.",
+          "word_family": [
+            "uniform (adj) đồng nhất",
+            "uniformity (n) tính đồng nhất"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:20.395018+00:00",
+      "updated_at": "2026-09-19T06:21:20.253923+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0b2a5961-3ec4-4e0d-8e6b-5925f894f4d1-wm.jpg?v=1789798521282",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/uniformly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/uniformly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "uniformly packaged",
+          "meaning": "đóng gói đồng đều",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0b2a5961-3ec4-4e0d-8e6b-5925f894f4d1-0-wm.jpg?v=1789798880101"
+        },
+        {
+          "phrase": "uniformly prepared",
+          "meaning": "chế biến theo cùng một cách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0b2a5961-3ec4-4e0d-8e6b-5925f894f4d1-1-wm.jpg?v=1789798878927"
+        },
+        {
+          "phrase": "apply the rules uniformly",
+          "meaning": "áp dụng quy định nhất quán"
+        }
+      ],
+      "synonyms": [
+        "consistently (nhất quán)",
+        "evenly (đều nhau)"
+      ]
+    }
+  ]
+}

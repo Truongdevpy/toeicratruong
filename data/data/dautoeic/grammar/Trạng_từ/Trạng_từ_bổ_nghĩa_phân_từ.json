@@ -1,0 +1,354 @@
+{
+  "subtopic": {
+    "id": "5e722475-3dd7-4b39-8412-8e53ff10e25e",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ bổ nghĩa phân từ",
+    "title_vi": "Trạng từ bổ nghĩa phân từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 20,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-bo-nghia-phan-tu"
+  },
+  "lessons": [
+    {
+      "id": "3e03b6c2-f9e8-45af-b312-56e44bb63d21",
+      "subtopic_id": "5e722475-3dd7-4b39-8412-8e53ff10e25e",
+      "title_en": "Trạng từ bổ nghĩa phân từ",
+      "title_vi": "Trạng từ bổ nghĩa phân từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2019 · Câu 15",
+          "options": {
+            "A": "widen",
+            "B": "wider",
+            "C": "widely",
+            "D": "wide"
+          },
+          "question": "The Southeast Asia Business Convention will feature ------- known and respected leaders from countries across the region.",
+          "translation": "Hội nghị Doanh nghiệp Đông Nam Á sẽ có sự góp mặt của những nhà lãnh đạo được biết đến rộng rãi và được kính trọng đến từ các nước trong khu vực."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “wide”: động từ “widen”, so sánh hơn “wider”, trạng từ “widely” và tính từ “wide”. Chỗ trống đứng ngay trước hai V3 “known and respected”, còn danh từ “leaders” đứng sau hai V3 đó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The Southeast Asia Business Convention",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will feature",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "known and respected",
+                    "label": "hai V3 dùng như tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "leaders",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from countries across the region.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Tân ngữ của “will feature” là cụm danh từ “------- known and respected leaders …”; chỗ trống đứng trước V3, không đứng ngay trước danh từ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "V3 đứng trước danh từ đóng vai trò gì.",
+                  "Loại từ nào bổ nghĩa cho V3 đó.",
+                  "Vì sao tính từ, động từ, danh từ không đứng được trước V3 ở đây."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "V3 (phân từ quá khứ) của động từ cần tân ngữ đứng trước danh từ được dùng như tính từ, mang nghĩa “được …”: *trained staff* là nhân viên được đào tạo. Muốn nói V3 đó được làm thế nào, đến mức nào, đặt trạng từ ngay trước V3.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cụm danh từ",
+                    "formula": "(từ hạn định) + trạng từ + V3 + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "carefully",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "planned",
+                    "label": "V3 dùng như tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "budget",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Trạng từ bổ nghĩa cho V3; cả cụm trạng từ + V3 bổ nghĩa cho danh từ."
+              },
+              {
+                "rows": [
+                  [
+                    "mạo từ + trạng từ + V3 + N",
+                    "*We need a carefully planned budget for next year.* — Chúng tôi cần một ngân sách được lên kế hoạch cẩn thận cho năm tới."
+                  ],
+                  [
+                    "trạng từ + V3 + N, không có mạo từ",
+                    "*Newly hired employees attend a two-day orientation.* — Nhân viên mới được tuyển tham dự buổi định hướng hai ngày."
+                  ],
+                  [
+                    "trạng từ + V3 and V3 + N",
+                    "*We hired a properly trained and certified technician.* — Chúng tôi đã thuê một kỹ thuật viên được đào tạo bài bản và có chứng chỉ."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra trạng từ qua đuôi**: trạng từ ở vị trí này trong bài tập đều là tính từ + -ly: brightly, freshly, neatly, widely, locally, beautifully, professionally.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước V3 để nói V3 được làm thế nào, đến mức nào.",
+                    "form": "Trạng từ đuôi -ly (widely, neatly, locally)",
+                    "example": "*a neatly organized folder*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ bổ nghĩa cho danh từ, không bổ nghĩa cho V3: *wide known*, *local produced* sai; phải là *widely known*, *locally produced*.",
+                    "form": "Tính từ (wide, bright, local, strong, beautiful)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ nên không bổ nghĩa cho V3; câu cũng không có “than” để so sánh.",
+                    "form": "So sánh hơn của tính từ (wider, neater)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đặt trước V3 + N không tạo cụm có nghĩa: *beauty designed lobby* sai.",
+                    "form": "Danh từ (clarity, strength, beauty, thoughtfulness)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho V3 hay danh từ; câu đã có động từ chính.",
+                    "form": "Động từ (widen, brighten, strengthen, compete)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đặt trước V3 không tạo cụm có nghĩa: *widening accepted methods* sai.",
+                    "form": "V-ing (widening)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + V3 + danh từ",
+                    "example": "*delivers ___ packed lunch boxes*; *uses ___ produced packaging*"
+                  },
+                  {
+                    "signal": "mạo từ + ___ + V3 + danh từ",
+                    "example": "*a ___ priced service package*; *the ___ designed lobby*"
+                  },
+                  {
+                    "signal": "số từ + ___ + V3 + danh từ",
+                    "example": "*Ten ___ selected customers*"
+                  },
+                  {
+                    "signal": "giới từ + ___ + V3 + danh từ",
+                    "example": "*in ___ lit areas*; *a menu of ___ prepared … meals*"
+                  },
+                  {
+                    "signal": "___ + V3 and V3 + danh từ",
+                    "example": "*___ known and respected leaders*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay sau chỗ trống có phải V3 không, và sau V3 có danh từ không. Chỗ trống đứng trước V3 + danh từ thì nó bổ nghĩa cho V3.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo công thức trạng từ + V3 + N; loại tính từ, dạng so sánh, danh từ, động từ, V-ing vì không bổ nghĩa được cho V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The Southeast Asia Business Convention",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will feature",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "widely",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "known and respected",
+                    "label": "hai V3 dùng như tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "leaders",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from countries across the region.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “widely” bổ nghĩa cho “known and respected”; cả cụm bổ nghĩa cho “leaders”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “wide” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng trước hai V3 “known and respected”, sau đó là danh từ “leaders”; dấu hiệu “___ + V3 and V3 + danh từ”.",
+                  "Bước 3: Cần trạng từ + V3 + N; “widely” là trạng từ (đuôi -ly), vì vậy chọn “widely” (rộng rãi).",
+                  "“widen” (A) là động từ, không bổ nghĩa cho V3 “known”, câu đã có động từ “will feature”, nên loại.",
+                  "“wider” (B) là so sánh hơn của tính từ, không bổ nghĩa cho V3 “known”, câu cũng không có “than”, nên loại.",
+                  "“wide” (D) là tính từ, không bổ nghĩa cho V3 “known”; “wide known” không đúng, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "V3 của động từ cần tân ngữ đứng trước danh từ mang nghĩa bị động “được …”, V-ing trước danh từ mang nghĩa chủ động; phần này học ở chủ điểm “Phân từ trước danh từ”. Trong bài tập, chỗ trống luôn đứng trước V3 đã cho sẵn."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống đứng trước V3 + danh từ thì chọn trạng từ: trạng từ + V3 + N.",
+                  "Tính từ bổ nghĩa cho danh từ, không bổ nghĩa cho V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

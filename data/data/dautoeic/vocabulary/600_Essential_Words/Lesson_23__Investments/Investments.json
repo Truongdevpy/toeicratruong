@@ -1,0 +1,637 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "cc140336-5bd8-4e3d-94d0-00ec13b24559",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 23: Investments",
+    "order_index": 23,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:57.574082+00:00",
+    "updated_at": "2026-09-18T08:51:57.574082+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+    "test_id": "cc140336-5bd8-4e3d-94d0-00ec13b24559",
+    "name": "Investments",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:57.574082+00:00",
+    "updated_at": "2026-09-18T08:51:57.574082+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "393decda-62c3-4902-a5d9-fdda57f40cf9",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "attitude",
+      "ipa": "UK: /ˈæt.ɪ.tʃuːd/ | US: /ˈæt̬.ə.tuːd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new fund manager's attitude changed quickly after the first big downturn in the market.",
+          "meaning": "thái độ, quan điểm, cách nghĩ",
+          "toeic_tip": "Đi với toward, towards hoặc to: attitude toward investment.",
+          "example_vi": "Thái độ của vị giám đốc quỹ mới thay đổi rất nhanh sau cú lao dốc đầu tiên của thị trường.",
+          "word_family": [
+            "attitudinal (adj) thuộc về thái độ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:03:04.893882+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/393decda-62c3-4902-a5d9-fdda57f40cf9-wm.jpg?v=1789797661233",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attitude-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attitude-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a positive attitude",
+          "meaning": "thái độ tích cực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/393decda-62c3-4902-a5d9-fdda57f40cf9-0-wm.jpg?v=1789797784740"
+        },
+        {
+          "phrase": "attitude toward risk",
+          "meaning": "quan điểm về rủi ro",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/393decda-62c3-4902-a5d9-fdda57f40cf9-1-wm.jpg?v=1789797783112"
+        },
+        {
+          "phrase": "change one's attitude",
+          "meaning": "thay đổi thái độ"
+        }
+      ],
+      "synonyms": [
+        "outlook (cách nhìn)",
+        "mindset (lối tư duy)",
+        "viewpoint (quan điểm)"
+      ]
+    },
+    {
+      "id": "9b9408e7-42d7-4d00-91ed-266c5af403ea",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "long-term",
+      "ipa": "UK: /ˌlɒŋˈtɜːm/ | US: /ˌlɑːŋˈtɝːm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The CEO's long-term goal was to increase the return on investment.",
+          "meaning": "dài hạn, kéo dài trong thời gian dài",
+          "antonyms": [
+            "short-term (ngắn hạn)"
+          ],
+          "toeic_tip": "Có gạch nối khi đứng trước danh từ, cụm in the long term thì không.",
+          "example_vi": "Mục tiêu dài hạn của tổng giám đốc là nâng cao tỷ suất sinh lời.",
+          "word_family": [
+            "long term (n) giai đoạn dài hạn, viết không gạch nối"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T07:16:07.545642+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9b9408e7-42d7-4d00-91ed-266c5af403ea-wm.jpg?v=1789797699086",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/long-term-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/long-term-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "long-term goal",
+          "meaning": "mục tiêu dài hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b9408e7-42d7-4d00-91ed-266c5af403ea-0-wm.jpg?v=1789802166267"
+        },
+        {
+          "phrase": "long-term investment",
+          "meaning": "khoản đầu tư dài hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b9408e7-42d7-4d00-91ed-266c5af403ea-1-wm.jpg?v=1789802167406"
+        },
+        {
+          "phrase": "long-term contract",
+          "meaning": "hợp đồng dài hạn"
+        }
+      ],
+      "synonyms": [
+        "extended (kéo dài)",
+        "lasting (lâu dài)"
+      ]
+    },
+    {
+      "id": "523f9f76-e52f-4f5f-bf7a-c9f274465e52",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "invest",
+      "ipa": "/ɪnˈvest/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The chief financial officer invested in the stock at a very good time.",
+          "meaning": "đầu tư, bỏ tiền hoặc công sức vào",
+          "antonyms": [
+            "withdraw (rút vốn)",
+            "divest (thoái vốn)"
+          ],
+          "toeic_tip": "Luôn dùng invest in + đối tượng, không dùng invest to.",
+          "example_vi": "Giám đốc tài chính đã mua cổ phiếu đúng vào thời điểm rất thuận lợi.",
+          "word_family": [
+            "investment (n) khoản đầu tư",
+            "investor (n) nhà đầu tư"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:40:01.041868+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/523f9f76-e52f-4f5f-bf7a-c9f274465e52-wm.jpg?v=1789798383066",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/invest-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/invest-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "invest in stocks",
+          "meaning": "đầu tư vào cổ phiếu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/523f9f76-e52f-4f5f-bf7a-c9f274465e52-0-wm.jpg?v=1789799986933"
+        },
+        {
+          "phrase": "invest heavily",
+          "meaning": "đầu tư mạnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/523f9f76-e52f-4f5f-bf7a-c9f274465e52-1-wm.jpg?v=1789800000872"
+        },
+        {
+          "phrase": "invest time in",
+          "meaning": "dành thời gian cho"
+        }
+      ],
+      "synonyms": [
+        "put money into (bỏ tiền vào)",
+        "finance (rót vốn)"
+      ]
+    },
+    {
+      "id": "59f81d75-ab92-4026-8ace-18d653d479b8",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "fund",
+      "ipa": "/fʌnd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He will have access to his trust fund when he is 21 years old.",
+          "meaning": "quỹ, khoản tiền dành riêng; cấp vốn, tài trợ",
+          "toeic_tip": "Số nhiều funds nghĩa là tiền bạc: insufficient funds là không đủ tiền.",
+          "example_vi": "Anh ấy sẽ được sử dụng quỹ ủy thác của mình khi tròn 21 tuổi.",
+          "word_family": [
+            "funding (n) nguồn kinh phí",
+            "underfunded (adj) thiếu kinh phí"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:41:53.943685+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/59f81d75-ab92-4026-8ace-18d653d479b8-wm.jpg?v=1789798373357",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fund-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fund-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "mutual fund",
+          "meaning": "quỹ tương hỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/59f81d75-ab92-4026-8ace-18d653d479b8-0-wm.jpg?v=1789800102292"
+        },
+        {
+          "phrase": "raise funds",
+          "meaning": "gây quỹ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/59f81d75-ab92-4026-8ace-18d653d479b8-1-wm.jpg?v=1789800113790"
+        },
+        {
+          "phrase": "fund a project",
+          "meaning": "cấp vốn cho dự án"
+        }
+      ],
+      "synonyms": [
+        "finance (tài trợ)",
+        "capital (vốn)",
+        "sponsor (bảo trợ kinh phí)"
+      ]
+    },
+    {
+      "id": "31c944f9-817d-49e5-aaf0-ce795f8f285f",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "conservative",
+      "ipa": "UK: /kənˈsɜː.və.tɪv/ | US: /kənˈsɝː.və.t̬ɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Her conservative strategy paid off over the years.",
+          "meaning": "thận trọng, dè dặt, giữ mức an toàn",
+          "antonyms": [
+            "aggressive (mạnh bạo)",
+            "risky (mạo hiểm)"
+          ],
+          "toeic_tip": "Trong đầu tư nghĩa là thận trọng, đừng dịch máy móc thành bảo thủ.",
+          "example_vi": "Chiến lược thận trọng của bà đã mang lại kết quả sau nhiều năm.",
+          "word_family": [
+            "conservatively (adv) một cách thận trọng",
+            "conservatism (n) tính thận trọng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:23:50.632346+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/31c944f9-817d-49e5-aaf0-ce795f8f285f-wm.jpg?v=1789798588028",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/conservative-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/conservative-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a conservative estimate",
+          "meaning": "ước tính dè dặt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/31c944f9-817d-49e5-aaf0-ce795f8f285f-0-wm.jpg?v=1789799030448"
+        },
+        {
+          "phrase": "conservative strategy",
+          "meaning": "chiến lược thận trọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/31c944f9-817d-49e5-aaf0-ce795f8f285f-1-wm.jpg?v=1789799029586"
+        },
+        {
+          "phrase": "conservative investor",
+          "meaning": "nhà đầu tư thận trọng"
+        }
+      ],
+      "synonyms": [
+        "cautious (thận trọng)",
+        "prudent (khôn ngoan)",
+        "restrained (kiềm chế)"
+      ]
+    },
+    {
+      "id": "358be3e2-96ae-434b-911a-5518a9fcdf9a",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "portfolio",
+      "ipa": "UK: /ˌpɔːtˈfəʊ.li.əʊ/ | US: /ˌpɔːrtˈfoʊ.li.oʊ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Investors are advised to have diverse portfolios.",
+          "meaning": "danh mục đầu tư, tập hồ sơ năng lực",
+          "toeic_tip": "Số nhiều là portfolios; trong tuyển dụng còn nghĩa hồ sơ tác phẩm.",
+          "example_vi": "Nhà đầu tư được khuyên nên đa dạng hóa danh mục của mình.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:16:34.028948+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/358be3e2-96ae-434b-911a-5518a9fcdf9a-wm.jpg?v=1789798593967",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/portfolio-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/portfolio-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a diverse portfolio",
+          "meaning": "danh mục đa dạng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/358be3e2-96ae-434b-911a-5518a9fcdf9a-0-wm.jpg?v=1789797569591"
+        },
+        {
+          "phrase": "investment portfolio",
+          "meaning": "danh mục đầu tư",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/358be3e2-96ae-434b-911a-5518a9fcdf9a-1-wm.jpg?v=1789797570359"
+        },
+        {
+          "phrase": "build a portfolio",
+          "meaning": "xây dựng danh mục"
+        }
+      ],
+      "synonyms": [
+        "holdings (các khoản nắm giữ)",
+        "investment mix (cơ cấu đầu tư)"
+      ]
+    },
+    {
+      "id": "f1b3e4f0-b988-4d5c-8452-3032fac89863",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "pull out",
+      "ipa": "/ˌpʊl ˈaʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Her advisor suggested that she pull out her investments in the troubled country.",
+          "meaning": "rút vốn, rút lui, ngừng tham gia; sự rút lui",
+          "antonyms": [
+            "invest (đầu tư vào)",
+            "join (tham gia)"
+          ],
+          "toeic_tip": "Sau suggest that dùng động từ nguyên thể; pull out of + nơi hoặc thỏa thuận.",
+          "example_vi": "Cố vấn khuyên cô rút hết các khoản đầu tư khỏi quốc gia đang gặp khó khăn.",
+          "word_family": [
+            "pullout (n) sự rút lui, sự rút vốn"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T08:02:19.442288+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f1b3e4f0-b988-4d5c-8452-3032fac89863-wm.jpg?v=1789798513451",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/pull-out-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/pull-out-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "pull out of a deal",
+          "meaning": "rút khỏi thương vụ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1b3e4f0-b988-4d5c-8452-3032fac89863-0-wm.jpg?v=1789804938819"
+        },
+        {
+          "phrase": "pull out investments",
+          "meaning": "rút vốn đầu tư",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1b3e4f0-b988-4d5c-8452-3032fac89863-1-wm.jpg?v=1789804939280"
+        },
+        {
+          "phrase": "pull out of the market",
+          "meaning": "rút khỏi thị trường"
+        }
+      ],
+      "synonyms": [
+        "withdraw (rút ra)",
+        "back out (rút lui)",
+        "quit (ngừng tham gia)"
+      ]
+    },
+    {
+      "id": "7127aea5-6c4b-4793-a3b1-b6ba95e6dd87",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "resource",
+      "ipa": "UK: /rɪˈzɔːs/ | US: /ˈriː.sɔːrs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "If you don't invest in petroleum resources now, you will find that the stock prices will get away from you.",
+          "meaning": "nguồn lực, tài nguyên, thứ có giá trị",
+          "toeic_tip": "Thường dùng số nhiều: human resources, natural resources.",
+          "example_vi": "Nếu bây giờ bạn không đầu tư vào ngành dầu khí thì giá cổ phiếu sẽ vượt khỏi tầm với.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:53:50.98952+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7127aea5-6c4b-4793-a3b1-b6ba95e6dd87-wm.jpg?v=1789798391568",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/resource-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/resource-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "natural resources",
+          "meaning": "tài nguyên thiên nhiên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7127aea5-6c4b-4793-a3b1-b6ba95e6dd87-0-wm.jpg?v=1789800828558"
+        },
+        {
+          "phrase": "human resources",
+          "meaning": "nguồn nhân lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7127aea5-6c4b-4793-a3b1-b6ba95e6dd87-1-wm.jpg?v=1789800830843"
+        },
+        {
+          "phrase": "allocate resources",
+          "meaning": "phân bổ nguồn lực"
+        }
+      ],
+      "synonyms": [
+        "asset (tài sản)",
+        "supply (nguồn cung)",
+        "reserve (nguồn dự trữ)"
+      ]
+    },
+    {
+      "id": "f38a42f6-d9ca-4209-944e-594c5b81e0e5",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "aggressively",
+      "ipa": "/əˈɡres.ɪv.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Some people are risk takers and prefer to invest aggressively.",
+          "meaning": "một cách quyết liệt, mạnh bạo, đầy cạnh tranh",
+          "antonyms": [
+            "cautiously (thận trọng)",
+            "passively (thụ động)"
+          ],
+          "toeic_tip": "Trong kinh doanh mang nghĩa tích cực là quyết liệt, không phải hung hăng.",
+          "example_vi": "Một số người ưa mạo hiểm và thích đầu tư mạnh tay.",
+          "word_family": [
+            "aggressive (adj) quyết liệt, mạnh bạo",
+            "aggressiveness (n) tính quyết liệt"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T08:03:46.550038+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f38a42f6-d9ca-4209-944e-594c5b81e0e5-wm.jpg?v=1789798503097",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/aggressively-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/aggressively-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "invest aggressively",
+          "meaning": "đầu tư mạnh bạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f38a42f6-d9ca-4209-944e-594c5b81e0e5-0-wm.jpg?v=1789805024137"
+        },
+        {
+          "phrase": "expand aggressively",
+          "meaning": "mở rộng quyết liệt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f38a42f6-d9ca-4209-944e-594c5b81e0e5-1-wm.jpg?v=1789805026323"
+        },
+        {
+          "phrase": "compete aggressively",
+          "meaning": "cạnh tranh gay gắt"
+        }
+      ],
+      "synonyms": [
+        "assertively (quyết đoán)",
+        "forcefully (mạnh mẽ)",
+        "competitively (đầy cạnh tranh)"
+      ]
+    },
+    {
+      "id": "22b02e3b-000f-48d9-bf67-8ee3eb955dd0",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "commit",
+      "ipa": "/kəˈmɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is a good idea to commit a certain percentage of your income to investments.",
+          "meaning": "cam kết, dành ra cho, hứa dành",
+          "antonyms": [
+            "withdraw (rút lại)",
+            "withhold (giữ lại không dành)"
+          ],
+          "toeic_tip": "commit to + danh từ hoặc V-ing; nhân đôi t khi thêm -ed và -ing.",
+          "example_vi": "Nên dành ra một phần thu nhập cố định để đầu tư.",
+          "word_family": [
+            "commitment (n) sự cam kết",
+            "committed (adj) tận tâm, đã cam kết"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T06:22:08.82413+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/22b02e3b-000f-48d9-bf67-8ee3eb955dd0-wm.jpg?v=1789798540832",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "commit money to",
+          "meaning": "dành tiền cho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/22b02e3b-000f-48d9-bf67-8ee3eb955dd0-0-wm.jpg?v=1789798928450"
+        },
+        {
+          "phrase": "commit oneself to",
+          "meaning": "cam kết làm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/22b02e3b-000f-48d9-bf67-8ee3eb955dd0-1-wm.jpg?v=1789798926163"
+        },
+        {
+          "phrase": "commit resources",
+          "meaning": "dồn nguồn lực"
+        }
+      ],
+      "synonyms": [
+        "pledge (cam kết)",
+        "dedicate (dành riêng)",
+        "promise (hứa)"
+      ]
+    },
+    {
+      "id": "98882102-7225-478c-a7ab-18239dfad625",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "wisely",
+      "ipa": "/ˈwaɪz.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "If you invest wisely, you will be able to retire early.",
+          "meaning": "một cách khôn ngoan, sáng suốt",
+          "antonyms": [
+            "foolishly (dại dột)",
+            "unwisely (thiếu khôn ngoan)"
+          ],
+          "toeic_tip": "Sách in nhầm loại từ; wisely là trạng từ, bổ nghĩa cho động từ.",
+          "example_vi": "Nếu đầu tư khôn ngoan, bạn sẽ có thể nghỉ hưu sớm.",
+          "word_family": [
+            "wise (adj) khôn ngoan",
+            "wisdom (n) sự khôn ngoan"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T07:14:44.506133+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/98882102-7225-478c-a7ab-18239dfad625-wm.jpg?v=1789797680130",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/wisely-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/wisely-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "invest wisely",
+          "meaning": "đầu tư khôn ngoan",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/98882102-7225-478c-a7ab-18239dfad625-0-wm.jpg?v=1789802084344"
+        },
+        {
+          "phrase": "spend money wisely",
+          "meaning": "tiêu tiền hợp lý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/98882102-7225-478c-a7ab-18239dfad625-1-wm.jpg?v=1789802083771"
+        },
+        {
+          "phrase": "choose wisely",
+          "meaning": "chọn lựa sáng suốt"
+        }
+      ],
+      "synonyms": [
+        "prudently (thận trọng sáng suốt)",
+        "sensibly (hợp lý)",
+        "shrewdly (tinh khôn)"
+      ]
+    },
+    {
+      "id": "e9e51281-726d-4998-a39c-cbb0192a673d",
+      "part_id": "f1717887-a33d-4dd4-aac4-2ccc7fcad60e",
+      "word": "return",
+      "ipa": "UK: /rɪˈtɜːn/ | US: /rɪˈtɝːn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The 44 percent return on the new stock was far more than the stockbroker had anticipated.",
+          "meaning": "lợi nhuận thu được, tỷ suất sinh lời",
+          "antonyms": [
+            "loss (khoản lỗ)"
+          ],
+          "toeic_tip": "Cụm cố định return on investment; đi với giới từ on, không phải of.",
+          "example_vi": "Mức sinh lời 44 phần trăm của cổ phiếu mới cao hơn nhiều so với dự đoán của người môi giới.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:57.574082+00:00",
+      "updated_at": "2026-09-19T07:57:27.662847+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e9e51281-726d-4998-a39c-cbb0192a673d-wm.jpg?v=1789798455505",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/return-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/return-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "return on investment",
+          "meaning": "tỷ suất sinh lời trên vốn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e9e51281-726d-4998-a39c-cbb0192a673d-0-wm.jpg?v=1789804646079"
+        },
+        {
+          "phrase": "a high return",
+          "meaning": "lợi nhuận cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e9e51281-726d-4998-a39c-cbb0192a673d-1-wm.jpg?v=1789804647505"
+        },
+        {
+          "phrase": "annual return",
+          "meaning": "lợi nhuận hằng năm"
+        }
+      ],
+      "synonyms": [
+        "profit (lợi nhuận)",
+        "yield (mức sinh lời)",
+        "gain (khoản lời)"
+      ]
+    }
+  ]
+}

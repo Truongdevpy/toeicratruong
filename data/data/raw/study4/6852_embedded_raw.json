@@ -1,0 +1,69 @@
+[
+  {
+    "userId": 2748609,
+    "slotKey": "test:6852",
+    "legacyKey": 6852,
+    "parts": {
+      "19042": {
+        "title": "Part 1",
+        "questionCount": 6
+      },
+      "19043": {
+        "title": "Part 2",
+        "questionCount": 25
+      },
+      "19044": {
+        "title": "Part 3",
+        "questionCount": 39
+      },
+      "19045": {
+        "title": "Part 4",
+        "questionCount": 30
+      },
+      "19046": {
+        "title": "Part 5",
+        "questionCount": 30
+      },
+      "19047": {
+        "title": "Part 6",
+        "questionCount": 16
+      },
+      "19048": {
+        "title": "Part 7",
+        "questionCount": 54
+      }
+    },
+    "layouts": {
+      "toeic-v1": "TOEIC Test v1"
+    }
+  },
+  {
+    "userId": 2748609,
+    "slotKey": "test:6852",
+    "legacyKey": 6852,
+    "testTitle": "TOEIC LR Collection 1 Test 1",
+    "testDetailUrl": "/tests/6852/toeic-lr-collection-1-test-1/",
+    "submissionStatusUrl": "/api/v1/tests/6852/attempts/status",
+    "submissionUid": "3a9ed4a9-0681-40a3-9bd5-55ea3c073c15",
+    "partIds": [
+      19042,
+      19043,
+      19044,
+      19045,
+      19046,
+      19047,
+      19048
+    ],
+    "partTitles": {
+      "19042": "Part 1",
+      "19043": "Part 2",
+      "19044": "Part 3",
+      "19045": "Part 4",
+      "19046": "Part 5",
+      "19047": "Part 6",
+      "19048": "Part 7"
+    },
+    "timeLimit": 7200,
+    "isFullTest": true
+  }
+]

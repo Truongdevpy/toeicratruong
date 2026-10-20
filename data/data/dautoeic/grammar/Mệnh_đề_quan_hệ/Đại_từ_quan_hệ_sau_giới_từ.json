@@ -1,0 +1,377 @@
+{
+  "subtopic": {
+    "id": "64331314-4a91-4141-881c-375b6b384934",
+    "topic_id": "aac6ad8a-58ee-4bcc-9acf-c6c675f6beae",
+    "title_en": "Đại từ quan hệ sau giới từ",
+    "title_vi": "Đại từ quan hệ sau giới từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 66,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-quan-he-dai-tu-quan-he-sau-gioi-tu"
+  },
+  "lessons": [
+    {
+      "id": "116935a0-fe58-4885-89ce-76318b437529",
+      "subtopic_id": "64331314-4a91-4141-881c-375b6b384934",
+      "title_en": "Đại từ quan hệ sau giới từ",
+      "title_vi": "Đại từ quan hệ sau giới từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 8 · Câu 128",
+          "options": {
+            "A": "through",
+            "B": "there",
+            "C": "which",
+            "D": "who"
+          },
+          "question": "The upcoming focus group will be an online meeting during ------- each participant can join via a videoconferencing program.",
+          "translation": "Buổi thảo luận nhóm sắp tới sẽ là một cuộc họp trực tuyến, trong suốt buổi họp đó mỗi người tham dự có thể tham gia qua một chương trình hội nghị truyền hình."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm giới từ “through”, trạng từ “there” và hai đại từ quan hệ “which”, “who”. Chỗ trống đứng ngay sau giới từ “during”; sau chỗ trống là một mệnh đề đủ chủ ngữ và động từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The upcoming focus group",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "C",
+                    "text": "an online meeting",
+                    "label": "bổ ngữ (vật)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "during",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "each participant can join via a videoconferencing program.",
+                    "label": "mệnh đề đủ S + V"
+                  }
+                ],
+                "caption": "Câu có hai mệnh đề: “The upcoming focus group will be an online meeting” và “each participant can join…”. Chỗ trống đứng sau giới từ “during”, phải nối mệnh đề sau vào danh từ “an online meeting”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Đại từ quan hệ nào đứng được sau giới từ.",
+                  "Chọn đại từ theo danh từ được nói đến: người hay vật.",
+                  "Vì sao giới từ, trạng từ, đại từ thường không nối được mệnh đề."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Khi động từ hay danh từ trong mệnh đề quan hệ đi với giới từ (work with, rely on, speak to, during the meeting), giới từ có thể đứng ngay trước đại từ quan hệ. Sau giới từ chỉ dùng **whom** (người) hoặc **which** (vật, nơi chốn, thời gian, sự việc).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "danh từ chỉ người",
+                    "formula": "N + giới từ + whom + S + V"
+                  },
+                  {
+                    "label": "danh từ chỉ vật, nơi chốn, thời gian",
+                    "formula": "N + giới từ + which + S + V"
+                  },
+                  {
+                    "label": "sau dấu phẩy, có lượng từ hoặc the + N",
+                    "formula": "…, lượng từ / the + N + of + whom/which + V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "danh từ chỉ người (chủ ngữ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to whom",
+                    "label": "giới từ + whom"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "you report",
+                    "label": "S + V (report to)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will train",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "you.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "“to whom” thay cho “to the manager”; mệnh đề “to whom you report” đủ chủ ngữ “you” và động từ “report”, động từ chính của câu là “will train”."
+              },
+              {
+                "rows": [
+                  [
+                    "giới từ + whom (người)",
+                    "*The client with whom we met yesterday signed the contract.* — Khách hàng mà chúng tôi gặp hôm qua đã ký hợp đồng."
+                  ],
+                  [
+                    "giới từ + which (vật, nơi, thời gian)",
+                    "*The room in which we met has a projector.* — Căn phòng nơi chúng tôi họp có máy chiếu."
+                  ],
+                  [
+                    "lượng từ, so sánh nhất, the + N + of + which/whom",
+                    "*We have three branches, the largest of which is in Seoul.* — Chúng tôi có ba chi nhánh, chi nhánh lớn nhất trong số đó ở Seoul."
+                  ],
+                  [
+                    "…, giới từ + which thay cho cả sự việc trước",
+                    "*Sales rose sharply, for which the team received a bonus.* — Doanh số tăng mạnh, vì thành tích đó cả nhóm được thưởng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau “giới từ + whom/which” là mệnh đề đủ chủ ngữ và động từ: *during which each participant can join*.",
+                  "Sau “lượng từ + of”, “the + N + of” thì chỗ trống đi thẳng với động từ: *most of whom have backgrounds in sales*.",
+                  "Trước chỗ trống không có giới từ, mệnh đề sau đã đủ mà động từ cần giới từ (be held in, speak to), thì chọn đáp án có sẵn giới từ: *The consultant to whom we spoke…*"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối mệnh đề phía sau vào danh từ được nói đến.",
+                    "form": "giới từ + whom (người), giới từ + which (vật)",
+                    "example": "*without whom*; *under which*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Trong mệnh đề quan hệ, that không đứng ngay sau giới từ.",
+                    "form": "that sau giới từ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau giới từ, người phải dùng whom, không dùng who.",
+                    "form": "who sau giới từ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sai loại danh từ được nói đến: whom chỉ người, which chỉ vật.",
+                    "form": "whom cho vật, which cho người",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "where đã mang nghĩa nơi chốn (= in which), không đứng sau giới từ in, under.",
+                    "form": "where sau giới từ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đại từ nhân xưng, trạng từ there, what không nối được mệnh đề phía sau vào danh từ; câu thành hai mệnh đề không có từ nối.",
+                    "form": "it, them, her; there; what",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Mệnh đề sau không thiếu chủ ngữ hay tân ngữ, nên cần giới từ + which/whom; whose còn phải có danh từ đi ngay sau.",
+                    "form": "which, that, whom, whose không có giới từ khi mệnh đề đã đủ",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "giới từ + ___ + S + V",
+                    "example": "*during ___ each participant can join*; *with ___ I worked closely*"
+                  },
+                  {
+                    "signal": "lượng từ + of + ___ + V",
+                    "example": "*several of ___ were offered*; *none of ___ contained*"
+                  },
+                  {
+                    "signal": "the + N / so sánh nhất + of + ___",
+                    "example": "*the details of ___ will be announced*; *the largest of ___ can seat*"
+                  },
+                  {
+                    "signal": "danh từ + ___ + mệnh đề đã đủ",
+                    "example": "*The auditorium ___ the awards ceremony was held*; *The consultant ___ we spoke*"
+                  },
+                  {
+                    "signal": "…, giới từ + ___ thay cho cả sự việc trước",
+                    "example": "*exceeded its target in March, for ___ each member will receive a bonus*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có which, whom, that, who (có thể kèm giới từ), lẫn với đại từ it, them, her, trạng từ there, where hoặc what, thì đây là câu đại từ quan hệ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay trước chỗ trống có giới từ không, danh từ được nói đến là người hay vật, và sau chỗ trống là mệnh đề đủ S + V hay chỉ có động từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau giới từ chọn whom (người) hoặc which (vật, nơi, thời gian, sự việc); loại that, who, where, đại từ thường và trạng từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The upcoming focus group",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "C",
+                    "text": "an online meeting",
+                    "label": "bổ ngữ (vật)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "during which",
+                    "label": "giới từ + which"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "each participant can join via a videoconferencing program.",
+                    "label": "mệnh đề đủ S + V"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “during which” (trong suốt buổi họp đó) nối mệnh đề “each participant can join…” vào “an online meeting”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm “which”, “who”, giới từ “through” và trạng từ “there” nên đây là câu đại từ quan hệ.",
+                  "Bước 2: Danh từ được nói đến là “an online meeting” (vật); dấu hiệu “giới từ + ___ + S + V”: “during ------- each participant can join”.",
+                  "Bước 3: Sau giới từ, danh từ chỉ vật nên dùng giới từ + which, vì vậy chọn “which” (“during which”: trong suốt buổi họp đó).",
+                  "“through” (A) là giới từ, không nối được mệnh đề “each participant can join…” vào câu, nên loại.",
+                  "“there” (B) là trạng từ, không nối được mệnh đề “each participant can join…” vào câu, nên loại.",
+                  "“who” (D) là đại từ quan hệ chỉ người, không thay được cho “an online meeting” và không đứng sau giới từ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Giới từ cũng có thể đứng cuối mệnh đề: *the manager whom she will be working for*. Khi giới từ đứng trước đại từ quan hệ thì chỉ dùng whom hoặc which.",
+                  "“in which” chỉ nơi chốn có nghĩa như “where”: *the room in which we met* = *the room where we met*. Không viết “in where”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau giới từ: whom cho người, which cho vật; không dùng that, who.",
+                  "Giới từ + whom/which + mệnh đề đủ S + V.",
+                  "Lượng từ + of whom/which + động từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,373 @@
+{
+  "subtopic": {
+    "id": "84fbe018-f162-4404-b2a8-8e373cbefe31",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ phản thân nhấn mạnh",
+    "title_vi": "Đại từ phản thân nhấn mạnh",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 100,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-phan-than-nhan-manh"
+  },
+  "lessons": [
+    {
+      "id": "912cfc16-577d-4794-bf3f-0c88b3417b9f",
+      "subtopic_id": "84fbe018-f162-4404-b2a8-8e373cbefe31",
+      "title_en": "Đại từ phản thân nhấn mạnh",
+      "title_vi": "Đại từ phản thân nhấn mạnh",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2020 · Câu 117",
+          "options": {
+            "A": "him",
+            "B": "his",
+            "C": "himself",
+            "D": "he"
+          },
+          "question": "Greg Owens, founder of multi-national Hermes Taxi Service, used to drive a taxi -------.",
+          "translation": "Greg Owens, người sáng lập hãng taxi đa quốc gia Hermes Taxi Service, từng tự mình lái taxi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng đại từ của ngôi “he”: him, his, himself, he.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Greg Owens,",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "founder of multi-national Hermes Taxi Service,",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "used to drive",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a taxi",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------.",
+                    "label": "chỗ trống"
+                  }
+                ],
+                "caption": "Cụm “founder of multi-national Hermes Taxi Service” chỉ nói Greg Owens là ai. Câu đã có chủ ngữ, động từ, tân ngữ; chỗ trống đứng cuối câu, sau tân ngữ “a taxi”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Câu đã đủ chủ ngữ, động từ, tân ngữ chưa.",
+                  "Mỗi loại đại từ (chủ ngữ, tân ngữ, sở hữu, phản thân) đứng ở vị trí nào.",
+                  "Loại đại từ nào đứng được sau một mệnh đề đã đủ để nhấn mạnh chủ ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đại từ phản thân (myself, himself, themselves…) dùng để **nhấn mạnh** “chính người đó, tự mình làm, không nhờ ai”. Bỏ đại từ phản thân nhấn mạnh đi, câu vẫn đủ và đúng ngữ pháp.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "I",
+                    "me",
+                    "my",
+                    "mine",
+                    "myself"
+                  ],
+                  [
+                    "you",
+                    "you",
+                    "your",
+                    "yours",
+                    "yourself / yourselves"
+                  ],
+                  [
+                    "he",
+                    "him",
+                    "his",
+                    "his",
+                    "himself"
+                  ],
+                  [
+                    "she",
+                    "her",
+                    "her",
+                    "hers",
+                    "herself"
+                  ],
+                  [
+                    "it",
+                    "it",
+                    "its",
+                    "(không dùng)",
+                    "itself"
+                  ],
+                  [
+                    "we",
+                    "us",
+                    "our",
+                    "ours",
+                    "ourselves"
+                  ],
+                  [
+                    "they",
+                    "them",
+                    "their",
+                    "theirs",
+                    "themselves"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ",
+                  "Tân ngữ",
+                  "Tính từ sở hữu",
+                  "Đại từ sở hữu",
+                  "Đại từ phản thân"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Ngay sau chủ ngữ",
+                    "formula": "S + đại từ phản thân + V"
+                  },
+                  {
+                    "label": "Cuối mệnh đề đã đủ",
+                    "formula": "S + V + (tân ngữ) + đại từ phản thân + (trạng ngữ)"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "ngay sau chủ ngữ, trước động từ",
+                    "*The manager herself answered the client’s call.* — Chính bà quản lý đã nghe cuộc gọi của khách hàng."
+                  ],
+                  [
+                    "cuối mệnh đề, sau tân ngữ",
+                    "*We printed all the brochures ourselves.* — Chúng tôi tự in toàn bộ tờ rơi."
+                  ],
+                  [
+                    "sau tân ngữ, trước trạng ngữ (thời gian, mục đích, lý do…)",
+                    "*He fixed the printer himself after lunch.* — Anh ấy tự sửa máy in sau bữa trưa."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Đại từ phản thân phải hợp với chủ ngữ mà nó nhấn mạnh: *Ms. Aldridge* đi với herself, *The technicians* đi với themselves, *We* đi với ourselves, *I* đi với myself.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng ngay sau chủ ngữ hoặc cuối một mệnh đề đã đủ để nhấn mạnh chính chủ ngữ làm.",
+                    "form": "Đại từ phản thân (himself, herself, themselves, ourselves, myself)",
+                    "example": "*Mr. Fontaine himself carried the luggage.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Làm chủ ngữ, đứng trước động từ. Câu đã có chủ ngữ nên không đặt thêm một chủ ngữ nữa.",
+                    "form": "Đại từ chủ ngữ (he, she, they, we)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng sau động từ hoặc giới từ làm tân ngữ. Động từ trong câu đã có tân ngữ, và tân ngữ không đứng giữa chủ ngữ với động từ.",
+                    "form": "Đại từ tân ngữ (him, her, them, us, me)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Luôn đứng trước một danh từ (có thể có tính từ xen giữa). Sau chỗ trống là động từ, trạng ngữ hoặc hết câu, không có danh từ.",
+                    "form": "Tính từ sở hữu (his, her, their, our, my)",
+                    "example": "*his office*, *their report*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thay cho cụm “sở hữu + danh từ”, làm chủ ngữ hoặc tân ngữ. Câu đã đủ chủ ngữ và tân ngữ nên không còn chỗ cho nó.",
+                    "form": "Đại từ sở hữu (hers, theirs, ours, mine; his)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "chủ ngữ + ___ + động từ",
+                    "example": "*Mr. Fontaine ___ carried*; *The board members ___ were surprised*; *the play ___ ran for only three*"
+                  },
+                  {
+                    "signal": "mệnh đề đã đủ + ___ + hết câu",
+                    "example": "*used to drive a taxi ___.*; *He managed the entire project ___.*"
+                  },
+                  {
+                    "signal": "mệnh đề đã đủ + ___ + trạng ngữ",
+                    "example": "*repaired the equipment ___ after hours*; *prepared the tax documents ___ instead of hiring an outside firm*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là bốn dạng đại từ của cùng một ngôi (chủ ngữ, tân ngữ, sở hữu, phản thân) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ, động từ, tân ngữ của câu. Xem chỗ trống đứng ngay sau chủ ngữ hay ở cuối một mệnh đề đã đủ, và sau chỗ trống có danh từ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Câu đã đủ thành phần, chỗ trống chỉ để nhấn mạnh thì chọn đại từ phản thân hợp với chủ ngữ. Loại đại từ chủ ngữ và tân ngữ vì câu đã có chủ ngữ, tân ngữ; loại tính từ sở hữu vì không có danh từ theo sau; loại đại từ sở hữu vì không còn chỗ làm chủ ngữ hay tân ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Greg Owens,",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "founder of multi-national Hermes Taxi Service,",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "used to drive",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a taxi",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "himself.",
+                    "label": "đại từ phản thân nhấn mạnh"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “himself” đứng cuối câu, nhấn mạnh chính Greg Owens lái taxi. Bỏ “himself” đi, câu vẫn đủ."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các đại từ của ngôi “he” (him, his, himself, he) nên đây là câu đại từ.",
+                  "Bước 2: Câu đã đủ chủ ngữ “Greg Owens”, động từ “used to drive”, tân ngữ “a taxi”; dấu hiệu “mệnh đề đã đủ + ___ + hết câu”: “drive a taxi -------.”",
+                  "Bước 3: Chỗ trống chỉ để nhấn mạnh chính Greg Owens lái, dùng đại từ phản thân hợp với “Greg Owens”, vì vậy chọn “himself” (tự mình).",
+                  "“him” (A) là đại từ tân ngữ, động từ “drive” đã có tân ngữ “a taxi”, nên loại.",
+                  "“his” (B) là tính từ hoặc đại từ sở hữu, sau chỗ trống không có danh từ và câu đã đủ tân ngữ, nên loại.",
+                  "“he” (D) là đại từ chủ ngữ, chỉ đứng trước động từ, câu đã có chủ ngữ “Greg Owens”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Đại từ phản thân còn làm tân ngữ khi tân ngữ chính là chủ ngữ: *She introduced herself to the new clients.* — Cô ấy tự giới thiệu mình với các khách hàng mới. Khi đó bỏ đại từ phản thân đi thì câu thiếu tân ngữ; cách dùng này không thuộc bài này.",
+                  "“his” vừa là tính từ sở hữu vừa là đại từ sở hữu; “her” vừa là đại từ tân ngữ vừa là tính từ sở hữu."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu đã đủ chủ ngữ, động từ, tân ngữ mà còn chỗ trống: chọn đại từ phản thân.",
+                  "Đại từ phản thân nhấn mạnh đứng ngay sau chủ ngữ hoặc cuối mệnh đề.",
+                  "Đại từ phản thân phải hợp với chủ ngữ; bỏ nó đi câu vẫn đúng."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,345 @@
+{
+  "subtopic": {
+    "id": "6c6ce012-e712-4054-8bd4-9e5bba0498b0",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Bị động với động từ khuyết thiếu",
+    "title_vi": "Bị động với động từ khuyết thiếu",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 90,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-bi-dong-voi-dong-tu-khuyet-thieu"
+  },
+  "lessons": [
+    {
+      "id": "36a7df97-30c6-451a-a58a-89823f1d8e64",
+      "subtopic_id": "6c6ce012-e712-4054-8bd4-9e5bba0498b0",
+      "title_en": "Bị động với động từ khuyết thiếu",
+      "title_vi": "Bị động với động từ khuyết thiếu",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2019 · Câu 3",
+          "options": {
+            "A": "to process",
+            "B": "be processed",
+            "C": "being processed",
+            "D": "has processed"
+          },
+          "question": "Your order cannot ------- until we have received full payment.",
+          "translation": "Đơn hàng của quý khách không thể được xử lý cho đến khi chúng tôi nhận đủ tiền thanh toán."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “process”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Your order",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "cannot",
+                    "label": "động từ khuyết thiếu"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "until we have received full payment.",
+                    "label": "mệnh đề thời gian"
+                  }
+                ],
+                "caption": "Chỗ trống đứng ngay sau động từ khuyết thiếu “cannot”; phía sau là mệnh đề “until …”, không có tân ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau động từ khuyết thiếu dùng dạng động từ nào.",
+                  "Đơn hàng tự xử lý hay được xử lý.",
+                  "Bị động với động từ khuyết thiếu được tạo thế nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ khuyết thiếu (can, cannot, may, might, must, should, will) và have to luôn đi với **V nguyên mẫu**. Khi chủ ngữ **chịu** hành động, V nguyên mẫu đó là **be**, sau be là **V3**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động",
+                    "formula": "S + modal + V nguyên mẫu + tân ngữ"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "S + modal + be + V3 (+ by + người làm)"
+                  },
+                  {
+                    "label": "Với have to",
+                    "formula": "S + (will) have to + be + V3"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "All receipts",
+                    "label": "chủ ngữ (chịu hành động)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "must be kept",
+                    "label": "modal + be + V3"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "for five years.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu chủ động “We must keep all receipts for five years” đổi sang bị động: tân ngữ “all receipts” lên làm chủ ngữ, sau must là be + V3."
+              },
+              {
+                "rows": [
+                  [
+                    "can / cannot + be + V3",
+                    "có thể / không thể được làm",
+                    "*Meeting rooms can be booked online.* — Phòng họp có thể được đặt trực tuyến."
+                  ],
+                  [
+                    "must / should + be + V3",
+                    "phải / nên được làm",
+                    "*All forms should be signed by a manager.* — Mọi biểu mẫu nên được quản lý ký."
+                  ],
+                  [
+                    "may / might + be + V3",
+                    "có thể sẽ được / bị làm (không chắc)",
+                    "*The meeting might be canceled because of the storm.* — Cuộc họp có thể sẽ bị hủy vì cơn bão."
+                  ],
+                  [
+                    "will (have to) + be + V3",
+                    "sẽ (phải) được làm",
+                    "*The old sign will have to be replaced soon.* — Tấm biển cũ sẽ sớm phải được thay."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ chịu hành động: động từ cần tân ngữ (complete, submit, check, keep, return, process) mà sau chỗ trống **không có tân ngữ**, hoặc có **by + người làm**.",
+                  "Chủ ngữ chịu hành động mà modal đã cho sẵn thì điền **be + V3**; modal + be đã cho sẵn thì điền **V3**."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chủ ngữ chịu hành động; sau modal là be nguyên mẫu, sau be là V3.",
+                    "form": "modal + be + V3",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chủ ngữ không tự làm hành động; các động từ này cần tân ngữ mà sau chỗ trống không có, hoặc câu có by + người làm.",
+                    "form": "modal + V nguyên mẫu chủ động (must complete, should submit, must check, should keep, should notify, may delay, must test, can return, will have to replace, might reschedule, can arrange, can recycle, will confirm, can find, must review)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là chủ động (tiếp diễn), cần tân ngữ.",
+                    "form": "modal + be + V-ing (must be completing, should be submitting, should be keeping, should be notifying, may be delaying, must be checking, can be returning, will have to be replacing, might be rescheduling, can be arranging, can be recycling, will be confirming, be reviewing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là chủ động, nói việc lẽ ra đã làm, phỏng đoán về quá khứ hoặc việc sẽ xong trước một mốc; cần tân ngữ mà câu không có.",
+                    "form": "modal + have + V3 (must have completed, should have submitted, should have kept, should have notified, may have delayed, must have checked, can have returned, will have replaced, might have rescheduled, can have arranged, can have recycled, will have confirmed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau modal chỉ dùng V nguyên mẫu.",
+                    "form": "Sau modal: V-s, is + V3, V3, to V, V-ing, being + V3, has + V3 (finds, is found, received, to receive, reviewing, to process, being processed, has processed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chủ động, cần tân ngữ; chủ ngữ ở đây chịu hành động.",
+                    "form": "Động từ chia thì không có modal (are checking, had checked, had tested, are testing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "must be + V-ing là chủ động, cần tân ngữ; be + V nguyên mẫu, be + V-s sai cấu trúc.",
+                    "form": "Sau modal + be cho sẵn: V-ing, V nguyên mẫu, V-s (approving, approve, approves)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "modal + ___",
+                    "example": "*A new assistant can ___*; *The terms of the contract must ___ carefully*; *Your order cannot ___*"
+                  },
+                  {
+                    "signal": "modal + be + ___",
+                    "example": "*The report must be ___ by the department head*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*Copies … ___ in the locked cabinet*; *Used paper and empty boxes ___ in the blue bins*; *Written permission must ___ before using …*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*___ once a month by a member of the safety team*; *must be ___ by the department head*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Mỗi đáp án là modal + một dạng động từ (V nguyên mẫu, be + V3, be + V-ing, have + V3) thì là câu động từ khuyết thiếu; modal đã cho sẵn trước chỗ trống thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ, xem nó tự làm hay chịu hành động; xem sau chỗ trống có tân ngữ hay by + người làm.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ chịu hành động thì chọn modal + be + V3; loại modal + V nguyên mẫu, modal + be + V-ing, modal + have + V3 (chủ động, thiếu tân ngữ) và các dạng không đứng sau modal.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Your order",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "cannot be processed",
+                    "label": "modal + be + V3"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "until we have received full payment.",
+                    "label": "mệnh đề thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: đơn hàng được xử lý, nên sau cannot là be + V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng của “process”, chỉ một dạng chia thì, nên đây là câu dạng động từ.",
+                  "Bước 2: Chỗ trống đứng sau “cannot”; dấu hiệu “modal + ___”: “Your order cannot -------”, phía sau là “until…”, không có tân ngữ.",
+                  "Bước 3: Đơn hàng được xử lý (chịu hành động) nên dùng modal + be + V3, vì vậy chọn “be processed” (được xử lý).",
+                  "“to process” (A) là to V, sau “cannot” không dùng to V, nên loại.",
+                  "“being processed” (C) là being + V3, sau “cannot” phải là V nguyên mẫu, nên loại.",
+                  "“has processed” (D) là động từ chia thì, không đứng sau “cannot”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "**by email**, **by mail** chỉ cách thức, không phải người làm; câu vẫn là bị động vì sau chỗ trống không có tân ngữ: *Invoices will be sent by email.* — Hóa đơn sẽ được gửi qua email.",
+                  "should/must/may/might + have + V3 nói về quá khứ (should have submitted: lẽ ra đã phải nộp); will have + V3 nói việc sẽ xong trước một mốc tương lai. Các dạng này không dùng để nêu quy định."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ chịu hành động: modal + be + V3.",
+                  "Sau modal luôn là V nguyên mẫu; ở bị động, sau modal + be là V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,428 @@
+{
+  "subtopic": {
+    "id": "c9ddfca8-43ae-42a9-b39e-992381bf7300",
+    "topic_id": "baee7534-1736-48df-a951-8d40f9d0f7a4",
+    "title_en": "Rút gọn mệnh đề quan hệ",
+    "title_vi": "Rút gọn mệnh đề quan hệ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 68,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-rut-gon-menh-de-quan-he"
+  },
+  "lessons": [
+    {
+      "id": "49ca72e1-f250-4429-bd57-c557f692348a",
+      "subtopic_id": "c9ddfca8-43ae-42a9-b39e-992381bf7300",
+      "title_en": "Rút gọn mệnh đề quan hệ",
+      "title_vi": "Rút gọn mệnh đề quan hệ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 2 · Câu 122",
+          "options": {
+            "A": "associated",
+            "B": "association",
+            "C": "associate",
+            "D": "associates"
+          },
+          "question": "Funds have been added to the budget for expenses ------- with the new building.",
+          "translation": "Ngân sách đã được bổ sung thêm tiền cho các khoản chi phí liên quan đến tòa nhà mới."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm ba dạng của động từ “associate” và danh từ “association”. Chỗ trống đứng sau danh từ “expenses”; câu đã có động từ chính “have been added”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Funds",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have been added",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to the budget",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "expenses",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the new building.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng ngay sau danh từ “expenses”, trong cụm giới từ bắt đầu bằng “for”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Câu đã có động từ chính thì sau danh từ cần dạng gì.",
+                  "Mệnh đề quan hệ rút gọn bằng V-ing và V3.",
+                  "Khi nào danh từ tự làm, khi nào chịu hành động."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Mệnh đề quan hệ (who, which, that + động từ) đứng sau danh từ để nói rõ đó là người hay vật nào. Rút gọn là bỏ who/which/that: động từ chủ động đổi thành V-ing; bị động thì bỏ luôn “be”, giữ V3.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động, đầy đủ",
+                    "formula": "N + who/which/that + V"
+                  },
+                  {
+                    "label": "Chủ động, rút gọn",
+                    "formula": "N + V-ing"
+                  },
+                  {
+                    "label": "Bị động, đầy đủ",
+                    "formula": "N + who/which/that + be + V3"
+                  },
+                  {
+                    "label": "Bị động, rút gọn",
+                    "formula": "N + V3"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "All costs",
+                    "label": "danh từ (chủ ngữ)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "which",
+                    "label": "who/which/that: bỏ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "are",
+                    "label": "be: bỏ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "associated with the move",
+                    "label": "V3 + giới từ: giữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are listed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "below.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Mệnh đề đầy đủ (bị động): “which are associated with the move” nói rõ đó là chi phí nào."
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "All costs",
+                    "label": "danh từ (chủ ngữ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "associated with the move",
+                    "label": "cụm rút gọn, bổ nghĩa cho costs"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are listed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "below.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Sau khi rút gọn: V-ing hoặc V3 đứng ngay sau danh từ là mệnh đề quan hệ rút gọn. Cụm này không phải động từ chính, nên câu vẫn cần động từ chính khác, ở đây là “are listed”."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chọn V-ing hay V3 là trả lời câu hỏi: danh từ trước chỗ trống **tự làm** hay **chịu** hành động?",
+                  "Động từ cần tân ngữ (use, send, place…), có tân ngữ phía sau: danh từ tự làm, chọn **V-ing**.",
+                  "Động từ cần tân ngữ, không có tân ngữ, chỉ có by + người làm, giới từ, thời gian hay nơi chốn: danh từ chịu hành động, chọn **V3** (ngoại lệ: động từ hai tân ngữ, xem Lưu ý).",
+                  "Nội động từ (work, arrive, remain…) không có bị động, nên chọn **V-ing**.",
+                  "Các cụm V3 + giới từ đi kèm trong bài tập là dạng bị động: be associated with, be located at, be involved in, be related to, be attached to."
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "V-ing: danh từ tự làm hành động, có tân ngữ",
+                    "*Staff attending the seminar should register by Friday.* — Nhân viên dự hội thảo nên đăng ký trước thứ Sáu."
+                  ],
+                  [
+                    "V-ing: nội động từ, không có tân ngữ",
+                    "*Guests arriving after midnight must use the side entrance.* — Khách đến sau nửa đêm phải đi lối vào bên hông."
+                  ],
+                  [
+                    "V3: danh từ chịu hành động, có thể có by + người làm",
+                    "*The plan approved by the board starts in May.* — Kế hoạch được ban giám đốc duyệt sẽ bắt đầu vào tháng Năm."
+                  ],
+                  [
+                    "V3 + giới từ đi kèm",
+                    "*All costs associated with the move are listed below.* — Mọi chi phí liên quan đến việc chuyển văn phòng được liệt kê dưới đây."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Là mệnh đề quan hệ rút gọn, nói rõ danh từ đứng trước; câu vẫn có động từ chính khác.",
+                    "form": "V-ing hoặc V3 ngay sau danh từ",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính. Thêm một động từ chia thì mà không có liên từ hay who/which/that thì câu có hai động từ chính.",
+                    "form": "Động từ chia thì (hiện tại đơn như “relate”, “relates”; quá khứ đơn; is/are/was/were + V3; is/are + V-ing; has/have/had + V3)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải V-ing hay V3 nên không rút gọn được, cũng không hợp làm động từ chính với chủ ngữ số ít.",
+                    "form": "V nguyên mẫu sau danh từ số ít (store, deliver)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing mang nghĩa chủ động và cần tân ngữ nếu động từ cần tân ngữ.",
+                    "form": "V-ing khi danh từ chịu hành động",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 mang nghĩa bị động; nội động từ không có V3 mang nghĩa bị động.",
+                    "form": "V3 khi danh từ tự làm hành động",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "to V chủ động không đi với by + người làm.",
+                    "form": "to V (to release)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nhận tân ngữ và không nối được với phần phía sau để nói rõ danh từ đứng trước.",
+                    "form": "Danh từ, tính từ cùng gốc (association, imitative)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "danh từ + ___, câu đã có động từ chính",
+                    "example": "*Items ___ during the shipment should be reported to customer service immediately.*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*Employees ___ personal laptops must install the security software.*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*The files ___ by the legal team will be reviewed tomorrow.*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*Parking permits ___ last September will expire at the end of this month.*"
+                  },
+                  {
+                    "signal": "___ + giới từ đi kèm",
+                    "example": "*expenses ___ with the new building*; *The building ___ at the corner of Pine Street*"
+                  },
+                  {
+                    "signal": "nội động từ",
+                    "example": "*Visitors ___ after 6 p.m.*; *The shipment ___ from Osaka this afternoon*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-ing, V3, V nguyên mẫu, dạng chia thì), có thể kèm danh từ cùng gốc. Có nhiều nhất một dạng chia thì là câu dạng động từ; có từ hai dạng chia thì là câu chia động từ; trộn danh từ, tính từ, động từ là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Trước chỗ trống là danh từ (có thể có trạng từ xen giữa, như “The participants closely ___”), câu đã có động từ chính và không có liên từ hay who/which/that nối vào, thì chỗ trống là mệnh đề quan hệ rút gọn; loại các đáp án chia thì.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Danh từ tự làm hành động thì chọn V-ing; danh từ chịu hành động thì chọn V3. Kiểm lại bằng tân ngữ, by + người làm, giới từ đi kèm, nội động từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Funds",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have been added",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to the budget",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "expenses",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "associated with the new building.",
+                    "label": "cụm rút gọn, bổ nghĩa cho expenses"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “associated with the new building” là cụm rút gọn bổ nghĩa cho “expenses”; động từ chính vẫn là “have been added”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm ba dạng của động từ “associate”, trong đó có hai dạng chia thì (associate, associates), và danh từ “association” nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống đứng sau danh từ “expenses”; câu đã có động từ chính “have been added”; dấu hiệu “___ + giới từ đi kèm”: “------- with the new building”.",
+                  "Bước 3: Chi phí chịu hành động (be associated with) nên dùng N + V3, vì vậy chọn “associated” (liên quan đến).",
+                  "“association” (B) là danh từ, không nối được với “with the new building” để nói rõ “expenses”, nên loại.",
+                  "“associate” (C) là động từ chia thì hiện tại, câu đã có động từ chính “have been added”, nên loại.",
+                  "“associates” (D) là V-s hoặc danh từ số nhiều; câu đã có động từ chính, còn danh từ không nối được với “with…”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Nội động từ không có bị động, nên chỉ rút gọn bằng V-ing. Trong bài tập, các động từ sau không có tân ngữ theo nghĩa dùng trong câu: work, travel, come, stand, walk, apply (for), participate (in), remain, arrive. Phần này học thêm ở chủ điểm “Rút gọn với nội động từ”.",
+                  "Tân ngữ phía sau chỉ là dấu hiệu hỗ trợ, không tuyệt đối. Động từ hai tân ngữ (give, offer, award) ở dạng V3 vẫn có danh từ phía sau: *Employees offered a transfer must reply by Friday.* — Nhân viên được đề nghị chuyển công tác phải trả lời trước thứ Sáu. Còn V-ing của nội động từ thì không có tân ngữ.",
+                  "Động từ chỉ trạng thái như have, contain không chia tiếp diễn nhưng vẫn rút gọn bằng V-ing: *Any box containing glassware must be labeled.* — Thùng nào chứa đồ thủy tinh đều phải dán nhãn."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu đã có động từ chính thì sau danh từ dùng V-ing hoặc V3, không dùng động từ chia thì.",
+                  "Danh từ tự làm hành động: V-ing; danh từ chịu hành động: V3.",
+                  "Nội động từ chỉ rút gọn bằng V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

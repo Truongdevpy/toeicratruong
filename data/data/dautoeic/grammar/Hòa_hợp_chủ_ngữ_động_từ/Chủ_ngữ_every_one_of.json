@@ -1,0 +1,341 @@
+{
+  "subtopic": {
+    "id": "e3c4c922-75ae-4134-8def-18e75d0ae0f5",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Chủ ngữ every one of",
+    "title_vi": "Chủ ngữ every one of",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 46,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-chu-ngu-every-one-of"
+  },
+  "lessons": [
+    {
+      "id": "cb9e6520-4369-44e7-be63-5b54c5393411",
+      "subtopic_id": "e3c4c922-75ae-4134-8def-18e75d0ae0f5",
+      "title_en": "Chủ ngữ every one of",
+      "title_vi": "Chủ ngữ every one of",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "requires",
+            "B": "are required",
+            "C": "is required",
+            "D": "will require"
+          },
+          "question": "Every one of the employees ------- to attend the training.",
+          "translation": "Từng nhân viên một đều được yêu cầu tham dự buổi đào tạo."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “require”, có chủ động và bị động. Chỗ trống là động từ chính, đứng sau chủ ngữ “Every one of the employees” và trước “to attend the training”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Every one",
+                    "label": "chủ ngữ (từ chính)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the employees",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to attend the training.",
+                    "label": "to V"
+                  }
+                ],
+                "caption": "Chủ ngữ là cả cụm “Every one of the employees”: phần đứng trước “of” là “Every one”, phần sau “of” là danh từ số nhiều “the employees”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Cụm “every one of + danh từ số nhiều” là chủ ngữ số ít hay số nhiều.",
+                  "Động từ số ít và động từ số nhiều khác nhau thế nào.",
+                  "Khi nào “require” dùng chủ động, khi nào dùng bị động."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ chính phải hợp với chủ ngữ: chủ ngữ số ít đi với động từ số ít, chủ ngữ số nhiều đi với động từ số nhiều. Với các cụm each of, every one of, one of, either of, neither of, all of, both of, several of + danh từ số nhiều, **từ đứng trước “of”** quyết định số của động từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Số ít",
+                    "formula": "each of / every one of / one of / either of / neither of + N số nhiều + V số ít"
+                  },
+                  {
+                    "label": "Số nhiều",
+                    "formula": "all of / both of / several of + N số nhiều + V số nhiều"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "động từ thường",
+                    "V-s/es: carries, manages, attaches",
+                    "V nguyên mẫu: carry, manage, attach"
+                  ],
+                  [
+                    "be",
+                    "is",
+                    "are"
+                  ],
+                  [
+                    "have",
+                    "has",
+                    "have"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Loại động từ",
+                  "Số ít (hiện tại)",
+                  "Số nhiều (hiện tại)"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "each of / every one of + N số nhiều (từng cái một): V số ít",
+                    "*Each of the rooms has a projector.* — Mỗi phòng đều có một máy chiếu."
+                  ],
+                  [
+                    "one of + N số nhiều (một trong số): V số ít",
+                    "*One of our printers needs repair.* — Một trong các máy in của chúng tôi cần sửa."
+                  ],
+                  [
+                    "either of / neither of + N số nhiều (một trong hai / không cái nào trong hai): V số ít",
+                    "*Neither of the offers includes free shipping.* — Không đề nghị nào trong hai đề nghị có miễn phí vận chuyển."
+                  ],
+                  [
+                    "all of / both of / several of + N số nhiều: V số nhiều",
+                    "*Both of the managers agree with the plan.* — Cả hai quản lý đều đồng ý với kế hoạch."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Với “require”: chủ động là **require + người + to V** (yêu cầu ai làm gì). Không có người đứng trước to V thì dùng bị động **be required to V** (được yêu cầu làm gì).",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Động từ chia theo từ đứng trước “of”, không theo danh từ số nhiều sau “of”.",
+                    "form": "V số ít sau each of, every one of, one of, either of, neither of",
+                    "example": "*Every one of the applicants attaches a portfolio.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Là dạng số nhiều, chia theo danh từ sau “of” thay vì từ đứng trước “of”.",
+                    "form": "V nguyên mẫu, are, have sau each of, every one of, one of, either of, neither of (carry, submit, are required)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là dạng số ít, trong khi all of, both of, several of + danh từ số nhiều là chủ ngữ số nhiều.",
+                    "form": "V-s/es sau all of, both of, several of (receives, expires, travels)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chia theo chủ ngữ nên không làm được động từ chính.",
+                    "form": "V-ing, to V, be, being (carrying, to carry, be, being)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“require” chủ động cần người đứng giữa: require + người + to V. Không có người thì dùng is required to V.",
+                    "form": "Chủ động requires, will require + to V khi không có người",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "each of + N số nhiều",
+                    "example": "*Each of the delivery vans ___*; *Each of the three departments ___*"
+                  },
+                  {
+                    "signal": "every one of + N số nhiều",
+                    "example": "*Every one of the applicants ___*; *Every one of the training sessions ___*"
+                  },
+                  {
+                    "signal": "one of + N số nhiều",
+                    "example": "*One of our longtime clients ___*; *One of the printers on the third floor ___*"
+                  },
+                  {
+                    "signal": "either of / neither of + N số nhiều",
+                    "example": "*Either of the two delivery schedules ___*; *Neither of the storage rooms ___*"
+                  },
+                  {
+                    "signal": "all of / both of / several of + N số nhiều",
+                    "example": "*All of the returned items ___*; *Both of the shipping contracts ___*; *Several of the conference speakers ___*"
+                  },
+                  {
+                    "signal": "___ + to V, không có người",
+                    "example": "*Every one of the employees ___ to attend the training*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, có dạng chia thì (V-s, V nguyên mẫu, is/are) thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ. Nếu là cụm “từ chỉ số lượng + of + danh từ số nhiều” thì xem từ đứng trước “of” là each, every one, one, either, neither hay all, both, several.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Each of, every one of, one of, either of, neither of: chọn V số ít; all of, both of, several of: chọn V số nhiều. Loại V-ing, to V vì không làm được động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Every one",
+                    "label": "chủ ngữ (từ chính)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the employees",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is required",
+                    "label": "động từ: số ít, bị động"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to attend the training.",
+                    "label": "to V"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “is required” là động từ số ít, bị động, chia theo “Every one”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng chia thì của động từ “require”, có chủ động và bị động, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ chính; dấu hiệu “every one of + N số nhiều”: “Every one of the employees”; dấu hiệu “___ + to V, không có người”: “to attend the training”.",
+                  "Bước 3: Every one of + N số nhiều đi với V số ít; không có người trước to V nên dùng bị động, vì vậy chọn “is required” (được yêu cầu).",
+                  "“requires” (A) là số ít nhưng chủ động; “require” + to V cần người đứng giữa, câu không có, nên loại.",
+                  "“are required” (B) là bị động số nhiều, chia theo “employees” thay vì “Every one”, nên loại.",
+                  "“will require” (D) là chủ động; “require” + to V cần người đứng giữa, câu không có, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Trong văn nói, either of / neither of + danh từ số nhiều đôi khi đi với động từ số nhiều; văn viết trang trọng dùng động từ số ít."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Each of, every one of, one of, either of, neither of + danh từ số nhiều: động từ số ít.",
+                  "All of, both of, several of + danh từ số nhiều: động từ số nhiều.",
+                  "Với các cụm trên, động từ chia theo từ đứng trước “of”, không theo danh từ sau “of”."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

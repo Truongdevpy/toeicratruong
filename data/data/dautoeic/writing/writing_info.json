@@ -1,0 +1,40 @@
+{
+  "module": "mod-write",
+  "name": "Kỹ năng Viết (Writing)",
+  "status": "In Development (Đang phát triển / Sắp ra mắt)",
+  "sub_parts": [
+    {
+      "part": 1,
+      "name": "Part 1: Viết câu dựa trên bức tranh",
+      "table": "writing_part1_questions",
+      "storage_bucket": "writing-part1-images"
+    },
+    {
+      "part": 2,
+      "name": "Part 2: Trả lời yêu cầu bằng văn bản (Email response)",
+      "table": "writing_part2_questions"
+    },
+    {
+      "part": 3,
+      "name": "Part 3: Viết bài luận thể hiện quan điểm (Opinion essay)"
+    }
+  ],
+  "schema_part1": [
+    "id",
+    "external_id",
+    "image_path",
+    "image_name",
+    "words",
+    "words_vi",
+    "difficulty",
+    "structure_suggestions",
+    "sample_sentences",
+    "sample_structures",
+    "samples_en",
+    "samples_vi",
+    "ideas",
+    "is_hidden",
+    "pattern"
+  ],
+  "note": "UI interactive components for Part 1 and Part 2 are built in frontend; backend tables currently contain 0 published rows."
+}

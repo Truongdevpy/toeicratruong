@@ -1,0 +1,369 @@
+{
+  "subtopic": {
+    "id": "37f6bb82-c4bb-42ce-9d7f-e47fa7af7e28",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì hiện tại hoàn thành",
+    "title_vi": "Thì hiện tại hoàn thành",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 78,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-hien-tai-hoan-thanh"
+  },
+  "lessons": [
+    {
+      "id": "df9e085e-764b-44ee-8adf-5c2a4732b528",
+      "subtopic_id": "37f6bb82-c4bb-42ce-9d7f-e47fa7af7e28",
+      "title_en": "Thì hiện tại hoàn thành",
+      "title_vi": "Thì hiện tại hoàn thành",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 8 · Câu 112",
+          "options": {
+            "A": "submit",
+            "B": "submission",
+            "C": "submitted",
+            "D": "submitting"
+          },
+          "question": "Several companies have already ------- bids to paint logos on our delivery trucks.",
+          "translation": "Một vài công ty đã nộp hồ sơ dự thầu để sơn logo lên các xe giao hàng của chúng tôi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm ba dạng của động từ “submit” và danh từ “submission”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Several companies",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have",
+                    "label": "has/have"
+                  },
+                  {
+                    "role": "X",
+                    "text": "already",
+                    "label": ""
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "bids",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to paint logos on our delivery trucks.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau “have already” và trước danh từ “bids”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau has/have, động từ ở dạng nào",
+                  "công thức thì hiện tại hoàn thành",
+                  "chỗ trống cần động từ hay danh từ"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì hiện tại hoàn thành nói về việc đã xảy ra trước lúc nói và còn liên quan đến hiện tại, hoặc việc bắt đầu trong quá khứ và kéo dài đến nay.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "Chủ ngữ số ít + has + V3"
+                  },
+                  {
+                    "formula": "I, you, we, they, chủ ngữ số nhiều + have + V3"
+                  },
+                  {
+                    "label": "Phủ định",
+                    "formula": "S + hasn’t / haven’t + V3"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.2,
+                    "label": "2019"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.6,
+                    "from": 0.2,
+                    "label": "has worked",
+                    "style": "solid"
+                  }
+                ],
+                "points": [],
+                "caption": "*Mr. Park has worked in our Seoul office since 2019.*: bắt đầu năm 2019 và kéo dài đến bây giờ."
+              },
+              {
+                "rows": [
+                  [
+                    "việc kéo dài từ một mốc quá khứ đến nay",
+                    "*Mr. Park has worked in our Seoul office since 2019.* — Ông Park làm việc ở văn phòng Seoul của chúng tôi từ năm 2019 đến nay."
+                  ],
+                  [
+                    "việc đã xảy ra, kết quả còn ở hiện tại",
+                    "*The company has launched a new online booking system.* — Công ty đã ra mắt một hệ thống đặt chỗ trực tuyến mới."
+                  ],
+                  [
+                    "việc chưa xảy ra tính đến lúc nói",
+                    "*The shipment from our supplier hasn’t arrived yet.* — Lô hàng của nhà cung cấp vẫn chưa đến."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trong thì này, sau has/have là **V3** (has launched, have risen).",
+                  "Mệnh đề sau since nêu mốc bắt đầu nên chia quá khứ đơn: *since the new scheduling system was installed*.",
+                  "“yet” đứng cuối câu trần thuật với nghĩa “chưa” đi với câu phủ định (hasn’t/haven’t + V3)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chỉ nói về hiện tại, không nối được với since, for, for the past, over the past để nói việc kéo dài đến nay.",
+                    "form": "V, V-s (hiện tại đơn), is + V-ing (hiện tại tiếp diễn)",
+                    "example": "“increases”, “is reducing”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc đã kết thúc ở một lúc đã qua, không kéo đến nay.",
+                    "form": "V-ed (quá khứ đơn)",
+                    "example": "“increased”, “rose”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc sẽ xảy ra.",
+                    "form": "will + V",
+                    "example": "“will reduce”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thiếu has/have hoặc không làm được động từ chính.",
+                    "form": "V3 đứng một mình, V-ing, to V",
+                    "example": "“risen”, “working”, “having”, “to have”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "has đi với chủ ngữ số ít, have đi với số nhiều; sau has phải là V3.",
+                    "form": "has/have chia sai chủ ngữ; has + V-ing",
+                    "example": "“has experienced” với “they”, “has launching”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "since + mốc quá khứ",
+                    "example": "*since 2000*, *Since last winter*"
+                  },
+                  {
+                    "signal": "since + mệnh đề quá khứ",
+                    "example": "*Since the new scheduling system was installed*"
+                  },
+                  {
+                    "signal": "for + khoảng thời gian",
+                    "example": "*for ten years*"
+                  },
+                  {
+                    "signal": "for the past + khoảng thời gian",
+                    "example": "*for the past two years*"
+                  },
+                  {
+                    "signal": "over the past + khoảng thời gian",
+                    "example": "*over the past few years*"
+                  },
+                  {
+                    "signal": "yet (câu phủ định)",
+                    "example": "*Bill ------- arrived yet.*"
+                  },
+                  {
+                    "signal": "has/have (already) + ___",
+                    "example": "*have already ------- bids*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ (hoặc của trợ động từ have), có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm chủ ngữ số ít hay số nhiều; xem trước chỗ trống đã có has/have chưa; tìm dấu hiệu since, for, for the past, over the past, yet.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc kéo dài đến nay hoặc kết quả còn ở hiện tại thì chọn has/have + V3 đúng chủ ngữ; loại hiện tại đơn, tiếp diễn, quá khứ đơn, will, dạng không chia và dạng sai chủ ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Several companies",
+                    "label": "chủ ngữ số nhiều"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have",
+                    "label": "have"
+                  },
+                  {
+                    "role": "X",
+                    "text": "already",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "submitted",
+                    "label": "V3"
+                  },
+                  {
+                    "role": "O",
+                    "text": "bids",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to paint logos on our delivery trucks.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu hoàn chỉnh"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm ba dạng của động từ “submit” và danh từ “submission” nên đây là câu chia động từ.",
+                  "Bước 2: Chủ ngữ “Several companies” số nhiều, trước chỗ trống có “have already”, sau là tân ngữ “bids”; dấu hiệu “has/have (already) + ___”.",
+                  "Bước 3: Sau “have” cần V3 để tạo have + V3, vì vậy chọn “submitted” (đã nộp).",
+                  "“submit” (A) là V nguyên mẫu, không đứng sau “have” trong thì hoàn thành, nên loại.",
+                  "“submission” (B) là danh từ, không mang được tân ngữ “bids” theo sau, nên loại.",
+                  "“submitting” (D) là V-ing, sau “have” phải là V3 chứ không phải V-ing, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“for + khoảng thời gian” cũng đi với quá khứ đơn khi việc đã kết thúc, ví dụ *Ms. Diaz worked in our Paris office for two years.* — Bà Diaz từng làm ở văn phòng Paris của chúng tôi hai năm (nay không còn làm ở đó). Chỉ dùng has/have + V3 khi việc kéo dài đến bây giờ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Việc kéo dài từ quá khứ đến nay (since, for the past, over the past): has/have + V3.",
+                  "Chủ ngữ số ít dùng has, số nhiều dùng have; sau has/have của thì này là V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

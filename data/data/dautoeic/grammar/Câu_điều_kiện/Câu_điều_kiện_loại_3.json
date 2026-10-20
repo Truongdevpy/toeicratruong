@@ -1,0 +1,394 @@
+{
+  "subtopic": {
+    "id": "cd56ef3e-638c-4cf5-a982-d49d6ca904e3",
+    "topic_id": "e2bbeb80-e6c3-4f81-ab23-b9c7f6896d7e",
+    "title_en": "Câu điều kiện loại 3",
+    "title_vi": "Câu điều kiện loại 3",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 31,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-cau-dieu-kien-loai-3"
+  },
+  "lessons": [
+    {
+      "id": "5d0159a3-4224-4bd9-864a-59f3d7605133",
+      "subtopic_id": "cd56ef3e-638c-4cf5-a982-d49d6ca904e3",
+      "title_en": "Câu điều kiện loại 3",
+      "title_vi": "Câu điều kiện loại 3",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2020 · Câu 76",
+          "options": {
+            "A": "arrive",
+            "B": "arrives",
+            "C": "arrived",
+            "D": "had arrived"
+          },
+          "question": "Choi would have been at the keynote address if her train ------- on time.",
+          "translation": "Choi đã có mặt ở bài phát biểu chính nếu chuyến tàu của cô ấy đến đúng giờ."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “arrive”. Chỗ trống là động từ của vế “if”, còn vế chính đứng trước đã có động từ “would have been”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Choi",
+                    "label": "chủ ngữ (vế chính)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would have been",
+                    "label": "động từ (vế chính)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the keynote address",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "if",
+                    "label": "liên từ điều kiện"
+                  },
+                  {
+                    "role": "S",
+                    "text": "her train",
+                    "label": "chủ ngữ (vế if)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on time.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Vế chính đứng trước, vế if đứng sau; chỗ trống là động từ của vế if, sau chủ ngữ “her train”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“would have been” nói về lúc nào, việc đó có xảy ra không",
+                  "vế if đi với “would have + V3” chia thế nào",
+                  "vì sao hiện tại đơn, quá khứ đơn không hợp ở đây"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Câu điều kiện loại 3 nói về một điều **đã không xảy ra trong quá khứ** và kết quả tưởng tượng nếu nó đã xảy ra. Vế if dùng **had + V3**, vế chính dùng **would / could / might have + V3**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Vế if đứng trước",
+                    "formula": "If + S + had + V3, S + would/could/might + have + V3"
+                  },
+                  {
+                    "label": "Vế chính đứng trước",
+                    "formula": "S + would/could/might + have + V3 + if + S + had + V3"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "had been + V3 / would have been + V3"
+                  },
+                  {
+                    "label": "Phủ định",
+                    "formula": "had not + V3 / would not have + V3"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "If",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "Ms. Kim had called earlier,",
+                    "label": "vế if: had + V3"
+                  },
+                  {
+                    "role": "S",
+                    "text": "we",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would have changed",
+                    "label": "vế chính: would have + V3"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the date.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "*If Ms. Kim had called earlier, we would have changed the date.* — Nếu cô Kim gọi sớm hơn, chúng tôi đã đổi ngày. Thực tế cô Kim không gọi sớm, nên ngày không đổi."
+              },
+              {
+                "rows": [
+                  [
+                    "would have + V3: kết quả chắc chắn",
+                    "*If the report had been ready, we would have sent it yesterday.* — Nếu báo cáo đã xong, hôm qua chúng tôi đã gửi đi."
+                  ],
+                  [
+                    "could / might have + V3: kết quả có thể, có lẽ",
+                    "*If we had hired more staff, we could have finished sooner.* — Nếu thuê thêm nhân viên, chúng tôi đã có thể xong sớm hơn."
+                  ],
+                  [
+                    "bị động: had been + V3, would have been + V3",
+                    "*If the order had been placed on Monday, it would have arrived by Friday.* — Nếu đơn hàng được đặt vào thứ Hai, hàng đã về trước thứ Sáu."
+                  ],
+                  [
+                    "phủ định: had not + V3, would not have + V3",
+                    "*If the files had not been lost, we would not have missed the deadline.* — Nếu các tệp không bị mất, chúng tôi đã không trễ hạn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Mốc quá khứ trong câu (last year, last Friday, yesterday’s seminar, last month’s deadline) cho biết câu nói về quá khứ, nên không dùng hiện tại, tương lai hay can/may + V.",
+                  "Chủ ngữ chịu hành động (hợp đồng được ký, hội thảo được tổ chức) thì dùng bị động: **had been + V3** hoặc **would/could have been + V3**."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Hai vế cùng nói về một việc đã không xảy ra trong quá khứ.",
+                    "form": "had + V3 ở vế if; would/could/might have + V3 ở vế chính",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Nói về hiện tại, không hợp mốc quá khứ và không khớp với vế kia của câu loại 3.",
+                    "form": "Hiện tại đơn, hiện tại tiếp diễn (takes, hosts, is, are postponing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói hiện tại hoặc tương lai; là vế chính của câu loại 1, không đi với had + V3.",
+                    "form": "Tương lai đơn, can/may + V (will save, can meet, may not agree)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc có thật tính đến nay; không làm vế nào của câu loại 3.",
+                    "form": "has/have + V3 (has saved, has taken)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Ở vế chính: kể việc có thật, không phải kết quả tưởng tượng. Ở vế if: là câu loại 2 (If + quá khứ đơn, would + V), nói điều không có thật ở hiện tại.",
+                    "form": "Quá khứ đơn (saved, postponed, arrived)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vế if của câu loại 3 dùng had + V3, không dùng would.",
+                    "form": "would have + V3 ở vế if (would have approved)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính của vế if.",
+                    "form": "V-ing (booking, being, signing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hội thảo được tổ chức: cần had been + V3.",
+                    "form": "Chủ động khi chủ ngữ chịu hành động (holds)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "vế if có had + V3",
+                    "example": "*If Casa Lumo had hired more servers, …*; *… if it had switched to a cheaper supplier*"
+                  },
+                  {
+                    "signal": "vế chính có would / could / might have + V3",
+                    "example": "*…, he would have arrived at yesterday's seminar on time*; *Choi would have been at the keynote address …*"
+                  },
+                  {
+                    "signal": "mốc quá khứ",
+                    "example": "*last year*, *last Saturday*, *yesterday's seminar*, *last month's deadline*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*If the contract ------- by the end of last June*; *if it ------- during regular working hours*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng khác nhau của một động từ, có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống nằm ở vế if hay vế chính; tìm had + V3 hoặc would/could/might have + V3 ở vế kia và mốc quá khứ; xem sau chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Vế if chọn had + V3; vế chính chọn would/could/might have + V3, đúng chủ động hay bị động. Loại hiện tại, tương lai, can/may + V, has/have + V3 và dạng không chia.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Choi",
+                    "label": "chủ ngữ (vế chính)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would have been",
+                    "label": "would have + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the keynote address",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "if",
+                    "label": "liên từ điều kiện"
+                  },
+                  {
+                    "role": "S",
+                    "text": "her train",
+                    "label": "chủ ngữ (vế if)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "had arrived",
+                    "label": "had + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on time.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: vế chính “would have been”, vế if “had arrived”. Thực tế tàu đến trễ và Choi đã không có mặt."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng chia thì của động từ “arrive” nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ của vế if, chủ ngữ “her train” số ít; dấu hiệu “vế chính có would / could / might have + V3”: “would have been”.",
+                  "Bước 3: Vế chính có would have + V3 thì vế if dùng had + V3, vì vậy chọn “had arrived” (đến).",
+                  "“arrive” (A) là V nguyên mẫu, không hợp chủ ngữ số ít “her train” và không khớp “would have been”, nên loại.",
+                  "“arrives” (B) là hiện tại đơn, là vế if của loại 1, không đi với “would have been”, nên loại.",
+                  "“arrived” (C) là quá khứ đơn, là vế if của loại 2, không đi với “would have been”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“had been + tính từ” cũng là had + V3, vì “been” là V3 của “be”: *if the store had been large enough* — nếu cửa hàng đủ rộng."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Việc đã không xảy ra trong quá khứ: If + had + V3, would/could/might have + V3.",
+                  "Vế if không dùng would; vế chính không dùng quá khứ đơn.",
+                  "Chủ ngữ chịu hành động: had been + V3, would have been + V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,355 @@
+{
+  "subtopic": {
+    "id": "a7e5b458-ac8c-4385-a776-8e3fd3fc786a",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì tương lai hoàn thành",
+    "title_vi": "Thì tương lai hoàn thành",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 87,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-tuong-lai-hoan-thanh"
+  },
+  "lessons": [
+    {
+      "id": "da40805d-ab74-4d2f-a40f-df7162036acc",
+      "subtopic_id": "a7e5b458-ac8c-4385-a776-8e3fd3fc786a",
+      "title_en": "Thì tương lai hoàn thành",
+      "title_vi": "Thì tương lai hoàn thành",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2022 · Câu 63",
+          "options": {
+            "A": "opens",
+            "B": "will have opened",
+            "C": "is opening",
+            "D": "had opened"
+          },
+          "question": "By this time next year, Grasswell Industries ------- two new plants in eastern Europe.",
+          "translation": "Đến thời điểm này năm sau, Grasswell Industries sẽ mở xong hai nhà máy mới ở Đông Âu."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng chia thì của động từ “open”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "By this time next year,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Grasswell Industries",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "two new plants",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in eastern Europe.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, sau chủ ngữ “Grasswell Industries”, trước tân ngữ “two new plants”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“By this time next year” chỉ mốc nào và “by” nghĩa là gì",
+                  "dạng động từ nói việc xong trước một mốc tương lai",
+                  "các thì còn lại tính đến lúc nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì tương lai hoàn thành nói về việc **sẽ xong trước một mốc trong tương lai**, hoặc **kéo dài đến mốc đó** (đi với for + khoảng thời gian). “By + mốc” nghĩa là “trước hoặc muộn nhất là vào lúc đó”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Dùng “will have” cho mọi chủ ngữ",
+                    "formula": "S + will have + V3"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.58,
+                    "now": true,
+                    "label": "bây giờ"
+                  },
+                  {
+                    "at": 0.88,
+                    "label": "thứ Sáu tuần sau"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.75,
+                    "label": "will have hired (xong)"
+                  }
+                ],
+                "caption": "Xong trước mốc: “will have hired” nằm sau “bây giờ” và trước mốc tương lai “next Friday”."
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.12,
+                    "label": "bắt đầu làm"
+                  },
+                  {
+                    "at": 0.58,
+                    "now": true,
+                    "label": "bây giờ"
+                  },
+                  {
+                    "at": 0.88,
+                    "label": "tháng Sáu năm sau"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.88,
+                    "from": 0.12,
+                    "label": "will have worked (mười năm)",
+                    "style": "solid"
+                  }
+                ],
+                "points": [],
+                "caption": "Kéo dài đến mốc: “will have worked … for ten years” bắt đầu từ quá khứ, kéo qua “bây giờ”, tính đến mốc tương lai “next June”."
+              },
+              {
+                "rows": [
+                  [
+                    "việc sẽ xong trước một mốc tương lai",
+                    "*By next Friday, we will have hired two new designers.* — Đến thứ Sáu tuần sau, chúng tôi sẽ tuyển xong hai nhà thiết kế mới."
+                  ],
+                  [
+                    "việc kéo dài đến một mốc tương lai (có for + khoảng thời gian)",
+                    "*By next June, she will have worked here for ten years.* — Đến tháng Sáu năm sau, cô ấy sẽ làm việc ở đây được mười năm."
+                  ],
+                  [
+                    "mốc là một việc khác: by the time + S + V hiện tại đơn",
+                    "*By the time the client arrives, we will have prepared the room.* — Đến khi khách hàng tới, chúng tôi sẽ chuẩn bị xong phòng họp."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Tính đến bây giờ, không tính đến mốc tương lai.",
+                    "form": "has/have + V3 (hiện tại hoàn thành)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính đến một mốc trong quá khứ, ví dụ by the time + quá khứ đơn; câu có mốc tương lai thì không dùng.",
+                    "form": "had + V3 (quá khứ hoàn thành)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ nói tương lai khi là lịch trình cố định; không nói việc xong trước một mốc.",
+                    "form": "V / V-s (hiện tại đơn)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng cấu trúc với “by + mốc”, nhưng khi có for + khoảng thời gian tính đến mốc thì phải dùng will have + V3.",
+                    "form": "will + V (tương lai đơn)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "by + mốc tương lai",
+                    "example": "*By next Friday*, *By next December*, *By nine o'clock tomorrow*"
+                  },
+                  {
+                    "signal": "by the end of + thời gian tương lai",
+                    "example": "*By the end of next month*, *By the end of this week*, *By the end of this quarter*"
+                  },
+                  {
+                    "signal": "by this time next year",
+                    "example": "*By this time next year, Grasswell Industries …*"
+                  },
+                  {
+                    "signal": "by the time + S + V hiện tại đơn",
+                    "example": "*By the time the festival begins*, *By the time the guests sit down tonight*"
+                  },
+                  {
+                    "signal": "for + khoảng thời gian",
+                    "example": "*for five full years*, *for exactly ten years*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng chia thì của một động từ thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm cụm “by …” hoặc vế “by the time + S + V” và xác định mốc đó ở tương lai; xem có “for + khoảng thời gian” không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc xong trước hoặc kéo dài đến mốc tương lai thì chọn will have + V3; loại has/have + V3, had + V3, hiện tại đơn, và loại will + V khi có for + khoảng thời gian.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "By this time next year,",
+                    "label": "mốc tương lai"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Grasswell Industries",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will have opened",
+                    "label": "động từ: will have + V3"
+                  },
+                  {
+                    "role": "O",
+                    "text": "two new plants",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in eastern Europe.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu sau khi điền đáp án"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng chia thì của động từ “open” nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “Grasswell Industries”, sau chỗ trống có tân ngữ “two new plants”; có dấu hiệu “by this time next year”.",
+                  "Bước 3: Việc mở hai nhà máy sẽ xong trước mốc tương lai nên dùng will have + V3, vì vậy chọn “will have opened” (sẽ mở xong).",
+                  "“opens” (A) là hiện tại đơn, chỉ nói tương lai khi là lịch trình, không nói việc xong trước mốc “next year”, nên loại.",
+                  "“is opening” (C) là hiện tại tiếp diễn, nói việc đang hoặc sắp diễn ra, không nói việc xong trước mốc “next year”, nên loại.",
+                  "“had opened” (D) là quá khứ hoàn thành, tính đến một mốc quá khứ, trái với “next year”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Vế “by the time …” nói về tương lai thì dùng hiện tại đơn, không dùng will, ví dụ “By the time the festival begins”.",
+                  "“by + mốc tương lai” cũng đi được với will + V: *We will send the report by Friday.* — Chúng tôi sẽ gửi báo cáo chậm nhất vào thứ Sáu. Khi có “for + khoảng thời gian” tính đến mốc thì phải dùng dạng hoàn thành (will have + V3), không dùng will + V."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Xong trước, hoặc kéo dài đến, một mốc tương lai thì dùng will have + V3.",
+                  "by the time + hiện tại đơn: vế chính dùng will have + V3.",
+                  "has/have + V3 tính đến bây giờ; had + V3 tính đến mốc quá khứ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

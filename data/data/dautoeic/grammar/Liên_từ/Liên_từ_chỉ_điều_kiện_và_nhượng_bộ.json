@@ -1,0 +1,370 @@
+{
+  "subtopic": {
+    "id": "74838a8b-5ae7-4ebf-99cf-c59bab2041e9",
+    "topic_id": "903e0438-ae71-4828-90e5-ee40d19ff3af",
+    "title_en": "Liên từ chỉ điều kiện và nhượng bộ",
+    "title_vi": "Liên từ chỉ điều kiện và nhượng bộ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 55,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-lien-tu-chi-dieu-kien-va-nhuong-bo"
+  },
+  "lessons": [
+    {
+      "id": "9c3e053f-423c-4382-8b95-7db0cc6f7745",
+      "subtopic_id": "74838a8b-5ae7-4ebf-99cf-c59bab2041e9",
+      "title_en": "Liên từ chỉ điều kiện và nhượng bộ",
+      "title_vi": "Liên từ chỉ điều kiện và nhượng bộ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 3 · Câu 125",
+          "options": {
+            "A": "if only",
+            "B": "alternatively",
+            "C": "whereas",
+            "D": "even though"
+          },
+          "question": "We hired Okafor Construction to do the renovation ------- it was not the lowest bidder on the project.",
+          "translation": "Chúng tôi đã thuê Công ty Xây dựng Okafor làm việc cải tạo mặc dù công ty này không phải là bên bỏ thầu thấp nhất cho dự án."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là “if only”, “alternatively”, “whereas”, “even though”. Chỗ trống đứng sau mệnh đề chính “We hired Okafor Construction to do the renovation”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "hired",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Okafor Construction",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to do the renovation",
+                    "label": "chỉ mục đích"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was not",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "C",
+                    "text": "the lowest bidder",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the project.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Sau chỗ trống là một mệnh đề đủ chủ ngữ “it” và động từ “was not”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "từ nào nối được mệnh đề S + V vào câu",
+                  "quan hệ giữa hai vế: điều kiện, nhượng bộ hay đối lập",
+                  "nghĩa của từng liên từ trong đáp án"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Liên từ chỉ điều kiện và nhượng bộ đứng trước **mệnh đề (S + V)**. Điều kiện: có vế này thì vế kia mới xảy ra; nhượng bộ: có vế này nhưng vế kia vẫn xảy ra, trái với mong đợi.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Liên từ",
+                    "formula": "liên từ + S + V"
+                  },
+                  {
+                    "label": "Giới từ",
+                    "formula": "giới từ + cụm danh từ / V-ing"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "nhượng bộ (mặc dù)",
+                    "although, though, even though, while",
+                    "*Although the train was late, we arrived on time.* — Mặc dù tàu trễ, chúng tôi vẫn đến đúng giờ."
+                  ],
+                  [
+                    "nhượng bộ với việc có thể xảy ra (ngay cả khi)",
+                    "even if",
+                    "*We will finish the report even if it takes all night.* — Chúng tôi sẽ làm xong báo cáo ngay cả khi phải mất cả đêm."
+                  ],
+                  [
+                    "đối lập hai sự việc (trong khi)",
+                    "whereas, while",
+                    "*Sales rose in Asia, whereas they fell in Europe.* — Doanh số tăng ở châu Á, trong khi giảm ở châu Âu."
+                  ],
+                  [
+                    "điều kiện (miễn là, với điều kiện là)",
+                    "as long as, provided that",
+                    "*You may work from home as long as you attend meetings.* — Bạn có thể làm việc tại nhà miễn là bạn dự các cuộc họp."
+                  ],
+                  [
+                    "điều kiện phủ định (trừ khi)",
+                    "unless (= if … not)",
+                    "*The order ships today unless you cancel it.* — Đơn hàng sẽ được gửi hôm nay trừ khi bạn hủy."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nghĩa",
+                  "Liên từ (+ S + V)",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối mệnh đề vào mệnh đề chính, đúng quan hệ nghĩa giữa hai vế.",
+                    "form": "Liên từ điều kiện, nhượng bộ + S + V",
+                    "example": "*even though it was not the lowest bidder*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chỉ đi với cụm danh từ hoặc V-ing, không đi với mệnh đề S + V.",
+                    "form": "Giới từ: despite, in spite of, regardless of, instead of, in addition to, in case of, because of, except for, without, unlike, in contrast to, apart from",
+                    "example": "*despite the rain*; *although it rained*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối được hai mệnh đề trong một câu, kể cả khi có dấu phẩy.",
+                    "form": "Trạng từ: however, nevertheless, nonetheless, therefore, furthermore, likewise, otherwise, instead, regardless, alternatively",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "whereas đặt hai sự việc cạnh nhau để thấy chúng đối lập (A thế này, còn B thế kia); không dùng cho ý “dù … vẫn”.",
+                    "form": "whereas khi hai vế không phải hai sự việc đem ra so sánh",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói điều mong muốn, không hợp khi câu nói một việc vẫn xảy ra dù có trở ngại.",
+                    "form": "if only (giá mà, chỉ cần)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + mệnh đề S + V",
+                    "example": "*___ it was not the lowest bidder*; *___ customers choose express delivery*"
+                  },
+                  {
+                    "signal": "___ + mệnh đề S + V, mệnh đề chính",
+                    "example": "*___ the conference hall was fully booked, the organizers found extra seats*"
+                  },
+                  {
+                    "signal": "dấu phẩy + ___ + mệnh đề S + V",
+                    "example": "*popular with staff, ___ they take longer to clean*; *prefers video calls, ___ the London office still holds…*"
+                  },
+                  {
+                    "signal": "hai vế trái mong đợi",
+                    "example": "*joined the firm only last year … already leads its largest project*"
+                  },
+                  {
+                    "signal": "vế sau là điều kiện của vế trước",
+                    "example": "*may leave early on Fridays ___ their weekly reports are submitted by noon*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn liên từ, giới từ, trạng từ thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống là mệnh đề S + V hay cụm danh từ; rồi xem quan hệ hai vế: điều kiện, nhượng bộ (trái mong đợi) hay đối lập hai sự việc.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau chỗ trống là mệnh đề thì chọn liên từ đúng nghĩa; loại giới từ và trạng từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "hired",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Okafor Construction",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to do the renovation",
+                    "label": "chỉ mục đích"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "even though",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was not",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "C",
+                    "text": "the lowest bidder",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the project.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “even though” nối mệnh đề nhượng bộ vào mệnh đề chính."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án trộn liên từ “if only”, “whereas”, “even though” và trạng từ “alternatively” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Sau chỗ trống là mệnh đề đủ chủ ngữ “it” và động từ “was not”; dấu hiệu “___ + mệnh đề S + V” và “hai vế trái mong đợi”.",
+                  "Bước 3: Không phải giá thấp nhất mà vẫn được thuê là ý nhượng bộ; liên từ + S + V, vì vậy chọn “even though” (mặc dù).",
+                  "“if only” (A) nghĩa “giá mà, chỉ cần”, không hợp ý vẫn thuê dù giá không thấp nhất, nên loại.",
+                  "“alternatively” (B) là trạng từ (hoặc là), không nối được hai mệnh đề trong một câu, nên loại.",
+                  "“whereas” (C) nối được mệnh đề nhưng dùng để đối chiếu hai sự việc, không mang nghĩa “dù … vẫn”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“while” mang nghĩa “mặc dù” khi hai vế trái mong đợi, và nghĩa “trong khi” khi đối chiếu hai sự việc; chọn nghĩa theo quan hệ hai vế.",
+                  "Mệnh đề sau unless, as long as, provided that, even if nói về tương lai dùng hiện tại đơn, không dùng will: *even if it rains on Saturday morning*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống là mệnh đề S + V thì chọn liên từ, không chọn giới từ hay trạng từ.",
+                  "although, though, even though + S + V; despite, in spite of + cụm danh từ.",
+                  "unless = if … not; as long as, provided that = miễn là."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

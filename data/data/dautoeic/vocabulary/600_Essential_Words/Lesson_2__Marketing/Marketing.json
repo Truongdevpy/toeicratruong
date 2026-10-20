@@ -1,0 +1,652 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "bd9b5b8c-b6db-402d-9fa2-841ad13e02cd",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 2: Marketing",
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:26.71375+00:00",
+    "updated_at": "2026-09-18T08:50:26.71375+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "84c97229-007a-4287-a5a8-ea900007c586",
+    "test_id": "bd9b5b8c-b6db-402d-9fa2-841ad13e02cd",
+    "name": "Marketing",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:26.71375+00:00",
+    "updated_at": "2026-09-18T08:50:26.71375+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c90c49d0-5095-4d61-beaa-8021a0415a0e",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "convince",
+      "ipa": "/kənˈvɪns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The salesman convinced his customer to buy his entire inventory of pens.",
+          "meaning": "thuyết phục, làm cho tin",
+          "antonyms": [
+            "dissuade (can ngăn)",
+            "discourage (làm nản lòng)"
+          ],
+          "toeic_tip": "Dùng convince somebody to V hoặc that + mệnh đề, không có convince doing.",
+          "example_vi": "Người bán hàng thuyết phục được khách mua sạch số bút trong kho.",
+          "word_family": [
+            "convincing (adj) có sức thuyết phục",
+            "conviction (n) niềm tin chắc chắn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:39:00.308381+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c90c49d0-5095-4d61-beaa-8021a0415a0e-wm.jpg?v=1789798370179",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/convince-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/convince-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "convince someone to do something",
+          "meaning": "thuyết phục ai làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c90c49d0-5095-4d61-beaa-8021a0415a0e-0-wm.jpg?v=1789803534873"
+        },
+        {
+          "phrase": "convince customers",
+          "meaning": "thuyết phục khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c90c49d0-5095-4d61-beaa-8021a0415a0e-1-wm.jpg?v=1789803540172"
+        },
+        {
+          "phrase": "be convinced that",
+          "meaning": "tin chắc rằng"
+        }
+      ],
+      "synonyms": [
+        "persuade (thuyết phục)",
+        "talk into (nói cho xuôi để ai làm gì)"
+      ]
+    },
+    {
+      "id": "cab0f863-0303-4d8f-a67e-4556b2ac1f33",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "inspiration",
+      "ipa": "UK: /ˌɪn.spɪˈreɪ.ʃən/ | US: /ˌɪn.spəˈreɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "His work is an inspiration to the marketing department.",
+          "meaning": "nguồn cảm hứng, sự truyền cảm hứng",
+          "antonyms": [
+            "discouragement (sự làm nản lòng)"
+          ],
+          "toeic_tip": "Phân biệt inspiring (gây cảm hứng) và inspired (được truyền cảm hứng).",
+          "example_vi": "Công việc của anh ấy tạo cảm hứng cho cả phòng marketing.",
+          "word_family": [
+            "inspire (v) truyền cảm hứng",
+            "inspiring (adj) gây cảm hứng",
+            "inspirational (adj) đầy cảm hứng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:40:09.557913+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cab0f863-0303-4d8f-a67e-4556b2ac1f33-wm.jpg?v=1789798052305",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/inspiration-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/inspiration-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a source of inspiration",
+          "meaning": "nguồn cảm hứng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cab0f863-0303-4d8f-a67e-4556b2ac1f33-0-wm.jpg?v=1789803608950"
+        },
+        {
+          "phrase": "draw inspiration from",
+          "meaning": "lấy cảm hứng từ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cab0f863-0303-4d8f-a67e-4556b2ac1f33-1-wm.jpg?v=1789803609423"
+        },
+        {
+          "phrase": "be an inspiration to",
+          "meaning": "là nguồn cảm hứng cho"
+        }
+      ],
+      "synonyms": [
+        "motivation (động lực)",
+        "stimulus (thứ khơi gợi)"
+      ]
+    },
+    {
+      "id": "8cc57059-9a86-44ce-8d88-8255e4dfc693",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "attract",
+      "ipa": "/əˈtrækt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The display attracted a number of people at the convention.",
+          "meaning": "thu hút, lôi cuốn",
+          "antonyms": [
+            "repel (làm người ta tránh xa)",
+            "deter (ngăn cản)"
+          ],
+          "toeic_tip": "Danh từ attraction còn nghĩa điểm tham quan trong bài du lịch.",
+          "example_vi": "Gian trưng bày thu hút khá đông người tại hội chợ.",
+          "word_family": [
+            "attraction (n) sức hút, điểm hấp dẫn",
+            "attractive (adj) hấp dẫn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:08:57.060199+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8cc57059-9a86-44ce-8d88-8255e4dfc693-wm.jpg?v=1789798012025",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attract-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attract-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "attract customers",
+          "meaning": "thu hút khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8cc57059-9a86-44ce-8d88-8255e4dfc693-0-wm.jpg?v=1789801721533"
+        },
+        {
+          "phrase": "attract attention",
+          "meaning": "gây chú ý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8cc57059-9a86-44ce-8d88-8255e4dfc693-1-wm.jpg?v=1789801736913"
+        },
+        {
+          "phrase": "attract investment",
+          "meaning": "thu hút đầu tư"
+        }
+      ],
+      "synonyms": [
+        "draw (lôi kéo)",
+        "appeal to (hấp dẫn)",
+        "lure (dụ, hút về phía mình)"
+      ]
+    },
+    {
+      "id": "cdefcdc8-dc48-45f8-9abc-5b12d1026693",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "consume",
+      "ipa": "UK: /kənˈsjuːm/ | US: /kənˈsuːm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The business plans consumed all of Fritz's attention this fall.",
+          "meaning": "tiêu thụ, dùng hết, chiếm hết",
+          "antonyms": [
+            "produce (sản xuất)",
+            "conserve (tiết kiệm)"
+          ],
+          "toeic_tip": "Tính từ ghép time-consuming nghĩa tốn thời gian, hay ra ở Part 5.",
+          "example_vi": "Mùa thu năm đó, mấy kế hoạch kinh doanh chiếm hết tâm trí của Fritz.",
+          "word_family": [
+            "consumer (n) người tiêu dùng",
+            "consumption (n) sự tiêu thụ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:42:00.97419+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cdefcdc8-dc48-45f8-9abc-5b12d1026693-wm.jpg?v=1789798035118",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consume-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consume-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "consume energy",
+          "meaning": "tiêu thụ năng lượng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cdefcdc8-dc48-45f8-9abc-5b12d1026693-0-wm.jpg?v=1789803720445"
+        },
+        {
+          "phrase": "time-consuming",
+          "meaning": "tốn thời gian",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cdefcdc8-dc48-45f8-9abc-5b12d1026693-1-wm.jpg?v=1789803720827"
+        },
+        {
+          "phrase": "consume resources",
+          "meaning": "ngốn hết nguồn lực"
+        }
+      ],
+      "synonyms": [
+        "use up (dùng hết)",
+        "absorb (chiếm hết)",
+        "expend (tiêu hao)"
+      ]
+    },
+    {
+      "id": "bacb9bec-4ee3-4c6a-b256-b62db8df62fb",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "market",
+      "ipa": "UK: /ˈmɑː.kɪt/ | US: /ˈmɑːr.kɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "When Omar first began making his chutneys, he marketed them door-to-door to gourmet shops.",
+          "meaning": "tiếp thị, chào bán; thị trường, nhu cầu",
+          "toeic_tip": "Nhớ on the market (đang bán) khác in the market for (đang muốn mua).",
+          "example_vi": "Hồi mới làm tương ớt, Omar đi chào hàng tới từng cửa hàng đặc sản.",
+          "word_family": [
+            "marketing (n) hoạt động tiếp thị",
+            "marketable (adj) dễ bán, có thị trường"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:33:08.128831+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bacb9bec-4ee3-4c6a-b256-b62db8df62fb-wm.jpg?v=1789798038520",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/market-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/market-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "market a product",
+          "meaning": "tiếp thị sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bacb9bec-4ee3-4c6a-b256-b62db8df62fb-0-wm.jpg?v=1789803187995"
+        },
+        {
+          "phrase": "target market",
+          "meaning": "thị trường mục tiêu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bacb9bec-4ee3-4c6a-b256-b62db8df62fb-1-wm.jpg?v=1789803186440"
+        },
+        {
+          "phrase": "market share",
+          "meaning": "thị phần"
+        }
+      ],
+      "synonyms": [
+        "promote (quảng bá)",
+        "sell (bán)",
+        "demand (nhu cầu)"
+      ]
+    },
+    {
+      "id": "3ab71869-d8e6-41be-9fd9-fd53b364fd1f",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "satisfaction",
+      "ipa": "UK: /ˌsæt.ɪsˈfæk.ʃən/ | US: /ˌsæt̬.ɪsˈfæk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Your satisfaction is guaranteed or you'll get your money back.",
+          "meaning": "sự hài lòng, sự thỏa mãn",
+          "antonyms": [
+            "dissatisfaction (sự không hài lòng)"
+          ],
+          "toeic_tip": "satisfactory (đạt yêu cầu) khác satisfying (làm thỏa mãn), hay ra Part 5.",
+          "example_vi": "Bảo đảm bạn hài lòng, nếu không sẽ được hoàn tiền.",
+          "word_family": [
+            "satisfy (v) làm hài lòng",
+            "satisfied (adj) hài lòng",
+            "satisfactory (adj) đạt yêu cầu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T06:07:47.192512+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3ab71869-d8e6-41be-9fd9-fd53b364fd1f-wm.jpg?v=1789798067130",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/satisfaction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/satisfaction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "customer satisfaction",
+          "meaning": "sự hài lòng của khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3ab71869-d8e6-41be-9fd9-fd53b364fd1f-0-wm.jpg?v=1789797846291"
+        },
+        {
+          "phrase": "job satisfaction",
+          "meaning": "sự hài lòng với công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3ab71869-d8e6-41be-9fd9-fd53b364fd1f-1-wm.jpg?v=1789797856949"
+        },
+        {
+          "phrase": "to your satisfaction",
+          "meaning": "vừa ý bạn"
+        }
+      ],
+      "synonyms": [
+        "contentment (sự mãn nguyện)",
+        "happiness (niềm vui)"
+      ]
+    },
+    {
+      "id": "d88923ee-4597-44b3-8da9-e3b0b8e6a813",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "productive",
+      "ipa": "/prəˈdʌk.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The unproductive sales meeting brought many staff complaints.",
+          "meaning": "hiệu quả, năng suất cao, đem lại kết quả",
+          "antonyms": [
+            "unproductive (không hiệu quả)",
+            "fruitless (vô ích)"
+          ],
+          "toeic_tip": "Phân biệt production (sản lượng, việc sản xuất) và productivity (năng suất).",
+          "example_vi": "Cuộc họp bán hàng chẳng đi đến đâu khiến nhân viên phàn nàn nhiều.",
+          "word_family": [
+            "produce (v) sản xuất",
+            "productivity (n) năng suất",
+            "production (n) việc sản xuất"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:47:59.535443+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d88923ee-4597-44b3-8da9-e3b0b8e6a813-wm.jpg?v=1789798053990",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/productive-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/productive-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a productive meeting",
+          "meaning": "cuộc họp hiệu quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d88923ee-4597-44b3-8da9-e3b0b8e6a813-0-wm.jpg?v=1789804079386"
+        },
+        {
+          "phrase": "highly productive",
+          "meaning": "năng suất cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d88923ee-4597-44b3-8da9-e3b0b8e6a813-1-wm.jpg?v=1789804078974"
+        },
+        {
+          "phrase": "productive workers",
+          "meaning": "nhân viên làm việc hiệu quả"
+        }
+      ],
+      "synonyms": [
+        "efficient (hiệu quả)",
+        "fruitful (có kết quả)"
+      ]
+    },
+    {
+      "id": "dc01e34e-27a2-4383-8ed2-5d55ebd1856c",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "persuasion",
+      "ipa": "UK: /pəˈsweɪ.ʒən/ | US: /pɚˈsweɪ.ʒən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The seminar teaches techniques of persuasion to increase sales.",
+          "meaning": "sự thuyết phục, sức thuyết phục, niềm tin vững chắc",
+          "toeic_tip": "Tính từ persuasive hay ra ở Part 5 khi tả quảng cáo, bài thuyết trình.",
+          "example_vi": "Hội thảo dạy các kỹ thuật thuyết phục để tăng doanh số.",
+          "word_family": [
+            "persuade (v) thuyết phục",
+            "persuasive (adj) có sức thuyết phục"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:49:22.332315+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/dc01e34e-27a2-4383-8ed2-5d55ebd1856c-wm.jpg?v=1789798013380",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/persuasion-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/persuasion-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the power of persuasion",
+          "meaning": "sức thuyết phục",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dc01e34e-27a2-4383-8ed2-5d55ebd1856c-0-wm.jpg?v=1789804161721"
+        },
+        {
+          "phrase": "gentle persuasion",
+          "meaning": "cách thuyết phục nhẹ nhàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dc01e34e-27a2-4383-8ed2-5d55ebd1856c-1-wm.jpg?v=1789804162192"
+        },
+        {
+          "phrase": "techniques of persuasion",
+          "meaning": "kỹ thuật thuyết phục"
+        }
+      ],
+      "synonyms": [
+        "influence (sự ảnh hưởng)",
+        "conviction (niềm tin)"
+      ]
+    },
+    {
+      "id": "e3c91991-3842-4f2d-bbe4-396799431f4d",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "competition",
+      "ipa": "UK: /ˌkɒm.pəˈtɪʃ.ən/ | US: /ˌkɑːm.pəˈtɪʃ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "In the competition for afternoon diners, Hector's has come out on top.",
+          "meaning": "sự cạnh tranh, cuộc đua tranh, cuộc thi",
+          "antonyms": [
+            "cooperation (sự hợp tác)"
+          ],
+          "toeic_tip": "competition không đếm được khi chỉ sự cạnh tranh; competitor mới chỉ người.",
+          "example_vi": "Trong cuộc đua giành khách ăn buổi chiều, nhà hàng Hector's đang dẫn đầu.",
+          "word_family": [
+            "compete (v) cạnh tranh",
+            "competitive (adj) cạnh tranh, có sức cạnh tranh",
+            "competitor (n) đối thủ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:53:50.52915+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e3c91991-3842-4f2d-bbe4-396799431f4d-wm.jpg?v=1789798299931",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/competition-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/competition-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "fierce competition",
+          "meaning": "cạnh tranh gay gắt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e3c91991-3842-4f2d-bbe4-396799431f4d-0-wm.jpg?v=1789804430394"
+        },
+        {
+          "phrase": "face competition",
+          "meaning": "đối mặt cạnh tranh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e3c91991-3842-4f2d-bbe4-396799431f4d-1-wm.jpg?v=1789804429136"
+        },
+        {
+          "phrase": "enter a competition",
+          "meaning": "dự một cuộc thi"
+        }
+      ],
+      "synonyms": [
+        "rivalry (sự ganh đua)",
+        "contest (cuộc thi)"
+      ]
+    },
+    {
+      "id": "b88120c5-96d4-4437-93d8-08a7405c4144",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "currently",
+      "ipa": "UK: /ˈkʌr.ənt.li/ | US: /ˈkɝː.ənt.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We are currently exploring plans to update the MX3 model.",
+          "meaning": "hiện nay, hiện giờ",
+          "antonyms": [
+            "formerly (trước đây)",
+            "previously (trước kia)"
+          ],
+          "toeic_tip": "currently là dấu hiệu chia thì hiện tại tiếp diễn ở Part 5.",
+          "example_vi": "Chúng tôi đang tìm hiểu các phương án nâng cấp mẫu MX3.",
+          "word_family": [
+            "current (adj) hiện thời, hiện tại"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T07:31:04.810327+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b88120c5-96d4-4437-93d8-08a7405c4144-wm.jpg?v=1789798384422",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/currently-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/currently-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "currently available",
+          "meaning": "hiện đang có",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b88120c5-96d4-4437-93d8-08a7405c4144-0-wm.jpg?v=1789803050901"
+        },
+        {
+          "phrase": "currently employed",
+          "meaning": "đang làm việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b88120c5-96d4-4437-93d8-08a7405c4144-1-wm.jpg?v=1789803064661"
+        },
+        {
+          "phrase": "is currently being reviewed",
+          "meaning": "đang được xem xét"
+        }
+      ],
+      "synonyms": [
+        "presently (hiện giờ)",
+        "now (bây giờ)",
+        "at present (hiện tại)"
+      ]
+    },
+    {
+      "id": "7ca80ee8-00f3-40d8-90e1-8738427c6b58",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "compare",
+      "ipa": "UK: /kəmˈpeər/ | US: /kəmˈper/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Once the customer compared the two products, her choice was easy.",
+          "meaning": "so sánh, đối chiếu",
+          "toeic_tip": "compare A with hoặc to B; compared to mở đầu câu hay ra ở Part 6.",
+          "example_vi": "So sánh xong hai sản phẩm, khách hàng chọn rất nhanh.",
+          "word_family": [
+            "comparison (n) sự so sánh",
+            "comparable (adj) tương đương",
+            "comparative (adj) mang tính so sánh"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T06:59:06.996721+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7ca80ee8-00f3-40d8-90e1-8738427c6b58-wm.jpg?v=1789798057209",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compare-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compare-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "compare prices",
+          "meaning": "so sánh giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7ca80ee8-00f3-40d8-90e1-8738427c6b58-0-wm.jpg?v=1789801145351"
+        },
+        {
+          "phrase": "compared to",
+          "meaning": "so với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7ca80ee8-00f3-40d8-90e1-8738427c6b58-1-wm.jpg?v=1789801146854"
+        },
+        {
+          "phrase": "compare favorably with",
+          "meaning": "nhỉnh hơn khi so với"
+        }
+      ],
+      "synonyms": [
+        "contrast (đối chiếu)",
+        "weigh (cân nhắc hai bên)"
+      ]
+    },
+    {
+      "id": "43b673bb-08cd-4954-81fb-64260bc0028c",
+      "part_id": "84c97229-007a-4287-a5a8-ea900007c586",
+      "word": "fad",
+      "ipa": "/fæd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The mini dress was a fad once thought to be finished, but now it is making a comeback.",
+          "meaning": "mốt nhất thời, trào lưu ngắn ngủi",
+          "antonyms": [
+            "tradition (truyền thống)"
+          ],
+          "toeic_tip": "fad hàm ý ngắn hạn, khác trend là xu hướng có thể kéo dài.",
+          "example_vi": "Váy ngắn từng là mốt tưởng đã hết thời, giờ lại đang quay trở lại.",
+          "word_family": [
+            "faddish (adj) mang tính nhất thời"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:26.71375+00:00",
+      "updated_at": "2026-09-19T06:32:22.659664+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/43b673bb-08cd-4954-81fb-64260bc0028c-wm.jpg?v=1789797693185",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fad-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fad-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a passing fad",
+          "meaning": "mốt thoáng qua",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/43b673bb-08cd-4954-81fb-64260bc0028c-0-wm.jpg?v=1789799541515"
+        },
+        {
+          "phrase": "the latest fad",
+          "meaning": "trào lưu mới nhất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/43b673bb-08cd-4954-81fb-64260bc0028c-1-wm.jpg?v=1789799542511"
+        },
+        {
+          "phrase": "follow a fad",
+          "meaning": "chạy theo mốt"
+        }
+      ],
+      "synonyms": [
+        "craze (cơn sốt)",
+        "trend (xu hướng)"
+      ]
+    }
+  ]
+}

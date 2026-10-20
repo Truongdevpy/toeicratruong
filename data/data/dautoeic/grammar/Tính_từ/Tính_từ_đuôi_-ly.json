@@ -1,0 +1,457 @@
+{
+  "subtopic": {
+    "id": "2882c1c6-5d0e-4efb-bdc6-2d02d623efaa",
+    "topic_id": "1cb57ce1-885b-4639-b51c-f69a772f9412",
+    "title_en": "Tính từ đuôi -ly",
+    "title_vi": "Tính từ đuôi -ly",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 28,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-tinh-tu-duoi-ly"
+  },
+  "lessons": [
+    {
+      "id": "96bd6b16-0442-40a1-9d7a-4316dbc425a9",
+      "subtopic_id": "2882c1c6-5d0e-4efb-bdc6-2d02d623efaa",
+      "title_en": "Tính từ đuôi -ly",
+      "title_vi": "Tính từ đuôi -ly",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2020 · Câu 102",
+          "options": {
+            "A": "cost",
+            "B": "costing",
+            "C": "costly",
+            "D": "costliness"
+          },
+          "question": "The chief engineer noted that constructing another bridge would be more ------- than repairing the existing structure.",
+          "translation": "Kỹ sư trưởng nhận xét rằng xây một cây cầu khác sẽ tốn kém hơn sửa chữa công trình hiện có."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “cost” nhưng khác loại từ. Chỗ trống nằm trong mệnh đề sau “noted that”, giữa “would be more” và “than”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The chief engineer",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "noted",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "constructing another bridge",
+                    "label": "chủ ngữ (mệnh đề sau noted)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would be",
+                    "label": "động từ (mệnh đề sau noted)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "more",
+                    "label": "so sánh hơn"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "than repairing the existing structure.",
+                    "label": "vế so sánh (than …)"
+                  }
+                ],
+                "caption": "Sau “noted that” là một mệnh đề có chủ ngữ và động từ riêng; chỗ trống đứng sau “would be more”, trước vế so sánh “than …”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau “be + more … than” cần loại từ nào.",
+                  "Từ đuôi -ly nào là tính từ, không phải trạng từ.",
+                  "Vì sao danh từ và V-ing cùng gốc không đứng được ở chỗ trống này."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Nhiều từ đuôi -ly là trạng từ, tạo từ tính từ + -ly (quick, quickly). Nhưng có một số từ đuôi -ly là **tính từ**, nhiều từ trong số đó tạo từ danh từ + -ly, như friend + -ly thành friendly.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "friend",
+                    "friendly",
+                    "thân thiện",
+                    "friendliness, friendship (danh từ)"
+                  ],
+                  [
+                    "life",
+                    "lively",
+                    "sôi nổi",
+                    "liveliness (danh từ); lives"
+                  ],
+                  [
+                    "cost",
+                    "costly",
+                    "tốn kém",
+                    "costliness (danh từ); costing"
+                  ],
+                  [
+                    "order",
+                    "orderly",
+                    "trật tự, ngăn nắp",
+                    "orderliness (danh từ); ordering"
+                  ],
+                  [
+                    "time",
+                    "timely",
+                    "kịp thời, đúng lúc",
+                    "timeliness (danh từ); timing"
+                  ],
+                  [
+                    "like",
+                    "likely, unlikely",
+                    "có khả năng, khó có khả năng",
+                    "likelihood (danh từ); liking; like, unlike (giới từ)"
+                  ],
+                  [
+                    "week, month, quarter",
+                    "weekly, monthly, quarterly",
+                    "hằng tuần, hằng tháng, hằng quý",
+                    "weeklies, monthlies, quarterlies (danh từ số nhiều)"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ cùng gốc",
+                  "Tính từ đuôi -ly",
+                  "Nghĩa",
+                  "Dạng khác trong bài tập"
+                ]
+              },
+              {
+                "text": "Các tính từ này đứng ở đúng những vị trí của mọi tính từ khác:",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Trước danh từ",
+                    "formula": "mạo từ + adj + N"
+                  },
+                  {
+                    "label": "Sau động từ liên kết",
+                    "formula": "be / become / remain / seem + adj"
+                  },
+                  {
+                    "label": "Sau trạng từ",
+                    "formula": "very / too / extremely + adj"
+                  },
+                  {
+                    "label": "So sánh",
+                    "formula": "be + more + adj + than"
+                  },
+                  {
+                    "label": "So sánh nhất",
+                    "formula": "the most + adj + N"
+                  },
+                  {
+                    "label": "Sau tân ngữ",
+                    "formula": "keep + tân ngữ + adj"
+                  },
+                  {
+                    "label": "Nối bằng and",
+                    "formula": "adj + and + adj"
+                  },
+                  {
+                    "label": "Với likely",
+                    "formula": "be + likely + to V"
+                  },
+                  {
+                    "label": "Với likely, unlikely",
+                    "formula": "it seems + likely / unlikely + that + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "adj + N, sau mạo từ",
+                    "*Our team holds a weekly meeting with the sales director.* — Nhóm chúng tôi họp hằng tuần với giám đốc kinh doanh."
+                  ],
+                  [
+                    "sau động từ liên kết, nối bằng and",
+                    "*The new assistant seems friendly and very organized.* — Trợ lý mới có vẻ thân thiện và rất ngăn nắp."
+                  ],
+                  [
+                    "sau very / too / more",
+                    "*Overnight delivery is too costly for small orders.* — Giao hàng qua đêm quá tốn kém với các đơn hàng nhỏ."
+                  ],
+                  [
+                    "be likely + to V",
+                    "*The client is likely to sign the contract soon.* — Khách hàng có khả năng sớm ký hợp đồng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Là tính từ, đứng trước danh từ, sau be / become / remain / seem, sau very / too / extremely / more.",
+                    "form": "Tính từ đuôi -ly (friendly, costly, timely, likely, weekly)",
+                    "example": "*a timely reply*; *was lively*; *too costly*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Cụm như *a week newsletter*, *an order manner* không có nghĩa; very, too, extremely không bổ nghĩa cho danh từ; sau be, danh từ đếm được số ít cần mạo từ.",
+                    "form": "Danh từ số ít (week, weekend, month, time, cost, order, life, friend)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ đứng trước danh từ khác để ở dạng số ít (trừ vài từ luôn có -s như sales); “a”, “an” không đi với danh từ số nhiều; sau be không mô tả được tính chất của chủ ngữ.",
+                    "form": "Danh từ số nhiều (weeks, months, quarters, times, lives, friends, costs)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là danh từ số nhiều chỉ ấn phẩm ra định kỳ (tuần báo, nguyệt san…), không phải tính từ.",
+                    "form": "Danh từ đuôi -ies (weeklies, monthlies, quarterlies)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là danh từ: very, too, extremely không bổ nghĩa cho chúng; sau be thì nghĩa không hợp, như bầu không khí không thể “là sự sôi nổi”.",
+                    "form": "Danh từ đuôi -ness, -hood, -ship (costliness, liveliness, orderliness, friendliness, timeliness, likelihood, friendship)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính, không thêm được động từ chia; không đứng sau mạo từ hay very.",
+                    "form": "Động từ chia (likes, orders, costs, lives, times)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không cho nghĩa hợp với danh từ đi sau hay với chủ ngữ. timing, liking, ordering còn là danh từ nhưng nghĩa cũng không hợp.",
+                    "form": "V-ing, V-ed (ordering, costing, timing, liking, quartered)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Giới từ cần danh từ theo sau, không dùng trong “be ___ to V” hay “it seems ___ that”.",
+                    "form": "Giới từ (like, unlike)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "mạo từ + ___ + danh từ",
+                    "example": "*a ___ newsletter*; *on a ___ basis*; *in an ___ manner*; *the ___ review meetings*"
+                  },
+                  {
+                    "signal": "trạng từ + ___",
+                    "example": "*a very ___ reply*; *would be too ___*; *become extremely ___*; *a surprisingly ___ debate*"
+                  },
+                  {
+                    "signal": "more / the most + ___",
+                    "example": "*would be more ___ than repairing…*; *the most ___ candidate*"
+                  },
+                  {
+                    "signal": "động từ liên kết + ___",
+                    "example": "*was ___ thanks to the music*; *have become ___ instead of monthly*; *it seems ___ that…*"
+                  },
+                  {
+                    "signal": "be + ___ + to V",
+                    "example": "*is ___ to be named*"
+                  },
+                  {
+                    "signal": "keep + tân ngữ + ___",
+                    "example": "*keeps the supply room clean and ___*"
+                  },
+                  {
+                    "signal": "nối bằng and với tính từ",
+                    "example": "*clean and ___*; *___ and polite*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, V-ing) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống đứng ở đâu: trước danh từ, sau be / become / remain / seem, sau very / too / extremely / more / the most, sau keep + tân ngữ, hay nối bằng and với một tính từ. Ở các vị trí này, chỗ trống cần nói người, vật, việc như thế nào thì dùng tính từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn tính từ; friendly, lively, costly, orderly, timely, likely, weekly, monthly, quarterly là tính từ dù có đuôi -ly. Loại danh từ (kể cả đuôi -ness, -hood, -ship, -ies), động từ chia, giới từ, và V-ing, V-ed không cho nghĩa hợp.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The chief engineer",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "noted",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "constructing another bridge",
+                    "label": "chủ ngữ (mệnh đề sau noted)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would be",
+                    "label": "động từ (mệnh đề sau noted)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "more",
+                    "label": "so sánh hơn"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "costly",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "than repairing the existing structure.",
+                    "label": "vế so sánh (than …)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: tính từ “costly” đứng sau “would be more”, so sánh với “repairing the existing structure”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “cost” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “would be more” và trước “than”; dấu hiệu “more / the most + ___”: “would be more ------- than”.",
+                  "Bước 3: Cần be + more + adj + than; “costly” là tính từ đuôi -ly, vì vậy chọn “costly” (tốn kém).",
+                  "“cost” (A) là danh từ hoặc động từ, không mô tả được việc “constructing another bridge” như tính từ, nên loại.",
+                  "“costing” (B) là V-ing hoặc danh từ (việc tính giá), “would be more costing than” không có nghĩa, nên loại.",
+                  "“costliness” (D) là danh từ (sự tốn kém), việc xây cầu không thể “là sự tốn kém”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Các tính từ như friendly, timely, orderly không thêm -ly lần nữa để thành trạng từ. Muốn nói “một cách …” thì dùng **in a / an + adj + manner**: *in a timely manner*, *in an orderly manner*.",
+                  "weekly, monthly, quarterly còn làm trạng từ: *The report is published monthly.* — Báo cáo được phát hành hằng tháng. Vì vậy phải xem vị trí của chỗ trống, không chỉ xem đuôi."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "friendly, lively, costly, orderly, timely, likely, weekly, monthly, quarterly là tính từ.",
+                  "Chỗ trống cần nói người, vật thế nào (sau be, very, too, more, trước danh từ) thì chọn tính từ.",
+                  "Danh từ đuôi -ness, -hood, -ship không đứng sau very, too, extremely."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

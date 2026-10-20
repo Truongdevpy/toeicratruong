@@ -1,0 +1,642 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "dfa02086-5905-414e-9f91-177681af97c6",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 9: Electronics",
+    "order_index": 9,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:01.23767+00:00",
+    "updated_at": "2026-09-18T08:51:01.23767+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "bee72013-c79c-4193-b750-d38d06056c4a",
+    "test_id": "dfa02086-5905-414e-9f91-177681af97c6",
+    "name": "Electronics",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:01.23767+00:00",
+    "updated_at": "2026-09-18T08:51:01.23767+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "8f8ffb67-3fe9-4a0c-b27e-8b03660750c5",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "disk",
+      "ipa": "/dɪsk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The head of the optical disk reader was dirty.",
+          "meaning": "đĩa lưu trữ dữ liệu",
+          "toeic_tip": "Máy tính dùng disk, còn đĩa nhạc và đĩa CD thường viết disc.",
+          "example_vi": "Đầu đọc đĩa quang bị bám bẩn.",
+          "word_family": [
+            "diskette (n) đĩa mềm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T07:10:48.110277+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8f8ffb67-3fe9-4a0c-b27e-8b03660750c5-wm.jpg?v=1789798439138",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disk-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disk-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "hard disk",
+          "meaning": "ổ cứng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8f8ffb67-3fe9-4a0c-b27e-8b03660750c5-0-wm.jpg?v=1789801846575"
+        },
+        {
+          "phrase": "disk drive",
+          "meaning": "ổ đĩa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8f8ffb67-3fe9-4a0c-b27e-8b03660750c5-1-wm.jpg?v=1789801847977"
+        },
+        {
+          "phrase": "store on a disk",
+          "meaning": "lưu vào đĩa"
+        }
+      ],
+      "synonyms": [
+        "disc (đĩa)",
+        "drive (ổ đĩa)",
+        "storage device (thiết bị lưu trữ)"
+      ]
+    },
+    {
+      "id": "0c054534-6934-4961-9fe7-dbb54af31bfa",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "revolution",
+      "ipa": "/ˌrev.əˈluː.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We see a revolution in the computer field almost every day.",
+          "meaning": "cuộc cách mạng, thay đổi lớn đột ngột; một vòng quay trọn vẹn",
+          "antonyms": [
+            "stagnation (sự trì trệ)"
+          ],
+          "toeic_tip": "Nghĩa thứ hai hay bị bỏ qua: revolution còn là một vòng quay trọn vẹn.",
+          "example_vi": "Gần như ngày nào ngành máy tính cũng có bước đột phá mới.",
+          "word_family": [
+            "revolutionary (adj) mang tính cách mạng",
+            "revolutionize (v) cách mạng hóa"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T06:21:43.533395+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0c054534-6934-4961-9fe7-dbb54af31bfa-wm.jpg?v=1789798529866",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/revolution-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/revolution-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a revolution in technology",
+          "meaning": "cuộc cách mạng công nghệ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0c054534-6934-4961-9fe7-dbb54af31bfa-0-wm.jpg?v=1789798903090"
+        },
+        {
+          "phrase": "bring about a revolution",
+          "meaning": "tạo ra bước ngoặt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0c054534-6934-4961-9fe7-dbb54af31bfa-1-wm.jpg?v=1789798903397"
+        },
+        {
+          "phrase": "revolutions per minute",
+          "meaning": "số vòng quay mỗi phút"
+        }
+      ],
+      "synonyms": [
+        "transformation (sự biến đổi lớn)",
+        "breakthrough (bước đột phá)",
+        "rotation (vòng quay)"
+      ]
+    },
+    {
+      "id": "d770817a-5199-4cf5-9412-868794fd3208",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "store",
+      "ipa": "UK: /stɔː/ | US: /stɔːr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You can store more data on a zip drive.",
+          "meaning": "lưu trữ, cất giữ",
+          "antonyms": [
+            "discard (vứt bỏ)"
+          ],
+          "toeic_tip": "store còn là danh từ nghĩa cửa hàng; đọc đề đừng vội hiểu theo nghĩa quen.",
+          "example_vi": "Dùng ổ zip thì bạn lưu được nhiều dữ liệu hơn.",
+          "word_family": [
+            "storage (n) việc lưu trữ, kho chứa"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T07:47:07.063255+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d770817a-5199-4cf5-9412-868794fd3208-wm.jpg?v=1789798132217",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/store-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/store-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "store data",
+          "meaning": "lưu dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d770817a-5199-4cf5-9412-868794fd3208-0-wm.jpg?v=1789804026908"
+        },
+        {
+          "phrase": "store documents",
+          "meaning": "cất giữ tài liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d770817a-5199-4cf5-9412-868794fd3208-1-wm.jpg?v=1789804025992"
+        },
+        {
+          "phrase": "store in a safe place",
+          "meaning": "cất ở nơi an toàn"
+        }
+      ],
+      "synonyms": [
+        "keep (giữ)",
+        "save (lưu)",
+        "stockpile (tích trữ)"
+      ]
+    },
+    {
+      "id": "b105edc2-b983-476d-92db-a399fc982f55",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "technically",
+      "ipa": "/ˈtek.nɪ.kəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Technically speaking, the virus infected only script files.",
+          "meaning": "về mặt kỹ thuật, xét theo đúng chuyên môn",
+          "toeic_tip": "technically speaking đứng đầu câu, ngăn bằng dấu phẩy, hay gặp ở Part 6.",
+          "example_vi": "Nói cho chính xác thì virus chỉ lây vào các tệp script thôi.",
+          "word_family": [
+            "technical (adj) thuộc về kỹ thuật",
+            "technician (n) kỹ thuật viên"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T07:25:56.539428+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b105edc2-b983-476d-92db-a399fc982f55-wm.jpg?v=1789798412284",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/technically-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/technically-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "technically speaking",
+          "meaning": "nói theo đúng chuyên môn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b105edc2-b983-476d-92db-a399fc982f55-0-wm.jpg?v=1789802756403"
+        },
+        {
+          "phrase": "technically advanced",
+          "meaning": "tiên tiến về kỹ thuật",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b105edc2-b983-476d-92db-a399fc982f55-1-wm.jpg?v=1789802755499"
+        },
+        {
+          "phrase": "technically possible",
+          "meaning": "khả thi về mặt kỹ thuật"
+        }
+      ],
+      "synonyms": [
+        "strictly speaking (nói cho đúng)",
+        "in technical terms (xét về mặt kỹ thuật)",
+        "theoretically (trên lý thuyết)"
+      ]
+    },
+    {
+      "id": "0bffc81f-318d-4f95-a229-c81a1d67f079",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "process",
+      "ipa": "UK: /ˈprəʊ.ses/ | US: /ˈprɑː.ses/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I've processed the data I collected and have gotten some interesting results.",
+          "meaning": "xử lý, giải quyết theo trình tự; quy trình, tiến trình",
+          "toeic_tip": "Số nhiều đọc là /ˈprəʊ.se.sɪz/, không phải /-siːz/; Part 1-2 hay đánh lừa.",
+          "example_vi": "Tôi đã xử lý xong dữ liệu thu thập được và thấy vài kết quả khá thú vị.",
+          "word_family": [
+            "processing (n) việc xử lý",
+            "processor (n) bộ xử lý"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T06:21:19.106226+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0bffc81f-318d-4f95-a229-c81a1d67f079-wm.jpg?v=1789798520028",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/process-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/process-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "process an order",
+          "meaning": "xử lý đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0bffc81f-318d-4f95-a229-c81a1d67f079-0-wm.jpg?v=1789798878924"
+        },
+        {
+          "phrase": "process data",
+          "meaning": "xử lý dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0bffc81f-318d-4f95-a229-c81a1d67f079-1-wm.jpg?v=1789798875910"
+        },
+        {
+          "phrase": "in the process of",
+          "meaning": "đang trong quá trình"
+        }
+      ],
+      "synonyms": [
+        "handle (xử lý)",
+        "procedure (quy trình)",
+        "deal with (giải quyết)"
+      ]
+    },
+    {
+      "id": "0ae4dbcc-f6eb-4675-b16a-85ea7d89b327",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "software",
+      "ipa": "UK: /ˈsɒft.weər/ | US: /ˈsɑːft.wer/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This software allows me to integrate tables and spreadsheets into my reports.",
+          "meaning": "phần mềm máy tính",
+          "antonyms": [
+            "hardware (phần cứng)"
+          ],
+          "toeic_tip": "Danh từ không đếm được, không có 'softwares'; dùng a piece of software.",
+          "example_vi": "Phần mềm này cho phép tôi lồng bảng biểu và bảng tính vào báo cáo.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T06:21:34.635602+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0ae4dbcc-f6eb-4675-b16a-85ea7d89b327-wm.jpg?v=1789798525795",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/software-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/software-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "install software",
+          "meaning": "cài phần mềm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0ae4dbcc-f6eb-4675-b16a-85ea7d89b327-0-wm.jpg?v=1789798894472"
+        },
+        {
+          "phrase": "software package",
+          "meaning": "bộ phần mềm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0ae4dbcc-f6eb-4675-b16a-85ea7d89b327-1-wm.jpg?v=1789798892712"
+        },
+        {
+          "phrase": "software update",
+          "meaning": "bản cập nhật phần mềm"
+        }
+      ],
+      "synonyms": [
+        "program (chương trình)",
+        "application (ứng dụng)",
+        "system (hệ thống)"
+      ]
+    },
+    {
+      "id": "20fbe613-566a-4af7-9621-08eb8bb8171a",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "skill",
+      "ipa": "/skɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The software developer has excellent technical skills and would be an asset to our software programming team.",
+          "meaning": "kỹ năng, khả năng đã được rèn luyện",
+          "toeic_tip": "Phân biệt skilled (người có tay nghề) với skillful (làm việc gì đó khéo léo).",
+          "example_vi": "Lập trình viên này chuyên môn rất giỏi, về đội phát triển phần mềm của ta thì quý lắm.",
+          "word_family": [
+            "skilled (adj) lành nghề, có tay nghề",
+            "skillful (adj) khéo léo"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T06:20:52.636255+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/20fbe613-566a-4af7-9621-08eb8bb8171a-wm.jpg?v=1789798483635",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/skill-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/skill-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "technical skills",
+          "meaning": "kỹ năng chuyên môn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/20fbe613-566a-4af7-9621-08eb8bb8171a-0-wm.jpg?v=1789798850275"
+        },
+        {
+          "phrase": "communication skills",
+          "meaning": "kỹ năng giao tiếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/20fbe613-566a-4af7-9621-08eb8bb8171a-1-wm.jpg?v=1789798852498"
+        },
+        {
+          "phrase": "develop skills",
+          "meaning": "trau dồi kỹ năng"
+        }
+      ],
+      "synonyms": [
+        "ability (khả năng)",
+        "expertise (chuyên môn)",
+        "competence (năng lực)"
+      ]
+    },
+    {
+      "id": "46ea7329-435d-49a5-bd9c-a0ef703e5d01",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "popularity",
+      "ipa": "UK: /ˌpɒp.jəˈlær.ə.ti/ | US: /ˌpɑː.pjəˈler.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "After the new commercials began running, the popularity of the batteries increased significantly.",
+          "meaning": "sự nổi tiếng, mức độ được ưa chuộng",
+          "antonyms": [
+            "unpopularity (sự không được ưa chuộng)"
+          ],
+          "toeic_tip": "Danh từ không đếm được; popular among people nhưng popular with customers.",
+          "example_vi": "Từ khi quảng cáo mới lên sóng, loại pin này được chuộng hẳn lên.",
+          "word_family": [
+            "popular (adj) phổ biến, được ưa chuộng",
+            "popularize (v) phổ biến hóa"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T06:32:53.027002+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/46ea7329-435d-49a5-bd9c-a0ef703e5d01-wm.jpg?v=1789798336667",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/popularity-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/popularity-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "gain popularity",
+          "meaning": "được ưa chuộng hơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/46ea7329-435d-49a5-bd9c-a0ef703e5d01-0-wm.jpg?v=1789799556350"
+        },
+        {
+          "phrase": "grow in popularity",
+          "meaning": "ngày càng phổ biến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/46ea7329-435d-49a5-bd9c-a0ef703e5d01-1-wm.jpg?v=1789799572874"
+        },
+        {
+          "phrase": "popularity among",
+          "meaning": "mức độ được ưa chuộng trong nhóm nào"
+        }
+      ],
+      "synonyms": [
+        "fame (sự nổi tiếng)",
+        "appeal (sức hút)",
+        "demand (mức cầu)"
+      ]
+    },
+    {
+      "id": "4987d659-6241-43e3-bba0-247313b2f4e0",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "network",
+      "ipa": "UK: /ˈnet.wɜːk/ | US: /ˈnet.wɝːk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The recent graduate networked with her mother's coworkers.",
+          "meaning": "kết nối, giao lưu mở rộng quan hệ; mạng lưới, hệ thống liên kết",
+          "toeic_tip": "Nghĩa thứ hai hay bị bỏ qua: network = mở rộng quan hệ nghề nghiệp.",
+          "example_vi": "Cô sinh viên mới ra trường tranh thủ làm quen với đồng nghiệp của mẹ.",
+          "word_family": [
+            "networking (n) việc tạo dựng quan hệ, việc nối mạng"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T06:34:17.614058+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4987d659-6241-43e3-bba0-247313b2f4e0-wm.jpg?v=1789798332553",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/network-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/network-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "network with colleagues",
+          "meaning": "giao lưu với đồng nghiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4987d659-6241-43e3-bba0-247313b2f4e0-0-wm.jpg?v=1789799639338"
+        },
+        {
+          "phrase": "set up a network",
+          "meaning": "thiết lập mạng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4987d659-6241-43e3-bba0-247313b2f4e0-1-wm.jpg?v=1789799657469"
+        },
+        {
+          "phrase": "a network of branches",
+          "meaning": "mạng lưới chi nhánh"
+        }
+      ],
+      "synonyms": [
+        "connect (kết nối)",
+        "mingle (giao lưu)",
+        "system (hệ thống)"
+      ]
+    },
+    {
+      "id": "bc38cd4f-d9b6-4d29-884f-09d1329ec8c2",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "facilitate",
+      "ipa": "UK: /fəˈsɪl.ɪ.teɪt/ | US: /fəˈsɪl.ə.teɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The computer program facilitated the scheduling of appointments.",
+          "meaning": "tạo điều kiện, làm cho dễ dàng hơn",
+          "antonyms": [
+            "hinder (cản trở)",
+            "impede (gây trở ngại)"
+          ],
+          "toeic_tip": "Ngoại động từ, theo sau là danh từ: facilitate sth, không có giới từ.",
+          "example_vi": "Phần mềm này giúp việc sắp lịch hẹn nhẹ đi hẳn.",
+          "word_family": [
+            "facilitator (n) người điều phối, người hỗ trợ",
+            "facilitation (n) sự tạo điều kiện"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T07:33:48.919227+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bc38cd4f-d9b6-4d29-884f-09d1329ec8c2-wm.jpg?v=1789798493366",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/facilitate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/facilitate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "facilitate the process",
+          "meaning": "làm quy trình trôi chảy hơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bc38cd4f-d9b6-4d29-884f-09d1329ec8c2-0-wm.jpg?v=1789803228777"
+        },
+        {
+          "phrase": "facilitate communication",
+          "meaning": "tạo điều kiện trao đổi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bc38cd4f-d9b6-4d29-884f-09d1329ec8c2-1-wm.jpg?v=1789803228571"
+        },
+        {
+          "phrase": "facilitate a meeting",
+          "meaning": "điều phối cuộc họp"
+        }
+      ],
+      "synonyms": [
+        "ease (làm dịu, làm dễ hơn)",
+        "simplify (đơn giản hóa)",
+        "assist (hỗ trợ)"
+      ]
+    },
+    {
+      "id": "f3447f48-ea17-4dc3-ad00-e99650b59692",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "sharp",
+      "ipa": "UK: /ʃɑːp/ | US: /ʃɑːrp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "There was a sharp decline in calls to the help desk after we upgraded each employee's computer.",
+          "meaning": "đột ngột, mạnh; sắc bén, thông minh nhanh nhạy",
+          "antonyms": [
+            "gradual (từ từ)",
+            "dull (chậm hiểu)"
+          ],
+          "toeic_tip": "Trong biểu đồ Part 7 dùng sharp increase hoặc sharp decline để tả biến động mạnh.",
+          "example_vi": "Sau khi nâng cấp máy tính cho từng nhân viên, số cuộc gọi tới bộ phận hỗ trợ giảm hẳn.",
+          "word_family": [
+            "sharply (adv) đột ngột, mạnh",
+            "sharpen (v) làm sắc bén"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T08:03:32.612406+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f3447f48-ea17-4dc3-ad00-e99650b59692-wm.jpg?v=1789798367055",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sharp-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sharp-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a sharp decline",
+          "meaning": "sự sụt giảm mạnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f3447f48-ea17-4dc3-ad00-e99650b59692-0-wm.jpg?v=1789805012470"
+        },
+        {
+          "phrase": "a sharp increase",
+          "meaning": "mức tăng đột ngột",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f3447f48-ea17-4dc3-ad00-e99650b59692-1-wm.jpg?v=1789805011092"
+        },
+        {
+          "phrase": "a sharp mind",
+          "meaning": "đầu óc nhạy bén"
+        }
+      ],
+      "synonyms": [
+        "abrupt (đột ngột)",
+        "steep (dốc, mạnh)",
+        "clever (thông minh)"
+      ]
+    },
+    {
+      "id": "f6e84334-742b-4444-99d4-bb39f111bf2f",
+      "part_id": "bee72013-c79c-4193-b750-d38d06056c4a",
+      "word": "replace",
+      "ipa": "/rɪˈpleɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I've replaced the hard drive that was malfunctioning.",
+          "meaning": "thay thế, đổi cái mới; đặt lại về chỗ cũ",
+          "antonyms": [
+            "keep (giữ nguyên)",
+            "retain (giữ lại)"
+          ],
+          "toeic_tip": "replace A with B, không dùng 'replace A by B' trong văn phong TOEIC.",
+          "example_vi": "Tôi đã thay xong cái ổ cứng bị lỗi.",
+          "word_family": [
+            "replacement (n) sự thay thế, người hoặc vật thay thế",
+            "replaceable (adj) có thể thay thế"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:01.23767+00:00",
+      "updated_at": "2026-09-19T08:05:06.376184+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f6e84334-742b-4444-99d4-bb39f111bf2f-wm.jpg?v=1789797581029",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/replace-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/replace-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "replace a part",
+          "meaning": "thay một bộ phận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6e84334-742b-4444-99d4-bb39f111bf2f-0-wm.jpg?v=1789805097611"
+        },
+        {
+          "phrase": "replace sb with sb",
+          "meaning": "thay ai bằng ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6e84334-742b-4444-99d4-bb39f111bf2f-1-wm.jpg?v=1789805106221"
+        },
+        {
+          "phrase": "replace the old system",
+          "meaning": "thay hệ thống cũ"
+        }
+      ],
+      "synonyms": [
+        "substitute (thay bằng)",
+        "swap (đổi)",
+        "take the place of (thế chỗ)"
+      ]
+    }
+  ]
+}

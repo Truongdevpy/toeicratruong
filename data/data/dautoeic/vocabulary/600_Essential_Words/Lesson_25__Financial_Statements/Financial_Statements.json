@@ -1,0 +1,629 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "478b8d36-12c1-40ad-94d0-af5b8cea29ce",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 25: Financial Statements",
+    "order_index": 25,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:07.177263+00:00",
+    "updated_at": "2026-09-18T08:52:07.177263+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+    "test_id": "478b8d36-12c1-40ad-94d0-af5b8cea29ce",
+    "name": "Financial Statements",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:07.177263+00:00",
+    "updated_at": "2026-09-18T08:52:07.177263+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "4f0c1857-d307-4b94-a0df-ac6f03880738",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "overall",
+      "ipa": "UK: /ˌəʊ.vərˈɔːl/ | US: /ˌoʊ.vɚˈɑːl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company's overall expectations were out of proportion.",
+          "meaning": "tổng thể, chung, toàn bộ",
+          "antonyms": [
+            "partial (từng phần)",
+            "specific (cụ thể)"
+          ],
+          "toeic_tip": "Còn là trạng từ đứng đầu câu: Overall, our costs went down.",
+          "example_vi": "Kỳ vọng chung của công ty là quá xa thực tế.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T06:36:20.229941+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4f0c1857-d307-4b94-a0df-ac6f03880738-wm.jpg?v=1789798372260",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/overall-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/overall-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "overall performance",
+          "meaning": "kết quả tổng thể",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4f0c1857-d307-4b94-a0df-ac6f03880738-0-wm.jpg?v=1789799780096"
+        },
+        {
+          "phrase": "overall cost",
+          "meaning": "tổng chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4f0c1857-d307-4b94-a0df-ac6f03880738-1-wm.jpg?v=1789799778515"
+        },
+        {
+          "phrase": "overall impression",
+          "meaning": "ấn tượng chung"
+        }
+      ],
+      "synonyms": [
+        "total (tổng)",
+        "general (chung)",
+        "comprehensive (toàn diện)"
+      ]
+    },
+    {
+      "id": "b0cae8b6-49d1-4be6-b878-596c5650c387",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "yield",
+      "ipa": "/jiːld/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Henry's budget gave him the desired yield: a better indication of his expected profit.",
+          "meaning": "mức sinh lời, sản lượng thu được; mang lại lợi nhuận",
+          "antonyms": [
+            "loss (khoản lỗ)"
+          ],
+          "toeic_tip": "Trong đầu tư yield đồng nghĩa return; còn có nghĩa nhường đường.",
+          "example_vi": "Bản ngân sách giúp Henry đạt được điều mong muốn: hình dung rõ hơn về lợi nhuận dự kiến.",
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T07:27:54.435331+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b0cae8b6-49d1-4be6-b878-596c5650c387-wm.jpg?v=1789798395267",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/yield-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/yield-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "high yield",
+          "meaning": "lợi suất cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b0cae8b6-49d1-4be6-b878-596c5650c387-0-wm.jpg?v=1789802862969"
+        },
+        {
+          "phrase": "yield a profit",
+          "meaning": "mang lại lợi nhuận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b0cae8b6-49d1-4be6-b878-596c5650c387-1-wm.jpg?v=1789802874297"
+        },
+        {
+          "phrase": "yield on bonds",
+          "meaning": "lợi suất trái phiếu"
+        }
+      ],
+      "synonyms": [
+        "return (lợi nhuận)",
+        "output (sản lượng)",
+        "produce (tạo ra)"
+      ]
+    },
+    {
+      "id": "f9bbb927-2a90-4537-a266-51e24f56f85e",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "translation",
+      "ipa": "/trænzˈleɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The translation of the statement from Japanese into English was very helpful.",
+          "meaning": "bản dịch, việc dịch thuật",
+          "toeic_tip": "translation là dịch viết, interpretation mới là dịch nói.",
+          "example_vi": "Bản dịch báo cáo từ tiếng Nhật sang tiếng Anh rất hữu ích.",
+          "word_family": [
+            "translate (v) dịch",
+            "translator (n) người dịch"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T08:06:43.150343+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f9bbb927-2a90-4537-a266-51e24f56f85e-wm.jpg?v=1789798043923",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/translation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/translation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "provide a translation",
+          "meaning": "cung cấp bản dịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f9bbb927-2a90-4537-a266-51e24f56f85e-0-wm.jpg?v=1789805202091"
+        },
+        {
+          "phrase": "translation of a document",
+          "meaning": "bản dịch tài liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f9bbb927-2a90-4537-a266-51e24f56f85e-1-wm.jpg?v=1789805203015"
+        },
+        {
+          "phrase": "simultaneous translation",
+          "meaning": "dịch đồng thời"
+        }
+      ],
+      "synonyms": [
+        "interpretation (việc thông dịch)",
+        "rendering (bản chuyển ngữ)"
+      ]
+    },
+    {
+      "id": "a029522a-200f-4b05-8647-7cc9248cb095",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "typically",
+      "ipa": "/ˈtɪp.ɪ.kəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Office expenses typically include such things as salaries, rent, and office supplies.",
+          "meaning": "thường thì, thông thường, một cách điển hình",
+          "antonyms": [
+            "rarely (hiếm khi)",
+            "atypically (một cách bất thường)"
+          ],
+          "toeic_tip": "Trạng từ tần suất: đứng trước động từ thường, sau động từ to be.",
+          "example_vi": "Chi phí văn phòng thường gồm lương, tiền thuê mặt bằng và văn phòng phẩm.",
+          "word_family": [
+            "typical (adj) điển hình, thường thấy",
+            "atypical (adj) không điển hình"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T07:18:36.479002+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a029522a-200f-4b05-8647-7cc9248cb095-wm.jpg?v=1789798027863",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/typically-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/typically-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "typically include",
+          "meaning": "thường bao gồm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a029522a-200f-4b05-8647-7cc9248cb095-0-wm.jpg?v=1789802304469"
+        },
+        {
+          "phrase": "typically takes",
+          "meaning": "thường mất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a029522a-200f-4b05-8647-7cc9248cb095-1-wm.jpg?v=1789802316323"
+        },
+        {
+          "phrase": "typically occur",
+          "meaning": "thường xảy ra"
+        }
+      ],
+      "synonyms": [
+        "usually (thường)",
+        "normally (thông thường)",
+        "generally (nói chung)"
+      ]
+    },
+    {
+      "id": "061d18a9-493c-4ea2-a27d-ef70b334c11b",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "detail",
+      "ipa": "UK: /ˈdiː.teɪl/ | US: /dɪˈteɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The office manager detailed each step of the inventory process at the staff meeting.",
+          "meaning": "trình bày chi tiết, nêu rõ từng khoản",
+          "antonyms": [
+            "summarize (tóm lược)",
+            "outline (nêu sơ lược)"
+          ],
+          "toeic_tip": "Nhớ nghĩa động từ nêu chi tiết, không chỉ là danh từ chi tiết.",
+          "example_vi": "Trưởng phòng hành chính đã trình bày rõ từng bước kiểm kê trong cuộc họp nhân viên.",
+          "word_family": [
+            "detailed (adj) chi tiết, tỉ mỉ",
+            "detail (n) chi tiết"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T06:18:29.627677+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/061d18a9-493c-4ea2-a27d-ef70b334c11b-wm.jpg?v=1789798163676",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/detail-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/detail-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "detail the expenses",
+          "meaning": "nêu chi tiết chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/061d18a9-493c-4ea2-a27d-ef70b334c11b-0-wm.jpg?v=1789798708256"
+        },
+        {
+          "phrase": "detail each step",
+          "meaning": "trình bày từng bước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/061d18a9-493c-4ea2-a27d-ef70b334c11b-1-wm.jpg?v=1789798709468"
+        },
+        {
+          "phrase": "a detailed report",
+          "meaning": "báo cáo chi tiết"
+        }
+      ],
+      "synonyms": [
+        "specify (nêu cụ thể)",
+        "itemize (liệt kê từng khoản)",
+        "describe fully (mô tả đầy đủ)"
+      ]
+    },
+    {
+      "id": "2b8f4c6d-517d-4ed6-b209-3da410d2e228",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "forecast",
+      "ipa": "UK: /ˈfɔː.kɑːst/ | US: /ˈfɔːr.kæst/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The financial forecast indicates a deficit in the next quarter.",
+          "meaning": "dự báo, dự đoán; ước tính trước",
+          "toeic_tip": "Quá khứ dùng forecast hoặc forecasted đều được chấp nhận.",
+          "example_vi": "Dự báo tài chính cho thấy quý tới sẽ bị thâm hụt.",
+          "word_family": [
+            "forecaster (n) người dự báo",
+            "forecasting (n) việc dự báo"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T06:23:03.148863+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2b8f4c6d-517d-4ed6-b209-3da410d2e228-wm.jpg?v=1789798563646",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/forecast-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/forecast-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "financial forecast",
+          "meaning": "dự báo tài chính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2b8f4c6d-517d-4ed6-b209-3da410d2e228-0-wm.jpg?v=1789798982989"
+        },
+        {
+          "phrase": "forecast sales",
+          "meaning": "dự báo doanh số",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2b8f4c6d-517d-4ed6-b209-3da410d2e228-1-wm.jpg?v=1789798981425"
+        },
+        {
+          "phrase": "weather forecast",
+          "meaning": "dự báo thời tiết"
+        }
+      ],
+      "synonyms": [
+        "predict (dự đoán)",
+        "project (dự tính)",
+        "prediction (lời dự đoán)"
+      ]
+    },
+    {
+      "id": "2eb1cb45-b540-4125-bbac-f0a50fbb41df",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "project",
+      "ipa": "/prəˈdʒekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We need to project our earnings and expenses in order to plan next year's budget.",
+          "meaning": "dự tính, dự báo, ước tính trước",
+          "toeic_tip": "Động từ nhấn âm sau proJECT, danh từ dự án nhấn âm đầu PROject.",
+          "example_vi": "Chúng ta cần dự tính doanh thu và chi phí để lên ngân sách cho năm sau.",
+          "word_family": [
+            "projection (n) số liệu dự báo",
+            "projected (adj) dự kiến"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T06:23:17.611311+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2eb1cb45-b540-4125-bbac-f0a50fbb41df-wm.jpg?v=1789798572559",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/project-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/project-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "project earnings",
+          "meaning": "dự tính doanh thu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2eb1cb45-b540-4125-bbac-f0a50fbb41df-0-wm.jpg?v=1789798997451"
+        },
+        {
+          "phrase": "project growth",
+          "meaning": "dự báo tăng trưởng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2eb1cb45-b540-4125-bbac-f0a50fbb41df-1-wm.jpg?v=1789798995302"
+        },
+        {
+          "phrase": "projected costs",
+          "meaning": "chi phí dự kiến"
+        }
+      ],
+      "synonyms": [
+        "estimate (ước tính)",
+        "forecast (dự báo)",
+        "predict (dự đoán)"
+      ]
+    },
+    {
+      "id": "81772bdc-d648-418b-be21-6530fa5883a7",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "desire",
+      "ipa": "UK: /dɪˈzaɪər/ | US: /dɪˈzaɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We desire to have our own home.",
+          "meaning": "mong muốn, khao khát có được",
+          "antonyms": [
+            "dislike (không ưa)"
+          ],
+          "toeic_tip": "Trang trọng hơn want; theo sau là to V hoặc một danh từ.",
+          "example_vi": "Chúng tôi mong có được một căn nhà của riêng mình.",
+          "word_family": [
+            "desire (n) niềm mong muốn",
+            "desirable (adj) đáng mong muốn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T07:01:56.668888+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/81772bdc-d648-418b-be21-6530fa5883a7-wm.jpg?v=1789798317410",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/desire-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/desire-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "desire to do something",
+          "meaning": "mong muốn làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/81772bdc-d648-418b-be21-6530fa5883a7-0-wm.jpg?v=1789801314306"
+        },
+        {
+          "phrase": "the desired result",
+          "meaning": "kết quả mong muốn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/81772bdc-d648-418b-be21-6530fa5883a7-1-wm.jpg?v=1789801316528"
+        },
+        {
+          "phrase": "desire a change",
+          "meaning": "muốn có sự thay đổi"
+        }
+      ],
+      "synonyms": [
+        "wish for (ước ao)",
+        "want (muốn)",
+        "long for (khao khát)"
+      ]
+    },
+    {
+      "id": "bb4d0cbe-c014-4d64-8492-7d309b5877e2",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "realistic",
+      "ipa": "UK: /ˌrɪəˈlɪs.tɪk/ | US: /ˌriː.əˈlɪs.tɪk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Stefano found that an accurate accounting gave him a realistic idea of his business's financial direction.",
+          "meaning": "thực tế, sát với thực tế, khả thi",
+          "antonyms": [
+            "unrealistic (phi thực tế)",
+            "idealistic (viển vông)"
+          ],
+          "toeic_tip": "Trái nghĩa là unrealistic; đừng nhầm với real nghĩa là có thật.",
+          "example_vi": "Stefano nhận ra rằng sổ sách chính xác giúp anh hình dung đúng hướng đi tài chính của công ty.",
+          "word_family": [
+            "realistically (adv) một cách thực tế",
+            "realism (n) tính thực tế"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T07:31:46.390861+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bb4d0cbe-c014-4d64-8492-7d309b5877e2-wm.jpg?v=1789798020238",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/realistic-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/realistic-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a realistic estimate",
+          "meaning": "ước tính sát thực tế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb4d0cbe-c014-4d64-8492-7d309b5877e2-0-wm.jpg?v=1789803103822"
+        },
+        {
+          "phrase": "realistic expectations",
+          "meaning": "kỳ vọng thực tế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb4d0cbe-c014-4d64-8492-7d309b5877e2-1-wm.jpg?v=1789803106236"
+        },
+        {
+          "phrase": "set realistic goals",
+          "meaning": "đặt mục tiêu khả thi"
+        }
+      ],
+      "synonyms": [
+        "practical (thiết thực)",
+        "sensible (hợp lý)",
+        "down-to-earth (thực tế)"
+      ]
+    },
+    {
+      "id": "bc240ca1-a837-4882-a95c-592455333163",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "perspective",
+      "ipa": "UK: /pəˈspek.tɪv/ | US: /pɚˈspek.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The budget statement will give the manager some perspective on where the costs of running the business are to be found.",
+          "meaning": "góc nhìn, cách nhìn nhận, quan điểm",
+          "toeic_tip": "Đừng nhầm perspective (góc nhìn) với prospective (sắp tới, tiềm năng).",
+          "example_vi": "Bản dự toán sẽ giúp người quản lý hình dung rõ chi phí vận hành nằm ở đâu.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T07:32:16.501852+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bc240ca1-a837-4882-a95c-592455333163-wm.jpg?v=1789798396036",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/perspective-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/perspective-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "from a different perspective",
+          "meaning": "từ góc nhìn khác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bc240ca1-a837-4882-a95c-592455333163-0-wm.jpg?v=1789803133694"
+        },
+        {
+          "phrase": "gain perspective on",
+          "meaning": "hiểu rõ hơn về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bc240ca1-a837-4882-a95c-592455333163-1-wm.jpg?v=1789803136364"
+        },
+        {
+          "phrase": "a broader perspective",
+          "meaning": "tầm nhìn rộng hơn"
+        }
+      ],
+      "synonyms": [
+        "viewpoint (quan điểm)",
+        "outlook (cách nhìn)",
+        "point of view (góc nhìn)"
+      ]
+    },
+    {
+      "id": "bcf29ff6-d2e1-4d09-b58a-81ac1d026e4e",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "target",
+      "ipa": "UK: /ˈtɑː.ɡɪt/ | US: /ˈtɑːr.ɡɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We targeted March as the deadline for completing the financial statement.",
+          "meaning": "đặt làm mục tiêu, nhắm tới; mục tiêu, chỉ tiêu",
+          "toeic_tip": "Không nhân đôi phụ âm cuối: viết targeted, targeting.",
+          "example_vi": "Chúng tôi đặt mục tiêu hoàn thành báo cáo tài chính chậm nhất là tháng Ba.",
+          "word_family": [
+            "targeted (adj) được nhắm tới, có trọng điểm"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T07:32:29.305376+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bcf29ff6-d2e1-4d09-b58a-81ac1d026e4e-wm.jpg?v=1789798038244",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/target-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/target-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "meet a target",
+          "meaning": "đạt chỉ tiêu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bcf29ff6-d2e1-4d09-b58a-81ac1d026e4e-0-wm.jpg?v=1789803145920"
+        },
+        {
+          "phrase": "target a market",
+          "meaning": "nhắm đến thị trường",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bcf29ff6-d2e1-4d09-b58a-81ac1d026e4e-1-wm.jpg?v=1789803149162"
+        },
+        {
+          "phrase": "sales target",
+          "meaning": "chỉ tiêu doanh số"
+        }
+      ],
+      "synonyms": [
+        "aim for (nhắm tới)",
+        "goal (mục tiêu)",
+        "objective (chỉ tiêu)"
+      ]
+    },
+    {
+      "id": "fceac7ba-7a1f-4d7b-af0e-4d6f4d67eec6",
+      "part_id": "7a30ea0f-c123-4758-8561-d9c54c17a36d",
+      "word": "level",
+      "ipa": "/ˈlev.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We have never had an accountant work at such a sophisticated level before.",
+          "meaning": "mức độ, cấp bậc, vị trí trên thang bậc",
+          "toeic_tip": "Đi với giới từ at: at the director level, at a high level.",
+          "example_vi": "Chưa bao giờ chúng tôi có kế toán viên làm việc ở trình độ cao như vậy.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:07.177263+00:00",
+      "updated_at": "2026-09-19T08:05:31.47612+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fceac7ba-7a1f-4d7b-af0e-4d6f4d67eec6-wm.jpg?v=1789798036324",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/level-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/level-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "at the management level",
+          "meaning": "ở cấp quản lý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fceac7ba-7a1f-4d7b-af0e-4d6f4d67eec6-0-wm.jpg?v=1789805129299"
+        },
+        {
+          "phrase": "entry-level position",
+          "meaning": "vị trí mới vào nghề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fceac7ba-7a1f-4d7b-af0e-4d6f4d67eec6-1-wm.jpg?v=1789805131328"
+        },
+        {
+          "phrase": "a high level of service",
+          "meaning": "mức dịch vụ cao"
+        }
+      ],
+      "synonyms": [
+        "rank (cấp bậc)",
+        "grade (bậc)",
+        "degree (mức độ)"
+      ]
+    }
+  ]
+}

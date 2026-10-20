@@ -1,0 +1,413 @@
+{
+  "subtopic": {
+    "id": "a8c41297-60e7-45d0-9309-6ee581fbf697",
+    "topic_id": "3f4f9136-0712-4df6-9b73-502345922b4c",
+    "title_en": "So sánh bằng",
+    "title_vi": "So sánh bằng",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 74,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-so-sanh-bang"
+  },
+  "lessons": [
+    {
+      "id": "ff121af5-ad78-4e31-9bf2-12afba1f513b",
+      "subtopic_id": "a8c41297-60e7-45d0-9309-6ee581fbf697",
+      "title_en": "So sánh bằng",
+      "title_vi": "So sánh bằng",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "efficiency",
+            "B": "efficiently",
+            "C": "efficient",
+            "D": "efficiencies"
+          },
+          "question": "This model is just as ------- as the previous one, but more affordable.",
+          "translation": "Mẫu này cũng hiệu quả y như mẫu trước đó, nhưng giá cả phải chăng hơn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “efficient” nhưng khác loại từ. Chỗ trống nằm giữa hai chữ “as”, sau động từ “is”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "This model",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "X",
+                    "text": "just",
+                    "label": "từ nhấn mạnh"
+                  },
+                  {
+                    "role": "X",
+                    "text": "as",
+                    "label": "as"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "as the previous one,",
+                    "label": "as + đối tượng so sánh"
+                  },
+                  {
+                    "role": "X",
+                    "text": "but more affordable.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau “is” và nằm trong khung “just as … as the previous one”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "giữa “as … as” là dạng nào của từ;",
+                  "sau “is” cần tính từ hay trạng từ;",
+                  "vì sao danh từ không đứng được ở vị trí này."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "So sánh bằng nói hai đối tượng ngang nhau về một tính chất. Giữa hai chữ “as” là **tính từ hoặc trạng từ ở dạng nguyên**, không thêm -er/-est, more/most.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "sau be, feel (động từ nối)",
+                    "formula": "S + be/feel + as + adj + as + đối tượng"
+                  },
+                  {
+                    "label": "sau keep, make + tân ngữ",
+                    "formula": "keep/make + O + as + adj + as + possible"
+                  },
+                  {
+                    "label": "sau động từ thường",
+                    "formula": "S + V thường (+ O) + as + adv + as + đối tượng"
+                  },
+                  {
+                    "label": "phủ định",
+                    "formula": "S + not + as/so + adj/adv + as + đối tượng"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The new printer",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "X",
+                    "text": "as",
+                    "label": "as"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "quiet",
+                    "label": "tính từ dạng nguyên"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "as the old one.",
+                    "label": "as + đối tượng so sánh"
+                  }
+                ],
+                "caption": "Tính từ dạng nguyên “quiet” đứng giữa hai chữ “as”, sau động từ “is”."
+              },
+              {
+                "rows": [
+                  [
+                    "tính từ",
+                    "sau be, feel, seem (bổ ngữ cho chủ ngữ)",
+                    "*The new printer is as quiet as the old one.* — Máy in mới êm như máy cũ."
+                  ],
+                  [
+                    "tính từ",
+                    "sau keep, make + tân ngữ (bổ ngữ cho tân ngữ)",
+                    "*Please keep your report as short as possible.* — Vui lòng viết báo cáo ngắn nhất có thể."
+                  ],
+                  [
+                    "trạng từ",
+                    "bổ nghĩa cho động từ thường, kể cả bị động (be + V3)",
+                    "*She answers client emails as quickly as she can.* — Cô ấy trả lời email khách hàng nhanh hết mức có thể."
+                  ],
+                  [
+                    "trạng từ",
+                    "sau keep, make + tân ngữ đã có tính từ (bổ nghĩa cho cả cụm)",
+                    "*We made the file available as quickly as we could.* — Chúng tôi đã cung cấp tệp nhanh hết mức có thể."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chọn",
+                  "Khi chỗ trống",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**as … as possible** và **as … as + S + can/could** nghĩa là “hết mức có thể”, “càng … càng tốt”.",
+                  "**not as … as** và **not so … as** nghĩa là “không … bằng”.",
+                  "**just, nearly, about** đứng trước chữ “as” đầu: *just as* (y như), *nearly as*, *about as* (gần bằng)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng giữa as … as: tính từ khi làm bổ ngữ, trạng từ khi bổ nghĩa cho động từ.",
+                    "form": "Tính từ, trạng từ dạng nguyên (efficient, promptly)",
+                    "example": "*is as reliable as*; *handled the repair as professionally as possible*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đi với “than”, không đứng giữa as … as.",
+                    "form": "So sánh hơn (prompter, briefer, more completely, more familiar)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi với “the” và phạm vi so sánh, không đứng giữa as … as.",
+                    "form": "So sánh nhất (promptest, quickest, the soonest, most carefully, most effective)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho động từ và không nói chủ ngữ hay tân ngữ như thế nào; giữa as … as ở đây cần tính từ hoặc trạng từ.",
+                    "form": "Danh từ (efficiency, promptness, patience, reliability, information)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau be, feel hoặc keep/make + tân ngữ cần tính từ làm bổ ngữ.",
+                    "form": "Trạng từ khi cần tính từ (efficiently, brightly, comfortably, reliably)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho động từ thường như handled, explained, respond.",
+                    "form": "Tính từ khi cần trạng từ (careful, thorough, polite, wide)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải tính từ hay trạng từ hợp nghĩa ở vị trí này: “informed” là “nắm được thông tin” (nói về người), “reliant” là “phụ thuộc”, “through” là giới từ.",
+                    "form": "Động từ, V-ed, từ khác nghĩa (inform, cleared, smoothed, informed, reliant, through)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "as ___ as possible",
+                    "example": "*as ___ as possible to avoid delays*"
+                  },
+                  {
+                    "signal": "as ___ as + S + can/could",
+                    "example": "*as ___ as you can*; *as ___ as she could*"
+                  },
+                  {
+                    "signal": "not as / not so ___ as",
+                    "example": "*are not as ___ with the software as*; *is not so ___ as the hotel*"
+                  },
+                  {
+                    "signal": "just / nearly / about as ___ as",
+                    "example": "*just as ___ as*; *nearly as ___ as*; *about as ___ as*"
+                  },
+                  {
+                    "signal": "be / feel + as ___ as",
+                    "example": "*is as ___ as*; *to be as ___ as possible*; *to feel as ___ as possible*"
+                  },
+                  {
+                    "signal": "keep / make + tân ngữ + as ___ as",
+                    "example": "*Keep the meeting agenda as ___*; *make the check-in process as ___*"
+                  },
+                  {
+                    "signal": "động từ thường (+ tân ngữ) + as ___ as",
+                    "example": "*handled the repair as ___*; *arrive as ___*; *be installed as ___*"
+                  },
+                  {
+                    "signal": "tính từ + as ___ as",
+                    "example": "*make the replacement parts available as ___ as they could*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc, có dạng so sánh (-er, -est, more, most) thì đây là câu so sánh; chỉ khác loại từ thì đây là câu từ loại. Cả hai đều xét dạng nguyên và loại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm khung as … as (as … as possible, as … as + S + can, not as … as). Nhìn trước chữ “as” đầu là be, feel, keep/make + tân ngữ hay động từ thường.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Giữa as … as chọn dạng nguyên: tính từ sau be, feel, keep/make + tân ngữ; trạng từ sau động từ thường. Loại so sánh hơn, so sánh nhất, danh từ và sai loại từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "This model",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "X",
+                    "text": "just",
+                    "label": "từ nhấn mạnh"
+                  },
+                  {
+                    "role": "X",
+                    "text": "as",
+                    "label": "as"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "efficient",
+                    "label": "tính từ dạng nguyên"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "as the previous one,",
+                    "label": "as + đối tượng so sánh"
+                  },
+                  {
+                    "role": "X",
+                    "text": "but more affordable.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: tính từ dạng nguyên “efficient” làm bổ ngữ sau “is”, nằm giữa hai chữ “as”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “efficient” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “is”, giữa hai chữ “as”; dấu hiệu “just / nearly / about as ___ as” và “be / feel + as ___ as”: “is just as ------- as the previous one”.",
+                  "Bước 3: S + be + as + adj + as; “efficient” là tính từ, vì vậy chọn “efficient” (hiệu quả).",
+                  "“efficiency” (A) là danh từ, không đứng giữa “as … as” để nói mẫu máy hiệu quả thế nào, nên loại.",
+                  "“efficiently” (B) là trạng từ, sau “is” cần tính từ làm bổ ngữ, nên loại.",
+                  "“efficiencies” (D) là danh từ số nhiều, không đứng giữa “as … as” sau “is”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số từ vừa là tính từ vừa là trạng từ, như early, fast, hard: *arrive as early as possible*. “soon” là trạng từ: *as soon as possible*.",
+                  "“feel” mang nghĩa “cảm thấy” là động từ nối, đi với tính từ: *feel comfortable*, không nói *feel comfortably*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Giữa as … as là dạng nguyên, không dùng -er, -est, more, most.",
+                  "Sau be, feel, keep/make + tân ngữ: tính từ; sau động từ thường: trạng từ.",
+                  "not as/so … as: không … bằng; as … as possible: hết mức có thể."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

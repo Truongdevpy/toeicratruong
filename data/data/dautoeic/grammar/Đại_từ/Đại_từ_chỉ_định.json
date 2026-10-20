@@ -1,0 +1,378 @@
+{
+  "subtopic": {
+    "id": "fbde19f6-7e38-4345-a069-d7e1c593560c",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ chỉ định",
+    "title_vi": "Đại từ chỉ định",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 104,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-chi-dinh"
+  },
+  "lessons": [
+    {
+      "id": "8b22f64d-3bf6-482c-8416-a0c1e8d8358d",
+      "subtopic_id": "fbde19f6-7e38-4345-a069-d7e1c593560c",
+      "title_en": "Đại từ chỉ định",
+      "title_vi": "Đại từ chỉ định",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 5 · Câu 128",
+          "options": {
+            "A": "this",
+            "B": "those",
+            "C": "somebody",
+            "D": "everyone"
+          },
+          "question": "Belker Auto offers a ten-year warranty for ------- who want greater peace of mind.",
+          "translation": "Belker Auto có chế độ bảo hành mười năm cho những ai muốn yên tâm hơn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn đại từ. Chỗ trống đứng sau giới từ “for”, ngay trước “who want”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Belker Auto",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "offers",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a ten-year warranty",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who want greater peace of mind.",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho chỗ trống"
+                  }
+                ],
+                "caption": "Mệnh đề “who want greater peace of mind” nói rõ chỗ trống là những ai."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "đại từ nào đứng trước “who” để chỉ “những người …”",
+                  "động từ “want” số nhiều cho biết chỗ trống số ít hay số nhiều",
+                  "this, that, these, those khác nhau thế nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đại từ chỉ định gồm **this, that** (số ít) và **these, those** (số nhiều). This, these chỉ người, vật ở gần hoặc đang nói tới; that, those chỉ người, vật ở xa, hoặc việc đã qua.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "this / that + N",
+                    "danh từ số ít hoặc không đếm được",
+                    "*This printer is out of paper again.* — Máy in này lại hết giấy rồi."
+                  ],
+                  [
+                    "these / those + N",
+                    "danh từ số nhiều",
+                    "*Please file these invoices by Friday.* — Vui lòng lưu các hóa đơn này trước thứ Sáu."
+                  ],
+                  [
+                    "this / that đứng một mình",
+                    "động từ số ít (is, was)",
+                    "*This is Mr. Park, our new accountant.* — Đây là anh Park, kế toán mới của chúng ta."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng",
+                  "Đi với",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Những người …",
+                    "formula": "those + who + V số nhiều"
+                  },
+                  {
+                    "label": "Những người … (rút gọn)",
+                    "formula": "those + V3 / with + N"
+                  },
+                  {
+                    "label": "Những ai trong số các bạn",
+                    "formula": "those of you + who + V"
+                  },
+                  {
+                    "label": "So sánh, thay danh từ đã nói",
+                    "formula": "than / as + that / those + of / cụm bổ nghĩa"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "số ít hoặc không đếm được (the delivery time, equipment, the response)",
+                    "that",
+                    "*Our price is lower than that of our rival.* — Giá của chúng tôi thấp hơn giá của đối thủ."
+                  ],
+                  [
+                    "số nhiều (sales figures, ratings, materials, employees)",
+                    "those",
+                    "*This year's sales are higher than those of last year.* — Doanh số năm nay cao hơn doanh số năm ngoái."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Danh từ được so sánh",
+                  "Thay bằng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Từ chỉ định phải cùng số với danh từ và động từ đi kèm.",
+                    "form": "this, that + N số nhiều; these, those + N số ít",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ “those” dùng để chỉ “những người …” trước who, V3, with, of you.",
+                    "form": "this, that, these + who / V3 / with / of you (nghĩa “những người …”)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Để khỏi lặp danh từ trong so sánh, dùng that (số ít, không đếm được) hoặc those (số nhiều).",
+                    "form": "this, these thay cho danh từ đã nói trong so sánh",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải cùng số với danh từ ở vế trước.",
+                    "form": "that khi danh từ được so sánh số nhiều; those khi danh từ số ít, không đếm được",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là đại từ tân ngữ: không làm chủ ngữ, không đứng trước who, V3, with, of hay một mệnh đề để thay danh từ đã nói.",
+                    "form": "them",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là đại từ nhân xưng, không đứng trước danh từ (không nói *it forms*).",
+                    "form": "it",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đại từ bất định đi với động từ số ít (everyone who wants).",
+                    "form": "somebody, everyone + who + V số nhiều",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Giới thiệu một người với người nghe thì dùng This is + tên.",
+                    "form": "That để giới thiệu người",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + N số ít / số nhiều",
+                    "example": "*___ documents you signed yesterday*; *Please sign ___ forms*"
+                  },
+                  {
+                    "signal": "giới thiệu người: ___ is + tên",
+                    "example": "*Let me introduce my colleague: ___ is Ms. Nakamura*"
+                  },
+                  {
+                    "signal": "___ + is / was + N số ít",
+                    "example": "*___ is the last box of brochures*; *___ was the most productive meeting*"
+                  },
+                  {
+                    "signal": "___ + who + V",
+                    "example": "*for ___ who want greater peace of mind*; *___ who complete the safety course*"
+                  },
+                  {
+                    "signal": "___ + V3 / with",
+                    "example": "*___ interested in the wellness program*; *___ with warehouse experience*; *___ hired five years ago*"
+                  },
+                  {
+                    "signal": "___ of you who",
+                    "example": "*___ of you who ordered lunch*"
+                  },
+                  {
+                    "signal": "so sánh: than / as + ___",
+                    "example": "*shorter than ___ of its main competitor*; *more modern than ___ in the original factory building*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là this, that, these, those (có thể kèm it, them hay đại từ khác) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống là danh từ số ít hay số nhiều, là động từ, hay là who, V3, with, of you; nếu câu so sánh (than, as) thì tìm danh từ được so sánh ở vế trước.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn đúng số; chỉ “những người …” dùng those; trong so sánh thay danh từ số ít bằng that, số nhiều bằng those; loại them, it và dạng sai số.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Belker Auto",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "offers",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a ten-year warranty",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "those",
+                    "label": "những ai"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who want greater peace of mind.",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho those"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “those who want …” là “những ai muốn …”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn đại từ (this, those, somebody, everyone) nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống đứng sau giới từ “for”; dấu hiệu “___ + who + V”: “------- who want”, với “want” là động từ số nhiều.",
+                  "Bước 3: Chỉ “những người muốn …”, động từ số nhiều nên dùng those + who + V, vì vậy chọn “those” (những ai).",
+                  "“this” (A) là số ít và không đi với “who” để chỉ “những người …”, nên loại.",
+                  "“somebody” (C) là đại từ bất định, đi với động từ số ít (wants), không hợp “want”, nên loại.",
+                  "“everyone” (D) là đại từ bất định, đi với động từ số ít (wants), không hợp “want”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau “those” trong so sánh có thể là một mệnh đề đã lược which/that: *better than those we received* (= those which we received)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "this, that + N số ít; these, those + N số nhiều.",
+                  "Chỉ “những người …” trước who, V3, with: dùng those.",
+                  "So sánh: danh từ số ít thay bằng that, số nhiều thay bằng those."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

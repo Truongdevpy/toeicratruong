@@ -1,0 +1,391 @@
+{
+  "subtopic": {
+    "id": "61ee3ce7-7f4f-43b4-922b-5a3dfa937fc8",
+    "topic_id": "6ec8bdde-0b2d-4c88-aafd-4710d123edba",
+    "title_en": "To V sau tính từ và danh từ",
+    "title_vi": "To V sau tính từ và danh từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 110,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-nguyen-mau-to-v-sau-tinh-tu-va-danh-tu"
+  },
+  "lessons": [
+    {
+      "id": "58ec589d-b13c-472d-a322-495b439036b1",
+      "subtopic_id": "61ee3ce7-7f4f-43b4-922b-5a3dfa937fc8",
+      "title_en": "To V sau tính từ và danh từ",
+      "title_vi": "To V sau tính từ và danh từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2018 · Câu 14",
+          "options": {
+            "A": "to transform",
+            "B": "transformation",
+            "C": "is transforming",
+            "D": "transformed"
+          },
+          "question": "The proposal ------- the vacant land on Spring Street into a community garden will be voted on this Monday.",
+          "translation": "Đề xuất biến khu đất trống trên phố Spring thành một khu vườn cộng đồng sẽ được bỏ phiếu vào thứ Hai này."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm ba dạng của động từ “transform” (to V, is + V-ing, V3) và danh từ “transformation”. Chỗ trống đứng ngay sau danh từ “The proposal”; động từ chính của câu là “will be voted on”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The proposal",
+                    "label": "chủ ngữ (danh từ)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the vacant land on Spring Street",
+                    "label": "tân ngữ của động từ ở chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "into a community garden",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be voted on",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "this Monday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Từ chỗ trống đến “a community garden” là phần nói rõ đề xuất gì; động từ chính là “will be voted on”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ và tính từ nào đi với to V phía sau.",
+                  "Câu đã có động từ chính thì chỗ trống sau danh từ có được là động từ chia thì không.",
+                  "Sau chỗ trống có tân ngữ thì cần dạng nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Một số tính từ và danh từ cần một to V phía sau để nói rõ nghĩa: sẵn lòng **làm gì**, cơ hội **làm gì**, quyết định **làm gì**. To V đứng ngay sau tính từ hoặc danh từ đó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Sau tính từ",
+                    "formula": "be + adj + to V"
+                  },
+                  {
+                    "label": "Sau danh từ",
+                    "formula": "N + to V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "C",
+                    "text": "ready",
+                    "label": "bổ ngữ (tính từ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to launch",
+                    "label": "to V: làm gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the new website.",
+                    "label": "tân ngữ của to launch"
+                  }
+                ],
+                "caption": "Sau tính từ: “to launch the new website” nói sẵn sàng làm gì."
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The decision",
+                    "label": "chủ ngữ (danh từ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to close",
+                    "label": "to V: quyết định gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the branch",
+                    "label": "tân ngữ của to close"
+                  },
+                  {
+                    "role": "V",
+                    "text": "surprised",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "everyone.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Sau danh từ chủ ngữ: “to close the branch” nói rõ quyết định gì; động từ chính là “surprised”."
+              },
+              {
+                "rows": [
+                  [
+                    "be + tính từ (khả năng, sẵn sàng)",
+                    "able, ready, willing, eager, quick, likely",
+                    "*The staff are willing to work on Saturday.* — Nhân viên sẵn lòng làm việc vào thứ Bảy."
+                  ],
+                  [
+                    "be + tính từ (ngần ngại, cảm xúc)",
+                    "reluctant, hesitant, pleased",
+                    "*We are pleased to welcome our new director.* — Chúng tôi vui mừng chào đón giám đốc mới."
+                  ],
+                  [
+                    "danh từ (cơ hội, quyền, khả năng)",
+                    "opportunity, chance, right, ability",
+                    "*Staff have the chance to attend the conference.* — Nhân viên có cơ hội dự hội nghị."
+                  ],
+                  [
+                    "danh từ (kế hoạch, quyết định, nỗ lực, cách)",
+                    "plan, decision, attempt, effort, proposal, way",
+                    "*We made an effort to cut costs this year.* — Năm nay chúng tôi đã nỗ lực cắt giảm chi phí."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Loại",
+                  "Từ đi với to V",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói rõ sẵn lòng làm gì, cơ hội làm gì, quyết định làm gì.",
+                    "form": "to V ngay sau tính từ hoặc danh từ trên",
+                    "example": "*an opportunity to take free language classes*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không đứng ngay sau các tính từ, danh từ này. Một vài danh từ đi được với giới từ + V-ing (*an attempt at solving*), nhưng câu không có giới từ.",
+                    "form": "V-ing (taking, relocating, closing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thiếu “to”, không nối được với tính từ hay danh từ đứng trước.",
+                    "form": "V nguyên mẫu (take, relocate, close)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính nên không thêm động từ chia thì; V3 mang nghĩa bị động, không đi với tân ngữ phía sau.",
+                    "form": "Quá khứ đơn, V3, is + V-ing (delayed, remained, is transforming)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hai danh từ “proposal transformation” đứng cạnh nhau không nhận được tân ngữ “the vacant land”.",
+                    "form": "Danh từ cùng gốc (transformation, câu mẫu)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "be + tính từ + ___",
+                    "example": "*Few candidates are willing ___*; *Heavy rain is likely ___*; *We are very pleased ___*"
+                  },
+                  {
+                    "signal": "danh từ + ___",
+                    "example": "*have an opportunity ___*; *announced plans ___*; *made a real effort ___*; *finding ways ___*"
+                  },
+                  {
+                    "signal": "danh từ chủ ngữ + ___ + … + động từ chính",
+                    "example": "*Her ability ___ calm … impressed the hiring manager*; *The proposal ___ … will be voted on*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*likely ___ deliveries*; *ready ___ the new servers*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (to V, V-ing, V3, V nguyên mẫu), có thể kèm danh từ cùng gốc, không có hoặc chỉ có một dạng chia thì, nên đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay trước chỗ trống là tính từ sau be hay là danh từ; tìm động từ chính của câu và xem sau chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Tính từ, danh từ đó đi với to V thì chọn to V. Loại V-ing, V nguyên mẫu, dạng chia thì, V3 và danh từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The proposal",
+                    "label": "chủ ngữ (danh từ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to transform",
+                    "label": "to V: đề xuất gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the vacant land on Spring Street",
+                    "label": "tân ngữ của to transform"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "into a community garden",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be voted on",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "this Monday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “to transform … into a community garden” nói rõ đề xuất gì."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm to V, is + V-ing, V3 của động từ “transform” và danh từ “transformation” nên đây là câu dạng động từ.",
+                  "Bước 2: Chỗ trống đứng sau danh từ chủ ngữ “The proposal”, trước tân ngữ “the vacant land”; động từ chính là “will be voted on”; dấu hiệu “danh từ chủ ngữ + ___ + … + động từ chính”.",
+                  "Bước 3: Công thức N + to V (đề xuất làm gì), vì vậy chọn “to transform” (biến … thành).",
+                  "“transformation” (B) là danh từ, “proposal transformation” không nhận được tân ngữ “the vacant land”, nên loại.",
+                  "“is transforming” (C) là động từ chia thì, câu đã có động từ chính “will be voted on”, nên loại.",
+                  "“transformed” (D) là quá khứ đơn hoặc V3; câu đã có động từ chính, còn V3 không đi với tân ngữ “the vacant land”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "be likely to V nói điều có khả năng xảy ra, chủ ngữ có thể là vật hay sự việc: *Prices are likely to rise next month.* — Giá có khả năng tăng vào tháng sau."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "be able, ready, willing, likely, pleased… + to V.",
+                  "opportunity, chance, right, plan, decision, effort… + to V.",
+                  "Câu đã có động từ chính thì chỗ trống sau danh từ không phải động từ chia thì."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,380 @@
+{
+  "subtopic": {
+    "id": "d558d3da-8364-48be-94f8-1c4e35c76a20",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì hiện tại đơn",
+    "title_vi": "Thì hiện tại đơn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 81,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-hien-tai-don"
+  },
+  "lessons": [
+    {
+      "id": "fa90b72d-1dac-478c-9498-97d2ffc24a13",
+      "subtopic_id": "d558d3da-8364-48be-94f8-1c4e35c76a20",
+      "title_en": "Thì hiện tại đơn",
+      "title_vi": "Thì hiện tại đơn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2020 · Câu 77",
+          "options": {
+            "A": "handle",
+            "B": "handles",
+            "C": "handled",
+            "D": "handling"
+          },
+          "question": "Jones ------- Ms. Cheng’s clients while she is on a business trip to Hong Kong.",
+          "translation": "Jones phụ trách các khách hàng của bà Cheng trong lúc bà đi công tác ở Hồng Kông."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “handle”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Jones",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Ms. Cheng’s clients",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "while",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "she is on a business trip to Hong Kong.",
+                    "label": "mệnh đề thời gian"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, đứng sau chủ ngữ “Jones” và trước tân ngữ “Ms. Cheng’s clients”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "vế “while she is on a business trip” cho biết câu nói về lúc nào",
+                  "động từ ở hiện tại chia thế nào theo chủ ngữ",
+                  "dạng nào làm được động từ chính"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì hiện tại đơn nói về việc lặp lại đều đặn, lịch cố định, hoặc sự thật và quy định đang đúng ở hiện tại.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "Chủ ngữ số ít (he, she, it, một người, một công ty) + V-s/es"
+                  },
+                  {
+                    "formula": "I, you, we, they, chủ ngữ số nhiều + V nguyên mẫu"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.1,
+                    "label": "thứ Sáu"
+                  },
+                  {
+                    "at": 0.24,
+                    "label": "thứ Sáu"
+                  },
+                  {
+                    "at": 0.38,
+                    "label": "thứ Sáu"
+                  },
+                  {
+                    "at": 0.52,
+                    "label": "thứ Sáu"
+                  },
+                  {
+                    "at": 0.68,
+                    "label": "thứ Sáu"
+                  },
+                  {
+                    "at": 0.82,
+                    "label": "thứ Sáu"
+                  },
+                  {
+                    "at": 0.96,
+                    "label": "thứ Sáu"
+                  }
+                ],
+                "caption": "*Our team submits a sales report every Friday.*: việc lặp lại mỗi thứ Sáu, trước và sau bây giờ."
+              },
+              {
+                "rows": [
+                  [
+                    "việc lặp lại đều đặn",
+                    "*Our team submits a sales report every Friday.* — Nhóm chúng tôi nộp báo cáo bán hàng vào mỗi thứ Sáu."
+                  ],
+                  [
+                    "lịch, giờ giấc cố định",
+                    "*The shuttle bus leaves the office at 8 a.m. every day.* — Xe đưa đón rời văn phòng lúc 8 giờ sáng mỗi ngày."
+                  ],
+                  [
+                    "sự thật, quy định hiện nay",
+                    "*The library charges no fees for staff members.* — Thư viện không thu phí đối với nhân viên."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Chỗ trống là động từ chính thì cần dạng có chia thì; to V, V-ing đứng một mình và danh từ không làm được động từ chính.",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Quá khứ đơn cũng nói được việc lặp lại, nhưng là việc lặp lại đã qua: *Last year, we met the client every Friday.* — Năm ngoái, chúng tôi gặp khách hàng vào mỗi thứ Sáu.",
+                  "Vì vậy every…, once a month… chỉ cho biết việc lặp lại, chưa loại được quá khứ.",
+                  "Muốn loại quá khứ, cần chữ cho biết câu nói về hiện tại, ví dụ vế khác trong câu chia hiện tại và nói cùng một chuyện (“before the office opens”, “the files are stored”)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Việc đang diễn ra lúc nói hoặc tạm thời (now, this week), không phải việc lặp lại đều đặn, lâu dài.",
+                    "form": "am/is/are + V-ing (hiện tại tiếp diễn)",
+                    "example": "“is emptying”, “are submitting”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc thuộc về quá khứ; lệch với vế khác chia hiện tại. had + V3 cần một mốc quá khứ.",
+                    "form": "V-ed (quá khứ đơn), had + V3 (quá khứ hoàn thành)",
+                    "example": "“printed”, “had emptied”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc đã xảy ra tính đến nay, cần khoảng tính đến nay (since, for). Câu chỉ nêu lịch đều đặn, không có khoảng tính đến nay thì không dùng.",
+                    "form": "has/have + V3 (hiện tại hoàn thành)",
+                    "example": "“have submitted”, “has sent”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc sẽ xảy ra, cần mốc hoặc ngữ cảnh tương lai.",
+                    "form": "will + V (tương lai đơn)",
+                    "example": "“will charge”, “will donate”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính.",
+                    "form": "to V, V-ing, danh từ",
+                    "example": "“to charge”, “to have”, “having”, “missing”, “reader”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-s/es và has chỉ đi với chủ ngữ số ít; V nguyên mẫu và have đi với I, you, we, they, chủ ngữ số nhiều.",
+                    "form": "động từ chia sai chủ ngữ",
+                    "example": "“has” với “we”, “empty” với “Brightline Media”, “submits” với “Employees”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "every + thời gian",
+                    "example": "*every Friday*, *every morning*, *every twenty minutes*"
+                  },
+                  {
+                    "signal": "số lần + a + thời gian",
+                    "example": "*twice a week*, *once a month*"
+                  },
+                  {
+                    "signal": "on + ngày số nhiều",
+                    "example": "*on Friday afternoons*"
+                  },
+                  {
+                    "signal": "lịch cố định",
+                    "example": "*at seven o'clock every day*, *according to the published timetable*"
+                  },
+                  {
+                    "signal": "vế khác chia hiện tại",
+                    "example": "*while she is on a business trip*, *before the office opens*"
+                  },
+                  {
+                    "signal": "chủ ngữ số ít / số nhiều",
+                    "example": "*Jones* (số ít), *Employees* (số nhiều)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ, có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "xác định chủ ngữ số ít hay số nhiều; tìm dấu hiệu lặp lại (every…, twice a week), lịch cố định hoặc vế khác chia hiện tại; xem câu có chữ chỉ tạm thời (now, this week) hay khoảng tính đến nay (since, for) không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc lặp lại, lịch hoặc sự thật hiện nay thì chọn V-s/es (chủ ngữ số ít) hoặc V nguyên mẫu (I, you, we, they, chủ ngữ số nhiều); loại tiếp diễn, dạng quá khứ lệch với vế khác chia hiện tại, hiện tại hoàn thành, will, dạng không chia và dạng sai chủ ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Jones",
+                    "label": "chủ ngữ số ít"
+                  },
+                  {
+                    "role": "V",
+                    "text": "handles",
+                    "label": "động từ (V-s)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Ms. Cheng’s clients",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "while",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "she is on a business trip to Hong Kong.",
+                    "label": "vế khác chia hiện tại"
+                  }
+                ],
+                "caption": "Câu hoàn chỉnh"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng của động từ “handle”, có dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “Jones” số ít; có dấu hiệu “vế khác chia hiện tại”: “while she is on a business trip”.",
+                  "Bước 3: Việc diễn ra ở hiện tại, chủ ngữ số ít nên dùng V-s/es, vì vậy chọn “handles” (phụ trách).",
+                  "“handle” (A) là V nguyên mẫu, chỉ đi với I, you, we, they hoặc chủ ngữ số nhiều, không hợp với “Jones”, nên loại.",
+                  "“handled” (C) là quá khứ đơn, không khớp với “is” ở hiện tại trong vế “while she is…”, nên loại.",
+                  "“handling” (D) là V-ing, không có “is” đi trước nên không làm được động từ chính, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Trạng từ tần suất (always, usually, rarely, regularly) cho biết việc lặp lại nhưng đi được với nhiều thì (hiện tại, quá khứ, tương lai), nên không phải dấu hiệu thì; hãy tìm dấu hiệu khác trong câu."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Việc lặp lại, lịch cố định, sự thật hiện nay: dùng hiện tại đơn.",
+                  "Chủ ngữ số ít thêm -s/es; I, you, we, they và chủ ngữ số nhiều giữ V nguyên mẫu.",
+                  "Câu nói việc lặp lại, vế khác chia hiện tại thì không chọn dạng quá khứ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

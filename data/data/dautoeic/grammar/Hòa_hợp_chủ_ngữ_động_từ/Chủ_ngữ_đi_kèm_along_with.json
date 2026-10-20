@@ -1,0 +1,353 @@
+{
+  "subtopic": {
+    "id": "471d43a8-3d05-4c10-8c51-28b18ab44b8e",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Chủ ngữ đi kèm along with",
+    "title_vi": "Chủ ngữ đi kèm along with",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 49,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-chu-ngu-di-kem-along-with"
+  },
+  "lessons": [
+    {
+      "id": "9bf0223c-9ece-40d5-9eea-db2b8f3ea592",
+      "subtopic_id": "471d43a8-3d05-4c10-8c51-28b18ab44b8e",
+      "title_en": "Chủ ngữ đi kèm along with",
+      "title_vi": "Chủ ngữ đi kèm along with",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "has been",
+            "B": "are",
+            "C": "were",
+            "D": "is"
+          },
+          "question": "The manager, along with his team members, ------- attending the conference next week.",
+          "translation": "Người quản lý, cùng với các thành viên trong nhóm, sẽ tham dự hội nghị vào tuần tới."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “be”. Chỗ trống đứng trước “attending”; giữa “The manager” và chỗ trống có cụm “along with his team members” nằm giữa hai dấu phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager,",
+                    "label": "chủ ngữ (S1)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "along with his team members,",
+                    "label": "cụm đi kèm"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "attending",
+                    "label": "V-ing"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the conference",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "next week.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Chỗ trống cùng “attending” làm động từ chính; cụm “along with his team members” chen giữa chủ ngữ và động từ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Cụm “along with + danh từ” có làm chủ ngữ thành số nhiều không.",
+                  "Dạng số ít và số nhiều của “be”.",
+                  "Dạng nào nói về kế hoạch với “next week”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Các cụm **along with, together with, as well as, in addition to, accompanied by** + danh từ chỉ nói thêm ai, cái gì đi cùng chủ ngữ; chúng không cộng vào chủ ngữ. Động từ chia theo danh từ đứng trước cụm đó (S1).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cụm đi kèm",
+                    "formula": "S1 + (along with / together with / as well as / in addition to / accompanied by + N2) + V chia theo S1"
+                  },
+                  {
+                    "label": "So sánh với and",
+                    "formula": "S1 + and + S2 + V số nhiều"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The director,",
+                    "label": "S1 (số ít)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "together with two assistants,",
+                    "label": "cụm đi kèm"
+                  },
+                  {
+                    "role": "V",
+                    "text": "visits",
+                    "label": "chia theo S1"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the site",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "every Monday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Bỏ cụm giữa hai dấu phẩy đi, câu vẫn đủ: The director visits the site every Monday."
+              },
+              {
+                "rows": [
+                  [
+                    "S1 số ít + cụm đi kèm + V-s/es",
+                    "*The CEO, along with two advisers, travels to Seoul today.* — Tổng giám đốc, cùng với hai cố vấn, đi Seoul hôm nay."
+                  ],
+                  [
+                    "S1 số ít + cụm đi kèm + is / has",
+                    "*Mr. Kim, as well as his staff, has signed the form.* — Ông Kim, cũng như các nhân viên của ông, đã ký vào mẫu đơn."
+                  ],
+                  [
+                    "S1 and S2 + V số nhiều",
+                    "*Mr. Kim and his assistant are in a meeting now.* — Ông Kim và trợ lý của ông hiện đang họp."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Kế hoạch đã sắp xếp ở tương lai (next week) dùng **is/are + V-ing**. Has been + V-ing nói việc từ quá khứ kéo đến nay nên không đi với next week.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Cụm đi kèm không làm chủ ngữ thành số nhiều.",
+                    "form": "V số ít chia theo S1 số ít (takes, is, has)",
+                    "example": "*The head chef, together with her kitchen staff, plans …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chia như thể S1 và N2 được nối bằng and, hoặc chia theo danh từ số nhiều trong cụm đi kèm.",
+                    "form": "V số nhiều: V nguyên mẫu, are, were, have (take, are, have)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chia theo chủ ngữ nên không làm được động từ chính.",
+                    "form": "V-ing, to V, be, being (taking, to take, be, being)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hợp số ít nhưng nói việc từ quá khứ kéo đến nay, không hợp mốc tương lai.",
+                    "form": "has been + V-ing với next week",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "S1, along with + N2, ___",
+                    "example": "*Ms. Okafor, along with the rest of the design team, ___*"
+                  },
+                  {
+                    "signal": "S1, together with + N2, ___",
+                    "example": "*Mr. Pham, together with his two colleagues, ___*"
+                  },
+                  {
+                    "signal": "S1, as well as + N2, ___",
+                    "example": "*The finance department, as well as the legal team, ___*"
+                  },
+                  {
+                    "signal": "S1, in addition to + N2, ___",
+                    "example": "*The main office, in addition to the two warehouses, ___*"
+                  },
+                  {
+                    "signal": "S1, accompanied by + N2, ___",
+                    "example": "*The keynote speaker, accompanied by her assistant, ___*"
+                  },
+                  {
+                    "signal": "next + thời gian",
+                    "example": "*___ attending the conference next week*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, có dạng chia thì (V-s, V nguyên mẫu, is/are) thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm cụm along with, together with, as well as, in addition to, accompanied by giữa hai dấu phẩy. Bỏ cụm đó đi, danh từ còn lại trước chỗ trống (S1) là chủ ngữ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chia động từ theo S1: S1 số ít thì chọn V-s/es, is, has. Loại dạng số nhiều chia theo N2, loại V-ing, to V.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager,",
+                    "label": "chủ ngữ (S1)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "along with his team members,",
+                    "label": "cụm đi kèm"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is attending",
+                    "label": "động từ: is + V-ing"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the conference",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "next week.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “is attending” chia theo S1 “The manager”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng chia thì của động từ “be” nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống đứng trước “attending”; dấu hiệu “S1, along with + N2, ___”: “The manager, along with his team members,”; dấu hiệu “next + thời gian”: “next week”.",
+                  "Bước 3: Động từ chia theo S1 “The manager” số ít; kế hoạch tương lai dùng is + V-ing, vì vậy chọn “is” (sẽ tham dự: is attending).",
+                  "“has been” (A) là số ít nhưng has been + V-ing nói việc từ quá khứ kéo đến nay, không hợp “next week”, nên loại.",
+                  "“are” (B) là số nhiều, chia theo “team members” trong cụm đi kèm thay vì “The manager”, nên loại.",
+                  "“were” (C) là quá khứ số nhiều, không hợp S1 số ít “The manager” và mốc “next week”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Hiện tại đơn có thể nói về lịch đã định ở tương lai, như “goes to the client by courier tomorrow”; động từ vẫn chia theo S1."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Along with, together with, as well as, in addition to, accompanied by không cộng vào chủ ngữ.",
+                  "Động từ chia theo danh từ đứng trước cụm đi kèm.",
+                  "Hai chủ ngữ nối bằng “and” mới cộng lại thành số nhiều; cụm đi kèm thì không."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

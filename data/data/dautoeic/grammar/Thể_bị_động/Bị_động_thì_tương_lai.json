@@ -1,0 +1,374 @@
+{
+  "subtopic": {
+    "id": "5703fb1f-3494-47d2-a536-01a91bb6ad2e",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Bị động thì tương lai",
+    "title_vi": "Bị động thì tương lai",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 89,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-bi-dong-thi-tuong-lai"
+  },
+  "lessons": [
+    {
+      "id": "37c78a95-33b6-4abf-a785-dfae3c5251be",
+      "subtopic_id": "5703fb1f-3494-47d2-a536-01a91bb6ad2e",
+      "title_en": "Bị động thì tương lai",
+      "title_vi": "Bị động thì tương lai",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2026 · Test 7 · Câu 117",
+          "options": {
+            "A": "is held",
+            "B": "was held",
+            "C": "will be held",
+            "D": "had been held"
+          },
+          "question": "Given the forecast for rain on Saturday, the ceremony ------- indoors at the Raheen Gallery.",
+          "translation": "Vì dự báo trời sẽ mưa vào thứ Bảy, buổi lễ sẽ được tổ chức trong nhà tại Phòng trưng bày Raheen."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng bị động ở các thì khác nhau của động từ “hold”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "Given the forecast for rain on Saturday,",
+                    "label": "cụm giới từ chỉ lý do"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the ceremony",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "indoors",
+                    "label": "trạng từ nơi chốn"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the Raheen Gallery.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính của vế sau, đứng sau chủ ngữ “the ceremony”; cụm đầu câu nói về dự báo thời tiết cho thứ Bảy."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“the forecast for rain on Saturday” cho biết việc tổ chức xảy ra lúc nào.",
+                  "Bị động thì tương lai được tạo thế nào.",
+                  "Vì sao các thì hiện tại, quá khứ không hợp ở đây."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Bị động thì tương lai dùng khi chủ ngữ **chịu** một hành động sẽ xảy ra sau lúc nói.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tương lai đơn",
+                    "formula": "S + will be + V3 (+ by + người làm)"
+                  },
+                  {
+                    "label": "Đã có dự định",
+                    "formula": "S + am/is/are going to be + V3"
+                  },
+                  {
+                    "label": "Khi will đã cho sẵn",
+                    "formula": "will + be + V3"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The new printers",
+                    "label": "chủ ngữ (chịu hành động)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be installed",
+                    "label": "will be + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by the IT team",
+                    "label": "by + người làm"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "next week.",
+                    "label": "mốc tương lai"
+                  }
+                ],
+                "caption": "Câu chủ động “The IT team will install the new printers next week” đổi sang bị động: tân ngữ lên làm chủ ngữ, động từ thành will be + V3, người làm đứng sau by."
+              },
+              {
+                "rows": [
+                  [
+                    "will be + V3: việc sẽ được làm",
+                    "*The results will be announced tomorrow.* — Kết quả sẽ được công bố vào ngày mai."
+                  ],
+                  [
+                    "am/is/are going to be + V3: việc đã có dự định",
+                    "*The old sign is going to be replaced next week.* — Tấm biển cũ sẽ được thay vào tuần sau."
+                  ],
+                  [
+                    "will be + V3 với by + mốc tương lai (muộn nhất vào lúc đó) hoặc until + mốc tương lai (kéo dài đến lúc đó)",
+                    "*The report will be finished by Friday.* — Bản báo cáo sẽ được hoàn tất trước thứ Sáu."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ chịu hành động: động từ cần tân ngữ (install, deliver, replace, compile) mà sau chỗ trống không có tân ngữ, hoặc có **by + người làm**.",
+                  "Ở bị động, sau will là **be** nguyên mẫu, sau will be là **V3**; been, V3, V-s không đứng ngay sau will.",
+                  "Hiện tại đơn chỉ nói tương lai khi là lịch trình cố định (giờ tàu chạy, giờ chiếu phim); việc sẽ làm như lắp camera, thay máy in, tổ chức buổi lễ vì trời mưa thì dùng will."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chủ ngữ chịu hành động sẽ xảy ra.",
+                    "form": "will be + V3, am/is/are going to be + V3",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chủ ngữ không tự làm hành động; các động từ này cần tân ngữ mà sau chỗ trống không có, hoặc câu có by + người làm.",
+                    "form": "will + V chủ động (will install, will inform, will accept, will move, will compile, will launch, will replace, will deliver)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là chủ động, cần tân ngữ.",
+                    "form": "will be + V-ing, going to + V chủ động (will be installing, will be informing, will be accepting, will be moving, will be replacing, is going to post)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc đã xong trước bây giờ hoặc trước một mốc quá khứ, không nói việc sắp tới; dạng chủ động còn thiếu tân ngữ.",
+                    "form": "has/have + V3 (has installed, have informed, has accepted, has moved, has completed, has finished, has posted, has been held, had been held)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nói việc sẽ được làm ở mốc tương lai; dạng chủ động còn thiếu tân ngữ.",
+                    "form": "Hiện tại đơn, hiện tại tiếp diễn (is held, are replaced, completes, compiles, launches, implement, install, is completing, is compiling, is launching, is posting)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Quá khứ trái với mốc tương lai; V-ing đứng một mình không làm được động từ chính.",
+                    "form": "Quá khứ, V-ing đứng một mình (held, was held, implemented, delivered, installed, finished, was finishing, implementing, delivering, installing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau will không dùng been, V3, V-s; sau will be không dùng V nguyên mẫu, V-s. have sold, be selling, deliver, forwarding tạo dạng chủ động, thiếu tân ngữ.",
+                    "form": "Sau will / will be cho sẵn: been + V3, V3, V nguyên mẫu chủ động, V-ing, V-s (been delivered, delivered, deliver, been selling, have sold, be selling, forward, forwarding, forwards)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "tomorrow / tonight",
+                    "example": "*when they arrive tomorrow morning*; *no later than tomorrow*; *at midnight tonight*"
+                  },
+                  {
+                    "signal": "next + thời gian",
+                    "example": "*next month*; *next quarter*; *early next year*; *starting next Friday*"
+                  },
+                  {
+                    "signal": "by / until + mốc tương lai",
+                    "example": "*by next year*; *by the end of next month*; *until next Friday*"
+                  },
+                  {
+                    "signal": "forecast for + ngày sắp tới",
+                    "example": "*Given the forecast for rain on Saturday*"
+                  },
+                  {
+                    "signal": "before / when / after / as soon as / once + hiện tại đơn",
+                    "example": "*before the holiday weekend begins*; *as soon as the director approves it*; *Once the documents are reviewed*"
+                  },
+                  {
+                    "signal": "will + ___ / will be + ___",
+                    "example": "*Tickets … will ___ online*; *they will be ___ to the legal department*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*by the accounting department*; *by the marketing department*; *by the organizers*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*A new security camera ___ at the back entrance*; *The system update ___ automatically*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng chia thì của một động từ, có will be + V3 hoặc going to be + V3, thì là câu chia động từ; will hoặc will be đã cho sẵn trước chỗ trống thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ, xem sau chỗ trống có tân ngữ hay by + người làm; tìm dấu hiệu tương lai: tomorrow, next + thời gian, by/until + mốc tương lai, mệnh đề before/when/as soon as + hiện tại đơn.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ chịu hành động sẽ xảy ra thì chọn will be + V3 (hoặc is going to be + V3); loại dạng chủ động, dạng hiện tại, quá khứ, hoàn thành và dạng sai sau will.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "Given the forecast for rain on Saturday,",
+                    "label": "cụm giới từ chỉ lý do"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the ceremony",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be held",
+                    "label": "will be + V3"
+                  },
+                  {
+                    "role": "X",
+                    "text": "indoors",
+                    "label": "trạng từ nơi chốn"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the Raheen Gallery.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: buổi lễ sẽ được tổ chức vào thứ Bảy sắp tới, nên động từ là will be + V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng chia thì của động từ “hold” nên đây là câu chia động từ.",
+                  "Bước 2: Vế chính chưa có động từ, chủ ngữ “the ceremony” số ít; dấu hiệu “forecast for + ngày sắp tới”: “the forecast for rain on Saturday”.",
+                  "Bước 3: Buổi lễ được tổ chức (chịu hành động) vào ngày sắp tới nên dùng will be + V3, vì vậy chọn “will be held” (sẽ được tổ chức).",
+                  "“is held” (A) là hiện tại đơn bị động, nói việc lặp lại, không nói việc sẽ làm vào thứ Bảy, nên loại.",
+                  "“was held” (B) là quá khứ đơn bị động, nói việc đã xảy ra, trái với dự báo cho ngày sắp tới, nên loại.",
+                  "“had been held” (D) là quá khứ hoàn thành bị động, câu không có mốc quá khứ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau before, when, after, as soon as, once dùng hiện tại đơn dù nói tương lai, kể cả ở bị động: “Once the documents are reviewed”; will đứng ở vế chính (học ở bài “Thì trong mệnh đề thời gian”).",
+                  "**by + mốc tương lai** (by next year) chỉ hạn chót; **by + người làm** (by the marketing department) chỉ ai làm."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ chịu hành động sẽ xảy ra: will be + V3.",
+                  "Bị động: sau will là be + V3; sau will be là V3.",
+                  "Dạng chủ động mà sau chỗ trống không có tân ngữ thì loại."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

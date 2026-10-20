@@ -1,0 +1,433 @@
+{
+  "subtopic": {
+    "id": "427adf17-edc7-4ad7-bf53-720d44a799ff",
+    "topic_id": "1cb57ce1-885b-4639-b51c-f69a772f9412",
+    "title_en": "Tính từ trước danh từ",
+    "title_vi": "Tính từ trước danh từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 23,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-tinh-tu-truoc-danh-tu"
+  },
+  "lessons": [
+    {
+      "id": "8a0b2e10-c5b4-47bf-8547-79da718f4e95",
+      "subtopic_id": "427adf17-edc7-4ad7-bf53-720d44a799ff",
+      "title_en": "Tính từ trước danh từ",
+      "title_vi": "Tính từ trước danh từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 4 · Câu 105",
+          "options": {
+            "A": "satisfy",
+            "B": "satisfactory",
+            "C": "satisfaction",
+            "D": "satisfactorily"
+          },
+          "question": "We hope our customer service team has answered your questions in a ------- manner.",
+          "translation": "Chúng tôi hy vọng đội chăm sóc khách hàng của chúng tôi đã trả lời các câu hỏi của quý khách một cách thỏa đáng."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “satisfy” nhưng khác loại từ. Chỗ trống nằm trong cụm “in a ------- manner”, giữa mạo từ “a” và danh từ “manner”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "We hope",
+                    "label": ""
+                  },
+                  {
+                    "role": "S",
+                    "text": "our customer service team",
+                    "label": "chủ ngữ (mệnh đề sau hope)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has answered",
+                    "label": "động từ (mệnh đề sau hope)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "your questions",
+                    "label": "tân ngữ của has answered"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "manner.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Sau “We hope” là một mệnh đề có chủ ngữ, động từ, tân ngữ riêng; chỗ trống nằm trong cụm giới từ “in a ------- manner” ở cuối mệnh đề đó."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào đứng trước danh từ để bổ nghĩa cho nó.",
+                  "Nhận ra loại từ qua đuôi.",
+                  "Vì sao các loại từ còn lại không đứng được giữa “a” và “manner”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Tính từ (adj) nói lên tính chất của người, vật, sự việc. Tính từ đứng trước danh từ để bổ nghĩa cho danh từ đó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "(mạo từ / sở hữu / từ hạn định)",
+                    "label": "từ hạn định (nếu có)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "(trạng từ)",
+                    "label": "trạng từ (nếu có)"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "adj",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "N",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Vị trí của tính từ: ngay trước tính từ có thể có trạng từ; trước cả cụm tính từ + danh từ có thể là mạo từ, sở hữu, từ hạn định, giới từ hay động từ."
+              },
+              {
+                "rows": [
+                  [
+                    "adj + N, sau mạo từ, sở hữu hoặc từ hạn định",
+                    "*Our team needs a reliable supplier for this project.* — Nhóm chúng tôi cần một nhà cung cấp đáng tin cậy cho dự án này."
+                  ],
+                  [
+                    "trạng từ + adj + N (trạng từ bổ nghĩa cho tính từ)",
+                    "*Ms. Park gave a very clear presentation to the board.* — Bà Park đã có một bài thuyết trình rất rõ ràng trước ban giám đốc."
+                  ],
+                  [
+                    "nhiều tính từ trước một danh từ",
+                    "*We need a strong financial plan for next year.* — Chúng tôi cần một kế hoạch tài chính vững chắc cho năm tới."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra loại từ qua đuôi** (các đuôi có trong bài tập)",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "Tính từ",
+                    "-ful, -ous, -ive, -able, -al/-ial, -ic, -ant/-ent, -ary/-ory, -y",
+                    "helpful, numerous, creative, favorable, technical, historic, relevant, primary, risky"
+                  ],
+                  [
+                    "Danh từ",
+                    "-ness, -ity, -tion, -ment, -ance/-ence, -cy, -ism, -th, -ist/-ian (chỉ người)",
+                    "seriousness, creativity, satisfaction, achievement, relevance, recency, conservatism, width, finalist, historian"
+                  ],
+                  [
+                    "Động từ",
+                    "-ize, -en",
+                    "finalize, criticize, widen, strengthen"
+                  ],
+                  [
+                    "Trạng từ",
+                    "-ly",
+                    "effectively, clearly"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Loại từ",
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "tone": "info",
+                "type": "callout",
+                "items": [
+                  "Đuôi chỉ giúp nhận ra loại từ, không đúng cho mọi từ.",
+                  "Một số tính từ không có đuôi riêng: wide, poor, strong, clear.",
+                  "Một số từ mang đuôi tính từ lại là danh từ: critic, proposal, representative, assistant.",
+                  "Một số từ đuôi -ly là tính từ: friendly, costly."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước danh từ, nói danh từ đó như thế nào: adj + N.",
+                    "form": "Tính từ (reliable, clear, helpful)",
+                    "example": "*a reliable supplier*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Bổ nghĩa cho động từ, tính từ, trạng từ khác hoặc cả câu. Không đứng giữa mạo từ, sở hữu và danh từ để bổ nghĩa cho danh từ.",
+                    "form": "Trạng từ (effectively, clearly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ đứng trước danh từ khác thì nói danh từ sau thuộc loại gì, dành cho ai, không nói danh từ sau như thế nào. Các cụm như *satisfaction manner*, *unanimity decision* không có nghĩa.",
+                    "form": "Danh từ (satisfaction, creativity, unanimity)",
+                    "example": "*customer service*: dịch vụ dành cho khách hàng",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ đứng trước danh từ khác để ở dạng số ít. Ngoại lệ là vài từ luôn có -s như sales.",
+                    "form": "Danh từ số nhiều (advantages, histories, athletes, critics)",
+                    "example": "*a shoe shop*, không nói *a shoes shop*; *the sales team*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho danh từ đứng sau nó.",
+                    "form": "Động từ (impress, promotes, innovates, manages, to impress)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing, V-ed có thể làm tính từ, nhưng các từ này không cho nghĩa hợp với danh từ đi sau.",
+                    "form": "V-ing, V-ed (preferring, favored, noticing)",
+                    "example": "V-ed làm tính từ: *limited availability*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trước danh từ cần “the” hoặc sở hữu.",
+                    "form": "So sánh nhất (poorest)",
+                    "example": "*the poorest results*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng sai nghĩa, phải loại theo nghĩa.",
+                    "form": "Tính từ khác nghĩa (numerate, serial)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + danh từ",
+                    "example": "*___ suggestions are always welcome*; *all ages and ___ abilities*"
+                  },
+                  {
+                    "signal": "mạo từ + ___ + danh từ",
+                    "example": "*a ___ market*; *the ___ issue*; *a ___ five-step plan*"
+                  },
+                  {
+                    "signal": "sở hữu + ___ + danh từ",
+                    "example": "*Her ___ performance*; *the company’s ___ expansion*"
+                  },
+                  {
+                    "signal": "từ hạn định + ___ + danh từ",
+                    "example": "*All ___ information*; *some ___ products*; *other ___ sites*"
+                  },
+                  {
+                    "signal": "giới từ + ___ + danh từ",
+                    "example": "*because of ___ behavior*; *under ___ leadership*"
+                  },
+                  {
+                    "signal": "động từ + ___ + danh từ",
+                    "example": "*recorded ___ profits*; *manage ___ documents*"
+                  },
+                  {
+                    "signal": "trạng từ + ___ + danh từ",
+                    "example": "*a very ___ impression*; *a readily ___ goal*; *more ___ communication*"
+                  },
+                  {
+                    "signal": "tính từ + ___ + danh từ",
+                    "example": "*strong ___ skills*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay sau chỗ trống có phải danh từ không, rồi xem từ đứng trước (mạo từ, sở hữu, từ hạn định, giới từ, động từ, trạng từ, tính từ). Chỗ trống đứng ngay trước danh từ thì nó bổ nghĩa cho danh từ đó.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn tính từ theo công thức adj + N, nhận ra tính từ qua đuôi; loại trạng từ và động từ; loại danh từ khi cụm danh từ + danh từ không có nghĩa trong câu. Còn hai từ đứng được ở vị trí đó thì chọn theo nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "We hope",
+                    "label": ""
+                  },
+                  {
+                    "role": "S",
+                    "text": "our customer service team",
+                    "label": "chủ ngữ (mệnh đề sau hope)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has answered",
+                    "label": "động từ (mệnh đề sau hope)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "your questions",
+                    "label": "tân ngữ của has answered"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "satisfactory",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "manner.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: tính từ “satisfactory” đứng giữa mạo từ “a” và danh từ “manner”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “satisfy” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa “a” và danh từ “manner”; dấu hiệu “mạo từ + ___ + danh từ”: “in a ------- manner”.",
+                  "Bước 3: Cần adj + N; “satisfactory” là tính từ (đuôi -ory), vì vậy chọn “satisfactory” (thỏa đáng).",
+                  "“satisfy” (A) là động từ, không bổ nghĩa cho danh từ “manner”, nên loại.",
+                  "“satisfaction” (C) là danh từ (sự hài lòng), “satisfaction manner” không phải cụm danh từ ghép có nghĩa, nên loại.",
+                  "“satisfactorily” (D) là trạng từ, không bổ nghĩa cho danh từ “manner”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Danh từ có thể đứng trước danh từ khác để tạo danh từ ghép, như “customer service team” trong câu mẫu (học ở chủ điểm “Danh từ ghép”). Chỉ chọn danh từ khi cụm danh từ + danh từ đó có nghĩa hợp với câu.",
+                  "V-ing và V-ed cũng làm được tính từ trước danh từ, ví dụ *Tours may have limited availability on weekends.* — Các tour có thể còn ít chỗ vào cuối tuần. Phần này học ở chủ điểm “Tính từ đuôi -ed và -ing”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống ngay trước danh từ, cần nói danh từ đó thế nào, thì chọn tính từ: adj + N.",
+                  "Trạng từ bổ nghĩa cho tính từ, không bổ nghĩa cho danh từ: a very clear plan.",
+                  "Còn hai từ đứng được trước danh từ thì chọn theo nghĩa của cả cụm."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

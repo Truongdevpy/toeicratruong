@@ -1,0 +1,337 @@
+{
+  "subtopic": {
+    "id": "40a12d65-b905-4494-beb1-340d26bb1627",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Chủ ngữ không đếm được",
+    "title_vi": "Chủ ngữ không đếm được",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 47,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-chu-ngu-khong-dem-duoc"
+  },
+  "lessons": [
+    {
+      "id": "0bbddb65-94ea-4d3b-abe0-701ef97ac833",
+      "subtopic_id": "40a12d65-b905-4494-beb1-340d26bb1627",
+      "title_en": "Chủ ngữ không đếm được",
+      "title_vi": "Chủ ngữ không đếm được",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2021 · Câu 52",
+          "options": {
+            "A": "being",
+            "B": "to be",
+            "C": "are",
+            "D": "is"
+          },
+          "question": "Free Internet service ------- available in the lobby but not in the guest rooms.",
+          "translation": "Dịch vụ Internet miễn phí có sẵn ở sảnh nhưng không có trong các phòng của khách."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “be”. Chỗ trống là động từ chính, đứng sau chủ ngữ “Free Internet service” và trước tính từ “available”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Free Internet service",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "C",
+                    "text": "available",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the lobby but not in the guest rooms.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chủ ngữ “Free Internet service” không có a/an, không có -s; “available” là bổ ngữ đứng sau động từ be."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ không đếm được là gì, gồm những từ nào.",
+                  "Chủ ngữ không đếm được đi với động từ số ít hay số nhiều.",
+                  "Dạng nào của “be” làm được động từ chính."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Danh từ không đếm được không đi với a/an và không có dạng số nhiều thêm -s. Khi làm chủ ngữ, nó luôn đi với **động từ số ít**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Hiện tại",
+                    "formula": "N không đếm được + V-s/es, is, has"
+                  },
+                  {
+                    "label": "Quá khứ của be",
+                    "formula": "N không đếm được + was"
+                  },
+                  {
+                    "label": "Có all, any",
+                    "formula": "all / any + N không đếm được + V số ít"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "thông tin, ý kiến",
+                    "information, advice, feedback, news, research"
+                  ],
+                  [
+                    "đồ vật gộp chung",
+                    "furniture, equipment, machinery, stationery, merchandise, mail"
+                  ],
+                  [
+                    "hành lý",
+                    "luggage, baggage"
+                  ],
+                  [
+                    "việc, hoạt động, phần mềm",
+                    "paperwork, training, software, service (khi không có a/an, không có -s)"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nhóm",
+                  "Danh từ không đếm được trong bài tập"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "N không đếm được + V-s/es",
+                    "*Customer feedback shows a clear improvement this year.* — Phản hồi của khách hàng năm nay cho thấy sự cải thiện rõ rệt."
+                  ],
+                  [
+                    "all / any + N không đếm được: vẫn V số ít",
+                    "*All office equipment is checked every month.* — Toàn bộ thiết bị văn phòng được kiểm tra mỗi tháng."
+                  ],
+                  [
+                    "N không đếm được + cụm xen giữa + V số ít",
+                    "*The information in these files is confidential.* — Thông tin trong các tệp này là thông tin mật."
+                  ],
+                  [
+                    "news: có đuôi -s nhưng không đếm được",
+                    "*The news about the merger is spreading quickly.* — Tin về vụ sáp nhập đang lan nhanh."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Mốc quá khứ đã kết thúc như **last month**, **yesterday** đi với quá khứ đơn (was, were), không đi với has/have + V3.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Hợp với chủ ngữ không đếm được.",
+                    "form": "V số ít: is, was, has, V-s/es (goes, shows, requires)",
+                    "example": "*Recent research suggests …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Là dạng dành cho chủ ngữ số nhiều; danh từ không đếm được không có số nhiều.",
+                    "form": "V số nhiều: are, were, have, have been, V nguyên mẫu (go, show, require)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chia theo chủ ngữ nên không làm được động từ chính.",
+                    "form": "V-ing, to V, be, being (being, to be, receiving, to receive)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hợp số ít nhưng hiện tại hoàn thành không đi với mốc như last month.",
+                    "form": "has been + V3 với mốc quá khứ đã kết thúc (has been … last month)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "N không đếm được + ___",
+                    "example": "*Recent research ___*; *Customer feedback ___*; *The heavy machinery ___*"
+                  },
+                  {
+                    "signal": "all / any + N không đếm được",
+                    "example": "*All incoming mail ___*; *Any luggage left in the lobby ___*"
+                  },
+                  {
+                    "signal": "N không đếm được + cụm xen giữa + ___",
+                    "example": "*The information provided in the report ___*; *The paperwork for new suppliers ___*"
+                  },
+                  {
+                    "signal": "news (đuôi -s, không đếm được)",
+                    "example": "*The news about the factory expansion ___*"
+                  },
+                  {
+                    "signal": "mốc quá khứ đã kết thúc",
+                    "example": "*___ replaced last month*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, có dạng chia thì (V-s, V nguyên mẫu, is/are) thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm từ chính của chủ ngữ, bỏ qua all, any và cụm xen giữa; xem đó có phải danh từ không đếm được không, và câu có mốc thời gian nào.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ không đếm được thì chọn động từ số ít (V-s/es, is, was, has), đúng thì; loại dạng số nhiều, loại V-ing, to V.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Free Internet service",
+                    "label": "chủ ngữ không đếm được"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ số ít"
+                  },
+                  {
+                    "role": "C",
+                    "text": "available",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the lobby but not in the guest rooms.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “is” là động từ số ít, hợp với chủ ngữ không đếm được."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “be”, có dạng chia thì (are, is), nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ chính, đứng trước tính từ “available”; dấu hiệu “N không đếm được + ___”: “Free Internet service”, không có a/an, không có -s.",
+                  "Bước 3: N không đếm được đi với V số ít; cần dạng chia của “be”, vì vậy chọn “is” (có sẵn: is available).",
+                  "“being” (A) là V-ing, không làm được động từ chính của “Free Internet service”, nên loại.",
+                  "“to be” (B) là to V, không làm được động từ chính của “Free Internet service”, nên loại.",
+                  "“are” (C) là số nhiều, không hợp chủ ngữ không đếm được “Free Internet service”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“service” cũng có dạng đếm được (a service, services). Trong câu mẫu nó không có a/an, không có -s nên được dùng như danh từ không đếm được.",
+                  "Hiện tại đơn có thể nói về lịch đã định ở tương lai: *The new furniture arrives next Thursday.* — Nội thất mới sẽ đến vào thứ Năm tới."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Danh từ không đếm được làm chủ ngữ thì động từ luôn ở dạng số ít.",
+                  "All, any hay cụm xen giữa không đổi số của động từ.",
+                  "News có đuôi -s nhưng vẫn đi với động từ số ít."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,346 @@
+{
+  "subtopic": {
+    "id": "a474000b-90cb-4a5d-8c56-141cb9a107ff",
+    "topic_id": "0ea3d286-7391-4844-a15c-b177d7a5e144",
+    "title_en": "Câu mệnh lệnh",
+    "title_vi": "Câu mệnh lệnh",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 32,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-cau-truc-dac-biet-cau-menh-lenh"
+  },
+  "lessons": [
+    {
+      "id": "1dd4e3a3-f139-4fbe-b26f-fef01f6dd6ea",
+      "subtopic_id": "a474000b-90cb-4a5d-8c56-141cb9a107ff",
+      "title_en": "Câu mệnh lệnh",
+      "title_vi": "Câu mệnh lệnh",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 2 · Câu 120",
+          "options": {
+            "A": "direction",
+            "B": "directive",
+            "C": "directed",
+            "D": "direct"
+          },
+          "question": "Please ------- any questions about time sheets to Tabitha Jones in the payroll department.",
+          "translation": "Vui lòng gửi mọi thắc mắc về bảng chấm công cho Tabitha Jones ở phòng tính lương."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “direct” nhưng khác loại từ. Chỗ trống đứng ngay sau “Please”, trước cụm “any questions about time sheets”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "Please",
+                    "label": "từ lịch sự"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "any questions about time sheets",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to Tabitha Jones",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the payroll department.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu không có chủ ngữ; chỗ trống đứng sau “Please” và trước tân ngữ “any questions about time sheets”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "câu không có chủ ngữ, dùng để yêu cầu người đọc làm gì, là câu gì",
+                  "sau “Please” cần loại từ nào, ở dạng nào",
+                  "vì sao danh từ, tính từ, V-ed không đứng được ở đây"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Câu mệnh lệnh dùng để yêu cầu, hướng dẫn hay mời người đọc làm gì. Câu **không có chủ ngữ** (người được yêu cầu là “you” nhưng không nói ra) và động từ chính ở dạng **V nguyên mẫu**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Khẳng định",
+                    "formula": "V nguyên mẫu + (tân ngữ) + …"
+                  },
+                  {
+                    "label": "Lịch sự",
+                    "formula": "Please + V nguyên mẫu + …"
+                  },
+                  {
+                    "label": "Phủ định",
+                    "formula": "Do not + V nguyên mẫu + …"
+                  },
+                  {
+                    "label": "Hai việc nối bằng and",
+                    "formula": "V nguyên mẫu + … + and + V nguyên mẫu + …"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Call",
+                    "label": "V nguyên mẫu: động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Mr. Park",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "if the shipment arrives late.",
+                    "label": "vế if (vế phụ)"
+                  }
+                ],
+                "caption": "*Call Mr. Park if the shipment arrives late.* — Hãy gọi cho ông Park nếu lô hàng về trễ. “arrives” thuộc vế if (vế phụ); động từ chính của câu là “Call” đứng đầu câu."
+              },
+              {
+                "rows": [
+                  [
+                    "V nguyên mẫu đứng đầu câu",
+                    "*Keep all receipts from the business trip.* — Hãy giữ lại mọi hóa đơn của chuyến công tác."
+                  ],
+                  [
+                    "Please + V nguyên mẫu (lịch sự hơn)",
+                    "*Please sign the form at the bottom of the page.* — Vui lòng ký vào cuối trang của mẫu đơn."
+                  ],
+                  [
+                    "Do not + V nguyên mẫu (cấm, khuyên không làm)",
+                    "*Do not park in front of the loading dock.* — Đừng đỗ xe trước khu bốc dỡ hàng."
+                  ],
+                  [
+                    "V nguyên mẫu + and + V nguyên mẫu",
+                    "*Go to Room 5 and wait for the manager.* — Hãy đến phòng 5 và đợi quản lý."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm động từ chính của câu mệnh lệnh.",
+                    "form": "V nguyên mẫu (Distribute, Please submit, Do not leave)",
+                    "example": "*Please submit all expense receipts by Friday.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "V-ing không làm được động từ chính; đặt vào chỗ trống đầu câu thì câu không có động từ chính nào (động từ còn lại thuộc vế phụ). Sau Please và Do not không dùng V-ing.",
+                    "form": "V-ing (Reviewing, submitting, leaving)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ dùng khi có chủ ngữ số ít; câu mệnh lệnh không có chủ ngữ, sau Please và Do not dùng V nguyên mẫu.",
+                    "form": "V-s/es (Notifies, submits, leaves)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Quá khứ đơn cần chủ ngữ và kể việc đã xảy ra, không nêu yêu cầu; sau Please và Do not không dùng V-ed.",
+                    "form": "V-ed: quá khứ đơn hoặc V3 (Reviewed, left, directed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nhận tân ngữ phía sau, và câu không có động từ chính.",
+                    "form": "Danh từ, tính từ (Distribution, Reviewer, letter, directive)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ đầu câu, không có chủ ngữ",
+                    "example": "*------- the attached contract carefully before you sign the final page.*"
+                  },
+                  {
+                    "signal": "Please + ___",
+                    "example": "*Please ------- all expense receipts to the accounting office …*"
+                  },
+                  {
+                    "signal": "Do not + ___",
+                    "example": "*Do not ------- the machine while …*"
+                  },
+                  {
+                    "signal": "___ … and + V nguyên mẫu",
+                    "example": "*------- to the third floor and ask for Mr. Donnelly …*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*------- copies of the revised budget …*; *Please ------- any questions about time sheets …*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V nguyên mẫu, V-ing, V-ed, V-s), có thể kèm một danh từ cùng gốc, thì đây là câu chia động từ; hai dạng động từ trộn với danh từ, tính từ cùng gốc thì là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem câu có chủ ngữ không: chỗ trống đứng đầu câu, sau “Please” hoặc sau “Do not”, và động từ khác trong câu chỉ thuộc vế phụ (if, before, who, so that…) thì đây là câu mệnh lệnh.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn V nguyên mẫu; loại V-ing, V-ed, V-s vì câu không có chủ ngữ; loại danh từ, tính từ vì không nhận tân ngữ và câu thiếu động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "Please",
+                    "label": "từ lịch sự"
+                  },
+                  {
+                    "role": "V",
+                    "text": "direct",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "any questions about time sheets",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to Tabitha Jones",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the payroll department.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “direct” là V nguyên mẫu, làm động từ chính sau “Please”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “direct” nhưng khác loại từ (danh từ, tính từ, động từ) nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “Please”, trước tân ngữ “any questions about time sheets”; câu không có chủ ngữ; dấu hiệu “Please + ___”.",
+                  "Bước 3: Please + V nguyên mẫu, vì vậy chọn “direct” (gửi, chuyển).",
+                  "“direction” (A) là danh từ, không nhận tân ngữ “any questions”, câu lại thiếu động từ chính, nên loại.",
+                  "“directive” (B) là danh từ hoặc tính từ, không nhận tân ngữ “any questions”, câu lại thiếu động từ chính, nên loại.",
+                  "“directed” (C) là quá khứ đơn hoặc V3; sau “Please” không dùng dạng này, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau “let” là tân ngữ rồi V nguyên mẫu: *Please let Ms. Alvarez know if the schedule changes.* — Vui lòng báo cho cô Alvarez biết nếu lịch thay đổi. “Ms. Alvarez” là tân ngữ, không phải chủ ngữ của câu."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu không có chủ ngữ, yêu cầu người đọc làm gì: dùng V nguyên mẫu.",
+                  "Please + V nguyên mẫu; Do not + V nguyên mẫu."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

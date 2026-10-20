@@ -1,0 +1,386 @@
+{
+  "subtopic": {
+    "id": "0a672ecd-038c-4ac7-8648-4b1d2d9f3d24",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ cùng dạng động từ",
+    "title_vi": "Danh từ cùng dạng động từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 8,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-cung-dang-dong-tu"
+  },
+  "lessons": [
+    {
+      "id": "d6fb0e76-8fcd-4123-86df-20ec5e4ef8a0",
+      "subtopic_id": "0a672ecd-038c-4ac7-8648-4b1d2d9f3d24",
+      "title_en": "Danh từ cùng dạng động từ",
+      "title_vi": "Danh từ cùng dạng động từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "declined",
+            "B": "declining",
+            "C": "declines",
+            "D": "decline"
+          },
+          "question": "The company announced a sharp ------- in international orders.",
+          "translation": "Công ty đã thông báo về một sự sụt giảm mạnh trong các đơn đặt hàng quốc tế."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của “decline”: dạng -ed, -ing, -s và dạng không đuôi. Chỗ trống đứng sau “a sharp”, trước cụm giới từ “in international orders”; câu đã có động từ chính “announced”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The company",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "announced",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "sharp",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in international orders.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Cụm “a sharp -------” là tân ngữ của “announced”; “in international orders” là cụm giới từ nói sụt giảm ở đâu."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau mạo từ và tính từ cần loại từ nào.",
+                  "Một số danh từ có hình dạng giống hệt động từ nguyên mẫu.",
+                  "Khi nào dùng số ít, khi nào dùng số nhiều."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Nhiều danh từ có hình dạng giống hệt động từ nguyên mẫu, không có đuôi riêng: *decline* vừa là động từ (giảm) vừa là danh từ (sự sụt giảm). Ở vị trí danh từ, chọn dạng không đuôi này; cần số nhiều thì thêm -s.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Danh từ đếm được số ít",
+                    "formula": "a/an/one + (tính từ) + N"
+                  },
+                  {
+                    "label": "Sau the, sở hữu",
+                    "formula": "the/their + (tính từ) + N"
+                  },
+                  {
+                    "label": "Không có từ hạn định",
+                    "formula": "động từ + N không đếm được + giới từ"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Sales",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "showed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "sharp",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "increase",
+                    "label": "danh từ (cùng dạng động từ)"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "in May.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "*Sales showed a sharp increase in May.* — Doanh số cho thấy mức tăng mạnh vào tháng Năm. “increase” ở đây là danh từ, đứng sau mạo từ “a” và tính từ “sharp”."
+              },
+              {
+                "rows": [
+                  [
+                    "decline, increase, delay, impact",
+                    "sự sụt giảm, mức tăng, sự chậm trễ, tác động"
+                  ],
+                  [
+                    "purchase, refund, discount, exchange",
+                    "đơn mua hàng, khoản hoàn tiền, khoản giảm giá, lần đổi hàng"
+                  ],
+                  [
+                    "request, transfer, release, launch",
+                    "lời đề nghị, lệnh chuyển tiền, việc phát hành, sự ra mắt"
+                  ],
+                  [
+                    "benefit, design, demand",
+                    "lợi ích, thiết kế, nhu cầu"
+                  ],
+                  [
+                    "support, access",
+                    "sự hỗ trợ, quyền truy cập (không đếm được)"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Danh từ trong bài tập",
+                  "Nghĩa khi là danh từ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau a, an, one là danh từ số ít: *a sharp decline*, *one free exchange*; không dùng dạng -s.",
+                  "Động từ chính is, has, was cho biết chủ ngữ số ít: *Strong customer demand … has surprised*.",
+                  "*support* (sự hỗ trợ) và *access* (quyền truy cập) không đếm được: không đi với a, không thêm -s. Động từ *access* nhận tân ngữ ngay sau nó, không đi với “to”; *have access to* là danh từ + to.",
+                  "Khi đã có danh từ cùng nghĩa (delay, launch, design), sau a, the, sở hữu, tính từ dùng danh từ đó, không dùng V-ing."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng sau mạo từ, sở hữu, tính từ; làm chủ ngữ hoặc tân ngữ.",
+                    "form": "Dạng không đuôi làm danh từ (decline, support, delay)",
+                    "example": "*a sharp decline*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Là động từ quá khứ hoặc V3, không đứng một mình ở vị trí danh từ sau mạo từ, tính từ.",
+                    "form": "V-ed (declined, discounted, accessed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đã có danh từ cùng nghĩa nên sau a, the, sở hữu, tính từ dùng danh từ; V-ing của động từ cần tân ngữ còn phải có tân ngữ đi sau.",
+                    "form": "V-ing (declining, delaying, launching)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là V-s hoặc danh từ số nhiều: không đi sau a, an, one; không hợp động từ số ít has, was; support, access không thêm -s.",
+                    "form": "Dạng -s (declines, purchases, accesses)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng sau mạo từ the.",
+                    "form": "to V (to delay)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có danh từ đi sau để bổ nghĩa nên không làm tân ngữ.",
+                    "form": "Tính từ (supportive)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "a/an + tính từ + ___",
+                    "example": "*a sharp ___*; *a steady ___*; *a written ___*; *a full ___*"
+                  },
+                  {
+                    "signal": "the + ___",
+                    "example": "*The ___ of the new product*; *apologize for the ___ and thank you*"
+                  },
+                  {
+                    "signal": "sở hữu / số từ + tính từ + ___",
+                    "example": "*their generous ___*; *one free ___*"
+                  },
+                  {
+                    "signal": "động từ + ___ + giới từ",
+                    "example": "*have ___ to the files*; *appreciated ___ from the legal department*"
+                  },
+                  {
+                    "signal": "___ + động từ chính số ít",
+                    "example": "*Strong customer ___ for the new coffee blend has surprised …*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một từ: dạng không đuôi, -ed, -ing, -s (có thể thêm to V, tính từ) thì đây là câu từ loại; dạng không đuôi có thể là danh từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem trước chỗ trống có mạo từ, sở hữu, số từ, tính từ không; nếu không có, xem chỗ trống làm chủ ngữ hay tân ngữ. Tìm dấu hiệu số ít: a, an, one, động từ has, was.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn dạng không đuôi làm danh từ; loại V-ed, V-ing, to V, tính từ; loại dạng -s khi có a, an, one, động từ số ít, hoặc khi danh từ không đếm được.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The company",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "announced",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "sharp",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "decline",
+                    "label": "danh từ (cùng dạng động từ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in international orders.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: danh từ “decline” đứng sau mạo từ “a” và tính từ “sharp”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “decline”: dạng -ed, -ing, -s và dạng không đuôi, nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “a sharp”, trước “in international orders”, làm tân ngữ của “announced”; dấu hiệu “a/an + tính từ + ___”: “a sharp -------”.",
+                  "Bước 3: Cần a + tính từ + N số ít; “decline” là danh từ cùng dạng động từ, vì vậy chọn “decline” (sự sụt giảm).",
+                  "“declined” (A) là V-ed, không đứng một mình sau “a sharp” ở vị trí danh từ, nên loại.",
+                  "“declining” (B) là V-ing, đã có danh từ “decline” cùng nghĩa nên sau “a sharp” dùng danh từ, nên loại.",
+                  "“declines” (C) là V-s hoặc danh từ số nhiều, không đi sau mạo từ “a”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Dạng -s của các từ này có thể là danh từ số nhiều, dùng được khi không có a, an, one và động từ hợp số nhiều: *The store offers discounts to members.* — Cửa hàng giảm giá cho hội viên."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Nhiều danh từ trùng dạng với động từ nguyên mẫu: decline, delay, support, access.",
+                  "Sau a, an, one: danh từ số ít, không dùng dạng -s.",
+                  "support, access không đếm được: không a, không -s."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

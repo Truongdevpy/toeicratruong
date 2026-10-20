@@ -1,0 +1,350 @@
+{
+  "subtopic": {
+    "id": "47cfc072-0556-4f40-a3ed-2df7e5dd5105",
+    "topic_id": "6ec8bdde-0b2d-4c88-aafd-4710d123edba",
+    "title_en": "To V sau tân ngữ",
+    "title_vi": "To V sau tân ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 109,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-nguyen-mau-to-v-sau-tan-ngu"
+  },
+  "lessons": [
+    {
+      "id": "a1a32190-8ac5-4de1-89df-39a897b1a3b2",
+      "subtopic_id": "47cfc072-0556-4f40-a3ed-2df7e5dd5105",
+      "title_en": "To V sau tân ngữ",
+      "title_vi": "To V sau tân ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 7 · Câu 111",
+          "options": {
+            "A": "to counsel",
+            "B": "should counsel",
+            "C": "counseling",
+            "D": "counseled"
+          },
+          "question": "Our project-based mentoring approach enables executives with limited time ------- junior staff.",
+          "translation": "Phương pháp kèm cặp theo dự án của chúng tôi giúp các lãnh đạo ít thời gian vẫn cố vấn được cho nhân viên cấp dưới."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “counsel”: to V, should + V, V-ing và V3. Chỗ trống đứng sau cụm “executives with limited time”, là tân ngữ của động từ chính “enables”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our project-based mentoring approach",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "enables",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "executives",
+                    "label": "tân ngữ chỉ người"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with limited time",
+                    "label": "cụm giới từ, bổ nghĩa cho executives"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "junior staff.",
+                    "label": "tân ngữ của động từ ở chỗ trống"
+                  }
+                ],
+                "caption": "Chỗ trống nói tân ngữ “executives” được giúp để làm được gì; “with limited time” chỉ bổ nghĩa cho “executives”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ nào có dạng V + tân ngữ + to V.",
+                  "Nhận ra tân ngữ khi nó có cụm bổ nghĩa đi kèm.",
+                  "Vì sao không dùng V-ing, V3 hay động từ chia thì sau tân ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Một số động từ có hai phần phía sau: một tân ngữ và một to V nói tân ngữ đó được yêu cầu, cho phép, khuyên… làm gì. Người trong tân ngữ là người làm hành động của to V.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "S + V + tân ngữ + to V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "asked",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the staff",
+                    "label": "tân ngữ (người làm việc của to V)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to update",
+                    "label": "to V: làm gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "their passwords.",
+                    "label": "tân ngữ của to update"
+                  }
+                ],
+                "caption": "“the staff” là người được yêu cầu, cũng là người làm việc “update”."
+              },
+              {
+                "rows": [
+                  [
+                    "yêu cầu, bắt buộc, kêu gọi, nhắc",
+                    "ask, require, instruct, urge, remind",
+                    "*Please remind the team to submit their timesheets.* — Hãy nhắc cả nhóm nộp bảng chấm công."
+                  ],
+                  [
+                    "cho phép, giúp làm được",
+                    "allow, permit, enable",
+                    "*The new app allows users to book rooms online.* — Ứng dụng mới cho phép người dùng đặt phòng trực tuyến."
+                  ],
+                  [
+                    "khuyên, khuyến khích, thuyết phục, mời",
+                    "advise, encourage, persuade, invite",
+                    "*She encouraged her staff to join the training.* — Cô ấy khuyến khích nhân viên tham gia khóa đào tạo."
+                  ],
+                  [
+                    "muốn, mong đợi",
+                    "want, expect",
+                    "*We expect the supplier to deliver by Friday.* — Chúng tôi mong nhà cung cấp giao hàng trước thứ Sáu."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nhóm nghĩa",
+                  "Động từ + tân ngữ + to V",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói tân ngữ được yêu cầu, cho phép, khuyên… làm gì.",
+                    "form": "to V sau tân ngữ",
+                    "example": "*allows employees to enter the building*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Thiếu “to”. Các động từ trong bảng trên cần to trước động từ đứng sau tân ngữ; tân ngữ + V nguyên mẫu dùng sau let, make, have (xem Lưu ý).",
+                    "form": "V nguyên mẫu (review, track, enter)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Các động từ trên không có dạng tân ngữ + V-ing. Một số như advise, permit, allow, encourage nhận V-ing khi không có tân ngữ chỉ người.",
+                    "form": "V-ing (reviewing, tracking, raising)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính nên không thêm động từ chia thì; V3 sau tân ngữ mang nghĩa bị động, không hợp khi người trong tân ngữ tự làm và phía sau có tân ngữ.",
+                    "form": "Quá khứ đơn hoặc V3 (reviewed, kept, worn)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là động từ chia thì; câu đã có động từ chính “enables” và không có liên từ nối.",
+                    "form": "should + V (câu mẫu)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "ask / require / instruct / urge / remind + người + ___",
+                    "example": "*remind Mr. Delgado ___*; *require all visitors ___*; *asked the visitors ___*"
+                  },
+                  {
+                    "signal": "allow / permit / enable + người + ___",
+                    "example": "*allows employees ___*; *enables executives with limited time ___*"
+                  },
+                  {
+                    "signal": "advise / encourage / persuade / invite + người + ___",
+                    "example": "*persuaded the board ___*; *invited several well-known bloggers ___*"
+                  },
+                  {
+                    "signal": "want / expect + người + ___",
+                    "example": "*wants the caterer ___*; *expects the whole team ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (to V, V-ing, V3, V nguyên mẫu), không có hoặc chỉ có một dạng chia thì, nên đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính và tân ngữ ngay sau nó (tân ngữ có thể kèm cụm bổ nghĩa); chỗ trống đứng sau tân ngữ. Xem động từ chính có thuộc nhóm V + tân ngữ + to V không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn to V theo công thức V + tân ngữ + to V. Loại V nguyên mẫu, V-ing, dạng chia thì và V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our project-based mentoring approach",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "enables",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "executives with limited time",
+                    "label": "tân ngữ chỉ người"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to counsel",
+                    "label": "to V: làm gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "junior staff.",
+                    "label": "tân ngữ của to counsel"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: các lãnh đạo là người làm việc “counsel junior staff”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “counsel” (to V, should + V, V-ing, V3) nên đây là câu dạng động từ.",
+                  "Bước 2: Sau động từ chính “enables” là tân ngữ chỉ người “executives with limited time”, rồi đến chỗ trống; dấu hiệu “allow / permit / enable + người + ___”.",
+                  "Bước 3: Công thức enable + tân ngữ + to V, vì vậy chọn “to counsel” (cố vấn cho).",
+                  "“should counsel” (B) là động từ chia thì với “should”, câu đã có động từ chính “enables”, nên loại.",
+                  "“counseling” (C) là V-ing, “enable + tân ngữ” không đi với V-ing, nên loại.",
+                  "“counseled” (D) là quá khứ đơn hoặc V3; câu đã có “enables”, còn V3 không đi với tân ngữ “junior staff”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "let, make, have (nghĩa bảo, nhờ) + tân ngữ + V nguyên mẫu, không có to: *Please let me know by Friday.* — Vui lòng cho tôi biết trước thứ Sáu. Các động từ trong bài này đều cần to.",
+                  "want + tân ngữ + V3 chỉ dùng khi tân ngữ chịu hành động: *She wants the report finished today.* — Cô ấy muốn báo cáo được làm xong hôm nay."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "ask, allow, enable, encourage, want… + tân ngữ + to V.",
+                  "Người trong tân ngữ là người làm việc của to V."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

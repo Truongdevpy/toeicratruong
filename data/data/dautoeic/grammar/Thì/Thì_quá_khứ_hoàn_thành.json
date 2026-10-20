@@ -1,0 +1,350 @@
+{
+  "subtopic": {
+    "id": "a6f0a226-c000-4fa9-a5b2-b56f0f95630a",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì quá khứ hoàn thành",
+    "title_vi": "Thì quá khứ hoàn thành",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 83,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-qua-khu-hoan-thanh"
+  },
+  "lessons": [
+    {
+      "id": "b5dfb3f3-029b-432e-a527-131abed6cd9e",
+      "subtopic_id": "a6f0a226-c000-4fa9-a5b2-b56f0f95630a",
+      "title_en": "Thì quá khứ hoàn thành",
+      "title_vi": "Thì quá khứ hoàn thành",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2026 · Test 3 · Câu 129",
+          "options": {
+            "A": "was revised",
+            "B": "is revising",
+            "C": "had revised",
+            "D": "has to revise"
+          },
+          "question": "Long before the training program began, Ms. Morris ------- the schedule to allow her team to attend.",
+          "translation": "Từ rất lâu trước khi chương trình đào tạo bắt đầu, bà Morris đã điều chỉnh lịch làm việc để nhóm của bà có thể tham dự."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “revise”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Long before",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the training program began,",
+                    "label": "mệnh đề before"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Ms. Morris",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the schedule",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to allow her team to attend.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau chủ ngữ “Ms. Morris” và trước tân ngữ “the schedule”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "vế “Long before the training program began” đặt mốc ở đâu",
+                  "động từ chia thế nào khi việc xảy ra trước một mốc quá khứ",
+                  "khi nào dùng chủ động, khi nào dùng bị động"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì quá khứ hoàn thành nói về việc đã xảy ra trước một việc khác hoặc trước một mốc trong quá khứ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "mọi chủ ngữ đều dùng had",
+                    "formula": "S + had + V3"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.42,
+                    "label": "lúc khách tới (mốc quá khứ)"
+                  },
+                  {
+                    "at": 0.62,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.2,
+                    "label": "had prepared"
+                  },
+                  {
+                    "at": 0.42,
+                    "label": "arrived"
+                  }
+                ],
+                "caption": "*By the time the client arrived, we had prepared the meeting room.*: “had prepared” xảy ra trước mốc “arrived”, cả hai đều trước bây giờ."
+              },
+              {
+                "rows": [
+                  [
+                    "việc xảy ra trước một việc khác trong quá khứ",
+                    "*By the time the client arrived, we had prepared the meeting room.* — Đến lúc khách hàng tới, chúng tôi đã chuẩn bị xong phòng họp."
+                  ],
+                  [
+                    "việc xảy ra trước lúc realized, explained, noticed (động từ quá khứ + that)",
+                    "*Ms. Lin realized that she had left the contract at home.* — Bà Lin nhận ra rằng mình đã để quên bản hợp đồng ở nhà."
+                  ],
+                  [
+                    "việc trước một mốc quá khứ (… earlier, the week before)",
+                    "*When we called the supplier, the truck had left two hours earlier.* — Khi chúng tôi gọi cho nhà cung cấp, xe tải đã rời đi từ hai tiếng trước đó."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Việc làm mốc (sau by the time, before, when, hoặc ở vế chính) chia quá khứ đơn; việc xảy ra trước đó chia had + V3. Chủ ngữ tự làm hành động và có tân ngữ theo sau thì dùng chủ động.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói về hiện tại, không khớp với các động từ quá khứ trong câu (began, arrived, realized).",
+                    "form": "V, V-s (hiện tại đơn)",
+                    "example": "“depart”, “sorts”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Lấy hiện tại làm mốc, không phải một mốc quá khứ.",
+                    "form": "has/have + V3 (hiện tại hoàn thành)",
+                    "example": "“have departed”, “has sorted”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc sẽ xảy ra sau lúc nói.",
+                    "form": "will + V (tương lai đơn)",
+                    "example": "“will depart”, “will sort”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "by the time + quá khứ đơn",
+                    "example": "*By the time the auditors arrived*"
+                  },
+                  {
+                    "signal": "before + mệnh đề hoặc mốc quá khứ",
+                    "example": "*Before the new manager took over*, *before the weekend*"
+                  },
+                  {
+                    "signal": "after + ___, vế sau quá khứ đơn",
+                    "example": "*After the last guests ------- the hotel, the cleaning staff began…*"
+                  },
+                  {
+                    "signal": "when + quá khứ đơn",
+                    "example": "*When Ms. Alvarez called the supplier*"
+                  },
+                  {
+                    "signal": "động từ quá khứ + that",
+                    "example": "*realized that*, *explained that*, *noticed that*"
+                  },
+                  {
+                    "signal": "because + ___, vế chính quá khứ",
+                    "example": "*Nobody could find the file because …*"
+                  },
+                  {
+                    "signal": "earlier / the week before",
+                    "example": "*two hours earlier*, *the week before*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ, có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm động từ quá khứ làm mốc ở vế còn lại (arrived, began, realized…) và dấu hiệu by the time, before, after, when, because, earlier.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc ở chỗ trống xảy ra trước mốc quá khứ đó thì chọn had + V3; loại hiện tại đơn, hiện tại hoàn thành và will vì không khớp với mốc quá khứ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Long before",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the training program began,",
+                    "label": "mốc quá khứ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Ms. Morris",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "had revised",
+                    "label": "had + V3"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the schedule",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to allow her team to attend.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu hoàn chỉnh"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “revise”, có dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ chính của vế sau, chủ ngữ “Ms. Morris”, sau là tân ngữ “the schedule”; có dấu hiệu “before + mệnh đề hoặc mốc quá khứ”: “Long before the training program began”.",
+                  "Bước 3: Việc sửa lịch xảy ra trước mốc “began” trong quá khứ nên dùng had + V3, vì vậy chọn “had revised” (đã điều chỉnh).",
+                  "“was revised” (A) là bị động quá khứ, nhưng bà Morris tự sửa và sau chỗ trống có tân ngữ “the schedule”, nên loại.",
+                  "“is revising” (B) là hiện tại tiếp diễn, không khớp với mốc quá khứ “began”, nên loại.",
+                  "“has to revise” (D) là hiện tại (phải sửa), không khớp với mốc quá khứ “began”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau after và before, khi thứ tự hai việc đã rõ, quá khứ đơn cũng dùng được, ví dụ *After the guests left, the staff cleaned the hall.* — Sau khi khách rời đi, nhân viên dọn dẹp hội trường.",
+                  "Sau động từ quá khứ + that (realized, noticed), việc xảy ra cùng lúc thì dùng quá khứ đơn: *She realized that she was late.* — Cô ấy nhận ra mình bị trễ. Chỉ việc xảy ra trước đó mới dùng had + V3."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Việc xảy ra trước một việc hoặc mốc khác trong quá khứ: had + V3.",
+                  "Câu có động từ quá khứ làm mốc thì loại hiện tại, hiện tại hoàn thành và will."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

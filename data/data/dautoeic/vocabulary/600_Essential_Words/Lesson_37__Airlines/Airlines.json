@@ -1,0 +1,640 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "543b7de5-d324-4291-a51e-dc7d4151e196",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 37: Airlines",
+    "order_index": 37,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:07.646832+00:00",
+    "updated_at": "2026-09-18T08:53:07.646832+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+    "test_id": "543b7de5-d324-4291-a51e-dc7d4151e196",
+    "name": "Airlines",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:07.646832+00:00",
+    "updated_at": "2026-09-18T08:53:07.646832+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "cb5ec41e-94b5-41ac-aba1-cd09cfb46667",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "equivalent",
+      "ipa": "/ɪˈkwɪv.əl.ənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Carlos used the Internet to search for hotels of equivalent dollar value to the one recommended.",
+          "meaning": "tương đương, ngang bằng",
+          "antonyms": [
+            "different (khác biệt)",
+            "unequal (không ngang bằng)"
+          ],
+          "toeic_tip": "Luôn đi với giới từ to: equivalent to, không dùng equivalent with.",
+          "example_vi": "Carlos lên mạng tìm khách sạn có mức giá ngang với khách sạn được giới thiệu.",
+          "word_family": [
+            "equivalence (n) sự tương đương"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:40:33.468166+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cb5ec41e-94b5-41ac-aba1-cd09cfb46667-wm.jpg?v=1789798070838",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/equivalent-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/equivalent-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "equivalent to",
+          "meaning": "tương đương với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cb5ec41e-94b5-41ac-aba1-cd09cfb46667-0-wm.jpg?v=1789803632647"
+        },
+        {
+          "phrase": "equivalent value",
+          "meaning": "giá trị tương đương",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cb5ec41e-94b5-41ac-aba1-cd09cfb46667-1-wm.jpg?v=1789803633339"
+        },
+        {
+          "phrase": "an equivalent amount",
+          "meaning": "lượng tương đương"
+        }
+      ],
+      "synonyms": [
+        "equal (ngang bằng)",
+        "comparable (tương đương, so sánh được)"
+      ]
+    },
+    {
+      "id": "b45c88cd-7114-412d-9ffc-19dd96bcf117",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "economize",
+      "ipa": "UK: /ɪˈkɒn.ə.maɪz/ | US: /ɪˈkɑː.nə.maɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My travel agent knows I like to economize and always looks out for the best prices for me.",
+          "meaning": "tiết kiệm, chi tiêu dè sẻn",
+          "antonyms": [
+            "splurge (tiêu xài phóng tay)",
+            "squander (lãng phí)"
+          ],
+          "toeic_tip": "economize on + thứ được tiết kiệm; đừng nhầm economic với economical.",
+          "example_vi": "Đại lý du lịch của tôi biết tôi thích tiết kiệm nên luôn săn giá tốt nhất cho tôi.",
+          "word_family": [
+            "economy (n) sự tiết kiệm, nền kinh tế",
+            "economical (adj) tiết kiệm, ít tốn kém"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:27:33.873404+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b45c88cd-7114-412d-9ffc-19dd96bcf117-wm.jpg?v=1789798056177",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/economize-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/economize-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "economize on fuel",
+          "meaning": "tiết kiệm nhiên liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b45c88cd-7114-412d-9ffc-19dd96bcf117-0-wm.jpg?v=1789802841835"
+        },
+        {
+          "phrase": "need to economize",
+          "meaning": "cần tiết kiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b45c88cd-7114-412d-9ffc-19dd96bcf117-1-wm.jpg?v=1789802853706"
+        },
+        {
+          "phrase": "economize by taking the bus",
+          "meaning": "tiết kiệm bằng cách đi xe buýt"
+        }
+      ],
+      "synonyms": [
+        "save (tiết kiệm)",
+        "cut costs (cắt giảm chi phí)"
+      ]
+    },
+    {
+      "id": "12bd6414-7795-4924-8c89-17e46def04ca",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "expense",
+      "ipa": "/ɪkˈspens/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A luxury vacation involves many expenses.",
+          "meaning": "chi phí, khoản phải chi",
+          "antonyms": [
+            "income (thu nhập)",
+            "revenue (doanh thu)"
+          ],
+          "toeic_tip": "Nghĩa các khoản chi thường dùng số nhiều expenses, hay ra ở Part 7.",
+          "example_vi": "Một kỳ nghỉ sang trọng thì kéo theo rất nhiều khoản chi.",
+          "word_family": [
+            "expensive (adj) đắt đỏ",
+            "expend (v) chi ra, tiêu tốn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T06:17:12.952367+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/12bd6414-7795-4924-8c89-17e46def04ca-wm.jpg?v=1789797773143",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expense-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expense-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "travel expenses",
+          "meaning": "chi phí đi lại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/12bd6414-7795-4924-8c89-17e46def04ca-0-wm.jpg?v=1789798632808"
+        },
+        {
+          "phrase": "cut expenses",
+          "meaning": "cắt giảm chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/12bd6414-7795-4924-8c89-17e46def04ca-1-wm.jpg?v=1789798629824"
+        },
+        {
+          "phrase": "at the company's expense",
+          "meaning": "do công ty chi trả"
+        }
+      ],
+      "synonyms": [
+        "cost (chi phí)",
+        "expenditure (khoản chi tiêu)"
+      ]
+    },
+    {
+      "id": "b287b6f6-494f-45de-ab4c-de0bd2b687ab",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "prospective",
+      "ipa": "/prəˈspek.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The airline had a reception to impress travel agents who might be prospective clients.",
+          "meaning": "tiềm năng, có khả năng trở thành, sắp tới",
+          "antonyms": [
+            "current (hiện tại)",
+            "former (trước đây)"
+          ],
+          "toeic_tip": "Phân biệt prospective (tiềm năng) với perspective (góc nhìn).",
+          "example_vi": "Hãng bay mở tiệc chiêu đãi để gây ấn tượng với những đại lý du lịch có thể thành khách hàng.",
+          "word_family": [
+            "prospect (n) triển vọng, khách hàng tiềm năng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:28:55.247959+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b287b6f6-494f-45de-ab4c-de0bd2b687ab-wm.jpg?v=1789798049601",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/prospective-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/prospective-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "prospective client",
+          "meaning": "khách hàng tiềm năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b287b6f6-494f-45de-ab4c-de0bd2b687ab-0-wm.jpg?v=1789802918213"
+        },
+        {
+          "phrase": "prospective employee",
+          "meaning": "ứng viên tiềm năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b287b6f6-494f-45de-ab4c-de0bd2b687ab-1-wm.jpg?v=1789802935109"
+        },
+        {
+          "phrase": "prospective buyer",
+          "meaning": "người có ý định mua"
+        }
+      ],
+      "synonyms": [
+        "potential (tiềm năng)",
+        "likely (nhiều khả năng)"
+      ]
+    },
+    {
+      "id": "e18b0dd8-7dc2-4c5f-9e5d-40e5db88e384",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "deal with",
+      "ipa": "/ˈdiːl wɪð/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Ticket agents must deal courteously with irate customers.",
+          "meaning": "giải quyết, xử lý; tiếp xúc và ứng phó với",
+          "antonyms": [
+            "ignore (phớt lờ)",
+            "neglect (bỏ mặc)"
+          ],
+          "toeic_tip": "deal with là xử lý, còn deal in là kinh doanh mặt hàng nào đó.",
+          "example_vi": "Nhân viên bán vé phải luôn nhã nhặn khi tiếp khách đang bực bội.",
+          "word_family": [
+            "deal (n) thỏa thuận, món hời",
+            "dealer (n) đại lý, người buôn bán"
+          ],
+          "part_of_speech": "phrase"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:52:10.13567+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e18b0dd8-7dc2-4c5f-9e5d-40e5db88e384-wm.jpg?v=1789798060804",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deal-with-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deal-with-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "deal with a complaint",
+          "meaning": "xử lý khiếu nại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e18b0dd8-7dc2-4c5f-9e5d-40e5db88e384-0-wm.jpg?v=1789804319791"
+        },
+        {
+          "phrase": "deal with customers",
+          "meaning": "làm việc với khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e18b0dd8-7dc2-4c5f-9e5d-40e5db88e384-1-wm.jpg?v=1789804329989"
+        },
+        {
+          "phrase": "deal with a problem",
+          "meaning": "giải quyết vấn đề"
+        }
+      ],
+      "synonyms": [
+        "handle (xử lý)",
+        "cope with (đối phó với)"
+      ]
+    },
+    {
+      "id": "e8daff41-cdcf-4f21-b545-75963fb9f5e9",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "system",
+      "ipa": "/ˈsɪs.təm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The airline system covers the entire world with flights.",
+          "meaning": "hệ thống, mạng lưới các bộ phận liên kết",
+          "toeic_tip": "Phân biệt systematic (có bài bản) với systemic (thuộc toàn hệ thống).",
+          "example_vi": "Mạng bay của hãng phủ khắp thế giới.",
+          "word_family": [
+            "systematic (adj) có hệ thống",
+            "systematically (adv) một cách có hệ thống"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:55:14.173253+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e8daff41-cdcf-4f21-b545-75963fb9f5e9-wm.jpg?v=1789798069193",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/system-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/system-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a computer system",
+          "meaning": "hệ thống máy tính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e8daff41-cdcf-4f21-b545-75963fb9f5e9-0-wm.jpg?v=1789804514023"
+        },
+        {
+          "phrase": "a filing system",
+          "meaning": "hệ thống lưu hồ sơ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e8daff41-cdcf-4f21-b545-75963fb9f5e9-1-wm.jpg?v=1789804513319"
+        },
+        {
+          "phrase": "set up a system",
+          "meaning": "thiết lập hệ thống"
+        }
+      ],
+      "synonyms": [
+        "network (mạng lưới)",
+        "structure (cấu trúc)"
+      ]
+    },
+    {
+      "id": "7891a2dc-488f-442c-9427-b89abd6e71c1",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "substantially",
+      "ipa": "/səbˈstæn.ʃəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The airline I work for had a substantially higher rating for customer satisfaction than our competitors had.",
+          "meaning": "đáng kể, nhiều hơn hẳn",
+          "antonyms": [
+            "slightly (một chút)",
+            "marginally (không đáng kể)"
+          ],
+          "toeic_tip": "Thường đứng trước dạng so sánh: substantially higher, substantially lower.",
+          "example_vi": "Hãng bay tôi làm có điểm hài lòng khách hàng cao hơn hẳn các đối thủ.",
+          "word_family": [
+            "substantial (adj) đáng kể, lớn",
+            "substance (n) chất, nội dung cốt lõi"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T06:57:31.072906+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7891a2dc-488f-442c-9427-b89abd6e71c1-wm.jpg?v=1789798067175",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/substantially-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/substantially-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "increase substantially",
+          "meaning": "tăng đáng kể",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7891a2dc-488f-442c-9427-b89abd6e71c1-0-wm.jpg?v=1789801050926"
+        },
+        {
+          "phrase": "substantially higher",
+          "meaning": "cao hơn hẳn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7891a2dc-488f-442c-9427-b89abd6e71c1-1-wm.jpg?v=1789801050778"
+        },
+        {
+          "phrase": "differ substantially",
+          "meaning": "khác nhau đáng kể"
+        }
+      ],
+      "synonyms": [
+        "significantly (đáng kể)",
+        "considerably (khá nhiều)"
+      ]
+    },
+    {
+      "id": "113f4d9f-b763-41f7-9a6b-f341b287eef9",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "extend",
+      "ipa": "/ɪkˈstend/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We extended our vacation by a day.",
+          "meaning": "kéo dài, gia hạn; đưa ra, dành cho",
+          "antonyms": [
+            "shorten (rút ngắn)",
+            "curtail (cắt bớt)"
+          ],
+          "toeic_tip": "Nhớ nghĩa thứ hai: extend an offer nghĩa là đưa ra lời đề nghị.",
+          "example_vi": "Chúng tôi ở lại thêm một ngày nữa cho kỳ nghỉ.",
+          "word_family": [
+            "extension (n) sự gia hạn, số máy lẻ",
+            "extensive (adj) rộng khắp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T06:22:06.075696+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/113f4d9f-b763-41f7-9a6b-f341b287eef9-wm.jpg?v=1789798536941",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/extend-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/extend-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "extend a deadline",
+          "meaning": "gia hạn thời hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/113f4d9f-b763-41f7-9a6b-f341b287eef9-0-wm.jpg?v=1789798924745"
+        },
+        {
+          "phrase": "extend an invitation",
+          "meaning": "gửi lời mời",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/113f4d9f-b763-41f7-9a6b-f341b287eef9-1-wm.jpg?v=1789798925928"
+        },
+        {
+          "phrase": "extend a contract",
+          "meaning": "gia hạn hợp đồng"
+        }
+      ],
+      "synonyms": [
+        "prolong (kéo dài)",
+        "lengthen (làm dài thêm)"
+      ]
+    },
+    {
+      "id": "7e19673a-9c76-4451-a5e9-6eaeb7f7be37",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "distinguish",
+      "ipa": "/dɪˈstɪŋ.ɡwɪʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Suki was able to distinguish between the different types of jets on the runway.",
+          "meaning": "phân biệt, nhận ra sự khác nhau; làm cho nổi bật",
+          "antonyms": [
+            "confuse (làm lẫn lộn)"
+          ],
+          "toeic_tip": "Phân biệt distinguished (lỗi lạc) với distinctive (đặc trưng, dễ nhận ra).",
+          "example_vi": "Suki nhận ra được sự khác nhau giữa các loại máy bay phản lực trên đường băng.",
+          "word_family": [
+            "distinguished (adj) lỗi lạc, có tiếng",
+            "distinction (n) sự phân biệt, sự khác biệt"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:02:25.99833+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7e19673a-9c76-4451-a5e9-6eaeb7f7be37-wm.jpg?v=1789798062701",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/distinguish-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/distinguish-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "distinguish between A and B",
+          "meaning": "phân biệt A với B",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7e19673a-9c76-4451-a5e9-6eaeb7f7be37-0-wm.jpg?v=1789801327059"
+        },
+        {
+          "phrase": "distinguish A from B",
+          "meaning": "phân biệt A khỏi B",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7e19673a-9c76-4451-a5e9-6eaeb7f7be37-1-wm.jpg?v=1789801345839"
+        },
+        {
+          "phrase": "distinguish oneself",
+          "meaning": "tạo được tiếng tăm"
+        }
+      ],
+      "synonyms": [
+        "differentiate (phân biệt)",
+        "tell apart (nhận ra khác biệt)"
+      ]
+    },
+    {
+      "id": "adf445c1-11f5-498e-ae6f-7fab53cf3561",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "destination",
+      "ipa": "/ˌdes.tɪˈneɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The Great Barrier Reef is a popular tourist destination this year.",
+          "meaning": "điểm đến, nơi cần tới",
+          "antonyms": [
+            "origin (nơi xuất phát)",
+            "departure point (điểm khởi hành)"
+          ],
+          "toeic_tip": "Thông báo chuyến bay ở Part 4 hay dùng cụm final destination.",
+          "example_vi": "Năm nay rạn san hô Great Barrier là điểm du lịch được ưa chuộng.",
+          "word_family": [
+            "destined (adj) được định sẵn sẽ tới"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:24:47.137631+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/adf445c1-11f5-498e-ae6f-7fab53cf3561-wm.jpg?v=1789798065164",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/destination-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/destination-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a popular tourist destination",
+          "meaning": "điểm du lịch nổi tiếng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/adf445c1-11f5-498e-ae6f-7fab53cf3561-0-wm.jpg?v=1789802673217"
+        },
+        {
+          "phrase": "final destination",
+          "meaning": "điểm đến cuối cùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/adf445c1-11f5-498e-ae6f-7fab53cf3561-1-wm.jpg?v=1789802687007"
+        },
+        {
+          "phrase": "reach one's destination",
+          "meaning": "đến nơi"
+        }
+      ],
+      "synonyms": [
+        "stop (điểm dừng)",
+        "endpoint (điểm cuối)"
+      ]
+    },
+    {
+      "id": "43bd3a63-b9a8-4512-a046-5f6714c4f30d",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "situation",
+      "ipa": "/ˌsɪtʃ.uˈeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The airline suggested I check with the State Department regarding the political situation in the country I'm flying to.",
+          "meaning": "tình hình, hoàn cảnh, tình huống",
+          "toeic_tip": "Nhớ be situated in nghĩa là tọa lạc tại, hay gặp ở Part 7.",
+          "example_vi": "Hãng bay khuyên tôi hỏi Bộ Ngoại giao về tình hình chính trị ở nước tôi sắp bay tới.",
+          "word_family": [
+            "situated (adj) tọa lạc, nằm ở"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T06:32:33.951833+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/43bd3a63-b9a8-4512-a046-5f6714c4f30d-wm.jpg?v=1789798053385",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/situation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/situation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the current situation",
+          "meaning": "tình hình hiện tại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/43bd3a63-b9a8-4512-a046-5f6714c4f30d-0-wm.jpg?v=1789799542413"
+        },
+        {
+          "phrase": "a difficult situation",
+          "meaning": "hoàn cảnh khó khăn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/43bd3a63-b9a8-4512-a046-5f6714c4f30d-1-wm.jpg?v=1789799553784"
+        },
+        {
+          "phrase": "handle the situation",
+          "meaning": "xử lý tình huống"
+        }
+      ],
+      "synonyms": [
+        "circumstances (hoàn cảnh)",
+        "state of affairs (tình hình)"
+      ]
+    },
+    {
+      "id": "b28fd27c-ccde-4cbe-a5d7-d5c33183b684",
+      "part_id": "202d2173-8799-46e3-b49d-c9a1a39e7ccb",
+      "word": "excursion",
+      "ipa": "UK: /ɪkˈskɜː.ʃən/ | US: /ɪkˈskɝː.ʒən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "With some time between meetings in London, the company president enjoyed an excursion to Stonehenge.",
+          "meaning": "chuyến tham quan ngắn, chuyến đi chơi; chuyến đi giá ưu đãi",
+          "toeic_tip": "excursion là chuyến đi ngắn rồi quay về, khác journey dài ngày.",
+          "example_vi": "Tranh thủ lúc rảnh giữa các cuộc họp ở London, chủ tịch công ty đi thăm Stonehenge.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:07.646832+00:00",
+      "updated_at": "2026-09-19T07:26:38.476028+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b28fd27c-ccde-4cbe-a5d7-d5c33183b684-wm.jpg?v=1789798063917",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/excursion-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/excursion-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "go on an excursion",
+          "meaning": "đi tham quan",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b28fd27c-ccde-4cbe-a5d7-d5c33183b684-0-wm.jpg?v=1789802798338"
+        },
+        {
+          "phrase": "a day excursion",
+          "meaning": "chuyến đi trong ngày",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b28fd27c-ccde-4cbe-a5d7-d5c33183b684-1-wm.jpg?v=1789802797807"
+        },
+        {
+          "phrase": "excursion fare",
+          "meaning": "giá vé ưu đãi"
+        }
+      ],
+      "synonyms": [
+        "outing (chuyến đi chơi)",
+        "trip (chuyến đi)"
+      ]
+    }
+  ]
+}

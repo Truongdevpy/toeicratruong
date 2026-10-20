@@ -1,0 +1,364 @@
+{
+  "subtopic": {
+    "id": "6b83ae70-9169-4f46-bd40-5edf2937f45c",
+    "topic_id": "e17d4d8f-0799-4778-91ac-00bfb1044280",
+    "title_en": "Giới từ chỉ phạm vi và quan hệ",
+    "title_vi": "Giới từ chỉ phạm vi và quan hệ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 41,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-gioi-tu-chi-pham-vi-va-quan-he"
+  },
+  "lessons": [
+    {
+      "id": "9e824159-8616-4f48-a276-f1834962f08a",
+      "subtopic_id": "6b83ae70-9169-4f46-bd40-5edf2937f45c",
+      "title_en": "Giới từ chỉ phạm vi và quan hệ",
+      "title_vi": "Giới từ chỉ phạm vi và quan hệ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 5 · Câu 127",
+          "options": {
+            "A": "instead",
+            "B": "including",
+            "C": "in addition",
+            "D": "indeed"
+          },
+          "question": "Groove Background creates soothing playlists of instrumental music, ------- classical and jazz.",
+          "translation": "Groove Background tạo ra những danh sách nhạc không lời êm dịu, bao gồm nhạc cổ điển và nhạc jazz."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm giới từ “including”, trạng từ “instead”, “indeed” và cụm trạng từ “in addition”. Chỗ trống đứng sau dấu phẩy, trước cụm danh từ “classical and jazz”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Groove Background",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "creates",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "soothing playlists of instrumental music,",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "classical and jazz.",
+                    "label": "cụm danh từ"
+                  }
+                ],
+                "caption": "Câu đã đủ chủ ngữ, động từ, tân ngữ; chỗ trống nối cụm danh từ “classical and jazz” vào sau tân ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trước cụm danh từ dùng giới từ hay trạng từ.",
+                  "Nghĩa của các giới từ chỉ phạm vi, quan hệ: bao gồm, ngoại trừ, ngoài … ra, theo, về, xét về, trong số, cùng với.",
+                  "Cụm danh từ phía sau quan hệ thế nào với phần đứng trước."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Nhóm giới từ này nối một cụm danh từ vào câu để nói **phạm vi** (bao gồm, ngoại trừ, ngoài … ra) hoặc **quan hệ** (theo, về, xét về, trong số, cùng với).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "giới từ + cụm danh từ"
+                  },
+                  {
+                    "formula": "liên từ + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "including / excluding",
+                    "bao gồm / không tính",
+                    "*The price covers all meals, excluding drinks.* — Giá đã gồm mọi bữa ăn, không tính đồ uống."
+                  ],
+                  [
+                    "in addition to, besides",
+                    "ngoài … ra (còn thêm)",
+                    "*In addition to a good salary, we offer free classes.* — Ngoài mức lương tốt, chúng tôi còn tặng lớp học miễn phí."
+                  ],
+                  [
+                    "except for, aside from",
+                    "ngoại trừ, không kể",
+                    "*Aside from a few delays, the move went smoothly.* — Ngoại trừ vài chậm trễ, việc chuyển văn phòng diễn ra suôn sẻ."
+                  ],
+                  [
+                    "according to",
+                    "theo (nguồn thông tin)",
+                    "*According to the survey, most staff prefer an early start.* — Theo khảo sát, phần lớn nhân viên muốn bắt đầu sớm."
+                  ],
+                  [
+                    "regarding, concerning",
+                    "về, liên quan đến",
+                    "*We received complaints concerning the noise.* — Chúng tôi nhận được phàn nàn về tiếng ồn."
+                  ],
+                  [
+                    "in terms of",
+                    "xét về mặt",
+                    "*In terms of cost, the two offers are similar.* — Xét về chi phí, hai đề nghị gần như nhau."
+                  ],
+                  [
+                    "along with",
+                    "cùng với",
+                    "*Along with the invitation, guests receive a map.* — Cùng với thiệp mời, khách nhận được bản đồ."
+                  ],
+                  [
+                    "among",
+                    "trong số (một nhóm)",
+                    "*This design was the top choice among employees.* — Mẫu này là lựa chọn hàng đầu trong số nhân viên."
+                  ],
+                  [
+                    "given",
+                    "xét đến",
+                    "*Given the strong demand, we will open earlier.* — Xét đến nhu cầu lớn, chúng tôi sẽ mở cửa sớm hơn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Giới từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Cụm giới từ cố định phải đủ và đúng dạng: **in terms of** (terms số nhiều), **according to**, **in accordance with**, **along with**, **together with**, **apart from**, **in addition to**, **instead of**.",
+                  "Thiếu phần giới từ cuối thì không còn là giới từ: in addition, instead, apart, together, according, in accordance không đi thẳng với cụm danh từ.",
+                  "Cụm danh từ có thể kèm mệnh đề quan hệ, như *the schedule released yesterday*, *the legal team, which stays on the second floor*; cả cụm vẫn là cụm danh từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối cụm danh từ vào câu, nghĩa hợp với quan hệ giữa hai phần.",
+                    "form": "Giới từ đúng nghĩa + cụm danh từ",
+                    "example": "*all travel costs, including hotel stays and meals*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Phải đi với mệnh đề S + V, không đứng trước cụm danh từ.",
+                    "form": "Liên từ (although, even though, because, whether, whereas, so that, unless, except that)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nối ý giữa hai câu hoặc bổ nghĩa cho cả câu, không đứng trước cụm danh từ để nối nó vào câu.",
+                    "form": "Trạng từ nối, trạng từ (moreover, furthermore, consequently, accordingly, therefore, thus, nevertheless, likewise, instead, indeed, in addition)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cụm cố định chỉ đúng một dạng; thiếu giới từ cuối thì không đi được với cụm danh từ.",
+                    "form": "Cụm thiếu hoặc sai dạng (In term of, On terms of, By terms of, According, In accordance, Together, apart)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi theo mẫu whose + danh từ + động từ; không đứng trước “the” hay “their”, và phía sau phải có động từ.",
+                    "form": "Đại từ quan hệ “whose”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng nghĩa không hợp: “along” là “dọc theo”; “including” trái với ý đồ uống phải trả riêng.",
+                    "form": "Giới từ sai nghĩa (along, including)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + cụm danh từ",
+                    "example": "*___ the latest survey, most employees prefer…*; *complaints ___ the noise from the construction site*"
+                  },
+                  {
+                    "signal": "___ + cụm danh từ kèm mệnh đề quan hệ",
+                    "example": "*___ the schedule released yesterday*; *___ the legal team, which stays on the second floor*"
+                  },
+                  {
+                    "signal": "danh sách thành phần của nhóm đứng trước",
+                    "example": "*all travel costs, ___ hotel stays and meals*; *playlists of instrumental music, ___ classical and jazz*"
+                  },
+                  {
+                    "signal": "phần bị trừ ra",
+                    "example": "*covers all meals ___ drinks, which guests must pay for separately*; *___ a few minor delays, the move… went smoothly*"
+                  },
+                  {
+                    "signal": "cụm giới từ cố định",
+                    "example": "*___ cost, the two suppliers are almost identical*"
+                  },
+                  {
+                    "signal": "so sánh nhất + ___ + nhóm",
+                    "example": "*the most popular choice ___ the employees at the Lisbon office*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn giới từ, liên từ, trạng từ (có thể có đại từ quan hệ), hoặc là nhiều dạng của một cụm giới từ, thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống là cụm danh từ hay mệnh đề S + V; xem cụm danh từ đó là thành phần, phần bị trừ, phần cộng thêm, nguồn hay chủ đề của phần đứng trước.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Trước cụm danh từ chọn giới từ đúng nghĩa và đủ dạng; loại liên từ, trạng từ nối và các cụm thiếu hoặc sai giới từ cuối.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Groove Background",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "creates",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "soothing playlists of instrumental music,",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "including",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "classical and jazz.",
+                    "label": "cụm danh từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “including classical and jazz” nêu các thành phần của “instrumental music”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm giới từ “including”, trạng từ “instead”, “indeed” và cụm trạng từ “in addition” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Câu đã đủ “Groove Background creates soothing playlists…”; chỗ trống đứng sau dấu phẩy; dấu hiệu “___ + cụm danh từ”: “------- classical and jazz”.",
+                  "Bước 3: Cần giới từ + cụm danh từ; cổ điển và jazz là thành phần của nhạc không lời, vì vậy chọn “including” (bao gồm).",
+                  "“instead” (A) là trạng từ (thay vào đó), thiếu “of” nên không đi với cụm danh từ “classical and jazz”, nên loại.",
+                  "“in addition” (C) là cụm trạng từ, thiếu “to” nên không đi với cụm danh từ “classical and jazz”, nên loại.",
+                  "“indeed” (D) là trạng từ nhấn mạnh (thật vậy), không nối cụm danh từ “classical and jazz” vào câu, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“Aside from” có hai nghĩa: “ngoại trừ” (*Aside from a few minor delays, the move went smoothly.*) và “ngoài … ra, còn thêm”. Xem vế chính để biết nghĩa nào hợp.",
+                  "“among” đi với danh từ số nhiều chỉ một nhóm: *among the employees*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Trước cụm danh từ dùng giới từ, không dùng liên từ hay trạng từ nối.",
+                  "Cụm giới từ phải đủ phần cuối: in addition to, according to, along with, instead of.",
+                  "Nhiều giới từ đúng vị trí thì chọn theo quan hệ nghĩa giữa hai phần."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

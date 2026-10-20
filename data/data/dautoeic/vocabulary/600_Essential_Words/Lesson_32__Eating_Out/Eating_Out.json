@@ -1,0 +1,627 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "1c6df273-e224-4737-8f4f-5d92a0292cef",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 32: Eating Out",
+    "order_index": 32,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:43.110035+00:00",
+    "updated_at": "2026-09-18T08:52:43.110035+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+    "test_id": "1c6df273-e224-4737-8f4f-5d92a0292cef",
+    "name": "Eating Out",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:43.110035+00:00",
+    "updated_at": "2026-09-18T08:52:43.110035+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c149cc27-604d-4411-a817-0219ec524da2",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "ingredient",
+      "ipa": "/ɪnˈɡriː.di.ənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The chef went to the farmer's market to select the freshest ingredients for tonight's menu.",
+          "meaning": "nguyên liệu, thành phần",
+          "toeic_tip": "Đếm được và thường dùng số nhiều: the ingredients of a dish.",
+          "example_vi": "Bếp trưởng ra chợ nông sản chọn nguyên liệu tươi nhất cho thực đơn tối nay.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T07:35:57.173763+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c149cc27-604d-4411-a817-0219ec524da2-wm.jpg?v=1789798090914",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ingredient-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ingredient-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "fresh ingredients",
+          "meaning": "nguyên liệu tươi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c149cc27-604d-4411-a817-0219ec524da2-0-wm.jpg?v=1789803355406"
+        },
+        {
+          "phrase": "a key ingredient",
+          "meaning": "thành phần chủ chốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c149cc27-604d-4411-a817-0219ec524da2-1-wm.jpg?v=1789803357018"
+        },
+        {
+          "phrase": "list the ingredients",
+          "meaning": "liệt kê thành phần"
+        }
+      ],
+      "synonyms": [
+        "component (thành phần)",
+        "element (yếu tố)"
+      ]
+    },
+    {
+      "id": "c2c3d8e3-fa88-4abf-8848-3347ee856cb7",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "patron",
+      "ipa": "/ˈpeɪ.trən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Once the word was out about the new chef, patrons lined up to get into the restaurant.",
+          "meaning": "khách quen, khách hàng, người bảo trợ",
+          "toeic_tip": "patron là khách quen, đừng nhầm với pattern (khuôn mẫu).",
+          "example_vi": "Tin về bếp trưởng mới vừa lan ra, khách đã xếp hàng dài trước quán.",
+          "word_family": [
+            "patronage (n) sự ủng hộ, sự lui tới thường xuyên",
+            "patronize (v) thường lui tới ủng hộ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T07:35:55.611554+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c2c3d8e3-fa88-4abf-8848-3347ee856cb7-wm.jpg?v=1789798089326",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/patron-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/patron-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "loyal patrons",
+          "meaning": "khách quen trung thành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c2c3d8e3-fa88-4abf-8848-3347ee856cb7-0-wm.jpg?v=1789803343441"
+        },
+        {
+          "phrase": "a regular patron",
+          "meaning": "khách thường xuyên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c2c3d8e3-fa88-4abf-8848-3347ee856cb7-1-wm.jpg?v=1789803355413"
+        },
+        {
+          "phrase": "a patron of the arts",
+          "meaning": "nhà bảo trợ nghệ thuật"
+        }
+      ],
+      "synonyms": [
+        "customer (khách hàng)",
+        "client (khách)"
+      ]
+    },
+    {
+      "id": "c2848aca-04c6-4644-8026-1c1cdd18d2e0",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "basic",
+      "ipa": "/ˈbeɪ.sɪk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new restaurant offers a very basic menu.",
+          "meaning": "cơ bản, đơn giản, làm nền tảng",
+          "antonyms": [
+            "advanced (nâng cao)",
+            "complex (phức tạp)"
+          ],
+          "toeic_tip": "Danh từ tương ứng là basis (số nhiều bases), không dùng basic làm danh từ.",
+          "example_vi": "Quán mới mở chỉ có thực đơn khá đơn sơ.",
+          "word_family": [
+            "basically (adv) về cơ bản",
+            "basis (n) cơ sở, nền tảng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T07:36:17.593952+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c2848aca-04c6-4644-8026-1c1cdd18d2e0-wm.jpg?v=1789798304039",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/basic-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/basic-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "basic skills",
+          "meaning": "kỹ năng cơ bản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c2848aca-04c6-4644-8026-1c1cdd18d2e0-0-wm.jpg?v=1789803376695"
+        },
+        {
+          "phrase": "basic supplies",
+          "meaning": "vật tư thiết yếu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c2848aca-04c6-4644-8026-1c1cdd18d2e0-1-wm.jpg?v=1789803377437"
+        },
+        {
+          "phrase": "basic salary",
+          "meaning": "lương cơ bản"
+        }
+      ],
+      "synonyms": [
+        "fundamental (nền tảng)",
+        "simple (đơn giản)"
+      ]
+    },
+    {
+      "id": "f1f743be-eb2a-436c-bd8d-3f4fda68a2dd",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "flavor",
+      "ipa": "UK: /ˈfleɪ.vər/ | US: /ˈfleɪ.vɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Fusion cooking is distinguished by an interesting mix of flavors.",
+          "meaning": "hương vị, mùi vị đặc trưng",
+          "toeic_tip": "Anh-Mỹ viết flavor, Anh-Anh viết flavour; cả hai đều gặp trong đề.",
+          "example_vi": "Nét riêng của ẩm thực fusion nằm ở cách pha trộn hương vị rất thú vị.",
+          "word_family": [
+            "flavorful (adj) đậm đà hương vị",
+            "flavoring (n) chất tạo hương"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T08:00:54.940864+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f1f743be-eb2a-436c-bd8d-3f4fda68a2dd-wm.jpg?v=1789798090298",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/flavor-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/flavor-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a distinctive flavor",
+          "meaning": "hương vị đặc trưng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1f743be-eb2a-436c-bd8d-3f4fda68a2dd-0-wm.jpg?v=1789804813817"
+        },
+        {
+          "phrase": "add flavor",
+          "meaning": "tăng hương vị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1f743be-eb2a-436c-bd8d-3f4fda68a2dd-1-wm.jpg?v=1789804854800"
+        },
+        {
+          "phrase": "a mix of flavors",
+          "meaning": "sự pha trộn hương vị"
+        }
+      ],
+      "synonyms": [
+        "taste (vị)",
+        "savor (hương vị)"
+      ]
+    },
+    {
+      "id": "d6259c81-0e1b-472d-aac8-b754ebd831cc",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "complete",
+      "ipa": "/kəmˈpliːt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We ordered some dessert to complete our meal.",
+          "meaning": "hoàn thành, làm xong, hoàn tất",
+          "antonyms": [
+            "begin (bắt đầu)",
+            "abandon (bỏ dở)"
+          ],
+          "toeic_tip": "Complete the form trong TOEIC nghĩa là điền vào mẫu đơn.",
+          "example_vi": "Chúng tôi gọi thêm món tráng miệng cho trọn bữa.",
+          "word_family": [
+            "completion (n) sự hoàn thành",
+            "completely (adv) hoàn toàn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T07:46:38.520937+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d6259c81-0e1b-472d-aac8-b754ebd831cc-wm.jpg?v=1789798090313",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complete-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complete-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "complete a form",
+          "meaning": "điền xong biểu mẫu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d6259c81-0e1b-472d-aac8-b754ebd831cc-0-wm.jpg?v=1789803996968"
+        },
+        {
+          "phrase": "complete a project",
+          "meaning": "hoàn thành dự án",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d6259c81-0e1b-472d-aac8-b754ebd831cc-1-wm.jpg?v=1789803998382"
+        },
+        {
+          "phrase": "complete the training",
+          "meaning": "hoàn tất khóa đào tạo"
+        }
+      ],
+      "synonyms": [
+        "finish (kết thúc)",
+        "finalize (hoàn tất)"
+      ]
+    },
+    {
+      "id": "4970fc2a-bbc0-4573-af68-be39c4ef93ba",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "excite",
+      "ipa": "/ɪkˈsaɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Exotic flavors always excite me.",
+          "meaning": "kích thích, khơi gợi, làm phấn khích",
+          "antonyms": [
+            "bore (làm chán)",
+            "calm (làm dịu)"
+          ],
+          "toeic_tip": "Người thì excited, sự việc thì exciting; Part 5 hay đánh bẫy chỗ này.",
+          "example_vi": "Những hương vị lạ lúc nào cũng làm tôi thấy háo hức.",
+          "word_family": [
+            "exciting (adj) thú vị, hấp dẫn",
+            "excitement (n) sự phấn khích"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T06:35:10.151971+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4970fc2a-bbc0-4573-af68-be39c4ef93ba-wm.jpg?v=1789798088249",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/excite-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/excite-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "excite interest",
+          "meaning": "khơi gợi sự quan tâm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4970fc2a-bbc0-4573-af68-be39c4ef93ba-0-wm.jpg?v=1789799702529"
+        },
+        {
+          "phrase": "excite curiosity",
+          "meaning": "kích thích tính tò mò",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4970fc2a-bbc0-4573-af68-be39c4ef93ba-1-wm.jpg?v=1789799709992"
+        },
+        {
+          "phrase": "be excited about",
+          "meaning": "háo hức về"
+        }
+      ],
+      "synonyms": [
+        "stimulate (kích thích)",
+        "arouse (khơi dậy)"
+      ]
+    },
+    {
+      "id": "608cd365-c199-49fd-bb55-fc151aab98bd",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "randomly",
+      "ipa": "/ˈræn.dəm.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We randomly made our selections from the menu.",
+          "meaning": "một cách ngẫu nhiên, không theo quy luật nào",
+          "antonyms": [
+            "systematically (một cách có hệ thống)",
+            "deliberately (một cách có chủ đích)"
+          ],
+          "toeic_tip": "Cụm cố định at random mang nghĩa tương đương randomly.",
+          "example_vi": "Chúng tôi cứ nhắm mắt chọn đại vài món trên thực đơn.",
+          "word_family": [
+            "random (adj) ngẫu nhiên",
+            "randomness (n) tính ngẫu nhiên"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T06:46:32.881653+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/608cd365-c199-49fd-bb55-fc151aab98bd-wm.jpg?v=1789798086200",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/randomly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/randomly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "randomly selected",
+          "meaning": "được chọn ngẫu nhiên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/608cd365-c199-49fd-bb55-fc151aab98bd-0-wm.jpg?v=1789800381995"
+        },
+        {
+          "phrase": "randomly assigned",
+          "meaning": "phân công ngẫu nhiên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/608cd365-c199-49fd-bb55-fc151aab98bd-1-wm.jpg?v=1789800392736"
+        },
+        {
+          "phrase": "chosen randomly",
+          "meaning": "chọn tùy ý"
+        }
+      ],
+      "synonyms": [
+        "arbitrarily (một cách tùy tiện)",
+        "by chance (một cách tình cờ)"
+      ]
+    },
+    {
+      "id": "3664286b-46fa-4db4-911f-45805e92aac3",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "judge",
+      "ipa": "/dʒʌdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Hector was not familiar with Asian cooking, so he was unable to judge if the noodles were cooked correctly.",
+          "meaning": "đánh giá, nhận định, phán xét",
+          "toeic_tip": "Danh từ judgment (Mỹ) hay judgement (Anh) đều đúng, nghĩa là sự đánh giá.",
+          "example_vi": "Hector không rành món Á nên chẳng biết mì nấu vậy đã đạt chưa.",
+          "word_family": [
+            "judgment (n) sự đánh giá, phán quyết",
+            "judge (n) thẩm phán, giám khảo"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T06:08:10.664649+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3664286b-46fa-4db4-911f-45805e92aac3-wm.jpg?v=1789798090597",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/judge-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/judge-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "judge the quality",
+          "meaning": "đánh giá chất lượng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3664286b-46fa-4db4-911f-45805e92aac3-0-wm.jpg?v=1789797625138"
+        },
+        {
+          "phrase": "judge by appearance",
+          "meaning": "đánh giá qua vẻ ngoài",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3664286b-46fa-4db4-911f-45805e92aac3-1-wm.jpg?v=1789797624155"
+        },
+        {
+          "phrase": "harshly judge",
+          "meaning": "đánh giá gay gắt"
+        }
+      ],
+      "synonyms": [
+        "evaluate (đánh giá)",
+        "assess (thẩm định)"
+      ]
+    },
+    {
+      "id": "28575d83-dec9-44ff-b418-b8fbd46bb138",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "remind",
+      "ipa": "/rɪˈmaɪnd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Ms. Smith was annoyed at having to remind the waitress to bring the check.",
+          "meaning": "nhắc nhở, làm cho nhớ lại",
+          "toeic_tip": "remind sb to do (nhắc làm) khác remind sb of sth (gợi nhớ tới).",
+          "example_vi": "Cô Smith bực vì phải nhắc cô phục vụ mang hóa đơn ra.",
+          "word_family": [
+            "reminder (n) lời nhắc, thư nhắc"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T06:17:20.914498+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/28575d83-dec9-44ff-b418-b8fbd46bb138-wm.jpg?v=1789797937665",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remind-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remind-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "remind someone to do",
+          "meaning": "nhắc ai làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/28575d83-dec9-44ff-b418-b8fbd46bb138-0-wm.jpg?v=1789798640049"
+        },
+        {
+          "phrase": "remind someone of",
+          "meaning": "làm ai nhớ đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/28575d83-dec9-44ff-b418-b8fbd46bb138-1-wm.jpg?v=1789798640754"
+        },
+        {
+          "phrase": "a gentle reminder",
+          "meaning": "lời nhắc nhẹ nhàng"
+        }
+      ],
+      "synonyms": [
+        "prompt (nhắc)",
+        "alert (báo cho biết)"
+      ]
+    },
+    {
+      "id": "66883970-0009-4d7a-ba3b-51fa7d7cbb2a",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "forget",
+      "ipa": "UK: /fəˈɡet/ | US: /fɚˈɡet/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The waiter forgot to bring the rolls, annoying the customer.",
+          "meaning": "quên, không nhớ ra",
+          "antonyms": [
+            "remember (nhớ)",
+            "recall (nhớ lại)"
+          ],
+          "toeic_tip": "forget to do là quên chưa làm; forget doing là quên đã từng làm.",
+          "example_vi": "Anh phục vụ quên mang bánh mì ra, khiến khách khó chịu.",
+          "word_family": [
+            "forgetful (adj) hay quên",
+            "forgettable (adj) dễ quên"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T06:48:14.880245+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/66883970-0009-4d7a-ba3b-51fa7d7cbb2a-wm.jpg?v=1789798088524",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/forget-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/forget-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "forget to do something",
+          "meaning": "quên làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/66883970-0009-4d7a-ba3b-51fa7d7cbb2a-0-wm.jpg?v=1789800494283"
+        },
+        {
+          "phrase": "forget about",
+          "meaning": "quên bẵng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/66883970-0009-4d7a-ba3b-51fa7d7cbb2a-1-wm.jpg?v=1789800494717"
+        },
+        {
+          "phrase": "never forget",
+          "meaning": "không bao giờ quên"
+        }
+      ],
+      "synonyms": [
+        "overlook (bỏ sót)",
+        "neglect (sao nhãng)"
+      ]
+    },
+    {
+      "id": "9f865470-6a82-4975-ad23-a5a127ca24d1",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "mix-up",
+      "ipa": "/ˈmɪks.ʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "There was a mix-up in the kitchen so your order will be delayed.",
+          "meaning": "sự nhầm lẫn, sự lộn xộn",
+          "toeic_tip": "Có gạch nối là danh từ; viết rời mix up là cụm động từ.",
+          "example_vi": "Bếp có chút nhầm lẫn nên món của quý khách sẽ ra hơi trễ.",
+          "word_family": [
+            "mix up (v) làm lẫn lộn, nhầm lẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T07:19:23.474743+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9f865470-6a82-4975-ad23-a5a127ca24d1-wm.jpg?v=1789798089273",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mix-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mix-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a mix-up in the order",
+          "meaning": "nhầm lẫn đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9f865470-6a82-4975-ad23-a5a127ca24d1-0-wm.jpg?v=1789802363331"
+        },
+        {
+          "phrase": "cause a mix-up",
+          "meaning": "gây ra nhầm lẫn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9f865470-6a82-4975-ad23-a5a127ca24d1-1-wm.jpg?v=1789802363115"
+        },
+        {
+          "phrase": "a scheduling mix-up",
+          "meaning": "nhầm lịch"
+        }
+      ],
+      "synonyms": [
+        "confusion (sự nhầm lẫn)",
+        "mistake (sai sót)"
+      ]
+    },
+    {
+      "id": "3e7cb460-5f48-4711-aa95-0ed161c2e502",
+      "part_id": "37271cbc-b350-4c43-815c-8a2a06072bc3",
+      "word": "predict",
+      "ipa": "/prɪˈdɪkt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I predicted this restaurant would become popular and I was right.",
+          "meaning": "dự đoán, tiên đoán, báo trước",
+          "toeic_tip": "predict + mệnh đề that hoặc + danh từ, không thêm giới từ phía sau.",
+          "example_vi": "Tôi đoán quán này rồi sẽ nổi, và quả đúng vậy.",
+          "word_family": [
+            "prediction (n) lời dự đoán",
+            "predictable (adj) có thể đoán trước"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:43.110035+00:00",
+      "updated_at": "2026-09-19T06:28:36.261114+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3e7cb460-5f48-4711-aa95-0ed161c2e502-wm.jpg?v=1789798216558",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/predict-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/predict-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "predict the outcome",
+          "meaning": "dự đoán kết quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3e7cb460-5f48-4711-aa95-0ed161c2e502-0-wm.jpg?v=1789799316106"
+        },
+        {
+          "phrase": "hard to predict",
+          "meaning": "khó đoán trước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3e7cb460-5f48-4711-aa95-0ed161c2e502-1-wm.jpg?v=1789799315595"
+        },
+        {
+          "phrase": "predict sales",
+          "meaning": "dự báo doanh số"
+        }
+      ],
+      "synonyms": [
+        "forecast (dự báo)",
+        "foresee (tiên liệu)"
+      ]
+    }
+  ]
+}

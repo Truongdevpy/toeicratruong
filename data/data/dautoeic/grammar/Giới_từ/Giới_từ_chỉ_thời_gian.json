@@ -1,0 +1,359 @@
+{
+  "subtopic": {
+    "id": "12dbb079-50c6-48ce-ac20-1ec51d831409",
+    "topic_id": "e17d4d8f-0799-4778-91ac-00bfb1044280",
+    "title_en": "Giới từ chỉ thời gian",
+    "title_vi": "Giới từ chỉ thời gian",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 42,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-gioi-tu-chi-thoi-gian"
+  },
+  "lessons": [
+    {
+      "id": "1f2470b0-0658-4b87-a8f1-7d9d3fbd56b8",
+      "subtopic_id": "12dbb079-50c6-48ce-ac20-1ec51d831409",
+      "title_en": "Giới từ chỉ thời gian",
+      "title_vi": "Giới từ chỉ thời gian",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 1 · Câu 109",
+          "options": {
+            "A": "until",
+            "B": "into",
+            "C": "yet",
+            "D": "while"
+          },
+          "question": "Registration for the Marketing Coalition Conference is now open ------- September 30.",
+          "translation": "Việc đăng ký tham dự Hội nghị Liên minh Tiếp thị hiện đang mở đến ngày 30 tháng 9."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm giới từ “until”, “into”, từ “yet” và liên từ “while”. Chỗ trống đứng cuối câu, trước mốc thời gian “September 30”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Registration for the Marketing Coalition Conference",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "now",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "C",
+                    "text": "open",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "September 30.",
+                    "label": "mốc thời gian"
+                  }
+                ],
+                "caption": "Câu đã đủ chủ ngữ + is + bổ ngữ “open”; chỗ trống nối mốc “September 30” vào câu."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trước mốc thời gian dùng giới từ hay liên từ.",
+                  "Việc “đang mở” là việc kéo dài hay việc xong tại một lúc.",
+                  "Nghĩa của các giới từ chỉ thời gian."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Giới từ chỉ thời gian đứng trước một mốc, một khoảng thời gian hoặc một sự kiện (đều là cụm danh từ) để nói việc xảy ra khi nào, kéo dài bao lâu. Liên từ thời gian (when, while, once, as soon as, whenever) không đứng trước cụm danh từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "giới từ thời gian + mốc / khoảng thời gian / sự kiện"
+                  },
+                  {
+                    "formula": "liên từ thời gian + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "until + mốc",
+                    "việc **kéo dài** đến mốc đó",
+                    "*The branch will remain closed until the end of March.* — Chi nhánh đóng cửa đến cuối tháng Ba."
+                  ],
+                  [
+                    "by + mốc",
+                    "việc **xong** trước hoặc đúng mốc (hạn chót)",
+                    "*Reports must be submitted by Friday.* — Báo cáo phải nộp chậm nhất là thứ Sáu."
+                  ],
+                  [
+                    "for + khoảng thời gian",
+                    "kéo dài bao lâu",
+                    "*The room will be closed for two weeks.* — Phòng sẽ đóng cửa trong hai tuần."
+                  ],
+                  [
+                    "since + mốc",
+                    "từ mốc đó đến nay, đi với has/have + V3",
+                    "*Sales have doubled since its launch.* — Doanh số đã tăng gấp đôi kể từ khi ra mắt."
+                  ],
+                  [
+                    "within + khoảng thời gian",
+                    "trong vòng, không quá",
+                    "*Refunds must be requested within thirty days.* — Phải yêu cầu hoàn tiền trong vòng ba mươi ngày."
+                  ],
+                  [
+                    "during + sự kiện, khoảng thời gian",
+                    "trong suốt, trong lúc diễn ra",
+                    "*Please keep phones silent during the ceremony.* — Vui lòng để điện thoại im lặng trong buổi lễ."
+                  ],
+                  [
+                    "over + khoảng thời gian",
+                    "trong suốt khoảng đó",
+                    "*He will visit five offices over the next three weeks.* — Ông ấy sẽ thăm năm văn phòng trong ba tuần tới."
+                  ],
+                  [
+                    "before, prior to",
+                    "trước",
+                    "*Please return your key prior to departure.* — Vui lòng trả chìa khóa trước khi rời đi."
+                  ],
+                  [
+                    "after, following",
+                    "sau",
+                    "*Following the merger, several managers moved.* — Sau vụ sáp nhập, vài quản lý đã chuyển đi."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Giới từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "before, after, since, until vừa là giới từ (+ cụm danh từ) vừa là liên từ (+ S + V).",
+                  "Trạng từ (still, lately, then, also, beforehand, instead, meanwhile, however, therefore, moreover) không đứng trước cụm danh từ để nối nó vào câu."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Mốc, khoảng hoặc sự kiện đứng sau; nghĩa hợp với động từ chính (kéo dài, hạn chót, từ quá khứ đến nay).",
+                    "form": "Giới từ thời gian đúng nghĩa + cụm danh từ",
+                    "example": "*remain closed until the end of March*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không đứng trước cụm danh từ; phải đi với mệnh đề S + V.",
+                    "form": "Liên từ (when, while, once, as soon as, whenever, although, unless, because, whereas, so that)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối được cụm danh từ vào câu như giới từ.",
+                    "form": "Trạng từ (still, lately, then, also, yet, beforehand, meanwhile, instead, however, therefore, moreover)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“into” chỉ hướng đi vào bên trong, không đi với mốc ngày.",
+                    "form": "Giới từ không chỉ thời gian (into)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "việc kéo dài + ___ + mốc",
+                    "example": "*is now open ___ September 30*; *will remain closed for renovations ___ the end of March*"
+                  },
+                  {
+                    "signal": "việc phải xong + ___ + mốc",
+                    "example": "*must be submitted ___ Friday at noon*"
+                  },
+                  {
+                    "signal": "___ + khoảng thời gian",
+                    "example": "*will be unavailable ___ two weeks*; *must be made ___ thirty days of the purchase date*; *___ the next three weeks*"
+                  },
+                  {
+                    "signal": "has/have + V3 + ___ + mốc",
+                    "example": "*have doubled ___ its appearance in a popular travel magazine*"
+                  },
+                  {
+                    "signal": "___ + sự kiện",
+                    "example": "*___ the merger with Delmont Foods*; *___ departure*; *___ your first shift*; *___ the awards ceremony*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn giới từ, liên từ, trạng từ thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống là cụm danh từ (mốc, khoảng thời gian, sự kiện) hay mệnh đề S + V; xem động từ chính nói việc kéo dài, việc phải xong hay việc từ quá khứ đến nay.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Trước cụm danh từ chọn giới từ, loại liên từ và trạng từ; còn hơn một giới từ thì chọn theo nghĩa trong bảng.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Registration for the Marketing Coalition Conference",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "now",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "C",
+                    "text": "open",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "until",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "September 30.",
+                    "label": "mốc thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: việc mở đăng ký kéo dài đến mốc “September 30”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm giới từ “until”, “into”, từ “yet” và liên từ “while” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Câu đã đủ “Registration… is now open”; chỗ trống đứng trước mốc “September 30”; dấu hiệu “việc kéo dài + ___ + mốc”: “is now open ------- September 30”.",
+                  "Bước 3: Việc mở đăng ký kéo dài đến mốc nên dùng until + mốc, vì vậy chọn “until” (đến).",
+                  "“into” (B) là giới từ chỉ hướng đi vào bên trong, đúng vị trí nhưng không đi với mốc ngày “September 30”, nên loại.",
+                  "“yet” (C) là trạng từ hoặc liên từ (nhưng), không nối mốc “September 30” vào câu, nên loại.",
+                  "“while” (D) là liên từ, không đứng trước cụm danh từ “September 30”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“beforehand” là trạng từ (trước đó), đứng một mình: *Please call beforehand.* — Vui lòng gọi trước. Nó không đi với cụm danh từ như “before”.",
+                  "“within” + khoảng thời gian có thể kèm “of” + mốc: *within thirty days of the purchase date* — trong vòng ba mươi ngày kể từ ngày mua."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Trước mốc, khoảng thời gian hay sự kiện dùng giới từ, không dùng liên từ.",
+                  "Việc kéo dài đến mốc: until; việc phải xong trước mốc: by.",
+                  "has/have + V3 + since + mốc; for + khoảng thời gian."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

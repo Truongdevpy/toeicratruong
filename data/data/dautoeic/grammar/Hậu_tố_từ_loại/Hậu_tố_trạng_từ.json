@@ -1,0 +1,310 @@
+{
+  "subtopic": {
+    "id": "bc806376-511a-42c4-890e-2f609534f97c",
+    "topic_id": "b348f708-d63e-444a-9e5b-6148a00f7a00",
+    "title_en": "Hậu tố trạng từ",
+    "title_vi": "Hậu tố trạng từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 14,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-hau-to-tu-loai-hau-to-trang-tu"
+  },
+  "lessons": [
+    {
+      "id": "ab99fd5f-48e7-4ad7-a571-d6c33d21cea0",
+      "subtopic_id": "bc806376-511a-42c4-890e-2f609534f97c",
+      "title_en": "Hậu tố trạng từ",
+      "title_vi": "Hậu tố trạng từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "Danh từ",
+            "B": "Động từ",
+            "C": "Tính từ",
+            "D": "Trạng từ"
+          },
+          "question": "carefully",
+          "translation": "Một cách cẩn thận."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Câu hỏi chỉ là một từ đơn “carefully”, không có câu đi kèm. Bốn đáp án là bốn loại từ theo thứ tự cố định: Danh từ, Động từ, Tính từ, Trạng từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "careful",
+                    "label": "gốc"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-ly",
+                    "label": "đuôi cần xét"
+                  }
+                ],
+                "caption": "Tách từ thành hai phần: gốc đứng trước, đuôi (hậu tố) đứng cuối. Đuôi cuối cùng là phần cần xét."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "cách tách một từ thành gốc + đuôi;",
+                  "“careful” là loại từ gì và đuôi “-ly” gắn sau nó tạo ra loại từ nào;",
+                  "từ có hai đuôi thì xét đuôi nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Hậu tố (đuôi) là phần gắn vào cuối một từ gốc để tạo từ mới, và có thể đổi loại từ. Trạng từ trong bài tập đều tạo bằng cách thêm -ly vào sau một tính từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Trạng từ",
+                    "formula": "tính từ + -ly"
+                  },
+                  {
+                    "label": "Tính từ tận cùng -y",
+                    "formula": "bỏ y + -ily"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "tính từ không có đuôi riêng (brief, quick, exact)",
+                    "thêm -ly",
+                    "briefly, quickly, exactly, promptly, politely, completely, perfectly"
+                  ],
+                  [
+                    "tính từ đuôi -ent / -ant",
+                    "thêm -ly",
+                    "currently, efficiently, frequently, recently, significantly"
+                  ],
+                  [
+                    "tính từ đuôi -ate",
+                    "thêm -ly",
+                    "accurately, immediately"
+                  ],
+                  [
+                    "tính từ đuôi -ful",
+                    "thêm -ly",
+                    "carefully, successfully"
+                  ],
+                  [
+                    "tính từ đuôi -al / -ar",
+                    "thêm -ly",
+                    "gradually, regularly"
+                  ],
+                  [
+                    "tính từ tận cùng -y",
+                    "đổi y thành i rồi thêm -ly",
+                    "easily (easy), temporarily (temporary)"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Tính từ gốc",
+                  "Trạng từ",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "tone": "info",
+                "type": "callout",
+                "items": [
+                  "-ly gắn sau **tính từ** mới tạo trạng từ. -ly gắn sau **danh từ** có thể tạo tính từ: *friend* thành *friendly*, *cost* thành *costly*.",
+                  "Trong *accurate*, *immediate*, đuôi -ate là đuôi tính từ, không phải đuôi động từ như trong *activate*."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Tính từ + -ly: đuôi cuối cùng là -ly, phần trước là một tính từ.",
+                    "form": "Trạng từ",
+                    "example": "*careful* + -ly = *carefully*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ là phần gốc trước -ly. Các từ trong bài tập đều là tính từ + -ly thành trạng từ. Riêng vài từ như *lively*, *lonely* vẫn là tính từ.",
+                    "form": "Tính từ",
+                    "example": "*careful* (tính từ), *carefully* (trạng từ)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ mang đuôi -tion/-sion/-ion, -ment, -ance/-ence, -ure, -ness, -ity, và đuôi chỉ người -er/-or/-ist/-ian/-ant/-ee (bài Hậu tố danh từ).",
+                    "form": "Danh từ",
+                    "example": "*accuracy*, *efficiency*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Động từ mang đuôi -ize, -ify, -ate, -en (bài Hậu tố động từ). Các từ trong bài tập này tận cùng bằng -ly.",
+                    "form": "Động từ",
+                    "example": "*simplify*, *shorten*",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "tính từ + -ly",
+                    "example": "*briefly*, *quickly*, *exactly*, *promptly*"
+                  },
+                  {
+                    "signal": "-ent / -ant + -ly",
+                    "example": "*currently*, *efficiently*, *significantly*"
+                  },
+                  {
+                    "signal": "-ate + -ly",
+                    "example": "*accurately*, *immediately*"
+                  },
+                  {
+                    "signal": "-ful + -ly",
+                    "example": "*carefully*, *successfully*"
+                  },
+                  {
+                    "signal": "-al / -ar + -ly",
+                    "example": "*gradually*, *regularly*"
+                  },
+                  {
+                    "signal": "-y đổi thành -ily",
+                    "example": "*easily*, *temporarily*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Câu hỏi là một từ đơn, bốn đáp án là Danh từ / Động từ / Tính từ / Trạng từ thì đây là câu hậu tố: nhận ra loại từ qua đuôi.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tách từ thành gốc + đuôi. Xem đuôi cuối cùng có phải -ly không, và phần trước -ly có phải tính từ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Tính từ + -ly thì chọn Trạng từ; loại Tính từ vì tính từ chỉ là phần gốc; loại Danh từ, Động từ vì từ không mang đuôi của các loại đó.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "ADJ",
+                    "text": "careful",
+                    "label": "gốc: tính từ (đuôi -ful)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "-ly",
+                    "label": "đuôi trạng từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã tách: tính từ “careful” + đuôi “-ly” thành trạng từ."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Tách đuôi của từ “carefully”: gốc “careful” + đuôi “-ly”.",
+                  "Bước 2: Dấu hiệu “-ful + -ly”: “-ly” gắn sau tính từ “careful” tạo trạng từ (giống successfully, helpfully).",
+                  "Bước 3: Vì vậy chọn “Trạng từ”; “carefully” nghĩa là một cách cẩn thận."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Từ có nhiều đuôi thì đuôi cuối cùng quyết định loại từ: *productive* (tính từ, -ive) + -ity = *productivity* (danh từ); *careful* (tính từ) + -ly = *carefully* (trạng từ)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Tính từ + -ly thì thành trạng từ: careful, carefully.",
+                  "Tính từ tận cùng -y thì đổi y thành i rồi thêm -ly: easy, easily.",
+                  "-ly sau danh từ có thể là tính từ: friendly."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,652 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "09b65157-6f55-4d1a-9ebc-4be8f56bd08e",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 43: Music",
+    "order_index": 43,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:38.36037+00:00",
+    "updated_at": "2026-09-18T08:53:38.36037+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+    "test_id": "09b65157-6f55-4d1a-9ebc-4be8f56bd08e",
+    "name": "Music",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:38.36037+00:00",
+    "updated_at": "2026-09-18T08:53:38.36037+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "bdb67dce-f17d-4414-b75e-2caba4ff579e",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "category",
+      "ipa": "UK: /ˈkæt.ə.ɡri/ | US: /ˈkæt̬.ə.ɡɔːr.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Jazz is one of many categories of music.",
+          "meaning": "loại, hạng mục, phân loại",
+          "toeic_tip": "Category of something; động từ là categorize, không phải categorate.",
+          "example_vi": "Jazz chỉ là một trong vô số dòng nhạc.",
+          "word_family": [
+            "categorize (v) phân loại"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T07:34:32.104761+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bdb67dce-f17d-4414-b75e-2caba4ff579e-wm.jpg?v=1789798233192",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/category-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/category-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "categories of music",
+          "meaning": "các thể loại nhạc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bdb67dce-f17d-4414-b75e-2caba4ff579e-0-wm.jpg?v=1789803271950"
+        },
+        {
+          "phrase": "fall into a category",
+          "meaning": "thuộc về một nhóm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bdb67dce-f17d-4414-b75e-2caba4ff579e-1-wm.jpg?v=1789803270151"
+        },
+        {
+          "phrase": "in a category by itself",
+          "meaning": "thuộc hạng riêng"
+        }
+      ],
+      "synonyms": [
+        "class (hạng)",
+        "type (kiểu loại)",
+        "group (nhóm)"
+      ]
+    },
+    {
+      "id": "5a6c9998-7975-4f6f-856f-14c12439a9c8",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "favor",
+      "ipa": "UK: /ˈfeɪ.vər/ | US: /ˈfeɪ.vɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Sam enjoys the works of several composers but he tends to favor Mozart.",
+          "meaning": "thiên vị, nghiêng về, ưa chuộng hơn",
+          "antonyms": [
+            "oppose (phản đối)",
+            "disfavor (không ưa)"
+          ],
+          "toeic_tip": "Favor + O trực tiếp; cụm in favor of nghĩa là ủng hộ.",
+          "example_vi": "Sam nghe nhạc của nhiều nhà soạn nhạc nhưng vẫn nghiêng về Mozart hơn cả.",
+          "word_family": [
+            "favorable (adj) thuận lợi, có lợi",
+            "favorite (adj/n) yêu thích nhất"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T06:43:31.979375+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5a6c9998-7975-4f6f-856f-14c12439a9c8-wm.jpg?v=1789798390410",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/favor-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/favor-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "favor one option",
+          "meaning": "nghiêng về một phương án",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5a6c9998-7975-4f6f-856f-14c12439a9c8-0-wm.jpg?v=1789800198878"
+        },
+        {
+          "phrase": "tend to favor",
+          "meaning": "có xu hướng ưa hơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5a6c9998-7975-4f6f-856f-14c12439a9c8-1-wm.jpg?v=1789800211838"
+        },
+        {
+          "phrase": "in favor of",
+          "meaning": "ủng hộ"
+        }
+      ],
+      "synonyms": [
+        "prefer (thích hơn)",
+        "support (ủng hộ)",
+        "lean toward (nghiêng về)"
+      ]
+    },
+    {
+      "id": "c9a36d81-e6b5-49c2-8c12-8fda6064e772",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "broaden",
+      "ipa": "UK: /ˈbrɔː.dən/ | US: /ˈbrɑː.dən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Dominique wants to broaden her knowledge of opera history.",
+          "meaning": "mở rộng, làm cho rộng hơn",
+          "antonyms": [
+            "narrow (thu hẹp)",
+            "restrict (hạn chế lại)"
+          ],
+          "toeic_tip": "Đuôi -en tạo động từ từ tính từ broad, giống widen, strengthen.",
+          "example_vi": "Dominique muốn biết nhiều hơn về lịch sử nhạc kịch.",
+          "word_family": [
+            "broad (adj) rộng",
+            "broadly (adv) một cách rộng rãi"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T07:39:57.473191+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c9a36d81-e6b5-49c2-8c12-8fda6064e772-wm.jpg?v=1789798109187",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/broaden-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/broaden-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "broaden your knowledge",
+          "meaning": "mở rộng kiến thức",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c9a36d81-e6b5-49c2-8c12-8fda6064e772-0-wm.jpg?v=1789803595704"
+        },
+        {
+          "phrase": "broaden your tastes",
+          "meaning": "mở rộng gu thưởng thức",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c9a36d81-e6b5-49c2-8c12-8fda6064e772-1-wm.jpg?v=1789803597326"
+        },
+        {
+          "phrase": "broaden the appeal",
+          "meaning": "mở rộng sức hút"
+        }
+      ],
+      "synonyms": [
+        "widen (mở rộng)",
+        "expand (mở mang)",
+        "extend (nới rộng)"
+      ]
+    },
+    {
+      "id": "1c149f30-a7cb-47bb-ac90-3eaae855a131",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "reason",
+      "ipa": "/ˈriː.zən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We'll never understand the reason why some music is popular and some is not.",
+          "meaning": "lý do, nguyên nhân, căn cứ",
+          "toeic_tip": "Reason for + danh từ, reason why + mệnh đề, đừng dùng 'reason of'.",
+          "example_vi": "Chẳng bao giờ hiểu nổi vì sao có bài nhạc thì nổi đình đám, có bài lại chìm nghỉm.",
+          "word_family": [
+            "reasonable (adj) hợp lý",
+            "reasoning (n) lập luận"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T06:19:46.59884+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1c149f30-a7cb-47bb-ac90-3eaae855a131-wm.jpg?v=1789798304574",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reason-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reason-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the reason for the delay",
+          "meaning": "lý do chậm trễ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c149f30-a7cb-47bb-ac90-3eaae855a131-0-wm.jpg?v=1789798785959"
+        },
+        {
+          "phrase": "the reason why",
+          "meaning": "lý do tại sao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c149f30-a7cb-47bb-ac90-3eaae855a131-1-wm.jpg?v=1789798786447"
+        },
+        {
+          "phrase": "for security reasons",
+          "meaning": "vì lý do an ninh"
+        }
+      ],
+      "synonyms": [
+        "cause (nguyên nhân)",
+        "motive (động cơ)",
+        "grounds (căn cứ)"
+      ]
+    },
+    {
+      "id": "1fa2df09-3f5d-4a89-9f4d-55a82ab91712",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "instinct",
+      "ipa": "/ˈɪn.stɪŋkt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The student's ability to play the cello was so natural, it seemed an instinct.",
+          "meaning": "bản năng, thiên hướng bẩm sinh",
+          "antonyms": [
+            "reason (lý trí)"
+          ],
+          "toeic_tip": "Instinct đếm được; tính từ instinctive hay ra ở Part 5.",
+          "example_vi": "Cậu học trò chơi cello tự nhiên đến mức như thể đó là bản năng.",
+          "word_family": [
+            "instinctive (adj) theo bản năng",
+            "instinctively (adv) một cách bản năng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T06:20:43.084187+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1fa2df09-3f5d-4a89-9f4d-55a82ab91712-wm.jpg?v=1789798420518",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/instinct-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/instinct-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "follow your instincts",
+          "meaning": "đi theo bản năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1fa2df09-3f5d-4a89-9f4d-55a82ab91712-0-wm.jpg?v=1789798842417"
+        },
+        {
+          "phrase": "a natural instinct",
+          "meaning": "bản năng tự nhiên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1fa2df09-3f5d-4a89-9f4d-55a82ab91712-1-wm.jpg?v=1789798842929"
+        },
+        {
+          "phrase": "business instinct",
+          "meaning": "nhạy bén kinh doanh"
+        }
+      ],
+      "synonyms": [
+        "intuition (trực giác)",
+        "gut feeling (linh cảm)"
+      ]
+    },
+    {
+      "id": "e6053b5f-fedb-4cb0-9d77-3d4e723a28fd",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "available",
+      "ipa": "/əˈveɪ.lə.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "In order to understand all the words to the opera, Sue Lin kept an Italian dictionary available at all times.",
+          "meaning": "có sẵn, sẵn sàng để dùng, rảnh để tiếp",
+          "antonyms": [
+            "unavailable (không có sẵn)",
+            "occupied (đang bận, đã có người)"
+          ],
+          "toeic_tip": "Available đứng sau danh từ được: tickets available; đi với to/for.",
+          "example_vi": "Để hiểu hết lời vở opera, Sue Lin lúc nào cũng thủ sẵn một cuốn từ điển tiếng Ý.",
+          "word_family": [
+            "availability (n) tình trạng sẵn có",
+            "avail (v) giúp ích"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T07:54:15.186566+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e6053b5f-fedb-4cb0-9d77-3d4e723a28fd-wm.jpg?v=1789798117951",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/available-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/available-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "available at all times",
+          "meaning": "lúc nào cũng có sẵn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e6053b5f-fedb-4cb0-9d77-3d4e723a28fd-0-wm.jpg?v=1789804445598"
+        },
+        {
+          "phrase": "available for purchase",
+          "meaning": "có sẵn để mua",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e6053b5f-fedb-4cb0-9d77-3d4e723a28fd-1-wm.jpg?v=1789804455032"
+        },
+        {
+          "phrase": "the only room available",
+          "meaning": "phòng trống duy nhất"
+        }
+      ],
+      "synonyms": [
+        "obtainable (có thể có được)",
+        "accessible (dễ tiếp cận)",
+        "on hand (sẵn trong tay)"
+      ]
+    },
+    {
+      "id": "a8a820cb-5029-4180-83b4-c8f721733e5a",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "urge",
+      "ipa": "UK: /ɜːdʒ/ | US: /ɝːdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "His mother urged him to study the piano; the rest is musical history.",
+          "meaning": "thúc giục, khuyên nhủ tha thiết",
+          "antonyms": [
+            "discourage (can ngăn)",
+            "dissuade (khuyên bỏ ý định)"
+          ],
+          "toeic_tip": "Urge someone to do something, cấu trúc cố định hay ra Part 5.",
+          "example_vi": "Mẹ ông đã thúc ông học piano, và phần sau thì cả giới nhạc đều biết.",
+          "word_family": [
+            "urge (n) sự thôi thúc"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T07:22:57.201816+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a8a820cb-5029-4180-83b4-c8f721733e5a-wm.jpg?v=1789798261649",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/urge-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/urge-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "urge someone to do something",
+          "meaning": "thúc giục ai làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a8a820cb-5029-4180-83b4-c8f721733e5a-0-wm.jpg?v=1789802575767"
+        },
+        {
+          "phrase": "strongly urge",
+          "meaning": "khẩn thiết kêu gọi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a8a820cb-5029-4180-83b4-c8f721733e5a-1-wm.jpg?v=1789802577058"
+        },
+        {
+          "phrase": "urge caution",
+          "meaning": "kêu gọi thận trọng"
+        }
+      ],
+      "synonyms": [
+        "encourage (khuyến khích)",
+        "press (thúc ép)",
+        "advocate (cổ vũ)"
+      ]
+    },
+    {
+      "id": "824504de-5088-489e-9e86-d28b4c113027",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "relaxation",
+      "ipa": "/ˌriː.lækˈseɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Listening to soothing music before bedtime provides good relaxation.",
+          "meaning": "sự thư giãn, sự nghỉ ngơi",
+          "antonyms": [
+            "tension (sự căng thẳng)",
+            "stress (áp lực)"
+          ],
+          "toeic_tip": "Không đếm được; phân biệt relaxing (gây thư giãn) và relaxed (thấy thoải mái).",
+          "example_vi": "Nghe nhạc nhẹ trước khi ngủ giúp thư giãn rất tốt.",
+          "word_family": [
+            "relax (v) thư giãn",
+            "relaxing (adj) làm thư giãn",
+            "relaxed (adj) thấy thoải mái"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T07:03:04.638065+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/824504de-5088-489e-9e86-d28b4c113027-wm.jpg?v=1789798399023",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/relaxation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/relaxation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "provide relaxation",
+          "meaning": "mang lại sự thư giãn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/824504de-5088-489e-9e86-d28b4c113027-0-wm.jpg?v=1789801373290"
+        },
+        {
+          "phrase": "rest and relaxation",
+          "meaning": "nghỉ ngơi thư giãn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/824504de-5088-489e-9e86-d28b4c113027-1-wm.jpg?v=1789801384451"
+        },
+        {
+          "phrase": "a means of relaxation",
+          "meaning": "một cách thư giãn"
+        }
+      ],
+      "synonyms": [
+        "rest (sự nghỉ ngơi)",
+        "leisure (thời gian rảnh rỗi)"
+      ]
+    },
+    {
+      "id": "aa7ddc66-cdac-445f-bdd0-48de5f1f131e",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "divide",
+      "ipa": "/dɪˈvaɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The music class was evenly divided between those who liked country and western music and those who did not.",
+          "meaning": "chia, phân chia thành phần",
+          "antonyms": [
+            "unite (hợp nhất)",
+            "combine (gộp lại)"
+          ],
+          "toeic_tip": "Divide into parts, divide between/among people, chọn đúng giới từ.",
+          "example_vi": "Lớp nhạc chia đôi đều nhau giữa nhóm mê nhạc đồng quê và nhóm không thích.",
+          "word_family": [
+            "division (n) sự phân chia, bộ phận",
+            "divided (adj) bị chia rẽ",
+            "divisible (adj) chia được"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T07:23:44.446439+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/aa7ddc66-cdac-445f-bdd0-48de5f1f131e-wm.jpg?v=1789798371994",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/divide-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/divide-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "divide into parts",
+          "meaning": "chia thành từng phần",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/aa7ddc66-cdac-445f-bdd0-48de5f1f131e-0-wm.jpg?v=1789802623447"
+        },
+        {
+          "phrase": "be evenly divided",
+          "meaning": "chia đều",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/aa7ddc66-cdac-445f-bdd0-48de5f1f131e-1-wm.jpg?v=1789802624287"
+        },
+        {
+          "phrase": "divide the work among staff",
+          "meaning": "chia việc cho nhân viên"
+        }
+      ],
+      "synonyms": [
+        "split (chia tách)",
+        "separate (tách ra)",
+        "partition (phân chia)"
+      ]
+    },
+    {
+      "id": "3da66c8c-028d-4edf-843e-d021b37ad650",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "prefer",
+      "ipa": "UK: /prɪˈfɜːr/ | US: /prɪˈfɝː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He preferred contemporary music to any other type.",
+          "meaning": "thích hơn, chuộng hơn",
+          "toeic_tip": "Prefer A to B, không dùng 'than'; prefer to do hoặc prefer doing.",
+          "example_vi": "Anh ấy mê nhạc đương đại hơn hẳn mọi dòng khác.",
+          "word_family": [
+            "preference (n) sự ưa thích",
+            "preferable (adj) đáng chuộng hơn",
+            "preferably (adv) tốt nhất là"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T06:27:42.019418+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3da66c8c-028d-4edf-843e-d021b37ad650-wm.jpg?v=1789797726347",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/prefer-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/prefer-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "prefer A to B",
+          "meaning": "thích A hơn B",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3da66c8c-028d-4edf-843e-d021b37ad650-0-wm.jpg?v=1789799247248"
+        },
+        {
+          "phrase": "prefer to work alone",
+          "meaning": "thích làm một mình hơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3da66c8c-028d-4edf-843e-d021b37ad650-1-wm.jpg?v=1789799261877"
+        },
+        {
+          "phrase": "as you prefer",
+          "meaning": "tùy bạn thích"
+        }
+      ],
+      "synonyms": [
+        "favor (nghiêng về)",
+        "like better (thích hơn)",
+        "opt for (chọn lấy)"
+      ]
+    },
+    {
+      "id": "2a92c7b0-5ed0-4fcf-b21b-dd9afa58be70",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "disparate",
+      "ipa": "UK: /ˈdɪs.pər.ət/ | US: /ˈdɪs.pɚ.ət/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "In the song, the disparate voices hauntingly join a blended chorus.",
+          "meaning": "khác biệt hẳn nhau, không đồng nhất",
+          "antonyms": [
+            "similar (tương tự)",
+            "alike (giống nhau)"
+          ],
+          "toeic_tip": "Đừng nhầm disparate (khác biệt) với desperate (tuyệt vọng).",
+          "example_vi": "Trong bài hát, những giọng ca vốn khác hẳn nhau lại hòa vào một bè hợp xướng day dứt.",
+          "word_family": [
+            "disparity (n) sự chênh lệch, sự khác biệt"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T06:22:51.072812+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2a92c7b0-5ed0-4fcf-b21b-dd9afa58be70-wm.jpg?v=1789798557626",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disparate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disparate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "disparate categories",
+          "meaning": "những nhóm khác hẳn nhau",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2a92c7b0-5ed0-4fcf-b21b-dd9afa58be70-0-wm.jpg?v=1789798967438"
+        },
+        {
+          "phrase": "disparate voices",
+          "meaning": "những giọng khác biệt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2a92c7b0-5ed0-4fcf-b21b-dd9afa58be70-1-wm.jpg?v=1789798970923"
+        },
+        {
+          "phrase": "disparate groups",
+          "meaning": "các nhóm rất khác nhau"
+        }
+      ],
+      "synonyms": [
+        "dissimilar (không giống nhau)",
+        "contrasting (trái ngược nhau)"
+      ]
+    },
+    {
+      "id": "45dc94b0-25ab-4bd0-a562-7cbe4f5d8e8c",
+      "part_id": "a6252d15-b653-4a19-a1b6-07337ec471e3",
+      "word": "taste",
+      "ipa": "/teɪst/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Ella had the taste required to select a musical program for the visiting dignitaries.",
+          "meaning": "gu thẩm mỹ, khiếu thưởng thức, sở thích",
+          "toeic_tip": "Nghĩa gu thẩm mỹ thường số nhiều: suit my tastes, have good taste.",
+          "example_vi": "Ella đủ gu thẩm mỹ để chọn chương trình nhạc cho các vị khách quý.",
+          "word_family": [
+            "tasteful (adj) tao nhã, có gu",
+            "tasteless (adj) thiếu thẩm mỹ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:38.36037+00:00",
+      "updated_at": "2026-09-19T06:31:41.36951+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/45dc94b0-25ab-4bd0-a562-7cbe4f5d8e8c-wm.jpg?v=1789798110595",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/taste-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/taste-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "have good taste",
+          "meaning": "có gu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/45dc94b0-25ab-4bd0-a562-7cbe4f5d8e8c-0-wm.jpg?v=1789799500793"
+        },
+        {
+          "phrase": "suit my tastes",
+          "meaning": "hợp gu tôi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/45dc94b0-25ab-4bd0-a562-7cbe4f5d8e8c-1-wm.jpg?v=1789799501223"
+        },
+        {
+          "phrase": "a matter of taste",
+          "meaning": "chuyện tùy gu mỗi người"
+        }
+      ],
+      "synonyms": [
+        "preference (sở thích)",
+        "discernment (khả năng thẩm định)"
+      ]
+    }
+  ]
+}

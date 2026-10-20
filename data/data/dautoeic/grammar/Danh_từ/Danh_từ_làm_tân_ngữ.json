@@ -1,0 +1,356 @@
+{
+  "subtopic": {
+    "id": "c2955485-e566-4230-86e6-015edb2376c9",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ làm tân ngữ",
+    "title_vi": "Danh từ làm tân ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 7,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-lam-tan-ngu"
+  },
+  "lessons": [
+    {
+      "id": "86dd0f7e-fd35-413c-9fb4-ff1f9f6e0dac",
+      "subtopic_id": "c2955485-e566-4230-86e6-015edb2376c9",
+      "title_en": "Danh từ làm tân ngữ",
+      "title_vi": "Danh từ làm tân ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 1 · Câu 111",
+          "options": {
+            "A": "deliveries",
+            "B": "delivered",
+            "C": "deliver",
+            "D": "deliverable"
+          },
+          "question": "Hawson Furniture will be making ------- on the east side of town on Thursday.",
+          "translation": "Hawson Furniture sẽ đi giao hàng ở khu phía đông thị trấn vào thứ Năm."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “deliver” nhưng khác loại từ. Chỗ trống đứng ngay sau động từ “will be making”, trước cụm giới từ “on the east side of town”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Hawson Furniture",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be making",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the east side of town",
+                    "label": "cụm giới từ (nơi chốn)"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Thursday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Sau “will be making” chỉ còn cụm giới từ nơi chốn và thời gian, nên chỗ trống là tân ngữ của “will be making”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Tân ngữ đứng ở đâu và là loại từ gì.",
+                  "Danh từ đếm được không có mạo từ thì dùng dạng nào.",
+                  "Vì sao động từ, tính từ không làm tân ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Tân ngữ là người, vật hay việc chịu tác động của động từ, đứng ngay sau động từ: *received recognition*. Cụm danh từ đứng sau giới từ là tân ngữ của giới từ: *for easy identification*.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tân ngữ của động từ",
+                    "formula": "động từ + (tính từ) + N"
+                  },
+                  {
+                    "label": "Tân ngữ của giới từ",
+                    "formula": "giới từ + (tính từ) + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "received",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "strong",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "support",
+                    "label": "tân ngữ (danh từ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from the directors.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "*Our team received strong support from the directors.* — Nhóm chúng tôi đã nhận được sự ủng hộ mạnh mẽ từ ban giám đốc. Tính từ “strong” đứng trước, danh từ “support” là tân ngữ của “received”."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ đếm được số ít cần mạo từ đứng trước: *make a delivery*. Không có mạo từ thì dùng số nhiều: *make deliveries*, *welcomed suggestions*, *offer cheap flights*.",
+                  "Danh từ không đếm được đứng một mình được: *recognition*, *protection*, *identification*."
+                ]
+              },
+              {
+                "text": "**Nhận ra danh từ qua đuôi** (các từ có trong bài tập)",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "-tion",
+                    "identification, suggestion, recognition, protection"
+                  ],
+                  [
+                    "-ure",
+                    "failure"
+                  ],
+                  [
+                    "-y (số nhiều -ies)",
+                    "delivery, deliveries"
+                  ],
+                  [
+                    "không có đuôi riêng",
+                    "flight, flights"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm tân ngữ của động từ hoặc giới từ, đúng số ít, số nhiều.",
+                    "form": "Danh từ (deliveries, recognition, flights)",
+                    "example": "*will be making deliveries*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không làm tân ngữ; sau tính từ phải là danh từ.",
+                    "form": "Động từ nguyên mẫu, V-s (deliver, identify, identifies, fly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm tân ngữ.",
+                    "form": "V-ed, bị động (delivered, identified, recognized, was flown)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng sau tính từ để làm tân ngữ.",
+                    "form": "to V (to fly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing của động từ cần tân ngữ phải có tân ngữ đi sau; đã có danh từ cùng nghĩa thì sau tính từ dùng danh từ.",
+                    "form": "V-ing (suggesting, failing, recognizing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau nó không có danh từ để bổ nghĩa nên không làm tân ngữ.",
+                    "form": "Tính từ (deliverable, protective)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ + ___",
+                    "example": "*will be making ___ on the east side*; *welcomed ___ from staff*; *received ___ for …*"
+                  },
+                  {
+                    "signal": "động từ + tính từ + ___",
+                    "example": "*provides better ___ of …*; *offer cheap ___ to Hong Kong*"
+                  },
+                  {
+                    "signal": "giới từ + tính từ + ___",
+                    "example": "*for easy ___*; *due to a sudden ___ in power supply*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ hoặc giới từ đứng trước chỗ trống (có thể có tính từ xen giữa), xem trước chỗ trống có mạo từ không và sau nó còn gì.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ làm tân ngữ; không có mạo từ thì chọn danh từ số nhiều hoặc không đếm được; loại động từ, V-ed, to V, tính từ và V-ing thiếu tân ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Hawson Furniture",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be making",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "deliveries",
+                    "label": "tân ngữ (danh từ số nhiều)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the east side of town",
+                    "label": "cụm giới từ (nơi chốn)"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Thursday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “deliveries” là tân ngữ của “will be making”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “deliver” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “will be making”, trước “on the east side of town”, không có mạo từ; dấu hiệu “động từ + ___”: “making -------”.",
+                  "Bước 3: Cần động từ + N; không có mạo từ nên dùng danh từ số nhiều, vì vậy chọn “deliveries” (các chuyến giao hàng).",
+                  "“delivered” (B) là V-ed, không làm tân ngữ của “will be making”, nên loại.",
+                  "“deliver” (C) là động từ nguyên mẫu, không làm tân ngữ của “will be making”, nên loại.",
+                  "“deliverable” (D) là tính từ (đuôi -able), sau nó không có danh từ, không làm tân ngữ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số động từ nhận to V làm tân ngữ, như *offer to help*. Nhưng khi trước chỗ trống đã có tính từ, như *offer cheap ___*, thì cần danh từ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau động từ hoặc giới từ, có thể qua tính từ: cần danh từ làm tân ngữ.",
+                  "Danh từ đếm được không có mạo từ: dùng số nhiều."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

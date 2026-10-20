@@ -1,0 +1,648 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "ec195246-c64f-4765-90f1-33bb094dc583",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 18: Shipping",
+    "order_index": 18,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:36.570938+00:00",
+    "updated_at": "2026-09-18T08:51:36.570938+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+    "test_id": "ec195246-c64f-4765-90f1-33bb094dc583",
+    "name": "Shipping",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:36.570938+00:00",
+    "updated_at": "2026-09-18T08:51:36.570938+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c0510e76-1c8d-4acd-8f2e-047aaa21e830",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "catalog",
+      "ipa": "UK: /ˈkæt.ə.lɒɡ/ | US: /ˈkæt̬.ə.lɑːɡ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The upcoming fall catalog shows a number of items from Laos that Mr. Lau has never before been able to offer.",
+          "meaning": "danh mục hàng, ca-ta-lô; lập danh mục, phân loại",
+          "toeic_tip": "Anh-Mỹ viết catalog, Anh-Anh catalogue; TOEIC chấp nhận cả hai.",
+          "example_vi": "Ca-ta-lô mùa thu sắp tới có nhiều mặt hàng Lào mà trước giờ ông Lau chưa bán được.",
+          "word_family": [
+            "cataloging (n) việc lập danh mục"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T07:35:25.634495+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c0510e76-1c8d-4acd-8f2e-047aaa21e830-wm.jpg?v=1789798099219",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/catalog-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/catalog-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a fall catalog",
+          "meaning": "ca-ta-lô mùa thu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c0510e76-1c8d-4acd-8f2e-047aaa21e830-0-wm.jpg?v=1789803325473"
+        },
+        {
+          "phrase": "order from a catalog",
+          "meaning": "đặt hàng qua ca-ta-lô",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c0510e76-1c8d-4acd-8f2e-047aaa21e830-1-wm.jpg?v=1789803324157"
+        },
+        {
+          "phrase": "catalog the complaints",
+          "meaning": "phân loại các khiếu nại"
+        }
+      ],
+      "synonyms": [
+        "brochure (tập giới thiệu)",
+        "list (danh sách)",
+        "index (mục lục)"
+      ]
+    },
+    {
+      "id": "4f1fd50e-8c49-4c8a-9896-258f1c424ed9",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "inventory",
+      "ipa": "UK: /ˈɪn.vən.tri/ | US: /ˈɪn.vən.tɔːr.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The store closes one day a year so that the staff can take inventory of the stockroom.",
+          "meaning": "hàng tồn kho; bản kê hàng hóa",
+          "toeic_tip": "Cụm cố định take inventory nghĩa là kiểm kê, không phải lấy hàng.",
+          "example_vi": "Mỗi năm cửa hàng đóng cửa một ngày để nhân viên kiểm kê kho.",
+          "word_family": [
+            "inventory (v) kiểm kê hàng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:36:43.989038+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4f1fd50e-8c49-4c8a-9896-258f1c424ed9-wm.jpg?v=1789798099839",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/inventory-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/inventory-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take inventory",
+          "meaning": "kiểm kê hàng hóa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4f1fd50e-8c49-4c8a-9896-258f1c424ed9-0-wm.jpg?v=1789799793493"
+        },
+        {
+          "phrase": "inventory levels",
+          "meaning": "mức tồn kho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4f1fd50e-8c49-4c8a-9896-258f1c424ed9-1-wm.jpg?v=1789799803841"
+        },
+        {
+          "phrase": "reduce inventory",
+          "meaning": "giảm hàng tồn"
+        }
+      ],
+      "synonyms": [
+        "stock (hàng trong kho)",
+        "goods on hand (hàng có sẵn)"
+      ]
+    },
+    {
+      "id": "9435395e-4d8c-482f-9eb5-cb3f372e5a59",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "ship",
+      "ipa": "/ʃɪp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Eva shipped the package carefully, since she knew the contents were made of glass.",
+          "meaning": "gửi hàng, vận chuyển",
+          "antonyms": [
+            "receive (nhận hàng)"
+          ],
+          "toeic_tip": "Không nhất thiết đi tàu biển; ship là gửi hàng bằng mọi phương tiện.",
+          "example_vi": "Eva đóng gói thật kỹ vì biết bên trong toàn đồ thủy tinh.",
+          "word_family": [
+            "shipment (n) lô hàng, việc gửi hàng",
+            "shipping (n) việc vận chuyển"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T07:11:47.198955+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9435395e-4d8c-482f-9eb5-cb3f372e5a59-wm.jpg?v=1789798305322",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ship-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ship-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "ship an order",
+          "meaning": "gửi đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9435395e-4d8c-482f-9eb5-cb3f372e5a59-0-wm.jpg?v=1789801907049"
+        },
+        {
+          "phrase": "ship directly to customers",
+          "meaning": "giao thẳng cho khách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9435395e-4d8c-482f-9eb5-cb3f372e5a59-1-wm.jpg?v=1789801906650"
+        },
+        {
+          "phrase": "ship overnight",
+          "meaning": "gửi hỏa tốc"
+        }
+      ],
+      "synonyms": [
+        "send (gửi)",
+        "dispatch (gửi đi)",
+        "transport (vận chuyển)"
+      ]
+    },
+    {
+      "id": "5a0926be-410b-46e5-899d-6c33e6395cb7",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "supply",
+      "ipa": "/səˈplaɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "By making better use of our supplies, we can avoid ordering until next month.",
+          "meaning": "nguồn cung, vật tư; cung cấp",
+          "antonyms": [
+            "demand (cầu, nhu cầu)"
+          ],
+          "toeic_tip": "Cấu trúc supply somebody with something hoặc supply something to somebody.",
+          "example_vi": "Nếu dùng tiết kiệm đồ hiện có, tháng sau mình mới cần đặt thêm.",
+          "word_family": [
+            "supplier (n) nhà cung cấp",
+            "supplies (n) vật tư, đồ dùng"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:42:07.845886+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5a0926be-410b-46e5-899d-6c33e6395cb7-wm.jpg?v=1789798401130",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/supply-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/supply-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "office supplies",
+          "meaning": "văn phòng phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5a0926be-410b-46e5-899d-6c33e6395cb7-0-wm.jpg?v=1789800127701"
+        },
+        {
+          "phrase": "supply someone with something",
+          "meaning": "cung cấp cho ai thứ gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5a0926be-410b-46e5-899d-6c33e6395cb7-1-wm.jpg?v=1789800127081"
+        },
+        {
+          "phrase": "supply and demand",
+          "meaning": "cung và cầu"
+        }
+      ],
+      "synonyms": [
+        "provide (cung cấp)",
+        "furnish (trang bị)",
+        "stock (hàng dự trữ)"
+      ]
+    },
+    {
+      "id": "6126216d-cbc6-42dd-a478-e6399ac30846",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "remember",
+      "ipa": "UK: /rɪˈmem.bər/ | US: /rɪˈmem.bɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I remembered the delivery clerk's name as soon as I got off the phone.",
+          "meaning": "nhớ ra, ghi nhớ",
+          "antonyms": [
+            "forget (quên)"
+          ],
+          "toeic_tip": "remember to do là việc sắp làm, remember doing là việc đã làm.",
+          "example_vi": "Vừa cúp máy là tôi nhớ ra tên anh nhân viên giao hàng.",
+          "word_family": [
+            "remembrance (n) sự tưởng nhớ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:44:34.72198+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6126216d-cbc6-42dd-a478-e6399ac30846-wm.jpg?v=1789797723216",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remember-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remember-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "remember to do something",
+          "meaning": "nhớ làm việc gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6126216d-cbc6-42dd-a478-e6399ac30846-0-wm.jpg?v=1789800245988"
+        },
+        {
+          "phrase": "remember doing something",
+          "meaning": "nhớ đã làm việc gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6126216d-cbc6-42dd-a478-e6399ac30846-1-wm.jpg?v=1789800274490"
+        },
+        {
+          "phrase": "remember a name",
+          "meaning": "nhớ tên"
+        }
+      ],
+      "synonyms": [
+        "recall (nhớ lại)",
+        "recollect (hồi tưởng)",
+        "retain (lưu giữ trong đầu)"
+      ]
+    },
+    {
+      "id": "99f5210a-0822-46b8-abcc-9265977b8b78",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "carrier",
+      "ipa": "UK: /ˈkær.i.ər/ | US: /ˈker.i.ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Lou, our favorite carrier, takes extra care of our boxes marked \"fragile.\"",
+          "meaning": "hãng vận chuyển, người chuyên chở",
+          "toeic_tip": "Đừng nhầm carrier (hãng vận chuyển) với career (sự nghiệp).",
+          "example_vi": "Lou là người giao hàng chúng tôi tin tưởng nhất, luôn nâng niu những thùng dán nhãn dễ vỡ.",
+          "word_family": [
+            "carry (v) chở, mang",
+            "carriage (n) việc chuyên chở"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T07:16:37.663796+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/99f5210a-0822-46b8-abcc-9265977b8b78-wm.jpg?v=1789798294799",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/carrier-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/carrier-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "switch carriers",
+          "meaning": "đổi hãng vận chuyển",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/99f5210a-0822-46b8-abcc-9265977b8b78-0-wm.jpg?v=1789802187505"
+        },
+        {
+          "phrase": "a common carrier",
+          "meaning": "hãng vận tải công cộng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/99f5210a-0822-46b8-abcc-9265977b8b78-1-wm.jpg?v=1789802197516"
+        },
+        {
+          "phrase": "air carrier",
+          "meaning": "hãng hàng không"
+        }
+      ],
+      "synonyms": [
+        "shipper (đơn vị vận chuyển)",
+        "transporter (bên chuyên chở)",
+        "freight company (công ty vận tải)"
+      ]
+    },
+    {
+      "id": "1bf0f4ad-415f-47ad-b267-f8b074feff40",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "on hand",
+      "ipa": "UK: /ɒn ˈhænd/ | US: /ɑːn ˈhænd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We had too much stock on hand, so we had a summer sale.",
+          "meaning": "có sẵn, sẵn sàng khi cần",
+          "antonyms": [
+            "out of stock (hết hàng)",
+            "unavailable (không có sẵn)"
+          ],
+          "toeic_tip": "Đừng nhầm on hand (có sẵn) với on the other hand (mặt khác).",
+          "example_vi": "Hàng tồn nhiều quá nên chúng tôi mở đợt giảm giá mùa hè.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:19:43.13484+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1bf0f4ad-415f-47ad-b267-f8b074feff40-wm.jpg?v=1789798287130",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/on-hand-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/on-hand-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "stock on hand",
+          "meaning": "hàng có sẵn trong kho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1bf0f4ad-415f-47ad-b267-f8b074feff40-0-wm.jpg?v=1789798782967"
+        },
+        {
+          "phrase": "cash on hand",
+          "meaning": "tiền mặt hiện có",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1bf0f4ad-415f-47ad-b267-f8b074feff40-1-wm.jpg?v=1789798782824"
+        },
+        {
+          "phrase": "be on hand to help",
+          "meaning": "có mặt để hỗ trợ"
+        }
+      ],
+      "synonyms": [
+        "available (có sẵn)",
+        "in stock (còn hàng)",
+        "at hand (trong tầm tay)"
+      ]
+    },
+    {
+      "id": "114ea8f9-2b68-4523-9d8c-e959ed4aa7d2",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "minimize",
+      "ipa": "UK: /ˈmɪn.ɪ.maɪz/ | US: /ˈmɪn.ə.maɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The shipping staff minimized customer complaints by working overtime to deliver the packages quickly.",
+          "meaning": "giảm thiểu; xem nhẹ, làm giảm tầm quan trọng",
+          "antonyms": [
+            "maximize (tối đa hóa)",
+            "increase (tăng lên)"
+          ],
+          "toeic_tip": "Cặp minimize - maximize rất hay ra ở Part 5 dạng chọn từ.",
+          "example_vi": "Nhân viên giao hàng làm thêm giờ để giao nhanh, nhờ vậy ít bị khách phàn nàn.",
+          "word_family": [
+            "minimal (adj) tối thiểu",
+            "minimum (n) mức tối thiểu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:22:19.900742+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/114ea8f9-2b68-4523-9d8c-e959ed4aa7d2-wm.jpg?v=1789798545752",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/minimize-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/minimize-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "minimize complaints",
+          "meaning": "giảm thiểu khiếu nại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/114ea8f9-2b68-4523-9d8c-e959ed4aa7d2-0-wm.jpg?v=1789798939473"
+        },
+        {
+          "phrase": "minimize costs",
+          "meaning": "giảm tối đa chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/114ea8f9-2b68-4523-9d8c-e959ed4aa7d2-1-wm.jpg?v=1789798939745"
+        },
+        {
+          "phrase": "minimize the risk",
+          "meaning": "hạn chế rủi ro"
+        }
+      ],
+      "synonyms": [
+        "reduce (giảm)",
+        "lessen (làm ít đi)",
+        "curtail (cắt giảm)"
+      ]
+    },
+    {
+      "id": "ac893ffa-3c50-4e8a-a740-521dc2ed7a29",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "fulfill",
+      "ipa": "/fʊlˈfɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The engineers fulfilled a client's request for larger display screens.",
+          "meaning": "hoàn thành trọn vẹn, thực hiện đầy đủ",
+          "antonyms": [
+            "neglect (bỏ bê)",
+            "fail (không hoàn thành)"
+          ],
+          "toeic_tip": "Anh-Mỹ fulfill, Anh-Anh fulfil; danh từ luôn có hai chữ l: fulfillment.",
+          "example_vi": "Các kỹ sư đã đáp ứng yêu cầu của khách là làm màn hình lớn hơn.",
+          "word_family": [
+            "fulfillment (n) sự hoàn thành, việc xử lý đơn hàng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T07:24:06.139432+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ac893ffa-3c50-4e8a-a740-521dc2ed7a29-wm.jpg?v=1789798326287",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fulfill-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fulfill-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "fulfill an order",
+          "meaning": "hoàn tất đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ac893ffa-3c50-4e8a-a740-521dc2ed7a29-0-wm.jpg?v=1789802633413"
+        },
+        {
+          "phrase": "fulfill a request",
+          "meaning": "đáp ứng yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ac893ffa-3c50-4e8a-a740-521dc2ed7a29-1-wm.jpg?v=1789802645918"
+        },
+        {
+          "phrase": "fulfill requirements",
+          "meaning": "đáp ứng đủ điều kiện"
+        }
+      ],
+      "synonyms": [
+        "complete (hoàn tất)",
+        "satisfy (đáp ứng)",
+        "carry out (thực hiện)"
+      ]
+    },
+    {
+      "id": "27de9d38-aee6-4651-9e5d-7f9dd3480c7d",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "accurately",
+      "ipa": "UK: /ˈæk.jə.rət.li/ | US: /ˈæk.jɚ.ət.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To gauge these figures accurately, we first need to get some facts from the shipping department.",
+          "meaning": "một cách chính xác, không sai sót",
+          "antonyms": [
+            "inaccurately (sai lệch)",
+            "incorrectly (không đúng)"
+          ],
+          "toeic_tip": "Trái nghĩa inaccurately dùng tiền tố in-, không phải un-.",
+          "example_vi": "Muốn tính con số cho chuẩn, trước hết phải lấy số liệu từ bộ phận vận chuyển.",
+          "word_family": [
+            "accurate (adj) chính xác",
+            "accuracy (n) độ chính xác"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:22:40.748292+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/27de9d38-aee6-4651-9e5d-7f9dd3480c7d-wm.jpg?v=1789798552187",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accurately-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accurately-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accurately measure",
+          "meaning": "đo chính xác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/27de9d38-aee6-4651-9e5d-7f9dd3480c7d-0-wm.jpg?v=1789798959963"
+        },
+        {
+          "phrase": "accurately reflect",
+          "meaning": "phản ánh đúng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/27de9d38-aee6-4651-9e5d-7f9dd3480c7d-1-wm.jpg?v=1789798960568"
+        },
+        {
+          "phrase": "accurately record",
+          "meaning": "ghi lại chính xác"
+        }
+      ],
+      "synonyms": [
+        "correctly (đúng)",
+        "precisely (chính xác)",
+        "exactly (chuẩn xác)"
+      ]
+    },
+    {
+      "id": "3fd00ceb-cbf0-4759-a3d2-295294393f9a",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "sufficiently",
+      "ipa": "/səˈfɪʃ.ənt.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The boxcar was sufficiently damaged that it could not be loaded on the truck.",
+          "meaning": "đủ mức, đủ để",
+          "antonyms": [
+            "insufficiently (không đủ)",
+            "inadequately (thiếu hụt)"
+          ],
+          "toeic_tip": "Trạng từ đứng trước tính từ; trái nghĩa dùng in-: insufficiently.",
+          "example_vi": "Toa hàng hỏng nặng đến mức không thể chất lên xe tải được.",
+          "word_family": [
+            "sufficient (adj) đủ",
+            "sufficiency (n) sự đầy đủ"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T06:29:43.870929+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3fd00ceb-cbf0-4759-a3d2-295294393f9a-wm.jpg?v=1789798080633",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sufficiently-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sufficiently-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "sufficiently organized",
+          "meaning": "đủ ngăn nắp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3fd00ceb-cbf0-4759-a3d2-295294393f9a-0-wm.jpg?v=1789799371987"
+        },
+        {
+          "phrase": "sufficiently trained",
+          "meaning": "được đào tạo đủ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3fd00ceb-cbf0-4759-a3d2-295294393f9a-1-wm.jpg?v=1789799383718"
+        },
+        {
+          "phrase": "sufficiently damaged",
+          "meaning": "hư hỏng đến mức"
+        }
+      ],
+      "synonyms": [
+        "adequately (đủ mức)",
+        "enough (đủ)"
+      ]
+    },
+    {
+      "id": "fc23db53-bae3-4408-87db-be3856ddf5fd",
+      "part_id": "89542180-5b48-40cc-b6ca-5adad849fa99",
+      "word": "integral",
+      "ipa": "UK: /ˈɪn.tɪ.ɡrəl/ | US: /ɪnˈteɡ.rəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Good customer relations is an integral component of any business.",
+          "meaning": "thiết yếu, không thể thiếu",
+          "antonyms": [
+            "peripheral (thứ yếu)",
+            "optional (không bắt buộc)"
+          ],
+          "toeic_tip": "Đi với giới từ to: be integral to something.",
+          "example_vi": "Quan hệ tốt với khách hàng là thứ doanh nghiệp nào cũng không thể thiếu.",
+          "word_family": [
+            "integrate (v) tích hợp",
+            "integration (n) sự hợp nhất"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:36.570938+00:00",
+      "updated_at": "2026-09-19T08:05:06.510477+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fc23db53-bae3-4408-87db-be3856ddf5fd-wm.jpg?v=1789798378156",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/integral-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/integral-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an integral component",
+          "meaning": "bộ phận không thể thiếu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fc23db53-bae3-4408-87db-be3856ddf5fd-0-wm.jpg?v=1789805104903"
+        },
+        {
+          "phrase": "integral to success",
+          "meaning": "thiết yếu cho thành công",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fc23db53-bae3-4408-87db-be3856ddf5fd-1-wm.jpg?v=1789805106368"
+        },
+        {
+          "phrase": "an integral part",
+          "meaning": "phần cốt lõi"
+        }
+      ],
+      "synonyms": [
+        "essential (thiết yếu)",
+        "indispensable (không thể thiếu)",
+        "vital (sống còn)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "382a958c-a89a-4648-b3b7-8ba64471311b",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 39: Hotels",
+    "order_index": 39,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:17.551816+00:00",
+    "updated_at": "2026-09-18T08:53:17.551816+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+    "test_id": "382a958c-a89a-4648-b3b7-8ba64471311b",
+    "name": "Hotels",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:17.551816+00:00",
+    "updated_at": "2026-09-18T08:53:17.551816+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "37e4a5db-81cc-4359-adb5-85aeb0bc07c0",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "housekeeper",
+      "ipa": "UK: /ˈhaʊsˌkiː.pər/ | US: /ˈhaʊsˌkiː.pɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Eloise's first job at the hotel was as a housekeeper and now she is the manager.",
+          "meaning": "nhân viên dọn phòng, người lo việc nhà",
+          "toeic_tip": "Bộ phận trong khách sạn gọi là housekeeping, không phải housekeeper.",
+          "example_vi": "Công việc đầu tiên của Eloise ở khách sạn là dọn phòng, giờ cô ấy làm quản lý.",
+          "word_family": [
+            "housekeeping (n) công việc dọn dẹp, bộ phận buồng phòng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T06:01:29.781835+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/37e4a5db-81cc-4359-adb5-85aeb0bc07c0-wm.jpg?v=1789797614425",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/housekeeper-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/housekeeper-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a hotel housekeeper",
+          "meaning": "nhân viên buồng phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/37e4a5db-81cc-4359-adb5-85aeb0bc07c0-0-wm.jpg?v=1789797688173"
+        },
+        {
+          "phrase": "housekeeping staff",
+          "meaning": "bộ phận buồng phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/37e4a5db-81cc-4359-adb5-85aeb0bc07c0-1-wm.jpg?v=1789797689643"
+        },
+        {
+          "phrase": "call the housekeeper",
+          "meaning": "gọi nhân viên dọn phòng"
+        }
+      ],
+      "synonyms": [
+        "maid (người dọn phòng)",
+        "cleaner (nhân viên dọn dẹp)"
+      ]
+    },
+    {
+      "id": "4e7effad-73cb-4525-84dd-35902aca98ef",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "quote",
+      "ipa": "UK: /kwəʊt/ | US: /kwoʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We were quoted a price of $89 for the room for one night.",
+          "meaning": "báo giá, đưa ra mức giá chính xác; bản báo giá",
+          "toeic_tip": "Trong thương mại, quote và quotation là báo giá, không phải trích dẫn.",
+          "example_vi": "Họ báo giá phòng 89 đô một đêm.",
+          "word_family": [
+            "quotation (n) bản báo giá, câu trích dẫn"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T06:37:14.677161+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4e7effad-73cb-4525-84dd-35902aca98ef-wm.jpg?v=1789798118981",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/quote-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/quote-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "quote a price",
+          "meaning": "báo giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4e7effad-73cb-4525-84dd-35902aca98ef-0-wm.jpg?v=1789799821880"
+        },
+        {
+          "phrase": "get a price quote",
+          "meaning": "lấy báo giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4e7effad-73cb-4525-84dd-35902aca98ef-1-wm.jpg?v=1789799834513"
+        },
+        {
+          "phrase": "be quoted $89",
+          "meaning": "được báo giá 89 đô"
+        }
+      ],
+      "synonyms": [
+        "estimate (ước tính giá)",
+        "cite (trích dẫn)"
+      ]
+    },
+    {
+      "id": "cac1f172-09ec-4859-9ccc-f8656d18fd95",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "expect",
+      "ipa": "/ɪkˈspekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You can expect a clean room when you check in at a hotel.",
+          "meaning": "mong đợi, trông chờ; cho là điều gì sẽ xảy ra",
+          "toeic_tip": "expect to do là tự mình làm, expect somebody to do là mong ai làm.",
+          "example_vi": "Nhận phòng khách sạn thì chắc chắn bạn sẽ có một căn phòng sạch sẽ.",
+          "word_family": [
+            "expectation (n) sự mong đợi",
+            "expected (adj) được dự kiến"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T07:40:37.092458+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cac1f172-09ec-4859-9ccc-f8656d18fd95-wm.jpg?v=1789797644243",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expect-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expect-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "expect a delivery",
+          "meaning": "chờ hàng giao tới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cac1f172-09ec-4859-9ccc-f8656d18fd95-0-wm.jpg?v=1789803621649"
+        },
+        {
+          "phrase": "be expected to do",
+          "meaning": "được cho là sẽ làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cac1f172-09ec-4859-9ccc-f8656d18fd95-1-wm.jpg?v=1789803636950"
+        },
+        {
+          "phrase": "as expected",
+          "meaning": "đúng như dự đoán"
+        }
+      ],
+      "synonyms": [
+        "anticipate (dự đoán trước)",
+        "await (chờ đợi)"
+      ]
+    },
+    {
+      "id": "f7bb21a2-5f6c-4e7c-8ecb-26767d3f9a8f",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "service",
+      "ipa": "UK: /ˈsɜː.vɪs/ | US: /ˈsɝː.vɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The hotel has a number of luxury services like the on-site gym, sauna, pool, and beauty salon.",
+          "meaning": "dịch vụ, tiện ích phục vụ",
+          "toeic_tip": "Nghĩa động từ cũng hay ra: service the equipment là bảo trì thiết bị.",
+          "example_vi": "Khách sạn có nhiều dịch vụ cao cấp như phòng gym, phòng xông hơi, hồ bơi và tiệm làm đẹp.",
+          "word_family": [
+            "serve (v) phục vụ",
+            "server (n) người phục vụ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T08:05:10.89814+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f7bb21a2-5f6c-4e7c-8ecb-26767d3f9a8f-wm.jpg?v=1789798499126",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/service-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/service-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "room service",
+          "meaning": "dịch vụ phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f7bb21a2-5f6c-4e7c-8ecb-26767d3f9a8f-0-wm.jpg?v=1789805110640"
+        },
+        {
+          "phrase": "customer service",
+          "meaning": "dịch vụ khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f7bb21a2-5f6c-4e7c-8ecb-26767d3f9a8f-1-wm.jpg?v=1789805110737"
+        },
+        {
+          "phrase": "provide a service",
+          "meaning": "cung cấp dịch vụ"
+        }
+      ],
+      "synonyms": [
+        "amenity (tiện nghi phục vụ)",
+        "facility (tiện ích)"
+      ]
+    },
+    {
+      "id": "82cbc846-c265-443b-b368-f41d34323b45",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "reservation",
+      "ipa": "UK: /ˌrez.əˈveɪ.ʃən/ | US: /ˌrez.ɚˈveɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I know I made a reservation for tonight, but the hotel staff has no record of it in the system.",
+          "meaning": "việc đặt chỗ trước, chỗ đã giữ",
+          "antonyms": [
+            "cancellation (việc hủy chỗ đã đặt)"
+          ],
+          "toeic_tip": "Dùng make a reservation, tuyệt đối không nói do a reservation.",
+          "example_vi": "Tôi chắc chắn đã đặt phòng cho tối nay, vậy mà nhân viên khách sạn lại không thấy trên hệ thống.",
+          "word_family": [
+            "reserve (v) đặt trước, dành riêng",
+            "reserved (adj) đã được đặt trước"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T07:05:53.260565+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/82cbc846-c265-443b-b368-f41d34323b45-wm.jpg?v=1789798505025",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reservation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reservation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a reservation",
+          "meaning": "đặt chỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82cbc846-c265-443b-b368-f41d34323b45-0-wm.jpg?v=1789801537176"
+        },
+        {
+          "phrase": "confirm a reservation",
+          "meaning": "xác nhận đặt chỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82cbc846-c265-443b-b368-f41d34323b45-1-wm.jpg?v=1789801553032"
+        },
+        {
+          "phrase": "cancel a reservation",
+          "meaning": "hủy đặt chỗ"
+        }
+      ],
+      "synonyms": [
+        "booking (việc đặt chỗ)",
+        "appointment (lịch hẹn)"
+      ]
+    },
+    {
+      "id": "9293d11b-844d-4523-b36a-7a90c244d03b",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "chain",
+      "ipa": "/tʃeɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Budget-priced hotel chains have made a huge impact in the industry.",
+          "meaning": "chuỗi cơ sở kinh doanh cùng một chủ",
+          "toeic_tip": "Trong TOEIC nghĩa chuỗi doanh nghiệp ra nhiều hơn nghĩa dây xích.",
+          "example_vi": "Các chuỗi khách sạn giá rẻ đã tạo ra tác động lớn trong ngành.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T07:11:30.904212+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9293d11b-844d-4523-b36a-7a90c244d03b-wm.jpg?v=1789798511500",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/chain-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/chain-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a hotel chain",
+          "meaning": "chuỗi khách sạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9293d11b-844d-4523-b36a-7a90c244d03b-0-wm.jpg?v=1789801887796"
+        },
+        {
+          "phrase": "a chain of restaurants",
+          "meaning": "chuỗi nhà hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9293d11b-844d-4523-b36a-7a90c244d03b-1-wm.jpg?v=1789801890761"
+        },
+        {
+          "phrase": "a chain store",
+          "meaning": "cửa hàng thuộc chuỗi"
+        }
+      ],
+      "synonyms": [
+        "franchise (chuỗi nhượng quyền)",
+        "network (mạng lưới)"
+      ]
+    },
+    {
+      "id": "9ce9dac4-e991-4e6b-8e19-fea337602b48",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "advanced",
+      "ipa": "UK: /ədˈvɑːnst/ | US: /ədˈvænst/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Since the hotel installed an advanced computer system, all operations have been functioning more smoothly.",
+          "meaning": "tiên tiến, hiện đại; ở mức cao hơn",
+          "antonyms": [
+            "outdated (lỗi thời)",
+            "basic (ở mức sơ đẳng)"
+          ],
+          "toeic_tip": "Phân biệt advanced (tiên tiến) với advance booking (việc đặt trước).",
+          "example_vi": "Từ khi khách sạn lắp hệ thống máy tính hiện đại, mọi việc chạy trơn tru hơn hẳn.",
+          "word_family": [
+            "advance (v) tiến lên, thăng tiến",
+            "advancement (n) sự thăng tiến"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T07:16:46.231051+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9ce9dac4-e991-4e6b-8e19-fea337602b48-wm.jpg?v=1789798497435",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/advanced-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/advanced-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "advanced technology",
+          "meaning": "công nghệ tiên tiến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9ce9dac4-e991-4e6b-8e19-fea337602b48-0-wm.jpg?v=1789802192339"
+        },
+        {
+          "phrase": "an advanced computer system",
+          "meaning": "hệ thống máy tính hiện đại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9ce9dac4-e991-4e6b-8e19-fea337602b48-1-wm.jpg?v=1789802206091"
+        },
+        {
+          "phrase": "an advanced level",
+          "meaning": "trình độ cao"
+        }
+      ],
+      "synonyms": [
+        "sophisticated (tinh vi, hiện đại)",
+        "cutting-edge (tối tân)"
+      ]
+    },
+    {
+      "id": "e575ef47-49dc-4aaa-99da-1435bf91257a",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "preclude",
+      "ipa": "/prɪˈkluːd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The horrible rainstorm precluded us from traveling any further.",
+          "meaning": "ngăn không cho xảy ra, loại trừ khả năng",
+          "antonyms": [
+            "allow (cho phép)",
+            "enable (tạo điều kiện)"
+          ],
+          "toeic_tip": "Dùng preclude + danh từ hoặc preclude somebody from V-ing.",
+          "example_vi": "Cơn mưa bão dữ dội khiến chúng tôi không thể đi tiếp.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T07:53:52.89361+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e575ef47-49dc-4aaa-99da-1435bf91257a-wm.jpg?v=1789798363032",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/preclude-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/preclude-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "preclude someone from doing",
+          "meaning": "khiến ai không thể làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e575ef47-49dc-4aaa-99da-1435bf91257a-0-wm.jpg?v=1789804432738"
+        },
+        {
+          "phrase": "preclude the possibility",
+          "meaning": "loại trừ khả năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e575ef47-49dc-4aaa-99da-1435bf91257a-1-wm.jpg?v=1789804429674"
+        },
+        {
+          "phrase": "preclude further delays",
+          "meaning": "ngăn không để trễ thêm"
+        }
+      ],
+      "synonyms": [
+        "prevent (ngăn cản)",
+        "rule out (loại trừ)"
+      ]
+    },
+    {
+      "id": "78f2090b-3840-409f-b818-e7fd1eed1cb6",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "rate",
+      "ipa": "/reɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The rate for the hotel room is too high considering how few services are available on-site.",
+          "meaning": "mức giá theo chuẩn, mức phí; tỷ lệ",
+          "toeic_tip": "Giá phòng và giá dịch vụ dùng rate, giá hàng hóa dùng price.",
+          "example_vi": "Giá phòng khách sạn này quá cao so với số dịch vụ ít ỏi mà nó có.",
+          "word_family": [
+            "rate (v) đánh giá, xếp hạng",
+            "rating (n) mức xếp hạng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T06:56:46.399569+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/78f2090b-3840-409f-b818-e7fd1eed1cb6-wm.jpg?v=1789798493810",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the room rate",
+          "meaning": "giá phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78f2090b-3840-409f-b818-e7fd1eed1cb6-0-wm.jpg?v=1789801003736"
+        },
+        {
+          "phrase": "seasonal rates",
+          "meaning": "giá theo mùa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78f2090b-3840-409f-b818-e7fd1eed1cb6-1-wm.jpg?v=1789801006256"
+        },
+        {
+          "phrase": "the interest rate",
+          "meaning": "lãi suất"
+        }
+      ],
+      "synonyms": [
+        "price (giá)",
+        "charge (mức phí)"
+      ]
+    },
+    {
+      "id": "042b5296-d4e6-4981-99fc-7c7ebfdecbe0",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "notify",
+      "ipa": "UK: /ˈnəʊ.tɪ.faɪ/ | US: /ˈnoʊ.t̬ə.faɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "They notified the hotel that they had been delayed in traffic and would be arriving late.",
+          "meaning": "báo cho biết, thông báo chính thức",
+          "toeic_tip": "Cấu trúc notify somebody of something, không dùng notify to somebody.",
+          "example_vi": "Họ báo với khách sạn là bị kẹt xe nên sẽ đến trễ.",
+          "word_family": [
+            "notification (n) thông báo",
+            "notice (n) thông báo, sự chú ý"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T06:20:01.228222+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/042b5296-d4e6-4981-99fc-7c7ebfdecbe0-wm.jpg?v=1789798331385",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/notify-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/notify-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "notify someone of something",
+          "meaning": "báo cho ai về việc gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/042b5296-d4e6-4981-99fc-7c7ebfdecbe0-0-wm.jpg?v=1789798798366"
+        },
+        {
+          "phrase": "notify in writing",
+          "meaning": "thông báo bằng văn bản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/042b5296-d4e6-4981-99fc-7c7ebfdecbe0-1-wm.jpg?v=1789798801024"
+        },
+        {
+          "phrase": "notify the office",
+          "meaning": "báo cho văn phòng"
+        }
+      ],
+      "synonyms": [
+        "inform (thông báo)",
+        "advise (báo cho biết)"
+      ]
+    },
+    {
+      "id": "279e7a27-c964-4953-9878-a159ecaeda5a",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "confirm",
+      "ipa": "UK: /kənˈfɜːm/ | US: /kənˈfɝːm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Jorge called the hotel to confirm that he had a room reservation.",
+          "meaning": "xác nhận, khẳng định là đúng",
+          "antonyms": [
+            "cancel (hủy)",
+            "deny (phủ nhận)"
+          ],
+          "toeic_tip": "Cụm confirmation number (mã xác nhận) rất hay gặp ở Part 3.",
+          "example_vi": "Jorge gọi cho khách sạn để xác nhận là mình đã đặt phòng.",
+          "word_family": [
+            "confirmation (n) sự xác nhận",
+            "confirmed (adj) đã được xác nhận"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T06:22:31.758835+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/279e7a27-c964-4953-9878-a159ecaeda5a-wm.jpg?v=1789798550270",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/confirm-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/confirm-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "confirm a reservation",
+          "meaning": "xác nhận đặt chỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/279e7a27-c964-4953-9878-a159ecaeda5a-0-wm.jpg?v=1789798951502"
+        },
+        {
+          "phrase": "confirm in writing",
+          "meaning": "xác nhận bằng văn bản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/279e7a27-c964-4953-9878-a159ecaeda5a-1-wm.jpg?v=1789798951622"
+        },
+        {
+          "phrase": "confirm the details",
+          "meaning": "xác nhận chi tiết"
+        }
+      ],
+      "synonyms": [
+        "verify (kiểm chứng)",
+        "validate (xác thực)"
+      ]
+    },
+    {
+      "id": "0b6ea511-18ea-4572-855a-37ff91fb2220",
+      "part_id": "c395bda5-b72c-45d3-b89f-7c0be2169a67",
+      "word": "check in",
+      "ipa": "/ˌtʃek ˈɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Patrons check in at the hotel immediately upon their arrival.",
+          "meaning": "làm thủ tục nhận phòng, đăng ký có mặt",
+          "antonyms": [
+            "check out (trả phòng)"
+          ],
+          "toeic_tip": "Viết rời khi là động từ, có gạch nối check-in khi là danh từ.",
+          "example_vi": "Khách vừa tới nơi là làm thủ tục nhận phòng ngay.",
+          "word_family": [
+            "check-in (n) việc làm thủ tục nhận phòng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:17.551816+00:00",
+      "updated_at": "2026-09-19T06:21:40.854815+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0b6ea511-18ea-4572-855a-37ff91fb2220-wm.jpg?v=1789798525286",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/check-in-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/check-in-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "check in at the hotel",
+          "meaning": "nhận phòng khách sạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0b6ea511-18ea-4572-855a-37ff91fb2220-0-wm.jpg?v=1789798896472"
+        },
+        {
+          "phrase": "check in for a flight",
+          "meaning": "làm thủ tục bay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0b6ea511-18ea-4572-855a-37ff91fb2220-1-wm.jpg?v=1789798900707"
+        },
+        {
+          "phrase": "check-in desk",
+          "meaning": "quầy làm thủ tục"
+        }
+      ],
+      "synonyms": [
+        "register (đăng ký)",
+        "sign in (ghi danh có mặt)"
+      ]
+    }
+  ]
+}

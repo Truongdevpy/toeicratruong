@@ -1,0 +1,313 @@
+{
+  "subtopic": {
+    "id": "5948b32e-0fd9-4989-b486-03092fe5ad26",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Hòa hợp với chủ ngữ số nhiều",
+    "title_vi": "Hòa hợp với chủ ngữ số nhiều",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 48,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-hoa-hop-voi-chu-ngu-so-nhieu"
+  },
+  "lessons": [
+    {
+      "id": "56d0b6b4-4ff9-46ad-be5a-a3452a226d29",
+      "subtopic_id": "5948b32e-0fd9-4989-b486-03092fe5ad26",
+      "title_en": "Hòa hợp với chủ ngữ số nhiều",
+      "title_vi": "Hòa hợp với chủ ngữ số nhiều",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 3 · Câu 106",
+          "options": {
+            "A": "was asking",
+            "B": "having asked",
+            "C": "ask",
+            "D": "asks"
+          },
+          "question": "We ------- that you bring a portfolio of work samples to the interview.",
+          "translation": "Chúng tôi đề nghị bạn mang theo một bộ hồ sơ gồm các mẫu công việc đến buổi phỏng vấn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “ask”. Chỗ trống đứng ngay sau chủ ngữ “We” và trước mệnh đề “that you bring…”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that you bring a portfolio of work samples to the interview.",
+                    "label": "mệnh đề that (tân ngữ)"
+                  }
+                ],
+                "caption": "Câu chưa có động từ chính; “you bring” là chủ ngữ và động từ của mệnh đề that, không phải của “We”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“We” là chủ ngữ số ít hay số nhiều.",
+                  "Chủ ngữ số nhiều đi với dạng nào của động từ ở hiện tại.",
+                  "Dạng nào không làm được động từ chính."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Chủ ngữ số nhiều đi với động từ số nhiều. Ở hiện tại, động từ số nhiều là **V nguyên mẫu** (không thêm -s/es); be là **are**, have là **have**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Động từ thường",
+                    "formula": "S số nhiều + V nguyên mẫu"
+                  },
+                  {
+                    "label": "be, have",
+                    "formula": "S số nhiều + are / have + …"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "woman, child, person",
+                    "women, children, people"
+                  ],
+                  [
+                    "shelf",
+                    "shelves (f đổi thành v + -es)"
+                  ],
+                  [
+                    "criterion, analysis",
+                    "criteria, analyses"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Số ít",
+                  "Số nhiều bất quy tắc"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "N số nhiều + V nguyên mẫu",
+                    "*Our clients expect fast replies from us.* — Khách hàng của chúng tôi mong được trả lời nhanh."
+                  ],
+                  [
+                    "A and B + V số nhiều",
+                    "*The manager and her assistant share an office.* — Quản lý và trợ lý của bà dùng chung một văn phòng."
+                  ],
+                  [
+                    "N số nhiều + cụm xen giữa + V số nhiều",
+                    "*The files from the head office are ready now.* — Các tệp từ trụ sở chính giờ đã sẵn sàng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Đuôi -s/-es ở **danh từ** báo số nhiều (copiers, analyses), trừ vài từ như news vẫn là số ít; đuôi -s/-es ở **động từ** lại báo số ít (offers, reaches). Chủ ngữ số nhiều thì động từ không thêm -s/es.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Hợp với chủ ngữ số nhiều.",
+                    "form": "V nguyên mẫu, are, have sau chủ ngữ số nhiều",
+                    "example": "*The new copiers offer …*; *The children are …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Là dạng số ít, không hợp chủ ngữ số nhiều.",
+                    "form": "V-s/es, is, was, has been, is using (submits, is, was, has been, is using)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chia theo chủ ngữ nên không làm được động từ chính.",
+                    "form": "V-ing, to V, be, being (submitting, to submit, be, being)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "N + -s/-es + ___",
+                    "example": "*Our delivery drivers ___*; *The updated guidelines ___*"
+                  },
+                  {
+                    "signal": "N số nhiều bất quy tắc + ___",
+                    "example": "*The children ___*; *The criteria for choosing a vendor ___*; *more people ___*"
+                  },
+                  {
+                    "signal": "A and B + ___",
+                    "example": "*Ms. Alvarez and her assistant ___*; *The interns and the part-time clerks ___*"
+                  },
+                  {
+                    "signal": "many / several / all + N số nhiều",
+                    "example": "*Many students ___*; *All staff members ___*"
+                  },
+                  {
+                    "signal": "we / they + ___",
+                    "example": "*We ___ that you bring a portfolio*"
+                  },
+                  {
+                    "signal": "N số nhiều + cụm xen giữa + ___",
+                    "example": "*Several women from the Lisbon branch ___*; *The lights in the cinema ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, có dạng chia thì (V-s, V nguyên mẫu, is/are) thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ: danh từ -s/-es, danh từ số nhiều bất quy tắc, A and B, many/several/all + N, we/they; bỏ qua cụm xen giữa.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ số nhiều thì chọn V nguyên mẫu, are, have. Loại V-s/es, is, was và loại V-ing, to V.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ số nhiều"
+                  },
+                  {
+                    "role": "V",
+                    "text": "ask",
+                    "label": "động từ số nhiều"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that you bring a portfolio of work samples to the interview.",
+                    "label": "mệnh đề that (tân ngữ)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “ask” là V nguyên mẫu, hợp với chủ ngữ số nhiều “We”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “ask”, có dạng chia thì (was asking, ask, asks), nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính; dấu hiệu “we / they + ___”: chủ ngữ “We” số nhiều; sau chỗ trống là mệnh đề “that you bring…”.",
+                  "Bước 3: S số nhiều + V nguyên mẫu ở hiện tại đơn, vì vậy chọn “ask” (đề nghị).",
+                  "“was asking” (A) là quá khứ tiếp diễn với “was” số ít, không đi với chủ ngữ “We”, nên loại.",
+                  "“having asked” (B) là dạng không chia thì, không làm được động từ chính của “We”, nên loại.",
+                  "“asks” (D) là V-s số ít, không hợp chủ ngữ số nhiều “We”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“A and B” đi với động từ số nhiều khi A và B là hai người hoặc hai vật khác nhau."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ số nhiều: V nguyên mẫu, are, have; động từ không thêm -s/es.",
+                  "Nhớ các danh từ số nhiều không có -s: people, children, women, criteria.",
+                  "A and B là chủ ngữ số nhiều."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

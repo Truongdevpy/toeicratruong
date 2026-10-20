@@ -1,0 +1,363 @@
+{
+  "subtopic": {
+    "id": "d864d62c-1d0a-421e-8ff8-153261647ce1",
+    "topic_id": "c051a2ff-9bf0-44af-a173-d89691d28027",
+    "title_en": "Từ hạn định với danh từ không đếm được",
+    "title_vi": "Từ hạn định với danh từ không đếm được",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 58,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-mao-tu-va-tu-han-dinh-tu-han-dinh-voi-danh-tu-khong-dem-duoc"
+  },
+  "lessons": [
+    {
+      "id": "d045824c-1d54-4b83-a084-96b1d867c632",
+      "subtopic_id": "d864d62c-1d0a-421e-8ff8-153261647ce1",
+      "title_en": "Từ hạn định với danh từ không đếm được",
+      "title_vi": "Từ hạn định với danh từ không đếm được",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2020 · Câu 109",
+          "options": {
+            "A": "any",
+            "B": "many",
+            "C": "few",
+            "D": "several"
+          },
+          "question": "Use coupon code SAVE20 to purchase ------- perfume or cologne for 20 percent off.",
+          "translation": "Hãy dùng mã giảm giá SAVE20 để mua bất kỳ loại nước hoa nữ hay nước hoa nam nào với mức giảm 20 phần trăm."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn từ chỉ số lượng đứng trước danh từ. Chỗ trống đứng sau “to purchase”, ngay trước cụm “perfume or cologne”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Use",
+                    "label": "động từ (câu mệnh lệnh)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "coupon code SAVE20",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to purchase",
+                    "label": ""
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "perfume or cologne",
+                    "label": "danh từ (tân ngữ của purchase)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for 20 percent off.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "“to purchase” nói mục đích của việc dùng mã; chỗ trống đứng trước danh từ làm tân ngữ của “purchase”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Nhận ra danh từ không đếm được: không có dạng số nhiều, không đi với a/an.",
+                  "Từ chỉ số lượng nào đi với danh từ không đếm được, từ nào chỉ đi với danh từ đếm được số nhiều."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Danh từ không đếm được (information, advice, equipment, money…) không có dạng số nhiều -s, không đi với a/an và đi với động từ số ít. Trước chúng dùng từ chỉ lượng dành cho danh từ không đếm được, hoặc từ đi được với mọi loại danh từ như any.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "nhiều",
+                    "formula": "much / a great deal of / a good deal of / a large amount of + N không đếm được"
+                  },
+                  {
+                    "label": "ít",
+                    "formula": "a little / little / a small amount of + N không đếm được"
+                  },
+                  {
+                    "label": "so sánh",
+                    "formula": "less + N không đếm được + than"
+                  },
+                  {
+                    "label": "so sánh nhất",
+                    "formula": "the least + N không đếm được"
+                  },
+                  {
+                    "label": "lượng",
+                    "formula": "the amount of + N không đếm được"
+                  },
+                  {
+                    "label": "bất kỳ",
+                    "formula": "any + N không đếm được"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "much",
+                    "nhiều",
+                    "*We do not have much time before the meeting.* — Chúng ta không còn nhiều thời gian trước cuộc họp."
+                  ],
+                  [
+                    "a great deal of, a large amount of",
+                    "rất nhiều, một lượng lớn",
+                    "*The project required a great deal of planning.* — Dự án cần rất nhiều khâu lên kế hoạch."
+                  ],
+                  [
+                    "a little / little",
+                    "một chút / rất ít (gần như không)",
+                    "*The new system needs little maintenance.* — Hệ thống mới cần rất ít bảo trì."
+                  ],
+                  [
+                    "less … than, the least",
+                    "ít … hơn, ít … nhất",
+                    "*This printer uses less paper than the old one.* — Máy in này tốn ít giấy hơn máy cũ."
+                  ],
+                  [
+                    "any",
+                    "bất kỳ",
+                    "*Please report any damage to the front desk.* — Vui lòng báo mọi hư hại cho quầy lễ tân."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ không đếm được trong bài tập: information, advice, help, feedback, research, training, progress, attention, maintenance, furniture, equipment, luggage, paperwork, money, funding, damage, traffic.",
+                  "too, so, very đứng trước much, little không đổi loại danh từ đi sau: too much luggage, so much traffic that…, very little damage.",
+                  "Có “than” sau danh từ thì trước danh từ cần dạng so sánh hơn (less); nói ít nhất trong một nhóm, như “Among the tablets we tested”, thì dùng so sánh nhất (the least)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Dành cho danh từ không đếm được.",
+                    "form": "much, a little, little, a great deal of, a large amount of, less, the least + danh từ không đếm được",
+                    "example": "*a great deal of research*; *less furniture than …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chỉ đi với danh từ đếm được số nhiều.",
+                    "form": "many, few, a few, several, numerous, various (kể cả too many, so many, so few, very few)",
+                    "example": "*many visitors*, không nói *many information*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ đi với danh từ đếm được số nhiều; danh từ không đếm được dùng an amount of.",
+                    "form": "a number of, a large number of, a small number of",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "So sánh cho danh từ đếm được số nhiều; danh từ không đếm được dùng less, the least.",
+                    "form": "fewer, the fewest",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "the number of đi với danh từ số nhiều; danh từ không đếm được dùng the amount of. few, many không làm danh từ chính giữa “the” và “of”.",
+                    "form": "the number of + danh từ không đếm được",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + danh từ không đếm được",
+                    "example": "*___ perfume or cologne*; *___ extra information*; *___ advice*; *___ equipment*"
+                  },
+                  {
+                    "signal": "động từ chính số ít",
+                    "example": "*there is not ___ funding*; *___ progress was made*"
+                  },
+                  {
+                    "signal": "___ + danh từ + than",
+                    "example": "*___ furniture than it currently has*; *___ training than they did*"
+                  },
+                  {
+                    "signal": "among + nhóm (so sánh nhất)",
+                    "example": "*Among the tablets we tested, … required ___ maintenance*"
+                  },
+                  {
+                    "signal": "the ___ of + danh từ",
+                    "example": "*reduce the ___ of paperwork*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các từ chỉ số lượng (much, many, a little, a few, a number of…) thì đây là câu từ hạn định.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem danh từ sau chỗ trống có đếm được không (có -s không, động từ số ít không); xem câu có “than”, “among”, hay “the ___ of” không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn từ chỉ lượng dành cho danh từ không đếm được, đúng dạng so sánh nếu có “than” hoặc “among”; loại các từ chỉ đi với danh từ đếm được số nhiều.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Use",
+                    "label": "động từ (câu mệnh lệnh)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "coupon code SAVE20",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to purchase",
+                    "label": ""
+                  },
+                  {
+                    "role": "DET",
+                    "text": "any",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "N",
+                    "text": "perfume or cologne",
+                    "label": "danh từ không đếm được"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for 20 percent off.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “any” đứng trước danh từ không đếm được “perfume or cologne”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án đều là từ chỉ số lượng đứng trước danh từ nên đây là câu từ hạn định.",
+                  "Bước 2: Chỗ trống đứng sau “to purchase”, trước “perfume or cologne”; dấu hiệu “___ + danh từ không đếm được”: “perfume”, “cologne” không có -s, không có a/an.",
+                  "Bước 3: Cần any + danh từ không đếm được, vì vậy chọn “any” (bất kỳ loại … nào).",
+                  "“many” (B) chỉ đi với danh từ đếm được số nhiều, không hợp với “perfume or cologne”, nên loại.",
+                  "“few” (C) chỉ đi với danh từ đếm được số nhiều, không hợp với “perfume or cologne”, nên loại.",
+                  "“several” (D) chỉ đi với danh từ đếm được số nhiều, không hợp với “perfume or cologne”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "much đứng một mình dùng chủ yếu trong câu phủ định và câu hỏi (not much, did not … much). Trong câu khẳng định, much đứng một mình mang sắc thái trang trọng; cách tự nhiên là a great deal of, a large amount of, hoặc too much, so much.",
+                  "Một số danh từ vừa đếm được vừa không đếm được tùy nghĩa: perfume (nước hoa nói chung) / perfumes (các loại nước hoa)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Danh từ không đếm được: không -s, không a/an, đi với động từ số ít.",
+                  "Đi với nó: much, a little, little, a great deal of, an amount of, less, the least.",
+                  "many, few, a few, several, a number of, fewer chỉ đi với danh từ đếm được số nhiều."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,455 @@
+{
+  "subtopic": {
+    "id": "37be097e-17b2-4c6f-af7f-4a8fa6b14eff",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ chỉ lượng",
+    "title_vi": "Đại từ chỉ lượng",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 103,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-chi-luong"
+  },
+  "lessons": [
+    {
+      "id": "a395d648-189f-435a-b5be-e158988e8679",
+      "subtopic_id": "37be097e-17b2-4c6f-af7f-4a8fa6b14eff",
+      "title_en": "Đại từ chỉ lượng",
+      "title_vi": "Đại từ chỉ lượng",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 1 · Câu 120",
+          "options": {
+            "A": "myself",
+            "B": "neither",
+            "C": "anybody",
+            "D": "whoever"
+          },
+          "question": "Mr. Ellis and Ms. Barnes were both highly qualified, but ------- got the job.",
+          "translation": "Ông Ellis và bà Barnes đều có trình độ rất cao, nhưng không ai trong hai người được nhận vào làm."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn loại đại từ khác nhau. Chỗ trống đứng sau “but”, ngay trước động từ “got”, làm chủ ngữ của vế sau.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Ellis and Ms. Barnes",
+                    "label": "chủ ngữ vế trước"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "both highly qualified,",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống (chủ ngữ vế sau)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "got",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the job.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Vế trước nói về hai người; vế sau bắt đầu bằng “but”, chỗ trống là chủ ngữ của “got”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "vế trước nói về mấy người",
+                  "“but” cho biết hai vế đối lập ra sao",
+                  "đại từ chỉ lượng nào dùng cho hai người, mang nghĩa gì"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đại từ chỉ lượng cho biết bao nhiêu, hoặc phần nào trong một nhóm. Nó đứng một mình thay cho danh từ đã nói, hoặc đứng trong cụm “___ of the/them + N số nhiều”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Động từ số ít",
+                    "formula": "each / one / either / neither + of the + N số nhiều + V số ít"
+                  },
+                  {
+                    "label": "Động từ số nhiều",
+                    "formula": "many / few / both / all + of the + N số nhiều + V số nhiều"
+                  },
+                  {
+                    "label": "every không đứng một mình",
+                    "formula": "every + N số ít"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "each",
+                    "mỗi (từng cái trong nhóm)",
+                    "động từ số ít"
+                  ],
+                  [
+                    "one",
+                    "một",
+                    "động từ số ít"
+                  ],
+                  [
+                    "many",
+                    "nhiều",
+                    "danh từ đếm được, động từ số nhiều"
+                  ],
+                  [
+                    "few",
+                    "rất ít, hầu như không",
+                    "danh từ đếm được, động từ số nhiều"
+                  ],
+                  [
+                    "all",
+                    "tất cả (nhóm từ ba trở lên)",
+                    "với danh từ đếm được số nhiều: động từ số nhiều"
+                  ],
+                  [
+                    "some",
+                    "một ít, một vài",
+                    "danh từ đếm được hoặc không đếm được (*there is some*)"
+                  ],
+                  [
+                    "none",
+                    "không cái nào (nhóm từ ba trở lên)",
+                    "danh từ đếm được hoặc không đếm được"
+                  ],
+                  [
+                    "much",
+                    "nhiều",
+                    "chỉ danh từ không đếm được"
+                  ],
+                  [
+                    "every",
+                    "mọi",
+                    "đứng trước danh từ số ít (trừ cụm chỉ chu kỳ như *every two weeks*); không đi thẳng với “of” (phải nói *every one of*), không đứng một mình"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ",
+                  "Nghĩa",
+                  "Đi với"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "both",
+                    "cả hai",
+                    "số nhiều"
+                  ],
+                  [
+                    "either",
+                    "một trong hai, cái nào cũng được",
+                    "số ít"
+                  ],
+                  [
+                    "neither",
+                    "không cái nào trong hai",
+                    "số ít"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nói về hai người, hai vật",
+                  "Nghĩa",
+                  "Động từ"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "another",
+                    "một cái khác nữa (số ít)",
+                    "chưa nói tổng số, thêm một cái bất kỳ"
+                  ],
+                  [
+                    "the other",
+                    "cái còn lại (số ít)",
+                    "đã biết tổng số, chỉ còn đúng một"
+                  ],
+                  [
+                    "others",
+                    "những cái khác (số nhiều)",
+                    "chưa xác định; cặp *some … others …*"
+                  ],
+                  [
+                    "the others",
+                    "những cái còn lại (số nhiều)",
+                    "đã biết tổng số, còn lại nhiều cái"
+                  ],
+                  [
+                    "other",
+                    "khác (tính từ)",
+                    "phải có danh từ theo sau: *other options*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng của “other”",
+                  "Nghĩa",
+                  "Dùng khi"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "each, one, either, neither đi với động từ số ít; many, few, both, all (với N số nhiều), others, the others đi với động từ số nhiều.",
+                    "form": "Sai số với động từ",
+                    "example": "*Each of the invoices has …*; *Many of the applicants have …*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "every và other phải có danh từ theo sau; “a number” phải có “of + N số nhiều” (a number of files).",
+                    "form": "every, other, a number đứng một mình hoặc đứng trước “of”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "much chỉ đi với danh từ không đếm được; many, few chỉ đi với danh từ đếm được số nhiều.",
+                    "form": "much với danh từ đếm được; many, few với danh từ không đếm được",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa “lẫn nhau”, chỉ làm tân ngữ; không làm chủ ngữ, không đứng trước “of”.",
+                    "form": "each other",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nhóm hai dùng both, either, neither; nhóm từ ba trở lên dùng all, none.",
+                    "form": "all, none cho hai người; either, neither cho nhóm ba trở lên",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói về toàn bộ phần còn lại của một tổng số đã biết thì dùng dạng có “the”: còn một cái dùng the other, còn nhiều cái dùng the others. Thêm một cái chưa xác định dùng another; những cái khác chưa xác định dùng others.",
+                    "form": "another, the other, others, the others dùng sai chỗ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "neither, none mang nghĩa phủ định; either, both mang nghĩa khẳng định. Chọn theo vế có but, although, so, since.",
+                    "form": "Đúng số nhưng trái nghĩa với vế kia",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ of the/them + N",
+                    "example": "*___ of the applicants*; *___ of the two candidates*; *___ of them arrived*"
+                  },
+                  {
+                    "signal": "động từ số ít / số nhiều",
+                    "example": "*___ of the invoices has been checked*; *___ of the applicants have been invited*"
+                  },
+                  {
+                    "signal": "___ đứng một mình",
+                    "example": "*only ___ mentioned experience*; *registered for ___ that starts at two*"
+                  },
+                  {
+                    "signal": "hai người, hai vật",
+                    "example": "*Mr. Ellis and Ms. Barnes*; *the two delivery routes*; *two new branches*"
+                  },
+                  {
+                    "signal": "nghĩa của vế kia",
+                    "example": "*but ___ got the job*; *so we will continue the search*; *Although the department ordered five laptops*"
+                  },
+                  {
+                    "signal": "tổng số đã biết + phần còn lại",
+                    "example": "*Of the three printers, two are … and ___*; *printed two copies …, sent one …*"
+                  },
+                  {
+                    "signal": "Some … ___",
+                    "example": "*Some of the guests arrived by taxi, while ___ took the free shuttle*"
+                  },
+                  {
+                    "signal": "danh từ không đếm được",
+                    "example": "*more packing tape, there is ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các từ chỉ lượng (each, many, both, neither, one, the other…) thì đây là câu từ hạn định; nếu trộn nhiều loại đại từ khác nhau thì là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống có “of the/them + N” hay không có gì; động từ số ít hay số nhiều; danh từ đếm được hay không; nhóm có mấy người, vật; vế kia đối lập hay nêu kết quả.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn từ hợp với số của động từ, loại danh từ, số lượng của nhóm và nghĩa của câu; loại từ không đứng một mình (every, other), dạng sai số và dạng trái nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Ellis and Ms. Barnes",
+                    "label": "hai người"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "both highly qualified,",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ đối lập"
+                  },
+                  {
+                    "role": "S",
+                    "text": "neither",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "got",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the job.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “neither” chỉ “không ai trong hai người” Mr. Ellis và Ms. Barnes."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn đại từ khác loại (phản thân, chỉ lượng, bất định, whoever) nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống làm chủ ngữ của “got” sau “but”; dấu hiệu “hai người, hai vật”: “Mr. Ellis and Ms. Barnes”, và “nghĩa của vế kia”: “but”.",
+                  "Bước 3: Hai người, “but” đối lập với “both highly qualified”, cần nghĩa “không ai trong hai”, vì vậy chọn “neither” (không ai trong hai người).",
+                  "“myself” (A) là đại từ phản thân, không làm chủ ngữ của “got”, nên loại.",
+                  "“anybody” (C) trong câu khẳng định nghĩa “bất kỳ ai”, không hợp với hai người đã nêu, nên loại.",
+                  "“whoever” (D) mở đầu một mệnh đề cần thêm động từ chính; “but whoever got the job” chưa thành câu, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Trong văn nói, “neither of + N số nhiều” có khi đi với động từ số nhiều; trong văn viết trang trọng dùng động từ số ít: *Neither of the rooms is available.* — Không phòng nào trong hai phòng còn trống.",
+                  "“few” nghĩa “rất ít, hầu như không”; “a few” nghĩa “một vài”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "each, one, either, neither đi với động từ số ít; many, few, both đi với động từ số nhiều.",
+                  "Hai người, hai vật: both, either, neither; phần còn lại của tổng số đã biết: the other, the others.",
+                  "every và other không đứng một mình, phải có danh từ theo sau."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

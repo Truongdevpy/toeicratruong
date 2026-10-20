@@ -1,0 +1,411 @@
+{
+  "subtopic": {
+    "id": "f97e9d47-6b70-454d-81b6-b2685d3eafb8",
+    "topic_id": "3f4f9136-0712-4df6-9b73-502345922b4c",
+    "title_en": "So sánh bất quy tắc",
+    "title_vi": "So sánh bất quy tắc",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 75,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-so-sanh-bat-quy-tac"
+  },
+  "lessons": [
+    {
+      "id": "8729986f-6d55-476b-a808-32d29f8ff396",
+      "subtopic_id": "f97e9d47-6b70-454d-81b6-b2685d3eafb8",
+      "title_en": "So sánh bất quy tắc",
+      "title_vi": "So sánh bất quy tắc",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "better",
+            "B": "good",
+            "C": "well",
+            "D": "best"
+          },
+          "question": "Mr. Gomez is one of the ------- sales representatives in the entire company.",
+          "translation": "Ông Gomez là một trong những đại diện bán hàng xuất sắc nhất trong toàn công ty."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm tính từ “good”, trạng từ “well” và hai dạng so sánh “better”, “best”. Chỗ trống đứng sau “one of the”, trước danh từ “sales representatives”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Gomez",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "one of the",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "sales representatives",
+                    "label": "danh từ số nhiều"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the entire company.",
+                    "label": "phạm vi so sánh"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong cụm danh từ sau “one of the”, trước danh từ số nhiều “sales representatives”; “in the entire company” nêu phạm vi so sánh."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "dạng so sánh hơn và so sánh nhất của “good”, “well”;",
+                  "“one of the + ___ + danh từ số nhiều” cần dạng nào;",
+                  "tính từ hay trạng từ đứng trước danh từ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Phần lớn tính từ, trạng từ so sánh bằng cách thêm -er/-est hoặc đặt more/most phía trước (more likely). Một số từ đổi hẳn dạng, gọi là **so sánh bất quy tắc**; không thêm -er/-est hay more/most vào các từ này.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "good (tốt, tính từ), well (tốt, giỏi, trạng từ)",
+                    "better",
+                    "best"
+                  ],
+                  [
+                    "bad (tệ, tính từ), badly (tệ, trạng từ)",
+                    "worse",
+                    "worst"
+                  ],
+                  [
+                    "many (+ N đếm được số nhiều), much (+ N không đếm được)",
+                    "more",
+                    "most"
+                  ],
+                  [
+                    "little (ít, + N không đếm được)",
+                    "less",
+                    "least"
+                  ],
+                  [
+                    "far (xa)",
+                    "farther / further",
+                    "farthest / furthest"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng nguyên",
+                  "So sánh hơn",
+                  "So sánh nhất"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "so sánh hơn (hai đối tượng)",
+                    "formula": "so sánh hơn + than + đối tượng"
+                  },
+                  {
+                    "label": "so sánh nhất (từ ba đối tượng)",
+                    "formula": "the + so sánh nhất + (N) + phạm vi (of all …, among …, in …)"
+                  },
+                  {
+                    "label": "một trong những … nhất",
+                    "formula": "one of the + so sánh nhất + N số nhiều"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "so sánh hơn + than",
+                    "*Our new printer works better than the old one.* — Máy in mới của chúng tôi chạy tốt hơn máy cũ."
+                  ],
+                  [
+                    "the + so sánh nhất + phạm vi",
+                    "*Of all our branches, Busan had the best results.* — Trong tất cả chi nhánh, Busan có kết quả tốt nhất."
+                  ],
+                  [
+                    "further: thêm, sâu hơn",
+                    "*Please call us for further details.* — Vui lòng gọi cho chúng tôi để biết thêm chi tiết."
+                  ],
+                  [
+                    "the least + S + can/could do: điều tối thiểu",
+                    "*The least we can do is send an apology.* — Điều tối thiểu chúng ta có thể làm là gửi lời xin lỗi."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chọn **tính từ** (good, bad) khi bổ nghĩa cho danh từ hoặc đứng sau be; chọn **trạng từ** (well, badly) khi bổ nghĩa cho động từ thường. Dạng so sánh của hai loại giống nhau: better/best, worse/worst.",
+                  "**many** + N đếm được số nhiều, **much** + N không đếm được (money, interest); **more, most** đi với cả hai loại danh từ.",
+                  "**less, least** đi với N không đếm được (less plastic); N đếm được số nhiều dùng **fewer**. Trước tính từ, less/least nghĩa “kém … hơn / kém … nhất”: *the least expensive* là rẻ nhất.",
+                  "**farther** và **further** đều chỉ khoảng cách; chỉ **further** mang nghĩa “thêm, sâu hơn” (further information, discuss further).",
+                  "Tính từ dài và một số tính từ hai âm tiết như likely dùng **more/most + tính từ**: *more likely than*."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Dạng bất quy tắc đúng, hợp với “than” hoặc với the + phạm vi so sánh.",
+                    "form": "better, worse, more, less (+ than); best, worst, most, least, furthest (the + … + phạm vi)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "good, well, bad, far, little đã có dạng bất quy tắc riêng; không thêm -er/-est hay more/most, không ghép more/most với better.",
+                    "form": "Dạng tự chế: more good, most good, gooder, goodest, more better, most better, more bad, most bad, baddest, more far, most little",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ nói kích cỡ nhỏ nhất, không nói lượng ít nhất (tiền, thời gian).",
+                    "form": "littlest",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không mang nghĩa hơn hay nhất nên không đi với “than” hay với phạm vi “Of all …”.",
+                    "form": "Dạng nguyên khi có so sánh: good, bad, far, little, many, much",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Có “Of all …”, “Among all …”, “Of the four …”, “one of the” thì cần so sánh nhất.",
+                    "form": "So sánh hơn khi có phạm vi từ ba đối tượng: better, worse, more, less, further",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“than” đi với so sánh hơn.",
+                    "form": "So sánh nhất khi có “than”: best, worst, most, least",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thành “the the best”, thừa một mạo từ.",
+                    "form": "“the best” khi trước chỗ trống đã có “the”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ nói khoảng cách, không mang nghĩa “thêm thông tin”, “bàn thêm”.",
+                    "form": "farther, far trong nghĩa “thêm”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ đứng trước danh từ, nghĩa “kém quan trọng hơn, nhỏ hơn” (*a lesser role*), không thay cho less/least.",
+                    "form": "lesser",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "many, fewer đi với N đếm được số nhiều (requests); much, less đi với N không đếm được (money, plastic, interest).",
+                    "form": "many, fewer với N không đếm được; much với N đếm được số nhiều",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trạng từ không bổ nghĩa cho danh từ, không làm bổ ngữ sau be; tính từ không bổ nghĩa cho động từ thường; much đứng trước so sánh hơn để nhấn mạnh (*much more likely*), không tự tạo so sánh.",
+                    "form": "well, badly khi cần tính từ; good khi cần trạng từ; much, many trước tính từ",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "than + đối tượng so sánh",
+                    "example": "*was ___ than the organizers had expected*; *uses ___ plastic than the previous one*"
+                  },
+                  {
+                    "signal": "the ___ + phạm vi so sánh",
+                    "example": "*Of all the departments, … the ___ requests*; *the ___ the company had seen in a decade*"
+                  },
+                  {
+                    "signal": "one of the ___ + N số nhiều",
+                    "example": "*one of the ___ sales representatives*"
+                  },
+                  {
+                    "signal": "the ___ + S + can/could do",
+                    "example": "*the ___ they could do was extend the deadline*"
+                  },
+                  {
+                    "signal": "nghĩa “thêm, sâu hơn”",
+                    "example": "*For ___ information*; *discuss the matter ___*"
+                  },
+                  {
+                    "signal": "___ + N không đếm được",
+                    "example": "*___ plastic*; *___ money*; *not ___ interest*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của good/well, bad, many/much, little, far (dạng nguyên, so sánh hơn, so sánh nhất, có thể kèm dạng tự chế) thì đây là câu so sánh.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm “than” hay phạm vi so sánh (of all, among, one of the, in a decade). Xem chỗ trống bổ nghĩa cho danh từ, đứng sau be hay bổ nghĩa cho động từ, và danh từ sau đó đếm được không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Có “than” thì chọn so sánh hơn; có the + phạm vi thì chọn so sánh nhất. Loại dạng tự chế, dạng nguyên, sai loại từ hoặc sai loại danh từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Gomez",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "one of the",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "best",
+                    "label": "so sánh nhất"
+                  },
+                  {
+                    "role": "N",
+                    "text": "sales representatives",
+                    "label": "danh từ số nhiều"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the entire company.",
+                    "label": "phạm vi so sánh"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “the best sales representatives” là cụm danh từ sau “one of”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là “good”, “well” và hai dạng so sánh “better”, “best” nên đây là câu so sánh.",
+                  "Bước 2: Chỗ trống đứng trước danh từ “sales representatives”; dấu hiệu “one of the ___ + N số nhiều”: “one of the ------- sales representatives in the entire company”.",
+                  "Bước 3: one of the + so sánh nhất + N số nhiều; so sánh nhất của “good” là “best”, vì vậy chọn “best” (xuất sắc nhất).",
+                  "“better” (A) là so sánh hơn, câu không có “than” mà có “one of the”, cần so sánh nhất, nên loại.",
+                  "“good” (B) là dạng nguyên, không mang nghĩa “nhất” mà “one of the … in the entire company” cần, nên loại.",
+                  "“well” (C) là trạng từ, không bổ nghĩa cho danh từ “sales representatives”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau “the” của so sánh nhất có thể không có danh từ, nhất là khi so sánh nhất là trạng từ: *Ms. Kim writes the best of all the interns.* — Chị Kim viết hay nhất trong các thực tập sinh.",
+                  "“little” nghĩa “nhỏ” (kích cỡ) thì so sánh là smaller, smallest; less, least chỉ dùng cho nghĩa “ít”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "good/well: better, best; bad: worse, worst; many/much: more, most; little: less, least.",
+                  "Có than thì dùng so sánh hơn; có the + phạm vi thì dùng so sánh nhất.",
+                  "Nghĩa “thêm” dùng further; less, much đi với danh từ không đếm được."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

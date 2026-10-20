@@ -1,0 +1,375 @@
+{
+  "subtopic": {
+    "id": "f732d26a-0b42-4638-a32d-3b9f77369ab4",
+    "topic_id": "e5d5fd26-6e78-4944-908a-e0681368c595",
+    "title_en": "Danh động từ bị động",
+    "title_vi": "Danh động từ bị động",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 34,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-danh-dong-tu-bi-dong"
+  },
+  "lessons": [
+    {
+      "id": "21494713-a395-4727-8b84-2ccf536a4786",
+      "subtopic_id": "f732d26a-0b42-4638-a32d-3b9f77369ab4",
+      "title_en": "Danh động từ bị động",
+      "title_vi": "Danh động từ bị động",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2021 · Câu 35",
+          "options": {
+            "A": "is lost",
+            "B": "lost",
+            "C": "being lost",
+            "D": "losing"
+          },
+          "question": "Please save spreadsheets periodically when updating them to prevent data from -------",
+          "translation": "Khi cập nhật bảng tính, vui lòng lưu lại định kỳ để dữ liệu không bị mất."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “lose”: is lost, lost, being lost, losing.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Please save",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "spreadsheets",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "periodically when updating them",
+                    "label": ""
+                  },
+                  {
+                    "role": "X",
+                    "text": "to prevent",
+                    "label": "to V chỉ mục đích"
+                  },
+                  {
+                    "role": "O",
+                    "text": "data",
+                    "label": "tân ngữ của prevent"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  }
+                ],
+                "caption": "Chỗ trống đứng ngay sau giới từ “from”, trong cụm “prevent data from”; sau chỗ trống không còn chữ nào."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau giới từ, động từ phải ở dạng nào",
+                  "làm sao biết “data” tự làm hay chịu hành động",
+                  "dạng bị động của V-ing viết thế nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Danh động từ (V-ing) là động từ dùng như danh từ, đứng sau giới từ và sau một số động từ như avoid, risk. Khi người hay vật được nói tới **chịu** hành động, danh động từ ở dạng bị động: **being + V3**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động",
+                    "formula": "giới từ / động từ đi với V-ing + V-ing + tân ngữ"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "giới từ / động từ đi với V-ing + being + V3 + (by + người làm)"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The password",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "keeps",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "client records",
+                    "label": "tân ngữ, chịu hành động"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "being viewed",
+                    "label": "tân ngữ của from: being + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by visitors.",
+                    "label": "by + người làm"
+                  }
+                ],
+                "caption": "V-ing không có chủ ngữ riêng. Người hay vật chịu hành động là chủ ngữ của câu, hoặc là tân ngữ đứng trước “from” trong prevent / keep + tân ngữ + from."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Hỏi: người hay vật được nói tới **tự làm** hay **chịu** hành động? Tự làm thì dùng V-ing; chịu thì dùng being + V3.",
+                  "Ngay sau chỗ trống có **by + người làm**: chịu hành động, dùng being + V3.",
+                  "Động từ cần tân ngữ (notify, inform, tell, replace, admit…) mà sau chỗ trống **không có tân ngữ**, chỉ có giới từ, thời gian hay một mệnh đề khác: chịu hành động, dùng being + V3."
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "sau giới từ: from, after, before, on, about, without, of, instead of",
+                    "*The files were checked again before being sent to the client.* — Các tệp được kiểm tra lại trước khi được gửi cho khách hàng."
+                  ],
+                  [
+                    "sau “to” của look forward to (“to” là giới từ)",
+                    "*We look forward to being contacted by your team.* — Chúng tôi mong được nhóm của quý vị liên hệ."
+                  ],
+                  [
+                    "sau động từ đi với V-ing: avoid, risk, appreciate, dislike, mention, report, remember (nhớ việc đã xảy ra)",
+                    "*Mr. Cole avoids being called during meetings.* — Ông Cole tránh bị gọi điện trong giờ họp."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Vị trí",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng được sau giới từ và sau động từ đi với V-ing; mang nghĩa bị động.",
+                    "form": "being + V3 (being opened, being notified)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Nghĩa là người hay vật đó tự làm hành động. Không hợp khi có by + người làm, hoặc khi động từ cần tân ngữ mà phía sau không có.",
+                    "form": "V-ing chủ động (opening, notifying, asking)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau giới từ và sau các động từ như avoid, risk, dislike, V3 không đứng một mình; phải có being đi trước.",
+                    "form": "V3 đứng một mình (opened, promoted, told)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cần chủ ngữ riêng. Không đặt sau giới từ, cũng không đặt ngay sau một động từ chính như risk, mentioned.",
+                    "form": "Động từ chia thì (is opened, was promoted, are admitted)",
+                    "example": "*after she was promoted*: có chủ ngữ “she” nên “after” là liên từ",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "giới từ + ___",
+                    "example": "*prevent data from ___*; *After ___ to branch manager*; *without ___*; *at risk of ___*; *instead of ___*"
+                  },
+                  {
+                    "signal": "look forward to + ___",
+                    "example": "*is looking forward to ___ for a second interview*"
+                  },
+                  {
+                    "signal": "động từ đi với V-ing + ___",
+                    "example": "*risk ___*; *avoid ___*; *appreciates ___*; *dislikes ___*; *mentioned ___*; *reported ___*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*___ by unauthorized staff*; *___ by the committee*; *___ by outsiders*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*from ___* (hết câu); *before ___ to the upper floors*; *insist on ___ of schedule changes*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ: V-ing, being + V3, V3 và một dạng chia thì, thì đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem trước chỗ trống là giới từ hay động từ đi với V-ing. Tìm người hay vật làm hoặc chịu hành động, rồi nhìn sau chỗ trống có by + người làm hay có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chịu hành động thì chọn being + V3, tự làm thì chọn V-ing. Loại V3 đứng một mình và dạng chia thì vì không đứng sau giới từ hay sau động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Please save",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "spreadsheets",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "periodically when updating them",
+                    "label": ""
+                  },
+                  {
+                    "role": "X",
+                    "text": "to prevent",
+                    "label": "to V chỉ mục đích"
+                  },
+                  {
+                    "role": "O",
+                    "text": "data",
+                    "label": "tân ngữ, chịu hành động"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "being lost",
+                    "label": "being + V3"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “being lost” là tân ngữ của giới từ “from”; “data” là thứ bị mất."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “lose”, chỉ một dạng chia thì (is lost), nên đây là câu dạng động từ.",
+                  "Bước 2: Chỗ trống đứng sau giới từ “from” trong “prevent data from”; dấu hiệu “giới từ + ___” và “___ + không có tân ngữ”: sau chỗ trống hết câu.",
+                  "Bước 3: Dữ liệu chịu hành động (bị mất) nên dùng giới từ + being + V3, vì vậy chọn “being lost” (bị mất).",
+                  "“is lost” (A) là bị động chia thì, cần chủ ngữ riêng, không đặt sau giới từ “from”, nên loại.",
+                  "“lost” (B) là V3 đứng một mình, sau giới từ “from” cần “being” trước V3, nên loại.",
+                  "“losing” (D) là V-ing chủ động, nghĩa dữ liệu tự làm mất thứ khác, mà sau chỗ trống không có tân ngữ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "After, before vừa là giới từ vừa là liên từ. Sau chúng có chủ ngữ + động từ chia thì thì đó là mệnh đề: *After she was promoted, she moved to Portland.* — Sau khi được thăng chức, cô ấy chuyển tới Portland. Không có chủ ngữ riêng thì dùng V-ing hoặc being + V3.",
+                  "“to” trong look forward to là giới từ, nên sau nó là V-ing hoặc being + V3, không phải V nguyên mẫu.",
+                  "remember + V-ing là nhớ việc đã xảy ra (*remembers being asked … last month*); remember + to V là nhớ phải làm (học ở bài “V-ing làm tân ngữ động từ”)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau giới từ hay động từ đi với V-ing, chịu hành động thì dùng being + V3.",
+                  "Có by + người làm, hoặc thiếu tân ngữ sau động từ cần tân ngữ: dùng bị động.",
+                  "V3 đứng một mình và động từ chia thì không đứng sau giới từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

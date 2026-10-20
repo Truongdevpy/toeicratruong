@@ -1,0 +1,360 @@
+{
+  "subtopic": {
+    "id": "49ce9053-0ec1-408c-b9d1-4244f8f1524c",
+    "topic_id": "6ec8bdde-0b2d-4c88-aafd-4710d123edba",
+    "title_en": "To V chỉ mục đích",
+    "title_vi": "To V chỉ mục đích",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 107,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-nguyen-mau-to-v-chi-muc-dich"
+  },
+  "lessons": [
+    {
+      "id": "c438bffd-14f5-48f3-b58c-bae9faba6405",
+      "subtopic_id": "49ce9053-0ec1-408c-b9d1-4244f8f1524c",
+      "title_en": "To V chỉ mục đích",
+      "title_vi": "To V chỉ mục đích",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 2 · Câu 114",
+          "options": {
+            "A": "to evaluate",
+            "B": "to be evaluated",
+            "C": "will be evaluated",
+            "D": "evaluate"
+          },
+          "question": "We hired Noah Wan of Shengyao Accounting Ltd. ------- our company's financial assets.",
+          "translation": "Chúng tôi đã thuê ông Noah Wan của công ty Shengyao Accounting Ltd. để đánh giá tài sản tài chính của công ty chúng tôi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “evaluate”: to V chủ động, to V bị động, một dạng chia thì và V nguyên mẫu. Câu đã có chủ ngữ “We”, động từ chính “hired” và tân ngữ “Noah Wan”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "hired",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Noah Wan",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of Shengyao Accounting Ltd.",
+                    "label": "cụm giới từ, bổ nghĩa cho Noah Wan"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "our company's financial assets.",
+                    "label": "tân ngữ của động từ ở chỗ trống"
+                  }
+                ],
+                "caption": "Phần “We hired Noah Wan of Shengyao Accounting Ltd.” đã đủ nghĩa; chỗ trống mở đầu phần nói thêm, phía sau có cụm danh từ “our company's financial assets”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Nói một hành động được làm “để làm gì” thì dùng dạng nào.",
+                  "Khi nào dùng to V chủ động, khi nào dùng to be + V3.",
+                  "Vì sao câu đã có động từ chính thì không thêm động từ chia thì hay V nguyên mẫu."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "To V đứng sau một câu đã đủ (S + V, có thể có tân ngữ) để nói hành động đó được làm “để làm gì”. Muốn nói rõ hơn thì dùng in order to V, hoặc so as to V (trang trọng hơn).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Mục đích sau câu đã đủ",
+                    "formula": "S + V (+ tân ngữ) + to V"
+                  },
+                  {
+                    "label": "Viết rõ hơn",
+                    "formula": "in order + to V"
+                  },
+                  {
+                    "label": "Trang trọng hơn",
+                    "formula": "so as + to V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "stayed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "late",
+                    "label": "trạng ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to finish",
+                    "label": "to V: để làm gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the monthly report.",
+                    "label": "tân ngữ của to finish"
+                  }
+                ],
+                "caption": "“Our team stayed late” đã đủ nghĩa; “to finish the monthly report” nói ở lại muộn để làm gì (để làm xong báo cáo tháng)."
+              },
+              {
+                "rows": [
+                  [
+                    "to V sau câu đã đủ",
+                    "*We called the supplier to confirm the delivery date.* — Chúng tôi gọi nhà cung cấp để xác nhận ngày giao hàng."
+                  ],
+                  [
+                    "in order to V, ở đầu hoặc cuối câu",
+                    "*In order to save time, we booked the tickets online.* — Để tiết kiệm thời gian, chúng tôi đặt vé trực tuyến."
+                  ],
+                  [
+                    "so as to V, trang trọng hơn",
+                    "*So as to reduce waste, the office prints on both sides.* — Để giảm lãng phí, văn phòng in hai mặt giấy."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Người được nhắc đến tự làm việc “để …” thì dùng to V chủ động, phía sau có tân ngữ nếu động từ cần tân ngữ. To be + V3 là bị động, chỉ dùng khi người hoặc vật chịu hành động.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nêu mục đích của hành động phía trước; sau in order và so as cũng dùng to V.",
+                    "form": "to V (to translate, to save, to evaluate)",
+                    "example": "*hired two translators to translate its training videos*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "for + V-ing nói công dụng của một đồ vật, không nói người làm việc gì để làm gì.",
+                    "form": "for + V-ing (for saving, for checking)",
+                    "example": "*a machine for sorting mail* — máy dùng để phân loại thư",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không mang nghĩa “để …”. Sau in order, so as cũng không dùng V-ing.",
+                    "form": "V-ing đứng một mình (saving, managing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính nên không thêm động từ chia thì; V3 mang nghĩa bị động, không đi với tân ngữ phía sau.",
+                    "form": "Quá khứ đơn hoặc V3 (translated, reduced, seen)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thiếu “to”. Sau in order, so as phải có to; sau câu đã đủ, V nguyên mẫu thành động từ chính thứ hai.",
+                    "form": "V nguyên mẫu (manage, avoid, evaluate)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "to be + V3 là bị động, không hợp khi người được nhắc đến tự làm và có tân ngữ phía sau; will be + V3 là động từ chia thì.",
+                    "form": "to be + V3, will be + V3 (câu mẫu)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "câu đã đủ + ___ (để làm gì)",
+                    "example": "*Brightline Media hired two translators ___*; *Ms. Fairbanks came in an hour early ___*"
+                  },
+                  {
+                    "signal": "in order + ___",
+                    "example": "*In order ___ the long lines at the entrance, …*"
+                  },
+                  {
+                    "signal": "so as + ___",
+                    "example": "*So as ___ extra shipping charges, …*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*___ our company's financial assets*; *___ energy costs*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (to V, V-ing, V3, V nguyên mẫu, for + V-ing), không có hoặc chỉ có một dạng chia thì, nên đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem phần trước chỗ trống đã đủ S + V (và tân ngữ nếu cần) chưa, chỗ trống có nói “để làm gì” không; xem ngay trước có “in order”, “so as” không, phía sau có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Nêu mục đích thì chọn to V, chủ động khi người được nhắc đến tự làm. Loại for + V-ing, V-ing, V nguyên mẫu, dạng chia thì và V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "hired",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Noah Wan of Shengyao Accounting Ltd.",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to evaluate",
+                    "label": "to V: để làm gì"
+                  },
+                  {
+                    "role": "O",
+                    "text": "our company's financial assets.",
+                    "label": "tân ngữ của to evaluate"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “to evaluate our company's financial assets” nói thuê ông Wan để làm gì."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “evaluate” (to V, to be + V3, will be + V3, V nguyên mẫu) nên đây là câu dạng động từ.",
+                  "Bước 2: Câu đã đủ S + V + tân ngữ “We hired Noah Wan”; dấu hiệu “câu đã đủ + ___ (để làm gì)”, phía sau có tân ngữ “our company's financial assets”.",
+                  "Bước 3: Thuê ông Wan để ông ấy đánh giá tài sản nên dùng to V chủ động chỉ mục đích, vì vậy chọn “to evaluate” (để đánh giá).",
+                  "“to be evaluated” (B) là to be + V3 bị động, nhưng ông Wan tự đánh giá và phía sau có tân ngữ, nên loại.",
+                  "“will be evaluated” (C) là động từ chia thì, câu đã có động từ chính “hired”, nên loại.",
+                  "“evaluate” (D) là V nguyên mẫu thiếu “to”, thành động từ chính thứ hai bên cạnh “hired”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "for + V-ing vẫn đúng khi nói công dụng của đồ vật: *This room is for storing old files.* — Phòng này dùng để chứa hồ sơ cũ. Nói mục đích việc người làm thì dùng to V."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Nói hành động được làm “để làm gì” thì dùng to V.",
+                  "Nói mục đích với in order, so as thì dùng in order to V, so as to V.",
+                  "for + V-ing nói công dụng đồ vật, không nói mục đích việc người làm."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

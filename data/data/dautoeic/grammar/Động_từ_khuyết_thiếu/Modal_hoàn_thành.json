@@ -1,0 +1,391 @@
+{
+  "subtopic": {
+    "id": "666e5e8a-3a6e-4a13-b5b5-57366dc6f149",
+    "topic_id": "c69b4579-547e-4bb4-948d-1d6135183745",
+    "title_en": "Modal hoàn thành",
+    "title_vi": "Modal hoàn thành",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 106,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-khuyet-thieu-modal-hoan-thanh"
+  },
+  "lessons": [
+    {
+      "id": "3e0e5d8f-b43b-4da5-b1c7-088cd279bbda",
+      "subtopic_id": "666e5e8a-3a6e-4a13-b5b5-57366dc6f149",
+      "title_en": "Modal hoàn thành",
+      "title_vi": "Modal hoàn thành",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2018 · Câu 6",
+          "options": {
+            "A": "can attend",
+            "B": "must have attended",
+            "C": "should attend",
+            "D": "would have attended"
+          },
+          "question": "Our department ------- the policy meeting last Monday, but we had a scheduling conflict.",
+          "translation": "Lẽ ra phòng chúng tôi đã tham dự cuộc họp về chính sách vào thứ Hai tuần trước, nhưng chúng tôi bị trùng lịch."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “attend”, dạng nào cũng có động từ khuyết thiếu: hai dạng modal + V nguyên mẫu, hai dạng modal + have + V3. Chỗ trống là động từ chính của vế đầu.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our department",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the policy meeting",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "last Monday,",
+                    "label": "mốc quá khứ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "we had a scheduling conflict.",
+                    "label": "vế sau but"
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau chủ ngữ “Our department”, trước tân ngữ “the policy meeting”; sau mốc thời gian là vế nối bằng “but”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“last Monday” chỉ lúc nào, và dạng modal nào nói được về việc đã qua.",
+                  "Nghĩa của từng dạng modal + have + V3.",
+                  "Vế “but we had a scheduling conflict” cho biết việc đã xảy ra hay chưa."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Modal hoàn thành là **modal + have + V3**, dùng để nói về việc **đã qua**: đoán xem việc đó đã xảy ra hay chưa, hoặc nói việc lẽ ra đã xảy ra mà không xảy ra. Modal + V nguyên mẫu (can buy, must spend, should book) không nói được các nghĩa này cho việc đã qua.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động",
+                    "formula": "S + modal + have + V3"
+                  },
+                  {
+                    "label": "Phủ định",
+                    "formula": "S + modal + not + have + V3"
+                  },
+                  {
+                    "label": "Bị động (chủ ngữ chịu hành động)",
+                    "formula": "S + modal + have been + V3"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "must have + V3",
+                    "chắc hẳn đã (đoán chắc chắn, có căn cứ)",
+                    "*The lights are off, so everyone must have gone home.* — Đèn đã tắt, chắc hẳn mọi người đã về nhà."
+                  ],
+                  [
+                    "might (not) have + V3",
+                    "có lẽ đã (không) (đoán không chắc)",
+                    "*Mr. Lee might have missed the meeting notice.* — Có lẽ ông Lee đã bỏ lỡ thông báo họp."
+                  ],
+                  [
+                    "could not have + V3",
+                    "không thể nào đã (chắc chắn việc không xảy ra)",
+                    "*Ms. Diaz could not have signed it; she was on leave.* — Cô Diaz không thể nào đã ký, vì khi đó cô đang nghỉ phép."
+                  ],
+                  [
+                    "could not have + V3 … without …",
+                    "đã không thể … nếu thiếu điều kiện đó",
+                    "*We could not have finished on time without your help.* — Chúng tôi đã không thể xong đúng hạn nếu không có bạn giúp."
+                  ],
+                  [
+                    "could have + V3",
+                    "đã có thể làm nhưng không làm",
+                    "*We could have saved money by booking earlier.* — Chúng tôi đã có thể tiết kiệm tiền nếu đặt sớm hơn."
+                  ],
+                  [
+                    "should have + V3",
+                    "lẽ ra nên làm, hoặc lẽ ra đã xảy ra theo dự kiến, nhưng không xảy ra",
+                    "*You should have told the manager about the delay.* — Lẽ ra bạn nên báo cho quản lý về sự chậm trễ."
+                  ],
+                  [
+                    "should not have + V3",
+                    "lẽ ra không nên làm, nhưng đã làm",
+                    "*We should not have ordered so many brochures.* — Lẽ ra chúng tôi không nên đặt nhiều tờ quảng cáo như vậy."
+                  ],
+                  [
+                    "would have + V3",
+                    "lẽ ra đã làm (nếu không có trở ngại), nhưng không làm",
+                    "*I would have called you, but my phone was dead.* — Lẽ ra tôi đã gọi cho bạn, nhưng điện thoại hết pin."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "must have + V3 và might have + V3 cho rằng việc đã (có thể) xảy ra, nên không hợp khi vế còn lại cho biết việc đã không xảy ra.",
+                  "Theo nghĩa “lẽ ra” và “đã có thể” trong bảng, should have, could have, would have + V3 cho biết việc **đã không xảy ra**; should not have + V3 cho biết việc **đã xảy ra** mà lẽ ra không nên."
+                ]
+              },
+              {
+                "en": "The contract must have been signed last week.",
+                "vi": "Chắc hẳn hợp đồng đã được ký vào tuần trước.",
+                "type": "example",
+                "highlight": [
+                  "must have been signed"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói về việc đã qua, hợp với mốc quá khứ như last Monday, yesterday.",
+                    "form": "modal + have + V3 (would have attended, must have spent, could not have seen)",
+                    "example": "*Someone must have adjusted the thermostat last weekend.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đúng cấu trúc nhưng nghĩa “chắc hẳn đã dự” trái với vế “but we had a scheduling conflict”.",
+                    "form": "modal + have + V3 khác nghĩa (must have attended)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói về hiện tại hoặc tương lai, không nói được việc đã qua.",
+                    "form": "can, must, should, might + V nguyên mẫu (can buy, must spend, should book, might take)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc tương lai, trái với mốc quá khứ.",
+                    "form": "will + V (will deliver, will accept)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc ở hiện tại, không hợp mốc quá khứ.",
+                    "form": "hiện tại đơn, hiện tại tiếp diễn (delivers, does not receive, is taking)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hiện tại hoàn thành không đi với mốc quá khứ xác định như yesterday, last week.",
+                    "form": "has/have + V3 (has spent, has not received, have bought)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phòng họp không tự dọn, lỗi chính tả không tự sửa; cần modal + have been + V3.",
+                    "form": "dạng chủ động khi chủ ngữ chịu hành động (must clean, corrects)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có trợ động từ và không chia thì nên không làm được động từ chính.",
+                    "form": "V-ing, not + V-ing, to V (delivering, not seeing, to book)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "mốc quá khứ",
+                    "example": "*last Monday*; *yesterday*; *late last night*; *after yesterday's workshop*"
+                  },
+                  {
+                    "signal": "but + việc thực tế trái lại",
+                    "example": "*but we had a scheduling conflict*; *but the client meeting ran late*"
+                  },
+                  {
+                    "signal": "since / because / as + căn cứ",
+                    "example": "*since every slide was carefully designed*; *because the office was freezing*"
+                  },
+                  {
+                    "signal": "without + điều kiện thiếu",
+                    "example": "*without the manager's approval*; *without help from the temporary staff*"
+                  },
+                  {
+                    "signal": "before + việc đã xảy ra",
+                    "example": "*before ticket prices doubled last month*"
+                  },
+                  {
+                    "signal": "chủ ngữ chịu hành động",
+                    "example": "*The conference room ___*; *The spelling error in the brochure ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có dạng modal + động từ (can attend, would have attended) thì đây là câu động từ khuyết thiếu.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem câu đã có động từ chính chưa, tìm mốc quá khứ, rồi đọc vế còn lại (but, since/because/as, without, before) để biết việc đã xảy ra hay không. Xem chủ ngữ tự làm hay chịu hành động.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Nói về việc đã qua thì chọn modal + have + V3 (bị động: modal + have been + V3) có nghĩa hợp với vế còn lại; loại modal + V nguyên mẫu, will + V, hiện tại đơn, hiện tại tiếp diễn, has/have + V3 và dạng không chia.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our department",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would have attended",
+                    "label": "động từ: would have + V3"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the policy meeting",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "last Monday,",
+                    "label": "mốc quá khứ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "we had a scheduling conflict.",
+                    "label": "việc thực tế trái lại"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “would have attended” là động từ chính, nói việc lẽ ra đã làm; vế sau “but” cho biết việc đó không xảy ra."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “attend”, đều có động từ khuyết thiếu, nên đây là câu động từ khuyết thiếu.",
+                  "Bước 2: Câu chưa có động từ chính, sau chỗ trống là tân ngữ “the policy meeting”; có “mốc quá khứ”: “last Monday” và “but + việc thực tế trái lại”: “but we had a scheduling conflict”.",
+                  "Bước 3: Phòng định dự nhưng bị trùng lịch, việc lẽ ra đã làm nên dùng would have + V3, vì vậy chọn “would have attended” (lẽ ra đã tham dự).",
+                  "“can attend” (A) là can + V nguyên mẫu, nói hiện tại hoặc tương lai, không hợp mốc quá khứ “last Monday”, nên loại.",
+                  "“must have attended” (B) đúng cấu trúc nhưng nghĩa “chắc hẳn đã dự” trái với “but we had a scheduling conflict”, nên loại.",
+                  "“should attend” (C) là should + V nguyên mẫu, nói hiện tại hoặc tương lai, không hợp mốc quá khứ “last Monday”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau modal, “have” luôn ở dạng nguyên mẫu, dù chủ ngữ số ít: *The shipment should have arrived last Monday.* — Lẽ ra lô hàng đã đến vào thứ Hai tuần trước. Không dùng “has” hay “had” sau modal."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Đoán hay nói “lẽ ra” về việc đã qua: modal + have + V3.",
+                  "Chủ ngữ chịu hành động: modal + have been + V3.",
+                  "Còn hai dạng modal + have + V3 thì chọn theo nghĩa của vế còn lại."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

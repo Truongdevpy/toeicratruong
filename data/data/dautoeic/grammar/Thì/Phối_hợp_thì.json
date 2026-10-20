@@ -1,0 +1,382 @@
+{
+  "subtopic": {
+    "id": "6ae58698-e896-4532-9ab6-b9ef02bac155",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Phối hợp thì",
+    "title_vi": "Phối hợp thì",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 84,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-phoi-hop-thi"
+  },
+  "lessons": [
+    {
+      "id": "e90d3c65-fccc-4dfd-925e-1edf5fc323f6",
+      "subtopic_id": "6ae58698-e896-4532-9ab6-b9ef02bac155",
+      "title_en": "Phối hợp thì",
+      "title_vi": "Phối hợp thì",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2020 · Câu 79",
+          "options": {
+            "A": "know",
+            "B": "knows",
+            "C": "knew",
+            "D": "known"
+          },
+          "question": "None of the employees ------- that Mr. Annan planned to retire at the end of the year.",
+          "translation": "Không nhân viên nào biết rằng ông Annan đã dự định nghỉ hưu vào cuối năm."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “know”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "None of the employees",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "Mr. Annan planned to retire at the end of the year.",
+                    "label": "mệnh đề sau that"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, sau chủ ngữ “None of the employees”, trước mệnh đề “that Mr. Annan planned to retire …”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "động từ trong mệnh đề sau “that” đang ở thì nào",
+                  "hai vế của câu phối hợp thì ra sao",
+                  "dạng nào làm được động từ chính"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Phối hợp thì là chọn thì cho một vế dựa vào vế còn lại, để cả câu nằm trong **cùng một khung thời gian**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.62,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.28,
+                    "label": "the client left (vế after)"
+                  },
+                  {
+                    "at": 0.4,
+                    "label": "we reviewed (vế chính)"
+                  }
+                ],
+                "caption": "“After the client left, we reviewed the notes”: hai việc cùng nằm trong khung quá khứ, trước “bây giờ”, nên cả hai vế chia quá khứ."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**Hai vế nối bằng after, when, while, every time**: vế kia ở quá khứ thì vế này ở quá khứ; vế kia là hiện tại đơn chỉ việc lặp lại thì vế này cũng hiện tại đơn.",
+                  "**Câu tường thuật** (said, told, promised, explained, assumed, knew… + that): động từ tường thuật ở **quá khứ** thì mệnh đề sau that **lùi thì** (trừ trường hợp ở Lưu ý); động từ tường thuật ở **hiện tại** (says, states) thì **không lùi thì**.",
+                  "**Mệnh đề sau that đã chia quá khứ** (planned) và câu không có chữ nào chỉ hiện tại: chọn động từ chính ở quá khứ để cả câu cùng khung. Dạng hiện tại vẫn đúng cấu trúc, chỉ lệch khung.",
+                  "**Mốc trong mệnh đề cũng quyết định thì**: since + mốc, over the past + khoảng thời gian cần thì hoàn thành.",
+                  "the previous…, the next…, the following… (the following day) là mốc nhìn từ quá khứ nên đi với dạng lùi thì.",
+                  "Mốc quá khứ xác định (last Friday) không đi với will + V hay has/have + V3."
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "việc xảy ra sau lúc nói",
+                    "formula": "S + V quá khứ + that + S + would + V nguyên mẫu"
+                  },
+                  {
+                    "label": "việc xảy ra trước lúc nói, hoặc kéo dài đến lúc đó",
+                    "formula": "S + V quá khứ + that + S + had + V3"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "will + V",
+                    "would + V",
+                    "*The manager said that the report would be ready on Friday.* — Quản lý nói rằng báo cáo sẽ xong vào thứ Sáu."
+                  ],
+                  [
+                    "has/have + V3, quá khứ đơn (quá khứ đơn cũng có thể giữ nguyên)",
+                    "had + V3",
+                    "*She said that she had worked there since 2019.* — Cô ấy nói rằng cô đã làm việc ở đó từ năm 2019."
+                  ],
+                  [
+                    "has been …, was …",
+                    "had been …",
+                    "*He explained that the order had been canceled.* — Anh ấy giải thích rằng đơn hàng đã bị hủy."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Lời gốc",
+                  "Sau động từ tường thuật ở quá khứ",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "after / when / while + quá khứ: vế chính quá khứ",
+                    "*After the client left, we reviewed the notes.* — Sau khi khách hàng ra về, chúng tôi đã xem lại ghi chép."
+                  ],
+                  [
+                    "every time + hiện tại đơn: vế chính hiện tại đơn",
+                    "*Every time the printer jams, Ms. Lee calls the IT team.* — Mỗi lần máy in kẹt giấy, cô Lee lại gọi bộ phận IT."
+                  ],
+                  [
+                    "says / states + that: không lùi thì",
+                    "*The memo states that sales have risen this year.* — Bản ghi nhớ cho biết doanh số đã tăng trong năm nay."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Hai vế",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Lệch khung khi vế kia ở quá khứ, hoặc chưa lùi thì khi mệnh đề sau động từ tường thuật ở quá khứ có mốc nhìn từ quá khứ hay mốc đã qua.",
+                    "form": "hiện tại đơn, hiện tại tiếp diễn, will + V",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính đến bây giờ: chưa lùi thì, và không đi với mốc quá khứ xác định.",
+                    "form": "has/have + V3",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Quá khứ đơn không đi với mốc tương lai hay khoảng tính đến nay; had + V3 cần một mốc quá khứ; cả hai lệch khung khi vế every time ở hiện tại đơn chỉ việc lặp lại.",
+                    "form": "quá khứ đơn, had + V3",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Dạng lùi của will, không cần khi động từ tường thuật ở hiện tại; không đi với since.",
+                    "form": "would + V",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cần một mốc tương lai.",
+                    "form": "will have + V3",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính.",
+                    "form": "V-ing đứng một mình",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ tường thuật ở quá khứ + that",
+                    "example": "*promised that*, *explained that*, *assumed that*, *warned us that*"
+                  },
+                  {
+                    "signal": "động từ tường thuật ở hiện tại + that",
+                    "example": "*says that*, *states that*"
+                  },
+                  {
+                    "signal": "that + mệnh đề quá khứ",
+                    "example": "*that Mr. Annan planned to retire*"
+                  },
+                  {
+                    "signal": "after / when / while + mệnh đề quá khứ",
+                    "example": "*After the auditors left*, *When the manager arrived*"
+                  },
+                  {
+                    "signal": "every time / every + thời gian",
+                    "example": "*Every time the alarm sounds*, *every budget cycle*"
+                  },
+                  {
+                    "signal": "since + mốc",
+                    "example": "*since 2018*, *since Monday morning*"
+                  },
+                  {
+                    "signal": "over the past + khoảng thời gian",
+                    "example": "*over the past three years*"
+                  },
+                  {
+                    "signal": "mốc nhìn từ quá khứ",
+                    "example": "*the previous evening*, *the previous week*, *the next morning*, *the following day*, *the following year*"
+                  },
+                  {
+                    "signal": "mốc quá khứ xác định",
+                    "example": "*two days before last Friday's deadline*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng chia thì của một động từ thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm vế còn lại: động từ trước “that” ở thì nào, hoặc vế after, when, while, every time ở thì nào; tìm mốc since, over the past, the previous…, the next…, the following…, last….",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "chọn thì cùng khung với vế kia; sau động từ tường thuật ở quá khứ, khi có mốc nhìn từ quá khứ hoặc mốc đã qua, dùng dạng lùi thì (would + V, had + V3). Loại đáp án lệch khung, chưa lùi thì hoặc không chia.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "None of the employees",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "knew",
+                    "label": "động từ: quá khứ đơn"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "Mr. Annan planned to retire at the end of the year.",
+                    "label": "mệnh đề quá khứ (planned)"
+                  }
+                ],
+                "caption": "Câu mẫu sau khi điền đáp án"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “know”, có ba dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “None of the employees”; có dấu hiệu “that + mệnh đề quá khứ”: “that Mr. Annan planned to retire”.",
+                  "Bước 3: Việc biết cùng khung quá khứ với “planned” nên dùng quá khứ đơn, vì vậy chọn “knew” (biết).",
+                  "“know” (A) là hiện tại đơn, đúng cấu trúc với “None of the employees” nhưng lệch khung quá khứ của “planned”, nên loại.",
+                  "“knows” (B) là hiện tại đơn, cũng đúng cấu trúc nhưng lệch khung quá khứ của “planned”, nên loại.",
+                  "“known” (D) là V3, đứng một mình không làm được động từ chính, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Khi điều được kể vẫn còn đúng, hoặc vẫn chưa xảy ra, ở lúc này thì có thể giữ nguyên thì: *He said the office opens at eight.* — Anh ấy nói văn phòng mở cửa lúc tám giờ. Vì vậy chỉ có động từ tường thuật ở quá khứ thì chưa đủ để loại dạng chưa lùi thì; cần thêm mốc nhìn từ quá khứ (the next morning, the following day) hoặc mốc đã qua (last Friday)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Vế after, when, while ở quá khứ thì vế chính ở quá khứ; every time + hiện tại đơn thì vế chính hiện tại đơn.",
+                  "Động từ tường thuật ở quá khứ: will thành would, has/have + V3 thành had + V3.",
+                  "Động từ tường thuật ở hiện tại (says, states): không lùi thì."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

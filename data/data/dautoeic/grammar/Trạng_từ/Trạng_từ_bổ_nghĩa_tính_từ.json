@@ -1,0 +1,337 @@
+{
+  "subtopic": {
+    "id": "f0ffd074-8a67-4d57-89f9-e6d0c92fc33e",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ bổ nghĩa tính từ",
+    "title_vi": "Trạng từ bổ nghĩa tính từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 17,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-bo-nghia-tinh-tu"
+  },
+  "lessons": [
+    {
+      "id": "b79a11ac-d9b8-42d9-b0b5-07fb8af67f21",
+      "subtopic_id": "f0ffd074-8a67-4d57-89f9-e6d0c92fc33e",
+      "title_en": "Trạng từ bổ nghĩa tính từ",
+      "title_vi": "Trạng từ bổ nghĩa tính từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2026 · Test 1 · Câu 112",
+          "options": {
+            "A": "finance",
+            "B": "financials",
+            "C": "financially",
+            "D": "financing"
+          },
+          "question": "According to CEO Mayu Yamada, it would not be ------- responsible to expand the warehouse at this time.",
+          "translation": "Theo Giám đốc điều hành Mayu Yamada, mở rộng nhà kho vào lúc này sẽ không phải là việc làm có trách nhiệm về mặt tài chính."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “finance”: danh từ hoặc động từ “finance”, danh từ số nhiều “financials”, trạng từ “financially” và V-ing “financing”. Chỗ trống đứng giữa “would not be” và tính từ “responsible”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "According to CEO Mayu Yamada,",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ giả"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would not be",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "responsible",
+                    "label": "tính từ (bổ ngữ)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to expand the warehouse at this time.",
+                    "label": "to V: chủ ngữ thật"
+                  }
+                ],
+                "caption": "Sau “would not be” là bổ ngữ “------- responsible”; chủ ngữ thật của câu là cụm “to expand the warehouse …”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào đứng ngay trước tính từ để bổ nghĩa cho nó.",
+                  "Nhận ra trạng từ qua đuôi.",
+                  "Vì sao danh từ, V-ing không đứng được giữa “be” và tính từ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trạng từ đứng ngay trước tính từ để nói tính chất đó ở mức nào (extremely, relatively, fairly) hoặc xét về mặt nào (financially). Tính từ đó có thể đứng sau be, sau động từ liên kết, trước danh từ, hoặc sau tân ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Sau be / động từ liên kết",
+                    "formula": "be / seem / appear / become + trạng từ + adj"
+                  },
+                  {
+                    "label": "Trước danh từ",
+                    "formula": "(từ hạn định) + trạng từ + adj + N"
+                  },
+                  {
+                    "label": "Sau tân ngữ",
+                    "formula": "keep / make / find + O + trạng từ + adj"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "be / seem / become + trạng từ + adj",
+                    "*The training session was highly useful for new staff.* — Buổi đào tạo rất hữu ích cho nhân viên mới."
+                  ],
+                  [
+                    "trạng từ + adj + N",
+                    "*Our team faced an unusually busy week.* — Nhóm chúng tôi đã trải qua một tuần bận rộn khác thường."
+                  ],
+                  [
+                    "keep / make / find + O + trạng từ + adj",
+                    "*The manager found the proposal highly convincing.* — Người quản lý thấy bản đề xuất rất thuyết phục."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra trạng từ qua đuôi**: trạng từ ở vị trí này trong bài tập đều là tính từ + -ly: completely, largely, extremely, relatively, closely, perfectly, fairly, excessively, increasingly.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng ngay trước tính từ, nói tính chất đó ở mức nào.",
+                    "form": "Trạng từ đuôi -ly (extremely, relatively, fairly)",
+                    "example": "*extremely important*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ không bổ nghĩa cho tính từ khác đứng sau nó (trừ vài cụm chỉ màu như *dark blue*): *extreme difficult* sai, phải là *extremely difficult*.",
+                    "form": "Tính từ (complete, extreme, perfect, fair, close, spotless)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ nên không bổ nghĩa cho tính từ đứng sau; câu không có “than” hay “the” để so sánh.",
+                    "form": "So sánh hơn, so sánh nhất (larger, largest, fairer)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đặt trước tính từ không tạo cụm đúng: *became increasing tense*, *is closed related* sai.",
+                    "form": "V-ing, V3 (completing, closing, closed, increasing, increased, perfected, related)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho tính từ: *relation strong competition* không có nghĩa.",
+                    "form": "Danh từ (completion, extremity, relation, perfection, fairness)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Động từ không bổ nghĩa cho tính từ; “extreme” không phải động từ nên “to extreme” không phải to V.",
+                    "form": "Động từ và “to extreme” (increase, spot)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "be + ___ + adj",
+                    "example": "*was ___ clear*; *is ___ related to the management*; *would not be ___ responsible*"
+                  },
+                  {
+                    "signal": "seem / appear / become + ___ + adj",
+                    "example": "*seems ___ reasonable*; *appear ___ consistent*; *became ___ tense*"
+                  },
+                  {
+                    "signal": "mạo từ + ___ + adj + danh từ",
+                    "example": "*a ___ short amount of time*; *an ___ important update*"
+                  },
+                  {
+                    "signal": "___ + adj + danh từ",
+                    "example": "*with ___ strong competition*; *shared ___ valuable insights*"
+                  },
+                  {
+                    "signal": "keep / make / find + O + ___ + adj",
+                    "example": "*keeps her workspace ___ clean*; *made the … process ___ simple*; *found the requirements … ___ strict*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay sau chỗ trống có phải tính từ không, rồi xem trước chỗ trống là be, động từ liên kết, mạo từ hay tân ngữ. Chỗ trống đứng ngay trước tính từ thì nó bổ nghĩa cho tính từ đó.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo công thức trạng từ + adj; loại tính từ, dạng so sánh, danh từ, động từ, V-ing, V3 vì không bổ nghĩa được cho tính từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "According to CEO Mayu Yamada,",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "it",
+                    "label": "chủ ngữ giả"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would not be",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "financially",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "responsible",
+                    "label": "tính từ (bổ ngữ)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to expand the warehouse at this time.",
+                    "label": "to V: chủ ngữ thật"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “financially” bổ nghĩa cho tính từ “responsible”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “finance” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa “would not be” và tính từ “responsible”; dấu hiệu “be + ___ + adj”: “be ------- responsible”.",
+                  "Bước 3: Cần trạng từ + adj; “financially” là trạng từ (đuôi -ly), vì vậy chọn “financially” (về mặt tài chính).",
+                  "“finance” (A) là danh từ hoặc động từ, không bổ nghĩa cho tính từ “responsible”, nên loại.",
+                  "“financials” (B) là danh từ số nhiều (báo cáo tài chính), không bổ nghĩa cho tính từ “responsible”, nên loại.",
+                  "“financing” (D) là V-ing hoặc danh từ (việc cấp vốn), “be financing responsible” không đúng cấu trúc, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau keep, make, find + tân ngữ là tính từ, không phải trạng từ: *keep the room clean*. Trạng từ chỉ đứng trước tính từ đó để bổ nghĩa cho nó: *keep the room spotlessly clean*.",
+                  "Trạng từ cũng đứng trước V3 dùng như tính từ: *The two projects are closely connected.* — Hai dự án có liên hệ chặt chẽ với nhau."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống ngay trước tính từ thì chọn trạng từ: trạng từ + adj.",
+                  "Tính từ không bổ nghĩa cho tính từ: extremely difficult, không nói extreme difficult."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

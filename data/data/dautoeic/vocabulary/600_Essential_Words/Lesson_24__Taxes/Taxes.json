@@ -1,0 +1,630 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "4ad83a27-75df-47d9-9d21-75f6ca9cf15e",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 24: Taxes",
+    "order_index": 24,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:02.673248+00:00",
+    "updated_at": "2026-09-18T08:52:02.673248+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+    "test_id": "4ad83a27-75df-47d9-9d21-75f6ca9cf15e",
+    "name": "Taxes",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:02.673248+00:00",
+    "updated_at": "2026-09-18T08:52:02.673248+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c6d9f4df-a5d4-4db8-a8ad-af365f34cb2c",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "penalty",
+      "ipa": "UK: /ˈpen.əl.ti/ | US: /ˈpen.əl.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Anyone who pays less than they should in taxes will face a penalty.",
+          "meaning": "hình phạt, khoản phạt, hậu quả phải chịu",
+          "antonyms": [
+            "reward (phần thưởng)"
+          ],
+          "toeic_tip": "Đếm được, đi với face, impose hoặc pay a penalty for something.",
+          "example_vi": "Ai đóng thiếu thuế đều sẽ bị phạt.",
+          "word_family": [
+            "penalize (v) phạt",
+            "penal (adj) thuộc về hình phạt"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T07:38:11.032446+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c6d9f4df-a5d4-4db8-a8ad-af365f34cb2c-wm.jpg?v=1789797590112",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/penalty-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/penalty-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "face a penalty",
+          "meaning": "chịu phạt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c6d9f4df-a5d4-4db8-a8ad-af365f34cb2c-0-wm.jpg?v=1789803489117"
+        },
+        {
+          "phrase": "impose a penalty",
+          "meaning": "áp dụng hình phạt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c6d9f4df-a5d4-4db8-a8ad-af365f34cb2c-1-wm.jpg?v=1789803490891"
+        },
+        {
+          "phrase": "late payment penalty",
+          "meaning": "phí phạt trả chậm"
+        }
+      ],
+      "synonyms": [
+        "fine (tiền phạt)",
+        "punishment (hình phạt)",
+        "sanction (chế tài)"
+      ]
+    },
+    {
+      "id": "50ec8a76-4cec-47f4-a98e-8c6146a75663",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "spouse",
+      "ipa": "UK: /spaʊz/ | US: /spaʊs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You can claim your spouse as a dependent on your tax return if he or she doesn't earn an income.",
+          "meaning": "vợ hoặc chồng, người phối ngẫu",
+          "toeic_tip": "Từ trung tính chỉ vợ hoặc chồng, hay gặp trong văn bản hành chính.",
+          "example_vi": "Bạn có thể khai vợ hoặc chồng là người phụ thuộc trên tờ khai thuế nếu người đó không có thu nhập.",
+          "word_family": [
+            "spousal (adj) thuộc về vợ chồng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:39:19.72193+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/50ec8a76-4cec-47f4-a98e-8c6146a75663-wm.jpg?v=1789797680504",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/spouse-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/spouse-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "claim a spouse as a dependent",
+          "meaning": "khai vợ chồng là người phụ thuộc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/50ec8a76-4cec-47f4-a98e-8c6146a75663-0-wm.jpg?v=1789799947549"
+        },
+        {
+          "phrase": "surviving spouse",
+          "meaning": "người phối ngẫu còn sống",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/50ec8a76-4cec-47f4-a98e-8c6146a75663-1-wm.jpg?v=1789799959577"
+        },
+        {
+          "phrase": "spouse's income",
+          "meaning": "thu nhập của vợ hoặc chồng"
+        }
+      ],
+      "synonyms": [
+        "husband or wife (vợ hoặc chồng)",
+        "partner (bạn đời)"
+      ]
+    },
+    {
+      "id": "2af48939-71d1-416f-8f7e-cce2aa07596f",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "owe",
+      "ipa": "UK: /əʊ/ | US: /oʊ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "People are often surprised to discover that they owe more money in income taxes at the end of the year.",
+          "meaning": "nợ, có nghĩa vụ phải trả",
+          "antonyms": [
+            "repay (hoàn trả)",
+            "settle (thanh toán hết)"
+          ],
+          "toeic_tip": "Hai cấu trúc: owe somebody something hoặc owe something to somebody.",
+          "example_vi": "Nhiều người bất ngờ khi cuối năm mới biết mình còn phải đóng thêm thuế thu nhập.",
+          "word_family": [
+            "owing (adj) còn nợ, chưa trả"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:22:38.31185+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2af48939-71d1-416f-8f7e-cce2aa07596f-wm.jpg?v=1789798550048",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/owe-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/owe-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "owe money to someone",
+          "meaning": "nợ tiền ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2af48939-71d1-416f-8f7e-cce2aa07596f-0-wm.jpg?v=1789798955138"
+        },
+        {
+          "phrase": "owe taxes",
+          "meaning": "nợ thuế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2af48939-71d1-416f-8f7e-cce2aa07596f-1-wm.jpg?v=1789798958167"
+        },
+        {
+          "phrase": "owe a large sum",
+          "meaning": "nợ một khoản lớn"
+        }
+      ],
+      "synonyms": [
+        "be in debt (mắc nợ)",
+        "be indebted to (còn nợ ai)"
+      ]
+    },
+    {
+      "id": "b9294d03-92a7-4445-bff8-23d4c460aa51",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "fill out",
+      "ipa": "/ˌfɪl ˈaʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I usually ask someone to help me fill out my tax form.",
+          "meaning": "điền vào, khai đầy đủ thông tin",
+          "toeic_tip": "Cụm động từ tách được: nói fill it out, không nói fill out it.",
+          "example_vi": "Tôi thường nhờ người khác giúp điền tờ khai thuế.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T07:32:24.604128+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b9294d03-92a7-4445-bff8-23d4c460aa51-wm.jpg?v=1789798516346",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fill-out-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fill-out-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "fill out a form",
+          "meaning": "điền vào mẫu đơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b9294d03-92a7-4445-bff8-23d4c460aa51-0-wm.jpg?v=1789803128864"
+        },
+        {
+          "phrase": "fill out an application",
+          "meaning": "điền đơn xin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b9294d03-92a7-4445-bff8-23d4c460aa51-1-wm.jpg?v=1789803144441"
+        },
+        {
+          "phrase": "fill it out completely",
+          "meaning": "điền cho đầy đủ"
+        }
+      ],
+      "synonyms": [
+        "complete (hoàn thành)",
+        "fill in (điền vào)"
+      ]
+    },
+    {
+      "id": "d81f7ac6-1ab6-44e1-881e-0b5fdc0daeb9",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "joint",
+      "ipa": "/dʒɔɪnt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We opened a joint bank account five years ago.",
+          "meaning": "chung, cùng đứng tên, hợp tác",
+          "antonyms": [
+            "individual (riêng lẻ)",
+            "separate (riêng biệt)"
+          ],
+          "toeic_tip": "joint venture và joint account là cụm cố định hay gặp ở Part 7.",
+          "example_vi": "Chúng tôi mở tài khoản ngân hàng chung từ năm năm trước.",
+          "word_family": [
+            "jointly (adv) chung, cùng nhau"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T07:47:39.450322+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d81f7ac6-1ab6-44e1-881e-0b5fdc0daeb9-wm.jpg?v=1789798380229",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/joint-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/joint-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "joint account",
+          "meaning": "tài khoản chung",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d81f7ac6-1ab6-44e1-881e-0b5fdc0daeb9-0-wm.jpg?v=1789804058405"
+        },
+        {
+          "phrase": "joint venture",
+          "meaning": "liên doanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d81f7ac6-1ab6-44e1-881e-0b5fdc0daeb9-1-wm.jpg?v=1789804059308"
+        },
+        {
+          "phrase": "joint tax return",
+          "meaning": "tờ khai thuế chung"
+        }
+      ],
+      "synonyms": [
+        "shared (chung)",
+        "mutual (của đôi bên)",
+        "combined (kết hợp)"
+      ]
+    },
+    {
+      "id": "b4f6f91c-dd46-443e-8e70-b4196b954ae1",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "deadline",
+      "ipa": "/ˈded.laɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The deadline for paying this year's taxes is just two weeks away.",
+          "meaning": "hạn chót, thời hạn cuối",
+          "toeic_tip": "Dùng meet hoặc miss a deadline; theo sau là deadline for + việc.",
+          "example_vi": "Chỉ còn hai tuần nữa là đến hạn chót nộp thuế năm nay.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T07:28:06.318398+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b4f6f91c-dd46-443e-8e70-b4196b954ae1-wm.jpg?v=1789798296282",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deadline-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deadline-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "meet a deadline",
+          "meaning": "kịp hạn chót",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b4f6f91c-dd46-443e-8e70-b4196b954ae1-0-wm.jpg?v=1789802883921"
+        },
+        {
+          "phrase": "miss the deadline",
+          "meaning": "trễ hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b4f6f91c-dd46-443e-8e70-b4196b954ae1-1-wm.jpg?v=1789802886181"
+        },
+        {
+          "phrase": "a tight deadline",
+          "meaning": "hạn rất gấp"
+        }
+      ],
+      "synonyms": [
+        "due date (ngày đến hạn)",
+        "time limit (giới hạn thời gian)",
+        "cutoff date (ngày chốt)"
+      ]
+    },
+    {
+      "id": "e707fadb-1cd1-4445-9fdc-2dba24e2d092",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "preparation",
+      "ipa": "UK: /ˌprep.ərˈeɪ.ʃən/ | US: /ˌprep.əˈreɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Income tax preparation can take a long time.",
+          "meaning": "sự chuẩn bị, việc làm cho sẵn sàng",
+          "toeic_tip": "Không đếm được khi chỉ quá trình; cụm make preparations thì số nhiều.",
+          "example_vi": "Việc chuẩn bị hồ sơ thuế thu nhập có thể mất rất nhiều thời gian.",
+          "word_family": [
+            "prepare (v) chuẩn bị",
+            "preparatory (adj) mang tính chuẩn bị"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T07:54:33.111507+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e707fadb-1cd1-4445-9fdc-2dba24e2d092-wm.jpg?v=1789798291116",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/preparation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/preparation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "tax preparation",
+          "meaning": "việc chuẩn bị hồ sơ thuế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e707fadb-1cd1-4445-9fdc-2dba24e2d092-0-wm.jpg?v=1789804472564"
+        },
+        {
+          "phrase": "in preparation for",
+          "meaning": "để chuẩn bị cho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e707fadb-1cd1-4445-9fdc-2dba24e2d092-1-wm.jpg?v=1789804472957"
+        },
+        {
+          "phrase": "make preparations",
+          "meaning": "tiến hành chuẩn bị"
+        }
+      ],
+      "synonyms": [
+        "readiness (sự sẵn sàng)",
+        "groundwork (công tác chuẩn bị)",
+        "arrangement (việc sắp xếp)"
+      ]
+    },
+    {
+      "id": "103cbce1-062c-42bb-9764-948454a37022",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "withhold",
+      "ipa": "UK: /wɪðˈhəʊld/ | US: /wɪðˈhoʊld/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My employer withholds money from each paycheck to apply toward my income taxes.",
+          "meaning": "giữ lại không đưa, khấu trừ tại nguồn, không cung cấp",
+          "antonyms": [
+            "release (đưa ra, giải ngân)",
+            "disclose (tiết lộ)"
+          ],
+          "toeic_tip": "Động từ bất quy tắc: withhold - withheld - withheld.",
+          "example_vi": "Công ty tôi trích một khoản từ mỗi kỳ lương để nộp thuế thu nhập cho tôi.",
+          "word_family": [
+            "withholding (n) khoản khấu trừ tại nguồn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:21:51.896155+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/103cbce1-062c-42bb-9764-948454a37022-wm.jpg?v=1789798533377",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/withhold-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/withhold-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "withhold taxes",
+          "meaning": "khấu trừ thuế tại nguồn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/103cbce1-062c-42bb-9764-948454a37022-0-wm.jpg?v=1789798911748"
+        },
+        {
+          "phrase": "withhold information",
+          "meaning": "giấu thông tin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/103cbce1-062c-42bb-9764-948454a37022-1-wm.jpg?v=1789798909890"
+        },
+        {
+          "phrase": "withhold payment",
+          "meaning": "giữ lại khoản thanh toán"
+        }
+      ],
+      "synonyms": [
+        "keep back (giữ lại)",
+        "hold back (không đưa ra)",
+        "retain (giữ lại)"
+      ]
+    },
+    {
+      "id": "7597b5fd-5be1-417f-b158-ae6a4da58aab",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "refund",
+      "ipa": "/ˈriː.fʌnd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "With the tax refund, we bought two plane tickets.",
+          "meaning": "khoản tiền được hoàn lại; hoàn tiền, trả lại tiền",
+          "antonyms": [
+            "charge (khoản thu, việc tính phí)"
+          ],
+          "toeic_tip": "Danh từ nhấn âm đầu REfund, động từ nhấn âm sau reFUND.",
+          "example_vi": "Nhờ tiền hoàn thuế, chúng tôi mua được hai vé máy bay.",
+          "word_family": [
+            "refundable (adj) có thể hoàn lại",
+            "nonrefundable (adj) không hoàn lại"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:57:44.516853+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7597b5fd-5be1-417f-b158-ae6a4da58aab-wm.jpg?v=1789798300314",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/refund-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/refund-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "tax refund",
+          "meaning": "tiền hoàn thuế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7597b5fd-5be1-417f-b158-ae6a4da58aab-0-wm.jpg?v=1789801062920"
+        },
+        {
+          "phrase": "get a refund",
+          "meaning": "được hoàn tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7597b5fd-5be1-417f-b158-ae6a4da58aab-1-wm.jpg?v=1789801064380"
+        },
+        {
+          "phrase": "a full refund",
+          "meaning": "hoàn tiền toàn bộ"
+        }
+      ],
+      "synonyms": [
+        "reimbursement (khoản bồi hoàn)",
+        "repayment (khoản trả lại)"
+      ]
+    },
+    {
+      "id": "353887c1-a951-4f27-b7b3-66be0ebfb19b",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "give up",
+      "ipa": "/ˌɡɪv ˈʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Bruce gave up trying to prepare his tax return himself and now hires an accountant to do it.",
+          "meaning": "từ bỏ, bỏ cuộc, thôi không làm nữa",
+          "antonyms": [
+            "persist (kiên trì)",
+            "continue (tiếp tục)"
+          ],
+          "toeic_tip": "Sau give up luôn dùng V-ing, không dùng to-infinitive.",
+          "example_vi": "Bruce đã bỏ ý định tự làm tờ khai thuế và giờ thuê kế toán làm giúp.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:23:56.576162+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/353887c1-a951-4f27-b7b3-66be0ebfb19b-wm.jpg?v=1789798595657",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/give-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/give-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "give up trying",
+          "meaning": "thôi không cố nữa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/353887c1-a951-4f27-b7b3-66be0ebfb19b-0-wm.jpg?v=1789799035631"
+        },
+        {
+          "phrase": "never give up",
+          "meaning": "không bao giờ bỏ cuộc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/353887c1-a951-4f27-b7b3-66be0ebfb19b-1-wm.jpg?v=1789799036419"
+        },
+        {
+          "phrase": "give up smoking",
+          "meaning": "bỏ thuốc lá"
+        }
+      ],
+      "synonyms": [
+        "quit (bỏ)",
+        "abandon (từ bỏ)",
+        "stop (ngừng)"
+      ]
+    },
+    {
+      "id": "11bbd1e3-bb10-481b-9714-c67bd685dd5f",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "file",
+      "ipa": "/faɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "If you file your taxes late, you will have to pay a fine.",
+          "meaning": "nộp, đệ trình để lưu hồ sơ",
+          "antonyms": [
+            "withdraw (rút đơn)"
+          ],
+          "toeic_tip": "Nghĩa file a complaint hay claim rất hay ra ở Part 7.",
+          "example_vi": "Nộp thuế trễ hạn thì bạn sẽ bị phạt tiền.",
+          "word_family": [
+            "filing (n) việc nộp hồ sơ",
+            "file (n) hồ sơ, tập tin"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:21:49.650001+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/11bbd1e3-bb10-481b-9714-c67bd685dd5f-wm.jpg?v=1789798529040",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/file-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/file-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "file taxes",
+          "meaning": "khai nộp thuế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/11bbd1e3-bb10-481b-9714-c67bd685dd5f-0-wm.jpg?v=1789798909509"
+        },
+        {
+          "phrase": "file a complaint",
+          "meaning": "nộp đơn khiếu nại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/11bbd1e3-bb10-481b-9714-c67bd685dd5f-1-wm.jpg?v=1789798906484"
+        },
+        {
+          "phrase": "file a report",
+          "meaning": "nộp báo cáo"
+        }
+      ],
+      "synonyms": [
+        "submit (nộp)",
+        "lodge (đệ trình)",
+        "register (đăng ký)"
+      ]
+    },
+    {
+      "id": "43ff79cf-e999-4aa0-a9b7-8e5dd824b6cc",
+      "part_id": "ee7f2bed-f493-49b1-9357-1e3e5c2d3dca",
+      "word": "calculation",
+      "ipa": "/ˌkæl.kjəˈleɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It took my accountant some time to complete the calculations on my income tax.",
+          "meaning": "phép tính, sự tính toán, ước tính",
+          "toeic_tip": "Đếm được, thường dùng số nhiều sau cụm according to my calculations.",
+          "example_vi": "Kế toán của tôi mất khá lâu mới tính xong thuế thu nhập cho tôi.",
+          "word_family": [
+            "calculate (v) tính toán",
+            "calculator (n) máy tính bỏ túi"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:02.673248+00:00",
+      "updated_at": "2026-09-19T06:32:51.093397+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/43ff79cf-e999-4aa0-a9b7-8e5dd824b6cc-wm.jpg?v=1789798319841",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/calculation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/calculation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a calculation",
+          "meaning": "thực hiện phép tính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/43ff79cf-e999-4aa0-a9b7-8e5dd824b6cc-0-wm.jpg?v=1789799554473"
+        },
+        {
+          "phrase": "rough calculation",
+          "meaning": "tính toán sơ bộ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/43ff79cf-e999-4aa0-a9b7-8e5dd824b6cc-1-wm.jpg?v=1789799570946"
+        },
+        {
+          "phrase": "according to my calculations",
+          "meaning": "theo tính toán của tôi"
+        }
+      ],
+      "synonyms": [
+        "computation (sự tính toán)",
+        "estimate (ước tính)",
+        "reckoning (sự tính)"
+      ]
+    }
+  ]
+}

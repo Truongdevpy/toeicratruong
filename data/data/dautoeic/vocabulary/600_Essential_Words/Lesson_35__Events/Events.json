@@ -1,0 +1,627 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "76b69ee7-68e9-49a8-bcea-2fa595eb5d99",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 35: Events",
+    "order_index": 35,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:58.014193+00:00",
+    "updated_at": "2026-09-18T08:52:58.014193+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+    "test_id": "76b69ee7-68e9-49a8-bcea-2fa595eb5d99",
+    "name": "Events",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:58.014193+00:00",
+    "updated_at": "2026-09-18T08:52:58.014193+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "d7c02cdd-3407-4f4c-b574-fe7f0dcf1a6d",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "assist",
+      "ipa": "/əˈsɪst/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Bonnie hired a secretary to assist her with the many details of the event.",
+          "meaning": "giúp đỡ, hỗ trợ",
+          "antonyms": [
+            "hinder (cản trở)",
+            "obstruct (gây trở ngại)"
+          ],
+          "toeic_tip": "assist sb with hoặc in + V-ing; assistance là sự giúp đỡ, assistant là người.",
+          "example_vi": "Bonnie thuê một thư ký để phụ lo cả đống chi tiết cho sự kiện.",
+          "word_family": [
+            "assistance (n) sự hỗ trợ",
+            "assistant (n) trợ lý"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T07:47:25.848581+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d7c02cdd-3407-4f4c-b574-fe7f0dcf1a6d-wm.jpg?v=1789798290531",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assist-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assist-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "assist someone with something",
+          "meaning": "giúp ai việc gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d7c02cdd-3407-4f4c-b574-fe7f0dcf1a6d-0-wm.jpg?v=1789804045386"
+        },
+        {
+          "phrase": "assist in doing",
+          "meaning": "hỗ trợ làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d7c02cdd-3407-4f4c-b574-fe7f0dcf1a6d-1-wm.jpg?v=1789804045704"
+        },
+        {
+          "phrase": "assist customers",
+          "meaning": "hỗ trợ khách hàng"
+        }
+      ],
+      "synonyms": [
+        "help (giúp)",
+        "aid (trợ giúp)"
+      ]
+    },
+    {
+      "id": "833704f2-e99d-4d52-b31e-d4dea5a3ac32",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "plan",
+      "ipa": "/plæn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We plan to get together tomorrow to discuss the menu.",
+          "meaning": "lên kế hoạch, dự định",
+          "antonyms": [
+            "improvise (làm ứng biến, không chuẩn bị)"
+          ],
+          "toeic_tip": "plan to + V nguyên mẫu, còn plan on thì đi với V-ing.",
+          "example_vi": "Mai chúng tôi định gặp nhau để bàn về thực đơn.",
+          "word_family": [
+            "planning (n) việc lập kế hoạch",
+            "planner (n) người lập kế hoạch"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T07:06:34.535229+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/833704f2-e99d-4d52-b31e-d4dea5a3ac32-wm.jpg?v=1789798356578",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/plan-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/plan-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "plan to do something",
+          "meaning": "dự định làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/833704f2-e99d-4d52-b31e-d4dea5a3ac32-0-wm.jpg?v=1789801576360"
+        },
+        {
+          "phrase": "plan an event",
+          "meaning": "lên kế hoạch cho sự kiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/833704f2-e99d-4d52-b31e-d4dea5a3ac32-1-wm.jpg?v=1789801594377"
+        },
+        {
+          "phrase": "plan ahead",
+          "meaning": "lên kế hoạch trước"
+        }
+      ],
+      "synonyms": [
+        "intend (dự định)",
+        "arrange (sắp xếp)"
+      ]
+    },
+    {
+      "id": "53be617e-c9df-474c-852f-abdc32827f0e",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "stage",
+      "ipa": "/steɪdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The gazebo outside was the perfect location from which to stage the cutting of the cake.",
+          "meaning": "tổ chức, dàn dựng, trình diễn",
+          "antonyms": [
+            "cancel (hủy bỏ)"
+          ],
+          "toeic_tip": "Ngoài nghĩa động từ tổ chức, stage còn là danh từ chỉ giai đoạn.",
+          "example_vi": "Chòi nghỉ ngoài sân là chỗ quá hợp để làm nghi thức cắt bánh.",
+          "word_family": [
+            "stage (n) sân khấu, giai đoạn",
+            "staging (n) việc dàn dựng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T06:39:19.10634+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/53be617e-c9df-474c-852f-abdc32827f0e-wm.jpg?v=1789798124920",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stage-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stage-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "stage an event",
+          "meaning": "tổ chức sự kiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/53be617e-c9df-474c-852f-abdc32827f0e-0-wm.jpg?v=1789799956406"
+        },
+        {
+          "phrase": "stage a performance",
+          "meaning": "dàn dựng buổi diễn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/53be617e-c9df-474c-852f-abdc32827f0e-1-wm.jpg?v=1789799958965"
+        },
+        {
+          "phrase": "stage a reception",
+          "meaning": "tổ chức tiệc chiêu đãi"
+        }
+      ],
+      "synonyms": [
+        "organize (tổ chức)",
+        "present (trình diễn, giới thiệu)"
+      ]
+    },
+    {
+      "id": "98b6d935-cb81-4170-b97d-9c981bcaf008",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "exact",
+      "ipa": "/ɪɡˈzækt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We will need an exact head count by noon tomorrow.",
+          "meaning": "chính xác, đúng y",
+          "antonyms": [
+            "approximate (xấp xỉ)",
+            "rough (áng chừng)"
+          ],
+          "toeic_tip": "Chỗ trống trước danh từ chọn exact, không chọn trạng từ exactly.",
+          "example_vi": "Trưa mai chúng tôi cần con số khách chính xác.",
+          "word_family": [
+            "exactly (adv) chính xác là",
+            "exactness (n) tính chính xác"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T07:14:57.254544+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/98b6d935-cb81-4170-b97d-9c981bcaf008-wm.jpg?v=1789798113989",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/exact-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/exact-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the exact amount",
+          "meaning": "đúng số tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/98b6d935-cb81-4170-b97d-9c981bcaf008-0-wm.jpg?v=1789802084743"
+        },
+        {
+          "phrase": "an exact figure",
+          "meaning": "con số chính xác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/98b6d935-cb81-4170-b97d-9c981bcaf008-1-wm.jpg?v=1789802097105"
+        },
+        {
+          "phrase": "to be exact",
+          "meaning": "nói cho chính xác"
+        }
+      ],
+      "synonyms": [
+        "precise (chính xác)",
+        "accurate (đúng, chuẩn xác)"
+      ]
+    },
+    {
+      "id": "602b99eb-7e09-4e02-b268-afaf69f2a049",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "dimension",
+      "ipa": "UK: /daɪˈmen.ʃən/ | US: /dɪˈmen.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "What are the dimensions of the ballroom?",
+          "meaning": "kích thước, chiều đo; khía cạnh",
+          "toeic_tip": "Khi nói kích thước thì luôn dùng số nhiều dimensions.",
+          "example_vi": "Phòng tiệc rộng dài bao nhiêu vậy?",
+          "word_family": [
+            "dimensional (adj) thuộc về kích thước, thuộc về chiều"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T06:46:22.617436+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/602b99eb-7e09-4e02-b268-afaf69f2a049-wm.jpg?v=1789798231785",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/dimension-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/dimension-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the dimensions of a room",
+          "meaning": "kích thước căn phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/602b99eb-7e09-4e02-b268-afaf69f2a049-0-wm.jpg?v=1789800382484"
+        },
+        {
+          "phrase": "measure the dimensions",
+          "meaning": "đo kích thước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/602b99eb-7e09-4e02-b268-afaf69f2a049-1-wm.jpg?v=1789800381253"
+        },
+        {
+          "phrase": "a new dimension",
+          "meaning": "một khía cạnh mới"
+        }
+      ],
+      "synonyms": [
+        "measurement (số đo)",
+        "size (kích cỡ)"
+      ]
+    },
+    {
+      "id": "c37a76fa-9f8a-4aff-9e26-9f7513fe02ed",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "regulate",
+      "ipa": "/ˈreɡ.jə.leɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The state strictly regulates the preparation of food for public consumption.",
+          "meaning": "kiểm soát, điều tiết, quản lý bằng quy định",
+          "antonyms": [
+            "deregulate (bãi bỏ quy định quản lý)"
+          ],
+          "toeic_tip": "Danh từ regulation (quy định) khác regularity (tính đều đặn).",
+          "example_vi": "Nhà nước quản lý rất chặt việc chế biến thực phẩm bán ra cho công chúng.",
+          "word_family": [
+            "regulation (n) quy định",
+            "regulatory (adj) thuộc về quản lý, điều tiết"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T07:36:08.512842+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c37a76fa-9f8a-4aff-9e26-9f7513fe02ed-wm.jpg?v=1789798107253",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/regulate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/regulate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "strictly regulate",
+          "meaning": "quản lý chặt chẽ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c37a76fa-9f8a-4aff-9e26-9f7513fe02ed-0-wm.jpg?v=1789803368353"
+        },
+        {
+          "phrase": "regulate the industry",
+          "meaning": "quản lý ngành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c37a76fa-9f8a-4aff-9e26-9f7513fe02ed-1-wm.jpg?v=1789803368041"
+        },
+        {
+          "phrase": "regulate traffic",
+          "meaning": "điều tiết giao thông"
+        }
+      ],
+      "synonyms": [
+        "control (kiểm soát)",
+        "govern (điều chỉnh, chi phối)"
+      ]
+    },
+    {
+      "id": "698dfe39-8105-4ec6-ac79-1024ec574e78",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "proximity",
+      "ipa": "UK: /prɒkˈsɪm.ə.ti/ | US: /prɑːkˈsɪm.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The fans were worried by the proximity of the storm clouds.",
+          "meaning": "sự gần kề, khoảng cách gần",
+          "antonyms": [
+            "distance (khoảng cách xa)"
+          ],
+          "toeic_tip": "Cụm cố định in close proximity to, luôn theo sau bằng to.",
+          "example_vi": "Mây giông kéo tới gần khiến khán giả lo lắng.",
+          "word_family": [
+            "proximate (adj) gần kề, kế cận"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T06:49:49.966554+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/698dfe39-8105-4ec6-ac79-1024ec574e78-wm.jpg?v=1789798100507",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/proximity-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/proximity-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "close proximity to",
+          "meaning": "rất gần với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/698dfe39-8105-4ec6-ac79-1024ec574e78-0-wm.jpg?v=1789800587779"
+        },
+        {
+          "phrase": "in proximity to",
+          "meaning": "ở gần",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/698dfe39-8105-4ec6-ac79-1024ec574e78-1-wm.jpg?v=1789800589833"
+        },
+        {
+          "phrase": "the proximity of",
+          "meaning": "sự gần kề của"
+        }
+      ],
+      "synonyms": [
+        "closeness (sự gần)",
+        "nearness (sự kề cận)"
+      ]
+    },
+    {
+      "id": "78ff119d-b047-48be-80cd-b62e62080730",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "site",
+      "ipa": "/saɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Once we saw the site, we knew it would be perfect for the event.",
+          "meaning": "địa điểm, khu đất, nơi diễn ra",
+          "toeic_tip": "Bộ đồng âm dễ nhầm: site (địa điểm), sight (tầm nhìn), cite (trích dẫn).",
+          "example_vi": "Vừa nhìn thấy địa điểm là chúng tôi biết ngay chỗ này quá hợp để tổ chức.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T06:59:22.032323+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/78ff119d-b047-48be-80cd-b62e62080730-wm.jpg?v=1789798125739",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/site-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/site-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a construction site",
+          "meaning": "công trường xây dựng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78ff119d-b047-48be-80cd-b62e62080730-0-wm.jpg?v=1789801161606"
+        },
+        {
+          "phrase": "on site",
+          "meaning": "ngay tại chỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78ff119d-b047-48be-80cd-b62e62080730-1-wm.jpg?v=1789801161894"
+        },
+        {
+          "phrase": "select a site",
+          "meaning": "chọn địa điểm"
+        }
+      ],
+      "synonyms": [
+        "location (địa điểm)",
+        "venue (nơi tổ chức)"
+      ]
+    },
+    {
+      "id": "1d6a7488-13d4-4779-b048-5b2edf05c4e5",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "coordinate",
+      "ipa": "UK: /kəʊˈɔː.dɪ.neɪt/ | US: /koʊˈɔːr.dən.eɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Benet tried to coordinate all departments to make sure the event ran smoothly.",
+          "meaning": "phối hợp, điều phối, sắp xếp cho ăn khớp",
+          "toeic_tip": "Động từ đọc đuôi /-neɪt/, danh từ và tính từ đọc /-nət/.",
+          "example_vi": "Benet cố điều phối tất cả các phòng ban để sự kiện diễn ra trôi chảy.",
+          "word_family": [
+            "coordination (n) sự phối hợp",
+            "coordinator (n) người điều phối"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T06:19:36.436898+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1d6a7488-13d4-4779-b048-5b2edf05c4e5-wm.jpg?v=1789798281114",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/coordinate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/coordinate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "coordinate efforts",
+          "meaning": "phối hợp nỗ lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1d6a7488-13d4-4779-b048-5b2edf05c4e5-0-wm.jpg?v=1789798775437"
+        },
+        {
+          "phrase": "coordinate with",
+          "meaning": "phối hợp cùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1d6a7488-13d4-4779-b048-5b2edf05c4e5-1-wm.jpg?v=1789798776298"
+        },
+        {
+          "phrase": "coordinate a schedule",
+          "meaning": "sắp xếp lịch cho khớp"
+        }
+      ],
+      "synonyms": [
+        "organize (tổ chức, sắp xếp)",
+        "synchronize (đồng bộ hóa)"
+      ]
+    },
+    {
+      "id": "0f114721-d9bd-4163-941e-608a888b2976",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "ideally",
+      "ipa": "UK: /aɪˈdɪə.li/ | US: /aɪˈdiː.ə.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Ideally, the location for the concert would have plenty of parking.",
+          "meaning": "lý tưởng nhất là, một cách hoàn hảo",
+          "toeic_tip": "Đứng đầu câu kèm dấu phẩy để nêu tình huống lý tưởng, thường đi với would.",
+          "example_vi": "Lý tưởng nhất là nơi tổ chức buổi hòa nhạc có chỗ đậu xe rộng rãi.",
+          "word_family": [
+            "ideal (adj) lý tưởng",
+            "ideal (n) hình mẫu lý tưởng"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T06:22:02.913706+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0f114721-d9bd-4163-941e-608a888b2976-wm.jpg?v=1789798535479",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ideally-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ideally-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "ideally located",
+          "meaning": "vị trí lý tưởng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f114721-d9bd-4163-941e-608a888b2976-0-wm.jpg?v=1789798919918"
+        },
+        {
+          "phrase": "ideally suited",
+          "meaning": "rất phù hợp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f114721-d9bd-4163-941e-608a888b2976-1-wm.jpg?v=1789798922752"
+        },
+        {
+          "phrase": "ideally, we would",
+          "meaning": "lý tưởng nhất thì chúng tôi sẽ"
+        }
+      ],
+      "synonyms": [
+        "perfectly (một cách hoàn hảo)",
+        "preferably (tốt nhất là)"
+      ]
+    },
+    {
+      "id": "b2b212b8-dee5-4d0e-8287-0c89f01febdb",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "general",
+      "ipa": "UK: /ˈdʒen.ər.əl/ | US: /ˈdʒen.ɚ.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We have a general idea of how many guests will attend.",
+          "meaning": "chung, khái quát, tổng quát",
+          "antonyms": [
+            "specific (cụ thể)",
+            "detailed (chi tiết)"
+          ],
+          "toeic_tip": "In general là cụm trạng ngữ, khác với a general + danh từ.",
+          "example_vi": "Chúng tôi đã áng chừng được số khách sẽ đến.",
+          "word_family": [
+            "generally (adv) nói chung",
+            "generalize (v) khái quát hóa"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T07:28:56.782287+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b2b212b8-dee5-4d0e-8287-0c89f01febdb-wm.jpg?v=1789798129542",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/general-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/general-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a general idea",
+          "meaning": "ý niệm chung",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b2b212b8-dee5-4d0e-8287-0c89f01febdb-0-wm.jpg?v=1789802934979"
+        },
+        {
+          "phrase": "in general",
+          "meaning": "nói chung",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b2b212b8-dee5-4d0e-8287-0c89f01febdb-1-wm.jpg?v=1789802936636"
+        },
+        {
+          "phrase": "the general public",
+          "meaning": "công chúng nói chung"
+        }
+      ],
+      "synonyms": [
+        "overall (tổng thể)",
+        "broad (khái quát)"
+      ]
+    },
+    {
+      "id": "b78442ca-9672-4539-be67-47856648bf11",
+      "part_id": "a85be9b8-3a31-4095-8e25-807c98c61a62",
+      "word": "lead time",
+      "ipa": "/ˈliːd ˌtaɪm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The lead time for reservations is unrealistic.",
+          "meaning": "thời gian chuẩn bị, khoảng thời gian từ lúc khởi động đến khi có kết quả",
+          "toeic_tip": "lead ở đây đọc /liːd/; từ hay gặp trong bài đọc về sản xuất và đặt hàng.",
+          "example_vi": "Bắt đặt trước sớm như vậy thì quá phi thực tế.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:58.014193+00:00",
+      "updated_at": "2026-09-19T07:29:09.832989+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b78442ca-9672-4539-be67-47856648bf11-wm.jpg?v=1789798131753",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/lead-time-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/lead-time-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "enough lead time",
+          "meaning": "đủ thời gian chuẩn bị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b78442ca-9672-4539-be67-47856648bf11-0-wm.jpg?v=1789802949693"
+        },
+        {
+          "phrase": "a long lead time",
+          "meaning": "thời gian chuẩn bị dài",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b78442ca-9672-4539-be67-47856648bf11-1-wm.jpg?v=1789802949499"
+        },
+        {
+          "phrase": "reduce lead time",
+          "meaning": "rút ngắn thời gian chuẩn bị"
+        }
+      ],
+      "synonyms": [
+        "preparation time (thời gian chuẩn bị)",
+        "notice (thời gian báo trước)"
+      ]
+    }
+  ]
+}

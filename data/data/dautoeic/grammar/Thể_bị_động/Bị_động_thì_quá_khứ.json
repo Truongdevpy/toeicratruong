@@ -1,0 +1,375 @@
+{
+  "subtopic": {
+    "id": "64b81932-5edf-405e-a535-a563649aabb4",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Bị động thì quá khứ",
+    "title_vi": "Bị động thì quá khứ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 88,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-bi-dong-thi-qua-khu"
+  },
+  "lessons": [
+    {
+      "id": "b2795b34-f8c0-45e8-8201-ded2adaf3db1",
+      "subtopic_id": "64b81932-5edf-405e-a535-a563649aabb4",
+      "title_en": "Bị động thì quá khứ",
+      "title_vi": "Bị động thì quá khứ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2020 · Câu 95",
+          "options": {
+            "A": "record",
+            "B": "records",
+            "C": "was recorded",
+            "D": "recording"
+          },
+          "question": "The mayor’s speech at Monday’s business breakfast ------- and will be broadcast later this week.",
+          "translation": "Bài phát biểu của thị trưởng tại buổi ăn sáng doanh nghiệp hôm thứ Hai đã được ghi hình và sẽ được phát sóng trong tuần này."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “record”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The mayor’s speech",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at Monday’s business breakfast",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be broadcast",
+                    "label": "động từ thứ hai (cùng chủ ngữ)"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "later this week.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ thứ nhất của chủ ngữ “The mayor’s speech”; ngay sau nó là “and”, không có tân ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Bài phát biểu tự ghi hình hay được ghi hình.",
+                  "Bị động thì quá khứ được tạo thế nào.",
+                  "Vì sao V-ing và dạng chủ động không đứng được ở đây."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Bị động thì quá khứ (quá khứ đơn) dùng khi chủ ngữ **chịu** một hành động đã xảy ra và kết thúc trong quá khứ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ ngữ số ít",
+                    "formula": "S + was + V3 (+ by + người làm)"
+                  },
+                  {
+                    "label": "Chủ ngữ số nhiều",
+                    "formula": "S + were + V3 (+ by + người làm)"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The contract",
+                    "label": "chủ ngữ (chịu hành động)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was signed",
+                    "label": "was + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by the director",
+                    "label": "by + người làm"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "yesterday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu chủ động “The director signed the contract yesterday” đổi sang bị động: tân ngữ “the contract” lên làm chủ ngữ, động từ thành was + V3, người làm đứng sau by."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ cần tân ngữ (find, issue, make, send, hire, revise, record) mà sau chỗ trống **không có tân ngữ**, hoặc có **by + người làm**: chủ ngữ chịu hành động, dùng bị động.",
+                  "Có **yesterday**, **last + thời gian** (last week, last Thursday): việc đã xảy ra, dùng quá khứ. Riêng **over the last + khoảng thời gian** đi với hiện tại hoàn thành.",
+                  "Chọn was hay were theo danh từ chính của chủ ngữ: **was** với số ít, **were** với số nhiều.",
+                  "Chủ ngữ chịu hành động mà was/were đã cho sẵn trước chỗ trống thì điền **V3** (was/were + V-ing là chủ động, cần tân ngữ)."
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "was + V3, chủ ngữ số ít",
+                    "*The meeting room was booked last Monday.* — Phòng họp đã được đặt vào thứ Hai tuần trước."
+                  ],
+                  [
+                    "were + V3 + by + người làm, chủ ngữ số nhiều",
+                    "*The new laptops were ordered by Ms. Lee yesterday.* — Máy tính xách tay mới đã được bà Lee đặt mua hôm qua."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chủ ngữ chịu hành động đã xảy ra; was với số ít, were với số nhiều.",
+                    "form": "was/were + V3",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chủ ngữ không tự làm hành động; các động từ này cần tân ngữ mà sau chỗ trống không có.",
+                    "form": "Quá khứ đơn chủ động, V3 đứng một mình (found, issued, introduced, made, repaired, sent, canceled, hired, revised, prepared, suggested)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là chủ động, cần tân ngữ; dạng hiện tại còn không hợp mốc quá khứ.",
+                    "form": "Tiếp diễn chủ động (was submitting, was directing, was canceling, is making, is issuing, is introducing, is revising)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chủ động, cần tân ngữ mà sau chỗ trống không có.",
+                    "form": "has/have + V3 chủ động (has introduced, has issued, has made, has revised, have submitted, have directed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "was đi với số ít, were đi với số nhiều.",
+                    "form": "Sai số (were + V3 với chủ ngữ số ít, was + V3 với số nhiều)",
+                    "example": "*The idea was suggested.*; *Three interns were hired.*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không hợp việc đã xảy ra (yesterday, last week); is/are còn phải đúng số.",
+                    "form": "Bị động hiện tại, tương lai (are made, is submitted, is directed, is repaired, are suggested, are hired, will be repaired)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing, be + V3 không làm được động từ chính; V nguyên mẫu, V-s là chủ động, cần tân ngữ.",
+                    "form": "V nguyên mẫu, V-s, V-ing, be + V3 không có was/were (find, be found, record, records, recording, prepare, preparing, sending)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "was + V-ing là chủ động, cần tân ngữ; was + V nguyên mẫu, was + V-s sai cấu trúc.",
+                    "form": "Sau was cho sẵn: V-ing, V nguyên mẫu, V-s (distributing, distribute, distributes)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "yesterday",
+                    "example": "*by the production manager yesterday*; *to HR yesterday*"
+                  },
+                  {
+                    "signal": "last + thời gian",
+                    "example": "*last week*; *last Thursday*; *at the end of last summer*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*by the production manager*; *which ___ by the HR department*; *by the marketing department*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*A lot of errors ___ in the final report*; *The mayor’s speech … ___ and will be broadcast*"
+                  },
+                  {
+                    "signal": "was/were + ___",
+                    "example": "*The new employee handbook was ___ to all employees*"
+                  },
+                  {
+                    "signal": "chủ ngữ số ít / số nhiều",
+                    "example": "*The idea*, *The signed contract*; *Several complaints*, *Three new interns*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V3, was/were + V3, V-ing, dạng chia thì khác): có từ hai dạng chia thì là câu chia động từ; was/were cho sẵn trước chỗ trống thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ và danh từ chính (số ít hay số nhiều); xem sau chỗ trống có tân ngữ hay by + người làm; tìm mốc quá khứ yesterday, last + thời gian.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ chịu hành động đã xảy ra thì chọn was/were + V3 đúng số; loại dạng chủ động, dạng hiện tại, tương lai và dạng sai số.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The mayor’s speech",
+                    "label": "chủ ngữ số ít"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at Monday’s business breakfast",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was recorded",
+                    "label": "was + V3"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be broadcast",
+                    "label": "động từ thứ hai"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "later this week.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: bài phát biểu được ghi hình, nên động từ là was + V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “record”, có dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ đầu tiên, chủ ngữ “The mayor’s speech” số ít; dấu hiệu “___ + không có tân ngữ”: ngay sau chỗ trống là “and will be broadcast”.",
+                  "Bước 3: Bài phát biểu được ghi hình (chịu hành động) tại buổi ăn sáng thứ Hai nên dùng was + V3, vì vậy chọn “was recorded” (đã được ghi hình).",
+                  "“record” (A) là chủ động, bài phát biểu không tự ghi hình và không có tân ngữ phía sau, nên loại.",
+                  "“records” (B) là hiện tại đơn chủ động, cần tân ngữ mà sau chỗ trống không có, nên loại.",
+                  "“recording” (D) là V-ing, đứng một mình không làm được động từ chính, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Chọn was hay were theo danh từ chính của chủ ngữ: “The idea for the new commercial” chia theo “idea” (số ít); “A lot of errors” chia theo “errors” (số nhiều).",
+                  "Mệnh đề quan hệ cũng cần động từ chia thì; bị động là which + was/were + V3: *The memo, which was prepared by HR, is on your desk.* — Bản ghi nhớ do phòng nhân sự soạn đang ở trên bàn bạn."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ chịu hành động đã xảy ra: was/were + V3.",
+                  "was với số ít, were với số nhiều.",
+                  "Chủ ngữ chịu hành động, was/were cho sẵn: điền V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

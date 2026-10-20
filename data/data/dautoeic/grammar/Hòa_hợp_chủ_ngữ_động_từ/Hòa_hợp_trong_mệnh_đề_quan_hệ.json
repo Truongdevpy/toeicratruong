@@ -1,0 +1,358 @@
+{
+  "subtopic": {
+    "id": "5e2585e1-9024-4626-9b97-f3d1b54d4b20",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Hòa hợp trong mệnh đề quan hệ",
+    "title_vi": "Hòa hợp trong mệnh đề quan hệ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 50,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-hoa-hop-trong-menh-de-quan-he"
+  },
+  "lessons": [
+    {
+      "id": "db4dbadb-113b-47f6-ab68-642a7df2e22a",
+      "subtopic_id": "5e2585e1-9024-4626-9b97-f3d1b54d4b20",
+      "title_en": "Hòa hợp trong mệnh đề quan hệ",
+      "title_vi": "Hòa hợp trong mệnh đề quan hệ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 1 · Câu 123",
+          "options": {
+            "A": "needing",
+            "B": "needs",
+            "C": "has needed",
+            "D": "were needing"
+          },
+          "question": "Anyone who still ------- to take the fire safety training should do so before the end of the month.",
+          "translation": "Bất kỳ ai vẫn còn cần tham gia khóa đào tạo an toàn phòng cháy thì nên hoàn thành trước cuối tháng."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “need”. Chỗ trống nằm trong mệnh đề quan hệ bắt đầu bằng “who”, đứng sau “Anyone”; động từ chính của câu là “should do”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Anyone",
+                    "label": "chủ ngữ, tiền ngữ của who"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "who still",
+                    "label": "đại từ quan hệ (+ still)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to take the fire safety training",
+                    "label": "to V"
+                  },
+                  {
+                    "role": "V",
+                    "text": "should do so",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "before the end of the month.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Mệnh đề “who still ------- to take the fire safety training” đứng sau “Anyone” và nói rõ đó là những ai."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ trong mệnh đề quan hệ chia theo từ nào.",
+                  "“Anyone” là số ít hay số nhiều.",
+                  "Dạng nào làm được động từ của mệnh đề và hợp với nghĩa “vẫn còn”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trong mệnh đề quan hệ, khi who, which, that làm chủ ngữ, chúng thay cho danh từ đứng trước (**tiền ngữ**). Vì vậy động từ đứng ngay sau who/which/that chia theo tiền ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tiền ngữ số ít",
+                    "formula": "N số ít + who/which/that + V số ít"
+                  },
+                  {
+                    "label": "Tiền ngữ số nhiều",
+                    "formula": "N số nhiều + who/which/that + V số nhiều"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The printers",
+                    "label": "chủ ngữ, tiền ngữ (số nhiều)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the second floor",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that print in color",
+                    "label": "mệnh đề quan hệ: print chia theo The printers"
+                  },
+                  {
+                    "role": "V",
+                    "text": "need",
+                    "label": "động từ chính của câu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "new ink.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Tiền ngữ có thể bị cụm giới từ tách khỏi “that”: “floor” không phải tiền ngữ, vì máy in mới là thứ in màu."
+              },
+              {
+                "rows": [
+                  [
+                    "anyone, anybody, everyone",
+                    "số ít",
+                    "*Anyone who wants a copy can email me.* — Ai muốn một bản thì có thể gửi email cho tôi."
+                  ],
+                  [
+                    "a / any / the only + N số ít",
+                    "số ít",
+                    "*We need a manager who speaks Spanish.* — Chúng tôi cần một quản lý nói được tiếng Tây Ban Nha."
+                  ],
+                  [
+                    "N số nhiều, two + N",
+                    "số nhiều",
+                    "*Employees who work at night get extra pay.* — Nhân viên làm ca đêm được trả thêm tiền."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Tiền ngữ",
+                  "Số",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Mệnh đề quan hệ cần động từ chia thì; V-ing, to V không đứng sau who/which/that để làm động từ. Tiền ngữ chịu hành động thì dùng bị động be + V3, như *the spreadsheets that are attached*.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "who/which/that thay cho tiền ngữ, nên động từ hợp với tiền ngữ.",
+                    "form": "V chia theo tiền ngữ",
+                    "example": "*Any customer who receives …*; *Customers who shop …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tiền ngữ số ít thì động từ sau who/that phải là V-s/es, is.",
+                    "form": "V số nhiều sau tiền ngữ số ít (receive, understand, contain, are)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tiền ngữ số nhiều thì động từ phải là V nguyên mẫu, are.",
+                    "form": "V số ít sau tiền ngữ số nhiều (shops, works, completes, remains, supplies)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ trong cụm giới từ chen giữa (the reception counter, the Osaka office) không phải tiền ngữ.",
+                    "form": "V chia theo danh từ trong cụm giới từ (requires, speaks)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chia theo chủ ngữ nên không làm được động từ của mệnh đề quan hệ.",
+                    "form": "V-ing, to V, be, being (receiving, to receive, be, being)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "N số ít + who/that + ___",
+                    "example": "*Any customer who ___*; *a supplier that ___*; *The email that ___*"
+                  },
+                  {
+                    "signal": "N số nhiều + who/that + ___",
+                    "example": "*Customers who ___*; *The invoices that ___*; *The two technicians who ___*"
+                  },
+                  {
+                    "signal": "anyone + who + ___",
+                    "example": "*Anyone who still ___*; *anyone who ___ a cup*"
+                  },
+                  {
+                    "signal": "the only + N + who + ___",
+                    "example": "*the only manager who ___*"
+                  },
+                  {
+                    "signal": "N + cụm giới từ + who/that + ___",
+                    "example": "*The machine in the back room that ___*; *The trainees in the Osaka office who ___*"
+                  },
+                  {
+                    "signal": ", which + ___ ,",
+                    "example": "*The new leave policy, which ___ next January,*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, có dạng chia thì (V-s, V nguyên mẫu, is/are) thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Chỗ trống đứng sau who/which/that (có thể cách bởi still): tìm tiền ngữ là danh từ mà who/which/that thay cho, bỏ qua cụm giới từ chen giữa.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chia động từ theo tiền ngữ: số ít thì V-s/es, is; số nhiều thì V nguyên mẫu, are. Loại V-ing, to V và dạng sai số.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Anyone",
+                    "label": "chủ ngữ, tiền ngữ của who"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who still needs to take the fire safety training",
+                    "label": "mệnh đề quan hệ: needs chia theo Anyone (số ít)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "should do so",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "before the end of the month.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “needs” chia theo tiền ngữ số ít “Anyone”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “need”, có dạng chia thì (needs, has needed, were needing), nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ của mệnh đề sau “who”, động từ chính là “should do”; dấu hiệu “anyone + who + ___”: tiền ngữ “Anyone” số ít.",
+                  "Bước 3: V trong mệnh đề chia theo tiền ngữ số ít; nói tình trạng hiện tại nên dùng hiện tại đơn, vì vậy chọn “needs” (vẫn còn cần).",
+                  "“needing” (A) là V-ing, không làm được động từ của mệnh đề sau “who”, nên loại.",
+                  "“has needed” (C) hợp số ít nhưng là hiện tại hoàn thành; câu nói việc lúc này vẫn còn cần (“still”), nên loại.",
+                  "“were needing” (D) là dạng số nhiều, không hợp tiền ngữ số ít “Anyone”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Động từ chỉ trạng thái (need, want, understand) nói tình trạng hiện tại thì dùng hiện tại đơn (needs, wants), không chia tiếp diễn.",
+                  "Động từ chính của câu chia theo chủ ngữ của câu, không theo danh từ trong mệnh đề quan hệ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Động từ đứng ngay sau who/which/that chia theo tiền ngữ.",
+                  "Tìm tiền ngữ theo nghĩa, bỏ qua cụm giới từ chen giữa.",
+                  "Anyone là số ít: anyone who needs, anyone who wants."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

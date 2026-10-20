@@ -1,0 +1,358 @@
+{
+  "subtopic": {
+    "id": "0d726d46-e2af-4ec4-ad73-b225ca34aa6e",
+    "topic_id": "c69b4579-547e-4bb4-948d-1d6135183745",
+    "title_en": "V nguyên mẫu sau động từ khuyết thiếu",
+    "title_vi": "V nguyên mẫu sau động từ khuyết thiếu",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 105,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-khuyet-thieu-v-nguyen-mau-sau-dong-tu-khuyet-thieu"
+  },
+  "lessons": [
+    {
+      "id": "934ae2f6-a73a-4ceb-8735-b5d9b5182794",
+      "subtopic_id": "0d726d46-e2af-4ec4-ad73-b225ca34aa6e",
+      "title_en": "V nguyên mẫu sau động từ khuyết thiếu",
+      "title_vi": "V nguyên mẫu sau động từ khuyết thiếu",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 4 · Câu 105",
+          "options": {
+            "A": "continuing",
+            "B": "continued",
+            "C": "continues",
+            "D": "continue"
+          },
+          "question": "Kennedy Sports will ------- its end-of-season sale through the month of January.",
+          "translation": "Kennedy Sports sẽ tiếp tục đợt giảm giá cuối mùa trong suốt tháng Một."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “continue”: V-ing, V-ed, V-s và V nguyên mẫu. Chỗ trống đứng ngay sau “will”, trước tân ngữ “its end-of-season sale”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Kennedy Sports",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will",
+                    "label": "động từ khuyết thiếu"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "its end-of-season sale",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "through the month of January.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "“will” đã đứng sẵn trước chỗ trống; chỗ trống là động từ đi sau “will”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“will” thuộc nhóm từ nào.",
+                  "Sau nhóm từ đó, động từ ở dạng nào.",
+                  "Vì sao V-ing, V-ed, V-s không đứng ngay sau nó."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ khuyết thiếu (modal) như can, may, might, must, should, will, would đứng trước động từ chính để thêm nghĩa “có thể”, “phải”, “nên”, “sẽ”. Modal không thêm -s theo chủ ngữ, và động từ theo sau luôn là **V nguyên mẫu không “to”**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "S + modal + V nguyên mẫu (+ tân ngữ)"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our supplier",
+                    "label": "chủ ngữ số ít"
+                  },
+                  {
+                    "role": "V",
+                    "text": "may",
+                    "label": "modal"
+                  },
+                  {
+                    "role": "V",
+                    "text": "raise",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "its prices",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "next year.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Dù chủ ngữ số ít hay số nhiều, động từ sau modal vẫn giữ nguyên mẫu."
+              },
+              {
+                "rows": [
+                  [
+                    "will",
+                    "sẽ",
+                    "*The manager will review the budget on Friday.* — Quản lý sẽ xem xét ngân sách vào thứ Sáu."
+                  ],
+                  [
+                    "would",
+                    "sẽ (trong tình huống giả định)",
+                    "*Without a printer, we would send everything by e-mail.* — Nếu không có máy in, chúng tôi sẽ gửi mọi thứ qua email."
+                  ],
+                  [
+                    "can, may",
+                    "có thể, được phép",
+                    "*Employees may use the gym after work.* — Nhân viên có thể dùng phòng tập sau giờ làm."
+                  ],
+                  [
+                    "might",
+                    "có lẽ, có khả năng",
+                    "*The meeting might start a little late today.* — Cuộc họp hôm nay có lẽ sẽ bắt đầu hơi trễ."
+                  ],
+                  [
+                    "must",
+                    "phải",
+                    "*All staff must wear their ID cards.* — Mọi nhân viên phải đeo thẻ nhân viên."
+                  ],
+                  [
+                    "should",
+                    "nên",
+                    "*You should back up your files every day.* — Bạn nên sao lưu tệp mỗi ngày."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Modal",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đúng dạng đi ngay sau modal.",
+                    "form": "V nguyên mẫu (collect, depart, continue)",
+                    "example": "*must collect*; *will depart*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Modal không đi với “to”.",
+                    "form": "to V (to collect, to report, to process)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng ngay sau modal.",
+                    "form": "V-ing (collecting, departing, reserving)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Quá khứ đơn không đứng sau modal; V3 chỉ đứng sau modal khi có “be” hoặc “have” xen giữa.",
+                    "form": "V-ed (collected, departed, reported)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Động từ sau modal không chia theo chủ ngữ nên không thêm -s, dù chủ ngữ số ít.",
+                    "form": "V-s (contacts, departs, parks)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "will + ___",
+                    "example": "*Kennedy Sports will ___ its end-of-season sale*; *the technician will ___ the findings*"
+                  },
+                  {
+                    "signal": "would + ___",
+                    "example": "*the staff would ___ every invoice by hand*"
+                  },
+                  {
+                    "signal": "can + ___",
+                    "example": "*Team leaders can ___ additional supplies*"
+                  },
+                  {
+                    "signal": "may / might + ___",
+                    "example": "*Hotel guests may ___ a free shuttle*; *the heavy snow might ___ the delivery schedule*"
+                  },
+                  {
+                    "signal": "must + ___",
+                    "example": "*All visitors must ___ a badge*; *all drivers must ___ their vehicles*"
+                  },
+                  {
+                    "signal": "should + ___",
+                    "example": "*Supervisors should ___ any equipment problems*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V nguyên mẫu, to V, V-ing, V-ed, V-s) thì đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Nhìn từ ngay trước chỗ trống. Nếu đó là can, may, might, must, should, will, would thì chỗ trống là động từ đi sau modal.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn V nguyên mẫu theo công thức modal + V nguyên mẫu; loại to V, V-ing, V-ed và V-s.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Kennedy Sports",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will continue",
+                    "label": "modal + V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "its end-of-season sale",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "through the month of January.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “will continue” là modal + V nguyên mẫu, làm động từ chính của câu."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “continue” (V-ing, V-ed, V-s, V nguyên mẫu) nên đây là câu dạng động từ.",
+                  "Bước 2: Chỗ trống đứng ngay sau “will”, trước tân ngữ “its end-of-season sale”; dấu hiệu “will + ___”: “will -------”.",
+                  "Bước 3: Sau modal dùng V nguyên mẫu (modal + V nguyên mẫu), vì vậy chọn “continue” (tiếp tục).",
+                  "“continuing” (A) là V-ing, không đứng ngay sau modal “will”, nên loại.",
+                  "“continued” (B) là quá khứ hoặc V3; V3 chỉ đứng sau modal khi có “be” hoặc “have” xen giữa, nên loại.",
+                  "“continues” (C) là V-s đã chia theo chủ ngữ, động từ sau “will” không thêm -s, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Câu kể chuyện đã qua vẫn giữ V nguyên mẫu sau modal: *Forecasters warned that the heavy snow might disrupt the schedule.* — Các nhà dự báo cảnh báo rằng tuyết lớn có thể làm gián đoạn lịch trình.",
+                  "V-ing và V3 chỉ đứng sau modal khi có “be” hoặc “have” xen giữa: will be + V-ing, may be + V3, must have + V3. Khi đó “be”, “have” chính là V nguyên mẫu đi sau modal."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau can, may, might, must, should, will, would: V nguyên mẫu không “to”.",
+                  "Động từ ngay sau modal không thêm -s, -ed, -ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

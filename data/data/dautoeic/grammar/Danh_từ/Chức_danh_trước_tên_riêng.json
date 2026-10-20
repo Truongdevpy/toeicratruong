@@ -1,0 +1,369 @@
+{
+  "subtopic": {
+    "id": "d56f045f-4843-4de4-9df2-906500381d58",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Chức danh trước tên riêng",
+    "title_vi": "Chức danh trước tên riêng",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 10,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-chuc-danh-truoc-ten-rieng"
+  },
+  "lessons": [
+    {
+      "id": "2c1ebb91-3909-4c9d-a44a-608f7452d909",
+      "subtopic_id": "d56f045f-4843-4de4-9df2-906500381d58",
+      "title_en": "Chức danh trước tên riêng",
+      "title_vi": "Chức danh trước tên riêng",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2022 · Câu 126",
+          "options": {
+            "A": "reporter",
+            "B": "reporting",
+            "C": "to report",
+            "D": "will report"
+          },
+          "question": "KOHW ------- Jenae Johnson will be promoted to news anchor when Dana Wagner retires.",
+          "translation": "Phóng viên Jenae Johnson của đài KOHW sẽ được thăng chức lên người dẫn bản tin khi Dana Wagner nghỉ hưu."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “report” nhưng khác loại từ. Chỗ trống đứng giữa tên đài “KOHW” và tên người “Jenae Johnson”; câu đã có động từ chính “will be promoted”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "KOHW",
+                    "label": "chủ ngữ: tên tổ chức"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống (trong chủ ngữ)"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Jenae Johnson",
+                    "label": "chủ ngữ: tên người"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be promoted",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to news anchor",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "when Dana Wagner retires.",
+                    "label": "mệnh đề thời gian"
+                  }
+                ],
+                "caption": "Cả cụm “KOHW ------- Jenae Johnson” là chủ ngữ của “will be promoted”; “when Dana Wagner retires” là mệnh đề thời gian."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào đứng giữa tên tổ chức và tên người để nói người đó là ai.",
+                  "Nhận ra danh từ chỉ người qua đuôi.",
+                  "Vì sao không điền động từ vào chỗ này khi câu đã có động từ chính."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trước tên người có thể đặt chức danh (nghề nghiệp, vị trí) để nói người đó là ai, ví dụ *editor Amara Sesay*. Chức danh là danh từ chỉ người; phía trước có thể thêm tên tổ chức nơi người đó làm việc.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cụm chủ ngữ",
+                    "formula": "tên tổ chức + chức danh + tên người"
+                  },
+                  {
+                    "label": "Cả câu",
+                    "formula": "cụm chủ ngữ + động từ chính + …"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Lakeside Hotel",
+                    "label": "chủ ngữ: tên tổ chức"
+                  },
+                  {
+                    "role": "S",
+                    "text": "manager",
+                    "label": "chủ ngữ: chức danh"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Anna Cole",
+                    "label": "chủ ngữ: tên người"
+                  },
+                  {
+                    "role": "V",
+                    "text": "approved",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the new menu.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "*Lakeside Hotel manager Anna Cole approved the new menu.* — Quản lý Anna Cole của khách sạn Lakeside đã duyệt thực đơn mới. Ba phần đầu là một cụm chủ ngữ; động từ chính là “approved”."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chức danh đứng ngay trước tên người thì không cần mạo từ: *manager Anna Cole*.",
+                  "Một tên người thì chức danh ở dạng số ít: *engineer Marco Villanueva*.",
+                  "Chức danh phải chỉ **người**, không chỉ ngành, việc hay đồ vật: *architect* (kiến trúc sư), không phải *architecture* (ngành kiến trúc).",
+                  "Động từ chính đứng sau tên người, nên chỗ trống giữa tên tổ chức và tên người không phải động từ."
+                ]
+              },
+              {
+                "text": "**Nhận ra danh từ chỉ người qua đuôi** (các từ có trong bài tập)",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "-er",
+                    "reporter, founder, researcher, treasurer, photographer, designer, organizer, manager"
+                  ],
+                  [
+                    "-or",
+                    "inspector, editor, coordinator, director, supervisor, instructor, curator"
+                  ],
+                  [
+                    "-yst, -ant, -eer",
+                    "analyst, consultant, engineer"
+                  ],
+                  [
+                    "không có đuôi riêng",
+                    "architect"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói người đó là ai; cùng tên tổ chức và tên người tạo thành cụm chủ ngữ.",
+                    "form": "Danh từ chỉ người, số ít (reporter, editor, analyst)",
+                    "example": "*KOHW reporter Jenae Johnson*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính sau tên người (visited, will be promoted); chỗ trống nằm trong cụm chủ ngữ.",
+                    "form": "Động từ chia thì: V-ed, V-s, will + V (inspected, inspects, will report)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chỉ người nên không làm chức danh.",
+                    "form": "V-ing, to V (inspecting, to report)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chỉ người nên không làm chức danh trước tên người.",
+                    "form": "Tính từ, trạng từ (photographic, architectural, architecturally)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là danh từ nhưng không chỉ người.",
+                    "form": "Danh từ chỉ ngành, việc hay đồ vật (architecture, engineering, photographs, treasures)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ có một tên người nên chức danh ở dạng số ít.",
+                    "form": "Danh từ chỉ người số nhiều (engineers)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "tên tổ chức + ___ + tên người",
+                    "example": "*KOHW ___ Jenae Johnson*; *Willow Gallery ___ Sofia Lindqvist*"
+                  },
+                  {
+                    "signal": "tên người + động từ chính",
+                    "example": "*Jenae Johnson will be promoted*; *Amara Sesay approved*"
+                  },
+                  {
+                    "signal": "một tên người",
+                    "example": "*Ironwood Manufacturing ___ Marco Villanueva fixed …*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ chỉ người, động từ, V-ing, tính từ…) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống có đứng giữa tên tổ chức và tên người không, rồi tìm động từ chính đứng sau tên người.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ chỉ người, số ít, theo công thức tên tổ chức + chức danh + tên người; loại động từ vì câu đã có động từ chính; loại V-ing, to V, tính từ, trạng từ và danh từ không chỉ người.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "KOHW",
+                    "label": "chủ ngữ: tên tổ chức"
+                  },
+                  {
+                    "role": "S",
+                    "text": "reporter",
+                    "label": "chủ ngữ: chức danh"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Jenae Johnson",
+                    "label": "chủ ngữ: tên người"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be promoted",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to news anchor",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "when Dana Wagner retires.",
+                    "label": "mệnh đề thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “KOHW reporter Jenae Johnson” là cụm chủ ngữ của “will be promoted”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “report” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa “KOHW” và “Jenae Johnson”; dấu hiệu “tên tổ chức + ___ + tên người” và “tên người + động từ chính”: “Jenae Johnson will be promoted”.",
+                  "Bước 3: Cần tên tổ chức + chức danh + tên người; “reporter” là danh từ chỉ người (đuôi -er), vì vậy chọn “reporter” (phóng viên).",
+                  "“reporting” (B) là V-ing, không chỉ người nên không làm chức danh trước “Jenae Johnson”, nên loại.",
+                  "“to report” (C) là to V, không chỉ người nên không làm chức danh trước “Jenae Johnson”, nên loại.",
+                  "“will report” (D) là động từ chia thì, chỗ trống nằm trong cụm chủ ngữ của “will be promoted”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Đuôi -er, -or không phải lúc nào cũng chỉ người: *computer*, *monitor* là đồ vật. Phải xem nghĩa của từ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Tên tổ chức + ___ + tên người + động từ: chỗ trống là chức danh.",
+                  "Chức danh là danh từ chỉ người, số ít khi đi với một tên người.",
+                  "Câu đã có động từ chính thì không điền động từ vào chỗ trống."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

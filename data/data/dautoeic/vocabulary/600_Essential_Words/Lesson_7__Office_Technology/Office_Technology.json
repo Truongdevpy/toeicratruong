@@ -1,0 +1,639 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "27404a6f-424b-4632-a7b9-b85c582f5daa",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 7: Office Technology",
+    "order_index": 7,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:53.329994+00:00",
+    "updated_at": "2026-09-18T08:50:53.329994+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+    "test_id": "27404a6f-424b-4632-a7b9-b85c582f5daa",
+    "name": "Office Technology",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:53.329994+00:00",
+    "updated_at": "2026-09-18T08:50:53.329994+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "3a62e8a2-5547-4d12-9d7a-0e7f46c2dfd9",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "reduction",
+      "ipa": "/rɪˈdʌk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The outlet store gave a 20 percent reduction in the price of the shelves and bookcases.",
+          "meaning": "sự giảm bớt, mức giảm",
+          "antonyms": [
+            "increase (sự tăng lên)",
+            "rise (sự gia tăng)"
+          ],
+          "toeic_tip": "Đi với giới từ in: a reduction in prices, không dùng 'reduction of prices'.",
+          "example_vi": "Cửa hàng xả kho giảm 20 phần trăm giá kệ và tủ sách.",
+          "word_family": [
+            "reduce (v) giảm bớt",
+            "reduced (adj) đã được giảm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T06:11:32.067455+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3a62e8a2-5547-4d12-9d7a-0e7f46c2dfd9-wm.jpg?v=1789798292004",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reduction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reduction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a reduction in price",
+          "meaning": "mức giảm giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a62e8a2-5547-4d12-9d7a-0e7f46c2dfd9-0-wm.jpg?v=1789797847017"
+        },
+        {
+          "phrase": "price reduction",
+          "meaning": "việc giảm giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a62e8a2-5547-4d12-9d7a-0e7f46c2dfd9-1-wm.jpg?v=1789797810580"
+        },
+        {
+          "phrase": "staff reduction",
+          "meaning": "việc cắt giảm nhân sự"
+        }
+      ],
+      "synonyms": [
+        "decrease (sự giảm sút)",
+        "cut (sự cắt giảm)",
+        "discount (khoản chiết khấu)"
+      ]
+    },
+    {
+      "id": "1496b461-5326-44b7-8ce7-821c0b5fa43d",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "recur",
+      "ipa": "UK: /rɪˈkɜː/ | US: /rɪˈkɝː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The subject of decreasing sales recurs in each meeting, sometimes several times.",
+          "meaning": "tái diễn, lặp lại, xảy ra lần nữa",
+          "toeic_tip": "Nội động từ, không có tân ngữ; viết gấp đôi phụ âm: recurred, recurring.",
+          "example_vi": "Chuyện doanh số đi xuống cuộc họp nào cũng được nhắc lại, có khi vài lần.",
+          "word_family": [
+            "recurrence (n) sự tái diễn",
+            "recurring (adj) lặp đi lặp lại"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T08:41:46.603445+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1496b461-5326-44b7-8ce7-821c0b5fa43d-wm.jpg?v=1789798145760",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/recur-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/recur-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "recur frequently",
+          "meaning": "tái diễn thường xuyên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1496b461-5326-44b7-8ce7-821c0b5fa43d-0-wm.jpg?v=1789807306451"
+        },
+        {
+          "phrase": "a recurring problem",
+          "meaning": "vấn đề lặp đi lặp lại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1496b461-5326-44b7-8ce7-821c0b5fa43d-1-wm.jpg?v=1789798685183"
+        },
+        {
+          "phrase": "recurring costs",
+          "meaning": "chi phí định kỳ"
+        }
+      ],
+      "synonyms": [
+        "repeat (lặp lại)",
+        "reappear (xuất hiện trở lại)",
+        "happen again (xảy ra lần nữa)"
+      ]
+    },
+    {
+      "id": "38da0c5a-79ce-43b0-b624-8d37f1329ce2",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "be in charge of",
+      "ipa": "UK: /bi ɪn ˈtʃɑːdʒ əv/ | US: /bi ɪn ˈtʃɑːrdʒ əv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He appointed someone to be in charge of maintaining a supply of paper in the fax machine.",
+          "meaning": "phụ trách, chịu trách nhiệm quản lý",
+          "toeic_tip": "Phân biệt in charge of (quản lý) với in the charge of (được ai đó quản lý).",
+          "example_vi": "Ông ấy cử người lo việc luôn có sẵn giấy trong máy fax.",
+          "word_family": [
+            "charge (n) trách nhiệm, quyền quản lý",
+            "in charge (adj) đang phụ trách"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T06:07:28.821847+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/38da0c5a-79ce-43b0-b624-8d37f1329ce2-wm.jpg?v=1789798048762",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/be-in-charge-of-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/be-in-charge-of-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be in charge of a department",
+          "meaning": "phụ trách một phòng ban",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/38da0c5a-79ce-43b0-b624-8d37f1329ce2-0-wm.jpg?v=1789797728307"
+        },
+        {
+          "phrase": "the person in charge",
+          "meaning": "người phụ trách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/38da0c5a-79ce-43b0-b624-8d37f1329ce2-1-wm.jpg?v=1789797727700"
+        },
+        {
+          "phrase": "take charge of",
+          "meaning": "đứng ra quản lý"
+        }
+      ],
+      "synonyms": [
+        "be responsible for (chịu trách nhiệm về)",
+        "head (đứng đầu)",
+        "oversee (giám sát)"
+      ]
+    },
+    {
+      "id": "770414fd-625b-4b3d-a5a3-25e5997f36e3",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "durable",
+      "ipa": "UK: /ˈdjʊə.rə.bəl/ | US: /ˈdʊr.ə.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This printer is so durable that, with a little care, it will last another five years.",
+          "meaning": "bền, chắc chắn, dùng được lâu",
+          "antonyms": [
+            "fragile (dễ vỡ)",
+            "flimsy (mỏng manh, không bền)"
+          ],
+          "toeic_tip": "Cấu trúc so + adj + that hay ra ở Part 5 và Part 6.",
+          "example_vi": "Chiếc máy in này bền lắm, giữ gìn chút là dùng thêm được năm năm nữa.",
+          "word_family": [
+            "durability (n) độ bền",
+            "durably (adv) một cách bền bỉ"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T06:58:39.308199+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/770414fd-625b-4b3d-a5a3-25e5997f36e3-wm.jpg?v=1789798381387",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/durable-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/durable-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "durable goods",
+          "meaning": "hàng hóa lâu bền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/770414fd-625b-4b3d-a5a3-25e5997f36e3-0-wm.jpg?v=1789801119166"
+        },
+        {
+          "phrase": "durable material",
+          "meaning": "vật liệu bền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/770414fd-625b-4b3d-a5a3-25e5997f36e3-1-wm.jpg?v=1789801118627"
+        },
+        {
+          "phrase": "highly durable",
+          "meaning": "rất bền"
+        }
+      ],
+      "synonyms": [
+        "sturdy (chắc chắn)",
+        "long-lasting (lâu bền)",
+        "tough (bền chắc)"
+      ]
+    },
+    {
+      "id": "f9d3209a-cb52-4153-80ee-352707d72140",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "physically",
+      "ipa": "/ˈfɪz.ɪ.kəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The computer screen is making her physically sick.",
+          "meaning": "về mặt thể chất, về mặt vật lý, bằng tay chân",
+          "antonyms": [
+            "mentally (về mặt tinh thần)"
+          ],
+          "toeic_tip": "Trạng từ bổ nghĩa cho tính từ: physically + adj, ví dụ physically demanding.",
+          "example_vi": "Nhìn màn hình máy tính khiến cô ấy phát ốm.",
+          "word_family": [
+            "physical (adj) thuộc về thể chất, vật lý"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T08:04:25.321448+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f9d3209a-cb52-4153-80ee-352707d72140-wm.jpg?v=1789798353658",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/physically-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/physically-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "physically demanding",
+          "meaning": "đòi hỏi thể lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f9d3209a-cb52-4153-80ee-352707d72140-0-wm.jpg?v=1789805064254"
+        },
+        {
+          "phrase": "physically fit",
+          "meaning": "khỏe mạnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f9d3209a-cb52-4153-80ee-352707d72140-1-wm.jpg?v=1789805065181"
+        },
+        {
+          "phrase": "physically present",
+          "meaning": "có mặt trực tiếp"
+        }
+      ],
+      "synonyms": [
+        "bodily (thuộc về thân thể)",
+        "in person (trực tiếp)",
+        "materially (về mặt vật chất)"
+      ]
+    },
+    {
+      "id": "725fefb2-91ba-4785-bfd6-5ec5e818dc70",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "affordable",
+      "ipa": "UK: /əˈfɔː.də.bəl/ | US: /əˈfɔːr.də.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company's first priority was to find an affordable phone system.",
+          "meaning": "vừa túi tiền, có thể chi trả được, giá phải chăng",
+          "antonyms": [
+            "expensive (đắt đỏ)",
+            "unaffordable (ngoài khả năng chi trả)"
+          ],
+          "toeic_tip": "afford luôn đi sau can/could và theo sau là to + V.",
+          "example_vi": "Ưu tiên số một của công ty là tìm một hệ thống điện thoại vừa túi tiền.",
+          "word_family": [
+            "afford (v) đủ khả năng chi trả",
+            "affordability (n) khả năng chi trả"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T06:54:16.220841+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/725fefb2-91ba-4785-bfd6-5ec5e818dc70-wm.jpg?v=1789798318732",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/affordable-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/affordable-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "affordable price",
+          "meaning": "giá phải chăng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/725fefb2-91ba-4785-bfd6-5ec5e818dc70-0-wm.jpg?v=1789800853521"
+        },
+        {
+          "phrase": "affordable housing",
+          "meaning": "nhà ở giá rẻ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/725fefb2-91ba-4785-bfd6-5ec5e818dc70-1-wm.jpg?v=1789800856083"
+        },
+        {
+          "phrase": "affordable for",
+          "meaning": "trong khả năng chi trả của"
+        }
+      ],
+      "synonyms": [
+        "reasonable (hợp lý)",
+        "inexpensive (không đắt)",
+        "economical (tiết kiệm)"
+      ]
+    },
+    {
+      "id": "a508c8e9-f3b3-4329-9c28-2eccc1ad4299",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "stock",
+      "ipa": "UK: /stɒk/ | US: /stɑːk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The employees stocked the shelves on a weekly basis.",
+          "meaning": "trữ hàng, để sẵn trong kho; hàng dự trữ, cổ phiếu",
+          "toeic_tip": "Nhớ cặp in stock và out of stock, rất hay gặp ở Part 3 và Part 7.",
+          "example_vi": "Nhân viên chất hàng lên kệ mỗi tuần một lần.",
+          "word_family": [
+            "stocked (adj) có trữ sẵn",
+            "overstock (v) trữ quá nhiều"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T07:21:53.554556+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a508c8e9-f3b3-4329-9c28-2eccc1ad4299-wm.jpg?v=1789798270020",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stock-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stock-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "in stock",
+          "meaning": "còn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a508c8e9-f3b3-4329-9c28-2eccc1ad4299-0-wm.jpg?v=1789802497313"
+        },
+        {
+          "phrase": "out of stock",
+          "meaning": "hết hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a508c8e9-f3b3-4329-9c28-2eccc1ad4299-1-wm.jpg?v=1789802513404"
+        },
+        {
+          "phrase": "stock the shelves",
+          "meaning": "chất hàng lên kệ"
+        }
+      ],
+      "synonyms": [
+        "supply (nguồn cung)",
+        "inventory (hàng tồn kho)",
+        "keep on hand (để sẵn)"
+      ]
+    },
+    {
+      "id": "a5facae2-567b-4449-8ac7-e2bf6ddaef83",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "stay on top of",
+      "ipa": "UK: /steɪ ɒn ˈtɒp əv/ | US: /steɪ ɑːn ˈtɑːp əv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "In order to stay on top of her employees' progress, she arranged weekly breakfast meetings.",
+          "meaning": "nắm sát tình hình, theo kịp thông tin mới nhất",
+          "antonyms": [
+            "fall behind (bị tụt lại phía sau)"
+          ],
+          "toeic_tip": "Sau cụm này luôn là danh từ hoặc V-ing, không dùng to + V.",
+          "example_vi": "Để nắm sát tiến độ của nhân viên, cô ấy tổ chức họp ăn sáng hằng tuần.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T07:22:35.462603+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a5facae2-567b-4449-8ac7-e2bf6ddaef83-wm.jpg?v=1789798399760",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stay-on-top-of-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stay-on-top-of-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "stay on top of the news",
+          "meaning": "cập nhật tin tức",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a5facae2-567b-4449-8ac7-e2bf6ddaef83-0-wm.jpg?v=1789802539660"
+        },
+        {
+          "phrase": "stay on top of the workload",
+          "meaning": "theo kịp khối lượng công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a5facae2-567b-4449-8ac7-e2bf6ddaef83-1-wm.jpg?v=1789802555328"
+        },
+        {
+          "phrase": "stay on top of developments",
+          "meaning": "nắm sát diễn biến"
+        }
+      ],
+      "synonyms": [
+        "keep up with (theo kịp)",
+        "keep track of (theo dõi sát)",
+        "monitor (giám sát)"
+      ]
+    },
+    {
+      "id": "766ff6df-349c-42fb-ad59-0ef64ee76278",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "provider",
+      "ipa": "UK: /prəˈvaɪ.dər/ | US: /prəˈvaɪ.dɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The department was extremely pleased with the service they received from the phone provider.",
+          "meaning": "nhà cung cấp, bên cung ứng dịch vụ",
+          "antonyms": [
+            "recipient (bên nhận)"
+          ],
+          "toeic_tip": "Động từ đi kèm: provide sb with sth hoặc provide sth for sb.",
+          "example_vi": "Phòng ban này rất hài lòng với dịch vụ mà nhà cung cấp điện thoại mang lại.",
+          "word_family": [
+            "provide (v) cung cấp",
+            "provision (n) sự cung cấp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T06:56:20.852485+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/766ff6df-349c-42fb-ad59-0ef64ee76278-wm.jpg?v=1789798047445",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/provider-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/provider-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "service provider",
+          "meaning": "nhà cung cấp dịch vụ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/766ff6df-349c-42fb-ad59-0ef64ee76278-0-wm.jpg?v=1789800977822"
+        },
+        {
+          "phrase": "health care provider",
+          "meaning": "đơn vị cung cấp dịch vụ y tế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/766ff6df-349c-42fb-ad59-0ef64ee76278-1-wm.jpg?v=1789800980711"
+        },
+        {
+          "phrase": "internet provider",
+          "meaning": "nhà mạng"
+        }
+      ],
+      "synonyms": [
+        "supplier (nhà cung cấp)",
+        "vendor (bên bán hàng)",
+        "contractor (nhà thầu)"
+      ]
+    },
+    {
+      "id": "a7d0c2e8-0b3f-44b7-8c59-e96e369eaa89",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "initiative",
+      "ipa": "UK: /ɪˈnɪʃ.ə.tɪv/ | US: /ɪˈnɪʃ.ə.t̬ɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Employees are encouraged to take the initiative and share their ideas with management.",
+          "meaning": "sáng kiến, bước đi đầu tiên, tinh thần chủ động",
+          "toeic_tip": "Cụm cố định take the initiative, luôn có mạo từ the.",
+          "example_vi": "Nhân viên được khuyến khích chủ động nêu ý tưởng với ban lãnh đạo.",
+          "word_family": [
+            "initiate (v) khởi xướng, bắt đầu",
+            "initial (adj) ban đầu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T07:23:18.608768+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a7d0c2e8-0b3f-44b7-8c59-e96e369eaa89-wm.jpg?v=1789798376630",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/initiative-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/initiative-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take the initiative",
+          "meaning": "chủ động đi bước đầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a7d0c2e8-0b3f-44b7-8c59-e96e369eaa89-0-wm.jpg?v=1789802580014"
+        },
+        {
+          "phrase": "a new initiative",
+          "meaning": "một sáng kiến mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a7d0c2e8-0b3f-44b7-8c59-e96e369eaa89-1-wm.jpg?v=1789802598464"
+        },
+        {
+          "phrase": "show initiative",
+          "meaning": "thể hiện sự chủ động"
+        }
+      ],
+      "synonyms": [
+        "enterprise (tinh thần dám nghĩ dám làm)",
+        "drive (sự xông xáo)",
+        "scheme (chương trình, kế hoạch)"
+      ]
+    },
+    {
+      "id": "7ca5b021-29c2-40b7-b1be-11b8d8501442",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "as needed",
+      "ipa": "/əz ˈniː.dɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The courier service did not come every day, only as needed.",
+          "meaning": "khi nào cần thì làm, theo nhu cầu",
+          "toeic_tip": "Khi làm tính từ đứng trước danh từ phải có gạch nối: an as-needed basis.",
+          "example_vi": "Dịch vụ chuyển phát không đến mỗi ngày, chỉ khi nào cần thôi.",
+          "word_family": [
+            "as-needed (adj) theo nhu cầu, khi cần"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T07:01:42.904792+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7ca5b021-29c2-40b7-b1be-11b8d8501442-wm.jpg?v=1789798301046",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/as-needed-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/as-needed-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "on an as-needed basis",
+          "meaning": "theo nhu cầu phát sinh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7ca5b021-29c2-40b7-b1be-11b8d8501442-0-wm.jpg?v=1789801273059"
+        },
+        {
+          "phrase": "take as needed",
+          "meaning": "dùng khi cần",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7ca5b021-29c2-40b7-b1be-11b8d8501442-1-wm.jpg?v=1789801302764"
+        },
+        {
+          "phrase": "order as needed",
+          "meaning": "đặt hàng khi cần"
+        }
+      ],
+      "synonyms": [
+        "as necessary (khi cần thiết)",
+        "when required (khi được yêu cầu)",
+        "on demand (theo yêu cầu)"
+      ]
+    },
+    {
+      "id": "acaa8c49-b9cf-4bc8-b5fa-2e2ef9ba5033",
+      "part_id": "825fff3c-e3c8-4dee-912f-dda8bf4a08dd",
+      "word": "capacity",
+      "ipa": "UK: /kəˈpæs.ə.ti/ | US: /kəˈpæs.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new conference room is much larger and has a capacity of one hundred people.",
+          "meaning": "sức chứa, công suất tối đa, năng lực",
+          "toeic_tip": "Cụm cố định: a capacity of + số lượng; filled to capacity = kín chỗ.",
+          "example_vi": "Phòng họp mới rộng hơn nhiều, chứa được tới một trăm người.",
+          "word_family": [
+            "capacious (adj) có sức chứa lớn, rộng rãi"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:53.329994+00:00",
+      "updated_at": "2026-09-19T07:24:56.420292+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/acaa8c49-b9cf-4bc8-b5fa-2e2ef9ba5033-wm.jpg?v=1789798304564",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/capacity-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/capacity-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "seating capacity",
+          "meaning": "sức chứa chỗ ngồi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/acaa8c49-b9cf-4bc8-b5fa-2e2ef9ba5033-0-wm.jpg?v=1789802696288"
+        },
+        {
+          "phrase": "at full capacity",
+          "meaning": "hết công suất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/acaa8c49-b9cf-4bc8-b5fa-2e2ef9ba5033-1-wm.jpg?v=1789802695566"
+        },
+        {
+          "phrase": "storage capacity",
+          "meaning": "dung lượng lưu trữ"
+        }
+      ],
+      "synonyms": [
+        "volume (dung tích)",
+        "capability (năng lực)",
+        "output (sản lượng)"
+      ]
+    }
+  ]
+}

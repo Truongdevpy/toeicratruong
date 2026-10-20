@@ -1,0 +1,363 @@
+{
+  "subtopic": {
+    "id": "66e4992c-246e-445b-9070-496d47824fcf",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ bất định",
+    "title_vi": "Đại từ bất định",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 102,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-bat-dinh"
+  },
+  "lessons": [
+    {
+      "id": "f3437abc-0916-403a-a2c1-c9ab49b0147e",
+      "subtopic_id": "66e4992c-246e-445b-9070-496d47824fcf",
+      "title_en": "Đại từ bất định",
+      "title_vi": "Đại từ bất định",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 7 · Câu 123",
+          "options": {
+            "A": "Each",
+            "B": "Those",
+            "C": "Everything",
+            "D": "Anyone"
+          },
+          "question": "------- who arrives at the company parking garage after 10:00 A.M. must contact security for an access code.",
+          "translation": "Bất kỳ ai đến bãi đỗ xe của công ty sau 10 giờ sáng đều phải liên hệ bộ phận an ninh để lấy mã ra vào."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn đại từ khác nhau. Chỗ trống đứng đầu câu, ngay trước “who arrives”; động từ chính của câu là “must contact”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống (chủ ngữ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who arrives at the company parking garage after 10:00 A.M.",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho chỗ trống"
+                  },
+                  {
+                    "role": "V",
+                    "text": "must contact",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "security",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for an access code.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống là chủ ngữ; mệnh đề “who arrives …” nói rõ chỗ trống là ai."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "đại từ nào chỉ người, đại từ nào chỉ vật",
+                  "some-, any-, every-, no- khác nhau thế nào",
+                  "đại từ bất định đi với động từ số ít hay số nhiều",
+                  "“Each”, “Those” có đứng ngay trước “who” với động từ số ít được không"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đại từ bất định chỉ người hay vật mà không nói rõ là ai, cái gì. Chúng đứng một mình làm chủ ngữ hoặc tân ngữ; làm chủ ngữ thì đi với động từ số ít.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "some-",
+                    "someone, somebody",
+                    "something",
+                    "ai đó, cái gì đó; câu khẳng định"
+                  ],
+                  [
+                    "any-",
+                    "anyone, anybody",
+                    "anything",
+                    "có ai, có gì (câu phủ định, câu hỏi, sau if); bất kỳ ai, bất kỳ cái gì (câu khẳng định)"
+                  ],
+                  [
+                    "every-",
+                    "everyone, everybody",
+                    "everything",
+                    "mọi người, mọi thứ"
+                  ],
+                  [
+                    "no-",
+                    "no one, nobody",
+                    "nothing",
+                    "không ai, không gì; đã mang nghĩa phủ định nên động từ để dạng khẳng định"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đầu từ",
+                  "Chỉ người (-one, -body)",
+                  "Chỉ vật, sự việc (-thing)",
+                  "Nghĩa, dùng khi"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Làm chủ ngữ",
+                    "formula": "đại từ bất định + V số ít"
+                  },
+                  {
+                    "label": "Có mệnh đề bổ nghĩa",
+                    "formula": "anyone / everyone + who + V số ít"
+                  },
+                  {
+                    "label": "Có tính từ đi kèm",
+                    "formula": "something / anything / nothing + adj"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "any- trong câu khẳng định: “bất kỳ ai”",
+                    "*Anyone who needs a parking pass should email Ms. Cole.* — Bất kỳ ai cần thẻ đỗ xe nên gửi email cho chị Cole."
+                  ],
+                  [
+                    "any- sau if: “có ai, có gì”",
+                    "*If anyone asks, the meeting starts at ten.* — Nếu có ai hỏi, cuộc họp bắt đầu lúc mười giờ."
+                  ],
+                  [
+                    "tính từ đứng sau đại từ bất định",
+                    "*The inspector found nothing wrong with the machine.* — Người kiểm tra không thấy máy có gì hỏng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "-one, -body chỉ người. Câu nói về trục trặc, đồ vật, hồ sơ thì dùng -thing.",
+                    "form": "Đại từ chỉ người khi câu nói về vật, sự việc (Someone, Everyone, No one)",
+                    "example": "*Something went wrong with the schedule.*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "-thing chỉ vật. “who”, và các việc như gọi điện, đăng ký, nộp đơn, được thông báo cần chủ ngữ chỉ người.",
+                    "form": "Đại từ chỉ vật khi câu nói về người (Everything, Anything, Something)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trong câu khẳng định, any- nghĩa là “bất kỳ”. Muốn nói “ai đó, cái gì đó” thì dùng some-.",
+                    "form": "any- làm chủ ngữ câu khẳng định với nghĩa “có ai đó, có cái gì đó”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu cần nghĩa “không ai, không gì” thì dùng no- (no one, nothing), động từ vẫn ở dạng khẳng định.",
+                    "form": "some-, every- khi câu cần nghĩa phủ định",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "no- làm cả câu mang nghĩa phủ định, trái với vế kia nếu vế kia nói việc có xảy ra.",
+                    "form": "no- khi câu cần nghĩa khẳng định",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“Each” làm đại từ thì chỉ từng người, vật trong một nhóm đã nói tới (each of the drivers), không đứng trước “who” với nghĩa “bất kỳ ai”; “those who” đi với động từ số nhiều (those who arrive).",
+                    "form": "Each, Those đứng ngay trước “who + V số ít”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + who + V số ít",
+                    "example": "*___ who arrives at the company parking garage*; *___ who wishes to attend*"
+                  },
+                  {
+                    "signal": "If + ___",
+                    "example": "*If ___ calls while I am at the client site*"
+                  },
+                  {
+                    "signal": "nói về người",
+                    "example": "*___ has left a laptop bag*; *___ on the guest list needs a name badge*; *asked ___ in the department to submit*"
+                  },
+                  {
+                    "signal": "nói về đồ vật, sự việc",
+                    "example": "*___ went wrong with the delivery schedule*; *___ is ready … except the printed brochures*"
+                  },
+                  {
+                    "signal": "vế kia cho nghĩa phủ định",
+                    "example": "*so the inventory report will be completely accurate*; *so the review ended early*"
+                  },
+                  {
+                    "signal": "___ + tính từ",
+                    "example": "*found ___ unusual*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các đại từ (someone, anything, everyone, nothing…) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống làm chủ ngữ hay tân ngữ, câu nói về người hay về vật; tìm “who”, “if”, tính từ đi sau, và xem vế kia có cho nghĩa phủ định không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn -one, -body cho người, -thing cho vật; chọn some-, any-, every-, no- theo nghĩa khẳng định, phủ định, sau if; loại dạng sai người hay vật và dạng trái nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Anyone",
+                    "label": "chủ ngữ (đại từ bất định chỉ người)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who arrives at the company parking garage after 10:00 A.M.",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho Anyone"
+                  },
+                  {
+                    "role": "V",
+                    "text": "must contact",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "security",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for an access code.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “Anyone” chỉ người, hợp với “who arrives”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các đại từ “Each”, “Those”, “Everything”, “Anyone” nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống làm chủ ngữ của “must contact”; dấu hiệu “___ + who + V số ít”: “------- who arrives”.",
+                  "Bước 3: “who” chỉ người, “arrives” số ít, câu khẳng định cần nghĩa “bất kỳ ai”, vì vậy chọn “Anyone” (bất kỳ ai).",
+                  "“Each” (A) không đứng một mình ngay trước “who”, phải là “each of …” hoặc “each + danh từ”, nên loại.",
+                  "“Those” (B) đi với động từ số nhiều (those who arrive), không hợp “arrives”, nên loại.",
+                  "“Everything” (C) chỉ vật, không đi với “who” và không thể “đến bãi đỗ xe”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“everyone”, “everybody” nghĩa là “mọi người” nhưng vẫn đi với động từ số ít: *Everyone in the office has a new laptop.* — Mọi người trong văn phòng đều có máy tính mới."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "-one, -body chỉ người; -thing chỉ vật, sự việc.",
+                  "Câu khẳng định dùng some-; nghĩa “bất kỳ” hoặc sau if dùng any-; nghĩa “không” dùng no-.",
+                  "Đại từ bất định làm chủ ngữ đi với động từ số ít."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

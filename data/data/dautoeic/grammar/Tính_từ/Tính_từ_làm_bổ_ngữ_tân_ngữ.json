@@ -1,0 +1,411 @@
+{
+  "subtopic": {
+    "id": "f020754e-8fb6-4631-9ba4-4cffa1c95c0b",
+    "topic_id": "1cb57ce1-885b-4639-b51c-f69a772f9412",
+    "title_en": "Tính từ làm bổ ngữ tân ngữ",
+    "title_vi": "Tính từ làm bổ ngữ tân ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 25,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-tinh-tu-lam-bo-ngu-tan-ngu"
+  },
+  "lessons": [
+    {
+      "id": "7fcdc7a4-39a3-46b0-9154-977863ec5e3b",
+      "subtopic_id": "f020754e-8fb6-4631-9ba4-4cffa1c95c0b",
+      "title_en": "Tính từ làm bổ ngữ tân ngữ",
+      "title_vi": "Tính từ làm bổ ngữ tân ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 3 · Câu 111",
+          "options": {
+            "A": "acceptability",
+            "B": "acceptable",
+            "C": "acceptance",
+            "D": "accepting"
+          },
+          "question": "A majority of the city's residents rated its transportation app as -------.",
+          "translation": "Đa số cư dân thành phố đánh giá ứng dụng giao thông của thành phố là chấp nhận được."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “accept” nhưng khác loại từ. Chỗ trống đứng cuối câu, sau tân ngữ “its transportation app” và “as”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "A majority of the city's residents",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "rated",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "its transportation app",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "as",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------.",
+                    "label": "chỗ trống"
+                  }
+                ],
+                "caption": "Câu đã có chủ ngữ, động từ “rated” và tân ngữ; chỗ trống là phần nói tân ngữ được đánh giá ra sao."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau động từ + tân ngữ (+ as) cần loại từ nào để nói tân ngữ như thế nào.",
+                  "Chỗ trống nói về chủ ngữ hay về tân ngữ.",
+                  "Vì sao danh từ và V-ing không hợp ở vị trí này."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**Bổ ngữ tân ngữ** là tính từ đứng sau tân ngữ, nói tân ngữ ở trạng thái nào hoặc được đánh giá ra sao. Nó đi sau các động từ make, keep, find, consider, think và rate … as.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Bổ ngữ tân ngữ",
+                    "formula": "S + make / keep / find + O + adj"
+                  },
+                  {
+                    "label": "Có as",
+                    "formula": "S + rate + O + as + adj"
+                  },
+                  {
+                    "label": "Tân ngữ giả",
+                    "formula": "S + make / find / consider / think + it + adj + (for người) + to V / that + S + V"
+                  },
+                  {
+                    "label": "Chủ ngữ giả",
+                    "formula": "It + is / was + adj + for / of người + to V"
+                  },
+                  {
+                    "label": "Thời gian",
+                    "formula": "It + takes / took + (người) + thời gian + to V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Flexible hours",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "make",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "it",
+                    "label": "tân ngữ giả"
+                  },
+                  {
+                    "role": "C",
+                    "text": "possible",
+                    "label": "bổ ngữ (tính từ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for parents",
+                    "label": "for + người"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to attend school events …",
+                    "label": "tân ngữ thật"
+                  }
+                ],
+                "caption": "“it” đứng ở chỗ tân ngữ, thay cho cụm “to attend school events”; tính từ “possible” nói việc đó thế nào."
+              },
+              {
+                "rows": [
+                  [
+                    "make / keep / find + O + adj",
+                    "*We found the new schedule very convenient.* — Chúng tôi thấy lịch mới rất tiện lợi."
+                  ],
+                  [
+                    "O + V-ed làm tính từ khi tân ngữ chịu tác động",
+                    "*Please keep the storage room locked at night.* — Vui lòng giữ phòng kho luôn khóa vào ban đêm."
+                  ],
+                  [
+                    "O + more + adj; adj + and + adj",
+                    "*The new layout makes the office more open and bright.* — Cách bố trí mới làm văn phòng thoáng và sáng hơn."
+                  ],
+                  [
+                    "it + adj + to V / that",
+                    "*The manager thought it wise to delay the launch.* — Quản lý cho rằng hoãn ra mắt là khôn ngoan."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chỉ **it** làm được tân ngữ giả hay chủ ngữ giả; this, that, them, those, what không làm được.",
+                  "It is / was + adj + **of** người + to V dùng để khen hay chê người đó: *It was kind of him to help.*",
+                  "Sau **động từ liên kết** (stay, feel, seem, remain, sound, look, prove) cũng dùng tính từ, nói trạng thái của chủ ngữ (học kỹ ở chủ điểm “Tính từ sau động từ liên kết”).",
+                  "Tính từ so sánh hơn (easier, simpler, faster) cũng làm bổ ngữ được."
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Tính từ đứng **sau đại từ bất định** something, anyone, someone, everything, nothing: *something important*.",
+                  "Tính từ có cụm đi kèm đứng **sau danh từ**: *applicants eligible for…*, *the person responsible for…*, *documents necessary to…*.",
+                  "Một số tính từ đứng sau danh từ với nghĩa riêng: *employees present* (có mặt), *departments concerned* (có liên quan), *the only room available*, *the shortest time possible*.",
+                  "**Effective + thời điểm** ở đầu câu nghĩa “có hiệu lực từ …”: *Effective immediately, …*"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói tân ngữ, “it” hoặc chủ ngữ ở trạng thái nào; đứng sau tân ngữ, sau it, sau động từ liên kết, hoặc sau danh từ, đại từ bất định trong các trường hợp trên.",
+                    "form": "Tính từ (possible, convenient, secure, efficient)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Bổ nghĩa cho động từ; không làm bổ ngữ cho tân ngữ hay chủ ngữ, không bổ nghĩa cho danh từ, đại từ.",
+                    "form": "Trạng từ (possibly, conveniently, securely, patiently)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nói được tân ngữ, chủ ngữ như thế nào; đặt vào các vị trí này thì câu không có nghĩa.",
+                    "form": "Danh từ (possibility, convenience, security, information, readiness)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng sau tân ngữ, sau it hay sau đại từ để làm bổ ngữ; câu đã có động từ chính.",
+                    "form": "Động từ (necessitate, inform, simplify, familiarize, organizes, secures, readies)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng nghĩa không hợp: V-ing mang nghĩa chủ động, V-ed mang nghĩa bị động; phải xét tân ngữ tự làm hay chịu tác động.",
+                    "form": "V-ing, V-ed, tính từ sai nghĩa (organizing, informed, understood, acting, corrective, impossible)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được tân ngữ giả; chỉ dùng it.",
+                    "form": "this, that, them, those, what trước adj + to V / that",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau khoảng thời gian phải là to + V nguyên mẫu.",
+                    "form": "for, that, of, so sau It takes / took + thời gian",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu không có gì để so sánh nên dùng tính từ nguyên dạng: It was kind of … to V.",
+                    "form": "So sánh hơn khi câu không có gì để so sánh (kinder)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ + tân ngữ + ___",
+                    "example": "*rated its transportation app as ___*; *keep the documents ___*; *make training more ___ and accessible*"
+                  },
+                  {
+                    "signal": "động từ + ___ + tính từ + to V / that",
+                    "example": "*found ___ cheaper to hire*; *considers ___ unfair that…*"
+                  },
+                  {
+                    "signal": "it + ___ + to V",
+                    "example": "*makes it ___ to submit*; *It is ___ for every visitor to sign in*; *It was ___ of Ms. Alvarez to stay*"
+                  },
+                  {
+                    "signal": "It takes / took + thời gian + ___ + V",
+                    "example": "*It takes about three weeks ___ train*"
+                  },
+                  {
+                    "signal": "động từ liên kết + ___",
+                    "example": "*stay ___*; *feel ___ about*; *seem ___*; *proved ___*"
+                  },
+                  {
+                    "signal": "đại từ bất định + ___",
+                    "example": "*something ___ to tell*; *anyone ___ to work*; *nothing ___ about*"
+                  },
+                  {
+                    "signal": "danh từ + ___",
+                    "example": "*All applicants ___ for*; *the person ___ for*; *the shortest time ___*"
+                  },
+                  {
+                    "signal": "___ immediately, đầu câu",
+                    "example": "*___ immediately, all visitors…*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng gốc khác loại từ là câu từ loại; bốn đại từ (it, this, that, them) là câu đại từ; for, to, that, of là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ make, keep, find, consider, think, rate và tân ngữ của nó; xem sau chỗ trống có adj + to V / that không; xem trước chỗ trống là it, động từ liên kết, đại từ bất định hay danh từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Vị trí bổ ngữ thì chọn tính từ hợp nghĩa; tân ngữ thật là to V / that thì chọn it; sau It takes + thời gian chọn to. Loại trạng từ, danh từ, động từ và dạng sai nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "A majority of the city's residents",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "rated",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "its transportation app",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "as",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "acceptable.",
+                    "label": "bổ ngữ tân ngữ (tính từ)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “acceptable” nói ứng dụng được đánh giá thế nào."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “accept” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng cuối câu, sau “rated its transportation app as”; dấu hiệu “động từ + tân ngữ + ___”: “rated its transportation app as -------”.",
+                  "Bước 3: rate + O + as + adj nói ứng dụng được đánh giá thế nào, vì vậy chọn “acceptable” (chấp nhận được).",
+                  "“acceptability” (A) là danh từ (tính chấp nhận được), không nói “its transportation app” như thế nào, nên loại.",
+                  "“acceptance” (C) là danh từ (sự chấp nhận), không nói “its transportation app” như thế nào, nên loại.",
+                  "“accepting” (D) là V-ing nghĩa “dễ chấp nhận người khác”, dùng cho người, không hợp với “app”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Look, feel, sound, prove trong bài tập mang nghĩa “trông, cảm thấy, nghe có vẻ, tỏ ra” nên đi với tính từ; khi là hành động thì đi với trạng từ: *She looked carefully at the report.*",
+                  "“concerning” dùng làm giới từ (về) thì phải có danh từ theo sau; “concerned” đứng sau danh từ nghĩa là “có liên quan”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "make / keep / find / consider + O + adj: tính từ nói tân ngữ thế nào.",
+                  "Tân ngữ thật là to V hoặc mệnh đề that thì đặt it trước tính từ.",
+                  "Tính từ đứng sau something, anyone, nothing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,636 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "31277529-0294-40e1-87f3-d8cd67a91eb9",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 31: Selecting a Restaurant",
+    "order_index": 31,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:38.724617+00:00",
+    "updated_at": "2026-09-18T08:52:38.724617+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+    "test_id": "31277529-0294-40e1-87f3-d8cd67a91eb9",
+    "name": "Selecting a Restaurant",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:38.724617+00:00",
+    "updated_at": "2026-09-18T08:52:38.724617+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "83fca6d1-331e-4699-9ac8-a19b72f2b9a0",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "compromise",
+      "ipa": "UK: /ˈkɒm.prə.maɪz/ | US: /ˈkɑːm.prə.maɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The couple made a compromise and ordered food to take out.",
+          "meaning": "sự thỏa hiệp, sự nhượng bộ; thỏa hiệp, dàn xếp",
+          "antonyms": [
+            "disagreement (sự bất đồng)"
+          ],
+          "toeic_tip": "Danh từ dùng make/reach a compromise; động từ dùng compromise on something.",
+          "example_vi": "Hai vợ chồng nhượng bộ nhau, cuối cùng gọi đồ mang về.",
+          "word_family": [
+            "uncompromising (adj) không khoan nhượng"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T07:05:20.433065+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/83fca6d1-331e-4699-9ac8-a19b72f2b9a0-wm.jpg?v=1789797997895",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compromise-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compromise-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reach a compromise",
+          "meaning": "đạt được thỏa hiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/83fca6d1-331e-4699-9ac8-a19b72f2b9a0-0-wm.jpg?v=1789801509132"
+        },
+        {
+          "phrase": "make a compromise",
+          "meaning": "đưa ra nhượng bộ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/83fca6d1-331e-4699-9ac8-a19b72f2b9a0-1-wm.jpg?v=1789801520263"
+        },
+        {
+          "phrase": "compromise on price",
+          "meaning": "thỏa hiệp về giá"
+        }
+      ],
+      "synonyms": [
+        "settlement (sự dàn xếp)",
+        "concession (sự nhượng bộ)"
+      ]
+    },
+    {
+      "id": "b8782c9f-71f5-4b58-81ec-9363a2d4fe21",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "arrive",
+      "ipa": "/əˈraɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "By the time our meal arrived, it was cold.",
+          "meaning": "đến, tới nơi",
+          "antonyms": [
+            "depart (khởi hành)",
+            "leave (rời đi)"
+          ],
+          "toeic_tip": "arrive in + thành phố, arrive at + địa điểm nhỏ; không có arrive to.",
+          "example_vi": "Đồ ăn mang ra tới nơi thì đã nguội ngắt.",
+          "word_family": [
+            "arrival (n) sự đến, chuyến đến"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T07:32:10.578053+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b8782c9f-71f5-4b58-81ec-9363a2d4fe21-wm.jpg?v=1789797728090",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/arrive-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/arrive-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "arrive on time",
+          "meaning": "đến đúng giờ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b8782c9f-71f5-4b58-81ec-9363a2d4fe21-0-wm.jpg?v=1789803117769"
+        },
+        {
+          "phrase": "arrive at the airport",
+          "meaning": "đến sân bay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b8782c9f-71f5-4b58-81ec-9363a2d4fe21-1-wm.jpg?v=1789803130402"
+        },
+        {
+          "phrase": "arrive in Tokyo",
+          "meaning": "đến Tokyo"
+        }
+      ],
+      "synonyms": [
+        "reach (đến)",
+        "get to (tới)"
+      ]
+    },
+    {
+      "id": "4fc2098a-a36a-467b-95d6-776f1a9d9101",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "subjective",
+      "ipa": "/səbˈdʒek.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Food preferences are subjective and not everyone agrees on what tastes good.",
+          "meaning": "chủ quan, mang tính cá nhân",
+          "antonyms": [
+            "objective (khách quan)"
+          ],
+          "toeic_tip": "Cặp đối lập hay ra đề: subjective (chủ quan) và objective (khách quan).",
+          "example_vi": "Khẩu vị là chuyện của mỗi người, chẳng ai giống ai.",
+          "word_family": [
+            "subjectively (adv) một cách chủ quan",
+            "subjectivity (n) tính chủ quan"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:37:58.679991+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4fc2098a-a36a-467b-95d6-776f1a9d9101-wm.jpg?v=1789797988067",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/subjective-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/subjective-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a subjective opinion",
+          "meaning": "ý kiến chủ quan",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4fc2098a-a36a-467b-95d6-776f1a9d9101-0-wm.jpg?v=1789799876678"
+        },
+        {
+          "phrase": "highly subjective",
+          "meaning": "rất chủ quan",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4fc2098a-a36a-467b-95d6-776f1a9d9101-1-wm.jpg?v=1789799878541"
+        },
+        {
+          "phrase": "a subjective judgment",
+          "meaning": "đánh giá chủ quan"
+        }
+      ],
+      "synonyms": [
+        "personal (mang tính cá nhân)",
+        "biased (thiên lệch)"
+      ]
+    },
+    {
+      "id": "5871834a-4599-43ce-b22d-a53dd0e24a7c",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "daringly",
+      "ipa": "UK: /ˈdeə.rɪŋ.li/ | US: /ˈder.ɪŋ.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We daringly ordered the raw squid.",
+          "meaning": "một cách táo bạo, một cách gan dạ",
+          "antonyms": [
+            "timidly (một cách rụt rè)",
+            "cautiously (một cách dè dặt)"
+          ],
+          "toeic_tip": "Part 5 hay hỏi vị trí: daringly bổ nghĩa động từ, daring bổ nghĩa danh từ.",
+          "example_vi": "Chúng tôi làm liều gọi món mực sống.",
+          "word_family": [
+            "daring (adj) táo bạo",
+            "dare (v) dám"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:40:27.465894+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5871834a-4599-43ce-b22d-a53dd0e24a7c-wm.jpg?v=1789797992517",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/daringly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/daringly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "daringly ordered",
+          "meaning": "mạnh dạn gọi món",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5871834a-4599-43ce-b22d-a53dd0e24a7c-0-wm.jpg?v=1789800012435"
+        },
+        {
+          "phrase": "daringly different",
+          "meaning": "khác biệt táo bạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5871834a-4599-43ce-b22d-a53dd0e24a7c-1-wm.jpg?v=1789800027331"
+        },
+        {
+          "phrase": "daringly dressed",
+          "meaning": "ăn mặc táo bạo"
+        }
+      ],
+      "synonyms": [
+        "boldly (một cách táo bạo)",
+        "bravely (một cách dũng cảm)"
+      ]
+    },
+    {
+      "id": "b2f95e2d-de26-41a0-bfad-f63c83a7c7e4",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "familiar",
+      "ipa": "UK: /fəˈmɪl.i.ər/ | US: /fəˈmɪl.jɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is nice to see some familiar items on the menu.",
+          "meaning": "quen thuộc, thường gặp",
+          "antonyms": [
+            "unfamiliar (xa lạ)",
+            "strange (lạ lẫm)"
+          ],
+          "toeic_tip": "be familiar with = biết rõ; be familiar to = quen thuộc đối với ai.",
+          "example_vi": "Thấy vài món quen thuộc trên thực đơn cũng thấy yên tâm.",
+          "word_family": [
+            "familiarity (n) sự quen thuộc",
+            "familiarize (v) làm cho quen"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T07:27:58.814055+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b2f95e2d-de26-41a0-bfad-f63c83a7c7e4-wm.jpg?v=1789798381268",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/familiar-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/familiar-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be familiar with something",
+          "meaning": "quen thuộc với cái gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b2f95e2d-de26-41a0-bfad-f63c83a7c7e4-0-wm.jpg?v=1789802863325"
+        },
+        {
+          "phrase": "a familiar face",
+          "meaning": "gương mặt quen",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b2f95e2d-de26-41a0-bfad-f63c83a7c7e4-1-wm.jpg?v=1789802878676"
+        },
+        {
+          "phrase": "sound familiar",
+          "meaning": "nghe quen quen"
+        }
+      ],
+      "synonyms": [
+        "well-known (quen thuộc)",
+        "common (thường gặp)"
+      ]
+    },
+    {
+      "id": "da5e875e-0fed-4b81-af2a-b47da9e91197",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "rely",
+      "ipa": "/rɪˈlaɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I have always relied on the restaurant advice this guidebook gives.",
+          "meaning": "tin tưởng vào, dựa vào, phụ thuộc vào",
+          "antonyms": [
+            "distrust (không tin tưởng)"
+          ],
+          "toeic_tip": "rely luôn đi kèm on hoặc upon, không dùng rely to.",
+          "example_vi": "Tôi vẫn luôn tin vào những gợi ý nhà hàng trong cuốn cẩm nang này.",
+          "word_family": [
+            "reliable (adj) đáng tin cậy",
+            "reliance (n) sự phụ thuộc"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T07:49:09.648047+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/da5e875e-0fed-4b81-af2a-b47da9e91197-wm.jpg?v=1789797984408",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rely-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rely-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "rely on someone",
+          "meaning": "dựa vào ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/da5e875e-0fed-4b81-af2a-b47da9e91197-0-wm.jpg?v=1789804136024"
+        },
+        {
+          "phrase": "rely heavily on",
+          "meaning": "phụ thuộc nhiều vào",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/da5e875e-0fed-4b81-af2a-b47da9e91197-1-wm.jpg?v=1789804149492"
+        },
+        {
+          "phrase": "rely on advice",
+          "meaning": "tin vào lời khuyên"
+        }
+      ],
+      "synonyms": [
+        "depend on (phụ thuộc vào)",
+        "count on (trông cậy vào)"
+      ]
+    },
+    {
+      "id": "ab2bd1b7-044e-4c56-a0d7-d26177287c96",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "guide",
+      "ipa": "/ɡaɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The guide led our tour group to a small restaurant only known to the locals.",
+          "meaning": "người hướng dẫn, sách hướng dẫn",
+          "toeic_tip": "Phân biệt guide (người hoặc sách) với guidance (sự chỉ dẫn, không đếm được).",
+          "example_vi": "Anh hướng dẫn viên đưa cả đoàn tới một quán nhỏ mà chỉ dân địa phương mới biết.",
+          "word_family": [
+            "guidance (n) sự chỉ dẫn",
+            "guide (v) dẫn đường, hướng dẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T07:24:25.656664+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ab2bd1b7-044e-4c56-a0d7-d26177287c96-wm.jpg?v=1789797993791",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/guide-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/guide-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a tour guide",
+          "meaning": "hướng dẫn viên du lịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ab2bd1b7-044e-4c56-a0d7-d26177287c96-0-wm.jpg?v=1789802653098"
+        },
+        {
+          "phrase": "a travel guide",
+          "meaning": "sách hướng dẫn du lịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ab2bd1b7-044e-4c56-a0d7-d26177287c96-1-wm.jpg?v=1789802665510"
+        },
+        {
+          "phrase": "consult the guide",
+          "meaning": "tra sách hướng dẫn"
+        }
+      ],
+      "synonyms": [
+        "leader (người dẫn đường)",
+        "handbook (sách cẩm nang)"
+      ]
+    },
+    {
+      "id": "16442f85-6ffd-4ee0-a40f-ddaae79a974c",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "secure",
+      "ipa": "UK: /sɪˈkjʊər/ | US: /sɪˈkjʊr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Despite the popularity of the restaurant, Max was able to secure reservations for this evening.",
+          "meaning": "giành được, có được, kiếm được",
+          "antonyms": [
+            "lose (đánh mất)",
+            "forfeit (để mất)"
+          ],
+          "toeic_tip": "Trong TOEIC secure thường là động từ giành được, không phải nghĩa an toàn.",
+          "example_vi": "Quán đông khách vậy mà Max vẫn đặt được bàn cho tối nay.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:18:07.248232+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/16442f85-6ffd-4ee0-a40f-ddaae79a974c-wm.jpg?v=1789798148748",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/secure-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/secure-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "secure a reservation",
+          "meaning": "đặt được chỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/16442f85-6ffd-4ee0-a40f-ddaae79a974c-0-wm.jpg?v=1789798683331"
+        },
+        {
+          "phrase": "secure a contract",
+          "meaning": "giành được hợp đồng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/16442f85-6ffd-4ee0-a40f-ddaae79a974c-1-wm.jpg?v=1789798687109"
+        },
+        {
+          "phrase": "secure funding",
+          "meaning": "xin được nguồn vốn"
+        }
+      ],
+      "synonyms": [
+        "obtain (có được)",
+        "acquire (giành được)"
+      ]
+    },
+    {
+      "id": "6e67b841-82d9-49bf-a0ec-9b37759765fe",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "suggestion",
+      "ipa": "/səˈdʒes.tʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Can I make a suggestion about what to order?",
+          "meaning": "lời đề nghị, lời gợi ý, lời khuyên",
+          "toeic_tip": "suggest + V-ing hoặc suggest that S (should) V, không dùng suggest to do.",
+          "example_vi": "Tôi góp ý chuyện gọi món được không?",
+          "word_family": [
+            "suggest (v) gợi ý, đề nghị"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:53:03.262545+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6e67b841-82d9-49bf-a0ec-9b37759765fe-wm.jpg?v=1789797993890",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/suggestion-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/suggestion-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a suggestion",
+          "meaning": "đưa ra gợi ý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6e67b841-82d9-49bf-a0ec-9b37759765fe-0-wm.jpg?v=1789800773763"
+        },
+        {
+          "phrase": "follow a suggestion",
+          "meaning": "làm theo gợi ý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6e67b841-82d9-49bf-a0ec-9b37759765fe-1-wm.jpg?v=1789800783105"
+        },
+        {
+          "phrase": "offer suggestions",
+          "meaning": "đề xuất ý kiến"
+        }
+      ],
+      "synonyms": [
+        "proposal (đề xuất)",
+        "recommendation (lời khuyến nghị)"
+      ]
+    },
+    {
+      "id": "664ecf28-4a69-4497-8333-c997682d6bea",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "majority",
+      "ipa": "UK: /məˈdʒɒr.ə.ti/ | US: /məˈdʒɔːr.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The majority of the group wanted to try the new Chinese restaurant.",
+          "meaning": "phần lớn, đa số",
+          "antonyms": [
+            "minority (thiểu số)"
+          ],
+          "toeic_tip": "The majority of + danh từ số nhiều thì động từ chia số nhiều.",
+          "example_vi": "Phần lớn cả nhóm muốn thử quán Trung Hoa mới mở.",
+          "word_family": [
+            "major (adj) chính, chủ yếu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:47:20.433477+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/664ecf28-4a69-4497-8333-c997682d6bea-wm.jpg?v=1789798391677",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/majority-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/majority-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the majority of",
+          "meaning": "phần lớn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/664ecf28-4a69-4497-8333-c997682d6bea-0-wm.jpg?v=1789800439377"
+        },
+        {
+          "phrase": "a vast majority",
+          "meaning": "đại đa số",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/664ecf28-4a69-4497-8333-c997682d6bea-1-wm.jpg?v=1789800440299"
+        },
+        {
+          "phrase": "a majority vote",
+          "meaning": "phiếu thuận đa số"
+        }
+      ],
+      "synonyms": [
+        "most (phần lớn)",
+        "the bulk (phần đông)"
+      ]
+    },
+    {
+      "id": "31530f17-82ab-4fcf-a72b-dd3f62e2998c",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "mix",
+      "ipa": "/mɪks/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The daring chef mixed two uncommon ingredients.",
+          "meaning": "trộn, pha trộn; sự pha trộn, hỗn hợp",
+          "antonyms": [
+            "separate (tách riêng ra)"
+          ],
+          "toeic_tip": "Phân biệt mix (trộn) với mix-up (sự nhầm lẫn) ở Bài 32.",
+          "example_vi": "Vị đầu bếp táo bạo đem trộn chung hai nguyên liệu ít ai dùng.",
+          "word_family": [
+            "mixture (n) hỗn hợp",
+            "mixed (adj) pha trộn, lẫn lộn"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:23:42.708561+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/31530f17-82ab-4fcf-a72b-dd3f62e2998c-wm.jpg?v=1789798582872",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mix-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mix-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "mix ingredients",
+          "meaning": "trộn nguyên liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/31530f17-82ab-4fcf-a72b-dd3f62e2998c-0-wm.jpg?v=1789799022536"
+        },
+        {
+          "phrase": "a mix of flavors",
+          "meaning": "sự pha trộn hương vị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/31530f17-82ab-4fcf-a72b-dd3f62e2998c-1-wm.jpg?v=1789799020549"
+        },
+        {
+          "phrase": "mix well",
+          "meaning": "trộn đều"
+        }
+      ],
+      "synonyms": [
+        "blend (pha trộn)",
+        "combine (kết hợp)"
+      ]
+    },
+    {
+      "id": "17dce090-4356-41d9-95a2-6eac4f1ed028",
+      "part_id": "5d94e72f-cd3e-4613-afff-f1829b0f1958",
+      "word": "appeal",
+      "ipa": "/əˈpiːl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A restaurant with good food and reasonable prices has a lot of appeal.",
+          "meaning": "sức hấp dẫn, sức thu hút",
+          "toeic_tip": "appeal to somebody là hấp dẫn ai; appeal còn nghĩa kháng cáo, khiếu nại.",
+          "example_vi": "Quán nào đồ ăn ngon mà giá phải chăng thì rất hút khách.",
+          "word_family": [
+            "appealing (adj) hấp dẫn",
+            "appeal (v) thu hút, lôi cuốn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:38.724617+00:00",
+      "updated_at": "2026-09-19T06:19:43.567443+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/17dce090-4356-41d9-95a2-6eac4f1ed028-wm.jpg?v=1789798284556",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/appeal-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/appeal-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "have a lot of appeal",
+          "meaning": "rất hấp dẫn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/17dce090-4356-41d9-95a2-6eac4f1ed028-0-wm.jpg?v=1789798781033"
+        },
+        {
+          "phrase": "popular appeal",
+          "meaning": "sức hút với số đông",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/17dce090-4356-41d9-95a2-6eac4f1ed028-1-wm.jpg?v=1789798783431"
+        },
+        {
+          "phrase": "lose its appeal",
+          "meaning": "mất đi sức hấp dẫn"
+        }
+      ],
+      "synonyms": [
+        "attraction (sự thu hút)",
+        "charm (sức quyến rũ)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4031 @@
+{
+  "set": {
+    "id": "831c3bbe-2e21-40c0-ba34-772751ed30fa",
+    "name": "2026",
+    "description": "Từ vựng theo 10 đề ETS 2026 (LC/RC)",
+    "source": null,
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T07:24:07.14188+00:00",
+    "updated_at": "2026-09-18T07:24:07.14188+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "5ff87e4a-1758-4611-b90f-63ec89ce0c09",
+    "set_id": "831c3bbe-2e21-40c0-ba34-772751ed30fa",
+    "name": "Test 2",
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T07:24:17.4905+00:00",
+    "updated_at": "2026-09-18T07:24:17.4905+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+    "test_id": "5ff87e4a-1758-4611-b90f-63ec89ce0c09",
+    "name": "RC",
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T07:24:17.4905+00:00",
+    "updated_at": "2026-09-18T07:24:17.4905+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "fa4d36f6-0e37-440f-a676-15e29bc9c992",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "average",
+      "ipa": "UK: /ˈæv.ər.ɪdʒ/ | US: /ˈæv.ɚ.ɪdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The average salary has increased.",
+          "meaning": "trung bình",
+          "antonyms": [
+            "exceptional (vượt trội)",
+            "extreme (cực đoan)"
+          ],
+          "toeic_tip": "Cụm \"on average\" không có mạo từ, nhưng \"the average price\" thì có.",
+          "example_vi": "Mức lương trung bình đã tăng lên.",
+          "word_family": [
+            "averagely (adv) ở mức trung bình"
+          ],
+          "part_of_speech": "n/adj"
+        }
+      ],
+      "order_index": 78,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T08:07:24.518213+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fa4d36f6-0e37-440f-a676-15e29bc9c992-wm.jpg?v=1789798199149",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/average-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/average-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "on average",
+          "meaning": "tính trung bình",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fa4d36f6-0e37-440f-a676-15e29bc9c992-0-wm.jpg?v=1789805244377"
+        },
+        {
+          "phrase": "above average",
+          "meaning": "trên mức trung bình",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fa4d36f6-0e37-440f-a676-15e29bc9c992-1-wm.jpg?v=1789805243647"
+        },
+        {
+          "phrase": "the average price",
+          "meaning": "giá trung bình"
+        }
+      ],
+      "synonyms": [
+        "mean (số trung bình)",
+        "typical (điển hình)",
+        "ordinary (bình thường)"
+      ]
+    },
+    {
+      "id": "f81021e7-4ace-458d-bbcb-19e1094f4558",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "candidate",
+      "ipa": "UK: /ˈkæn.dɪ.deɪt/ | US: /ˈkæn.də.deɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He is a strong candidate for the job.",
+          "meaning": "ứng viên",
+          "toeic_tip": "Đếm được, cần mạo từ; hay gặp cụm \"the ideal candidate for the position\".",
+          "example_vi": "Anh ấy là một ứng viên sáng giá cho công việc.",
+          "word_family": [
+            "candidacy (n) tư cách ứng viên"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T08:05:49.911621+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f81021e7-4ace-458d-bbcb-19e1094f4558-wm.jpg?v=1789797665306",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/candidate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/candidate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a qualified candidate",
+          "meaning": "ứng viên đủ năng lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f81021e7-4ace-458d-bbcb-19e1094f4558-0-wm.jpg?v=1789805149164"
+        },
+        {
+          "phrase": "interview candidates",
+          "meaning": "phỏng vấn ứng viên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f81021e7-4ace-458d-bbcb-19e1094f4558-1-wm.jpg?v=1789805149781"
+        },
+        {
+          "phrase": "the ideal candidate",
+          "meaning": "ứng viên lý tưởng"
+        }
+      ],
+      "synonyms": [
+        "applicant (người nộp đơn)",
+        "contender (người ra tranh)"
+      ]
+    },
+    {
+      "id": "1c446017-8783-4533-8dac-1500c68e48b9",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "eager",
+      "ipa": "UK: /ˈiː.ɡər/ | US: /ˈiː.ɡɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He is eager to start his new role.",
+          "meaning": "tha thiết, háo hức",
+          "antonyms": [
+            "reluctant (miễn cưỡng)",
+            "indifferent (thờ ơ)"
+          ],
+          "toeic_tip": "eager to do something, eager for + danh từ; đứng sau động từ be.",
+          "example_vi": "Anh ấy rất háo hức bắt đầu vai trò mới.",
+          "word_family": [
+            "eagerness (n) sự háo hức",
+            "eagerly (adv) một cách háo hức"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 16,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T08:41:47.030885+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1c446017-8783-4533-8dac-1500c68e48b9-wm.jpg?v=1789798321267",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/eager-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/eager-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "eager to learn",
+          "meaning": "háo hức học hỏi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c446017-8783-4533-8dac-1500c68e48b9-0-wm.jpg?v=1789798795731"
+        },
+        {
+          "phrase": "an eager participant",
+          "meaning": "người tham gia nhiệt tình",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c446017-8783-4533-8dac-1500c68e48b9-1-wm.jpg?v=1789807306852"
+        },
+        {
+          "phrase": "eager for feedback",
+          "meaning": "tha thiết muốn nhận góp ý"
+        }
+      ],
+      "synonyms": [
+        "keen (hăm hở)",
+        "enthusiastic (nhiệt tình)",
+        "anxious (nôn nóng)"
+      ]
+    },
+    {
+      "id": "e491ee37-cdba-4cf8-8565-1e7fab4b958b",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "commercial",
+      "ipa": "UK: /kəˈmɜː.ʃəl/ | US: /kəˈmɝː.ʃəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is a commercial office building.",
+          "meaning": "thuộc thương mại",
+          "antonyms": [
+            "residential (thuộc khu dân cư)",
+            "nonprofit (phi lợi nhuận)"
+          ],
+          "toeic_tip": "Còn là danh từ đếm được: a commercial là mẩu quảng cáo truyền hình.",
+          "example_vi": "Đó là một tòa nhà văn phòng thương mại.",
+          "word_family": [
+            "commerce (n) thương mại",
+            "commercially (adv) về mặt thương mại"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 44,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:55:51.277531+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e491ee37-cdba-4cf8-8565-1e7fab4b958b-wm.jpg?v=1789797674807",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commercial-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commercial-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "commercial property",
+          "meaning": "bất động sản thương mại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e491ee37-cdba-4cf8-8565-1e7fab4b958b-0-wm.jpg?v=1789804551135"
+        },
+        {
+          "phrase": "for commercial use",
+          "meaning": "dùng cho mục đích thương mại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e491ee37-cdba-4cf8-8565-1e7fab4b958b-1-wm.jpg?v=1789804549999"
+        },
+        {
+          "phrase": "a commercial district",
+          "meaning": "khu thương mại"
+        }
+      ],
+      "synonyms": [
+        "business (thuộc kinh doanh)",
+        "trade (thuộc buôn bán)",
+        "for-profit (vì lợi nhuận)"
+      ]
+    },
+    {
+      "id": "4ddfd259-38ba-4b20-8e26-6316e009badc",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "access",
+      "ipa": "/ˈæk.ses/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Only staff can access this area.",
+          "meaning": "truy cập, sử dụng",
+          "antonyms": [
+            "block (chặn)",
+            "restrict (hạn chế)"
+          ],
+          "toeic_tip": "Danh từ: have access to; động từ: access + tân ngữ, không có \"to\".",
+          "example_vi": "Chỉ nhân viên mới có thể vào (truy cập) khu vực này.",
+          "word_family": [
+            "accessible (adj) có thể tiếp cận",
+            "accessibility (n) khả năng tiếp cận"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 25,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:36:34.713086+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4ddfd259-38ba-4b20-8e26-6316e009badc-wm.jpg?v=1789798184446",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/access-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/access-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "access the database",
+          "meaning": "truy cập cơ sở dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4ddfd259-38ba-4b20-8e26-6316e009badc-0-wm.jpg?v=1789799793212"
+        },
+        {
+          "phrase": "have access to",
+          "meaning": "có quyền sử dụng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4ddfd259-38ba-4b20-8e26-6316e009badc-1-wm.jpg?v=1789799794572"
+        },
+        {
+          "phrase": "gain access",
+          "meaning": "được phép vào"
+        }
+      ],
+      "synonyms": [
+        "enter (vào)",
+        "use (sử dụng)",
+        "retrieve (lấy ra)"
+      ]
+    },
+    {
+      "id": "2f6b83b7-1731-4c13-ad1a-4987cdbdbdbd",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "artificial",
+      "ipa": "UK: /ˌɑː.tɪˈfɪʃ.əl/ | US: /ˌɑːr.t̬əˈfɪʃ.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The flowers are made of artificial silk.",
+          "meaning": "nhân tạo",
+          "antonyms": [
+            "natural (tự nhiên)",
+            "organic (hữu cơ)"
+          ],
+          "toeic_tip": "Đứng trước danh từ; trái nghĩa natural, hay gặp bài đọc về thực phẩm.",
+          "example_vi": "Những bông hoa được làm từ lụa nhân tạo.",
+          "word_family": [
+            "artificially (adv) một cách nhân tạo"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 17,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T08:41:50.590696+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2f6b83b7-1731-4c13-ad1a-4987cdbdbdbd-wm.jpg?v=1789798563346",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/artificial-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/artificial-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "artificial flavors",
+          "meaning": "hương liệu nhân tạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f6b83b7-1731-4c13-ad1a-4987cdbdbdbd-0-wm.jpg?v=1789798982694"
+        },
+        {
+          "phrase": "artificial light",
+          "meaning": "ánh sáng nhân tạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f6b83b7-1731-4c13-ad1a-4987cdbdbdbd-1-wm.jpg?v=1789807310440"
+        },
+        {
+          "phrase": "artificial ingredients",
+          "meaning": "thành phần nhân tạo"
+        }
+      ],
+      "synonyms": [
+        "synthetic (tổng hợp)",
+        "man-made (do con người tạo ra)"
+      ]
+    },
+    {
+      "id": "c092222b-5ead-47dc-9c40-51de20a434f6",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "thrilled",
+      "ipa": "/θrɪld/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I was thrilled to win the prize.",
+          "meaning": "vô cùng phấn khích",
+          "antonyms": [
+            "disappointed (thất vọng)",
+            "unhappy (không vui)"
+          ],
+          "toeic_tip": "thrilled to do something, thrilled with + kết quả; luôn đứng sau be.",
+          "example_vi": "Tôi đã vô cùng phấn khích khi thắng giải.",
+          "word_family": [
+            "thrill (n/v) sự phấn khích",
+            "thrilling (adj) hồi hộp, hấp dẫn"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 70,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:35:14.404971+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c092222b-5ead-47dc-9c40-51de20a434f6-wm.jpg?v=1789797696524",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/thrilled-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/thrilled-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "thrilled to announce",
+          "meaning": "vô cùng vui mừng thông báo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c092222b-5ead-47dc-9c40-51de20a434f6-0-wm.jpg?v=1789803299437"
+        },
+        {
+          "phrase": "absolutely thrilled",
+          "meaning": "cực kỳ phấn khích",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c092222b-5ead-47dc-9c40-51de20a434f6-1-wm.jpg?v=1789803314243"
+        },
+        {
+          "phrase": "thrilled with the results",
+          "meaning": "rất phấn khởi với kết quả"
+        }
+      ],
+      "synonyms": [
+        "delighted (rất vui)",
+        "excited (phấn khích)",
+        "overjoyed (mừng khôn xiết)"
+      ]
+    },
+    {
+      "id": "133bb077-341a-4a14-af31-74035ed903ce",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "highlight",
+      "ipa": "/ˈhaɪ.laɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The report highlights the main issues.",
+          "meaning": "làm nổi bật",
+          "antonyms": [
+            "downplay (giảm nhẹ)",
+            "overlook (bỏ qua)"
+          ],
+          "toeic_tip": "Vừa động từ vừa danh từ, giữ nguyên dạng; highlight + tân ngữ trực tiếp.",
+          "example_vi": "Bản báo cáo làm nổi bật những vấn đề chính.",
+          "word_family": [
+            "highlight (n) điểm nổi bật"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 52,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:17:18.352805+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/133bb077-341a-4a14-af31-74035ed903ce-wm.jpg?v=1789797877879",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/highlight-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/highlight-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "highlight the benefits",
+          "meaning": "làm nổi bật các lợi ích",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/133bb077-341a-4a14-af31-74035ed903ce-0-wm.jpg?v=1789798638208"
+        },
+        {
+          "phrase": "highlight key points",
+          "meaning": "nhấn mạnh ý chính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/133bb077-341a-4a14-af31-74035ed903ce-1-wm.jpg?v=1789798635999"
+        },
+        {
+          "phrase": "the report highlights the need for",
+          "meaning": "báo cáo nhấn mạnh sự cần thiết của"
+        }
+      ],
+      "synonyms": [
+        "emphasize (nhấn mạnh)",
+        "stress (nhấn mạnh)",
+        "underscore (làm nổi bật)"
+      ]
+    },
+    {
+      "id": "c7e1521d-f5d8-4af4-8f9d-86d32f783c06",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "requirement",
+      "ipa": "UK: /rɪˈkwaɪə.mənt/ | US: /rɪˈkwaɪr.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Meeting the deadline is a requirement.",
+          "meaning": "yêu cầu",
+          "antonyms": [
+            "option (lựa chọn tùy ý)"
+          ],
+          "toeic_tip": "Cụm cố định \"meet the requirements\"; require that + chủ ngữ + V nguyên mẫu.",
+          "example_vi": "Đáp ứng thời hạn là một yêu cầu bắt buộc.",
+          "word_family": [
+            "require (v) yêu cầu",
+            "required (adj) bắt buộc"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 38,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:37:58.402992+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c7e1521d-f5d8-4af4-8f9d-86d32f783c06-wm.jpg?v=1789798181749",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/requirement-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/requirement-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "meet the requirements",
+          "meaning": "đáp ứng yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c7e1521d-f5d8-4af4-8f9d-86d32f783c06-0-wm.jpg?v=1789803466159"
+        },
+        {
+          "phrase": "job requirements",
+          "meaning": "yêu cầu công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c7e1521d-f5d8-4af4-8f9d-86d32f783c06-1-wm.jpg?v=1789803478264"
+        },
+        {
+          "phrase": "a legal requirement",
+          "meaning": "yêu cầu pháp lý"
+        }
+      ],
+      "synonyms": [
+        "condition (điều kiện)",
+        "prerequisite (điều kiện tiên quyết)",
+        "criterion (tiêu chí)"
+      ]
+    },
+    {
+      "id": "3a103adb-c940-4691-a18c-3347e76db047",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "porous",
+      "ipa": "UK: /ˈpɔː.rəs/ | US: /ˈpɔːr.əs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The rock is porous and absorbs water.",
+          "meaning": "xốp, thấm nước",
+          "antonyms": [
+            "waterproof (chống thấm)",
+            "impermeable (không thấm)"
+          ],
+          "toeic_tip": "Đuôi -ous là tính từ; Part 7 hay gặp trong bài về vật liệu xây dựng.",
+          "example_vi": "Loại đá này xốp và thấm nước.",
+          "word_family": [
+            "pore (n) lỗ nhỏ trên bề mặt",
+            "porosity (n) độ xốp"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 23,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:14:14.767313+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3a103adb-c940-4691-a18c-3347e76db047-wm.jpg?v=1789798454704",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/porous-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/porous-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a porous surface",
+          "meaning": "bề mặt xốp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a103adb-c940-4691-a18c-3347e76db047-0-wm.jpg?v=1789797797348"
+        },
+        {
+          "phrase": "porous materials",
+          "meaning": "vật liệu thấm nước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a103adb-c940-4691-a18c-3347e76db047-1-wm.jpg?v=1789797798543"
+        },
+        {
+          "phrase": "porous stone",
+          "meaning": "đá xốp"
+        }
+      ],
+      "synonyms": [
+        "absorbent (thấm hút)",
+        "permeable (cho thấm qua)"
+      ]
+    },
+    {
+      "id": "c815efcb-5d98-46ed-a3a5-a3589a4e1255",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "complimentary",
+      "ipa": "UK: /ˌkɒm.plɪˈmen.tər.i/ | US: /ˌkɑːm.pləˈmen.t̬ɚ.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The hotel offers complimentary breakfast.",
+          "meaning": "miễn phí",
+          "antonyms": [
+            "paid (phải trả tiền)",
+            "chargeable (có tính phí)"
+          ],
+          "toeic_tip": "Đừng nhầm với complementary (bổ sung cho nhau); complimentary nghĩa là miễn phí.",
+          "example_vi": "Khách sạn cung cấp bữa sáng miễn phí.",
+          "word_family": [
+            "compliment (n/v) lời khen, khen ngợi"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 61,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:39:17.236854+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c815efcb-5d98-46ed-a3a5-a3589a4e1255-wm.jpg?v=1789797680314",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complimentary-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complimentary-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a complimentary breakfast",
+          "meaning": "bữa sáng miễn phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c815efcb-5d98-46ed-a3a5-a3589a4e1255-0-wm.jpg?v=1789803542142"
+        },
+        {
+          "phrase": "complimentary tickets",
+          "meaning": "vé mời miễn phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c815efcb-5d98-46ed-a3a5-a3589a4e1255-1-wm.jpg?v=1789803557088"
+        },
+        {
+          "phrase": "a complimentary shuttle service",
+          "meaning": "dịch vụ xe đưa đón miễn phí"
+        }
+      ],
+      "synonyms": [
+        "free (miễn phí)",
+        "free of charge (không mất phí)"
+      ]
+    },
+    {
+      "id": "8b33f0c7-410d-43ef-8987-6d94615b38c5",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "notify",
+      "ipa": "UK: /ˈnəʊ.tɪ.faɪ/ | US: /ˈnoʊ.t̬ə.faɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We will notify you of any changes.",
+          "meaning": "thông báo",
+          "antonyms": [
+            "conceal (giấu không báo)"
+          ],
+          "toeic_tip": "notify somebody of something; bị động \"you will be notified\" rất hay gặp.",
+          "example_vi": "Chúng tôi sẽ thông báo cho bạn về bất kỳ thay đổi nào.",
+          "word_family": [
+            "notification (n) thông báo",
+            "notice (n) thông báo"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 37,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:08:34.201758+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8b33f0c7-410d-43ef-8987-6d94615b38c5-wm.jpg?v=1789797671306",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/notify-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/notify-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "notify customers",
+          "meaning": "thông báo cho khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b33f0c7-410d-43ef-8987-6d94615b38c5-0-wm.jpg?v=1789801701675"
+        },
+        {
+          "phrase": "notify in writing",
+          "meaning": "thông báo bằng văn bản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b33f0c7-410d-43ef-8987-6d94615b38c5-1-wm.jpg?v=1789801714067"
+        },
+        {
+          "phrase": "notify someone of a change",
+          "meaning": "báo cho ai về một thay đổi"
+        }
+      ],
+      "synonyms": [
+        "inform (thông báo)",
+        "advise (báo cho biết)",
+        "alert (cảnh báo)"
+      ]
+    },
+    {
+      "id": "b74d799b-615c-4d05-858d-d999433d0b3b",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "residence",
+      "ipa": "UK: /ˈrez.ɪ.dəns/ | US: /ˈrez.ə.dəns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This is his official residence.",
+          "meaning": "nơi cư trú",
+          "antonyms": [
+            "workplace (nơi làm việc)"
+          ],
+          "toeic_tip": "Phân biệt residence (nơi ở) với resident (cư dân) và residential (adj).",
+          "example_vi": "Đây là nơi cư trú chính thức của ông ấy.",
+          "word_family": [
+            "reside (v) cư trú",
+            "resident (n) cư dân",
+            "residential (adj) thuộc khu dân cư"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 60,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:30:22.37496+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b74d799b-615c-4d05-858d-d999433d0b3b-wm.jpg?v=1789798195338",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/residence-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/residence-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a private residence",
+          "meaning": "nhà riêng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b74d799b-615c-4d05-858d-d999433d0b3b-0-wm.jpg?v=1789803010753"
+        },
+        {
+          "phrase": "place of residence",
+          "meaning": "nơi cư trú",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b74d799b-615c-4d05-858d-d999433d0b3b-1-wm.jpg?v=1789803022229"
+        },
+        {
+          "phrase": "proof of residence",
+          "meaning": "giấy tờ chứng minh nơi cư trú"
+        }
+      ],
+      "synonyms": [
+        "home (nhà)",
+        "dwelling (chỗ ở)"
+      ]
+    },
+    {
+      "id": "cbb7d34a-21be-41b0-b238-63a72ebbc04e",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "specialty",
+      "ipa": "UK: /ˈspeʃ.əl.ti/ | US: /ˈspeʃ.əl.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Seafood is the restaurant's specialty.",
+          "meaning": "chuyên môn, thế mạnh; món đặc sản (của nhà hàng)",
+          "toeic_tip": "Anh-Mỹ specialty, Anh-Anh speciality; nghĩa món đặc sản hoặc lĩnh vực chuyên sâu.",
+          "example_vi": "Hải sản là món đặc sản của nhà hàng.",
+          "word_family": [
+            "special (adj) đặc biệt",
+            "specialize (v) chuyên về",
+            "specialist (n) chuyên gia"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 46,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:41:19.571429+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cbb7d34a-21be-41b0-b238-63a72ebbc04e-wm.jpg?v=1789798462897",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/specialty-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/specialty-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "his specialty is marketing",
+          "meaning": "chuyên môn của anh ấy là tiếp thị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cbb7d34a-21be-41b0-b238-63a72ebbc04e-0-wm.jpg?v=1789803679384"
+        },
+        {
+          "phrase": "a specialty area",
+          "meaning": "lĩnh vực chuyên môn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cbb7d34a-21be-41b0-b238-63a72ebbc04e-1-wm.jpg?v=1789803650302"
+        },
+        {
+          "phrase": "the chef's specialty",
+          "meaning": "món tủ của đầu bếp"
+        }
+      ],
+      "synonyms": [
+        "expertise (chuyên môn)",
+        "field (lĩnh vực chuyên sâu)",
+        "strength (thế mạnh)"
+      ]
+    },
+    {
+      "id": "8b86e74e-112d-431f-ae28-474067be44a2",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "convert",
+      "ipa": "UK: /kənˈvɜːt/ | US: /kənˈvɝːt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "They converted the attic into a bedroom.",
+          "meaning": "chuyển đổi",
+          "toeic_tip": "convert A into/to B; danh từ conversion, đừng nhầm với conversation.",
+          "example_vi": "Họ đã chuyển đổi gác mái thành phòng ngủ.",
+          "word_family": [
+            "conversion (n) sự chuyển đổi",
+            "converter (n) bộ chuyển đổi",
+            "convertible (adj) có thể chuyển đổi"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 47,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:10:49.758182+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8b86e74e-112d-431f-ae28-474067be44a2-wm.jpg?v=1789798195014",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/convert-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/convert-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "convert a file",
+          "meaning": "chuyển đổi tệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b86e74e-112d-431f-ae28-474067be44a2-0-wm.jpg?v=1789801849621"
+        },
+        {
+          "phrase": "convert the building into offices",
+          "meaning": "chuyển tòa nhà thành văn phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b86e74e-112d-431f-ae28-474067be44a2-1-wm.jpg?v=1789801849097"
+        },
+        {
+          "phrase": "convert data",
+          "meaning": "chuyển đổi dữ liệu"
+        }
+      ],
+      "synonyms": [
+        "change (thay đổi)",
+        "transform (biến đổi)",
+        "adapt (chuyển cho phù hợp)"
+      ]
+    },
+    {
+      "id": "b026d4ff-0e73-4fb3-82fd-448e4f0ed3cb",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "vehicle",
+      "ipa": "UK: /ˈviː.ɪ.kəl/ | US: /ˈviː.ə.kəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Motor vehicles are prohibited here.",
+          "meaning": "phương tiện",
+          "toeic_tip": "Đếm được; cụm \"motor vehicles\" hay gặp trong biển báo và nội quy.",
+          "example_vi": "Phương tiện cơ giới bị cấm tại đây.",
+          "word_family": [
+            "vehicular (adj) thuộc về xe cộ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 40,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:27:44.025106+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b026d4ff-0e73-4fb3-82fd-448e4f0ed3cb-wm.jpg?v=1789797874683",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/vehicle-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/vehicle-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a commercial vehicle",
+          "meaning": "xe thương mại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b026d4ff-0e73-4fb3-82fd-448e4f0ed3cb-0-wm.jpg?v=1789802862164"
+        },
+        {
+          "phrase": "park the vehicle",
+          "meaning": "đỗ xe",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b026d4ff-0e73-4fb3-82fd-448e4f0ed3cb-1-wm.jpg?v=1789802863890"
+        },
+        {
+          "phrase": "vehicle maintenance",
+          "meaning": "bảo dưỡng phương tiện"
+        }
+      ],
+      "synonyms": [
+        "automobile (ô tô)",
+        "car (xe hơi)",
+        "transport (phương tiện vận chuyển)"
+      ]
+    },
+    {
+      "id": "b43f2620-ebe0-497b-ac4d-30280df3703d",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "ingredient",
+      "ipa": "/ɪnˈɡriː.di.ənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Fresh ingredients are key to a good meal.",
+          "meaning": "thành phần",
+          "toeic_tip": "Đếm được, thường dùng số nhiều: fresh ingredients, key ingredients.",
+          "example_vi": "Nguyên liệu tươi là chìa khóa cho một bữa ăn ngon.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 14,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:27:22.032312+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b43f2620-ebe0-497b-ac4d-30280df3703d-wm.jpg?v=1789797667566",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ingredient-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ingredient-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "fresh ingredients",
+          "meaning": "nguyên liệu tươi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b43f2620-ebe0-497b-ac4d-30280df3703d-0-wm.jpg?v=1789802841891"
+        },
+        {
+          "phrase": "a key ingredient",
+          "meaning": "thành phần chính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b43f2620-ebe0-497b-ac4d-30280df3703d-1-wm.jpg?v=1789802840853"
+        },
+        {
+          "phrase": "list the ingredients",
+          "meaning": "liệt kê thành phần"
+        }
+      ],
+      "synonyms": [
+        "component (thành phần)",
+        "element (yếu tố cấu thành)"
+      ]
+    },
+    {
+      "id": "35575c85-e0b3-40eb-a5ac-bba14e36eb77",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "transport",
+      "ipa": "UK: /ˈtræn.spɔːt/ | US: /trænˈspɔːrt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Use public transport to save money.",
+          "meaning": "vận chuyển",
+          "toeic_tip": "Anh-Anh dùng transport, Anh-Mỹ dùng transportation cho dạng danh từ.",
+          "example_vi": "Hãy dùng phương tiện công cộng để tiết kiệm tiền.",
+          "word_family": [
+            "transportation (n) sự vận chuyển",
+            "transporter (n) đơn vị vận chuyển"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 41,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:05:08.345105+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/35575c85-e0b3-40eb-a5ac-bba14e36eb77-wm.jpg?v=1789797908279",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/transport-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/transport-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "transport goods",
+          "meaning": "vận chuyển hàng hóa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/35575c85-e0b3-40eb-a5ac-bba14e36eb77-0-wm.jpg?v=1789797557683"
+        },
+        {
+          "phrase": "public transport",
+          "meaning": "giao thông công cộng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/35575c85-e0b3-40eb-a5ac-bba14e36eb77-1-wm.jpg?v=1789797569171"
+        },
+        {
+          "phrase": "transport by truck",
+          "meaning": "vận chuyển bằng xe tải"
+        }
+      ],
+      "synonyms": [
+        "ship (gửi hàng đi)",
+        "carry (chuyên chở)",
+        "convey (vận chuyển)"
+      ]
+    },
+    {
+      "id": "5680f986-9c1f-4ae5-923e-db72fd202f91",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "reliability",
+      "ipa": "UK: /rɪˌlaɪ.əˈbɪl.ə.ti/ | US: /rɪˌlaɪ.əˈbɪl.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We chose this model for its reliability.",
+          "meaning": "độ tin cậy",
+          "antonyms": [
+            "unreliability (sự không đáng tin cậy)"
+          ],
+          "toeic_tip": "Đuôi -ility là danh từ không đếm được; tính từ reliable, trạng từ reliably.",
+          "example_vi": "Chúng tôi chọn mẫu này vì độ tin cậy của nó.",
+          "word_family": [
+            "rely (v) dựa vào",
+            "reliable (adj) đáng tin cậy",
+            "reliably (adv) một cách đáng tin cậy"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:40:32.590355+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5680f986-9c1f-4ae5-923e-db72fd202f91-wm.jpg?v=1789798011032",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reliability-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reliability-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "improve reliability",
+          "meaning": "cải thiện độ tin cậy",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5680f986-9c1f-4ae5-923e-db72fd202f91-0-wm.jpg?v=1789800030344"
+        },
+        {
+          "phrase": "product reliability",
+          "meaning": "độ tin cậy của sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5680f986-9c1f-4ae5-923e-db72fd202f91-1-wm.jpg?v=1789800032434"
+        },
+        {
+          "phrase": "known for its reliability",
+          "meaning": "nổi tiếng về độ tin cậy"
+        }
+      ],
+      "synonyms": [
+        "dependability (sự đáng tin cậy)",
+        "consistency (sự ổn định nhất quán)"
+      ]
+    },
+    {
+      "id": "553fce29-7880-4376-9e08-4dae8d000a82",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "sustainable",
+      "ipa": "UK: /əˈsteɪ.nə.bəl/ | US: /səˈsteɪ.nə.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We focus on sustainable development.",
+          "meaning": "bền vững",
+          "antonyms": [
+            "unsustainable (không bền vững)",
+            "wasteful (lãng phí)"
+          ],
+          "toeic_tip": "Đuôi -able là tính từ; danh từ sustainability, động từ sustain.",
+          "example_vi": "Chúng tôi tập trung vào phát triển bền vững.",
+          "word_family": [
+            "sustain (v) duy trì",
+            "sustainability (n) tính bền vững",
+            "sustainably (adv) một cách bền vững"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 21,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:41:21.618745+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/553fce29-7880-4376-9e08-4dae8d000a82-wm.jpg?v=1789798431327",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sustainable-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sustainable-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "sustainable growth",
+          "meaning": "tăng trưởng bền vững",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/553fce29-7880-4376-9e08-4dae8d000a82-0-wm.jpg?v=1789800070595"
+        },
+        {
+          "phrase": "sustainable materials",
+          "meaning": "vật liệu bền vững",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/553fce29-7880-4376-9e08-4dae8d000a82-1-wm.jpg?v=1789800081470"
+        },
+        {
+          "phrase": "environmentally sustainable",
+          "meaning": "bền vững với môi trường"
+        }
+      ],
+      "synonyms": [
+        "eco-friendly (thân thiện môi trường)",
+        "viable (khả thi lâu dài)",
+        "renewable (có thể tái tạo)"
+      ]
+    },
+    {
+      "id": "cf55435e-193c-451e-ad12-05a7a81131f5",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "name",
+      "ipa": "/neɪm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "She was named CEO of the company.",
+          "meaning": "bổ nhiệm",
+          "antonyms": [
+            "dismiss (bãi nhiệm)",
+            "remove (cách chức)"
+          ],
+          "toeic_tip": "Nghĩa bổ nhiệm hay ra Part 7: be named + chức danh, không cần \"as\".",
+          "example_vi": "Cô ấy đã được bổ nhiệm làm CEO của công ty.",
+          "word_family": [
+            "naming (n) việc bổ nhiệm, việc đặt tên"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:42:55.585267+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cf55435e-193c-451e-ad12-05a7a81131f5-wm.jpg?v=1789798057141",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/name-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/name-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be named director",
+          "meaning": "được bổ nhiệm làm giám đốc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cf55435e-193c-451e-ad12-05a7a81131f5-0-wm.jpg?v=1789803774149"
+        },
+        {
+          "phrase": "name a successor",
+          "meaning": "chỉ định người kế nhiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cf55435e-193c-451e-ad12-05a7a81131f5-1-wm.jpg?v=1789803775443"
+        },
+        {
+          "phrase": "name someone to a position",
+          "meaning": "bổ nhiệm ai vào một vị trí"
+        }
+      ],
+      "synonyms": [
+        "appoint (bổ nhiệm)",
+        "designate (chỉ định)",
+        "nominate (đề cử)"
+      ]
+    },
+    {
+      "id": "93db7349-86ed-464b-af2f-c28635fe5f71",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "operation",
+      "ipa": "UK: /ˌɒp.ərˈeɪ.ʃən/ | US: /ˌɑː.pəˈreɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The factory is in full operation.",
+          "meaning": "hoạt động, vận hành",
+          "antonyms": [
+            "shutdown (sự ngừng hoạt động)"
+          ],
+          "toeic_tip": "Cụm \"in operation\" (đang vận hành); số nhiều operations chỉ hoạt động thường ngày.",
+          "example_vi": "Nhà máy đang hoạt động hết công suất.",
+          "word_family": [
+            "operate (v) vận hành",
+            "operator (n) người vận hành",
+            "operational (adj) thuộc vận hành"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 69,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:12:50.811971+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/93db7349-86ed-464b-af2f-c28635fe5f71-wm.jpg?v=1789798010972",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/operation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/operation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "daily operations",
+          "meaning": "hoạt động hằng ngày",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/93db7349-86ed-464b-af2f-c28635fe5f71-0-wm.jpg?v=1789801968190"
+        },
+        {
+          "phrase": "business operations",
+          "meaning": "hoạt động kinh doanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/93db7349-86ed-464b-af2f-c28635fe5f71-1-wm.jpg?v=1789801970676"
+        },
+        {
+          "phrase": "in operation",
+          "meaning": "đang vận hành"
+        }
+      ],
+      "synonyms": [
+        "functioning (sự hoạt động)",
+        "running (việc vận hành)",
+        "activity (hoạt động)"
+      ]
+    },
+    {
+      "id": "c79f04f1-a14e-4cf1-a9dd-c9562535e9e9",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "accept",
+      "ipa": "/əkˈsept/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "They accepted the terms of the contract.",
+          "meaning": "chấp nhận",
+          "antonyms": [
+            "reject (từ chối)",
+            "decline (khước từ)"
+          ],
+          "toeic_tip": "Đừng nhầm accept (chấp nhận) với except (ngoại trừ) — bẫy kinh điển Part 5.",
+          "example_vi": "Họ đã chấp nhận các điều khoản của hợp đồng.",
+          "word_family": [
+            "acceptance (n) sự chấp nhận",
+            "acceptable (adj) có thể chấp nhận"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:38:50.727867+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c79f04f1-a14e-4cf1-a9dd-c9562535e9e9-wm.jpg?v=1789798021009",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accept-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accept-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accept an offer",
+          "meaning": "chấp nhận lời đề nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c79f04f1-a14e-4cf1-a9dd-c9562535e9e9-0-wm.jpg?v=1789803529430"
+        },
+        {
+          "phrase": "accept credit cards",
+          "meaning": "chấp nhận thẻ tín dụng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c79f04f1-a14e-4cf1-a9dd-c9562535e9e9-1-wm.jpg?v=1789803530589"
+        },
+        {
+          "phrase": "accept responsibility",
+          "meaning": "nhận trách nhiệm"
+        }
+      ],
+      "synonyms": [
+        "agree to (đồng ý với)",
+        "approve (chấp thuận)",
+        "take (nhận)"
+      ]
+    },
+    {
+      "id": "d352a745-fcb9-4e25-8f18-ddd15ac825e6",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "immediately",
+      "ipa": "/ɪˈmiː.di.ət.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Please call me immediately.",
+          "meaning": "ngay lập tức",
+          "antonyms": [
+            "later (sau đó)",
+            "eventually (rốt cuộc mới)"
+          ],
+          "toeic_tip": "Cụm \"effective immediately\" (có hiệu lực ngay) rất hay gặp thông báo Part 7.",
+          "example_vi": "Vui lòng gọi cho tôi ngay lập tức.",
+          "word_family": [
+            "immediate (adj) tức thời"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 77,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:46:09.207879+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d352a745-fcb9-4e25-8f18-ddd15ac825e6-wm.jpg?v=1789797687691",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/immediately-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/immediately-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "respond immediately",
+          "meaning": "phản hồi ngay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d352a745-fcb9-4e25-8f18-ddd15ac825e6-0-wm.jpg?v=1789803969068"
+        },
+        {
+          "phrase": "effective immediately",
+          "meaning": "có hiệu lực ngay lập tức",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d352a745-fcb9-4e25-8f18-ddd15ac825e6-1-wm.jpg?v=1789803968487"
+        },
+        {
+          "phrase": "immediately after the meeting",
+          "meaning": "ngay sau cuộc họp"
+        }
+      ],
+      "synonyms": [
+        "at once (ngay lập tức)",
+        "instantly (tức thì)",
+        "right away (ngay)"
+      ]
+    },
+    {
+      "id": "5c01516b-f366-4d55-8427-4f5edcdae6e0",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "rough",
+      "ipa": "/rʌf/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The road surface is very rough.",
+          "meaning": "thô, gồ ghề",
+          "antonyms": [
+            "smooth (nhẵn mịn)",
+            "even (bằng phẳng)"
+          ],
+          "toeic_tip": "Trạng từ roughly còn nghĩa \"khoảng chừng\"; đừng nhầm cách đọc với enough.",
+          "example_vi": "Bề mặt con đường rất gồ ghề.",
+          "word_family": [
+            "roughness (n) độ thô ráp",
+            "roughen (v) làm cho thô ráp"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 56,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:44:13.401896+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5c01516b-f366-4d55-8427-4f5edcdae6e0-wm.jpg?v=1789797985872",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rough-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rough-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a rough surface",
+          "meaning": "bề mặt gồ ghề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5c01516b-f366-4d55-8427-4f5edcdae6e0-0-wm.jpg?v=1789800241821"
+        },
+        {
+          "phrase": "rough edges",
+          "meaning": "cạnh thô ráp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5c01516b-f366-4d55-8427-4f5edcdae6e0-1-wm.jpg?v=1789800253225"
+        },
+        {
+          "phrase": "a rough texture",
+          "meaning": "kết cấu thô"
+        }
+      ],
+      "synonyms": [
+        "coarse (thô)",
+        "uneven (không bằng phẳng)",
+        "bumpy (gồ ghề)"
+      ]
+    },
+    {
+      "id": "03f50c07-de12-4306-8af1-a659b39b161c",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "sleek",
+      "ipa": "/sliːk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new car has a sleek design.",
+          "meaning": "bóng mượt",
+          "antonyms": [
+            "rough (thô ráp)",
+            "bulky (cồng kềnh)"
+          ],
+          "toeic_tip": "Chỉ dùng cho thiết kế, xe, thiết bị; hay gặp trong quảng cáo sản phẩm.",
+          "example_vi": "Chiếc xe mới có thiết kế bóng mượt/tinh tế.",
+          "word_family": [
+            "sleekly (adv) một cách bóng bẩy"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 54,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:17:47.918551+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/03f50c07-de12-4306-8af1-a659b39b161c-wm.jpg?v=1789798135028",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sleek-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sleek-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a sleek design",
+          "meaning": "thiết kế bóng bẩy",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/03f50c07-de12-4306-8af1-a659b39b161c-0-wm.jpg?v=1789798664367"
+        },
+        {
+          "phrase": "a sleek finish",
+          "meaning": "lớp hoàn thiện bóng mượt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/03f50c07-de12-4306-8af1-a659b39b161c-1-wm.jpg?v=1789798667766"
+        },
+        {
+          "phrase": "sleek and modern",
+          "meaning": "bóng bẩy và hiện đại"
+        }
+      ],
+      "synonyms": [
+        "smooth (mượt)",
+        "glossy (bóng)",
+        "streamlined (thanh thoát)"
+      ]
+    },
+    {
+      "id": "8117ca66-542e-49d1-8800-e747ac747e30",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "freight",
+      "ipa": "/freɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The freight arrived by train.",
+          "meaning": "hàng hóa vận chuyển",
+          "toeic_tip": "Không đếm được, không có \"freights\"; hay gặp trong hóa đơn vận chuyển.",
+          "example_vi": "Hàng hóa đã được vận chuyển đến bằng tàu hỏa.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 39,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:03:58.250494+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8117ca66-542e-49d1-8800-e747ac747e30-wm.jpg?v=1789798163670",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/freight-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/freight-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "freight charges",
+          "meaning": "phí vận chuyển hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8117ca66-542e-49d1-8800-e747ac747e30-0-wm.jpg?v=1789801435750"
+        },
+        {
+          "phrase": "air freight",
+          "meaning": "hàng vận chuyển đường hàng không",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8117ca66-542e-49d1-8800-e747ac747e30-1-wm.jpg?v=1789801438088"
+        },
+        {
+          "phrase": "a freight company",
+          "meaning": "công ty vận tải hàng hóa"
+        }
+      ],
+      "synonyms": [
+        "cargo (hàng hóa chuyên chở)",
+        "shipment (lô hàng gửi)",
+        "goods (hàng hóa)"
+      ]
+    },
+    {
+      "id": "1785b16c-f226-4bbc-aefc-2a44f570d315",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "reimbursement",
+      "ipa": "UK: /ˌriː.ɪmˈbɜːs.mənt/ | US: /ˌriː.ɪmˈbɝːs.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Submit your receipts for reimbursement.",
+          "meaning": "hoàn tiền, bồi hoàn",
+          "toeic_tip": "Chính tả dễ sai: r-e-i-m; cụm \"for reimbursement\" hay gặp email Part 7.",
+          "example_vi": "Hãy nộp hóa đơn của bạn để được bồi hoàn.",
+          "word_family": [
+            "reimburse (v) hoàn trả",
+            "reimbursable (adj) có thể được hoàn trả"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:18:32.796866+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1785b16c-f226-4bbc-aefc-2a44f570d315-wm.jpg?v=1789798174027",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reimbursement-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reimbursement-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "request reimbursement",
+          "meaning": "yêu cầu hoàn tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1785b16c-f226-4bbc-aefc-2a44f570d315-0-wm.jpg?v=1789798711724"
+        },
+        {
+          "phrase": "expense reimbursement",
+          "meaning": "hoàn tiền chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1785b16c-f226-4bbc-aefc-2a44f570d315-1-wm.jpg?v=1789798712648"
+        },
+        {
+          "phrase": "a reimbursement form",
+          "meaning": "mẫu đơn xin hoàn tiền"
+        }
+      ],
+      "synonyms": [
+        "refund (sự hoàn tiền)",
+        "repayment (sự hoàn trả)",
+        "compensation (khoản bồi hoàn)"
+      ]
+    },
+    {
+      "id": "9b65c90b-970e-45ba-aa30-d33d54fd7831",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "discontinue",
+      "ipa": "/ˌdɪs.kənˈtɪn.juː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "They decided to discontinue the service.",
+          "meaning": "ngừng lại",
+          "antonyms": [
+            "continue (tiếp tục)",
+            "maintain (duy trì)"
+          ],
+          "toeic_tip": "Dạng bị động \"be discontinued\" rất hay gặp khi nói sản phẩm ngừng bán.",
+          "example_vi": "Họ đã quyết định ngừng dịch vụ đó.",
+          "word_family": [
+            "discontinuation (n) sự ngừng",
+            "discontinued (adj) đã ngừng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 58,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:17:18.549941+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9b65c90b-970e-45ba-aa30-d33d54fd7831-wm.jpg?v=1789797989405",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/discontinue-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/discontinue-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "discontinue a product",
+          "meaning": "ngừng sản xuất một sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b65c90b-970e-45ba-aa30-d33d54fd7831-0-wm.jpg?v=1789802226440"
+        },
+        {
+          "phrase": "discontinue service",
+          "meaning": "ngừng cung cấp dịch vụ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b65c90b-970e-45ba-aa30-d33d54fd7831-1-wm.jpg?v=1789802238411"
+        },
+        {
+          "phrase": "the model was discontinued",
+          "meaning": "mẫu này đã bị ngừng"
+        }
+      ],
+      "synonyms": [
+        "stop (dừng)",
+        "cease (chấm dứt)",
+        "halt (ngừng lại)"
+      ]
+    },
+    {
+      "id": "caf340b9-997d-41d5-8cdb-b3b46bb278dc",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "summarize",
+      "ipa": "UK: /ˈsʌm.ər.aɪz/ | US: /ˈsʌm.ə.raɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Can you summarize the main points?",
+          "meaning": "tóm tắt",
+          "antonyms": [
+            "elaborate (trình bày chi tiết)",
+            "expand on (nói rộng thêm)"
+          ],
+          "toeic_tip": "Anh-Anh viết summarise; danh từ là summary, số nhiều summaries.",
+          "example_vi": "Bạn có thể tóm tắt các điểm chính không?",
+          "word_family": [
+            "summary (n) bản tóm tắt"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 36,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:40:16.36363+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/caf340b9-997d-41d5-8cdb-b3b46bb278dc-wm.jpg?v=1789798179875",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/summarize-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/summarize-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "summarize the findings",
+          "meaning": "tóm tắt các kết quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/caf340b9-997d-41d5-8cdb-b3b46bb278dc-0-wm.jpg?v=1789803605056"
+        },
+        {
+          "phrase": "summarize briefly",
+          "meaning": "tóm tắt ngắn gọn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/caf340b9-997d-41d5-8cdb-b3b46bb278dc-1-wm.jpg?v=1789803616212"
+        },
+        {
+          "phrase": "summarize the report",
+          "meaning": "tóm lược báo cáo"
+        }
+      ],
+      "synonyms": [
+        "sum up (tóm lại)",
+        "recap (nhắc lại tóm tắt)",
+        "outline (phác qua)"
+      ]
+    },
+    {
+      "id": "d95147ef-a01e-40be-a294-d14f3f5b882a",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "workplace",
+      "ipa": "UK: /ˈwɜːk.pleɪs/ | US: /ˈwɝːk.pleɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Diversity is important in the workplace.",
+          "meaning": "nơi làm việc",
+          "toeic_tip": "Danh từ ghép; cụm \"in the workplace\" luôn có mạo từ the.",
+          "example_vi": "Sự đa dạng là điều quan trọng tại nơi làm việc.",
+          "word_family": [
+            "work (v/n) làm việc, công việc",
+            "worker (n) người lao động"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:48:29.412291+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d95147ef-a01e-40be-a294-d14f3f5b882a-wm.jpg?v=1789797923220",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/workplace-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/workplace-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "workplace safety",
+          "meaning": "an toàn nơi làm việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d95147ef-a01e-40be-a294-d14f3f5b882a-0-wm.jpg?v=1789804108341"
+        },
+        {
+          "phrase": "a positive workplace",
+          "meaning": "môi trường làm việc tích cực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d95147ef-a01e-40be-a294-d14f3f5b882a-1-wm.jpg?v=1789804109281"
+        },
+        {
+          "phrase": "in the workplace",
+          "meaning": "tại nơi làm việc"
+        }
+      ],
+      "synonyms": [
+        "worksite (nơi làm việc)",
+        "office (văn phòng)"
+      ]
+    },
+    {
+      "id": "15595d88-d463-4f8c-a719-f7d39ddeb494",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "reveal",
+      "ipa": "/rɪˈviːl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The report reveals a rise in profits.",
+          "meaning": "tiết lộ",
+          "antonyms": [
+            "conceal (che giấu)",
+            "hide (giấu)"
+          ],
+          "toeic_tip": "reveal that + mệnh đề; danh từ là revelation, không có \"revealment\".",
+          "example_vi": "Bản báo cáo tiết lộ lợi nhuận đang gia tăng.",
+          "word_family": [
+            "revelation (n) sự tiết lộ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 31,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:17:19.70662+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/15595d88-d463-4f8c-a719-f7d39ddeb494-wm.jpg?v=1789797908379",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reveal-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reveal-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reveal the results",
+          "meaning": "công bố kết quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/15595d88-d463-4f8c-a719-f7d39ddeb494-0-wm.jpg?v=1789798638839"
+        },
+        {
+          "phrase": "reveal details",
+          "meaning": "tiết lộ chi tiết",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/15595d88-d463-4f8c-a719-f7d39ddeb494-1-wm.jpg?v=1789798639560"
+        },
+        {
+          "phrase": "the survey revealed that",
+          "meaning": "khảo sát cho thấy rằng"
+        }
+      ],
+      "synonyms": [
+        "disclose (tiết lộ)",
+        "announce (công bố)",
+        "uncover (phơi bày)"
+      ]
+    },
+    {
+      "id": "8d81c058-3137-48a4-9e88-1c13bfb4fa04",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "subscription",
+      "ipa": "/səbˈskrɪp.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I canceled my magazine subscription.",
+          "meaning": "sự đăng ký",
+          "antonyms": [
+            "cancellation (sự hủy đăng ký)"
+          ],
+          "toeic_tip": "subscription to + báo hoặc dịch vụ; động từ là subscribe to.",
+          "example_vi": "Tôi đã hủy việc đăng ký mua tạp chí.",
+          "word_family": [
+            "subscribe (v) đăng ký",
+            "subscriber (n) người đăng ký"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 24,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:09:41.367389+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8d81c058-3137-48a4-9e88-1c13bfb4fa04-wm.jpg?v=1789798185038",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/subscription-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/subscription-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a monthly subscription",
+          "meaning": "gói đăng ký hàng tháng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8d81c058-3137-48a4-9e88-1c13bfb4fa04-0-wm.jpg?v=1789801764820"
+        },
+        {
+          "phrase": "renew a subscription",
+          "meaning": "gia hạn đăng ký",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8d81c058-3137-48a4-9e88-1c13bfb4fa04-1-wm.jpg?v=1789801781235"
+        },
+        {
+          "phrase": "cancel your subscription",
+          "meaning": "hủy đăng ký"
+        }
+      ],
+      "synonyms": [
+        "membership (tư cách thành viên)",
+        "plan (gói dịch vụ đăng ký)"
+      ]
+    },
+    {
+      "id": "d96a59be-0106-4b03-ac92-22d7f73de397",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "substance",
+      "ipa": "/ˈsʌb.stəns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This substance is highly flammable.",
+          "meaning": "chất, vật chất",
+          "toeic_tip": "Phân biệt substance (chất) với substantial (đáng kể) — hai nghĩa rất khác.",
+          "example_vi": "Chất này rất dễ cháy.",
+          "word_family": [
+            "substantial (adj) đáng kể",
+            "substantially (adv) một cách đáng kể"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 18,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:48:40.789194+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d96a59be-0106-4b03-ac92-22d7f73de397-wm.jpg?v=1789798077447",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/substance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/substance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a harmful substance",
+          "meaning": "chất có hại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d96a59be-0106-4b03-ac92-22d7f73de397-0-wm.jpg?v=1789804118939"
+        },
+        {
+          "phrase": "a sticky substance",
+          "meaning": "chất dính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d96a59be-0106-4b03-ac92-22d7f73de397-1-wm.jpg?v=1789804120649"
+        },
+        {
+          "phrase": "chemical substances",
+          "meaning": "các chất hóa học"
+        }
+      ],
+      "synonyms": [
+        "material (vật liệu)",
+        "matter (vật chất)",
+        "compound (hợp chất)"
+      ]
+    },
+    {
+      "id": "62f1d635-6a07-40a1-b5bc-0b054556afce",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "complaint",
+      "ipa": "/kəmˈpleɪnt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We received a customer complaint today.",
+          "meaning": "lời phàn nàn",
+          "antonyms": [
+            "compliment (lời khen)",
+            "praise (lời ngợi khen)"
+          ],
+          "toeic_tip": "Đừng nhầm complaint (lời phàn nàn) với compliment (lời khen) — bẫy quen thuộc.",
+          "example_vi": "Chúng tôi đã nhận được một lời phàn nàn từ khách hôm nay.",
+          "word_family": [
+            "complain (v) phàn nàn",
+            "complainant (n) người khiếu nại"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 33,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:47:37.819061+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/62f1d635-6a07-40a1-b5bc-0b054556afce-wm.jpg?v=1789797633408",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complaint-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complaint-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "file a complaint",
+          "meaning": "nộp đơn khiếu nại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/62f1d635-6a07-40a1-b5bc-0b054556afce-0-wm.jpg?v=1789800447924"
+        },
+        {
+          "phrase": "handle customer complaints",
+          "meaning": "xử lý khiếu nại của khách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/62f1d635-6a07-40a1-b5bc-0b054556afce-1-wm.jpg?v=1789800457689"
+        },
+        {
+          "phrase": "a formal complaint",
+          "meaning": "khiếu nại chính thức"
+        }
+      ],
+      "synonyms": [
+        "grievance (điều phàn nàn)",
+        "criticism (lời chê trách)",
+        "objection (lời phản đối)"
+      ]
+    },
+    {
+      "id": "b7502bc2-8167-4003-b4ac-abe89cd07f16",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "visualization",
+      "ipa": "UK: /ˌvɪʒ.u.əl.aɪˈzeɪ.ʃən/ | US: /ˌvɪʒ.u.əl.əˈzeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Use charts for better visualization.",
+          "meaning": "sự trực quan hóa",
+          "toeic_tip": "Anh-Anh viết visualisation; đuôi -ation là danh từ, đứng sau tính từ.",
+          "example_vi": "Hãy dùng biểu đồ để trực quan hóa tốt hơn.",
+          "word_family": [
+            "visualize (v) trực quan hóa, hình dung",
+            "visual (adj) thuộc thị giác"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 49,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:30:23.532318+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b7502bc2-8167-4003-b4ac-abe89cd07f16-wm.jpg?v=1789798192434",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/visualization-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/visualization-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "data visualization",
+          "meaning": "sự trực quan hóa dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b7502bc2-8167-4003-b4ac-abe89cd07f16-0-wm.jpg?v=1789803020654"
+        },
+        {
+          "phrase": "a visualization tool",
+          "meaning": "công cụ trực quan hóa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b7502bc2-8167-4003-b4ac-abe89cd07f16-1-wm.jpg?v=1789803023384"
+        },
+        {
+          "phrase": "create a visualization",
+          "meaning": "tạo hình ảnh trực quan"
+        }
+      ],
+      "synonyms": [
+        "representation (sự biểu diễn)",
+        "illustration (sự minh họa)"
+      ]
+    },
+    {
+      "id": "d1970ccb-185e-4d8f-bb73-2594c1d0e0bd",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "customized",
+      "ipa": "/ˈkʌs.tə.maɪzd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We provide customized software.",
+          "meaning": "tùy chỉnh",
+          "antonyms": [
+            "standard (tiêu chuẩn)",
+            "generic (đại trà)"
+          ],
+          "toeic_tip": "Anh-Anh viết customised; đứng trước danh từ hoặc sau be, khác customer.",
+          "example_vi": "Chúng tôi cung cấp phần mềm được tùy chỉnh.",
+          "word_family": [
+            "customize (v) tùy chỉnh",
+            "customization (n) sự tùy chỉnh",
+            "custom (adj) đặt riêng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 64,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:44:07.096853+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d1970ccb-185e-4d8f-bb73-2594c1d0e0bd-wm.jpg?v=1789798195527",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/customized-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/customized-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a customized solution",
+          "meaning": "giải pháp tùy chỉnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d1970ccb-185e-4d8f-bb73-2594c1d0e0bd-0-wm.jpg?v=1789803845869"
+        },
+        {
+          "phrase": "customized products",
+          "meaning": "sản phẩm theo yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d1970ccb-185e-4d8f-bb73-2594c1d0e0bd-1-wm.jpg?v=1789803846919"
+        },
+        {
+          "phrase": "fully customized",
+          "meaning": "tùy chỉnh hoàn toàn"
+        }
+      ],
+      "synonyms": [
+        "personalized (được cá nhân hóa)",
+        "tailored (được làm theo yêu cầu)",
+        "bespoke (đặt riêng)"
+      ]
+    },
+    {
+      "id": "db4b2858-ca8c-47c4-ad80-7a808818f6d8",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "savory",
+      "ipa": "UK: /ˈseɪ.vər.i/ | US: /ˈseɪ.vɚ.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I prefer savory snacks over sweet ones.",
+          "meaning": "mặn, đậm đà",
+          "antonyms": [
+            "sweet (ngọt)",
+            "bland (nhạt nhẽo)"
+          ],
+          "toeic_tip": "Anh-Mỹ savory, Anh-Anh savoury; nghĩa là không ngọt, trái với sweet.",
+          "example_vi": "Tôi thích đồ ăn nhẹ vị mặn hơn là đồ ngọt.",
+          "word_family": [
+            "savor (v) thưởng thức từ tốn"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 15,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:49:10.984568+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/db4b2858-ca8c-47c4-ad80-7a808818f6d8-wm.jpg?v=1789798184735",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/savory-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/savory-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "savory dishes",
+          "meaning": "các món mặn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/db4b2858-ca8c-47c4-ad80-7a808818f6d8-0-wm.jpg?v=1789804150093"
+        },
+        {
+          "phrase": "a savory snack",
+          "meaning": "đồ ăn vặt vị mặn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/db4b2858-ca8c-47c4-ad80-7a808818f6d8-1-wm.jpg?v=1789804150849"
+        },
+        {
+          "phrase": "sweet and savory",
+          "meaning": "vị ngọt và vị mặn"
+        }
+      ],
+      "synonyms": [
+        "salty (mặn)",
+        "flavorful (đậm đà)"
+      ]
+    },
+    {
+      "id": "67f53b48-e267-4b9a-939e-96f8f8d93cf3",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "surface",
+      "ipa": "UK: /ˈsɜː.fɪs/ | US: /ˈsɝː.fɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Wipe the surface with a damp cloth.",
+          "meaning": "bề mặt",
+          "antonyms": [
+            "interior (phần bên trong)",
+            "core (phần lõi)"
+          ],
+          "toeic_tip": "Luôn dùng \"on the surface\"; còn là động từ nghĩa \"xuất hiện, lộ ra\".",
+          "example_vi": "Hãy lau bề mặt bằng một chiếc khăn ẩm.",
+          "word_family": [
+            "surfacing (n) lớp phủ bề mặt"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 57,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:49:19.718343+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/67f53b48-e267-4b9a-939e-96f8f8d93cf3-wm.jpg?v=1789798195770",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/surface-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/surface-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a flat surface",
+          "meaning": "bề mặt phẳng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/67f53b48-e267-4b9a-939e-96f8f8d93cf3-0-wm.jpg?v=1789800549680"
+        },
+        {
+          "phrase": "clean the surface",
+          "meaning": "lau bề mặt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/67f53b48-e267-4b9a-939e-96f8f8d93cf3-1-wm.jpg?v=1789800559579"
+        },
+        {
+          "phrase": "the work surface",
+          "meaning": "mặt bàn làm việc"
+        }
+      ],
+      "synonyms": [
+        "exterior (mặt ngoài)",
+        "top (mặt trên)",
+        "face (mặt)"
+      ]
+    },
+    {
+      "id": "328c3b26-6ecf-42d8-a936-dfcb96806043",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "express",
+      "ipa": "/ɪkˈspres/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Please send this via express mail.",
+          "meaning": "nhanh, hỏa tốc",
+          "antonyms": [
+            "standard (tiêu chuẩn)",
+            "regular (thông thường)"
+          ],
+          "toeic_tip": "Tính từ đứng trước danh từ: express delivery; cũng là động từ \"bày tỏ\".",
+          "example_vi": "Vui lòng gửi cái này qua thư hỏa tốc.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 65,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:17:33.378416+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/328c3b26-6ecf-42d8-a936-dfcb96806043-wm.jpg?v=1789798035953",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/express-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/express-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "express delivery",
+          "meaning": "giao hàng hỏa tốc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/328c3b26-6ecf-42d8-a936-dfcb96806043-0-wm.jpg?v=1789798653224"
+        },
+        {
+          "phrase": "express shipping",
+          "meaning": "vận chuyển nhanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/328c3b26-6ecf-42d8-a936-dfcb96806043-1-wm.jpg?v=1789798651281"
+        },
+        {
+          "phrase": "an express service",
+          "meaning": "dịch vụ chuyển phát nhanh"
+        }
+      ],
+      "synonyms": [
+        "rapid (nhanh)",
+        "expedited (được đẩy nhanh)",
+        "fast (nhanh)"
+      ]
+    },
+    {
+      "id": "dcfc62ee-c4f4-40c0-8edb-5f7a35f6dff5",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "accommodate",
+      "ipa": "UK: /əˈkɒm.ə.deɪt/ | US: /əˈɑː.mə.deɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We can accommodate your request.",
+          "meaning": "điều chỉnh phù hợp",
+          "antonyms": [
+            "refuse (từ chối đáp ứng)"
+          ],
+          "toeic_tip": "Chính tả dễ sai: hai chữ c và hai chữ m; accommodate + tân ngữ trực tiếp.",
+          "example_vi": "Chúng tôi có thể điều chỉnh để phù hợp với yêu cầu của bạn.",
+          "word_family": [
+            "accommodation (n) chỗ ở, sự đáp ứng",
+            "accommodating (adj) sẵn lòng chiều theo"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 62,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:50:02.942602+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/dcfc62ee-c4f4-40c0-8edb-5f7a35f6dff5-wm.jpg?v=1789798195572",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accommodate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accommodate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accommodate a request",
+          "meaning": "đáp ứng yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dcfc62ee-c4f4-40c0-8edb-5f7a35f6dff5-0-wm.jpg?v=1789804192672"
+        },
+        {
+          "phrase": "accommodate special needs",
+          "meaning": "đáp ứng nhu cầu đặc biệt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dcfc62ee-c4f4-40c0-8edb-5f7a35f6dff5-1-wm.jpg?v=1789804202782"
+        },
+        {
+          "phrase": "accommodate guests",
+          "meaning": "bố trí chỗ cho khách"
+        }
+      ],
+      "synonyms": [
+        "meet (đáp ứng)",
+        "cater to (phục vụ theo nhu cầu)",
+        "adjust for (điều chỉnh cho phù hợp)"
+      ]
+    },
+    {
+      "id": "65095977-5b35-4503-91f0-21fa0768a48e",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "activate",
+      "ipa": "/ˈæk.tɪ.veɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You need to activate your credit card.",
+          "meaning": "kích hoạt",
+          "antonyms": [
+            "deactivate (vô hiệu hóa)",
+            "disable (tắt chức năng)"
+          ],
+          "toeic_tip": "Danh từ là activation; trái nghĩa deactivate, tính từ là active.",
+          "example_vi": "Bạn cần kích hoạt thẻ tín dụng của mình.",
+          "word_family": [
+            "activation (n) sự kích hoạt",
+            "active (adj) đang hoạt động"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 28,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:48:47.891724+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/65095977-5b35-4503-91f0-21fa0768a48e-wm.jpg?v=1789798184679",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/activate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/activate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "activate an account",
+          "meaning": "kích hoạt tài khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/65095977-5b35-4503-91f0-21fa0768a48e-0-wm.jpg?v=1789800527575"
+        },
+        {
+          "phrase": "activate the alarm",
+          "meaning": "kích hoạt chuông báo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/65095977-5b35-4503-91f0-21fa0768a48e-1-wm.jpg?v=1789800527753"
+        },
+        {
+          "phrase": "activate your card",
+          "meaning": "kích hoạt thẻ"
+        }
+      ],
+      "synonyms": [
+        "turn on (bật)",
+        "enable (bật, cho phép hoạt động)",
+        "start (khởi động)"
+      ]
+    },
+    {
+      "id": "ef6c8401-cc67-4960-9fc2-d01a6d420833",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "master",
+      "ipa": "UK: /ˈmɑː.stər/ | US: /ˈmæs.tɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It takes years to master a new language.",
+          "meaning": "thông thạo, làm chủ",
+          "toeic_tip": "master + tân ngữ trực tiếp, không có giới từ; danh từ là mastery.",
+          "example_vi": "Phải mất nhiều năm để thông thạo một ngôn ngữ mới.",
+          "word_family": [
+            "mastery (n) sự tinh thông",
+            "masterful (adj) điêu luyện"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T08:02:08.108635+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ef6c8401-cc67-4960-9fc2-d01a6d420833-wm.jpg?v=1789798180696",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/master-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/master-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "master a skill",
+          "meaning": "thông thạo một kỹ năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ef6c8401-cc67-4960-9fc2-d01a6d420833-0-wm.jpg?v=1789804911767"
+        },
+        {
+          "phrase": "master a new language",
+          "meaning": "làm chủ một ngôn ngữ mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ef6c8401-cc67-4960-9fc2-d01a6d420833-1-wm.jpg?v=1789804927946"
+        },
+        {
+          "phrase": "master the software",
+          "meaning": "thành thạo phần mềm"
+        }
+      ],
+      "synonyms": [
+        "grasp (nắm vững)",
+        "become proficient in (trở nên thành thạo)"
+      ]
+    },
+    {
+      "id": "ddbf52ee-8bd4-4cfd-8ccf-2b25c2687f08",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "extension",
+      "ipa": "/ɪkˈsten.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Please call me at extension 402.",
+          "meaning": "số máy lẻ",
+          "toeic_tip": "Ngoài số máy lẻ còn nghĩa gia hạn: an extension of the deadline.",
+          "example_vi": "Vui lòng gọi cho tôi qua số máy lẻ 402.",
+          "word_family": [
+            "extend (v) kéo dài, mở rộng",
+            "extensive (adj) rộng khắp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 32,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:51:17.064117+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ddbf52ee-8bd4-4cfd-8ccf-2b25c2687f08-wm.jpg?v=1789797671805",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/extension-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/extension-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "dial extension 204",
+          "meaning": "bấm số máy lẻ 204",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ddbf52ee-8bd4-4cfd-8ccf-2b25c2687f08-0-wm.jpg?v=1789804268978"
+        },
+        {
+          "phrase": "reach me at extension 12",
+          "meaning": "liên hệ tôi qua máy lẻ 12",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ddbf52ee-8bd4-4cfd-8ccf-2b25c2687f08-1-wm.jpg?v=1789804276917"
+        },
+        {
+          "phrase": "an extension number",
+          "meaning": "số máy lẻ"
+        }
+      ],
+      "synonyms": []
+    },
+    {
+      "id": "6941b659-311f-4961-b4e6-038f613d811b",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "found",
+      "ipa": "/faʊnd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company was founded in 1990.",
+          "meaning": "thành lập",
+          "antonyms": [
+            "dissolve (giải thể)",
+            "close down (đóng cửa)"
+          ],
+          "toeic_tip": "Nghĩa thành lập chia có quy tắc: founded; đừng nhầm quá khứ của find.",
+          "example_vi": "Công ty được thành lập vào năm 1990.",
+          "word_family": [
+            "founder (n) người sáng lập",
+            "foundation (n) sự thành lập, quỹ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 75,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:50:49.780852+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6941b659-311f-4961-b4e6-038f613d811b-wm.jpg?v=1789797663962",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/found-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/found-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "found a company",
+          "meaning": "thành lập công ty",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6941b659-311f-4961-b4e6-038f613d811b-0-wm.jpg?v=1789800647358"
+        },
+        {
+          "phrase": "founded in 1995",
+          "meaning": "được thành lập năm 1995",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6941b659-311f-4961-b4e6-038f613d811b-1-wm.jpg?v=1789800649635"
+        },
+        {
+          "phrase": "found an organization",
+          "meaning": "lập ra một tổ chức"
+        }
+      ],
+      "synonyms": [
+        "establish (thiết lập)",
+        "set up (lập nên)",
+        "start (khởi lập)"
+      ]
+    },
+    {
+      "id": "e9c3e7bc-457f-4aed-b06d-bd2d2c4c8183",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "in advance",
+      "ipa": "UK: /ɪn ədˈvɑːns/ | US: /ɪn ədˈvæns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Please book your tickets in advance.",
+          "meaning": "trước",
+          "antonyms": [
+            "afterwards (sau đó)",
+            "late (muộn)"
+          ],
+          "toeic_tip": "Cụm cố định, không viết \"in advanced\"; thường đứng cuối câu.",
+          "example_vi": "Vui lòng đặt vé trước.",
+          "word_family": [
+            "advance (n/v) khoản ứng trước, ứng trước"
+          ],
+          "part_of_speech": "phrase"
+        }
+      ],
+      "order_index": 71,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:56:08.747847+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e9c3e7bc-457f-4aed-b06d-bd2d2c4c8183-wm.jpg?v=1789798196807",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/in-advance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/in-advance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "book in advance",
+          "meaning": "đặt trước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e9c3e7bc-457f-4aed-b06d-bd2d2c4c8183-0-wm.jpg?v=1789804566957"
+        },
+        {
+          "phrase": "pay in advance",
+          "meaning": "thanh toán trước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e9c3e7bc-457f-4aed-b06d-bd2d2c4c8183-1-wm.jpg?v=1789804568556"
+        },
+        {
+          "phrase": "two weeks in advance",
+          "meaning": "trước hai tuần"
+        }
+      ],
+      "synonyms": [
+        "beforehand (từ trước)",
+        "ahead of time (trước thời hạn)"
+      ]
+    },
+    {
+      "id": "ddfd9b8b-30dc-421a-83aa-e2c30435bd81",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "power failure",
+      "ipa": "UK: /ˈpaʊə ˌfeɪ.ljər/ | US: /ˈpaʊ.ɚ ˌfeɪ.ljɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The power failure lasted for two hours.",
+          "meaning": "mất điện",
+          "toeic_tip": "Danh từ ghép đếm được; đồng nghĩa power outage trong thông báo tòa nhà.",
+          "example_vi": "Sự cố mất điện đã kéo dài trong hai giờ.",
+          "word_family": [
+            "fail (v) hỏng, ngừng hoạt động"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:51:48.487703+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ddfd9b8b-30dc-421a-83aa-e2c30435bd81-wm.jpg?v=1789797729452",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/power-failure-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/power-failure-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a power failure occurred",
+          "meaning": "xảy ra sự cố mất điện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ddfd9b8b-30dc-421a-83aa-e2c30435bd81-0-wm.jpg?v=1789804308337"
+        },
+        {
+          "phrase": "cause a power failure",
+          "meaning": "gây mất điện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ddfd9b8b-30dc-421a-83aa-e2c30435bd81-1-wm.jpg?v=1789804306150"
+        },
+        {
+          "phrase": "during the power failure",
+          "meaning": "trong lúc mất điện"
+        }
+      ],
+      "synonyms": [
+        "power outage (sự cúp điện)",
+        "blackout (sự mất điện diện rộng)"
+      ]
+    },
+    {
+      "id": "476375af-36fb-4e1d-a4f2-e21b341ab811",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "demand",
+      "ipa": "UK: /dɪˈmɑːnd/ | US: /dɪˈmænd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The demand for solar energy is high.",
+          "meaning": "nhu cầu",
+          "antonyms": [
+            "supply (nguồn cung)"
+          ],
+          "toeic_tip": "Danh từ: demand for + sản phẩm; động từ: demand that + V nguyên mẫu.",
+          "example_vi": "Nhu cầu về năng lượng mặt trời đang rất cao.",
+          "word_family": [
+            "demanding (adj) đòi hỏi cao"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 45,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:32:58.929228+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/476375af-36fb-4e1d-a4f2-e21b341ab811-wm.jpg?v=1789798192258",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/demand-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/demand-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "high demand",
+          "meaning": "nhu cầu cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/476375af-36fb-4e1d-a4f2-e21b341ab811-0-wm.jpg?v=1789799578516"
+        },
+        {
+          "phrase": "meet the demand",
+          "meaning": "đáp ứng nhu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/476375af-36fb-4e1d-a4f2-e21b341ab811-1-wm.jpg?v=1789799578782"
+        },
+        {
+          "phrase": "demand for the product",
+          "meaning": "nhu cầu về sản phẩm"
+        }
+      ],
+      "synonyms": [
+        "need (nhu cầu)",
+        "requirement (yêu cầu cần có)",
+        "call (sự cần đến)"
+      ]
+    },
+    {
+      "id": "1c1281fa-9c79-4a7e-a641-0714602842f1",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "process",
+      "ipa": "UK: /ˈprəʊ.ses/ | US: /ˈprɑː.ses/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We need to process the data today.",
+          "meaning": "xử lý",
+          "toeic_tip": "Số nhiều là processes; phân biệt với procedure (trình tự các bước cụ thể).",
+          "example_vi": "Chúng ta cần xử lý dữ liệu vào hôm nay.",
+          "word_family": [
+            "processing (n) việc xử lý",
+            "processor (n) bộ xử lý"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 53,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:19:40.128866+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1c1281fa-9c79-4a7e-a641-0714602842f1-wm.jpg?v=1789798282460",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/process-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/process-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "process an order",
+          "meaning": "xử lý đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c1281fa-9c79-4a7e-a641-0714602842f1-0-wm.jpg?v=1789798779988"
+        },
+        {
+          "phrase": "process a payment",
+          "meaning": "xử lý thanh toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c1281fa-9c79-4a7e-a641-0714602842f1-1-wm.jpg?v=1789798779237"
+        },
+        {
+          "phrase": "the application process",
+          "meaning": "quy trình nộp đơn"
+        }
+      ],
+      "synonyms": [
+        "handle (xử lý)",
+        "deal with (giải quyết)",
+        "manage (quản lý xử lý)"
+      ]
+    },
+    {
+      "id": "1dab536b-ae4d-4fa5-ac55-327e6080b79c",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "catch up",
+      "ipa": "/kætʃ ʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I need to catch up on some work.",
+          "meaning": "theo kịp",
+          "antonyms": [
+            "fall behind (tụt lại phía sau)",
+            "lag (chậm trễ lại)"
+          ],
+          "toeic_tip": "catch up on công việc, tin tức; catch up with người hoặc đối thủ.",
+          "example_vi": "Tôi cần làm bù một số công việc còn tồn đọng.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 63,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:19:54.649013+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1dab536b-ae4d-4fa5-ac55-327e6080b79c-wm.jpg?v=1789798313014",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/catch-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/catch-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "catch up on work",
+          "meaning": "làm bù công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1dab536b-ae4d-4fa5-ac55-327e6080b79c-0-wm.jpg?v=1789798792550"
+        },
+        {
+          "phrase": "catch up with competitors",
+          "meaning": "bắt kịp đối thủ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1dab536b-ae4d-4fa5-ac55-327e6080b79c-1-wm.jpg?v=1789798794509"
+        },
+        {
+          "phrase": "catch up on emails",
+          "meaning": "xử lý nốt email tồn"
+        }
+      ],
+      "synonyms": [
+        "keep up (theo kịp)",
+        "keep pace (giữ nhịp theo kịp)"
+      ]
+    },
+    {
+      "id": "a406d166-18de-490b-8bdc-1558921c727c",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "address",
+      "ipa": "/əˈdres/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We must address these concerns.",
+          "meaning": "giải quyết",
+          "antonyms": [
+            "ignore (phớt lờ)",
+            "neglect (bỏ mặc)"
+          ],
+          "toeic_tip": "Nghĩa \"giải quyết\" hay ra Part 5; address + tân ngữ, không có giới từ.",
+          "example_vi": "Chúng ta phải giải quyết những mối lo ngại này.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 22,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:20:54.723424+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a406d166-18de-490b-8bdc-1558921c727c-wm.jpg?v=1789797669098",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/address-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/address-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "address an issue",
+          "meaning": "giải quyết một vấn đề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a406d166-18de-490b-8bdc-1558921c727c-0-wm.jpg?v=1789802452298"
+        },
+        {
+          "phrase": "address concerns",
+          "meaning": "giải quyết các mối lo ngại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a406d166-18de-490b-8bdc-1558921c727c-1-wm.jpg?v=1789802454593"
+        },
+        {
+          "phrase": "address complaints",
+          "meaning": "xử lý khiếu nại"
+        }
+      ],
+      "synonyms": [
+        "handle (xử lý)",
+        "tackle (giải quyết)",
+        "deal with (đối phó với)"
+      ]
+    },
+    {
+      "id": "e2afa803-53bd-4d87-b184-64dde6772e12",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "valid",
+      "ipa": "/ˈvæl.ɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The coupon is valid until June.",
+          "meaning": "hợp lệ",
+          "antonyms": [
+            "invalid (không hợp lệ)",
+            "expired (đã hết hạn)"
+          ],
+          "toeic_tip": "valid until/for + thời gian; danh từ validity, động từ validate.",
+          "example_vi": "Phiếu giảm giá có giá trị (hợp lệ) đến tháng Sáu.",
+          "word_family": [
+            "validity (n) hiệu lực",
+            "validate (v) xác nhận hợp lệ"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 26,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:53:09.82603+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e2afa803-53bd-4d87-b184-64dde6772e12-wm.jpg?v=1789797668210",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/valid-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/valid-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a valid ticket",
+          "meaning": "vé hợp lệ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e2afa803-53bd-4d87-b184-64dde6772e12-0-wm.jpg?v=1789804373854"
+        },
+        {
+          "phrase": "remain valid",
+          "meaning": "vẫn còn hiệu lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e2afa803-53bd-4d87-b184-64dde6772e12-1-wm.jpg?v=1789804389678"
+        },
+        {
+          "phrase": "valid until December",
+          "meaning": "có giá trị đến tháng Mười hai"
+        }
+      ],
+      "synonyms": [
+        "legitimate (chính đáng)",
+        "effective (còn hiệu lực)",
+        "acceptable (được chấp nhận)"
+      ]
+    },
+    {
+      "id": "a4a2bad5-14c4-4899-9e27-65330f819aab",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "stabilization",
+      "ipa": "UK: /ˌsteɪ.bɪ.laɪˈzeɪ.ʃən/ | US: /ˌsteɪ.bə.ləˈzeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The market shows signs of stabilization.",
+          "meaning": "sự ổn định",
+          "antonyms": [
+            "destabilization (sự làm mất ổn định)"
+          ],
+          "toeic_tip": "Anh-Anh viết stabilisation; sau giới từ of cần danh từ này, không dùng stabilize.",
+          "example_vi": "Thị trường cho thấy những dấu hiệu ổn định.",
+          "word_family": [
+            "stabilize (v) làm ổn định",
+            "stable (adj) ổn định",
+            "stability (n) sự ổn định"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 55,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:21:11.796577+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a4a2bad5-14c4-4899-9e27-65330f819aab-wm.jpg?v=1789797933637",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stabilization-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/stabilization-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "price stabilization",
+          "meaning": "sự bình ổn giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a4a2bad5-14c4-4899-9e27-65330f819aab-0-wm.jpg?v=1789802470874"
+        },
+        {
+          "phrase": "image stabilization",
+          "meaning": "sự chống rung hình ảnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a4a2bad5-14c4-4899-9e27-65330f819aab-1-wm.jpg?v=1789802471654"
+        },
+        {
+          "phrase": "market stabilization",
+          "meaning": "sự ổn định thị trường"
+        }
+      ],
+      "synonyms": [
+        "steadying (sự làm cho vững)",
+        "balancing (sự cân bằng)"
+      ]
+    },
+    {
+      "id": "3e94ede1-2632-44a0-937a-f995a858fe00",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "distribute",
+      "ipa": "/dɪˈstrɪb.juːt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "They distribute flyers in the street.",
+          "meaning": "phân phối",
+          "antonyms": [
+            "collect (thu gom)",
+            "gather (tập hợp lại)"
+          ],
+          "toeic_tip": "distribute something to somebody; danh từ distribution, người là distributor.",
+          "example_vi": "Họ phân phát tờ rơi trên đường phố.",
+          "word_family": [
+            "distribution (n) sự phân phối",
+            "distributor (n) nhà phân phối"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 29,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:29:00.798101+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3e94ede1-2632-44a0-937a-f995a858fe00-wm.jpg?v=1789798445133",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/distribute-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/distribute-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "distribute products",
+          "meaning": "phân phối sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3e94ede1-2632-44a0-937a-f995a858fe00-0-wm.jpg?v=1789799339905"
+        },
+        {
+          "phrase": "distribute flyers",
+          "meaning": "phát tờ rơi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3e94ede1-2632-44a0-937a-f995a858fe00-1-wm.jpg?v=1789799340652"
+        },
+        {
+          "phrase": "distribute evenly",
+          "meaning": "phân bổ đều"
+        }
+      ],
+      "synonyms": [
+        "hand out (phát ra)",
+        "deliver (giao)",
+        "circulate (lưu hành)"
+      ]
+    },
+    {
+      "id": "78b3bdc1-c3b1-41e4-9c94-b601fe38ebde",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "executive",
+      "ipa": "UK: /ɪɡˈzek.jə.tɪv/ | US: /ɪɡˈzek.jə.t̬ɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He is a top executive at the bank.",
+          "meaning": "quản lý cấp cao",
+          "antonyms": [
+            "employee (nhân viên thường)",
+            "subordinate (cấp dưới)"
+          ],
+          "toeic_tip": "Vừa danh từ vừa tính từ: an executive assistant; khác execution (sự thực thi).",
+          "example_vi": "Anh ấy là một quản lý cấp cao tại ngân hàng.",
+          "word_family": [
+            "execute (v) thực thi",
+            "execution (n) sự thực thi"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 43,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:59:37.282055+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/78b3bdc1-c3b1-41e4-9c94-b601fe38ebde-wm.jpg?v=1789798444584",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/executive-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/executive-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a senior executive",
+          "meaning": "lãnh đạo cấp cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78b3bdc1-c3b1-41e4-9c94-b601fe38ebde-0-wm.jpg?v=1789801177147"
+        },
+        {
+          "phrase": "the chief executive",
+          "meaning": "giám đốc điều hành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78b3bdc1-c3b1-41e4-9c94-b601fe38ebde-1-wm.jpg?v=1789801148146"
+        },
+        {
+          "phrase": "executives from the company",
+          "meaning": "các lãnh đạo của công ty"
+        }
+      ],
+      "synonyms": [
+        "director (giám đốc)",
+        "officer (người điều hành)",
+        "manager (người quản lý)"
+      ]
+    },
+    {
+      "id": "e20be769-3381-412c-bec4-2f69b8f5bbee",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "postpone",
+      "ipa": "UK: /pəʊstˈpəʊn/ | US: /poʊstˈpoʊn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The event was postponed due to rain.",
+          "meaning": "hoãn lại",
+          "antonyms": [
+            "advance (dời lên sớm hơn)",
+            "proceed with (tiến hành đúng hẹn)"
+          ],
+          "toeic_tip": "postpone + V-ing hoặc danh từ, không dùng \"postpone to do\".",
+          "example_vi": "Sự kiện đã bị hoãn lại do trời mưa.",
+          "word_family": [
+            "postponement (n) sự trì hoãn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:54:26.22985+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e20be769-3381-412c-bec4-2f69b8f5bbee-wm.jpg?v=1789798216668",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/postpone-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/postpone-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "postpone a meeting",
+          "meaning": "hoãn cuộc họp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e20be769-3381-412c-bec4-2f69b8f5bbee-0-wm.jpg?v=1789804465354"
+        },
+        {
+          "phrase": "postpone until next week",
+          "meaning": "hoãn đến tuần sau",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e20be769-3381-412c-bec4-2f69b8f5bbee-1-wm.jpg?v=1789804466092"
+        },
+        {
+          "phrase": "be postponed indefinitely",
+          "meaning": "bị hoãn vô thời hạn"
+        }
+      ],
+      "synonyms": [
+        "delay (trì hoãn)",
+        "put off (hoãn lại)",
+        "reschedule (dời lịch)"
+      ]
+    },
+    {
+      "id": "a4ae1900-2256-4b6c-877c-4b81d5e4628c",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "struggle",
+      "ipa": "/ˈstrʌɡ.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Small firms struggle to compete.",
+          "meaning": "nỗ lực, vật lộn",
+          "antonyms": [
+            "succeed easily (thành công dễ dàng)"
+          ],
+          "toeic_tip": "struggle to do something; struggle with + khó khăn, khối lượng công việc.",
+          "example_vi": "Các công ty nhỏ vật lộn để cạnh tranh.",
+          "word_family": [
+            "struggling (adj) đang chật vật"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 13,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:21:37.628363+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a4ae1900-2256-4b6c-877c-4b81d5e4628c-wm.jpg?v=1789797833763",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/struggle-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/struggle-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "struggle to meet the deadline",
+          "meaning": "chật vật kịp hạn chót",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a4ae1900-2256-4b6c-877c-4b81d5e4628c-0-wm.jpg?v=1789802487102"
+        },
+        {
+          "phrase": "struggle with the workload",
+          "meaning": "vật lộn với khối lượng công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a4ae1900-2256-4b6c-877c-4b81d5e4628c-1-wm.jpg?v=1789802497468"
+        },
+        {
+          "phrase": "a constant struggle",
+          "meaning": "cuộc vật lộn không ngừng"
+        }
+      ],
+      "synonyms": [
+        "strive (nỗ lực)",
+        "battle (vật lộn)",
+        "have difficulty (gặp khó khăn)"
+      ]
+    },
+    {
+      "id": "78420202-faf3-4a81-b68a-746333d974e0",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "expire",
+      "ipa": "UK: /ɪkˈspaɪər/ | US: /ɪkˈspaɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My passport will expire next month.",
+          "meaning": "hết hạn",
+          "antonyms": [
+            "renew (gia hạn)",
+            "extend (kéo dài thời hạn)"
+          ],
+          "toeic_tip": "Là nội động từ: the contract expires; không nói \"expire something\".",
+          "example_vi": "Hộ chiếu của tôi sẽ hết hạn vào tháng tới.",
+          "word_family": [
+            "expiration (n) sự hết hạn",
+            "expired (adj) đã hết hạn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 27,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:56:33.935103+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/78420202-faf3-4a81-b68a-746333d974e0-wm.jpg?v=1789798186076",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expire-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expire-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the contract expires",
+          "meaning": "hợp đồng hết hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78420202-faf3-4a81-b68a-746333d974e0-0-wm.jpg?v=1789800993791"
+        },
+        {
+          "phrase": "your membership will expire",
+          "meaning": "thẻ thành viên sẽ hết hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/78420202-faf3-4a81-b68a-746333d974e0-1-wm.jpg?v=1789800992544"
+        },
+        {
+          "phrase": "expire on June 30",
+          "meaning": "hết hạn ngày 30 tháng Sáu"
+        }
+      ],
+      "synonyms": [
+        "run out (hết hiệu lực)",
+        "lapse (mất hiệu lực)",
+        "end (kết thúc)"
+      ]
+    },
+    {
+      "id": "733185f0-6925-4ed9-b0bf-9523cfba690f",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "feature",
+      "ipa": "UK: /ˈfiː.tʃər/ | US: /ˈfiː.tʃɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The car features a new safety system.",
+          "meaning": "có đặc điểm/bao gồm",
+          "antonyms": [
+            "lack (thiếu, không có)"
+          ],
+          "toeic_tip": "Động từ feature nghĩa là \"có sẵn\"; chủ ngữ là sản phẩm, không phải người.",
+          "example_vi": "Chiếc xe có một hệ thống an toàn mới.",
+          "word_family": [
+            "featured (adj) được giới thiệu nổi bật"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 30,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:56:10.299801+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/733185f0-6925-4ed9-b0bf-9523cfba690f-wm.jpg?v=1789798112928",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/feature-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/feature-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "feature a new design",
+          "meaning": "có thiết kế mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/733185f0-6925-4ed9-b0bf-9523cfba690f-0-wm.jpg?v=1789800970166"
+        },
+        {
+          "phrase": "the model features a large screen",
+          "meaning": "mẫu này có màn hình lớn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/733185f0-6925-4ed9-b0bf-9523cfba690f-1-wm.jpg?v=1789800968153"
+        },
+        {
+          "phrase": "a key feature",
+          "meaning": "tính năng chính"
+        }
+      ],
+      "synonyms": [
+        "include (bao gồm)",
+        "showcase (giới thiệu nổi bật)",
+        "highlight (làm nổi bật)"
+      ]
+    },
+    {
+      "id": "798868a8-d5ae-4fba-a7b2-0d7d7735fc26",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "emphasize",
+      "ipa": "/ˈem.fə.saɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He emphasized the need for safety.",
+          "meaning": "nhấn mạnh",
+          "antonyms": [
+            "downplay (giảm nhẹ)",
+            "minimize (xem nhẹ)"
+          ],
+          "toeic_tip": "Anh-Anh viết emphasise; emphasize + tân ngữ, không dùng \"emphasize on\".",
+          "example_vi": "Anh ấy đã nhấn mạnh sự cần thiết của việc bảo đảm an toàn.",
+          "word_family": [
+            "emphasis (n) sự nhấn mạnh",
+            "emphatic (adj) dứt khoát, nhấn mạnh"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 76,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:57:26.772077+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/798868a8-d5ae-4fba-a7b2-0d7d7735fc26-wm.jpg?v=1789798198929",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/emphasize-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/emphasize-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "emphasize the importance",
+          "meaning": "nhấn mạnh tầm quan trọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/798868a8-d5ae-4fba-a7b2-0d7d7735fc26-0-wm.jpg?v=1789801045774"
+        },
+        {
+          "phrase": "emphasize the need for",
+          "meaning": "nhấn mạnh sự cần thiết của",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/798868a8-d5ae-4fba-a7b2-0d7d7735fc26-1-wm.jpg?v=1789801046639"
+        },
+        {
+          "phrase": "strongly emphasize",
+          "meaning": "hết sức nhấn mạnh"
+        }
+      ],
+      "synonyms": [
+        "stress (nhấn mạnh)",
+        "highlight (làm nổi bật)",
+        "underline (nhấn mạnh)"
+      ]
+    },
+    {
+      "id": "24675238-1dfa-478f-969a-39f6dbc02620",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "preserve",
+      "ipa": "UK: /p rɪˈzɜːv/ | US: /prɪˈzɝːv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We must preserve historical sites.",
+          "meaning": "bảo tồn",
+          "antonyms": [
+            "destroy (phá hủy)",
+            "demolish (phá dỡ)"
+          ],
+          "toeic_tip": "Phân biệt preserve (bảo tồn) với reserve (đặt trước) và conserve (tiết kiệm).",
+          "example_vi": "Chúng ta phải bảo tồn các di tích lịch sử.",
+          "word_family": [
+            "preservation (n) sự bảo tồn",
+            "preservative (n) chất bảo quản"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 66,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:22:09.27974+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/24675238-1dfa-478f-969a-39f6dbc02620-wm.jpg?v=1789798542231",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/preserve-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/preserve-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "preserve historic buildings",
+          "meaning": "bảo tồn công trình lịch sử",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/24675238-1dfa-478f-969a-39f6dbc02620-0-wm.jpg?v=1789798929118"
+        },
+        {
+          "phrase": "preserve the environment",
+          "meaning": "bảo vệ môi trường",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/24675238-1dfa-478f-969a-39f6dbc02620-1-wm.jpg?v=1789798927836"
+        },
+        {
+          "phrase": "preserve documents",
+          "meaning": "lưu giữ tài liệu"
+        }
+      ],
+      "synonyms": [
+        "protect (bảo vệ)",
+        "conserve (bảo tồn)",
+        "maintain (duy trì)"
+      ]
+    },
+    {
+      "id": "2ede0058-ace8-490f-9508-18f205fcc8cf",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "indeed",
+      "ipa": "/ɪnˈdiːd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is a very good offer indeed.",
+          "meaning": "thật sự",
+          "toeic_tip": "Đứng sau tính từ hoặc trạng từ để nhấn mạnh; không thay được cho very.",
+          "example_vi": "Đó thật sự là một lời đề nghị rất tốt.",
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 72,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:22:20.086692+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2ede0058-ace8-490f-9508-18f205fcc8cf-wm.jpg?v=1789798543025",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/indeed-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/indeed-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "very good indeed",
+          "meaning": "thật sự rất tốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2ede0058-ace8-490f-9508-18f205fcc8cf-0-wm.jpg?v=1789798939940"
+        },
+        {
+          "phrase": "indeed, the results show",
+          "meaning": "quả thật, kết quả cho thấy",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2ede0058-ace8-490f-9508-18f205fcc8cf-1-wm.jpg?v=1789798937678"
+        },
+        {
+          "phrase": "it is indeed a problem",
+          "meaning": "đó thật sự là một vấn đề"
+        }
+      ],
+      "synonyms": [
+        "truly (thật sự)",
+        "certainly (chắc chắn)",
+        "in fact (thực tế là)"
+      ]
+    },
+    {
+      "id": "7b9042ed-9331-4d8c-9179-5366bc9a0053",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "issue",
+      "ipa": "/ˈɪʃ.uː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The bank issued a new credit card.",
+          "meaning": "cấp, phát hành",
+          "antonyms": [
+            "withdraw (thu hồi)",
+            "revoke (hủy bỏ hiệu lực)"
+          ],
+          "toeic_tip": "Ngoài nghĩa \"vấn đề\", nghĩa \"cấp, phát hành\" mới hay được hỏi Part 5.",
+          "example_vi": "Ngân hàng đã cấp một thẻ tín dụng mới.",
+          "word_family": [
+            "issuance (n) sự cấp phát",
+            "issued (adj) đã được cấp"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 34,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:00:43.910398+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7b9042ed-9331-4d8c-9179-5366bc9a0053-wm.jpg?v=1789797668633",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/issue-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/issue-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "issue a refund",
+          "meaning": "cấp khoản hoàn tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7b9042ed-9331-4d8c-9179-5366bc9a0053-0-wm.jpg?v=1789801232718"
+        },
+        {
+          "phrase": "issue a permit",
+          "meaning": "cấp giấy phép",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7b9042ed-9331-4d8c-9179-5366bc9a0053-1-wm.jpg?v=1789801243760"
+        },
+        {
+          "phrase": "issue a statement",
+          "meaning": "ra thông cáo"
+        }
+      ],
+      "synonyms": [
+        "grant (cấp)",
+        "provide (cung cấp)",
+        "release (phát hành)"
+      ]
+    },
+    {
+      "id": "2d9d8179-769a-4468-a40a-e6c72e8b73fd",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "property",
+      "ipa": "UK: /ˈprɒp.ə.ti/ | US: /ˈprɑː.pɚ.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company owns several properties.",
+          "meaning": "tài sản, bất động sản",
+          "toeic_tip": "Không đếm được khi chỉ tài sản, đếm được khi chỉ từng bất động sản.",
+          "example_vi": "Công ty sở hữu vài bất động sản.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:22:53.917759+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2d9d8179-769a-4468-a40a-e6c72e8b73fd-wm.jpg?v=1789798559368",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/property-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/property-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "commercial property",
+          "meaning": "bất động sản thương mại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2d9d8179-769a-4468-a40a-e6c72e8b73fd-0-wm.jpg?v=1789798973532"
+        },
+        {
+          "phrase": "property value",
+          "meaning": "giá trị bất động sản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2d9d8179-769a-4468-a40a-e6c72e8b73fd-1-wm.jpg?v=1789798973774"
+        },
+        {
+          "phrase": "personal property",
+          "meaning": "tài sản cá nhân"
+        }
+      ],
+      "synonyms": [
+        "real estate (bất động sản)",
+        "assets (tài sản)",
+        "premises (khu nhà đất)"
+      ]
+    },
+    {
+      "id": "79913ff3-23c4-48ee-a949-95f0f8296824",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "smudge",
+      "ipa": "/smʌdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "There is a smudge on the glass.",
+          "meaning": "vết bẩn",
+          "toeic_tip": "Đếm được; Part 7 hay gặp trong khiếu nại về chất lượng in ấn.",
+          "example_vi": "Có một vết bẩn trên mặt kính.",
+          "word_family": [
+            "smudged (adj) bị lem",
+            "smudgy (adj) dễ lem"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 74,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:58:40.222901+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/79913ff3-23c4-48ee-a949-95f0f8296824-wm.jpg?v=1789797687430",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/smudge-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/smudge-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "leave a smudge",
+          "meaning": "để lại vết bẩn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79913ff3-23c4-48ee-a949-95f0f8296824-0-wm.jpg?v=1789801105130"
+        },
+        {
+          "phrase": "a smudge on the screen",
+          "meaning": "vết mờ trên màn hình",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79913ff3-23c4-48ee-a949-95f0f8296824-1-wm.jpg?v=1789801120087"
+        },
+        {
+          "phrase": "smudge the ink",
+          "meaning": "làm nhòe mực"
+        }
+      ],
+      "synonyms": [
+        "smear (vết bôi bẩn)",
+        "stain (vết ố)",
+        "blur (làm nhòe)"
+      ]
+    },
+    {
+      "id": "ea438845-69dc-42b8-b941-ef8032eb054a",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "nationwide",
+      "ipa": "/ˌneɪ.ʃənˈwaɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company has 50 branches nationwide.",
+          "meaning": "trên toàn quốc",
+          "antonyms": [
+            "local (địa phương)",
+            "regional (theo vùng)"
+          ],
+          "toeic_tip": "Vừa là tính từ vừa là trạng từ; không bao giờ thêm đuôi -ly.",
+          "example_vi": "Công ty có 50 chi nhánh trên toàn quốc.",
+          "word_family": [
+            "nation (n) quốc gia",
+            "national (adj) thuộc quốc gia"
+          ],
+          "part_of_speech": "adj/adv"
+        }
+      ],
+      "order_index": 42,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:56:08.748238+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ea438845-69dc-42b8-b941-ef8032eb054a-wm.jpg?v=1789798191372",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/nationwide-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/nationwide-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a nationwide campaign",
+          "meaning": "chiến dịch toàn quốc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ea438845-69dc-42b8-b941-ef8032eb054a-0-wm.jpg?v=1789804568412"
+        },
+        {
+          "phrase": "available nationwide",
+          "meaning": "có mặt trên toàn quốc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ea438845-69dc-42b8-b941-ef8032eb054a-1-wm.jpg?v=1789804568585"
+        },
+        {
+          "phrase": "nationwide delivery",
+          "meaning": "giao hàng toàn quốc"
+        }
+      ],
+      "synonyms": [
+        "countrywide (khắp cả nước)",
+        "national (mang tầm toàn quốc)"
+      ]
+    },
+    {
+      "id": "2f7a2dfd-a695-41ab-898e-a56fddd1b871",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "curate",
+      "ipa": "UK: /kjʊəˈreɪt/ | US: /kjʊˈreɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The exhibition was carefully curated.",
+          "meaning": "tuyển chọn",
+          "toeic_tip": "Part 7 hay gặp trong bài về triển lãm; người phụ trách là curator.",
+          "example_vi": "Triển lãm đã được tuyển chọn một cách kỹ lưỡng.",
+          "word_family": [
+            "curator (n) người phụ trách tuyển chọn",
+            "curated (adj) được tuyển chọn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 51,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:23:35.730837+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2f7a2dfd-a695-41ab-898e-a56fddd1b871-wm.jpg?v=1789798581606",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/curate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/curate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "curate an exhibition",
+          "meaning": "tuyển chọn tác phẩm cho triển lãm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f7a2dfd-a695-41ab-898e-a56fddd1b871-0-wm.jpg?v=1789799012753"
+        },
+        {
+          "phrase": "a carefully curated collection",
+          "meaning": "bộ sưu tập được tuyển chọn kỹ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f7a2dfd-a695-41ab-898e-a56fddd1b871-1-wm.jpg?v=1789799015504"
+        },
+        {
+          "phrase": "curate content",
+          "meaning": "chọn lọc nội dung"
+        }
+      ],
+      "synonyms": [
+        "select (chọn lọc)",
+        "compile (biên soạn)",
+        "assemble (tập hợp lại)"
+      ]
+    },
+    {
+      "id": "3067f6e1-d649-48b8-8225-c6afade2e532",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "warranty",
+      "ipa": "UK: /ˈwɒr.ən.ti/ | US: /ˈwɔːr.ən.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The TV is still under warranty.",
+          "meaning": "bảo hành",
+          "toeic_tip": "Cụm cố định \"under warranty\"; warranty là giấy bảo hành, khác guarantee.",
+          "example_vi": "Chiếc tivi vẫn còn trong thời hạn bảo hành.",
+          "word_family": [
+            "warrant (v) bảo đảm",
+            "warranted (adj) được bảo đảm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:23:36.201059+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3067f6e1-d649-48b8-8225-c6afade2e532-wm.jpg?v=1789798582617",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/warranty-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/warranty-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "under warranty",
+          "meaning": "còn trong thời hạn bảo hành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3067f6e1-d649-48b8-8225-c6afade2e532-0-wm.jpg?v=1789799016031"
+        },
+        {
+          "phrase": "a two-year warranty",
+          "meaning": "bảo hành hai năm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3067f6e1-d649-48b8-8225-c6afade2e532-1-wm.jpg?v=1789799013821"
+        },
+        {
+          "phrase": "the warranty expires",
+          "meaning": "bảo hành hết hạn"
+        }
+      ],
+      "synonyms": [
+        "guarantee (sự bảo đảm)",
+        "coverage (phạm vi bảo đảm)"
+      ]
+    },
+    {
+      "id": "0f88f661-5b91-4500-bd3e-d996a1568677",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "handy",
+      "ipa": "/ˈhæn.di/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This tool is very handy for small repairs.",
+          "meaning": "tiện lợi",
+          "antonyms": [
+            "useless (vô dụng)",
+            "inconvenient (bất tiện)"
+          ],
+          "toeic_tip": "Thành ngữ \"come in handy\" (trở nên hữu dụng); handy là tính từ.",
+          "example_vi": "Công cụ này rất tiện lợi cho các việc sửa chữa nhỏ.",
+          "word_family": [
+            "handily (adv) một cách tiện lợi, dễ dàng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 19,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:16:50.42072+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0f88f661-5b91-4500-bd3e-d996a1568677-wm.jpg?v=1789797667125",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/handy-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/handy-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a handy tool",
+          "meaning": "công cụ tiện dụng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f88f661-5b91-4500-bd3e-d996a1568677-0-wm.jpg?v=1789798610275"
+        },
+        {
+          "phrase": "come in handy",
+          "meaning": "trở nên hữu dụng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f88f661-5b91-4500-bd3e-d996a1568677-1-wm.jpg?v=1789798607403"
+        },
+        {
+          "phrase": "keep it handy",
+          "meaning": "để sẵn trong tầm tay"
+        }
+      ],
+      "synonyms": [
+        "useful (hữu ích)",
+        "convenient (tiện lợi)",
+        "practical (thiết thực)"
+      ]
+    },
+    {
+      "id": "8053d2f4-e49d-444d-9ca8-6da2f5f32d14",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "strategy",
+      "ipa": "/ˈstræt.ə.dʒi/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We need a long-term business strategy.",
+          "meaning": "chiến lược",
+          "toeic_tip": "Số nhiều là strategies; tính từ strategic, trạng từ strategically.",
+          "example_vi": "Chúng ta cần một chiến lược kinh doanh dài hạn.",
+          "word_family": [
+            "strategic (adj) mang tính chiến lược",
+            "strategically (adv) một cách chiến lược"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:02:08.784721+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8053d2f4-e49d-444d-9ca8-6da2f5f32d14-wm.jpg?v=1789798181002",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/strategy-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/strategy-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a marketing strategy",
+          "meaning": "chiến lược tiếp thị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8053d2f4-e49d-444d-9ca8-6da2f5f32d14-0-wm.jpg?v=1789801313414"
+        },
+        {
+          "phrase": "develop a strategy",
+          "meaning": "xây dựng chiến lược",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8053d2f4-e49d-444d-9ca8-6da2f5f32d14-1-wm.jpg?v=1789801328649"
+        },
+        {
+          "phrase": "a long-term strategy",
+          "meaning": "chiến lược dài hạn"
+        }
+      ],
+      "synonyms": [
+        "plan (kế hoạch)",
+        "approach (cách tiếp cận)",
+        "tactic (sách lược)"
+      ]
+    },
+    {
+      "id": "4d483c3d-dc8a-4459-a90c-5a3255ce30e0",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "donate",
+      "ipa": "UK: /dəʊˈneɪt/ | US: /ˈdoʊ.neɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Many people donated to the charity.",
+          "meaning": "quyên góp",
+          "antonyms": [
+            "receive (nhận về)",
+            "keep (giữ lại)"
+          ],
+          "toeic_tip": "donate something to + tổ chức; danh từ donation, người là donor.",
+          "example_vi": "Nhiều người đã quyên góp cho tổ chức từ thiện.",
+          "word_family": [
+            "donation (n) khoản quyên góp",
+            "donor (n) người quyên góp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 68,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:35:32.550271+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4d483c3d-dc8a-4459-a90c-5a3255ce30e0-wm.jpg?v=1789797685788",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/donate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/donate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "donate money",
+          "meaning": "quyên góp tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4d483c3d-dc8a-4459-a90c-5a3255ce30e0-0-wm.jpg?v=1789799731676"
+        },
+        {
+          "phrase": "donate to charity",
+          "meaning": "ủng hộ quỹ từ thiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4d483c3d-dc8a-4459-a90c-5a3255ce30e0-1-wm.jpg?v=1789799732399"
+        },
+        {
+          "phrase": "donate items",
+          "meaning": "tặng đồ"
+        }
+      ],
+      "synonyms": [
+        "contribute (đóng góp)",
+        "give (cho tặng)"
+      ]
+    },
+    {
+      "id": "84259888-3b39-47c1-8d14-d968e9eae00d",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "suggest",
+      "ipa": "/səˈdʒest/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I suggest we start the project now.",
+          "meaning": "đề xuất",
+          "toeic_tip": "Không dùng \"suggest somebody to do\"; dùng suggest doing hoặc suggest that.",
+          "example_vi": "Tôi đề xuất chúng ta bắt đầu dự án ngay bây giờ.",
+          "word_family": [
+            "suggestion (n) lời đề xuất",
+            "suggested (adj) được đề xuất"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 50,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:03:40.070172+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/84259888-3b39-47c1-8d14-d968e9eae00d-wm.jpg?v=1789798467475",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/suggest-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/suggest-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "suggest an alternative",
+          "meaning": "đề xuất phương án khác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/84259888-3b39-47c1-8d14-d968e9eae00d-0-wm.jpg?v=1789801419933"
+        },
+        {
+          "phrase": "suggest that we postpone",
+          "meaning": "đề nghị rằng chúng ta hoãn lại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/84259888-3b39-47c1-8d14-d968e9eae00d-1-wm.jpg?v=1789801418695"
+        },
+        {
+          "phrase": "strongly suggest",
+          "meaning": "khuyến nghị mạnh mẽ"
+        }
+      ],
+      "synonyms": [
+        "recommend (khuyến nghị)",
+        "propose (đề xuất)",
+        "advise (khuyên)"
+      ]
+    },
+    {
+      "id": "23aef9f5-3e2c-4ff2-b555-7971c19ceaa3",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "ultimately",
+      "ipa": "UK: /ˈʌl.tɪ.mət.li/ | US: /ˈʌl.tə.mət.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Ultimately, the decision is yours.",
+          "meaning": "cuối cùng",
+          "antonyms": [
+            "initially (ban đầu)",
+            "at first (lúc đầu)"
+          ],
+          "toeic_tip": "Đứng đầu câu kèm dấu phẩy hoặc trước động từ chính; khác eventually.",
+          "example_vi": "Cuối cùng thì quyết định là ở bạn.",
+          "word_family": [
+            "ultimate (adj) sau cùng, tối hậu"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 80,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:22:27.128356+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/23aef9f5-3e2c-4ff2-b555-7971c19ceaa3-wm.jpg?v=1789798546561",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ultimately-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ultimately-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "ultimately responsible",
+          "meaning": "chịu trách nhiệm sau cùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/23aef9f5-3e2c-4ff2-b555-7971c19ceaa3-0-wm.jpg?v=1789798946060"
+        },
+        {
+          "phrase": "ultimately led to",
+          "meaning": "cuối cùng dẫn đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/23aef9f5-3e2c-4ff2-b555-7971c19ceaa3-1-wm.jpg?v=1789798946973"
+        },
+        {
+          "phrase": "ultimately decided",
+          "meaning": "rốt cuộc đã quyết định"
+        }
+      ],
+      "synonyms": [
+        "eventually (rốt cuộc)",
+        "finally (cuối cùng)",
+        "in the end (sau cùng)"
+      ]
+    },
+    {
+      "id": "29fa6a7c-d01f-4de2-aa77-3c0dc5710faf",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "maintenance",
+      "ipa": "/ˈmeɪn.tə.nəns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The elevator is under maintenance.",
+          "meaning": "bảo trì",
+          "antonyms": [
+            "neglect (sự bỏ bê không bảo dưỡng)"
+          ],
+          "toeic_tip": "Không đếm được; chính tả dễ sai: động từ maintain nhưng danh từ maintenance.",
+          "example_vi": "Thang máy hiện đang được bảo trì.",
+          "word_family": [
+            "maintain (v) bảo trì, duy trì"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 35,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:23:00.955268+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/29fa6a7c-d01f-4de2-aa77-3c0dc5710faf-wm.jpg?v=1789798558973",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/maintenance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/maintenance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "routine maintenance",
+          "meaning": "bảo trì định kỳ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/29fa6a7c-d01f-4de2-aa77-3c0dc5710faf-0-wm.jpg?v=1789798980805"
+        },
+        {
+          "phrase": "maintenance work",
+          "meaning": "công việc bảo trì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/29fa6a7c-d01f-4de2-aa77-3c0dc5710faf-1-wm.jpg?v=1789798978145"
+        },
+        {
+          "phrase": "building maintenance",
+          "meaning": "bảo trì tòa nhà"
+        }
+      ],
+      "synonyms": [
+        "upkeep (sự bảo dưỡng)",
+        "servicing (việc bảo dưỡng)",
+        "repair (việc sửa chữa)"
+      ]
+    },
+    {
+      "id": "ac888f70-60ea-464d-94bf-d432d7d6b762",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "auction",
+      "ipa": "UK: /ˈɔːk.ʃən/ | US: /ˈɑːk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The painting was sold at an auction.",
+          "meaning": "đấu giá",
+          "toeic_tip": "Cụm cố định \"at auction\" và \"sold at auction\" không cần mạo từ.",
+          "example_vi": "Bức tranh đã được bán tại một buổi đấu giá.",
+          "word_family": [
+            "auctioneer (n) người điều khiển đấu giá"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 67,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:25:22.306875+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ac888f70-60ea-464d-94bf-d432d7d6b762-wm.jpg?v=1789798197417",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/auction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/auction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a charity auction",
+          "meaning": "phiên đấu giá từ thiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ac888f70-60ea-464d-94bf-d432d7d6b762-0-wm.jpg?v=1789802720734"
+        },
+        {
+          "phrase": "hold an auction",
+          "meaning": "tổ chức đấu giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ac888f70-60ea-464d-94bf-d432d7d6b762-1-wm.jpg?v=1789802722172"
+        },
+        {
+          "phrase": "sold at auction",
+          "meaning": "được bán đấu giá"
+        }
+      ],
+      "synonyms": [
+        "bidding (cuộc trả giá)",
+        "sale (cuộc bán)"
+      ]
+    },
+    {
+      "id": "33c48908-683a-4191-9c4a-fbd63a30fc1c",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "effective",
+      "ipa": "/ɪˈfek.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new policy is very effective.",
+          "meaning": "hiệu quả",
+          "antonyms": [
+            "ineffective (không hiệu quả)",
+            "useless (vô ích)"
+          ],
+          "toeic_tip": "Phân biệt effective (đạt kết quả) với efficient (ít tốn nguồn lực) — bẫy Part 5.",
+          "example_vi": "Chính sách mới rất hiệu quả.",
+          "word_family": [
+            "effect (n) hiệu quả",
+            "effectiveness (n) tính hiệu quả",
+            "effectively (adv) một cách hiệu quả"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 20,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T06:23:55.151457+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/33c48908-683a-4191-9c4a-fbd63a30fc1c-wm.jpg?v=1789798592615",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/effective-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/effective-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an effective solution",
+          "meaning": "giải pháp hiệu quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/33c48908-683a-4191-9c4a-fbd63a30fc1c-0-wm.jpg?v=1789797530753"
+        },
+        {
+          "phrase": "highly effective",
+          "meaning": "rất hiệu quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/33c48908-683a-4191-9c4a-fbd63a30fc1c-1-wm.jpg?v=1789799034995"
+        },
+        {
+          "phrase": "prove effective",
+          "meaning": "tỏ ra hiệu quả"
+        }
+      ],
+      "synonyms": [
+        "efficient (hiệu suất cao)",
+        "successful (thành công)",
+        "productive (có năng suất)"
+      ]
+    },
+    {
+      "id": "bb89d3bd-7fc6-4d0f-bb4f-7fc86240a56c",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "typically",
+      "ipa": "/ˈtɪp.ɪ.kəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The process typically takes two days.",
+          "meaning": "thông thường",
+          "antonyms": [
+            "rarely (hiếm khi)",
+            "unusually (bất thường)"
+          ],
+          "toeic_tip": "Trạng từ tần suất: đứng trước động từ thường, đứng sau động từ be.",
+          "example_vi": "Quy trình này thông thường mất hai ngày.",
+          "word_family": [
+            "typical (adj) điển hình",
+            "type (n) loại"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 73,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:31:57.679555+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bb89d3bd-7fc6-4d0f-bb4f-7fc86240a56c-wm.jpg?v=1789798420403",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/typically-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/typically-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "typically takes two days",
+          "meaning": "thông thường mất hai ngày",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb89d3bd-7fc6-4d0f-bb4f-7fc86240a56c-0-wm.jpg?v=1789803116822"
+        },
+        {
+          "phrase": "typically includes",
+          "meaning": "thường bao gồm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb89d3bd-7fc6-4d0f-bb4f-7fc86240a56c-1-wm.jpg?v=1789803117537"
+        },
+        {
+          "phrase": "as is typically the case",
+          "meaning": "như thường lệ"
+        }
+      ],
+      "synonyms": [
+        "usually (thường)",
+        "generally (nói chung)",
+        "normally (bình thường)"
+      ]
+    },
+    {
+      "id": "efcc00bd-c816-410f-b961-cce400b14ff3",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "navigate",
+      "ipa": "UK: /ˈnæv.ɪ.ɡeɪt/ | US: /ˈnæv.ə.ɡeɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The app helps you navigate the city.",
+          "meaning": "định hướng",
+          "toeic_tip": "navigate + tân ngữ trực tiếp, không có giới từ; danh từ là navigation.",
+          "example_vi": "Ứng dụng giúp bạn định hướng trong thành phố.",
+          "word_family": [
+            "navigation (n) sự điều hướng",
+            "navigator (n) người dẫn đường"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 79,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:58:15.638645+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/efcc00bd-c816-410f-b961-cce400b14ff3-wm.jpg?v=1789798196908",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/navigate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/navigate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "navigate the website",
+          "meaning": "di chuyển trong trang web",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/efcc00bd-c816-410f-b961-cce400b14ff3-0-wm.jpg?v=1789804694287"
+        },
+        {
+          "phrase": "easy to navigate",
+          "meaning": "dễ tìm đường, dễ dùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/efcc00bd-c816-410f-b961-cce400b14ff3-1-wm.jpg?v=1789804695487"
+        },
+        {
+          "phrase": "navigate through the menu",
+          "meaning": "điều hướng qua các mục"
+        }
+      ],
+      "synonyms": [
+        "find one's way (tìm đường)",
+        "steer (lái, dẫn hướng)",
+        "maneuver (xoay xở di chuyển)"
+      ]
+    },
+    {
+      "id": "be98e2cc-4c8c-4571-b628-9d9bd882bfce",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "instruction",
+      "ipa": "/ɪnˈstrʌk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Read the instructions before using.",
+          "meaning": "chỉ dẫn",
+          "toeic_tip": "Nghĩa chỉ dẫn luôn dùng số nhiều instructions; nghĩa dạy học thì không đếm được.",
+          "example_vi": "Hãy đọc các chỉ dẫn trước khi sử dụng.",
+          "word_family": [
+            "instruct (v) hướng dẫn",
+            "instructor (n) người hướng dẫn",
+            "instructional (adj) mang tính hướng dẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 59,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T07:34:02.344632+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/be98e2cc-4c8c-4571-b628-9d9bd882bfce-wm.jpg?v=1789798193947",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/instruction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/instruction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "follow the instructions",
+          "meaning": "làm theo chỉ dẫn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/be98e2cc-4c8c-4571-b628-9d9bd882bfce-0-wm.jpg?v=1789803241710"
+        },
+        {
+          "phrase": "detailed instructions",
+          "meaning": "hướng dẫn chi tiết",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/be98e2cc-4c8c-4571-b628-9d9bd882bfce-1-wm.jpg?v=1789803242199"
+        },
+        {
+          "phrase": "an instruction manual",
+          "meaning": "sách hướng dẫn"
+        }
+      ],
+      "synonyms": [
+        "direction (lời chỉ dẫn)",
+        "guideline (hướng dẫn)",
+        "guidance (sự hướng dẫn)"
+      ]
+    },
+    {
+      "id": "fad54e36-7514-4611-ac96-fa96e3664e7b",
+      "part_id": "cc59afba-e20a-4959-bf49-d04664c764ba",
+      "word": "virtual",
+      "ipa": "UK: /ˈvɜː.tʃu.əl/ | US: /ˈvɝː.tʃu.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We had a virtual meeting yesterday.",
+          "meaning": "ảo",
+          "antonyms": [
+            "physical (thực tế, vật lý)",
+            "in-person (trực tiếp)"
+          ],
+          "toeic_tip": "Trạng từ virtually còn nghĩa \"gần như\", không chỉ nghĩa \"theo hình thức ảo\".",
+          "example_vi": "Chúng tôi đã có một cuộc họp ảo vào hôm qua.",
+          "word_family": [
+            "virtually (adv) theo hình thức ảo, hầu như"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 48,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T07:24:17.4905+00:00",
+      "updated_at": "2026-09-19T08:04:36.240615+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fad54e36-7514-4611-ac96-fa96e3664e7b-wm.jpg?v=1789798488071",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/virtual-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/virtual-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a virtual meeting",
+          "meaning": "cuộc họp ảo, họp trực tuyến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fad54e36-7514-4611-ac96-fa96e3664e7b-0-wm.jpg?v=1789805065966"
+        },
+        {
+          "phrase": "a virtual tour",
+          "meaning": "chuyến tham quan ảo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fad54e36-7514-4611-ac96-fa96e3664e7b-1-wm.jpg?v=1789805076107"
+        },
+        {
+          "phrase": "virtual reality",
+          "meaning": "thực tế ảo"
+        }
+      ],
+      "synonyms": [
+        "online (trực tuyến)",
+        "digital (số)",
+        "simulated (mô phỏng)"
+      ]
+    }
+  ]
+}

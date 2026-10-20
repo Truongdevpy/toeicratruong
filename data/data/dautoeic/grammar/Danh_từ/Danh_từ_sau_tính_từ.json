@@ -1,0 +1,380 @@
+{
+  "subtopic": {
+    "id": "8f722beb-96ca-457d-b12f-fdc1a49faa5d",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ sau tính từ",
+    "title_vi": "Danh từ sau tính từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 2,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-sau-tinh-tu"
+  },
+  "lessons": [
+    {
+      "id": "92335408-3b63-4a60-b114-e181a3faa868",
+      "subtopic_id": "8f722beb-96ca-457d-b12f-fdc1a49faa5d",
+      "title_en": "Danh từ sau tính từ",
+      "title_vi": "Danh từ sau tính từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 3 · Câu 103",
+          "options": {
+            "A": "reviews",
+            "B": "reviewer",
+            "C": "reviewed",
+            "D": "reviewing"
+          },
+          "question": "Sharswood Landscaping has received dozens of five-star ------- for its work.",
+          "translation": "Công ty Sharswood Landscaping đã nhận được hàng chục lượt đánh giá năm sao cho công việc của mình."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “review”: có hai danh từ (reviews, reviewer) và hai dạng động từ (reviewed, reviewing). Chỗ trống đứng ngay sau tính từ ghép “five-star”, phía sau chỉ còn “for its work”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Sharswood Landscaping",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has received",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "dozens of",
+                    "label": "từ chỉ lượng"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "five-star",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for its work.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng cuối cụm tân ngữ của “has received”, sau cụm chỉ lượng “dozens of” và tính từ “five-star”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau tính từ, khi phía sau không còn danh từ, chỗ trống cần loại từ nào.",
+                  "Nhận ra danh từ qua đuôi.",
+                  "Còn hai danh từ thì chọn số ít hay số nhiều, chỉ người hay chỉ vật."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Tính từ (adj) bổ nghĩa cho danh từ (N) đứng sau nó. Khi chỗ trống đứng ngay sau tính từ và phía sau chỉ còn giới từ, động từ hay dấu chấm, chỗ trống là danh từ chính của cụm.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cụm danh từ",
+                    "formula": "(từ hạn định) + adj + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "a / the / her / its / dozens of",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "detailed / final / five-star",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "N",
+                    "label": "danh từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "(of … / with … / will be …)",
+                    "label": ""
+                  }
+                ],
+                "caption": "Danh từ là phần chính của cụm; phía sau nó có thể là giới từ, mệnh đề that, động từ chính hoặc dấu chấm."
+              },
+              {
+                "rows": [
+                  [
+                    "Danh từ",
+                    "-tion, -ment, -ance, -ist (chỉ người)",
+                    "qualification, explanation, assignment, maintenance, attendance, performance, strategist"
+                  ],
+                  [
+                    "Danh từ không có đuôi riêng",
+                    "cùng dạng với động từ",
+                    "schedule, stage, benefit, report, bonus, review"
+                  ],
+                  [
+                    "Tính từ",
+                    "-ic, -ial, -able, -ed",
+                    "strategic, beneficial, reportable, qualified"
+                  ],
+                  [
+                    "Trạng từ",
+                    "-ly",
+                    "strategically, reportedly"
+                  ],
+                  [
+                    "Dạng của động từ",
+                    "V-ing, V3, V-s, to V",
+                    "scheduling, maintained, maintains, to stage"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Loại từ",
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "Còn hai danh từ thì xét số: “a” đi với danh từ số ít, “dozens of” đi với danh từ số nhiều. Nếu vẫn còn hai, chọn danh từ chỉ người hay chỉ vật theo nghĩa của câu.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm phần chính của cụm, được tính từ đứng trước bổ nghĩa: adj + N.",
+                    "form": "Danh từ (schedule, maintenance, assignment)",
+                    "example": "*a detailed explanation*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ không bổ nghĩa cho động từ; động từ không làm phần chính của cụm danh từ.",
+                    "form": "Động từ, V nguyên mẫu, V-s (explain, qualify, maintains)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 không làm danh từ. V-ing không thay cho danh từ riêng cùng nghĩa như attendance, explanation (xem Lưu ý).",
+                    "form": "V3 và V-ing (scheduled, maintained, attending, explaining)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính từ cần một danh từ phía sau để bổ nghĩa; ở đây phía sau không còn danh từ.",
+                    "form": "Tính từ (strategic, beneficial, reportable)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trạng từ không bổ nghĩa cho danh từ, không làm phần chính của cụm danh từ.",
+                    "form": "Trạng từ (strategically, reportedly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "to V không đứng sau tính từ trong cụm danh từ.",
+                    "form": "to V (to stage)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“a” cần danh từ số ít; “dozens of” cần danh từ số nhiều.",
+                    "form": "Danh từ sai số (schedules sau “A”, reviewer sau “dozens of”)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng chỉ người, không phải thứ được phác thảo.",
+                    "form": "Danh từ khác nghĩa (strategist)",
+                    "example": "*outlined the long-term strategy*",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "mạo từ + adj + ___",
+                    "example": "*A detailed ___ with travel tips*; *the main ___ that*; *a challenging ___*"
+                  },
+                  {
+                    "signal": "sở hữu + adj + ___",
+                    "example": "*Her consistent ___*; *its final ___*; *the company’s long-term ___*"
+                  },
+                  {
+                    "signal": "the + so sánh nhất + ___",
+                    "example": "*The greatest ___ of this software*"
+                  },
+                  {
+                    "signal": "từ chỉ lượng + adj + ___",
+                    "example": "*dozens of five-star ___*"
+                  },
+                  {
+                    "signal": "sau ___ không còn danh từ",
+                    "example": "*___ with travel tips*; *___ during the conference*; *in its final ___.*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay trước chỗ trống có phải tính từ không và trước tính từ có mạo từ, sở hữu, từ chỉ lượng không; rồi kiểm sau chỗ trống không còn danh từ nào.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ theo công thức adj + N, nhận ra danh từ qua đuôi; loại động từ, V3, V-ing, tính từ, trạng từ, to V. Còn hai danh từ thì chọn theo số và nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Sharswood Landscaping",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has received",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "dozens of",
+                    "label": "từ chỉ lượng"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "five-star",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "reviews",
+                    "label": "danh từ số nhiều"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for its work.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: danh từ số nhiều “reviews” là phần chính của cụm “dozens of five-star reviews”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “review” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau tính từ “five-star”, phía sau chỉ còn “for its work”; dấu hiệu “từ chỉ lượng + adj + ___”: “dozens of five-star -------”.",
+                  "Bước 3: Cần adj + N; “dozens of” đi với danh từ số nhiều, vì vậy chọn “reviews” (lượt đánh giá).",
+                  "“reviewer” (B) là danh từ số ít chỉ người đánh giá, không hợp “dozens of” cần số nhiều, nên loại.",
+                  "“reviewed” (C) là V3, không làm danh từ chính sau tính từ “five-star”, nên loại.",
+                  "“reviewing” (D) là V-ing, không phải danh từ số nhiều mà “dozens of” cần, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Tính từ có thể là từ ghép có gạch nối như “five-star”, “long-term”; chúng vẫn đứng trước và bổ nghĩa cho danh từ.",
+                  "V-ing có thể làm danh từ, nhưng khi cùng gốc đã có danh từ riêng cùng nghĩa thì dùng danh từ đó: *a detailed explanation*, không nói *a detailed explaining*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống ngay sau tính từ, phía sau không còn danh từ, thì chọn danh từ: adj + N.",
+                  "Hai đáp án cùng là danh từ thì xét số ít, số nhiều rồi đến nghĩa."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

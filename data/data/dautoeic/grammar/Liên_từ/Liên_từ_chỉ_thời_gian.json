@@ -1,0 +1,353 @@
+{
+  "subtopic": {
+    "id": "24389751-7533-46e3-8d37-55bb404f06d6",
+    "topic_id": "903e0438-ae71-4828-90e5-ee40d19ff3af",
+    "title_en": "Liên từ chỉ thời gian",
+    "title_vi": "Liên từ chỉ thời gian",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 54,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-lien-tu-chi-thoi-gian"
+  },
+  "lessons": [
+    {
+      "id": "d0e9338e-9883-4121-a937-257ac599eb19",
+      "subtopic_id": "24389751-7533-46e3-8d37-55bb404f06d6",
+      "title_en": "Liên từ chỉ thời gian",
+      "title_vi": "Liên từ chỉ thời gian",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 2 · Câu 115",
+          "options": {
+            "A": "with",
+            "B": "going",
+            "C": "after",
+            "D": "between"
+          },
+          "question": "Ms. Charisse is taking on a new account ------- she finishes the Morrison project.",
+          "translation": "Bà Charisse sẽ nhận một tài khoản khách hàng mới sau khi bà hoàn thành dự án Morrison."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là “with”, “going”, “after”, “between”. Chỗ trống đứng sau mệnh đề chính “Ms. Charisse is taking on a new account”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ms. Charisse",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is taking on",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a new account",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "she",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "finishes",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the Morrison project.",
+                    "label": "tân ngữ của finishes"
+                  }
+                ],
+                "caption": "Sau chỗ trống là một mệnh đề đủ chủ ngữ “she” và động từ “finishes”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "từ nào đứng trước được một mệnh đề S + V",
+                  "các liên từ chỉ thời gian và nghĩa của chúng",
+                  "giới từ, V-ing khác liên từ ở chỗ nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Liên từ chỉ thời gian đứng trước **mệnh đề (S + V)** để nói việc ở mệnh đề chính xảy ra lúc nào. Mệnh đề thời gian đứng sau mệnh đề chính, hoặc đứng đầu câu và có dấu phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Liên từ",
+                    "formula": "liên từ + S + V"
+                  },
+                  {
+                    "label": "Giới từ",
+                    "formula": "giới từ + cụm danh từ / V-ing"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "when, whenever",
+                    "khi, bất cứ khi nào",
+                    "*Call me when the samples arrive.* — Hãy gọi cho tôi khi mẫu hàng đến."
+                  ],
+                  [
+                    "while",
+                    "trong khi (hai việc cùng lúc)",
+                    "*While Ms. Lee was away, Tom handled her calls.* — Trong khi cô Lee đi vắng, Tom nghe điện thoại thay cô."
+                  ],
+                  [
+                    "before, after",
+                    "trước khi, sau khi",
+                    "*Check the figures before you send the report.* — Hãy kiểm tra số liệu trước khi gửi báo cáo."
+                  ],
+                  [
+                    "as soon as, once",
+                    "ngay khi, một khi",
+                    "*We will ship the order once payment is received.* — Chúng tôi sẽ gửi hàng một khi nhận được tiền."
+                  ],
+                  [
+                    "until",
+                    "cho đến khi",
+                    "*Please wait here until your name is called.* — Vui lòng đợi ở đây cho đến khi được gọi tên."
+                  ],
+                  [
+                    "by the time",
+                    "vào lúc (việc ở mệnh đề chính đã xong trước lúc đó)",
+                    "*By the time we arrived, the meeting had started.* — Vào lúc chúng tôi đến, cuộc họp đã bắt đầu."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Liên từ (+ S + V)",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**before, after, until** vừa là giới từ (+ cụm danh từ) vừa là liên từ (+ S + V): *after the meeting*, *after she finishes the project*.",
+                  "**by** chỉ là giới từ (*by Friday*); trước mệnh đề phải dùng **by the time**."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối mệnh đề thời gian vào mệnh đề chính.",
+                    "form": "Liên từ thời gian + S + V",
+                    "example": "*as soon as the last shipment reaches the customer*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đi với cụm danh từ, một số còn đi với V-ing (upon, prior to, by); không đi với mệnh đề S + V.",
+                    "form": "Giới từ: during, throughout, upon, prior to, following, within, by, with, between",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cũng chỉ đi với cụm danh từ, và không mang nghĩa thời gian.",
+                    "form": "Giới từ không chỉ thời gian: in case of, despite",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối được hai mệnh đề trong một câu.",
+                    "form": "Trạng từ: meanwhile, afterward, thereafter, then, already, still, lately, until then",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối được một mệnh đề S + V vào câu.",
+                    "form": "V-ing (going)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + mệnh đề S + V",
+                    "example": "*___ she finishes the Morrison project*; *___ a client changes an appointment*"
+                  },
+                  {
+                    "signal": "___ + mệnh đề S + V, mệnh đề chính",
+                    "example": "*___ Ms. Novak was on leave, Mr. Ito handled all of her client accounts*"
+                  },
+                  {
+                    "signal": "mệnh đề chính có had + V3",
+                    "example": "*___ the guests arrived at the reception hall, the caterers had set up every table*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn liên từ, giới từ, trạng từ (có thể kèm V-ing) thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống là mệnh đề S + V hay cụm danh từ; rồi xem hai việc xảy ra trước, sau hay cùng lúc với nhau.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau chỗ trống là mệnh đề thì chọn liên từ có nghĩa thời gian hợp với câu; loại giới từ, trạng từ và V-ing.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ms. Charisse",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is taking on",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a new account",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "after",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "she",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "finishes",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the Morrison project.",
+                    "label": "tân ngữ của finishes"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “after” làm liên từ, nối mệnh đề “she finishes the Morrison project” vào mệnh đề chính."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm giới từ “with”, “between”, V-ing “going” và “after” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Sau chỗ trống là mệnh đề đủ chủ ngữ “she” và động từ “finishes”; dấu hiệu “___ + mệnh đề S + V”: “------- she finishes the Morrison project”.",
+                  "Bước 3: Nhận tài khoản mới sau khi xong dự án; “after” làm liên từ + S + V, vì vậy chọn “after” (sau khi).",
+                  "“with” (A) là giới từ, chỉ đi với cụm danh từ, không đi với mệnh đề “she finishes…”, nên loại.",
+                  "“going” (B) là V-ing, không nối được mệnh đề “she finishes…” vào câu, nên loại.",
+                  "“between” (D) là giới từ, chỉ đi với cụm danh từ, không đi với mệnh đề “she finishes…”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Mệnh đề sau when, before, after, as soon as, once, until nói về tương lai vẫn dùng hiện tại đơn hoặc hiện tại hoàn thành, không dùng will: *once the new cooks have completed their training* (học ở bài “Thì trong mệnh đề thời gian”).",
+                  "by the time + quá khứ đơn thì mệnh đề chính dùng had + V3 cho việc đã xong trước lúc đó."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống là mệnh đề S + V thì chọn liên từ thời gian, không chọn giới từ hay trạng từ.",
+                  "before, after, until làm được cả giới từ lẫn liên từ; trước mệnh đề dùng by the time, không dùng by.",
+                  "during, prior to, following, upon + cụm danh từ; while, before, after, once + S + V."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

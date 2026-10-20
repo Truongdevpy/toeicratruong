@@ -1,0 +1,356 @@
+{
+  "subtopic": {
+    "id": "88f40ed3-3d8a-4da0-870c-000bb4711af1",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ trong cụm to V",
+    "title_vi": "Trạng từ trong cụm to V",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 22,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-trong-cum-to-v"
+  },
+  "lessons": [
+    {
+      "id": "12c0ad57-b092-4b6f-a7ae-2f418e32e371",
+      "subtopic_id": "88f40ed3-3d8a-4da0-870c-000bb4711af1",
+      "title_en": "Trạng từ trong cụm to V",
+      "title_vi": "Trạng từ trong cụm to V",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2020 · Câu 92",
+          "options": {
+            "A": "joint",
+            "B": "jointly",
+            "C": "joined",
+            "D": "joining"
+          },
+          "question": "Justlox, Inc., is planning to ------- redesign Model 543Q with its partners in Britain to ensure a better product.",
+          "translation": "Justlox, Inc. đang lên kế hoạch cùng các đối tác ở Anh thiết kế lại mẫu 543Q để bảo đảm có một sản phẩm tốt hơn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “join”: tính từ “joint”, trạng từ “jointly”, V3 “joined” và V-ing “joining”. Chỗ trống đứng giữa “to” và động từ nguyên mẫu “redesign”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Justlox, Inc.,",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is planning",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to",
+                    "label": "to"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "redesign",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Model 543Q",
+                    "label": "tân ngữ của redesign"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with its partners in Britain",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "…",
+                    "label": ""
+                  }
+                ],
+                "caption": "Cụm to V “to ------- redesign Model 543Q …” làm tân ngữ của “is planning”; chỗ trống nằm giữa “to” và V nguyên mẫu."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào chen được vào giữa “to” và V nguyên mẫu.",
+                  "Loại từ nào bổ nghĩa cho động từ “redesign”.",
+                  "Vì sao tính từ, V3, V-ing không đứng được ở đây."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trong cụm to V, trạng từ có thể đứng ngay giữa “to” và V nguyên mẫu để bổ nghĩa cho động từ đó. Sau “to” vẫn là một V nguyên mẫu; từ chen vào giữa phải là trạng từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Trạng từ trong cụm to V",
+                    "formula": "to + trạng từ + V nguyên mẫu"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "động từ + to + trạng từ + V",
+                    "*We plan to gradually replace the old printers.* — Chúng tôi dự định thay dần các máy in cũ."
+                  ],
+                  [
+                    "be + V3 + to + trạng từ + V",
+                    "*Staff are required to carefully check each invoice.* — Nhân viên được yêu cầu kiểm tra kỹ từng hóa đơn."
+                  ],
+                  [
+                    "động từ + tân ngữ + to + trạng từ + V",
+                    "*The new tool helps us to easily track orders.* — Công cụ mới giúp chúng tôi dễ dàng theo dõi đơn hàng."
+                  ],
+                  [
+                    "tính từ + to, is to + trạng từ + V",
+                    "*Our aim is to quickly answer every e-mail.* — Mục tiêu của chúng tôi là nhanh chóng trả lời mọi thư điện tử."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra trạng từ qua đuôi**: phần lớn là tính từ + -ly (broadly, safely, strictly); tính từ tận cùng -y đổi thành -ily (steadily); -ble đổi thành -bly (considerably); -ic thêm -ally (dramatically); full thành fully.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chen giữa “to” và V nguyên mẫu, bổ nghĩa cho động từ đó.",
+                    "form": "Trạng từ (fully, closely, jointly)",
+                    "example": "*to jointly develop*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ không bổ nghĩa cho động từ: *to safe load* sai, phải là *to safely load*.",
+                    "form": "Tính từ (broad, safe, full, strict, joint)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ, không bổ nghĩa cho động từ.",
+                    "form": "So sánh hơn, so sánh nhất (stricter, swifter, greater, fullest, safest)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau “to” đã có một V nguyên mẫu; các động từ này không đứng liền trước một V nguyên mẫu khác: *to succeed negotiate*, *to broaden promote* sai.",
+                    "form": "Động từ (broaden, succeed, consider, join, produce, dramatize)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chen được vào giữa “to” và V nguyên mẫu.",
+                    "form": "V-ing, V3 (steadying, joining, smoothed, effected)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ không bổ nghĩa cho động từ, không chen vào giữa “to” và V nguyên mẫu.",
+                    "form": "Danh từ (breadth, safety, success, consistency, activity)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "to + ___ + V nguyên mẫu",
+                    "example": "*to ___ promote*; *to ___ automate*"
+                  },
+                  {
+                    "signal": "động từ + to + ___ + V",
+                    "example": "*plans to ___ automate*; *agreed to ___ develop*; *likes to ___ greet*"
+                  },
+                  {
+                    "signal": "be + V3 + to + ___ + V",
+                    "example": "*are trained to ___ follow*; *is expected to ___ cut*; *were asked to ___ examine*"
+                  },
+                  {
+                    "signal": "động từ + tân ngữ + to + ___ + V",
+                    "example": "*encourages staff to ___ take part*; *allows the design team to ___ share*"
+                  },
+                  {
+                    "signal": "tính từ + to + ___ + V",
+                    "example": "*is ready to ___ repair*"
+                  },
+                  {
+                    "signal": "is to + ___ + V",
+                    "example": "*Our goal this year is to ___ deliver*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống có đứng ngay sau “to” và ngay trước một V nguyên mẫu không. Nếu có, chỗ trống bổ nghĩa cho V nguyên mẫu đó.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo công thức to + trạng từ + V nguyên mẫu; loại tính từ, dạng so sánh, danh từ, động từ, V-ing, V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Justlox, Inc.,",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is planning",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to",
+                    "label": "to"
+                  },
+                  {
+                    "role": "X",
+                    "text": "jointly",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "redesign",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Model 543Q",
+                    "label": "tân ngữ của redesign"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with its partners in Britain",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "…",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “jointly” bổ nghĩa cho V nguyên mẫu “redesign”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “join” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa “to” và V nguyên mẫu “redesign”; dấu hiệu “động từ + to + ___ + V”: “is planning to ------- redesign”.",
+                  "Bước 3: Cần to + trạng từ + V nguyên mẫu; “jointly” là trạng từ (đuôi -ly), vì vậy chọn “jointly” (cùng nhau).",
+                  "“joint” (A) là tính từ (chung), không bổ nghĩa cho động từ “redesign”, nên loại.",
+                  "“joined” (C) là V3, không đứng giữa “to” và V nguyên mẫu “redesign”, nên loại.",
+                  "“joining” (D) là V-ing, không đứng giữa “to” và V nguyên mẫu “redesign”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Trạng từ cũng đứng được sau cả cụm to V: *to redesign the model jointly*. Trong bài tập, chỗ trống luôn nằm giữa “to” và V nguyên mẫu."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống giữa “to” và V nguyên mẫu thì chọn trạng từ: to + trạng từ + V.",
+                  "Sau “to” đã có V nguyên mẫu thì không chen động từ, tính từ hay danh từ vào giữa."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

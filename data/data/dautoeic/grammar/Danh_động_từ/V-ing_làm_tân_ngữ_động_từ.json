@@ -1,0 +1,370 @@
+{
+  "subtopic": {
+    "id": "6108905d-6de9-431e-b776-03a91b4871bb",
+    "topic_id": "e5d5fd26-6e78-4944-908a-e0681368c595",
+    "title_en": "V-ing làm tân ngữ động từ",
+    "title_vi": "V-ing làm tân ngữ động từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 36,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-danh-dong-tu-v-ing-lam-tan-ngu-dong-tu"
+  },
+  "lessons": [
+    {
+      "id": "1308888a-b0d9-4cce-868c-8b911291dde7",
+      "subtopic_id": "6108905d-6de9-431e-b776-03a91b4871bb",
+      "title_en": "V-ing làm tân ngữ động từ",
+      "title_vi": "V-ing làm tân ngữ động từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 5 · Câu 101",
+          "options": {
+            "A": "has",
+            "B": "had",
+            "C": "have",
+            "D": "having"
+          },
+          "question": "After upgrading to Pro Data Whiz, our clients began ------- problems with spreadsheets.",
+          "translation": "Sau khi nâng cấp lên Pro Data Whiz, khách hàng của chúng tôi bắt đầu gặp sự cố với bảng tính."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “have”: has, had, have, having.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "After upgrading to Pro Data Whiz,",
+                    "label": "cụm thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "our clients",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "began",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "problems",
+                    "label": "tân ngữ của chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with spreadsheets.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu đã có chủ ngữ “our clients” và động từ chính “began”; chỗ trống đứng ngay sau “began”, trước danh từ “problems”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau một động từ chính, động từ thứ hai ở dạng nào",
+                  "động từ nào đi với V-ing, động từ nào đi với to V",
+                  "vì sao dạng chia thì không đứng ngay sau “began”"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Sau một động từ chính, động từ thứ hai không chia thì mà ở dạng **V-ing** hoặc **to V**, tùy động từ đứng trước. V-ing hay to V ở đây làm tân ngữ và vẫn nhận tân ngữ của riêng nó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Động từ đi với V-ing",
+                    "formula": "S + động từ + V-ing + tân ngữ"
+                  },
+                  {
+                    "label": "Động từ đi với to V",
+                    "formula": "S + động từ + to V + tân ngữ"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "đi với V-ing",
+                    "admit, avoid, consider, delay, deny, discuss, enjoy, finish, involve, keep (tiếp tục), mind (Would you mind), postpone, practice, quit, resist (can’t resist), risk, suggest",
+                    "*We are considering moving to a bigger office.* — Chúng tôi đang cân nhắc chuyển sang văn phòng lớn hơn."
+                  ],
+                  [
+                    "đi với to V",
+                    "agree, decide, hope, intend, manage, offer, plan, refuse",
+                    "*The team decided to delay the product launch.* — Nhóm quyết định hoãn buổi ra mắt sản phẩm."
+                  ],
+                  [
+                    "đi với cả hai, nghĩa như nhau",
+                    "begin, start",
+                    "*Sales began rising in May.* — Doanh số bắt đầu tăng vào tháng Năm."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nhóm",
+                  "Động từ trong bài tập",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "remember",
+                    "nhớ phải làm (việc chưa làm): *Remember to lock the door.* — Nhớ khóa cửa nhé.",
+                    "nhớ đã làm (việc đã qua): *I remember meeting her.* — Tôi nhớ đã gặp cô ấy."
+                  ],
+                  [
+                    "forget",
+                    "quên làm việc phải làm: *He forgot to call the client.* — Anh ấy quên gọi cho khách.",
+                    "quên việc đã làm, hay dùng ở dạng *will never forget + V-ing*: không bao giờ quên việc đã qua"
+                  ],
+                  [
+                    "stop",
+                    "dừng lại để làm việc khác: *We stopped to buy coffee.* — Chúng tôi dừng lại để mua cà phê.",
+                    "thôi, ngừng làm việc đó: *We stopped buying paper cups.* — Chúng tôi thôi mua cốc giấy."
+                  ],
+                  [
+                    "try",
+                    "cố gắng làm",
+                    "thử làm xem có hiệu quả không: *Try restarting the computer.* — Thử khởi động lại máy tính xem."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Động từ",
+                  "+ to V",
+                  "+ V-ing"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**recommend, require** không có tân ngữ chỉ người thì + V-ing: *The guide recommends booking early.* — Tài liệu hướng dẫn khuyên nên đặt sớm.",
+                  "Có tân ngữ chỉ người thì dùng + người + to V: *The rules require visitors to sign in.* — Quy định yêu cầu khách phải đăng ký.",
+                  "**suggest** + V-ing, không dùng suggest + to V; muốn dùng mệnh đề thì viết suggest that + S + V."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "consider, risk, suggest, recommend, enjoy… không đi với to V.",
+                    "form": "to V sau động từ đi với V-ing (to open, to lose, to post, to book)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "decide, agree, plan, manage, offer, hope, refuse không đi với V-ing.",
+                    "form": "V-ing sau động từ đi với to V (keeping, extending, hiring, showing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng ngay sau các động từ trong bảng.",
+                    "form": "V nguyên mẫu (keep, lose, open)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính; dạng chia thì hay V3 không làm tân ngữ cho động từ đó.",
+                    "form": "V3, quá khứ đơn, V-s (kept, posted, gave, posts, has)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Với remember, forget, stop, try, cả hai dạng đều đúng ngữ pháp; phải chọn theo nghĩa của câu.",
+                    "form": "Đúng cấu trúc, sai nghĩa (remember setting, forget to give, stop taking, try to turn)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ đi với V-ing + ___",
+                    "example": "*is considering ___*; *avoid ___*; *finished ___*; *enjoy ___*; *postpone ___*"
+                  },
+                  {
+                    "signal": "động từ đi với to V + ___",
+                    "example": "*decided ___*; *have agreed ___*; *plans ___*; *refused ___*"
+                  },
+                  {
+                    "signal": "Would you mind + ___",
+                    "example": "*Would you mind ___ in the lobby …?*"
+                  },
+                  {
+                    "signal": "recommend / require + ___ (không có tân ngữ chỉ người)",
+                    "example": "*recommends ___ hotel rooms*; *requires ___ every visitor badge*"
+                  },
+                  {
+                    "signal": "remember / forget / stop / try + ___",
+                    "example": "*Please remember ___ the alarm*; *stopped ___ a short break*; *try ___ it off and on*"
+                  },
+                  {
+                    "signal": "begin / start + ___",
+                    "example": "*our clients began ___ problems*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-ing, to V, V nguyên mẫu, V3 hoặc một dạng chia thì) thì đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ đứng ngay trước chỗ trống (có hai động từ như decided to postpone thì xét động từ gần chỗ trống) và xem nó thuộc nhóm nào; với remember, forget, stop, try thì xem nghĩa của câu.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn V-ing hay to V theo nhóm của động từ đó. Loại V nguyên mẫu, V3 và dạng chia thì vì câu đã có động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "After upgrading to Pro Data Whiz,",
+                    "label": "cụm thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "our clients",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "began",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "having",
+                    "label": "V-ing làm tân ngữ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "problems",
+                    "label": "tân ngữ của having"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with spreadsheets.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “having problems” là tân ngữ của “began”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “have”, có V-ing “having” và V3 “had”, nên đây là câu dạng động từ.",
+                  "Bước 2: Câu đã có chủ ngữ “our clients” và động từ chính “began”; chỗ trống đứng sau nó, trước tân ngữ “problems”; dấu hiệu “begin / start + ___”.",
+                  "Bước 3: Áp begin + V-ing (hoặc to V); bốn đáp án chỉ có V-ing, vì vậy chọn “having” (gặp).",
+                  "“has” (A) là động từ chia thì, câu đã có động từ chính “began”, nên loại.",
+                  "“had” (B) là quá khứ đơn hoặc V3, không làm tân ngữ cho “began”, nên loại.",
+                  "“have” (C) là V nguyên mẫu hoặc hiện tại đơn, không đứng ngay sau “began”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Would you mind + V-ing là lời nhờ lịch sự: *Would you mind closing the door?* — Anh/chị vui lòng đóng cửa giúp nhé?",
+                  "keep + V-ing nghĩa là cứ tiếp tục, lặp đi lặp lại một việc: *Customers keep asking about the sale.* — Khách hàng cứ hỏi mãi về đợt giảm giá."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau động từ chính, động từ thứ hai là V-ing hoặc to V, tùy động từ đứng trước.",
+                  "remember, forget, stop, try: chọn V-ing hay to V theo nghĩa.",
+                  "recommend, require không có người đi kèm thì + V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

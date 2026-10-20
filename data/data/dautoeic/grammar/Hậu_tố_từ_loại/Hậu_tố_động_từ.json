@@ -1,0 +1,300 @@
+{
+  "subtopic": {
+    "id": "8672d039-7cb4-4f94-9cfe-041172efaa75",
+    "topic_id": "b348f708-d63e-444a-9e5b-6148a00f7a00",
+    "title_en": "Hậu tố động từ",
+    "title_vi": "Hậu tố động từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 13,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-hau-to-tu-loai-hau-to-dong-tu"
+  },
+  "lessons": [
+    {
+      "id": "a176f48e-98b7-47f9-8983-7bb2b5ab6107",
+      "subtopic_id": "8672d039-7cb4-4f94-9cfe-041172efaa75",
+      "title_en": "Hậu tố động từ",
+      "title_vi": "Hậu tố động từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "Danh từ",
+            "B": "Động từ",
+            "C": "Tính từ",
+            "D": "Trạng từ"
+          },
+          "question": "finalize",
+          "translation": "Hoàn tất."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Câu hỏi chỉ là một từ đơn “finalize”, không có câu đi kèm. Bốn đáp án là bốn loại từ theo thứ tự cố định: Danh từ, Động từ, Tính từ, Trạng từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "final",
+                    "label": "gốc"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-ize",
+                    "label": "đuôi cần xét"
+                  }
+                ],
+                "caption": "Tách từ thành hai phần: gốc đứng trước, đuôi (hậu tố) đứng cuối. Đuôi là phần cần xét."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "cách tách một từ thành gốc + đuôi;",
+                  "đuôi “-ize” báo hiệu loại từ nào;",
+                  "vì sao gốc “final” là một loại từ mà cả từ lại có thể là loại khác."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Hậu tố (đuôi) là phần gắn vào cuối một từ gốc để tạo từ mới, và có thể đổi loại từ. Ví dụ tính từ *final* + -ize thành động từ *finalize*.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Động từ",
+                    "formula": "danh từ hoặc tính từ + -ize / -ify"
+                  },
+                  {
+                    "label": "Động từ",
+                    "formula": "tính từ + -en"
+                  },
+                  {
+                    "label": "Động từ",
+                    "formula": "gốc + -ate"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "-ize",
+                    "làm cho …, biến thành …",
+                    "finalize (final), modernize (modern), customize (custom), prioritize (priority), standardize (standard)"
+                  ],
+                  [
+                    "-ify",
+                    "làm cho …",
+                    "simplify (simple), classify (class), beautify (beauty), diversify (diverse), intensify (intense)"
+                  ],
+                  [
+                    "-en",
+                    "làm cho … hơn",
+                    "broaden (broad), shorten (short), tighten (tight), weaken (weak), lengthen (length), strengthen (strength)"
+                  ],
+                  [
+                    "-ate",
+                    "làm, gây ra …",
+                    "activate (active), motivate (motive), educate, create"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đuôi động từ",
+                  "Nghĩa",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "tone": "info",
+                "type": "callout",
+                "items": [
+                  "Đuôi chỉ giúp nhận ra loại từ, không đúng cho mọi từ.",
+                  "-ate cũng là đuôi tính từ (*accurate*, *immediate*) và danh từ (*candidate*). Từ đuôi -ate chỉ hành động làm, gây ra mới là động từ.",
+                  "-en gắn sau danh từ chỉ chất liệu tạo tính từ: *golden*, *wooden*. Chỉ *lengthen*, *strengthen* trong bài tập là danh từ + -en thành động từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Từ mang đuôi -ize, -ify, -ate, -en ở cuối, chỉ hành động làm cho người, vật thay đổi.",
+                    "form": "Động từ",
+                    "example": "*finalize*, *simplify*, *shorten*, *activate*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ mang đuôi -ful, -less, -ous, -ive, -able, -al, -ic, -ary (bài Hậu tố tính từ). Gốc có thể là tính từ, như *final*, *short*, nhưng đuôi cuối là đuôi động từ.",
+                    "form": "Tính từ",
+                    "example": "*short* (tính từ), *shorten* (động từ)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ mang đuôi -tion/-sion/-ion, -ment, -ance/-ence, -ure, -ness, -ity, và đuôi chỉ người -er/-or/-ist/-ian/-ant/-ee (bài Hậu tố danh từ). Gốc có thể là danh từ, như *priority*, *length*, nhưng đuôi cuối là đuôi động từ.",
+                    "form": "Danh từ",
+                    "example": "*length* (danh từ), *lengthen* (động từ)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trạng từ là tính từ + -ly (bài Hậu tố trạng từ). Các từ trong bài tập này không tận cùng bằng -ly.",
+                    "form": "Trạng từ",
+                    "example": "*simply*, *shortly*",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "-ize",
+                    "example": "*finalize*, *modernize*, *customize*, *prioritize*, *standardize*"
+                  },
+                  {
+                    "signal": "-ify",
+                    "example": "*simplify*, *classify*, *beautify*, *diversify*, *intensify*"
+                  },
+                  {
+                    "signal": "-ate",
+                    "example": "*activate*, *motivate*, *educate*, *create*"
+                  },
+                  {
+                    "signal": "tính từ + -en",
+                    "example": "*broaden*, *shorten*, *tighten*, *weaken*"
+                  },
+                  {
+                    "signal": "length / strength + -en",
+                    "example": "*lengthen*, *strengthen*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Câu hỏi là một từ đơn, bốn đáp án là Danh từ / Động từ / Tính từ / Trạng từ thì đây là câu hậu tố: nhận ra loại từ qua đuôi.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tách từ thành gốc + đuôi. Từ có nhiều đuôi thì xét đuôi cuối cùng, rồi tìm đuôi đó trong bảng dấu hiệu.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Đuôi nằm trong bảng đuôi động từ thì chọn Động từ; loại Danh từ, Tính từ vì đó chỉ là loại của phần gốc; loại Trạng từ vì từ không tận cùng bằng -ly. Với đuôi -ate, -en, kiểm lại bằng nghĩa: từ chỉ hành động làm cho thay đổi.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "ADJ",
+                    "text": "final",
+                    "label": "gốc: tính từ “final” (cuối cùng)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "-ize",
+                    "label": "đuôi động từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã tách: tính từ “final” + đuôi “-ize” thành động từ."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Tách đuôi của từ “finalize”: gốc “final” + đuôi “-ize”.",
+                  "Bước 2: Dấu hiệu “-ize”: đuôi động từ, gắn sau tính từ “final” (giống modernize, standardize).",
+                  "Bước 3: Vì vậy chọn “Động từ”; “finalize” nghĩa là hoàn tất."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "-en ở cuối V3 của một số động từ (*taken*, *written*, *given*) là dạng của động từ, không phải đuôi gắn vào tính từ như trong *shorten*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Đuôi động từ: -ize, -ify, -en (sau tính từ), -ate.",
+                  "-ate, -en không phải lúc nào cũng là động từ; kiểm bằng nghĩa."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

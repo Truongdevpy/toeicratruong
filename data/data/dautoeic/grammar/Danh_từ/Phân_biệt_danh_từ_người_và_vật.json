@@ -1,0 +1,377 @@
+{
+  "subtopic": {
+    "id": "adab0e60-f324-406b-ba90-b18471080faf",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Phân biệt danh từ người và vật",
+    "title_vi": "Phân biệt danh từ người và vật",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 5,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-phan-biet-danh-tu-nguoi-va-vat"
+  },
+  "lessons": [
+    {
+      "id": "08cd97eb-14e8-431e-bb47-ddea5ac8f834",
+      "subtopic_id": "adab0e60-f324-406b-ba90-b18471080faf",
+      "title_en": "Phân biệt danh từ người và vật",
+      "title_vi": "Phân biệt danh từ người và vật",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 7 · Câu 125",
+          "options": {
+            "A": "initiate",
+            "B": "initiator",
+            "C": "initiated",
+            "D": "initiative"
+          },
+          "question": "The wellness ------- at Trayer Media Group directly led to greater employee satisfaction with the company.",
+          "translation": "Sáng kiến chăm sóc sức khỏe tại Trayer Media Group đã trực tiếp giúp nhân viên hài lòng hơn với công ty."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “initiate”, trong đó có hai danh từ: “initiator” và “initiative”. Chỗ trống đứng sau “The wellness”, trước cụm giới từ “at Trayer Media Group” và động từ chính “led”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "The",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "wellness",
+                    "label": "danh từ bổ nghĩa"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at Trayer Media Group",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "directly",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "led",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to greater employee satisfaction with the company.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Cụm “The wellness -------” là chủ ngữ của “led to greater employee satisfaction”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ cần loại từ nào.",
+                  "Nhận ra danh từ chỉ người và danh từ chỉ vật, sự việc qua đuôi.",
+                  "Nghĩa của câu cần người hay sự việc."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Cùng một gốc có thể có hai danh từ: một chỉ người làm việc đó, một chỉ vật, sự việc hay hoạt động. Cả hai đều đứng được ở vị trí danh từ, nên phải chọn theo nghĩa của câu.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "-ant",
+                    "participant, applicant, consultant",
+                    "participation, application, consultation"
+                  ],
+                  [
+                    "-ian",
+                    "technician",
+                    "technique"
+                  ],
+                  [
+                    "-yst",
+                    "analyst",
+                    "analysis"
+                  ],
+                  [
+                    "-or, -er",
+                    "advisor, supervisor, instructor, initiator, communicator, consumer",
+                    "advice, supervision, instruction, initiative, communication, consumption"
+                  ],
+                  [
+                    "không có đuôi riêng",
+                    "guide (người hướng dẫn)",
+                    "guidance"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Đuôi chỉ người",
+                  "Người",
+                  "Vật, sự việc cùng gốc"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "ai đó làm việc: join, submit, get, wait, have experience",
+                    "danh từ chỉ người",
+                    "*A new technician joined our team.* — Một kỹ thuật viên mới đã gia nhập nhóm."
+                  ],
+                  [
+                    "tân ngữ của hire (thuê)",
+                    "danh từ chỉ người",
+                    "*We hired a market analyst.* — Chúng tôi đã thuê một chuyên viên phân tích thị trường."
+                  ],
+                  [
+                    "thứ được schedule, provide, encourage, comply with",
+                    "danh từ chỉ vật, sự việc",
+                    "*She scheduled a free consultation.* — Cô ấy đã sắp xếp một buổi tư vấn miễn phí."
+                  ],
+                  [
+                    "under the ___ of + người; the ___ of + vật",
+                    "danh từ chỉ sự việc",
+                    "*under the direct supervision of a manager* — dưới sự giám sát trực tiếp của một quản lý"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Câu cần",
+                  "Chọn",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Chọn xong người hay vật thì kiểm số: danh từ đếm được số ít cần từ hạn định (a, the, every…) đứng trước; chủ ngữ số nhiều đi với động từ số nhiều (are). advice, guidance, supervision, communication (nghĩa sự giao tiếp) là danh từ không đếm được, không cần “a”.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Khi câu cần người làm việc: gia nhập, nộp hồ sơ, được thuê, có kinh nghiệm.",
+                    "form": "Danh từ chỉ người (technician, analyst, applicant)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Khi câu cần một việc, hoạt động hay thứ được sắp xếp, cung cấp, tuân thủ.",
+                    "form": "Danh từ chỉ vật, sự việc (consultation, supervision, guidance, initiative)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Người không phải thứ được sắp xếp (scheduled), được khuyến khích (encourages), và không đứng trong “under the direct ___ of” khi người đã nằm sau of.",
+                    "form": "Danh từ chỉ người khi câu cần sự việc (consultant, supervisor, advisor, consumer, communicator, initiator)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vật không tự gia nhập nhóm, không được thuê, không có kinh nghiệm, không chờ phỏng vấn.",
+                    "form": "Danh từ chỉ vật khi câu cần người (technique, analysis, application, instructions)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Động từ, V3 không làm danh từ. V-ing, to V chỉ việc làm, không tự làm việc của người; V-ing cũng không thay cho danh từ riêng cùng nghĩa như communication.",
+                    "form": "Động từ, V3, to V, V-ing (participate, consulted, to participate, communicating)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm phần chính của cụm danh từ; tính từ cần danh từ phía sau.",
+                    "form": "Tính từ, trạng từ (technical, analytical, instructive, technically)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + việc người làm",
+                    "example": "*___ can get a brochure*; *A new ___ joined our maintenance team*; *Every ___ … must submit a portfolio*; *The ___ … should have … experience*"
+                  },
+                  {
+                    "signal": "hire + ___",
+                    "example": "*hired a market ___*"
+                  },
+                  {
+                    "signal": "schedule / provide / encourage / comply with + ___",
+                    "example": "*scheduled a free ___*; *provided helpful ___*; *encourages regular ___*; *comply with ___*"
+                  },
+                  {
+                    "signal": "under the ___ of + người",
+                    "example": "*under the direct ___ of a senior staff member*"
+                  },
+                  {
+                    "signal": "the ___ of + vật",
+                    "example": "*the ___ of water*"
+                  },
+                  {
+                    "signal": "danh từ + ___",
+                    "example": "*The wellness ___*; *a market ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ, trong đó có thể có hai danh từ (một chỉ người, một chỉ vật hoặc sự việc), thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xác định chỗ trống cần danh từ, rồi xem động từ đi với nó (join, submit, hire, schedule, provide…) và cụm quanh nó để biết câu cần người hay sự việc.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ chỉ người hay chỉ vật theo nghĩa, kiểm lại số ít, số nhiều; loại động từ, V-ing, V3, to V, tính từ, trạng từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "The",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "wellness",
+                    "label": "danh từ bổ nghĩa"
+                  },
+                  {
+                    "role": "S",
+                    "text": "initiative",
+                    "label": "danh từ chỉ sự việc"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at Trayer Media Group",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "directly",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "led",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to greater employee satisfaction with the company.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “The wellness initiative” (sáng kiến về sức khỏe) là chủ ngữ của “led”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “initiate”, gồm động từ, V3 và hai danh từ, nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “The wellness”, làm chủ ngữ của “led to greater employee satisfaction”; dấu hiệu “danh từ + ___”: “The wellness -------”.",
+                  "Bước 3: “The wellness -------” là thứ làm nhân viên hài lòng hơn, tức một chương trình, cần danh từ chỉ sự việc, vì vậy chọn “initiative” (sáng kiến).",
+                  "“initiate” (A) là động từ, không làm chủ ngữ sau “The wellness”, nên loại.",
+                  "“initiator” (B) là danh từ chỉ người khởi xướng, đúng vị trí nhưng không phải một chương trình về sức khỏe, nên loại.",
+                  "“initiated” (C) là V3, không làm chủ ngữ sau “The wellness”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Đuôi chỉ giúp nhận ra, không đúng cho mọi từ: -ant cũng có ở tính từ (important); guide vừa là người hướng dẫn vừa là sách hướng dẫn. Luôn kiểm lại nghĩa trong câu.",
+                  "V-ing có thể làm danh từ, nhưng khi cùng gốc đã có danh từ riêng cùng nghĩa thì dùng danh từ đó: *regular communication*, không nói *regular communicating*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Hai danh từ cùng gốc: chọn người hay vật theo việc mà câu nói đến.",
+                  "Người thì join, submit, được hire; sự việc thì được schedule, provide, comply with."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

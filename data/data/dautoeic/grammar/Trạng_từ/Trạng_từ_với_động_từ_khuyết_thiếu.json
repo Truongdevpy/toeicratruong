@@ -1,0 +1,367 @@
+{
+  "subtopic": {
+    "id": "66bbf528-e0b8-4aa8-8edb-2f10e2a1f264",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ với động từ khuyết thiếu",
+    "title_vi": "Trạng từ với động từ khuyết thiếu",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 19,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-voi-dong-tu-khuyet-thieu"
+  },
+  "lessons": [
+    {
+      "id": "23c92479-3a64-4e6a-b575-2a8971d7ecae",
+      "subtopic_id": "66bbf528-e0b8-4aa8-8edb-2f10e2a1f264",
+      "title_en": "Trạng từ với động từ khuyết thiếu",
+      "title_vi": "Trạng từ với động từ khuyết thiếu",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 1 · Câu 107",
+          "options": {
+            "A": "enthusiastically",
+            "B": "enthusiasm",
+            "C": "enthusiastic",
+            "D": "enthused"
+          },
+          "question": "Wexler Store's management team expects that employees will ------- support any new hires.",
+          "translation": "Ban quản lý của cửa hàng Wexler kỳ vọng rằng nhân viên sẽ nhiệt tình hỗ trợ mọi nhân viên mới."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “enthusiasm” nhưng khác loại từ. Chỗ trống nằm giữa động từ khuyết thiếu “will” và V nguyên mẫu “support”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Wexler Store's management team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "expects",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "employees",
+                    "label": "chủ ngữ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will",
+                    "label": "động từ khuyết thiếu"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "V",
+                    "text": "support",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "any new hires.",
+                    "label": "tân ngữ của support"
+                  }
+                ],
+                "caption": "Sau “expects that” là một mệnh đề có chủ ngữ và động từ riêng; chỗ trống kẹp giữa “will” và “support”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau động từ khuyết thiếu (will, can, should…) là dạng động từ nào.",
+                  "Loại từ nào chen được vào giữa động từ khuyết thiếu và V nguyên mẫu.",
+                  "Nhận ra loại từ qua đuôi."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ khuyết thiếu (modal) như will, can, could, should, must, may, might; theo sau luôn là V nguyên mẫu. Trạng từ có thể chen vào giữa modal và V nguyên mẫu để nói hành động diễn ra thế nào, đến mức nào.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "S + modal + trạng từ + V nguyên mẫu (+ tân ngữ)"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will",
+                    "label": "modal"
+                  },
+                  {
+                    "role": "X",
+                    "text": "carefully",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "review",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the report.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Trạng từ đứng giữa modal và V nguyên mẫu, bổ nghĩa cho động từ “review”."
+              },
+              {
+                "rows": [
+                  [
+                    "modal + trạng từ + V nguyên mẫu + tân ngữ",
+                    "*Staff should promptly report any broken equipment.* — Nhân viên nên báo ngay mọi thiết bị bị hỏng."
+                  ],
+                  [
+                    "modal + trạng từ + V nguyên mẫu không cần tân ngữ",
+                    "*Our online sales will gradually increase after the launch.* — Doanh số trực tuyến của chúng tôi sẽ tăng dần sau đợt ra mắt."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Trạng từ trong bài tập đều có đuôi **-ly**: directly, substantially, instantly, easily, significantly, promptly, formally, carefully, greatly, closely, regularly, steadily.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chen giữa modal và V nguyên mẫu, bổ nghĩa cho động từ đứng sau.",
+                    "form": "Trạng từ (easily, carefully, promptly)",
+                    "example": "*can easily handle*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ bổ nghĩa cho danh từ hoặc đứng sau be, không bổ nghĩa cho động từ.",
+                    "form": "Tính từ (easy, careful, significant, regular, formal, instant)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ nên không bổ nghĩa cho động từ.",
+                    "form": "So sánh hơn, so sánh nhất của tính từ (easier, easiest, steadier)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau modal cần động từ; danh từ không chen vào giữa modal và V nguyên mẫu.",
+                    "form": "Danh từ (direction, substance, significance, closure, regularity)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau modal đã có V nguyên mẫu; thêm một động từ nữa thì thành hai động từ liền nhau không có liên từ.",
+                    "form": "Động từ (substantiate, signify, formalize, regulate, greaten)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Dù hiểu là loại từ nào cũng không bổ nghĩa được cho V nguyên mẫu đứng sau.",
+                    "form": "Từ vừa là động từ vừa là tính từ hoặc danh từ (direct, prompt, close, care, ease, steady)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Ngay sau modal (hoặc sau modal + trạng từ) phải là V nguyên mẫu; V-ing, V3 đứng thẳng sau modal là sai.",
+                    "form": "V-ing, V3 (directing, easing, caring, closing, enthused)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "will + ___ + V nguyên mẫu",
+                    "example": "*will ___ support any new hires*; *will ___ approve*; *will ___ rise*"
+                  },
+                  {
+                    "signal": "can / could + ___ + V nguyên mẫu",
+                    "example": "*can ___ lower its printing costs*; *can ___ handle*; *could ___ affect*"
+                  },
+                  {
+                    "signal": "should / must + ___ + V nguyên mẫu",
+                    "example": "*should ___ report*; *should ___ notify*; *must ___ inspect*"
+                  },
+                  {
+                    "signal": "may / might + ___ + V nguyên mẫu",
+                    "example": "*may ___ expand*; *might ___ improve*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ khuyết thiếu (will, can, could, should, must, may, might) ngay trước chỗ trống và V nguyên mẫu ngay sau chỗ trống. Chỗ trống kẹp giữa hai từ này thì nó bổ nghĩa cho V nguyên mẫu.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo công thức modal + trạng từ + V nguyên mẫu, nhận ra trạng từ qua đuôi -ly; loại tính từ, danh từ, động từ, V-ing và V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Wexler Store's management team",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "expects",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "employees",
+                    "label": "chủ ngữ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will",
+                    "label": "động từ khuyết thiếu"
+                  },
+                  {
+                    "role": "X",
+                    "text": "enthusiastically",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "support",
+                    "label": "V nguyên mẫu"
+                  },
+                  {
+                    "role": "O",
+                    "text": "any new hires.",
+                    "label": "tân ngữ của support"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: trạng từ “enthusiastically” đứng giữa “will” và “support”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “enthusiasm” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa “will” và V nguyên mẫu “support”, sau đó là tân ngữ “any new hires”; dấu hiệu “will + ___ + V nguyên mẫu”: “will ------- support”.",
+                  "Bước 3: Cần modal + trạng từ + V nguyên mẫu; “enthusiastically” là trạng từ (đuôi -ly), vì vậy chọn “enthusiastically” (nhiệt tình).",
+                  "“enthusiasm” (B) là danh từ (sự nhiệt tình), không đứng giữa “will” và “support”, nên loại.",
+                  "“enthusiastic” (C) là tính từ, không bổ nghĩa cho động từ “support”, nên loại.",
+                  "“enthused” (D) là V3, sau “will” không dùng V3, cũng không bổ nghĩa cho “support”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": []
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "modal + trạng từ + V nguyên mẫu: will carefully check, can easily handle.",
+                  "Tính từ, danh từ, động từ, V-ing, V3 không chen vào giữa modal và V nguyên mẫu."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

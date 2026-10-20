@@ -1,0 +1,352 @@
+{
+  "subtopic": {
+    "id": "3c9221d0-a8e2-49d1-a87b-89ed26f61b6f",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ phản thân",
+    "title_vi": "Đại từ phản thân",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 98,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-phan-than"
+  },
+  "lessons": [
+    {
+      "id": "84e839d6-7608-41c9-a4f3-06fbc27bcfdd",
+      "subtopic_id": "3c9221d0-a8e2-49d1-a87b-89ed26f61b6f",
+      "title_en": "Đại từ phản thân",
+      "title_vi": "Đại từ phản thân",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 5 · Câu 120",
+          "options": {
+            "A": "their",
+            "B": "them",
+            "C": "theirs",
+            "D": "themselves"
+          },
+          "question": "All employees should familiarize ------- with the company’s policies and procedures.",
+          "translation": "Tất cả nhân viên nên tự làm quen với các chính sách và quy trình của công ty."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của đại từ “they”. Chỗ trống đứng ngay sau động từ “familiarize”, trước giới từ “with”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "All employees",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "should familiarize",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống (tân ngữ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the company’s policies and procedures.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống là tân ngữ của “familiarize”; chủ ngữ là “All employees”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "tân ngữ của “familiarize” là ai, có trùng với chủ ngữ không",
+                  "khi nào tân ngữ phải là đại từ phản thân",
+                  "cụm cố định “familiarize … with”"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Khi tân ngữ của động từ là chính chủ ngữ (người làm tự tác động lên mình), tân ngữ đó phải là **đại từ phản thân**. Đại từ phản thân cùng ngôi, cùng số với chủ ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tân ngữ trùng chủ ngữ",
+                    "formula": "S + V + đại từ phản thân"
+                  },
+                  {
+                    "label": "Cụm cố định",
+                    "formula": "S + V + đại từ phản thân + giới từ + N / V-ing"
+                  },
+                  {
+                    "label": "Một mình, tự mình",
+                    "formula": "S + V … + by + đại từ phản thân"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "I",
+                    "myself"
+                  ],
+                  [
+                    "you (một người)",
+                    "yourself"
+                  ],
+                  [
+                    "he, một người đàn ông",
+                    "himself"
+                  ],
+                  [
+                    "she, một người phụ nữ",
+                    "herself"
+                  ],
+                  [
+                    "it, một vật",
+                    "itself"
+                  ],
+                  [
+                    "we",
+                    "ourselves"
+                  ],
+                  [
+                    "they, danh từ số nhiều",
+                    "themselves"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ",
+                  "Đại từ phản thân"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "familiarize oneself with",
+                    "làm quen với"
+                  ],
+                  [
+                    "help oneself to",
+                    "tự lấy dùng (đồ ăn, đồ uống)"
+                  ],
+                  [
+                    "devote oneself to + N / V-ing",
+                    "dành tâm sức cho"
+                  ],
+                  [
+                    "pride oneself on + N / V-ing",
+                    "tự hào về"
+                  ],
+                  [
+                    "avail oneself of",
+                    "sử dụng, tận dụng"
+                  ],
+                  [
+                    "enjoy oneself",
+                    "vui vẻ, tận hưởng"
+                  ],
+                  [
+                    "teach / remind / introduce / prepare / protect oneself",
+                    "tự dạy, tự nhắc, tự giới thiệu, tự chuẩn bị, tự bảo vệ mình"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cụm trong bài tập",
+                  "Nghĩa"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm tân ngữ khi tân ngữ là chính chủ ngữ, hoặc đứng trong cụm cố định, hoặc sau “by”.",
+                    "form": "Đại từ phản thân (myself, herself, themselves…)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Làm tân ngữ của động từ thì chỉ người, vật khác chủ ngữ. Khi tân ngữ của động từ là chính chủ ngữ thì phải dùng phản thân: nói *I taught myself*, không nói *I taught me*.",
+                    "form": "Đại từ tân ngữ (them, him, me, you)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng trước động từ; không đứng sau động từ hay giới từ để làm tân ngữ.",
+                    "form": "Đại từ chủ ngữ (they, he, she)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính từ sở hữu phải có danh từ theo sau (*their office*), mà sau chỗ trống không có danh từ. her own, his own cũng đứng trước danh từ (*her own notes*), không làm tân ngữ thay cho đại từ phản thân.",
+                    "form": "Tính từ sở hữu (their, his, my, your), her own, his own",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa là “cái của …”, thay cho một danh từ đã nhắc; câu không có danh từ nào để nó thay.",
+                    "form": "Đại từ sở hữu (theirs, hers, mine, yours)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ + ___, tân ngữ trùng chủ ngữ",
+                    "example": "*I taught ___*; *She reminded ___*; *The CEO introduced ___*; *You should always protect ___*"
+                  },
+                  {
+                    "signal": "cụm cố định với đại từ phản thân",
+                    "example": "*familiarize ___ with*; *help ___ to*; *prides ___ on*; *avail ___ of*; *enjoyed ___*"
+                  },
+                  {
+                    "signal": "by + ___",
+                    "example": "*tested the new machine by ___*; *handled the shipment issue by ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các dạng của cùng một đại từ (chủ ngữ, tân ngữ, sở hữu, phản thân) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Chỗ trống đứng sau động từ hoặc sau “by” thì xem tân ngữ đó có phải chính chủ ngữ không; nhận ra cụm cố định (familiarize … with, pride … on); xác định chủ ngữ số ít hay số nhiều.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Tân ngữ trùng chủ ngữ, cụm cố định, hoặc “by + ___” nghĩa “tự mình” thì chọn đại từ phản thân hợp với chủ ngữ; loại chủ ngữ, tân ngữ, tính từ sở hữu và đại từ sở hữu.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "All employees",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "should familiarize",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "themselves",
+                    "label": "tân ngữ (đại từ phản thân)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the company’s policies and procedures.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “themselves” là tân ngữ, chính là “All employees”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng của đại từ “they” nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống đứng sau “familiarize”, trước “with”, chủ ngữ “All employees”; dấu hiệu “cụm cố định với đại từ phản thân”: “familiarize ------- with”.",
+                  "Bước 3: familiarize oneself with, đại từ phản thân hợp chủ ngữ số nhiều, vì vậy chọn “themselves” (familiarize themselves with: tự làm quen với).",
+                  "“their” (A) là tính từ sở hữu, cần danh từ theo sau, nhưng sau chỗ trống là “with”, nên loại.",
+                  "“them” (B) là đại từ tân ngữ, chỉ người khác chủ ngữ; cụm “familiarize … with” cần đại từ phản thân, nên loại.",
+                  "“theirs” (C) là đại từ sở hữu, nghĩa “cái của họ”, câu không có danh từ nào để nó thay, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“by + đại từ phản thân” nghĩa là “một mình, tự mình”, học kỹ ở bài “Cấu trúc by oneself”.",
+                  "Đại từ phản thân không đứng một mình làm chủ ngữ (học ở bài “Đại từ nhân xưng”)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Tân ngữ của động từ là chính chủ ngữ thì dùng đại từ phản thân cùng ngôi, cùng số.",
+                  "familiarize, pride, avail, devote, help đi với đại từ phản thân trong các cụm cố định."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,638 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "7a07d2a0-ee59-4889-8066-ce0822ed1dd7",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 40: Car Rentals",
+    "order_index": 40,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:21.76459+00:00",
+    "updated_at": "2026-09-18T08:53:21.76459+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+    "test_id": "7a07d2a0-ee59-4889-8066-ce0822ed1dd7",
+    "name": "Car Rentals",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:21.76459+00:00",
+    "updated_at": "2026-09-18T08:53:21.76459+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "f85ed542-24a7-4551-a37b-5f126c800544",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "license",
+      "ipa": "/ˈlaɪ.səns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "First, I'll need to see your driver's license and a major credit card.",
+          "meaning": "giấy phép, bằng cấp phép hợp pháp",
+          "toeic_tip": "Anh-Mỹ viết license, Anh-Anh danh từ là licence còn động từ là license.",
+          "example_vi": "Trước hết, tôi cần xem bằng lái và một thẻ tín dụng thông dụng của anh.",
+          "word_family": [
+            "license (v) cấp phép",
+            "licensed (adj) đã được cấp phép"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T08:06:01.99321+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f85ed542-24a7-4551-a37b-5f126c800544-wm.jpg?v=1789797612072",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/license-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/license-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a driver's license",
+          "meaning": "bằng lái xe",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f85ed542-24a7-4551-a37b-5f126c800544-0-wm.jpg?v=1789805160620"
+        },
+        {
+          "phrase": "a business license",
+          "meaning": "giấy phép kinh doanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f85ed542-24a7-4551-a37b-5f126c800544-1-wm.jpg?v=1789805161836"
+        },
+        {
+          "phrase": "renew a license",
+          "meaning": "gia hạn giấy phép"
+        }
+      ],
+      "synonyms": [
+        "permit (giấy phép)",
+        "certificate (chứng chỉ)"
+      ]
+    },
+    {
+      "id": "c5099139-0516-4e41-9377-31e1761664d9",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "optional",
+      "ipa": "UK: /ˈɒp.ʃən.əl/ | US: /ˈɑːp.ʃən.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Check this box if you wish to have this optional insurance.",
+          "meaning": "không bắt buộc, tùy chọn",
+          "antonyms": [
+            "mandatory (bắt buộc)",
+            "compulsory (bắt buộc)"
+          ],
+          "toeic_tip": "Cặp trái nghĩa optional - mandatory rất hay ra ở Part 5.",
+          "example_vi": "Nếu muốn mua thêm gói bảo hiểm này, hãy đánh dấu vào ô bên cạnh.",
+          "word_family": [
+            "option (n) lựa chọn",
+            "optionally (adv) một cách tùy chọn"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T07:37:31.536068+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c5099139-0516-4e41-9377-31e1761664d9-wm.jpg?v=1789798504308",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/optional-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/optional-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "optional insurance",
+          "meaning": "bảo hiểm tùy chọn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c5099139-0516-4e41-9377-31e1761664d9-0-wm.jpg?v=1789803447487"
+        },
+        {
+          "phrase": "optional equipment",
+          "meaning": "trang bị thêm tùy chọn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c5099139-0516-4e41-9377-31e1761664d9-1-wm.jpg?v=1789803451399"
+        },
+        {
+          "phrase": "attendance is optional",
+          "meaning": "tham dự không bắt buộc"
+        }
+      ],
+      "synonyms": [
+        "voluntary (tự nguyện)",
+        "discretionary (tùy ý quyết định)"
+      ]
+    },
+    {
+      "id": "6664eb44-10f3-4486-8c5e-b59282f65db8",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "busy",
+      "ipa": "/ˈbɪz.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Alfred was busy getting ready for his vacation.",
+          "meaning": "bận rộn; đông đúc, nhộn nhịp",
+          "antonyms": [
+            "free (rảnh rỗi)",
+            "idle (nhàn rỗi)"
+          ],
+          "toeic_tip": "Dùng busy + V-ing hoặc busy with + danh từ, không dùng busy to do.",
+          "example_vi": "Alfred đang tất bật chuẩn bị cho kỳ nghỉ.",
+          "word_family": [
+            "busily (adv) một cách bận rộn",
+            "business (n) công việc, kinh doanh"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:47:34.152586+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6664eb44-10f3-4486-8c5e-b59282f65db8-wm.jpg?v=1789798291378",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/busy-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/busy-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be busy doing something",
+          "meaning": "bận làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6664eb44-10f3-4486-8c5e-b59282f65db8-0-wm.jpg?v=1789800454013"
+        },
+        {
+          "phrase": "a busy schedule",
+          "meaning": "lịch trình dày đặc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6664eb44-10f3-4486-8c5e-b59282f65db8-1-wm.jpg?v=1789800452496"
+        },
+        {
+          "phrase": "a busy airport",
+          "meaning": "sân bay đông đúc"
+        }
+      ],
+      "synonyms": [
+        "occupied (đang bận)",
+        "hectic (tất bật)"
+      ]
+    },
+    {
+      "id": "df1bd972-3804-49c6-8f19-2c8ae07685de",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "intend",
+      "ipa": "/ɪnˈtend/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I never intended to drive to Los Angeles until my brother suggested we do it together.",
+          "meaning": "dự định, có ý định làm gì",
+          "toeic_tip": "intend to do hoặc intend doing; be intended for nghĩa là dành cho ai.",
+          "example_vi": "Tôi chưa từng tính lái xe đến Los Angeles cho tới khi anh trai rủ đi cùng.",
+          "word_family": [
+            "intention (n) ý định",
+            "intentional (adj) cố ý"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T07:51:11.617865+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/df1bd972-3804-49c6-8f19-2c8ae07685de-wm.jpg?v=1789797672172",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/intend-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/intend-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "intend to do something",
+          "meaning": "dự định làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/df1bd972-3804-49c6-8f19-2c8ae07685de-0-wm.jpg?v=1789804262169"
+        },
+        {
+          "phrase": "be intended for beginners",
+          "meaning": "dành cho người mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/df1bd972-3804-49c6-8f19-2c8ae07685de-1-wm.jpg?v=1789804271457"
+        },
+        {
+          "phrase": "as intended",
+          "meaning": "đúng như dự tính"
+        }
+      ],
+      "synonyms": [
+        "plan (lên kế hoạch)",
+        "aim (nhắm tới)"
+      ]
+    },
+    {
+      "id": "69bd17a5-3219-400d-aa4d-ba08ee541498",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "contact",
+      "ipa": "UK: /ˈkɒn.tækt/ | US: /ˈkɑːn.tækt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Manuel contacted at least a dozen car rental agencies to get the best deal.",
+          "meaning": "liên hệ, liên lạc với ai",
+          "toeic_tip": "contact + tân ngữ, không có to: contact us chứ không phải contact to us.",
+          "example_vi": "Manuel gọi cho cả chục hãng cho thuê xe để tìm được giá hời nhất.",
+          "word_family": [
+            "contact (n) sự liên lạc, người quen có thể liên hệ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:50:18.945853+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/69bd17a5-3219-400d-aa4d-ba08ee541498-wm.jpg?v=1789798501575",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/contact-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/contact-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "contact the agency",
+          "meaning": "liên hệ với đại lý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/69bd17a5-3219-400d-aa4d-ba08ee541498-0-wm.jpg?v=1789800603138"
+        },
+        {
+          "phrase": "contact someone directly",
+          "meaning": "liên hệ trực tiếp với ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/69bd17a5-3219-400d-aa4d-ba08ee541498-1-wm.jpg?v=1789800618801"
+        },
+        {
+          "phrase": "contact information",
+          "meaning": "thông tin liên lạc"
+        }
+      ],
+      "synonyms": [
+        "reach (liên lạc được với)",
+        "get in touch with (liên hệ với)"
+      ]
+    },
+    {
+      "id": "5ce539e2-893d-4948-968c-b885dda3338c",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "confusion",
+      "ipa": "/kənˈfjuː.ʒən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "There was some confusion about which rental discount coupons applied to which car rental agency.",
+          "meaning": "sự nhầm lẫn, tình trạng rối rắm, thiếu rõ ràng",
+          "antonyms": [
+            "clarity (sự rõ ràng)",
+            "order (trật tự)"
+          ],
+          "toeic_tip": "Phân biệt confusing (gây khó hiểu) và confused (thấy bối rối).",
+          "example_vi": "Mọi người hơi rối, không rõ phiếu giảm giá nào dùng được cho hãng cho thuê xe nào.",
+          "word_family": [
+            "confuse (v) làm bối rối, gây nhầm lẫn",
+            "confusing (adj) khó hiểu, dễ gây nhầm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:42:32.46776+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5ce539e2-893d-4948-968c-b885dda3338c-wm.jpg?v=1789798517118",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/confusion-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/confusion-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "avoid confusion",
+          "meaning": "tránh nhầm lẫn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5ce539e2-893d-4948-968c-b885dda3338c-0-wm.jpg?v=1789800152325"
+        },
+        {
+          "phrase": "cause confusion",
+          "meaning": "gây rối rắm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5ce539e2-893d-4948-968c-b885dda3338c-1-wm.jpg?v=1789800152182"
+        },
+        {
+          "phrase": "some confusion about the schedule",
+          "meaning": "đôi chút nhầm lẫn về lịch"
+        }
+      ],
+      "synonyms": [
+        "misunderstanding (sự hiểu lầm)",
+        "disorder (sự lộn xộn)"
+      ]
+    },
+    {
+      "id": "0f759104-9a4d-459e-ae56-e618c43988a0",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "tier",
+      "ipa": "UK: /tɪər/ | US: /tɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The car rental company had a few tiers of cars, each one costing more than the previous tier.",
+          "meaning": "hạng, bậc, cấp trong một thang phân loại",
+          "toeic_tip": "Đọc giống ear, đừng nhầm tier (hạng) với tear (xé rách).",
+          "example_vi": "Hãng cho thuê xe chia xe thành mấy hạng, hạng sau đắt hơn hạng trước.",
+          "word_family": [
+            "tiered (adj) chia thành nhiều hạng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:21:50.86559+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0f759104-9a4d-459e-ae56-e618c43988a0-wm.jpg?v=1789798530505",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/tier-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/tier-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a tier of cars",
+          "meaning": "một hạng xe",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f759104-9a4d-459e-ae56-e618c43988a0-0-wm.jpg?v=1789798907517"
+        },
+        {
+          "phrase": "the lowest tier",
+          "meaning": "hạng thấp nhất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f759104-9a4d-459e-ae56-e618c43988a0-1-wm.jpg?v=1789798910699"
+        },
+        {
+          "phrase": "a top-tier company",
+          "meaning": "công ty hàng đầu"
+        }
+      ],
+      "synonyms": [
+        "level (cấp bậc)",
+        "rank (hạng)"
+      ]
+    },
+    {
+      "id": "2cb562d4-8751-425f-b7c9-ed13fe6c46a0",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "tempt",
+      "ipa": "/tempt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I am tempted by the idea of driving across the country instead of flying.",
+          "meaning": "lôi cuốn, khiến thấy hấp dẫn muốn làm",
+          "antonyms": [
+            "deter (làm chùn bước)",
+            "discourage (làm nản chí)"
+          ],
+          "toeic_tip": "Thường dùng thể bị động: be tempted to do, be tempted by something.",
+          "example_vi": "Ý tưởng lái xe xuyên nước Mỹ thay vì bay nghe rất hấp dẫn với tôi.",
+          "word_family": [
+            "tempting (adj) hấp dẫn",
+            "temptation (n) sự cám dỗ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:23:13.13374+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2cb562d4-8751-425f-b7c9-ed13fe6c46a0-wm.jpg?v=1789798568601",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/tempt-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/tempt-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be tempted to do",
+          "meaning": "thấy hấp dẫn muốn làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2cb562d4-8751-425f-b7c9-ed13fe6c46a0-0-wm.jpg?v=1789798990172"
+        },
+        {
+          "phrase": "tempt customers",
+          "meaning": "thu hút khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2cb562d4-8751-425f-b7c9-ed13fe6c46a0-1-wm.jpg?v=1789798992986"
+        },
+        {
+          "phrase": "a tempting offer",
+          "meaning": "lời chào mời hấp dẫn"
+        }
+      ],
+      "synonyms": [
+        "entice (dụ, lôi cuốn)",
+        "attract (thu hút)"
+      ]
+    },
+    {
+      "id": "3d8d8175-3bf5-4882-9d97-3eb5bd43569c",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "coincide",
+      "ipa": "UK: /ˌkəʊ.ɪnˈsaɪd/ | US: /ˌkoʊ.ɪnˈsaɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My cousin's wedding coincided with a holiday weekend, so it was a perfect time to rent a car and go for a drive.",
+          "meaning": "xảy ra cùng lúc, trùng thời điểm; trùng khớp",
+          "toeic_tip": "Luôn đi với with: coincide with, không dùng coincide to.",
+          "example_vi": "Đám cưới anh họ tôi rơi đúng kỳ nghỉ cuối tuần, quá hợp để thuê xe đi chơi.",
+          "word_family": [
+            "coincidence (n) sự trùng hợp",
+            "coincidental (adj) tình cờ trùng hợp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:27:12.790098+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3d8d8175-3bf5-4882-9d97-3eb5bd43569c-wm.jpg?v=1789798323256",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/coincide-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/coincide-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "coincide with a holiday",
+          "meaning": "trùng vào dịp lễ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3d8d8175-3bf5-4882-9d97-3eb5bd43569c-0-wm.jpg?v=1789799220853"
+        },
+        {
+          "phrase": "coincide with the conference",
+          "meaning": "trùng với hội nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3d8d8175-3bf5-4882-9d97-3eb5bd43569c-1-wm.jpg?v=1789799232616"
+        },
+        {
+          "phrase": "opinions coincide",
+          "meaning": "ý kiến trùng khớp"
+        }
+      ],
+      "synonyms": [
+        "overlap (trùng lặp về thời gian)",
+        "occur together (diễn ra cùng lúc)"
+      ]
+    },
+    {
+      "id": "5db74b57-f8a7-46c0-9466-3dd6b8fb6944",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "nervously",
+      "ipa": "UK: /ˈnɜː.və.sli/ | US: /ˈnɝː.və.sli/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "As we approached the city Lonnie started driving nervously, so I volunteered to drive that part of the trip.",
+          "meaning": "một cách lo lắng, bồn chồn, bất an",
+          "antonyms": [
+            "calmly (một cách bình tĩnh)",
+            "confidently (một cách tự tin)"
+          ],
+          "toeic_tip": "Chỗ trống sau động từ chọn trạng từ nervously, không chọn nervous.",
+          "example_vi": "Khi gần tới thành phố, Lonnie lái xe có vẻ căng thẳng nên tôi xung phong cầm lái đoạn đó.",
+          "word_family": [
+            "nervous (adj) lo lắng, hồi hộp",
+            "nervousness (n) sự lo lắng"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:44:12.969728+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5db74b57-f8a7-46c0-9466-3dd6b8fb6944-wm.jpg?v=1789798366644",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/nervously-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/nervously-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "look around nervously",
+          "meaning": "nhìn quanh lo lắng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5db74b57-f8a7-46c0-9466-3dd6b8fb6944-0-wm.jpg?v=1789800252682"
+        },
+        {
+          "phrase": "wait nervously",
+          "meaning": "chờ trong lo lắng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5db74b57-f8a7-46c0-9466-3dd6b8fb6944-1-wm.jpg?v=1789800252795"
+        },
+        {
+          "phrase": "laugh nervously",
+          "meaning": "cười gượng vì hồi hộp"
+        }
+      ],
+      "synonyms": [
+        "anxiously (một cách lo âu)",
+        "uneasily (một cách bất an)"
+      ]
+    },
+    {
+      "id": "0ec0a1fa-3142-4d57-8ea4-2b9070c22e11",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "disappoint",
+      "ipa": "/ˌdɪs.əˈpɔɪnt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Leila was disappointed to discover that no rental cars were available the weekend she wished to travel.",
+          "meaning": "làm thất vọng, không đáp ứng được mong đợi",
+          "antonyms": [
+            "satisfy (làm hài lòng)",
+            "please (làm vừa lòng)"
+          ],
+          "toeic_tip": "Người thì disappointed, sự việc thì disappointing.",
+          "example_vi": "Leila thất vọng khi biết cuối tuần cô định đi thì không còn chiếc xe cho thuê nào.",
+          "word_family": [
+            "disappointed (adj) cảm thấy thất vọng",
+            "disappointment (n) sự thất vọng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:21:25.713275+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0ec0a1fa-3142-4d57-8ea4-2b9070c22e11-wm.jpg?v=1789798520832",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disappoint-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/disappoint-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be disappointed with",
+          "meaning": "thất vọng về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0ec0a1fa-3142-4d57-8ea4-2b9070c22e11-0-wm.jpg?v=1789798885572"
+        },
+        {
+          "phrase": "disappoint customers",
+          "meaning": "làm khách thất vọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0ec0a1fa-3142-4d57-8ea4-2b9070c22e11-1-wm.jpg?v=1789798884179"
+        },
+        {
+          "phrase": "disappointing results",
+          "meaning": "kết quả đáng thất vọng"
+        }
+      ],
+      "synonyms": [
+        "let down (làm thất vọng)",
+        "dissatisfy (làm không hài lòng)"
+      ]
+    },
+    {
+      "id": "42f56afe-c798-4fd2-8a16-c7b8ee4007f9",
+      "part_id": "c6c71a98-3631-4768-9a8a-2d4c549d18b8",
+      "word": "thrill",
+      "ipa": "/θrɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The thought of renting a sports car gave John a thrill.",
+          "meaning": "cảm giác phấn khích, điều gây hứng khởi",
+          "antonyms": [
+            "boredom (sự chán ngắt)"
+          ],
+          "toeic_tip": "Người thì thrilled, sự việc thì thrilling; dùng be thrilled with.",
+          "example_vi": "Chỉ nghĩ đến chuyện thuê một chiếc xe thể thao là John đã thấy phấn khích.",
+          "word_family": [
+            "thrilling (adj) đầy phấn khích",
+            "thrilled (adj) rất vui sướng"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:21.76459+00:00",
+      "updated_at": "2026-09-19T06:31:39.854661+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/42f56afe-c798-4fd2-8a16-c7b8ee4007f9-wm.jpg?v=1789798253097",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/thrill-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/thrill-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "give someone a thrill",
+          "meaning": "mang lại cảm giác phấn khích",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/42f56afe-c798-4fd2-8a16-c7b8ee4007f9-0-wm.jpg?v=1789799497979"
+        },
+        {
+          "phrase": "the thrill of travel",
+          "meaning": "cái thú của việc đi đây đó",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/42f56afe-c798-4fd2-8a16-c7b8ee4007f9-1-wm.jpg?v=1789799499707"
+        },
+        {
+          "phrase": "a thrilling experience",
+          "meaning": "trải nghiệm phấn khích"
+        }
+      ],
+      "synonyms": [
+        "excitement (sự phấn khích)",
+        "exhilaration (sự hứng khởi)"
+      ]
+    }
+  ]
+}

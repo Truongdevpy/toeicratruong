@@ -1,0 +1,638 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "9825c195-0368-4c8e-9472-af19200fa271",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 33: Ordering Lunch",
+    "order_index": 33,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:49.172729+00:00",
+    "updated_at": "2026-09-18T08:52:49.172729+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "40792329-99d4-4e2c-855d-bbb321082e73",
+    "test_id": "9825c195-0368-4c8e-9472-af19200fa271",
+    "name": "Ordering Lunch",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:49.172729+00:00",
+    "updated_at": "2026-09-18T08:52:49.172729+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "1214b75a-4bbb-4f5a-8c50-467335767d81",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "narrow",
+      "ipa": "UK: /ˈnær.əʊ/ | US: /ˈner.oʊ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Etsuko narrowed the restaurant possibilities down to three.",
+          "meaning": "thu hẹp, giới hạn lại",
+          "antonyms": [
+            "broaden (mở rộng)",
+            "expand (mở rộng ra)"
+          ],
+          "toeic_tip": "Cụm thường gặp là narrow down to + số lượng cụ thể.",
+          "example_vi": "Etsuko sàng lọc lại chỉ còn ba quán để chọn.",
+          "word_family": [
+            "narrow (adj) hẹp",
+            "narrowly (adv) suýt soát, sát sao"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:16:58.279036+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1214b75a-4bbb-4f5a-8c50-467335767d81-wm.jpg?v=1789797690505",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/narrow-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/narrow-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "narrow down the choices",
+          "meaning": "thu hẹp lựa chọn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1214b75a-4bbb-4f5a-8c50-467335767d81-0-wm.jpg?v=1789798617678"
+        },
+        {
+          "phrase": "narrow the gap",
+          "meaning": "thu hẹp khoảng cách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1214b75a-4bbb-4f5a-8c50-467335767d81-1-wm.jpg?v=1789798618136"
+        },
+        {
+          "phrase": "narrow the search",
+          "meaning": "thu hẹp phạm vi tìm"
+        }
+      ],
+      "synonyms": [
+        "limit (giới hạn)",
+        "reduce (giảm bớt)"
+      ]
+    },
+    {
+      "id": "922bfd21-6509-4953-b249-51f5d396b8cb",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "pick up",
+      "ipa": "/ˌpɪk ˈʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The delivery man picks up lunch orders on his motor scooter.",
+          "meaning": "lấy hàng, nhận hàng, đón khách",
+          "antonyms": [
+            "drop off (trả xuống, giao lại)"
+          ],
+          "toeic_tip": "Tách được tân ngữ: pick the order up; với đại từ thì bắt buộc tách.",
+          "example_vi": "Anh giao hàng chạy xe máy đi gom các đơn cơm trưa.",
+          "word_family": [
+            "pickup (n) việc đến lấy hàng, việc đón"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T07:11:18.233243+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/922bfd21-6509-4953-b249-51f5d396b8cb-wm.jpg?v=1789798098096",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/pick-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/pick-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "pick up an order",
+          "meaning": "lấy đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/922bfd21-6509-4953-b249-51f5d396b8cb-0-wm.jpg?v=1789801877716"
+        },
+        {
+          "phrase": "pick up a passenger",
+          "meaning": "đón khách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/922bfd21-6509-4953-b249-51f5d396b8cb-1-wm.jpg?v=1789801878081"
+        },
+        {
+          "phrase": "pick up the package",
+          "meaning": "nhận bưu kiện"
+        }
+      ],
+      "synonyms": [
+        "collect (lấy về)",
+        "fetch (đi lấy)"
+      ]
+    },
+    {
+      "id": "31aa0bcb-16fd-4452-9225-fa06516ac93a",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "individual",
+      "ipa": "UK: /ˌɪn.dɪˈvɪdʒ.u.əl/ | US: /ˌɪn.dəˈvɪdʒ.u.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We had the delivery man mark the contents of each individual order.",
+          "meaning": "riêng lẻ, của từng người, riêng biệt",
+          "antonyms": [
+            "collective (mang tính tập thể)",
+            "shared (dùng chung)"
+          ],
+          "toeic_tip": "individual vừa là tính từ vừa là danh từ chỉ một cá nhân.",
+          "example_vi": "Chúng tôi nhờ anh giao hàng ghi rõ nội dung của từng phần một.",
+          "word_family": [
+            "individually (adv) riêng lẻ",
+            "individual (n) cá nhân"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:23:37.089377+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/31aa0bcb-16fd-4452-9225-fa06516ac93a-wm.jpg?v=1789798580352",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/individual-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/individual-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "each individual order",
+          "meaning": "từng đơn riêng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/31aa0bcb-16fd-4452-9225-fa06516ac93a-0-wm.jpg?v=1789799014248"
+        },
+        {
+          "phrase": "individual needs",
+          "meaning": "nhu cầu riêng của từng người",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/31aa0bcb-16fd-4452-9225-fa06516ac93a-1-wm.jpg?v=1789799016904"
+        },
+        {
+          "phrase": "individual attention",
+          "meaning": "sự quan tâm riêng"
+        }
+      ],
+      "synonyms": [
+        "separate (riêng biệt)",
+        "personal (thuộc cá nhân)"
+      ]
+    },
+    {
+      "id": "329e4f58-c918-465b-8558-f96080504d9f",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "burden",
+      "ipa": "UK: /ˈbɜː.dən/ | US: /ˈbɝː.dən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The secretary usually takes on the burden of ordering lunch for business meetings.",
+          "meaning": "gánh nặng, trách nhiệm nặng nề",
+          "antonyms": [
+            "relief (sự nhẹ gánh)"
+          ],
+          "toeic_tip": "Cụm hay gặp ở Part 6: take on the burden of + V-ing.",
+          "example_vi": "Thư ký thường là người ôm việc đặt cơm trưa cho các buổi họp.",
+          "word_family": [
+            "burdensome (adj) nặng nề, phiền toái",
+            "burden (v) chất gánh nặng lên"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:23:55.108863+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/329e4f58-c918-465b-8558-f96080504d9f-wm.jpg?v=1789798591334",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/burden-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/burden-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take on the burden",
+          "meaning": "nhận lấy trách nhiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/329e4f58-c918-465b-8558-f96080504d9f-0-wm.jpg?v=1789799033744"
+        },
+        {
+          "phrase": "a financial burden",
+          "meaning": "gánh nặng tài chính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/329e4f58-c918-465b-8558-f96080504d9f-1-wm.jpg?v=1789799034966"
+        },
+        {
+          "phrase": "ease the burden",
+          "meaning": "giảm bớt gánh nặng"
+        }
+      ],
+      "synonyms": [
+        "load (gánh nặng)",
+        "responsibility (trách nhiệm)"
+      ]
+    },
+    {
+      "id": "dcd6b23d-cf24-42a7-b55c-8fc0e968f2ca",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "settle",
+      "ipa": "UK: /ˈset.əl/ | US: /ˈset̬.əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We settled the bill with the cashier.",
+          "meaning": "thanh toán, giải quyết; chốt chọn",
+          "antonyms": [
+            "dispute (tranh chấp, khiếu nại)"
+          ],
+          "toeic_tip": "settle a bill là trả tiền, còn settle on là chốt phương án.",
+          "example_vi": "Chúng tôi ra quầy thu ngân thanh toán hóa đơn.",
+          "word_family": [
+            "settlement (n) sự dàn xếp, việc thanh toán"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T07:49:51.376066+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/dcd6b23d-cf24-42a7-b55c-8fc0e968f2ca-wm.jpg?v=1789798101197",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/settle-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/settle-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "settle the bill",
+          "meaning": "thanh toán hóa đơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dcd6b23d-cf24-42a7-b55c-8fc0e968f2ca-0-wm.jpg?v=1789804190181"
+        },
+        {
+          "phrase": "settle an account",
+          "meaning": "tất toán tài khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dcd6b23d-cf24-42a7-b55c-8fc0e968f2ca-1-wm.jpg?v=1789804191232"
+        },
+        {
+          "phrase": "settle on something",
+          "meaning": "chốt chọn cái gì"
+        }
+      ],
+      "synonyms": [
+        "pay (trả tiền)",
+        "resolve (giải quyết)"
+      ]
+    },
+    {
+      "id": "5d4cd318-ccda-491b-999f-9454027c1018",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "fall to",
+      "ipa": "UK: /ˌfɔːl ˈtuː/ | US: /ˌfɑːl ˈtuː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The task of preparing the meal fell to the assistant chef when the chief chef was ill.",
+          "meaning": "trở thành trách nhiệm của ai, đến lượt ai phải làm",
+          "toeic_tip": "Chủ ngữ là công việc chứ không phải người: The job fell to her.",
+          "example_vi": "Bếp trưởng ốm nên việc nấu bữa đó dồn sang bếp phó.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:45:27.704097+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5d4cd318-ccda-491b-999f-9454027c1018-wm.jpg?v=1789798104881",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fall-to-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fall-to-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the task falls to someone",
+          "meaning": "nhiệm vụ thuộc về ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5d4cd318-ccda-491b-999f-9454027c1018-0-wm.jpg?v=1789800297105"
+        },
+        {
+          "phrase": "responsibility falls to",
+          "meaning": "trách nhiệm dồn sang",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5d4cd318-ccda-491b-999f-9454027c1018-1-wm.jpg?v=1789800327447"
+        },
+        {
+          "phrase": "it fell to me",
+          "meaning": "đến lượt tôi phải lo"
+        }
+      ],
+      "synonyms": [
+        "become the duty of (trở thành nhiệm vụ của)",
+        "be up to (tùy thuộc vào)"
+      ]
+    },
+    {
+      "id": "bb5d6d3c-63fe-4eb0-9911-07fdb0345ad8",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "multiple",
+      "ipa": "UK: /ˈmʌl.tɪ.pəl/ | US: /ˈmʌl.tə.pəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The delivery person was not able to keep track of the multiple order, causing a food mix-up.",
+          "meaning": "nhiều, gồm nhiều phần, đa dạng",
+          "antonyms": [
+            "single (đơn lẻ)",
+            "sole (duy nhất)"
+          ],
+          "toeic_tip": "Thường đứng trước danh từ số nhiều đếm được: multiple locations.",
+          "example_vi": "Người giao hàng không theo nổi cái đơn nhiều món đó nên đưa nhầm đồ ăn.",
+          "word_family": [
+            "multiply (v) nhân lên, tăng lên nhiều lần"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T07:32:56.063461+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bb5d6d3c-63fe-4eb0-9911-07fdb0345ad8-wm.jpg?v=1789798095392",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/multiple-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/multiple-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "multiple orders",
+          "meaning": "nhiều đơn hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb5d6d3c-63fe-4eb0-9911-07fdb0345ad8-0-wm.jpg?v=1789803175208"
+        },
+        {
+          "phrase": "multiple locations",
+          "meaning": "nhiều chi nhánh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bb5d6d3c-63fe-4eb0-9911-07fdb0345ad8-1-wm.jpg?v=1789803175932"
+        },
+        {
+          "phrase": "on multiple occasions",
+          "meaning": "trong nhiều dịp"
+        }
+      ],
+      "synonyms": [
+        "numerous (nhiều)",
+        "various (đa dạng)"
+      ]
+    },
+    {
+      "id": "1547bd86-7c3b-4bd7-b558-3f3345336bed",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "elegance",
+      "ipa": "/ˈel.ɪ.ɡəns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The elegance of the restaurant made it a pleasant place to eat.",
+          "meaning": "sự thanh lịch, vẻ tao nhã, sự sang trọng",
+          "antonyms": [
+            "crudeness (sự thô kệch)"
+          ],
+          "toeic_tip": "Danh từ không đếm được; dạng hay ra ở Part 5 là tính từ elegant.",
+          "example_vi": "Nhà hàng sang trọng nên ngồi ăn ở đó rất dễ chịu.",
+          "word_family": [
+            "elegant (adj) thanh lịch",
+            "elegantly (adv) một cách thanh lịch"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:18:21.519255+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1547bd86-7c3b-4bd7-b558-3f3345336bed-wm.jpg?v=1789798157985",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/elegance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/elegance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an air of elegance",
+          "meaning": "vẻ thanh lịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1547bd86-7c3b-4bd7-b558-3f3345336bed-0-wm.jpg?v=1789798700778"
+        },
+        {
+          "phrase": "lack elegance",
+          "meaning": "thiếu sang trọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1547bd86-7c3b-4bd7-b558-3f3345336bed-1-wm.jpg?v=1789798701358"
+        },
+        {
+          "phrase": "simple elegance",
+          "meaning": "nét thanh lịch giản dị"
+        }
+      ],
+      "synonyms": [
+        "refinement (sự tinh tế)",
+        "grace (vẻ duyên dáng)"
+      ]
+    },
+    {
+      "id": "cca69fc3-a41b-4e0c-b749-63d1e091cb9e",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "commonly",
+      "ipa": "UK: /ˈkɒm.ən.li/ | US: /ˈkɑː.mən.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The people who work in this building commonly order their lunch from the sandwich shop on the first floor.",
+          "meaning": "thường, phổ biến, theo thói quen",
+          "antonyms": [
+            "rarely (hiếm khi)",
+            "seldom (ít khi)"
+          ],
+          "toeic_tip": "Trạng từ tần suất đứng trước động từ thường và sau động từ to be.",
+          "example_vi": "Dân văn phòng tòa nhà này hay đặt cơm trưa ở tiệm bánh mì tầng trệt.",
+          "word_family": [
+            "common (adj) phổ biến, thông thường"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T07:41:14.326952+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cca69fc3-a41b-4e0c-b749-63d1e091cb9e-wm.jpg?v=1789798226867",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commonly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commonly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "commonly used",
+          "meaning": "thường được dùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cca69fc3-a41b-4e0c-b749-63d1e091cb9e-0-wm.jpg?v=1789803674011"
+        },
+        {
+          "phrase": "commonly known as",
+          "meaning": "thường được gọi là",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cca69fc3-a41b-4e0c-b749-63d1e091cb9e-1-wm.jpg?v=1789803674161"
+        },
+        {
+          "phrase": "commonly found",
+          "meaning": "thường thấy"
+        }
+      ],
+      "synonyms": [
+        "usually (thường)",
+        "frequently (thường xuyên)"
+      ]
+    },
+    {
+      "id": "2090fc61-0254-49b4-973c-9ac319dccad8",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "list",
+      "ipa": "/lɪst/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The office manager compiled a list of everyone's order.",
+          "meaning": "danh sách, bảng liệt kê",
+          "toeic_tip": "a list of + danh từ số nhiều, nhưng động từ chia theo list số ít.",
+          "example_vi": "Quản lý văn phòng gom hết các món mọi người gọi vào một danh sách.",
+          "word_family": [
+            "list (v) liệt kê",
+            "listing (n) mục liệt kê, bản niêm yết"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:17:39.947283+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2090fc61-0254-49b4-973c-9ac319dccad8-wm.jpg?v=1789798101449",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/list-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/list-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "compile a list",
+          "meaning": "lập danh sách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2090fc61-0254-49b4-973c-9ac319dccad8-0-wm.jpg?v=1789798659801"
+        },
+        {
+          "phrase": "a mailing list",
+          "meaning": "danh sách gửi thư",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2090fc61-0254-49b4-973c-9ac319dccad8-1-wm.jpg?v=1789798659495"
+        },
+        {
+          "phrase": "a waiting list",
+          "meaning": "danh sách chờ"
+        }
+      ],
+      "synonyms": [
+        "register (bảng danh sách)",
+        "inventory (bảng kê)"
+      ]
+    },
+    {
+      "id": "a320ebcf-2076-4d61-b941-c459cfa61763",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "impress",
+      "ipa": "/ɪmˈpres/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I was impressed with how quickly they delivered our lunch.",
+          "meaning": "gây ấn tượng, làm cho nể phục",
+          "antonyms": [
+            "disappoint (làm thất vọng)"
+          ],
+          "toeic_tip": "Người là impressed, sự vật là impressive; đi kèm with hoặc by.",
+          "example_vi": "Họ giao cơm trưa nhanh đến mức tôi phải nể.",
+          "word_family": [
+            "impressive (adj) ấn tượng",
+            "impression (n) ấn tượng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T07:20:30.827429+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a320ebcf-2076-4d61-b941-c459cfa61763-wm.jpg?v=1789798110190",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/impress-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/impress-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be impressed with",
+          "meaning": "ấn tượng với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a320ebcf-2076-4d61-b941-c459cfa61763-0-wm.jpg?v=1789802428616"
+        },
+        {
+          "phrase": "impress the boss",
+          "meaning": "gây ấn tượng với sếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a320ebcf-2076-4d61-b941-c459cfa61763-1-wm.jpg?v=1789802430696"
+        },
+        {
+          "phrase": "deeply impressed",
+          "meaning": "ấn tượng sâu sắc"
+        }
+      ],
+      "synonyms": [
+        "strike (gây ấn tượng mạnh)",
+        "win over (chinh phục)"
+      ]
+    },
+    {
+      "id": "2fef13ea-b40b-488b-b892-ff452609282e",
+      "part_id": "40792329-99d4-4e2c-855d-bbb321082e73",
+      "word": "delivery",
+      "ipa": "UK: /dɪˈlɪv.ər.i/ | US: /dɪˈlɪv.ɚ.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The caterer hired a courier to make the delivery.",
+          "meaning": "sự giao hàng, việc chuyển phát",
+          "antonyms": [
+            "pickup (việc tự đến lấy)"
+          ],
+          "toeic_tip": "Cụm make a delivery dùng make, không dùng do.",
+          "example_vi": "Bên lo tiệc thuê hẳn một người giao hàng để mang đồ tới.",
+          "word_family": [
+            "deliver (v) giao, chuyển phát"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:49.172729+00:00",
+      "updated_at": "2026-09-19T06:23:26.166293+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2fef13ea-b40b-488b-b892-ff452609282e-wm.jpg?v=1789798576066",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/delivery-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/delivery-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a delivery",
+          "meaning": "giao hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2fef13ea-b40b-488b-b892-ff452609282e-0-wm.jpg?v=1789799003910"
+        },
+        {
+          "phrase": "free delivery",
+          "meaning": "giao hàng miễn phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2fef13ea-b40b-488b-b892-ff452609282e-1-wm.jpg?v=1789799006009"
+        },
+        {
+          "phrase": "the delivery date",
+          "meaning": "ngày giao hàng"
+        }
+      ],
+      "synonyms": [
+        "shipment (việc gửi hàng)",
+        "distribution (việc phân phối)"
+      ]
+    }
+  ]
+}

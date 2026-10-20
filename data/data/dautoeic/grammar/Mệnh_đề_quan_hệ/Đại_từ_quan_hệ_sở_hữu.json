@@ -1,0 +1,365 @@
+{
+  "subtopic": {
+    "id": "e7579e7f-3bc6-4df2-9db1-e1759d641324",
+    "topic_id": "aac6ad8a-58ee-4bcc-9acf-c6c675f6beae",
+    "title_en": "Đại từ quan hệ sở hữu",
+    "title_vi": "Đại từ quan hệ sở hữu",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 65,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-quan-he-dai-tu-quan-he-so-huu"
+  },
+  "lessons": [
+    {
+      "id": "cc24523e-6c90-4529-9b5a-e9ad69239fa4",
+      "subtopic_id": "e7579e7f-3bc6-4df2-9db1-e1759d641324",
+      "title_en": "Đại từ quan hệ sở hữu",
+      "title_vi": "Đại từ quan hệ sở hữu",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2021 · Câu 50",
+          "options": {
+            "A": "whose",
+            "B": "some",
+            "C": "major",
+            "D": "which"
+          },
+          "question": "Highlee Sportswear, ------- popularity is widespread among athletes, will add a line of children's clothes soon.",
+          "translation": "Highlee Sportswear, hãng được giới vận động viên ưa chuộng rộng rãi, sẽ sớm bổ sung một dòng quần áo trẻ em."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm hai đại từ quan hệ “whose”, “which”, từ hạn định “some” và tính từ “major”. Chỗ trống đứng sau “Highlee Sportswear” và dấu phẩy, ngay trước danh từ “popularity”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Highlee Sportswear,",
+                    "label": "chủ ngữ (tên công ty)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "popularity",
+                    "label": "danh từ, không có mạo từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "is widespread among athletes,",
+                    "label": "động từ của popularity + phần sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will add",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a line of children's clothes",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "soon.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Phần giữa hai dấu phẩy có chủ ngữ “popularity” và động từ “is” riêng; động từ chính của câu là “will add”. Chỗ trống phải nối phần giữa hai dấu phẩy vào “Highlee Sportswear”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Đại từ quan hệ nào đi liền với một danh từ để chỉ sở hữu.",
+                  "Mệnh đề sau chỗ trống đã có chủ ngữ và động từ chưa.",
+                  "Vì sao tính từ sở hữu, từ hạn định, tính từ không nối được mệnh đề."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**whose** là đại từ quan hệ sở hữu, nghĩa là “mà … của người, vật đó”. whose luôn đi liền với một danh từ, và danh từ đó thuộc về danh từ đứng trước whose.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "danh từ sau whose làm chủ ngữ",
+                    "formula": "N + whose + N + V"
+                  },
+                  {
+                    "label": "danh từ sau whose làm tân ngữ",
+                    "formula": "N + whose + N + S + V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Customers",
+                    "label": "danh từ chỉ người (chủ ngữ)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "whose",
+                    "label": "whose: của customers"
+                  },
+                  {
+                    "role": "N",
+                    "text": "orders",
+                    "label": "danh từ, không có mạo từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "arrive late",
+                    "label": "động từ của orders"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will receive",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a coupon.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "“whose orders” = đơn hàng của các khách hàng đó; “orders” là chủ ngữ của “arrive”. Động từ chính của câu là “will receive”."
+              },
+              {
+                "rows": [
+                  [
+                    "whose + N làm chủ ngữ, danh từ trước chỉ người",
+                    "*We thanked the staff whose ideas saved money.* — Chúng tôi cảm ơn những nhân viên có ý tưởng giúp tiết kiệm tiền."
+                  ],
+                  [
+                    "whose + N, danh từ trước chỉ vật hoặc công ty",
+                    "*We chose a supplier whose prices were lower.* — Chúng tôi chọn một nhà cung cấp có giá thấp hơn."
+                  ],
+                  [
+                    "whose + N làm tân ngữ",
+                    "*She is the author whose book we published.* — Cô ấy là tác giả có cuốn sách mà chúng tôi đã xuất bản."
+                  ],
+                  [
+                    "sau tên riêng và dấu phẩy",
+                    "*Mr. Park, whose office is upstairs, will meet you.* — Ông Park, người có văn phòng ở tầng trên, sẽ gặp bạn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Cách kiểm: ghép “của + danh từ trước” vào sau danh từ đứng sau chỗ trống, ví dụ “orders của customers”. Danh từ sau whose không có mạo từ (a, the) hay sở hữu (his, their) đứng trước.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối mệnh đề vào danh từ đứng trước và chỉ sở hữu: danh từ sau whose là của danh từ trước.",
+                    "form": "whose + N",
+                    "example": "*Employees whose contracts expire this month*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "who, which làm chủ ngữ hoặc tân ngữ trong mệnh đề; mệnh đề sau chỗ trống đã có chủ ngữ và động từ nên không còn chỗ. which còn chỉ vật, không thay cho người.",
+                    "form": "who, which khi mệnh đề đã có chủ ngữ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Làm tân ngữ và chỉ người; mệnh đề sau chỗ trống không thiếu tân ngữ.",
+                    "form": "whom",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính từ sở hữu đứng trước danh từ được nhưng không nối mệnh đề; câu thành hai động từ chính không có từ nối.",
+                    "form": "their, its, his, her",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đại từ nhân xưng, đại từ chỉ định không nối được mệnh đề vào câu.",
+                    "form": "they, those",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa là “bất cứ ai” (= anyone who), đã chứa sẵn người được nói đến; không đứng sau một danh từ đã có để bổ nghĩa cho danh từ đó.",
+                    "form": "whoever",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "danh từ + ___ + danh từ + động từ",
+                    "example": "*customers ___ orders were delayed*; *suppliers ___ deliveries have arrived*"
+                  },
+                  {
+                    "signal": "tên riêng, ___ + danh từ",
+                    "example": "*Highlee Sportswear, ___ popularity is widespread*; *Ms. Nguyen, ___ office is on the third floor*"
+                  },
+                  {
+                    "signal": "danh từ + ___ + danh từ + S + V",
+                    "example": "*the vendors ___ menus we reviewed*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có whose cùng who, whom, which, hoặc lẫn tính từ sở hữu, đại từ, từ hạn định (their, its, they, those, some), thì đây là câu đại từ quan hệ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Nhìn ngay sau chỗ trống: có phải danh từ không có mạo từ, thuộc về danh từ trước chỗ trống không; mệnh đề sau đã đủ chủ ngữ và động từ chưa.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn whose + N. Loại who, which, whom vì mệnh đề không thiếu chủ ngữ hay tân ngữ; loại tính từ sở hữu, đại từ vì không nối được mệnh đề.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Highlee Sportswear,",
+                    "label": "chủ ngữ (tên công ty)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "whose popularity is widespread among athletes,",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho Highlee Sportswear"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will add",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a line of children's clothes",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "soon.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “whose popularity” = sự ưa chuộng của Highlee Sportswear."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm “whose”, “which”, từ hạn định “some” và tính từ “major” nên đây là câu đại từ quan hệ.",
+                  "Bước 2: Sau chỗ trống là danh từ “popularity”, chủ ngữ của “is”; dấu hiệu “tên riêng, ___ + danh từ”: “Highlee Sportswear, ------- popularity”.",
+                  "Bước 3: “popularity” là của “Highlee Sportswear” nên dùng N + whose + N + V, vì vậy chọn “whose” (mà sự ưa chuộng của hãng này).",
+                  "“some” (B) là từ hạn định, không nối được mệnh đề “popularity is widespread…” vào câu, nên loại.",
+                  "“major” (C) là tính từ, không nối được mệnh đề “popularity is widespread…” vào câu, nên loại.",
+                  "“which” (D) là đại từ quan hệ, nhưng mệnh đề sau đã có chủ ngữ “popularity” và động từ “is”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "whose dùng được cho cả người lẫn vật, công ty (*Kellner Furniture, whose bid was the lowest*); còn who, whom chỉ dùng cho người và which chỉ dùng cho vật."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống là danh từ thuộc về danh từ trước: whose + N.",
+                  "Mệnh đề sau đã đủ chủ ngữ, động từ thì loại who, which, whom.",
+                  "their, its, his không nối được mệnh đề."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

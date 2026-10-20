@@ -1,0 +1,369 @@
+{
+  "subtopic": {
+    "id": "5963538f-66dc-4563-a636-96bad5c02d6d",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ ghép",
+    "title_vi": "Danh từ ghép",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 0,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-ghep"
+  },
+  "lessons": [
+    {
+      "id": "9025f489-a692-4105-b0bc-f7846e8b584c",
+      "subtopic_id": "5963538f-66dc-4563-a636-96bad5c02d6d",
+      "title_en": "Danh từ ghép",
+      "title_vi": "Danh từ ghép",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 1 · Câu 118",
+          "options": {
+            "A": "organized",
+            "B": "organizer",
+            "C": "organizes",
+            "D": "organizational"
+          },
+          "question": "As a former publicist for several renowned orchestras, Mr. Wu would excel in the role of event -------.",
+          "translation": "Là cựu chuyên viên quan hệ công chúng của nhiều dàn nhạc nổi tiếng, ông Wu sẽ làm rất tốt vai trò người tổ chức sự kiện."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “organize” nhưng khác loại từ. Chỗ trống đứng cuối câu, ngay sau danh từ “event”, trong cụm “in the role of event -------”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "As a former publicist for several renowned orchestras,",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Mr. Wu",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would excel",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the role of",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "event",
+                    "label": "danh từ (N1)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------.",
+                    "label": "chỗ trống"
+                  }
+                ],
+                "caption": "“As a former publicist…” là cụm giới từ đầu câu; chỗ trống nằm trong cụm giới từ “in the role of event -------” sau động từ “would excel”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Hai danh từ đứng cạnh nhau tạo thành cụm thế nào.",
+                  "Danh từ nào là danh từ chính, danh từ nào bổ nghĩa.",
+                  "Chọn danh từ chỉ người hay chỉ vật theo nghĩa."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Danh từ ghép là hai danh từ đứng cạnh nhau thành một cụm: danh từ đứng trước (N1) nói danh từ sau thuộc loại gì, về việc gì, dành cho ai; danh từ đứng sau (N2) là danh từ chính. Ví dụ *customer service* là dịch vụ dành cho khách hàng.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Danh từ ghép",
+                    "formula": "N1 + N2"
+                  },
+                  {
+                    "label": "Trong câu",
+                    "formula": "(từ hạn định / tính từ) + N1 + N2"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Please book",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "the",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "conference",
+                    "label": "N1: bổ nghĩa"
+                  },
+                  {
+                    "role": "N",
+                    "text": "room",
+                    "label": "N2: danh từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "for Friday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "*Please book the conference room for Friday.* — Vui lòng đặt phòng hội nghị cho thứ Sáu. “conference” nói đây là phòng dùng để làm gì; “room” là danh từ chính."
+              },
+              {
+                "rows": [
+                  [
+                    "sau N1 (N1 + ___)",
+                    "N2: danh từ chính, đúng nghĩa với cả câu",
+                    "*customer service*, *job application*, *budget proposal*, *event organizer*"
+                  ],
+                  [
+                    "trước N2 (___ + N2)",
+                    "N1: danh từ số ít, nói N2 thuộc loại gì, về việc gì",
+                    "*health insurance*, *safety policy*, *shipping date*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chỗ trống ở đâu",
+                  "Cần gì",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "N1 để ở dạng số ít: *a shipping date*, không dùng *shipments date*. Ngoại lệ là vài từ luôn có -s như *sales*: *the sales division*.",
+                  "Trước N2 có thể là tính từ hoặc N1. Tính từ nói N2 thế nào (*a safe place*); N1 nói N2 về việc gì (*a safety policy*: chính sách về an toàn). Chọn theo nghĩa của câu.",
+                  "N2 chỉ người hay chỉ vật thì xem nghĩa: *event organizer* là người tổ chức sự kiện; thứ được nộp là *job application* (đơn), không phải *job applicant* (ứng viên).",
+                  "Nhận ra danh từ qua đuôi: -tion, -sion, -ance, -ice, -ty, -th (satisfaction, division, performance, service, safety, health); -er, -or chỉ người (organizer, contributor). Đuôi -al thường là tính từ (divisional, organizational), nhưng *proposal* là danh từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "N1 số ít bổ nghĩa; N2 là danh từ chính.",
+                    "form": "Danh từ đúng nghĩa ở vị trí N1 hoặc N2",
+                    "example": "*customer service*, *health insurance*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không làm được N1 hay N2.",
+                    "form": "Động từ: V nguyên mẫu, V-s, V-ed (satisfy, applies, served, divided)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "*customer serving*, *employee contributing* không phải danh từ ghép có nghĩa.",
+                    "form": "V-ing (satisfying, serving, contributing, performing, proposing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Ở vị trí N2 thì sau nó không có danh từ để bổ nghĩa; ở vị trí trước N2 thì nghĩa không hợp: *valid healthy insurance* không có nghĩa.",
+                    "form": "Tính từ, so sánh hơn (healthy, safe, healthier, safer, divisional, organizational)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho danh từ.",
+                    "form": "Trạng từ (healthily, safely)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng loại từ nhưng nghĩa không hợp với câu: nộp *application*, không nộp *applicant*.",
+                    "form": "Danh từ sai nghĩa người / vật (applicant, contributor, reporter, performer, distributor, shipper)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "N1 để số ít.",
+                    "form": "Danh từ số nhiều ở vị trí N1 (shipments)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "danh từ + ___",
+                    "example": "*Customer ___ is our top priority*; *the role of event ___*; *values employee ___*; *handles product ___*"
+                  },
+                  {
+                    "signal": "từ hạn định + danh từ + ___",
+                    "example": "*your job ___*; *the sales ___*; *the employee ___*; *a budget ___*"
+                  },
+                  {
+                    "signal": "tính từ + danh từ + ___",
+                    "example": "*its excellent customer ___*"
+                  },
+                  {
+                    "signal": "___ + danh từ",
+                    "example": "*valid ___ insurance*; *the company’s ___ policy*; *a ___ date*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống đứng ngay sau một danh từ (N1 + ___) hay ngay trước một danh từ (___ + N2), và cả cụm làm gì trong câu.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ theo công thức N1 + N2: ở vị trí N1 là danh từ số ít, ở vị trí N2 là danh từ chính; loại động từ, trạng từ, tính từ không hợp nghĩa; còn hai danh từ thì chọn theo nghĩa người hay vật.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "As a former publicist for several renowned orchestras,",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Mr. Wu",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "would excel",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "in the role of",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "event",
+                    "label": "danh từ (N1)"
+                  },
+                  {
+                    "role": "N",
+                    "text": "organizer.",
+                    "label": "danh từ chính (N2)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “event organizer” là danh từ ghép, “organizer” là danh từ chính."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “organize” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng cuối câu, ngay sau danh từ “event”, trong cụm “in the role of”; dấu hiệu “danh từ + ___”: “event -------”.",
+                  "Bước 3: Cần N1 + N2 chỉ người đảm nhận vai trò; “organizer” là danh từ chỉ người (đuôi -er), vì vậy chọn “organizer” (người tổ chức).",
+                  "“organized” (A) là V-ed, không làm danh từ chính sau “event”, nên loại.",
+                  "“organizes” (C) là động từ chia thì (V-s), không làm danh từ chính sau “event”, nên loại.",
+                  "“organizational” (D) là tính từ (đuôi -al), sau nó không có danh từ để bổ nghĩa, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số V-ing đã thành danh từ và làm N1 được: *shipping date* (ngày giao hàng). Các V-ing khác như *satisfying*, *serving* không làm N1 hay N2 trong các câu của bài này."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Hai danh từ cạnh nhau: N1 bổ nghĩa, N2 là danh từ chính.",
+                  "N1 để số ít: shipping date, safety policy.",
+                  "Còn hai danh từ thì chọn theo nghĩa người hay vật."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

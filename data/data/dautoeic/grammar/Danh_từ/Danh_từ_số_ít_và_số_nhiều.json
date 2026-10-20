@@ -1,0 +1,376 @@
+{
+  "subtopic": {
+    "id": "f7c898a1-4af8-4189-8f73-8cd170ebc4f2",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ số ít và số nhiều",
+    "title_vi": "Danh từ số ít và số nhiều",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 9,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-so-it-va-so-nhieu"
+  },
+  "lessons": [
+    {
+      "id": "72f55d42-1d00-48cd-bbb6-bfde4f4c569e",
+      "subtopic_id": "f7c898a1-4af8-4189-8f73-8cd170ebc4f2",
+      "title_en": "Danh từ số ít và số nhiều",
+      "title_vi": "Danh từ số ít và số nhiều",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2020 · Câu 18",
+          "options": {
+            "A": "correction",
+            "B": "correct",
+            "C": "correctly",
+            "D": "corrections"
+          },
+          "question": "We apologize for having used the wrong colors on the Slarott Architecture brochures and will deliver ------- on Friday.",
+          "translation": "Chúng tôi xin lỗi vì đã dùng sai màu trên các tờ quảng cáo của Slarott Architecture và sẽ giao các bản đã chỉnh sửa vào thứ Sáu."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “correct”: danh từ số ít “correction”, danh từ số nhiều “corrections”, tính từ hoặc động từ “correct” và trạng từ “correctly”. Chỗ trống đứng ngay sau “will deliver”, trước nó không có từ hạn định nào.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "apologize",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for having used the wrong colors on the Slarott Architecture brochures",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will deliver",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Friday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Chỗ trống là tân ngữ của “will deliver” ở vế sau “and”; phía sau chỉ còn cụm thời gian “on Friday”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Tân ngữ của động từ cần loại từ nào.",
+                  "Danh từ đếm được số ít có đứng một mình được không.",
+                  "Từ nào đi với số ít, từ nào đi với số nhiều, từ nào đi với danh từ không đếm được."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Danh từ đếm được có số ít (a contract) và số nhiều (contracts); danh từ không đếm được (information, advice) chỉ có một dạng, không thêm -s. Từ đứng trước danh từ và động từ đi với chủ ngữ cho biết cần dạng nào.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Đếm được, số ít",
+                    "formula": "a / an / each + N số ít"
+                  },
+                  {
+                    "label": "Đếm được, số nhiều",
+                    "formula": "many / several / a number of / số đếm + N số nhiều"
+                  },
+                  {
+                    "label": "Không đếm được",
+                    "formula": "much / little / pieces of + N không đếm được"
+                  },
+                  {
+                    "label": "Không có từ hạn định",
+                    "formula": "N số nhiều hoặc N không đếm được"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "each, a / an",
+                    "đếm được số ít",
+                    "*Each participant must sign the sheet.* — Mỗi người tham dự phải ký vào danh sách."
+                  ],
+                  [
+                    "many, several, a (large) number of, số đếm (more than fifty)",
+                    "đếm được số nhiều",
+                    "*Several managers joined the workshop.* — Vài quản lý đã tham dự buổi tập huấn."
+                  ],
+                  [
+                    "much, little, pieces of",
+                    "không đếm được",
+                    "*She gave us two pieces of useful advice.* — Cô ấy cho chúng tôi hai lời khuyên hữu ích."
+                  ],
+                  [
+                    "all, hoặc không có từ hạn định",
+                    "số nhiều hoặc không đếm được, không dùng danh từ đếm được số ít (all có vài ngoại lệ chỉ thời gian: all day, all week)",
+                    "*The firm has contracts with 26 suppliers.* — Công ty có hợp đồng với 26 nhà cung cấp."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ đứng trước",
+                  "Danh từ đi sau",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Danh từ không đếm được trong bài tập: equipment, advice, information, furniture, packaging, employment; “discussion” ở nghĩa chung “việc trao đổi” cũng dùng như không đếm được. Các từ này không thêm -s và đi với động từ số ít (is, was).",
+                "type": "paragraph"
+              },
+              {
+                "text": "Chủ ngữ số nhiều đi với động từ số nhiều (are, were, have, V nguyên mẫu); chủ ngữ số ít hoặc không đếm được đi với động từ số ít (is, was, has, V-s).",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Hợp với từ đứng trước và với động từ của câu.",
+                    "form": "Danh từ đúng số (corrections, participant, equipment)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Danh từ đếm được số ít cần a, the, each, sở hữu… đứng trước; sau many, several, a number of, số đếm phải là số nhiều.",
+                    "form": "Danh từ đếm được số ít đứng một mình hoặc sau từ chỉ số nhiều (correction, contract, package, employee, manager)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "each đi với danh từ số ít; little đi với danh từ không đếm được.",
+                    "form": "Danh từ số nhiều sau each, little (participants, discussions)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Danh từ không đếm được không có dạng số nhiều.",
+                    "form": "Thêm -s cho danh từ không đếm được (equipments, advices, informations, furnitures)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "a number of cần danh từ đếm được số nhiều.",
+                    "form": "Danh từ không đếm được sau a number of (packaging, employment)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Động từ, V3, tính từ, trạng từ không làm danh từ chính ở vị trí chủ ngữ hay tân ngữ. V-ing ở đây (attending, participating) chỉ việc làm, không đi sau many, several, each.",
+                    "form": "Động từ, V-ing, V3, tính từ, trạng từ (deliver, attending, packaged, informative, correctly)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "a number of / a large number of + ___",
+                    "example": "*A large number of ___ were damaged*; *A number of ___ have asked*"
+                  },
+                  {
+                    "signal": "many / several + ___",
+                    "example": "*Many ___ have already registered*; *Several ___ from the Osaka branch*; *several detailed ___*"
+                  },
+                  {
+                    "signal": "số đếm + ___",
+                    "example": "*More than fifty ___ arrive*"
+                  },
+                  {
+                    "signal": "each + ___",
+                    "example": "*Each ___ must sign the attendance sheet*"
+                  },
+                  {
+                    "signal": "much / little / pieces of + ___",
+                    "example": "*very little ___*; *several pieces of helpful ___*"
+                  },
+                  {
+                    "signal": "all + ___",
+                    "example": "*all possible ___*"
+                  },
+                  {
+                    "signal": "không có từ hạn định trước ___",
+                    "example": "*will deliver ___ on Friday*; *has ___ with 26 …*; *will undergo ___*; *provides useful ___*"
+                  },
+                  {
+                    "signal": "động từ chia theo chủ ngữ",
+                    "example": "*kitchen ___ is cleaned*; *office ___ was delivered*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc, có danh từ số ít, số nhiều hoặc dạng thêm -s cùng các loại từ khác thì đây là câu từ loại; cần chọn cả loại từ và số.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ đứng trước chỗ trống (each, many, several, a number of, số đếm, much, little, pieces of, all, hay không có gì) và động từ đi với chủ ngữ (is/are, was/were, has/have).",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ đúng số theo từ đứng trước và động từ; loại danh từ đếm được số ít đứng một mình, loại dạng thêm -s của danh từ không đếm được, loại động từ, tính từ, trạng từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "apologize",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for having used the wrong colors on the Slarott Architecture brochures",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will deliver",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "corrections",
+                    "label": "tân ngữ: danh từ số nhiều"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Friday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: danh từ số nhiều “corrections” làm tân ngữ của “will deliver”, không cần từ hạn định."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “correct”, gồm danh từ số ít, số nhiều, tính từ và trạng từ, nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống là tân ngữ của “will deliver”; dấu hiệu “không có từ hạn định trước ___”: “will deliver ------- on Friday”.",
+                  "Bước 3: Danh từ đếm được không có từ hạn định phải ở số nhiều, vì vậy chọn “corrections” (các bản đã chỉnh sửa).",
+                  "“correction” (A) là danh từ số ít, ở nghĩa “bản sửa” thì đếm được và cần “a” hay “the” đứng trước, nên loại.",
+                  "“correct” (B) là tính từ hoặc động từ, không làm tân ngữ của “will deliver”, nên loại.",
+                  "“correctly” (C) là trạng từ, không làm tân ngữ của “will deliver”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số danh từ vừa đếm được vừa không đếm được tùy nghĩa: *a discussion* là một cuộc thảo luận; *little discussion* là ít sự trao đổi nói chung.",
+                  "Muốn đếm danh từ không đếm được thì dùng cụm như “pieces of”: *two pieces of advice*, không nói *two advices*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "each + N số ít; many, several, a number of, số đếm + N số nhiều.",
+                  "equipment, advice, information, furniture không thêm -s, đi với động từ số ít.",
+                  "Danh từ đếm được số ít không đứng một mình."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

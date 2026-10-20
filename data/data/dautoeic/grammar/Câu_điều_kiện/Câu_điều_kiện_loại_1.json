@@ -1,0 +1,389 @@
+{
+  "subtopic": {
+    "id": "7c78683e-6769-455d-9256-6a1b8e4300c8",
+    "topic_id": "e2bbeb80-e6c3-4f81-ab23-b9c7f6896d7e",
+    "title_en": "Câu điều kiện loại 1",
+    "title_vi": "Câu điều kiện loại 1",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 30,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-cau-dieu-kien-loai-1"
+  },
+  "lessons": [
+    {
+      "id": "db911292-e593-4345-bef5-1cbcf912e60e",
+      "subtopic_id": "7c78683e-6769-455d-9256-6a1b8e4300c8",
+      "title_en": "Câu điều kiện loại 1",
+      "title_vi": "Câu điều kiện loại 1",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2019 · Câu 31",
+          "options": {
+            "A": "has commenced",
+            "B": "commencing",
+            "C": "will commence",
+            "D": "commenced"
+          },
+          "question": "Unless the shipment of tiles arrives early, work on the lobby floor ------- after the holiday.",
+          "translation": "Trừ khi lô gạch lát về sớm, công việc lát sàn sảnh sẽ bắt đầu sau kỳ nghỉ lễ."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “commence”. Chỗ trống là động từ của vế chính, đứng sau vế “Unless the shipment of tiles arrives early”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Unless",
+                    "label": "liên từ điều kiện"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the shipment of tiles arrives early,",
+                    "label": "vế điều kiện"
+                  },
+                  {
+                    "role": "S",
+                    "text": "work on the lobby floor",
+                    "label": "chủ ngữ (vế chính)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "after the holiday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu có hai vế: vế điều kiện mở đầu bằng “Unless”, và vế chính có chủ ngữ “work on the lobby floor” đang thiếu động từ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“Unless” nghĩa là gì, vế sau nó đang chia thì nào",
+                  "vế chính của câu điều kiện loại 1 dùng dạng động từ nào",
+                  "vì sao dạng quá khứ, hiện tại hoàn thành, V-ing không hợp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Câu điều kiện loại 1 nói về một điều **có thể xảy ra** ở hiện tại hoặc tương lai và kết quả của nó. Vế điều kiện (if / unless) dùng **hiện tại đơn** dù nói về tương lai; vế chính dùng **will / can / may + V nguyên mẫu**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Vế if đứng trước",
+                    "formula": "If + S + hiện tại đơn, S + will/can/may + V nguyên mẫu"
+                  },
+                  {
+                    "label": "Vế chính đứng trước",
+                    "formula": "S + will/can/may + V nguyên mẫu + if + S + hiện tại đơn"
+                  },
+                  {
+                    "label": "Unless = If … not (trừ khi)",
+                    "formula": "Unless + S + hiện tại đơn, S + will + V nguyên mẫu"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "If",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the client approves the design,",
+                    "label": "vế if: hiện tại đơn"
+                  },
+                  {
+                    "role": "S",
+                    "text": "we",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will start",
+                    "label": "vế chính: will + V"
+                  },
+                  {
+                    "role": "O",
+                    "text": "production",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "next week.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "*If the client approves the design, we will start production next week.* — Nếu khách hàng duyệt thiết kế, chúng tôi sẽ bắt đầu sản xuất vào tuần sau."
+              },
+              {
+                "rows": [
+                  [
+                    "vế if: hiện tại đơn khẳng định hoặc do/does not + V",
+                    "*If the files do not open, the IT team will help you.* — Nếu các tệp không mở được, nhóm IT sẽ giúp bạn."
+                  ],
+                  [
+                    "vế if: bị động is/are + V3; there is/are + danh từ",
+                    "*If there are any changes, Ms. Lee will email the team.* — Nếu có thay đổi nào, cô Lee sẽ gửi email cho cả nhóm."
+                  ],
+                  [
+                    "vế chính: will / will not / can / may + V",
+                    "*If the price rises, we may order from another supplier.* — Nếu giá tăng, chúng tôi có thể đặt hàng từ nhà cung cấp khác."
+                  ],
+                  [
+                    "vế chính bị động: will be / may be + V3",
+                    "*The meeting will be canceled if the manager is sick.* — Cuộc họp sẽ bị hủy nếu quản lý bị ốm."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng trong bài tập",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Vế if / unless chia theo chủ ngữ: chủ ngữ số ít dùng **V-s/es, does not + V, is**; chủ ngữ số nhiều hoặc “you” dùng **V, do not + V, are**.",
+                  "Sau “there”, be chia theo danh từ đứng sau: **there is** + danh từ số ít, **there are** + danh từ số nhiều.",
+                  "Chủ ngữ chịu hành động (có by + người làm, hoặc động từ cần tân ngữ mà phía sau không có) thì dùng bị động **be + V3**."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Điều kiện có thể xảy ra và kết quả của nó.",
+                    "form": "If/Unless + hiện tại đơn; will/can/may + V nguyên mẫu",
+                    "example": "*If Mr. Castillo accepts the job offer, he will relocate to Singapore.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Nói việc đã xảy ra, không khớp với vế kia đang ở hiện tại đơn hoặc có will/can.",
+                    "form": "Quá khứ đơn, quá khứ hoàn thành (received, had used, did not move)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc đã xảy ra tính đến nay, không phải kết quả của một điều kiện chưa xảy ra.",
+                    "form": "Hiện tại hoàn thành (has received, has built)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là vế chính của câu điều kiện loại 3, đi với If + had + V3.",
+                    "form": "would have + V3 (would have chosen)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính của một vế.",
+                    "form": "V-ing, to V, V3 đứng một mình, not + V-ing (becoming, to renew, been, not arriving)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hiện tại đơn phải chia đúng theo chủ ngữ số ít hay số nhiều.",
+                    "form": "Sai số với chủ ngữ (become, does not arrive, is, asks)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đơn được duyệt, buổi lễ bị hủy: cần be + V3.",
+                    "form": "Chủ động khi chủ ngữ chịu hành động (approves, cancels)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "If + hiện tại đơn",
+                    "example": "*If Mr. Castillo accepts the job offer, …*; *… if the need arises*"
+                  },
+                  {
+                    "signal": "Unless + hiện tại đơn",
+                    "example": "*Unless the board rejects the proposal, …*"
+                  },
+                  {
+                    "signal": "vế chính có will / can / may + V",
+                    "example": "*…, the organizers will move the awards dinner …*; *…, employees can contact Mr. Duval*"
+                  },
+                  {
+                    "signal": "chủ ngữ số ít / số nhiều",
+                    "example": "*the number of registrations* (số ít); *the office chairs* (số nhiều)"
+                  },
+                  {
+                    "signal": "there + ___ + danh từ",
+                    "example": "*If there ------- any questions …*"
+                  },
+                  {
+                    "signal": "by + người làm",
+                    "example": "*If your application ------- by the hiring committee, …*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*the outdoor concert ------- to the Lindell Community Center*; *Unless the ceremony ------- because of bad weather*"
+                  },
+                  {
+                    "signal": "mốc tương lai",
+                    "example": "*next year*, *next spring*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng khác nhau của một động từ, có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống nằm ở vế if / unless hay ở vế chính; tìm dạng động từ của vế kia, chủ ngữ số ít hay số nhiều, và sau chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Vế if / unless chọn hiện tại đơn đúng số, đúng chủ động hay bị động; vế chính chọn will/can/may + V nguyên mẫu. Loại dạng quá khứ, has/have + V3, would have + V3 và dạng không chia.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Unless",
+                    "label": "liên từ điều kiện"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the shipment of tiles arrives early,",
+                    "label": "vế điều kiện: hiện tại đơn"
+                  },
+                  {
+                    "role": "S",
+                    "text": "work on the lobby floor",
+                    "label": "chủ ngữ (vế chính)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will commence",
+                    "label": "động từ: will + V"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "after the holiday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: vế “Unless” ở hiện tại đơn, vế chính dùng will + V nguyên mẫu."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “commence”, có ba dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ của vế chính, chủ ngữ “work on the lobby floor”; dấu hiệu “Unless + hiện tại đơn”: “Unless the shipment of tiles arrives early”.",
+                  "Bước 3: Unless + hiện tại đơn, S + will + V nguyên mẫu, vì vậy chọn “will commence” (sẽ bắt đầu).",
+                  "“has commenced” (A) là hiện tại hoàn thành, nói việc đã xảy ra, không phải kết quả của điều kiện “Unless… arrives early”, nên loại.",
+                  "“commencing” (B) là V-ing, không làm được động từ chính của vế chính, nên loại.",
+                  "“commenced” (D) là quá khứ đơn, nói việc đã xảy ra, không khớp vế “Unless” ở hiện tại đơn, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“Unless” đã mang nghĩa phủ định (= If … not), nên vế sau nó chia khẳng định: *Unless the board rejects the proposal* = *If the board does not reject the proposal*.",
+                  "“keep + V-ing” vẫn là hiện tại đơn, động từ chia là “keep/keeps”: *If demand for the product keeps growing, …* — Nếu nhu cầu tiếp tục tăng, …"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Vế if / unless: hiện tại đơn, chia theo chủ ngữ.",
+                  "Vế chính: will/can/may + V nguyên mẫu; bị động will be/may be + V3.",
+                  "Unless nghĩa là “trừ khi”, bằng If … not."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,340 @@
+{
+  "subtopic": {
+    "id": "e9e7d8b6-ecbd-4bfd-9972-2158786e411f",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Cấu trúc by oneself",
+    "title_vi": "Cấu trúc by oneself",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 101,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-cau-truc-by-oneself"
+  },
+  "lessons": [
+    {
+      "id": "7baeb9c3-76cc-45b6-9f1d-b8e507b48990",
+      "subtopic_id": "e9e7d8b6-ecbd-4bfd-9972-2158786e411f",
+      "title_en": "Cấu trúc by oneself",
+      "title_vi": "Cấu trúc by oneself",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "himself",
+            "B": "him",
+            "C": "he",
+            "D": "his"
+          },
+          "question": "Mr. Tanaka prepared the entire financial report by ------- to meet the deadline.",
+          "translation": "Ông Tanaka đã tự mình chuẩn bị toàn bộ báo cáo tài chính để kịp thời hạn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của đại từ “he”. Chỗ trống đứng ngay sau giới từ “by”, ở cuối phần “prepared the entire financial report”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Tanaka",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "prepared",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the entire financial report",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to meet the deadline.",
+                    "label": "chỉ mục đích"
+                  }
+                ],
+                "caption": "Câu chủ động: “Mr. Tanaka” tự làm việc “prepared”; chỗ trống đứng sau giới từ “by”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "cụm “by + đại từ” mang nghĩa gì khi chủ ngữ tự làm việc",
+                  "đại từ sau “by” phải hợp với chủ ngữ nào",
+                  "vì sao các dạng đại từ khác không đứng được sau “by” trong câu này"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**by + đại từ phản thân** nghĩa là “tự mình, một mình”, không có ai giúp hay đi cùng. Đại từ phản thân phải cùng ngôi, cùng số với chủ ngữ của câu.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tự mình, một mình",
+                    "formula": "S + V … + by + đại từ phản thân"
+                  },
+                  {
+                    "label": "Nhấn mạnh “hoàn toàn một mình”",
+                    "formula": "all by + đại từ phản thân"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "I",
+                    "myself"
+                  ],
+                  [
+                    "you (một người)",
+                    "yourself"
+                  ],
+                  [
+                    "he, một người đàn ông (Mr. …)",
+                    "himself"
+                  ],
+                  [
+                    "she, một người phụ nữ (Ms. …)",
+                    "herself"
+                  ],
+                  [
+                    "it, một vật hay một tổ chức số ít (branch office)",
+                    "itself"
+                  ],
+                  [
+                    "we",
+                    "ourselves"
+                  ],
+                  [
+                    "they, danh từ số nhiều (employees, interns)",
+                    "themselves"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ",
+                  "Đại từ phản thân"
+                ]
+              },
+              {
+                "en": "Ms. Lee finished the sales report by herself last night.",
+                "vi": "Tối qua, chị Lee đã tự mình hoàn thành báo cáo bán hàng.",
+                "type": "example",
+                "highlight": [
+                  "by herself"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng sau “by”, nghĩa “tự mình, một mình”, cùng ngôi, cùng số với chủ ngữ.",
+                    "form": "Đại từ phản thân (himself, herself, themselves, itself…)",
+                    "example": "*Mr. Tanaka … by himself*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "“by + tân ngữ” không mang nghĩa “tự mình”; nó có thể chỉ người làm trong câu bị động. Câu chủ động đã có chủ ngữ tự làm việc.",
+                    "form": "Đại từ tân ngữ (him, her, them, me, us, it, you)",
+                    "example": "*The report was prepared by him.* — Bản báo cáo do anh ấy chuẩn bị.",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Làm chủ ngữ, đứng trước động từ; không đứng sau giới từ “by”.",
+                    "form": "Đại từ chủ ngữ (he, she, they, I, you)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải có danh từ theo sau (*his car*); sau chỗ trống không có danh từ.",
+                    "form": "Tính từ sở hữu (his, her, their, my, its, our, your)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa là “cái của …”, thay cho một danh từ đã nhắc; “by hers”, “by theirs” không cho nghĩa “tự mình”.",
+                    "form": "Đại từ sở hữu (mine, hers, theirs, ours, yours)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "by + ___",
+                    "example": "*prepared the entire financial report by ___*; *can install the printer by ___*"
+                  },
+                  {
+                    "signal": "all by + ___",
+                    "example": "*Working all by ___, Ms. Renaud …*"
+                  },
+                  {
+                    "signal": "without + sự giúp đỡ",
+                    "example": "*without help from headquarters*; *without any help from the store staff*; *without hiring an outside agency*"
+                  },
+                  {
+                    "signal": "vế nói về người khác",
+                    "example": "*because the assistant was absent*; *while her colleague was on leave*; *a staff member must accompany them*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các dạng của cùng một đại từ (chủ ngữ, tân ngữ, sở hữu, phản thân) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay trước chỗ trống có phải “by” không, câu có chủ ngữ tự làm việc không (câu chủ động), và chủ ngữ là ai, số ít hay số nhiều.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Câu chủ động có “by + ___” mang nghĩa “tự mình” thì chọn đại từ phản thân hợp với chủ ngữ; loại tân ngữ, chủ ngữ, tính từ sở hữu và đại từ sở hữu.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Tanaka",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "prepared",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the entire financial report",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by himself",
+                    "label": "by + đại từ phản thân"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to meet the deadline.",
+                    "label": "chỉ mục đích"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “by himself” hợp với chủ ngữ “Mr. Tanaka”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng của đại từ “he” nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống đứng sau giới từ “by”, câu chủ động có chủ ngữ “Mr. Tanaka”; dấu hiệu “by + ___”: “by -------”.",
+                  "Bước 3: Cần by + đại từ phản thân hợp với chủ ngữ “Mr. Tanaka”, vì vậy chọn “himself” (tự mình).",
+                  "“him” (B) là đại từ tân ngữ, “by him” không mang nghĩa “tự mình” như câu cần, nên loại.",
+                  "“he” (C) là đại từ chủ ngữ, chỉ đứng trước động từ, không đứng sau giới từ “by”, nên loại.",
+                  "“his” (D) là tính từ sở hữu, cần danh từ theo sau, nhưng sau chỗ trống là “to meet the deadline”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ “you” nói với một người thì dùng “yourself”; nói với nhiều người thì dùng “yourselves”.",
+                  "Đại từ phản thân đứng ngay sau động từ làm tân ngữ (*She reminded herself …*) học ở bài “Đại từ phản thân”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu chủ động có “by + ___” nghĩa “tự mình, một mình”: chọn đại từ phản thân.",
+                  "Đại từ phản thân hợp với chủ ngữ: Mr. Tanaka đi với himself, the employees đi với themselves."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

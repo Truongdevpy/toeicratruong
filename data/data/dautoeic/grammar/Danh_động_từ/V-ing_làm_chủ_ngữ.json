@@ -1,0 +1,379 @@
+{
+  "subtopic": {
+    "id": "96041a22-74ea-4299-a04d-53b624b57757",
+    "topic_id": "e5d5fd26-6e78-4944-908a-e0681368c595",
+    "title_en": "V-ing làm chủ ngữ",
+    "title_vi": "V-ing làm chủ ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 35,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-danh-dong-tu-v-ing-lam-chu-ngu"
+  },
+  "lessons": [
+    {
+      "id": "d637e091-c8ba-44a5-8943-bd88143ee645",
+      "subtopic_id": "96041a22-74ea-4299-a04d-53b624b57757",
+      "title_en": "V-ing làm chủ ngữ",
+      "title_vi": "V-ing làm chủ ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 6 · Câu 127",
+          "options": {
+            "A": "consumer",
+            "B": "consumption",
+            "C": "consumes",
+            "D": "consuming"
+          },
+          "question": "New food regulations require all Dean’s Burgers packaging to contain the notice that ------- undercooked meat can be harmful.",
+          "translation": "Quy định mới về thực phẩm yêu cầu mọi bao bì của Dean’s Burgers phải có thông báo rằng việc ăn thịt chưa nấu chín có thể gây hại."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “consume”: hai danh từ (consumer, consumption) và hai dạng động từ (consumes, consuming).",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "New food regulations",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "require",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "all Dean’s Burgers packaging",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to contain the notice",
+                    "label": ""
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "undercooked meat",
+                    "label": "tân ngữ của chỗ trống"
+                  },
+                  {
+                    "role": "V",
+                    "text": "can be harmful.",
+                    "label": "động từ (mệnh đề that)"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong mệnh đề sau “the notice that”; mệnh đề này đã có động từ “can be harmful” nhưng chưa có chủ ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "mệnh đề sau “that” đang thiếu thành phần nào",
+                  "dạng nào vừa làm chủ ngữ vừa nhận được tân ngữ “undercooked meat”",
+                  "vì sao danh từ và động từ chia thì không đứng được ở đó"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "V-ing có thể làm chủ ngữ để nói về một việc, một hoạt động. V-ing vẫn giữ tính chất động từ nên nhận tân ngữ ngay phía sau, khác với danh từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "V-ing làm chủ ngữ",
+                    "formula": "V-ing + tân ngữ + động từ chính"
+                  },
+                  {
+                    "label": "Hai việc song song",
+                    "formula": "V-ing + and + V-ing + tân ngữ + động từ chính"
+                  },
+                  {
+                    "label": "Động từ đi với giới từ",
+                    "formula": "V-ing + giới từ + danh từ + động từ chính"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Training",
+                    "label": "V-ing mở đầu chủ ngữ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "new staff",
+                    "label": "tân ngữ của Training"
+                  },
+                  {
+                    "role": "V",
+                    "text": "takes",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "about three weeks.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Cả cụm “Training new staff” là chủ ngữ; “new staff” là tân ngữ của “Training”. Chủ ngữ là một cụm V-ing thì động từ chính chia số ít: “takes”."
+              },
+              {
+                "rows": [
+                  [
+                    "V-ing + tân ngữ làm chủ ngữ",
+                    "*Updating the price list takes only a few minutes.* — Việc cập nhật bảng giá chỉ mất vài phút."
+                  ],
+                  [
+                    "hai V-ing nối bằng and, dùng chung một tân ngữ",
+                    "*Packing and labeling the orders is Tom’s main job.* — Đóng gói và dán nhãn đơn hàng là việc chính của Tom."
+                  ],
+                  [
+                    "V-ing + giới từ đi kèm (respond to, reply to)",
+                    "*Replying to client emails is part of my job.* — Trả lời email của khách hàng là một phần công việc của tôi."
+                  ],
+                  [
+                    "V-ing làm chủ ngữ của mệnh đề sau that",
+                    "*The manager said that sharing passwords is not allowed.* — Quản lý nói rằng không được chia sẻ mật khẩu."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm được chủ ngữ và nhận tân ngữ ngay sau nó.",
+                    "form": "V-ing (Negotiating, Monitoring, consuming)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Làm được chủ ngữ nhưng không nhận tân ngữ trực tiếp; muốn nối với danh từ phía sau phải thêm giới từ.",
+                    "form": "Danh từ cùng gốc (Negotiation, Recruitment, Maintenance, consumption)",
+                    "example": "*the maintenance of the equipment*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính phía sau; đặt thêm động từ chia thì ở vị trí chủ ngữ thì câu thiếu chủ ngữ.",
+                    "form": "Động từ chia thì (Negotiates, Monitors, Responds)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là quá khứ đơn thì cần chủ ngữ riêng, mà câu đã có động từ chính phía sau. Là V3 thì không làm chủ ngữ và không nhận tân ngữ; nếu hiểu V3 là tính từ đứng trước danh từ số nhiều thì chủ ngữ số nhiều, không hợp với động từ số ít như remains, has become.",
+                    "form": "V3 hoặc quá khứ đơn (Negotiated, Hired, Recruited)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng đầu câu thì thành câu mệnh lệnh, nhưng phía sau còn động từ chính nên không thành câu.",
+                    "form": "V nguyên mẫu (Process, Hire, Monitor, Respond)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "to V cũng làm được chủ ngữ, nhưng vế sau “and” là V-ing nên chỗ trống phải là V-ing cho song song.",
+                    "form": "to V (To submit, To process, To hire, To verify)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + tân ngữ + động từ chính",
+                    "example": "*___ a better price with the supplier saved …*; *___ the annual client dinner requires …*"
+                  },
+                  {
+                    "signal": "___ + and + V-ing",
+                    "example": "*___ and reviewing the expense reports takes …*; *___ and training new drivers …*"
+                  },
+                  {
+                    "signal": "___ + giới từ đi kèm + động từ chính",
+                    "example": "*___ to customer complaints within one business day is …*"
+                  },
+                  {
+                    "signal": "that + ___ + tân ngữ + động từ",
+                    "example": "*the notice that ___ undercooked meat can be harmful*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc: có danh từ và các dạng động từ thì là câu từ loại; chỉ có các dạng động từ (V-ing, V3, V-s, V nguyên mẫu, to V) thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính của câu (hoặc của mệnh đề sau that). Chỗ trống đứng trước nó mà câu chưa có chủ ngữ thì chỗ trống mở đầu chủ ngữ; xem sau chỗ trống có tân ngữ, có and + V-ing không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn V-ing vì vừa làm chủ ngữ vừa nhận tân ngữ. Loại danh từ (không nhận tân ngữ), dạng chia thì và V nguyên mẫu (câu đã có động từ chính), V3, và to V khi vế sau and là V-ing.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "New food regulations",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "require",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "all Dean’s Burgers packaging",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to contain the notice",
+                    "label": ""
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "consuming",
+                    "label": "V-ing mở đầu chủ ngữ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "undercooked meat",
+                    "label": "tân ngữ của consuming"
+                  },
+                  {
+                    "role": "V",
+                    "text": "can be harmful.",
+                    "label": "động từ (mệnh đề that)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “consuming undercooked meat” là chủ ngữ của “can be harmful”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm hai danh từ “consumer”, “consumption” và hai dạng của động từ “consume” nên đây là câu từ loại.",
+                  "Bước 2: Mệnh đề sau “that” có động từ “can be harmful” nhưng thiếu chủ ngữ; dấu hiệu “that + ___ + tân ngữ + động từ”: “undercooked meat”.",
+                  "Bước 3: Chủ ngữ là một việc và nhận tân ngữ nên dùng V-ing + tân ngữ, vì vậy chọn “consuming” (việc ăn).",
+                  "“consumer” (A) là danh từ chỉ người (người tiêu dùng), không nhận tân ngữ “undercooked meat”, nên loại.",
+                  "“consumption” (B) là danh từ (sự tiêu thụ), không nhận tân ngữ trực tiếp “undercooked meat”, nên loại.",
+                  "“consumes” (C) là động từ chia thì (V-s), mệnh đề đã có động từ “can be harmful”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Hai cụm V-ing nối bằng and mà được xem là một công việc chung thì động từ chính chia số ít, như trong bài tập: *Hiring and training new drivers usually takes about six weeks.* — Việc tuyển và đào tạo tài xế mới thường mất khoảng sáu tuần."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống mở đầu chủ ngữ, sau nó có tân ngữ rồi mới đến động từ chính: chọn V-ing.",
+                  "Danh từ không nhận tân ngữ trực tiếp; V-ing thì nhận được.",
+                  "Vế sau and là V-ing thì chỗ trống cũng là V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

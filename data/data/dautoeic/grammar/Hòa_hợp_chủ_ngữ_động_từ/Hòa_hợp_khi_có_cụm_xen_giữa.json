@@ -1,0 +1,336 @@
+{
+  "subtopic": {
+    "id": "c0170d0c-b358-4507-b137-e7520757f88d",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Hòa hợp khi có cụm xen giữa",
+    "title_vi": "Hòa hợp khi có cụm xen giữa",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 44,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-hoa-hop-khi-co-cum-xen-giua"
+  },
+  "lessons": [
+    {
+      "id": "8fd90cca-3e0b-4ac2-a23d-390003160a02",
+      "subtopic_id": "c0170d0c-b358-4507-b137-e7520757f88d",
+      "title_en": "Hòa hợp khi có cụm xen giữa",
+      "title_vi": "Hòa hợp khi có cụm xen giữa",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "indication",
+            "B": "indicating",
+            "C": "indicates",
+            "D": "indicate"
+          },
+          "question": "The results of the market survey ------- that consumers prefer faster delivery.",
+          "translation": "Kết quả khảo sát thị trường cho thấy người tiêu dùng ưa chuộng việc giao hàng nhanh hơn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm danh từ “indication” và ba dạng của động từ “indicate”. Chỗ trống đứng sau cụm “The results of the market survey” và trước mệnh đề “that consumers prefer faster delivery”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The results",
+                    "label": "chủ ngữ (N chính)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the market survey",
+                    "label": "cụm xen giữa"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that consumers prefer faster delivery.",
+                    "label": "mệnh đề that (tân ngữ)"
+                  }
+                ],
+                "caption": "Giữa danh từ đầu “The results” và chỗ trống có cụm giới từ “of the market survey”; danh từ đứng sát chỗ trống là “survey”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Khi có cụm xen giữa, động từ chia theo danh từ nào.",
+                  "Cụm xen giữa có những dạng nào.",
+                  "Dạng nào làm được động từ chính và hợp với chủ ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Giữa chủ ngữ và động từ chính có thể có một cụm xen giữa bổ nghĩa cho chủ ngữ. Động từ chia theo **N chính** (danh từ chính của chủ ngữ, đứng ngay trước cụm xen giữa), không theo danh từ nằm trong cụm xen giữa.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "N chính + cụm xen giữa + V chia theo N chính"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "of + N",
+                    "*The price of these chairs is too high for us.* — Giá của những chiếc ghế này quá cao đối với chúng tôi."
+                  ],
+                  [
+                    "giới từ khác + N (from, in, for, to)",
+                    "*The files on my desk are for Mr. Lee.* — Các tập hồ sơ trên bàn tôi là của ông Lee."
+                  ],
+                  [
+                    "V-ing / V3 + …",
+                    "*The box containing the invoices is in the lobby.* — Chiếc hộp đựng các hóa đơn nằm ở sảnh."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cụm xen giữa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The clients",
+                    "label": "N chính (số nhiều)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who visited us last week",
+                    "label": "mệnh đề quan hệ xen giữa"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are",
+                    "label": "chia theo The clients"
+                  },
+                  {
+                    "role": "C",
+                    "text": "very satisfied.",
+                    "label": "bổ ngữ"
+                  }
+                ],
+                "caption": "Mệnh đề quan hệ cũng là cụm xen giữa: “us” và “week” nằm trong mệnh đề đó, động từ chính “are” chia theo “The clients”."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ tự làm hành động và sau chỗ trống có tân ngữ thì dùng chủ động; chủ ngữ chịu hành động thì dùng bị động **be + V3**.",
+                  "“been” đứng sau **have/has/had**: have been + V3 (số nhiều), has been + V3 (số ít); không đứng sau is/was."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Bỏ cụm xen giữa đi, chủ ngữ và động từ vẫn hợp nhau.",
+                    "form": "V chia theo N chính",
+                    "example": "*The cost (of the new conference tables) exceeds …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Danh từ sát chỗ trống nằm trong cụm xen giữa, không phải chủ ngữ.",
+                    "form": "V chia theo danh từ trong cụm xen giữa (exceed, goes, includes, remain, is, has)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không chia theo chủ ngữ nên không làm được động từ chính.",
+                    "form": "V-ing, to V, be, being (indicating, to remain, being, be)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu còn thiếu động từ chính; danh từ không làm được động từ.",
+                    "form": "Danh từ cùng gốc (indication)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chủ ngữ tự làm hành động và có tân ngữ phía sau thì dùng chủ động.",
+                    "form": "Bị động khi có tân ngữ (was approved + a new policy)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có dạng “is been”, “was been”; “been” đứng sau have/has/had.",
+                    "form": "is / was + been",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "N chính + of + N + ___",
+                    "example": "*The cost of the new conference tables ___*; *The quality of the products ___*"
+                  },
+                  {
+                    "signal": "N chính + giới từ + N + ___",
+                    "example": "*Several reports from the marketing department ___*; *The computers in the office ___*"
+                  },
+                  {
+                    "signal": "N chính + V-ing / V3 + … + ___",
+                    "example": "*The folder containing the signed rental contracts ___*; *The instructions printed on the back of the warranty card ___*"
+                  },
+                  {
+                    "signal": "N chính + mệnh đề quan hệ + ___",
+                    "example": "*The forms that each applicant fills out online ___*; *The manager who oversees the two packaging teams ___*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*The board of directors ___ a new policy*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, có dạng chia thì (V-s, V nguyên mẫu, is/are), có thể kèm danh từ cùng gốc, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm N chính (danh từ chính đứng ngay trước cụm xen giữa), đóng ngoặc cụm xen giữa (of…, giới từ…, V-ing/V3…, who/that…), rồi xem N chính số ít hay số nhiều.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn động từ chia theo N chính, đúng chủ động hay bị động. Loại dạng chia theo danh từ trong cụm xen giữa, loại V-ing, to V và danh từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The results",
+                    "label": "N chính (số nhiều)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of the market survey",
+                    "label": "cụm xen giữa"
+                  },
+                  {
+                    "role": "V",
+                    "text": "indicate",
+                    "label": "động từ số nhiều"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that consumers prefer faster delivery.",
+                    "label": "mệnh đề that (tân ngữ)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “indicate” chia theo N chính số nhiều “The results”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm danh từ “indication” và ba dạng của “indicate”, có dạng chia thì (indicates, indicate), nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính; dấu hiệu “N chính + of + N + ___”: N chính “The results” số nhiều, “of the market survey” là cụm xen giữa.",
+                  "Bước 3: Động từ chia theo N chính số nhiều nên dùng V nguyên mẫu, vì vậy chọn “indicate” (cho thấy).",
+                  "“indication” (A) là danh từ, câu còn thiếu động từ chính trước mệnh đề “that consumers prefer…”, nên loại.",
+                  "“indicating” (B) là V-ing, không làm được động từ chính của “The results”, nên loại.",
+                  "“indicates” (C) là V-s số ít, chia theo “survey” trong cụm xen giữa thay vì “The results”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Trong mệnh đề quan hệ xen giữa, động từ riêng của mệnh đề (fills, submitted, orders) chia theo chủ ngữ riêng của nó; động từ chính của câu vẫn chia theo N chính."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Động từ chính chia theo N chính, không theo danh từ đứng sát chỗ trống.",
+                  "Đóng ngoặc cụm of…, giới từ…, V-ing/V3…, who/that… rồi mới chia động từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

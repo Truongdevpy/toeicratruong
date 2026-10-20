@@ -1,0 +1,402 @@
+{
+  "subtopic": {
+    "id": "b8523af8-ca7f-4d1c-b250-0afe9723f82d",
+    "topic_id": "0ea3d286-7391-4844-a15c-b177d7a5e144",
+    "title_en": "Cấu trúc too và enough",
+    "title_vi": "Cấu trúc too và enough",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 33,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-cau-truc-dac-biet-cau-truc-too-va-enough"
+  },
+  "lessons": [
+    {
+      "id": "7c38b696-d5e6-4a5d-8214-0d13501f8422",
+      "subtopic_id": "b8523af8-ca7f-4d1c-b250-0afe9723f82d",
+      "title_en": "Cấu trúc too và enough",
+      "title_vi": "Cấu trúc too và enough",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2020 · Câu 121",
+          "options": {
+            "A": "very",
+            "B": "so",
+            "C": "too",
+            "D": "enough"
+          },
+          "question": "Srour’s flight arrived ------- late for him to attend the reception.",
+          "translation": "Chuyến bay của ông Srour đến quá trễ nên ông ấy không dự được buổi tiệc chiêu đãi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn từ chỉ mức độ “very”, “so”, “too”, “enough”. Chỗ trống đứng trước trạng từ “late”, phía sau là “for him to attend the reception”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Srour’s flight",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "arrived",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "late",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for him",
+                    "label": "for + người"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to attend the reception.",
+                    "label": "to V"
+                  }
+                ],
+                "caption": "Câu đã đủ chủ ngữ và động từ; chỗ trống bổ nghĩa cho trạng từ “late”, và phía sau có “for + người + to V”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "từ nào đứng trước adj/adv, từ nào đứng sau",
+                  "từ nào nối với “for + người + to V”, từ nào nối với “that + S + V”",
+                  "nghĩa “quá” và nghĩa “đủ” khác nhau thế nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**too** nghĩa là “quá”: mức vượt quá nên không làm được việc sau; **enough** nghĩa là “đủ” để làm được việc sau. Cả hai nối với việc đó bằng **to V**, có thể thêm **for + người** trước to V; còn **so / such … that** nghĩa là “… đến mức”, nối với kết quả bằng **that + S + V**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "quá … nên không",
+                    "formula": "too + adj/adv + (for + người) + to V"
+                  },
+                  {
+                    "label": "đủ … để",
+                    "formula": "adj/adv + enough + (for + người) + to V"
+                  },
+                  {
+                    "label": "đủ … để",
+                    "formula": "enough + N + to V"
+                  },
+                  {
+                    "label": "… đến mức",
+                    "formula": "so + adj/adv + that + S + V"
+                  },
+                  {
+                    "label": "… đến mức",
+                    "formula": "such + (a/an) + adj + N + that + S + V"
+                  },
+                  {
+                    "label": "nhiều / ít … đến mức",
+                    "formula": "so + many/few + N đếm được số nhiều + that + S + V"
+                  },
+                  {
+                    "label": "nhiều / ít … đến mức",
+                    "formula": "so + much/little + N không đếm được + that + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "too + adj + to V",
+                    "*This box is too heavy to lift alone.* — Cái hộp này quá nặng, một mình không nhấc nổi."
+                  ],
+                  [
+                    "adj + enough + for + người + to V",
+                    "*The room is big enough for all staff to meet.* — Căn phòng đủ rộng để toàn bộ nhân viên họp."
+                  ],
+                  [
+                    "enough + N + to V",
+                    "*We have enough time to finish the report.* — Chúng tôi có đủ thời gian để làm xong báo cáo."
+                  ],
+                  [
+                    "so + adj + that + S + V",
+                    "*The test was so easy that everyone passed.* — Bài kiểm tra dễ đến mức ai cũng đạt."
+                  ],
+                  [
+                    "such + a + adj + N + that + S + V",
+                    "*It was such a long meeting that we missed lunch.* — Cuộc họp dài đến mức chúng tôi lỡ bữa trưa."
+                  ],
+                  [
+                    "so many + N + that + S + V",
+                    "*So many people applied that we added another interview day.* — Nhiều người nộp đơn đến mức chúng tôi thêm một ngày phỏng vấn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Ngay sau chỗ trống là adj/adv đứng một mình: phía sau là (for + người) + to V và câu mang nghĩa “quá … nên không làm được” thì chọn **too**; phía sau là that + S + V thì chọn **so**.",
+                  "Chỗ trống đứng sau adj/adv, trước (for + người) + to V: chọn **enough**.",
+                  "Ngay sau chỗ trống là danh từ, phía sau là to V: chọn **enough**. Sau chỗ trống là (a/an) + adj + danh từ, phía sau là that + S + V: chọn **such**.",
+                  "Sau such dùng **a** trước âm phụ âm (a helpful summary), **an** trước âm nguyên âm (an inspiring speech).",
+                  "Sau be + so cần tính từ ở dạng nguyên cấp: *was so simple that …*"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chỉ nhấn mạnh (rất), không nối với to V hay that + S + V để nói kết quả.",
+                    "form": "very",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "enough đứng sau adj/adv; chỉ đứng trước danh từ.",
+                    "form": "enough đứng trước adj/adv (enough old, enough quietly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Ba từ này đứng trước adj/adv. Trước danh từ + to V dùng enough; trước (a/an) + adj + danh từ + that dùng such.",
+                    "form": "too, very, so đứng ngay trước danh từ hoặc trước a/an",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "so đi với that + S + V; too đi với to V.",
+                    "form": "so … to V, too … that",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "such cần danh từ phía sau.",
+                    "form": "such đứng trước adj/adv một mình (such old, such efficiently)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "many/few + danh từ đếm được số nhiều; much/little + danh từ không đếm được. Sau so không dùng less, more; plenty cần of (plenty of).",
+                    "form": "much, many, few, little sai loại danh từ; less, more, plenty sau so",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Khuôn là such + a/an + adj + danh từ số ít; chọn a hay an theo âm đầu của từ ngay sau.",
+                    "form": "the, so sau such; a/an sai âm",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau so + adj cần that + S + V; sau too + adj cần to + V nguyên mẫu.",
+                    "form": "which, what, because, than, for, so thay cho that / to",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau be + so cần tính từ nguyên cấp làm bổ ngữ.",
+                    "form": "Danh từ, trạng từ, động từ, dạng so sánh sau be + so (smallness, simply, simplify, smaller, smallest)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ enough đứng sau adj/adv để nối với to V.",
+                    "form": "much, so, very đứng sau tính từ (experienced much, sturdy so)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + adj/adv + (for + người) + to V",
+                    "example": "*------- old to handle …*; *------- dim for visitors to read …*"
+                  },
+                  {
+                    "signal": "adj/adv + ___ + (for + người) + to V",
+                    "example": "*large ------- to seat …*; *clear ------- for the committee to approve it*"
+                  },
+                  {
+                    "signal": "___ + danh từ + to V",
+                    "example": "*------- volunteers to staff …*; *not ------- time to review …*"
+                  },
+                  {
+                    "signal": "___ + adj/adv + that + S + V",
+                    "example": "*------- old that repairs cost …*; *------- smoothly that both companies signed …*"
+                  },
+                  {
+                    "signal": "___ + (a/an) + adj + danh từ + that + S + V",
+                    "example": "*------- a clear presentation that nobody …*; *------- reasonable rates that …*"
+                  },
+                  {
+                    "signal": "so + ___ + danh từ + that + S + V",
+                    "example": "*so ------- complaints … that management revised …*"
+                  },
+                  {
+                    "signal": "so/such + ___",
+                    "example": "*so ------- that everyone …*; *such ------- inspiring speech that …*"
+                  },
+                  {
+                    "signal": "so/too + adj + ___",
+                    "example": "*so quiet ------- visitors often think …*; *too late ------- be included*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là too, enough, so, such, very, much thì đây là câu từ chỉ mức độ; là many, much, few, little hoặc mạo từ thì là câu từ hạn định; là that, to, which, for… thì là câu giới từ – liên từ; cùng gốc khác loại từ thì là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống là adj/adv hay danh từ (có a/an không), chỗ trống đứng trước hay sau adj/adv, rồi tìm phần phía sau: (for + người) + to V hay that + S + V.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Áp khuôn: too + adj/adv + to V; adj/adv + enough + to V; enough + N + to V; so + adj/adv + that; such + (a/an) + adj + N + that; so many/few/much/little + N + that. Loại từ sai vị trí hoặc không nối được với phần phía sau.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Srour’s flight",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "arrived",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "too",
+                    "label": "too"
+                  },
+                  {
+                    "role": "X",
+                    "text": "late",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for him",
+                    "label": "for + người"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to attend the reception.",
+                    "label": "to V"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: too + trạng từ + for + người + to V, nghĩa là quá trễ nên ông ấy không dự được."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các từ chỉ mức độ “very”, “so”, “too”, “enough” nên đây là câu từ chỉ mức độ.",
+                  "Bước 2: Chỗ trống đứng trước trạng từ “late”; dấu hiệu “___ + adj/adv + (for + người) + to V”: “------- late for him to attend the reception”.",
+                  "Bước 3: too + adj/adv + for + người + to V nghĩa là quá … nên không làm được, vì vậy chọn “too” (quá).",
+                  "“very” (A) chỉ nhấn mạnh, không nối với “for him to attend” để nói kết quả, nên loại.",
+                  "“so” (B) đi với “that + S + V”, không đi với “for him to attend”, nên loại.",
+                  "“enough” (D) phải đứng sau adj/adv (late enough), không đứng trước “late”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "enough cũng đứng một mình, nghĩa là “đủ (số lượng)”: *Ten board members plan to attend, which is just enough to approve the proposal.* — Mười thành viên hội đồng dự định tham dự, vừa đủ để thông qua đề xuất."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "too + adj/adv + to V: quá … nên không; adj/adv + enough + to V: đủ … để.",
+                  "enough đứng sau adj/adv nhưng đứng trước danh từ.",
+                  "so + adj/adv + that; such + (a/an) + adj + N + that."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,384 @@
+{
+  "subtopic": {
+    "id": "48f22b3a-2082-4df1-b59d-48e21d140d03",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì tương lai",
+    "title_vi": "Thì tương lai",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 79,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-tuong-lai"
+  },
+  "lessons": [
+    {
+      "id": "4a53f07e-0188-4cf7-be9c-804d0b3e2c85",
+      "subtopic_id": "48f22b3a-2082-4df1-b59d-48e21d140d03",
+      "title_en": "Thì tương lai",
+      "title_vi": "Thì tương lai",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2021 · Câu 43",
+          "options": {
+            "A": "has been arranging",
+            "B": "will be arranging",
+            "C": "was arranged",
+            "D": "have arranged"
+          },
+          "question": "Later today, Mr. Warken ------- interview times for the job applicant finalists.",
+          "translation": "Lát nữa trong hôm nay, ông Warken sẽ sắp xếp giờ phỏng vấn cho những ứng viên vào vòng cuối."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “arrange”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "Later today,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Mr. Warken",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "interview times",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the job applicant finalists.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, đứng sau chủ ngữ “Mr. Warken” và trước tân ngữ “interview times”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“Later today” chỉ thời điểm nào",
+                  "động từ chia thế nào khi nói về tương lai",
+                  "khi nào dùng chủ động, khi nào dùng bị động"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì tương lai nói về việc xảy ra sau lúc nói.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "S + will + V nguyên mẫu"
+                  },
+                  {
+                    "formula": "S + am/is/are going to + V nguyên mẫu"
+                  },
+                  {
+                    "formula": "S + will be + V-ing"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.58,
+                    "now": true,
+                    "label": "bây giờ"
+                  },
+                  {
+                    "at": 0.72,
+                    "label": "9 giờ sáng mai"
+                  },
+                  {
+                    "at": 0.92,
+                    "label": "tháng sau"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.72,
+                    "label": "will open"
+                  },
+                  {
+                    "at": 0.92,
+                    "label": "are going to hire"
+                  }
+                ],
+                "caption": "will + V, am/is/are going to + V: việc xảy ra tại một lúc sau “bây giờ”."
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.58,
+                    "now": true,
+                    "label": "bây giờ"
+                  },
+                  {
+                    "at": 0.8,
+                    "label": "trưa mai"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.88,
+                    "from": 0.72,
+                    "label": "will be meeting",
+                    "style": "solid"
+                  }
+                ],
+                "points": [],
+                "caption": "will be + V-ing: việc sẽ đang diễn ra vào một lúc trong tương lai (trưa mai)."
+              },
+              {
+                "rows": [
+                  [
+                    "will + V",
+                    "việc sẽ xảy ra",
+                    "*The store will open at 9 a.m. tomorrow.* — Cửa hàng sẽ mở cửa lúc 9 giờ sáng mai."
+                  ],
+                  [
+                    "am/is/are going to + V",
+                    "việc sẽ xảy ra, đã có dự định hoặc căn cứ ở hiện tại",
+                    "*We are going to hire two more designers next month.* — Tháng sau chúng tôi sẽ tuyển thêm hai nhà thiết kế."
+                  ],
+                  [
+                    "will be + V-ing",
+                    "việc sẽ đang diễn ra vào một lúc trong tương lai",
+                    "*At noon tomorrow, we will be meeting the client.* — Trưa mai chúng tôi sẽ đang gặp khách hàng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng",
+                  "Dùng khi",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Chủ ngữ tự làm hành động thì dùng chủ động; chủ ngữ chịu hành động thì dùng bị động (be + V3).",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói về việc đã xảy ra.",
+                    "form": "quá khứ đơn, quá khứ tiếp diễn, quá khứ hoàn thành, quá khứ bị động",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói về việc từ quá khứ kéo đến nay.",
+                    "form": "has/have + V3, has been + V-ing",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ nói tương lai khi là lịch trình cố định (hiện tại đơn) hoặc kế hoạch đã sắp xếp (hiện tại tiếp diễn).",
+                    "form": "hiện tại đơn, hiện tại tiếp diễn",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải dạng tương lai; nếu hiểu là hiện tại đơn thì chủ ngữ số ít phải là V-s/es.",
+                    "form": "V nguyên mẫu không có will",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính.",
+                    "form": "V-ing đứng một mình",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "later today / tomorrow",
+                    "example": "*Later today, Mr. Warken …*, *tomorrow afternoon*"
+                  },
+                  {
+                    "signal": "next + thời gian",
+                    "example": "*next month*, *Next Tuesday*, *early next quarter*"
+                  },
+                  {
+                    "signal": "in + khoảng thời gian",
+                    "example": "*in two months*, *in a few days' time* (nghĩa “sau … nữa”)"
+                  },
+                  {
+                    "signal": "in the coming + thời gian",
+                    "example": "*in the coming year*"
+                  },
+                  {
+                    "signal": "by + mốc tương lai",
+                    "example": "*by 2050*, *by the end of the month*"
+                  },
+                  {
+                    "signal": "soon",
+                    "example": "*soon, probably before Friday*"
+                  },
+                  {
+                    "signal": "vế kia dùng will",
+                    "example": "*…, and a new menu will be introduced then*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm chủ ngữ, mốc thời gian, và xem sau chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "có mốc tương lai thì chọn will + V, am/is/are going to + V hoặc will be + V-ing, đúng chủ động hay bị động; loại dạng quá khứ, has/have + V3 và dạng không chia.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "Later today,",
+                    "label": "mốc tương lai"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Mr. Warken",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be arranging",
+                    "label": "động từ: will be + V-ing"
+                  },
+                  {
+                    "role": "O",
+                    "text": "interview times",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the job applicant finalists.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu sau khi điền đáp án"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng chia thì của động từ “arrange” nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “Mr. Warken” số ít, sau chỗ trống có tân ngữ “interview times”; có dấu hiệu “later today / tomorrow”: “Later today”.",
+                  "Bước 3: Mốc tương lai, ông Warken tự sắp xếp nên dùng will be + V-ing ở dạng chủ động, vì vậy chọn “will be arranging” (sẽ sắp xếp).",
+                  "“has been arranging” (A) là hiện tại hoàn thành tiếp diễn, nói việc từ quá khứ kéo đến nay, không hợp “Later today”, nên loại.",
+                  "“was arranged” (C) là quá khứ bị động, nói việc đã xảy ra; ông Warken tự sắp xếp “interview times”, nên loại.",
+                  "“have arranged” (D) là hiện tại hoàn thành, nói việc từ quá khứ kéo đến nay, không hợp “Later today”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“in + khoảng thời gian” chỉ tương lai khi nghĩa là “sau … nữa”; khi nghĩa là “trong vòng …” thì đi được với quá khứ: *The team finished the project in two months.* — Nhóm đã làm xong dự án trong vòng hai tháng.",
+                  "Sau when, before, after, as soon as, once, dù nói về tương lai vẫn dùng hiện tại đơn, không dùng will, ví dụ “once the new software is ready” (học ở bài “Thì trong mệnh đề thời gian”)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Có mốc tương lai thì dùng will + V, am/is/are going to + V hoặc will be + V-ing.",
+                  "Hiện tại đơn, hiện tại tiếp diễn chỉ nói tương lai khi là lịch trình, kế hoạch sắp xếp sẵn."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

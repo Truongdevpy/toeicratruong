@@ -1,0 +1,631 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "4d31dc62-14a5-4d7e-894a-a5f372591869",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 12: Applying and Interviewing",
+    "order_index": 12,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:13.273013+00:00",
+    "updated_at": "2026-09-18T08:51:13.273013+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+    "test_id": "4d31dc62-14a5-4d7e-894a-a5f372591869",
+    "name": "Applying and Interviewing",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:13.273013+00:00",
+    "updated_at": "2026-09-18T08:51:13.273013+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c043ac62-f4df-49d0-b4a3-569bff4d71af",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "apply",
+      "ipa": "/əˈplaɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The college graduate applied for three jobs and received three offers.",
+          "meaning": "nộp đơn xin, ứng tuyển",
+          "antonyms": [
+            "withdraw (rút đơn)"
+          ],
+          "toeic_tip": "apply for + công việc, apply to + nơi nhận; đừng lẫn hai giới từ.",
+          "example_vi": "Anh cử nhân nộp đơn ba nơi và nhận được cả ba lời mời làm việc.",
+          "word_family": [
+            "application (n) đơn xin",
+            "applicant (n) người nộp đơn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T07:34:44.365586+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c043ac62-f4df-49d0-b4a3-569bff4d71af-wm.jpg?v=1789798294964",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/apply-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/apply-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "apply for a job",
+          "meaning": "nộp đơn xin việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c043ac62-f4df-49d0-b4a3-569bff4d71af-0-wm.jpg?v=1789803282133"
+        },
+        {
+          "phrase": "apply to a company",
+          "meaning": "nộp hồ sơ vào công ty",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c043ac62-f4df-49d0-b4a3-569bff4d71af-1-wm.jpg?v=1789803284220"
+        },
+        {
+          "phrase": "apply in person",
+          "meaning": "nộp trực tiếp"
+        }
+      ],
+      "synonyms": [
+        "put in for (xin, nộp đơn)",
+        "request (xin)"
+      ]
+    },
+    {
+      "id": "aeecf43d-b262-4bdb-bb8c-0af273c790d5",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "constantly",
+      "ipa": "UK: /ˈkɒn.stənt.li/ | US: /ˈkɑːn.stənt.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company is constantly looking for highly trained employees.",
+          "meaning": "liên tục, thường xuyên",
+          "antonyms": [
+            "rarely (hiếm khi)",
+            "occasionally (thỉnh thoảng)"
+          ],
+          "toeic_tip": "Trạng từ đứng giữa trợ động từ và động từ chính: is constantly looking.",
+          "example_vi": "Công ty lúc nào cũng đang tìm những nhân viên được đào tạo bài bản.",
+          "word_family": [
+            "constant (adj) không đổi, liên tục"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T07:24:59.563153+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/aeecf43d-b262-4bdb-bb8c-0af273c790d5-wm.jpg?v=1789798349239",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/constantly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/constantly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "constantly changing",
+          "meaning": "thay đổi liên tục",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/aeecf43d-b262-4bdb-bb8c-0af273c790d5-0-wm.jpg?v=1789802699215"
+        },
+        {
+          "phrase": "constantly looking for",
+          "meaning": "liên tục tìm kiếm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/aeecf43d-b262-4bdb-bb8c-0af273c790d5-1-wm.jpg?v=1789802699426"
+        },
+        {
+          "phrase": "constantly updated",
+          "meaning": "được cập nhật thường xuyên"
+        }
+      ],
+      "synonyms": [
+        "continually (liên tục)",
+        "always (luôn luôn)"
+      ]
+    },
+    {
+      "id": "11786f17-5bd2-48cf-be96-9663257bcf9d",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "weakly",
+      "ipa": "/ˈwiːk.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Her hands trembled and she spoke weakly at the interview.",
+          "meaning": "một cách yếu ớt, kém, thiếu sức",
+          "antonyms": [
+            "strongly (mạnh mẽ)",
+            "forcefully (dứt khoát, mạnh)"
+          ],
+          "toeic_tip": "Đồng âm với weekly (hằng tuần) nhưng khác nghĩa hoàn toàn, chú ý Part 1.",
+          "example_vi": "Tay cô run lên và giọng cô yếu hẳn đi trong buổi phỏng vấn.",
+          "word_family": [
+            "weak (adj) yếu",
+            "weakness (n) điểm yếu"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T06:22:22.659456+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/11786f17-5bd2-48cf-be96-9663257bcf9d-wm.jpg?v=1789798543973",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/weakly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/weakly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "speak weakly",
+          "meaning": "nói yếu ớt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/11786f17-5bd2-48cf-be96-9663257bcf9d-0-wm.jpg?v=1789798941943"
+        },
+        {
+          "phrase": "respond weakly",
+          "meaning": "phản ứng yếu ớt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/11786f17-5bd2-48cf-be96-9663257bcf9d-1-wm.jpg?v=1789798942521"
+        },
+        {
+          "phrase": "perform weakly",
+          "meaning": "thể hiện kém"
+        }
+      ],
+      "synonyms": [
+        "faintly (yếu ớt)",
+        "feebly (một cách yếu đuối)"
+      ]
+    },
+    {
+      "id": "cf77822c-11a5-4966-94bc-c7f1dff707f3",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "follow up",
+      "ipa": "UK: /ˌfɒl.əʊ ˈʌp/ | US: /ˌfɑː.loʊ ˈʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Always follow up an interview with a thank-you note.",
+          "meaning": "theo dõi tiếp, làm bước tiếp theo; việc tiếp nối",
+          "toeic_tip": "Động từ viết rời follow up, danh từ và tính từ có gạch nối follow-up.",
+          "example_vi": "Sau buổi phỏng vấn, nhớ gửi thư cảm ơn.",
+          "word_family": [
+            "follow-up (n) việc tiếp nối",
+            "follow-up (adj) mang tính tiếp nối"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T07:42:56.120374+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cf77822c-11a5-4966-94bc-c7f1dff707f3-wm.jpg?v=1789798300413",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/follow-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/follow-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "follow up on a request",
+          "meaning": "theo dõi tiếp một yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cf77822c-11a5-4966-94bc-c7f1dff707f3-0-wm.jpg?v=1789803763494"
+        },
+        {
+          "phrase": "follow up with a phone call",
+          "meaning": "gọi điện theo dõi tiếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cf77822c-11a5-4966-94bc-c7f1dff707f3-1-wm.jpg?v=1789803775946"
+        },
+        {
+          "phrase": "a follow-up email",
+          "meaning": "email nhắc lại"
+        }
+      ],
+      "synonyms": [
+        "pursue (theo đuổi tiếp)",
+        "check on (kiểm tra lại)"
+      ]
+    },
+    {
+      "id": "2988cd35-98c9-4714-a5ad-93406f65e493",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "expert",
+      "ipa": "UK: /ˈek.spɜːt/ | US: /ˈek.spɝːt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Our department head is an expert in financing.",
+          "meaning": "chuyên gia, người có chuyên môn sâu",
+          "antonyms": [
+            "novice (người mới vào nghề)",
+            "amateur (người nghiệp dư)"
+          ],
+          "toeic_tip": "Dùng expert in/on/at; danh từ expertise không đếm được.",
+          "example_vi": "Trưởng bộ phận của chúng tôi là chuyên gia về tài chính.",
+          "word_family": [
+            "expertise (n) chuyên môn",
+            "expert (adj) thành thạo, điêu luyện"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T06:22:52.894421+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2988cd35-98c9-4714-a5ad-93406f65e493-wm.jpg?v=1789798556665",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expert-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expert-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an expert in finance",
+          "meaning": "chuyên gia tài chính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2988cd35-98c9-4714-a5ad-93406f65e493-0-wm.jpg?v=1789798972168"
+        },
+        {
+          "phrase": "an expert on the subject",
+          "meaning": "chuyên gia về lĩnh vực đó",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2988cd35-98c9-4714-a5ad-93406f65e493-1-wm.jpg?v=1789798972761"
+        },
+        {
+          "phrase": "consult an expert",
+          "meaning": "hỏi ý kiến chuyên gia"
+        }
+      ],
+      "synonyms": [
+        "specialist (chuyên gia)",
+        "authority (người có uy tín chuyên môn)"
+      ]
+    },
+    {
+      "id": "d62b46b5-4b82-4327-83f9-964b53c9ebec",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "confidence",
+      "ipa": "UK: /ˈkɒn.fɪ.dəns/ | US: /ˈkɑːn.fə.dəns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Good applicants show confidence during an interview.",
+          "meaning": "sự tự tin, niềm tin vào khả năng của mình",
+          "antonyms": [
+            "doubt (sự nghi ngờ)",
+            "insecurity (sự thiếu tự tin)"
+          ],
+          "toeic_tip": "Phân biệt confident (tự tin) và confidential (mật, bảo mật).",
+          "example_vi": "Ứng viên giỏi luôn tỏ ra tự tin trong buổi phỏng vấn.",
+          "word_family": [
+            "confident (adj) tự tin",
+            "confidently (adv) một cách tự tin"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T07:47:16.19114+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d62b46b5-4b82-4327-83f9-964b53c9ebec-wm.jpg?v=1789798385252",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/confidence-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/confidence-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "show confidence",
+          "meaning": "thể hiện sự tự tin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d62b46b5-4b82-4327-83f9-964b53c9ebec-0-wm.jpg?v=1789804036054"
+        },
+        {
+          "phrase": "gain confidence",
+          "meaning": "có được sự tin tưởng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d62b46b5-4b82-4327-83f9-964b53c9ebec-1-wm.jpg?v=1789804035417"
+        },
+        {
+          "phrase": "have confidence in someone",
+          "meaning": "tin tưởng ai đó"
+        }
+      ],
+      "synonyms": [
+        "self-assurance (sự tự tin)",
+        "belief (niềm tin)"
+      ]
+    },
+    {
+      "id": "d664f3e6-c8a0-4b56-9b41-5b1ceadd0d0b",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "present",
+      "ipa": "/prɪˈzent/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The human resources director presents each candidate's resume to the department supervisor for review.",
+          "meaning": "trình bày, giới thiệu, đưa ra để xem xét",
+          "antonyms": [
+            "withhold (giữ lại, không đưa ra)"
+          ],
+          "toeic_tip": "Động từ nhấn âm hai /prɪˈzent/, danh từ present (món quà) nhấn âm một.",
+          "example_vi": "Giám đốc nhân sự chuyển hồ sơ của từng ứng viên cho trưởng bộ phận xem xét.",
+          "word_family": [
+            "presentation (n) bài thuyết trình",
+            "presenter (n) người trình bày"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T07:47:32.715017+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d664f3e6-c8a0-4b56-9b41-5b1ceadd0d0b-wm.jpg?v=1789798390339",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/present-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/present-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "present a proposal",
+          "meaning": "trình bày đề xuất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d664f3e6-c8a0-4b56-9b41-5b1ceadd0d0b-0-wm.jpg?v=1789804052180"
+        },
+        {
+          "phrase": "present information",
+          "meaning": "đưa ra thông tin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d664f3e6-c8a0-4b56-9b41-5b1ceadd0d0b-1-wm.jpg?v=1789804052576"
+        },
+        {
+          "phrase": "present someone with an award",
+          "meaning": "trao giải cho ai đó"
+        }
+      ],
+      "synonyms": [
+        "introduce (giới thiệu)",
+        "submit (trình lên)"
+      ]
+    },
+    {
+      "id": "7368bb1a-7628-4d09-afb2-089cb1f42816",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "hesitant",
+      "ipa": "/ˈhez.ɪ.tənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Marla was hesitant about negotiating a higher salary.",
+          "meaning": "ngần ngại, do dự, dè dặt",
+          "antonyms": [
+            "eager (háo hức)",
+            "decisive (dứt khoát)"
+          ],
+          "toeic_tip": "hesitant about + V-ing hoặc hesitant to + V; hesitate to + V.",
+          "example_vi": "Marla ngần ngại chuyện thương lượng mức lương cao hơn.",
+          "word_family": [
+            "hesitate (v) do dự",
+            "hesitation (n) sự do dự"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T06:56:22.462676+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7368bb1a-7628-4d09-afb2-089cb1f42816-wm.jpg?v=1789798435698",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/hesitant-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/hesitant-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "hesitant about doing something",
+          "meaning": "ngần ngại làm gì đó",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7368bb1a-7628-4d09-afb2-089cb1f42816-0-wm.jpg?v=1789800979611"
+        },
+        {
+          "phrase": "hesitant to accept",
+          "meaning": "do dự khi chấp nhận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7368bb1a-7628-4d09-afb2-089cb1f42816-1-wm.jpg?v=1789800982328"
+        },
+        {
+          "phrase": "a hesitant reply",
+          "meaning": "câu trả lời ngập ngừng"
+        }
+      ],
+      "synonyms": [
+        "reluctant (miễn cưỡng)",
+        "unsure (không chắc chắn)"
+      ]
+    },
+    {
+      "id": "110569c2-a1bc-4a7e-90ec-bc310a4f9678",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "ability",
+      "ipa": "UK: /əˈbɪl.ɪ.ti/ | US: /əˈbɪl.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The designer's ability was obvious from her portfolio.",
+          "meaning": "khả năng, năng lực",
+          "antonyms": [
+            "inability (sự không có khả năng)"
+          ],
+          "toeic_tip": "Luôn dùng ability to + động từ, không dùng ability of doing.",
+          "example_vi": "Nhìn tập hồ sơ thiết kế là thấy rõ năng lực của cô ấy.",
+          "word_family": [
+            "able (adj) có khả năng",
+            "enable (v) tạo điều kiện cho"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T06:22:17.256527+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/110569c2-a1bc-4a7e-90ec-bc310a4f9678-wm.jpg?v=1789798543480",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ability-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ability-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the ability to do something",
+          "meaning": "khả năng làm gì đó",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/110569c2-a1bc-4a7e-90ec-bc310a4f9678-0-wm.jpg?v=1789798936552"
+        },
+        {
+          "phrase": "demonstrate ability",
+          "meaning": "thể hiện năng lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/110569c2-a1bc-4a7e-90ec-bc310a4f9678-1-wm.jpg?v=1789798937112"
+        },
+        {
+          "phrase": "natural ability",
+          "meaning": "năng lực bẩm sinh"
+        }
+      ],
+      "synonyms": [
+        "skill (kỹ năng)",
+        "capability (khả năng)"
+      ]
+    },
+    {
+      "id": "2645154a-362b-4097-bad4-7486aa54ce40",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "be ready for",
+      "ipa": "UK: /bi ˈred.i fɔː/ | US: /bi ˈred.i fɔːr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Thanks to her careful research, the applicant felt that she was ready for the interview with the director of the program.",
+          "meaning": "sẵn sàng cho, đã chuẩn bị cho",
+          "antonyms": [
+            "be unprepared for (chưa chuẩn bị cho)"
+          ],
+          "toeic_tip": "be ready for + danh từ, be ready to + động từ nguyên mẫu.",
+          "example_vi": "Nhờ tìm hiểu kỹ, ứng viên thấy mình đã sẵn sàng cho buổi phỏng vấn với giám đốc chương trình.",
+          "word_family": [
+            "readiness (n) sự sẵn sàng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T06:20:50.276282+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2645154a-362b-4097-bad4-7486aa54ce40-wm.jpg?v=1789798451842",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/be-ready-for-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/be-ready-for-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be ready for the interview",
+          "meaning": "sẵn sàng cho buổi phỏng vấn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2645154a-362b-4097-bad4-7486aa54ce40-0-wm.jpg?v=1789798848739"
+        },
+        {
+          "phrase": "be ready for a change",
+          "meaning": "sẵn sàng thay đổi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2645154a-362b-4097-bad4-7486aa54ce40-1-wm.jpg?v=1789798850132"
+        }
+      ],
+      "synonyms": [
+        "be prepared for (được chuẩn bị cho)",
+        "be set for (sẵn sàng cho)"
+      ]
+    },
+    {
+      "id": "22943946-20c7-4197-8a43-b88aaaa7e912",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "background",
+      "ipa": "/ˈbæk.ɡraʊnd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Your background in the publishing industry is a definite asset for this job.",
+          "meaning": "nền tảng kinh nghiệm và học vấn, lai lịch",
+          "toeic_tip": "Nhớ hai cụm hay ra: background in + lĩnh vực và background check.",
+          "example_vi": "Kinh nghiệm trong ngành xuất bản của bạn chắc chắn là lợi thế cho công việc này.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T06:22:25.594582+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/22943946-20c7-4197-8a43-b88aaaa7e912-wm.jpg?v=1789798545111",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/background-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/background-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a background in marketing",
+          "meaning": "nền tảng về marketing",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/22943946-20c7-4197-8a43-b88aaaa7e912-0-wm.jpg?v=1789798943608"
+        },
+        {
+          "phrase": "a background check",
+          "meaning": "việc kiểm tra lý lịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/22943946-20c7-4197-8a43-b88aaaa7e912-1-wm.jpg?v=1789798945446"
+        },
+        {
+          "phrase": "educational background",
+          "meaning": "trình độ học vấn"
+        }
+      ],
+      "synonyms": [
+        "experience (kinh nghiệm)",
+        "history (quá trình, lý lịch)"
+      ]
+    },
+    {
+      "id": "ed99dc2a-85a6-46b7-8b07-3b67cb3bd78e",
+      "part_id": "e4deb609-c9e2-43e3-a4a9-bd0e10fe9f4a",
+      "word": "call in",
+      "ipa": "UK: /ˌkɔːl ˈɪn/ | US: /ˌkɑːl ˈɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The young woman was so excited when she was called in for an interview that she told everyone she knew.",
+          "meaning": "gọi đến, mời đến",
+          "toeic_tip": "Nghĩa khác hay ra ở Part 2: call in sick là gọi điện báo nghỉ ốm.",
+          "example_vi": "Cô gái trẻ mừng đến mức khoe với tất cả người quen khi được gọi đi phỏng vấn.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:13.273013+00:00",
+      "updated_at": "2026-09-19T07:57:36.538109+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ed99dc2a-85a6-46b7-8b07-3b67cb3bd78e-wm.jpg?v=1789798378878",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/call-in-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/call-in-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "call in a candidate",
+          "meaning": "gọi ứng viên đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ed99dc2a-85a6-46b7-8b07-3b67cb3bd78e-0-wm.jpg?v=1789804654005"
+        },
+        {
+          "phrase": "call in an expert",
+          "meaning": "mời chuyên gia đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ed99dc2a-85a6-46b7-8b07-3b67cb3bd78e-1-wm.jpg?v=1789804656389"
+        },
+        {
+          "phrase": "be called in for an interview",
+          "meaning": "được gọi đi phỏng vấn"
+        }
+      ],
+      "synonyms": [
+        "summon (triệu đến)",
+        "send for (cho gọi đến)"
+      ]
+    }
+  ]
+}

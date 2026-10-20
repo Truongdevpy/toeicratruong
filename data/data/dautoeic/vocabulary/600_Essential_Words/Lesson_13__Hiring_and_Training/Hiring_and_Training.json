@@ -1,0 +1,618 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "f348b7a0-72c8-4c87-ac33-fa9be8c13a84",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 13: Hiring and Training",
+    "order_index": 13,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:16.988429+00:00",
+    "updated_at": "2026-09-18T08:51:16.988429+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+    "test_id": "f348b7a0-72c8-4c87-ac33-fa9be8c13a84",
+    "name": "Hiring and Training",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:16.988429+00:00",
+    "updated_at": "2026-09-18T08:51:16.988429+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "bf3d68fe-a3f8-4ad1-bc8d-bb41d249cd6b",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "reject",
+      "ipa": "/rɪˈdʒekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We put the rejects in this box.",
+          "meaning": "từ chối, loại bỏ, bác bỏ; hàng bị loại",
+          "antonyms": [
+            "accept (chấp nhận)",
+            "approve (phê duyệt)"
+          ],
+          "toeic_tip": "Danh từ nhấn âm đầu /ˈriː.dʒekt/, động từ nhấn âm sau /rɪˈdʒekt/.",
+          "example_vi": "Chúng tôi để mấy món bị loại vào cái hộp này.",
+          "word_family": [
+            "rejection (n) sự từ chối, sự loại bỏ"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T07:34:29.555298+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bf3d68fe-a3f8-4ad1-bc8d-bb41d249cd6b-wm.jpg?v=1789798364240",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reject-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reject-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reject an offer",
+          "meaning": "từ chối lời đề nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bf3d68fe-a3f8-4ad1-bc8d-bb41d249cd6b-0-wm.jpg?v=1789803258054"
+        },
+        {
+          "phrase": "reject an application",
+          "meaning": "loại hồ sơ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bf3d68fe-a3f8-4ad1-bc8d-bb41d249cd6b-1-wm.jpg?v=1789803269415"
+        },
+        {
+          "phrase": "reject a proposal",
+          "meaning": "bác bỏ đề xuất"
+        }
+      ],
+      "synonyms": [
+        "turn down (từ chối)",
+        "decline (khước từ)"
+      ]
+    },
+    {
+      "id": "82d224e0-3c28-45a5-95c7-800a3cfb6fb0",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "success",
+      "ipa": "/səkˈses/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The director's success came after years of hiring the right people at the right time.",
+          "meaning": "sự thành công, việc đạt được mục tiêu",
+          "antonyms": [
+            "failure (thất bại)"
+          ],
+          "toeic_tip": "Phân biệt successful (thành công) và successive (liên tiếp) ở Part 5.",
+          "example_vi": "Thành công của giám đốc đến sau nhiều năm biết chọn đúng người vào đúng thời điểm.",
+          "word_family": [
+            "successful (adj) thành công",
+            "succeed (v) thành công",
+            "successfully (adv) một cách thành công"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T07:05:52.968311+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/82d224e0-3c28-45a5-95c7-800a3cfb6fb0-wm.jpg?v=1789798293783",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/success-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/success-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "achieve success",
+          "meaning": "đạt được thành công",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82d224e0-3c28-45a5-95c7-800a3cfb6fb0-0-wm.jpg?v=1789801552819"
+        },
+        {
+          "phrase": "the success of a project",
+          "meaning": "thành công của dự án",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82d224e0-3c28-45a5-95c7-800a3cfb6fb0-1-wm.jpg?v=1789801551663"
+        },
+        {
+          "phrase": "the key to success",
+          "meaning": "chìa khóa thành công"
+        }
+      ],
+      "synonyms": [
+        "achievement (thành tựu)",
+        "accomplishment (thành tích)"
+      ]
+    },
+    {
+      "id": "c7a48862-1cbd-4aa7-8d5d-62884108b765",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "look up to",
+      "ipa": "/ˌlʊk ˈʌp tuː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Staff members looked up to the director because he had earned their respect over the years.",
+          "meaning": "kính trọng, ngưỡng mộ",
+          "antonyms": [
+            "look down on (coi thường)"
+          ],
+          "toeic_tip": "Trái nghĩa là look down on; cả hai đều phải đủ ba từ.",
+          "example_vi": "Nhân viên rất kính trọng giám đốc vì bao năm qua ông đã chiếm được lòng tin của họ.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T07:39:02.412237+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c7a48862-1cbd-4aa7-8d5d-62884108b765-wm.jpg?v=1789798377352",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/look-up-to-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/look-up-to-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "look up to a mentor",
+          "meaning": "kính trọng người hướng dẫn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c7a48862-1cbd-4aa7-8d5d-62884108b765-0-wm.jpg?v=1789803532062"
+        },
+        {
+          "phrase": "someone to look up to",
+          "meaning": "người đáng để noi gương",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c7a48862-1cbd-4aa7-8d5d-62884108b765-1-wm.jpg?v=1789803542265"
+        }
+      ],
+      "synonyms": [
+        "admire (ngưỡng mộ)",
+        "respect (tôn trọng)"
+      ]
+    },
+    {
+      "id": "522ea10e-ab76-4902-b698-f692309cea3b",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "hire",
+      "ipa": "UK: /haɪər/ | US: /haɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new hire has integrated well with his colleagues.",
+          "meaning": "thuê, tuyển dụng; nhân viên mới được tuyển",
+          "antonyms": [
+            "fire (sa thải)",
+            "dismiss (cho thôi việc)"
+          ],
+          "toeic_tip": "Nghĩa danh từ a new hire là người mới tuyển, hay gặp ở Part 7.",
+          "example_vi": "Nhân viên mới hòa nhập rất tốt với đồng nghiệp.",
+          "word_family": [
+            "hiring (n) việc tuyển dụng"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T06:38:41.059412+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/522ea10e-ab76-4902-b698-f692309cea3b-wm.jpg?v=1789798298519",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/hire-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/hire-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "hire new staff",
+          "meaning": "tuyển nhân viên mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/522ea10e-ab76-4902-b698-f692309cea3b-0-wm.jpg?v=1789799920672"
+        },
+        {
+          "phrase": "a new hire",
+          "meaning": "nhân viên mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/522ea10e-ab76-4902-b698-f692309cea3b-1-wm.jpg?v=1789799920915"
+        },
+        {
+          "phrase": "hire someone as a manager",
+          "meaning": "tuyển ai vào vị trí quản lý"
+        }
+      ],
+      "synonyms": [
+        "employ (thuê làm)",
+        "recruit (tuyển dụng)"
+      ]
+    },
+    {
+      "id": "9189fda0-8d42-40f4-8987-37fad29784e9",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "generate",
+      "ipa": "UK: /ˈdʒen.ər.eɪt/ | US: /ˈdʒen.ə.reɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new training program generated a lot of interest among employees.",
+          "meaning": "tạo ra, sinh ra",
+          "toeic_tip": "Ở Part 5 hay đi với interest, revenue, income, electricity.",
+          "example_vi": "Chương trình đào tạo mới khiến nhân viên rất quan tâm.",
+          "word_family": [
+            "generation (n) sự tạo ra, sự sản sinh"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T07:11:14.274935+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9189fda0-8d42-40f4-8987-37fad29784e9-wm.jpg?v=1789798000682",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/generate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/generate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "generate interest",
+          "meaning": "tạo ra sự quan tâm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9189fda0-8d42-40f4-8987-37fad29784e9-0-wm.jpg?v=1789801874142"
+        },
+        {
+          "phrase": "generate revenue",
+          "meaning": "tạo ra doanh thu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9189fda0-8d42-40f4-8987-37fad29784e9-1-wm.jpg?v=1789801872585"
+        },
+        {
+          "phrase": "generate ideas",
+          "meaning": "nảy ra ý tưởng"
+        }
+      ],
+      "synonyms": [
+        "produce (tạo ra, sản sinh)",
+        "create (tạo nên)"
+      ]
+    },
+    {
+      "id": "5d08971c-5ed5-4931-b4ad-1d5d0dcc6284",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "set up",
+      "ipa": "/ˌset ˈʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Check with your supervisor to make sure that your office is all set up before you begin work.",
+          "meaning": "thiết lập, sắp xếp, lắp đặt; đã được sắp đặt xong",
+          "antonyms": [
+            "dismantle (tháo dỡ)",
+            "cancel (hủy bỏ)"
+          ],
+          "toeic_tip": "Động từ viết rời set up, danh từ viết liền setup.",
+          "example_vi": "Hãy hỏi cấp trên để chắc chắn phòng làm việc đã sẵn sàng trước khi bạn bắt đầu.",
+          "word_family": [
+            "setup (n) cách bố trí, hệ thống đã được thiết lập"
+          ],
+          "part_of_speech": "adj/v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T06:42:46.196073+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5d08971c-5ed5-4931-b4ad-1d5d0dcc6284-wm.jpg?v=1789797710158",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/set-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/set-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "set up a meeting",
+          "meaning": "sắp xếp cuộc họp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5d08971c-5ed5-4931-b4ad-1d5d0dcc6284-0-wm.jpg?v=1789800165008"
+        },
+        {
+          "phrase": "set up an account",
+          "meaning": "mở tài khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5d08971c-5ed5-4931-b4ad-1d5d0dcc6284-1-wm.jpg?v=1789800166054"
+        },
+        {
+          "phrase": "set up equipment",
+          "meaning": "lắp đặt thiết bị"
+        }
+      ],
+      "synonyms": [
+        "arrange (sắp xếp)",
+        "establish (thành lập)"
+      ]
+    },
+    {
+      "id": "9fc4c78f-aa87-4825-bf8f-5e858a55996e",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "conduct",
+      "ipa": "UK: /ˈkɒn.dʌkt/ | US: /ˈkɑːn.dʌkt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The trainees' conduct during training was unacceptable.",
+          "meaning": "hành vi, cách cư xử; tiến hành, thực hiện",
+          "toeic_tip": "Danh từ nhấn âm đầu /ˈkɒn.dʌkt/, động từ nhấn âm sau /kənˈdʌkt/.",
+          "example_vi": "Cách cư xử của các học viên trong đợt tập huấn là không chấp nhận được.",
+          "word_family": [
+            "misconduct (n) hành vi sai trái"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T07:18:25.099674+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9fc4c78f-aa87-4825-bf8f-5e858a55996e-wm.jpg?v=1789797999827",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/conduct-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/conduct-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "conduct a survey",
+          "meaning": "tiến hành khảo sát",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9fc4c78f-aa87-4825-bf8f-5e858a55996e-0-wm.jpg?v=1789802304672"
+        },
+        {
+          "phrase": "conduct an interview",
+          "meaning": "tiến hành phỏng vấn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9fc4c78f-aa87-4825-bf8f-5e858a55996e-1-wm.jpg?v=1789802304967"
+        },
+        {
+          "phrase": "a code of conduct",
+          "meaning": "quy tắc ứng xử"
+        }
+      ],
+      "synonyms": [
+        "behavior (hành vi)",
+        "carry out (thực hiện)"
+      ]
+    },
+    {
+      "id": "6d3e8c78-4c15-4a43-8672-6e4a0817c875",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "training",
+      "ipa": "/ˈtreɪ.nɪŋ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new hire received such good training that, within a week, she was as productive as the other workers.",
+          "meaning": "sự đào tạo, việc huấn luyện cho một công việc cụ thể",
+          "toeic_tip": "Danh từ không đếm được, không có dạng trainings; dùng training sessions.",
+          "example_vi": "Nhân viên mới được đào tạo tốt đến mức chỉ sau một tuần đã làm việc hiệu quả như người cũ.",
+          "word_family": [
+            "train (v) đào tạo",
+            "trainee (n) học viên",
+            "trainer (n) người hướng dẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T06:51:55.558851+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6d3e8c78-4c15-4a43-8672-6e4a0817c875-wm.jpg?v=1789798147155",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/training-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/training-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "on-the-job training",
+          "meaning": "đào tạo tại chỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6d3e8c78-4c15-4a43-8672-6e4a0817c875-0-wm.jpg?v=1789800714878"
+        },
+        {
+          "phrase": "a training session",
+          "meaning": "buổi tập huấn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6d3e8c78-4c15-4a43-8672-6e4a0817c875-1-wm.jpg?v=1789800715413"
+        },
+        {
+          "phrase": "receive training",
+          "meaning": "được đào tạo"
+        }
+      ],
+      "synonyms": [
+        "instruction (sự hướng dẫn)",
+        "coaching (việc kèm cặp)"
+      ]
+    },
+    {
+      "id": "6d91a601-0d16-4e52-a06d-b0d4c51a5e1b",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "update",
+      "ipa": "/ʌpˈdeɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The personnel officer updated the employees on the latest personnel changes.",
+          "meaning": "cập nhật, làm cho mới; thông tin mới nhất",
+          "toeic_tip": "Cấu trúc update somebody on something; danh từ nhấn âm đầu /ˈʌp.deɪt/.",
+          "example_vi": "Cán bộ nhân sự thông báo cho nhân viên những thay đổi nhân sự mới nhất.",
+          "word_family": [
+            "updated (adj) đã được cập nhật"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T06:51:55.577388+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6d91a601-0d16-4e52-a06d-b0d4c51a5e1b-wm.jpg?v=1789797979730",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/update-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/update-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "update a record",
+          "meaning": "cập nhật hồ sơ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6d91a601-0d16-4e52-a06d-b0d4c51a5e1b-0-wm.jpg?v=1789800711865"
+        },
+        {
+          "phrase": "provide an update",
+          "meaning": "cung cấp thông tin mới nhất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6d91a601-0d16-4e52-a06d-b0d4c51a5e1b-1-wm.jpg?v=1789800715438"
+        },
+        {
+          "phrase": "an update on the project",
+          "meaning": "bản cập nhật về dự án"
+        }
+      ],
+      "synonyms": [
+        "revise (sửa đổi cho mới)",
+        "refresh (làm mới)"
+      ]
+    },
+    {
+      "id": "08f34b0d-caec-40c8-ab9a-ea35d4ee3319",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "on track",
+      "ipa": "UK: /ɒn ˈtræk/ | US: /ɑːn ˈtræk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "If we stay on track, the meeting should be finished at 9:30.",
+          "meaning": "đúng tiến độ, đi đúng hướng",
+          "antonyms": [
+            "off track (chệch hướng)",
+            "behind schedule (chậm tiến độ)"
+          ],
+          "toeic_tip": "Không có mạo từ: stay on track, không nói on the track.",
+          "example_vi": "Nếu giữ đúng tiến độ thì cuộc họp sẽ xong lúc 9 giờ 30.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T06:20:20.860771+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/08f34b0d-caec-40c8-ab9a-ea35d4ee3319-wm.jpg?v=1789798386847",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/on-track-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/on-track-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "stay on track",
+          "meaning": "giữ đúng tiến độ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/08f34b0d-caec-40c8-ab9a-ea35d4ee3319-0-wm.jpg?v=1789798819988"
+        },
+        {
+          "phrase": "be on track to finish",
+          "meaning": "đúng hướng để hoàn thành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/08f34b0d-caec-40c8-ab9a-ea35d4ee3319-1-wm.jpg?v=1789798820713"
+        },
+        {
+          "phrase": "get back on track",
+          "meaning": "trở lại đúng hướng"
+        }
+      ],
+      "synonyms": [
+        "on schedule (đúng lịch)",
+        "on course (đúng hướng)"
+      ]
+    },
+    {
+      "id": "1f90e779-8c97-4a5a-a5cb-686411e8bdb6",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "mentor",
+      "ipa": "/ˈmen.tɔːr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The mentor helped her make some decisions about combining career and family.",
+          "meaning": "người cố vấn, người hướng dẫn",
+          "toeic_tip": "Vừa là danh từ chỉ người, vừa dùng như động từ: mentor new employees.",
+          "example_vi": "Người cố vấn đã giúp cô đưa ra vài quyết định về chuyện cân bằng sự nghiệp và gia đình.",
+          "word_family": [
+            "mentoring (n) việc cố vấn, việc kèm cặp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T06:20:38.09026+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1f90e779-8c97-4a5a-a5cb-686411e8bdb6-wm.jpg?v=1789798415524",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mentor-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mentor-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "act as a mentor",
+          "meaning": "làm người cố vấn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1f90e779-8c97-4a5a-a5cb-686411e8bdb6-0-wm.jpg?v=1789798837209"
+        },
+        {
+          "phrase": "a mentor program",
+          "meaning": "chương trình cố vấn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1f90e779-8c97-4a5a-a5cb-686411e8bdb6-1-wm.jpg?v=1789798837952"
+        },
+        {
+          "phrase": "assign a mentor",
+          "meaning": "phân công người hướng dẫn"
+        }
+      ],
+      "synonyms": [
+        "adviser (người cố vấn)",
+        "coach (người huấn luyện)"
+      ]
+    },
+    {
+      "id": "ac74ec79-287f-42c5-a472-1fdf0e61d4b9",
+      "part_id": "6f93fe25-71e0-446d-8383-f5354e5c6a1a",
+      "word": "keep up with",
+      "ipa": "/ˌkiːp ˈʌp wɪð/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The workers were told that they must keep up with the changes or they would find themselves without jobs.",
+          "meaning": "theo kịp, bắt kịp",
+          "antonyms": [
+            "fall behind (tụt lại phía sau)",
+            "lag behind (chậm hơn)"
+          ],
+          "toeic_tip": "Phân biệt keep up with (theo kịp) và catch up with (đuổi kịp).",
+          "example_vi": "Công nhân được cảnh báo rằng nếu không theo kịp thay đổi thì sẽ mất việc.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:16.988429+00:00",
+      "updated_at": "2026-09-19T07:24:54.217364+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ac74ec79-287f-42c5-a472-1fdf0e61d4b9-wm.jpg?v=1789798327795",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/keep-up-with-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/keep-up-with-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "keep up with changes",
+          "meaning": "theo kịp thay đổi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ac74ec79-287f-42c5-a472-1fdf0e61d4b9-0-wm.jpg?v=1789802681646"
+        },
+        {
+          "phrase": "keep up with demand",
+          "meaning": "đáp ứng kịp nhu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ac74ec79-287f-42c5-a472-1fdf0e61d4b9-1-wm.jpg?v=1789802694082"
+        },
+        {
+          "phrase": "keep up with the competition",
+          "meaning": "bắt kịp đối thủ"
+        }
+      ],
+      "synonyms": [
+        "stay current with (cập nhật kịp)",
+        "match (bắt kịp, ngang bằng)"
+      ]
+    }
+  ]
+}

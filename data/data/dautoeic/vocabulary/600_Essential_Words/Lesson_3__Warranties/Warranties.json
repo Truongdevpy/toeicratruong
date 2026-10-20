@@ -1,0 +1,652 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "e3e0a0b5-d1f2-4c05-8e24-73e26206ff0d",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 3: Warranties",
+    "order_index": 3,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:31.030212+00:00",
+    "updated_at": "2026-09-18T08:50:31.030212+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+    "test_id": "e3e0a0b5-d1f2-4c05-8e24-73e26206ff0d",
+    "name": "Warranties",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:31.030212+00:00",
+    "updated_at": "2026-09-18T08:50:31.030212+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "53163885-9422-46f3-901b-d6495010e2c9",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "frequently",
+      "ipa": "/ˈfriː.kwənt.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Appliances frequently come with a one-year warranty.",
+          "meaning": "thường xuyên, hay xảy ra",
+          "antonyms": [
+            "rarely (hiếm khi)",
+            "seldom (ít khi)"
+          ],
+          "toeic_tip": "Trạng từ tần suất đứng trước động từ thường, sau động từ to be.",
+          "example_vi": "Đồ gia dụng thường được bảo hành một năm.",
+          "word_family": [
+            "frequent (adj) thường xuyên",
+            "frequency (n) tần suất"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:38:57.321829+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/53163885-9422-46f3-901b-d6495010e2c9-wm.jpg?v=1789797978969",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/frequently-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/frequently-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "frequently asked questions",
+          "meaning": "câu hỏi thường gặp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/53163885-9422-46f3-901b-d6495010e2c9-0-wm.jpg?v=1789799937181"
+        },
+        {
+          "phrase": "frequently used",
+          "meaning": "hay được dùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/53163885-9422-46f3-901b-d6495010e2c9-1-wm.jpg?v=1789799935758"
+        },
+        {
+          "phrase": "most frequently",
+          "meaning": "thường xuyên nhất"
+        }
+      ],
+      "synonyms": [
+        "often (thường)",
+        "regularly (đều đặn)",
+        "commonly (phổ biến)"
+      ]
+    },
+    {
+      "id": "8ecc2d50-8730-4c61-b63d-bf756d6724f8",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "promise",
+      "ipa": "UK: /ˈprɒm.ɪs/ | US: /ˈprɑː.mɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A warranty is a promise the manufacturer makes to the consumer.",
+          "meaning": "lời hứa, cam kết; hứa, cam kết làm",
+          "toeic_tip": "promise to V hoặc promise somebody that; promising nghĩa có triển vọng.",
+          "example_vi": "Bảo hành chính là lời cam kết của nhà sản xuất với người tiêu dùng.",
+          "word_family": [
+            "promising (adj) đầy hứa hẹn, có triển vọng"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T07:11:46.797844+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8ecc2d50-8730-4c61-b63d-bf756d6724f8-wm.jpg?v=1789797723393",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/promise-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/promise-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "keep a promise",
+          "meaning": "giữ lời hứa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8ecc2d50-8730-4c61-b63d-bf756d6724f8-0-wm.jpg?v=1789801906647"
+        },
+        {
+          "phrase": "break a promise",
+          "meaning": "thất hứa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8ecc2d50-8730-4c61-b63d-bf756d6724f8-1-wm.jpg?v=1789801905407"
+        },
+        {
+          "phrase": "promise to do something",
+          "meaning": "hứa làm gì"
+        }
+      ],
+      "synonyms": [
+        "pledge (lời cam kết)",
+        "commitment (sự cam kết)",
+        "guarantee (sự bảo đảm)"
+      ]
+    },
+    {
+      "id": "a8359935-bca7-41fb-8026-98aaace28f50",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "require",
+      "ipa": "UK: /rɪˈkwaɪər/ | US: /rɪˈkwaɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A car warranty may require the owner to have it serviced by a certified mechanic.",
+          "meaning": "yêu cầu, đòi hỏi, cần có",
+          "toeic_tip": "require somebody to V; require that + S + V nguyên mẫu dạng giả định.",
+          "example_vi": "Bảo hành ô tô có thể buộc chủ xe phải bảo dưỡng tại thợ có chứng chỉ.",
+          "word_family": [
+            "requirement (n) yêu cầu, điều kiện",
+            "required (adj) bắt buộc"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T07:22:32.110411+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a8359935-bca7-41fb-8026-98aaace28f50-wm.jpg?v=1789797958495",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/require-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/require-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be required to do",
+          "meaning": "bị yêu cầu phải làm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a8359935-bca7-41fb-8026-98aaace28f50-0-wm.jpg?v=1789802551971"
+        },
+        {
+          "phrase": "require approval",
+          "meaning": "cần được phê duyệt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a8359935-bca7-41fb-8026-98aaace28f50-1-wm.jpg?v=1789802550955"
+        },
+        {
+          "phrase": "as required by law",
+          "meaning": "theo luật định"
+        }
+      ],
+      "synonyms": [
+        "demand (đòi hỏi)",
+        "necessitate (đòi hỏi phải có)",
+        "call for (cần đến)"
+      ]
+    },
+    {
+      "id": "d94cb780-b0d9-4156-9ca4-4be5a9b86bd3",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "expiration",
+      "ipa": "/ˌek.spəˈreɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Have you checked the expiration date on this yogurt?",
+          "meaning": "sự hết hạn, thời điểm kết thúc",
+          "antonyms": [
+            "renewal (sự gia hạn)",
+            "extension (sự kéo dài)"
+          ],
+          "toeic_tip": "Anh-Anh dùng expiry date, Anh-Mỹ dùng expiration date.",
+          "example_vi": "Bạn đã xem hạn sử dụng của hộp sữa chua này chưa?",
+          "word_family": [
+            "expire (v) hết hạn",
+            "expired (adj) đã hết hạn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T07:48:40.537944+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d94cb780-b0d9-4156-9ca4-4be5a9b86bd3-wm.jpg?v=1789797970173",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expiration-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/expiration-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "expiration date",
+          "meaning": "hạn sử dụng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d94cb780-b0d9-4156-9ca4-4be5a9b86bd3-0-wm.jpg?v=1789804107402"
+        },
+        {
+          "phrase": "upon expiration",
+          "meaning": "khi hết hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d94cb780-b0d9-4156-9ca4-4be5a9b86bd3-1-wm.jpg?v=1789804120398"
+        },
+        {
+          "phrase": "expiration of the contract",
+          "meaning": "khi hợp đồng hết hạn"
+        }
+      ],
+      "synonyms": [
+        "termination (sự chấm dứt)",
+        "end (sự kết thúc)"
+      ]
+    },
+    {
+      "id": "66eaef1f-32d7-4c93-a353-10c94fb296ac",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "consider",
+      "ipa": "UK: /kənˈsɪd.ər/ | US: /kənˈsɪd.ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The customer considered buying the DVD player until he learned that the warranty coverage was very limited.",
+          "meaning": "cân nhắc, xem xét kỹ, coi là",
+          "antonyms": [
+            "ignore (bỏ qua)",
+            "dismiss (gạt bỏ)"
+          ],
+          "toeic_tip": "consider + V-ing, không dùng consider to do.",
+          "example_vi": "Khách đã định mua đầu đĩa DVD cho đến khi biết chế độ bảo hành rất hạn chế.",
+          "word_family": [
+            "consideration (n) sự cân nhắc",
+            "considerable (adj) đáng kể",
+            "considerate (adj) chu đáo"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:49:57.930639+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/66eaef1f-32d7-4c93-a353-10c94fb296ac-wm.jpg?v=1789797973311",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consider-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consider-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "consider an offer",
+          "meaning": "cân nhắc đề nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/66eaef1f-32d7-4c93-a353-10c94fb296ac-0-wm.jpg?v=1789800597379"
+        },
+        {
+          "phrase": "consider doing something",
+          "meaning": "tính đến việc làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/66eaef1f-32d7-4c93-a353-10c94fb296ac-1-wm.jpg?v=1789800597793"
+        },
+        {
+          "phrase": "take into consideration",
+          "meaning": "xét đến"
+        }
+      ],
+      "synonyms": [
+        "contemplate (suy xét)",
+        "weigh (cân nhắc)",
+        "think over (nghĩ kỹ)"
+      ]
+    },
+    {
+      "id": "6d0e6109-27e9-427d-89b3-e622578f92b3",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "imply",
+      "ipa": "/ɪmˈplaɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The guarantee on the iPod implied that all damages were covered under warranty for one year.",
+          "meaning": "ngụ ý, hàm ý, ám chỉ",
+          "antonyms": [
+            "state (nói thẳng)",
+            "specify (nêu rõ)"
+          ],
+          "toeic_tip": "Người nói imply (ngụ ý), người nghe infer (suy ra) - rất dễ nhầm.",
+          "example_vi": "Phiếu bảo hành của chiếc iPod ngầm cho hiểu mọi hư hỏng đều được bảo hành trong một năm.",
+          "word_family": [
+            "implication (n) hàm ý, hệ quả",
+            "implicit (adj) ngầm hiểu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:51:29.210038+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6d0e6109-27e9-427d-89b3-e622578f92b3-wm.jpg?v=1789797667058",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/imply-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/imply-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "imply that",
+          "meaning": "ngụ ý rằng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6d0e6109-27e9-427d-89b3-e622578f92b3-0-wm.jpg?v=1789800688749"
+        },
+        {
+          "phrase": "strongly imply",
+          "meaning": "ám chỉ khá rõ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6d0e6109-27e9-427d-89b3-e622578f92b3-1-wm.jpg?v=1789800689077"
+        },
+        {
+          "phrase": "implied warranty",
+          "meaning": "bảo hành mặc nhiên"
+        }
+      ],
+      "synonyms": [
+        "suggest (gợi ý)",
+        "hint (ám chỉ)",
+        "indicate (cho thấy)"
+      ]
+    },
+    {
+      "id": "28b9bac6-8e92-408e-b76e-26af8746054d",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "characteristic",
+      "ipa": "UK: /ˌkær.ək.təˈrɪs.tɪk/ | US: /ˌker.ək.təˈrɪs.tɪk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The cooking pot has features characteristic of the brand, such as heat-resistant handles.",
+          "meaning": "đặc trưng, tiêu biểu; đặc điểm, nét riêng",
+          "toeic_tip": "Dạng tính từ đi với of: be characteristic of something.",
+          "example_vi": "Chiếc nồi mang những nét riêng của thương hiệu, chẳng hạn tay cầm chịu nhiệt.",
+          "word_family": [
+            "character (n) tính cách",
+            "characterize (v) mô tả đặc điểm",
+            "characteristically (adv) một cách đặc trưng"
+          ],
+          "part_of_speech": "adj/n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:22:42.912091+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/28b9bac6-8e92-408e-b76e-26af8746054d-wm.jpg?v=1789798552444",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/characteristic-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/characteristic-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a key characteristic",
+          "meaning": "đặc điểm chính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/28b9bac6-8e92-408e-b76e-26af8746054d-0-wm.jpg?v=1789798960650"
+        },
+        {
+          "phrase": "characteristic of",
+          "meaning": "đặc trưng của",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/28b9bac6-8e92-408e-b76e-26af8746054d-1-wm.jpg?v=1789798962759"
+        },
+        {
+          "phrase": "physical characteristics",
+          "meaning": "đặc điểm bên ngoài"
+        }
+      ],
+      "synonyms": [
+        "trait (đặc điểm)",
+        "feature (đặc tính)",
+        "typical (tiêu biểu)"
+      ]
+    },
+    {
+      "id": "76f1ee90-d47c-4be6-bb58-abc4cf211313",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "reputation",
+      "ipa": "UK: /ˌrep.jʊˈteɪ.ʃən/ | US: /ˌrep.jəˈteɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Even though the salesperson showed me a product I had never heard of, I bought it because of the good reputation of the manufacturer.",
+          "meaning": "danh tiếng, uy tín, tiếng tăm",
+          "toeic_tip": "Cụm have a reputation for + V-ing hay gặp ở bài giới thiệu công ty.",
+          "example_vi": "Dù nhân viên giới thiệu một sản phẩm tôi chưa từng nghe tên, tôi vẫn mua vì nhà sản xuất có tiếng.",
+          "word_family": [
+            "reputable (adj) có uy tín, đáng tin cậy"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:58:28.166539+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/76f1ee90-d47c-4be6-bb58-abc4cf211313-wm.jpg?v=1789797976459",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reputation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reputation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a good reputation",
+          "meaning": "tiếng tốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/76f1ee90-d47c-4be6-bb58-abc4cf211313-0-wm.jpg?v=1789801106257"
+        },
+        {
+          "phrase": "build a reputation",
+          "meaning": "gây dựng uy tín",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/76f1ee90-d47c-4be6-bb58-abc4cf211313-1-wm.jpg?v=1789801108027"
+        },
+        {
+          "phrase": "damage a reputation",
+          "meaning": "làm tổn hại danh tiếng"
+        }
+      ],
+      "synonyms": [
+        "standing (vị thế)",
+        "prestige (uy tín)",
+        "name (tiếng tăm)"
+      ]
+    },
+    {
+      "id": "3549c700-59af-49e2-a585-68a051c38e97",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "consequence",
+      "ipa": "UK: /ˈkɒn.sɪ.kwəns/ | US: /ˈkɑːn.sə.kwens/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The consequence of not following the service instructions for your car is that the warranty is invalidated.",
+          "meaning": "hậu quả, kết quả kéo theo",
+          "antonyms": [
+            "cause (nguyên nhân)"
+          ],
+          "toeic_tip": "Từ nối consequently chỉ kết quả, hay là đáp án chỗ trống Part 6.",
+          "example_vi": "Không bảo dưỡng xe đúng hướng dẫn thì bảo hành sẽ mất hiệu lực.",
+          "word_family": [
+            "consequent (adj) kéo theo sau",
+            "consequently (adv) do đó, vì vậy"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:23:56.859918+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3549c700-59af-49e2-a585-68a051c38e97-wm.jpg?v=1789798592422",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consequence-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consequence-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "as a consequence of",
+          "meaning": "do hậu quả của",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3549c700-59af-49e2-a585-68a051c38e97-0-wm.jpg?v=1789799036720"
+        },
+        {
+          "phrase": "serious consequences",
+          "meaning": "hậu quả nghiêm trọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3549c700-59af-49e2-a585-68a051c38e97-1-wm.jpg?v=1789797556631"
+        },
+        {
+          "phrase": "face the consequences",
+          "meaning": "gánh chịu hậu quả"
+        }
+      ],
+      "synonyms": [
+        "result (kết quả)",
+        "outcome (kết cục)",
+        "repercussion (hệ lụy)"
+      ]
+    },
+    {
+      "id": "60413a39-577f-4e80-a382-0437d178d404",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "variety",
+      "ipa": "UK: /vəˈraɪ.ə.ti/ | US: /vəˈraɪ.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "There's a variety of standard terms that you'll find in warranties.",
+          "meaning": "sự đa dạng, nhiều loại khác nhau",
+          "antonyms": [
+            "uniformity (sự đồng nhất)"
+          ],
+          "toeic_tip": "Cấu trúc a variety of + danh từ số nhiều, động từ thường chia số nhiều.",
+          "example_vi": "Trong các phiếu bảo hành có đủ loại điều khoản tiêu chuẩn.",
+          "word_family": [
+            "various (adj) nhiều, khác nhau",
+            "vary (v) thay đổi, khác biệt"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:46:30.434481+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/60413a39-577f-4e80-a382-0437d178d404-wm.jpg?v=1789798401989",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/variety-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/variety-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a variety of",
+          "meaning": "nhiều loại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/60413a39-577f-4e80-a382-0437d178d404-0-wm.jpg?v=1789800390279"
+        },
+        {
+          "phrase": "a wide variety",
+          "meaning": "rất đa dạng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/60413a39-577f-4e80-a382-0437d178d404-1-wm.jpg?v=1789800350172"
+        },
+        {
+          "phrase": "for a variety of reasons",
+          "meaning": "vì nhiều lý do"
+        }
+      ],
+      "synonyms": [
+        "assortment (chủng loại phong phú)",
+        "range (dải nhiều loại)",
+        "diversity (sự đa dạng)"
+      ]
+    },
+    {
+      "id": "475ee350-2c25-4a1d-896a-e49338eaf9d3",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "cover",
+      "ipa": "UK: /ˈkʌv.ər/ | US: /ˈkʌv.ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Will my medical insurance cover this surgery?",
+          "meaning": "bảo hiểm cho, chi trả, che chắn",
+          "antonyms": [
+            "exclude (loại trừ khỏi phạm vi)"
+          ],
+          "toeic_tip": "Danh từ coverage không đếm được, chỉ phạm vi bảo hiểm.",
+          "example_vi": "Bảo hiểm y tế của tôi có chi trả ca phẫu thuật này không?",
+          "word_family": [
+            "coverage (n) phạm vi bảo hiểm, mức chi trả"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T06:33:09.300648+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/475ee350-2c25-4a1d-896a-e49338eaf9d3-wm.jpg?v=1789797970129",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/cover-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/cover-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "cover the cost",
+          "meaning": "chi trả chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/475ee350-2c25-4a1d-896a-e49338eaf9d3-0-wm.jpg?v=1789799585409"
+        },
+        {
+          "phrase": "be covered by insurance",
+          "meaning": "được bảo hiểm chi trả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/475ee350-2c25-4a1d-896a-e49338eaf9d3-1-wm.jpg?v=1789799589160"
+        },
+        {
+          "phrase": "cover damages",
+          "meaning": "đền bù thiệt hại"
+        }
+      ],
+      "synonyms": [
+        "insure (bảo hiểm)",
+        "pay for (chi trả)",
+        "protect (bảo vệ)"
+      ]
+    },
+    {
+      "id": "fde906d9-a688-4698-8cea-9506d5f4cef6",
+      "part_id": "5d8cf9b9-1835-4bfe-89a8-0472848cd943",
+      "word": "protect",
+      "ipa": "/prəˈtekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Consumer laws are designed to protect the public against unscrupulous vendors.",
+          "meaning": "bảo vệ, che chở",
+          "antonyms": [
+            "expose (để phơi ra)",
+            "endanger (gây nguy hiểm cho)"
+          ],
+          "toeic_tip": "protect A from hoặc against B; danh từ protection không đếm được.",
+          "example_vi": "Luật bảo vệ người tiêu dùng sinh ra để che chắn cho dân khỏi những kẻ bán hàng gian dối.",
+          "word_family": [
+            "protection (n) sự bảo vệ",
+            "protective (adj) có tác dụng bảo vệ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:31.030212+00:00",
+      "updated_at": "2026-09-19T08:06:14.289001+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fde906d9-a688-4698-8cea-9506d5f4cef6-wm.jpg?v=1789797976553",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/protect-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/protect-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "protect against damage",
+          "meaning": "bảo vệ khỏi hư hỏng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fde906d9-a688-4698-8cea-9506d5f4cef6-0-wm.jpg?v=1789805170129"
+        },
+        {
+          "phrase": "protect consumers",
+          "meaning": "bảo vệ người tiêu dùng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fde906d9-a688-4698-8cea-9506d5f4cef6-1-wm.jpg?v=1789805174142"
+        },
+        {
+          "phrase": "protect yourself from",
+          "meaning": "tự bảo vệ khỏi"
+        }
+      ],
+      "synonyms": [
+        "guard (canh giữ)",
+        "shield (che chắn)",
+        "safeguard (bảo vệ)"
+      ]
+    }
+  ]
+}

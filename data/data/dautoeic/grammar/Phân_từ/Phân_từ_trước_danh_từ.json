@@ -1,0 +1,384 @@
+{
+  "subtopic": {
+    "id": "5626bf81-4af4-4977-94e1-500e30b3d8f8",
+    "topic_id": "866b9f7f-d98a-4aa5-be9a-9c9baea223fb",
+    "title_en": "Phân từ trước danh từ",
+    "title_vi": "Phân từ trước danh từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 67,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-phan-tu-truoc-danh-tu"
+  },
+  "lessons": [
+    {
+      "id": "3f93d88d-3f1f-4469-8af0-ef8f5d491ed4",
+      "subtopic_id": "5626bf81-4af4-4977-94e1-500e30b3d8f8",
+      "title_en": "Phân từ trước danh từ",
+      "title_vi": "Phân từ trước danh từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 1 · Câu 102",
+          "options": {
+            "A": "connectivity",
+            "B": "connects",
+            "C": "connect",
+            "D": "connecting"
+          },
+          "question": "Passengers who will be taking a ------- domestic flight should go to Terminal A.",
+          "translation": "Hành khách sẽ đi chuyến bay nội địa nối chuyến nên đến Nhà ga A."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “connect” nhưng khác loại từ: danh từ “connectivity”, động từ “connects”, “connect” và V-ing “connecting”. Chỗ trống đứng giữa mạo từ “a” và cụm “domestic flight”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Passengers",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who will be taking",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho Passengers"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "domestic",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "flight",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "should go",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to Terminal A.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong cụm danh từ “a ------- domestic flight”, tân ngữ của “will be taking”; động từ chính của câu là “should go”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào đứng trước danh từ để bổ nghĩa cho nó.",
+                  "V-ing và V-ed dùng như tính từ trước danh từ.",
+                  "Khi nào chọn V-ing, khi nào chọn V-ed."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Phân từ gồm **V-ing** (phân từ hiện tại) và **V-ed/V3** (phân từ quá khứ). Cả hai dùng được như tính từ, đứng trước danh từ để bổ nghĩa cho danh từ đó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "danh từ tự làm hành động",
+                    "formula": "V-ing + N"
+                  },
+                  {
+                    "label": "danh từ chịu hành động, hoặc ở trạng thái đó",
+                    "formula": "V-ed + N"
+                  },
+                  {
+                    "label": "có trạng từ bổ nghĩa cho phân từ",
+                    "formula": "trạng từ + V-ing / V-ed + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "highly",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "trained",
+                    "label": "V-ed làm tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "technician",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Trạng từ “highly” bổ nghĩa cho phân từ “trained”; “trained” bổ nghĩa cho danh từ “technician”."
+              },
+              {
+                "rows": [
+                  [
+                    "V-ing + N: danh từ tự làm hành động",
+                    "*Rising costs forced us to change suppliers.* — Chi phí tăng buộc chúng tôi đổi nhà cung cấp."
+                  ],
+                  [
+                    "V-ed + N: danh từ được, bị làm",
+                    "*Please send the signed contract by Friday.* — Vui lòng gửi bản hợp đồng đã ký trước thứ Sáu."
+                  ],
+                  [
+                    "trạng từ + V-ed + N: người ở trạng thái đó",
+                    "*We hired a highly skilled engineer last month.* — Tháng trước chúng tôi đã tuyển một kỹ sư tay nghề cao."
+                  ],
+                  [
+                    "more + V-ed + N (so sánh hơn)",
+                    "*Our client asked for a more detailed report.* — Khách hàng yêu cầu một bản báo cáo chi tiết hơn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Cách chọn: hỏi danh từ **tự làm** hành động (V-ing: *a connecting flight*, chuyến bay nối sang chuyến khác) hay **chịu** hành động, ở trạng thái đó (V-ed: *a detailed explanation*, lời giải thích được trình bày chi tiết).",
+                  "Các V-ed chỉ người trong bài tập: *experienced* (có kinh nghiệm), *motivated* (có động lực)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm tính từ, đứng trước danh từ; trạng từ đứng trước được.",
+                    "form": "V-ing, V-ed đúng nghĩa với danh từ",
+                    "example": "*a highly motivated individual*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không bổ nghĩa được cho danh từ đứng sau.",
+                    "form": "động từ nguyên mẫu, V-s (motivate, motivates, connects)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trạng từ như highly, more không bổ nghĩa cho danh từ; các cụm như *connectivity domestic flight* cũng không có nghĩa.",
+                    "form": "danh từ (motivation, experience, detail, connectivity)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing mang nghĩa chủ động, không hợp nghĩa với danh từ trong câu.",
+                    "form": "V-ing khi danh từ không tự làm (experiencing, detailing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có từ này; dù là trạng từ cũng không bổ nghĩa cho danh từ.",
+                    "form": "từ không có trong tiếng Anh (detailingly)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "mạo từ + ___ + (tính từ) + danh từ",
+                    "example": "*a ___ domestic flight*; *the ___ surveys*"
+                  },
+                  {
+                    "signal": "trạng từ + ___ + danh từ",
+                    "example": "*a highly ___ individual*; *the newly ___ director*; *The recently ___ mayor*"
+                  },
+                  {
+                    "signal": "more / most + ___ + danh từ",
+                    "example": "*a more ___ explanation*; *most ___ customers*"
+                  },
+                  {
+                    "signal": "sở hữu + ___ + danh từ",
+                    "example": "*the industry’s ___ manufacturers*; *our ___ line of compact refrigerators*"
+                  },
+                  {
+                    "signal": "động từ / giới từ + ___ + danh từ",
+                    "example": "*using ___ software*; *for ___ chefs*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng gốc một động từ nhưng khác loại từ (danh từ, động từ, V-ing, V-ed) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Chỗ trống đứng ngay trước danh từ (sau mạo từ, sở hữu, trạng từ như highly, more) thì cần một từ bổ nghĩa cho danh từ đó.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn phân từ: danh từ tự làm hành động thì chọn V-ing; chịu hành động hoặc ở trạng thái đó thì chọn V-ed. Loại động từ nguyên mẫu, V-s và danh từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Passengers",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who will be taking",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho Passengers"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "connecting",
+                    "label": "V-ing làm tính từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "domestic",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "flight",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "should go",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to Terminal A.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “connecting” là V-ing làm tính từ, bổ nghĩa cho “domestic flight”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “connect” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng giữa mạo từ “a” và cụm “domestic flight”; dấu hiệu “mạo từ + ___ + (tính từ) + danh từ”: “a ------- domestic flight”.",
+                  "Bước 3: Chuyến bay tự nối sang chuyến khác nên dùng V-ing + N, vì vậy chọn “connecting” (nối chuyến).",
+                  "“connectivity” (A) là danh từ (khả năng kết nối), “connectivity domestic flight” không phải cụm có nghĩa, nên loại.",
+                  "“connects” (B) là động từ chia thì (V-s), không bổ nghĩa cho danh từ “flight”, nên loại.",
+                  "“connect” (C) là động từ nguyên mẫu, không bổ nghĩa cho danh từ “flight”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Phân từ đứng trước danh từ khi đứng một mình hoặc chỉ có trạng từ đi kèm. Cụm phân từ có tân ngữ, giới từ đi kèm thì đứng sau danh từ (học ở bài “Rút gọn mệnh đề quan hệ”): *the documents signed by the manager*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống trước danh từ, sau mạo từ hay trạng từ: chọn phân từ làm tính từ.",
+                  "Danh từ tự làm: V-ing; danh từ chịu tác động hoặc ở trạng thái đó: V-ed."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

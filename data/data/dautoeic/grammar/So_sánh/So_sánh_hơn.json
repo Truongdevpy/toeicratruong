@@ -1,0 +1,428 @@
+{
+  "subtopic": {
+    "id": "fb669a06-dc13-4b21-910c-d6b436214ae9",
+    "topic_id": "3f4f9136-0712-4df6-9b73-502345922b4c",
+    "title_en": "So sánh hơn",
+    "title_vi": "So sánh hơn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 72,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-so-sanh-hon"
+  },
+  "lessons": [
+    {
+      "id": "41d602ab-3a8b-4437-9b53-3275ddba3f2c",
+      "subtopic_id": "fb669a06-dc13-4b21-910c-d6b436214ae9",
+      "title_en": "So sánh hơn",
+      "title_vi": "So sánh hơn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 2 · Câu 116",
+          "options": {
+            "A": "higher",
+            "B": "high",
+            "C": "highly",
+            "D": "highest"
+          },
+          "question": "Cormet Motors' profits are ------- this year than last year.",
+          "translation": "Lợi nhuận của Cormet Motors năm nay cao hơn năm ngoái."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là dạng nguyên, so sánh hơn, so sánh nhất của tính từ “high” và trạng từ “highly”. Chỗ trống đứng sau động từ “are”, phía sau có “than last year”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Cormet Motors' profits",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "this year",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "than",
+                    "label": "từ so sánh"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "last year.",
+                    "label": "mốc được so"
+                  }
+                ],
+                "caption": "Chỗ trống là bổ ngữ sau “are”, nói lợi nhuận thế nào; vế sau “than” là mốc được đem ra so."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau “are” cần tính từ hay trạng từ;",
+                  "“than” đi với dạng so sánh nào;",
+                  "cách tạo so sánh hơn của từ ngắn và từ dài."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "So sánh hơn dùng khi so hai người, hai vật hoặc hai thời điểm với nhau. Vế được so đứng sau **than**; khi so hai người, vật đã nêu (of the two, between the two) thì dùng **the + so sánh hơn**, không cần than.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tính từ, trạng từ ngắn",
+                    "formula": "adj-er + than"
+                  },
+                  {
+                    "label": "Tính từ dài",
+                    "formula": "more + adj + than"
+                  },
+                  {
+                    "label": "Trạng từ đuôi -ly",
+                    "formula": "more + adv-ly + than"
+                  },
+                  {
+                    "label": "Hai so sánh chung một than",
+                    "formula": "so sánh hơn + and + so sánh hơn + than"
+                  },
+                  {
+                    "label": "Giữa hai người, vật",
+                    "formula": "the + so sánh hơn + of the two"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "Tính từ, trạng từ một âm tiết",
+                    "thêm -er (tận cùng -e chỉ thêm -r; thin gấp đôi n)",
+                    "higher, faster, larger, safer, greater, clearer, cheaper, thinner"
+                  ],
+                  [
+                    "Tính từ hai âm tiết tận cùng -y",
+                    "đổi y thành i rồi thêm -er",
+                    "livelier, easier"
+                  ],
+                  [
+                    "Một số tính từ hai âm tiết khác như simple, quiet",
+                    "thêm -r hoặc -er",
+                    "simpler, quieter"
+                  ],
+                  [
+                    "Các tính từ hai âm tiết trở lên còn lại",
+                    "more + adj",
+                    "more relevant, more responsive, more spacious, more experienced"
+                  ],
+                  [
+                    "Trạng từ đuôi -ly",
+                    "more + adv",
+                    "more promptly, more clearly, more smoothly"
+                  ],
+                  [
+                    "Bất quy tắc",
+                    "good (tính từ), well (trạng từ): better",
+                    "better"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng gốc",
+                  "Cách tạo so sánh hơn",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "sau be, become; sau make, find + tân ngữ",
+                    "tính từ so sánh hơn",
+                    "*The new schedule is more flexible than the old one.* — Lịch mới linh hoạt hơn lịch cũ."
+                  ],
+                  [
+                    "bổ nghĩa cho động từ thường hoặc V3",
+                    "trạng từ so sánh hơn",
+                    "*Our team replied more quickly than expected.* — Nhóm chúng tôi phản hồi nhanh hơn dự kiến."
+                  ],
+                  [
+                    "so hai người, vật đã nêu",
+                    "the + so sánh hơn",
+                    "*Of the two proposals, Ms. Lee's is the more practical.* — Trong hai đề xuất, đề xuất của bà Lee thực tế hơn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chỗ trống",
+                  "Dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "This year's sales",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "much",
+                    "label": "từ nhấn"
+                  },
+                  {
+                    "role": "C",
+                    "text": "higher",
+                    "label": "tính từ so sánh hơn"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "than",
+                    "label": "từ so sánh"
+                  },
+                  {
+                    "role": "X",
+                    "text": "last year's.",
+                    "label": "vế được so"
+                  }
+                ],
+                "caption": "Từ nhấn much, far, significantly, slightly đứng ngay trước so sánh hơn. **very** đứng trước dạng nguyên (very large), không đứng trước so sánh hơn."
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Mang nghĩa “hơn”; đứng trước than, hoặc sau the khi so hai người, vật.",
+                    "form": "So sánh hơn (higher, more relevant, more promptly, better)",
+                    "example": "*higher this year than last year*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không mang nghĩa “hơn”, nên không đi với than hay the … of the two.",
+                    "form": "Dạng nguyên (high, large, simple, clear, relevant, safe, quiet)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "So một người, vật với cả nhóm từ ba trở lên; không đi với than, không dùng khi chỉ có hai.",
+                    "form": "So sánh nhất (highest, most responsive, most clearly, best, safest, most quiet)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sai dạng: tính từ một âm tiết thêm -er; good thành better.",
+                    "form": "more + tính từ ngắn (more large, more fast, more good)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau be, become hoặc make, find + tân ngữ cần tính từ.",
+                    "form": "Trạng từ ở chỗ cần tính từ (highly, largely, simply, clearly, reliably, more clearly)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Bổ nghĩa cho động từ thường hoặc V3 cần trạng từ.",
+                    "form": "Tính từ ở chỗ cần trạng từ (prompt, confident, good)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có dạng so sánh, không làm được phần so sánh trước than.",
+                    "form": "Danh từ, động từ (responsiveness, reliability, simplicity, attraction, respond)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "very không dùng trong so sánh hơn; much chỉ nhấn cho so sánh hơn có sẵn (much more), không tự tạo so sánh hơn.",
+                    "form": "very, much trước tính từ, trạng từ",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + than",
+                    "example": "*are ___ this year than last year*; *a ___ variety of seafood items than*; *responded ___ than expected*"
+                  },
+                  {
+                    "signal": "much / significantly / slightly + ___ + than",
+                    "example": "*much ___ than the old version*; *significantly ___ than*; *slightly ___ than projected*"
+                  },
+                  {
+                    "signal": "so sánh hơn + and + ___ + than",
+                    "example": "*cheaper and ___ to install than the old program*; *easier to understand and ___ than*"
+                  },
+                  {
+                    "signal": "of the two / between the two",
+                    "example": "*Of the two candidates …, Ms. Rowan is the ___ qualified*; *Between the two warehouses*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng so sánh (dạng nguyên, so sánh hơn, so sánh nhất) của một tính từ hoặc trạng từ, có thể kèm loại từ khác; hoặc là các từ more, most, much, very. Đây là câu so sánh.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm than, hoặc of the two, between the two. Xem chỗ trống đứng sau be, make/find + tân ngữ (cần tính từ) hay bổ nghĩa cho động từ thường, V3 (cần trạng từ).",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn adj-er, more + adj hoặc more + adv theo độ dài của từ. Loại dạng nguyên, so sánh nhất, dạng sai như more large, và từ sai loại.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Cormet Motors' profits",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "higher",
+                    "label": "tính từ so sánh hơn"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "this year",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "than",
+                    "label": "từ so sánh"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "last year.",
+                    "label": "mốc được so"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: tính từ so sánh hơn “higher” làm bổ ngữ sau “are”, đi với “than last year”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm dạng nguyên, so sánh hơn, so sánh nhất của “high” và trạng từ “highly” nên đây là câu so sánh.",
+                  "Bước 2: Chỗ trống đứng sau “are”, cần tính từ; dấu hiệu “___ + than”: “------- this year than last year”.",
+                  "Bước 3: “high” một âm tiết, so sánh hơn là adj-er + than, vì vậy chọn “higher” (cao hơn).",
+                  "“high” (B) là dạng nguyên, không đi được với “than last year”, nên loại.",
+                  "“highly” (C) là trạng từ (hết sức), sau “are” cần tính từ, nên loại.",
+                  "“highest” (D) là so sánh nhất, không đi với “than”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“fast” vừa là tính từ vừa là trạng từ, so sánh hơn là “faster”; tiếng Anh không có từ “fastly”.",
+                  "Trong văn nói thân mật, người bản ngữ đôi khi dùng so sánh nhất cho hai người, vật (*the best of the two*). Văn viết trang trọng dùng so sánh hơn: *the better of the two*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Có than hoặc of the two thì dùng so sánh hơn: adj-er, more + adj.",
+                  "Sau be dùng tính từ; bổ nghĩa cho động từ, V3 dùng trạng từ.",
+                  "much, significantly, slightly đứng trước so sánh hơn; very thì không."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

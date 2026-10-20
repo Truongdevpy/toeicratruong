@@ -1,0 +1,377 @@
+{
+  "subtopic": {
+    "id": "5d707826-2250-42dd-94e2-6a13004cb650",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Phân biệt chủ động và bị động",
+    "title_vi": "Phân biệt chủ động và bị động",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 93,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-phan-biet-chu-dong-va-bi-dong"
+  },
+  "lessons": [
+    {
+      "id": "b60d9c67-db99-4ae4-a48c-444d5c21e71f",
+      "subtopic_id": "5d707826-2250-42dd-94e2-6a13004cb650",
+      "title_en": "Phân biệt chủ động và bị động",
+      "title_vi": "Phân biệt chủ động và bị động",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 6 · Câu 106",
+          "options": {
+            "A": "nominating",
+            "B": "nomination",
+            "C": "has nominated",
+            "D": "has been nominated"
+          },
+          "question": "The search committee ------- three candidates for the chief executive position.",
+          "translation": "Ủy ban tuyển chọn đã đề cử ba ứng viên cho vị trí tổng giám đốc điều hành."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm V-ing “nominating”, danh từ “nomination” và hai dạng chia thì của “nominate”: “has nominated” là chủ động, “has been nominated” là bị động.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The search committee",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "three candidates",
+                    "label": "cụm danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the chief executive position.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng ngay sau chủ ngữ “The search committee”, trước cụm danh từ “three candidates”; câu chưa có động từ chính."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "chỗ trống cần động từ chính hay không",
+                  "khi nào dùng chủ động, khi nào dùng bị động (be + V3)",
+                  "cụm danh từ ngay sau chỗ trống cho biết điều gì"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**Chủ động**: chủ ngữ tự làm hành động. **Bị động**: chủ ngữ chịu hành động, động từ có dạng be + V3.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động",
+                    "formula": "S + V (chia thì) + tân ngữ"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "S + be (chia thì) + V3 + (by + người làm)"
+                  },
+                  {
+                    "label": "Sau modal",
+                    "formula": "modal + V nguyên mẫu / modal + be + V3"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The committee",
+                    "label": "chủ ngữ: người làm"
+                  },
+                  {
+                    "role": "V",
+                    "text": "approved",
+                    "label": "động từ chủ động"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the proposal",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "yesterday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Chủ động: chủ ngữ “The committee” tự làm; tân ngữ “the proposal” đứng sau động từ."
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The proposal",
+                    "label": "chủ ngữ: chịu hành động"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was approved",
+                    "label": "động từ: be + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by the committee",
+                    "label": "by + người làm"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "yesterday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Bị động: tân ngữ “the proposal” lên làm chủ ngữ, nên sau be + V3 không còn tân ngữ; người làm, nếu nói ra, đứng sau by."
+              },
+              {
+                "rows": [
+                  [
+                    "hiện tại đơn",
+                    "am/is/are + V3",
+                    "*Invoices are sent on the first day of each month.* — Hóa đơn được gửi vào ngày đầu mỗi tháng."
+                  ],
+                  [
+                    "quá khứ đơn",
+                    "was/were + V3",
+                    "*The new printers were installed last week.* — Máy in mới đã được lắp đặt vào tuần trước."
+                  ],
+                  [
+                    "hiện tại hoàn thành",
+                    "has/have been + V3",
+                    "*The elevator has been repaired twice this year.* — Thang máy đã được sửa hai lần trong năm nay."
+                  ],
+                  [
+                    "sau modal",
+                    "modal + be + V3",
+                    "*This form should be signed by a manager.* — Mẫu đơn này nên được quản lý ký."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Thì",
+                  "Bị động",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Hỏi trước: chủ ngữ **tự làm** hay **chịu** hành động? Tự làm thì chủ động, chịu thì bị động.",
+                  "Kiểm lại bằng phần sau chỗ trống: động từ cần tân ngữ (train, send, sign…) mà có tân ngữ thì chủ động; không có tân ngữ, chỉ có giới từ, trạng từ hoặc by + người làm thì bị động.",
+                  "be và động từ chủ động phải hợp số của chủ ngữ: số ít dùng is/was/has, V-s; số nhiều dùng are/were/have, V nguyên mẫu."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nghĩa thành chủ ngữ tự làm, trong khi hợp đồng không tự ký, báo cáo không tự đăng; phía sau cũng không có tân ngữ cho động từ cần tân ngữ.",
+                    "form": "Chủ động khi chủ ngữ chịu hành động (signed, was signing, has repaired, publishes)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau be + V3 không còn tân ngữ, mà câu lại có tân ngữ ngay sau chỗ trống.",
+                    "form": "Bị động khi chủ ngữ tự làm (was trained, are delivered, has been contacted)",
+                    "example": "*Mr. Dalton trained twelve new employees*, không nói *was trained twelve new employees*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chủ ngữ số nhiều không đi với has; chủ ngữ số ít không đi với are hay V nguyên mẫu ở hiện tại đơn.",
+                    "form": "Dạng không hợp số của chủ ngữ (has been selected, are sent, review, publish)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính của câu.",
+                    "form": "V-ing, danh từ đứng một mình (nominating, nomination)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau modal chỉ dùng V nguyên mẫu (chủ động) hoặc be + V3 (bị động).",
+                    "form": "V3, V-ing ngay sau modal (paid, paying sau should)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*___ three candidates*; *___ twelve new employees*; *___ invoices to all clients*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*___ by both managers*; *___ by the committee*; *___ last week by a team from Northgate Services*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*___ to the warehouse staff*; *___ carefully*; *___ as the new branch manager*; *___ twice this winter*"
+                  },
+                  {
+                    "signal": "số của chủ ngữ",
+                    "example": "*Only three designs ___* (số nhiều); *Each application ___* (số ít)"
+                  },
+                  {
+                    "signal": "modal + ___",
+                    "example": "*You should ___ the rent*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ, trong đó có dạng chủ động và dạng be + V3, thì đây là câu chia động từ; có modal trước chỗ trống và đáp án không chia thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ, xem nó tự làm hay chịu hành động và là số ít hay số nhiều; nhìn sau chỗ trống xem có tân ngữ, có by + người làm, hay không có tân ngữ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ tự làm, có tân ngữ thì chọn chủ động; chủ ngữ chịu hành động thì chọn be + V3 hợp số chủ ngữ. Loại dạng sai thể, dạng không hợp số chủ ngữ, dạng không làm được động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The search committee",
+                    "label": "chủ ngữ: người làm"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has nominated",
+                    "label": "động từ chủ động: has + V3"
+                  },
+                  {
+                    "role": "O",
+                    "text": "three candidates",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the chief executive position.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: ủy ban tự đề cử, “three candidates” là tân ngữ của “has nominated”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm V-ing “nominating”, danh từ “nomination” và hai dạng chia thì của “nominate” nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “The search committee”; dấu hiệu “___ + tân ngữ”: “three candidates”.",
+                  "Bước 3: Ủy ban tự đề cử ứng viên và có tân ngữ nên dùng chủ động has + V3, vì vậy chọn “has nominated” (đã đề cử).",
+                  "“nominating” (A) là V-ing, đứng một mình không làm được động từ chính, nên loại.",
+                  "“nomination” (B) là danh từ, câu cần động từ chính sau “The search committee”, nên loại.",
+                  "“has been nominated” (D) là bị động, nhưng ủy ban là bên đề cử và phía sau có tân ngữ “three candidates”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Động từ có hai tân ngữ (award, give, offer, pay) ở bị động vẫn có thể còn một danh từ phía sau: *The sales team was awarded a bonus.* — Nhóm bán hàng đã được thưởng một khoản tiền. Khi đó xét nghĩa: chủ ngữ tự làm hay chịu hành động."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ tự làm, sau chỗ trống có tân ngữ: chủ động. Chủ ngữ chịu hành động: be + V3.",
+                  "be chia theo thì và số của chủ ngữ: is/was/has been với số ít, are/were/have been với số nhiều.",
+                  "Sau modal: V nguyên mẫu (chủ động) hoặc be + V3 (bị động)."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

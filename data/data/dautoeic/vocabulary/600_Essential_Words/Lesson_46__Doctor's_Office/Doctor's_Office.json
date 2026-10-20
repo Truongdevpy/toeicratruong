@@ -1,0 +1,628 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "59672eb8-427a-4650-94f1-d416a4d4077f",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 46: Doctor's Office",
+    "order_index": 46,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:51.250624+00:00",
+    "updated_at": "2026-09-18T08:53:51.250624+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+    "test_id": "59672eb8-427a-4650-94f1-d416a4d4077f",
+    "name": "Doctor's Office",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:51.250624+00:00",
+    "updated_at": "2026-09-18T08:53:51.250624+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "ce66ceeb-8af7-4ad5-bd87-72356394dcff",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "annually",
+      "ipa": "/ˈæn.ju.ə.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Everyone should get a physical exam annually.",
+          "meaning": "hằng năm, mỗi năm một lần",
+          "toeic_tip": "Annually là trạng từ, thường đứng cuối câu; tính từ là annual.",
+          "example_vi": "Ai cũng nên đi khám sức khỏe tổng quát mỗi năm một lần.",
+          "word_family": [
+            "annual (adj) hằng năm",
+            "annual (n) sự kiện thường niên"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T07:42:15.58785+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ce66ceeb-8af7-4ad5-bd87-72356394dcff-wm.jpg?v=1789798289349",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/annually-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/annually-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reviewed annually",
+          "meaning": "được xem xét hằng năm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ce66ceeb-8af7-4ad5-bd87-72356394dcff-0-wm.jpg?v=1789803735256"
+        },
+        {
+          "phrase": "paid annually",
+          "meaning": "trả hằng năm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ce66ceeb-8af7-4ad5-bd87-72356394dcff-1-wm.jpg?v=1789803735435"
+        },
+        {
+          "phrase": "occur annually",
+          "meaning": "diễn ra hằng năm"
+        }
+      ],
+      "synonyms": [
+        "yearly (hằng năm)",
+        "every year (mỗi năm)"
+      ]
+    },
+    {
+      "id": "c0734088-e239-4ac7-bd49-e41880f30016",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "record",
+      "ipa": "UK: /ˈrek.ɔːd/ | US: /ˈrek.ɚd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Ms. Han typed a written request for her medical records.",
+          "meaning": "hồ sơ, biên bản, bản lưu chính thức",
+          "toeic_tip": "Danh từ nhấn âm đầu /ˈrekɔːd/, động từ nhấn âm sau /rɪˈkɔːd/.",
+          "example_vi": "Cô Han đánh máy đơn xin cấp hồ sơ bệnh án của mình.",
+          "word_family": [
+            "record (v) ghi lại",
+            "recording (n) bản ghi âm, bản ghi hình"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T07:35:36.599686+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c0734088-e239-4ac7-bd49-e41880f30016-wm.jpg?v=1789798104117",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/record-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/record-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "medical records",
+          "meaning": "hồ sơ bệnh án",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c0734088-e239-4ac7-bd49-e41880f30016-0-wm.jpg?v=1789803335957"
+        },
+        {
+          "phrase": "keep a record of",
+          "meaning": "lưu hồ sơ về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c0734088-e239-4ac7-bd49-e41880f30016-1-wm.jpg?v=1789803336454"
+        },
+        {
+          "phrase": "public records",
+          "meaning": "hồ sơ công khai"
+        }
+      ],
+      "synonyms": [
+        "file (hồ sơ)",
+        "documentation (tài liệu lưu trữ)"
+      ]
+    },
+    {
+      "id": "ecc69070-5e5a-462d-b7c6-26c19adc25a6",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "refer",
+      "ipa": "UK: /rɪˈfɜː/ | US: /rɪˈfɝː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I was referred to this specialist by the family practice nurse.",
+          "meaning": "giới thiệu chuyển đến, nhắc đến, tra cứu",
+          "toeic_tip": "Gấp đôi phụ âm khi chia: referred, referring; luôn đi với to.",
+          "example_vi": "Tôi được y tá phòng khám gia đình giới thiệu đến vị bác sĩ chuyên khoa này.",
+          "word_family": [
+            "reference (n) sự tham chiếu, thư giới thiệu",
+            "referral (n) sự giới thiệu chuyển tuyến"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T07:59:22.020628+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ecc69070-5e5a-462d-b7c6-26c19adc25a6-wm.jpg?v=1789798106542",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/refer-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/refer-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "refer a patient to a specialist",
+          "meaning": "chuyển bệnh nhân đến bác sĩ chuyên khoa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ecc69070-5e5a-462d-b7c6-26c19adc25a6-0-wm.jpg?v=1789804761871"
+        },
+        {
+          "phrase": "refer to",
+          "meaning": "nhắc đến, tra cứu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ecc69070-5e5a-462d-b7c6-26c19adc25a6-1-wm.jpg?v=1789804759835"
+        },
+        {
+          "phrase": "be referred by",
+          "meaning": "được ai giới thiệu"
+        }
+      ],
+      "synonyms": [
+        "direct (hướng đến)",
+        "mention (nhắc đến)"
+      ]
+    },
+    {
+      "id": "6e0e8a14-ed1a-4ffd-a9a6-80f4bb2dac2a",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "prevent",
+      "ipa": "/prɪˈvent/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "By encouraging teenagers not to smoke, doctors are hoping to prevent many cases of cancer.",
+          "meaning": "ngăn chặn, phòng ngừa, cản trở",
+          "antonyms": [
+            "allow (cho phép)",
+            "permit (cho phép)"
+          ],
+          "toeic_tip": "Cấu trúc prevent somebody from V-ing; không dùng prevent to do.",
+          "example_vi": "Bằng cách khuyên thanh thiếu niên đừng hút thuốc, các bác sĩ hy vọng ngăn được nhiều ca ung thư.",
+          "word_family": [
+            "prevention (n) sự phòng ngừa",
+            "preventive (adj) mang tính phòng ngừa"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T06:52:51.520514+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6e0e8a14-ed1a-4ffd-a9a6-80f4bb2dac2a-wm.jpg?v=1789798120316",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/prevent-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/prevent-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "prevent an accident",
+          "meaning": "ngăn tai nạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6e0e8a14-ed1a-4ffd-a9a6-80f4bb2dac2a-0-wm.jpg?v=1789800770903"
+        },
+        {
+          "phrase": "prevent somebody from doing",
+          "meaning": "ngăn ai làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6e0e8a14-ed1a-4ffd-a9a6-80f4bb2dac2a-1-wm.jpg?v=1789800771372"
+        },
+        {
+          "phrase": "prevent disease",
+          "meaning": "phòng bệnh"
+        }
+      ],
+      "synonyms": [
+        "stop (ngăn lại)",
+        "hinder (cản trở)"
+      ]
+    },
+    {
+      "id": "58d4935e-0e72-47df-af98-b7c861a529ce",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "serious",
+      "ipa": "UK: /ˈsɪə.ri.əs/ | US: /ˈsɪr.i.əs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The impact of the serious news could be read on everyone's face.",
+          "meaning": "nghiêm trọng, nặng, nghiêm túc",
+          "antonyms": [
+            "minor (nhỏ nhặt)",
+            "trivial (vụn vặt)"
+          ],
+          "toeic_tip": "Hai nghĩa dễ lẫn: nghiêm trọng (bệnh, lỗi) và nghiêm túc (thái độ).",
+          "example_vi": "Nhìn mặt ai cũng thấy tin dữ đó tác động nặng nề thế nào.",
+          "word_family": [
+            "seriously (adv) một cách nghiêm trọng, nghiêm túc",
+            "seriousness (n) tính nghiêm trọng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T06:40:29.282185+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/58d4935e-0e72-47df-af98-b7c861a529ce-wm.jpg?v=1789798119416",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/serious-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/serious-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a serious problem",
+          "meaning": "vấn đề nghiêm trọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/58d4935e-0e72-47df-af98-b7c861a529ce-0-wm.jpg?v=1789800027528"
+        },
+        {
+          "phrase": "serious injury",
+          "meaning": "chấn thương nặng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/58d4935e-0e72-47df-af98-b7c861a529ce-1-wm.jpg?v=1789800029146"
+        },
+        {
+          "phrase": "serious about",
+          "meaning": "nghiêm túc với"
+        }
+      ],
+      "synonyms": [
+        "grave (nghiêm trọng)",
+        "severe (nặng nề)"
+      ]
+    },
+    {
+      "id": "14036509-2931-41ed-912e-500ac2f4371f",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "effective",
+      "ipa": "/ɪˈfek.tɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Howard was pleased to find that the diet recommended by his doctor was quite effective.",
+          "meaning": "hiệu quả, có tác dụng, có hiệu lực",
+          "antonyms": [
+            "ineffective (không hiệu quả)",
+            "useless (vô dụng)"
+          ],
+          "toeic_tip": "Phân biệt effective (có tác dụng) và efficient (ít tốn thời gian, công sức).",
+          "example_vi": "Howard mừng vì chế độ ăn bác sĩ khuyên dùng tỏ ra khá hiệu quả.",
+          "word_family": [
+            "effect (n) tác dụng",
+            "effectively (adv) một cách hiệu quả",
+            "effectiveness (n) tính hiệu quả"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T06:17:32.142731+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/14036509-2931-41ed-912e-500ac2f4371f-wm.jpg?v=1789798025005",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/effective-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/effective-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "highly effective",
+          "meaning": "rất hiệu quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/14036509-2931-41ed-912e-500ac2f4371f-0-wm.jpg?v=1789798651993"
+        },
+        {
+          "phrase": "effective immediately",
+          "meaning": "có hiệu lực ngay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/14036509-2931-41ed-912e-500ac2f4371f-1-wm.jpg?v=1789798650455"
+        },
+        {
+          "phrase": "cost-effective",
+          "meaning": "hiệu quả về chi phí"
+        }
+      ],
+      "synonyms": [
+        "successful (đạt kết quả tốt)",
+        "powerful (có tác dụng mạnh)"
+      ]
+    },
+    {
+      "id": "e31db79f-d76d-48df-b1e1-452c70b1c435",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "recommendation",
+      "ipa": "/ˌrek.ə.menˈdeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is important to follow the doctor's recommendations if you want to improve your health.",
+          "meaning": "lời khuyên, sự đề xuất, thư giới thiệu",
+          "toeic_tip": "recommend doing hoặc recommend that S + V nguyên mẫu, không recommend to do.",
+          "example_vi": "Muốn khỏe hơn thì phải làm theo lời dặn của bác sĩ.",
+          "word_family": [
+            "recommend (v) khuyên, giới thiệu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T07:52:50.574729+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e31db79f-d76d-48df-b1e1-452c70b1c435-wm.jpg?v=1789798263831",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/recommendation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/recommendation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a recommendation",
+          "meaning": "đưa ra đề xuất",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e31db79f-d76d-48df-b1e1-452c70b1c435-0-wm.jpg?v=1789804370445"
+        },
+        {
+          "phrase": "follow a recommendation",
+          "meaning": "làm theo lời khuyên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e31db79f-d76d-48df-b1e1-452c70b1c435-1-wm.jpg?v=1789804369345"
+        },
+        {
+          "phrase": "a letter of recommendation",
+          "meaning": "thư giới thiệu"
+        }
+      ],
+      "synonyms": [
+        "advice (lời khuyên)",
+        "suggestion (lời đề nghị)"
+      ]
+    },
+    {
+      "id": "79fb1e73-7d78-4d40-a4cc-02d7ec211398",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "diagnose",
+      "ipa": "UK: /ˈdaɪ.əɡ.nəʊz/ | US: /ˌdaɪ.əɡˈnoʊs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "After considering the patient's symptoms and looking at his test results, the doctor diagnosed the lump as benign.",
+          "meaning": "chẩn đoán bệnh, xác định nguyên nhân",
+          "toeic_tip": "Dạng bị động hay gặp: be diagnosed with + tên bệnh.",
+          "example_vi": "Sau khi xem xét triệu chứng và kết quả xét nghiệm, bác sĩ kết luận khối u là lành tính.",
+          "word_family": [
+            "diagnosis (n) sự chẩn đoán",
+            "diagnostic (adj) thuộc về chẩn đoán"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T06:57:55.965605+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/79fb1e73-7d78-4d40-a4cc-02d7ec211398-wm.jpg?v=1789798309763",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/diagnose-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/diagnose-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "diagnose a disease",
+          "meaning": "chẩn đoán bệnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79fb1e73-7d78-4d40-a4cc-02d7ec211398-0-wm.jpg?v=1789801061856"
+        },
+        {
+          "phrase": "be diagnosed with",
+          "meaning": "bị chẩn đoán mắc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79fb1e73-7d78-4d40-a4cc-02d7ec211398-1-wm.jpg?v=1789801075821"
+        },
+        {
+          "phrase": "diagnose the problem",
+          "meaning": "xác định nguyên nhân sự cố"
+        }
+      ],
+      "synonyms": [
+        "identify (xác định)",
+        "detect (phát hiện)"
+      ]
+    },
+    {
+      "id": "b4a8c036-7583-4ff1-8bfb-e234d077a61b",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "appointment",
+      "ipa": "/əˈpɔɪnt.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To get the most out of your appointment, keep a log of your symptoms and concerns.",
+          "meaning": "cuộc hẹn, lịch hẹn, sự bổ nhiệm",
+          "toeic_tip": "Dùng make/keep/cancel an appointment; nghĩa thứ hai là sự bổ nhiệm.",
+          "example_vi": "Để buổi khám có ích nhất, hãy ghi lại các triệu chứng và điều bạn lo lắng.",
+          "word_family": [
+            "appoint (v) hẹn, bổ nhiệm",
+            "appointed (adj) được chỉ định"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T07:29:37.421031+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b4a8c036-7583-4ff1-8bfb-e234d077a61b-wm.jpg?v=1789798295604",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/appointment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/appointment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make an appointment",
+          "meaning": "đặt lịch hẹn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b4a8c036-7583-4ff1-8bfb-e234d077a61b-0-wm.jpg?v=1789802977232"
+        },
+        {
+          "phrase": "cancel an appointment",
+          "meaning": "hủy hẹn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b4a8c036-7583-4ff1-8bfb-e234d077a61b-1-wm.jpg?v=1789802975468"
+        },
+        {
+          "phrase": "a doctor's appointment",
+          "meaning": "lịch khám bác sĩ"
+        }
+      ],
+      "synonyms": [
+        "meeting (cuộc gặp)",
+        "engagement (cuộc hẹn)"
+      ]
+    },
+    {
+      "id": "2f987e5e-2cdb-4572-afcf-573e4c6b3f9e",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "instrument",
+      "ipa": "/ˈɪn.strə.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The pediatrician tried not to frighten the children with her strange-looking instruments.",
+          "meaning": "dụng cụ chính xác, công cụ, phương tiện",
+          "toeic_tip": "Instrument là dụng cụ đòi hỏi độ chính xác; tool là dụng cụ thông thường.",
+          "example_vi": "Bác sĩ nhi cố không để mấy dụng cụ trông kỳ lạ của mình làm bọn trẻ sợ.",
+          "word_family": [
+            "instrumental (adj) đóng vai trò then chốt"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T06:23:29.919915+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2f987e5e-2cdb-4572-afcf-573e4c6b3f9e-wm.jpg?v=1789798577803",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/instrument-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/instrument-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "surgical instruments",
+          "meaning": "dụng cụ phẫu thuật",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f987e5e-2cdb-4572-afcf-573e4c6b3f9e-0-wm.jpg?v=1789799008455"
+        },
+        {
+          "phrase": "a precision instrument",
+          "meaning": "dụng cụ chính xác",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f987e5e-2cdb-4572-afcf-573e4c6b3f9e-1-wm.jpg?v=1789799009766"
+        },
+        {
+          "phrase": "an instrument of change",
+          "meaning": "công cụ tạo thay đổi"
+        }
+      ],
+      "synonyms": [
+        "tool (dụng cụ)",
+        "device (thiết bị)"
+      ]
+    },
+    {
+      "id": "0ea934ac-15b7-4025-b1b1-285d01eba178",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "assess",
+      "ipa": "/əˈses/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The physical therapist assessed the amount of mobility Ms. Crowl had lost after her stroke.",
+          "meaning": "đánh giá, định giá, ấn định mức phí",
+          "toeic_tip": "Nghĩa thứ hai hay bị bỏ qua: assess a tax/fee là ấn định thuế, phí.",
+          "example_vi": "Chuyên viên vật lý trị liệu đánh giá xem bà Crowl mất bao nhiêu khả năng vận động sau cơn đột quỵ.",
+          "word_family": [
+            "assessment (n) sự đánh giá",
+            "assessor (n) người định giá"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T06:21:41.269168+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0ea934ac-15b7-4025-b1b1-285d01eba178-wm.jpg?v=1789798526908",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assess-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assess-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "assess the damage",
+          "meaning": "đánh giá thiệt hại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0ea934ac-15b7-4025-b1b1-285d01eba178-0-wm.jpg?v=1789798901114"
+        },
+        {
+          "phrase": "assess the value",
+          "meaning": "định giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0ea934ac-15b7-4025-b1b1-285d01eba178-1-wm.jpg?v=1789798899299"
+        },
+        {
+          "phrase": "assess a fee",
+          "meaning": "ấn định mức phí"
+        }
+      ],
+      "synonyms": [
+        "evaluate (đánh giá)",
+        "appraise (định giá)"
+      ]
+    },
+    {
+      "id": "f5d34588-5fbc-49f6-a580-b84ddf8a45e1",
+      "part_id": "4505e5c2-2a4f-4205-84c7-2e27c3270414",
+      "word": "manage",
+      "ipa": "/ˈmæn.ɪdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The head nurse's ability to manage her staff through a difficult time caught the hospital administrator's attention.",
+          "meaning": "quản lý, điều hành, xoay xở",
+          "antonyms": [
+            "mismanage (quản lý kém)"
+          ],
+          "toeic_tip": "manage to V là xoay xở làm được; manage + danh từ là quản lý.",
+          "example_vi": "Khả năng dẫn dắt nhân viên vượt qua giai đoạn khó khăn của y tá trưởng đã lọt vào mắt ban giám đốc bệnh viện.",
+          "word_family": [
+            "management (n) sự quản lý",
+            "manager (n) người quản lý",
+            "manageable (adj) kiểm soát được"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:51.250624+00:00",
+      "updated_at": "2026-09-19T08:02:31.966886+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f5d34588-5fbc-49f6-a580-b84ddf8a45e1-wm.jpg?v=1789797716398",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/manage-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/manage-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "manage a team",
+          "meaning": "quản lý một nhóm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f5d34588-5fbc-49f6-a580-b84ddf8a45e1-0-wm.jpg?v=1789804939937"
+        },
+        {
+          "phrase": "manage to do something",
+          "meaning": "xoay xở làm được việc gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f5d34588-5fbc-49f6-a580-b84ddf8a45e1-1-wm.jpg?v=1789804951832"
+        },
+        {
+          "phrase": "manage resources",
+          "meaning": "quản lý nguồn lực"
+        }
+      ],
+      "synonyms": [
+        "handle (xử lý)",
+        "run (điều hành)"
+      ]
+    }
+  ]
+}

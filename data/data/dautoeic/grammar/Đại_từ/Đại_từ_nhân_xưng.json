@@ -1,0 +1,396 @@
+{
+  "subtopic": {
+    "id": "c4109f25-72e4-4957-bf90-b5a6212dd740",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ nhân xưng",
+    "title_vi": "Đại từ nhân xưng",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 99,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-nhan-xung"
+  },
+  "lessons": [
+    {
+      "id": "3f333913-8761-4446-8860-ab80df50d0c1",
+      "subtopic_id": "c4109f25-72e4-4957-bf90-b5a6212dd740",
+      "title_en": "Đại từ nhân xưng",
+      "title_vi": "Đại từ nhân xưng",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 2 · Câu 104",
+          "options": {
+            "A": "them",
+            "B": "they",
+            "C": "themselves",
+            "D": "their"
+          },
+          "question": "Yong-Soo Cosmetics will not charge for items on back order until ------- have left our warehouse.",
+          "translation": "Yong-Soo Cosmetics sẽ không tính tiền các mặt hàng đang chờ bổ sung cho đến khi chúng đã rời khỏi kho của chúng tôi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của đại từ “they”. Chỗ trống đứng sau liên từ “until”, ngay trước động từ “have left”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Yong-Soo Cosmetics",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will not charge",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for items on back order",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "until",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have left",
+                    "label": "động từ (mệnh đề until)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "our warehouse.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Sau “until” là một mệnh đề riêng; mệnh đề đó có động từ “have left” và tân ngữ “our warehouse” nhưng chưa có chủ ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "mệnh đề sau liên từ “until” cần những thành phần gì",
+                  "dạng nào của “they” làm chủ ngữ",
+                  "vì sao tân ngữ, tính từ sở hữu, phản thân không đứng trước động từ"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đại từ nhân xưng thay cho người, vật đã nói tới. Đứng trước động từ để làm chủ ngữ thì dùng dạng chủ ngữ: **I, you, he, she, it, we, they**.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "I",
+                    "me",
+                    "my",
+                    "mine",
+                    "myself"
+                  ],
+                  [
+                    "you",
+                    "you",
+                    "your",
+                    "yours",
+                    "yourself"
+                  ],
+                  [
+                    "he",
+                    "him",
+                    "his",
+                    "his",
+                    "himself"
+                  ],
+                  [
+                    "she",
+                    "her",
+                    "her",
+                    "hers",
+                    "herself"
+                  ],
+                  [
+                    "it",
+                    "it",
+                    "its",
+                    "(không dùng)",
+                    "itself"
+                  ],
+                  [
+                    "we",
+                    "us",
+                    "our",
+                    "ours",
+                    "ourselves"
+                  ],
+                  [
+                    "they",
+                    "them",
+                    "their",
+                    "theirs",
+                    "themselves"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ",
+                  "Tân ngữ",
+                  "Tính từ sở hữu",
+                  "Đại từ sở hữu",
+                  "Phản thân"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ ngữ của câu",
+                    "formula": "đại từ chủ ngữ + V"
+                  },
+                  {
+                    "label": "Sau trạng ngữ hoặc mệnh đề phụ",
+                    "formula": "trạng ngữ / mệnh đề phụ + dấu phẩy + đại từ chủ ngữ + V"
+                  },
+                  {
+                    "label": "Chủ ngữ của mệnh đề sau liên từ",
+                    "formula": "until / since / that / when + đại từ chủ ngữ + V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "After the client left,",
+                    "label": "mệnh đề phụ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "we",
+                    "label": "chủ ngữ (đại từ chủ ngữ)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "reviewed",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the contract.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Mệnh đề phụ đứng trước, sau dấu phẩy là mệnh đề chính; mệnh đề chính cần chủ ngữ riêng."
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước động từ, làm chủ ngữ của câu hoặc của mệnh đề.",
+                    "form": "Đại từ chủ ngữ (I, we, he, she, they)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đứng sau động từ hoặc giới từ; không làm chủ ngữ.",
+                    "form": "Đại từ tân ngữ (me, us, him, her, them)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải có danh từ theo sau (*their order*); không đứng một mình trước động từ.",
+                    "form": "Tính từ sở hữu (my, our, his, her, their)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng được ở chỗ chủ ngữ nhưng nghĩa là “cái của …”, thay cho một danh từ đã nhắc trước đó. Câu không có danh từ nào để nó thay.",
+                    "form": "Đại từ sở hữu (mine, ours, hers, theirs)",
+                    "example": "*My laptop is old, but hers is new.* — Máy của tôi cũ, nhưng máy của cô ấy mới.",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Làm tân ngữ trùng với chủ ngữ hoặc đứng sau “by”; không đứng một mình làm chủ ngữ.",
+                    "form": "Đại từ phản thân (myself, ourselves, himself, herself, themselves)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "đầu câu: ___ + động từ",
+                    "example": "*___ will oversee the installation*; *___ is responsible for organizing the company event*"
+                  },
+                  {
+                    "signal": "trạng ngữ / mệnh đề phụ + dấu phẩy + ___ + động từ",
+                    "example": "*After the meeting, ___ submitted*; *Because Mr. Delgado was away at the trade fair, ___ asked*"
+                  },
+                  {
+                    "signal": "liên từ + ___ + động từ",
+                    "example": "*until ___ have left our warehouse*; *since ___ may not have another chance*; *that ___ will supervise*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là các dạng của cùng một đại từ (chủ ngữ, tân ngữ, sở hữu, phản thân) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống có động từ chia thì không, và câu hoặc mệnh đề đó đã có chủ ngữ chưa (tính cả mệnh đề sau liên từ, sau dấu phẩy).",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chỗ trống đứng trước động từ, mệnh đề thiếu chủ ngữ thì chọn đại từ chủ ngữ; loại tân ngữ, tính từ sở hữu, phản thân, và đại từ sở hữu khi không có danh từ nào để nó thay.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Yong-Soo Cosmetics",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will not charge",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for items on back order",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "until",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "they",
+                    "label": "chủ ngữ (mệnh đề until)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have left",
+                    "label": "động từ (mệnh đề until)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "our warehouse.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “they” là chủ ngữ của mệnh đề until, thay cho “items”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng của đại từ “they” nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống đứng sau “until”, trước động từ “have left”, mệnh đề until chưa có chủ ngữ; dấu hiệu “liên từ + ___ + động từ”: “until ------- have left”.",
+                  "Bước 3: Mệnh đề cần chủ ngữ thay cho “items”, dùng đại từ chủ ngữ + V, vì vậy chọn “they” (chúng).",
+                  "“them” (A) là đại từ tân ngữ, không làm chủ ngữ của “have left”, nên loại.",
+                  "“themselves” (C) là đại từ phản thân, không đứng một mình làm chủ ngữ của “have left”, nên loại.",
+                  "“their” (D) là tính từ sở hữu, cần danh từ theo sau, mà sau chỗ trống là động từ “have left”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“her” vừa là tân ngữ vừa là tính từ sở hữu; cả hai cách dùng đều không đứng một mình trước động từ để làm chủ ngữ.",
+                  "“you” và “it” có dạng chủ ngữ và tân ngữ giống nhau."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống ngay trước động từ, câu hoặc mệnh đề chưa có chủ ngữ: chọn I, you, he, she, it, we, they.",
+                  "Mệnh đề sau liên từ (until, since, that) và mệnh đề sau dấu phẩy đều cần chủ ngữ riêng."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

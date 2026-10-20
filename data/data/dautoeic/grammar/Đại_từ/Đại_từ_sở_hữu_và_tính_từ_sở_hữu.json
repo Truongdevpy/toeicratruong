@@ -1,0 +1,398 @@
+{
+  "subtopic": {
+    "id": "e9e380d1-b34e-4b3f-95a0-4685141683fe",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ sở hữu và tính từ sở hữu",
+    "title_vi": "Đại từ sở hữu và tính từ sở hữu",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 96,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-so-huu-va-tinh-tu-so-huu"
+  },
+  "lessons": [
+    {
+      "id": "b0f2e3d8-27b2-43b4-93cb-bb8187f133b1",
+      "subtopic_id": "e9e380d1-b34e-4b3f-95a0-4685141683fe",
+      "title_en": "Đại từ sở hữu và tính từ sở hữu",
+      "title_vi": "Đại từ sở hữu và tính từ sở hữu",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 1 · Câu 101",
+          "options": {
+            "A": "he",
+            "B": "his",
+            "C": "him",
+            "D": "himself"
+          },
+          "question": "Former Sendai Company CEO Ken Nakata spoke about ------- career experiences.",
+          "translation": "Cựu giám đốc điều hành Công ty Sendai, ông Ken Nakata, đã nói về những trải nghiệm nghề nghiệp của mình."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng đại từ của ngôi “he”: he, his, him, himself. Chỗ trống đứng sau giới từ “about” và ngay trước cụm danh từ “career experiences”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Former Sendai Company CEO Ken Nakata",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "spoke",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "about",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "career experiences.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Câu đã có chủ ngữ và động từ “spoke”; chỗ trống nằm trong cụm giới từ “about ------- career experiences”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại đại từ nào đứng được ngay trước danh từ để nói danh từ đó của ai.",
+                  "Khi nào dùng tính từ sở hữu, khi nào dùng đại từ sở hữu.",
+                  "Đại từ chủ ngữ, tân ngữ, phản thân đứng ở vị trí nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**Tính từ sở hữu** (my, your, his, her, its, our, their) đứng trước danh từ để nói danh từ đó của ai. **Đại từ sở hữu** (mine, yours, his, hers, ours, theirs) thay cho cả cụm “tính từ sở hữu + danh từ”, nên phía sau không có danh từ.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "I",
+                    "me",
+                    "my",
+                    "mine",
+                    "myself"
+                  ],
+                  [
+                    "you",
+                    "you",
+                    "your",
+                    "yours",
+                    "yourself / yourselves"
+                  ],
+                  [
+                    "he",
+                    "him",
+                    "his",
+                    "his",
+                    "himself"
+                  ],
+                  [
+                    "she",
+                    "her",
+                    "her",
+                    "hers",
+                    "herself"
+                  ],
+                  [
+                    "it",
+                    "it",
+                    "its",
+                    "(không dùng)",
+                    "itself"
+                  ],
+                  [
+                    "we",
+                    "us",
+                    "our",
+                    "ours",
+                    "ourselves"
+                  ],
+                  [
+                    "they",
+                    "them",
+                    "their",
+                    "theirs",
+                    "themselves"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ",
+                  "Tân ngữ",
+                  "Tính từ sở hữu",
+                  "Đại từ sở hữu",
+                  "Đại từ phản thân"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tính từ sở hữu",
+                    "formula": "my / your / his / her / its / our / their + (tính từ) + N"
+                  },
+                  {
+                    "label": "Đại từ sở hữu",
+                    "formula": "mine / yours / his / hers / ours / theirs (= tính từ sở hữu + N)"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "tính từ sở hữu + N, sau động từ, giới từ hoặc be",
+                    "*She was praised for her hard work.* — Cô ấy được khen vì sự làm việc chăm chỉ."
+                  ],
+                  [
+                    "đại từ sở hữu làm chủ ngữ",
+                    "*My office is small, but hers is large.* — Văn phòng của tôi nhỏ, còn của cô ấy thì rộng."
+                  ],
+                  [
+                    "đại từ sở hữu sau động từ, giới từ hoặc be",
+                    "*We finished our part, but they are still working on theirs.* — Chúng tôi làm xong phần của mình, còn họ vẫn đang làm phần của họ."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Đại từ sở hữu thay cho một danh từ **đã nhắc trước đó**: *Our report …, but theirs …* thì “theirs” là “their report”. “his” vừa là tính từ sở hữu vừa là đại từ sở hữu; “her” vừa là tân ngữ vừa là tính từ sở hữu.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước danh từ (có thể có tính từ xen giữa).",
+                    "form": "Tính từ sở hữu (her, their, our, your, his)",
+                    "example": "*their revised branding strategy*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đứng một mình, thay cho “sở hữu + danh từ” đã nhắc; làm chủ ngữ, đứng sau động từ, giới từ hoặc be.",
+                    "form": "Đại từ sở hữu (mine, theirs, ours, his)",
+                    "example": "*Your presentation looks great, but ours needs more data.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chỉ làm chủ ngữ trước động từ. Không đứng trước danh từ, không đứng sau động từ hay giới từ, không mang nghĩa “của ai”.",
+                    "form": "Đại từ chủ ngữ (she, he, they, we, you)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ thay cho người hoặc vật, không mang nghĩa “của ai”. Không đứng trước danh từ để nói danh từ đó của ai, và không làm chủ ngữ.",
+                    "form": "Đại từ tân ngữ (him, them, us, me)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng trước danh từ để nói danh từ đó của ai, không làm chủ ngữ, không mang nghĩa “của ai”.",
+                    "form": "Đại từ phản thân (herself, themselves, ourselves, myself, yourself)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính từ sở hữu luôn cần một danh từ theo sau (có thể có tính từ xen giữa).",
+                    "form": "Tính từ sở hữu khi sau chỗ trống không có danh từ (their, my, our)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đại từ sở hữu đã chứa danh từ bên trong, nên không đứng trước danh từ.",
+                    "form": "Đại từ sở hữu khi sau chỗ trống có danh từ (hers, theirs, ours, yours)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ + ___ + danh từ",
+                    "example": "*submit ___ feedback*; *checked ___ calculations*; *presented ___ revised branding strategy*"
+                  },
+                  {
+                    "signal": "giới từ + ___ + danh từ",
+                    "example": "*spoke about ___ career experiences*; *due to ___ dedication*; *ahead of ___ deadline*"
+                  },
+                  {
+                    "signal": "be + ___ + danh từ",
+                    "example": "*This is ___ responsibility*"
+                  },
+                  {
+                    "signal": "___ + động từ (chỗ chủ ngữ)",
+                    "example": "*but ___ was delayed*; *but ___ needs more data*"
+                  },
+                  {
+                    "signal": "động từ / giới từ + ___ + hết câu",
+                    "example": "*hasn’t completed ___.*; *is still working on ___.*; *I forgot ___.*"
+                  },
+                  {
+                    "signal": "be + ___ + hết câu",
+                    "example": "*The decision was entirely ___;*; *the blue one on the shelf is ___.*"
+                  },
+                  {
+                    "signal": "danh từ đã nhắc ở vế trước",
+                    "example": "*Our report …, but ___*; *Your presentation …, but ___*; *their own laptops …, but I forgot ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là bốn dạng đại từ của cùng một ngôi (chủ ngữ, tân ngữ, sở hữu, phản thân) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Nhìn ngay sau chỗ trống có danh từ không, và trước chỗ trống là động từ, giới từ hay be. Nếu sau chỗ trống không có danh từ, tìm ở vế trước danh từ mà chỗ trống thay thế.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau chỗ trống có danh từ (có thể có tính từ xen giữa) thì chọn tính từ sở hữu. Không có danh từ sau, cần nghĩa “cái của ai” thì chọn đại từ sở hữu. Loại đại từ chủ ngữ, tân ngữ, phản thân vì chúng không mang nghĩa “của ai”.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Former Sendai Company CEO Ken Nakata",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "spoke",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "about",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "his",
+                    "label": "tính từ sở hữu"
+                  },
+                  {
+                    "role": "N",
+                    "text": "career experiences.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: tính từ sở hữu “his” đứng ngay trước danh từ “career experiences”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các đại từ của ngôi “he” (he, his, him, himself) nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống đứng sau giới từ “about”, trước danh từ “career experiences”; dấu hiệu “giới từ + ___ + danh từ”: “about ------- career experiences”.",
+                  "Bước 3: Trước danh từ cần tính từ sở hữu, trải nghiệm là của ông Nakata, vì vậy chọn “his” (của ông ấy).",
+                  "“he” (A) là đại từ chủ ngữ, không đứng sau giới từ “about” và trước danh từ, nên loại.",
+                  "“him” (C) là đại từ tân ngữ, không đứng trước danh từ “career experiences” để nói của ai, nên loại.",
+                  "“himself” (D) là đại từ phản thân, không đứng trước danh từ “career experiences”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Danh từ tập thể như team, department có thể đi với “their” khi nói về các thành viên: *The team submitted their proposal.* — Nhóm đã nộp đề xuất của họ. Khi coi cả nhóm là một đơn vị thì dùng “its”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống là danh từ hoặc tính từ + danh từ: chọn tính từ sở hữu (my, your, his, her, our, their).",
+                  "Không có danh từ sau, nghĩa “cái của ai”: chọn đại từ sở hữu (mine, yours, hers, ours, theirs).",
+                  "Đại từ chủ ngữ, tân ngữ, phản thân không đứng trước danh từ để nói của ai."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,625 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "f1c4e318-b864-4c90-856a-b4f5fd0bb7d9",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 14: Salaries and Benefits",
+    "order_index": 14,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:20.962962+00:00",
+    "updated_at": "2026-09-18T08:51:20.962962+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+    "test_id": "f1c4e318-b864-4c90-856a-b4f5fd0bb7d9",
+    "name": "Salaries and Benefits",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:20.962962+00:00",
+    "updated_at": "2026-09-18T08:51:20.962962+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "85c34293-15bc-404b-8b18-0f6c03eccaa2",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "retire",
+      "ipa": "UK: /rɪˈtaɪər/ | US: /rɪˈtaɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "She retired at the age of 64 but continued to be very active with volunteer work.",
+          "meaning": "nghỉ hưu, rút khỏi công việc hoặc nghề nghiệp",
+          "toeic_tip": "retire from + nơi làm; nhớ cụm retirement plan và retirement benefits.",
+          "example_vi": "Bà nghỉ hưu năm 64 tuổi nhưng vẫn rất năng nổ với công việc tình nguyện.",
+          "word_family": [
+            "retirement (n) sự nghỉ hưu",
+            "retiree (n) người đã nghỉ hưu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T07:04:51.081452+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/85c34293-15bc-404b-8b18-0f6c03eccaa2-wm.jpg?v=1789798436184",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/retire-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/retire-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "retire from a company",
+          "meaning": "nghỉ hưu ở một công ty",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/85c34293-15bc-404b-8b18-0f6c03eccaa2-0-wm.jpg?v=1789801490894"
+        },
+        {
+          "phrase": "retire at 65",
+          "meaning": "nghỉ hưu ở tuổi 65",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/85c34293-15bc-404b-8b18-0f6c03eccaa2-1-wm.jpg?v=1789801460940"
+        },
+        {
+          "phrase": "retire early",
+          "meaning": "nghỉ hưu sớm"
+        }
+      ],
+      "synonyms": [
+        "step down (rút lui khỏi chức vụ)",
+        "leave work (thôi làm việc)"
+      ]
+    },
+    {
+      "id": "f6daa842-2d9a-45d8-a42d-bf9e0f4f17f1",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "compensate",
+      "ipa": "UK: /ˈkɒm.pen.seɪt/ | US: /ˈkɑːm.pən.seɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company compensates employees for overtime by paying double for extra hours.",
+          "meaning": "đền bù, bồi thường, trả công",
+          "toeic_tip": "compensate somebody for something; danh từ compensation không đếm được.",
+          "example_vi": "Công ty trả công làm thêm giờ cho nhân viên bằng cách tính lương gấp đôi.",
+          "word_family": [
+            "compensation (n) khoản đền bù, thù lao"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T08:04:15.705937+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f6daa842-2d9a-45d8-a42d-bf9e0f4f17f1-wm.jpg?v=1789798515073",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compensate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compensate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "compensate employees for overtime",
+          "meaning": "trả công làm thêm giờ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6daa842-2d9a-45d8-a42d-bf9e0f4f17f1-0-wm.jpg?v=1789805055566"
+        },
+        {
+          "phrase": "compensate for a loss",
+          "meaning": "bù đắp thiệt hại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6daa842-2d9a-45d8-a42d-bf9e0f4f17f1-1-wm.jpg?v=1789805054196"
+        },
+        {
+          "phrase": "be fairly compensated",
+          "meaning": "được trả công xứng đáng"
+        }
+      ],
+      "synonyms": [
+        "reimburse (hoàn trả chi phí)",
+        "repay (trả lại)"
+      ]
+    },
+    {
+      "id": "b547ff33-3a86-4ab6-bdad-cfd93f118800",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "eligible",
+      "ipa": "/ˈel.ɪ.dʒə.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Some employees may be eligible for the tuition reimbursement plan.",
+          "meaning": "đủ điều kiện, hợp lệ, đủ tư cách",
+          "antonyms": [
+            "ineligible (không đủ điều kiện)"
+          ],
+          "toeic_tip": "eligible for + danh từ, eligible to + động từ; đừng nhầm với illegible (khó đọc).",
+          "example_vi": "Một số nhân viên có thể đủ điều kiện tham gia chương trình hỗ trợ học phí.",
+          "word_family": [
+            "eligibility (n) tư cách hợp lệ"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T07:29:48.926845+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b547ff33-3a86-4ab6-bdad-cfd93f118800-wm.jpg?v=1789798382688",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/eligible-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/eligible-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "eligible for a bonus",
+          "meaning": "đủ điều kiện nhận thưởng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b547ff33-3a86-4ab6-bdad-cfd93f118800-0-wm.jpg?v=1789802988330"
+        },
+        {
+          "phrase": "eligible to apply",
+          "meaning": "đủ tư cách nộp đơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b547ff33-3a86-4ab6-bdad-cfd93f118800-1-wm.jpg?v=1789802988774"
+        },
+        {
+          "phrase": "eligible employees",
+          "meaning": "nhân viên hợp lệ"
+        }
+      ],
+      "synonyms": [
+        "qualified (đủ tiêu chuẩn)",
+        "entitled (có quyền hưởng)"
+      ]
+    },
+    {
+      "id": "ba70044d-74e2-4611-a720-01b3e5211d7f",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "raise",
+      "ipa": "/reɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "With his raise, Mr. Drvoshanov was able to afford to buy a new car.",
+          "meaning": "khoản tăng lương; nâng lên, làm tăng",
+          "antonyms": [
+            "cut (cắt giảm)",
+            "lower (hạ xuống)"
+          ],
+          "toeic_tip": "Raise là ngoại động từ cần tân ngữ, rise là nội động từ không có tân ngữ.",
+          "example_vi": "Nhờ được tăng lương, ông Drvoshanov mới đủ tiền mua xe mới.",
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T07:31:16.491212+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ba70044d-74e2-4611-a720-01b3e5211d7f-wm.jpg?v=1789798163403",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/raise-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/raise-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "get a raise",
+          "meaning": "được tăng lương",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ba70044d-74e2-4611-a720-01b3e5211d7f-0-wm.jpg?v=1789803069537"
+        },
+        {
+          "phrase": "ask for a raise",
+          "meaning": "xin tăng lương",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ba70044d-74e2-4611-a720-01b3e5211d7f-1-wm.jpg?v=1789803076319"
+        },
+        {
+          "phrase": "raise the standard",
+          "meaning": "nâng tiêu chuẩn"
+        }
+      ],
+      "synonyms": [
+        "increase (sự tăng, làm tăng)",
+        "pay rise (khoản tăng lương, Anh-Anh)"
+      ]
+    },
+    {
+      "id": "17e40a75-f364-4c49-929d-f3c29db58b52",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "vested",
+      "ipa": "/ˈves.tɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The day that Ms. Weng became fully vested in the retirement plan, she gave her two weeks' notice.",
+          "meaning": "được bảo đảm như một quyền lợi, có quyền lợi gắn liền",
+          "toeic_tip": "Cụm hay gặp nhất là have a vested interest in something.",
+          "example_vi": "Đúng ngày được hưởng trọn quyền lợi hưu trí, bà Weng nộp đơn báo nghỉ trước hai tuần.",
+          "word_family": [
+            "vest (v) trao quyền cho",
+            "vesting (n) việc xác lập quyền lợi"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T06:17:55.561575+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/17e40a75-f364-4c49-929d-f3c29db58b52-wm.jpg?v=1789798140231",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/vested-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/vested-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a vested interest",
+          "meaning": "quyền lợi gắn liền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/17e40a75-f364-4c49-929d-f3c29db58b52-0-wm.jpg?v=1789798674696"
+        },
+        {
+          "phrase": "become fully vested",
+          "meaning": "được hưởng trọn quyền lợi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/17e40a75-f364-4c49-929d-f3c29db58b52-1-wm.jpg?v=1789798675401"
+        },
+        {
+          "phrase": "vested rights",
+          "meaning": "quyền đã được xác lập"
+        }
+      ],
+      "synonyms": [
+        "guaranteed (được bảo đảm)",
+        "entitled (có quyền hưởng)"
+      ]
+    },
+    {
+      "id": "22d5e0cb-b57b-4690-a3b6-5881ef9fe786",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "be aware of",
+      "ipa": "UK: /bi əˈweər əv/ | US: /bi əˈwer əv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The new staff member wasn't aware of the company's position on working a second job.",
+          "meaning": "nhận biết, ý thức được, biết rõ về",
+          "antonyms": [
+            "be unaware of (không hay biết về)"
+          ],
+          "toeic_tip": "aware of + danh từ, aware that + mệnh đề; không dùng aware about.",
+          "example_vi": "Nhân viên mới không biết công ty có quan điểm thế nào về việc làm thêm bên ngoài.",
+          "word_family": [
+            "aware (adj) nhận biết",
+            "awareness (n) sự nhận thức"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T06:18:17.65758+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/22d5e0cb-b57b-4690-a3b6-5881ef9fe786-wm.jpg?v=1789798154581",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/be-aware-of-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/be-aware-of-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be aware of the risks",
+          "meaning": "nhận thức được rủi ro",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/22d5e0cb-b57b-4690-a3b6-5881ef9fe786-0-wm.jpg?v=1789798695349"
+        },
+        {
+          "phrase": "be aware of a policy",
+          "meaning": "biết về chính sách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/22d5e0cb-b57b-4690-a3b6-5881ef9fe786-1-wm.jpg?v=1789798697500"
+        },
+        {
+          "phrase": "be well aware of",
+          "meaning": "biết rất rõ"
+        }
+      ],
+      "synonyms": [
+        "be conscious of (ý thức được)",
+        "know about (biết về)"
+      ]
+    },
+    {
+      "id": "69e5736b-176c-4a50-9592-bb8e6c557a84",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "wage",
+      "ipa": "/weɪdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Hourly wages have increased by 20 percent over the last two years.",
+          "meaning": "tiền công, tiền lương, thường tính theo giờ",
+          "toeic_tip": "Wage trả theo giờ, salary trả theo tháng hoặc theo năm.",
+          "example_vi": "Tiền công theo giờ đã tăng 20 phần trăm trong hai năm qua.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T06:49:06.335629+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/69e5736b-176c-4a50-9592-bb8e6c557a84-wm.jpg?v=1789798102808",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/wage-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/wage-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "hourly wages",
+          "meaning": "tiền công theo giờ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/69e5736b-176c-4a50-9592-bb8e6c557a84-0-wm.jpg?v=1789800535703"
+        },
+        {
+          "phrase": "the minimum wage",
+          "meaning": "mức lương tối thiểu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/69e5736b-176c-4a50-9592-bb8e6c557a84-1-wm.jpg?v=1789800546184"
+        },
+        {
+          "phrase": "a wage increase",
+          "meaning": "đợt tăng lương"
+        }
+      ],
+      "synonyms": [
+        "pay (tiền công)",
+        "earnings (khoản thu nhập)"
+      ]
+    },
+    {
+      "id": "df04c962-157f-4f9d-ae4f-4a735ba536a1",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "benefit",
+      "ipa": "/ˈben.ɪ.fɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Although the analyst earned a better salary at his new job, his benefits were better at his previous job.",
+          "meaning": "phúc lợi, lợi ích; hưởng lợi, có lợi cho",
+          "antonyms": [
+            "drawback (điểm bất lợi)",
+            "disadvantage (bất lợi)"
+          ],
+          "toeic_tip": "benefit from something; số nhiều benefits nghĩa là chế độ phúc lợi.",
+          "example_vi": "Dù lương chỗ mới cao hơn, chế độ phúc lợi của chuyên viên phân tích này ở công ty cũ lại tốt hơn.",
+          "word_family": [
+            "beneficial (adj) có lợi",
+            "beneficiary (n) người thụ hưởng"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T07:51:27.699684+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/df04c962-157f-4f9d-ae4f-4a735ba536a1-wm.jpg?v=1789798326642",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/benefit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/benefit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "employee benefits",
+          "meaning": "phúc lợi nhân viên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/df04c962-157f-4f9d-ae4f-4a735ba536a1-0-wm.jpg?v=1789804279510"
+        },
+        {
+          "phrase": "benefit from something",
+          "meaning": "hưởng lợi từ điều gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/df04c962-157f-4f9d-ae4f-4a735ba536a1-1-wm.jpg?v=1789804287565"
+        },
+        {
+          "phrase": "a benefits package",
+          "meaning": "gói phúc lợi"
+        }
+      ],
+      "synonyms": [
+        "advantage (lợi thế)",
+        "perk (khoản đãi ngộ thêm)"
+      ]
+    },
+    {
+      "id": "f944541f-1b66-4f5f-adc5-bdb337bcde25",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "flexibly",
+      "ipa": "/ˈflek.sə.bli/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My manager thinks flexibly, enabling herself to solve many sticky problems.",
+          "meaning": "một cách linh hoạt, uyển chuyển",
+          "antonyms": [
+            "rigidly (một cách cứng nhắc)",
+            "inflexibly (không linh hoạt)"
+          ],
+          "toeic_tip": "Dạng hay ra ở Part 5 là flexible hours và flexibility hơn là flexibly.",
+          "example_vi": "Quản lý của tôi tư duy rất linh hoạt nên gỡ được nhiều tình huống rắc rối.",
+          "word_family": [
+            "flexible (adj) linh hoạt",
+            "flexibility (n) sự linh hoạt"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T08:06:29.521718+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f944541f-1b66-4f5f-adc5-bdb337bcde25-wm.jpg?v=1789797721189",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/flexibly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/flexibly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "work flexibly",
+          "meaning": "làm việc linh hoạt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f944541f-1b66-4f5f-adc5-bdb337bcde25-0-wm.jpg?v=1789805177022"
+        },
+        {
+          "phrase": "respond flexibly",
+          "meaning": "phản ứng linh hoạt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f944541f-1b66-4f5f-adc5-bdb337bcde25-1-wm.jpg?v=1789805189384"
+        },
+        {
+          "phrase": "think flexibly",
+          "meaning": "tư duy linh hoạt"
+        }
+      ],
+      "synonyms": [
+        "adaptably (một cách thích ứng)",
+        "accommodatingly (một cách dễ dung hòa)"
+      ]
+    },
+    {
+      "id": "f56cfede-4570-45af-9a41-edad4c05a51a",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "negotiate",
+      "ipa": "UK: /nəˈɡəʊ.ʃi.eɪt/ | US: /nəˈɡoʊ.ʃi.eɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You must know what you want and what you can accept when you negotiate a salary.",
+          "meaning": "đàm phán, thương lượng",
+          "toeic_tip": "negotiate with somebody over something; nhớ tính từ negotiable trong tin tuyển dụng.",
+          "example_vi": "Khi thương lượng lương, bạn phải biết mình muốn gì và chấp nhận được tới đâu.",
+          "word_family": [
+            "negotiation (n) cuộc đàm phán",
+            "negotiable (adj) có thể thương lượng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T08:01:39.000616+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f56cfede-4570-45af-9a41-edad4c05a51a-wm.jpg?v=1789798355903",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/negotiate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/negotiate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "negotiate a contract",
+          "meaning": "đàm phán hợp đồng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f56cfede-4570-45af-9a41-edad4c05a51a-0-wm.jpg?v=1789804897701"
+        },
+        {
+          "phrase": "negotiate a salary",
+          "meaning": "thương lượng mức lương",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f56cfede-4570-45af-9a41-edad4c05a51a-1-wm.jpg?v=1789804898771"
+        },
+        {
+          "phrase": "negotiate with a supplier",
+          "meaning": "thương lượng với nhà cung cấp"
+        }
+      ],
+      "synonyms": [
+        "bargain (mặc cả)",
+        "discuss terms (bàn điều khoản)"
+      ]
+    },
+    {
+      "id": "0da16912-67f8-459a-8131-05765419ae55",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "basis",
+      "ipa": "/ˈbeɪ.sɪs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The manager didn't have any basis for firing the employee.",
+          "meaning": "cơ sở, căn cứ, nền tảng",
+          "toeic_tip": "Số nhiều là bases; nhớ cụm on a daily/regular basis.",
+          "example_vi": "Người quản lý chẳng có căn cứ nào để sa thải nhân viên đó.",
+          "word_family": [
+            "base (n) nền, cơ sở",
+            "basic (adj) cơ bản"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T06:19:59.973356+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0da16912-67f8-459a-8131-05765419ae55-wm.jpg?v=1789798331187",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/basis-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/basis-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "on a regular basis",
+          "meaning": "một cách đều đặn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0da16912-67f8-459a-8131-05765419ae55-0-wm.jpg?v=1789798796952"
+        },
+        {
+          "phrase": "on the basis of",
+          "meaning": "dựa trên cơ sở",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0da16912-67f8-459a-8131-05765419ae55-1-wm.jpg?v=1789798799825"
+        },
+        {
+          "phrase": "have no basis for",
+          "meaning": "không có căn cứ để"
+        }
+      ],
+      "synonyms": [
+        "foundation (nền tảng)",
+        "grounds (căn cứ)"
+      ]
+    },
+    {
+      "id": "7381009b-bd14-45f7-857c-d6b96765d58f",
+      "part_id": "ce3d3676-9425-4b18-9c54-263d3ce7ffc8",
+      "word": "delicately",
+      "ipa": "/ˈdel.ɪ.kət.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Senior management is handling these contract negotiations delicately.",
+          "meaning": "một cách tế nhị, khéo léo, nhẹ nhàng",
+          "antonyms": [
+            "bluntly (thẳng thừng)",
+            "roughly (thô bạo)"
+          ],
+          "toeic_tip": "Delicate còn nghĩa dễ vỡ, hay gặp trong handle delicate items with care.",
+          "example_vi": "Ban lãnh đạo cấp cao đang xử lý các cuộc thương lượng hợp đồng này rất khéo.",
+          "word_family": [
+            "delicate (adj) tinh tế, dễ vỡ",
+            "delicacy (n) sự tế nhị"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:20.962962+00:00",
+      "updated_at": "2026-09-19T06:56:31.105326+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7381009b-bd14-45f7-857c-d6b96765d58f-wm.jpg?v=1789798386780",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/delicately-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/delicately-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "handle something delicately",
+          "meaning": "xử lý khéo léo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7381009b-bd14-45f7-857c-d6b96765d58f-0-wm.jpg?v=1789800984443"
+        },
+        {
+          "phrase": "delicately worded",
+          "meaning": "diễn đạt tế nhị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7381009b-bd14-45f7-857c-d6b96765d58f-1-wm.jpg?v=1789800990954"
+        },
+        {
+          "phrase": "ask delicately",
+          "meaning": "hỏi một cách tế nhị"
+        }
+      ],
+      "synonyms": [
+        "sensitively (một cách tế nhị)",
+        "tactfully (khéo léo)"
+      ]
+    }
+  ]
+}

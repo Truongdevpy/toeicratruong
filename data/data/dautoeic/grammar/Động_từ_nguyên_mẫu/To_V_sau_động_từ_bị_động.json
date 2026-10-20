@@ -1,0 +1,358 @@
+{
+  "subtopic": {
+    "id": "48a48fdb-0a01-4b62-b717-a6139af1b46e",
+    "topic_id": "6ec8bdde-0b2d-4c88-aafd-4710d123edba",
+    "title_en": "To V sau động từ bị động",
+    "title_vi": "To V sau động từ bị động",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 111,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dong-tu-nguyen-mau-to-v-sau-dong-tu-bi-dong"
+  },
+  "lessons": [
+    {
+      "id": "53898038-b70a-44f8-ab4f-1a3510d724e9",
+      "subtopic_id": "48a48fdb-0a01-4b62-b717-a6139af1b46e",
+      "title_en": "To V sau động từ bị động",
+      "title_vi": "To V sau động từ bị động",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2019 · Câu 24",
+          "options": {
+            "A": "expired",
+            "B": "to expire",
+            "C": "will have expired",
+            "D": "expiring"
+          },
+          "question": "As the rental agreement with the Smith Group is set ------- soon, the available office space can be advertised.",
+          "translation": "Vì hợp đồng thuê với Smith Group sắp hết hạn, diện tích văn phòng còn trống có thể được đăng quảng cáo."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “expire”: V3, to V, will have + V3 và V-ing. Chỗ trống đứng ngay sau “is set” trong vế “As …”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "As",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the rental agreement with the Smith Group",
+                    "label": "chủ ngữ (vế As)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is set",
+                    "label": "động từ bị động (vế As)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "soon,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the available office space can be advertised.",
+                    "label": "vế chính"
+                  }
+                ],
+                "caption": "Vế “As …” đã có chủ ngữ và động từ “is set”; chỗ trống đứng ngay sau be + V3."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau be + V3 của các động từ như ask, allow, set dùng dạng nào.",
+                  "Vì sao vế đã có động từ thì không thêm động từ chia thì.",
+                  "Vì sao không dùng V-ing, V3 hay V nguyên mẫu ngay sau be + V3."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Câu chủ động V + người + to V (ask someone to do) đổi sang bị động thì người đó lên làm chủ ngữ, còn to V giữ nguyên sau be + V3 (want, would like, prefer không có bị động kiểu này). Các cụm be scheduled to, be supposed to, be set to cũng có dạng be + V3 + to V.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động",
+                    "formula": "S + V + người + to V"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "người + be + V3 + to V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Visitors",
+                    "label": "chủ ngữ (người được yêu cầu)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are asked",
+                    "label": "động từ bị động"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to sign in",
+                    "label": "to V: làm gì"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the front desk.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chủ động: *The staff ask visitors to sign in.* Bị động: “Visitors” lên làm chủ ngữ, “to sign in” giữ nguyên sau “are asked”."
+              },
+              {
+                "rows": [
+                  [
+                    "được yêu cầu, dặn, kêu gọi, cảnh báo, nhắc",
+                    "be asked, requested, required, instructed, told, urged, warned, reminded",
+                    "*All staff are required to wear badges.* — Mọi nhân viên bắt buộc phải đeo thẻ."
+                  ],
+                  [
+                    "được cho phép",
+                    "be allowed, permitted, authorized",
+                    "*Guests are allowed to use the pool.* — Khách được phép dùng hồ bơi."
+                  ],
+                  [
+                    "được khuyên, khuyến khích, mời, đào tạo",
+                    "be advised, encouraged, invited, trained",
+                    "*New staff are trained to use the system.* — Nhân viên mới được đào tạo để dùng hệ thống."
+                  ],
+                  [
+                    "lịch, kỳ vọng, lẽ ra, sắp",
+                    "be scheduled, expected, supposed, set",
+                    "*The meeting is scheduled to start at ten.* — Cuộc họp được xếp lịch bắt đầu lúc mười giờ."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nhóm nghĩa",
+                  "be + V3 + to V",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**be supposed to V**: lẽ ra phải, theo dự kiến là.",
+                  "**be set to V**: sắp, đã được định là.",
+                  "Giữa be và V3 có thể có trạng từ: *are carefully trained*, *are politely reminded*."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói chủ ngữ được yêu cầu, cho phép, xếp lịch… làm gì.",
+                    "form": "to V ngay sau be + V3",
+                    "example": "*All employees are asked to show their badges.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Các cụm be + V3 trên không đi thẳng với V-ing khi không có giới từ.",
+                    "form": "V-ing (showing, including, avoiding)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có be + V3 làm động từ chính; thêm một V3 hay động từ quá khứ nữa không nối được, và V3 không đi với tân ngữ phía sau.",
+                    "form": "Quá khứ đơn hoặc V3 (shown, displayed, expired)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thiếu “to”: be + V3 của các động từ trên không đi với V nguyên mẫu.",
+                    "form": "V nguyên mẫu (show, include, record)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là động từ chia thì; vế đã có động từ “is set”, không thêm động từ chia thì nữa.",
+                    "form": "will have + V3 (câu mẫu)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "be asked / requested / required / instructed / told + ___",
+                    "example": "*All employees are asked ___*; *Shoppers were told ___*"
+                  },
+                  {
+                    "signal": "be urged / warned / reminded / advised + ___",
+                    "example": "*Residents were urged ___*; *Travelers are advised ___*"
+                  },
+                  {
+                    "signal": "be allowed / permitted / authorized + ___",
+                    "example": "*Two interns were allowed ___*; *Only senior staff are authorized ___*"
+                  },
+                  {
+                    "signal": "be encouraged / invited / trained + ___",
+                    "example": "*Staff members are encouraged ___*; *Hikers are invited ___*"
+                  },
+                  {
+                    "signal": "be scheduled / expected / supposed / set + ___",
+                    "example": "*The maintenance crew is scheduled ___*; *is set ___ soon*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (to V, V-ing, V3, V nguyên mẫu), không có hoặc chỉ có một dạng chia thì, nên đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính dạng be + V3 (có thể có trạng từ xen giữa như “carefully”); chỗ trống đứng ngay sau nó. Xem V3 đó có thuộc nhóm đi với to V không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn to V theo công thức be + V3 + to V. Loại V-ing, V3, V nguyên mẫu và dạng chia thì.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "As",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the rental agreement with the Smith Group",
+                    "label": "chủ ngữ (vế As)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is set",
+                    "label": "động từ bị động (vế As)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "to expire",
+                    "label": "to V"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "soon,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "the available office space can be advertised.",
+                    "label": "vế chính"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “is set to expire” nghĩa là sắp hết hạn."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “expire” (V3, to V, will have + V3, V-ing) nên đây là câu dạng động từ.",
+                  "Bước 2: Vế “As …” có chủ ngữ “the rental agreement” và động từ bị động “is set”, chỗ trống đứng ngay sau; dấu hiệu “be scheduled / expected / supposed / set + ___”.",
+                  "Bước 3: Công thức be set + to V (sắp làm gì), vì vậy chọn “to expire” (hết hạn).",
+                  "“expired” (A) là V3, vế “As …” đã có “is set”, thêm V3 nữa không nối được, nên loại.",
+                  "“will have expired” (C) là tương lai hoàn thành, vế “As …” đã có động từ “is set”, nên loại.",
+                  "“expiring” (D) là V-ing, “be set” không đi thẳng với V-ing, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": []
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Bị động của ask, allow, advise… + người + to V là người + be + V3 + to V.",
+                  "Sau be asked, be allowed, be scheduled, be supposed… dùng to V."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

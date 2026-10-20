@@ -1,0 +1,644 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "49bf6de9-67b8-46a4-850f-9e4094068802",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 29: Product Development",
+    "order_index": 29,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:24.621726+00:00",
+    "updated_at": "2026-09-18T08:52:24.621726+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+    "test_id": "49bf6de9-67b8-46a4-850f-9e4094068802",
+    "name": "Product Development",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:52:24.621726+00:00",
+    "updated_at": "2026-09-18T08:52:24.621726+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "fe469a88-58bd-4753-8406-23e40198cd0d",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "anxious",
+      "ipa": "/ˈæŋk.ʃəs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The developers were anxious about the sales forecast for the new product.",
+          "meaning": "lo lắng, bồn chồn",
+          "antonyms": [
+            "calm (bình tĩnh)",
+            "relaxed (thoải mái)"
+          ],
+          "toeic_tip": "anxious about là lo lắng, còn anxious to do là nóng lòng làm.",
+          "example_vi": "Nhóm phát triển thấp thỏm về dự báo doanh số của sản phẩm mới.",
+          "word_family": [
+            "anxiety (n) sự lo âu",
+            "anxiously (adv) một cách lo lắng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T08:08:35.753213+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fe469a88-58bd-4753-8406-23e40198cd0d-wm.jpg?v=1789798290005",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/anxious-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/anxious-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "anxious about the forecast",
+          "meaning": "lo lắng về dự báo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fe469a88-58bd-4753-8406-23e40198cd0d-0-wm.jpg?v=1789805314948"
+        },
+        {
+          "phrase": "feel anxious",
+          "meaning": "thấy bất an",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fe469a88-58bd-4753-8406-23e40198cd0d-1-wm.jpg?v=1789805315615"
+        },
+        {
+          "phrase": "anxious to start",
+          "meaning": "nóng lòng bắt đầu"
+        }
+      ],
+      "synonyms": [
+        "worried (lo lắng)",
+        "nervous (bồn chồn)",
+        "apprehensive (e ngại)"
+      ]
+    },
+    {
+      "id": "be5bfa7a-c4bf-41bb-89a3-bee778d18e37",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "solve",
+      "ipa": "UK: /sɒlv/ | US: /sɑːlv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Researchers find that every time they solve one problem, two more result.",
+          "meaning": "giải quyết, tìm ra lời giải",
+          "antonyms": [
+            "complicate (làm rắc rối thêm)"
+          ],
+          "toeic_tip": "solve a problem nhưng resolve a conflict; danh từ là solution to a problem.",
+          "example_vi": "Các nhà nghiên cứu nhận ra cứ giải quyết xong một vấn đề thì lại nảy thêm hai vấn đề khác.",
+          "word_family": [
+            "solution (n) giải pháp",
+            "solvable (adj) có thể giải quyết được"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T07:34:59.617847+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/be5bfa7a-c4bf-41bb-89a3-bee778d18e37-wm.jpg?v=1789798251530",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/solve-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/solve-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "solve a problem",
+          "meaning": "giải quyết vấn đề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/be5bfa7a-c4bf-41bb-89a3-bee778d18e37-0-wm.jpg?v=1789803284341"
+        },
+        {
+          "phrase": "solve a dispute",
+          "meaning": "giải quyết tranh chấp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/be5bfa7a-c4bf-41bb-89a3-bee778d18e37-1-wm.jpg?v=1789803299473"
+        },
+        {
+          "phrase": "help solve issues",
+          "meaning": "giúp xử lý vấn đề"
+        }
+      ],
+      "synonyms": [
+        "resolve (giải quyết)",
+        "settle (dàn xếp)",
+        "figure out (tìm ra cách)"
+      ]
+    },
+    {
+      "id": "511d6188-c717-411d-babb-8490ebc172bd",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "experiment",
+      "ipa": "UK: /ɪkˈsper.ɪ.mənt/ | US: /ɪkˈsper.ə.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Product developers must conduct hundreds of experiments in their research.",
+          "meaning": "thử nghiệm; cuộc thí nghiệm, thử nghiệm",
+          "toeic_tip": "Động từ đi với with hoặc on; danh từ dùng conduct/carry out an experiment.",
+          "example_vi": "Người phát triển sản phẩm phải làm hàng trăm cuộc thử nghiệm trong quá trình nghiên cứu.",
+          "word_family": [
+            "experimental (adj) mang tính thử nghiệm",
+            "experimentation (n) việc thử nghiệm"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:38:08.106612+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/511d6188-c717-411d-babb-8490ebc172bd-wm.jpg?v=1789798383362",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/experiment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/experiment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "conduct an experiment",
+          "meaning": "tiến hành thí nghiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/511d6188-c717-411d-babb-8490ebc172bd-0-wm.jpg?v=1789799877029"
+        },
+        {
+          "phrase": "experiment with new ideas",
+          "meaning": "thử nghiệm ý tưởng mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/511d6188-c717-411d-babb-8490ebc172bd-1-wm.jpg?v=1789799887968"
+        },
+        {
+          "phrase": "a series of experiments",
+          "meaning": "một loạt thử nghiệm"
+        }
+      ],
+      "synonyms": [
+        "test (thử nghiệm)",
+        "trial (cuộc thử)",
+        "try out (dùng thử)"
+      ]
+    },
+    {
+      "id": "5ee25b86-3fd5-46c8-b86b-ccb2de180e49",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "research",
+      "ipa": "UK: /rɪˈsɜːtʃ/ | US: /ˈriː.sɝːtʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Part of the research the team does is to determine whether similar products are already on the market.",
+          "meaning": "việc nghiên cứu, sự thu thập thông tin",
+          "toeic_tip": "Không đếm được: do/conduct research, không có dạng researches.",
+          "example_vi": "Một phần việc nghiên cứu của nhóm là xem trên thị trường đã có sản phẩm tương tự hay chưa.",
+          "word_family": [
+            "research (v) nghiên cứu",
+            "researcher (n) nhà nghiên cứu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:45:28.046517+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5ee25b86-3fd5-46c8-b86b-ccb2de180e49-wm.jpg?v=1789798464323",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/research-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/research-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "conduct research",
+          "meaning": "tiến hành nghiên cứu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5ee25b86-3fd5-46c8-b86b-ccb2de180e49-0-wm.jpg?v=1789800327623"
+        },
+        {
+          "phrase": "market research",
+          "meaning": "nghiên cứu thị trường",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5ee25b86-3fd5-46c8-b86b-ccb2de180e49-1-wm.jpg?v=1789800327909"
+        },
+        {
+          "phrase": "research and development",
+          "meaning": "nghiên cứu và phát triển"
+        }
+      ],
+      "synonyms": [
+        "investigation (sự điều tra)",
+        "study (sự nghiên cứu)",
+        "analysis (sự phân tích)"
+      ]
+    },
+    {
+      "id": "1ae59bdf-bf5b-4d50-b08b-1a4bc89c37d7",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "decade",
+      "ipa": "/ˈdek.eɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "After a decade of trying, the company finally developed a vastly superior product.",
+          "meaning": "thập kỷ, giai đoạn mười năm",
+          "toeic_tip": "Đếm được: two decades; phân biệt với century (thế kỷ, một trăm năm).",
+          "example_vi": "Sau mười năm mày mò, công ty cuối cùng cũng làm ra được sản phẩm vượt trội hẳn.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:19:38.410359+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1ae59bdf-bf5b-4d50-b08b-1a4bc89c37d7-wm.jpg?v=1789798278547",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/decade-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/decade-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "for a decade",
+          "meaning": "suốt một thập kỷ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1ae59bdf-bf5b-4d50-b08b-1a4bc89c37d7-0-wm.jpg?v=1789798775622"
+        },
+        {
+          "phrase": "over the past decade",
+          "meaning": "trong thập kỷ qua",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1ae59bdf-bf5b-4d50-b08b-1a4bc89c37d7-1-wm.jpg?v=1789798778275"
+        },
+        {
+          "phrase": "a decade of growth",
+          "meaning": "một thập kỷ tăng trưởng"
+        }
+      ],
+      "synonyms": [
+        "ten years (mười năm)"
+      ]
+    },
+    {
+      "id": "e5025970-a889-4e0a-ad58-403188af844f",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "supervisor",
+      "ipa": "UK: /ˈsuː.pə.vaɪ.zər/ | US: /ˈsuː.pɚ.vaɪ.zɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The department supervisor has to balance his department's responsibilities in order to keep the president satisfied with its progress.",
+          "meaning": "người giám sát, cấp trên phụ trách",
+          "antonyms": [
+            "subordinate (cấp dưới)"
+          ],
+          "toeic_tip": "Chỉ người nên có đuôi -or; đừng chọn supervision khi chỗ trống cần người.",
+          "example_vi": "Người phụ trách bộ phận phải cân đối các đầu việc sao cho chủ tịch hài lòng với tiến độ.",
+          "word_family": [
+            "supervise (v) giám sát",
+            "supervision (n) sự giám sát"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T07:56:04.722936+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e5025970-a889-4e0a-ad58-403188af844f-wm.jpg?v=1789798485531",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/supervisor-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/supervisor-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "report to a supervisor",
+          "meaning": "báo cáo cho cấp trên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e5025970-a889-4e0a-ad58-403188af844f-0-wm.jpg?v=1789804562335"
+        },
+        {
+          "phrase": "an immediate supervisor",
+          "meaning": "cấp trên trực tiếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e5025970-a889-4e0a-ad58-403188af844f-1-wm.jpg?v=1789804564576"
+        },
+        {
+          "phrase": "a department supervisor",
+          "meaning": "người phụ trách bộ phận"
+        }
+      ],
+      "synonyms": [
+        "manager (quản lý)",
+        "overseer (người trông coi)",
+        "boss (sếp)"
+      ]
+    },
+    {
+      "id": "df0617ae-ea63-4f6c-b5a0-9cc51e7eb88f",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "ascertain",
+      "ipa": "UK: /ˌæs.əˈteɪn/ | US: /ˌæs.ɚˈteɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A necessary part of product development is to ascertain whether the product is safe.",
+          "meaning": "xác định, tìm hiểu cho chắc chắn",
+          "antonyms": [
+            "guess (phỏng đoán)"
+          ],
+          "toeic_tip": "Thường theo sau bởi whether hoặc that-clause, trang trọng hơn find out.",
+          "example_vi": "Một khâu bắt buộc khi phát triển sản phẩm là xác định xem sản phẩm có an toàn không.",
+          "word_family": [
+            "ascertainable (adj) có thể xác định được"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T07:52:30.189724+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/df0617ae-ea63-4f6c-b5a0-9cc51e7eb88f-wm.jpg?v=1789798487718",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ascertain-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ascertain-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "ascertain whether",
+          "meaning": "xác định xem liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/df0617ae-ea63-4f6c-b5a0-9cc51e7eb88f-0-wm.jpg?v=1789804348964"
+        },
+        {
+          "phrase": "ascertain the facts",
+          "meaning": "xác minh sự việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/df0617ae-ea63-4f6c-b5a0-9cc51e7eb88f-1-wm.jpg?v=1789804350015"
+        },
+        {
+          "phrase": "ascertain the cause",
+          "meaning": "tìm ra nguyên nhân"
+        }
+      ],
+      "synonyms": [
+        "determine (xác định)",
+        "find out (tìm ra)",
+        "verify (xác minh)"
+      ]
+    },
+    {
+      "id": "720f239a-1ed1-4583-a666-67686d4bcc23",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "systematically",
+      "ipa": "UK: /ˌsɪs.təˈmæt.ɪ.kəl.i/ | US: /ˌsɪs.təˈmæt̬.ɪ.kəl.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Once the creative development is completed, the department works systematically toward making the idea a reality.",
+          "meaning": "một cách có hệ thống, theo trình tự bài bản",
+          "antonyms": [
+            "randomly (một cách ngẫu nhiên)",
+            "haphazardly (lộn xộn)"
+          ],
+          "toeic_tip": "Phân biệt systematic (có hệ thống) và systemic (thuộc toàn hệ thống).",
+          "example_vi": "Khi khâu sáng tạo hoàn tất, bộ phận này bắt tay làm bài bản để biến ý tưởng thành hiện thực.",
+          "word_family": [
+            "system (n) hệ thống",
+            "systematic (adj) có hệ thống"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:55:28.170051+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/720f239a-1ed1-4583-a666-67686d4bcc23-wm.jpg?v=1789798487870",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/systematically-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/systematically-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "work systematically",
+          "meaning": "làm việc có hệ thống",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/720f239a-1ed1-4583-a666-67686d4bcc23-0-wm.jpg?v=1789800928027"
+        },
+        {
+          "phrase": "systematically analyze a problem",
+          "meaning": "phân tích vấn đề có hệ thống",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/720f239a-1ed1-4583-a666-67686d4bcc23-1-wm.jpg?v=1789800912581"
+        },
+        {
+          "phrase": "systematically review",
+          "meaning": "rà soát theo hệ thống"
+        }
+      ],
+      "synonyms": [
+        "methodically (có phương pháp)",
+        "in an orderly way (theo trật tự)"
+      ]
+    },
+    {
+      "id": "01cec5d9-a9c4-48bb-8f2b-3b688bbf1f80",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "assume",
+      "ipa": "UK: /əˈsjuːm/ | US: /əˈsuːm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The young man felt ready to assume the new responsibilities of his promotion.",
+          "meaning": "cho rằng, giả định; đảm nhận",
+          "antonyms": [
+            "relinquish (từ bỏ, giao lại)"
+          ],
+          "toeic_tip": "Hai nghĩa: assume that là cho rằng, assume duties là đảm nhận nhiệm vụ.",
+          "example_vi": "Chàng trai trẻ thấy mình đã sẵn sàng gánh vác những trách nhiệm mới sau khi được thăng chức.",
+          "word_family": [
+            "assumption (n) sự giả định, sự đảm nhận"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:21:13.739751+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/01cec5d9-a9c4-48bb-8f2b-3b688bbf1f80-wm.jpg?v=1789798517948",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assume-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assume-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "assume responsibility",
+          "meaning": "đảm nhận trách nhiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/01cec5d9-a9c4-48bb-8f2b-3b688bbf1f80-0-wm.jpg?v=1789798870904"
+        },
+        {
+          "phrase": "assume a new role",
+          "meaning": "nhận vai trò mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/01cec5d9-a9c4-48bb-8f2b-3b688bbf1f80-1-wm.jpg?v=1789798873596"
+        },
+        {
+          "phrase": "assume that",
+          "meaning": "cho rằng"
+        }
+      ],
+      "synonyms": [
+        "suppose (cho rằng)",
+        "presume (giả định)",
+        "take on (đảm nhận)"
+      ]
+    },
+    {
+      "id": "0e94e644-8690-4c26-bf63-dfd0a9f85b4a",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "responsibility",
+      "ipa": "UK: /rɪˌspɒn.sɪˈbɪl.ə.ti/ | US: /rɪˌspɑːn.səˈbɪl.ə.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The product development department has a huge responsibility to be sure that the product is safe, even if used improperly.",
+          "meaning": "trách nhiệm, nhiệm vụ được giao",
+          "toeic_tip": "be responsible for + N/V-ing; take responsibility for, không dùng of.",
+          "example_vi": "Bộ phận phát triển sản phẩm gánh trách nhiệm rất lớn là bảo đảm sản phẩm an toàn, kể cả khi bị dùng sai cách.",
+          "word_family": [
+            "responsible (adj) có trách nhiệm",
+            "responsibly (adv) một cách có trách nhiệm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:21:52.730306+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0e94e644-8690-4c26-bf63-dfd0a9f85b4a-wm.jpg?v=1789798531517",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/responsibility-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/responsibility-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take responsibility for",
+          "meaning": "chịu trách nhiệm về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0e94e644-8690-4c26-bf63-dfd0a9f85b4a-0-wm.jpg?v=1789798912568"
+        },
+        {
+          "phrase": "a huge responsibility",
+          "meaning": "trách nhiệm rất lớn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0e94e644-8690-4c26-bf63-dfd0a9f85b4a-1-wm.jpg?v=1789798910567"
+        },
+        {
+          "phrase": "job responsibilities",
+          "meaning": "các nhiệm vụ công việc"
+        }
+      ],
+      "synonyms": [
+        "duty (nhiệm vụ)",
+        "obligation (nghĩa vụ)",
+        "task (công việc)"
+      ]
+    },
+    {
+      "id": "4249c9c9-5011-4be0-99d9-452e7c41d65b",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "examine",
+      "ipa": "/ɪɡˈzæm.ɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Before marketing a new product, researchers must carefully examine it from every aspect.",
+          "meaning": "xem xét kỹ, kiểm tra, khảo sát",
+          "antonyms": [
+            "overlook (bỏ qua)",
+            "ignore (phớt lờ)"
+          ],
+          "toeic_tip": "examine + tân ngữ, không có giới từ; trong y tế nghĩa là khám bệnh.",
+          "example_vi": "Trước khi tung sản phẩm mới ra thị trường, đội nghiên cứu phải soi kỹ nó từ mọi khía cạnh.",
+          "word_family": [
+            "examination (n) sự kiểm tra, kỳ thi",
+            "examiner (n) người kiểm tra"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T06:29:41.634753+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4249c9c9-5011-4be0-99d9-452e7c41d65b-wm.jpg?v=1789798489823",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/examine-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/examine-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "examine the data",
+          "meaning": "xem xét dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4249c9c9-5011-4be0-99d9-452e7c41d65b-0-wm.jpg?v=1789799373635"
+        },
+        {
+          "phrase": "carefully examine",
+          "meaning": "kiểm tra cẩn thận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4249c9c9-5011-4be0-99d9-452e7c41d65b-1-wm.jpg?v=1789799381487"
+        },
+        {
+          "phrase": "examine every option",
+          "meaning": "cân nhắc mọi phương án"
+        }
+      ],
+      "synonyms": [
+        "inspect (kiểm tra)",
+        "scrutinize (soi xét)",
+        "review (rà soát)"
+      ]
+    },
+    {
+      "id": "f5d23015-d966-4fbc-9bef-2e8d34c3d081",
+      "part_id": "54f3f8b0-fd4e-43eb-af37-b4fc08c42bb2",
+      "word": "logical",
+      "ipa": "UK: /ˈlɒdʒ.ɪ.kəl/ | US: /ˈlɑː.dʒɪ.kəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is only logical for a research and development team to concentrate on one or two new products at a time.",
+          "meaning": "hợp lý, có logic, hợp lẽ",
+          "antonyms": [
+            "illogical (phi lý)",
+            "irrational (thiếu lý trí)"
+          ],
+          "toeic_tip": "Cấu trúc hay gặp: It is logical (for somebody) to do something.",
+          "example_vi": "Một đội nghiên cứu và phát triển mỗi lần chỉ nên tập trung vào một hai sản phẩm, như thế mới hợp lý.",
+          "word_family": [
+            "logic (n) logic, lý lẽ",
+            "logically (adv) một cách hợp lý"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:52:24.621726+00:00",
+      "updated_at": "2026-09-19T08:03:33.965408+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f5d23015-d966-4fbc-9bef-2e8d34c3d081-wm.jpg?v=1789798461463",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/logical-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/logical-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a logical conclusion",
+          "meaning": "kết luận hợp lý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f5d23015-d966-4fbc-9bef-2e8d34c3d081-0-wm.jpg?v=1789805013818"
+        },
+        {
+          "phrase": "a logical choice",
+          "meaning": "lựa chọn hợp lý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f5d23015-d966-4fbc-9bef-2e8d34c3d081-1-wm.jpg?v=1789805013495"
+        },
+        {
+          "phrase": "logical thinking",
+          "meaning": "tư duy logic"
+        }
+      ],
+      "synonyms": [
+        "reasonable (hợp lý)",
+        "rational (duy lý)",
+        "sensible (có lý)"
+      ]
+    }
+  ]
+}

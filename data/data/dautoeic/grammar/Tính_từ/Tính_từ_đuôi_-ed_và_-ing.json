@@ -1,0 +1,472 @@
+{
+  "subtopic": {
+    "id": "434ed59a-9456-4f2e-88fb-891938f67e31",
+    "topic_id": "1cb57ce1-885b-4639-b51c-f69a772f9412",
+    "title_en": "Tính từ đuôi -ed và -ing",
+    "title_vi": "Tính từ đuôi -ed và -ing",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 26,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-tinh-tu-duoi-ed-va-ing"
+  },
+  "lessons": [
+    {
+      "id": "92900be1-6f2a-48a5-a788-1a908f2b951a",
+      "subtopic_id": "434ed59a-9456-4f2e-88fb-891938f67e31",
+      "title_en": "Tính từ đuôi -ed và -ing",
+      "title_vi": "Tính từ đuôi -ed và -ing",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2019 · Câu 9",
+          "options": {
+            "A": "impressive",
+            "B": "impressed",
+            "C": "impressing",
+            "D": "impressively"
+          },
+          "question": "Guests were ------- with the table decorations for the company banquet.",
+          "translation": "Khách mời thấy ấn tượng với phần trang trí bàn cho buổi tiệc của công ty."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “impress”, trong đó có dạng V-ed, V-ing, tính từ đuôi -ive và trạng từ. Chỗ trống đứng sau “Guests were”, trước “with the table decorations”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Guests",
+                    "label": "chủ ngữ (người)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the table decorations",
+                    "label": "with + nguyên nhân"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the company banquet.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chủ ngữ “Guests” là người; sau chỗ trống là “with …” nêu thứ tác động lên khách."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Tính từ V-ed và V-ing của động từ chỉ cảm xúc khác nhau thế nào.",
+                  "Chủ ngữ ở đây cảm thấy hay gây ra cảm xúc.",
+                  "Vì sao trạng từ không đứng được sau “were”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Nhiều động từ chỉ cảm xúc (surprise, interest, satisfy…) có hai tính từ. **V-ed** nói người **cảm thấy** cảm xúc; **V-ing** nói người, vật hay việc **gây ra** cảm xúc đó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Bên cảm thấy",
+                    "formula": "người + be + V-ed + (by / with / in)"
+                  },
+                  {
+                    "label": "Bên gây ra",
+                    "formula": "vật / việc + be + V-ing"
+                  },
+                  {
+                    "label": "Trước danh từ, bên cảm thấy",
+                    "formula": "V-ed + N"
+                  },
+                  {
+                    "label": "Trước danh từ, bên gây ra",
+                    "formula": "V-ing + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ (bên cảm thấy)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "was",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "C",
+                    "text": "disappointed",
+                    "label": "V-ed"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the sales results.",
+                    "label": "nguyên nhân"
+                  }
+                ],
+                "caption": "Người quản lý cảm thấy thất vọng: V-ed; “with the sales results” nêu nguyên nhân."
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The sales results",
+                    "label": "chủ ngữ (bên gây ra)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "C",
+                    "text": "disappointing.",
+                    "label": "V-ing"
+                  }
+                ],
+                "caption": "Kết quả gây ra sự thất vọng: V-ing."
+              },
+              {
+                "rows": [
+                  [
+                    "interest",
+                    "interested: quan tâm",
+                    "interesting: thú vị"
+                  ],
+                  [
+                    "encourage",
+                    "encouraged: được khích lệ",
+                    "encouraging: đáng khích lệ"
+                  ],
+                  [
+                    "motivate",
+                    "motivated: có động lực",
+                    "motivating: tạo động lực"
+                  ],
+                  [
+                    "disappoint",
+                    "disappointed: thất vọng",
+                    "disappointing: đáng thất vọng"
+                  ],
+                  [
+                    "challenge",
+                    "challenged: bị thử thách",
+                    "challenging: đầy thử thách"
+                  ],
+                  [
+                    "concern",
+                    "concerned: lo lắng",
+                    "concerning: đáng lo ngại"
+                  ],
+                  [
+                    "satisfy",
+                    "satisfied: hài lòng",
+                    "satisfying: làm hài lòng"
+                  ],
+                  [
+                    "surprise",
+                    "surprised: ngạc nhiên",
+                    "surprising: đáng ngạc nhiên"
+                  ],
+                  [
+                    "annoy",
+                    "annoyed: bực bội",
+                    "annoying: gây bực mình"
+                  ],
+                  [
+                    "tire",
+                    "tired: mệt",
+                    "tiring: gây mệt"
+                  ],
+                  [
+                    "confuse",
+                    "confused: bối rối",
+                    "confusing: khó hiểu"
+                  ],
+                  [
+                    "convince",
+                    "convinced: tin chắc",
+                    "convincing: thuyết phục"
+                  ],
+                  [
+                    "excite",
+                    "excited: hào hứng",
+                    "exciting: hấp dẫn, sôi nổi"
+                  ],
+                  [
+                    "relax",
+                    "relaxed: thoải mái",
+                    "relaxing: giúp thư giãn"
+                  ],
+                  [
+                    "overwhelm",
+                    "overwhelmed: bị quá tải",
+                    "overwhelming: quá sức"
+                  ],
+                  [
+                    "please",
+                    "pleased: hài lòng",
+                    "pleasing: dễ chịu, làm vừa lòng"
+                  ],
+                  [
+                    "exhaust",
+                    "exhausted: kiệt sức",
+                    "exhausting: làm kiệt sức"
+                  ],
+                  [
+                    "reward",
+                    "rewarded: được thưởng",
+                    "rewarding: đáng giá"
+                  ],
+                  [
+                    "frustrate",
+                    "frustrated: bực bội",
+                    "frustrating: gây bực bội"
+                  ],
+                  [
+                    "impress",
+                    "impressed: thấy ấn tượng",
+                    "impressive: gây ấn tượng"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Gốc",
+                  "V-ed (cảm thấy, chịu tác động)",
+                  "V-ing (gây ra)"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chọn theo nghĩa: danh từ **cảm thấy** hay **gây ra** cảm xúc. Người cũng có thể gây ra cảm xúc: *an interesting speaker* (diễn giả thú vị).",
+                  "V-ed chỉ cảm xúc đi được với giới từ nêu nguyên nhân: interested **in**, pleased **with**, surprised **by**, impressed **by / with**.",
+                  "Chủ ngữ có thể là một việc (V-ing): *Waiting three weeks … is frustrating.*",
+                  "Trạng từ mức độ (highly, quite, so, clearly, genuinely) có thể đứng trước; chỗ trống vẫn là tính từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Xét danh từ mà chỗ trống nói về: nó cảm thấy hay gây ra cảm xúc.",
+                    "form": "V-ed cho bên cảm thấy, V-ing cho bên gây ra",
+                    "example": "*surprised passengers*; *a surprising result*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "V-ed nói bên cảm thấy hay chịu tác động; kết quả, nhiệm vụ, tờ hướng dẫn không tự cảm thấy.",
+                    "form": "V-ed khi danh từ gây ra cảm xúc (encouraged, challenged, confused, exhausted)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing và impressive nói bên gây ra cảm xúc cho người khác; nghĩa trái với câu.",
+                    "form": "V-ing, -ive khi danh từ cảm thấy (surprising, tiring, pleasing, impressive)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trong các câu bài tập, đứng trước danh từ thì không tạo cụm có nghĩa (*satisfaction customers*); sau be thì không cùng là một với chủ ngữ.",
+                    "form": "Danh từ (interest, satisfaction, excitement, confusion…)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng sau be, cũng không đứng giữa mạo từ và danh từ để bổ nghĩa.",
+                    "form": "Động từ (encourage, annoy, frustrate, surprises, relaxes)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho danh từ, không làm bổ ngữ sau be.",
+                    "form": "Trạng từ (interestingly, excitedly, surprisingly, overwhelmingly)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "người + be + ___",
+                    "example": "*Mr. Holmes was ___ when he heard*; *Guests were ___*; *The regional director was clearly ___*"
+                  },
+                  {
+                    "signal": "vật / việc + be + ___",
+                    "example": "*Early results … have been quite ___*; *sales figures were ___*; *Waiting three weeks … is ___*"
+                  },
+                  {
+                    "signal": "___ + danh từ chỉ người",
+                    "example": "*Highly ___ employees*; *Many ___ residents*; *___ individuals*"
+                  },
+                  {
+                    "signal": "___ + danh từ chỉ vật / việc",
+                    "example": "*a ___ task*; *a ___ explanation*; *an ___ presentation*"
+                  },
+                  {
+                    "signal": "___ + by / with / in",
+                    "example": "*___ by how quickly*; *___ with how smoothly*; *Any employee ___ in*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc, khác loại từ, có cả V-ed và V-ing thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm danh từ mà chỗ trống nói về: chủ ngữ trước be, hoặc danh từ ngay sau chỗ trống. Xem nó cảm thấy hay gây ra cảm xúc, và sau chỗ trống có by / with / in nêu nguyên nhân không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Bên cảm thấy thì chọn V-ed, bên gây ra thì chọn V-ing; loại danh từ, động từ, trạng từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Guests",
+                    "label": "chủ ngữ (người)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "were",
+                    "label": "động từ be"
+                  },
+                  {
+                    "role": "C",
+                    "text": "impressed",
+                    "label": "bổ ngữ: V-ed (cảm thấy)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with the table decorations",
+                    "label": "with + nguyên nhân"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the company banquet.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: khách là bên cảm thấy ấn tượng nên dùng V-ed “impressed”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “impress”, khác loại từ, có cả V-ed và V-ing, nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “Guests were”, trước “with the table decorations”; dấu hiệu “người + be + ___” và “___ + by / with / in”.",
+                  "Bước 3: Khách là người cảm thấy ấn tượng: người + be + V-ed + with, vì vậy chọn “impressed” (thấy ấn tượng).",
+                  "“impressive” (A) là tính từ nói vật gây ấn tượng, còn khách ở đây là bên cảm thấy, nên loại.",
+                  "“impressing” (C) là V-ing mang nghĩa gây ấn tượng, trái với việc khách cảm thấy ấn tượng, nên loại.",
+                  "“impressively” (D) là trạng từ, không làm bổ ngữ sau “were”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“concerned” đứng trước danh từ nghĩa là “lo lắng” (*concerned residents*); đứng sau danh từ nghĩa là “có liên quan” (*the departments concerned*).",
+                  "Với impress, tính từ nói thứ gây ấn tượng là *impressive*: *an impressive result*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Bên cảm thấy dùng V-ed; bên gây ra cảm xúc dùng V-ing.",
+                  "Giới từ nêu nguyên nhân cảm xúc (interested in, pleased with, surprised by) đi với V-ed."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

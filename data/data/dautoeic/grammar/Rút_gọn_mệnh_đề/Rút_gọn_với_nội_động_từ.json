@@ -1,0 +1,345 @@
+{
+  "subtopic": {
+    "id": "a570551b-775e-4a3c-957f-7851f6d261dd",
+    "topic_id": "baee7534-1736-48df-a951-8d40f9d0f7a4",
+    "title_en": "Rút gọn với nội động từ",
+    "title_vi": "Rút gọn với nội động từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 69,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-rut-gon-menh-de-rut-gon-voi-noi-dong-tu"
+  },
+  "lessons": [
+    {
+      "id": "87ab2351-f178-401b-8bc9-aab618bdd739",
+      "subtopic_id": "a570551b-775e-4a3c-957f-7851f6d261dd",
+      "title_en": "Rút gọn với nội động từ",
+      "title_vi": "Rút gọn với nội động từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "falling",
+            "B": "fall",
+            "C": "fallen",
+            "D": "fell"
+          },
+          "question": "Sales figures ------- sharply in the last quarter concerned the board of directors.",
+          "translation": "Số liệu bán hàng giảm mạnh trong quý trước đã khiến ban giám đốc lo ngại."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “fall”. Chỗ trống đứng ngay sau danh từ “Sales figures”; câu đã có động từ chính “concerned”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Sales figures",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "sharply",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "in the last quarter",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "V",
+                    "text": "concerned",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the board of directors.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Chỗ trống cùng phần theo sau nó nằm giữa chủ ngữ “Sales figures” và động từ chính “concerned”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Câu đã có động từ chính thì sau danh từ dùng dạng nào.",
+                  "Nội động từ là gì, có dạng bị động không.",
+                  "Mệnh đề quan hệ có nội động từ rút gọn thế nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Nội động từ là động từ không cần tân ngữ (rise, occur, exist…). Nội động từ không có bị động, nên khi rút gọn mệnh đề quan hệ chỉ dùng **V-ing**, không dùng V3.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Đầy đủ",
+                    "formula": "N + who/which/that + nội động từ (chia thì)"
+                  },
+                  {
+                    "label": "Rút gọn",
+                    "formula": "N + V-ing"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Orders",
+                    "label": "danh từ (chủ ngữ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "arriving after 5 p.m.",
+                    "label": "cụm rút gọn, bổ nghĩa cho Orders"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are shipped",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "the next day.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Đầy đủ: Orders that arrive after 5 p.m. are shipped the next day. Bỏ “that”, “arrive” thành “arriving”; động từ chính vẫn là “are shipped”."
+              },
+              {
+                "rows": [
+                  [
+                    "rise, fall, grow (tăng, giảm, phát triển)",
+                    "*Costs rising too quickly*; *Sales figures falling sharply*; *Companies growing faster than expected*"
+                  ],
+                  [
+                    "occur, arise, exist (xảy ra, nảy sinh, tồn tại)",
+                    "*Problems occurring during the night shift*; *questions arising from the new policy*"
+                  ],
+                  [
+                    "result from, depend on, belong to, participate in",
+                    "*Delays resulting from the storm*; *Equipment belonging to the design department*"
+                  ],
+                  [
+                    "remain, last, expire, retire (còn lại, kéo dài, hết hạn, nghỉ hưu)",
+                    "*Meetings lasting more than ninety minutes*; *Contracts expiring at the end of December*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nội động từ trong bài tập",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Phía sau nội động từ không có tân ngữ mà là giới từ, trạng từ hoặc cụm thời gian, nơi chốn. “last” + khoảng thời gian (*more than ninety minutes*) là thời gian kéo dài, không phải tân ngữ.",
+                  "Câu đã có động từ chính thì sau danh từ không thêm động từ chia thì khi không có who/which/that nối vào."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Là mệnh đề quan hệ rút gọn của nội động từ, nói rõ danh từ đứng trước; câu vẫn có động từ chính khác.",
+                    "form": "V-ing ngay sau danh từ (falling, occurring)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "V3 sau danh từ mang nghĩa bị động, mà nội động từ không có bị động.",
+                    "form": "V3 (risen, fallen, arisen, grown)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hiểu là V3 thì sai vì nội động từ không có bị động; hiểu là quá khứ đơn thì câu có hai động từ chính.",
+                    "form": "Dạng -ed vừa là quá khứ đơn vừa là V3 (occurred, expired, resulted, remained)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là động từ chia thì; câu đã có động từ chính và không có liên từ hay who/which/that nối vào.",
+                    "form": "Quá khứ đơn (rose, fell, arose, grew)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải V-ing nên không rút gọn được; hiểu là động từ chia thì thì câu có hai động từ chính.",
+                    "form": "Hiện tại đơn, V nguyên mẫu (rise, rises, occurs, belong)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "danh từ + ___, câu đã có động từ chính",
+                    "example": "*Costs ___ too quickly may affect company profits.*"
+                  },
+                  {
+                    "signal": "nội động từ + giới từ",
+                    "example": "*___ from the new policy*; *___ to the design department*; *___ on outside funding*; *___ in the leadership program*"
+                  },
+                  {
+                    "signal": "nội động từ + trạng từ",
+                    "example": "*___ sharply in the last quarter*; *___ too quickly*; *___ faster than expected*"
+                  },
+                  {
+                    "signal": "nội động từ + thời gian / nơi chốn",
+                    "example": "*___ at the end of December*; *___ this year*; *___ more than ninety minutes*; *___ in the loading area*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-ing, V3, quá khứ đơn, hiện tại đơn). Có từ hai dạng chia thì là câu chia động từ; nhiều nhất một dạng chia thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Chỗ trống đứng ngay sau danh từ, câu đã có động từ chính và không có who/which/that. Xem phía sau chỗ trống: không có tân ngữ, chỉ có giới từ, trạng từ, thời gian hay nơi chốn, và động từ là nội động từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Nội động từ thì chọn N + V-ing. Loại V3 vì nội động từ không có bị động; loại các dạng chia thì vì câu đã có động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Sales figures",
+                    "label": "danh từ (chủ ngữ)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "falling sharply in the last quarter",
+                    "label": "cụm rút gọn, bổ nghĩa cho Sales figures"
+                  },
+                  {
+                    "role": "V",
+                    "text": "concerned",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the board of directors.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “falling sharply in the last quarter” là cụm rút gọn bổ nghĩa cho “Sales figures”; động từ chính là “concerned”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “fall”, có dạng chia thì (fall, fell), nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống đứng sau danh từ “Sales figures”; câu đã có động từ chính “concerned”; dấu hiệu “nội động từ + trạng từ”: “------- sharply in the last quarter”.",
+                  "Bước 3: “fall” là nội động từ, không có bị động, nên dùng N + V-ing, vì vậy chọn “falling” (giảm).",
+                  "“fall” (B) là V nguyên mẫu, không rút gọn được và câu đã có động từ chính “concerned”, nên loại.",
+                  "“fallen” (C) là V3, nhưng “fall” là nội động từ nên không có nghĩa bị động để đứng sau danh từ, nên loại.",
+                  "“fell” (D) là quá khứ đơn chia thì, câu đã có động từ chính “concerned” mà không có liên từ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số động từ vừa là nội động từ vừa là ngoại động từ, như grow (*grow the business*: phát triển việc kinh doanh) hay retire. Xét theo nghĩa trong câu: không có tân ngữ và chủ ngữ tự diễn ra việc đó thì là nội động từ, dùng V-ing."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Nội động từ không có bị động, nên chỉ rút gọn bằng V-ing.",
+                  "Câu đã có động từ chính thì sau danh từ không dùng động từ chia thì."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

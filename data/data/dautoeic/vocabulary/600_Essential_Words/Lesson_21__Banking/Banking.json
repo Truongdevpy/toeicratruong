@@ -1,0 +1,632 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "3485e4fb-15ef-4ba0-a8ff-e607f2d4db89",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 21: Banking",
+    "order_index": 21,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:49.059185+00:00",
+    "updated_at": "2026-09-18T08:51:49.059185+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "756891b8-704f-496d-a08f-a138f1216425",
+    "test_id": "3485e4fb-15ef-4ba0-a8ff-e607f2d4db89",
+    "name": "Banking",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:49.059185+00:00",
+    "updated_at": "2026-09-18T08:51:49.059185+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "ca5fce45-3d1d-464b-9c8f-02f749646a41",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "accept",
+      "ipa": "/əkˈsept/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The receptionist accepted the package from the courier.",
+          "meaning": "nhận, chấp nhận, đồng ý",
+          "antonyms": [
+            "reject (từ chối)",
+            "decline (khước từ)"
+          ],
+          "toeic_tip": "Phân biệt accept (chấp nhận) với except (ngoại trừ, là giới từ).",
+          "example_vi": "Nhân viên lễ tân đã nhận kiện hàng từ người giao hàng.",
+          "word_family": [
+            "acceptance (n) sự chấp nhận",
+            "acceptable (adj) chấp nhận được"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:40:08.408221+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ca5fce45-3d1d-464b-9c8f-02f749646a41-wm.jpg?v=1789798295956",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accept-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accept-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accept an offer",
+          "meaning": "chấp nhận đề nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ca5fce45-3d1d-464b-9c8f-02f749646a41-0-wm.jpg?v=1789803597235"
+        },
+        {
+          "phrase": "accept responsibility",
+          "meaning": "nhận trách nhiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ca5fce45-3d1d-464b-9c8f-02f749646a41-1-wm.jpg?v=1789803608260"
+        },
+        {
+          "phrase": "accept a package",
+          "meaning": "nhận kiện hàng"
+        }
+      ],
+      "synonyms": [
+        "receive (nhận)",
+        "take (nhận lấy)",
+        "agree to (đồng ý với)"
+      ]
+    },
+    {
+      "id": "cf40868d-a7ad-42aa-8649-bcc493358943",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "take out",
+      "ipa": "/ˌteɪk ˈaʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My checking account allows me to take out money at any bank branch without a fee.",
+          "meaning": "rút ra, lấy ra, mang đi",
+          "antonyms": [
+            "deposit (gửi vào)",
+            "put in (bỏ vào)"
+          ],
+          "toeic_tip": "Nghĩa take out a loan là vay tiền, hay ra ở Part 5 và Part 7.",
+          "example_vi": "Tài khoản thanh toán của tôi cho phép rút tiền miễn phí ở bất kỳ chi nhánh nào.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:42:43.608333+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cf40868d-a7ad-42aa-8649-bcc493358943-wm.jpg?v=1789798004320",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/take-out-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/take-out-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take out money",
+          "meaning": "rút tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cf40868d-a7ad-42aa-8649-bcc493358943-0-wm.jpg?v=1789803763467"
+        },
+        {
+          "phrase": "take out a loan",
+          "meaning": "vay một khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cf40868d-a7ad-42aa-8649-bcc493358943-1-wm.jpg?v=1789803762044"
+        },
+        {
+          "phrase": "take out insurance",
+          "meaning": "mua bảo hiểm"
+        }
+      ],
+      "synonyms": [
+        "withdraw (rút ra)",
+        "remove (lấy ra)"
+      ]
+    },
+    {
+      "id": "8bce0609-f153-4ee8-a3b8-ea25b2a3cb80",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "transaction",
+      "ipa": "/trænˈzæk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Banking transactions will appear on your monthly statement.",
+          "meaning": "giao dịch, thương vụ",
+          "toeic_tip": "Đếm được, thường đi với make, complete hoặc process a transaction.",
+          "example_vi": "Các giao dịch ngân hàng sẽ hiển thị trên sao kê hằng tháng.",
+          "word_family": [
+            "transact (v) tiến hành giao dịch",
+            "transactional (adj) thuộc về giao dịch"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:11:03.623643+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8bce0609-f153-4ee8-a3b8-ea25b2a3cb80-wm.jpg?v=1789797982196",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/transaction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/transaction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "banking transaction",
+          "meaning": "giao dịch ngân hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8bce0609-f153-4ee8-a3b8-ea25b2a3cb80-0-wm.jpg?v=1789801863486"
+        },
+        {
+          "phrase": "complete a transaction",
+          "meaning": "hoàn tất giao dịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8bce0609-f153-4ee8-a3b8-ea25b2a3cb80-1-wm.jpg?v=1789801862329"
+        },
+        {
+          "phrase": "transaction fee",
+          "meaning": "phí giao dịch"
+        }
+      ],
+      "synonyms": [
+        "deal (thương vụ)",
+        "dealing (việc giao dịch)",
+        "exchange (sự trao đổi)"
+      ]
+    },
+    {
+      "id": "6b87d356-7b6e-4b05-8f1e-512db7e48c07",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "signature",
+      "ipa": "UK: /ˈsɪɡ.nə.tʃər/ | US: /ˈsɪɡ.nə.tʃɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Once we have your signature, the contract will be complete.",
+          "meaning": "chữ ký",
+          "toeic_tip": "Danh từ đếm được; động từ tương ứng là sign, không có dạng signate.",
+          "example_vi": "Chỉ cần bạn ký vào là hợp đồng hoàn tất.",
+          "word_family": [
+            "sign (v) ký",
+            "signatory (n) bên ký kết"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T06:51:03.93615+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6b87d356-7b6e-4b05-8f1e-512db7e48c07-wm.jpg?v=1789798010050",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/signature-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/signature-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "put your signature on",
+          "meaning": "ký vào",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6b87d356-7b6e-4b05-8f1e-512db7e48c07-0-wm.jpg?v=1789800662260"
+        },
+        {
+          "phrase": "an authorized signature",
+          "meaning": "chữ ký được ủy quyền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6b87d356-7b6e-4b05-8f1e-512db7e48c07-1-wm.jpg?v=1789800663794"
+        },
+        {
+          "phrase": "signature on file",
+          "meaning": "chữ ký lưu hồ sơ"
+        }
+      ],
+      "synonyms": [
+        "autograph (chữ ký tay)",
+        "endorsement (chữ ký xác nhận)"
+      ]
+    },
+    {
+      "id": "f416fb9c-d6a1-47a3-9870-d29b70c6d0e7",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "balance",
+      "ipa": "/ˈbæl.əns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "His healthy bank balance showed a long habit of savings.",
+          "meaning": "số dư, phần còn lại; cân đối thu chi",
+          "toeic_tip": "Trong ngân hàng balance nghĩa là số dư, không phải sự cân bằng.",
+          "example_vi": "Số dư tài khoản dồi dào cho thấy anh ấy đã tiết kiệm từ lâu.",
+          "word_family": [
+            "balanced (adj) đã cân đối",
+            "unbalanced (adj) chưa cân đối"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T08:01:08.17994+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f416fb9c-d6a1-47a3-9870-d29b70c6d0e7-wm.jpg?v=1789798012515",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/balance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/balance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "bank balance",
+          "meaning": "số dư tài khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f416fb9c-d6a1-47a3-9870-d29b70c6d0e7-0-wm.jpg?v=1789804855847"
+        },
+        {
+          "phrase": "balance the checkbook",
+          "meaning": "cân đối sổ séc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f416fb9c-d6a1-47a3-9870-d29b70c6d0e7-1-wm.jpg?v=1789804868030"
+        },
+        {
+          "phrase": "outstanding balance",
+          "meaning": "số dư chưa thanh toán"
+        }
+      ],
+      "synonyms": [
+        "remainder (phần còn lại)",
+        "reconcile (đối chiếu cho khớp)"
+      ]
+    },
+    {
+      "id": "7e44d9a5-6b59-4610-8787-8c24d3c7f737",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "dividend",
+      "ipa": "UK: /ˈdɪv.ɪ.dend/ | US: /ˈdɪv.ə.dend/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The stockholders were outraged when their quarterly dividends were so small.",
+          "meaning": "cổ tức, phần lợi nhuận được chia",
+          "toeic_tip": "Danh từ đếm được, thường dùng số nhiều: dividends are paid quarterly.",
+          "example_vi": "Các cổ đông rất phẫn nộ khi cổ tức quý của họ quá ít ỏi.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:02:37.545844+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7e44d9a5-6b59-4610-8787-8c24d3c7f737-wm.jpg?v=1789798377432",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/dividend-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/dividend-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "pay a dividend",
+          "meaning": "trả cổ tức",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7e44d9a5-6b59-4610-8787-8c24d3c7f737-0-wm.jpg?v=1789801356089"
+        },
+        {
+          "phrase": "quarterly dividend",
+          "meaning": "cổ tức hằng quý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7e44d9a5-6b59-4610-8787-8c24d3c7f737-1-wm.jpg?v=1789801357391"
+        },
+        {
+          "phrase": "dividend yield",
+          "meaning": "tỷ suất cổ tức"
+        }
+      ],
+      "synonyms": [
+        "payout (khoản chi trả)",
+        "share of profits (phần lợi nhuận được chia)"
+      ]
+    },
+    {
+      "id": "62c44e42-a8ff-42f8-a6fd-c2b73de620b5",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "restricted",
+      "ipa": "/rɪˈstrɪk.tɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The number of free withdrawals a customer can make from his or her account each month is restricted to five.",
+          "meaning": "bị hạn chế, bị giới hạn",
+          "antonyms": [
+            "unrestricted (không hạn chế)",
+            "unlimited (không giới hạn)"
+          ],
+          "toeic_tip": "Cấu trúc cố định: be restricted to + số lượng hoặc đối tượng được phép.",
+          "example_vi": "Mỗi tháng khách hàng chỉ được rút tiền miễn phí tối đa năm lần.",
+          "word_family": [
+            "restrict (v) hạn chế",
+            "restriction (n) sự hạn chế"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T06:47:14.907843+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/62c44e42-a8ff-42f8-a6fd-c2b73de620b5-wm.jpg?v=1789798008908",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/restricted-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/restricted-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "restricted access",
+          "meaning": "quyền ra vào hạn chế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/62c44e42-a8ff-42f8-a6fd-c2b73de620b5-0-wm.jpg?v=1789800432419"
+        },
+        {
+          "phrase": "restricted area",
+          "meaning": "khu vực hạn chế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/62c44e42-a8ff-42f8-a6fd-c2b73de620b5-1-wm.jpg?v=1789800434755"
+        },
+        {
+          "phrase": "restricted to members",
+          "meaning": "chỉ dành cho thành viên"
+        }
+      ],
+      "synonyms": [
+        "limited (bị giới hạn)",
+        "confined (bị bó hẹp)"
+      ]
+    },
+    {
+      "id": "9f525f42-eaad-4224-9414-597bf137bb9d",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "deduct",
+      "ipa": "/dɪˈdʌkt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Before computing his taxes, Christophe remembered to deduct allowable home improvement expenses.",
+          "meaning": "trừ đi, khấu trừ",
+          "antonyms": [
+            "add (cộng thêm)"
+          ],
+          "toeic_tip": "Luôn đi với from; đừng nhầm deduct (khấu trừ) với deduce (suy luận).",
+          "example_vi": "Trước khi tính thuế, Christophe nhớ trừ đi các khoản chi sửa nhà được phép khấu trừ.",
+          "word_family": [
+            "deduction (n) khoản khấu trừ",
+            "deductible (adj) được khấu trừ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:19:23.544411+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9f525f42-eaad-4224-9414-597bf137bb9d-wm.jpg?v=1789798013935",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deduct-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deduct-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "deduct expenses",
+          "meaning": "khấu trừ chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9f525f42-eaad-4224-9414-597bf137bb9d-0-wm.jpg?v=1789802349995"
+        },
+        {
+          "phrase": "deduct from the total",
+          "meaning": "trừ vào tổng số",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9f525f42-eaad-4224-9414-597bf137bb9d-1-wm.jpg?v=1789802363397"
+        },
+        {
+          "phrase": "deduct a fee",
+          "meaning": "trừ một khoản phí"
+        }
+      ],
+      "synonyms": [
+        "subtract (trừ)",
+        "take off (trừ bớt)",
+        "withhold (giữ lại khấu trừ)"
+      ]
+    },
+    {
+      "id": "a00fe98a-8109-4236-bb2e-18ccc367f03b",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "mortgage",
+      "ipa": "UK: /ˈmɔː.ɡɪdʒ/ | US: /ˈmɔːr.ɡɪdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Due to low interest rates, Sheila moved quickly to find a good deal on a mortgage.",
+          "meaning": "khoản vay thế chấp mua nhà; thế chấp nhà để vay tiền",
+          "toeic_tip": "Chữ t câm, đọc /ˈmɔːɡɪdʒ/, hay nghe thấy ở Part 3 và Part 4.",
+          "example_vi": "Nhờ lãi suất thấp, Sheila nhanh chóng tìm được gói vay mua nhà với điều kiện tốt.",
+          "word_family": [
+            "mortgaged (adj) đã đem thế chấp",
+            "mortgagor (n) bên thế chấp"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:20:02.943249+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a00fe98a-8109-4236-bb2e-18ccc367f03b-wm.jpg?v=1789798011137",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mortgage-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mortgage-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "apply for a mortgage",
+          "meaning": "xin vay thế chấp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a00fe98a-8109-4236-bb2e-18ccc367f03b-0-wm.jpg?v=1789802393806"
+        },
+        {
+          "phrase": "pay off a mortgage",
+          "meaning": "trả hết khoản vay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a00fe98a-8109-4236-bb2e-18ccc367f03b-1-wm.jpg?v=1789802402791"
+        },
+        {
+          "phrase": "mortgage interest rate",
+          "meaning": "lãi suất vay thế chấp"
+        }
+      ],
+      "synonyms": [
+        "home loan (khoản vay mua nhà)",
+        "pledge (đem thế chấp)"
+      ]
+    },
+    {
+      "id": "2f5c2d6d-99c2-4b25-905f-63523d4b033f",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "borrow",
+      "ipa": "UK: /ˈbɒr.əʊ/ | US: /ˈbɑːr.oʊ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Do you want to borrow a pen?",
+          "meaning": "mượn, vay",
+          "antonyms": [
+            "lend (cho vay)",
+            "repay (hoàn trả)"
+          ],
+          "toeic_tip": "borrow from = mượn của ai; lend to = cho ai mượn, đừng đảo ngược.",
+          "example_vi": "Bạn có muốn mượn cây bút không?",
+          "word_family": [
+            "borrower (n) người đi vay",
+            "borrowing (n) việc vay mượn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T06:23:20.839565+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2f5c2d6d-99c2-4b25-905f-63523d4b033f-wm.jpg?v=1789798573005",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/borrow-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/borrow-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "borrow money from the bank",
+          "meaning": "vay tiền ngân hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f5c2d6d-99c2-4b25-905f-63523d4b033f-0-wm.jpg?v=1789799000704"
+        },
+        {
+          "phrase": "borrow at a low rate",
+          "meaning": "vay lãi suất thấp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f5c2d6d-99c2-4b25-905f-63523d4b033f-1-wm.jpg?v=1789798998747"
+        },
+        {
+          "phrase": "borrow heavily",
+          "meaning": "vay nhiều"
+        }
+      ],
+      "synonyms": [
+        "take out a loan (vay một khoản)",
+        "obtain credit (vay tín dụng)"
+      ]
+    },
+    {
+      "id": "ba76de6e-327c-4b52-b3d9-9f6d0bb6d67d",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "down payment",
+      "ipa": "/ˌdaʊn ˈpeɪ.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "By making a large down payment, the couple saved a great deal in mortgage interest.",
+          "meaning": "tiền trả trước, khoản thanh toán ban đầu",
+          "toeic_tip": "Luôn đi với giới từ on: a down payment on a house/car.",
+          "example_vi": "Nhờ trả trước một khoản lớn, hai vợ chồng tiết kiệm được khá nhiều tiền lãi vay mua nhà.",
+          "word_family": [
+            "pay (v) trả tiền",
+            "payment (n) khoản thanh toán"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T07:32:47.970385+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ba76de6e-327c-4b52-b3d9-9f6d0bb6d67d-wm.jpg?v=1789798009489",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/down-payment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/down-payment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a down payment",
+          "meaning": "trả trước một khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ba76de6e-327c-4b52-b3d9-9f6d0bb6d67d-0-wm.jpg?v=1789803158641"
+        },
+        {
+          "phrase": "a large down payment",
+          "meaning": "khoản trả trước lớn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ba76de6e-327c-4b52-b3d9-9f6d0bb6d67d-1-wm.jpg?v=1789803167836"
+        },
+        {
+          "phrase": "down payment on a house",
+          "meaning": "tiền trả trước mua nhà"
+        }
+      ],
+      "synonyms": [
+        "deposit (tiền đặt cọc)",
+        "initial payment (khoản thanh toán ban đầu)"
+      ]
+    },
+    {
+      "id": "f6dd656e-741e-4d4c-9783-c1c5822a6cc2",
+      "part_id": "756891b8-704f-496d-a08f-a138f1216425",
+      "word": "cautiously",
+      "ipa": "UK: /ˈkɔː.ʃəs.li/ | US: /ˈkɑː.ʃəs.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The bank manager spoke cautiously when giving out information to people she did not know.",
+          "meaning": "một cách thận trọng, cẩn thận, dè chừng",
+          "antonyms": [
+            "carelessly (bất cẩn)",
+            "recklessly (liều lĩnh)"
+          ],
+          "toeic_tip": "Part 5 hay hỏi vị trí trạng từ: cautiously bổ nghĩa cho động từ.",
+          "example_vi": "Giám đốc ngân hàng nói năng rất dè dặt khi cung cấp thông tin cho người lạ.",
+          "word_family": [
+            "caution (n) sự thận trọng",
+            "cautious (adj) thận trọng"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:49.059185+00:00",
+      "updated_at": "2026-09-19T08:04:53.727942+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f6dd656e-741e-4d4c-9783-c1c5822a6cc2-wm.jpg?v=1789798321582",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/cautiously-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/cautiously-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "act cautiously",
+          "meaning": "hành động thận trọng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6dd656e-741e-4d4c-9783-c1c5822a6cc2-0-wm.jpg?v=1789805079643"
+        },
+        {
+          "phrase": "proceed cautiously",
+          "meaning": "tiến hành dè dặt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6dd656e-741e-4d4c-9783-c1c5822a6cc2-1-wm.jpg?v=1789805093540"
+        },
+        {
+          "phrase": "invest cautiously",
+          "meaning": "đầu tư thận trọng"
+        }
+      ],
+      "synonyms": [
+        "carefully (cẩn thận)",
+        "warily (dè chừng)",
+        "prudently (khôn ngoan thận trọng)"
+      ]
+    }
+  ]
+}

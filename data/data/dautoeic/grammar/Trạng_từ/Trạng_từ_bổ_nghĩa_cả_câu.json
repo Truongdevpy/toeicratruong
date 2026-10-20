@@ -1,0 +1,314 @@
+{
+  "subtopic": {
+    "id": "36efedcb-882b-4466-bec4-9f0669650473",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ bổ nghĩa cả câu",
+    "title_vi": "Trạng từ bổ nghĩa cả câu",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 21,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-bo-nghia-ca-cau"
+  },
+  "lessons": [
+    {
+      "id": "a3523856-2e0f-41d2-bd24-707693a83385",
+      "subtopic_id": "36efedcb-882b-4466-bec4-9f0669650473",
+      "title_en": "Trạng từ bổ nghĩa cả câu",
+      "title_vi": "Trạng từ bổ nghĩa cả câu",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "fortune",
+            "B": "fortunately",
+            "C": "fortunate",
+            "D": "fortunes"
+          },
+          "question": "-------, the storm passed before the delivery trucks reached the mountain road.",
+          "translation": "May thay, cơn bão đã đi qua trước khi những xe tải giao hàng lên tới đoạn đường núi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “fortune” nhưng khác loại từ: hai danh từ, một tính từ, một trạng từ. Chỗ trống đứng đầu câu, ngay trước dấu phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "BLANK",
+                    "text": "-------,",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the storm",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "passed",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "before the delivery trucks reached the mountain road.",
+                    "label": "mệnh đề before"
+                  }
+                ],
+                "caption": "Sau dấu phẩy, “the storm passed …” đã có đủ chủ ngữ và động từ; chỗ trống đứng ngoài mệnh đề đó."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Loại từ nào đứng một mình ở đầu câu để nêu nhận xét về cả sự việc phía sau.",
+                  "Nhận ra loại từ qua đuôi.",
+                  "Vì sao danh từ, động từ, tính từ không đứng được ở vị trí này."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trạng từ bổ nghĩa cả câu nêu nhận xét, thái độ của người nói về cả sự việc (may thay, rõ ràng là, nghe nói…). Trong bài tập, nó đứng đầu câu và tách khỏi mệnh đề bằng dấu phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Vị trí",
+                    "formula": "trạng từ + dấu phẩy + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "may, rủi, tiếc, hy vọng",
+                    "fortunately, thankfully, sadly, regrettably, hopefully",
+                    "*Fortunately, the flight left on time.* — May thay, chuyến bay đã cất cánh đúng giờ."
+                  ],
+                  [
+                    "rõ ràng, có vẻ, theo tin",
+                    "clearly, evidently, apparently, reportedly, supposedly",
+                    "*Reportedly, the firm will hire fifty new staff.* — Theo tin đưa ra, công ty sẽ tuyển năm mươi nhân viên mới."
+                  ],
+                  [
+                    "bất ngờ, đáng chú ý, đúng dự đoán",
+                    "surprisingly, remarkably, notably, predictably, understandably, naturally, coincidentally",
+                    "*Surprisingly, the old printer still works well.* — Thật bất ngờ, chiếc máy in cũ vẫn chạy tốt."
+                  ],
+                  [
+                    "nhìn chung, phải thừa nhận",
+                    "generally, admittedly",
+                    "*Generally, invoices are paid within thirty days.* — Nhìn chung, hóa đơn được thanh toán trong vòng ba mươi ngày."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nghĩa",
+                  "Trạng từ trong bài tập",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra trạng từ qua đuôi**: các trạng từ trên đều có đuôi -ly, tạo từ tính từ + -ly (fortunate, fortunately), tính từ -ble đổi thành -bly (predictable, predictably), hoặc V3 + -ly (reported, reportedly).",
+                "type": "paragraph"
+              },
+              {
+                "text": "Tính từ, V3 hay V-ing đứng một mình ở đầu câu sẽ mô tả chủ ngữ ngay sau dấu phẩy, không nhận xét được cả sự việc. Vì vậy chỉ trạng từ nêu được lời nhận xét cho cả câu.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng đầu câu trước dấu phẩy, nêu nhận xét về cả mệnh đề phía sau.",
+                    "form": "Trạng từ đuôi -ly (fortunately, clearly, reportedly)",
+                    "example": "*Fortunately, the storm passed.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đứng một mình thì mô tả chủ ngữ phía sau: *Hopeful, the new shuttle service …* thành “dịch vụ xe đầy hy vọng”, không có nghĩa.",
+                    "form": "Tính từ (fortunate, clear, hopeful, regrettable)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng một mình cũng chỉ nói về chủ ngữ phía sau (chủ ngữ được, bị hay cảm thấy …), không nhận xét cả sự việc.",
+                    "form": "V3 (reported, surprised, admitted, noted)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng một mình sẽ nói chủ ngữ phía sau tự làm việc đó; trong các câu bài tập, chủ ngữ không làm việc đó.",
+                    "form": "V-ing (understanding, reporting, hoping, regretting)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng một mình trước dấu phẩy không làm thành phần nào của câu.",
+                    "form": "Danh từ (fortune, evidence, clarity, sadness, thanks)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có chủ ngữ, trong khi mệnh đề sau dấu phẩy đã có động từ chính.",
+                    "form": "Động từ (coincide, admit, clarify, sadden)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + dấu phẩy ở đầu câu",
+                    "example": "*-------, the storm passed …*; *-------, the backup server kept …*"
+                  },
+                  {
+                    "signal": "sau dấu phẩy là mệnh đề đầy đủ S + V",
+                    "example": "*the supplier canceled the order*; *orders … leave the warehouse the same day*"
+                  },
+                  {
+                    "signal": "bỏ chỗ trống, câu vẫn đủ nghĩa",
+                    "example": "*The staff need more training before the new payment system goes live.*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem chỗ trống có đứng đầu câu, ngay trước dấu phẩy không, và phần sau dấu phẩy đã là mệnh đề đầy đủ S + V chưa. Bỏ chỗ trống mà câu vẫn đủ nghĩa thì chỗ trống là lời nhận xét cho cả câu.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ đuôi -ly theo công thức trạng từ + dấu phẩy + S + V; loại danh từ, động từ, và loại tính từ, V3, V-ing vì đứng một mình chúng chỉ mô tả chủ ngữ phía sau.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "Fortunately,",
+                    "label": "trạng từ bổ nghĩa cả câu"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the storm",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "passed",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "before the delivery trucks reached the mountain road.",
+                    "label": "mệnh đề before"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “Fortunately” nêu nhận xét của người nói về cả sự việc “the storm passed …”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “fortune” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng đầu câu, trước dấu phẩy; sau đó là mệnh đề đầy đủ “the storm passed”; dấu hiệu “___ + dấu phẩy ở đầu câu”.",
+                  "Bước 3: Cần trạng từ + dấu phẩy + S + V; “fortunately” là trạng từ (đuôi -ly), vì vậy chọn “fortunately” (may thay).",
+                  "“fortune” (A) là danh từ (vận may), đứng một mình trước dấu phẩy không làm thành phần nào của câu, nên loại.",
+                  "“fortunate” (C) là tính từ, đứng một mình sẽ mô tả “the storm”, “cơn bão may mắn” không hợp nghĩa, nên loại.",
+                  "“fortunes” (D) là danh từ số nhiều, đứng một mình trước dấu phẩy không làm thành phần nào của câu, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Muốn dùng tính từ để nhận xét cả sự việc thì dùng cấu trúc It is/was + tính từ + that + S + V: *It was fortunate that the storm passed.* — Thật may là cơn bão đã đi qua.",
+                  "Danh từ mở đầu câu được khi có giới từ đi trước: *By coincidence, both suppliers raised their prices.* — Thật trùng hợp, cả hai nhà cung cấp đều tăng giá."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chỗ trống đầu câu, trước dấu phẩy, sau là mệnh đề đầy đủ: chọn trạng từ -ly.",
+                  "Tính từ, V3, V-ing đứng một mình đầu câu chỉ mô tả chủ ngữ phía sau."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

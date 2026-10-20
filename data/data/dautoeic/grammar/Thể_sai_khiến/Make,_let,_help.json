@@ -1,0 +1,356 @@
+{
+  "subtopic": {
+    "id": "9e46d6d8-4f7a-4828-b818-aa27cef44d30",
+    "topic_id": "773dfa4f-07d6-498c-9513-ed67870a8408",
+    "title_en": "Make, let, help",
+    "title_vi": "Make, let, help",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 95,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-sai-khien-make-let-help"
+  },
+  "lessons": [
+    {
+      "id": "1358cc78-04eb-4b06-a773-6c4c1c9517b1",
+      "subtopic_id": "9e46d6d8-4f7a-4828-b818-aa27cef44d30",
+      "title_en": "Make, let, help",
+      "title_vi": "Make, let, help",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 5 · Câu 104",
+          "options": {
+            "A": "providing",
+            "B": "provide",
+            "C": "provides",
+            "D": "to provide"
+          },
+          "question": "Let Farida Banquet Service ------- professional catering for your important corporate events.",
+          "translation": "Hãy để Dịch vụ Tiệc Farida cung cấp dịch vụ ăn uống chuyên nghiệp cho những sự kiện quan trọng của công ty bạn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “provide”: V-ing, V nguyên mẫu, V-s và to V. Chỗ trống đứng sau “Let” và tân ngữ “Farida Banquet Service”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Let",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Farida Banquet Service",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "professional catering",
+                    "label": "cụm danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for your important corporate events.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "“Let” đứng đầu câu; chỗ trống là động từ thứ hai, đứng sau tân ngữ và trước cụm danh từ “professional catering”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“Let” đứng đầu câu giữ vai trò gì trong câu",
+                  "sau let + tân ngữ, động từ thứ hai ở dạng nào",
+                  "make và help đi với dạng động từ nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Make, let, help đi với một tân ngữ và một động từ thứ hai để nói ai bắt, cho phép hoặc giúp ai làm gì. Động từ thứ hai không chia thì.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "bắt, khiến",
+                    "formula": "make + tân ngữ + V nguyên mẫu"
+                  },
+                  {
+                    "label": "cho phép, để",
+                    "formula": "let + tân ngữ + V nguyên mẫu"
+                  },
+                  {
+                    "label": "giúp ai",
+                    "formula": "help + tân ngữ + V nguyên mẫu / to V"
+                  },
+                  {
+                    "label": "giúp (không nói giúp ai)",
+                    "formula": "help + V nguyên mẫu / to V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "lets",
+                    "label": "động từ chính: let"
+                  },
+                  {
+                    "role": "O",
+                    "text": "her staff",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "leave early on Fridays.",
+                    "label": "động từ thứ hai: V nguyên mẫu"
+                  }
+                ],
+                "caption": "“lets” là động từ chính, chia theo chủ ngữ số ít; “leave” là động từ thứ hai, giữ dạng nguyên mẫu."
+              },
+              {
+                "rows": [
+                  [
+                    "make + tân ngữ + V: bắt ai làm, khiến ai/cái gì như thế nào",
+                    "*The new policy makes staff submit reports every week.* — Chính sách mới bắt nhân viên nộp báo cáo mỗi tuần."
+                  ],
+                  [
+                    "let + tân ngữ + V: cho phép, để ai làm",
+                    "*Please let us know your arrival time.* — Vui lòng cho chúng tôi biết giờ bạn đến."
+                  ],
+                  [
+                    "help + tân ngữ + V / to V: giúp ai làm",
+                    "*This guide helps new staff set up their accounts.* — Tài liệu này giúp nhân viên mới thiết lập tài khoản."
+                  ],
+                  [
+                    "help + V / to V: giúp làm (không nói giúp ai)",
+                    "*Several volunteers will help organize the event.* — Một số tình nguyện viên sẽ giúp tổ chức sự kiện."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "make, let, help là động từ chính, chia theo thì và chủ ngữ: makes, made, lets, does not let, has helped, will help. Động từ thứ hai giữ nguyên mẫu, không thêm -s, -ed.",
+                  "“Let …” hoặc “Please let …” đứng đầu câu là câu mệnh lệnh; “let” vẫn là động từ chính."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đúng công thức cho cả ba động từ.",
+                    "form": "V nguyên mẫu sau make, let, help (+ tân ngữ)",
+                    "example": "*made the organizers move*; *lets employees swap*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "help nhận cả V nguyên mẫu lẫn to V.",
+                    "form": "to V sau help (+ tân ngữ)",
+                    "example": "*helps new employees to take on more responsibility*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "make và let + tân ngữ đi với V nguyên mẫu, không có “to”.",
+                    "form": "to V sau make, let + tân ngữ (to attend, to enter, to know, to swap)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không dùng sau make, let, help (+ tân ngữ) để nói việc được bắt, được cho phép hay được giúp làm.",
+                    "form": "V-ing (entering, working, decorating, providing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thì đã thể hiện ở make, let, help; động từ thứ hai không chia thì. Tân ngữ trong các câu này tự làm hành động nên cũng không dùng V3 mang nghĩa bị động.",
+                    "form": "V-ed, V3 (attended, reviewed, written, left, felt)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là động từ chia thì, mà câu đã có động từ chính make, let hoặc help.",
+                    "form": "V-s (writes, decorates, takes, grows, provides)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "make + tân ngữ + ___",
+                    "example": "*makes all new drivers ___*; *made the organizers ___*; *made every guest ___ welcome*"
+                  },
+                  {
+                    "signal": "let + tân ngữ + ___",
+                    "example": "*Let Farida Banquet Service ___*; *does not let visitors ___*; *let the interns ___*"
+                  },
+                  {
+                    "signal": "help + tân ngữ + ___",
+                    "example": "*help job seekers ___*; *has helped Solana Travel ___*; *can help any business ___*"
+                  },
+                  {
+                    "signal": "help + ___",
+                    "example": "*will help ___ the community center*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V nguyên mẫu, to V, V-ing, V-ed, V-s) thì đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm make, let hoặc help ở bất kỳ dạng nào (makes, made, lets, has helped, will help) đứng trước chỗ trống; xem giữa chúng và chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "make, let + tân ngữ thì chọn V nguyên mẫu; help (+ tân ngữ) thì chọn V nguyên mẫu hoặc to V. Loại V-ing, V-ed, V-s, và to V sau make, let.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "V",
+                    "text": "Let",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Farida Banquet Service",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "provide professional catering",
+                    "label": "V nguyên mẫu + tân ngữ của nó"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for your important corporate events.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “provide” là V nguyên mẫu đứng sau let + tân ngữ."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là V-ing, V nguyên mẫu, V-s và to V của động từ “provide” nên đây là câu dạng động từ.",
+                  "Bước 2: “Let” đứng đầu câu là động từ chính của câu mệnh lệnh; chỗ trống đứng sau tân ngữ “Farida Banquet Service”; dấu hiệu “let + tân ngữ + ___”.",
+                  "Bước 3: Công thức let + tân ngữ + V nguyên mẫu, vì vậy chọn “provide” (cung cấp).",
+                  "“providing” (A) là V-ing, không dùng sau let + tân ngữ “Farida Banquet Service”, nên loại.",
+                  "“provides” (C) là động từ chia thì (V-s), câu đã có động từ chính “Let”, nên loại.",
+                  "“to provide” (D) là to V, sau let + tân ngữ không dùng “to”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "let có ba dạng giống nhau: let – let – let. Chủ ngữ ngôi thứ ba số ít (he, she, it, danh từ số ít) đứng ngay trước “let” mà không có -s thì “let” là quá khứ: *The manager let the interns prepare the slides last week.* — Tuần trước, trưởng phòng để các thực tập sinh chuẩn bị slide."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "make, let + tân ngữ + V nguyên mẫu, không có “to”.",
+                  "help (+ tân ngữ) + V nguyên mẫu hoặc to V.",
+                  "Thì chia ở make, let, help; động từ thứ hai giữ nguyên mẫu."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

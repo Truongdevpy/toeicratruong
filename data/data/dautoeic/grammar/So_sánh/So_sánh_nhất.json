@@ -1,0 +1,455 @@
+{
+  "subtopic": {
+    "id": "f9fa6c8a-baca-49dd-b25f-1bfd774a0f02",
+    "topic_id": "3f4f9136-0712-4df6-9b73-502345922b4c",
+    "title_en": "So sánh nhất",
+    "title_vi": "So sánh nhất",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 73,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-so-sanh-nhat"
+  },
+  "lessons": [
+    {
+      "id": "d5dcd0c2-1856-45cc-b5df-59b8bc687410",
+      "subtopic_id": "f9fa6c8a-baca-49dd-b25f-1bfd774a0f02",
+      "title_en": "So sánh nhất",
+      "title_vi": "So sánh nhất",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 3 · Câu 122",
+          "options": {
+            "A": "ambitiously",
+            "B": "most ambitiously",
+            "C": "ambition",
+            "D": "most ambitious"
+          },
+          "question": "This month Framley Publishing House is embarking on its ------- expansion so far.",
+          "translation": "Tháng này, Nhà xuất bản Framley bắt đầu đợt mở rộng tham vọng nhất của mình từ trước đến nay."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm trạng từ “ambitiously” và dạng so sánh nhất của nó, danh từ “ambition”, và “most ambitious”. Chỗ trống đứng giữa sở hữu “its” và danh từ “expansion”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "This month",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Framley Publishing House",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is embarking",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "its",
+                    "label": "sở hữu"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "expansion",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "so far.",
+                    "label": "tính đến nay"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong cụm danh từ “its ------- expansion” sau giới từ “on”; cuối câu có “so far” (tính đến nay)."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "loại từ nào đứng giữa sở hữu và danh từ;",
+                  "“so far” đòi so sánh ở mức nào;",
+                  "cách tạo so sánh nhất của từ ngắn và từ dài;",
+                  "các cấu trúc so sánh khác trong bài tập: càng … càng, ngày càng, gấp … lần."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "So sánh nhất dùng khi so một người, vật với cả nhóm từ ba trở lên, hoặc với mọi lần trước đến nay. Trước so sánh nhất có **the** hoặc sở hữu (its, our).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Tính từ ngắn",
+                    "formula": "the + adj-est + N"
+                  },
+                  {
+                    "label": "Tính từ dài, trạng từ -ly, V3 làm tính từ",
+                    "formula": "the + most + adj + N"
+                  },
+                  {
+                    "label": "Xếp hạng thứ mấy",
+                    "formula": "the + second/third… + so sánh nhất + N"
+                  },
+                  {
+                    "label": "Một trong những",
+                    "formula": "one of the + so sánh nhất + N số nhiều"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "một âm tiết: wide, tall, large, high, low, slow, small, fast, near, clear",
+                    "thêm -er: wider, taller, larger, nearer…",
+                    "thêm -est: widest, tallest, largest, highest…"
+                  ],
+                  [
+                    "big (gấp đôi phụ âm cuối)",
+                    "bigger",
+                    "biggest"
+                  ],
+                  [
+                    "hai âm tiết tận cùng -y: busy, early",
+                    "busier, earlier",
+                    "busiest, earliest"
+                  ],
+                  [
+                    "dài: convincing, impressive, qualified, senior, thorough, profitable",
+                    "more convincing, more thorough…",
+                    "most convincing, most senior…"
+                  ],
+                  [
+                    "trạng từ -ly và V3 làm tính từ: quickly, calmly, widely used, attended, requested, downloaded, skilled",
+                    "more quickly, more calmly…",
+                    "most widely used, most attended, most skilled…"
+                  ],
+                  [
+                    "bất quy tắc: good, well / much, many / little; few (thêm -er, -est như từ ngắn)",
+                    "better / more / less / fewer",
+                    "best / most / least / fewest"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng gốc",
+                  "So sánh hơn",
+                  "So sánh nhất"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "the hoặc sở hữu + so sánh nhất + N, kèm phạm vi hoặc so far, ever",
+                    "*This is the busiest week of the year for our team.* — Đây là tuần bận rộn nhất trong năm của nhóm chúng tôi."
+                  ],
+                  [
+                    "the + số thứ tự + so sánh nhất: xếp hạng thứ mấy",
+                    "*Our store is the second largest in the city.* — Cửa hàng của chúng tôi lớn thứ hai trong thành phố."
+                  ],
+                  [
+                    "one of the + so sánh nhất + N số nhiều",
+                    "*She is one of the most reliable managers here.* — Cô ấy là một trong những quản lý đáng tin cậy nhất ở đây."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng so sánh nhất",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "**The + so sánh hơn + S + V, the + so sánh hơn + S + V**",
+                    "càng … càng",
+                    "*The earlier we start, the sooner we finish.* — Bắt đầu càng sớm thì xong càng sớm."
+                  ],
+                  [
+                    "**get / become / rise + so sánh hơn + and + so sánh hơn** (từ dài: more and more + adj)",
+                    "ngày càng",
+                    "*Our client list is getting longer and longer.* — Danh sách khách hàng của chúng tôi ngày càng dài."
+                  ],
+                  [
+                    "**twice / số đếm + times / half + as + dạng nguyên + as**",
+                    "gấp … lần, bằng một nửa",
+                    "*The new office is twice as large as the old one.* — Văn phòng mới rộng gấp đôi văn phòng cũ."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cấu trúc khác",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Càng … càng: mỗi vế dùng so sánh hơn. Chỗ trống bổ nghĩa cho động từ thường thì dùng trạng từ (**the more quickly** … is answered); đi với be, become thì dùng tính từ (**the clearer** the instructions are).",
+                  "Trong khuôn này: **the more** (càng nhiều), **the fewer** + N số nhiều đếm được (càng ít), **the less** + adj (càng kém …).",
+                  "Số lần: **twice** (hai lần), **số đếm + times** (three times, five times), **half** (một nửa, không thêm a, the, of). **as much as** cho lượng, tiền; **as many + N số nhiều + as** cho vật đếm được."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói “nhất” so với cả nhóm, với mọi lần đến nay, hoặc xếp hạng sau số thứ tự.",
+                    "form": "the / sở hữu + so sánh nhất (widest, most convincing, best)",
+                    "example": "*its most ambitious expansion so far*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không mang nghĩa “nhất”, nên không xếp hạng sau số thứ tự, không hợp với phạm vi so sánh.",
+                    "form": "Dạng nguyên (convincing, wide, busy, qualified, skilled, powerful)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ so hai; không đứng sau số thứ tự hay one of the, không hợp với phạm vi từ ba trở lên.",
+                    "form": "So sánh hơn (more convincing, wider, larger, better, lower)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Từ một âm tiết và từ hai âm tiết tận cùng -y dùng -er/-est; từ dài dùng more/most; good dùng better/best.",
+                    "form": "Sai dạng (more wide, most busy, most fast, most good, most big, seniorest, more near)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trạng từ không bổ nghĩa cho danh từ; danh từ không làm được phần so sánh trước danh từ.",
+                    "form": "Trạng từ, danh từ (convincingly, conveniently, economically, qualification, inspiration, specificity)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "very, much, many không tạo so sánh nhất; more tạo so sánh hơn.",
+                    "form": "very, much, many, more sau số thứ tự",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Ngày càng dùng hai lần cùng một dạng so sánh hơn: better and better, more and more.",
+                    "form": "Ngày càng sai (much and much, most and most, more and most, good and good, high and high)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cả hai vế đều cần so sánh hơn, không dùng dạng nguyên hay so sánh nhất.",
+                    "form": "Càng … càng sai (quick, near, clear, nearest, most quickly, little, few, least)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Gấp … lần dùng **twice**, **số đếm + times** (time thêm s, không dùng số thứ tự) hoặc **half** đứng một mình (không thêm a, the, of). two, double, twofold không đứng trước as … as; third, triple, thrice không đứng trước times.",
+                    "form": "Số lần sai (five time, fifth time, the five times, third, triple, thrice, two, double, twofold, half of, the half, a half)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "phạm vi so sánh",
+                    "example": "*Among all the candidates*; *Of all the applicants*; *in our entire line*; *on our international sales team*"
+                  },
+                  {
+                    "signal": "so far / ever / since",
+                    "example": "*its ___ expansion so far*; *the ___ client our firm has ever signed*; *the ___ quarter we've had since …*"
+                  },
+                  {
+                    "signal": "the + số thứ tự + ___",
+                    "example": "*the second ___ member*; *the fourth ___ widely used product*"
+                  },
+                  {
+                    "signal": "one of the + ___ + N số nhiều",
+                    "example": "*one of the ___ speeches*; *one of the ___ devices*"
+                  },
+                  {
+                    "signal": "The + so sánh hơn …, the + so sánh hơn …",
+                    "example": "*The ___ the instructions are, the fewer questions …*; *The longer the meeting runs, the ___ attentive …*"
+                  },
+                  {
+                    "signal": "get / become / rise + ___",
+                    "example": "*has been getting ___*; *are becoming ___ concerned*; *have been rising ___*"
+                  },
+                  {
+                    "signal": "số lần + as … as",
+                    "example": "*three times as ___ as*; *___ as much as*; *___ times as large as*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng so sánh của một tính từ hoặc trạng từ (có thể kèm loại từ khác), các từ more, most, much, very, hoặc các cách nói số lần. Đây là câu so sánh.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm phạm vi so sánh, so far/ever/since, số thứ tự, one of the; hoặc khuôn The …, the …; get/become/rise + ___; số lần + as … as. Xem chỗ trống đi với danh từ, tính từ hay động từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Phạm vi, số thứ tự, one of the: chọn the + so sánh nhất. Càng … càng, ngày càng: chọn so sánh hơn. As … as: chọn số lần đúng. Loại dạng sai (most busy, more wide) và từ sai loại.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "This month",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Framley Publishing House",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is embarking",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "its",
+                    "label": "sở hữu"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "most ambitious",
+                    "label": "so sánh nhất"
+                  },
+                  {
+                    "role": "N",
+                    "text": "expansion",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "so far.",
+                    "label": "tính đến nay"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “most ambitious” đứng giữa sở hữu “its” và danh từ “expansion”; “so far” cho biết đợt này được so với mọi đợt trước."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm trạng từ “ambitiously”, “most ambitiously”, danh từ “ambition” và “most ambitious” nên đây là câu so sánh.",
+                  "Bước 2: Chỗ trống đứng giữa sở hữu “its” và danh từ “expansion”; dấu hiệu “so far / ever / since”: “its ------- expansion so far”.",
+                  "Bước 3: So với mọi đợt đến nay dùng sở hữu + so sánh nhất + N; “ambitious” dài dùng most, vì vậy chọn “most ambitious” (tham vọng nhất).",
+                  "“ambitiously” (A) là trạng từ, không bổ nghĩa cho danh từ “expansion”, nên loại.",
+                  "“most ambitiously” (B) là so sánh nhất của trạng từ, không bổ nghĩa cho danh từ “expansion”, nên loại.",
+                  "“ambition” (C) là danh từ (tham vọng), “ambition expansion” không phải cụm danh từ có nghĩa, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau so sánh nhất có thể bỏ danh từ khi đã rõ: *Of all our branches, this one is the largest.* — Trong tất cả chi nhánh, chi nhánh này lớn nhất.",
+                  "double, triple, twofold không đứng trước as … as; double, triple đi với the + N: *double the price* (gấp đôi giá)."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Phạm vi, số thứ tự, one of the, so far, ever: dùng the + so sánh nhất.",
+                  "Càng … càng và ngày càng: dùng so sánh hơn.",
+                  "Gấp … lần: twice, số đếm + times, half + as … as."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

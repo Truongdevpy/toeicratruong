@@ -1,0 +1,638 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "96bad1d0-6de4-4b28-a460-209c793a391b",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 6: Computers",
+    "order_index": 6,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:49.186629+00:00",
+    "updated_at": "2026-09-18T08:50:49.186629+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+    "test_id": "96bad1d0-6de4-4b28-a460-209c793a391b",
+    "name": "Computers",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:49.186629+00:00",
+    "updated_at": "2026-09-18T08:50:49.186629+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "8a76f7d9-c50a-41b1-8bce-9c1b4e374fd3",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "delete",
+      "ipa": "/dɪˈliːt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The technicians deleted all the data on the disk accidentally.",
+          "meaning": "xóa, xóa bỏ",
+          "antonyms": [
+            "insert (chèn vào)",
+            "add (thêm vào)"
+          ],
+          "toeic_tip": "Danh từ là deletion, không phải 'deletement'; Part 5 hay hỏi dạng từ.",
+          "example_vi": "Các kỹ thuật viên đã lỡ tay xóa sạch dữ liệu trong đĩa.",
+          "word_family": [
+            "deletion (n) sự xóa bỏ",
+            "deleted (adj) đã bị xóa"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:09:23.537164+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8a76f7d9-c50a-41b1-8bce-9c1b4e374fd3-wm.jpg?v=1789798094269",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/delete-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/delete-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "delete a file",
+          "meaning": "xóa một tệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8a76f7d9-c50a-41b1-8bce-9c1b4e374fd3-0-wm.jpg?v=1789801761771"
+        },
+        {
+          "phrase": "delete data",
+          "meaning": "xóa dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8a76f7d9-c50a-41b1-8bce-9c1b4e374fd3-1-wm.jpg?v=1789801763397"
+        },
+        {
+          "phrase": "permanently delete",
+          "meaning": "xóa vĩnh viễn"
+        }
+      ],
+      "synonyms": [
+        "erase (xóa sạch)",
+        "remove (gỡ bỏ)",
+        "wipe (xóa trắng)"
+      ]
+    },
+    {
+      "id": "f76e8900-f503-4849-99d6-e3ad37081a20",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "ignore",
+      "ipa": "UK: /ɪɡˈnɔː/ | US: /ɪɡˈnɔːr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "When the director is working at the computer, she ignores everything around her.",
+          "meaning": "phớt lờ, không để ý, bỏ qua",
+          "antonyms": [
+            "notice (để ý thấy)",
+            "heed (lưu tâm)"
+          ],
+          "toeic_tip": "Phân biệt ignore (phớt lờ) với ignorant (dốt nát) và ignorance (sự thiếu hiểu biết).",
+          "example_vi": "Lúc ngồi máy tính, giám đốc không để tâm đến bất cứ thứ gì xung quanh.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T08:04:57.854568+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f76e8900-f503-4849-99d6-e3ad37081a20-wm.jpg?v=1789798098376",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ignore-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/ignore-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "ignore a warning",
+          "meaning": "phớt lờ lời cảnh báo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f76e8900-f503-4849-99d6-e3ad37081a20-0-wm.jpg?v=1789805097689"
+        },
+        {
+          "phrase": "ignore advice",
+          "meaning": "bỏ ngoài tai lời khuyên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f76e8900-f503-4849-99d6-e3ad37081a20-1-wm.jpg?v=1789805097287"
+        },
+        {
+          "phrase": "largely ignore",
+          "meaning": "gần như không đếm xỉa"
+        }
+      ],
+      "synonyms": [
+        "disregard (không đếm xỉa)",
+        "overlook (bỏ sót)",
+        "neglect (lơ là)"
+      ]
+    },
+    {
+      "id": "ff9160c7-43e8-486b-b393-dd1ff624bc32",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "access",
+      "ipa": "/ˈæk.ses/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You can't gain access to the files unless you know the password.",
+          "meaning": "quyền truy cập, sự tiếp cận; truy cập, vào được",
+          "toeic_tip": "access là danh từ không đếm được; access to + N, không dùng 'access for'.",
+          "example_vi": "Không biết mật khẩu thì bạn không vào được các tệp này.",
+          "word_family": [
+            "accessible (adj) có thể truy cập, dễ tiếp cận",
+            "accessibility (n) khả năng tiếp cận"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T08:08:47.670034+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ff9160c7-43e8-486b-b393-dd1ff624bc32-wm.jpg?v=1789798094466",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/access-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/access-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "gain access to",
+          "meaning": "có được quyền truy cập vào",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ff9160c7-43e8-486b-b393-dd1ff624bc32-0-wm.jpg?v=1789805327532"
+        },
+        {
+          "phrase": "have access to",
+          "meaning": "được tiếp cận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ff9160c7-43e8-486b-b393-dd1ff624bc32-1-wm.jpg?v=1789805326352"
+        },
+        {
+          "phrase": "access the database",
+          "meaning": "truy cập cơ sở dữ liệu"
+        }
+      ],
+      "synonyms": [
+        "entry (sự vào, lối vào)",
+        "admission (sự cho vào)",
+        "retrieve (truy xuất)"
+      ]
+    },
+    {
+      "id": "d5fabf75-55dd-48ef-91c9-9f85549d35bc",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "duplicate",
+      "ipa": "UK: /ˈdjuː.plɪ.keɪt/ | US: /ˈduː.plə.keɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I think the new word processing program will duplicate the success of the one introduced last year.",
+          "meaning": "sao chép, nhân bản, lặp lại y hệt",
+          "toeic_tip": "Động từ đọc /-keɪt/, danh từ và tính từ đọc /-kət/; nghe Part 1-2 dễ nhầm.",
+          "example_vi": "Tôi nghĩ phần mềm soạn thảo mới sẽ lại ăn khách như phần mềm ra mắt năm ngoái.",
+          "word_family": [
+            "duplication (n) sự sao chép",
+            "duplicate (n) bản sao"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:46:08.75069+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d5fabf75-55dd-48ef-91c9-9f85549d35bc-wm.jpg?v=1789798093329",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/duplicate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/duplicate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "duplicate a file",
+          "meaning": "sao chép một tệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d5fabf75-55dd-48ef-91c9-9f85549d35bc-0-wm.jpg?v=1789803968597"
+        },
+        {
+          "phrase": "duplicate the success",
+          "meaning": "lặp lại thành công",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d5fabf75-55dd-48ef-91c9-9f85549d35bc-1-wm.jpg?v=1789803966626"
+        },
+        {
+          "phrase": "in duplicate",
+          "meaning": "thành hai bản"
+        }
+      ],
+      "synonyms": [
+        "copy (sao chép)",
+        "replicate (tái tạo y hệt)",
+        "reproduce (tạo lại)"
+      ]
+    },
+    {
+      "id": "671009fe-d253-45da-bf3a-244eb3511d3e",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "compatible",
+      "ipa": "UK: /kəmˈpæt.ə.bəl/ | US: /kəmˈpæt̬.ə.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This operating system is not compatible with this model computer.",
+          "meaning": "tương thích, có thể hoạt động cùng nhau",
+          "antonyms": [
+            "incompatible (không tương thích)",
+            "conflicting (xung khắc)"
+          ],
+          "toeic_tip": "Luôn đi với giới từ with; Part 5 hay hỏi 'compatible ___'.",
+          "example_vi": "Hệ điều hành này không chạy được với mẫu máy tính đó.",
+          "word_family": [
+            "compatibility (n) tính tương thích",
+            "incompatible (adj) không tương thích"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T06:47:44.588592+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/671009fe-d253-45da-bf3a-244eb3511d3e-wm.jpg?v=1789798092537",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compatible-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compatible-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "compatible with",
+          "meaning": "tương thích với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/671009fe-d253-45da-bf3a-244eb3511d3e-0-wm.jpg?v=1789800453649"
+        },
+        {
+          "phrase": "fully compatible",
+          "meaning": "hoàn toàn tương thích",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/671009fe-d253-45da-bf3a-244eb3511d3e-1-wm.jpg?v=1789800464438"
+        },
+        {
+          "phrase": "compatible software",
+          "meaning": "phần mềm tương thích"
+        }
+      ],
+      "synonyms": [
+        "consistent (nhất quán, phù hợp)",
+        "suitable (phù hợp)",
+        "matching (khớp nhau)"
+      ]
+    },
+    {
+      "id": "a075dd9a-322c-4e00-891b-14c57a82fae8",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "failure",
+      "ipa": "UK: /ˈfeɪ.ljər/ | US: /ˈfeɪ.ljɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Your failure to inform us about the changed password cost the company a day's work.",
+          "meaning": "sự thất bại, sự hỏng hóc, việc không làm được gì đó",
+          "antonyms": [
+            "success (thành công)"
+          ],
+          "toeic_tip": "Sau failure luôn là to + V nguyên mẫu, không dùng 'failure of doing'.",
+          "example_vi": "Việc bạn không báo mật khẩu đã đổi khiến công ty mất trắng một ngày làm việc.",
+          "word_family": [
+            "fail (v) thất bại, hỏng hóc",
+            "failed (adj) thất bại, không thành"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:18:38.324639+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a075dd9a-322c-4e00-891b-14c57a82fae8-wm.jpg?v=1789798098082",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/failure-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/failure-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "failure to do sth",
+          "meaning": "việc không làm được gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a075dd9a-322c-4e00-891b-14c57a82fae8-0-wm.jpg?v=1789802317408"
+        },
+        {
+          "phrase": "equipment failure",
+          "meaning": "sự cố thiết bị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a075dd9a-322c-4e00-891b-14c57a82fae8-1-wm.jpg?v=1789802318184"
+        },
+        {
+          "phrase": "power failure",
+          "meaning": "sự cố mất điện"
+        }
+      ],
+      "synonyms": [
+        "breakdown (sự hỏng hóc)",
+        "malfunction (sự trục trặc)",
+        "collapse (sự sụp đổ)"
+      ]
+    },
+    {
+      "id": "ea9cd81e-b85d-411e-b3d9-d77bde6ecc76",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "search",
+      "ipa": "UK: /sɜːtʃ/ | US: /sɝːtʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Our search of the database produced very little information.",
+          "meaning": "cuộc tìm kiếm, sự điều tra; tìm kiếm, lục tìm",
+          "toeic_tip": "search for sth = tìm vật gì; search sb-sth = khám xét ai, lục soát nơi nào.",
+          "example_vi": "Việc tra cứu cơ sở dữ liệu mang lại rất ít thông tin.",
+          "word_family": [
+            "searchable (adj) có thể tìm kiếm được",
+            "researcher (n) người nghiên cứu"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:57:57.685944+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ea9cd81e-b85d-411e-b3d9-d77bde6ecc76-wm.jpg?v=1789798269717",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/search-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/search-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "search for",
+          "meaning": "tìm kiếm cái gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ea9cd81e-b85d-411e-b3d9-d77bde6ecc76-0-wm.jpg?v=1789804677553"
+        },
+        {
+          "phrase": "in search of",
+          "meaning": "để tìm kiếm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ea9cd81e-b85d-411e-b3d9-d77bde6ecc76-1-wm.jpg?v=1789804676775"
+        },
+        {
+          "phrase": "conduct a search",
+          "meaning": "tiến hành tìm kiếm"
+        }
+      ],
+      "synonyms": [
+        "look for (tìm)",
+        "seek (tìm kiếm)",
+        "hunt for (lùng tìm)"
+      ]
+    },
+    {
+      "id": "0651b596-a72c-4f7b-b7cd-ab3392d595cf",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "figure out",
+      "ipa": "UK: /ˈfɪɡ.ər aʊt/ | US: /ˈfɪɡ.jɚ aʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "By examining all of the errors, the technicians figured out how to fix the problem.",
+          "meaning": "hiểu ra, tìm ra cách, giải quyết được",
+          "toeic_tip": "Cụm tách được: figure it out, không nói 'figure out it'.",
+          "example_vi": "Xem lại toàn bộ lỗi, các kỹ thuật viên đã tìm ra cách khắc phục.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T06:19:28.358038+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0651b596-a72c-4f7b-b7cd-ab3392d595cf-wm.jpg?v=1789798270347",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/figure-out-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/figure-out-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "figure out how to",
+          "meaning": "tìm ra cách để",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0651b596-a72c-4f7b-b7cd-ab3392d595cf-0-wm.jpg?v=1789798768205"
+        },
+        {
+          "phrase": "figure out a problem",
+          "meaning": "giải quyết một vấn đề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0651b596-a72c-4f7b-b7cd-ab3392d595cf-1-wm.jpg?v=1789798767219"
+        },
+        {
+          "phrase": "figure out the cause",
+          "meaning": "tìm ra nguyên nhân"
+        }
+      ],
+      "synonyms": [
+        "work out (tìm ra, nghĩ ra)",
+        "determine (xác định)",
+        "solve (giải quyết)"
+      ]
+    },
+    {
+      "id": "82e4a759-c377-48c6-8534-46605778351e",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "display",
+      "ipa": "/dɪˈspleɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The light on the LCD display is too weak.",
+          "meaning": "màn hình hiển thị, sự trưng bày; hiển thị, trưng bày",
+          "antonyms": [
+            "hide (giấu đi)",
+            "conceal (che giấu)"
+          ],
+          "toeic_tip": "Cụm cố định on display = đang trưng bày, không dùng 'in display'.",
+          "example_vi": "Đèn nền màn hình LCD yếu quá.",
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:03:59.923215+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/82e4a759-c377-48c6-8534-46605778351e-wm.jpg?v=1789798371170",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/display-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/display-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "on display",
+          "meaning": "đang được trưng bày",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82e4a759-c377-48c6-8534-46605778351e-0-wm.jpg?v=1789801439637"
+        },
+        {
+          "phrase": "display screen",
+          "meaning": "màn hình hiển thị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/82e4a759-c377-48c6-8534-46605778351e-1-wm.jpg?v=1789801439788"
+        },
+        {
+          "phrase": "display the results",
+          "meaning": "hiển thị kết quả"
+        }
+      ],
+      "synonyms": [
+        "show (cho thấy)",
+        "exhibit (trưng bày)",
+        "present (trình bày)"
+      ]
+    },
+    {
+      "id": "1139991c-12e3-4b68-97ec-aa15c3b3d646",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "allocate",
+      "ipa": "/ˈæl.ə.keɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The office manager did not allocate enough money to purchase software.",
+          "meaning": "phân bổ, dành riêng cho một mục đích",
+          "antonyms": [
+            "withhold (giữ lại, không cấp)"
+          ],
+          "toeic_tip": "Cấu trúc hay gặp: allocate sth to/for sb-sth (phân bổ cho ai, cho việc gì).",
+          "example_vi": "Quản lý văn phòng đã không dành đủ tiền để mua phần mềm.",
+          "word_family": [
+            "allocation (n) sự phân bổ",
+            "allocated (adj) được phân bổ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T06:22:19.179961+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1139991c-12e3-4b68-97ec-aa15c3b3d646-wm.jpg?v=1789798545529",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/allocate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/allocate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "allocate funds",
+          "meaning": "phân bổ ngân quỹ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1139991c-12e3-4b68-97ec-aa15c3b3d646-0-wm.jpg?v=1789798938651"
+        },
+        {
+          "phrase": "allocate resources",
+          "meaning": "phân bổ nguồn lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1139991c-12e3-4b68-97ec-aa15c3b3d646-1-wm.jpg?v=1789798939027"
+        },
+        {
+          "phrase": "allocate time for",
+          "meaning": "dành thời gian cho"
+        }
+      ],
+      "synonyms": [
+        "assign (phân công, giao)",
+        "designate (chỉ định)",
+        "distribute (phân phối)"
+      ]
+    },
+    {
+      "id": "bc003b70-0352-4230-bb87-df46ebfe4d59",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "shut down",
+      "ipa": "/ˌʃʌt ˈdaʊn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Please shut down the computer before you leave.",
+          "meaning": "tắt máy, ngừng hoạt động, đóng cửa",
+          "antonyms": [
+            "start up (khởi động)",
+            "turn on (bật lên)"
+          ],
+          "toeic_tip": "Động từ viết rời shut down, danh từ viết liền shutdown.",
+          "example_vi": "Nhớ tắt máy tính trước khi về nhé.",
+          "word_family": [
+            "shutdown (n) việc tắt máy, sự ngừng hoạt động"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:33:08.568815+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bc003b70-0352-4230-bb87-df46ebfe4d59-wm.jpg?v=1789798093952",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/shut-down-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/shut-down-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "shut down the computer",
+          "meaning": "tắt máy tính",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bc003b70-0352-4230-bb87-df46ebfe4d59-0-wm.jpg?v=1789803186719"
+        },
+        {
+          "phrase": "shut down a factory",
+          "meaning": "đóng cửa nhà máy",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bc003b70-0352-4230-bb87-df46ebfe4d59-1-wm.jpg?v=1789803188423"
+        },
+        {
+          "phrase": "shut down operations",
+          "meaning": "ngừng hoạt động"
+        }
+      ],
+      "synonyms": [
+        "turn off (tắt)",
+        "close (đóng cửa)",
+        "cease operations (ngừng hoạt động)"
+      ]
+    },
+    {
+      "id": "f159f644-e814-4d24-8561-9e1fb1d3503e",
+      "part_id": "3b23c1ef-a5fa-4035-a6f7-8171002ca939",
+      "word": "warning",
+      "ipa": "UK: /ˈwɔː.nɪŋ/ | US: /ˈwɔːr.nɪŋ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The red flashing light gives a warning to users that the battery is low.",
+          "meaning": "lời cảnh báo, sự báo trước nguy hiểm",
+          "toeic_tip": "Động từ đi kèm: warn sb about/of sth hoặc warn sb to do sth.",
+          "example_vi": "Đèn đỏ nhấp nháy báo cho người dùng biết pin sắp cạn.",
+          "word_family": [
+            "warn (v) cảnh báo",
+            "warning (adj) mang tính cảnh báo"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:49.186629+00:00",
+      "updated_at": "2026-09-19T07:59:41.698501+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f159f644-e814-4d24-8561-9e1fb1d3503e-wm.jpg?v=1789798094863",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/warning-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/warning-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a warning about",
+          "meaning": "cảnh báo về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f159f644-e814-4d24-8561-9e1fb1d3503e-0-wm.jpg?v=1789804777364"
+        },
+        {
+          "phrase": "give a warning",
+          "meaning": "đưa ra cảnh báo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f159f644-e814-4d24-8561-9e1fb1d3503e-1-wm.jpg?v=1789804781551"
+        },
+        {
+          "phrase": "without warning",
+          "meaning": "không báo trước"
+        }
+      ],
+      "synonyms": [
+        "alert (lời báo động)",
+        "caution (lời cảnh giác)",
+        "notice (thông báo)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "subtopic": {
+    "id": "99ab4b0f-b830-4fc9-a82d-def90fd9d517",
+    "topic_id": "1cb57ce1-885b-4639-b51c-f69a772f9412",
+    "title_en": "Danh từ và tính từ cùng dạng",
+    "title_vi": "Danh từ và tính từ cùng dạng",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 27,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-tinh-tu-danh-tu-va-tinh-tu-cung-dang"
+  },
+  "lessons": [
+    {
+      "id": "fc87deb8-b0ed-44f7-ae81-683e6ad08875",
+      "subtopic_id": "99ab4b0f-b830-4fc9-a82d-def90fd9d517",
+      "title_en": "Danh từ và tính từ cùng dạng",
+      "title_vi": "Danh từ và tính từ cùng dạng",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "Bộ bài tập",
+          "options": {
+            "A": "individual",
+            "B": "individualization",
+            "C": "individually",
+            "D": "individuality"
+          },
+          "question": "Bexcan Ltd.’s consulting programs are tailored to meet the needs of ------- clients.",
+          "translation": "Các chương trình tư vấn của Bexcan Ltd. được thiết kế riêng để đáp ứng nhu cầu của từng khách hàng cá nhân."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “individual” nhưng khác loại từ. Chỗ trống đứng sau giới từ “of” và ngay trước danh từ “clients”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Bexcan Ltd.’s consulting programs",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are tailored",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to meet",
+                    "label": "to V chỉ mục đích"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the needs",
+                    "label": "tân ngữ của meet"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "clients.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong cụm “the needs of ------- clients”, là phần cuối của cụm to V chỉ mục đích."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“individual” có thể là những loại từ nào.",
+                  "Nhìn vào đâu để biết một từ đang làm tính từ hay danh từ.",
+                  "Vì sao các dạng còn lại không đứng được trước “clients”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Một số từ vừa là **tính từ** vừa là **danh từ**, viết giống hệt nhau, nên không nhìn đuôi mà biết được. Phải nhìn **vị trí** trong câu: sau nó có danh từ hay không.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Làm tính từ",
+                    "formula": "(từ hạn định) + adj + N"
+                  },
+                  {
+                    "label": "Làm danh từ",
+                    "formula": "từ hạn định / tính từ + N + giới từ / động từ / dấu chấm"
+                  },
+                  {
+                    "label": "Danh từ ghép",
+                    "formula": "N + N chính"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "The",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "official",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "opening",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "of the new branch has been moved to May 3.",
+                    "label": ""
+                  }
+                ],
+                "caption": "“official” đứng trước danh từ “opening”: làm tính từ (chính thức)."
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "An",
+                    "label": "mạo từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "official",
+                    "label": "danh từ (chủ ngữ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "from the city health department",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will inspect",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the kitchen.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "“official” đứng sau “An”, sau nó là giới từ “from”, không có danh từ: làm danh từ (viên chức), là chủ ngữ của “will inspect”."
+              },
+              {
+                "rows": [
+                  [
+                    "official",
+                    "chính thức",
+                    "viên chức"
+                  ],
+                  [
+                    "original",
+                    "gốc, đầu tiên",
+                    "bản gốc"
+                  ],
+                  [
+                    "individual",
+                    "riêng, cá nhân",
+                    "cá nhân, người"
+                  ],
+                  [
+                    "professional",
+                    "chuyên nghiệp",
+                    "chuyên gia"
+                  ],
+                  [
+                    "alternative",
+                    "thay thế",
+                    "phương án khác"
+                  ],
+                  [
+                    "executive",
+                    "điều hành",
+                    "giám đốc, người điều hành"
+                  ],
+                  [
+                    "commercial",
+                    "thương mại",
+                    "quảng cáo (trên truyền hình)"
+                  ],
+                  [
+                    "chemical",
+                    "hóa học",
+                    "hóa chất"
+                  ],
+                  [
+                    "objective",
+                    "khách quan",
+                    "mục tiêu"
+                  ],
+                  [
+                    "relative",
+                    "tương đối",
+                    "họ hàng"
+                  ],
+                  [
+                    "principal",
+                    "chính",
+                    "hiệu trưởng, người đứng đầu"
+                  ],
+                  [
+                    "representative",
+                    "tiêu biểu, đại diện",
+                    "người đại diện"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ",
+                  "Làm tính từ",
+                  "Làm danh từ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Làm danh từ thì phải đúng số: **a / an / each / every** + danh từ đếm được số ít (*an official*, *every chemical*); động từ số ít **is** đi với chủ ngữ số ít.",
+                  "Danh từ không đếm được (professionalism, chemistry) không đi với a / an / every.",
+                  "Danh từ đứng trước danh từ khác để ở dạng số ít; ngoại lệ là vài từ luôn có -s như **sales**: *a sales representative*."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Có danh từ ngay sau: làm tính từ (adj + N). Không có danh từ theo sau: làm danh từ, đúng số ít hay số nhiều.",
+                    "form": "Từ cùng dạng (official, original, executive…)",
+                    "example": "*the official opening*; *an official from the city*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không bổ nghĩa cho danh từ, cũng không làm chủ ngữ hay tân ngữ sau mạo từ, từ hạn định.",
+                    "form": "Trạng từ (officially, originally, commercially…)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng sau mạo từ, từ hạn định hay tính từ; không bổ nghĩa cho danh từ theo sau.",
+                    "form": "Động từ (officiate, originate, execute, individualize, commercialize…)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Các dạng này trong bài tập không phải danh từ nên không làm danh từ chính sau mạo từ; đứng trước danh từ thì cho nghĩa không hợp, như *the executed committee*.",
+                    "form": "V-ing, V-ed (representing, represented, originated, alternated, executed, commercialized)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trong các câu bài tập, đứng trước danh từ thì không tạo cụm có nghĩa (*the principle reason*); đứng ở vị trí danh từ thì nghĩa không hợp câu.",
+                    "form": "Danh từ cùng gốc khác nghĩa (individuality, professionalism, commerce, relation, originality, objectivity, alternation, chemistry, execution, principle)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đi sau a / an / each / every, không hợp với động từ số ít is, không đứng trước danh từ khác để bổ nghĩa.",
+                    "form": "Danh từ số nhiều (officials, chemicals, objectives, principals, objects, alternates)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + danh từ",
+                    "example": "*the ___ receipt*; *renting ___ properties*; *of ___ clients*"
+                  },
+                  {
+                    "signal": "từ hạn định + ___, không có danh từ theo sau",
+                    "example": "*An ___ from the city*; *keep the ___ in a safe place*; *find an ___.*"
+                  },
+                  {
+                    "signal": "tính từ + ___",
+                    "example": "*senior ___ after…*; *a skilled ___ with*; *The main ___ of*"
+                  },
+                  {
+                    "signal": "danh từ + ___",
+                    "example": "*A sales ___ from*; *new television ___ will air*"
+                  },
+                  {
+                    "signal": "a / an / each / every + ___",
+                    "example": "*Each ___ attending*; *every ___ in the locked cabinet*"
+                  },
+                  {
+                    "signal": "động từ chia số ít",
+                    "example": "*The main ___ of the training program is…*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại. Có một từ vừa là tính từ vừa là danh từ (official, original…) thì phải xét vị trí.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống có danh từ không; xem trước chỗ trống là từ hạn định, tính từ hay danh từ; xem a / an / each / every và động từ để biết cần số ít hay số nhiều.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Có danh từ theo sau thì chọn từ đó làm tính từ (adj + N); không có danh từ theo sau thì chọn nó làm danh từ, đúng số. Loại trạng từ, động từ, V-ing, V-ed và danh từ sai nghĩa hoặc sai số.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Bexcan Ltd.’s consulting programs",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are tailored",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to meet",
+                    "label": "to V chỉ mục đích"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the needs",
+                    "label": "tân ngữ của meet"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "of",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "individual",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "clients.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “individual” đứng ngay trước danh từ “clients” nên làm tính từ."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “individual” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau giới từ “of”, ngay trước danh từ “clients”; dấu hiệu “___ + danh từ”: “------- clients”.",
+                  "Bước 3: Cần adj + N; “individual” ở đây là tính từ, vì vậy chọn “individual” (riêng từng người, cá nhân).",
+                  "“individualization” (B) là danh từ (sự cá nhân hóa), “individualization clients” không phải cụm danh từ ghép có nghĩa, nên loại.",
+                  "“individually” (C) là trạng từ, không bổ nghĩa cho danh từ “clients”, nên loại.",
+                  "“individuality” (D) là danh từ (tính cá nhân), “individuality clients” không phải cụm danh từ ghép có nghĩa, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Nhiều từ trong bài đổi nghĩa khi đổi loại từ: *executive* (điều hành / giám đốc), *commercial* (thương mại / quảng cáo), *objective* (khách quan / mục tiêu). Chọn đúng loại từ rồi kiểm lại nghĩa với câu.",
+                  "“principle” chỉ là danh từ (nguyên tắc); tính từ nghĩa “chính” là “principal”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Có danh từ ngay sau chỗ trống: dùng từ đó như tính từ.",
+                  "Không có danh từ theo sau: dùng như danh từ, đúng số ít hay số nhiều.",
+                  "a / an / each / every đi với danh từ đếm được số ít."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

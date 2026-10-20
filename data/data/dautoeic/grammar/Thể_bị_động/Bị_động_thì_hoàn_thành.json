@@ -1,0 +1,399 @@
+{
+  "subtopic": {
+    "id": "64357b39-491b-4ffd-8364-8c5a4fce2423",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Bị động thì hoàn thành",
+    "title_vi": "Bị động thì hoàn thành",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 91,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-bi-dong-thi-hoan-thanh"
+  },
+  "lessons": [
+    {
+      "id": "50313cef-3281-4cf5-a30d-a35c1fa0806a",
+      "subtopic_id": "64357b39-491b-4ffd-8364-8c5a4fce2423",
+      "title_en": "Bị động thì hoàn thành",
+      "title_vi": "Bị động thì hoàn thành",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2018 · Câu 12",
+          "options": {
+            "A": "postpones",
+            "B": "has been postponed",
+            "C": "will have postponed",
+            "D": "is postponing"
+          },
+          "question": "Construction of the Yukimura Building ------- because of modifications in the architectural plans.",
+          "translation": "Việc xây dựng tòa nhà Yukimura đã bị hoãn lại do những điều chỉnh trong bản thiết kế kiến trúc."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng chia thì của động từ “postpone”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Construction of the Yukimura Building",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "because of modifications in the architectural plans.",
+                    "label": "cụm giới từ chỉ lý do"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, đứng sau chủ ngữ; phía sau là cụm “because of …”, không có tân ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Việc xây dựng tự hoãn hay bị hoãn.",
+                  "Bị động thì hoàn thành được tạo thế nào.",
+                  "Vì sao dạng chủ động không đứng được khi phía sau không có tân ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Bị động thì hoàn thành dùng khi chủ ngữ **chịu** hành động và hành động đã xong trước một mốc: trước bây giờ (hiện tại hoàn thành) hoặc trước một mốc trong quá khứ (quá khứ hoàn thành).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Hiện tại hoàn thành, số ít",
+                    "formula": "S + has been + V3"
+                  },
+                  {
+                    "label": "Hiện tại hoàn thành, số nhiều",
+                    "formula": "S + have been + V3"
+                  },
+                  {
+                    "label": "Phủ định",
+                    "formula": "S + has/have + not been + V3"
+                  },
+                  {
+                    "label": "Quá khứ hoàn thành",
+                    "formula": "S + had been + V3"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.2,
+                    "label": "tháng Ba"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.6,
+                    "from": 0.2,
+                    "label": "since March",
+                    "style": "solid"
+                  }
+                ],
+                "points": [
+                  {
+                    "at": 0.33,
+                    "label": "updated"
+                  },
+                  {
+                    "at": 0.5,
+                    "label": "updated"
+                  }
+                ],
+                "caption": "has been updated twice since March: các lần cập nhật nằm trong khoảng từ tháng Ba đến bây giờ."
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.4,
+                    "label": "the manager arrived"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.22,
+                    "label": "had been sent"
+                  }
+                ],
+                "caption": "had been sent by the time the manager arrived: việc gửi xong trước một mốc quá khứ (lúc quản lý đến)."
+              },
+              {
+                "rows": [
+                  [
+                    "has/have been + V3: việc đã xong, kết quả còn đến nay",
+                    "*The contract has been signed, so we can start today.* — Hợp đồng đã được ký, nên hôm nay chúng ta có thể bắt đầu."
+                  ],
+                  [
+                    "has/have been + V3 với since, over the past",
+                    "*Two new stores have been opened since March.* — Hai cửa hàng mới đã được mở từ tháng Ba đến nay."
+                  ],
+                  [
+                    "had been + V3: xong trước một mốc quá khứ",
+                    "*The room had been cleaned before the guests arrived.* — Căn phòng đã được dọn trước khi khách đến."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ chịu hành động: động từ cần tân ngữ mà sau chỗ trống không có tân ngữ, hoặc có **by + người/vật gây ra** (by the director, by unexpected delays).",
+                  "**has** đi với chủ ngữ số ít, **have** đi với chủ ngữ số nhiều; **had** dùng cho cả hai.",
+                  "Có mốc quá khứ (by the time, before + quá khứ đơn) thì dùng **had been + V3**; không có mốc quá khứ, kết quả còn đến nay thì dùng **has/have been + V3**.",
+                  "Chủ ngữ chịu hành động mà has/have đã cho sẵn thì điền **been + V3**; have been đã cho sẵn thì điền **V3** (has + V3, have been + V-ing là chủ động, cần tân ngữ)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chủ ngữ chịu hành động, việc đã xong trước bây giờ hoặc trước một mốc quá khứ.",
+                    "form": "has/have been + V3, had been + V3",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chủ ngữ không tự làm hành động; các động từ này cần tân ngữ mà sau chỗ trống không có.",
+                    "form": "has/have/had + V3 chủ động (had collected, had postponed, had notified, had distributed, have made, have ordered, have reduced, has not signed, had not signed, has repaired, had repaired, have cleaned, had cleaned, had affected, has updated, has extended, had extended, has renewed, had renewed, has approved, had approved, have promoted)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "has đi với số ít, have đi với số nhiều.",
+                    "form": "Sai số (has been + V3 với chủ ngữ số nhiều, have been + V3 với số ít)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc xong trước mốc quá khứ (by the time the guests arrived, before the training began yesterday) dùng had been + V3, không dùng has/have been.",
+                    "form": "has/have been + V3 khi câu có mốc quá khứ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là chủ động, cần tân ngữ; chủ ngữ ở đây chịu hành động.",
+                    "form": "Tiếp diễn, tương lai hoàn thành chủ động (were collecting, was postponing, was notifying, were distributing, are ordering, are reducing, is not signing, is updating, is extending, is renewing, is approving, were promoting, is postponing, will have postponed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc lặp lại hoặc sự thật, không nói việc đã xong mà kết quả còn đến nay.",
+                    "form": "Hiện tại đơn bị động (are made, is repaired)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chủ động thì cần tân ngữ; V-ing đứng một mình không làm được động từ chính.",
+                    "form": "Hiện tại đơn, quá khứ đơn chủ động, V-ing đứng một mình (postpones, made, affected, updated, affecting)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "has + V3 là chủ động, cần tân ngữ; has + be, has + V nguyên mẫu, has + V-ing sai cấu trúc.",
+                    "form": "Sau has/have cho sẵn: be + V3, V3, V nguyên mẫu, V-ing (be entered, entered, hired, hire, hiring, entering)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "have been + V-ing là chủ động, cần tân ngữ; drove, drive không đứng sau been.",
+                    "form": "Sau have been cho sẵn: V-ing, quá khứ đơn, V nguyên mẫu (driving, drove, drive)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "since + mốc quá khứ",
+                    "example": "*___ twice since the renovation finished in April*; *since the sales team moved to the new system*"
+                  },
+                  {
+                    "signal": "over the past + khoảng thời gian",
+                    "example": "*___ by almost half over the past two years*"
+                  },
+                  {
+                    "signal": "already, yet, recently",
+                    "example": "*___ already, and they should arrive by Friday*; *___ yet, so the order cannot be placed today*; *by the director recently*"
+                  },
+                  {
+                    "signal": "by the time + quá khứ đơn",
+                    "example": "*by the time Ms. Alvarez returned*; *By the time the guests arrived*"
+                  },
+                  {
+                    "signal": "before + quá khứ đơn",
+                    "example": "*before the training began yesterday*"
+                  },
+                  {
+                    "signal": "has/have (been) + ___",
+                    "example": "*has ___ correctly*; *Mr. Coleman has ___*; *have been ___ by strong customer demand*"
+                  },
+                  {
+                    "signal": "___ + by + người/vật gây ra",
+                    "example": "*by the director*; *by unexpected delays*; *by strong customer demand*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*Construction of the Yukimura Building ___ because of modifications*; *The office lease ___ for another three years*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng chia thì của một động từ (có has/have/had been + V3) thì là câu chia động từ; has/have hoặc have been đã cho sẵn trước chỗ trống thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ (số ít hay số nhiều), xem sau chỗ trống có tân ngữ hay có by + người/vật gây ra; tìm mốc thời gian: since, over the past, already, yet, recently, hay by the time/before + quá khứ đơn.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ chịu hành động thì chọn has/have been + V3; có mốc quá khứ thì chọn had been + V3; loại dạng chủ động, dạng sai số và dạng sai thì.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Construction of the Yukimura Building",
+                    "label": "chủ ngữ số ít"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has been postponed",
+                    "label": "has been + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "because of modifications in the architectural plans.",
+                    "label": "cụm giới từ chỉ lý do"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: việc xây dựng bị hoãn, nên động từ là has been + V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng chia thì của động từ “postpone” nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “Construction of the Yukimura Building” số ít; dấu hiệu “___ + không có tân ngữ”: sau chỗ trống là “because of modifications…”.",
+                  "Bước 3: Việc xây dựng bị hoãn (chịu hành động), kết quả còn đến nay nên dùng has been + V3, vì vậy chọn “has been postponed” (đã bị hoãn).",
+                  "“postpones” (A) là hiện tại đơn chủ động, việc xây dựng không tự hoãn và không có tân ngữ phía sau, nên loại.",
+                  "“will have postponed” (C) là tương lai hoàn thành chủ động, cần tân ngữ mà sau chỗ trống không có, nên loại.",
+                  "“is postponing” (D) là hiện tại tiếp diễn chủ động, cần tân ngữ mà sau chỗ trống không có, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "**by + mức độ** (by almost half, by one week) nói tăng giảm bao nhiêu, không phải người làm; câu vẫn là bị động vì sau chỗ trống không có tân ngữ.",
+                  "Chủ ngữ có cụm đi kèm (Copies of the new safety guide, The construction of the new warehouse) thì chọn has hay have theo danh từ chính: copies (số nhiều), construction (số ít).",
+                  "Sau **before**, khi thứ tự hai việc đã rõ, quá khứ đơn bị động was/were + V3 cũng dùng được: *The copies were handed out before the training began.* — Các bản sao được phát trước khi buổi tập huấn bắt đầu."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ chịu hành động, việc đã xong đến nay: has/have been + V3.",
+                  "Xong trước một mốc quá khứ (by the time, before + quá khứ đơn): had been + V3.",
+                  "has đi với số ít, have đi với số nhiều."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,376 @@
+{
+  "subtopic": {
+    "id": "80acd501-6165-447c-b410-05b87c28061f",
+    "topic_id": "1cb57ce1-885b-4639-b51c-f69a772f9412",
+    "title_en": "Tính từ sau động từ liên kết",
+    "title_vi": "Tính từ sau động từ liên kết",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 24,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-tinh-tu-sau-dong-tu-lien-ket"
+  },
+  "lessons": [
+    {
+      "id": "9df38d80-f19c-4a0e-a9f0-d482ecd11d57",
+      "subtopic_id": "80acd501-6165-447c-b410-05b87c28061f",
+      "title_en": "Tính từ sau động từ liên kết",
+      "title_vi": "Tính từ sau động từ liên kết",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 1 · Câu 115",
+          "options": {
+            "A": "helpfulness",
+            "B": "help",
+            "C": "helpfully",
+            "D": "helpful"
+          },
+          "question": "Project manager Hannah Chung has proved to be very ------- with completing company projects.",
+          "translation": "Quản lý dự án Hannah Chung đã tỏ ra rất đắc lực trong việc hoàn thành các dự án của công ty."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “help” nhưng khác loại từ. Chỗ trống đứng sau “has proved to be very”, trước cụm giới từ “with completing company projects”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Project manager Hannah Chung",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has proved to be",
+                    "label": "động từ liên kết"
+                  },
+                  {
+                    "role": "X",
+                    "text": "very",
+                    "label": "trạng từ mức độ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with completing company projects.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "“has proved to be” không chỉ hành động mà nối chủ ngữ với phần nói về chủ ngữ; “very” là trạng từ mức độ chen vào trước chỗ trống."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ liên kết là gì, gồm những động từ nào.",
+                  "Sau động từ liên kết (và trạng từ “very”) cần loại từ nào.",
+                  "Vì sao trạng từ, danh từ, động từ không đứng được ở đây."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**Động từ liên kết** không chỉ hành động mà nối chủ ngữ với phần nói về chủ ngữ (bổ ngữ). Phần nói chủ ngữ **như thế nào** là **tính từ**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cơ bản",
+                    "formula": "S + be / động từ liên kết + adj"
+                  },
+                  {
+                    "label": "Có trạng từ mức độ",
+                    "formula": "S + be / động từ liên kết + (very / fairly / fully …) + adj"
+                  },
+                  {
+                    "label": "Chủ ngữ giả",
+                    "formula": "It + is + adj + to V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "be",
+                    "là, thì, ở trạng thái",
+                    "*were cooperative*, *is responsible for*"
+                  ],
+                  [
+                    "become",
+                    "trở nên",
+                    "*became tense*, *become fully operational*"
+                  ],
+                  [
+                    "remain",
+                    "vẫn",
+                    "*remained calm*"
+                  ],
+                  [
+                    "seem, appear",
+                    "có vẻ, dường như",
+                    "*seems confident*, *appears stable*"
+                  ],
+                  [
+                    "look",
+                    "trông",
+                    "*looks spacious*"
+                  ],
+                  [
+                    "prove (to be)",
+                    "tỏ ra",
+                    "*has proved to be very helpful*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Động từ liên kết",
+                  "Nghĩa",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The room",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "looks",
+                    "label": "động từ liên kết"
+                  },
+                  {
+                    "role": "C",
+                    "text": "spacious",
+                    "label": "bổ ngữ (tính từ)"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "after the renovation.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "“spacious” nói căn phòng như thế nào; “looks” ở đây nghĩa là “trông”, không phải hành động nhìn."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trạng từ mức độ (very, fairly, readily, roughly, fully, especially) có thể chen giữa động từ liên kết và tính từ; chỗ trống vẫn cần tính từ.",
+                  "Tính từ so sánh hơn (easier) và hai tính từ nối bằng and (confident and capable) vẫn là bổ ngữ.",
+                  "Danh từ sau be chỉ đúng khi nó cùng là một người, vật với chủ ngữ: *Ms. Park is a manager.* Muốn nói tính chất thì dùng tính từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói chủ ngữ như thế nào, đứng sau be hoặc động từ liên kết.",
+                    "form": "Tính từ (cooperative, calm, stable)",
+                    "example": "*The client remained calm.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Bổ nghĩa cho động từ chỉ hành động; không làm bổ ngữ cho chủ ngữ sau động từ liên kết.",
+                    "form": "Trạng từ (calmly, stably, helpfully, readily)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau be thì danh từ phải cùng là một với chủ ngữ; nhân viên không phải “sự hợp tác”. Sau trạng từ mức độ (very, fairly) không dùng danh từ.",
+                    "form": "Danh từ (cooperation, readiness, stability, hesitation…)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có be hoặc động từ liên kết; không đặt thêm động từ nguyên mẫu hay động từ chia thì sau đó.",
+                    "form": "Động từ (cooperate, operate, simplify, compares, readies)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nội động từ hesitate không có bị động; các dạng còn lại cho nghĩa không hợp với chủ ngữ.",
+                    "form": "V3, V-ing sai nghĩa (hesitated, operated, eased, tensed, calming, comparing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau to phải là V nguyên mẫu.",
+                    "form": "to + tính từ (to important)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "be + ___",
+                    "example": "*were ___ during the workshop*; *will be ___.*; *is ___ for both recruiting*"
+                  },
+                  {
+                    "signal": "động từ liên kết + ___",
+                    "example": "*remained ___*; *looks ___*; *became ___*; *appears ___*; *seems ___*"
+                  },
+                  {
+                    "signal": "be / động từ liên kết + trạng từ + ___",
+                    "example": "*is fairly ___*; *are readily ___*; *are roughly ___*; *become fully ___*; *to be very ___*"
+                  },
+                  {
+                    "signal": "it is + ___ + to V",
+                    "example": "*it is ___ to follow the instructions*"
+                  },
+                  {
+                    "signal": "___ + and + tính từ",
+                    "example": "*seems ___ and capable*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ ngay trước chỗ trống (be, become, remain, seem, appear, look, prove), bỏ qua trạng từ mức độ chen giữa; xem sau chỗ trống có giới từ, to V hay and + tính từ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn tính từ nói chủ ngữ như thế nào; loại trạng từ, động từ, danh từ không cùng là một với chủ ngữ, và V-ing, V3 sai nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Project manager Hannah Chung",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has proved to be",
+                    "label": "động từ liên kết"
+                  },
+                  {
+                    "role": "X",
+                    "text": "very",
+                    "label": "trạng từ mức độ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "helpful",
+                    "label": "bổ ngữ (tính từ)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with completing company projects.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: tính từ “helpful” nói Hannah Chung như thế nào."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “help” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “has proved to be very”, trước “with completing…”; dấu hiệu “be / động từ liên kết + trạng từ + ___”: “to be very -------”.",
+                  "Bước 3: S + động từ liên kết + (trạng từ) + adj nói chủ ngữ thế nào, vì vậy chọn “helpful” (đắc lực, hữu ích).",
+                  "“helpfulness” (A) là danh từ (sự hữu ích), không đi sau trạng từ “very” để nói về “Hannah Chung”, nên loại.",
+                  "“help” (B) là động từ hoặc danh từ, không đi sau “very” làm bổ ngữ cho chủ ngữ, nên loại.",
+                  "“helpfully” (C) là trạng từ, không làm bổ ngữ sau động từ liên kết “to be”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Look, appear khi nói hành động (nhìn, xuất hiện) thì đi với trạng từ: *She looked carefully at the report.* Trong bài tập, chúng đều mang nghĩa “trông, có vẻ”.",
+                  "Hesitate là nội động từ, không có dạng bị động “is hesitated”; tính từ là “hesitant”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau be và động từ liên kết là tính từ, không phải trạng từ.",
+                  "Có very, fairly, fully chen giữa thì vẫn chọn tính từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

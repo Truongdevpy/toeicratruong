@@ -1,0 +1,392 @@
+{
+  "subtopic": {
+    "id": "5eab7da0-1420-45b8-b03e-4b20e9bb27ed",
+    "topic_id": "3f4f9136-0712-4df6-9b73-502345922b4c",
+    "title_en": "Nhấn mạnh so sánh hơn",
+    "title_vi": "Nhấn mạnh so sánh hơn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 76,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-so-sanh-nhan-manh-so-sanh-hon"
+  },
+  "lessons": [
+    {
+      "id": "d4d51848-52b3-4b8c-9444-531ab1ce2a00",
+      "subtopic_id": "5eab7da0-1420-45b8-b03e-4b20e9bb27ed",
+      "title_en": "Nhấn mạnh so sánh hơn",
+      "title_vi": "Nhấn mạnh so sánh hơn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2021 · Câu 31",
+          "options": {
+            "A": "strong",
+            "B": "stronger",
+            "C": "strongly",
+            "D": "strongest"
+          },
+          "question": "Sales of our computer software were good last quarter, but sales for our mobile applications have been even -------",
+          "translation": "Doanh số phần mềm máy tính của chúng tôi quý trước khá tốt, nhưng doanh số các ứng dụng di động của chúng tôi thậm chí còn mạnh hơn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của “strong”: dạng nguyên, so sánh hơn, trạng từ và so sánh nhất. Chỗ trống đứng ngay sau “even”, ở vế sau chữ “but”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "Sales of our computer software were good last quarter,",
+                    "label": "vế trước (đem ra so)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "sales for our mobile applications",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have been",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "even",
+                    "label": "từ nhấn mạnh"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống (bổ ngữ)"
+                  }
+                ],
+                "caption": "Vế sau “but” có chủ ngữ “sales for our mobile applications” và động từ “have been”; chỗ trống là bổ ngữ sau “have been”, ngay sau từ nhấn mạnh “even”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau “have been” cần tính từ hay trạng từ;",
+                  "sau “even” dùng dạng nào của tính từ;",
+                  "những từ nào đứng được trước dạng so sánh hơn để nhấn mạnh, những từ nào không."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Dạng so sánh hơn là tính từ, trạng từ ngắn thêm -er (cheaper, faster), **more** + tính từ, trạng từ dài (more reliable), hoặc dạng bất quy tắc (better, less). Muốn nói “hơn nhiều”, “hơn một chút”, “còn … hơn”, ta đặt một **từ nhấn mạnh** ngay trước dạng so sánh hơn.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "hơn nhiều",
+                    "formula": "much / far / a lot / considerably + so sánh hơn"
+                  },
+                  {
+                    "label": "hơn một chút",
+                    "formula": "slightly + so sánh hơn"
+                  },
+                  {
+                    "label": "còn … hơn",
+                    "formula": "even / still + so sánh hơn"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The new office",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "much",
+                    "label": "từ nhấn mạnh"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "larger",
+                    "label": "so sánh hơn"
+                  },
+                  {
+                    "role": "X",
+                    "text": "than the old one.",
+                    "label": "than + đối tượng so sánh"
+                  }
+                ],
+                "caption": "Từ nhấn mạnh đứng ngay trước dạng so sánh hơn; phần “than …” nêu đối tượng đem ra so."
+              },
+              {
+                "rows": [
+                  [
+                    "much, far, a lot",
+                    "hơn nhiều",
+                    "*Our new printer is far faster than the old one.* — Máy in mới của chúng tôi nhanh hơn nhiều so với máy cũ."
+                  ],
+                  [
+                    "considerably",
+                    "hơn đáng kể",
+                    "*Sales in May were considerably higher than in April.* — Doanh số tháng Năm cao hơn đáng kể so với tháng Tư."
+                  ],
+                  [
+                    "slightly",
+                    "hơn một chút",
+                    "*The new desk is slightly smaller than the old one.* — Chiếc bàn mới nhỏ hơn một chút so với bàn cũ."
+                  ],
+                  [
+                    "even, still",
+                    "còn … hơn (nữa); “still” còn có nghĩa “vẫn … hơn”",
+                    "*This year’s budget is even tighter than last year’s.* — Ngân sách năm nay còn eo hẹp hơn cả năm ngoái."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ nhấn mạnh",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau từ nhấn mạnh phải là **dạng so sánh hơn**, không phải dạng nguyên hay so sánh nhất: *even stronger* (còn mạnh hơn).",
+                  "Sau be và động từ nối (become, seem, feel, prove) cần **tính từ**; bổ nghĩa cho động từ thường (runs, performed) cần **trạng từ**. Chọn đúng loại từ rồi mới đổi sang so sánh hơn: *have been even stronger*."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng ngay trước dạng so sánh hơn để nói hơn nhiều, hơn một chút hay còn hơn nữa.",
+                    "form": "much, far, a lot, considerably, slightly, even, still",
+                    "example": "*far cheaper*, *a lot easier*, *much less electricity*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Đi với dạng nguyên (*very large*), không đứng ngay trước dạng so sánh hơn: không nói *very larger*.",
+                    "form": "very",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa là “quá”, đi với dạng nguyên (*too heavy*, *much too heavy*), không đi với dạng so sánh hơn.",
+                    "form": "too, much too",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi với dạng nguyên (*so large*), không đứng ngay trước dạng so sánh hơn.",
+                    "form": "so",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi với dạng nguyên (*quite cheap*, *highly productive*), không dùng để nhấn mạnh dạng so sánh hơn.",
+                    "form": "quite, highly",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng sau tính từ (*high enough*), không đứng trước dạng so sánh hơn.",
+                    "form": "enough",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ đứng trước “more + danh từ đếm được số nhiều”; không bổ nghĩa cho tính từ, trạng từ hay cho “less”.",
+                    "form": "many",
+                    "example": "*many more customers*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau “even” cần dạng so sánh hơn; so sánh nhất dùng khi so trong cả một nhóm, câu chỉ so hai thứ; sau “have been” cần tính từ chứ không cần trạng từ.",
+                    "form": "dạng nguyên, so sánh nhất, trạng từ sau “even” (strong, strongest, strongly)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + more + tính từ",
+                    "example": "*feels ___ more spacious*; *proved ___ more reliable*"
+                  },
+                  {
+                    "signal": "___ + tính từ/trạng từ đuôi -er",
+                    "example": "*is ___ heavier than last quarter*; *runs ___ faster*"
+                  },
+                  {
+                    "signal": "___ + better / less",
+                    "example": "*performed ___ better*; *use ___ less electricity*"
+                  },
+                  {
+                    "signal": "even + ___",
+                    "example": "*have been even ___*; *an even ___ number*"
+                  },
+                  {
+                    "signal": "than + đối tượng so sánh",
+                    "example": "*than the one we usually book*; *than it did before*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các từ chỉ mức độ (very, too, much, far, even…) hoặc các dạng so sánh của một tính từ thì đây là câu so sánh.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống có dạng so sánh hơn không (more + tính từ, đuôi -er, better, less) và có “than” không. Nếu chỗ trống đứng sau “even” thì xem trước đó là be hay động từ thường.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Trước dạng so sánh hơn, chọn much, far, a lot, considerably, slightly, even, still; loại very, too, so, quite, highly, enough, many. Sau “even”, chọn dạng so sánh hơn đúng loại từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "Sales of our computer software were good last quarter,",
+                    "label": "vế trước (đem ra so)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "sales for our mobile applications",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "have been",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "even",
+                    "label": "từ nhấn mạnh"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "stronger",
+                    "label": "so sánh hơn (bổ ngữ)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “even stronger” là bổ ngữ sau “have been”, so với doanh số “good” ở vế trước."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “strong”: dạng nguyên, so sánh hơn, trạng từ, so sánh nhất, nên đây là câu so sánh.",
+                  "Bước 2: Chỗ trống đứng sau “have been”, cần tính từ làm bổ ngữ; dấu hiệu “even + ___”: “have been even -------”, so với “were good last quarter”.",
+                  "Bước 3: even + so sánh hơn; so sánh hơn của “strong” là “stronger”, vì vậy chọn “stronger” (mạnh hơn).",
+                  "“strong” (A) là dạng nguyên, không nói được ý “còn mạnh hơn” doanh số quý trước, nên loại.",
+                  "“strongly” (C) là trạng từ, sau “have been” cần tính từ làm bổ ngữ, nên loại.",
+                  "“strongest” (D) là so sánh nhất, dùng khi so trong cả nhóm, câu chỉ so hai loại doanh số, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“many more” chỉ đúng khi theo sau là danh từ đếm được số nhiều: *We need many more volunteers this year.* — Năm nay chúng tôi cần thêm nhiều tình nguyện viên hơn.",
+                  "“still” + so sánh hơn có thể nghĩa là “vẫn … hơn” (tình trạng còn tiếp diễn) hoặc “còn … hơn nữa”; cả hai đều đúng ngữ pháp."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Trước dạng so sánh hơn: much, far, a lot, considerably, slightly, even, still.",
+                  "very, too, so, quite không đứng ngay trước dạng so sánh hơn: very large, không nói very larger.",
+                  "Muốn nói “còn … hơn”, “hơn nhiều”: even, much, far + dạng so sánh hơn (even stronger)."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

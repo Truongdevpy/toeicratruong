@@ -1,0 +1,647 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "e07496cc-f5c8-4189-8c9f-ae38a9f3a408",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 4: Business Planning",
+    "order_index": 4,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:39.431311+00:00",
+    "updated_at": "2026-09-18T08:50:39.431311+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+    "test_id": "e07496cc-f5c8-4189-8c9f-ae38a9f3a408",
+    "name": "Business Planning",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:39.431311+00:00",
+    "updated_at": "2026-09-18T08:50:39.431311+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "4ea0100a-049b-4cdc-9a48-32347295c149",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "avoid",
+      "ipa": "/əˈvɔɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To avoid going out of business, owners should prepare a proper business plan.",
+          "meaning": "tránh, né, ngăn không cho xảy ra",
+          "antonyms": [
+            "face (đối mặt)",
+            "confront (đương đầu)"
+          ],
+          "toeic_tip": "avoid + V-ing, tuyệt đối không dùng avoid to do.",
+          "example_vi": "Muốn khỏi phá sản, chủ doanh nghiệp nên chuẩn bị một kế hoạch kinh doanh tử tế.",
+          "word_family": [
+            "avoidable (adj) có thể tránh được",
+            "avoidance (n) sự né tránh"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:37:06.940006+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4ea0100a-049b-4cdc-9a48-32347295c149-wm.jpg?v=1789798303053",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/avoid-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/avoid-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "avoid delays",
+          "meaning": "tránh chậm trễ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4ea0100a-049b-4cdc-9a48-32347295c149-0-wm.jpg?v=1789799825319"
+        },
+        {
+          "phrase": "avoid doing something",
+          "meaning": "tránh làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4ea0100a-049b-4cdc-9a48-32347295c149-1-wm.jpg?v=1789799826797"
+        },
+        {
+          "phrase": "avoid a mistake",
+          "meaning": "tránh sai sót"
+        }
+      ],
+      "synonyms": [
+        "prevent (ngăn ngừa)",
+        "evade (né tránh)",
+        "steer clear of (tránh xa)"
+      ]
+    },
+    {
+      "id": "f0ba5cce-4f61-49c6-b4d2-ad44c3d2203c",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "gather",
+      "ipa": "UK: /ˈɡæð.ər/ | US: /ˈɡæð.ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We gathered information for our plan from many sources.",
+          "meaning": "thu thập, tập hợp, hiểu ra",
+          "antonyms": [
+            "scatter (làm phân tán)",
+            "distribute (phân phát)"
+          ],
+          "toeic_tip": "Nghĩa thứ hai I gather that nghĩa là tôi hiểu rằng, hay gặp Part 3.",
+          "example_vi": "Chúng tôi thu thập thông tin cho kế hoạch từ nhiều nguồn khác nhau.",
+          "word_family": [
+            "gathering (n) buổi họp mặt, cuộc tụ họp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T07:59:45.161395+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f0ba5cce-4f61-49c6-b4d2-ad44c3d2203c-wm.jpg?v=1789798392125",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/gather-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/gather-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "gather information",
+          "meaning": "thu thập thông tin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f0ba5cce-4f61-49c6-b4d2-ad44c3d2203c-0-wm.jpg?v=1789804784023"
+        },
+        {
+          "phrase": "gather data",
+          "meaning": "tập hợp dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f0ba5cce-4f61-49c6-b4d2-ad44c3d2203c-1-wm.jpg?v=1789804785017"
+        },
+        {
+          "phrase": "gather that",
+          "meaning": "hiểu rằng"
+        }
+      ],
+      "synonyms": [
+        "collect (thu thập)",
+        "assemble (tập hợp)",
+        "compile (tổng hợp)"
+      ]
+    },
+    {
+      "id": "8c37146f-eed9-4c0a-a0f3-603c1c437c92",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "risk",
+      "ipa": "/rɪsk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The primary risk for most start-up businesses is insufficient capital.",
+          "meaning": "rủi ro, nguy cơ thiệt hại",
+          "antonyms": [
+            "safety (sự an toàn)",
+            "security (sự bảo đảm)"
+          ],
+          "toeic_tip": "Nhớ hai cụm run the risk of + V-ing và at risk of.",
+          "example_vi": "Rủi ro lớn nhất với phần lớn doanh nghiệp mới thành lập là thiếu vốn.",
+          "word_family": [
+            "risky (adj) nhiều rủi ro"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T07:09:20.196274+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8c37146f-eed9-4c0a-a0f3-603c1c437c92-wm.jpg?v=1789798109252",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/risk-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/risk-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take a risk",
+          "meaning": "chấp nhận rủi ro",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8c37146f-eed9-4c0a-a0f3-603c1c437c92-0-wm.jpg?v=1789801755103"
+        },
+        {
+          "phrase": "at risk",
+          "meaning": "đang gặp nguy cơ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8c37146f-eed9-4c0a-a0f3-603c1c437c92-1-wm.jpg?v=1789801760059"
+        },
+        {
+          "phrase": "reduce the risk",
+          "meaning": "giảm rủi ro"
+        }
+      ],
+      "synonyms": [
+        "danger (mối nguy)",
+        "hazard (nguy cơ)",
+        "exposure (mức rủi ro phải chịu)"
+      ]
+    },
+    {
+      "id": "618836b9-5754-4e45-9756-9c819b3f5b73",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "address",
+      "ipa": "/əˈdres/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The article praised her address to the steering committee.",
+          "meaning": "bài diễn văn; giải quyết, nhắm tới",
+          "antonyms": [
+            "ignore (phớt lờ)"
+          ],
+          "toeic_tip": "Ngoài nghĩa địa chỉ, address còn là bài diễn văn và động từ giải quyết.",
+          "example_vi": "Bài báo khen ngợi bài phát biểu của bà trước ban điều hành.",
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:44:47.042793+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/618836b9-5754-4e45-9756-9c819b3f5b73-wm.jpg?v=1789798120241",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/address-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/address-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "address an issue",
+          "meaning": "giải quyết vấn đề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/618836b9-5754-4e45-9756-9c819b3f5b73-0-wm.jpg?v=1789800274907"
+        },
+        {
+          "phrase": "address the needs of",
+          "meaning": "đáp ứng nhu cầu của",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/618836b9-5754-4e45-9756-9c819b3f5b73-1-wm.jpg?v=1789800286895"
+        },
+        {
+          "phrase": "deliver an address",
+          "meaning": "đọc diễn văn"
+        }
+      ],
+      "synonyms": [
+        "tackle (xử lý)",
+        "deal with (giải quyết)",
+        "speech (bài phát biểu)"
+      ]
+    },
+    {
+      "id": "6abf9c53-ff88-4f66-8b6b-05418078295c",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "strong",
+      "ipa": "UK: /strɒŋ/ | US: /strɑːŋ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The professor made a strong argument for the value of a good business plan.",
+          "meaning": "mạnh, vững vàng, thuyết phục",
+          "antonyms": [
+            "weak (yếu)",
+            "fragile (mong manh)"
+          ],
+          "toeic_tip": "Danh từ của strong là strength, không có strongness; hay hỏi ở Part 5.",
+          "example_vi": "Vị giáo sư đưa ra lập luận rất thuyết phục về giá trị của một kế hoạch kinh doanh tốt.",
+          "word_family": [
+            "strength (n) sức mạnh, thế mạnh",
+            "strengthen (v) củng cố, làm mạnh lên"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:50:43.292233+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6abf9c53-ff88-4f66-8b6b-05418078295c-wm.jpg?v=1789798113679",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/strong-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/strong-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a strong argument",
+          "meaning": "lập luận thuyết phục",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6abf9c53-ff88-4f66-8b6b-05418078295c-0-wm.jpg?v=1789800631096"
+        },
+        {
+          "phrase": "strong demand",
+          "meaning": "nhu cầu cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6abf9c53-ff88-4f66-8b6b-05418078295c-1-wm.jpg?v=1789800643149"
+        },
+        {
+          "phrase": "a strong candidate",
+          "meaning": "ứng viên sáng giá"
+        }
+      ],
+      "synonyms": [
+        "powerful (mạnh mẽ)",
+        "sound (vững chắc)",
+        "compelling (có sức thuyết phục)"
+      ]
+    },
+    {
+      "id": "c6331a70-7361-4388-a585-de01ed3c747b",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "primarily",
+      "ipa": "UK: /praɪˈmer.ɪ.li/ | US: /praɪˈmer.ə.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We are primarily concerned with convincing the board of directors to apply for the second loan.",
+          "meaning": "chủ yếu, trước hết",
+          "antonyms": [
+            "secondarily (một cách thứ yếu)"
+          ],
+          "toeic_tip": "primarily bổ nghĩa cho cả câu, thường đứng ngay trước động từ chính.",
+          "example_vi": "Điều chúng tôi quan tâm nhất là thuyết phục hội đồng quản trị xin khoản vay thứ hai.",
+          "word_family": [
+            "primary (adj) chính, hàng đầu",
+            "prime (adj) chủ yếu, tốt nhất"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T07:38:38.828011+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c6331a70-7361-4388-a585-de01ed3c747b-wm.jpg?v=1789798116491",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/primarily-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/primarily-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "primarily concerned with",
+          "meaning": "chủ yếu quan tâm đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c6331a70-7361-4388-a585-de01ed3c747b-0-wm.jpg?v=1789803518629"
+        },
+        {
+          "phrase": "primarily responsible for",
+          "meaning": "chịu trách nhiệm chính về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c6331a70-7361-4388-a585-de01ed3c747b-1-wm.jpg?v=1789803477447"
+        },
+        {
+          "phrase": "used primarily for",
+          "meaning": "dùng chủ yếu để"
+        }
+      ],
+      "synonyms": [
+        "mainly (chủ yếu)",
+        "chiefly (chính yếu)",
+        "largely (phần lớn)"
+      ]
+    },
+    {
+      "id": "64cf7f61-15ec-49b9-b03a-870b8b3ae730",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "develop",
+      "ipa": "/dɪˈvel.əp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Lily developed her ideas into a business plan by taking a class at the community college.",
+          "meaning": "phát triển, xây dựng, mở rộng",
+          "antonyms": [
+            "decline (suy giảm)"
+          ],
+          "toeic_tip": "Chỉ một chữ p khi thêm đuôi: developing, developed, developer.",
+          "example_vi": "Lily biến ý tưởng của mình thành kế hoạch kinh doanh nhờ một khóa học ở trường cao đẳng cộng đồng.",
+          "word_family": [
+            "development (n) sự phát triển",
+            "developer (n) nhà phát triển",
+            "developing (adj) đang phát triển"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:48:35.439936+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/64cf7f61-15ec-49b9-b03a-870b8b3ae730-wm.jpg?v=1789798111811",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/develop-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/develop-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "develop a plan",
+          "meaning": "xây dựng kế hoạch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/64cf7f61-15ec-49b9-b03a-870b8b3ae730-0-wm.jpg?v=1789800499788"
+        },
+        {
+          "phrase": "develop skills",
+          "meaning": "phát triển kỹ năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/64cf7f61-15ec-49b9-b03a-870b8b3ae730-1-wm.jpg?v=1789800515270"
+        },
+        {
+          "phrase": "develop into",
+          "meaning": "phát triển thành"
+        }
+      ],
+      "synonyms": [
+        "expand (mở rộng)",
+        "build (xây dựng)",
+        "improve (cải thiện)"
+      ]
+    },
+    {
+      "id": "dfb2653e-ce19-4771-8114-af2443232796",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "strategy",
+      "ipa": "UK: /ˈstræt.ə.dʒi/ | US: /ˈstræt̬.ə.dʒi/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "A business plan is a strategy for running a business and avoiding problems.",
+          "meaning": "chiến lược, kế hoạch hành động",
+          "toeic_tip": "Danh từ strategy, tính từ strategic, trọng âm đổi chỗ khi phát âm.",
+          "example_vi": "Kế hoạch kinh doanh chính là chiến lược để vận hành doanh nghiệp và tránh rắc rối.",
+          "word_family": [
+            "strategic (adj) mang tính chiến lược",
+            "strategically (adv) một cách chiến lược"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T07:52:58.538527+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/dfb2653e-ce19-4771-8114-af2443232796-wm.jpg?v=1789798292725",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/strategy-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/strategy-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "develop a strategy",
+          "meaning": "xây dựng chiến lược",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dfb2653e-ce19-4771-8114-af2443232796-0-wm.jpg?v=1789804360769"
+        },
+        {
+          "phrase": "marketing strategy",
+          "meaning": "chiến lược tiếp thị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dfb2653e-ce19-4771-8114-af2443232796-1-wm.jpg?v=1789804378355"
+        },
+        {
+          "phrase": "a long-term strategy",
+          "meaning": "chiến lược dài hạn"
+        }
+      ],
+      "synonyms": [
+        "plan (kế hoạch)",
+        "approach (cách tiếp cận)",
+        "tactic (chiến thuật)"
+      ]
+    },
+    {
+      "id": "1c44fd7e-0d18-4721-85c1-42cf2e2607d5",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "substitution",
+      "ipa": "UK: /ˌsʌb.stɪˈtjuː.ʃən/ | US: /ˌsʌb.stəˈtuː.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Your substitution of fake names for real ones makes the document seem insincere.",
+          "meaning": "sự thay thế, việc dùng cái này thay cái kia",
+          "toeic_tip": "Cấu trúc substitute A for B nghĩa dùng A thay cho B, đừng đảo ngược.",
+          "example_vi": "Việc bạn thay tên thật bằng tên giả khiến tài liệu trông thiếu chân thành.",
+          "word_family": [
+            "substitute (v) thay thế",
+            "substitute (n) người hoặc vật thay thế"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:19:50.3373+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1c44fd7e-0d18-4721-85c1-42cf2e2607d5-wm.jpg?v=1789798308581",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/substitution-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/substitution-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a substitution",
+          "meaning": "thực hiện việc thay thế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c44fd7e-0d18-4721-85c1-42cf2e2607d5-0-wm.jpg?v=1789798789071"
+        },
+        {
+          "phrase": "substitution for",
+          "meaning": "sự thay thế cho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c44fd7e-0d18-4721-85c1-42cf2e2607d5-1-wm.jpg?v=1789798790186"
+        },
+        {
+          "phrase": "no substitution for",
+          "meaning": "không gì thay được"
+        }
+      ],
+      "synonyms": [
+        "replacement (sự thay thế)",
+        "swap (sự đổi chỗ cho nhau)"
+      ]
+    },
+    {
+      "id": "b4f61a51-74a2-46fd-933a-1c9e1a2e9165",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "demonstrate",
+      "ipa": "/ˈdem.ən.streɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Alban's business plan demonstrated that he had put a lot of thought into making his dream a reality.",
+          "meaning": "chứng minh, cho thấy rõ, trình diễn",
+          "toeic_tip": "Trong TOEIC, demonstration thường là buổi giới thiệu sản phẩm.",
+          "example_vi": "Kế hoạch kinh doanh của Alban cho thấy anh đã đầu tư rất nhiều tâm sức để biến giấc mơ thành hiện thực.",
+          "word_family": [
+            "demonstration (n) buổi trình diễn, sự minh chứng",
+            "demonstrable (adj) có thể chứng minh"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T07:29:25.69263+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b4f61a51-74a2-46fd-933a-1c9e1a2e9165-wm.jpg?v=1789798107973",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/demonstrate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/demonstrate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "demonstrate a product",
+          "meaning": "trình diễn sản phẩm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b4f61a51-74a2-46fd-933a-1c9e1a2e9165-0-wm.jpg?v=1789802964596"
+        },
+        {
+          "phrase": "demonstrate that",
+          "meaning": "cho thấy rằng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b4f61a51-74a2-46fd-933a-1c9e1a2e9165-1-wm.jpg?v=1789802965488"
+        },
+        {
+          "phrase": "demonstrate an ability",
+          "meaning": "thể hiện năng lực"
+        }
+      ],
+      "synonyms": [
+        "show (cho thấy)",
+        "prove (chứng minh)",
+        "illustrate (minh họa)"
+      ]
+    },
+    {
+      "id": "27f708af-bbad-4256-8cd8-2a9acc02d19c",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "offer",
+      "ipa": "UK: /ˈɒf.ər/ | US: /ˈɑː.fɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Devon accepted our offer to write the business plan.",
+          "meaning": "lời đề nghị, ưu đãi; đề nghị, cung cấp",
+          "antonyms": [
+            "refuse (từ chối)",
+            "withdraw (rút lại đề nghị)"
+          ],
+          "toeic_tip": "offer somebody something bằng offer something to somebody; offer to V.",
+          "example_vi": "Devon đã nhận lời đề nghị viết giúp kế hoạch kinh doanh.",
+          "word_family": [
+            "offering (n) sản phẩm hay dịch vụ được chào bán"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:22:39.051851+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/27f708af-bbad-4256-8cd8-2a9acc02d19c-wm.jpg?v=1789798554119",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/offer-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/offer-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accept an offer",
+          "meaning": "nhận lời đề nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/27f708af-bbad-4256-8cd8-2a9acc02d19c-0-wm.jpg?v=1789798956489"
+        },
+        {
+          "phrase": "a job offer",
+          "meaning": "lời mời làm việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/27f708af-bbad-4256-8cd8-2a9acc02d19c-1-wm.jpg?v=1789798958885"
+        },
+        {
+          "phrase": "a special offer",
+          "meaning": "chương trình ưu đãi"
+        }
+      ],
+      "synonyms": [
+        "proposal (đề xuất)",
+        "provide (cung cấp)",
+        "propose (đề nghị)"
+      ]
+    },
+    {
+      "id": "3074db85-0f8a-48c0-bda3-97190291da24",
+      "part_id": "a3330a08-5fa5-4b96-91c4-3a797b0a9ca5",
+      "word": "evaluate",
+      "ipa": "/ɪˈvæl.ju.eɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It's important to evaluate your competition when making a business plan.",
+          "meaning": "đánh giá, thẩm định",
+          "toeic_tip": "Cụm performance evaluation hay gặp trong bài về nhân sự.",
+          "example_vi": "Khi lập kế hoạch kinh doanh, đánh giá đối thủ là việc rất quan trọng.",
+          "word_family": [
+            "evaluation (n) sự đánh giá",
+            "evaluator (n) người đánh giá"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:39.431311+00:00",
+      "updated_at": "2026-09-19T06:23:40.596824+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3074db85-0f8a-48c0-bda3-97190291da24-wm.jpg?v=1789798581882",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/evaluate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/evaluate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "evaluate performance",
+          "meaning": "đánh giá hiệu quả làm việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3074db85-0f8a-48c0-bda3-97190291da24-0-wm.jpg?v=1789799017375"
+        },
+        {
+          "phrase": "evaluate options",
+          "meaning": "cân nhắc các phương án",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3074db85-0f8a-48c0-bda3-97190291da24-1-wm.jpg?v=1789799020427"
+        },
+        {
+          "phrase": "carefully evaluate",
+          "meaning": "đánh giá kỹ"
+        }
+      ],
+      "synonyms": [
+        "assess (thẩm định)",
+        "appraise (định giá)",
+        "review (xem xét lại)"
+      ]
+    }
+  ]
+}

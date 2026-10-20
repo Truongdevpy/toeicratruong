@@ -1,0 +1,372 @@
+{
+  "subtopic": {
+    "id": "40d22a7f-0463-4598-bb60-f8a124557521",
+    "topic_id": "a8a09900-be44-4845-abce-d1666b464c62",
+    "title_en": "Trạng từ bổ nghĩa động từ",
+    "title_vi": "Trạng từ bổ nghĩa động từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 15,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-trang-tu-bo-nghia-dong-tu"
+  },
+  "lessons": [
+    {
+      "id": "df4fba76-d341-4476-a516-0b88ffefc9e7",
+      "subtopic_id": "40d22a7f-0463-4598-bb60-f8a124557521",
+      "title_en": "Trạng từ bổ nghĩa động từ",
+      "title_vi": "Trạng từ bổ nghĩa động từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:34.845084+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 1 · Câu 114",
+          "options": {
+            "A": "perfect",
+            "B": "perfects",
+            "C": "perfectly",
+            "D": "perfection"
+          },
+          "question": "Our skilled tailors are happy to design a custom-made suit that fits your style and budget -------.",
+          "translation": "Những thợ may lành nghề của chúng tôi rất vui được thiết kế một bộ com-lê may đo hợp hoàn hảo với phong cách và ngân sách của quý khách."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “perfect”: tính từ “perfect”, động từ chia thì “perfects”, trạng từ “perfectly” và danh từ “perfection”. Chỗ trống đứng cuối câu, sau động từ “fits” và tân ngữ “your style and budget”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our skilled tailors",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "happy",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to design a custom-made suit",
+                    "label": "to V + tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "đại từ quan hệ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "fits",
+                    "label": "động từ (mệnh đề that)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "your style and budget",
+                    "label": "tân ngữ của fits"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------.",
+                    "label": "chỗ trống"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong mệnh đề “that fits your style and budget …”, sau động từ “fits” và tân ngữ của nó; mệnh đề này đã đủ thành phần."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Câu đã đủ chủ ngữ, động từ, tân ngữ thì từ thêm vào bổ nghĩa cho gì.",
+                  "Loại từ nào bổ nghĩa cho động từ và đứng ở những vị trí nào.",
+                  "Vì sao tính từ, danh từ, động từ không đứng được ở vị trí này."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Trạng từ bổ nghĩa cho động từ, nói hành động diễn ra thế nào, lúc nào, đến mức nào (quickly, clearly, recently, greatly). Trạng từ không phải thành phần bắt buộc: bỏ nó đi, câu vẫn đủ chủ ngữ, động từ, tân ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Trước động từ chính",
+                    "formula": "S + trạng từ + V"
+                  },
+                  {
+                    "label": "Sau động từ không có tân ngữ",
+                    "formula": "S + V + trạng từ (+ giới từ …)"
+                  },
+                  {
+                    "label": "Sau tân ngữ",
+                    "formula": "S + V + O + trạng từ"
+                  },
+                  {
+                    "label": "Giữa be và V-ing",
+                    "formula": "be + trạng từ + V-ing"
+                  },
+                  {
+                    "label": "Sau động từ bị động",
+                    "formula": "be + V3 + trạng từ"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "S + trạng từ + V",
+                    "*The company quickly updated its website.* — Công ty đã nhanh chóng cập nhật trang web."
+                  ],
+                  [
+                    "S + V + trạng từ (+ giới từ …)",
+                    "*Our staff work closely with each client.* — Nhân viên chúng tôi làm việc sát sao với từng khách hàng."
+                  ],
+                  [
+                    "S + V + O + trạng từ",
+                    "*Please read the contract carefully.* — Vui lòng đọc kỹ hợp đồng."
+                  ],
+                  [
+                    "be + V3 + trạng từ",
+                    "*The files were checked carefully before the audit.* — Các hồ sơ đã được kiểm tra cẩn thận trước đợt kiểm toán."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Nhận ra trạng từ qua đuôi**: phần lớn là tính từ + -ly (quick, quickly; effective, effectively). Một số trạng từ không có đuôi -ly và cùng dạng với tính từ, như early, fast, late, hard.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Bổ nghĩa cho động từ; đứng trước động từ chính, sau động từ, sau tân ngữ, hoặc sau động từ bị động.",
+                    "form": "Trạng từ (quickly, promptly, recently, early)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Tính từ bổ nghĩa cho danh từ, không bổ nghĩa cho động từ: *spoke confident* sai, phải là *spoke confidently*.",
+                    "form": "Tính từ (quick, prompt, confident, official, clear)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vẫn là tính từ, cần “the” đứng trước và không bổ nghĩa cho động từ.",
+                    "form": "So sánh nhất của tính từ (quickest, greatest, clearest)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã đủ thành phần; danh từ thêm vào không có vai trò, cũng không bổ nghĩa cho động từ.",
+                    "form": "Danh từ (greatness, precision, confidence, origin, offices)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu đã có động từ chính. Động từ (clears, signify) đặt vào thì câu có hai động từ chính; V-ing, V3 (briefing, briefed, presenting) không bổ nghĩa cho động từ: *Marina Hou briefed considered* sai.",
+                    "form": "Động từ, V-ing, V3 (clears, signify, briefing, briefed, presenting)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Giới từ cần danh từ theo sau, không bổ nghĩa cho động từ ở vị trí này.",
+                    "form": "Giới từ (through)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "chủ ngữ + ___ + động từ chính",
+                    "example": "*Milante Shoes ___ altered*; *The vice president ___ retired*"
+                  },
+                  {
+                    "signal": "động từ + ___",
+                    "example": "*behave ___*; *leaves ___ at 7:00*; *spoke ___ about*"
+                  },
+                  {
+                    "signal": "động từ + tân ngữ + ___",
+                    "example": "*conveyed the message ___ to the public*; *fits your style and budget ___*"
+                  },
+                  {
+                    "signal": "___ + and + trạng từ",
+                    "example": "*handle their orders ___ and carefully*"
+                  },
+                  {
+                    "signal": "be + ___ + V-ing",
+                    "example": "*are ___ decreasing*"
+                  },
+                  {
+                    "signal": "bị động (be + V3) + ___",
+                    "example": "*were updated ___*; *was tested ___ before being launched*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ, động từ chính và tân ngữ (nếu có). Câu đã đủ thành phần mà chỗ trống đứng trước động từ, sau động từ hay sau tân ngữ thì chỗ trống bổ nghĩa cho động từ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn trạng từ theo đúng vị trí trong công thức; loại tính từ, dạng so sánh, danh từ, giới từ, và loại dạng động từ vì câu đã có động từ chính.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Our skilled tailors",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "happy",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to design a custom-made suit",
+                    "label": "to V + tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "đại từ quan hệ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "fits",
+                    "label": "động từ (mệnh đề that)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "your style and budget",
+                    "label": "tân ngữ của fits"
+                  },
+                  {
+                    "role": "X",
+                    "text": "perfectly.",
+                    "label": "trạng từ bổ nghĩa cho fits"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “perfectly” đứng sau tân ngữ, bổ nghĩa cho động từ “fits”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “perfect” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Mệnh đề “that fits your style and budget” đã đủ động từ và tân ngữ; chỗ trống đứng cuối câu; dấu hiệu “động từ + tân ngữ + ___”.",
+                  "Bước 3: Cần S + V + O + trạng từ; “perfectly” là trạng từ (đuôi -ly), vì vậy chọn “perfectly” (hoàn hảo).",
+                  "“perfect” (A) là tính từ, không bổ nghĩa cho động từ “fits”, phía sau cũng không có danh từ, nên loại.",
+                  "“perfects” (B) là động từ chia thì (V-s), mệnh đề đã có động từ “fits”, nên loại.",
+                  "“perfection” (D) là danh từ (sự hoàn hảo), đứng sau tân ngữ không có vai trò gì, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“very” không đứng trước dạng so sánh hơn (*very earlier* sai, phải nói *much earlier*); so sánh nhất cần “the” đứng trước (*the earliest*).",
+                  "Trạng từ trong câu bị động còn đứng được giữa be và V3 (*was carefully checked*); phần này học ở chủ điểm “Trạng từ trong thì hoàn thành và bị động”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Câu đã đủ chủ ngữ, động từ, tân ngữ thì chỗ trống bổ nghĩa cho động từ: chọn trạng từ.",
+                  "Tính từ bổ nghĩa cho danh từ, trạng từ bổ nghĩa cho động từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

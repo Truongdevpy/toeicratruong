@@ -1,0 +1,620 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "d07839a2-9edc-4f71-ba4a-33a407e000c5",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 11: Job Advertising and Recruiting",
+    "order_index": 11,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:09.284389+00:00",
+    "updated_at": "2026-09-18T08:51:09.284389+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+    "test_id": "d07839a2-9edc-4f71-ba4a-33a407e000c5",
+    "name": "Job Advertising and Recruiting",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:09.284389+00:00",
+    "updated_at": "2026-09-18T08:51:09.284389+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "8a2d4898-bfaf-4cd4-ac97-f71b82c24c64",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "candidate",
+      "ipa": "UK: /ˈkæn.dɪ.dət/ | US: /ˈkæn.də.deɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The recruiter will interview all candidates for the position.",
+          "meaning": "ứng viên, người được xem xét cho một vị trí hoặc giải thưởng",
+          "toeic_tip": "Dùng candidate for + vị trí; applicant là người đã nộp đơn.",
+          "example_vi": "Nhà tuyển dụng sẽ phỏng vấn tất cả ứng viên cho vị trí này.",
+          "word_family": [
+            "candidacy (n) tư cách ứng viên"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T07:07:53.868282+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8a2d4898-bfaf-4cd4-ac97-f71b82c24c64-wm.jpg?v=1789797964527",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/candidate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/candidate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a strong candidate",
+          "meaning": "ứng viên sáng giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8a2d4898-bfaf-4cd4-ac97-f71b82c24c64-0-wm.jpg?v=1789801672661"
+        },
+        {
+          "phrase": "a qualified candidate",
+          "meaning": "ứng viên đủ tiêu chuẩn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8a2d4898-bfaf-4cd4-ac97-f71b82c24c64-1-wm.jpg?v=1789801673734"
+        },
+        {
+          "phrase": "a candidate for the position",
+          "meaning": "ứng viên cho vị trí"
+        }
+      ],
+      "synonyms": [
+        "applicant (người nộp đơn)",
+        "contender (người tranh đua)"
+      ]
+    },
+    {
+      "id": "88d4704e-5314-4695-895a-16453781d4a5",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "bring together",
+      "ipa": "UK: /ˌbrɪŋ təˈɡeð.ər/ | US: /ˌbrɪŋ təˈɡeð.ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Every year, the firm brings together its top lawyers and its newest recruits for a training session.",
+          "meaning": "tập hợp, quy tụ, gắn kết",
+          "antonyms": [
+            "separate (tách ra)",
+            "split up (chia tách)"
+          ],
+          "toeic_tip": "Tân ngữ có thể chen vào giữa: bring the whole team together.",
+          "example_vi": "Mỗi năm, công ty đều quy tụ các luật sư giỏi nhất và lứa nhân viên mới cho một đợt tập huấn.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T07:07:05.062654+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/88d4704e-5314-4695-895a-16453781d4a5-wm.jpg?v=1789798301692",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/bring-together-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/bring-together-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "bring together experts",
+          "meaning": "quy tụ chuyên gia",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/88d4704e-5314-4695-895a-16453781d4a5-0-wm.jpg?v=1789801624213"
+        },
+        {
+          "phrase": "bring people together",
+          "meaning": "gắn kết mọi người",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/88d4704e-5314-4695-895a-16453781d4a5-1-wm.jpg?v=1789801624922"
+        },
+        {
+          "phrase": "bring together resources",
+          "meaning": "tập hợp nguồn lực"
+        }
+      ],
+      "synonyms": [
+        "gather (tập hợp)",
+        "assemble (tụ họp)"
+      ]
+    },
+    {
+      "id": "8b7c658f-6de2-4b65-865b-1fe22ab43339",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "qualifications",
+      "ipa": "UK: /ˌkwɒl.ɪ.fɪˈkeɪ.ʃənz/ | US: /ˌkwɑː.lə.fɪˈkeɪ.ʃənz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The job seeker had done extensive volunteer work and was able to add this experience to his list of qualifications.",
+          "meaning": "bằng cấp, năng lực, điều kiện cần có cho công việc",
+          "toeic_tip": "Thường dùng số nhiều; qualified for + vị trí, qualified to + động từ.",
+          "example_vi": "Người tìm việc từng làm tình nguyện rất nhiều nên có thêm kinh nghiệm đó vào hồ sơ năng lực.",
+          "word_family": [
+            "qualify (v) đủ tiêu chuẩn",
+            "qualified (adj) có đủ năng lực"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T07:10:49.369187+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8b7c658f-6de2-4b65-865b-1fe22ab43339-wm.jpg?v=1789798299335",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/qualifications-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/qualifications-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "meet the qualifications",
+          "meaning": "đáp ứng yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b7c658f-6de2-4b65-865b-1fe22ab43339-0-wm.jpg?v=1789801833670"
+        },
+        {
+          "phrase": "a list of qualifications",
+          "meaning": "danh sách năng lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8b7c658f-6de2-4b65-865b-1fe22ab43339-1-wm.jpg?v=1789801849220"
+        },
+        {
+          "phrase": "professional qualifications",
+          "meaning": "bằng cấp chuyên môn"
+        }
+      ],
+      "synonyms": [
+        "credentials (bằng cấp, chứng chỉ)",
+        "requirements (yêu cầu)"
+      ]
+    },
+    {
+      "id": "3a42b5c8-678d-48b5-88cd-9aecfb5f36ca",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "profile",
+      "ipa": "UK: /ˈprəʊ.faɪl/ | US: /ˈproʊ.faɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The recruiter told him that, unfortunately, he did not fit the job profile.",
+          "meaning": "bản mô tả đặc điểm, hồ sơ sơ lược",
+          "toeic_tip": "Nhớ cụm fit the profile và a high-profile client trong Part 7.",
+          "example_vi": "Nhà tuyển dụng nói rất tiếc là anh không đúng với yêu cầu của vị trí.",
+          "word_family": [
+            "profile (v) phác họa, mô tả sơ lược"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T06:06:09.546701+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3a42b5c8-678d-48b5-88cd-9aecfb5f36ca-wm.jpg?v=1789797969482",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/profile-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/profile-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a job profile",
+          "meaning": "bản mô tả công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a42b5c8-678d-48b5-88cd-9aecfb5f36ca-0-wm.jpg?v=1789797809606"
+        },
+        {
+          "phrase": "fit the profile",
+          "meaning": "đúng với hồ sơ yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a42b5c8-678d-48b5-88cd-9aecfb5f36ca-1-wm.jpg?v=1789797809243"
+        },
+        {
+          "phrase": "a company profile",
+          "meaning": "hồ sơ giới thiệu công ty"
+        }
+      ],
+      "synonyms": [
+        "description (bản mô tả)",
+        "outline (bản phác thảo)"
+      ]
+    },
+    {
+      "id": "d351607a-1ce3-460b-a433-57333576e145",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "accomplishment",
+      "ipa": "UK: /əˈkʌm.plɪʃ.mənt/ | US: /əˈkɑːm.plɪʃ.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The success of the company was based on its early accomplishments.",
+          "meaning": "thành tựu, thành tích",
+          "antonyms": [
+            "failure (thất bại)"
+          ],
+          "toeic_tip": "Đồng nghĩa với achievement; hay xuất hiện trong hồ sơ xin việc ở Part 7.",
+          "example_vi": "Thành công của công ty bắt nguồn từ những thành tích đạt được từ sớm.",
+          "word_family": [
+            "accomplish (v) hoàn thành, đạt được",
+            "accomplished (adj) tài giỏi, lão luyện"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T07:44:13.59183+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d351607a-1ce3-460b-a433-57333576e145-wm.jpg?v=1789798316460",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accomplishment-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accomplishment-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a great accomplishment",
+          "meaning": "thành tựu lớn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d351607a-1ce3-460b-a433-57333576e145-0-wm.jpg?v=1789803853418"
+        },
+        {
+          "phrase": "a list of accomplishments",
+          "meaning": "danh sách thành tích",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d351607a-1ce3-460b-a433-57333576e145-1-wm.jpg?v=1789803853316"
+        },
+        {
+          "phrase": "a sense of accomplishment",
+          "meaning": "cảm giác đạt được điều gì đó"
+        }
+      ],
+      "synonyms": [
+        "achievement (thành tựu)",
+        "success (thành công)"
+      ]
+    },
+    {
+      "id": "c431bef4-8b6e-4d96-92b7-3a768a2b206f",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "commensurate",
+      "ipa": "UK: /kəˈmen.sər.ət/ | US: /kəˈmen.sɚ.ət/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Generally the first year's salary is commensurate with experience and education level.",
+          "meaning": "tương xứng, tương ứng, ngang bằng với",
+          "antonyms": [
+            "disproportionate (không tương xứng)"
+          ],
+          "toeic_tip": "Hầu như luôn đi với with; rất hay gặp trong tin tuyển dụng Part 7.",
+          "example_vi": "Thường thì lương năm đầu sẽ tương xứng với kinh nghiệm và trình độ học vấn.",
+          "word_family": [
+            "commensurately (adv) một cách tương xứng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T07:36:37.891679+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c431bef4-8b6e-4d96-92b7-3a768a2b206f-wm.jpg?v=1789798384237",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commensurate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/commensurate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "commensurate with experience",
+          "meaning": "tương xứng với kinh nghiệm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c431bef4-8b6e-4d96-92b7-3a768a2b206f-0-wm.jpg?v=1789803397752"
+        },
+        {
+          "phrase": "salary commensurate with qualifications",
+          "meaning": "lương tương xứng năng lực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c431bef4-8b6e-4d96-92b7-3a768a2b206f-1-wm.jpg?v=1789803395604"
+        }
+      ],
+      "synonyms": [
+        "proportionate (tương ứng)",
+        "equivalent (tương đương)"
+      ]
+    },
+    {
+      "id": "26c5227f-8f0c-41a4-8d98-233fd05916b3",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "submit",
+      "ipa": "/səbˈmɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Submit your resume to the human resources department.",
+          "meaning": "nộp, đệ trình để xem xét",
+          "antonyms": [
+            "withdraw (rút lại)"
+          ],
+          "toeic_tip": "submit something to somebody; gấp đôi phụ âm: submitted, submitting.",
+          "example_vi": "Hãy nộp sơ yếu lý lịch cho phòng nhân sự.",
+          "word_family": [
+            "submission (n) việc nộp, hồ sơ nộp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T06:17:26.4068+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/26c5227f-8f0c-41a4-8d98-233fd05916b3-wm.jpg?v=1789797969174",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/submit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/submit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "submit an application",
+          "meaning": "nộp đơn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/26c5227f-8f0c-41a4-8d98-233fd05916b3-0-wm.jpg?v=1789798646270"
+        },
+        {
+          "phrase": "submit a resume",
+          "meaning": "nộp sơ yếu lý lịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/26c5227f-8f0c-41a4-8d98-233fd05916b3-1-wm.jpg?v=1789798643751"
+        },
+        {
+          "phrase": "submit a proposal",
+          "meaning": "trình đề xuất"
+        }
+      ],
+      "synonyms": [
+        "hand in (nộp)",
+        "send in (gửi đi)"
+      ]
+    },
+    {
+      "id": "6ddb4e9d-767c-46ae-b007-bbb58c72312e",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "match",
+      "ipa": "/mætʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It is difficult to make a decision when both candidates seem to be a perfect match.",
+          "meaning": "sự phù hợp, sự tương xứng; ghép cho hợp, làm cho khớp",
+          "antonyms": [
+            "mismatch (sự không phù hợp)"
+          ],
+          "toeic_tip": "match A to/with B; ở dạng ngoại động từ có thể dùng thẳng không giới từ.",
+          "example_vi": "Rất khó chọn khi cả hai ứng viên đều có vẻ hợp hoàn toàn với vị trí.",
+          "word_family": [
+            "matching (adj) khớp nhau, tương ứng",
+            "mismatch (n) sự khập khiễng"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T06:52:07.314863+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/6ddb4e9d-767c-46ae-b007-bbb58c72312e-wm.jpg?v=1789797969853",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/match-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/match-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a perfect match",
+          "meaning": "sự phù hợp hoàn hảo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6ddb4e9d-767c-46ae-b007-bbb58c72312e-0-wm.jpg?v=1789800716130"
+        },
+        {
+          "phrase": "match candidates to jobs",
+          "meaning": "ghép ứng viên với công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/6ddb4e9d-767c-46ae-b007-bbb58c72312e-1-wm.jpg?v=1789800727170"
+        },
+        {
+          "phrase": "a good match for the position",
+          "meaning": "phù hợp với vị trí"
+        }
+      ],
+      "synonyms": [
+        "fit (sự phù hợp)",
+        "pair (ghép cặp)"
+      ]
+    },
+    {
+      "id": "098d4be0-ccd8-4110-86a5-4ad117ca7a3e",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "time-consuming",
+      "ipa": "UK: /ˈtaɪm kənˌsjuː.mɪŋ/ | US: /ˈtaɪm kənˌsuː.mɪŋ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Even though it was time-consuming, all of the participants felt that the open house was very worthwhile.",
+          "meaning": "tốn nhiều thời gian, kéo dài",
+          "antonyms": [
+            "quick (nhanh gọn)",
+            "efficient (gọn và hiệu quả)"
+          ],
+          "toeic_tip": "Tính từ ghép luôn có gạch nối, đứng trước danh từ hoặc sau động từ be.",
+          "example_vi": "Dù mất khá nhiều thời gian, mọi người tham dự đều thấy buổi mở cửa tham quan rất đáng.",
+          "word_family": [
+            "consume (v) tiêu tốn, sử dụng hết"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T06:20:32.141971+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/098d4be0-ccd8-4110-86a5-4ad117ca7a3e-wm.jpg?v=1789798399497",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/time-consuming-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/time-consuming-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a time-consuming process",
+          "meaning": "quy trình tốn thời gian",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/098d4be0-ccd8-4110-86a5-4ad117ca7a3e-0-wm.jpg?v=1789798829394"
+        },
+        {
+          "phrase": "a time-consuming task",
+          "meaning": "công việc mất nhiều thời gian",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/098d4be0-ccd8-4110-86a5-4ad117ca7a3e-1-wm.jpg?v=1789798831987"
+        }
+      ],
+      "synonyms": [
+        "lengthy (kéo dài)",
+        "laborious (mất công)"
+      ]
+    },
+    {
+      "id": "e8a7d124-a16a-4f75-971f-aecc2f0fc644",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "come up with",
+      "ipa": "/ˌkʌm ˈʌp wɪð/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "In order for that small business to succeed, it needs to come up with a new strategy.",
+          "meaning": "nghĩ ra, đưa ra, sáng tạo ra",
+          "toeic_tip": "Cụm cố định ba từ, không tách; tân ngữ luôn đứng sau with.",
+          "example_vi": "Muốn trụ được, doanh nghiệp nhỏ đó phải nghĩ ra chiến lược mới.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T07:55:15.231244+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e8a7d124-a16a-4f75-971f-aecc2f0fc644-wm.jpg?v=1789798373612",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/come-up-with-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/come-up-with-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "come up with an idea",
+          "meaning": "nghĩ ra ý tưởng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e8a7d124-a16a-4f75-971f-aecc2f0fc644-0-wm.jpg?v=1789804498649"
+        },
+        {
+          "phrase": "come up with a solution",
+          "meaning": "đưa ra giải pháp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e8a7d124-a16a-4f75-971f-aecc2f0fc644-1-wm.jpg?v=1789804515086"
+        },
+        {
+          "phrase": "come up with a plan",
+          "meaning": "vạch ra kế hoạch"
+        }
+      ],
+      "synonyms": [
+        "devise (nghĩ ra)",
+        "think of (nghĩ đến)"
+      ]
+    },
+    {
+      "id": "3f145fda-9dc0-4b02-9fdc-f96fe841fcd8",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "abundant",
+      "ipa": "/əˈbʌn.dənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The computer analyst was glad to have chosen a field in which jobs were abundant.",
+          "meaning": "dồi dào, phong phú, nhiều",
+          "antonyms": [
+            "scarce (khan hiếm)",
+            "insufficient (không đủ)"
+          ],
+          "toeic_tip": "Part 5 hay hỏi abundant (adj) và abundance (n); chú ý vị trí trong câu.",
+          "example_vi": "Chuyên viên máy tính thấy mừng vì đã chọn đúng ngành đang thừa việc làm.",
+          "word_family": [
+            "abundance (n) sự dồi dào",
+            "abundantly (adv) một cách dồi dào"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T06:29:29.786945+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3f145fda-9dc0-4b02-9fdc-f96fe841fcd8-wm.jpg?v=1789797956837",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/abundant-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/abundant-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "abundant supply",
+          "meaning": "nguồn cung dồi dào",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3f145fda-9dc0-4b02-9fdc-f96fe841fcd8-0-wm.jpg?v=1789799357126"
+        },
+        {
+          "phrase": "abundant opportunities",
+          "meaning": "nhiều cơ hội",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3f145fda-9dc0-4b02-9fdc-f96fe841fcd8-1-wm.jpg?v=1789799369637"
+        },
+        {
+          "phrase": "abundant resources",
+          "meaning": "nguồn lực dồi dào"
+        }
+      ],
+      "synonyms": [
+        "plentiful (dồi dào)",
+        "ample (dư dả)"
+      ]
+    },
+    {
+      "id": "4cd86d17-51f6-4bd4-8b76-449dd0b10adb",
+      "part_id": "572af57c-e4ac-4f0f-892b-abf9f83bc999",
+      "word": "recruit",
+      "ipa": "/rɪˈkruːt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "When the consulting firm recruited her, they offered to pay her relocation expenses.",
+          "meaning": "tuyển dụng, chiêu mộ; người mới được tuyển",
+          "antonyms": [
+            "dismiss (sa thải)",
+            "lay off (cho thôi việc)"
+          ],
+          "toeic_tip": "Vừa là động từ tuyển dụng, vừa là danh từ chỉ người mới tuyển.",
+          "example_vi": "Khi công ty tư vấn tuyển cô, họ đề nghị trả luôn chi phí chuyển chỗ ở.",
+          "word_family": [
+            "recruiter (n) nhà tuyển dụng",
+            "recruitment (n) việc tuyển dụng"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:09.284389+00:00",
+      "updated_at": "2026-09-19T06:34:56.390931+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4cd86d17-51f6-4bd4-8b76-449dd0b10adb-wm.jpg?v=1789798397859",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/recruit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/recruit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "recruit new staff",
+          "meaning": "tuyển nhân viên mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4cd86d17-51f6-4bd4-8b76-449dd0b10adb-0-wm.jpg?v=1789799681221"
+        },
+        {
+          "phrase": "new recruits",
+          "meaning": "nhân viên mới tuyển",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4cd86d17-51f6-4bd4-8b76-449dd0b10adb-1-wm.jpg?v=1789799696248"
+        },
+        {
+          "phrase": "recruit for a position",
+          "meaning": "tuyển cho một vị trí"
+        }
+      ],
+      "synonyms": [
+        "hire (thuê, tuyển)",
+        "enlist (chiêu mộ)"
+      ]
+    }
+  ]
+}

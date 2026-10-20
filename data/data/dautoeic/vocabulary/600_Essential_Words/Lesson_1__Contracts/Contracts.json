@@ -1,0 +1,646 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "2a914752-25d7-4b35-88b9-64708e843a06",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 1: Contracts",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:22.725565+00:00",
+    "updated_at": "2026-09-18T08:50:22.725565+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+    "test_id": "2a914752-25d7-4b35-88b9-64708e843a06",
+    "name": "Contracts",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:22.725565+00:00",
+    "updated_at": "2026-09-18T08:50:22.725565+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "f1d1c41f-2073-4a64-8bc9-d6aff2d7eaa8",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "obligate",
+      "ipa": "UK: /ˈɒb.lɪ.ɡeɪt/ | US: /ˈɑː.blɪ.ɡeɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The contractor was obligated by the contract to work 40 hours a week.",
+          "meaning": "ràng buộc về pháp lý hoặc đạo đức, buộc phải làm",
+          "antonyms": [
+            "exempt (miễn trừ)",
+            "release (giải phóng khỏi nghĩa vụ)"
+          ],
+          "toeic_tip": "Thường dùng ở thể bị động: be obligated to + động từ nguyên mẫu.",
+          "example_vi": "Theo hợp đồng, nhà thầu buộc phải làm việc 40 giờ mỗi tuần.",
+          "word_family": [
+            "obligation (n) nghĩa vụ",
+            "obligatory (adj) bắt buộc"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T08:00:32.930984+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f1d1c41f-2073-4a64-8bc9-d6aff2d7eaa8-wm.jpg?v=1789797641192",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/obligate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/obligate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be obligated to do something",
+          "meaning": "bị buộc phải làm gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1d1c41f-2073-4a64-8bc9-d6aff2d7eaa8-0-wm.jpg?v=1789804821856"
+        },
+        {
+          "phrase": "contractually obligated",
+          "meaning": "bị ràng buộc theo hợp đồng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1d1c41f-2073-4a64-8bc9-d6aff2d7eaa8-1-wm.jpg?v=1789804832788"
+        },
+        {
+          "phrase": "feel obligated",
+          "meaning": "thấy có nghĩa vụ"
+        }
+      ],
+      "synonyms": [
+        "require (yêu cầu)",
+        "bind (ràng buộc)",
+        "compel (bắt buộc)"
+      ]
+    },
+    {
+      "id": "83e502ed-25dd-4acc-b468-cf1e45b4e413",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "abide by",
+      "ipa": "/əˈbaɪd baɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The two parties agreed to abide by the judge's decision.",
+          "meaning": "tuân thủ, chấp hành, làm theo",
+          "antonyms": [
+            "violate (vi phạm)",
+            "ignore (phớt lờ)"
+          ],
+          "toeic_tip": "Luôn đi với by; abide by + quy định, quyết định, không dùng abide to.",
+          "example_vi": "Hai bên đã đồng ý chấp hành phán quyết của thẩm phán.",
+          "word_family": [
+            "abiding (adj) bền bỉ, lâu dài"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T07:05:36.256824+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/83e502ed-25dd-4acc-b468-cf1e45b4e413-wm.jpg?v=1789798293349",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/abide-by-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/abide-by-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "abide by the rules",
+          "meaning": "tuân thủ quy định",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/83e502ed-25dd-4acc-b468-cf1e45b4e413-0-wm.jpg?v=1789801536067"
+        },
+        {
+          "phrase": "abide by a decision",
+          "meaning": "chấp hành quyết định",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/83e502ed-25dd-4acc-b468-cf1e45b4e413-1-wm.jpg?v=1789801495633"
+        },
+        {
+          "phrase": "abide by the terms of a contract",
+          "meaning": "tuân theo điều khoản hợp đồng"
+        }
+      ],
+      "synonyms": [
+        "comply with (tuân thủ)",
+        "observe (tuân theo)",
+        "adhere to (bám sát, làm đúng theo)"
+      ]
+    },
+    {
+      "id": "2c5ac967-8583-4fea-893b-e7af5bdc24a8",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "agreement",
+      "ipa": "/əˈɡriː.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The landlord and tenant were in agreement that the rent should be prorated to the middle of the month.",
+          "meaning": "thỏa thuận, hợp đồng, sự đồng thuận",
+          "antonyms": [
+            "disagreement (sự bất đồng)"
+          ],
+          "toeic_tip": "Cụm cố định reach hoặc come to an agreement rất hay ra ở Part 5.",
+          "example_vi": "Chủ nhà và người thuê đều nhất trí tính tiền thuê theo tỷ lệ đến giữa tháng.",
+          "word_family": [
+            "agree (v) đồng ý",
+            "agreeable (adj) dễ chịu, thuận tình"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T06:23:11.872031+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2c5ac967-8583-4fea-893b-e7af5bdc24a8-wm.jpg?v=1789798567869",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/agreement-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/agreement-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reach an agreement",
+          "meaning": "đạt được thỏa thuận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2c5ac967-8583-4fea-893b-e7af5bdc24a8-0-wm.jpg?v=1789798990311"
+        },
+        {
+          "phrase": "sign an agreement",
+          "meaning": "ký hợp đồng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2c5ac967-8583-4fea-893b-e7af5bdc24a8-1-wm.jpg?v=1789798991701"
+        },
+        {
+          "phrase": "be in agreement",
+          "meaning": "nhất trí với nhau"
+        }
+      ],
+      "synonyms": [
+        "contract (hợp đồng)",
+        "accord (thỏa thuận)",
+        "deal (giao kèo)"
+      ]
+    },
+    {
+      "id": "ff13bf0d-498b-4b85-9aba-569e5130fb0b",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "determine",
+      "ipa": "UK: /dɪˈtɜː.mɪn/ | US: /dɪˈtɝː.mɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "After reading the contract, I was still unable to determine if our company was liable for back wages.",
+          "meaning": "xác định, tìm ra, chi phối kết quả",
+          "toeic_tip": "Sau determine thường là mệnh đề whether, if hoặc từ hỏi wh-.",
+          "example_vi": "Đọc xong hợp đồng, tôi vẫn không rõ công ty mình có phải trả khoản lương còn nợ hay không.",
+          "word_family": [
+            "determination (n) sự xác định, tính quyết tâm",
+            "determined (adj) quyết tâm"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T08:07:11.892988+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ff13bf0d-498b-4b85-9aba-569e5130fb0b-wm.jpg?v=1789798361810",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/determine-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/determine-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "determine the cause",
+          "meaning": "xác định nguyên nhân",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ff13bf0d-498b-4b85-9aba-569e5130fb0b-0-wm.jpg?v=1789805231745"
+        },
+        {
+          "phrase": "determine whether",
+          "meaning": "xác định liệu có",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ff13bf0d-498b-4b85-9aba-569e5130fb0b-1-wm.jpg?v=1789805230040"
+        },
+        {
+          "phrase": "factors that determine",
+          "meaning": "các yếu tố quyết định"
+        }
+      ],
+      "synonyms": [
+        "ascertain (xác minh)",
+        "establish (xác lập)",
+        "decide (quyết định)"
+      ]
+    },
+    {
+      "id": "13b3ecf4-3181-4b24-ba27-50021901aab2",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "establish",
+      "ipa": "/ɪˈstæb.lɪʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Through her many books and interviews, Dr. Wan established herself as an authority on conflict resolution.",
+          "meaning": "thành lập, thiết lập, tạo dựng",
+          "antonyms": [
+            "abolish (bãi bỏ)",
+            "dissolve (giải thể)"
+          ],
+          "toeic_tip": "Cụm established in + năm chỉ năm thành lập, hay gặp ở bài giới thiệu công ty.",
+          "example_vi": "Qua nhiều cuốn sách và bài phỏng vấn, tiến sĩ Wan đã khẳng định mình là chuyên gia về giải quyết xung đột.",
+          "word_family": [
+            "establishment (n) sự thành lập, cơ sở kinh doanh",
+            "established (adj) lâu đời, đã có tên tuổi"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T06:17:22.442893+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/13b3ecf4-3181-4b24-ba27-50021901aab2-wm.jpg?v=1789797943782",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/establish-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/establish-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "establish a company",
+          "meaning": "thành lập công ty",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/13b3ecf4-3181-4b24-ba27-50021901aab2-0-wm.jpg?v=1789798642265"
+        },
+        {
+          "phrase": "establish a reputation",
+          "meaning": "tạo dựng uy tín",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/13b3ecf4-3181-4b24-ba27-50021901aab2-1-wm.jpg?v=1789798641155"
+        },
+        {
+          "phrase": "establish guidelines",
+          "meaning": "đặt ra quy định"
+        }
+      ],
+      "synonyms": [
+        "found (sáng lập)",
+        "set up (thiết lập)",
+        "create (tạo ra)"
+      ]
+    },
+    {
+      "id": "d1a025b7-2308-435c-9bdc-ea92926f1b03",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "resolve",
+      "ipa": "UK: /rɪˈzɒlv/ | US: /rɪˈzɑːlv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The mediator was able to resolve the problem to everyone's satisfaction.",
+          "meaning": "giải quyết, quyết định dứt khoát; sự kiên định",
+          "toeic_tip": "Phân biệt resolve (giải quyết), resolute (kiên quyết), resolution (nghị quyết).",
+          "example_vi": "Người hòa giải đã giải quyết được vấn đề khiến ai cũng hài lòng.",
+          "word_family": [
+            "resolution (n) giải pháp, nghị quyết",
+            "resolved (adj) kiên quyết"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T07:44:55.489057+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d1a025b7-2308-435c-9bdc-ea92926f1b03-wm.jpg?v=1789798390307",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/resolve-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/resolve-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "resolve a problem",
+          "meaning": "giải quyết vấn đề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d1a025b7-2308-435c-9bdc-ea92926f1b03-0-wm.jpg?v=1789803883592"
+        },
+        {
+          "phrase": "resolve a dispute",
+          "meaning": "dàn xếp tranh chấp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d1a025b7-2308-435c-9bdc-ea92926f1b03-1-wm.jpg?v=1789803895330"
+        },
+        {
+          "phrase": "resolve to do something",
+          "meaning": "quyết tâm làm gì"
+        }
+      ],
+      "synonyms": [
+        "settle (dàn xếp)",
+        "solve (giải quyết)",
+        "determination (sự quyết tâm)"
+      ]
+    },
+    {
+      "id": "0a7f2a0e-b7db-4d08-bfc9-5cab34ff4caf",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "provision",
+      "ipa": "/prəˈvɪʒ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The father made provisions for his children through his will.",
+          "meaning": "điều khoản, sự dự liệu trước, sự lo liệu",
+          "toeic_tip": "Số nhiều make provisions for là dự trù; số ít thường là điều khoản hợp đồng.",
+          "example_vi": "Người cha đã lo liệu cho các con qua bản di chúc.",
+          "word_family": [
+            "provide (v) cung cấp, chu cấp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T06:21:26.209343+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0a7f2a0e-b7db-4d08-bfc9-5cab34ff4caf-wm.jpg?v=1789798521669",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/provision-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/provision-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a provision in the contract",
+          "meaning": "điều khoản trong hợp đồng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0a7f2a0e-b7db-4d08-bfc9-5cab34ff4caf-0-wm.jpg?v=1789798881651"
+        },
+        {
+          "phrase": "make provisions for",
+          "meaning": "dự trù cho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0a7f2a0e-b7db-4d08-bfc9-5cab34ff4caf-1-wm.jpg?v=1789798886053"
+        },
+        {
+          "phrase": "under the provisions of",
+          "meaning": "theo các điều khoản của"
+        }
+      ],
+      "synonyms": [
+        "clause (điều khoản)",
+        "stipulation (quy định)",
+        "term (điều khoản)"
+      ]
+    },
+    {
+      "id": "0bb91f7f-ebb1-4f3e-bea5-a5fbcffaec68",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "assurance",
+      "ipa": "UK: /əˈʃɔː.rəns/ | US: /əˈʃʊr.əns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The sales associate gave his assurance that the missing keyboard would be replaced the next day.",
+          "meaning": "sự bảo đảm, lời cam kết, sự tự tin",
+          "antonyms": [
+            "doubt (sự nghi ngờ)"
+          ],
+          "toeic_tip": "Phân biệt assure (trấn an ai), ensure (bảo đảm việc), insure (mua bảo hiểm).",
+          "example_vi": "Nhân viên bán hàng cam kết hôm sau sẽ giao lại chiếc bàn phím còn thiếu.",
+          "word_family": [
+            "assure (v) bảo đảm, trấn an",
+            "assured (adj) chắc chắn, tự tin"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T06:21:32.119712+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0bb91f7f-ebb1-4f3e-bea5-a5fbcffaec68-wm.jpg?v=1789798522462",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assurance-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assurance-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "give an assurance",
+          "meaning": "đưa ra lời bảo đảm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0bb91f7f-ebb1-4f3e-bea5-a5fbcffaec68-0-wm.jpg?v=1789798888896"
+        },
+        {
+          "phrase": "written assurance",
+          "meaning": "cam kết bằng văn bản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0bb91f7f-ebb1-4f3e-bea5-a5fbcffaec68-1-wm.jpg?v=1789798891905"
+        },
+        {
+          "phrase": "self-assurance",
+          "meaning": "sự tự tin"
+        }
+      ],
+      "synonyms": [
+        "guarantee (sự bảo đảm)",
+        "pledge (lời cam kết)",
+        "confidence (sự tự tin)"
+      ]
+    },
+    {
+      "id": "3a6998f4-8e32-478b-96e6-1c0252c435f4",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "cancellation",
+      "ipa": "/ˌkæn.səlˈeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The cancellation of her flight caused her problems for the rest of the week.",
+          "meaning": "sự hủy bỏ, sự đình chỉ",
+          "antonyms": [
+            "confirmation (sự xác nhận)"
+          ],
+          "toeic_tip": "Danh từ luôn viết hai chữ l: cancellation; hay ra trong bài du lịch Part 7.",
+          "example_vi": "Chuyến bay bị hủy khiến cô gặp rắc rối suốt cả tuần sau đó.",
+          "word_family": [
+            "cancel (v) hủy bỏ",
+            "canceled (adj) đã bị hủy"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T06:12:10.829733+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3a6998f4-8e32-478b-96e6-1c0252c435f4-wm.jpg?v=1789798330754",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/cancellation-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/cancellation-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "flight cancellation",
+          "meaning": "việc hủy chuyến bay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a6998f4-8e32-478b-96e6-1c0252c435f4-0-wm.jpg?v=1789797846986"
+        },
+        {
+          "phrase": "cancellation policy",
+          "meaning": "chính sách hủy",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3a6998f4-8e32-478b-96e6-1c0252c435f4-1-wm.jpg?v=1789797845477"
+        },
+        {
+          "phrase": "cancellation fee",
+          "meaning": "phí hủy"
+        }
+      ],
+      "synonyms": [
+        "annulment (sự hủy bỏ)",
+        "termination (sự chấm dứt)"
+      ]
+    },
+    {
+      "id": "ad11df79-2494-4d96-8222-a3b8327fc21b",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "specific",
+      "ipa": "/spəˈsɪf.ɪk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The customer's specific complaint was not addressed in his e-mail.",
+          "meaning": "cụ thể, riêng biệt, rõ ràng",
+          "antonyms": [
+            "general (chung chung)",
+            "vague (mơ hồ)"
+          ],
+          "toeic_tip": "Danh từ specifications, viết tắt specs, chỉ thông số kỹ thuật ở Part 7.",
+          "example_vi": "Khiếu nại cụ thể của khách hàng không hề được giải đáp trong email.",
+          "word_family": [
+            "specify (v) nêu rõ",
+            "specifically (adv) cụ thể là",
+            "specification (n) thông số kỹ thuật"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T07:25:23.343051+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ad11df79-2494-4d96-8222-a3b8327fc21b-wm.jpg?v=1789797685290",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/specific-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/specific-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "specific requirements",
+          "meaning": "yêu cầu cụ thể",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ad11df79-2494-4d96-8222-a3b8327fc21b-0-wm.jpg?v=1789802723203"
+        },
+        {
+          "phrase": "be specific about",
+          "meaning": "nói rõ về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ad11df79-2494-4d96-8222-a3b8327fc21b-1-wm.jpg?v=1789802723105"
+        },
+        {
+          "phrase": "specific instructions",
+          "meaning": "chỉ dẫn chi tiết"
+        }
+      ],
+      "synonyms": [
+        "particular (cụ thể)",
+        "precise (chính xác)",
+        "detailed (chi tiết)"
+      ]
+    },
+    {
+      "id": "afc74412-f38f-41e5-86c6-f6df63840aba",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "party",
+      "ipa": "UK: /ˈpɑː.ti/ | US: /ˈpɑːr.t̬i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The parties agreed to a settlement in their contract dispute.",
+          "meaning": "bên tham gia, bên liên quan trong hợp đồng",
+          "toeic_tip": "Trong văn bản hợp đồng, party nghĩa là bên, không phải bữa tiệc.",
+          "example_vi": "Các bên đã đồng ý dàn xếp vụ tranh chấp hợp đồng.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T07:25:26.852754+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/afc74412-f38f-41e5-86c6-f6df63840aba-wm.jpg?v=1789798492400",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/party-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/party-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the parties involved",
+          "meaning": "các bên liên quan",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/afc74412-f38f-41e5-86c6-f6df63840aba-0-wm.jpg?v=1789802715266"
+        },
+        {
+          "phrase": "a third party",
+          "meaning": "bên thứ ba",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/afc74412-f38f-41e5-86c6-f6df63840aba-1-wm.jpg?v=1789802726697"
+        },
+        {
+          "phrase": "the interested party",
+          "meaning": "bên có quyền lợi"
+        }
+      ],
+      "synonyms": [
+        "side (bên)",
+        "participant (bên tham gia)"
+      ]
+    },
+    {
+      "id": "f93c1681-8ab9-449e-b546-03ecc9e94292",
+      "part_id": "ec9621f5-a11b-49e3-b2e8-23bed99ca418",
+      "word": "engage",
+      "ipa": "/ɪnˈɡeɪdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Before engaging in a new business, it is important to do thorough research.",
+          "meaning": "tham gia, dấn thân vào, lôi cuốn ai vào",
+          "antonyms": [
+            "withdraw (rút lui)"
+          ],
+          "toeic_tip": "engage in + việc mình làm; engage somebody in + hoạt động.",
+          "example_vi": "Trước khi bước vào một lĩnh vực kinh doanh mới, cần tìm hiểu thật kỹ.",
+          "word_family": [
+            "engagement (n) sự tham gia, cam kết",
+            "engaging (adj) hấp dẫn, lôi cuốn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:22.725565+00:00",
+      "updated_at": "2026-09-19T08:04:07.934649+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f93c1681-8ab9-449e-b546-03ecc9e94292-wm.jpg?v=1789798389023",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/engage-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/engage-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "engage in business",
+          "meaning": "tham gia kinh doanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f93c1681-8ab9-449e-b546-03ecc9e94292-0-wm.jpg?v=1789805047636"
+        },
+        {
+          "phrase": "engage customers",
+          "meaning": "lôi cuốn khách hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f93c1681-8ab9-449e-b546-03ecc9e94292-1-wm.jpg?v=1789805047786"
+        },
+        {
+          "phrase": "engage someone in conversation",
+          "meaning": "bắt chuyện với ai"
+        }
+      ],
+      "synonyms": [
+        "participate in (tham gia)",
+        "involve (lôi kéo vào)",
+        "take part in (dự phần vào)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "36ef9b7a-880e-4018-a6c3-5ab41d7c5769",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 42: Theater",
+    "order_index": 42,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:29.61236+00:00",
+    "updated_at": "2026-09-18T08:53:29.61236+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+    "test_id": "36ef9b7a-880e-4018-a6c3-5ab41d7c5769",
+    "name": "Theater",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:29.61236+00:00",
+    "updated_at": "2026-09-18T08:53:29.61236+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "b809a324-b13f-458e-b5b9-1a95f609c7ea",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "element",
+      "ipa": "/ˈel.ɪ.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The audience is an essential element of live theater.",
+          "meaning": "yếu tố, thành phần cốt lõi",
+          "toeic_tip": "Element of something; phân biệt với elementary (sơ cấp) ở Part 5.",
+          "example_vi": "Khán giả chính là yếu tố không thể thiếu của sân khấu trực tiếp.",
+          "word_family": [
+            "elementary (adj) cơ bản, sơ cấp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:30:51.558576+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b809a324-b13f-458e-b5b9-1a95f609c7ea-wm.jpg?v=1789797670968",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/element-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/element-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an essential element",
+          "meaning": "yếu tố thiết yếu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b809a324-b13f-458e-b5b9-1a95f609c7ea-0-wm.jpg?v=1789803051421"
+        },
+        {
+          "phrase": "key elements of a plan",
+          "meaning": "những yếu tố chính của kế hoạch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b809a324-b13f-458e-b5b9-1a95f609c7ea-1-wm.jpg?v=1789803050977"
+        },
+        {
+          "phrase": "an element of risk",
+          "meaning": "một chút rủi ro"
+        }
+      ],
+      "synonyms": [
+        "component (thành phần)",
+        "factor (yếu tố)",
+        "ingredient (yếu tố cấu thành)"
+      ]
+    },
+    {
+      "id": "875347c0-07dd-404c-b067-063c77a4b966",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "experience",
+      "ipa": "UK: /ɪkˈspɪə.ri.əns/ | US: /ɪkˈspɪr.i.əns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The experience of live theater is very thrilling.",
+          "meaning": "trải nghiệm, điều từng nếm trải, kinh nghiệm",
+          "toeic_tip": "Nghĩa kinh nghiệm thì không đếm được, nghĩa trải nghiệm thì đếm được.",
+          "example_vi": "Được xem kịch trực tiếp là một cảm giác rất đã.",
+          "word_family": [
+            "experience (v) trải qua",
+            "experienced (adj) có kinh nghiệm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:06:36.183989+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/875347c0-07dd-404c-b067-063c77a4b966-wm.jpg?v=1789797721203",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/experience-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/experience-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "work experience",
+          "meaning": "kinh nghiệm làm việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/875347c0-07dd-404c-b067-063c77a4b966-0-wm.jpg?v=1789801583914"
+        },
+        {
+          "phrase": "a memorable experience",
+          "meaning": "một trải nghiệm đáng nhớ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/875347c0-07dd-404c-b067-063c77a4b966-1-wm.jpg?v=1789801596039"
+        },
+        {
+          "phrase": "years of experience",
+          "meaning": "nhiều năm kinh nghiệm"
+        }
+      ],
+      "synonyms": [
+        "encounter (lần nếm trải)",
+        "exposure (sự tiếp xúc trải qua)"
+      ]
+    },
+    {
+      "id": "d04b50dc-201d-4840-85ca-6ca000537931",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "review",
+      "ipa": "/rɪˈvjuː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The critic's influential review of the play was so negative that it sank the entire production.",
+          "meaning": "bài phê bình, bài đánh giá, viết bài phê bình",
+          "toeic_tip": "Vừa danh từ vừa động từ; under review nghĩa là đang được xem xét.",
+          "example_vi": "Bài chê nặng nề của nhà phê bình có sức nặng đến mức nhấn chìm cả vở diễn.",
+          "word_family": [
+            "reviewer (n) người viết bài phê bình"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:43:46.757152+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d04b50dc-201d-4840-85ca-6ca000537931-wm.jpg?v=1789798258124",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/review-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/review-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a negative review",
+          "meaning": "bài chê",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d04b50dc-201d-4840-85ca-6ca000537931-0-wm.jpg?v=1789803825402"
+        },
+        {
+          "phrase": "get good reviews",
+          "meaning": "nhận đánh giá tốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d04b50dc-201d-4840-85ca-6ca000537931-1-wm.jpg?v=1789803826623"
+        },
+        {
+          "phrase": "review the play",
+          "meaning": "viết bài phê bình vở kịch"
+        }
+      ],
+      "synonyms": [
+        "critique (bài phê bình)",
+        "appraisal (bài đánh giá)",
+        "evaluation (sự đánh giá)"
+      ]
+    },
+    {
+      "id": "64405b87-dc9e-4802-bf9a-94bc66adf6d2",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "sell out",
+      "ipa": "/ˌselˈaʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The Broadway opening sold out months in advance.",
+          "meaning": "bán hết vé, bán sạch",
+          "toeic_tip": "Sell out chia bất quy tắc: sold out; tính từ sold-out có gạch nối.",
+          "example_vi": "Suất mở màn ở Broadway đã cháy vé từ mấy tháng trước.",
+          "word_family": [
+            "sold-out (adj) đã bán hết vé",
+            "sellout (n) buổi diễn cháy vé"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T06:48:08.619946+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/64405b87-dc9e-4802-bf9a-94bc66adf6d2-wm.jpg?v=1789798508113",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sell-out-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sell-out-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "sell out quickly",
+          "meaning": "bán hết vé nhanh chóng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/64405b87-dc9e-4802-bf9a-94bc66adf6d2-0-wm.jpg?v=1789800485236"
+        },
+        {
+          "phrase": "sold out months in advance",
+          "meaning": "bán sạch vé từ mấy tháng trước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/64405b87-dc9e-4802-bf9a-94bc66adf6d2-1-wm.jpg?v=1789800488483"
+        },
+        {
+          "phrase": "a sold-out show",
+          "meaning": "buổi diễn cháy vé"
+        }
+      ],
+      "synonyms": [
+        "be booked up (kín chỗ)",
+        "run out of tickets (hết vé)"
+      ]
+    },
+    {
+      "id": "ded24b94-0430-4413-8c7e-0adb325dc4e3",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "action",
+      "ipa": "/ˈæk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The director decided that the second act needed more action and asked the playwright to review the work.",
+          "meaning": "diễn biến, chuỗi tình tiết của câu chuyện, hành động",
+          "toeic_tip": "Take action (hành động) không có mạo từ; nghĩa trong kịch là diễn biến.",
+          "example_vi": "Đạo diễn thấy màn hai thiếu kịch tính nên nhờ tác giả xem lại vở kịch.",
+          "word_family": [
+            "act (v) hành động, diễn xuất",
+            "active (adj) sôi động, tích cực"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:51:16.5379+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ded24b94-0430-4413-8c7e-0adb325dc4e3-wm.jpg?v=1789798296375",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/action-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/action-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the action on stage",
+          "meaning": "diễn biến trên sân khấu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ded24b94-0430-4413-8c7e-0adb325dc4e3-0-wm.jpg?v=1789804276399"
+        },
+        {
+          "phrase": "take action",
+          "meaning": "hành động",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ded24b94-0430-4413-8c7e-0adb325dc4e3-1-wm.jpg?v=1789804274399"
+        },
+        {
+          "phrase": "a course of action",
+          "meaning": "hướng hành động"
+        }
+      ],
+      "synonyms": [
+        "plot (cốt truyện)",
+        "events (các tình tiết)"
+      ]
+    },
+    {
+      "id": "a28822c0-f694-4f3f-b324-a9cd9c30f601",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "creative",
+      "ipa": "UK: /kriˈeɪ.tɪv/ | US: /kriˈeɪ.t̬ɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The writer's creative representation of the Seven Deadly Sins was astounding.",
+          "meaning": "sáng tạo, giàu trí tưởng tượng",
+          "antonyms": [
+            "unimaginative (thiếu sáng tạo)",
+            "conventional (theo lối mòn)"
+          ],
+          "toeic_tip": "Phân biệt creative (sáng tạo) và creation (sự tạo ra), creativity (tính sáng tạo).",
+          "example_vi": "Cách nhà văn thể hiện Bảy Trọng Tội sáng tạo đến kinh ngạc.",
+          "word_family": [
+            "create (v) tạo ra",
+            "creativity (n) sự sáng tạo",
+            "creatively (adv) một cách sáng tạo"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:19:36.313195+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a28822c0-f694-4f3f-b324-a9cd9c30f601-wm.jpg?v=1789798501424",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/creative-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/creative-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a creative approach",
+          "meaning": "cách làm sáng tạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a28822c0-f694-4f3f-b324-a9cd9c30f601-0-wm.jpg?v=1789802375409"
+        },
+        {
+          "phrase": "creative people",
+          "meaning": "những người sáng tạo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a28822c0-f694-4f3f-b324-a9cd9c30f601-1-wm.jpg?v=1789802376183"
+        },
+        {
+          "phrase": "the creative process",
+          "meaning": "quá trình sáng tạo"
+        }
+      ],
+      "synonyms": [
+        "imaginative (giàu tưởng tượng)",
+        "inventive (nhiều sáng kiến)",
+        "original (độc đáo)"
+      ]
+    },
+    {
+      "id": "e1b164e6-30d7-45b0-a7dd-8fb7452a04aa",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "perform",
+      "ipa": "UK: /pəˈfɔːm/ | US: /pɚˈfɔːrm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The theater group performed a three-act play.",
+          "meaning": "biểu diễn, trình diễn, thực hiện",
+          "toeic_tip": "Perform a play/task; danh từ performance hay ra ở Part 5, Part 7.",
+          "example_vi": "Đoàn kịch đã diễn một vở gồm ba màn.",
+          "word_family": [
+            "performance (n) buổi biểu diễn, hiệu suất",
+            "performer (n) người biểu diễn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:53:55.475359+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e1b164e6-30d7-45b0-a7dd-8fb7452a04aa-wm.jpg?v=1789798505343",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/perform-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/perform-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "perform a play",
+          "meaning": "diễn một vở kịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e1b164e6-30d7-45b0-a7dd-8fb7452a04aa-0-wm.jpg?v=1789804422057"
+        },
+        {
+          "phrase": "perform a task",
+          "meaning": "thực hiện một nhiệm vụ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e1b164e6-30d7-45b0-a7dd-8fb7452a04aa-1-wm.jpg?v=1789804435318"
+        },
+        {
+          "phrase": "perform well",
+          "meaning": "làm tốt, thể hiện tốt"
+        }
+      ],
+      "synonyms": [
+        "present (trình bày)",
+        "carry out (thực hiện)",
+        "stage (dàn dựng biểu diễn)"
+      ]
+    },
+    {
+      "id": "182ffb4f-7bf0-4bb6-b804-a606bdba1f87",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "dialogue",
+      "ipa": "UK: /ˈdaɪ.ə.lɒɡ/ | US: /ˈdaɪ.ə.lɑːɡ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The actors performed the dialogue without using scripts.",
+          "meaning": "lời thoại, cuộc đối thoại",
+          "antonyms": [
+            "monologue (lời độc thoại)"
+          ],
+          "toeic_tip": "Dialogue between A and B; Mỹ viết dialog, cả hai đều đúng.",
+          "example_vi": "Các diễn viên diễn trọn đoạn thoại mà không cần nhìn kịch bản.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T06:18:48.258837+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/182ffb4f-7bf0-4bb6-b804-a606bdba1f87-wm.jpg?v=1789798220726",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/dialogue-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/dialogue-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "written dialogue",
+          "meaning": "lời thoại đã viết sẵn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/182ffb4f-7bf0-4bb6-b804-a606bdba1f87-0-wm.jpg?v=1789798728119"
+        },
+        {
+          "phrase": "open a dialogue",
+          "meaning": "mở cuộc đối thoại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/182ffb4f-7bf0-4bb6-b804-a606bdba1f87-1-wm.jpg?v=1789798725011"
+        },
+        {
+          "phrase": "dialogue between the two sides",
+          "meaning": "đối thoại giữa hai bên"
+        }
+      ],
+      "synonyms": [
+        "conversation (cuộc trò chuyện)",
+        "exchange (cuộc trao đổi)"
+      ]
+    },
+    {
+      "id": "0f74eaaa-8290-43a6-8350-938e18730147",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "rehearse",
+      "ipa": "UK: /rɪˈhɜːs/ | US: /rɪˈhɝːs/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The players rehearsed for only three weeks before the show opened.",
+          "meaning": "diễn tập, tập dượt trước khi biểu diễn",
+          "toeic_tip": "Rehearse for a show; danh từ rehearsal (buổi tập) thường gặp hơn.",
+          "example_vi": "Các diễn viên chỉ tập vỏn vẹn ba tuần là vở diễn đã ra mắt.",
+          "word_family": [
+            "rehearsal (n) buổi diễn tập"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T06:21:36.868561+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0f74eaaa-8290-43a6-8350-938e18730147-wm.jpg?v=1789798523813",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rehearse-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rehearse-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "rehearse for a show",
+          "meaning": "tập cho buổi diễn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f74eaaa-8290-43a6-8350-938e18730147-0-wm.jpg?v=1789798896723"
+        },
+        {
+          "phrase": "rehearse with the actors",
+          "meaning": "tập cùng diễn viên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0f74eaaa-8290-43a6-8350-938e18730147-1-wm.jpg?v=1789798894478"
+        },
+        {
+          "phrase": "rehearse a scene",
+          "meaning": "tập một cảnh"
+        }
+      ],
+      "synonyms": [
+        "practice (luyện tập)",
+        "run through (chạy thử một lượt)"
+      ]
+    },
+    {
+      "id": "794b2d76-de80-43c8-b08a-ad1a90b9727e",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "audience",
+      "ipa": "UK: /ˈɔː.di.əns/ | US: /ˈɑː.di.əns/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The audience cheered the actors as they walked off the stage.",
+          "meaning": "khán giả, người xem",
+          "toeic_tip": "Danh từ tập hợp, thường số ít; lớn nhỏ dùng large/small, không big.",
+          "example_vi": "Khán giả reo hò khi các diễn viên rời sân khấu.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T06:58:12.243395+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/794b2d76-de80-43c8-b08a-ad1a90b9727e-wm.jpg?v=1789798256222",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/audience-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/audience-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a large audience",
+          "meaning": "đông khán giả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/794b2d76-de80-43c8-b08a-ad1a90b9727e-0-wm.jpg?v=1789801080889"
+        },
+        {
+          "phrase": "the target audience",
+          "meaning": "đối tượng khán giả nhắm tới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/794b2d76-de80-43c8-b08a-ad1a90b9727e-1-wm.jpg?v=1789801092106"
+        },
+        {
+          "phrase": "the audience applauded",
+          "meaning": "khán giả vỗ tay"
+        }
+      ],
+      "synonyms": [
+        "spectators (người xem)",
+        "viewers (khán giả truyền hình)",
+        "crowd (đám đông)"
+      ]
+    },
+    {
+      "id": "7e7abbec-92bf-4b52-8c47-48a67a1dc621",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "approach",
+      "ipa": "UK: /əˈprəʊtʃ/ | US: /əˈproʊtʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The performance approaches perfection.",
+          "meaning": "tiến lại gần, tiếp cận",
+          "antonyms": [
+            "leave (rời đi)",
+            "retreat (lùi lại)"
+          ],
+          "toeic_tip": "Approach + O, không có 'to'; danh từ approach to đi với to.",
+          "example_vi": "Màn trình diễn gần như hoàn hảo.",
+          "word_family": [
+            "approach (n) cách tiếp cận",
+            "approachable (adj) dễ gần"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T07:01:11.193128+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7e7abbec-92bf-4b52-8c47-48a67a1dc621-wm.jpg?v=1789798255415",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/approach-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/approach-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "approach perfection",
+          "meaning": "gần đạt đến hoàn hảo",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7e7abbec-92bf-4b52-8c47-48a67a1dc621-0-wm.jpg?v=1789801260652"
+        },
+        {
+          "phrase": "approach a problem",
+          "meaning": "tiếp cận một vấn đề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7e7abbec-92bf-4b52-8c47-48a67a1dc621-1-wm.jpg?v=1789801271048"
+        },
+        {
+          "phrase": "approach a client",
+          "meaning": "tiếp cận khách hàng"
+        }
+      ],
+      "synonyms": [
+        "near (đến gần)",
+        "come close to (tiến sát tới)"
+      ]
+    },
+    {
+      "id": "4c7e5c34-b6d3-47d4-ab7a-503858c9cafb",
+      "part_id": "e6ba8000-1987-4f94-9eda-cd264f80aa93",
+      "word": "occur",
+      "ipa": "UK: /əˈkɜːr/ | US: /əˈkɝː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The murder in the play occurs in the second act.",
+          "meaning": "xảy ra, diễn ra",
+          "toeic_tip": "Occur không dùng bị động; occur to someone nghĩa là chợt nghĩ ra.",
+          "example_vi": "Vụ án mạng trong vở kịch diễn ra ở màn hai.",
+          "word_family": [
+            "occurrence (n) sự việc xảy ra"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:29.61236+00:00",
+      "updated_at": "2026-09-19T06:34:40.521245+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4c7e5c34-b6d3-47d4-ab7a-503858c9cafb-wm.jpg?v=1789797623339",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/occur-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/occur-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an accident occurred",
+          "meaning": "một tai nạn đã xảy ra",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4c7e5c34-b6d3-47d4-ab7a-503858c9cafb-0-wm.jpg?v=1789799670730"
+        },
+        {
+          "phrase": "occur in the second act",
+          "meaning": "diễn ra ở màn hai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4c7e5c34-b6d3-47d4-ab7a-503858c9cafb-1-wm.jpg?v=1789799680366"
+        },
+        {
+          "phrase": "occur to someone",
+          "meaning": "chợt nảy ra trong đầu ai"
+        }
+      ],
+      "synonyms": [
+        "happen (xảy ra)",
+        "take place (diễn ra)",
+        "arise (nảy sinh)"
+      ]
+    }
+  ]
+}

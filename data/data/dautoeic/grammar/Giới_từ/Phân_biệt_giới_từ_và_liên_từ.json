@@ -1,0 +1,336 @@
+{
+  "subtopic": {
+    "id": "53c465c7-95f4-49d3-820b-8ab6f774bd0e",
+    "topic_id": "e17d4d8f-0799-4778-91ac-00bfb1044280",
+    "title_en": "Phân biệt giới từ và liên từ",
+    "title_vi": "Phân biệt giới từ và liên từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 38,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-gioi-tu-phan-biet-gioi-tu-va-lien-tu"
+  },
+  "lessons": [
+    {
+      "id": "1949f03e-aca1-4fe7-84e3-32bc1391df39",
+      "subtopic_id": "53c465c7-95f4-49d3-820b-8ab6f774bd0e",
+      "title_en": "Phân biệt giới từ và liên từ",
+      "title_vi": "Phân biệt giới từ và liên từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2020 · Câu 101",
+          "options": {
+            "A": "Despite",
+            "B": "Although",
+            "C": "Even",
+            "D": "However"
+          },
+          "question": "------- higher than average ticket prices, every performance of Alden North’s new play is sold out for the next six months.",
+          "translation": "Dù giá vé cao hơn mức trung bình, mọi suất diễn vở kịch mới của Alden North đều đã bán hết vé cho sáu tháng tới."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm giới từ “Despite”, liên từ “Although” và hai trạng từ “Even”, “However”. Chỗ trống đứng đầu câu, trước “higher than average ticket prices”, rồi đến dấu phẩy và mệnh đề chính.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "higher than average ticket prices,",
+                    "label": "cụm danh từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "every performance of Alden North’s new play",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is sold out",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "for the next six months.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Phần trước dấu phẩy không có động từ chia: “higher than average” bổ nghĩa cho “ticket prices”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Cách nhận ra cụm danh từ và mệnh đề S + V.",
+                  "Giới từ đi với gì, liên từ đi với gì.",
+                  "Các cặp cùng nghĩa: despite / although, because of / because, during / while."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Giới từ và liên từ có thể cùng nghĩa nhưng khác phần đi sau. Giới từ đi với **cụm danh từ**; liên từ đi với **mệnh đề** có chủ ngữ và động từ chia (S + V).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Giới từ",
+                    "formula": "giới từ + cụm danh từ"
+                  },
+                  {
+                    "label": "Liên từ",
+                    "formula": "liên từ + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "mặc dù",
+                    "despite, in spite of",
+                    "although, even though"
+                  ],
+                  [
+                    "vì, do, nhờ",
+                    "because of, due to, owing to, thanks to",
+                    "because, since, now that"
+                  ],
+                  [
+                    "trong khi, trong suốt",
+                    "during, throughout, in the course of",
+                    "while"
+                  ],
+                  [
+                    "bất kể",
+                    "regardless of",
+                    "—"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nghĩa",
+                  "Giới từ (+ cụm danh từ)",
+                  "Liên từ (+ S + V)"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Mệnh đề có chủ ngữ và động từ chia: *the storm damaged several roads*, *it was submitted after the deadline*.",
+                  "Cụm danh từ không có động từ chia của riêng nó; nếu có động từ thì động từ đó nằm trong mệnh đề quan hệ bổ nghĩa cho danh từ, như *the light rain that fell throughout the afternoon*.",
+                  "Trạng từ (however, even, additionally) không nối cụm danh từ hay mệnh đề vào câu như giới từ, liên từ. “however” nối hai mệnh đề thì phải có dấu chấm phẩy hoặc dấu chấm trước nó."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Giới từ không đi với mệnh đề S + V; trước mệnh đề phải dùng liên từ cùng nghĩa.",
+                    "form": "Giới từ trước mệnh đề (despite, in spite of, because of, due to, owing to, during, throughout, in the course of, regardless of, in front of)",
+                    "example": "*despite the storm*, không nói *despite the storm damaged several roads*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Liên từ cần mệnh đề S + V; trước cụm danh từ phải dùng giới từ cùng nghĩa.",
+                    "form": "Liên từ trước cụm danh từ (although, even though, because, since, now that, while, whereas, as, when, if)",
+                    "example": "*because of the new regulations*, không nói *because the new regulations*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Liên từ đứng trước mệnh đề vẫn phải hợp nghĩa: “nhận email *vì* đang họp” không hợp, cần “while” (trong khi).",
+                    "form": "Đúng loại từ nhưng sai nghĩa",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối cụm danh từ hay mệnh đề vào câu; “even though” mới là liên từ.",
+                    "form": "Trạng từ (however, even, additionally)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + cụm danh từ",
+                    "example": "*___ a delay in delivery*; *___ the manager's unexpected absence*"
+                  },
+                  {
+                    "signal": "___ + cụm danh từ kèm mệnh đề quan hệ",
+                    "example": "*___ the light rain that fell throughout the afternoon*"
+                  },
+                  {
+                    "signal": "___ + S + V",
+                    "example": "*___ the storm damaged several roads*; *___ it was submitted after the deadline*"
+                  },
+                  {
+                    "signal": "vế chính trái mong đợi",
+                    "example": "*___ he had no prior experience, he performed exceptionally well*"
+                  },
+                  {
+                    "signal": "nguyên nhân – kết quả",
+                    "example": "*Sales dropped sharply last month ___ the two main competitors lowered their prices*"
+                  },
+                  {
+                    "signal": "hai việc cùng lúc",
+                    "example": "*She received several emails ___ she was on the conference call*; *___ the meeting*"
+                  },
+                  {
+                    "signal": "vế chính không đổi theo cụm danh từ",
+                    "example": "*Office temperatures are kept at the same level ___ the season*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn giới từ và liên từ (có thể có trạng từ) thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống: có chủ ngữ và động từ chia là mệnh đề S + V; không có động từ chia, hoặc động từ chỉ nằm trong mệnh đề quan hệ, là cụm danh từ. Xem thêm quan hệ nghĩa giữa hai vế.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Cụm danh từ chọn giới từ, mệnh đề chọn liên từ; trong loại đúng, chọn từ đúng nghĩa (mặc dù, vì, trong khi, bất kể); loại trạng từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "Despite",
+                    "label": "giới từ nhượng bộ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "higher than average ticket prices,",
+                    "label": "cụm danh từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "every performance of Alden North’s new play",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is sold out",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "for the next six months.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: giới từ “Despite” đi với cụm danh từ “higher than average ticket prices”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm giới từ “Despite”, liên từ “Although” và trạng từ “Even”, “However” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Chỗ trống đứng đầu câu, trước dấu phẩy và mệnh đề chính “every performance… is sold out”; dấu hiệu “___ + cụm danh từ”: “------- higher than average ticket prices”.",
+                  "Bước 3: Cụm danh từ đi với giới từ; giá cao mà vẫn bán hết vé là vế chính trái mong đợi, vì vậy chọn “Despite” (dù).",
+                  "“Although” (B) là liên từ nhượng bộ, cần mệnh đề S + V, mà phần sau chỗ trống không có động từ chia, nên loại.",
+                  "“Even” (C) là trạng từ (thậm chí), không nối cụm danh từ vào câu; “even though” mới là liên từ, nên loại.",
+                  "“However” (D) là trạng từ nối (tuy nhiên), không đứng trước cụm danh từ để nối nó vào câu, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số từ vừa là giới từ vừa là liên từ: before, after, since, until, as. Xem phần đi sau để biết chúng đang làm gì; “as” làm giới từ nghĩa là “với vai trò là”.",
+                  "“for” làm liên từ (nghĩa “vì”) chỉ dùng trong văn trang trọng và đứng sau dấu phẩy: *…, for it was late.* Còn lại “for” là giới từ, đi với cụm danh từ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống có S + V: liên từ; chỉ có cụm danh từ: giới từ.",
+                  "Động từ trong mệnh đề quan hệ không biến cụm danh từ thành mệnh đề.",
+                  "Đúng loại rồi mới chọn theo nghĩa: mặc dù, vì, trong khi, bất kể."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

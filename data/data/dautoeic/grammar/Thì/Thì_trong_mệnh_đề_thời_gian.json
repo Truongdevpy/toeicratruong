@@ -1,0 +1,340 @@
+{
+  "subtopic": {
+    "id": "76d52200-3a2b-4315-b676-4a6278b9bdd0",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì trong mệnh đề thời gian",
+    "title_vi": "Thì trong mệnh đề thời gian",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 86,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-trong-menh-de-thoi-gian"
+  },
+  "lessons": [
+    {
+      "id": "f18ed65c-e7fd-49bf-853c-9e0cee4e28d7",
+      "subtopic_id": "76d52200-3a2b-4315-b676-4a6278b9bdd0",
+      "title_en": "Thì trong mệnh đề thời gian",
+      "title_vi": "Thì trong mệnh đề thời gian",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 4 · Câu 107",
+          "options": {
+            "A": "to receive",
+            "B": "receives",
+            "C": "was received",
+            "D": "receiving"
+          },
+          "question": "Once Ms. Jeong ------- the contract, she will sign and return it to Allory Pharmaceuticals.",
+          "translation": "Khi bà Jeong nhận được hợp đồng, bà sẽ ký và gửi lại cho Allory Pharmaceuticals."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “receive”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Once",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Ms. Jeong",
+                    "label": "chủ ngữ vế thời gian"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the contract,",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "she will sign and return it to Allory Pharmaceuticals.",
+                    "label": "vế chính"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong vế “Once Ms. Jeong ------- the contract”, trước tân ngữ “the contract”; vế sau là “she will sign and return it”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "vế bắt đầu bằng “Once” chia thì gì khi nói về tương lai",
+                  "chủ động hay bị động",
+                  "dạng nào làm được động từ của vế"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**Mệnh đề thời gian** là vế bắt đầu bằng từ chỉ thời gian như **when, before, after, as soon as, once, until**. Vế này là một mệnh đề nên cần động từ chia thì (V-ing hay to V đứng một mình không làm được).",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Khi vế này nói về **tương lai**, động từ trong vế dùng **hiện tại đơn**, hoặc hiện tại hoàn thành để nhấn mạnh việc phải xong trước; **không dùng will**.",
+                  "Vế chính cho biết câu nói về tương lai, ví dụ có will, can, must, hoặc là câu mệnh lệnh."
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "When / Before / After / As soon as / Once / Until + S + V hiện tại đơn, + S + will + V nguyên mẫu"
+                  },
+                  {
+                    "label": "việc phải xong trước",
+                    "formula": "… + S + has/have + V3"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "… + S + am/is/are + V3"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.58,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.74,
+                    "label": "the order arrives (vế when)"
+                  },
+                  {
+                    "at": 0.84,
+                    "label": "will call (vế chính)"
+                  }
+                ],
+                "caption": "Cả hai việc đều nằm sau “bây giờ”, nhưng vế “when” dùng hiện tại đơn (arrives), vế chính dùng will (will call)."
+              },
+              {
+                "rows": [
+                  [
+                    "hiện tại đơn",
+                    "nêu mốc tương lai",
+                    "*I will call you when the order arrives.* — Tôi sẽ gọi cho bạn khi đơn hàng đến."
+                  ],
+                  [
+                    "has/have + V3",
+                    "nhấn mạnh việc phải xong rồi mới đến việc ở vế chính",
+                    "*We will not start until everyone has signed the form.* — Chúng tôi sẽ chưa bắt đầu cho đến khi mọi người ký xong mẫu đơn."
+                  ],
+                  [
+                    "am/is/are + V3",
+                    "chủ ngữ chịu hành động",
+                    "*Guests can check in as soon as the room is cleaned.* — Khách có thể nhận phòng ngay khi phòng được dọn xong."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Dạng trong vế thời gian",
+                  "Dùng khi",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Không dùng trong vế thời gian nói về tương lai.",
+                    "form": "will + V",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc đã xảy ra, lệch với vế chính chỉ tương lai.",
+                    "form": "quá khứ đơn",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng cấu trúc nhưng chỉ việc đang diễn ra dở; các câu này cần cả việc đó làm mốc.",
+                    "form": "am/is/are + V-ing, is being + V3",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "when + S + ___",
+                    "example": "*when he ------- back from the regional meeting*"
+                  },
+                  {
+                    "signal": "before / after + S + ___",
+                    "example": "*before you ------- the office*, *after the board ------- the proposal*"
+                  },
+                  {
+                    "signal": "as soon as / once + S + ___",
+                    "example": "*as soon as the weather -------*, *Once Ms. Jeong -------*"
+                  },
+                  {
+                    "signal": "until + S + ___",
+                    "example": "*until every passenger ------- a seat belt*"
+                  },
+                  {
+                    "signal": "vế chính chỉ tương lai",
+                    "example": "*will begin*, *must be labeled*, *Please lock*, *cannot release*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng của một động từ, có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "xem chỗ trống có nằm trong vế bắt đầu bằng when, before, after, as soon as, once, until không; rồi nhìn vế chính xem có chỉ tương lai (will, can, must, câu mệnh lệnh) không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "vế chính chỉ tương lai thì chỗ trống dùng hiện tại đơn, hoặc has/have + V3 khi cần việc xong trước; loại will + V, quá khứ đơn, dạng tiếp diễn chỉ việc đang dở và dạng không chia.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "Once",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Ms. Jeong",
+                    "label": "chủ ngữ vế thời gian"
+                  },
+                  {
+                    "role": "V",
+                    "text": "receives",
+                    "label": "động từ: hiện tại đơn"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the contract,",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "she will sign and return it to Allory Pharmaceuticals.",
+                    "label": "vế chính chỉ tương lai"
+                  }
+                ],
+                "caption": "Câu mẫu sau khi điền đáp án"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “receive”, có hai dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ của vế “Once Ms. Jeong ------- the contract”, có tân ngữ “the contract”; có dấu hiệu “as soon as / once + S + ___” và “vế chính chỉ tương lai”: “she will sign”.",
+                  "Bước 3: Vế thời gian nói về tương lai dùng hiện tại đơn, chủ động, chủ ngữ số ít thêm -s, vì vậy chọn “receives” (nhận được).",
+                  "“to receive” (A) là to V, đứng một mình không làm được động từ của vế “Once Ms. Jeong …”, nên loại.",
+                  "“was received” (C) là quá khứ bị động, trong khi bà Jeong tự nhận “the contract” và vế chính chỉ tương lai, nên loại.",
+                  "“receiving” (D) là V-ing, đứng một mình không làm được động từ của vế “Once Ms. Jeong …”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Khi when, before, after… kể việc trong quá khứ thì hai vế dùng thì quá khứ (học ở bài “Phối hợp thì”).",
+                  "“everyone” và “every + danh từ số ít” (every passenger) đi với động từ số ít: *once everyone arrives*.",
+                  "“when” đứng sau know, ask, tell… với nghĩa “khi nào” thì không phải mệnh đề thời gian, vẫn dùng will: *Nobody knows when the shipment will arrive.* — Chưa ai biết khi nào lô hàng sẽ đến."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Vế when, before, after, as soon as, once, until nói về tương lai: hiện tại đơn, không dùng will.",
+                  "Cần nhấn mạnh việc phải xong trước thì dùng has/have + V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

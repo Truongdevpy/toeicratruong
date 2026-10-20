@@ -1,0 +1,367 @@
+{
+  "subtopic": {
+    "id": "ba7b5ced-9bef-4179-ab6b-e90bf61e8db3",
+    "topic_id": "5cb70cfb-4637-45d8-8f26-cd2f1d5d0292",
+    "title_en": "Hòa hợp với chủ ngữ số ít",
+    "title_vi": "Hòa hợp với chủ ngữ số ít",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 45,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-hoa-hop-chu-ngu-dong-tu-hoa-hop-voi-chu-ngu-so-it"
+  },
+  "lessons": [
+    {
+      "id": "7a111b6f-b9f8-44c5-ba36-ca882c22bf3d",
+      "subtopic_id": "ba7b5ced-9bef-4179-ab6b-e90bf61e8db3",
+      "title_en": "Hòa hợp với chủ ngữ số ít",
+      "title_vi": "Hòa hợp với chủ ngữ số ít",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2019 · Câu 12",
+          "options": {
+            "A": "include",
+            "B": "includes",
+            "C": "is included",
+            "D": "including"
+          },
+          "question": "The conference fee ------- admittance to more than twenty workshops and seminars.",
+          "translation": "Phí tham dự hội nghị bao gồm quyền vào cửa hơn hai mươi buổi hội thảo và chuyên đề."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “include”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The conference fee",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "admittance",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to more than twenty workshops and seminars.",
+                    "label": "cụm giới từ, bổ nghĩa cho admittance"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, đứng sau chủ ngữ “The conference fee” và trước tân ngữ “admittance”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "chủ ngữ “The conference fee” là số ít hay số nhiều",
+                  "chủ ngữ số ít thì động từ ở hiện tại chia thế nào",
+                  "dạng nào làm được động từ chính, khi nào dùng chủ động, khi nào dùng bị động"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ chính phải hợp với chủ ngữ về số: chủ ngữ số ít đi với động từ số ít. Ở hiện tại, dạng số ít là **V-s/es, is, has**, dùng cho mọi chủ ngữ số ít trừ I và you; còn **V nguyên mẫu, are, have** dùng cho chủ ngữ số nhiều và we, you, they (gọi tắt là dạng số nhiều).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "hiện tại đơn",
+                    "formula": "chủ ngữ số ít + V-s/es"
+                  },
+                  {
+                    "label": "động từ be",
+                    "formula": "chủ ngữ số ít + is"
+                  },
+                  {
+                    "label": "hiện tại hoàn thành",
+                    "formula": "chủ ngữ số ít + has + V3"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "danh từ số ít đếm được (invoice, printer, manager)",
+                    "*The sales manager visits our Hanoi branch every month.* — Trưởng phòng kinh doanh đến thăm chi nhánh Hà Nội mỗi tháng."
+                  ],
+                  [
+                    "danh từ không đếm được (software, equipment, information)",
+                    "*Our office equipment needs a safety check twice a year.* — Thiết bị văn phòng của chúng tôi cần được kiểm tra an toàn hai lần một năm."
+                  ],
+                  [
+                    "tên riêng của một người, một công ty",
+                    "*Ms. Tran manages the marketing budget for the whole company.* — Bà Trần quản lý ngân sách tiếp thị cho toàn công ty."
+                  ],
+                  [
+                    "một cụm V-ing (danh động từ) nói về một việc",
+                    "*Updating the staff directory is part of my job.* — Việc cập nhật danh bạ nhân viên là một phần công việc của tôi."
+                  ],
+                  [
+                    "mệnh đề danh ngữ (That…, What…, Where…, Whoever…)",
+                    "*Whoever arrives first each morning unlocks the main office.* — Ai đến sớm nhất mỗi sáng thì mở cửa văn phòng chính."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ số ít",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Answering customer emails",
+                    "label": "chủ ngữ: cụm V-ing, số ít"
+                  },
+                  {
+                    "role": "V",
+                    "text": "takes",
+                    "label": "động từ: V-s/es"
+                  },
+                  {
+                    "role": "O",
+                    "text": "most of my morning.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Danh từ số nhiều “emails” nằm trong cụm chủ ngữ, là tân ngữ của “Answering”. Cả cụm V-ing nói về một việc nên động từ chia số ít."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ hợp với **cả cụm chủ ngữ**, không hợp với danh từ số nhiều làm tân ngữ bên trong cụm V-ing (forms, records, drivers) hay tân ngữ sau động từ (copies, items).",
+                  "Trạng từ xen giữa chủ ngữ và động từ (often, already, continuously) không làm đổi cách chia.",
+                  "Chủ ngữ tự làm hành động, sau chỗ trống có tân ngữ thì dùng chủ động; chủ ngữ chịu hành động thì dùng bị động **is + V3**."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Dạng số ít ở hiện tại, hợp với chủ ngữ số ít.",
+                    "form": "V-s/es, is, has + V3",
+                    "example": "*Our branch manager has approved the request.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Dạng số nhiều, không đi với chủ ngữ số ít, kể cả khi trong cụm chủ ngữ có danh từ số nhiều.",
+                    "form": "V nguyên mẫu, are, have (keep, appear, are, have)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau chủ ngữ, ở hiện tại phải chia is hoặc are, không để “be”.",
+                    "form": "be (V nguyên mẫu của be)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không có is/are đi trước nên không làm được động từ chính.",
+                    "form": "V-ing đứng một mình (keeping, being, reporting)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính của câu.",
+                    "form": "to V (to keep, to have)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải dạng động từ chính đúng: không ghép “is” với V nguyên mẫu. Chủ động hiện tại đơn là V-s/es (reviews), tiếp diễn là is + V-ing, bị động là is + V3.",
+                    "form": "is + V nguyên mẫu (is review)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Bị động, dùng khi chủ ngữ chịu hành động; không dùng khi chủ ngữ tự làm và sau chỗ trống có tân ngữ.",
+                    "form": "is + V3 (is included)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "danh từ số ít làm chủ ngữ",
+                    "example": "*The latest invoice*, *The morning shuttle*, *Our branch manager*"
+                  },
+                  {
+                    "signal": "danh từ không đếm được làm chủ ngữ",
+                    "example": "*The updated accounting software*"
+                  },
+                  {
+                    "signal": "tên riêng làm chủ ngữ",
+                    "example": "*Google*, *Mr. Johnson*, *Dynart, Inc.*"
+                  },
+                  {
+                    "signal": "cụm V-ing làm chủ ngữ",
+                    "example": "*Filing the quarterly tax forms on time*, *Training new drivers properly*"
+                  },
+                  {
+                    "signal": "mệnh đề danh ngữ làm chủ ngữ",
+                    "example": "*That the deadline was moved to Friday*, *What the client asked for*, *Whoever signs the delivery receipt*"
+                  },
+                  {
+                    "signal": "___ + V3",
+                    "example": "*Our branch manager ___ already approved*"
+                  },
+                  {
+                    "signal": "___ + tính từ",
+                    "example": "*Keeping accurate records of every shipment ___ essential*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*The conference fee ___ admittance*, *Mr. Williams ___ the company's financial report*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng của một động từ, có dạng chia thì (V-s/es, V nguyên mẫu, is, has…), thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm cả cụm chủ ngữ đứng trước chỗ trống và xác định nó là loại nào (danh từ số ít, không đếm được, tên riêng, cụm V-ing, mệnh đề danh ngữ); bỏ qua danh từ số nhiều nằm trong cụm và trạng từ xen giữa. Xem sau chỗ trống là V3, tính từ hay tân ngữ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "chủ ngữ số ít thì chọn V-s/es, is hoặc has + V3, chủ động khi có tân ngữ; loại dạng số nhiều (V nguyên mẫu, are, have), V-ing, to V và dạng sai cấu trúc.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The conference fee",
+                    "label": "chủ ngữ số ít"
+                  },
+                  {
+                    "role": "V",
+                    "text": "includes",
+                    "label": "động từ: V-s/es"
+                  },
+                  {
+                    "role": "O",
+                    "text": "admittance",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to more than twenty workshops and seminars.",
+                    "label": "cụm giới từ, bổ nghĩa cho admittance"
+                  }
+                ],
+                "caption": "Câu mẫu sau khi điền đáp án"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “include”, có dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính; dấu hiệu “danh từ số ít làm chủ ngữ”: “The conference fee”; dấu hiệu “___ + tân ngữ”: “admittance”.",
+                  "Bước 3: Phí tự bao gồm quyền vào cửa, dùng chủ động, chủ ngữ số ít + V-s/es, vì vậy chọn “includes” (bao gồm).",
+                  "“include” (A) là V nguyên mẫu, dạng số nhiều, không hợp với chủ ngữ số ít “The conference fee”, nên loại.",
+                  "“is included” (C) là bị động, nhưng phí không chịu hành động và sau chỗ trống có tân ngữ “admittance”, nên loại.",
+                  "“including” (D) là V-ing, không có “is” đi trước nên không làm được động từ chính, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Mệnh đề “What …” làm chủ ngữ có thể đi với động từ số nhiều khi phía sau là danh từ số nhiều: *What we need now are two more drivers.* — Thứ chúng tôi cần lúc này là thêm hai tài xế."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ số ít (trừ I, you) ở hiện tại đi với V-s/es, is, has.",
+                  "Một cụm V-ing hoặc một mệnh đề danh ngữ làm chủ ngữ thì động từ chia số ít.",
+                  "Động từ hợp với cả cụm chủ ngữ, không hợp với tân ngữ số nhiều trong cụm V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

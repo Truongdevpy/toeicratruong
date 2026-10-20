@@ -1,0 +1,386 @@
+{
+  "subtopic": {
+    "id": "d4d38039-d0b5-4d0f-852d-c2559b3f2821",
+    "topic_id": "baee7534-1736-48df-a951-8d40f9d0f7a4",
+    "title_en": "Rút gọn mệnh đề trạng ngữ",
+    "title_vi": "Rút gọn mệnh đề trạng ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 71,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-rut-gon-menh-de-trang-ngu"
+  },
+  "lessons": [
+    {
+      "id": "993eba73-a3c4-43c9-b303-dbf769a571dc",
+      "subtopic_id": "d4d38039-d0b5-4d0f-852d-c2559b3f2821",
+      "title_en": "Rút gọn mệnh đề trạng ngữ",
+      "title_vi": "Rút gọn mệnh đề trạng ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2020 · Câu 11",
+          "options": {
+            "A": "survey",
+            "B": "surveyed",
+            "C": "surveys",
+            "D": "surveying"
+          },
+          "question": "When recently -------, residents of Mill Creek Park said that street disrepair is the issue that concerns them most.",
+          "translation": "Khi được khảo sát gần đây, cư dân khu Mill Creek Park cho biết tình trạng đường sá xuống cấp là vấn đề khiến họ lo ngại nhất."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng của động từ “survey”. Chỗ trống đứng sau liên từ “When” và trạng từ “recently”, trước dấu phẩy; phía trước chỗ trống không có chủ ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "When",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "recently",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------,",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "residents of Mill Creek Park",
+                    "label": "chủ ngữ mệnh đề chính"
+                  },
+                  {
+                    "role": "V",
+                    "text": "said",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that street disrepair is the issue that concerns them most.",
+                    "label": "mệnh đề sau said"
+                  }
+                ],
+                "caption": "Phần trước dấu phẩy không có chủ ngữ riêng; mệnh đề chính có chủ ngữ “residents of Mill Creek Park” và động từ chính “said”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau liên từ mà không có chủ ngữ thì động từ ở dạng nào.",
+                  "Phần rút gọn lấy chủ ngữ ở đâu.",
+                  "Khi nào dùng V-ing, khi nào dùng V3."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Mệnh đề trạng ngữ (when, while, after, before, if, once, unless, although + S + V) nói thời gian, điều kiện, sự trái ngược cho mệnh đề chính. Khi nó cùng chủ ngữ với mệnh đề chính thì rút gọn được: bỏ chủ ngữ, chủ động đổi thành V-ing, bị động bỏ “be” và giữ V3.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ động",
+                    "formula": "(liên từ) + V-ing + … , + S + V"
+                  },
+                  {
+                    "label": "Bị động",
+                    "formula": "(liên từ) + V3 + … , + S + V"
+                  },
+                  {
+                    "label": "after / before, bị động",
+                    "formula": "after/before + being + V3"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "When",
+                    "label": "liên từ: giữ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "asked",
+                    "label": "V3: bà Kim được hỏi"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "about the budget,",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "Ms. Kim",
+                    "label": "chủ ngữ (cũng là chủ ngữ ngầm)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "gave",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a clear answer.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Đầy đủ: When Ms. Kim was asked about the budget, … Rút gọn: bỏ “Ms. Kim was”, giữ “When” và V3."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**Chủ ngữ ngầm** của phần rút gọn là chủ ngữ của mệnh đề chính. Chọn V-ing hay V3 là trả lời: chủ ngữ đó **tự làm** hay **chịu** hành động?",
+                  "Động từ cần tân ngữ, phía sau có tân ngữ (cụm danh từ hoặc mệnh đề that): chủ ngữ tự làm, chọn **V-ing**.",
+                  "Động từ cần tân ngữ mà phía sau không có tân ngữ, chỉ có by + tác nhân (người làm hoặc vật gây ra hành động), giới từ, thời gian hay cách thức: chủ ngữ chịu hành động, chọn **V3**.",
+                  "Nội động từ (arrive, work, wait) không có bị động, chọn **V-ing**.",
+                  "Liên từ được giữ lại, hoặc bỏ đi khi nghĩa vẫn rõ; bỏ liên từ thì cụm V-ing hay V3 đứng ngay đầu câu, trước dấu phẩy. After, before còn là giới từ: sau chúng dùng **V-ing**, bị động là **being + V3**."
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "V-ing đầu câu: chủ ngữ tự làm",
+                    "*Knowing the client well, Mr. Tan led the meeting.* — Biết rõ khách hàng, ông Tan chủ trì cuộc họp."
+                  ],
+                  [
+                    "liên từ + V-ing: chủ ngữ tự làm",
+                    "*While reviewing the file, Ana found an error.* — Trong lúc xem hồ sơ, Ana phát hiện một lỗi."
+                  ],
+                  [
+                    "V3 đầu câu: chủ ngữ chịu hành động",
+                    "*Designed for small offices, the printer is very compact.* — Được thiết kế cho văn phòng nhỏ, máy in này rất gọn."
+                  ],
+                  [
+                    "liên từ + V3: chủ ngữ chịu hành động",
+                    "*Unless told otherwise, staff should arrive by 9 a.m.* — Trừ khi được báo khác, nhân viên nên có mặt trước 9 giờ sáng."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Phần rút gọn không có chủ ngữ riêng. Động từ chia thì cần chủ ngữ; không có liên từ thì câu còn có hai động từ chính.",
+                    "form": "Động từ chia thì (Seeks, Sought, Knew, sees, launches)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không phải V-ing hay V3 nên không rút gọn được. Đứng đầu câu thì thành câu mệnh lệnh, không nối được với mệnh đề chính.",
+                    "form": "V nguyên mẫu (Close, Work, see, place)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V-ing mang nghĩa chủ động, cần tân ngữ nếu động từ cần tân ngữ; không hợp với by + tác nhân.",
+                    "form": "V-ing khi chủ ngữ chịu hành động (Training by, approving by, maintaining carefully)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 mang nghĩa bị động, không hợp khi phía sau có tân ngữ; nội động từ không có V3 mang nghĩa bị động.",
+                    "form": "V3 khi chủ ngữ tự làm (Reviewed the budget, seen the schedule, Arrived)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "To V đầu câu chỉ mục đích “để …”, không hợp nghĩa các câu này; to V chủ động cũng không đi với by + tác nhân.",
+                    "form": "To V đầu câu (To train, To notice, To face)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ đầu câu + dấu phẩy + chủ ngữ + động từ chính",
+                    "example": "*___ in simple language, the safety guide is easy …*"
+                  },
+                  {
+                    "signal": "liên từ + ___",
+                    "example": "*When recently ___*; *While ___ for the train*; *Once ___ into the system*"
+                  },
+                  {
+                    "signal": "after / before + ___",
+                    "example": "*After ___ the warehouse*; *Before ___ to the printer*"
+                  },
+                  {
+                    "signal": "___ + tân ngữ",
+                    "example": "*___ a position in the marketing department*; *___ that the deadline was only a week away*"
+                  },
+                  {
+                    "signal": "___ + by + tác nhân",
+                    "example": "*___ by heavy snow on the highway*; *Unless ___ by a supervisor*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*If ___ carefully*; *___ more than forty years ago*; *Unless ___ in writing*"
+                  },
+                  {
+                    "signal": "nội động từ",
+                    "example": "*___ at the conference an hour early*; *___ late on the proposal*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-ing, V3, to V, V nguyên mẫu, dạng chia thì). Có từ hai dạng chia thì là câu chia động từ; nhiều nhất một dạng chia thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Chỗ trống đứng đầu câu hoặc sau liên từ, trước dấu phẩy, không có chủ ngữ riêng. Tìm chủ ngữ của mệnh đề chính, đó là chủ ngữ ngầm; xem sau chỗ trống có tân ngữ, by + tác nhân, hay không có tân ngữ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ tự làm thì chọn V-ing; chủ ngữ chịu hành động thì chọn V3 (sau after/before là being + V3). Loại dạng chia thì, V nguyên mẫu, và to V khi nghĩa mục đích “để …” không hợp câu.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CONJ",
+                    "text": "When",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "recently",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "surveyed,",
+                    "label": "V3: cư dân được khảo sát"
+                  },
+                  {
+                    "role": "S",
+                    "text": "residents of Mill Creek Park",
+                    "label": "chủ ngữ (cũng là chủ ngữ ngầm)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "said",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "that street disrepair is the issue that concerns them most.",
+                    "label": "mệnh đề sau said"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: đầy đủ là “When they were recently surveyed”; bỏ chủ ngữ và “were”, giữ “When” và V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “survey”, có dạng chia thì (survey, surveys), nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống đứng sau liên từ “When”, trước dấu phẩy; chủ ngữ ngầm là “residents”; dấu hiệu “liên từ + ___” và “___ + không có tân ngữ”: “When recently -------,”.",
+                  "Bước 3: Cư dân được khảo sát (chịu hành động) nên dùng liên từ + V3, vì vậy chọn “surveyed” (được khảo sát).",
+                  "“survey” (A) là V nguyên mẫu hoặc danh từ, không phải V-ing hay V3 nên không rút gọn được sau “When”, nên loại.",
+                  "“surveys” (C) là động từ chia thì hoặc danh từ số nhiều; sau “When” không có chủ ngữ riêng để chia thì, nên loại.",
+                  "“surveying” (D) là V-ing mang nghĩa chủ động, nhưng cư dân không tự khảo sát và phía sau không có tân ngữ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Mệnh đề chính là câu mệnh lệnh (*please make sure …*) thì chủ ngữ ngầm là “you”, tức người đọc.",
+                  "Động từ chỉ cảm xúc (impress, surprise): người có cảm xúc là người chịu tác động nên dùng V3; V-ing nghĩa là gây ra cảm xúc cho người khác. *Impressed by the plan, the board approved it.* — Ấn tượng với kế hoạch, ban giám đốc đã duyệt nó."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ ngầm là chủ ngữ của mệnh đề chính sau dấu phẩy.",
+                  "Chủ ngữ tự làm: V-ing; chủ ngữ chịu hành động: V3.",
+                  "After/before + V-ing; bị động: after/before + being + V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

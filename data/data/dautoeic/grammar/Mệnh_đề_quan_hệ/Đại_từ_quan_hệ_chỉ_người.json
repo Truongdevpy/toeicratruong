@@ -1,0 +1,346 @@
+{
+  "subtopic": {
+    "id": "839bee91-4350-4515-a62b-92d8e8734bd5",
+    "topic_id": "aac6ad8a-58ee-4bcc-9acf-c6c675f6beae",
+    "title_en": "Đại từ quan hệ chỉ người",
+    "title_vi": "Đại từ quan hệ chỉ người",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 64,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-quan-he-dai-tu-quan-he-chi-nguoi"
+  },
+  "lessons": [
+    {
+      "id": "eb134ac2-bbab-47d6-938f-b6fd286ee547",
+      "subtopic_id": "839bee91-4350-4515-a62b-92d8e8734bd5",
+      "title_en": "Đại từ quan hệ chỉ người",
+      "title_vi": "Đại từ quan hệ chỉ người",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 10 · Câu 111",
+          "options": {
+            "A": "whose",
+            "B": "who",
+            "C": "those",
+            "D": "whoever"
+          },
+          "question": "Pet Orbit customers ------- want receipts delivered by e-mail can opt for this service.",
+          "translation": "Những khách hàng của Pet Orbit muốn nhận hóa đơn qua e-mail có thể chọn dịch vụ này."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm “whose”, “who”, “those” và “whoever”. Chỗ trống đứng ngay sau danh từ chỉ người “Pet Orbit customers”, ngay trước động từ “want”; câu đã có động từ chính “can opt”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Pet Orbit customers",
+                    "label": "chủ ngữ (người)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "want receipts delivered by e-mail",
+                    "label": "động từ want + phần sau, nói rõ khách hàng nào"
+                  },
+                  {
+                    "role": "V",
+                    "text": "can opt",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for this service.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu có hai động từ: “want” thuộc phần nói rõ khách hàng nào, “can opt” là động từ chính. Chỗ trống phải nối phần “want receipts…” vào danh từ “customers”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Từ nào nối được một mệnh đề vào sau danh từ chỉ người.",
+                  "Đại từ quan hệ nào làm chủ ngữ, đại từ nào làm tân ngữ.",
+                  "Vì sao đại từ thường (they, those) không nối được mệnh đề."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Mệnh đề quan hệ đứng ngay sau một danh từ để nói rõ đó là ai. Danh từ chỉ người thì mệnh đề mở đầu bằng **who** (làm chủ ngữ) hoặc **whom** (làm tân ngữ).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "who làm chủ ngữ của động từ phía sau",
+                    "formula": "người + who + V"
+                  },
+                  {
+                    "label": "whom làm tân ngữ của động từ phía sau",
+                    "formula": "người + whom + S + V"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The consultant",
+                    "label": "danh từ chỉ người (chủ ngữ)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "whom",
+                    "label": "whom: tân ngữ của hired"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "we hired",
+                    "label": "S + V của mệnh đề quan hệ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "starts",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "on Monday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "“whom” thay cho “The consultant” và làm tân ngữ của “hired”; mệnh đề “whom we hired” chỉ nói rõ chuyên gia nào, động từ chính là “starts”."
+              },
+              {
+                "rows": [
+                  [
+                    "who + V: mệnh đề thiếu chủ ngữ",
+                    "*Staff who arrive late must sign in at the front desk.* — Nhân viên đến muộn phải ký tên ở quầy lễ tân."
+                  ],
+                  [
+                    "whom + S + V: mệnh đề đã có chủ ngữ, thiếu tân ngữ",
+                    "*The consultant whom we hired starts on Monday.* — Chuyên gia tư vấn mà chúng tôi thuê sẽ bắt đầu làm vào thứ Hai."
+                  ],
+                  [
+                    "sau tên người và dấu phẩy",
+                    "*Ms. Lee, who leads the sales team, will visit Tokyo.* — Bà Lee, người phụ trách nhóm bán hàng, sẽ đến Tokyo."
+                  ],
+                  [
+                    "Those who + V: những người mà",
+                    "*Those who finish early may leave at four.* — Những người làm xong sớm có thể về lúc bốn giờ."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối mệnh đề vào danh từ: who làm chủ ngữ (who + V), whom làm tân ngữ (whom + S + V).",
+                    "form": "who, whom sau danh từ chỉ người",
+                    "example": "*visitors who arrive before 9 A.M.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "whom chỉ làm tân ngữ, không đứng ngay trước động từ để làm chủ ngữ.",
+                    "form": "whom khi mệnh đề thiếu chủ ngữ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "which chỉ vật; when là trạng từ quan hệ chỉ thời gian, đứng sau danh từ chỉ thời gian. Cả hai không thay cho người.",
+                    "form": "which, when",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là đại từ quan hệ sở hữu, phải có danh từ đi ngay sau (whose + N). Không đứng trước động từ, trước tên riêng hay trước the + danh từ.",
+                    "form": "whose",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đại từ nhân xưng, đại từ chỉ định không nối được mệnh đề; câu sẽ có hai động từ chính mà không có từ nối.",
+                    "form": "they, she, those",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa là “bất cứ ai” (= anyone who), đã chứa sẵn người được nói đến; không đứng sau một danh từ đã có để bổ nghĩa cho danh từ đó.",
+                    "form": "whoever",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "người + ___ + động từ",
+                    "example": "*customers ___ want receipts*; *visitors ___ arrive before 9 A.M.*"
+                  },
+                  {
+                    "signal": "người + ___ + chủ ngữ + động từ",
+                    "example": "*the architect ___ Mr. Brooks hired*; *a mentor ___ the department head has selected*"
+                  },
+                  {
+                    "signal": "tên người, ___",
+                    "example": "*Ms. Alvarez, ___ has managed the Lisbon office*; *Ms. Duval, ___ the board appointed*"
+                  },
+                  {
+                    "signal": "Those + ___ + động từ",
+                    "example": "*Those ___ registered for the workshop*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có who, whom, whose, which, có thể kèm đại từ (they, she, those), when hoặc whoever, thì đây là câu đại từ quan hệ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem danh từ trước chỗ trống có chỉ người không, rồi nhìn ngay sau chỗ trống: là động từ, hay là chủ ngữ + động từ còn thiếu tân ngữ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "người + ___ + động từ thì chọn who; người + ___ + chủ ngữ + động từ thì chọn whom. Loại which, when (không chỉ người), whose (cần danh từ theo sau) và đại từ thường (không nối được mệnh đề).",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Pet Orbit customers",
+                    "label": "chủ ngữ (người)"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "who want receipts delivered by e-mail",
+                    "label": "mệnh đề quan hệ, bổ nghĩa cho customers"
+                  },
+                  {
+                    "role": "V",
+                    "text": "can opt",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for this service.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “who” làm chủ ngữ của “want”, cả mệnh đề “who want receipts delivered by e-mail” nói rõ khách hàng nào."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm “whose”, “who”, “whoever” và đại từ “those” nên đây là câu đại từ quan hệ.",
+                  "Bước 2: Chỗ trống đứng sau “Pet Orbit customers”, câu đã có động từ chính “can opt”; dấu hiệu “người + ___ + động từ”: “customers ------- want”.",
+                  "Bước 3: Mệnh đề thiếu chủ ngữ cho “want” nên dùng người + who + V, vì vậy chọn “who” (người mà, thay cho “customers”).",
+                  "“whose” (A) là đại từ quan hệ sở hữu, cần danh từ theo sau nhưng sau chỗ trống là động từ “want”, nên loại.",
+                  "“those” (C) là đại từ chỉ định, không nối được mệnh đề “want receipts…” vào câu, nên loại.",
+                  "“whoever” (D) nghĩa là “bất cứ ai”, đã chứa sẵn người được nói đến, không đứng sau danh từ “customers”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Động từ sau who chia theo danh từ mà who thay thế: *Any employee who wishes…* (số ít), *one of the few consultants who specialize…* (who thay cho “consultants”, số nhiều).",
+                  "Khi whom làm tân ngữ trong mệnh đề không có dấu phẩy thì có thể bỏ: *The applicant Ms. Reyes interviewed…* — Ứng viên mà bà Reyes phỏng vấn…"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Người + who + động từ; người + whom + chủ ngữ + động từ.",
+                  "whose phải có danh từ ngay sau; which chỉ vật, when chỉ thời gian.",
+                  "they, she, those không nối được mệnh đề vào câu."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

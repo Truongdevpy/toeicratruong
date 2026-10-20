@@ -1,0 +1,2946 @@
+[
+  {
+    "id": "204809e2-4ac5-4eaf-9aac-5199f5301739",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q32/job-8e03e630-4d98-4a92-b4d6-53c6294d61a4.wav",
+    "passage_text": "<p><strong>M:</strong> Morning, director. We'll be finishing the rooftop scenes this afternoon, right?</p>\n<p><strong>W:</strong> Actually, we had to move everything indoors last night because of the rain, so we're running behind schedule. But we should catch up by tomorrow.</p>\n<p><strong>M:</strong> Well, that's not too bad.</p>\n<p><strong>W:</strong> Oh, Renzo called in sick today, so I'll need you to take over the safety checks—starting with the lighting rig on stage two.</p>\n<p><strong>M:</strong> Of course—I'll go over there now.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Chào giám đốc. Chiều nay chúng ta sẽ quay xong các cảnh trên sân thượng, đúng không ạ?</p>\n<p><strong>W:</strong> Thật ra tối qua chúng ta đã phải chuyển hết vào trong nhà vì trời mưa, nên đang chậm so với tiến độ. Nhưng chắc ngày mai sẽ bắt kịp.</p>\n<p><strong>M:</strong> Vậy cũng không đến nỗi tệ.</p>\n<p><strong>W:</strong> À, hôm nay Renzo báo ốm, nên tôi cần cậu tiếp quản phần kiểm tra an toàn—bắt đầu từ giàn đèn ở trường quay số hai.</p>\n<p><strong>M:</strong> Vâng ạ—tôi sẽ sang đó ngay bây giờ.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>M:</strong> Morning, director. We'll be finishing the rooftop scenes this afternoon, right?</p>\n<p><strong>W:</strong> Actually, we had to move everything indoors last night because of the rain, so we're running behind schedule. But we should catch up by tomorrow.</p>\n<p><strong>M:</strong> Well, that's not too bad.</p>\n<p><strong>W:</strong> Oh, Renzo called in sick today, so I'll need you to take over the safety checks—starting with the lighting rig on stage two.</p>\n<p><strong>M:</strong> Of course—I'll go over there now.</p>",
+    "order_index": 32,
+    "created_at": "2026-09-21T12:53:16.626145+00:00",
+    "title": "Questions 32-34",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Morning, director. We'll be finishing the rooftop scenes this afternoon, right?",
+          "speaker": "M"
+        },
+        {
+          "text": "Actually, we had to move everything indoors last night because of the rain, so we're running behind schedule. But we should catch up by tomorrow.",
+          "speaker": "W"
+        },
+        {
+          "text": "Well, that's not too bad.",
+          "speaker": "M"
+        },
+        {
+          "text": "Oh, Renzo called in sick today, so I'll need you to take over the safety checks—starting with the lighting rig on stage two.",
+          "speaker": "W"
+        },
+        {
+          "text": "Of course—I'll go over there now.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào giám đốc. Chiều nay chúng ta sẽ quay xong các cảnh trên sân thượng, đúng không ạ?",
+          "speaker": "M"
+        },
+        {
+          "text": "Thật ra tối qua chúng ta đã phải chuyển hết vào trong nhà vì trời mưa, nên đang chậm so với tiến độ. Nhưng chắc ngày mai sẽ bắt kịp.",
+          "speaker": "W"
+        },
+        {
+          "text": "Vậy cũng không đến nỗi tệ.",
+          "speaker": "M"
+        },
+        {
+          "text": "À, hôm nay Renzo báo ốm, nên tôi cần cậu tiếp quản phần kiểm tra an toàn—bắt đầu từ giàn đèn ở trường quay số hai.",
+          "speaker": "W"
+        },
+        {
+          "text": "Vâng ạ—tôi sẽ sang đó ngay bây giờ.",
+          "speaker": "M"
+        }
+      ],
+      "audio_file": "32-34.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T07:44:46.839Z",
+        "audio_job_id": "8e03e630-4d98-4a92-b4d6-53c6294d61a4",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Am"
+        },
+        "audio_built_at": "2026-09-23T07:44:46.839Z",
+        "rendered_turns": [
+          {
+            "text": "Morning, director. We'll be finishing the rooftop scenes this afternoon, right?",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Actually, we had to move everything indoors last night because of the rain, so we're running behind schedule. But we should catch up by tomorrow.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Well, that's not too bad.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Oh, Renzo called in sick today, so I'll need you to take over the safety checks—starting with the lighting rig on stage two.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Of course—I'll go over there now.",
+            "speaker": "M-Au"
+          }
+        ]
+      },
+      "group_label": "conv1",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "63667dca-7cfb-4acc-b358-a43442888dd9",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q35/job-043f846c-e685-4ae1-85eb-ee3aeba0118d.wav",
+    "passage_text": "<p><strong>M:</strong> Hi. I'm here to arrange some private conversation lessons.</p>\n<p><strong>W:</strong> Certainly. What level are you aiming for?</p>\n<p><strong>M:</strong> I'd like to be comfortable in business meetings.</p>\n<p><strong>W:</strong> We can definitely help with that. Are you enrolled with us already?</p>\n<p><strong>M:</strong> No, I'll need to register as well. I read on your site that you're offering something for new students—a third off the first term's fees. Can I apply for that?</p>\n<p><strong>W:</strong> Of course. But before I process your registration, let me print out the course schedule for you.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Chào chị. Tôi đến để đăng ký một số buổi học hội thoại riêng.</p>\n<p><strong>W:</strong> Vâng ạ. Anh muốn đạt tới trình độ nào?</p>\n<p><strong>M:</strong> Tôi muốn có thể tự tin trong các cuộc họp kinh doanh.</p>\n<p><strong>W:</strong> Chúng tôi chắc chắn giúp được điều đó. Anh đã ghi danh ở trung tâm chưa ạ?</p>\n<p><strong>M:</strong> Chưa, tôi cũng cần đăng ký nữa. Tôi đọc trên trang web thấy bên chị đang có ưu đãi cho học viên mới—giảm một phần ba học phí kỳ đầu. Tôi xin ưu đãi đó được không?</p>\n<p><strong>W:</strong> Dĩ nhiên rồi. Nhưng trước khi tôi xử lý hồ sơ đăng ký, để tôi in cho anh lịch khóa học đã.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>M:</strong> Hi. I'm here to arrange some private conversation lessons.</p>\n<p><strong>W:</strong> Certainly. What level are you aiming for?</p>\n<p><strong>M:</strong> I'd like to be comfortable in business meetings.</p>\n<p><strong>W:</strong> We can definitely help with that. Are you enrolled with us already?</p>\n<p><strong>M:</strong> No, I'll need to register as well. I read on your site that you're offering something for new students—a third off the first term's fees. Can I apply for that?</p>\n<p><strong>W:</strong> Of course. But before I process your registration, let me print out the course schedule for you.</p>",
+    "order_index": 35,
+    "created_at": "2026-09-21T12:53:17.105529+00:00",
+    "title": "Questions 35-37",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Hi. I'm here to arrange some private conversation lessons.",
+          "speaker": "M"
+        },
+        {
+          "text": "Certainly. What level are you aiming for?",
+          "speaker": "W"
+        },
+        {
+          "text": "I'd like to be comfortable in business meetings.",
+          "speaker": "M"
+        },
+        {
+          "text": "We can definitely help with that. Are you enrolled with us already?",
+          "speaker": "W"
+        },
+        {
+          "text": "No, I'll need to register as well. I read on your site that you're offering something for new students—a third off the first term's fees. Can I apply for that?",
+          "speaker": "M"
+        },
+        {
+          "text": "Of course. But before I process your registration, let me print out the course schedule for you.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào chị. Tôi đến để đăng ký một số buổi học hội thoại riêng.",
+          "speaker": "M"
+        },
+        {
+          "text": "Vâng ạ. Anh muốn đạt tới trình độ nào?",
+          "speaker": "W"
+        },
+        {
+          "text": "Tôi muốn có thể tự tin trong các cuộc họp kinh doanh.",
+          "speaker": "M"
+        },
+        {
+          "text": "Chúng tôi chắc chắn giúp được điều đó. Anh đã ghi danh ở trung tâm chưa ạ?",
+          "speaker": "W"
+        },
+        {
+          "text": "Chưa, tôi cũng cần đăng ký nữa. Tôi đọc trên trang web thấy bên chị đang có ưu đãi cho học viên mới—giảm một phần ba học phí kỳ đầu. Tôi xin ưu đãi đó được không?",
+          "speaker": "M"
+        },
+        {
+          "text": "Dĩ nhiên rồi. Nhưng trước khi tôi xử lý hồ sơ đăng ký, để tôi in cho anh lịch khóa học đã.",
+          "speaker": "W"
+        }
+      ],
+      "audio_file": "35-37.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:26:37.867Z",
+        "audio_job_id": "043f846c-e685-4ae1-85eb-ee3aeba0118d",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Br"
+        },
+        "audio_built_at": "2026-09-23T12:26:37.954Z",
+        "rendered_turns": [
+          {
+            "text": "Hi. I'm here to arrange some private conversation lessons.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Certainly. What level are you aiming for?",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "I'd like to be comfortable in business meetings.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "We can definitely help with that. Are you enrolled with us already?",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "No, I'll need to register as well. I read on your site that you're offering something for new students—a third off the first term's fees. Can I apply for that?",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Of course. But before I process your registration, let me print out the course schedule for you.",
+            "speaker": "W-Br"
+          }
+        ]
+      },
+      "group_label": "conv2",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "6053cd9f-991b-4ecf-8eed-aa978bd6da6a",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q38/job-b35ca18d-2be9-49d9-883d-30712e8c7c9e.wav",
+    "passage_text": "<p><strong>W:</strong> As you can see, this piano we took in last week is badly out of tune, and several parts inside are damaged. We can't put it on the showroom floor yet.</p>\n<p><strong>M:</strong> Hmm, yes. This instrument will need extensive repair work.</p>\n<p><strong>W:</strong> I'll start by examining the inside of the piano and checking the damaged parts to work out what needs to be repaired.</p>\n<p><strong>M:</strong> You know, this would be a marvelous piece to unveil at our showroom reopening in September. And, since it's a big job to finish by then, we ought to begin immediately.</p>",
+    "passage_text_2": "<p><strong>W:</strong> Như anh thấy đấy, cây đàn piano chúng ta nhận về tuần trước lạc dây rất nặng, và một số bộ phận bên trong đã hỏng. Chúng ta chưa thể đưa nó ra sàn trưng bày được.</p>\n<p><strong>M:</strong> Ừm, đúng vậy. Nhạc cụ này sẽ cần sửa chữa rất nhiều.</p>\n<p><strong>W:</strong> Tôi sẽ bắt đầu bằng việc xem xét bên trong cây đàn và kiểm tra các bộ phận hư hỏng để xác định những gì cần sửa.</p>\n<p><strong>M:</strong> Chị biết đấy, đây sẽ là một món tuyệt vời để ra mắt trong dịp mở cửa lại phòng trưng bày vào tháng Chín. Và vì đây là khối lượng việc lớn để kịp hoàn thành, chúng ta nên bắt tay ngay.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>W:</strong> As you can see, this piano we took in last week is badly out of tune, and several parts inside are damaged. We can't put it on the showroom floor yet.</p>\n<p><strong>M:</strong> Hmm, yes. This instrument will need extensive repair work.</p>\n<p><strong>W:</strong> I'll start by examining the inside of the piano and checking the damaged parts to work out what needs to be repaired.</p>\n<p><strong>M:</strong> You know, this would be a marvelous piece to unveil at our showroom reopening in September. And, since it's a big job to finish by then, we ought to begin immediately.</p>",
+    "order_index": 38,
+    "created_at": "2026-09-21T12:53:17.608966+00:00",
+    "title": "Questions 38-40",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "As you can see, this piano we took in last week is badly out of tune, and several parts inside are damaged. We can't put it on the showroom floor yet.",
+          "speaker": "W"
+        },
+        {
+          "text": "Hmm, yes. This instrument will need extensive repair work.",
+          "speaker": "M"
+        },
+        {
+          "text": "I'll start by examining the inside of the piano and checking the damaged parts to work out what needs to be repaired.",
+          "speaker": "W"
+        },
+        {
+          "text": "You know, this would be a marvelous piece to unveil at our showroom reopening in September. And, since it's a big job to finish by then, we ought to begin immediately.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Như anh thấy đấy, cây đàn piano chúng ta nhận về tuần trước lạc dây rất nặng, và một số bộ phận bên trong đã hỏng. Chúng ta chưa thể đưa nó ra sàn trưng bày được.",
+          "speaker": "W"
+        },
+        {
+          "text": "Ừm, đúng vậy. Nhạc cụ này sẽ cần sửa chữa rất nhiều.",
+          "speaker": "M"
+        },
+        {
+          "text": "Tôi sẽ bắt đầu bằng việc xem xét bên trong cây đàn và kiểm tra các bộ phận hư hỏng để xác định những gì cần sửa.",
+          "speaker": "W"
+        },
+        {
+          "text": "Chị biết đấy, đây sẽ là một món tuyệt vời để ra mắt trong dịp mở cửa lại phòng trưng bày vào tháng Chín. Và vì đây là khối lượng việc lớn để kịp hoàn thành, chúng ta nên bắt tay ngay.",
+          "speaker": "M"
+        }
+      ],
+      "audio_file": "38-40.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:28:15.672Z",
+        "audio_job_id": "b35ca18d-2be9-49d9-883d-30712e8c7c9e",
+        "speaker_slots": {
+          "M": "M-Cn",
+          "W": "W-Am"
+        },
+        "audio_built_at": "2026-09-23T12:28:15.765Z",
+        "rendered_turns": [
+          {
+            "text": "As you can see, this piano we took in last week is badly out of tune, and several parts inside are damaged. We can't put it on the showroom floor yet.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Hmm, yes. This instrument will need extensive repair work.",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "I'll start by examining the inside of the piano and checking the damaged parts to work out what needs to be repaired.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "You know, this would be a marvelous piece to unveil at our showroom reopening in September. And, since it's a big job to finish by then, we ought to begin immediately.",
+            "speaker": "M-Cn"
+          }
+        ]
+      },
+      "group_label": "conv3",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "W",
+        "M"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "4989dd9b-16f2-438c-9be6-cee473f93435",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q41/job-c979bba9-bf3a-456d-8431-06809d8eee51.wav",
+    "passage_text": "<p><strong>W:</strong> Hi, Kwabena. Do you have time to look over some slides I'm presenting at a meeting on Tuesday?</p>\n<p><strong>M1:</strong> Oh. Is that the meeting with Harlow Group?</p>\n<p><strong>W:</strong> Yes. I'm showing them our revised delivery plan for their network of supermarkets.</p>\n<p><strong>M1:</strong> You know, Harlow Group likes short, practical sessions. I think a single summary sheet showing how the plan will cut their checkout times would do the job.</p>\n<p><strong>W:</strong> Really? Elias, you've dealt with this client before. What do you think?</p>\n<p><strong>M2:</strong> Kwabena's right. I think they'd rather have a discussion than sit through a formal talk.</p>",
+    "passage_text_2": "<p><strong>W:</strong> Chào Kwabena. Anh có thời gian xem giúp tôi mấy slide tôi sẽ trình bày ở cuộc họp thứ Ba không?</p>\n<p><strong>M1:</strong> Ồ. Có phải cuộc họp với Harlow Group không?</p>\n<p><strong>W:</strong> Đúng rồi. Tôi sẽ trình bày với họ kế hoạch giao hàng đã chỉnh sửa cho chuỗi siêu thị của họ.</p>\n<p><strong>M1:</strong> Chị biết đấy, Harlow Group thích những buổi làm việc ngắn gọn, thiết thực. Tôi nghĩ chỉ một tờ tóm tắt cho thấy kế hoạch sẽ rút ngắn thời gian thanh toán của họ ra sao là đủ.</p>\n<p><strong>W:</strong> Thật à? Elias, anh từng làm việc với khách hàng này rồi. Anh nghĩ sao?</p>\n<p><strong>M2:</strong> Kwabena nói đúng. Tôi nghĩ họ muốn trao đổi hơn là ngồi nghe một bài trình bày trang trọng.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>W:</strong> Hi, Kwabena. Do you have time to look over some slides I'm presenting at a meeting on Tuesday?</p>\n<p><strong>M1:</strong> Oh. Is that the meeting with Harlow Group?</p>\n<p><strong>W:</strong> Yes. I'm showing them our revised delivery plan for their network of supermarkets.</p>\n<p><strong>M1:</strong> You know, Harlow Group likes short, practical sessions. I think a single summary sheet showing how the plan will cut their checkout times would do the job.</p>\n<p><strong>W:</strong> Really? Elias, you've dealt with this client before. What do you think?</p>\n<p><strong>M2:</strong> Kwabena's right. I think they'd rather have a discussion than sit through a formal talk.</p>",
+    "order_index": 41,
+    "created_at": "2026-09-21T12:53:18.140524+00:00",
+    "title": "Questions 41-43",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Hi, Kwabena. Do you have time to look over some slides I'm presenting at a meeting on Tuesday?",
+          "speaker": "W"
+        },
+        {
+          "text": "Oh. Is that the meeting with Harlow Group?",
+          "speaker": "M1"
+        },
+        {
+          "text": "Yes. I'm showing them our revised delivery plan for their network of supermarkets.",
+          "speaker": "W"
+        },
+        {
+          "text": "You know, Harlow Group likes short, practical sessions. I think a single summary sheet showing how the plan will cut their checkout times would do the job.",
+          "speaker": "M1"
+        },
+        {
+          "text": "Really? Elias, you've dealt with this client before. What do you think?",
+          "speaker": "W"
+        },
+        {
+          "text": "Kwabena's right. I think they'd rather have a discussion than sit through a formal talk.",
+          "speaker": "M2"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào Kwabena. Anh có thời gian xem giúp tôi mấy slide tôi sẽ trình bày ở cuộc họp thứ Ba không?",
+          "speaker": "W"
+        },
+        {
+          "text": "Ồ. Có phải cuộc họp với Harlow Group không?",
+          "speaker": "M1"
+        },
+        {
+          "text": "Đúng rồi. Tôi sẽ trình bày với họ kế hoạch giao hàng đã chỉnh sửa cho chuỗi siêu thị của họ.",
+          "speaker": "W"
+        },
+        {
+          "text": "Chị biết đấy, Harlow Group thích những buổi làm việc ngắn gọn, thiết thực. Tôi nghĩ chỉ một tờ tóm tắt cho thấy kế hoạch sẽ rút ngắn thời gian thanh toán của họ ra sao là đủ.",
+          "speaker": "M1"
+        },
+        {
+          "text": "Thật à? Elias, anh từng làm việc với khách hàng này rồi. Anh nghĩ sao?",
+          "speaker": "W"
+        },
+        {
+          "text": "Kwabena nói đúng. Tôi nghĩ họ muốn trao đổi hơn là ngồi nghe một bài trình bày trang trọng.",
+          "speaker": "M2"
+        }
+      ],
+      "audio_file": "41-43.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          },
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:28:57.504Z",
+        "audio_job_id": "c979bba9-bf3a-456d-8431-06809d8eee51",
+        "speaker_slots": {
+          "W": "W-Br",
+          "M1": "M-Cn",
+          "M2": "M-Au"
+        },
+        "audio_built_at": "2026-09-23T12:28:57.590Z",
+        "rendered_turns": [
+          {
+            "text": "Hi, Kwabena. Do you have time to look over some slides I'm presenting at a meeting on Tuesday?",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Oh. Is that the meeting with Harlow Group?",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "Yes. I'm showing them our revised delivery plan for their network of supermarkets.",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "You know, Harlow Group likes short, practical sessions. I think a single summary sheet showing how the plan will cut their checkout times would do the job.",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "Really? Elias, you've dealt with this client before. What do you think?",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Kwabena's right. I think they'd rather have a discussion than sit through a formal talk.",
+            "speaker": "M-Au"
+          }
+        ]
+      },
+      "group_label": "conv4",
+      "speaker_count": 3,
+      "speaker_labels": [
+        "W",
+        "M1",
+        "M2"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "bbd50165-64ed-4804-9db2-9a16815a8305",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q44/job-b7dd22f4-8b40-4d96-b953-7de2a04ec403.wav",
+    "passage_text": "<p><strong>W:</strong> I heard your prototype did better in the field trials than you expected. Congratulations!</p>\n<p><strong>M:</strong> Thanks! I thought we'd have to rebuild the housing four times before it held up. But it passed on the second round.</p>\n<p><strong>W:</strong> You'll need to write up your findings and send them to the head of engineering. That's Beatriz, right?</p>\n<p><strong>M:</strong> Oh, Beatriz transfers to the Lyon office at the end of the month.</p>\n<p><strong>W:</strong> Oh, I hadn't heard. I wonder whether you'll be moved up to take over from her.</p>\n<p><strong>M:</strong> I doubt it. I've never run a full department. I'm hoping to take on something like that in the autumn.</p>",
+    "passage_text_2": "<p><strong>W:</strong> Tôi nghe nói nguyên mẫu của anh thử nghiệm thực địa còn tốt hơn anh mong đợi. Chúc mừng nhé!</p>\n<p><strong>M:</strong> Cảm ơn chị! Tôi cứ nghĩ phải dựng lại phần vỏ bốn lần thì nó mới chịu nổi. Vậy mà nó đã đạt ngay ở vòng thứ hai.</p>\n<p><strong>W:</strong> Anh sẽ phải viết báo cáo kết quả và gửi cho trưởng bộ phận kỹ thuật. Là chị Beatriz phải không?</p>\n<p><strong>M:</strong> À, cuối tháng này Beatriz chuyển sang văn phòng Lyon rồi.</p>\n<p><strong>W:</strong> Ồ, tôi chưa nghe tin đó. Không biết anh có được đề bạt lên thay chị ấy không.</p>\n<p><strong>M:</strong> Tôi nghi lắm. Tôi chưa từng điều hành cả một phòng ban. Tôi hy vọng sẽ đảm nhận việc như vậy vào mùa thu.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>W:</strong> I heard your prototype did better in the field trials than you expected. Congratulations!</p>\n<p><strong>M:</strong> Thanks! I thought we'd have to rebuild the housing four times before it held up. But it passed on the second round.</p>\n<p><strong>W:</strong> You'll need to write up your findings and send them to the head of engineering. That's Beatriz, right?</p>\n<p><strong>M:</strong> Oh, Beatriz transfers to the Lyon office at the end of the month.</p>\n<p><strong>W:</strong> Oh, I hadn't heard. I wonder whether you'll be moved up to take over from her.</p>\n<p><strong>M:</strong> I doubt it. I've never run a full department. I'm hoping to take on something like that in the autumn.</p>",
+    "order_index": 44,
+    "created_at": "2026-09-21T12:53:18.620541+00:00",
+    "title": "Questions 44-46",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "I heard your prototype did better in the field trials than you expected. Congratulations!",
+          "speaker": "W"
+        },
+        {
+          "text": "Thanks! I thought we'd have to rebuild the housing four times before it held up. But it passed on the second round.",
+          "speaker": "M"
+        },
+        {
+          "text": "You'll need to write up your findings and send them to the head of engineering. That's Beatriz, right?",
+          "speaker": "W"
+        },
+        {
+          "text": "Oh, Beatriz transfers to the Lyon office at the end of the month.",
+          "speaker": "M"
+        },
+        {
+          "text": "Oh, I hadn't heard. I wonder whether you'll be moved up to take over from her.",
+          "speaker": "W"
+        },
+        {
+          "text": "I doubt it. I've never run a full department. I'm hoping to take on something like that in the autumn.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Tôi nghe nói nguyên mẫu của anh thử nghiệm thực địa còn tốt hơn anh mong đợi. Chúc mừng nhé!",
+          "speaker": "W"
+        },
+        {
+          "text": "Cảm ơn chị! Tôi cứ nghĩ phải dựng lại phần vỏ bốn lần thì nó mới chịu nổi. Vậy mà nó đã đạt ngay ở vòng thứ hai.",
+          "speaker": "M"
+        },
+        {
+          "text": "Anh sẽ phải viết báo cáo kết quả và gửi cho trưởng bộ phận kỹ thuật. Là chị Beatriz phải không?",
+          "speaker": "W"
+        },
+        {
+          "text": "À, cuối tháng này Beatriz chuyển sang văn phòng Lyon rồi.",
+          "speaker": "M"
+        },
+        {
+          "text": "Ồ, tôi chưa nghe tin đó. Không biết anh có được đề bạt lên thay chị ấy không.",
+          "speaker": "W"
+        },
+        {
+          "text": "Tôi nghi lắm. Tôi chưa từng điều hành cả một phòng ban. Tôi hy vọng sẽ đảm nhận việc như vậy vào mùa thu.",
+          "speaker": "M"
+        }
+      ],
+      "audio_file": "44-46.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:29:38.892Z",
+        "audio_job_id": "b7dd22f4-8b40-4d96-b953-7de2a04ec403",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Am"
+        },
+        "audio_built_at": "2026-09-23T12:29:38.989Z",
+        "rendered_turns": [
+          {
+            "text": "I heard your prototype did better in the field trials than you expected. Congratulations!",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Thanks! I thought we'd have to rebuild the housing four times before it held up. But it passed on the second round.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "You'll need to write up your findings and send them to the head of engineering. That's Beatriz, right?",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Oh, Beatriz transfers to the Lyon office at the end of the month.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Oh, I hadn't heard. I wonder whether you'll be moved up to take over from her.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "I doubt it. I've never run a full department. I'm hoping to take on something like that in the autumn.",
+            "speaker": "M-Au"
+          }
+        ]
+      },
+      "group_label": "conv5",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "W",
+        "M"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "af3d6027-b9b9-4335-89ff-677a765df9c8",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q47/job-90c67750-dddf-426a-824e-e41c6d70d826.wav",
+    "passage_text": "<p><strong>W:</strong> Now for the part of the show where we introduce our listeners to new businesses in the area. Today I'm joined by Tomasz Orlik, the owner of a new local cinema. Thanks for coming into the studio this morning, Tomasz!</p>\n<p><strong>M:</strong> Thanks for having me! I'm delighted to talk about the cinema I opened just six weeks ago. We've put in new seating throughout, and our staff can recommend something for every kind of filmgoer.</p>\n<p><strong>W:</strong> Wonderful. How did you come to work in this field?</p>\n<p><strong>M:</strong> Well, I worked at my university film club, and after graduating I started working at a local cinema. I enjoyed the work, so I decided to stay in the industry.</p>",
+    "passage_text_2": "<p><strong>W:</strong> Bây giờ đến phần chương trình mà chúng tôi giới thiệu tới thính giả những doanh nghiệp mới trong khu vực. Hôm nay tôi có mặt cùng anh Tomasz Orlik, chủ một rạp chiếu phim mới ở địa phương. Cảm ơn anh đã đến phòng thu sáng nay, Tomasz!</p>\n<p><strong>M:</strong> Cảm ơn chị đã mời tôi! Tôi rất vui được nói về rạp chiếu phim mà tôi mở cách đây vừa tròn sáu tuần. Chúng tôi đã lắp ghế mới toàn bộ, và nhân viên của chúng tôi có thể gợi ý phim phù hợp cho mọi kiểu khán giả.</p>\n<p><strong>W:</strong> Tuyệt vời. Cơ duyên nào đưa anh đến với lĩnh vực này?</p>\n<p><strong>M:</strong> À, tôi từng làm ở câu lạc bộ điện ảnh của trường đại học, và sau khi tốt nghiệp tôi bắt đầu làm việc tại một rạp chiếu phim địa phương. Tôi thích công việc đó, nên tôi quyết định gắn bó với ngành này.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>W:</strong> Now for the part of the show where we introduce our listeners to new businesses in the area. Today I'm joined by Tomasz Orlik, the owner of a new local cinema. Thanks for coming into the studio this morning, Tomasz!</p>\n<p><strong>M:</strong> Thanks for having me! I'm delighted to talk about the cinema I opened just six weeks ago. We've put in new seating throughout, and our staff can recommend something for every kind of filmgoer.</p>\n<p><strong>W:</strong> Wonderful. How did you come to work in this field?</p>\n<p><strong>M:</strong> Well, I worked at my university film club, and after graduating I started working at a local cinema. I enjoyed the work, so I decided to stay in the industry.</p>",
+    "order_index": 47,
+    "created_at": "2026-09-21T12:53:19.076001+00:00",
+    "title": "Questions 47-49",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Now for the part of the show where we introduce our listeners to new businesses in the area. Today I'm joined by Tomasz Orlik, the owner of a new local cinema. Thanks for coming into the studio this morning, Tomasz!",
+          "speaker": "W"
+        },
+        {
+          "text": "Thanks for having me! I'm delighted to talk about the cinema I opened just six weeks ago. We've put in new seating throughout, and our staff can recommend something for every kind of filmgoer.",
+          "speaker": "M"
+        },
+        {
+          "text": "Wonderful. How did you come to work in this field?",
+          "speaker": "W"
+        },
+        {
+          "text": "Well, I worked at my university film club, and after graduating I started working at a local cinema. I enjoyed the work, so I decided to stay in the industry.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Bây giờ đến phần chương trình mà chúng tôi giới thiệu tới thính giả những doanh nghiệp mới trong khu vực. Hôm nay tôi có mặt cùng anh Tomasz Orlik, chủ một rạp chiếu phim mới ở địa phương. Cảm ơn anh đã đến phòng thu sáng nay, Tomasz!",
+          "speaker": "W"
+        },
+        {
+          "text": "Cảm ơn chị đã mời tôi! Tôi rất vui được nói về rạp chiếu phim mà tôi mở cách đây vừa tròn sáu tuần. Chúng tôi đã lắp ghế mới toàn bộ, và nhân viên của chúng tôi có thể gợi ý phim phù hợp cho mọi kiểu khán giả.",
+          "speaker": "M"
+        },
+        {
+          "text": "Tuyệt vời. Cơ duyên nào đưa anh đến với lĩnh vực này?",
+          "speaker": "W"
+        },
+        {
+          "text": "À, tôi từng làm ở câu lạc bộ điện ảnh của trường đại học, và sau khi tốt nghiệp tôi bắt đầu làm việc tại một rạp chiếu phim địa phương. Tôi thích công việc đó, nên tôi quyết định gắn bó với ngành này.",
+          "speaker": "M"
+        }
+      ],
+      "audio_file": "47-49.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:30:18.505Z",
+        "audio_job_id": "90c67750-dddf-426a-824e-e41c6d70d826",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Br"
+        },
+        "audio_built_at": "2026-09-23T12:30:18.596Z",
+        "rendered_turns": [
+          {
+            "text": "Now for the part of the show where we introduce our listeners to new businesses in the area. Today I'm joined by Tomasz Orlik, the owner of a new local cinema. Thanks for coming into the studio this morning, Tomasz!",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Thanks for having me! I'm delighted to talk about the cinema I opened just six weeks ago. We've put in new seating throughout, and our staff can recommend something for every kind of filmgoer.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Wonderful. How did you come to work in this field?",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Well, I worked at my university film club, and after graduating I started working at a local cinema. I enjoyed the work, so I decided to stay in the industry.",
+            "speaker": "M-Au"
+          }
+        ]
+      },
+      "group_label": "conv6",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "W",
+        "M"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "9a9b5ab3-64b0-44a7-a27a-997889c319bf",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q50/job-2e70c33c-fa25-4afb-85de-bba34a9f1772.wav",
+    "passage_text": "<p><strong>M1:</strong> As chair of the trust, I'm delighted to welcome you to the Calderbank Air Quality Trust. We're pleased you'll be making podcast episodes for our public channel.</p>\n<p><strong>W:</strong> I'm looking forward to reporting on Calderbank's work on urban emissions for the series.</p>\n<p><strong>M1:</strong> Yes, the more the public hears about what poor air does to city neighborhoods, the better. Public understanding is what helps us secure the grants we need to meet our goal of cleaning up the air people breathe. This is Idris. He's leading our roadside sensor study, which is the first one you'll follow.</p>\n<p><strong>M2:</strong> It's a rewarding study. And what's remarkable is that we've begun flying small aircraft over the valley to sample the air above the traffic. So we have readings nobody has had before.</p>",
+    "passage_text_2": "<p><strong>M1:</strong> Với tư cách chủ tịch quỹ, tôi rất vui mừng chào đón chị đến với Quỹ Chất lượng Không khí Calderbank. Chúng tôi rất mừng vì chị sẽ thực hiện các tập podcast cho kênh cộng đồng của quỹ.</p>\n<p><strong>W:</strong> Tôi rất mong được đưa tin về công việc của Calderbank liên quan đến khí thải đô thị cho loạt bài này.</p>\n<p><strong>M1:</strong> Vâng, công chúng càng biết nhiều về tác hại của không khí ô nhiễm đối với các khu dân cư thì càng tốt. Sự thấu hiểu của công chúng chính là điều giúp chúng tôi giành được các khoản tài trợ cần thiết để đạt mục tiêu làm sạch bầu không khí mà người dân hít thở. Đây là Idris. Anh ấy đang dẫn dắt nghiên cứu cảm biến ven đường của chúng tôi, cũng là nghiên cứu đầu tiên chị sẽ theo dõi.</p>\n<p><strong>M2:</strong> Đó là một nghiên cứu rất đáng công. Và điều đáng chú ý là chúng tôi đã bắt đầu cho máy bay nhỏ bay trên thung lũng để lấy mẫu không khí phía trên dòng xe cộ. Nhờ vậy chúng tôi có những số liệu chưa ai từng có.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>M1:</strong> As chair of the trust, I'm delighted to welcome you to the Calderbank Air Quality Trust. We're pleased you'll be making podcast episodes for our public channel.</p>\n<p><strong>W:</strong> I'm looking forward to reporting on Calderbank's work on urban emissions for the series.</p>\n<p><strong>M1:</strong> Yes, the more the public hears about what poor air does to city neighborhoods, the better. Public understanding is what helps us secure the grants we need to meet our goal of cleaning up the air people breathe. This is Idris. He's leading our roadside sensor study, which is the first one you'll follow.</p>\n<p><strong>M2:</strong> It's a rewarding study. And what's remarkable is that we've begun flying small aircraft over the valley to sample the air above the traffic. So we have readings nobody has had before.</p>",
+    "order_index": 50,
+    "created_at": "2026-09-21T12:53:19.542264+00:00",
+    "title": "Questions 50-52",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "As chair of the trust, I'm delighted to welcome you to the Calderbank Air Quality Trust. We're pleased you'll be making podcast episodes for our public channel.",
+          "speaker": "M1"
+        },
+        {
+          "text": "I'm looking forward to reporting on Calderbank's work on urban emissions for the series.",
+          "speaker": "W"
+        },
+        {
+          "text": "Yes, the more the public hears about what poor air does to city neighborhoods, the better. Public understanding is what helps us secure the grants we need to meet our goal of cleaning up the air people breathe. This is Idris. He's leading our roadside sensor study, which is the first one you'll follow.",
+          "speaker": "M1"
+        },
+        {
+          "text": "It's a rewarding study. And what's remarkable is that we've begun flying small aircraft over the valley to sample the air above the traffic. So we have readings nobody has had before.",
+          "speaker": "M2"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Với tư cách chủ tịch quỹ, tôi rất vui mừng chào đón chị đến với Quỹ Chất lượng Không khí Calderbank. Chúng tôi rất mừng vì chị sẽ thực hiện các tập podcast cho kênh cộng đồng của quỹ.",
+          "speaker": "M1"
+        },
+        {
+          "text": "Tôi rất mong được đưa tin về công việc của Calderbank liên quan đến khí thải đô thị cho loạt bài này.",
+          "speaker": "W"
+        },
+        {
+          "text": "Vâng, công chúng càng biết nhiều về tác hại của không khí ô nhiễm đối với các khu dân cư thì càng tốt. Sự thấu hiểu của công chúng chính là điều giúp chúng tôi giành được các khoản tài trợ cần thiết để đạt mục tiêu làm sạch bầu không khí mà người dân hít thở. Đây là Idris. Anh ấy đang dẫn dắt nghiên cứu cảm biến ven đường của chúng tôi, cũng là nghiên cứu đầu tiên chị sẽ theo dõi.",
+          "speaker": "M1"
+        },
+        {
+          "text": "Đó là một nghiên cứu rất đáng công. Và điều đáng chú ý là chúng tôi đã bắt đầu cho máy bay nhỏ bay trên thung lũng để lấy mẫu không khí phía trên dòng xe cộ. Nhờ vậy chúng tôi có những số liệu chưa ai từng có.",
+          "speaker": "M2"
+        }
+      ],
+      "audio_file": "50-52.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:30:54.727Z",
+        "audio_job_id": "2e70c33c-fa25-4afb-85de-bba34a9f1772",
+        "speaker_slots": {
+          "W": "W-Am",
+          "M1": "M-Cn",
+          "M2": "M-Au"
+        },
+        "audio_built_at": "2026-09-23T12:30:54.821Z",
+        "rendered_turns": [
+          {
+            "text": "As chair of the trust, I'm delighted to welcome you to the Calderbank Air Quality Trust. We're pleased you'll be making podcast episodes for our public channel.",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "I'm looking forward to reporting on Calderbank's work on urban emissions for the series.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Yes, the more the public hears about what poor air does to city neighborhoods, the better. Public understanding is what helps us secure the grants we need to meet our goal of cleaning up the air people breathe. This is Idris. He's leading our roadside sensor study, which is the first one you'll follow.",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "It's a rewarding study. And what's remarkable is that we've begun flying small aircraft over the valley to sample the air above the traffic. So we have readings nobody has had before.",
+            "speaker": "M-Au"
+          }
+        ]
+      },
+      "group_label": "conv7",
+      "speaker_count": 3,
+      "speaker_labels": [
+        "M1",
+        "W",
+        "M2"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "3d535e76-0996-4252-baa2-d0c100448188",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q53/job-8af549b7-0435-4854-9a75-4655a407760c.wav",
+    "passage_text": "<p><strong>W:</strong> Halim, you're not thinking of calling off Friday's planning review, are you?</p>\n<p><strong>M:</strong> I haven't told anyone yet, but our co-authors in Chile are away all week for a public holiday, so there's little point in meeting. Why?</p>\n<p><strong>W:</strong> Well, I've been going through the draft costings, and we've put nothing aside for an event coordinator.</p>\n<p><strong>M:</strong> Oh no. I'm not sure how we missed that. You're right. We'll have to work out how to cover it.</p>\n<p><strong>W:</strong> You know, we set aside money for a trip to Oslo to show our early figures. We could manage without that.</p>",
+    "passage_text_2": "<p><strong>W:</strong> Halim này, anh không định hủy buổi rà soát kế hoạch hôm thứ Sáu đấy chứ?</p>\n<p><strong>M:</strong> Tôi chưa nói với ai, nhưng các đồng tác giả của chúng ta ở Chile nghỉ cả tuần vì một ngày lễ, nên họp cũng chẳng để làm gì. Sao thế?</p>\n<p><strong>W:</strong> À, tôi đang rà lại bản dự toán chi phí, và chúng ta chưa dự trù khoản nào cho một điều phối viên sự kiện.</p>\n<p><strong>M:</strong> Ôi không. Không hiểu sao chúng ta lại bỏ sót. Chị nói đúng. Chúng ta sẽ phải tính cách bù khoản đó.</p>\n<p><strong>W:</strong> Anh biết đấy, chúng ta có dành tiền cho một chuyến đi Oslo để trình bày các số liệu ban đầu. Chúng ta có thể xoay xở mà không cần chuyến đó.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>W:</strong> Halim, you're not thinking of calling off Friday's planning review, are you?</p>\n<p><strong>M:</strong> I haven't told anyone yet, but our co-authors in Chile are away all week for a public holiday, so there's little point in meeting. Why?</p>\n<p><strong>W:</strong> Well, I've been going through the draft costings, and we've put nothing aside for an event coordinator.</p>\n<p><strong>M:</strong> Oh no. I'm not sure how we missed that. You're right. We'll have to work out how to cover it.</p>\n<p><strong>W:</strong> You know, we set aside money for a trip to Oslo to show our early figures. We could manage without that.</p>",
+    "order_index": 53,
+    "created_at": "2026-09-21T12:53:20.090981+00:00",
+    "title": "Questions 53-55",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Halim, you're not thinking of calling off Friday's planning review, are you?",
+          "speaker": "W"
+        },
+        {
+          "text": "I haven't told anyone yet, but our co-authors in Chile are away all week for a public holiday, so there's little point in meeting. Why?",
+          "speaker": "M"
+        },
+        {
+          "text": "Well, I've been going through the draft costings, and we've put nothing aside for an event coordinator.",
+          "speaker": "W"
+        },
+        {
+          "text": "Oh no. I'm not sure how we missed that. You're right. We'll have to work out how to cover it.",
+          "speaker": "M"
+        },
+        {
+          "text": "You know, we set aside money for a trip to Oslo to show our early figures. We could manage without that.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Halim này, anh không định hủy buổi rà soát kế hoạch hôm thứ Sáu đấy chứ?",
+          "speaker": "W"
+        },
+        {
+          "text": "Tôi chưa nói với ai, nhưng các đồng tác giả của chúng ta ở Chile nghỉ cả tuần vì một ngày lễ, nên họp cũng chẳng để làm gì. Sao thế?",
+          "speaker": "M"
+        },
+        {
+          "text": "À, tôi đang rà lại bản dự toán chi phí, và chúng ta chưa dự trù khoản nào cho một điều phối viên sự kiện.",
+          "speaker": "W"
+        },
+        {
+          "text": "Ôi không. Không hiểu sao chúng ta lại bỏ sót. Chị nói đúng. Chúng ta sẽ phải tính cách bù khoản đó.",
+          "speaker": "M"
+        },
+        {
+          "text": "Anh biết đấy, chúng ta có dành tiền cho một chuyến đi Oslo để trình bày các số liệu ban đầu. Chúng ta có thể xoay xở mà không cần chuyến đó.",
+          "speaker": "W"
+        }
+      ],
+      "audio_file": "53-55.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          },
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:31:33.971Z",
+        "audio_job_id": "8af549b7-0435-4854-9a75-4655a407760c",
+        "speaker_slots": {
+          "M": "M-Cn",
+          "W": "W-Br"
+        },
+        "audio_built_at": "2026-09-23T12:31:34.081Z",
+        "rendered_turns": [
+          {
+            "text": "Halim, you're not thinking of calling off Friday's planning review, are you?",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "I haven't told anyone yet, but our co-authors in Chile are away all week for a public holiday, so there's little point in meeting. Why?",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "Well, I've been going through the draft costings, and we've put nothing aside for an event coordinator.",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Oh no. I'm not sure how we missed that. You're right. We'll have to work out how to cover it.",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "You know, we set aside money for a trip to Oslo to show our early figures. We could manage without that.",
+            "speaker": "W-Br"
+          }
+        ]
+      },
+      "group_label": "conv8",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "W",
+        "M"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "9bc5b3f2-84f5-4321-bdf5-1c97bdd57443",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q56/job-5f2c694b-c008-4470-91cc-5529097dabc1.wav",
+    "passage_text": "<p><strong>M:</strong> Good afternoon, technical assistance.</p>\n<p><strong>W:</strong> I'm calling from Velomark Cycle Workshops. We took on your booking system a few months ago, and I have a question about reminder messages.</p>\n<p><strong>M:</strong> Certainly. What can I do for you?</p>\n<p><strong>W:</strong> Well, the system texts a reminder to every customer three days ahead. But people booking a full service usually want a longer notice, because they need to arrange another way to get to work. So, could I set a different notice period for just that service?</p>\n<p><strong>M:</strong> You can. On the booking page, if you open that service and choose \"Advanced Reminders,\" you'll be able to enter any number of days.</p>\n<p><strong>W:</strong> Found it. Thanks very much.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Chào chị, bộ phận hỗ trợ kỹ thuật xin nghe.</p>\n<p><strong>W:</strong> Tôi gọi từ Velomark Cycle Workshops. Chúng tôi đã dùng hệ thống đặt lịch của bên anh vài tháng nay, và tôi có một câu hỏi về tin nhắn nhắc lịch.</p>\n<p><strong>M:</strong> Vâng ạ. Tôi có thể giúp gì cho chị?</p>\n<p><strong>W:</strong> Là thế này, hệ thống nhắn tin nhắc mọi khách hàng trước ba ngày. Nhưng những người đặt gói bảo dưỡng toàn diện thường muốn được báo sớm hơn, vì họ cần thu xếp phương tiện khác để đi làm. Vậy tôi có thể đặt một thời hạn nhắc khác riêng cho dịch vụ đó không?</p>\n<p><strong>M:</strong> Được chị ạ. Trên trang đặt lịch, chị mở dịch vụ đó ra và chọn “Advanced Reminders”, chị sẽ nhập được số ngày tùy ý.</p>\n<p><strong>W:</strong> Tôi tìm thấy rồi. Cảm ơn anh nhiều.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>M:</strong> Good afternoon, technical assistance.</p>\n<p><strong>W:</strong> I'm calling from Velomark Cycle Workshops. We took on your booking system a few months ago, and I have a question about reminder messages.</p>\n<p><strong>M:</strong> Certainly. What can I do for you?</p>\n<p><strong>W:</strong> Well, the system texts a reminder to every customer three days ahead. But people booking a full service usually want a longer notice, because they need to arrange another way to get to work. So, could I set a different notice period for just that service?</p>\n<p><strong>M:</strong> You can. On the booking page, if you open that service and choose \"Advanced Reminders,\" you'll be able to enter any number of days.</p>\n<p><strong>W:</strong> Found it. Thanks very much.</p>",
+    "order_index": 56,
+    "created_at": "2026-09-21T12:53:20.570855+00:00",
+    "title": "Questions 56-58",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Good afternoon, technical assistance.",
+          "speaker": "M"
+        },
+        {
+          "text": "I'm calling from Velomark Cycle Workshops. We took on your booking system a few months ago, and I have a question about reminder messages.",
+          "speaker": "W"
+        },
+        {
+          "text": "Certainly. What can I do for you?",
+          "speaker": "M"
+        },
+        {
+          "text": "Well, the system texts a reminder to every customer three days ahead. But people booking a full service usually want a longer notice, because they need to arrange another way to get to work. So, could I set a different notice period for just that service?",
+          "speaker": "W"
+        },
+        {
+          "text": "You can. On the booking page, if you open that service and choose \"Advanced Reminders,\" you'll be able to enter any number of days.",
+          "speaker": "M"
+        },
+        {
+          "text": "Found it. Thanks very much.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào chị, bộ phận hỗ trợ kỹ thuật xin nghe.",
+          "speaker": "M"
+        },
+        {
+          "text": "Tôi gọi từ Velomark Cycle Workshops. Chúng tôi đã dùng hệ thống đặt lịch của bên anh vài tháng nay, và tôi có một câu hỏi về tin nhắn nhắc lịch.",
+          "speaker": "W"
+        },
+        {
+          "text": "Vâng ạ. Tôi có thể giúp gì cho chị?",
+          "speaker": "M"
+        },
+        {
+          "text": "Là thế này, hệ thống nhắn tin nhắc mọi khách hàng trước ba ngày. Nhưng những người đặt gói bảo dưỡng toàn diện thường muốn được báo sớm hơn, vì họ cần thu xếp phương tiện khác để đi làm. Vậy tôi có thể đặt một thời hạn nhắc khác riêng cho dịch vụ đó không?",
+          "speaker": "W"
+        },
+        {
+          "text": "Được chị ạ. Trên trang đặt lịch, chị mở dịch vụ đó ra và chọn “Advanced Reminders”, chị sẽ nhập được số ngày tùy ý.",
+          "speaker": "M"
+        },
+        {
+          "text": "Tôi tìm thấy rồi. Cảm ơn anh nhiều.",
+          "speaker": "W"
+        }
+      ],
+      "audio_file": "56-58.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:32:14.635Z",
+        "audio_job_id": "5f2c694b-c008-4470-91cc-5529097dabc1",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Am"
+        },
+        "audio_built_at": "2026-09-23T12:32:14.718Z",
+        "rendered_turns": [
+          {
+            "text": "Good afternoon, technical assistance.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "I'm calling from Velomark Cycle Workshops. We took on your booking system a few months ago, and I have a question about reminder messages.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Certainly. What can I do for you?",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Well, the system texts a reminder to every customer three days ahead. But people booking a full service usually want a longer notice, because they need to arrange another way to get to work. So, could I set a different notice period for just that service?",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "You can. On the booking page, if you open that service and choose \"Advanced Reminders,\" you'll be able to enter any number of days.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Found it. Thanks very much.",
+            "speaker": "W-Am"
+          }
+        ]
+      },
+      "group_label": "conv9",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "4acc9d94-9857-40b4-bee4-b133d32f726f",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q59/job-1712a265-4931-41cc-a215-eb0e7e1d2de1.wav",
+    "passage_text": "<p><strong>M:</strong> I've just been speaking to the aquarium director. He wants us to fit new lighting above the reef tank as well as the seal pool. He wants to be certain the animals get the right light through the winter months.</p>\n<p><strong>W:</strong> Right, let's head over there now and take some readings. Then we can decide what fittings we'll need.</p>\n<p><strong>M:</strong> Sure. We have some spare brackets left over from when we did the penguin enclosure. I'll see what's still there once we've finished measuring the reef tank.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Tôi vừa nói chuyện với giám đốc thủy cung. Ông ấy muốn chúng ta lắp hệ thống đèn mới phía trên bể san hô và cả hồ hải cẩu nữa. Ông ấy muốn chắc chắn rằng các con vật nhận đủ ánh sáng phù hợp suốt những tháng mùa đông.</p>\n<p><strong>W:</strong> Được, vậy giờ mình sang đó luôn và đo vài chỉ số đi. Rồi mình sẽ quyết định cần loại đèn nào.</p>\n<p><strong>M:</strong> Ừ. Chúng ta còn mấy giá đỡ dự phòng từ hồi làm khu chuồng chim cánh cụt. Tôi sẽ xem còn lại những gì sau khi mình đo xong bể san hô.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p><strong>M:</strong> I've just been speaking to the aquarium director. He wants us to fit new lighting above the reef tank as well as the seal pool. He wants to be certain the animals get the right light through the winter months.</p>\n<p><strong>W:</strong> Right, let's head over there now and take some readings. Then we can decide what fittings we'll need.</p>\n<p><strong>M:</strong> Sure. We have some spare brackets left over from when we did the penguin enclosure. I'll see what's still there once we've finished measuring the reef tank.</p>",
+    "order_index": 59,
+    "created_at": "2026-09-21T12:53:21.047592+00:00",
+    "title": "Questions 59-61",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "I've just been speaking to the aquarium director. He wants us to fit new lighting above the reef tank as well as the seal pool. He wants to be certain the animals get the right light through the winter months.",
+          "speaker": "M"
+        },
+        {
+          "text": "Right, let's head over there now and take some readings. Then we can decide what fittings we'll need.",
+          "speaker": "W"
+        },
+        {
+          "text": "Sure. We have some spare brackets left over from when we did the penguin enclosure. I'll see what's still there once we've finished measuring the reef tank.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Tôi vừa nói chuyện với giám đốc thủy cung. Ông ấy muốn chúng ta lắp hệ thống đèn mới phía trên bể san hô và cả hồ hải cẩu nữa. Ông ấy muốn chắc chắn rằng các con vật nhận đủ ánh sáng phù hợp suốt những tháng mùa đông.",
+          "speaker": "M"
+        },
+        {
+          "text": "Được, vậy giờ mình sang đó luôn và đo vài chỉ số đi. Rồi mình sẽ quyết định cần loại đèn nào.",
+          "speaker": "W"
+        },
+        {
+          "text": "Ừ. Chúng ta còn mấy giá đỡ dự phòng từ hồi làm khu chuồng chim cánh cụt. Tôi sẽ xem còn lại những gì sau khi mình đo xong bể san hô.",
+          "speaker": "M"
+        }
+      ],
+      "audio_file": "59-61.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:32:46.657Z",
+        "audio_job_id": "1712a265-4931-41cc-a215-eb0e7e1d2de1",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Br"
+        },
+        "audio_built_at": "2026-09-23T12:32:46.761Z",
+        "rendered_turns": [
+          {
+            "text": "I've just been speaking to the aquarium director. He wants us to fit new lighting above the reef tank as well as the seal pool. He wants to be certain the animals get the right light through the winter months.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Right, let's head over there now and take some readings. Then we can decide what fittings we'll need.",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Sure. We have some spare brackets left over from when we did the penguin enclosure. I'll see what's still there once we've finished measuring the reef tank.",
+            "speaker": "M-Au"
+          }
+        ]
+      },
+      "group_label": "conv10",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "28eaa151-f35b-4a8f-b22e-d9ac8aaac048",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q62/job-7a30e201-7e30-42d8-9ea2-067e1fa0861b.wav",
+    "passage_text": "<p><strong>M:</strong> Good morning, Ms. Radcliffe. Sorry I'm a bit late. The bridge was closed.</p>\n<p><strong>W:</strong> Not to worry, but the store's going to be very busy this morning. A large home-improvement show opens in town today, and a lot of exhibitors from out of town have booked tools for their stands.</p>\n<p><strong>M:</strong> Understood. What would you like me to do first?</p>\n<p><strong>W:</strong> I'd like you to begin by checking the batteries in our cordless saws. We need to be certain they're all fully charged.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Chào bà Radcliffe. Xin lỗi vì tôi đến hơi muộn. Cây cầu bị đóng.</p>\n<p><strong>W:</strong> Không sao đâu, nhưng sáng nay cửa hàng sẽ rất đông khách đấy. Hôm nay trong thành phố khai mạc một hội chợ cải tạo nhà cửa quy mô lớn, và rất nhiều đơn vị trưng bày từ nơi khác đã đặt thuê dụng cụ cho gian hàng của họ.</p>\n<p><strong>M:</strong> Tôi hiểu rồi. Bà muốn tôi làm gì trước ạ?</p>\n<p><strong>W:</strong> Tôi muốn anh bắt đầu bằng việc kiểm tra pin của các máy cưa không dây. Chúng ta cần chắc chắn là tất cả đều đã được sạc đầy.</p>",
+    "passage_text_3": null,
+    "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/p3-csv/38a433d0-d5eb-4361-81ef-5f60ee876686-Q62/upload-1789995882524.png",
+    "transcript": "<p><strong>M:</strong> Good morning, Ms. Radcliffe. Sorry I'm a bit late. The bridge was closed.</p>\n<p><strong>W:</strong> Not to worry, but the store's going to be very busy this morning. A large home-improvement show opens in town today, and a lot of exhibitors from out of town have booked tools for their stands.</p>\n<p><strong>M:</strong> Understood. What would you like me to do first?</p>\n<p><strong>W:</strong> I'd like you to begin by checking the batteries in our cordless saws. We need to be certain they're all fully charged.</p>",
+    "order_index": 62,
+    "created_at": "2026-09-21T12:53:21.506095+00:00",
+    "title": "Questions 62-64",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Good morning, Ms. Radcliffe. Sorry I'm a bit late. The bridge was closed.",
+          "speaker": "M"
+        },
+        {
+          "text": "Not to worry, but the store's going to be very busy this morning. A large home-improvement show opens in town today, and a lot of exhibitors from out of town have booked tools for their stands.",
+          "speaker": "W"
+        },
+        {
+          "text": "Understood. What would you like me to do first?",
+          "speaker": "M"
+        },
+        {
+          "text": "I'd like you to begin by checking the batteries in our cordless saws. We need to be certain they're all fully charged.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": {
+        "kind": "floor plan",
+        "description": ""
+      },
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào bà Radcliffe. Xin lỗi vì tôi đến hơi muộn. Cây cầu bị đóng.",
+          "speaker": "M"
+        },
+        {
+          "text": "Không sao đâu, nhưng sáng nay cửa hàng sẽ rất đông khách đấy. Hôm nay trong thành phố khai mạc một hội chợ cải tạo nhà cửa quy mô lớn, và rất nhiều đơn vị trưng bày từ nơi khác đã đặt thuê dụng cụ cho gian hàng của họ.",
+          "speaker": "W"
+        },
+        {
+          "text": "Tôi hiểu rồi. Bà muốn tôi làm gì trước ạ?",
+          "speaker": "M"
+        },
+        {
+          "text": "Tôi muốn anh bắt đầu bằng việc kiểm tra pin của các máy cưa không dây. Chúng ta cần chắc chắn là tất cả đều đã được sạc đầy.",
+          "speaker": "W"
+        }
+      ],
+      "audio_file": "62-64.mp3",
+      "image_file": "62-64.png",
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:33:22.489Z",
+        "audio_job_id": "7a30e201-7e30-42d8-9ea2-067e1fa0861b",
+        "speaker_slots": {
+          "M": "M-Cn",
+          "W": "W-Am"
+        },
+        "audio_built_at": "2026-09-23T12:33:22.572Z",
+        "graphic_source": "admin_upload",
+        "rendered_turns": [
+          {
+            "text": "Good morning, Ms. Radcliffe. Sorry I'm a bit late. The bridge was closed.",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "Not to worry, but the store's going to be very busy this morning. A large home-improvement show opens in town today, and a lot of exhibitors from out of town have booked tools for their stands.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Understood. What would you like me to do first?",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "I'd like you to begin by checking the batteries in our cordless saws. We need to be certain they're all fully charged.",
+            "speaker": "W-Am"
+          }
+        ],
+        "graphic_built_at": "2026-09-21T13:04:42.924Z"
+      },
+      "group_label": "conv11",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "74bc9129-5fc1-48ce-9e0f-9535ae447656",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q65/job-0d937cf9-badd-4e88-9795-6b29002406f9.wav",
+    "passage_text": "<p><strong>M:</strong> I've been away on leave, so I missed the team briefing. Could you fill me in?</p>\n<p><strong>W:</strong> Well, all our community consultations and street works are running to plan.</p>\n<p><strong>M:</strong> Good! And the Fenwick Road scheme? We're still intending to put in cycle lanes where the traffic is heaviest, aren't we?</p>\n<p><strong>W:</strong> We are. I'm handling the public information side at the moment. There'll be a photography competition for residents next month, and the deputy mayor will pick the winner.</p>\n<p><strong>M:</strong> Nice. Is there a prize?</p>\n<p><strong>W:</strong> The winner gets a framed print. But everyone who enters gets a free travel pass. We'll be putting the competition posters on the busiest of these four routes, since that's where most people will see them.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Tôi vừa nghỉ phép nên lỡ mất buổi họp phổ biến của nhóm. Chị cập nhật giúp tôi được không?</p>\n<p><strong>W:</strong> À, tất cả các buổi tham vấn cộng đồng và công tác thi công đường phố của mình đều đang đúng kế hoạch.</p>\n<p><strong>M:</strong> Tốt quá! Còn dự án đường Fenwick thì sao? Chúng ta vẫn định làm làn xe đạp ở nơi có mật độ giao thông cao nhất, đúng không?</p>\n<p><strong>W:</strong> Đúng vậy. Hiện tôi đang phụ trách mảng thông tin cho công chúng. Tháng tới sẽ có một cuộc thi ảnh dành cho cư dân, và phó thị trưởng sẽ chọn người thắng cuộc.</p>\n<p><strong>M:</strong> Hay đấy. Có giải thưởng không?</p>\n<p><strong>W:</strong> Người thắng cuộc sẽ nhận một bức ảnh đóng khung. Nhưng ai dự thi cũng được tặng một vé đi lại miễn phí. Chúng ta sẽ treo áp phích cuộc thi trên tuyến đông khách nhất trong bốn tuyến này, vì đó là nơi nhiều người sẽ nhìn thấy nhất.</p>",
+    "passage_text_3": null,
+    "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/p3-csv/38a433d0-d5eb-4361-81ef-5f60ee876686-Q65/upload-1789995883805.png",
+    "transcript": "<p><strong>M:</strong> I've been away on leave, so I missed the team briefing. Could you fill me in?</p>\n<p><strong>W:</strong> Well, all our community consultations and street works are running to plan.</p>\n<p><strong>M:</strong> Good! And the Fenwick Road scheme? We're still intending to put in cycle lanes where the traffic is heaviest, aren't we?</p>\n<p><strong>W:</strong> We are. I'm handling the public information side at the moment. There'll be a photography competition for residents next month, and the deputy mayor will pick the winner.</p>\n<p><strong>M:</strong> Nice. Is there a prize?</p>\n<p><strong>W:</strong> The winner gets a framed print. But everyone who enters gets a free travel pass. We'll be putting the competition posters on the busiest of these four routes, since that's where most people will see them.</p>",
+    "order_index": 65,
+    "created_at": "2026-09-21T12:53:22.013477+00:00",
+    "title": "Questions 65-67",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "I've been away on leave, so I missed the team briefing. Could you fill me in?",
+          "speaker": "M"
+        },
+        {
+          "text": "Well, all our community consultations and street works are running to plan.",
+          "speaker": "W"
+        },
+        {
+          "text": "Good! And the Fenwick Road scheme? We're still intending to put in cycle lanes where the traffic is heaviest, aren't we?",
+          "speaker": "M"
+        },
+        {
+          "text": "We are. I'm handling the public information side at the moment. There'll be a photography competition for residents next month, and the deputy mayor will pick the winner.",
+          "speaker": "W"
+        },
+        {
+          "text": "Nice. Is there a prize?",
+          "speaker": "M"
+        },
+        {
+          "text": "The winner gets a framed print. But everyone who enters gets a free travel pass. We'll be putting the competition posters on the busiest of these four routes, since that's where most people will see them.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": {
+        "kind": "table",
+        "description": ""
+      },
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Tôi vừa nghỉ phép nên lỡ mất buổi họp phổ biến của nhóm. Chị cập nhật giúp tôi được không?",
+          "speaker": "M"
+        },
+        {
+          "text": "À, tất cả các buổi tham vấn cộng đồng và công tác thi công đường phố của mình đều đang đúng kế hoạch.",
+          "speaker": "W"
+        },
+        {
+          "text": "Tốt quá! Còn dự án đường Fenwick thì sao? Chúng ta vẫn định làm làn xe đạp ở nơi có mật độ giao thông cao nhất, đúng không?",
+          "speaker": "M"
+        },
+        {
+          "text": "Đúng vậy. Hiện tôi đang phụ trách mảng thông tin cho công chúng. Tháng tới sẽ có một cuộc thi ảnh dành cho cư dân, và phó thị trưởng sẽ chọn người thắng cuộc.",
+          "speaker": "W"
+        },
+        {
+          "text": "Hay đấy. Có giải thưởng không?",
+          "speaker": "M"
+        },
+        {
+          "text": "Người thắng cuộc sẽ nhận một bức ảnh đóng khung. Nhưng ai dự thi cũng được tặng một vé đi lại miễn phí. Chúng ta sẽ treo áp phích cuộc thi trên tuyến đông khách nhất trong bốn tuyến này, vì đó là nơi nhiều người sẽ nhìn thấy nhất.",
+          "speaker": "W"
+        }
+      ],
+      "audio_file": "65-67.mp3",
+      "image_file": "65-67.png",
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          },
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:34:03.690Z",
+        "audio_job_id": "0d937cf9-badd-4e88-9795-6b29002406f9",
+        "speaker_slots": {
+          "M": "M-Cn",
+          "W": "W-Br"
+        },
+        "audio_built_at": "2026-09-23T12:34:03.771Z",
+        "graphic_source": "admin_upload",
+        "rendered_turns": [
+          {
+            "text": "I've been away on leave, so I missed the team briefing. Could you fill me in?",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "Well, all our community consultations and street works are running to plan.",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Good! And the Fenwick Road scheme? We're still intending to put in cycle lanes where the traffic is heaviest, aren't we?",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "We are. I'm handling the public information side at the moment. There'll be a photography competition for residents next month, and the deputy mayor will pick the winner.",
+            "speaker": "W-Br"
+          },
+          {
+            "text": "Nice. Is there a prize?",
+            "speaker": "M-Cn"
+          },
+          {
+            "text": "The winner gets a framed print. But everyone who enters gets a free travel pass. We'll be putting the competition posters on the busiest of these four routes, since that's where most people will see them.",
+            "speaker": "W-Br"
+          }
+        ],
+        "graphic_built_at": "2026-09-21T13:04:44.300Z"
+      },
+      "group_label": "conv12",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "60fed353-cd69-4ea8-80f3-82d69e39d84f",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 3,
+    "passage_type": "conversation",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a3/38a433d0-d5eb-4361-81ef-5f60ee876686-Q68/job-f3eb041f-9bce-407a-bef1-d17f617af1ae.wav",
+    "passage_text": "<p><strong>M:</strong> Hi, I'd like fifty color flyers and a roll of packing tape, please.</p>\n<p><strong>W:</strong> Certainly. That comes to fourteen dollars. Are you a Kestrel Services club member?</p>\n<p><strong>M:</strong> Uh, no I'm not. But I do have a student card.</p>\n<p><strong>W:</strong> Great. Let me apply that for you.</p>\n<p><strong>M:</strong> By the way, I'd like to order business cards for my team next week. Can I put that order in now?</p>\n<p><strong>W:</strong> Of course. Would you like to do that today?</p>\n<p><strong>M:</strong> No, I'll call you later today once I know how many everyone needs. Thanks for explaining.</p>",
+    "passage_text_2": "<p><strong>M:</strong> Chào chị, tôi muốn in năm mươi tờ rơi màu và mua một cuộn băng dính đóng gói.</p>\n<p><strong>W:</strong> Vâng ạ. Tổng cộng là mười bốn đô la. Anh có phải hội viên câu lạc bộ Kestrel Services không ạ?</p>\n<p><strong>M:</strong> À, tôi không phải. Nhưng tôi có thẻ sinh viên.</p>\n<p><strong>W:</strong> Tuyệt ạ. Để tôi áp dụng ưu đãi đó cho anh.</p>\n<p><strong>M:</strong> À nhân tiện, tuần sau tôi muốn đặt in danh thiếp cho nhóm của mình. Tôi đặt luôn bây giờ được không?</p>\n<p><strong>W:</strong> Dĩ nhiên rồi. Anh có muốn đặt hôm nay luôn không ạ?</p>\n<p><strong>M:</strong> Không, cuối ngày hôm nay tôi sẽ gọi cho chị khi biết mọi người cần bao nhiêu. Cảm ơn chị đã giải thích.</p>",
+    "passage_text_3": null,
+    "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/p3-csv/38a433d0-d5eb-4361-81ef-5f60ee876686-Q68/upload-1789995885626.png",
+    "transcript": "<p><strong>M:</strong> Hi, I'd like fifty color flyers and a roll of packing tape, please.</p>\n<p><strong>W:</strong> Certainly. That comes to fourteen dollars. Are you a Kestrel Services club member?</p>\n<p><strong>M:</strong> Uh, no I'm not. But I do have a student card.</p>\n<p><strong>W:</strong> Great. Let me apply that for you.</p>\n<p><strong>M:</strong> By the way, I'd like to order business cards for my team next week. Can I put that order in now?</p>\n<p><strong>W:</strong> Of course. Would you like to do that today?</p>\n<p><strong>M:</strong> No, I'll call you later today once I know how many everyone needs. Thanks for explaining.</p>",
+    "order_index": 68,
+    "created_at": "2026-09-21T12:53:22.484394+00:00",
+    "title": "Questions 68-70",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Hi, I'd like fifty color flyers and a roll of packing tape, please.",
+          "speaker": "M"
+        },
+        {
+          "text": "Certainly. That comes to fourteen dollars. Are you a Kestrel Services club member?",
+          "speaker": "W"
+        },
+        {
+          "text": "Uh, no I'm not. But I do have a student card.",
+          "speaker": "M"
+        },
+        {
+          "text": "Great. Let me apply that for you.",
+          "speaker": "W"
+        },
+        {
+          "text": "By the way, I'd like to order business cards for my team next week. Can I put that order in now?",
+          "speaker": "M"
+        },
+        {
+          "text": "Of course. Would you like to do that today?",
+          "speaker": "W"
+        },
+        {
+          "text": "No, I'll call you later today once I know how many everyone needs. Thanks for explaining.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": {
+        "kind": "sign",
+        "description": ""
+      },
+      "version": "p3-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào chị, tôi muốn in năm mươi tờ rơi màu và mua một cuộn băng dính đóng gói.",
+          "speaker": "M"
+        },
+        {
+          "text": "Vâng ạ. Tổng cộng là mười bốn đô la. Anh có phải hội viên câu lạc bộ Kestrel Services không ạ?",
+          "speaker": "W"
+        },
+        {
+          "text": "À, tôi không phải. Nhưng tôi có thẻ sinh viên.",
+          "speaker": "M"
+        },
+        {
+          "text": "Tuyệt ạ. Để tôi áp dụng ưu đãi đó cho anh.",
+          "speaker": "W"
+        },
+        {
+          "text": "À nhân tiện, tuần sau tôi muốn đặt in danh thiếp cho nhóm của mình. Tôi đặt luôn bây giờ được không?",
+          "speaker": "M"
+        },
+        {
+          "text": "Dĩ nhiên rồi. Anh có muốn đặt hôm nay luôn không ạ?",
+          "speaker": "W"
+        },
+        {
+          "text": "Không, cuối ngày hôm nay tôi sẽ gọi cho chị khi biết mọi người cần bao nhiêu. Cảm ơn chị đã giải thích.",
+          "speaker": "M"
+        }
+      ],
+      "audio_file": "68-70.mp3",
+      "image_file": "68-70.png",
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          },
+          "W-Am": {
+            "label": "ETS W-Am",
+            "speed": 0.86,
+            "accent": "American",
+            "gender": "female",
+            "voiceId": "8A4sp9DPNDmKE8Xnup1m"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "rendered_at": "2026-09-23T12:34:46.176Z",
+        "audio_job_id": "f3eb041f-9bce-407a-bef1-d17f617af1ae",
+        "speaker_slots": {
+          "M": "M-Au",
+          "W": "W-Am"
+        },
+        "audio_built_at": "2026-09-23T12:34:46.257Z",
+        "graphic_source": "admin_upload",
+        "rendered_turns": [
+          {
+            "text": "Hi, I'd like fifty color flyers and a roll of packing tape, please.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Certainly. That comes to fourteen dollars. Are you a Kestrel Services club member?",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "Uh, no I'm not. But I do have a student card.",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Great. Let me apply that for you.",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "By the way, I'd like to order business cards for my team next week. Can I put that order in now?",
+            "speaker": "M-Au"
+          },
+          {
+            "text": "Of course. Would you like to do that today?",
+            "speaker": "W-Am"
+          },
+          {
+            "text": "No, I'll call you later today once I know how many everyone needs. Thanks for explaining.",
+            "speaker": "M-Au"
+          }
+        ],
+        "graphic_built_at": "2026-09-21T13:04:46.120Z"
+      },
+      "group_label": "conv13",
+      "speaker_count": 2,
+      "speaker_labels": [
+        "M",
+        "W"
+      ]
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "2eca0476-7d6c-4c54-a570-df0841b5f51c",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q71/job-f44059ca-3bc2-4088-b1d9-d6566a47c8c5.wav",
+    "passage_text": "<p>Hi, Dmitri. It's Wren from Clay Harbour Studio. I've just sent off the mugs and serving bowls you ordered from me last month. Since you've been buying from us for more than eight years, I tucked a small thank-you into the box as well. It's a set of six coasters, glazed to match. They're something I've only just begun making, so do ring me once the parcel turns up. I'd love to know what you make of them.</p>",
+    "passage_text_2": "<p>Chào Dmitri. Wren ở Clay Harbour Studio đây. Tôi vừa gửi đi những chiếc cốc và tô đựng thức ăn mà anh đặt của tôi hồi tháng trước. Vì anh đã mua hàng của chúng tôi hơn tám năm nay, tôi có gửi kèm trong hộp một món quà cảm ơn nhỏ. Đó là một bộ sáu miếng lót ly, được tráng men đồng bộ với bộ cốc. Đây là món tôi mới bắt đầu làm, nên khi nhận được bưu kiện thì anh nhớ gọi cho tôi nhé. Tôi rất muốn biết anh thấy chúng thế nào.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Hi, Dmitri. It's Wren from Clay Harbour Studio. I've just sent off the mugs and serving bowls you ordered from me last month. Since you've been buying from us for more than eight years, I tucked a small thank-you into the box as well. It's a set of six coasters, glazed to match. They're something I've only just begun making, so do ring me once the parcel turns up. I'd love to know what you make of them.</p>",
+    "order_index": 71,
+    "created_at": "2026-09-21T12:53:26.487079+00:00",
+    "title": "Questions 71-73",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Hi, Dmitri. It's Wren from Clay Harbour Studio. I've just sent off the mugs and serving bowls you ordered from me last month. Since you've been buying from us for more than eight years, I tucked a small thank-you into the box as well. It's a set of six coasters, glazed to match. They're something I've only just begun making, so do ring me once the parcel turns up. I'd love to know what you make of them.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào Dmitri. Wren ở Clay Harbour Studio đây. Tôi vừa gửi đi những chiếc cốc và tô đựng thức ăn mà anh đặt của tôi hồi tháng trước. Vì anh đã mua hàng của chúng tôi hơn tám năm nay, tôi có gửi kèm trong hộp một món quà cảm ơn nhỏ. Đó là một bộ sáu miếng lót ly, được tráng men đồng bộ với bộ cốc. Đây là món tôi mới bắt đầu làm, nên khi nhận được bưu kiện thì anh nhớ gọi cho tôi nhé. Tôi rất muốn biết anh thấy chúng thế nào.",
+          "speaker": "W"
+        }
+      ],
+      "talk_type": "Telephone message",
+      "audio_file": "71-73.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "W-Br",
+        "rendered_at": "2026-09-23T12:38:38.928Z",
+        "audio_job_id": "f44059ca-3bc2-4088-b1d9-d6566a47c8c5",
+        "audio_built_at": "2026-09-23T12:38:39.017Z",
+        "rendered_turns": [
+          {
+            "text": "Hi, Dmitri. It's Wren from Clay Harbour Studio. I've just sent off the mugs and serving bowls you ordered from me last month. Since you've been buying from us for more than eight years, I tucked a small thank-you into the box as well. It's a set of six coasters, glazed to match. They're something I've only just begun making, so do ring me once the parcel turns up. I'd love to know what you make of them.",
+            "speaker": "W"
+          }
+        ]
+      },
+      "group_label": "talk1",
+      "speaker_label": "W"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "4ad81888-1e05-48e9-ab41-0fbe1dcd909e",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q74/job-ef62cb1b-13ce-410f-b35a-91d873e33ae3.wav",
+    "passage_text": "<p>Good afternoon, this is Nadia at Ellsworth Furniture Restoration, getting back to you. We picked up your message about having an old rocking chair repaired. You don't have to bring the chair to us. We'd rather you send a few clear photographs first. And to answer what you asked, the whole booking can be done through our site. Just go to our page, choose the finish and the fabric, then upload your pictures. For a modest extra charge, we'll cover any repairs the chair needs in its first two years back with you. Do tick that option when you book.</p>",
+    "passage_text_2": "<p>Chào buổi chiều, tôi là Nadia ở Ellsworth Furniture Restoration, gọi lại cho anh chị. Chúng tôi đã nhận được lời nhắn của anh chị về việc sửa một chiếc ghế bập bênh cũ. Anh chị không cần mang ghế đến chỗ chúng tôi. Chúng tôi muốn anh chị gửi trước vài tấm ảnh rõ nét. Và để trả lời câu anh chị hỏi, toàn bộ việc đặt lịch có thể thực hiện qua trang web của chúng tôi. Anh chị chỉ cần vào trang, chọn lớp hoàn thiện và loại vải bọc, rồi tải ảnh lên. Với một khoản phụ phí nhỏ, chúng tôi sẽ lo mọi sửa chữa mà chiếc ghế cần trong hai năm đầu sau khi trả lại cho anh chị. Nhớ đánh dấu chọn mục đó khi đặt lịch nhé.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Good afternoon, this is Nadia at Ellsworth Furniture Restoration, getting back to you. We picked up your message about having an old rocking chair repaired. You don't have to bring the chair to us. We'd rather you send a few clear photographs first. And to answer what you asked, the whole booking can be done through our site. Just go to our page, choose the finish and the fabric, then upload your pictures. For a modest extra charge, we'll cover any repairs the chair needs in its first two years back with you. Do tick that option when you book.</p>",
+    "order_index": 74,
+    "created_at": "2026-09-21T12:53:27.01301+00:00",
+    "title": "Questions 74-76",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Good afternoon, this is Nadia at Ellsworth Furniture Restoration, getting back to you. We picked up your message about having an old rocking chair repaired. You don't have to bring the chair to us. We'd rather you send a few clear photographs first. And to answer what you asked, the whole booking can be done through our site. Just go to our page, choose the finish and the fabric, then upload your pictures. For a modest extra charge, we'll cover any repairs the chair needs in its first two years back with you. Do tick that option when you book.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào buổi chiều, tôi là Nadia ở Ellsworth Furniture Restoration, gọi lại cho anh chị. Chúng tôi đã nhận được lời nhắn của anh chị về việc sửa một chiếc ghế bập bênh cũ. Anh chị không cần mang ghế đến chỗ chúng tôi. Chúng tôi muốn anh chị gửi trước vài tấm ảnh rõ nét. Và để trả lời câu anh chị hỏi, toàn bộ việc đặt lịch có thể thực hiện qua trang web của chúng tôi. Anh chị chỉ cần vào trang, chọn lớp hoàn thiện và loại vải bọc, rồi tải ảnh lên. Với một khoản phụ phí nhỏ, chúng tôi sẽ lo mọi sửa chữa mà chiếc ghế cần trong hai năm đầu sau khi trả lại cho anh chị. Nhớ đánh dấu chọn mục đó khi đặt lịch nhé.",
+          "speaker": "W"
+        }
+      ],
+      "talk_type": "Telephone message",
+      "audio_file": "74-76.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "W-Br",
+        "rendered_at": "2026-09-23T12:39:08.087Z",
+        "audio_job_id": "ef62cb1b-13ce-410f-b35a-91d873e33ae3",
+        "audio_built_at": "2026-09-23T12:39:08.176Z",
+        "rendered_turns": [
+          {
+            "text": "Good afternoon, this is Nadia at Ellsworth Furniture Restoration, getting back to you. We picked up your message about having an old rocking chair repaired. You don't have to bring the chair to us. We'd rather you send a few clear photographs first. And to answer what you asked, the whole booking can be done through our site. Just go to our page, choose the finish and the fabric, then upload your pictures. For a modest extra charge, we'll cover any repairs the chair needs in its first two years back with you. Do tick that option when you book.",
+            "speaker": "W"
+          }
+        ]
+      },
+      "group_label": "talk2",
+      "speaker_label": "W"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "080bfd52-4b40-41c1-bb24-b1cf0b3866c5",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q77/job-0d19a2d3-340f-4164-ad76-43f939344809.wav",
+    "passage_text": "<p>Welcome, everyone, to this month's session in our reader outreach series. Our branch is well known for the way we look after visitors, and that's largely because of you, the library team. Today's session is about drawing in the young readers who use our study rooms through short group challenges. I've put together several kinds of exercises for us to sample, from quiet puzzle work to challenges that get people moving around the room. But I should warn you that I have to head off at one o'clock today. We'll sample the rest of the challenges at our next session.</p>",
+    "passage_text_2": "<p>Chào mừng mọi người đến với buổi sinh hoạt tháng này trong chuỗi chương trình tiếp cận bạn đọc của chúng ta. Chi nhánh của chúng ta nổi tiếng về cách chăm sóc khách đến thư viện, và điều đó phần lớn là nhờ các bạn, đội ngũ thư viện. Buổi hôm nay nói về cách thu hút các bạn đọc nhỏ tuổi đang dùng phòng tự học của chúng ta thông qua những thử thách nhóm ngắn. Tôi đã chuẩn bị nhiều loại bài tập để chúng ta thử, từ giải đố yên lặng đến những thử thách khiến mọi người phải di chuyển quanh phòng. Nhưng tôi phải báo trước là hôm nay tôi phải đi lúc một giờ. Chúng ta sẽ thử những thử thách còn lại vào buổi sau.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Welcome, everyone, to this month's session in our reader outreach series. Our branch is well known for the way we look after visitors, and that's largely because of you, the library team. Today's session is about drawing in the young readers who use our study rooms through short group challenges. I've put together several kinds of exercises for us to sample, from quiet puzzle work to challenges that get people moving around the room. But I should warn you that I have to head off at one o'clock today. We'll sample the rest of the challenges at our next session.</p>",
+    "order_index": 77,
+    "created_at": "2026-09-21T12:53:27.723013+00:00",
+    "title": "Questions 77-79",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Welcome, everyone, to this month's session in our reader outreach series. Our branch is well known for the way we look after visitors, and that's largely because of you, the library team. Today's session is about drawing in the young readers who use our study rooms through short group challenges. I've put together several kinds of exercises for us to sample, from quiet puzzle work to challenges that get people moving around the room. But I should warn you that I have to head off at one o'clock today. We'll sample the rest of the challenges at our next session.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào mừng mọi người đến với buổi sinh hoạt tháng này trong chuỗi chương trình tiếp cận bạn đọc của chúng ta. Chi nhánh của chúng ta nổi tiếng về cách chăm sóc khách đến thư viện, và điều đó phần lớn là nhờ các bạn, đội ngũ thư viện. Buổi hôm nay nói về cách thu hút các bạn đọc nhỏ tuổi đang dùng phòng tự học của chúng ta thông qua những thử thách nhóm ngắn. Tôi đã chuẩn bị nhiều loại bài tập để chúng ta thử, từ giải đố yên lặng đến những thử thách khiến mọi người phải di chuyển quanh phòng. Nhưng tôi phải báo trước là hôm nay tôi phải đi lúc một giờ. Chúng ta sẽ thử những thử thách còn lại vào buổi sau.",
+          "speaker": "M"
+        }
+      ],
+      "talk_type": "Talk",
+      "audio_file": "77-79.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "M-Cn",
+        "rendered_at": "2026-09-23T12:39:37.395Z",
+        "audio_job_id": "0d19a2d3-340f-4164-ad76-43f939344809",
+        "audio_built_at": "2026-09-23T12:39:37.478Z",
+        "rendered_turns": [
+          {
+            "text": "Welcome, everyone, to this month's session in our reader outreach series. Our branch is well known for the way we look after visitors, and that's largely because of you, the library team. Today's session is about drawing in the young readers who use our study rooms through short group challenges. I've put together several kinds of exercises for us to sample, from quiet puzzle work to challenges that get people moving around the room. But I should warn you that I have to head off at one o'clock today. We'll sample the rest of the challenges at our next session.",
+            "speaker": "M"
+          }
+        ]
+      },
+      "group_label": "talk3",
+      "speaker_label": "M"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "e7d0cd88-2737-44eb-bee0-3ba53bded091",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q80/job-da7a7058-672a-4c3b-a2c4-77d9e3c48f9e.wav",
+    "passage_text": "<p>Are you a licensed electrician? Brightwater Line Services is taking on qualified electricians to join our crews this spring. As the name tells you, we maintain power lines across the whole valley. At Brightwater, crews pick their own shift patterns. In fact, no other employer in the valley lets its staff set their own weekly schedule. If you have never worked on power lines or utility poles before, we will train you. Have a look at our site for the full list of roles we are filling. We would love to have you on board.</p>",
+    "passage_text_2": "<p>Bạn là thợ điện có chứng chỉ hành nghề? Brightwater Line Services đang tuyển thợ điện có chuyên môn gia nhập các đội của chúng tôi trong mùa xuân này. Đúng như tên gọi, chúng tôi bảo trì đường dây điện trên khắp thung lũng. Tại Brightwater, các đội tự chọn lịch ca của mình. Thực tế, không có nhà tuyển dụng nào khác trong thung lũng cho phép nhân viên tự đặt lịch làm việc hằng tuần. Nếu bạn chưa từng làm việc với đường dây điện hay cột điện, chúng tôi sẽ đào tạo bạn. Hãy xem trang web của chúng tôi để biết danh sách đầy đủ các vị trí đang tuyển. Chúng tôi rất mong được chào đón bạn.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Are you a licensed electrician? Brightwater Line Services is taking on qualified electricians to join our crews this spring. As the name tells you, we maintain power lines across the whole valley. At Brightwater, crews pick their own shift patterns. In fact, no other employer in the valley lets its staff set their own weekly schedule. If you have never worked on power lines or utility poles before, we will train you. Have a look at our site for the full list of roles we are filling. We would love to have you on board.</p>",
+    "order_index": 80,
+    "created_at": "2026-09-21T12:53:28.397478+00:00",
+    "title": "Questions 80-82",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Are you a licensed electrician? Brightwater Line Services is taking on qualified electricians to join our crews this spring. As the name tells you, we maintain power lines across the whole valley. At Brightwater, crews pick their own shift patterns. In fact, no other employer in the valley lets its staff set their own weekly schedule. If you have never worked on power lines or utility poles before, we will train you. Have a look at our site for the full list of roles we are filling. We would love to have you on board.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Bạn là thợ điện có chứng chỉ hành nghề? Brightwater Line Services đang tuyển thợ điện có chuyên môn gia nhập các đội của chúng tôi trong mùa xuân này. Đúng như tên gọi, chúng tôi bảo trì đường dây điện trên khắp thung lũng. Tại Brightwater, các đội tự chọn lịch ca của mình. Thực tế, không có nhà tuyển dụng nào khác trong thung lũng cho phép nhân viên tự đặt lịch làm việc hằng tuần. Nếu bạn chưa từng làm việc với đường dây điện hay cột điện, chúng tôi sẽ đào tạo bạn. Hãy xem trang web của chúng tôi để biết danh sách đầy đủ các vị trí đang tuyển. Chúng tôi rất mong được chào đón bạn.",
+          "speaker": "M"
+        }
+      ],
+      "talk_type": "Advertisement",
+      "audio_file": "80-82.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "M-Cn",
+        "rendered_at": "2026-09-23T12:40:06.550Z",
+        "audio_job_id": "da7a7058-672a-4c3b-a2c4-77d9e3c48f9e",
+        "audio_built_at": "2026-09-23T12:40:06.636Z",
+        "rendered_turns": [
+          {
+            "text": "Are you a licensed electrician? Brightwater Line Services is taking on qualified electricians to join our crews this spring. As the name tells you, we maintain power lines across the whole valley. At Brightwater, crews pick their own shift patterns. In fact, no other employer in the valley lets its staff set their own weekly schedule. If you have never worked on power lines or utility poles before, we will train you. Have a look at our site for the full list of roles we are filling. We would love to have you on board.",
+            "speaker": "M"
+          }
+        ]
+      },
+      "group_label": "talk4",
+      "speaker_label": "M"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "40a72445-ff95-4137-96bc-9a04a31c1c2d",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q83/job-699107fd-7f00-434a-b7fa-9bda9f062ddc.wav",
+    "passage_text": "<p>Hello, Priti. I've got some good news! A magazine called Market Street Style wants to run a piece on our workshop next month. A photographer is due in on Thursday to shoot the team cutting and stitching during the afternoon shift. As you run the workroom, I'll want you in ahead of the usual hour so the benches are cleared and ready. And a quick reminder, I'm still away the week after that for the Halloway Textile Fair. Thanks!</p>",
+    "passage_text_2": "<p>Chào Priti. Tôi có tin vui đây! Một tạp chí tên là Market Street Style muốn đăng bài về xưởng của chúng ta vào tháng tới. Một nhiếp ảnh gia sẽ đến vào thứ Năm để chụp cả nhóm đang cắt và may trong ca chiều. Vì chị phụ trách phòng may, tôi muốn chị đến sớm hơn giờ thường lệ để các bàn làm việc được dọn gọn và sẵn sàng. Và nhắc nhanh một chút, tuần sau đó tôi vẫn đi vắng để dự Hội chợ Dệt may Halloway. Cảm ơn chị!</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Hello, Priti. I've got some good news! A magazine called Market Street Style wants to run a piece on our workshop next month. A photographer is due in on Thursday to shoot the team cutting and stitching during the afternoon shift. As you run the workroom, I'll want you in ahead of the usual hour so the benches are cleared and ready. And a quick reminder, I'm still away the week after that for the Halloway Textile Fair. Thanks!</p>",
+    "order_index": 83,
+    "created_at": "2026-09-21T12:53:28.939154+00:00",
+    "title": "Questions 83-85",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Hello, Priti. I've got some good news! A magazine called Market Street Style wants to run a piece on our workshop next month. A photographer is due in on Thursday to shoot the team cutting and stitching during the afternoon shift. As you run the workroom, I'll want you in ahead of the usual hour so the benches are cleared and ready. And a quick reminder, I'm still away the week after that for the Halloway Textile Fair. Thanks!",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào Priti. Tôi có tin vui đây! Một tạp chí tên là Market Street Style muốn đăng bài về xưởng của chúng ta vào tháng tới. Một nhiếp ảnh gia sẽ đến vào thứ Năm để chụp cả nhóm đang cắt và may trong ca chiều. Vì chị phụ trách phòng may, tôi muốn chị đến sớm hơn giờ thường lệ để các bàn làm việc được dọn gọn và sẵn sàng. Và nhắc nhanh một chút, tuần sau đó tôi vẫn đi vắng để dự Hội chợ Dệt may Halloway. Cảm ơn chị!",
+          "speaker": "W"
+        }
+      ],
+      "talk_type": "Telephone message",
+      "audio_file": "83-85.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "W-Br",
+        "rendered_at": "2026-09-23T12:40:36.198Z",
+        "audio_job_id": "699107fd-7f00-434a-b7fa-9bda9f062ddc",
+        "audio_built_at": "2026-09-23T12:40:36.305Z",
+        "rendered_turns": [
+          {
+            "text": "Hello, Priti. I've got some good news! A magazine called Market Street Style wants to run a piece on our workshop next month. A photographer is due in on Thursday to shoot the team cutting and stitching during the afternoon shift. As you run the workroom, I'll want you in ahead of the usual hour so the benches are cleared and ready. And a quick reminder, I'm still away the week after that for the Halloway Textile Fair. Thanks!",
+            "speaker": "W"
+          }
+        ]
+      },
+      "group_label": "talk5",
+      "speaker_label": "W"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "68e45acb-9d04-4ca2-acfc-9c60a4310fd9",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q86/job-57518e95-4185-4938-b753-ede942e339c7.wav",
+    "passage_text": "<p>Good evening, and thanks for joining Newsline Six. I'm reporting from Ashford Green, a small town just east of the state capital. Ashford Green has just been named as the location for a two-hundred-million-dollar solar-powered data center. Planners say the project will create hundreds of jobs, in the construction industry and in the wider area, over the next four years. At a well-attended public hearing last Tuesday, residents were invited to raise objections to the plan. Not a single person spoke against it. Anyone interested can see scale drawings of the site in the lobby of the town hall.</p>",
+    "passage_text_2": "<p>Chào buổi tối, cảm ơn quý vị đã theo dõi Newsline Six. Tôi đang tường thuật từ Ashford Green, một thị trấn nhỏ ngay phía đông thủ phủ bang. Ashford Green vừa được chọn làm địa điểm xây dựng một trung tâm dữ liệu chạy bằng năng lượng mặt trời trị giá hai trăm triệu đô la. Các nhà quy hoạch cho biết dự án sẽ tạo ra hàng trăm việc làm, trong ngành xây dựng và ở khu vực lân cận, trong bốn năm tới. Tại buổi điều trần công khai đông người tham dự vào thứ Ba tuần trước, người dân đã được mời nêu ý kiến phản đối kế hoạch. Không một ai lên tiếng phản đối. Bất kỳ ai quan tâm đều có thể xem bản vẽ tỉ lệ của khu đất tại sảnh tòa thị chính.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Good evening, and thanks for joining Newsline Six. I'm reporting from Ashford Green, a small town just east of the state capital. Ashford Green has just been named as the location for a two-hundred-million-dollar solar-powered data center. Planners say the project will create hundreds of jobs, in the construction industry and in the wider area, over the next four years. At a well-attended public hearing last Tuesday, residents were invited to raise objections to the plan. Not a single person spoke against it. Anyone interested can see scale drawings of the site in the lobby of the town hall.</p>",
+    "order_index": 86,
+    "created_at": "2026-09-21T12:53:29.497485+00:00",
+    "title": "Questions 86-88",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Good evening, and thanks for joining Newsline Six. I'm reporting from Ashford Green, a small town just east of the state capital. Ashford Green has just been named as the location for a two-hundred-million-dollar solar-powered data center. Planners say the project will create hundreds of jobs, in the construction industry and in the wider area, over the next four years. At a well-attended public hearing last Tuesday, residents were invited to raise objections to the plan. Not a single person spoke against it. Anyone interested can see scale drawings of the site in the lobby of the town hall.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào buổi tối, cảm ơn quý vị đã theo dõi Newsline Six. Tôi đang tường thuật từ Ashford Green, một thị trấn nhỏ ngay phía đông thủ phủ bang. Ashford Green vừa được chọn làm địa điểm xây dựng một trung tâm dữ liệu chạy bằng năng lượng mặt trời trị giá hai trăm triệu đô la. Các nhà quy hoạch cho biết dự án sẽ tạo ra hàng trăm việc làm, trong ngành xây dựng và ở khu vực lân cận, trong bốn năm tới. Tại buổi điều trần công khai đông người tham dự vào thứ Ba tuần trước, người dân đã được mời nêu ý kiến phản đối kế hoạch. Không một ai lên tiếng phản đối. Bất kỳ ai quan tâm đều có thể xem bản vẽ tỉ lệ của khu đất tại sảnh tòa thị chính.",
+          "speaker": "M"
+        }
+      ],
+      "talk_type": "News report",
+      "audio_file": "86-88.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "M-Cn",
+        "rendered_at": "2026-09-23T12:41:06.439Z",
+        "audio_job_id": "57518e95-4185-4938-b753-ede942e339c7",
+        "audio_built_at": "2026-09-23T12:41:06.524Z",
+        "rendered_turns": [
+          {
+            "text": "Good evening, and thanks for joining Newsline Six. I'm reporting from Ashford Green, a small town just east of the state capital. Ashford Green has just been named as the location for a two-hundred-million-dollar solar-powered data center. Planners say the project will create hundreds of jobs, in the construction industry and in the wider area, over the next four years. At a well-attended public hearing last Tuesday, residents were invited to raise objections to the plan. Not a single person spoke against it. Anyone interested can see scale drawings of the site in the lobby of the town hall.",
+            "speaker": "M"
+          }
+        ]
+      },
+      "group_label": "talk6",
+      "speaker_label": "M"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "3ff3a825-3f59-4a34-885b-622bc1e1d937",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q89/job-efd481c9-fb6b-4177-932b-87200a02637d.wav",
+    "passage_text": "<p>Fed up with hunting for tools because your garage wall is a jumble? Then the FlexiGrip Wall Rail is exactly what you need. Built with home mechanics like you in mind, this rail can turn the untidiest wall into something you would be proud of. Best of all, the rail stretches to fit whatever run of wall you have free. Make it short or long, just as you please, and changing the length takes less than a minute! Order before Sunday and we will knock 25 percent off the price!</p>",
+    "passage_text_2": "<p>Bạn chán cảnh lục tìm dụng cụ vì bức tường nhà xe lộn xộn? Vậy thì Thanh treo tường FlexiGrip chính là thứ bạn cần. Được thiết kế dành cho những người tự sửa chữa tại nhà như bạn, thanh treo này có thể biến bức tường bừa bộn nhất thành một góc khiến bạn tự hào. Tuyệt vời nhất là thanh treo có thể kéo giãn cho vừa bất kỳ khoảng tường trống nào bạn có. Muốn ngắn hay dài tùy ý, và việc thay đổi chiều dài chỉ mất chưa đầy một phút! Đặt hàng trước Chủ nhật và chúng tôi sẽ giảm 25 phần trăm giá!</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Fed up with hunting for tools because your garage wall is a jumble? Then the FlexiGrip Wall Rail is exactly what you need. Built with home mechanics like you in mind, this rail can turn the untidiest wall into something you would be proud of. Best of all, the rail stretches to fit whatever run of wall you have free. Make it short or long, just as you please, and changing the length takes less than a minute! Order before Sunday and we will knock 25 percent off the price!</p>",
+    "order_index": 89,
+    "created_at": "2026-09-21T12:53:30.143233+00:00",
+    "title": "Questions 89-91",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Fed up with hunting for tools because your garage wall is a jumble? Then the FlexiGrip Wall Rail is exactly what you need. Built with home mechanics like you in mind, this rail can turn the untidiest wall into something you would be proud of. Best of all, the rail stretches to fit whatever run of wall you have free. Make it short or long, just as you please, and changing the length takes less than a minute! Order before Sunday and we will knock 25 percent off the price!",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Bạn chán cảnh lục tìm dụng cụ vì bức tường nhà xe lộn xộn? Vậy thì Thanh treo tường FlexiGrip chính là thứ bạn cần. Được thiết kế dành cho những người tự sửa chữa tại nhà như bạn, thanh treo này có thể biến bức tường bừa bộn nhất thành một góc khiến bạn tự hào. Tuyệt vời nhất là thanh treo có thể kéo giãn cho vừa bất kỳ khoảng tường trống nào bạn có. Muốn ngắn hay dài tùy ý, và việc thay đổi chiều dài chỉ mất chưa đầy một phút! Đặt hàng trước Chủ nhật và chúng tôi sẽ giảm 25 phần trăm giá!",
+          "speaker": "M"
+        }
+      ],
+      "talk_type": "Advertisement",
+      "audio_file": "89-91.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "M-Cn": {
+            "label": "ETS M-Cn",
+            "speed": 0.86,
+            "accent": "Canadian",
+            "gender": "male",
+            "voiceId": "AFx84t7g9kfPD7FGKhV5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "M-Cn",
+        "rendered_at": "2026-09-23T12:41:34.669Z",
+        "audio_job_id": "efd481c9-fb6b-4177-932b-87200a02637d",
+        "audio_built_at": "2026-09-23T12:41:34.762Z",
+        "rendered_turns": [
+          {
+            "text": "Fed up with hunting for tools because your garage wall is a jumble? Then the FlexiGrip Wall Rail is exactly what you need. Built with home mechanics like you in mind, this rail can turn the untidiest wall into something you would be proud of. Best of all, the rail stretches to fit whatever run of wall you have free. Make it short or long, just as you please, and changing the length takes less than a minute! Order before Sunday and we will knock 25 percent off the price!",
+            "speaker": "M"
+          }
+        ]
+      },
+      "group_label": "talk7",
+      "speaker_label": "M"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "22dac3f5-d24c-4c7d-9263-50e7f905cf2a",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q92/job-22597d44-e8a6-4680-acd8-078ceb9ded9a.wav",
+    "passage_text": "<p>Thanks for tuning in to another episode of Rooted. Each week we take one herb and look at how to get the best out of it. Before we start, though, I'm delighted to say I've teamed up with Marlow Garden Works on a range of hand tools. They go on sale in March, though you can reserve a set today. Do bear in mind that we're only making a small run of these. Right, on to the show. Joining me is the well-known grower Ines Baptista, here to talk about this week's herb: rosemary! Ines has just taken over a walled garden in Kent that people are raving about.</p>",
+    "passage_text_2": "<p>Cảm ơn quý vị đã theo dõi một tập mới của Rooted. Mỗi tuần, chúng tôi chọn một loại thảo mộc và tìm hiểu cách tận dụng nó tốt nhất. Nhưng trước khi bắt đầu, tôi rất vui được thông báo rằng tôi đã hợp tác với Marlow Garden Works ra mắt một dòng dụng cụ cầm tay. Chúng sẽ được bán từ tháng Ba, nhưng quý vị có thể đặt trước một bộ ngay hôm nay. Xin lưu ý rằng chúng tôi chỉ sản xuất một số lượng nhỏ. Được rồi, vào chương trình thôi. Cùng tôi hôm nay là nhà trồng trọt nổi tiếng Ines Baptista, người sẽ nói về loại thảo mộc của tuần này: hương thảo! Ines vừa tiếp quản một khu vườn có tường bao ở Kent đang được mọi người hết lời khen ngợi.</p>",
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": "<p>Thanks for tuning in to another episode of Rooted. Each week we take one herb and look at how to get the best out of it. Before we start, though, I'm delighted to say I've teamed up with Marlow Garden Works on a range of hand tools. They go on sale in March, though you can reserve a set today. Do bear in mind that we're only making a small run of these. Right, on to the show. Joining me is the well-known grower Ines Baptista, here to talk about this week's herb: rosemary! Ines has just taken over a walled garden in Kent that people are raving about.</p>",
+    "order_index": 92,
+    "created_at": "2026-09-21T12:53:30.657413+00:00",
+    "title": "Questions 92-94",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Thanks for tuning in to another episode of Rooted. Each week we take one herb and look at how to get the best out of it. Before we start, though, I'm delighted to say I've teamed up with Marlow Garden Works on a range of hand tools. They go on sale in March, though you can reserve a set today. Do bear in mind that we're only making a small run of these. Right, on to the show. Joining me is the well-known grower Ines Baptista, here to talk about this week's herb: rosemary! Ines has just taken over a walled garden in Kent that people are raving about.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": null,
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Cảm ơn quý vị đã theo dõi một tập mới của Rooted. Mỗi tuần, chúng tôi chọn một loại thảo mộc và tìm hiểu cách tận dụng nó tốt nhất. Nhưng trước khi bắt đầu, tôi rất vui được thông báo rằng tôi đã hợp tác với Marlow Garden Works ra mắt một dòng dụng cụ cầm tay. Chúng sẽ được bán từ tháng Ba, nhưng quý vị có thể đặt trước một bộ ngay hôm nay. Xin lưu ý rằng chúng tôi chỉ sản xuất một số lượng nhỏ. Được rồi, vào chương trình thôi. Cùng tôi hôm nay là nhà trồng trọt nổi tiếng Ines Baptista, người sẽ nói về loại thảo mộc của tuần này: hương thảo! Ines vừa tiếp quản một khu vườn có tường bao ở Kent đang được mọi người hết lời khen ngợi.",
+          "speaker": "W"
+        }
+      ],
+      "talk_type": "Podcast",
+      "audio_file": "92-94.mp3",
+      "image_file": null,
+      "media_meta": {
+        "voices": {
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "W-Br",
+        "rendered_at": "2026-09-23T12:42:04.158Z",
+        "audio_job_id": "22597d44-e8a6-4680-acd8-078ceb9ded9a",
+        "audio_built_at": "2026-09-23T12:42:04.253Z",
+        "rendered_turns": [
+          {
+            "text": "Thanks for tuning in to another episode of Rooted. Each week we take one herb and look at how to get the best out of it. Before we start, though, I'm delighted to say I've teamed up with Marlow Garden Works on a range of hand tools. They go on sale in March, though you can reserve a set today. Do bear in mind that we're only making a small run of these. Right, on to the show. Joining me is the well-known grower Ines Baptista, here to talk about this week's herb: rosemary! Ines has just taken over a walled garden in Kent that people are raving about.",
+            "speaker": "W"
+          }
+        ]
+      },
+      "group_label": "talk8",
+      "speaker_label": "W"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "2a8db958-ff95-4924-95dd-8f4a6bec2103",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q95/job-1c950cdf-ff47-487d-9582-c4fec2d3b6fe.wav",
+    "passage_text": "<p>Attention, ferry passengers. Building work to widen and update the terminal is going on. We are sorry for any disturbance the drilling may cause. Please note that sailing times have not been changed. The eleven o'clock sailing to Kestrel Bay is now boarding. Passengers for Kestrel Bay should make their way to Gate 4. If you need a hand with a bicycle or a stroller, speak to a steward straight away. The next stop will be Wrenport, followed by Colby Point and then Kestrel Bay.</p>",
+    "passage_text_2": "<p>Hành khách đi phà xin chú ý. Công trình mở rộng và nâng cấp bến phà đang được thi công. Chúng tôi xin lỗi vì mọi phiền toái mà tiếng khoan có thể gây ra. Xin lưu ý rằng giờ khởi hành không thay đổi. Chuyến mười một giờ đi Kestrel Bay hiện đang đón khách. Hành khách đi Kestrel Bay vui lòng di chuyển đến Cổng 4. Nếu quý khách cần giúp đỡ với xe đạp hoặc xe đẩy em bé, vui lòng liên hệ ngay với nhân viên phục vụ. Bến kế tiếp sẽ là Wrenport, sau đó là Colby Point rồi đến Kestrel Bay.</p>",
+    "passage_text_3": null,
+    "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/p4-csv/38a433d0-d5eb-4361-81ef-5f60ee876686-Q95/upload-1789995887426.png",
+    "transcript": "<p>Attention, ferry passengers. Building work to widen and update the terminal is going on. We are sorry for any disturbance the drilling may cause. Please note that sailing times have not been changed. The eleven o'clock sailing to Kestrel Bay is now boarding. Passengers for Kestrel Bay should make their way to Gate 4. If you need a hand with a bicycle or a stroller, speak to a steward straight away. The next stop will be Wrenport, followed by Colby Point and then Kestrel Bay.</p>",
+    "order_index": 95,
+    "created_at": "2026-09-21T12:53:31.303388+00:00",
+    "title": "Questions 95-97",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Attention, ferry passengers. Building work to widen and update the terminal is going on. We are sorry for any disturbance the drilling may cause. Please note that sailing times have not been changed. The eleven o'clock sailing to Kestrel Bay is now boarding. Passengers for Kestrel Bay should make their way to Gate 4. If you need a hand with a bicycle or a stroller, speak to a steward straight away. The next stop will be Wrenport, followed by Colby Point and then Kestrel Bay.",
+          "speaker": "W"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": {
+        "kind": "schedule",
+        "description": ""
+      },
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Hành khách đi phà xin chú ý. Công trình mở rộng và nâng cấp bến phà đang được thi công. Chúng tôi xin lỗi vì mọi phiền toái mà tiếng khoan có thể gây ra. Xin lưu ý rằng giờ khởi hành không thay đổi. Chuyến mười một giờ đi Kestrel Bay hiện đang đón khách. Hành khách đi Kestrel Bay vui lòng di chuyển đến Cổng 4. Nếu quý khách cần giúp đỡ với xe đạp hoặc xe đẩy em bé, vui lòng liên hệ ngay với nhân viên phục vụ. Bến kế tiếp sẽ là Wrenport, sau đó là Colby Point rồi đến Kestrel Bay.",
+          "speaker": "W"
+        }
+      ],
+      "talk_type": "Announcement",
+      "audio_file": "95-97.mp3",
+      "image_file": "95-97.png",
+      "media_meta": {
+        "voices": {
+          "W-Br": {
+            "label": "ETS W-Br",
+            "speed": 0.86,
+            "accent": "British",
+            "gender": "female",
+            "voiceId": "ENjYCpP3VUCsPIfx4RN5"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "W-Br",
+        "rendered_at": "2026-09-23T12:42:34.683Z",
+        "audio_job_id": "1c950cdf-ff47-487d-9582-c4fec2d3b6fe",
+        "audio_built_at": "2026-09-23T12:42:34.778Z",
+        "graphic_source": "admin_upload",
+        "rendered_turns": [
+          {
+            "text": "Attention, ferry passengers. Building work to widen and update the terminal is going on. We are sorry for any disturbance the drilling may cause. Please note that sailing times have not been changed. The eleven o'clock sailing to Kestrel Bay is now boarding. Passengers for Kestrel Bay should make their way to Gate 4. If you need a hand with a bicycle or a stroller, speak to a steward straight away. The next stop will be Wrenport, followed by Colby Point and then Kestrel Bay.",
+            "speaker": "W"
+          }
+        ],
+        "graphic_built_at": "2026-09-21T13:04:47.926Z"
+      },
+      "group_label": "talk9",
+      "speaker_label": "W"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "64e5be26-8809-4bd8-be98-4afd9bf7efa0",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 4,
+    "passage_type": "talk",
+    "audio_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/a4/38a433d0-d5eb-4361-81ef-5f60ee876686-Q98/job-1b9e3075-e592-41d2-8256-7a09d2f068e8.wav",
+    "passage_text": "<p>Good morning, everyone. I'm Ravi Chandran, the hospital's building programme lead, and I'd like to thank you for coming to this morning's press briefing. As things stand this week, work on two of the three new wings is running to plan. Small changes to the layout of the West Wing have set that part of the job back a little, and we expect roughly six weeks to be added to the schedule because of it. I should also say that a scale model of the whole site has now been built! You are welcome to come and see it in the main reception.</p>",
+    "passage_text_2": "<p>Chào buổi sáng tất cả mọi người. Tôi là Ravi Chandran, trưởng chương trình xây dựng của bệnh viện, và tôi xin cảm ơn quý vị đã đến dự buổi họp báo sáng nay. Tính đến tuần này, công việc ở hai trong ba khu nhà mới đang diễn ra đúng kế hoạch. Một số thay đổi nhỏ trong bố cục của Khu Tây đã khiến phần việc đó bị chậm lại một chút, và chúng tôi dự kiến tiến độ sẽ bị kéo dài thêm khoảng sáu tuần vì lý do này. Tôi cũng xin thông báo rằng một mô hình tỉ lệ của toàn bộ khu đất nay đã được hoàn thành! Mời quý vị đến xem mô hình tại khu lễ tân chính.</p>",
+    "passage_text_3": null,
+    "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/mock-test-media/dautoeic/p4-csv/38a433d0-d5eb-4361-81ef-5f60ee876686-Q98/upload-1789995888906.png",
+    "transcript": "<p>Good morning, everyone. I'm Ravi Chandran, the hospital's building programme lead, and I'd like to thank you for coming to this morning's press briefing. As things stand this week, work on two of the three new wings is running to plan. Small changes to the layout of the West Wing have set that part of the job back a little, and we expect roughly six weeks to be added to the schedule because of it. I should also say that a scale model of the whole site has now been built! You are welcome to come and see it in the main reception.</p>",
+    "order_index": 98,
+    "created_at": "2026-09-21T12:53:31.922559+00:00",
+    "title": "Questions 98-100",
+    "source_blueprint": {
+      "topic": null,
+      "turns": [
+        {
+          "text": "Good morning, everyone. I'm Ravi Chandran, the hospital's building programme lead, and I'd like to thank you for coming to this morning's press briefing. As things stand this week, work on two of the three new wings is running to plan. Small changes to the layout of the West Wing have set that part of the job back a little, and we expect roughly six weeks to be added to the schedule because of it. I should also say that a scale model of the whole site has now been built! You are welcome to come and see it in the main reception.",
+          "speaker": "M"
+        }
+      ],
+      "source": "admin_csv",
+      "graphic": {
+        "kind": "directory",
+        "description": ""
+      },
+      "version": "p4-csv-v1",
+      "topic_vi": null,
+      "turns_vi": [
+        {
+          "text": "Chào buổi sáng tất cả mọi người. Tôi là Ravi Chandran, trưởng chương trình xây dựng của bệnh viện, và tôi xin cảm ơn quý vị đã đến dự buổi họp báo sáng nay. Tính đến tuần này, công việc ở hai trong ba khu nhà mới đang diễn ra đúng kế hoạch. Một số thay đổi nhỏ trong bố cục của Khu Tây đã khiến phần việc đó bị chậm lại một chút, và chúng tôi dự kiến tiến độ sẽ bị kéo dài thêm khoảng sáu tuần vì lý do này. Tôi cũng xin thông báo rằng một mô hình tỉ lệ của toàn bộ khu đất nay đã được hoàn thành! Mời quý vị đến xem mô hình tại khu lễ tân chính.",
+          "speaker": "M"
+        }
+      ],
+      "talk_type": "Talk",
+      "audio_file": "98-100.mp3",
+      "image_file": "98-100.png",
+      "media_meta": {
+        "voices": {
+          "M-Au": {
+            "label": "ETS M-Au",
+            "speed": 0.86,
+            "accent": "Australian",
+            "gender": "male",
+            "voiceId": "wuoVvtwxYMcYXLj3uOz9"
+          }
+        },
+        "narrator": {
+          "label": "ETS Narrator v2",
+          "speed": 0.88,
+          "voiceId": "5xFihUrFXk6iZcqvWwsX"
+        },
+        "stem_speed": 0.82,
+        "voice_slot": "M-Au",
+        "rendered_at": "2026-09-23T12:43:06.756Z",
+        "audio_job_id": "1b9e3075-e592-41d2-8256-7a09d2f068e8",
+        "audio_built_at": "2026-09-23T12:43:06.838Z",
+        "graphic_source": "admin_upload",
+        "rendered_turns": [
+          {
+            "text": "Good morning, everyone. I'm Ravi Chandran, the hospital's building programme lead, and I'd like to thank you for coming to this morning's press briefing. As things stand this week, work on two of the three new wings is running to plan. Small changes to the layout of the West Wing have set that part of the job back a little, and we expect roughly six weeks to be added to the schedule because of it. I should also say that a scale model of the whole site has now been built! You are welcome to come and see it in the main reception.",
+            "speaker": "M"
+          }
+        ],
+        "graphic_built_at": "2026-09-21T13:04:49.410Z"
+      },
+      "group_label": "talk10",
+      "speaker_label": "M"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "75e9fe24-086f-41cc-b50c-1d7eb18a7e3f",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 6,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<p><strong>To:</strong> Bianca Ferreira &lt;b.ferreira@westlink.net&gt;<br><strong>From:</strong> Customer Support Team &lt;support@northgatemobile.com&gt;<br><strong>Date:</strong> April 12<br><strong>Subject:</strong> Your Recent Bill</p><p>Dear Valued Subscriber,</p><p>We have ------- (131) identified a fault with the mobile data usage tracker. This error may have led to incorrect charges on your recent bill.</p><p>We have already fixed the system. The ------- (132) will ensure that your future statements are reliable. We are currently reviewing the relevant accounts and will issue any required refunds by the next payment date.</p><p>We recommend you to check your current data total, comparing it to the one in our records. ------- (133) If the data does not match, please contact us right away.</p><p>If you have concerns, please ------- (134) our account services team at 555-0284.</p>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 131,
+    "created_at": "2026-09-21T12:53:38.901278+00:00",
+    "title": "Questions 131-134 refer to the following e-mail.",
+    "source_blueprint": {
+      "topic": null,
+      "source": "admin_csv",
+      "version": "p6-csv-v2",
+      "topic_vi": null,
+      "group_label": "Group 1",
+      "imported_at": "2026-09-21T12:53:38.845Z"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "2c272dfe-a96c-4459-a2c4-4933e2feaa1f",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 6,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<p>The Regional Arts Council is delighted to announce its twelfth annual Landscape Photography Prize. This season, we are inviting original photographs in four categories. ------- (135) include coastline, woodland, wildlife, and night sky. Entries will be judged by a panel of six ------- (136) photographers, and the winning images will be featured in <i>Northern Light</i>. This will give aspiring artists a chance to present their ------- (137) to the nation. To take part, visit www.regionalarts.org/prize to submit. The entry deadline is March 12. ------- (138) We look forward to seeing your wonderful landscape photographs!</p>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 135,
+    "created_at": "2026-09-21T12:53:39.166922+00:00",
+    "title": "Questions 135-138 refer to the following advertisement.",
+    "source_blueprint": {
+      "topic": null,
+      "source": "admin_csv",
+      "version": "p6-csv-v2",
+      "topic_vi": null,
+      "group_label": "Group 2",
+      "imported_at": "2026-09-21T12:53:39.111Z"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "481a7c1d-c11e-430c-b437-b4e2bc11672c",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 6,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<p>From March 4 to August 5, the Ashfield Community Center will be running a simple ------- (139) bicycle repair course. It will take place on the first Saturday of each month from 6 p.m. to 7:30 p.m. Attendees will learn how to fix common faults, ensuring that they can handle minor roadside breakdowns. The instructor will be Martin Oyelaran, a mechanic with over 20 years of experience. ------- (140) So we are thankful that he has found the time to do this.</p><p>Anyone over the age of 16 is welcome to ------- (141). The course is completely free of charge. ------- (142), only a limited number of seats are available, so advance reservation is required. Please visit www.ashfieldcenter.org/courses by March 1 to secure a place.</p>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 139,
+    "created_at": "2026-09-21T12:53:39.42041+00:00",
+    "title": "Questions 139-142 refer to the following notice.",
+    "source_blueprint": {
+      "topic": null,
+      "source": "admin_csv",
+      "version": "p6-csv-v2",
+      "topic_vi": null,
+      "group_label": "Group 3",
+      "imported_at": "2026-09-21T12:53:39.366Z"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "4d4a2465-6f69-4501-ae03-0d205688deaf",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 6,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<p>March 9 (Lisbon)&mdash;According to Halvern Foods CEO Ravi Nandakumar, the company ------- (143) to cooperate with a regional supplier to extend its network across Eastern Europe. &ldquo;Given the demands of this region, we must locate and negotiate carefully with a firm that already holds detailed understanding of local markets,&rdquo; Mr. Nandakumar said. This is not the first occasion the company has followed this method. ------- (144)</p><p>The company has not ------- (145) named potential partners. Nevertheless, analysts believe that both Volkan Logistics and Baltic Fresh are being assessed. Each ------- (146) plays a major part in the grocery trade of the area.</p>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 143,
+    "created_at": "2026-09-21T12:53:39.719548+00:00",
+    "title": "Questions 143-146 refer to the following article.",
+    "source_blueprint": {
+      "topic": null,
+      "source": "admin_csv",
+      "version": "p6-csv-v2",
+      "topic_vi": null,
+      "group_label": "Group 4",
+      "imported_at": "2026-09-21T12:53:39.656Z"
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "c0e412ea-cd03-4534-87d5-a1fb0aaa23be",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"email\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>To:</b></td><td>Daniel Okoro &lt;d.okoro@brightmail.com&gt;</td></tr><tr><td><b>From:</b></td><td>Rosa Villalba &lt;r.villalba@haldeninstitute.org&gt;</td></tr><tr><td><b>Date:</b></td><td>September 8</td></tr><tr><td><b>Subject:</b></td><td>Equipment Demonstration</td></tr></table><p>Dear Mr. Okoro,</p><p>Regarding your demonstration on September 11, I am sorry to say that I will have to make a change because of a mix-up with another supplier&rsquo;s slot. Please come at 11:00 A.M. rather than at 1:00 P.M. as we initially agreed. When you reach the building, let the receptionist in the lobby know that you have arrived. She will give you a visitor badge and show you to the right room. To avoid any confusion, be sure to state clearly that you are here for the laboratory equipment demonstration. We will be seeing suppliers of office furniture and of cleaning services on the same day. If you have any questions, please do not hesitate to contact me.</p><p>Sincerely,</p><p>Rosa Villalba<br>Procurement Manager, Halden Institute</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 147,
+    "created_at": "2026-09-21T12:53:44.436958+00:00",
+    "title": "Questions 147-148 refer to the following e-mail.",
+    "source_blueprint": {
+      "topic": "Rescheduling an equipment demonstration",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Dời giờ một buổi trình diễn thiết bị",
+      "group_label": "1",
+      "imported_at": "2026-09-21T12:53:44.262Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "3ff28868-0346-42e0-9c18-5c07352bcfca",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"notice\"><h2>NOTICE: Staff Cafeteria Closure</h2><p>To All Staff,</p><p>Please be advised that the staff cafeteria on the ground floor will be closed for emergency plumbing repairs from today until October 3. This work is needed to protect the health of everyone who uses the room.</p><p>While it is closed, staff are encouraged to use the Riverside Deli on the opposite side of the plaza. We have arranged a 30 percent discount for all employees. Simply show your staff badge at the counter. Please visit the facilities department&rsquo;s Web site to see a map showing where the deli is as well as information about its opening hours.</p><p>Thank you for your patience.</p><p>Facilities Team</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 149,
+    "created_at": "2026-09-21T12:53:45.355221+00:00",
+    "title": "Questions 149-150 refer to the following notice.",
+    "source_blueprint": {
+      "topic": "Staff cafeteria closed for repairs",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Nhà ăn nhân viên đóng cửa sửa chữa",
+      "group_label": "2",
+      "imported_at": "2026-09-21T12:53:45.188Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "27862f58-429d-47f5-938b-b2be1adb41b2",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"article\"><h2 style=\"text-align:center\">Powering the Road Ahead</h2><p>At a press conference on June 12, Aperture Charging Ltd. announced plans to expand the production of its rapid charging stations. With electric cars appearing on driveways and in car parks throughout crowded districts, chief executive Ingrid Sorensen predicts that demand for chargers able to refill a battery in minutes rather than hours will rise sharply over the next few years.</p><p>In particular, Ms. Sorensen emphasizes that electric models will eventually account for half of all the cars driven in large cities, taking the place of the petrol vehicles that make those journeys today. &ldquo;The move away from a tank filled once a week towards a battery topped up wherever the car happens to be parked is unavoidable,&rdquo; she said. With public grants for low-emission transport rising, the future looks bright for Aperture Charging and for others in the field.</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 151,
+    "created_at": "2026-09-21T12:53:45.967842+00:00",
+    "title": "Questions 151-153 refer to the following article.",
+    "source_blueprint": {
+      "topic": "Charging firm expands production",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Hãng trạm sạc mở rộng sản xuất",
+      "group_label": "3",
+      "imported_at": "2026-09-21T12:53:45.840Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "7727cfa4-01aa-4e0b-840f-2a6a4f76c7f7",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"info\" style=\"border:2px solid #333;padding:15px\"><h2 style=\"text-align:center\">Solvang Table &ndash; Private Dining</h2><p>Planning an event? Let Solvang Table take care of the food while you enjoy the evening! We cook only with organic produce bought from local growers.</p><p><b>Our Services:</b></p><p><b>Full-Course Dinners:</b> from the first course through to dessert, every dish is matched to the diet of each guest.</p><p><b>Cheese Table:</b> a wide choice of regional cheeses, chutneys, and biscuits is available.</p><p><b>Special Offer:</b></p><p>Book both the Full-Course Dinner and the Cheese Table for your event and you will receive 15 percent off the total price. Reserve your date today!</p><p><b>Contact Us:</b></p><p>For enquiries, please call us on 555-0271 or visit our Web site at www.solvangtable.com.</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 154,
+    "created_at": "2026-09-21T12:53:46.462207+00:00",
+    "title": "Questions 154-155 refer to the following advertisement.",
+    "source_blueprint": {
+      "topic": "Private dining catering services",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Dịch vụ nấu tiệc riêng",
+      "group_label": "4",
+      "imported_at": "2026-09-21T12:53:46.351Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "c13fb276-2c1c-4670-a01b-9d14285868d7",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"textmsg\" style=\"border:1px solid #ccc;padding:15px;max-width:500px\"><div style=\"background:#e8e8e8;border-radius:10px;padding:8px;margin-bottom:8px\"><p><b>Priya Raghavan (2:08 P.M.)</b><br>Hello, Mr. Lindqvist. This is Priya Raghavan. I wanted to follow up on the freelance sound design work for your new mobile game.</p></div><div style=\"background:#dcf8c6;border-radius:10px;padding:8px;margin-bottom:8px;margin-left:40px\"><p><b>Nils Lindqvist (2:10 P.M.)</b><br>Hi, Priya. Yes, I listened to your first two sketches. They are excellent. The schedule is rather tight, though. Will you be taking on the whole soundtrack by yourself?</p></div><div style=\"background:#e8e8e8;border-radius:10px;padding:8px;margin-bottom:8px\"><p><b>Priya Raghavan (2:12 P.M.)</b><br>That is correct. I am confident that I can deliver everything within the dates you set. In fact, I finished a project of a similar size only last month.</p></div><div style=\"background:#dcf8c6;border-radius:10px;padding:8px;margin-bottom:8px;margin-left:40px\"><p><b>Nils Lindqvist (2:14 P.M.)</b><br>Good to hear. Where can I hear some more of it?</p></div><div style=\"background:#e8e8e8;border-radius:10px;padding:8px;margin-bottom:8px\"><p><b>Priya Raghavan (2:16 P.M.)</b><br>My Web site is being rebuilt at the moment. But I can e-mail you a few recent tracks that suit the style of your game.</p></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 156,
+    "created_at": "2026-09-21T12:53:46.934844+00:00",
+    "title": "Questions 156-157 refer to the following text-message chain.",
+    "source_blueprint": {
+      "topic": "Freelance sound design work",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Thiết kế âm thanh tự do cho trò chơi",
+      "group_label": "5",
+      "imported_at": "2026-09-21T12:53:46.828Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "0bda1d97-ebf5-4a48-9d26-248ae67f0bba",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"article\"><h2 style=\"text-align:center\">Winding Back the Years</h2><p><em>By Alma Rutkowski</em></p><p>The annual Antique Clock and Watch Fair was held this weekend at the Merrow Assembly Rooms, drawing collectors from every part of the country. This year&rsquo;s fair displayed pieces made between the 1780s and the 1930s. &ndash; [1] &ndash;.</p><p>The fair also featured a presentation on a joint project involving several local workshops that had come together to restore an 1890s tower clock. Each workshop took charge of one element of the mechanism, such as the dial or the escapement. &ndash; [2] &ndash;.</p><p>One of the highlights was a talk by Emil Bergstr&ouml;m of the Northern Horological Society. &ndash; [3] &ndash;. Based on decades of experience repairing the mechanisms inside clocks, he described the slow business of tracking down rare components and the patience needed to bring a seized movement back to life. &ndash; [4] &ndash;.</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 158,
+    "created_at": "2026-09-21T12:53:47.483194+00:00",
+    "title": "Questions 158-160 refer to the following article.",
+    "source_blueprint": {
+      "topic": "Antique clock and watch fair",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Hội chợ đồng hồ cổ",
+      "group_label": "6",
+      "imported_at": "2026-09-21T12:53:47.310Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "5b8366c2-0163-47dd-b4e7-5aa7a3976f41",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"email\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>To:</b></td><td>All Residents</td></tr><tr><td><b>From:</b></td><td>Curtis Mbeki</td></tr><tr><td><b>Date:</b></td><td>July 2</td></tr><tr><td><b>Subject:</b></td><td>Bicycle Storage</td></tr></table><p>Dear Residents,</p><p>I am writing about a growing problem with the way bicycles are being kept in the building. Over the past 2 weeks, the security team has had to cut locks off the stair railings on four separate occasions. In every case, a resident had chained a bicycle to a railing rather than putting it away properly.</p><p>Please be aware that the storage room may only be used for bicycles that fit inside the racks. If you own a cargo bicycle or a trailer, do not try to force it into a rack. Instead, you must take it to the covered shelter at the back of the building. You can reach that area through the gate in the courtyard.</p><p>If you need to get rid of a bicycle that is too heavy to move on your own, do not leave it in the corridor. You should contact Ms. Adeyemi in the building office and ask for it to be taken away for a small charge.</p><p>Thank you for helping us keep the building safe.</p><p>Curtis Mbeki<br>Security Supervisor</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 161,
+    "created_at": "2026-09-21T12:53:47.932505+00:00",
+    "title": "Questions 161-163 refer to the following e-mail.",
+    "source_blueprint": {
+      "topic": "Bicycle storage rules for residents",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Quy định để xe đạp cho cư dân",
+      "group_label": "7",
+      "imported_at": "2026-09-21T12:53:47.809Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "f252cc47-4e8e-4ffc-b6b6-a897f27eab71",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"notice\"><h2>NOTICE: RESEARCH LABORATORY &ndash; ACCESS RESTRICTED</h2><p><b>Authorised Personnel Only</b></p><p>Please be advised that entry to the Cell Culture Laboratory is strictly forbidden to all unauthorised staff with immediate effect. Because of the sensitive nature of the experiments now in progress, only senior researchers holding a Grade 3 biosafety clearance or above may enter this area.</p><p><b>Access Protocol:</b> Eligible staff must scan their pass at the outer door and then key in their personal code. All entries and exits are electronically documented by the control room 24 hours a day.</p><p><b>Exception for Cleaning:</b> Cleaning staff may enter only during the scheduled sterilization period, which takes place every Tuesday morning from 7:00 A.M. to 9:00 A.M. Throughout that time, every cleaner must be accompanied by a security officer and is required to wear a full protective suit.</p><p><b>Penalties:</b> Strict observance of this protocol is compulsory. Failure to follow these rules will result in immediate disciplinary action, ranging from a written caution to suspension without pay.</p><p>Management</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 164,
+    "created_at": "2026-09-21T12:53:48.412385+00:00",
+    "title": "Questions 164-167 refer to the following notice.",
+    "source_blueprint": {
+      "topic": "Restricted laboratory access rules",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Quy định hạn chế ra vào phòng thí nghiệm",
+      "group_label": "8",
+      "imported_at": "2026-09-21T12:53:48.270Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "cf06c715-dffd-4aaf-b377-dbc73597043b",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"email\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>To:</b></td><td>Helena Brandt &lt;h.brandt@arborhotels.com&gt;</td></tr><tr><td><b>From:</b></td><td>Samuel Oyelaran &lt;s.oyelaran@caldera-ceramics.com&gt;</td></tr><tr><td><b>Date:</b></td><td>April 2</td></tr><tr><td><b>Subject:</b></td><td>Your Visit</td></tr></table><p>Dear Ms. Brandt,</p><p>We are delighted to confirm your place on the tour of the Caldera Ceramics works next Thursday. This visit has been arranged for hospitality buyers who are interested in stocking our new tableware range.</p><p>Please arrive at the reception desk by 9:30 A.M. &ndash; [1] &ndash;. You will be met by our production manager, who will lead the tour. The route takes in the glazing room, the kiln hall, and the quality-control bench. &ndash; [2] &ndash;.</p><p>For your safety, please make sure that you wear flat, closed shoes. &ndash; [3] &ndash;. We will supply aprons and eye protection. Because our glaze recipes are confidential, photography is not permitted anywhere inside the works. &ndash; [4] &ndash;.</p><p>We look forward to showing you how our methods set us apart from other producers.</p><p>Sincerely,</p><p>Samuel Oyelaran<br>Visitor Programme Manager</p></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 168,
+    "created_at": "2026-09-21T12:53:48.965151+00:00",
+    "title": "Questions 168-171 refer to the following e-mail.",
+    "source_blueprint": {
+      "topic": "Ceramics factory tour arrangements",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Thu xếp chuyến tham quan xưởng gốm",
+      "group_label": "9",
+      "imported_at": "2026-09-21T12:53:48.800Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "034b620b-3327-451d-81a2-d2698c797a7a",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div class=\"textmsg\" style=\"border:1px solid #ccc;padding:15px;max-width:500px\"><div style=\"background:#e8e8e8;border-radius:10px;padding:8px;margin-bottom:8px\"><p><b>Grace Odum (9:31 A.M.)</b><br>Morning, everyone. I want a quick update before our busiest weeks of the summer start. Anything I ought to know about?</p></div><div style=\"background:#dcf8c6;border-radius:10px;padding:8px;margin-bottom:8px;margin-left:40px\"><p><b>Bruno Ferrante (9:33 A.M.)</b><br>Everything is running well. You really should try the new touch pool we opened in the Reef Zone last weekend. It is wonderful.</p></div><div style=\"background:#e8e8e8;border-radius:10px;padding:8px;margin-bottom:8px\"><p><b>Grace Odum (9:35 A.M.)</b><br>It&rsquo;s on my list. But I want to go through the handling guidelines first so that I fully understand what the keepers tell visitors before I try it.</p></div><div style=\"background:#dcf8c6;border-radius:10px;padding:8px;margin-bottom:8px;margin-left:40px\"><p><b>Bruno Ferrante (9:37 A.M.)</b><br>You will be impressed. According to the visitor comment cards I went through yesterday, our guests love getting that close to the animals. The pool is busy from opening to closing.</p></div><div style=\"background:#e8e8e8;border-radius:10px;padding:8px;margin-bottom:8px\"><p><b>Grace Odum (9:40 A.M.)</b><br>That is very good news. And how is the rebuilt ticketing application coming along?</p></div><div style=\"background:#dcf8c6;border-radius:10px;padding:8px;margin-bottom:8px;margin-left:40px\"><p><b>Bruno Ferrante (9:42 A.M.)</b><br>The screens are far simpler for our visitors to move through now. It has been tested from end to end and is completely ready to go live tomorrow morning.</p></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 172,
+    "created_at": "2026-09-21T12:53:49.628199+00:00",
+    "title": "Questions 172-175 refer to the following online-message chain.",
+    "source_blueprint": {
+      "topic": "Update on attractions and app",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Cập nhật về khu trưng bày và ứng dụng",
+      "group_label": "10",
+      "imported_at": "2026-09-21T12:53:49.463Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "5a31d6e3-1d53-4e41-ab0c-e4ae32eb4453",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"email\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>To:</b></td><td>staff@meridian-lang.com</td></tr><tr><td><b>From:</b></td><td>a.novotny@meridian-lang.com</td></tr><tr><td><b>Date:</b></td><td>August 4</td></tr><tr><td><b>Subject:</b></td><td>Notice</td></tr><tr><td><b>Attachment:</b></td><td>Form</td></tr></table><p>Dear Staff,</p><p>We recently engaged a team from Fenwick Assurance, a consultancy that specialises in the handling of confidential documents, to carry out a review of the way we work. They have found that there is a danger of client material being seen by people outside the agency. To deal with this, some employees will no longer be allowed to keep working files on their own personal drives.</p><p>If you belong to the legal translation department, you will be issued an encrypted drive for client material. The device comes with our current protection software already installed. Please complete the attached request form and send it to Marisol Pe&ntilde;a in the IT team by August 18. When you meet her to collect the drive, she will take you through its encryption features and make certain that you can operate them correctly.</p><p>Further measures will be brought in over the next few months, and these will reach other departments as well. I know that I can rely on all of you to follow them carefully so that our clients&rsquo; interests are protected.</p><p>Sincerely,</p><p>Anna Novotn&aacute;<br>Managing Director, Meridian Language Services</p></div></div><div style=\"border:1px solid #999;padding:12px\"><div class=\"report\"><h2 style=\"text-align:center\">Meridian Language Services &ndash; Request Form</h2><table border=\"1\" cellpadding=\"4\"><tr><td><b>Date:</b> August 11</td><td><b>Employee Number:</b> 07461</td></tr><tr><td><b>Name:</b> Teodora Ili&#263;</td><td><b>E-mail:</b> t.ilic@meridian-lang.com</td></tr></table><p><b>Equipment Requested</b></p><p>An encrypted drive for confidential client files</p><p><b>Reason</b></p><p>Everyone in my department has been told to stop keeping client material on personal drives.</p><p><em>*To be completed by a member of the IT team*</em></p><table border=\"1\" cellpadding=\"4\"><tr><td><b>Processed By:</b> Marisol Pe&ntilde;a</td><td><b>Date:</b> August 13</td></tr><tr><td><b>Equipment (Collection &#9632; / Delivery &#9633;)</b></td><td>&nbsp;</td></tr></table><p><b>Notes</b></p><p>Unfortunately we underestimated how many units would be needed, and none were left when Ms. Ili&#263; put in her request. I did, however, obtain approval from Gareth Lowe in the finance team to use the corporate card to buy one more drive.</p></div></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 176,
+    "created_at": "2026-09-21T12:53:50.207427+00:00",
+    "title": "Questions 176-180 refer to the following e-mail and form.",
+    "source_blueprint": {
+      "topic": "Encrypted drives for client files",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Ổ đĩa mã hóa cho tệp khách hàng",
+      "group_label": "11",
+      "imported_at": "2026-09-21T12:53:49.941Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "236c2919-8c36-4936-9f4d-d7b2fb3f7aa5",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"report\"><h2 style=\"text-align:center\">Harborlight Audiobooks: New Subscriptions by Channel (First 9 Months)</h2><table border=\"1\" cellpadding=\"4\"><tr><th>Channel</th><th>Share</th></tr><tr><td>Mobile app</td><td>41%</td></tr><tr><td>Web store</td><td>27%</td></tr><tr><td>Partner bookshops</td><td>22%</td></tr><tr><td>Library programme</td><td>10%</td></tr></table><p style=\"text-align:center\">Percentage of Total New Subscriptions (%)</p><p><em>*Note: The graph shows how the two million new subscriptions taken out since launch are divided among channels.</em></p></div></div><div style=\"border:1px solid #999;padding:12px\"><div class=\"report\"><h2 style=\"text-align:center\">MEMORANDUM</h2><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>To:</b></td><td>All Marketing Department Staff</td></tr><tr><td><b>From:</b></td><td>Douglas Ferreira, Vice President of Marketing</td></tr><tr><td><b>Date:</b></td><td>November 6</td></tr><tr><td><b>Subject:</b></td><td>Nine-Month Review</td></tr><tr><td><b>Attachment:</b></td><td>Graph</td></tr></table><p>I would like to congratulate everyone on the strong showing of Harborlight Audiobooks over the past nine months. As the attached graph shows, we have already signed up two million new subscriptions. Our results have been particularly good through the mobile app, largely because we rebuilt the listening screen in the spring.</p><p>Growth through our partner bookshops, however, has been slower than we hoped. I have therefore asked Yuki Tanabe to lead a promotional campaign that will, I hope, drive our numbers in that channel.</p><p>From next month she will be working with independent booksellers&rsquo; associations to raise awareness of the service. Our aim is to double subscriptions through that channel by the end of the year.</p><p>Thank you all for your continued hard work.</p></div></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 181,
+    "created_at": "2026-09-21T12:53:51.139559+00:00",
+    "title": "Questions 181-185 refer to the following graph and memo.",
+    "source_blueprint": {
+      "topic": "Audiobook subscriptions by channel",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Thuê bao sách nói theo từng kênh",
+      "group_label": "12",
+      "imported_at": "2026-09-21T12:53:50.973Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "f635d1ed-f65a-4b4c-8a4d-237de10b0b91",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"info\" style=\"border:2px solid #333;padding:15px\"><h2 style=\"text-align:center\">Fellside Outfitters &ndash; Go Further</h2><p>Join the Fellside Club today and enjoy benefits reserved for members.</p><p><b>Membership Benefits:</b></p><ul><li>Welcome Gift: 20 percent off your first order (valid on orders above $120).</li><li>Early Access: members will be informed about new products ten (10) days before they reach the shop floor.</li><li>Bulk Order Special: free lifetime servicing when you buy two or more pieces of hardware at one time.</li></ul><p>Remember that we sell far more than clothing. We also carry a wide range of accessories, including trekking poles, water filters, and repair kits.</p><p>Visit our shop or order online at www.fellsideoutfitters.com.</p></div></div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"report\"><h2 style=\"text-align:center\">ORDER CONFIRMATION</h2><p><b>Order #:</b> 47130<br><b>Date:</b> February 4<br><b>Customer:</b> Marta Kova&#269;</p><p><b>Items Ordered</b></p><table border=\"1\" cellpadding=\"4\"><tr><th>Item Name</th><th>Price</th></tr><tr><td>Alpine Shell Jacket (AS-300)</td><td>$220.00</td></tr><tr><td>Trail Rucksack 40L (TR-40)</td><td>$130.00</td></tr><tr><td>Subtotal</td><td>$350.00</td></tr><tr><td>Discount Applied (20%)</td><td>&minus;$70.00</td></tr><tr><td>Shipping &amp; Handling</td><td>$0.00</td></tr><tr><td><b>Total</b></td><td><b>$280.00</b></td></tr></table><p><em>*Free shipping on orders above $250</em></p><p><b>Estimated Delivery:</b> February 11<br><b>Status:</b> On time</p></div></div><div style=\"border:1px solid #999;padding:12px\"><div class=\"email\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>From:</b></td><td>Fellside Outfitters &lt;news@fellsideoutfitters.com&gt;</td></tr><tr><td><b>To:</b></td><td>Marta Kova&#269; &lt;m.kovac@postbox.com&gt;</td></tr><tr><td><b>Date:</b></td><td>February 13</td></tr><tr><td><b>Subject:</b></td><td>Something New Is Coming</td></tr></table><p>Dear Valued Customer,</p><p>We are pleased to introduce our newest product: the Ridgeline Stove. This compact stove folds completely flat and brings water to the boil in under three minutes.</p><p>As a Fellside Club member you are hearing about it first. We are giving our members an exclusive preview ahead of the official public launch.</p><p>Get ready for your next trip!</p><p>The Fellside Team</p></div></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 186,
+    "created_at": "2026-09-21T12:53:51.704834+00:00",
+    "title": "Questions 186-190 refer to the following advertisement, order confirmation, and e-mail.",
+    "source_blueprint": {
+      "topic": "Outdoor club member benefits",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Quyền lợi hội viên đồ dã ngoại",
+      "group_label": "13",
+      "imported_at": "2026-09-21T12:53:51.609Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "9b6b3e4e-9b5d-4c27-8a18-18ae5737a720",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"article\"><h2 style=\"text-align:center\">A Fading Landmark: The Future of Bellhaven Lido</h2><p>The Bellhaven Lido, a much-loved landmark in downtown Georgetown, faces an uncertain future because of falling visitor numbers and rising repair bills. Once a favourite venue for regional swimming galas and open-air concerts, the pool has struggled to compete with modern leisure centres.</p><p>&ldquo;It is painful to see the Lido in this state,&rdquo; says the assistant manager, Nadia Osei. &ldquo;We have regular customers, but the buildings and the plant are wearing out. The changing rooms are cracked, the filtration system is obsolete, and the heating barely works.&rdquo;</p><p>Without a large injection of funds, the Lido may be forced to shut for good at the end of the season.</p></div></div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"notice\"><h2>FOR IMMEDIATE RELEASE</h2><p><b>Bellhaven Heritage Trust Announces Fundraising Success</b></p><p>Georgetown&mdash;Idris Whelan, chair of the Bellhaven Heritage Trust, is delighted to report that the Save Our Lido appeal has passed every target set for it. Started last spring with a goal of $1.8 million, the appeal has collected $2.3 million through public donations and a matching contribution from the city council.</p><p>This money secures the future of the historic pool. Stonebridge Restoration, a company that has successfully renovated more than 30 similar sites around the country, has been engaged to manage the work.</p><p>Work will start next month, and the Lido will close to swimmers right away. Stonebridge Restoration expects the project to take roughly seven months, with a targeted completion date of April 30. Swimmers can look forward to returning in good time for the summer season.</p></div></div><div style=\"border:1px solid #999;padding:12px\"><div class=\"report\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>To:</b></td><td>All Staff</td></tr><tr><td><b>From:</b></td><td>Nadia Osei, General Manager</td></tr><tr><td><b>Date:</b></td><td>May 6</td></tr><tr><td><b>Subject:</b></td><td>Reopening and Training</td></tr></table><p>Dear Team,</p><p>I know that you have all been waiting for news about our return. We are now in the final stages of preparation, and our reopening is confirmed for June 6.</p><p>Every one of the problems with the site has been dealt with, and I am certain that our swimmers will be delighted with the results of the work.</p><p>Please come to the Lido on May 30 for training on the new entry system.</p><p>Sincerely,</p><p>Nadia Osei<br>General Manager</p></div></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 191,
+    "created_at": "2026-09-21T12:53:52.217413+00:00",
+    "title": "Questions 191-195 refer to the following article, press release, and memo.",
+    "source_blueprint": {
+      "topic": "Saving and renovating a lido",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Cứu và cải tạo một bể bơi cổ",
+      "group_label": "14",
+      "imported_at": "2026-09-21T12:53:52.123Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  },
+  {
+    "id": "18542806-945d-4f03-9248-5399f0a5cbf7",
+    "test_id": "38a433d0-d5eb-4361-81ef-5f60ee876686",
+    "part": 7,
+    "passage_type": "text",
+    "audio_url": null,
+    "passage_text": "<div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"email\"><table border=\"1\" cellpadding=\"4\" style=\"margin-bottom:10px;width:100%\"><tr><td><b>From:</b></td><td>Tomas Rask &lt;t.rask@meridiantravel.com&gt;</td></tr><tr><td><b>To:</b></td><td>Renata Bauer &lt;r.bauer@nordkern.com&gt;</td></tr><tr><td><b>Date:</b></td><td>March 9</td></tr><tr><td><b>Subject:</b></td><td>Regarding your trip</td></tr><tr><td><b>Attachment:</b></td><td>Document_MC4418</td></tr></table><p>Dear Ms. Bauer,</p><p>I am writing about a change to the arrangements for your trip to Bergen tomorrow. Nordsund Lines has just informed our agency that the fast ferry you were originally booked on has been removed from service because of an engine fault. The 6:45 A.M. sailing is therefore no longer available.</p><p>To make sure that you still reach your afternoon meeting in time, I have reserved a place for you on a later direct sailing. Please print the attachment to this e-mail before you depart, and then show it at the gate when you board the ferry. I apologise for the change to your schedule.</p><p>Sincerely,</p><p>Tomas Rask<br>Senior Travel Consultant, Meridian Corporate Travel</p></div></div><div style=\"border:1px solid #999;padding:12px;margin-bottom:10px\"><div class=\"report\"><h2 style=\"text-align:center\">Meridian Corporate Travel &ndash; Client Itinerary</h2><p><b>Client:</b> Renata Bauer<br><b>Booking Reference:</b> MC-4418<br><b>Date:</b> March 10<br><b>Destination:</b> Bergen Harbour</p><table border=\"1\" cellpadding=\"4\"><tr><th>Details</th><th>Previous Booking</th><th>New Booking</th></tr><tr><td>Vessel</td><td>NS-212</td><td>NS-260</td></tr><tr><td>Time</td><td>6:45 A.M.</td><td>9:15 A.M.</td></tr><tr><td>Class</td><td>Standard</td><td>Business Lounge</td></tr><tr><td>Seat</td><td>Deck 3, Seat 88 (Aisle)</td><td>Deck 5, Seat 14 (Window)</td></tr></table></div></div><div style=\"border:1px solid #999;padding:12px\"><div class=\"webpage\"><div style=\"border:1px solid #ccc;padding:10px;\"><p style=\"font-size:11px;color:#555\">https://www.meridiantravel.com/feedback</p><h3 style=\"text-align:center\">Meridian Corporate Travel &ndash; Customer Satisfaction Survey</h3><p><b>Client Name:</b> Renata Bauer<br><b>Agent Name:</b> Tomas Rask<br><b>Rating:</b> &#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</p><p><b>Comments</b></p><p>I have booked my business trips through Meridian for more than six years, but the best service I have received was on my trip to Bergen on March 10. When my original sailing was cancelled, Tomas found me a place on another vessel at no extra charge. The free hot meals that come with this class were very convenient for me while I was preparing for my meeting.</p></div></div></div></div>",
+    "passage_text_2": null,
+    "passage_text_3": null,
+    "image_url": null,
+    "transcript": null,
+    "order_index": 196,
+    "created_at": "2026-09-21T12:53:52.676497+00:00",
+    "title": "Questions 196-200 refer to the following e-mail, itinerary, and survey.",
+    "source_blueprint": {
+      "topic": "Rebooking a ferry to Bergen",
+      "source": "admin_csv",
+      "version": "p7-csv-v2",
+      "topic_vi": "Đặt lại chuyến phà đi Bergen",
+      "group_label": "15",
+      "imported_at": "2026-09-21T12:53:52.583Z",
+      "passage_format": null
+    },
+    "topic_domain": null,
+    "passage_format": null,
+    "difficulty_level": null
+  }
+]

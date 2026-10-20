@@ -1,0 +1,633 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "8bdda2b7-2d05-4864-b856-847a42da5e99",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 5: Conferences",
+    "order_index": 5,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:44.686884+00:00",
+    "updated_at": "2026-09-18T08:50:44.686884+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+    "test_id": "8bdda2b7-2d05-4864-b856-847a42da5e99",
+    "name": "Conferences",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:44.686884+00:00",
+    "updated_at": "2026-09-18T08:50:44.686884+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "ea7cacd3-adc8-474e-a302-2d496fcaad81",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "overcrowded",
+      "ipa": "UK: /ˌəʊ.vəˈkraʊ.dɪd/ | US: /ˌoʊ.vɚˈkraʊ.dɪd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "As soon as the guests entered the dining room for dinner, Sue Lin could see that the room would become overcrowded.",
+          "meaning": "quá đông, chật ních",
+          "antonyms": [
+            "empty (trống trải)",
+            "deserted (vắng tanh)"
+          ],
+          "toeic_tip": "Tiền tố over- mang nghĩa quá mức: overbooked, overpriced, overdue.",
+          "example_vi": "Khách vừa bước vào phòng ăn tối, Sue Lin đã thấy ngay là phòng sẽ chật cứng.",
+          "word_family": [
+            "crowd (n) đám đông",
+            "crowded (adj) đông đúc"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T07:57:58.897165+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ea7cacd3-adc8-474e-a302-2d496fcaad81-wm.jpg?v=1789798441431",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/overcrowded-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/overcrowded-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an overcrowded room",
+          "meaning": "phòng chật ních",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ea7cacd3-adc8-474e-a302-2d496fcaad81-0-wm.jpg?v=1789804661126"
+        },
+        {
+          "phrase": "become overcrowded",
+          "meaning": "trở nên quá đông",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ea7cacd3-adc8-474e-a302-2d496fcaad81-1-wm.jpg?v=1789804678767"
+        },
+        {
+          "phrase": "overcrowded conditions",
+          "meaning": "điều kiện chen chúc"
+        }
+      ],
+      "synonyms": [
+        "packed (chật kín)",
+        "congested (đông nghẹt)"
+      ]
+    },
+    {
+      "id": "3b3f68d5-77a3-4b9c-8833-7878ac89d1e4",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "register",
+      "ipa": "UK: /ˈredʒ.ɪ.stər/ | US: /ˈredʒ.ɪ.stɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "According to the register, more than 250 people attended the afternoon seminar.",
+          "meaning": "sổ ghi danh, sổ đăng ký; đăng ký, ghi tên",
+          "antonyms": [
+            "cancel (hủy đăng ký)",
+            "withdraw (rút tên)"
+          ],
+          "toeic_tip": "register for + khóa học hoặc sự kiện; registration form hay ra Part 7.",
+          "example_vi": "Theo sổ ghi danh, hơn 250 người đã dự hội thảo buổi chiều.",
+          "word_family": [
+            "registration (n) việc đăng ký",
+            "registered (adj) đã đăng ký"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T06:08:37.299199+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3b3f68d5-77a3-4b9c-8833-7878ac89d1e4-wm.jpg?v=1789798117243",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/register-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/register-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "register for a course",
+          "meaning": "đăng ký khóa học",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3b3f68d5-77a3-4b9c-8833-7878ac89d1e4-0-wm.jpg?v=1789797871068"
+        },
+        {
+          "phrase": "the registration desk",
+          "meaning": "quầy đăng ký",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3b3f68d5-77a3-4b9c-8833-7878ac89d1e4-1-wm.jpg?v=1789797873632"
+        },
+        {
+          "phrase": "register a complaint",
+          "meaning": "gửi khiếu nại"
+        }
+      ],
+      "synonyms": [
+        "sign up (ghi danh)",
+        "enroll (đăng ký nhập học)",
+        "record (bản ghi)"
+      ]
+    },
+    {
+      "id": "4ec5a7d6-7856-4298-8b94-07a66fca957f",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "attend",
+      "ipa": "/əˈtend/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We expect more than 100 members to attend the annual meeting.",
+          "meaning": "tham dự, có mặt; chăm lo, để tâm",
+          "antonyms": [
+            "miss (vắng mặt)",
+            "skip (bỏ không dự)"
+          ],
+          "toeic_tip": "attend + tân ngữ, không có to; attend to mới là chăm sóc, lo liệu.",
+          "example_vi": "Chúng tôi dự kiến hơn 100 hội viên sẽ tới dự cuộc họp thường niên.",
+          "word_family": [
+            "attendance (n) sự có mặt, số người dự",
+            "attendee (n) người tham dự",
+            "attendant (n) nhân viên phục vụ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T06:37:28.278651+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4ec5a7d6-7856-4298-8b94-07a66fca957f-wm.jpg?v=1789798437131",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attend-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/attend-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "attend a meeting",
+          "meaning": "dự cuộc họp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4ec5a7d6-7856-4298-8b94-07a66fca957f-0-wm.jpg?v=1789799848137"
+        },
+        {
+          "phrase": "attend a conference",
+          "meaning": "dự hội nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4ec5a7d6-7856-4298-8b94-07a66fca957f-1-wm.jpg?v=1789799846965"
+        },
+        {
+          "phrase": "attend to a matter",
+          "meaning": "lo liệu một việc"
+        }
+      ],
+      "synonyms": [
+        "go to (đi dự)",
+        "be present at (có mặt tại)",
+        "take care of (chăm lo)"
+      ]
+    },
+    {
+      "id": "caeb6a5e-83c4-4170-be15-c92bd2bc1c4f",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "select",
+      "ipa": "/sɪˈlekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The conference participant selected the marketing seminar from the various offerings.",
+          "meaning": "chọn ra, lựa chọn; được tuyển chọn, hạng sang",
+          "antonyms": [
+            "reject (loại bỏ)"
+          ],
+          "toeic_tip": "Nghĩa tính từ select là được tuyển chọn kỹ, rất dễ bị bỏ sót.",
+          "example_vi": "Người dự hội nghị chọn hội thảo marketing trong số các lựa chọn.",
+          "word_family": [
+            "selection (n) sự lựa chọn, bộ hàng để chọn",
+            "selective (adj) kén chọn"
+          ],
+          "part_of_speech": "v/adj"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T07:40:05.028369+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/caeb6a5e-83c4-4170-be15-c92bd2bc1c4f-wm.jpg?v=1789798439398",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/select-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/select-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "select a candidate",
+          "meaning": "chọn ứng viên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/caeb6a5e-83c4-4170-be15-c92bd2bc1c4f-0-wm.jpg?v=1789803604397"
+        },
+        {
+          "phrase": "select from a list",
+          "meaning": "chọn trong danh sách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/caeb6a5e-83c4-4170-be15-c92bd2bc1c4f-1-wm.jpg?v=1789803604869"
+        },
+        {
+          "phrase": "a select group",
+          "meaning": "nhóm được tuyển chọn"
+        }
+      ],
+      "synonyms": [
+        "choose (chọn)",
+        "pick (lựa ra)",
+        "exclusive (chọn lọc, hạng sang)"
+      ]
+    },
+    {
+      "id": "9b1db116-248f-4727-953c-0c94ecf3e6f6",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "arrangement",
+      "ipa": "/əˈreɪndʒ.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The travel arrangements were taken care of by Sara, Mr. Billings's capable assistant.",
+          "meaning": "sự sắp xếp, cách bố trí, việc thu xếp",
+          "toeic_tip": "Thường dùng số nhiều: make arrangements for something.",
+          "example_vi": "Sara, trợ lý giỏi giang của ông Billings, đã lo hết chuyện đi lại.",
+          "word_family": [
+            "arrange (v) sắp xếp, thu xếp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T07:15:51.421534+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9b1db116-248f-4727-953c-0c94ecf3e6f6-wm.jpg?v=1789797706487",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/arrangement-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/arrangement-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "travel arrangements",
+          "meaning": "việc thu xếp đi lại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b1db116-248f-4727-953c-0c94ecf3e6f6-0-wm.jpg?v=1789802138034"
+        },
+        {
+          "phrase": "make arrangements",
+          "meaning": "thu xếp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b1db116-248f-4727-953c-0c94ecf3e6f6-1-wm.jpg?v=1789802151288"
+        },
+        {
+          "phrase": "seating arrangement",
+          "meaning": "cách xếp chỗ ngồi"
+        }
+      ],
+      "synonyms": [
+        "plan (kế hoạch)",
+        "organization (việc tổ chức)",
+        "setup (cách bố trí)"
+      ]
+    },
+    {
+      "id": "4edcbb99-8885-4e7e-a66c-e3c37ab34d8a",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "take part in",
+      "ipa": "UK: /ˌteɪk ˈpɑːt ɪn/ | US: /ˌteɪk ˈpɑːrt ɪn/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The format for the session is very informal, which makes it easier for people to take part in the discussion.",
+          "meaning": "tham gia, góp mặt vào",
+          "antonyms": [
+            "withdraw from (rút khỏi)"
+          ],
+          "toeic_tip": "take part in tương đương participate in, luôn cần giới từ in.",
+          "example_vi": "Phiên này diễn ra rất thoải mái nên mọi người dễ góp lời vào cuộc thảo luận.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T06:37:57.54434+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4edcbb99-8885-4e7e-a66c-e3c37ab34d8a-wm.jpg?v=1789798115515",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/take-part-in-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/take-part-in-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "take part in a discussion",
+          "meaning": "tham gia thảo luận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4edcbb99-8885-4e7e-a66c-e3c37ab34d8a-0-wm.jpg?v=1789799864921"
+        },
+        {
+          "phrase": "take part in an event",
+          "meaning": "dự một sự kiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4edcbb99-8885-4e7e-a66c-e3c37ab34d8a-1-wm.jpg?v=1789799877406"
+        },
+        {
+          "phrase": "take an active part in",
+          "meaning": "tham gia tích cực vào"
+        }
+      ],
+      "synonyms": [
+        "participate in (tham gia)",
+        "join in (góp mặt)",
+        "engage in (dấn thân vào)"
+      ]
+    },
+    {
+      "id": "831e8dd1-753c-404e-a285-d4d8234af271",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "session",
+      "ipa": "/ˈseʃ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The morning sessions tend to fill up first, so sign up early.",
+          "meaning": "buổi, phiên họp, buổi làm việc",
+          "toeic_tip": "session chỉ một buổi trong chương trình, hay ra ở lịch hội nghị Part 7.",
+          "example_vi": "Các phiên buổi sáng thường kín chỗ trước nên hãy đăng ký sớm.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T07:03:05.138542+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/831e8dd1-753c-404e-a285-d4d8234af271-wm.jpg?v=1789798122312",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/session-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/session-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a training session",
+          "meaning": "buổi tập huấn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/831e8dd1-753c-404e-a285-d4d8234af271-0-wm.jpg?v=1789801374115"
+        },
+        {
+          "phrase": "the morning session",
+          "meaning": "phiên buổi sáng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/831e8dd1-753c-404e-a285-d4d8234af271-1-wm.jpg?v=1789801384994"
+        },
+        {
+          "phrase": "attend a session",
+          "meaning": "dự một phiên"
+        }
+      ],
+      "synonyms": [
+        "meeting (cuộc họp)",
+        "sitting (phiên họp)"
+      ]
+    },
+    {
+      "id": "988dc48b-9c73-4846-84d7-452838b70c6b",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "accommodate",
+      "ipa": "UK: /əˈkɒm.ə.deɪt/ | US: /əˈkɑː.mə.deɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The meeting room was large enough to accommodate the various needs of the groups using it.",
+          "meaning": "chứa được, đáp ứng, bố trí chỗ cho",
+          "toeic_tip": "Chú ý chính tả: hai chữ c và hai chữ m trong accommodate.",
+          "example_vi": "Phòng họp đủ rộng để đáp ứng đủ thứ nhu cầu của các nhóm sử dụng.",
+          "word_family": [
+            "accommodation (n) chỗ ở",
+            "accommodating (adj) sẵn lòng giúp đỡ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T07:14:45.39867+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/988dc48b-9c73-4846-84d7-452838b70c6b-wm.jpg?v=1789798124239",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accommodate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accommodate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accommodate guests",
+          "meaning": "bố trí chỗ cho khách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/988dc48b-9c73-4846-84d7-452838b70c6b-0-wm.jpg?v=1789802083451"
+        },
+        {
+          "phrase": "accommodate a request",
+          "meaning": "đáp ứng yêu cầu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/988dc48b-9c73-4846-84d7-452838b70c6b-1-wm.jpg?v=1789802085265"
+        },
+        {
+          "phrase": "accommodate up to 200 people",
+          "meaning": "chứa được tới 200 người"
+        }
+      ],
+      "synonyms": [
+        "hold (chứa được)",
+        "house (bố trí chỗ ở)",
+        "satisfy (đáp ứng)"
+      ]
+    },
+    {
+      "id": "9d6a6383-a0ce-4cc3-8017-d3a08782e678",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "hold",
+      "ipa": "UK: /həʊld/ | US: /hoʊld/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This meeting room holds at least 80 people comfortably.",
+          "meaning": "chứa được, tổ chức, giữ",
+          "antonyms": [
+            "cancel (hủy bỏ)"
+          ],
+          "toeic_tip": "Dạng bị động be held chỉ sự kiện được tổ chức, rất hay ra.",
+          "example_vi": "Phòng họp này chứa thoải mái ít nhất 80 người.",
+          "word_family": [
+            "holder (n) người nắm giữ, vật để đựng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T07:17:13.636638+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9d6a6383-a0ce-4cc3-8017-d3a08782e678-wm.jpg?v=1789798120593",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/hold-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/hold-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "hold a meeting",
+          "meaning": "tổ chức cuộc họp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9d6a6383-a0ce-4cc3-8017-d3a08782e678-0-wm.jpg?v=1789802220647"
+        },
+        {
+          "phrase": "hold 80 people",
+          "meaning": "chứa được 80 người",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9d6a6383-a0ce-4cc3-8017-d3a08782e678-1-wm.jpg?v=1789802233501"
+        },
+        {
+          "phrase": "hold a position",
+          "meaning": "giữ một chức vụ"
+        }
+      ],
+      "synonyms": [
+        "accommodate (chứa được)",
+        "conduct (tiến hành)",
+        "organize (tổ chức)"
+      ]
+    },
+    {
+      "id": "39c2e1b8-05b9-4934-80a3-302824f1e2e3",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "association",
+      "ipa": "UK: /əˌsəʊ.siˈeɪ.ʃən/ | US: /əˌsoʊ.siˈeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Membership in a trade or professional association provides business contacts and mutual support.",
+          "meaning": "hiệp hội, tổ chức, mối liên hệ",
+          "toeic_tip": "Trong TOEIC, sales associate nghĩa là nhân viên bán hàng.",
+          "example_vi": "Vào hiệp hội ngành nghề giúp bạn có quan hệ làm ăn và chỗ dựa lẫn nhau.",
+          "word_family": [
+            "associate (v) liên kết, giao thiệp",
+            "associate (n) cộng sự, đồng nghiệp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T06:08:45.493588+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/39c2e1b8-05b9-4934-80a3-302824f1e2e3-wm.jpg?v=1789798125432",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/association-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/association-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a trade association",
+          "meaning": "hiệp hội ngành nghề",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/39c2e1b8-05b9-4934-80a3-302824f1e2e3-0-wm.jpg?v=1789797785845"
+        },
+        {
+          "phrase": "in association with",
+          "meaning": "phối hợp với",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/39c2e1b8-05b9-4934-80a3-302824f1e2e3-1-wm.jpg?v=1789797795038"
+        },
+        {
+          "phrase": "join an association",
+          "meaning": "gia nhập hiệp hội"
+        }
+      ],
+      "synonyms": [
+        "organization (tổ chức)",
+        "society (hội)",
+        "connection (mối liên hệ)"
+      ]
+    },
+    {
+      "id": "19dae714-4dbc-4392-80aa-cc079ca1c11b",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "location",
+      "ipa": "UK: /ləʊˈkeɪ.ʃən/ | US: /loʊˈkeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The location of the meeting was changed from the Red Room to the Green Room.",
+          "meaning": "địa điểm, vị trí, nơi chốn",
+          "toeic_tip": "Cụm be located in, on, at tả vị trí công ty, hay ra ở Part 7.",
+          "example_vi": "Cuộc họp được chuyển từ phòng Đỏ sang phòng Xanh.",
+          "word_family": [
+            "locate (v) đặt tại, xác định vị trí",
+            "located (adj) tọa lạc"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T06:19:22.40986+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/19dae714-4dbc-4392-80aa-cc079ca1c11b-wm.jpg?v=1789798262023",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/location-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/location-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a convenient location",
+          "meaning": "vị trí thuận tiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/19dae714-4dbc-4392-80aa-cc079ca1c11b-0-wm.jpg?v=1789798761728"
+        },
+        {
+          "phrase": "change the location",
+          "meaning": "đổi địa điểm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/19dae714-4dbc-4392-80aa-cc079ca1c11b-1-wm.jpg?v=1789798762268"
+        },
+        {
+          "phrase": "a central location",
+          "meaning": "vị trí trung tâm"
+        }
+      ],
+      "synonyms": [
+        "site (địa điểm)",
+        "venue (nơi tổ chức)",
+        "place (nơi chốn)"
+      ]
+    },
+    {
+      "id": "65a79873-8a3a-439f-9f49-a7d296f4cc28",
+      "part_id": "4f81f565-8fef-423f-a55c-930b0bea1fed",
+      "word": "get in touch",
+      "ipa": "/ˌɡet ɪn ˈtʌtʃ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "As soon as we arrive at the hotel, we will get in touch with the manager about the unexpected guests.",
+          "meaning": "liên lạc, bắt liên lạc với ai",
+          "antonyms": [
+            "lose touch (mất liên lạc)"
+          ],
+          "toeic_tip": "Luôn đi với with; get in touch là bắt liên lạc, keep in touch là duy trì.",
+          "example_vi": "Vừa tới khách sạn là chúng tôi sẽ liên hệ ngay với quản lý về mấy vị khách phát sinh.",
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:50:44.686884+00:00",
+      "updated_at": "2026-09-19T06:46:52.461308+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/65a79873-8a3a-439f-9f49-a7d296f4cc28-wm.jpg?v=1789798442650",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/get-in-touch-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/get-in-touch-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "get in touch with someone",
+          "meaning": "liên lạc với ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/65a79873-8a3a-439f-9f49-a7d296f4cc28-0-wm.jpg?v=1789800401315"
+        },
+        {
+          "phrase": "get in touch by e-mail",
+          "meaning": "liên hệ qua email",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/65a79873-8a3a-439f-9f49-a7d296f4cc28-1-wm.jpg?v=1789800412293"
+        },
+        {
+          "phrase": "keep in touch",
+          "meaning": "giữ liên lạc"
+        }
+      ],
+      "synonyms": [
+        "contact (liên hệ)",
+        "reach (liên lạc được với)"
+      ]
+    }
+  ]
+}

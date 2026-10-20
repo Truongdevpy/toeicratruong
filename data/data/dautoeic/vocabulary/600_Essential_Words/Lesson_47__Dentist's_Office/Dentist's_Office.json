@@ -1,0 +1,642 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "00c8821c-5217-434e-8565-e19828515ba7",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 47: Dentist's Office",
+    "order_index": 47,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:55.42905+00:00",
+    "updated_at": "2026-09-18T08:53:55.42905+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+    "test_id": "00c8821c-5217-434e-8565-e19828515ba7",
+    "name": "Dentist's Office",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:55.42905+00:00",
+    "updated_at": "2026-09-18T08:53:55.42905+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "caf7d593-fdb4-43f5-99d5-389a356d9954",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "illuminate",
+      "ipa": "/ɪˈluː.mɪ.neɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The dark recesses of the mouth can only be seen clearly when illuminated with a lamp.",
+          "meaning": "chiếu sáng, rọi sáng, làm sáng tỏ",
+          "antonyms": [
+            "darken (làm tối đi)"
+          ],
+          "toeic_tip": "Nghĩa bóng hay bị bỏ qua: illuminate a topic là làm sáng tỏ vấn đề.",
+          "example_vi": "Những ngóc ngách tối trong miệng chỉ nhìn rõ được khi rọi đèn vào.",
+          "word_family": [
+            "illumination (n) sự chiếu sáng",
+            "illuminating (adj) giúp hiểu rõ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:40:37.527721+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/caf7d593-fdb4-43f5-99d5-389a356d9954-wm.jpg?v=1789798048168",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/illuminate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/illuminate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "illuminate a room",
+          "meaning": "chiếu sáng căn phòng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/caf7d593-fdb4-43f5-99d5-389a356d9954-0-wm.jpg?v=1789803622085"
+        },
+        {
+          "phrase": "brightly illuminated",
+          "meaning": "được chiếu sáng rực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/caf7d593-fdb4-43f5-99d5-389a356d9954-1-wm.jpg?v=1789803637394"
+        },
+        {
+          "phrase": "illuminate an issue",
+          "meaning": "làm sáng tỏ vấn đề"
+        }
+      ],
+      "synonyms": [
+        "light up (thắp sáng)",
+        "clarify (làm rõ)"
+      ]
+    },
+    {
+      "id": "cbbda7d9-bebc-402a-8e28-39fdbf7266d2",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "regularly",
+      "ipa": "UK: /ˈreɡ.jə.lə.li/ | US: /ˈreɡ.jɚ.lɚ.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "She brushes regularly after every meal.",
+          "meaning": "đều đặn, thường xuyên, theo định kỳ",
+          "antonyms": [
+            "rarely (hiếm khi)",
+            "occasionally (thỉnh thoảng)"
+          ],
+          "toeic_tip": "Trạng từ này đứng sau động từ thường hoặc cuối câu.",
+          "example_vi": "Cô ấy đánh răng đều đặn sau mỗi bữa ăn.",
+          "word_family": [
+            "regular (adj) đều đặn, thường lệ",
+            "regularity (n) tính đều đặn"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:41:03.092566+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cbbda7d9-bebc-402a-8e28-39fdbf7266d2-wm.jpg?v=1789798071236",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/regularly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/regularly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "check regularly",
+          "meaning": "kiểm tra định kỳ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cbbda7d9-bebc-402a-8e28-39fdbf7266d2-0-wm.jpg?v=1789803651877"
+        },
+        {
+          "phrase": "meet regularly",
+          "meaning": "họp đều đặn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cbbda7d9-bebc-402a-8e28-39fdbf7266d2-1-wm.jpg?v=1789803662953"
+        },
+        {
+          "phrase": "regularly scheduled",
+          "meaning": "theo lịch định kỳ"
+        }
+      ],
+      "synonyms": [
+        "routinely (theo thông lệ)",
+        "frequently (thường xuyên)"
+      ]
+    },
+    {
+      "id": "140ce2a0-2e1f-4367-87cc-6526fd59bf3e",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "catch up",
+      "ipa": "/ˌkætʃ ˈʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My dentist likes to take time to catch up before she starts the examination.",
+          "meaning": "bắt kịp, làm bù cho kịp, hỏi han cập nhật tình hình",
+          "antonyms": [
+            "fall behind (tụt lại phía sau)"
+          ],
+          "toeic_tip": "catch up on đi với công việc, catch up with đi với người.",
+          "example_vi": "Nha sĩ của tôi thích dành chút thời gian hỏi han chuyện trò rồi mới bắt đầu khám.",
+          "word_family": [
+            "catch-up (n) việc làm bù cho kịp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T06:17:39.878894+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/140ce2a0-2e1f-4367-87cc-6526fd59bf3e-wm.jpg?v=1789798078793",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/catch-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/catch-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "catch up on work",
+          "meaning": "làm bù công việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/140ce2a0-2e1f-4367-87cc-6526fd59bf3e-0-wm.jpg?v=1789798655790"
+        },
+        {
+          "phrase": "catch up with somebody",
+          "meaning": "bắt kịp ai, gặp hỏi thăm ai",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/140ce2a0-2e1f-4367-87cc-6526fd59bf3e-1-wm.jpg?v=1789798659734"
+        },
+        {
+          "phrase": "catch up on the news",
+          "meaning": "cập nhật tin tức"
+        }
+      ],
+      "synonyms": [
+        "keep up with (theo kịp)",
+        "update (cập nhật)"
+      ]
+    },
+    {
+      "id": "9f38084d-d188-4a38-9fd6-eaf5fad63032",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "restore",
+      "ipa": "UK: /rɪˈstɔː/ | US: /rɪˈstɔːr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The cleaning restored the whiteness of my teeth.",
+          "meaning": "khôi phục, phục hồi như ban đầu, trùng tu",
+          "antonyms": [
+            "damage (làm hư hại)",
+            "destroy (phá hủy)"
+          ],
+          "toeic_tip": "restore là đưa về trạng thái ban đầu; repair chỉ là sửa cho dùng được.",
+          "example_vi": "Việc lấy cao răng đã trả lại cho tôi hàm răng trắng như cũ.",
+          "word_family": [
+            "restoration (n) sự phục hồi, sự trùng tu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:19:10.286846+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9f38084d-d188-4a38-9fd6-eaf5fad63032-wm.jpg?v=1789798073783",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/restore-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/restore-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "restore power",
+          "meaning": "khôi phục điện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9f38084d-d188-4a38-9fd6-eaf5fad63032-0-wm.jpg?v=1789802349966"
+        },
+        {
+          "phrase": "restore confidence",
+          "meaning": "lấy lại niềm tin",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9f38084d-d188-4a38-9fd6-eaf5fad63032-1-wm.jpg?v=1789802350150"
+        },
+        {
+          "phrase": "restore a building",
+          "meaning": "trùng tu tòa nhà"
+        }
+      ],
+      "synonyms": [
+        "renovate (tu sửa lại)",
+        "repair (sửa chữa)"
+      ]
+    },
+    {
+      "id": "dfb2c455-28fb-4aa2-883f-67671db4286e",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "evident",
+      "ipa": "/ˈev.ɪ.dənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The presence of a wisdom tooth was not evident until the dentist started to examine the patient.",
+          "meaning": "rõ ràng, hiển nhiên, dễ nhận thấy",
+          "antonyms": [
+            "unclear (không rõ ràng)",
+            "hidden (bị che giấu)"
+          ],
+          "toeic_tip": "Danh từ evidence không đếm được: dùng a piece of evidence.",
+          "example_vi": "Mãi đến khi nha sĩ khám thì mới thấy rõ là có răng khôn.",
+          "word_family": [
+            "evidence (n) bằng chứng",
+            "evidently (adv) rõ ràng là"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:51:55.823071+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/dfb2c455-28fb-4aa2-883f-67671db4286e-wm.jpg?v=1789798272703",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/evident-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/evident-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "it is evident that",
+          "meaning": "rõ ràng là",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dfb2c455-28fb-4aa2-883f-67671db4286e-0-wm.jpg?v=1789804304218"
+        },
+        {
+          "phrase": "become evident",
+          "meaning": "trở nên rõ ràng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/dfb2c455-28fb-4aa2-883f-67671db4286e-1-wm.jpg?v=1789804315662"
+        },
+        {
+          "phrase": "clearly evident",
+          "meaning": "thấy rõ"
+        }
+      ],
+      "synonyms": [
+        "obvious (hiển nhiên)",
+        "apparent (rõ ràng)"
+      ]
+    },
+    {
+      "id": "75ff4624-246b-497e-959c-239b5ca4db3f",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "position",
+      "ipa": "/pəˈzɪʃ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Let me tilt your head to a more comfortable position for you.",
+          "meaning": "vị trí thích hợp, tư thế, chỗ đặt",
+          "toeic_tip": "Nghĩa thứ hai hay ra ở Part 7: position là vị trí việc làm.",
+          "example_vi": "Để tôi nghiêng đầu bạn sang tư thế dễ chịu hơn.",
+          "word_family": [
+            "position (v) đặt vào vị trí",
+            "positioning (n) việc bố trí"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T06:55:39.458435+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/75ff4624-246b-497e-959c-239b5ca4db3f-wm.jpg?v=1789798074170",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/position-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/position-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "in a comfortable position",
+          "meaning": "ở tư thế thoải mái",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/75ff4624-246b-497e-959c-239b5ca4db3f-0-wm.jpg?v=1789800938009"
+        },
+        {
+          "phrase": "change position",
+          "meaning": "đổi tư thế",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/75ff4624-246b-497e-959c-239b5ca4db3f-1-wm.jpg?v=1789800939310"
+        },
+        {
+          "phrase": "the position of",
+          "meaning": "vị trí của"
+        }
+      ],
+      "synonyms": [
+        "place (chỗ)",
+        "posture (tư thế)"
+      ]
+    },
+    {
+      "id": "e89956c7-a82d-49b8-a502-79557eaee829",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "aware",
+      "ipa": "UK: /əˈweə/ | US: /əˈwer/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I was not aware that flossing my teeth could prevent a buildup of plaque.",
+          "meaning": "nhận biết, ý thức được, biết rõ",
+          "antonyms": [
+            "unaware (không hay biết)",
+            "oblivious (không để ý)"
+          ],
+          "toeic_tip": "Dùng aware of + danh từ hoặc aware that + mệnh đề, không aware about.",
+          "example_vi": "Tôi không biết dùng chỉ nha khoa lại ngăn được mảng bám.",
+          "word_family": [
+            "awareness (n) sự nhận thức",
+            "unaware (adj) không hay biết"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:55:39.348734+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e89956c7-a82d-49b8-a502-79557eaee829-wm.jpg?v=1789798299334",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/aware-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/aware-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "be aware of",
+          "meaning": "biết về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e89956c7-a82d-49b8-a502-79557eaee829-0-wm.jpg?v=1789804529151"
+        },
+        {
+          "phrase": "make somebody aware that",
+          "meaning": "cho ai biết rằng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e89956c7-a82d-49b8-a502-79557eaee829-1-wm.jpg?v=1789804539204"
+        },
+        {
+          "phrase": "well aware",
+          "meaning": "biết rõ"
+        }
+      ],
+      "synonyms": [
+        "conscious (ý thức được)",
+        "informed (đã được biết)"
+      ]
+    },
+    {
+      "id": "73b27729-9ce9-4ae0-ab31-580b77d64b78",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "overview",
+      "ipa": "UK: /ˈəʊ.və.vjuː/ | US: /ˈoʊ.vɚ.vjuː/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I did a quick overview of your teeth and they look in good shape.",
+          "meaning": "cái nhìn tổng quan, bản tóm lược",
+          "toeic_tip": "Đi với give/provide an overview of; danh từ đếm được, thường có mạo từ.",
+          "example_vi": "Tôi vừa xem lướt qua răng của bạn, trông khá ổn.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T06:56:48.798885+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/73b27729-9ce9-4ae0-ab31-580b77d64b78-wm.jpg?v=1789798051087",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/overview-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/overview-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "give an overview",
+          "meaning": "trình bày tổng quan",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/73b27729-9ce9-4ae0-ab31-580b77d64b78-0-wm.jpg?v=1789800994653"
+        },
+        {
+          "phrase": "a brief overview",
+          "meaning": "tổng quan ngắn gọn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/73b27729-9ce9-4ae0-ab31-580b77d64b78-1-wm.jpg?v=1789801008653"
+        },
+        {
+          "phrase": "an overview of the project",
+          "meaning": "tổng quan dự án"
+        }
+      ],
+      "synonyms": [
+        "summary (bản tóm tắt)",
+        "survey (sự khảo lược)"
+      ]
+    },
+    {
+      "id": "7415dd35-4adc-4fc7-bd01-fcbb6bc5c33e",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "habit",
+      "ipa": "/ˈhæb.ɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The toddler's father stressed the importance of toothbrushing in hopes of establishing a good habit.",
+          "meaning": "thói quen, nếp quen",
+          "toeic_tip": "Cấu trúc be in the habit of V-ing; habit là cá nhân, custom là cộng đồng.",
+          "example_vi": "Ông bố nhấn mạnh việc đánh răng quan trọng ra sao, mong con tập được thói quen tốt.",
+          "word_family": [
+            "habitual (adj) thành thói quen",
+            "habitually (adv) theo thói quen"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T06:57:31.755365+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7415dd35-4adc-4fc7-bd01-fcbb6bc5c33e-wm.jpg?v=1789798074637",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/habit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/habit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "form a habit",
+          "meaning": "hình thành thói quen",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7415dd35-4adc-4fc7-bd01-fcbb6bc5c33e-0-wm.jpg?v=1789801020420"
+        },
+        {
+          "phrase": "break a habit",
+          "meaning": "bỏ thói quen",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7415dd35-4adc-4fc7-bd01-fcbb6bc5c33e-1-wm.jpg?v=1789801051621"
+        },
+        {
+          "phrase": "be in the habit of",
+          "meaning": "có thói quen"
+        }
+      ],
+      "synonyms": [
+        "routine (lề thói)",
+        "practice (thông lệ)"
+      ]
+    },
+    {
+      "id": "7f5b83c4-ad98-48ec-9f40-4e31ec329c20",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "encouragement",
+      "ipa": "UK: /ɪnˈkʌr.ɪdʒ.mənt/ | US: /ɪnˈkɝː.ɪdʒ.mənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The perfect checkup was certainly encouragement to keep up my good dental hygiene.",
+          "meaning": "sự động viên, sự khích lệ, nguồn cổ vũ",
+          "antonyms": [
+            "discouragement (sự làm nản lòng)"
+          ],
+          "toeic_tip": "Động từ đi kèm: encourage somebody to do something.",
+          "example_vi": "Kết quả khám răng hoàn hảo đúng là động lực để tôi giữ thói quen vệ sinh răng miệng tốt.",
+          "word_family": [
+            "encourage (v) khuyến khích",
+            "encouraging (adj) đáng khích lệ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:01:28.364766+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7f5b83c4-ad98-48ec-9f40-4e31ec329c20-wm.jpg?v=1789798271677",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/encouragement-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/encouragement-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "offer encouragement",
+          "meaning": "động viên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7f5b83c4-ad98-48ec-9f40-4e31ec329c20-0-wm.jpg?v=1789801288219"
+        },
+        {
+          "phrase": "words of encouragement",
+          "meaning": "lời động viên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7f5b83c4-ad98-48ec-9f40-4e31ec329c20-1-wm.jpg?v=1789801287666"
+        },
+        {
+          "phrase": "a source of encouragement",
+          "meaning": "nguồn khích lệ"
+        }
+      ],
+      "synonyms": [
+        "support (sự ủng hộ)",
+        "motivation (động lực)"
+      ]
+    },
+    {
+      "id": "2192d7c2-27f8-48bd-9544-efde2ad3eefe",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "distraction",
+      "ipa": "/dɪˈstræk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To provide a distraction from the noise, Luisa's dentist offered her a pair of earphones.",
+          "meaning": "sự xao nhãng, thứ làm phân tâm, thứ giải khuây",
+          "antonyms": [
+            "concentration (sự tập trung)",
+            "focus (sự chú tâm)"
+          ],
+          "toeic_tip": "Cấu trúc distract somebody from something; danh từ đếm được.",
+          "example_vi": "Để Luisa quên đi tiếng ồn, nha sĩ đưa cho cô một chiếc tai nghe.",
+          "word_family": [
+            "distract (v) làm phân tâm",
+            "distracted (adj) mất tập trung",
+            "distracting (adj) gây phân tâm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T06:21:01.060302+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2192d7c2-27f8-48bd-9544-efde2ad3eefe-wm.jpg?v=1789798501088",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/distraction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/distraction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a distraction from",
+          "meaning": "thứ làm quên đi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2192d7c2-27f8-48bd-9544-efde2ad3eefe-0-wm.jpg?v=1789798859756"
+        },
+        {
+          "phrase": "avoid distractions",
+          "meaning": "tránh xao nhãng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2192d7c2-27f8-48bd-9544-efde2ad3eefe-1-wm.jpg?v=1789798860904"
+        },
+        {
+          "phrase": "a welcome distraction",
+          "meaning": "sự giải khuây dễ chịu"
+        }
+      ],
+      "synonyms": [
+        "interruption (sự gián đoạn)",
+        "diversion (thứ làm phân tâm)"
+      ]
+    },
+    {
+      "id": "bd7eb9c9-ee17-4c55-8bb3-b9176c270b22",
+      "part_id": "864a9126-f71d-46ed-ac2c-517173ae47b4",
+      "word": "irritate",
+      "ipa": "/ˈɪr.ɪ.teɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The broken tooth rubbed against my tongue, irritating it.",
+          "meaning": "làm rát, gây kích ứng, làm khó chịu",
+          "antonyms": [
+            "soothe (làm dịu)",
+            "calm (làm êm dịu)"
+          ],
+          "toeic_tip": "irritating là gây khó chịu, irritated là bị kích ứng hoặc đang bực.",
+          "example_vi": "Cái răng mẻ cọ vào lưỡi làm lưỡi tôi rát.",
+          "word_family": [
+            "irritation (n) sự kích ứng",
+            "irritating (adj) gây khó chịu",
+            "irritable (adj) dễ cáu"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:55.42905+00:00",
+      "updated_at": "2026-09-19T07:34:02.502072+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/bd7eb9c9-ee17-4c55-8bb3-b9176c270b22-wm.jpg?v=1789798080148",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/irritate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/irritate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "irritate the skin",
+          "meaning": "gây kích ứng da",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bd7eb9c9-ee17-4c55-8bb3-b9176c270b22-0-wm.jpg?v=1789803231643"
+        },
+        {
+          "phrase": "be irritated by",
+          "meaning": "bị kích ứng bởi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/bd7eb9c9-ee17-4c55-8bb3-b9176c270b22-1-wm.jpg?v=1789803242362"
+        },
+        {
+          "phrase": "irritate the eyes",
+          "meaning": "làm cay mắt"
+        }
+      ],
+      "synonyms": [
+        "inflame (làm viêm tấy)",
+        "annoy (làm bực mình)"
+      ]
+    }
+  ]
+}

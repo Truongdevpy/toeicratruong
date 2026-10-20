@@ -1,0 +1,400 @@
+{
+  "subtopic": {
+    "id": "98ec5967-8ea1-45a9-8cdb-5b933e10b873",
+    "topic_id": "c051a2ff-9bf0-44af-a173-d89691d28027",
+    "title_en": "Từ hạn định chỉ toàn bộ và từng cái",
+    "title_vi": "Từ hạn định chỉ toàn bộ và từng cái",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 57,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-mao-tu-va-tu-han-dinh-tu-han-dinh-chi-toan-bo-va-tung-cai"
+  },
+  "lessons": [
+    {
+      "id": "4cd89f6e-3418-4ec9-990e-6df319027b95",
+      "subtopic_id": "98ec5967-8ea1-45a9-8cdb-5b933e10b873",
+      "title_en": "Từ hạn định chỉ toàn bộ và từng cái",
+      "title_vi": "Từ hạn định chỉ toàn bộ và từng cái",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 5 · Câu 110",
+          "options": {
+            "A": "all",
+            "B": "so",
+            "C": "that",
+            "D": "to"
+          },
+          "question": "Starting on October 8, ------- board of education meetings will be streamed live on the school district's Web site.",
+          "translation": "Bắt đầu từ ngày 8 tháng 10, tất cả các cuộc họp của hội đồng giáo dục sẽ được phát trực tiếp trên trang web của học khu."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm hai từ hạn định “all”, “that”, liên từ “so” và giới từ “to”. Chỗ trống đứng ngay trước cụm danh từ làm chủ ngữ “board of education meetings”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "Starting on October 8,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "board of education meetings",
+                    "label": "chủ ngữ (danh từ chính “meetings”)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be streamed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "live",
+                    "label": ""
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the school district's Web site.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Cụm “Starting on October 8” chỉ thời gian; chủ ngữ là cụm danh từ có danh từ chính “meetings”; động từ chính là “will be streamed”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ chính sau chỗ trống là số ít, số nhiều hay không đếm được.",
+                  "Mỗi từ chỉ toàn bộ, từng cái (all, each, every, both, either, neither) đi với loại danh từ nào.",
+                  "Từ hạn định đó kéo theo động từ số ít hay số nhiều."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Từ hạn định đứng trước danh từ để nói phạm vi: toàn bộ (all), từng cái trong nhóm (each, every) hay trong hai cái (both, either, neither). Mỗi từ chỉ đi với loại danh từ nhất định và kéo theo động từ số ít hoặc số nhiều tương ứng.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "toàn bộ",
+                    "formula": "all + N số nhiều + V số nhiều"
+                  },
+                  {
+                    "label": "toàn bộ",
+                    "formula": "all + N không đếm được + V số ít"
+                  },
+                  {
+                    "label": "từng cái",
+                    "formula": "each / every + N số ít + V số ít"
+                  },
+                  {
+                    "label": "cả hai",
+                    "formula": "both + N số nhiều + V số nhiều"
+                  },
+                  {
+                    "label": "một / không cái nào trong hai",
+                    "formula": "either / neither + N số ít + V số ít"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "Each of",
+                    "label": "each of / every one of"
+                  },
+                  {
+                    "role": "N",
+                    "text": "the new hires",
+                    "label": "the/our + danh từ số nhiều"
+                  },
+                  {
+                    "role": "V",
+                    "text": "has been assigned",
+                    "label": "động từ số ít"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a mentor.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Dạng có “of”: từ hạn định + of + the/our + danh từ số nhiều, rồi đến động từ chính."
+              },
+              {
+                "rows": [
+                  [
+                    "all",
+                    "tất cả",
+                    "*All employees must attend the safety training on Friday.* — Tất cả nhân viên phải dự buổi huấn luyện an toàn vào thứ Sáu."
+                  ],
+                  [
+                    "each, every",
+                    "mỗi, mọi",
+                    "*Every order is checked before it leaves the warehouse.* — Mọi đơn hàng đều được kiểm tra trước khi rời kho."
+                  ],
+                  [
+                    "both",
+                    "cả hai",
+                    "*Both candidates have strong sales experience.* — Cả hai ứng viên đều có kinh nghiệm bán hàng vững."
+                  ],
+                  [
+                    "either",
+                    "một trong hai; either side: hai bên",
+                    "*Chairs were placed on either side of the stage.* — Ghế được đặt ở hai bên sân khấu."
+                  ],
+                  [
+                    "neither",
+                    "không cái nào trong hai",
+                    "*Neither applicant has managed a team before.* — Không ai trong hai ứng viên từng quản lý một nhóm."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Danh từ đếm được số ít chưa thêm đuôi số nhiều -s/-es: invoice, participant, visitor, side, candidate, guest room.",
+                  "Danh từ không đếm được không có dạng số nhiều và không đi với a/an: equipment, information."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đúng loại danh từ và đúng số của động từ.",
+                    "form": "all, all of + danh từ số nhiều hoặc không đếm được; each, every + danh từ số ít",
+                    "example": "*All employees are …*; *Every invoice must …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Các từ này đi với danh từ đếm được số ít (another: một … khác). Ngoại lệ: every / another + số đếm + danh từ số nhiều, như every two weeks, another three days.",
+                    "form": "each, every, either, another + danh từ số nhiều",
+                    "example": "*each visitor*, không nói *each visitors*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Các từ này cần danh từ số nhiều (all còn đi với danh từ không đếm được và vài cụm thời gian như all day).",
+                    "form": "all, both, many, several, few + danh từ số ít",
+                    "example": "*all guest rooms*, *both sides*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nói every of, every the, another the; phải nói every one of the …, each of the …",
+                    "form": "every đứng ngay trước of, the, our; another đứng ngay trước the, our",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Với danh từ số nhiều, các từ này đi với động từ số nhiều; động từ số ít cần each of hoặc every one of.",
+                    "form": "all of, both of, many of + động từ số ít",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "much đi với danh từ không đếm được (much of còn đi với the + danh từ số ít: much of the day); each, every, many đi với danh từ đếm được.",
+                    "form": "much + danh từ đếm được; much of + danh từ số nhiều; each of, many of + danh từ không đếm được",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + danh từ số ít",
+                    "example": "*___ invoice submitted after March 1*; *on ___ side of the main entrance*; *The heads of ___ department*"
+                  },
+                  {
+                    "signal": "___ + danh từ số nhiều",
+                    "example": "*___ board of education meetings*; *___ employees are required*; *approved ___ options*"
+                  },
+                  {
+                    "signal": "___ + danh từ không đếm được",
+                    "example": "*___ equipment borrowed from the media room*"
+                  },
+                  {
+                    "signal": "___ + (of) the/our + danh từ",
+                    "example": "*___ the meeting rooms*; *___ our store managers*; *___ of the new laptops*"
+                  },
+                  {
+                    "signal": "động từ chính số ít",
+                    "example": "*… has been checked*; *… is expected*; *… has been assigned*"
+                  },
+                  {
+                    "signal": "động từ chính số nhiều",
+                    "example": "*… are required*; *… are equipped*"
+                  },
+                  {
+                    "signal": "có đúng hai",
+                    "example": "*two logo designs*; *two shops downtown*; *Two candidates*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là all, each, every, both, either, neither, many, much… (có thể kèm of) thì đây là câu từ hạn định.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Nhìn danh từ chính sau chỗ trống: số ít, số nhiều hay không đếm được; trước danh từ có the/our không. Xem thêm động từ chính chia số ít hay số nhiều, và câu có nói đúng hai người, vật không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn từ đi được với loại danh từ đó và khớp số của động từ; loại từ dành cho loại danh từ khác, loại every đứng trước of, the, our.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "Starting on October 8,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "all",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "S",
+                    "text": "board of education meetings",
+                    "label": "danh từ chính số nhiều “meetings”"
+                  },
+                  {
+                    "role": "V",
+                    "text": "will be streamed",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "live",
+                    "label": ""
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on the school district's Web site.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “all” đứng trước cụm danh từ số nhiều “board of education meetings”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm từ hạn định “all”, “that”, liên từ “so” và giới từ “to” nên đây là câu từ hạn định.",
+                  "Bước 2: Chỗ trống đứng trước cụm chủ ngữ “board of education meetings”; dấu hiệu “___ + danh từ số nhiều”: danh từ chính “meetings” có -s.",
+                  "Bước 3: Cần all + danh từ số nhiều, vì vậy chọn “all” (tất cả).",
+                  "“so” (B) là liên từ nối hai mệnh đề, nhưng “Starting on October 8” không phải mệnh đề, nên loại.",
+                  "“that” (C) làm từ hạn định chỉ đi với danh từ số ít hoặc không đếm được, không hợp với “meetings” số nhiều, nên loại.",
+                  "“to” (D) là giới từ, thêm vào thì câu mất chủ ngữ cho “will be streamed”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Sau all of, each of, every one of, both of phải có the, our, these… hoặc đại từ (all of them); không nói *each of managers*.",
+                  "Chủ ngữ “each of / every one of + danh từ số nhiều” vẫn đi với động từ số ít: *Each of the rooms has a projector.* — Mỗi phòng đều có một máy chiếu.",
+                  "“either side / either end” nghĩa là mỗi bên trong hai bên, tức là cả hai bên."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "all + danh từ số nhiều hoặc không đếm được; each, every, either, neither + danh từ số ít.",
+                  "each of, every one of + the/our + danh từ số nhiều + động từ số ít.",
+                  "both chỉ đúng hai, đi với danh từ số nhiều."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,369 @@
+{
+  "subtopic": {
+    "id": "ec6853e1-d6dc-4407-92e1-6ad931adddaf",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì hiện tại tiếp diễn",
+    "title_vi": "Thì hiện tại tiếp diễn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 80,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-hien-tai-tiep-dien"
+  },
+  "lessons": [
+    {
+      "id": "9cd5aaf0-4b4d-48a0-955b-a20f1b6f3d9e",
+      "subtopic_id": "ec6853e1-d6dc-4407-92e1-6ad931adddaf",
+      "title_en": "Thì hiện tại tiếp diễn",
+      "title_vi": "Thì hiện tại tiếp diễn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 4 · Câu 109",
+          "options": {
+            "A": "organize",
+            "B": "organized",
+            "C": "organizing",
+            "D": "organization"
+          },
+          "question": "Ms. Okada is ------- a new social media campaign at the request of our office manager.",
+          "translation": "Bà Okada đang tổ chức một chiến dịch mới trên mạng xã hội theo yêu cầu của trưởng văn phòng chúng tôi."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm ba dạng của động từ “organize” và danh từ “organization”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ms. Okada",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is",
+                    "label": "am/is/are"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "a",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "ADJ",
+                    "text": "new",
+                    "label": "tính từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "social media campaign",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the request of our office manager.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng ngay sau “is” và trước cụm danh từ “a new social media campaign”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau am/is/are, động từ ở dạng nào",
+                  "khi nào dùng chủ động, khi nào dùng bị động",
+                  "danh từ có đứng được ở chỗ này không"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì hiện tại tiếp diễn nói về việc đang diễn ra lúc nói, hoặc đang diễn ra trong một khoảng tạm thời quanh hiện tại (tuần này, tháng này).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "S + am/is/are + V-ing"
+                  }
+                ]
+              },
+              {
+                "text": "Chia am/is/are theo chủ ngữ: I đi với am; chủ ngữ số ít đi với is; you, we, they và chủ ngữ số nhiều đi với are.",
+                "type": "paragraph"
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.3,
+                    "label": "đầu tháng này"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  },
+                  {
+                    "at": 0.9,
+                    "label": "cuối tháng này"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.6,
+                    "from": 0.3,
+                    "label": "is working",
+                    "style": "solid"
+                  },
+                  {
+                    "to": 0.9,
+                    "from": 0.6,
+                    "label": "còn tiếp",
+                    "style": "dashed"
+                  }
+                ],
+                "points": [],
+                "caption": "*Mr. Lee is working at the Tokyo branch this month.*: việc tạm thời trong tháng này, “bây giờ” nằm trong khoảng đó."
+              },
+              {
+                "rows": [
+                  [
+                    "việc đang diễn ra lúc nói",
+                    "*The panel is interviewing a candidate right now.* — Hội đồng đang phỏng vấn một ứng viên ngay lúc này."
+                  ],
+                  [
+                    "việc tạm thời trong khoảng hiện nay",
+                    "*Mr. Lee is working at the Tokyo branch this month.* — Tháng này ông Lee đang làm việc ở chi nhánh Tokyo."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau am/is/are: chủ ngữ tự làm hành động thì dùng **V-ing** (chủ động); chủ ngữ chịu hành động thì dùng **V3** (bị động).",
+                  "Bị động của động từ một tân ngữ (install, scan, organize) không có tân ngữ theo sau, nên thấy cụm danh từ làm tân ngữ ngay sau chỗ trống thì chọn V-ing."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Việc lặp lại hoặc sự thật chung, không nói việc đang diễn ra lúc này.",
+                    "form": "V, V-s (hiện tại đơn)",
+                    "example": "“drops”, “hires”, “prepares”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc thuộc về quá khứ.",
+                    "form": "V-ed (quá khứ đơn), had + V3 (quá khứ hoàn thành)",
+                    "example": "“dropped”, “had hired”, “had worked”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Việc đã xảy ra tính đến nay, không nói việc còn đang làm dở.",
+                    "form": "has/have + V3 (hiện tại hoàn thành)",
+                    "example": "“has delivered”, “have taken”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 sau is/are là bị động, không hợp khi chủ ngữ tự làm và có tân ngữ theo sau; V-s và V nguyên mẫu không đứng sau is/are.",
+                    "form": "V3, V-s, V nguyên mẫu đặt sau is/are có sẵn",
+                    "example": "“installed”, “scans”, “increase”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính.",
+                    "form": "V-ing không có am/is/are",
+                    "example": "“counting”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không mang được tân ngữ theo sau.",
+                    "form": "danh từ",
+                    "example": "“installation”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "now / right now",
+                    "example": "*Meridian Logistics ------- three additional drivers right now*, *We are now ------- our efforts*"
+                  },
+                  {
+                    "signal": "at the moment",
+                    "example": "*Ms. Tracy ------- the annual report at the moment.*, *at this very moment*"
+                  },
+                  {
+                    "signal": "currently",
+                    "example": "*Attendance at the evening seminars ------- currently*"
+                  },
+                  {
+                    "signal": "this week / this month",
+                    "example": "*this week*, *this month*"
+                  },
+                  {
+                    "signal": "vế chỉ tình hình hiện tại",
+                    "example": "*while the regional manager is on leave*, *so the report is not available yet*"
+                  },
+                  {
+                    "signal": "am/is/are + ___",
+                    "example": "*Ms. Okada is ------- a new social media campaign*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ (có thể kèm một danh từ), có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm chủ ngữ, xem trước chỗ trống đã có am/is/are chưa và sau chỗ trống có tân ngữ không; tìm dấu hiệu now, right now, at the moment, currently, this week, this month hoặc vế chỉ tình hình hiện tại.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc đang diễn ra hoặc tạm thời thì chọn am/is/are + V-ing (đề đã cho is/are thì chỉ cần V-ing); loại hiện tại đơn, dạng quá khứ, hiện tại hoàn thành, V3 bị động khi có tân ngữ, và danh từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ms. Okada",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is organizing",
+                    "label": "is + V-ing"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a new social media campaign",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "at the request of our office manager.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu hoàn chỉnh"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm ba dạng của động từ “organize” và danh từ “organization” nên đây là câu chia động từ.",
+                  "Bước 2: Trước chỗ trống đã có “is”, sau chỗ trống là tân ngữ “a new social media campaign”; dấu hiệu “am/is/are + ___”.",
+                  "Bước 3: Bà Okada tự tổ chức và có tân ngữ nên dùng is + V-ing, vì vậy chọn “organizing” (đang tổ chức).",
+                  "“organize” (A) là V nguyên mẫu, không đứng sau “is”, nên loại.",
+                  "“organized” (B) là V3, “is organized” là bị động, nhưng sau chỗ trống có tân ngữ “a new social media campaign”, nên loại.",
+                  "“organization” (D) là danh từ, không mang được tân ngữ “a new social media campaign” theo sau, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“currently” cũng đi với hiện tại đơn khi nói tình trạng, ví dụ *She currently works in the sales department.* — Cô ấy hiện làm việc ở phòng kinh doanh. Với việc đang thay đổi hoặc đang làm dở thì dùng V-ing.",
+                  "“this week”, “this month” cũng đi với quá khứ đơn khi việc đã xong, ví dụ *We signed the contract with the supplier this week.* — Tuần này chúng tôi đã ký hợp đồng với nhà cung cấp. Cần thêm chữ cho thấy việc còn đang diễn ra."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Việc đang diễn ra lúc này hoặc tạm thời: am/is/are + V-ing.",
+                  "Đề đã cho is/are trước chỗ trống, sau có tân ngữ: chọn V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

@@ -1,0 +1,368 @@
+{
+  "subtopic": {
+    "id": "ab568681-2632-44bb-abbf-cd03535ef964",
+    "topic_id": "903e0438-ae71-4828-90e5-ee40d19ff3af",
+    "title_en": "Liên từ tương liên",
+    "title_vi": "Liên từ tương liên",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 52,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-lien-tu-tuong-lien"
+  },
+  "lessons": [
+    {
+      "id": "0582aa8b-a36a-46be-87ba-d160f8eba12d",
+      "subtopic_id": "ab568681-2632-44bb-abbf-cd03535ef964",
+      "title_en": "Liên từ tương liên",
+      "title_vi": "Liên từ tương liên",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2024 · Test 7 · Câu 102",
+          "options": {
+            "A": "both",
+            "B": "either",
+            "C": "further",
+            "D": "hardly"
+          },
+          "question": "The company’s policy allows business travel by ------- train and airplane.",
+          "translation": "Chính sách của công ty cho phép đi công tác bằng cả tàu hỏa và máy bay."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là “both”, “either”, “further”, “hardly”. Chỗ trống đứng sau giới từ “by”, trước hai danh từ “train” và “airplane” được nối bằng “and”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The company’s policy",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "allows",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "business travel",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "train",
+                    "label": "danh từ (vế đầu)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "từ đi cặp"
+                  },
+                  {
+                    "role": "N",
+                    "text": "airplane.",
+                    "label": "danh từ (vế sau)"
+                  }
+                ],
+                "caption": "Chỗ trống đứng trước vế đầu “train”; vế sau “airplane” được nối bằng “and”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "các cặp liên từ tương liên và từ đi cặp của chúng",
+                  "tìm từ đi cặp ở phía sau hay phía trước chỗ trống",
+                  "vì sao trạng từ không tạo được cặp"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Liên từ tương liên là **cặp từ** nối hai vế cùng loại (hai danh từ, hai tính từ, hai động từ, hai cụm giới từ). Mỗi từ mở đầu chỉ đi với **một** từ đi cặp cố định.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "cả A và B",
+                    "formula": "both + A + and + B"
+                  },
+                  {
+                    "label": "hoặc A hoặc B",
+                    "formula": "either + A + or + B"
+                  },
+                  {
+                    "label": "cả A lẫn B đều không",
+                    "formula": "neither + A + nor + B"
+                  },
+                  {
+                    "label": "không chỉ A mà còn B",
+                    "formula": "not only + A + but also + B"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "both … and",
+                    "*Both the manager and her assistant attended the meeting.* — Cả quản lý và trợ lý của cô ấy đều dự cuộc họp."
+                  ],
+                  [
+                    "either … or",
+                    "*You can pay either by card or in cash.* — Bạn có thể trả hoặc bằng thẻ hoặc bằng tiền mặt."
+                  ],
+                  [
+                    "neither … nor",
+                    "*Neither the printer nor the scanner is working.* — Cả máy in lẫn máy quét đều không hoạt động."
+                  ],
+                  [
+                    "not only … but also",
+                    "*She not only wrote the report but also presented it.* — Cô ấy không chỉ viết báo cáo mà còn trình bày nó."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cặp",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chỗ trống ở vế đầu: nhìn từ đi cặp phía sau (and, or, nor, but also) để chọn both, either, neither, not only.",
+                  "Chỗ trống ở vế sau: nhìn từ mở đầu phía trước (both, either, neither, not only) để chọn and, or, nor, but also.",
+                  "Nếu câu đã có sẵn “also” ở vế sau (*not only designed the logo ___ also created…*) thì chỗ trống chỉ cần “but”."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "both – and, either – or, neither – nor, not only – but also.",
+                    "form": "Từ đúng cặp",
+                    "example": "*either online or at any of our retail locations*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Mỗi từ mở đầu chỉ đi với từ đi cặp của nó; không có “either … and”, “both … or”, “neither … or”.",
+                    "form": "Từ thuộc cặp khác",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cặp đúng là not only … but also, không phải not only … and.",
+                    "form": "“and” sau not only",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi cặp với or (whether … or), không đi với but also.",
+                    "form": "whether",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không mở đầu hay khép lại được cặp liên từ, không nối được hai vế.",
+                    "form": "Trạng từ: also, too, as well, however, very, further, hardly",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là từ hạn định, đi với danh từ số ít không có “the”, không mở đầu cặp với and.",
+                    "form": "Every",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ … and",
+                    "example": "*by ___ train and airplane*; *___ the sales team and the marketing team*; *are ___ friendly and knowledgeable*"
+                  },
+                  {
+                    "signal": "___ … or",
+                    "example": "*can be used ___ online or at any of our …*; *Please ___ call the front desk or send a text message*"
+                  },
+                  {
+                    "signal": "___ … nor",
+                    "example": "*___ the assistant nor the manager*; *is ___ as light nor as fast*"
+                  },
+                  {
+                    "signal": "___ … but also",
+                    "example": "*is ___ fluent in English but also proficient in Japanese*"
+                  },
+                  {
+                    "signal": "both / either / neither / not only … ___",
+                    "example": "*Both the downtown store ___ the airport location*; *not only for new hires ___ for experienced staff*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có both, either, neither, not only (hoặc and, or, nor, but also) trong đáp án thì đây là câu liên từ tương liên.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm từ đi cặp: chỗ trống ở vế đầu thì nhìn phía sau (and, or, nor, but also); chỗ trống ở vế sau thì nhìn phía trước (both, either, neither, not only).",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn từ đúng cặp; loại từ thuộc cặp khác, các trạng từ và từ hạn định không tạo được cặp.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The company’s policy",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "allows",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "business travel",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "both",
+                    "label": "từ mở đầu cặp"
+                  },
+                  {
+                    "role": "N",
+                    "text": "train",
+                    "label": "danh từ (vế đầu)"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "từ đi cặp"
+                  },
+                  {
+                    "role": "N",
+                    "text": "airplane.",
+                    "label": "danh từ (vế sau)"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: cặp “both … and” nối hai danh từ “train” và “airplane”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm “both”, “either” mở đầu cặp liên từ và hai từ “further”, “hardly” nên đây là câu liên từ tương liên.",
+                  "Bước 2: Chỗ trống đứng sau “by”, trước danh từ “train”; phía sau có “and airplane”; dấu hiệu “___ … and”.",
+                  "Bước 3: Áp cặp both + A + and + B, vì vậy chọn “both” (cả).",
+                  "“either” (B) mở đầu cặp “either … or”, không đi với “and” trong câu, nên loại.",
+                  "“further” (C) là trạng từ hoặc tính từ (thêm, xa hơn), không tạo cặp với “and”, nên loại.",
+                  "“hardly” (D) là trạng từ (hầu như không), không tạo cặp với “and”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Hai vế trong cặp cùng loại: *both train and airplane* (hai danh từ), *not only for new hires but also for experienced staff* (hai cụm giới từ). Xem thêm bài “Cấu trúc song song”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "both – and, either – or, neither – nor, not only – but also: không đổi cặp.",
+                  "Tìm từ đi cặp trong câu trước, rồi mới chọn."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

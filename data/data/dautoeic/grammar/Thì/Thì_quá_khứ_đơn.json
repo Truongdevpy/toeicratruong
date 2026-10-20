@@ -1,0 +1,342 @@
+{
+  "subtopic": {
+    "id": "4c30ff9c-db99-4c72-9ea2-7a3e2d918d1e",
+    "topic_id": "54735a2c-b595-4952-ae32-9cb48290be4b",
+    "title_en": "Thì quá khứ đơn",
+    "title_vi": "Thì quá khứ đơn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 77,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-thi-qua-khu-don"
+  },
+  "lessons": [
+    {
+      "id": "eed45bd4-f76c-45db-a0ee-97c6106fdbe4",
+      "subtopic_id": "4c30ff9c-db99-4c72-9ea2-7a3e2d918d1e",
+      "title_en": "Thì quá khứ đơn",
+      "title_vi": "Thì quá khứ đơn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2026 · Test 9 · Câu 109",
+          "options": {
+            "A": "will be celebrating",
+            "B": "celebrated",
+            "C": "is celebrating",
+            "D": "celebrates"
+          },
+          "question": "Last Monday, the department ------- Mr. Okada's recent promotion to manager.",
+          "translation": "Thứ Hai tuần trước, phòng ban đã tổ chức mừng việc ông Okada mới được thăng chức lên quản lý."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng chia thì của động từ “celebrate”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "Last Monday,",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the department",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Mr. Okada's recent promotion to manager.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, đứng sau chủ ngữ “the department” và trước tân ngữ “Mr. Okada's recent promotion”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“Last Monday” chỉ thời điểm nào",
+                  "động từ chia thế nào khi việc xảy ra ở thời điểm đó",
+                  "các thì còn lại dùng khi nào"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Thì quá khứ đơn nói về việc đã xảy ra và kết thúc ở một thời điểm đã qua.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Khẳng định",
+                    "formula": "S + V-ed / V2 (động từ bất quy tắc)"
+                  },
+                  {
+                    "label": "Phủ định",
+                    "formula": "S + did not + V nguyên mẫu"
+                  },
+                  {
+                    "label": "Câu hỏi",
+                    "formula": "Did + S + V nguyên mẫu?"
+                  }
+                ]
+              },
+              {
+                "text": "Quá khứ đơn có một dạng cho mọi chủ ngữ (he went, they went), trừ be: was (I, he, she, it, chủ ngữ số ít), were (you, we, they, chủ ngữ số nhiều). V2 bất quy tắc trong bài tập: go – went, see – saw, meet – met.",
+                "type": "paragraph"
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.25,
+                    "label": "năm năm trước"
+                  },
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [],
+                "points": [
+                  {
+                    "at": 0.25,
+                    "label": "joined"
+                  }
+                ],
+                "caption": "*Our director joined the company five years ago.*: việc xảy ra tại một lúc đã qua, trước bây giờ."
+              },
+              {
+                "rows": [
+                  [
+                    "việc xảy ra ở một thời điểm đã qua",
+                    "*Our director joined the company five years ago.* — Giám đốc của chúng tôi gia nhập công ty cách đây năm năm."
+                  ],
+                  [
+                    "phủ định với did not",
+                    "*The printer did not work last night.* — Tối qua máy in không hoạt động."
+                  ],
+                  [
+                    "câu hỏi với Did",
+                    "*Did the client call the office yesterday?* — Hôm qua khách hàng có gọi đến văn phòng không?"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nói về hiện tại hoặc tương lai, không hợp với thời điểm đã qua.",
+                    "form": "V, V-s (hiện tại đơn), is/are + V-ing, will + V",
+                    "example": "“objects”, “are finishing”, “will join”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đi với thời điểm đã qua cụ thể như ago, yesterday, last week.",
+                    "form": "has/have + V3 (hiện tại hoàn thành)",
+                    "example": "“has joined”, “has met”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính (sau has phải là V3).",
+                    "form": "V3 đứng một mình, V-ing, has + V-ing, to V, danh từ",
+                    "example": "“gone”, “seen”, “issuing”, “has scheduling”, “to stop”, “objection”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sai chủ ngữ hoặc sai chủ động/bị động.",
+                    "form": "is + V3 (bị động), V-s với chủ ngữ số nhiều",
+                    "example": "“is approved”, “decides”",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Does là hiện tại; Are không đi với V nguyên mẫu; Done (V3) không mở đầu câu hỏi. Sau did/did not chỉ dùng V nguyên mẫu.",
+                    "form": "Does, Are, Done; V-ed, V-s sau did not",
+                    "example": "“Does”, “Are”, “Done”, “worked”, “works”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "yesterday / yesterday’s + danh từ",
+                    "example": "*yesterday*, *during yesterday’s budget meeting*"
+                  },
+                  {
+                    "signal": "last + thời gian",
+                    "example": "*last Friday*, *last week*, *last night*, *Last Monday*"
+                  },
+                  {
+                    "signal": "khoảng thời gian + ago",
+                    "example": "*five years ago*, *an hour ago*"
+                  },
+                  {
+                    "signal": "in + năm đã qua",
+                    "example": "*in 2003*"
+                  },
+                  {
+                    "signal": "did / did not",
+                    "example": "*Alex did not ------- last weekend.*"
+                  },
+                  {
+                    "signal": "vế khác chia quá khứ",
+                    "example": "*who were at the meeting yesterday*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "là các dạng khác nhau của một động từ (hoặc của do, be), có dạng chia thì, thì đây là câu chia động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "tìm chủ ngữ, xem trước chỗ trống có did/did not không; tìm thời điểm đã qua (yesterday, last…, … ago, in + năm) hoặc vế khác chia quá khứ.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "việc ở thời điểm đã qua thì chọn V-ed/V2; sau did, did not chọn V nguyên mẫu; loại hiện tại, tương lai, hiện tại hoàn thành, dạng không chia và dạng sai chủ ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "TIME",
+                    "text": "Last Monday,",
+                    "label": "last + thời gian"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the department",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "celebrated",
+                    "label": "V-ed"
+                  },
+                  {
+                    "role": "O",
+                    "text": "Mr. Okada's recent promotion to manager.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Câu hoàn chỉnh"
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là bốn dạng chia thì của động từ “celebrate” nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “the department”; có dấu hiệu “last + thời gian”: “Last Monday”.",
+                  "Bước 3: Việc xảy ra ở thời điểm đã qua nên dùng V-ed, vì vậy chọn “celebrated” (đã tổ chức mừng).",
+                  "“will be celebrating” (A) là tương lai tiếp diễn, nói việc sẽ đang diễn ra, trái với “Last Monday”, nên loại.",
+                  "“is celebrating” (C) là hiện tại tiếp diễn, nói việc đang diễn ra lúc này, trái với “Last Monday”, nên loại.",
+                  "“celebrates” (D) là hiện tại đơn, nói về hiện tại, không hợp với “Last Monday”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“last + thời gian” (last week, last Friday) chỉ một mốc đã qua; nhưng “over the last / for the last + khoảng thời gian” chỉ khoảng kéo đến nay và đi với hiện tại hoàn thành, ví dụ *Sales have risen over the last three months.* — Doanh số đã tăng trong ba tháng qua.",
+                  "Sau did, did not luôn là V nguyên mẫu: *did not work*, không phải *did not worked*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Thời điểm đã qua (yesterday, last week, … ago, in 2003): dùng V-ed hoặc V2.",
+                  "Did, did not + V nguyên mẫu."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

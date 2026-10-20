@@ -1,0 +1,338 @@
+{
+  "subtopic": {
+    "id": "5bf0db54-b68a-44a4-8ec0-4a2542ee7e76",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Bị động thì hiện tại",
+    "title_vi": "Bị động thì hiện tại",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 92,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-bi-dong-thi-hien-tai"
+  },
+  "lessons": [
+    {
+      "id": "765cb4ef-b8cc-4412-bdb1-a9fd1abbcee6",
+      "subtopic_id": "5bf0db54-b68a-44a4-8ec0-4a2542ee7e76",
+      "title_en": "Bị động thì hiện tại",
+      "title_vi": "Bị động thì hiện tại",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 5 · Câu 128",
+          "options": {
+            "A": "to be invited",
+            "B": "inviting",
+            "C": "invite",
+            "D": "are invited"
+          },
+          "question": "Members of the finance department ------- to Mr. Chua’s lecture on risk avoidance.",
+          "translation": "Các nhân viên phòng tài chính được mời đến dự buổi thuyết giảng của ông Chua về cách phòng tránh rủi ro."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “invite”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Members of the finance department",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to Mr. Chua’s lecture on risk avoidance.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống là động từ chính, đứng sau chủ ngữ “Members of the finance department”; phía sau chỉ có cụm giới từ, không có tân ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ tự làm hành động “mời” hay chịu hành động đó.",
+                  "Bị động thì hiện tại được tạo thế nào, chọn is hay are.",
+                  "Vì sao V-ing, to V không làm được động từ chính."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Câu bị động dùng khi chủ ngữ **chịu** hành động, không tự làm hành động. Bị động thì hiện tại (hiện tại đơn) nói việc lặp lại, quy định hoặc sự thật ở hiện tại.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Chủ ngữ số ít",
+                    "formula": "S + is + V3 (+ by + người làm)"
+                  },
+                  {
+                    "label": "Chủ ngữ số nhiều",
+                    "formula": "S + are + V3 (+ by + người làm)"
+                  },
+                  {
+                    "label": "So sánh: chủ động",
+                    "formula": "S + V(s/es) + tân ngữ"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The invoices",
+                    "label": "chủ ngữ (chịu hành động)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are checked",
+                    "label": "are + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "by Mr. Tan",
+                    "label": "by + người làm"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "every Friday.",
+                    "label": "thời gian"
+                  }
+                ],
+                "caption": "Câu chủ động “Mr. Tan checks the invoices every Friday” đổi sang bị động: tân ngữ “the invoices” lên làm chủ ngữ, động từ thành are + V3, người làm đứng sau by."
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Động từ cần tân ngữ (handle, store, inspect, announce, deliver, review, invite, hold) mà sau chỗ trống **không có tân ngữ**, chỉ có giới từ, nơi chốn, thời gian: chủ ngữ chịu hành động, dùng bị động.",
+                  "Sau chỗ trống có **by + người làm**: dùng bị động.",
+                  "Chọn is hay are theo chủ ngữ: each, every + danh từ số ít đi với **is**; danh từ số nhiều đi với **are**.",
+                  "Các cụm bị động + to V trong bài: **be required to V** (được yêu cầu), **be allowed to V** (được phép), **be asked to V** (được đề nghị)."
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "is/are + V3: quy định, việc lặp lại",
+                    "*All visitors are asked to sign in at the front desk.* — Mọi khách đến đều được đề nghị ký tên ở quầy lễ tân."
+                  ],
+                  [
+                    "is/are + V3: sự thật",
+                    "*Our furniture is made in Vietnam.* — Đồ nội thất của chúng tôi được sản xuất tại Việt Nam."
+                  ],
+                  [
+                    "is/are + V3 + by + người làm",
+                    "*The invoices are checked by Mr. Tan every Friday.* — Các hóa đơn được ông Tan kiểm tra vào mỗi thứ Sáu."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chủ ngữ chịu hành động; is đi với chủ ngữ số ít, are đi với chủ ngữ số nhiều.",
+                    "form": "is/are + V3",
+                    "example": "*Each report is checked.*; *All reports are checked.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chủ ngữ không tự làm hành động; các động từ này cần tân ngữ mà sau chỗ trống không có.",
+                    "form": "Dạng chủ động (handle, handles, stores, requires, inspects, announce, deliver, holds, review, invite)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sai hòa hợp chủ ngữ và động từ.",
+                    "form": "is + V3 với chủ ngữ số nhiều, are + V3 với chủ ngữ số ít (is handled, is stored, is announced, is delivered, is reviewed, are inspected)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ chính; câu sẽ không có động từ chia thì.",
+                    "form": "V-ing, to V đứng một mình (storing, requiring, inspecting, announcing, delivering, holding, reviewing, inviting, to hold, to be invited)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng một mình thì là quá khứ đơn chủ động, cần tân ngữ; bị động phải có is/are.",
+                    "form": "V3 không có is/are (required)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "are + V-s, are + V nguyên mẫu sai cấu trúc; are + V-ing là chủ động, cần tân ngữ.",
+                    "form": "Sau are cho sẵn: V-s, V nguyên mẫu, V-ing (allows, allow, allowing)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*complaints … ___ by Ms. Alvarez*; *reports ___ every Monday morning by the finance team*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*Customer records ___ on a secure server*; *Office supplies ___ to the third floor*; *Members of the finance department ___ to Mr. Chua’s lecture*"
+                  },
+                  {
+                    "signal": "___ + to V",
+                    "example": "*Each employee ___ to attend*; *Those who wish to volunteer … ___ to arrive early*"
+                  },
+                  {
+                    "signal": "be + ___",
+                    "example": "*before they are ___ to operate machinery*"
+                  },
+                  {
+                    "signal": "chủ ngữ số ít / số nhiều",
+                    "example": "*Each employee*, *Every shipment*, *The annual conference*; *All complaints*, *Office supplies*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-s, is/are + V3, V-ing, to V): có từ hai dạng chia thì là câu chia động từ; is/are đã cho sẵn trước chỗ trống thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ và danh từ chính của nó, xem tự làm hay chịu hành động; xem sau chỗ trống có tân ngữ không, có by + người làm không; xem chủ ngữ số ít hay số nhiều.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ chịu hành động thì chọn is/are + V3 đúng số; loại dạng chủ động (thiếu tân ngữ), dạng sai số, V-ing và to V đứng một mình.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Members of the finance department",
+                    "label": "chủ ngữ số nhiều"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are invited",
+                    "label": "are + V3"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "to Mr. Chua’s lecture on risk avoidance.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: nhân viên được mời, nên động từ là are + V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “invite”, có hai dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Câu chưa có động từ chính, chủ ngữ “Members of the finance department” số nhiều; dấu hiệu “___ + không có tân ngữ”: sau chỗ trống chỉ có “to Mr. Chua’s lecture”.",
+                  "Bước 3: Nhân viên được mời (chịu hành động), chủ ngữ số nhiều nên dùng are + V3, vì vậy chọn “are invited” (được mời).",
+                  "“to be invited” (A) là to V, không làm được động từ chính, câu sẽ thiếu động từ, nên loại.",
+                  "“inviting” (B) là V-ing, đứng một mình không làm được động từ chính, nên loại.",
+                  "“invite” (C) là chủ động, nhân viên không tự mời và sau chỗ trống không có tân ngữ, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ có cụm đi kèm (All complaints about late orders, Every shipment that leaves the warehouse, New job openings at Brightline Media) thì chọn is hay are theo danh từ chính: complaints, shipment, openings."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Chủ ngữ chịu hành động, sau chỗ trống không có tân ngữ: dùng is/are + V3.",
+                  "Chọn is hay are theo danh từ chính của chủ ngữ.",
+                  "V-ing, to V đứng một mình không làm được động từ chính."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

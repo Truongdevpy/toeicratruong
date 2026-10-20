@@ -1,0 +1,387 @@
+{
+  "subtopic": {
+    "id": "84e170cc-5bdb-47e4-b371-4e03d73a5a35",
+    "topic_id": "903e0438-ae71-4828-90e5-ee40d19ff3af",
+    "title_en": "Cấu trúc song song",
+    "title_vi": "Cấu trúc song song",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 51,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-lien-tu-cau-truc-song-song"
+  },
+  "lessons": [
+    {
+      "id": "f9bbd975-d468-4f34-a10e-b204b14fffed",
+      "subtopic_id": "84e170cc-5bdb-47e4-b371-4e03d73a5a35",
+      "title_en": "Cấu trúc song song",
+      "title_vi": "Cấu trúc song song",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2021 · Câu 30",
+          "options": {
+            "A": "experience",
+            "B": "experienced",
+            "C": "experiencing",
+            "D": "to experience"
+          },
+          "question": "Candidates for the open position must have good interpersonal skills and ------- working with clients.",
+          "translation": "Ứng viên cho vị trí đang tuyển phải có kỹ năng giao tiếp tốt và kinh nghiệm làm việc với khách hàng."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của “experience”: danh từ, V-ed, V-ing và to V. Chỗ trống đứng ngay sau liên từ “and”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Candidates",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the open position",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "must have",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "good interpersonal skills",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "working with clients.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau “and”; phía trước “and” là tân ngữ “good interpersonal skills” của “must have”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“and” nối những thành phần nào với nhau",
+                  "hai vế nối bằng “and” phải giống nhau ở điểm gì",
+                  "nhận ra danh từ, tính từ, V-ing, to V trong bốn đáp án"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Cấu trúc song song: các thành phần nối bằng **and** phải **cùng loại từ và cùng dạng**. Tìm vế đã có ở bên kia “and”, rồi chọn đáp án cùng loại, cùng dạng với vế đó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Danh từ",
+                    "formula": "N + and + N"
+                  },
+                  {
+                    "label": "Tính từ",
+                    "formula": "adj + and + adj"
+                  },
+                  {
+                    "label": "Trạng từ",
+                    "formula": "adv + and + adv"
+                  },
+                  {
+                    "label": "Động từ",
+                    "formula": "V + and + V (cùng dạng)"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "V-ing sau giới từ (for managing)",
+                    "V-ing",
+                    "*She is in charge of hiring and training new staff.* — Cô ấy phụ trách tuyển dụng và đào tạo nhân viên mới."
+                  ],
+                  [
+                    "V nguyên mẫu sau modal (must review)",
+                    "V nguyên mẫu",
+                    "*Staff must sign the form and return it today.* — Nhân viên phải ký mẫu đơn và nộp lại trong hôm nay."
+                  ],
+                  [
+                    "động từ quá khứ (scheduled)",
+                    "động từ quá khứ",
+                    "*Mr. Lee called the client and confirmed the order.* — Ông Lee đã gọi cho khách hàng và xác nhận đơn hàng."
+                  ],
+                  [
+                    "danh từ, cụm danh từ",
+                    "danh từ",
+                    "*The hotel offers free parking and fast Internet access.* — Khách sạn có chỗ đỗ xe miễn phí và Internet tốc độ cao."
+                  ],
+                  [
+                    "tính từ sau be, seem",
+                    "tính từ",
+                    "*The new system is simple and reliable.* — Hệ thống mới đơn giản và đáng tin cậy."
+                  ],
+                  [
+                    "trạng từ bổ nghĩa cho động từ",
+                    "trạng từ",
+                    "*Please answer customer e-mails quickly and politely.* — Vui lòng trả lời e-mail của khách nhanh chóng và lịch sự."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Vế đã có",
+                  "Vế sau and cũng là",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Vế sau có thể có thêm từ khác: **very** + tính từ (*motivated and very creative*), tính từ + danh từ (*flexible working hours and generous benefits*). Loại từ cần điền vẫn theo vế kia.",
+                  "Nhận ra loại từ qua đuôi (các từ trong bài tập): danh từ -ment, -ness, -tion/-sion, -age; tính từ -ful, -ive, -ial; trạng từ -ly. Đuôi chỉ giúp nhận ra, không đúng cho mọi từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Hai vế nối bằng “and” ngang hàng nhau.",
+                    "form": "Cùng loại, cùng dạng với vế kia",
+                    "example": "*managing budgets and hiring new staff*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Sau giới từ “for” động từ ở dạng V-ing, nên vế sau “and” cũng phải là V-ing.",
+                    "form": "to V, V nguyên mẫu, V-ed khi vế kia là V-ing sau giới từ (to hire, hire, hired, to review, review, reviewed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau “must”, cả hai động từ đều là V nguyên mẫu.",
+                    "form": "V-ing, V-ed, V-s khi vế kia là V nguyên mẫu sau modal (submitting, submitted, submits)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Hai việc cùng chủ ngữ, cùng kể trong quá khứ nên vế sau cũng là động từ quá khứ.",
+                    "form": "Động từ khác dạng khi vế kia là quá khứ (makes, make, making)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được danh từ ngang hàng với danh từ ở vế kia.",
+                    "form": "Tính từ, động từ, V-ing, V-ed khi vế kia là danh từ (experienced, experiencing, to experience, beneficial, benefiting, benefited, equip, equipping, equipped)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "“experience” nghĩa kinh nghiệm là danh từ không đếm được; “experiences” nghĩa là những trải nghiệm.",
+                    "form": "Danh từ số nhiều khác nghĩa (experiences)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Vế kia bổ nghĩa cho động từ nên vế sau cũng phải là trạng từ.",
+                    "form": "Tính từ, danh từ khi vế kia là trạng từ (tactful, tactfuller, clear, clearer, concise, tactfulness, clearness, conciseness, concision)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau be, seem và sau “very” ở đây cần tính từ, giống vế kia.",
+                    "form": "Trạng từ, động từ, danh từ khi vế kia là tính từ (creatively, create, creation, using, use, usage)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "vế kia là V-ing sau giới từ",
+                    "example": "*for managing budgets and ___*; *for preparing the budget and ___*"
+                  },
+                  {
+                    "signal": "vế kia là V nguyên mẫu sau modal",
+                    "example": "*must review reports and ___ them*"
+                  },
+                  {
+                    "signal": "vế kia là động từ quá khứ",
+                    "example": "*scheduled appointments and ___ travel arrangements*"
+                  },
+                  {
+                    "signal": "vế kia là danh từ",
+                    "example": "*interpersonal skills and ___*; *office furniture and ___*; *working hours and generous ___*"
+                  },
+                  {
+                    "signal": "vế kia là tính từ",
+                    "example": "*seems motivated and very ___*; *is affordable and very ___*"
+                  },
+                  {
+                    "signal": "vế kia là trạng từ",
+                    "example": "*___ and professionally*; *write clearly and ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng gốc, khác loại từ là câu từ loại; các dạng của một động từ là câu chia động từ hoặc câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm vế ở bên kia “and”: nó là danh từ, tính từ, trạng từ hay động từ; nếu là động từ thì ở dạng nào (V-ing sau giới từ, V nguyên mẫu sau modal, quá khứ).",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn đáp án cùng loại, cùng dạng với vế kia; loại các đáp án khác loại hoặc khác dạng. Còn hai đáp án cùng loại thì chọn theo nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Candidates",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the open position",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "must have",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "good interpersonal skills",
+                    "label": "tân ngữ 1"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "and",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "experience",
+                    "label": "tân ngữ 2"
+                  },
+                  {
+                    "role": "X",
+                    "text": "working with clients.",
+                    "label": "bổ nghĩa cho experience"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “and” nối hai danh từ cùng làm tân ngữ của “must have”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “experience”: danh từ, V-ed, V-ing và to V, nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau “and”, trong tân ngữ của “must have”; dấu hiệu “vế kia là danh từ”: “good interpersonal skills and -------”.",
+                  "Bước 3: Hai vế nối bằng “and” phải cùng loại: N + and + N, vì vậy chọn “experience” (kinh nghiệm).",
+                  "“experienced” (B) là tính từ hoặc V-ed, không làm danh từ ngang hàng với “skills” sau “have”, nên loại.",
+                  "“experiencing” (C) là V-ing, không cùng loại với cụm danh từ “good interpersonal skills”, nên loại.",
+                  "“to experience” (D) là to V, không làm tân ngữ ngang hàng với “good interpersonal skills” sau “have”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Hai động từ chia thì nối bằng “and”, dùng chung chủ ngữ và nói về cùng một lúc thì chia cùng thì: *The assistant scheduled appointments and made travel arrangements.*"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Hai vế nối bằng and phải cùng loại từ và cùng dạng.",
+                  "Tìm vế kia trước: danh từ đi với danh từ, tính từ với tính từ, trạng từ với trạng từ.",
+                  "Động từ theo vế kia: V-ing sau giới từ, V nguyên mẫu sau modal, quá khứ với quá khứ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

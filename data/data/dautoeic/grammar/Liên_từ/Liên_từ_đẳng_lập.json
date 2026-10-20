@@ -1,0 +1,346 @@
+{
+  "subtopic": {
+    "id": "8417208b-4861-4c27-a805-8b6f1a15fed0",
+    "topic_id": "903e0438-ae71-4828-90e5-ee40d19ff3af",
+    "title_en": "Liên từ đẳng lập",
+    "title_vi": "Liên từ đẳng lập",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 56,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-lien-tu-dang-lap"
+  },
+  "lessons": [
+    {
+      "id": "15ed609d-5004-4724-88bb-cbb0c0a631f2",
+      "subtopic_id": "8417208b-4861-4c27-a805-8b6f1a15fed0",
+      "title_en": "Liên từ đẳng lập",
+      "title_vi": "Liên từ đẳng lập",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2026 · Test 10 · Câu 112",
+          "options": {
+            "A": "but",
+            "B": "or",
+            "C": "equally",
+            "D": "accordingly"
+          },
+          "question": "Mr. Takajian may be an entry-level employee, ------- he does not hesitate to take initiative.",
+          "translation": "Anh Takajian có thể chỉ là nhân viên mới vào nghề, nhưng anh ấy không ngần ngại chủ động nhận việc."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là “but”, “or”, “equally”, “accordingly”. Chỗ trống đứng sau dấu phẩy, giữa hai mệnh đề.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Takajian",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "may be",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "an entry-level employee,",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "he",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "does not hesitate",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to take initiative.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Hai bên chỗ trống là hai mệnh đề đủ chủ ngữ và động từ: “Mr. Takajian may be…” và “he does not hesitate…”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "từ nào nối được hai mệnh đề ngang hàng sau dấu phẩy",
+                  "nghĩa của and, but, or, yet",
+                  "vì sao trạng từ nối không nối được hai mệnh đề bằng dấu phẩy"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Liên từ đẳng lập (**and, but, or, yet**) nối hai thành phần **ngang hàng**: hai danh từ, hai tính từ, hai động từ hoặc hai mệnh đề. Khi nối hai mệnh đề, liên từ đứng sau dấu phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Hai mệnh đề",
+                    "formula": "S + V, + and / but / or / yet + S + V"
+                  },
+                  {
+                    "label": "Hai từ, hai cụm cùng loại",
+                    "formula": "A + and / but / or / yet + B"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "and",
+                    "và (thêm ý cùng chiều)",
+                    "*The team finished the report and sent it to the client.* — Nhóm làm xong báo cáo và gửi cho khách hàng."
+                  ],
+                  [
+                    "but, yet",
+                    "nhưng, vậy mà (hai ý trái nhau hoặc trái mong đợi)",
+                    "*The meeting room is small but comfortable.* — Phòng họp nhỏ nhưng thoải mái."
+                  ],
+                  [
+                    "or",
+                    "hoặc (chọn một trong hai)",
+                    "*You can call us or send an e-mail.* — Bạn có thể gọi cho chúng tôi hoặc gửi e-mail."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Liên từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau câu mệnh lệnh, **and** chỉ kết quả khi làm theo (*Sign up for our newsletter, and you will receive a coupon*), **or** chỉ hậu quả nếu không làm theo, nghĩa “nếu không thì” (*Submit your request by Thursday, or …*)."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Nối hai thành phần cùng loại; nối được hai mệnh đề với một dấu phẩy.",
+                    "form": "and, but, or, yet",
+                    "example": "*The printer is old, but it still produces clear copies.*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không nối được hai mệnh đề chỉ bằng dấu phẩy, cũng không nối hai từ, hai cụm cùng loại. Trước nó phải là dấu chấm hoặc dấu chấm phẩy.",
+                    "form": "Trạng từ nối: however, nevertheless, therefore, thus, consequently, moreover, furthermore, likewise, accordingly",
+                    "example": "*The printer is old; however, it still works.*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không tự nối được hai từ, hai cụm hay hai mệnh đề.",
+                    "form": "Trạng từ: also, instead, equally",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ đi với cụm danh từ hoặc V-ing, không đi với tính từ, V nguyên mẫu hay mệnh đề S + V.",
+                    "form": "Giới từ: despite, in spite of, because of, due to, instead of, in addition to",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng nghĩa phải hợp: hai ý trái nhau thì dùng but hoặc yet, không dùng or.",
+                    "form": "Liên từ đẳng lập sai nghĩa (or khi hai ý trái nhau)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "dấu phẩy + ___ + mệnh đề S + V",
+                    "example": "*an entry-level employee, ___ he does not hesitate…*; *is old, ___ it still produces clear copies*"
+                  },
+                  {
+                    "signal": "câu mệnh lệnh, ___ + mệnh đề",
+                    "example": "*Sign up for our newsletter, ___ you will receive a coupon*; *Submit your travel request by Thursday, ___ the booking may not…*"
+                  },
+                  {
+                    "signal": "tính từ + ___ + tính từ",
+                    "example": "*affordable ___ surprisingly comfortable*; *quick ___ thorough*"
+                  },
+                  {
+                    "signal": "cụm danh từ + ___ + cụm danh từ",
+                    "example": "*by credit card ___ bank transfer*; *The sales director ___ her assistant*"
+                  },
+                  {
+                    "signal": "động từ + ___ + động từ",
+                    "example": "*can contact the IT desk ___ fill out a request form*; *reviewed the proposal ___ approved the budget*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn liên từ, giới từ, trạng từ thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem hai bên chỗ trống: hai mệnh đề S + V (có dấu phẩy), hai tính từ, hai cụm danh từ hay hai động từ; rồi xem hai ý cùng chiều, trái nhau hay là lựa chọn.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn and (cùng chiều), but hoặc yet (trái nhau), or (lựa chọn, nếu không thì); loại trạng từ nối, trạng từ và giới từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Mr. Takajian",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "may be",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "C",
+                    "text": "an entry-level employee,",
+                    "label": "bổ ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "but",
+                    "label": "liên từ đẳng lập"
+                  },
+                  {
+                    "role": "S",
+                    "text": "he",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "does not hesitate",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to take initiative.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “but” nối hai mệnh đề ngang hàng mang hai ý trái nhau."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án gồm liên từ “but”, “or” và trạng từ “equally”, “accordingly” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Chỗ trống đứng sau dấu phẩy, giữa “Mr. Takajian may be…” và “he does not hesitate…”; dấu hiệu “dấu phẩy + ___ + mệnh đề S + V”.",
+                  "Bước 3: Là nhân viên mới mà vẫn chủ động là hai ý trái nhau; nối hai mệnh đề bằng liên từ đẳng lập, vì vậy chọn “but” (nhưng).",
+                  "“or” (B) là liên từ đẳng lập nhưng chỉ sự lựa chọn, không hợp hai ý trái nhau trong câu, nên loại.",
+                  "“equally” (C) là trạng từ (như nhau), không nối được hai mệnh đề chỉ bằng dấu phẩy, nên loại.",
+                  "“accordingly” (D) là trạng từ nối (do đó), không nối được hai mệnh đề chỉ bằng dấu phẩy, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“yet” làm liên từ nghĩa “nhưng, vậy mà”, giống but; “yet” còn là trạng từ (chưa) trong câu phủ định: *The report is not ready yet.*",
+                  "Nối hai từ hoặc hai cụm ngắn (hai tính từ, hai danh từ, hai động từ) thì không cần dấu phẩy: *friendly and efficient*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau dấu phẩy, liên từ như and, but, or, yet nối được hai mệnh đề; trạng từ nối thì không.",
+                  "and: cùng chiều; but, yet: trái nhau; or: lựa chọn hoặc nếu không thì.",
+                  "Giới từ chỉ đi với cụm danh từ hoặc V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

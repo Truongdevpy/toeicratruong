@@ -1,0 +1,627 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "e0642512-cbf9-43bb-aad7-8972bc89f284",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 50: Pharmacy",
+    "order_index": 50,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:54:08.259588+00:00",
+    "updated_at": "2026-09-18T08:54:08.259588+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+    "test_id": "e0642512-cbf9-43bb-aad7-8972bc89f284",
+    "name": "Pharmacy",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:54:08.259588+00:00",
+    "updated_at": "2026-09-18T08:54:08.259588+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c1d4811c-c534-486a-92a9-4a704d0acb2e",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "interaction",
+      "ipa": "UK: /ˌɪn.təˈræk.ʃən/ | US: /ˌɪn.t̬ɚˈæk.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My pharmacist was concerned about the interaction of the two medications I was prescribed.",
+          "meaning": "sự tương tác, sự qua lại giữa hai bên",
+          "toeic_tip": "Cấu trúc interaction between A and B; động từ là interact with.",
+          "example_vi": "Dược sĩ lo ngại về tương tác giữa hai loại thuốc tôi được kê.",
+          "word_family": [
+            "interact (v) tương tác",
+            "interactive (adj) có tính tương tác"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T07:35:26.889122+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c1d4811c-c534-486a-92a9-4a704d0acb2e-wm.jpg?v=1789797674881",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/interaction-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/interaction-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "drug interaction",
+          "meaning": "tương tác thuốc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c1d4811c-c534-486a-92a9-4a704d0acb2e-0-wm.jpg?v=1789803325352"
+        },
+        {
+          "phrase": "social interaction",
+          "meaning": "giao tiếp xã hội",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c1d4811c-c534-486a-92a9-4a704d0acb2e-1-wm.jpg?v=1789803326734"
+        },
+        {
+          "phrase": "interaction between",
+          "meaning": "sự tương tác giữa"
+        }
+      ],
+      "synonyms": [
+        "communication (sự giao tiếp)",
+        "exchange (sự trao đổi qua lại)"
+      ]
+    },
+    {
+      "id": "842f5683-4091-4da2-b5e9-97519f76e3ef",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "consult",
+      "ipa": "/kənˈsʌlt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The doctor consulted with a specialist before writing a new prescription.",
+          "meaning": "hỏi ý kiến, tham vấn, tra cứu",
+          "toeic_tip": "consult somebody là hỏi ý kiến ai, consult with là bàn bạc cùng.",
+          "example_vi": "Bác sĩ hỏi ý kiến một chuyên gia rồi mới kê đơn thuốc mới.",
+          "word_family": [
+            "consultant (n) chuyên gia tư vấn",
+            "consultation (n) buổi tư vấn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T07:07:18.928885+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/842f5683-4091-4da2-b5e9-97519f76e3ef-wm.jpg?v=1789798314390",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consult-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/consult-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "consult a doctor",
+          "meaning": "đi hỏi ý kiến bác sĩ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/842f5683-4091-4da2-b5e9-97519f76e3ef-0-wm.jpg?v=1789801621830"
+        },
+        {
+          "phrase": "consult with a colleague",
+          "meaning": "trao đổi với đồng nghiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/842f5683-4091-4da2-b5e9-97519f76e3ef-1-wm.jpg?v=1789801638768"
+        },
+        {
+          "phrase": "consult a manual",
+          "meaning": "tra sổ tay"
+        }
+      ],
+      "synonyms": [
+        "ask (hỏi ý kiến)",
+        "refer to (tra cứu)"
+      ]
+    },
+    {
+      "id": "f1e67a96-2bd1-4e86-a1a6-3f63d3227a92",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "sample",
+      "ipa": "UK: /ˈsɑːm.pəl/ | US: /ˈsæm.pəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The pharmacist gave Myra a few free samples of the allergy medication.",
+          "meaning": "mẫu, hàng mẫu, mẫu đại diện",
+          "toeic_tip": "Cụm free sample rất hay gặp trong quảng cáo ở Part 7.",
+          "example_vi": "Dược sĩ đưa cho Myra vài gói thuốc dị ứng dùng thử miễn phí.",
+          "word_family": [
+            "sample (v) thử, lấy mẫu",
+            "sampling (n) việc lấy mẫu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T08:00:48.955841+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f1e67a96-2bd1-4e86-a1a6-3f63d3227a92-wm.jpg?v=1789798511122",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sample-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sample-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a free sample",
+          "meaning": "hàng mẫu miễn phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1e67a96-2bd1-4e86-a1a6-3f63d3227a92-0-wm.jpg?v=1789804833831"
+        },
+        {
+          "phrase": "a blood sample",
+          "meaning": "mẫu máu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f1e67a96-2bd1-4e86-a1a6-3f63d3227a92-1-wm.jpg?v=1789804848814"
+        },
+        {
+          "phrase": "a random sample",
+          "meaning": "mẫu ngẫu nhiên"
+        }
+      ],
+      "synonyms": [
+        "specimen (mẫu vật)",
+        "example (mẫu điển hình)"
+      ]
+    },
+    {
+      "id": "d3c5241f-17cd-415a-8cd3-944579638c4f",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "limit",
+      "ipa": "/ˈlɪm.ɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My prescription has a limit of three refills.",
+          "meaning": "giới hạn, mức tối đa, hạn mức",
+          "toeic_tip": "Cụm set a limit on something; limited edition hay gặp ở Part 7.",
+          "example_vi": "Đơn thuốc của tôi chỉ được lấy lại tối đa ba lần.",
+          "word_family": [
+            "limited (adj) có hạn",
+            "limitation (n) sự hạn chế",
+            "limitless (adj) không giới hạn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T07:46:20.679052+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/d3c5241f-17cd-415a-8cd3-944579638c4f-wm.jpg?v=1789798435563",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/limit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/limit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a time limit",
+          "meaning": "giới hạn thời gian",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d3c5241f-17cd-415a-8cd3-944579638c4f-0-wm.jpg?v=1789803979626"
+        },
+        {
+          "phrase": "set a limit on",
+          "meaning": "đặt giới hạn cho",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/d3c5241f-17cd-415a-8cd3-944579638c4f-1-wm.jpg?v=1789803980503"
+        },
+        {
+          "phrase": "within the limit",
+          "meaning": "trong giới hạn"
+        }
+      ],
+      "synonyms": [
+        "maximum (mức tối đa)",
+        "cap (mức trần)"
+      ]
+    },
+    {
+      "id": "13cc6cde-6e2d-409f-ae6e-87e5433e8afd",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "convenient",
+      "ipa": "/kənˈviː.ni.ənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Is this a convenient location for you to pick up your prescription?",
+          "meaning": "thuận tiện, tiện lợi, dễ đi lại",
+          "antonyms": [
+            "inconvenient (bất tiện)"
+          ],
+          "toeic_tip": "Dùng convenient for somebody, không dùng convenient to somebody.",
+          "example_vi": "Chỗ này có tiện cho bạn ghé lấy thuốc không?",
+          "word_family": [
+            "convenience (n) sự tiện lợi",
+            "conveniently (adv) một cách thuận tiện"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T06:17:26.032457+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/13cc6cde-6e2d-409f-ae6e-87e5433e8afd-wm.jpg?v=1789797957973",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/convenient-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/convenient-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a convenient location",
+          "meaning": "vị trí thuận tiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/13cc6cde-6e2d-409f-ae6e-87e5433e8afd-0-wm.jpg?v=1789798645879"
+        },
+        {
+          "phrase": "at a convenient time",
+          "meaning": "vào lúc thuận tiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/13cc6cde-6e2d-409f-ae6e-87e5433e8afd-1-wm.jpg?v=1789798643507"
+        },
+        {
+          "phrase": "convenient for you",
+          "meaning": "tiện cho bạn"
+        }
+      ],
+      "synonyms": [
+        "handy (tiện dụng)",
+        "accessible (dễ tiếp cận)"
+      ]
+    },
+    {
+      "id": "b5c1aac0-56c1-4281-a4d9-bccafb701ba5",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "control",
+      "ipa": "UK: /kənˈtrəʊl/ | US: /kənˈtroʊl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To control the cost of this medication, you may get the generic version.",
+          "meaning": "kiểm soát, khống chế, chi phối",
+          "toeic_tip": "Gấp đôi l khi chia: controlled, controlling; nhớ cụm under control.",
+          "example_vi": "Muốn bớt tiền thuốc thì bạn có thể lấy loại thuốc gốc.",
+          "word_family": [
+            "controller (n) người kiểm soát",
+            "controllable (adj) có thể kiểm soát"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T07:28:45.8801+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b5c1aac0-56c1-4281-a4d9-bccafb701ba5-wm.jpg?v=1789798283548",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/control-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/control-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "control costs",
+          "meaning": "kiểm soát chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b5c1aac0-56c1-4281-a4d9-bccafb701ba5-0-wm.jpg?v=1789802925738"
+        },
+        {
+          "phrase": "control blood pressure",
+          "meaning": "khống chế huyết áp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b5c1aac0-56c1-4281-a4d9-bccafb701ba5-1-wm.jpg?v=1789802923978"
+        },
+        {
+          "phrase": "keep something under control",
+          "meaning": "giữ trong tầm kiểm soát"
+        }
+      ],
+      "synonyms": [
+        "manage (quản lý)",
+        "regulate (điều tiết)"
+      ]
+    },
+    {
+      "id": "fc0329f6-84be-4d0e-87fd-662df92f69f7",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "detect",
+      "ipa": "/dɪˈtekt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My doctor put me through some simple tests to detect if I have asthma.",
+          "meaning": "phát hiện, dò ra, nhận thấy",
+          "antonyms": [
+            "overlook (bỏ sót)",
+            "miss (bỏ lỡ)"
+          ],
+          "toeic_tip": "Danh từ là detection, không phải detecting; hay gặp smoke detector.",
+          "example_vi": "Bác sĩ cho tôi làm vài xét nghiệm đơn giản để xem tôi có bị hen không.",
+          "word_family": [
+            "detection (n) sự phát hiện",
+            "detector (n) thiết bị dò tìm"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T08:07:15.730482+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fc0329f6-84be-4d0e-87fd-662df92f69f7-wm.jpg?v=1789798505076",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/detect-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/detect-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "detect a problem",
+          "meaning": "phát hiện sự cố",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fc0329f6-84be-4d0e-87fd-662df92f69f7-0-wm.jpg?v=1789805234167"
+        },
+        {
+          "phrase": "early detection",
+          "meaning": "phát hiện sớm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fc0329f6-84be-4d0e-87fd-662df92f69f7-1-wm.jpg?v=1789805235589"
+        },
+        {
+          "phrase": "detect a change",
+          "meaning": "nhận ra thay đổi"
+        }
+      ],
+      "synonyms": [
+        "discover (phát hiện)",
+        "notice (nhận thấy)"
+      ]
+    },
+    {
+      "id": "77322450-9b15-46ad-b527-1574e0c96fb9",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "monitor",
+      "ipa": "UK: /ˈmɒn.ɪ.tə/ | US: /ˈmɑː.nə.t̬ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The nurse practitioner carefully monitors the number of medications her patients are taking.",
+          "meaning": "theo dõi, giám sát",
+          "antonyms": [
+            "ignore (phớt lờ)"
+          ],
+          "toeic_tip": "Vừa là động từ theo dõi, vừa là danh từ chỉ màn hình.",
+          "example_vi": "Điều dưỡng chuyên khoa theo dõi sát số loại thuốc mà bệnh nhân đang dùng.",
+          "word_family": [
+            "monitoring (n) việc giám sát",
+            "monitor (n) người giám sát, màn hình"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T06:58:54.775547+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/77322450-9b15-46ad-b527-1574e0c96fb9-wm.jpg?v=1789798071652",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/monitor-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/monitor-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "monitor progress",
+          "meaning": "theo dõi tiến độ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/77322450-9b15-46ad-b527-1574e0c96fb9-0-wm.jpg?v=1789801134639"
+        },
+        {
+          "phrase": "closely monitor",
+          "meaning": "giám sát chặt chẽ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/77322450-9b15-46ad-b527-1574e0c96fb9-1-wm.jpg?v=1789801133077"
+        },
+        {
+          "phrase": "monitor the situation",
+          "meaning": "theo dõi tình hình"
+        }
+      ],
+      "synonyms": [
+        "track (theo dõi)",
+        "observe (quan sát)"
+      ]
+    },
+    {
+      "id": "538158e1-3445-4f46-bd08-cc4ed063436c",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "volunteer",
+      "ipa": "UK: /ˌvɒl.ənˈtɪə/ | US: /ˌvɑː.lənˈtɪr/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My doctor volunteered to call the drugstore, so my medication would be waiting for me.",
+          "meaning": "tình nguyện làm, xung phong nhận việc",
+          "toeic_tip": "Cấu trúc volunteer to do something; danh từ là tình nguyện viên.",
+          "example_vi": "Bác sĩ chủ động gọi cho hiệu thuốc để thuốc sẵn sàng chờ tôi đến lấy.",
+          "word_family": [
+            "volunteer (n) tình nguyện viên",
+            "voluntary (adj) tự nguyện",
+            "voluntarily (adv) một cách tự nguyện"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T06:39:20.957555+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/538158e1-3445-4f46-bd08-cc4ed063436c-wm.jpg?v=1789798399542",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/volunteer-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/volunteer-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "volunteer to help",
+          "meaning": "tình nguyện giúp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/538158e1-3445-4f46-bd08-cc4ed063436c-0-wm.jpg?v=1789799957753"
+        },
+        {
+          "phrase": "volunteer at a hospital",
+          "meaning": "làm tình nguyện ở bệnh viện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/538158e1-3445-4f46-bd08-cc4ed063436c-1-wm.jpg?v=1789799960817"
+        },
+        {
+          "phrase": "volunteer information",
+          "meaning": "tự nguyện cung cấp thông tin"
+        }
+      ],
+      "synonyms": [
+        "offer (đề nghị làm)",
+        "sign up (đăng ký tham gia)"
+      ]
+    },
+    {
+      "id": "2f4a4d2e-eead-404d-8dbb-5c7487057875",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "potential",
+      "ipa": "/pəˈten.ʃəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To avoid any potential side effects from the medication, be sure to tell your doctor all the drugs you are currently taking.",
+          "meaning": "tiềm ẩn, có thể xảy ra, tiềm năng",
+          "antonyms": [
+            "actual (thực tế)",
+            "existing (đang tồn tại)"
+          ],
+          "toeic_tip": "Chỉ đứng trước danh từ, chỉ điều chưa xảy ra, đối lập với actual.",
+          "example_vi": "Để tránh những tác dụng phụ có thể xảy ra, hãy kể cho bác sĩ mọi loại thuốc bạn đang dùng.",
+          "word_family": [
+            "potentially (adv) có khả năng",
+            "potential (n) tiềm năng"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T06:23:03.544617+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2f4a4d2e-eead-404d-8dbb-5c7487057875-wm.jpg?v=1789798563119",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/potential-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/potential-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "potential customers",
+          "meaning": "khách hàng tiềm năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f4a4d2e-eead-404d-8dbb-5c7487057875-0-wm.jpg?v=1789798979502"
+        },
+        {
+          "phrase": "potential risks",
+          "meaning": "rủi ro tiềm ẩn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2f4a4d2e-eead-404d-8dbb-5c7487057875-1-wm.jpg?v=1789798983374"
+        },
+        {
+          "phrase": "potential side effects",
+          "meaning": "tác dụng phụ có thể có"
+        }
+      ],
+      "synonyms": [
+        "possible (có thể có)",
+        "prospective (tiềm năng, sắp tới)"
+      ]
+    },
+    {
+      "id": "48bfeddf-7d5b-425a-b0c6-77c0fbac74f3",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "factor",
+      "ipa": "UK: /ˈfæk.tə/ | US: /ˈfæk.tɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Taking medications as directed is an important factor in getting well.",
+          "meaning": "yếu tố, nhân tố góp phần",
+          "toeic_tip": "Đi với in hoặc contributing to: a factor in something.",
+          "example_vi": "Uống thuốc đúng chỉ dẫn là yếu tố quan trọng giúp mau khỏi bệnh.",
+          "word_family": [
+            "factor in (v) tính đến, đưa vào cân nhắc"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T06:34:08.984848+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/48bfeddf-7d5b-425a-b0c6-77c0fbac74f3-wm.jpg?v=1789797664128",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/factor-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/factor-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a key factor",
+          "meaning": "yếu tố then chốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/48bfeddf-7d5b-425a-b0c6-77c0fbac74f3-0-wm.jpg?v=1789799631629"
+        },
+        {
+          "phrase": "a contributing factor",
+          "meaning": "yếu tố góp phần",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/48bfeddf-7d5b-425a-b0c6-77c0fbac74f3-1-wm.jpg?v=1789799648815"
+        },
+        {
+          "phrase": "take factors into account",
+          "meaning": "cân nhắc các yếu tố"
+        }
+      ],
+      "synonyms": [
+        "element (yếu tố)",
+        "component (thành phần)"
+      ]
+    },
+    {
+      "id": "fe676e56-ebd1-4cd2-8836-33a6496f4ce3",
+      "part_id": "b07a07ad-efe1-4c0f-ae56-d071b49c8e8b",
+      "word": "sense",
+      "ipa": "/sens/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The doctor had a good sense about what the problem was but wanted to get a second opinion.",
+          "meaning": "cảm nhận, linh cảm, sự phán đoán",
+          "toeic_tip": "Phân biệt sensible (biết suy xét) với sensitive (nhạy cảm).",
+          "example_vi": "Bác sĩ cũng đoán được vấn đề nằm ở đâu nhưng vẫn muốn hỏi thêm ý kiến khác.",
+          "word_family": [
+            "sensible (adj) biết suy xét, hợp lý"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:54:08.259588+00:00",
+      "updated_at": "2026-09-19T08:06:54.081456+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/fe676e56-ebd1-4cd2-8836-33a6496f4ce3-wm.jpg?v=1789798396392",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sense-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/sense-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a sense of",
+          "meaning": "cảm giác về",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fe676e56-ebd1-4cd2-8836-33a6496f4ce3-0-wm.jpg?v=1789805203377"
+        },
+        {
+          "phrase": "make sense",
+          "meaning": "hợp lý",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/fe676e56-ebd1-4cd2-8836-33a6496f4ce3-1-wm.jpg?v=1789805213934"
+        },
+        {
+          "phrase": "common sense",
+          "meaning": "lẽ thường"
+        }
+      ],
+      "synonyms": [
+        "feeling (cảm giác)",
+        "impression (cảm nhận, ấn tượng)"
+      ]
+    }
+  ]
+}

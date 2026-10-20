@@ -1,0 +1,357 @@
+{
+  "subtopic": {
+    "id": "57d66af0-d61d-4db6-babc-a26accab1665",
+    "topic_id": "d6667723-0099-4348-b365-017ea30685d1",
+    "title_en": "Mệnh đề danh ngữ với đại từ phức hợp",
+    "title_vi": "Mệnh đề danh ngữ với đại từ phức hợp",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 62,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-menh-de-danh-ngu-voi-dai-tu-phuc-hop"
+  },
+  "lessons": [
+    {
+      "id": "cb6ce59a-9cc8-4b52-bffa-d768f2909f71",
+      "subtopic_id": "57d66af0-d61d-4db6-babc-a26accab1665",
+      "title_en": "Mệnh đề danh ngữ với đại từ phức hợp",
+      "title_vi": "Mệnh đề danh ngữ với đại từ phức hợp",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "A",
+          "source": "ETS 2026 · Test 4 · Câu 117",
+          "options": {
+            "A": "Whoever",
+            "B": "Who",
+            "C": "Whose",
+            "D": "What"
+          },
+          "question": "------- prepares the patient's medical records is required to maintain confidentiality.",
+          "translation": "Bất cứ ai chuẩn bị hồ sơ bệnh án của bệnh nhân đều phải giữ bí mật thông tin."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm “Whoever” và ba từ để hỏi “Who”, “Whose”, “What”. Chỗ trống đứng đầu câu, ngay trước động từ “prepares”; động từ chính của câu là “is required”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "prepares the patient's medical records",
+                    "label": "phần còn lại của mệnh đề chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is required",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to maintain confidentiality.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống cùng “prepares the patient's medical records” tạo thành chủ ngữ của “is required”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Từ nào vừa mở mệnh đề vừa làm chủ ngữ cho “prepares”.",
+                  "Mệnh đề chủ ngữ này chỉ người hay vật.",
+                  "Từ có đuôi -ever khác từ để hỏi ở chỗ nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Đại từ phức hợp (whoever, whomever, whatever, whichever) mang nghĩa “bất cứ ai / bất cứ thứ gì / bất cứ cái nào”. Nó vừa mở mệnh đề vừa đóng một vai trong mệnh đề đó; cả mệnh đề làm chủ ngữ, tân ngữ của câu chính hoặc đứng sau giới từ.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Bất cứ ai, thiếu chủ ngữ",
+                    "formula": "whoever + V"
+                  },
+                  {
+                    "label": "Bất cứ ai, thiếu tân ngữ",
+                    "formula": "whomever + S + V"
+                  },
+                  {
+                    "label": "Bất cứ thứ gì",
+                    "formula": "whatever + V / whatever + S + V"
+                  },
+                  {
+                    "label": "Đi liền với danh từ",
+                    "formula": "whatever / whichever + N + (S) + V"
+                  },
+                  {
+                    "label": "Chọn trong nhóm đã biết",
+                    "formula": "whichever + of the + N số nhiều + …"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "whoever",
+                    "bất cứ ai (làm chủ ngữ trong mệnh đề)",
+                    "anyone who",
+                    "*Whoever is chosen to lead the project will report directly to the vice president.*"
+                  ],
+                  [
+                    "whomever",
+                    "bất cứ ai (làm tân ngữ trong mệnh đề)",
+                    "anyone whom",
+                    "*give the two extra tickets to whomever she chooses*"
+                  ],
+                  [
+                    "whatever",
+                    "bất cứ thứ gì, điều gì; + N: bất cứ … nào",
+                    "anything that",
+                    "*Whatever is left over … will be donated*; *whatever feedback you have*"
+                  ],
+                  [
+                    "whichever",
+                    "bất cứ cái nào, trong một nhóm đã biết",
+                    "any … that",
+                    "*whichever option the committee selects*; *whichever of the two shuttle buses departs first*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Từ",
+                  "Nghĩa",
+                  "Bằng",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "**Người hay vật**: câu chính cần người (should unlock, train, hire, invite) thì whoever/whomever; cần vật, việc (will be donated, will be thrown out, do) thì whatever/whichever.",
+                  "**Vai trò trong mệnh đề của nó**: ngay sau chỗ trống là động từ thì whoever; sau là S + V còn thiếu tân ngữ thì whomever. Giới từ đứng trước không đổi quy tắc này: *to whoever is working*.",
+                  "**Có danh từ ngay sau** thì trong nhóm từ có -ever chỉ whatever/whichever đứng được; có “of the …” thì dùng whichever."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Mở câu hỏi gián tiếp (việc ai …, cái nào …), là một sự việc, dùng sau know, ask, decide. Câu chính cần một người, vật cụ thể (should unlock, train, take, pay with) thì dùng từ có -ever.",
+                    "form": "who, whom, which (từ để hỏi)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là đại từ; khi mệnh đề phía sau thiếu chủ ngữ thì phải thêm who/that mới nối được: *Anyone arrives … should unlock* có hai động từ mà thiếu who. Chúng cũng không đứng trước danh từ.",
+                    "form": "anyone, anything, someone",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "whomever chỉ làm tân ngữ trong mệnh đề; ngay sau là động từ (is chosen, joins, has, is working) thì dùng whoever, kể cả sau giới từ.",
+                    "form": "whomever khi thiếu chủ ngữ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng liền trước danh từ; chỉ whatever, whichever làm được (whichever option, whatever supplies).",
+                    "form": "whoever, whomever, who, whom + danh từ",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sai nghĩa: đồ ăn còn thừa là vật (Whatever is left over); người được mời, được tuyển là người (invite whomever, hire whoever).",
+                    "form": "whoever cho vật, whatever cho người",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chọn trong một nhóm đã biết (of the two shuttle buses) dùng whichever.",
+                    "form": "whatever + of the …",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải đi liền với danh từ (whose + N), không đứng trước động từ, đại từ hay “of”.",
+                    "form": "whose",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối được mệnh đề: *invite they like*, *to her she chooses* có hai phần rời nhau, không có từ nối.",
+                    "form": "they, her (đại từ nhân xưng)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + động từ",
+                    "example": "*___ prepares the patient's medical records*; *hire ___ has the most experience*; *to ___ is working*"
+                  },
+                  {
+                    "signal": "___ + S + V thiếu tân ngữ",
+                    "example": "*___ you leave in the break room refrigerator*; *invite ___ they like*; *to ___ she chooses*"
+                  },
+                  {
+                    "signal": "___ + danh từ",
+                    "example": "*___ option the committee selects*; *___ method is most convenient*; *___ supplies the new employees need*"
+                  },
+                  {
+                    "signal": "___ + of the + nhóm",
+                    "example": "*___ of the two shuttle buses*; *___ of the sample products*"
+                  },
+                  {
+                    "signal": "câu chính cần người",
+                    "example": "*… should unlock the supply room*; *will train ___*; *plans to hire ___*; *is required to maintain confidentiality*"
+                  },
+                  {
+                    "signal": "câu chính cần vật, việc",
+                    "example": "*… will be donated*; *… will be thrown out*; *do ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Có whoever, whomever, whatever, whichever trộn với who, whom, which, whose hoặc anyone, anything thì đây là câu mệnh đề danh ngữ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm động từ chính và vị trí chỗ trống (chủ ngữ, tân ngữ, sau giới từ). Nhìn ngay sau chỗ trống là động từ, S + V hay danh từ, và câu chính cần người hay vật.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Người: thiếu chủ ngữ chọn whoever, thiếu tân ngữ chọn whomever; vật, việc: whatever; có danh từ ngay sau: whatever/whichever; có “of the …”: whichever. Loại từ để hỏi, anyone, whose và đại từ nhân xưng.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Whoever",
+                    "label": "chủ ngữ của prepares"
+                  },
+                  {
+                    "role": "CLAUSE",
+                    "text": "prepares the patient's medical records",
+                    "label": "phần còn lại của mệnh đề chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "is required",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to maintain confidentiality.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “Whoever prepares the patient's medical records” là chủ ngữ của “is required”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm đại từ phức hợp “Whoever” và từ để hỏi “Who”, “Whose”, “What” nên đây là câu mệnh đề danh ngữ.",
+                  "Bước 2: Câu có động từ chính “is required” nhưng thiếu chủ ngữ; dấu hiệu “___ + động từ”: “------- prepares”; “câu chính cần người”: “is required to maintain confidentiality”.",
+                  "Bước 3: Người chuẩn bị hồ sơ, thiếu chủ ngữ nên dùng whoever + V, vì vậy chọn “Whoever” (bất cứ ai).",
+                  "“Who” (B) mở câu hỏi gián tiếp (việc ai …), không làm được người phải “maintain confidentiality”, nên loại.",
+                  "“Whose” (C) phải đi liền với danh từ, không đứng ngay trước động từ “prepares”, nên loại.",
+                  "“What” (D) chỉ vật, việc, trong khi người chuẩn bị hồ sơ và giữ bí mật là người, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“what” cũng mở mệnh đề với nghĩa “điều mà, thứ mà” (học ở chủ điểm “Mệnh đề danh ngữ với từ để hỏi”), nên khi câu chính cần người thì loại “what” theo nghĩa: nó chỉ vật, việc, không chỉ người.",
+                  "anyone, anything thêm who/that thì nối được mệnh đề: *anyone who arrives first* có nghĩa như *whoever arrives first*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Bất cứ ai: whoever + V; whomever + S + V còn thiếu tân ngữ.",
+                  "Bất cứ thứ gì: whatever; chọn trong nhóm đã biết: whichever (of the …).",
+                  "Có danh từ ngay sau chỗ trống: trong nhóm -ever chỉ whatever, whichever."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

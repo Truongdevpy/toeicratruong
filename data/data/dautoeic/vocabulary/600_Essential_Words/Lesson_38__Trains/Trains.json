@@ -1,0 +1,626 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "e00a969d-da89-4b50-a017-228092710f5f",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 38: Trains",
+    "order_index": 38,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:12.868154+00:00",
+    "updated_at": "2026-09-18T08:53:12.868154+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+    "test_id": "e00a969d-da89-4b50-a017-228092710f5f",
+    "name": "Trains",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:12.868154+00:00",
+    "updated_at": "2026-09-18T08:53:12.868154+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "c14fe7c5-58d9-4d51-8af5-2eeaf0e24aa7",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "remainder",
+      "ipa": "UK: /rɪˈmeɪn.dər/ | US: /rɪˈmeɪn.dɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The Alaskan frontier has train service in the summer, but for the remainder of the year the tracks are impassable.",
+          "meaning": "phần còn lại, phần dư ra",
+          "toeic_tip": "Luôn dùng với the: the remainder of + danh từ.",
+          "example_vi": "Vùng biên Alaska có tàu chạy vào mùa hè, còn những tháng khác thì đường ray không đi được.",
+          "word_family": [
+            "remain (v) còn lại, vẫn ở",
+            "remaining (adj) còn lại"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T07:35:14.419976+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c14fe7c5-58d9-4d51-8af5-2eeaf0e24aa7-wm.jpg?v=1789798497453",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remainder-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remainder-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "the remainder of the year",
+          "meaning": "phần còn lại của năm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c14fe7c5-58d9-4d51-8af5-2eeaf0e24aa7-0-wm.jpg?v=1789803313179"
+        },
+        {
+          "phrase": "pay the remainder",
+          "meaning": "thanh toán phần còn lại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c14fe7c5-58d9-4d51-8af5-2eeaf0e24aa7-1-wm.jpg?v=1789803314273"
+        },
+        {
+          "phrase": "the remainder of the money",
+          "meaning": "số tiền còn lại"
+        }
+      ],
+      "synonyms": [
+        "rest (phần còn lại)",
+        "balance (số dư còn lại)"
+      ]
+    },
+    {
+      "id": "a0d1c86e-190d-497c-a00e-7e504eeb4d84",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "entitle",
+      "ipa": "UK: /ɪnˈtaɪ.təl/ | US: /ɪnˈtaɪ.t̬əl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "During the holiday rush, a train ticket entitled the passenger to a ride, but not necessarily a seat.",
+          "meaning": "cho quyền được hưởng, đủ tư cách nhận",
+          "antonyms": [
+            "disqualify (loại bỏ tư cách)"
+          ],
+          "toeic_tip": "Luôn dùng be entitled to + danh từ hoặc V-ing, không dùng entitled for.",
+          "example_vi": "Vào cao điểm lễ, vé tàu chỉ bảo đảm được đi, chứ chưa chắc có chỗ ngồi.",
+          "word_family": [
+            "entitlement (n) quyền lợi được hưởng",
+            "entitled (adj) được quyền"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T07:19:19.729846+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a0d1c86e-190d-497c-a00e-7e504eeb4d84-wm.jpg?v=1789797648307",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/entitle-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/entitle-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "entitle someone to something",
+          "meaning": "cho ai quyền hưởng gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a0d1c86e-190d-497c-a00e-7e504eeb4d84-0-wm.jpg?v=1789802347132"
+        },
+        {
+          "phrase": "be entitled to a refund",
+          "meaning": "được quyền hoàn tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a0d1c86e-190d-497c-a00e-7e504eeb4d84-1-wm.jpg?v=1789802359572"
+        },
+        {
+          "phrase": "entitle the holder to",
+          "meaning": "cho người sở hữu quyền"
+        }
+      ],
+      "synonyms": [
+        "qualify (đủ điều kiện)",
+        "authorize (cho phép chính thức)"
+      ]
+    },
+    {
+      "id": "0c01ea18-eb3d-4f4a-81d0-d7b93e2da587",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "fare",
+      "ipa": "UK: /feər/ | US: /fer/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The train fare has increased since I rode last.",
+          "meaning": "tiền vé, giá vé đi lại",
+          "toeic_tip": "fare là tiền vé đi lại, fee là lệ phí dịch vụ; đừng nhầm với fair.",
+          "example_vi": "Giá vé tàu đã tăng so với lần trước tôi đi.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T08:41:50.688806+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0c01ea18-eb3d-4f4a-81d0-d7b93e2da587-wm.jpg?v=1789798408851",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fare-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fare-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "train fare",
+          "meaning": "giá vé tàu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0c01ea18-eb3d-4f4a-81d0-d7b93e2da587-0-wm.jpg?v=1789807310527"
+        },
+        {
+          "phrase": "pay the fare",
+          "meaning": "trả tiền vé",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0c01ea18-eb3d-4f4a-81d0-d7b93e2da587-1-wm.jpg?v=1789798836959"
+        },
+        {
+          "phrase": "a reduced fare",
+          "meaning": "vé giảm giá"
+        }
+      ],
+      "synonyms": [
+        "ticket price (giá vé)",
+        "charge (khoản phí)"
+      ]
+    },
+    {
+      "id": "1ebb6036-9913-42d1-9bbb-5197436cbc1d",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "duration",
+      "ipa": "UK: /djʊˈreɪ.ʃən/ | US: /dʊˈreɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Mother lent me her spare jacket for the duration of the trip.",
+          "meaning": "khoảng thời gian kéo dài, thời lượng",
+          "toeic_tip": "Cụm for the duration of nghĩa là trong suốt khoảng thời gian đó.",
+          "example_vi": "Mẹ cho tôi mượn chiếc áo khoác dự phòng để mặc suốt chuyến đi.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T06:19:50.899292+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1ebb6036-9913-42d1-9bbb-5197436cbc1d-wm.jpg?v=1789798309107",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/duration-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/duration-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "for the duration of the trip",
+          "meaning": "trong suốt chuyến đi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1ebb6036-9913-42d1-9bbb-5197436cbc1d-0-wm.jpg?v=1789798787977"
+        },
+        {
+          "phrase": "the duration of the flight",
+          "meaning": "thời lượng chuyến bay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1ebb6036-9913-42d1-9bbb-5197436cbc1d-1-wm.jpg?v=1789798790742"
+        },
+        {
+          "phrase": "a short duration",
+          "meaning": "thời gian ngắn"
+        }
+      ],
+      "synonyms": [
+        "length (độ dài thời gian)",
+        "period (khoảng thời gian)"
+      ]
+    },
+    {
+      "id": "c67db8b1-f44f-4a54-8e47-df01a6587940",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "relatively",
+      "ipa": "/ˈrel.ə.tɪv.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The train is relatively empty for this time of day.",
+          "meaning": "tương đối, khá là",
+          "antonyms": [
+            "extremely (cực kỳ)",
+            "absolutely (hoàn toàn)"
+          ],
+          "toeic_tip": "relatively đứng ngay trước tính từ hoặc trạng từ mà nó bổ nghĩa.",
+          "example_vi": "Vào giờ này trong ngày thì tàu khá vắng.",
+          "word_family": [
+            "relative (adj) tương đối",
+            "relate (v) liên quan"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T07:38:09.566321+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c67db8b1-f44f-4a54-8e47-df01a6587940-wm.jpg?v=1789798493661",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/relatively-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/relatively-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "relatively empty",
+          "meaning": "khá vắng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c67db8b1-f44f-4a54-8e47-df01a6587940-0-wm.jpg?v=1789803477034"
+        },
+        {
+          "phrase": "relatively inexpensive",
+          "meaning": "tương đối rẻ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c67db8b1-f44f-4a54-8e47-df01a6587940-1-wm.jpg?v=1789803489426"
+        },
+        {
+          "phrase": "relatively new",
+          "meaning": "khá mới"
+        }
+      ],
+      "synonyms": [
+        "fairly (khá)",
+        "somewhat (phần nào)"
+      ]
+    },
+    {
+      "id": "5d431f46-5985-453c-a672-7184ba26d8a4",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "offset",
+      "ipa": "UK: /ˌɒfˈset/ | US: /ˌɑːfˈset/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The high cost of the hotel room offset the savings we made by taking the train instead of the plane.",
+          "meaning": "bù lại, bù đắp, làm cân bằng lại",
+          "toeic_tip": "Động từ bất quy tắc offset - offset - offset, không thêm đuôi ed.",
+          "example_vi": "Tiền phòng khách sạn đắt đã ngốn hết khoản tiết kiệm nhờ đi tàu thay vì đi máy bay.",
+          "word_family": [
+            "offset (n) sự bù trừ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T06:43:30.943536+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/5d431f46-5985-453c-a672-7184ba26d8a4-wm.jpg?v=1789798349423",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/offset-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/offset-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "offset the cost",
+          "meaning": "bù lại chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5d431f46-5985-453c-a672-7184ba26d8a4-0-wm.jpg?v=1789800210787"
+        },
+        {
+          "phrase": "offset losses",
+          "meaning": "bù đắp khoản lỗ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/5d431f46-5985-453c-a672-7184ba26d8a4-1-wm.jpg?v=1789800210446"
+        },
+        {
+          "phrase": "be offset by savings",
+          "meaning": "được bù bằng khoản tiết kiệm"
+        }
+      ],
+      "synonyms": [
+        "counterbalance (làm cân bằng lại)",
+        "compensate for (bù đắp cho)"
+      ]
+    },
+    {
+      "id": "0659b126-a7f2-4523-b62e-37d58219a0bf",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "remote",
+      "ipa": "UK: /rɪˈməʊt/ | US: /rɪˈmoʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I was surprised to find train service to such a remote location.",
+          "meaning": "xa xôi, hẻo lánh; thực hiện từ xa",
+          "antonyms": [
+            "nearby (gần đó)",
+            "central (ở trung tâm)"
+          ],
+          "toeic_tip": "Nghĩa thứ hai hay bị bỏ qua: work remotely là làm việc từ xa.",
+          "example_vi": "Tôi khá bất ngờ khi thấy có tàu chạy tới một nơi hẻo lánh như vậy.",
+          "word_family": [
+            "remotely (adv) từ xa",
+            "remoteness (n) sự xa xôi"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T06:19:14.231655+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/0659b126-a7f2-4523-b62e-37d58219a0bf-wm.jpg?v=1789798246541",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remote-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/remote-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a remote location",
+          "meaning": "địa điểm hẻo lánh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0659b126-a7f2-4523-b62e-37d58219a0bf-0-wm.jpg?v=1789798754057"
+        },
+        {
+          "phrase": "a remote area",
+          "meaning": "vùng xa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/0659b126-a7f2-4523-b62e-37d58219a0bf-1-wm.jpg?v=1789798752350"
+        },
+        {
+          "phrase": "remote access",
+          "meaning": "truy cập từ xa"
+        }
+      ],
+      "synonyms": [
+        "distant (xa xôi)",
+        "isolated (biệt lập)"
+      ]
+    },
+    {
+      "id": "1c76bd98-6dd9-4f27-8547-c5b9a610e4b6",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "operate",
+      "ipa": "UK: /ˈɒp.ər.eɪt/ | US: /ˈɑː.pə.reɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The train operates on a punctual schedule.",
+          "meaning": "hoạt động, chạy theo chức năng; vận hành, điều hành",
+          "antonyms": [
+            "shut down (ngừng hoạt động)"
+          ],
+          "toeic_tip": "Hai danh từ dễ nhầm: operation (sự vận hành) và operator (người vận hành).",
+          "example_vi": "Tàu chạy đúng theo lịch giờ giấc.",
+          "word_family": [
+            "operation (n) sự vận hành, hoạt động",
+            "operator (n) người vận hành",
+            "operational (adj) đang hoạt động"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T06:19:57.482971+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/1c76bd98-6dd9-4f27-8547-c5b9a610e4b6-wm.jpg?v=1789798326286",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/operate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/operate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "operate on a schedule",
+          "meaning": "chạy theo lịch",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c76bd98-6dd9-4f27-8547-c5b9a610e4b6-0-wm.jpg?v=1789798796676"
+        },
+        {
+          "phrase": "operate a business",
+          "meaning": "điều hành doanh nghiệp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/1c76bd98-6dd9-4f27-8547-c5b9a610e4b6-1-wm.jpg?v=1789798797316"
+        },
+        {
+          "phrase": "operate machinery",
+          "meaning": "vận hành máy móc"
+        }
+      ],
+      "synonyms": [
+        "run (vận hành)",
+        "function (hoạt động)"
+      ]
+    },
+    {
+      "id": "529376b9-3d25-40af-9fd4-a9e581175810",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "deluxe",
+      "ipa": "/dəˈlʌks/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "My parents decided to splurge on deluxe accommodations for their trip.",
+          "meaning": "hạng sang, cao cấp",
+          "antonyms": [
+            "basic (loại cơ bản)",
+            "economy (hạng tiết kiệm)"
+          ],
+          "toeic_tip": "deluxe đứng trước danh từ chỉ phòng, dịch vụ hay mẫu mã hạng sang.",
+          "example_vi": "Bố mẹ tôi quyết định chơi sang, đặt chỗ ở hạng cao cấp cho chuyến đi.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T06:38:49.630548+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/529376b9-3d25-40af-9fd4-a9e581175810-wm.jpg?v=1789798506389",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deluxe-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/deluxe-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "deluxe accommodations",
+          "meaning": "chỗ ở hạng sang",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/529376b9-3d25-40af-9fd4-a9e581175810-0-wm.jpg?v=1789799928186"
+        },
+        {
+          "phrase": "a deluxe room",
+          "meaning": "phòng cao cấp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/529376b9-3d25-40af-9fd4-a9e581175810-1-wm.jpg?v=1789799929488"
+        },
+        {
+          "phrase": "a deluxe model",
+          "meaning": "mẫu cao cấp"
+        }
+      ],
+      "synonyms": [
+        "luxurious (xa hoa)",
+        "upscale (cao cấp)"
+      ]
+    },
+    {
+      "id": "e11ecc7b-80ff-4626-a416-9b64dedc349d",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "comprehensive",
+      "ipa": "UK: /ˌkɒm.prɪˈhen.sɪv/ | US: /ˌkɑːm.prɪˈhen.sɪv/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The conductor has a comprehensive knowledge of rail systems from all over the world.",
+          "meaning": "toàn diện, bao quát, đầy đủ mọi mặt",
+          "antonyms": [
+            "limited (hạn chế)",
+            "partial (chỉ một phần)"
+          ],
+          "toeic_tip": "Phân biệt comprehensive (toàn diện) với comprehensible (dễ hiểu).",
+          "example_vi": "Người trưởng tàu am hiểu tường tận hệ thống đường sắt khắp thế giới.",
+          "word_family": [
+            "comprehensively (adv) một cách toàn diện"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T07:53:42.362526+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e11ecc7b-80ff-4626-a416-9b64dedc349d-wm.jpg?v=1789798506404",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/comprehensive-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/comprehensive-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "comprehensive knowledge",
+          "meaning": "kiến thức toàn diện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e11ecc7b-80ff-4626-a416-9b64dedc349d-0-wm.jpg?v=1789804378384"
+        },
+        {
+          "phrase": "comprehensive insurance",
+          "meaning": "bảo hiểm toàn diện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e11ecc7b-80ff-4626-a416-9b64dedc349d-1-wm.jpg?v=1789804422229"
+        },
+        {
+          "phrase": "a comprehensive review",
+          "meaning": "đợt rà soát toàn diện"
+        }
+      ],
+      "synonyms": [
+        "thorough (kỹ lưỡng)",
+        "all-inclusive (bao gồm tất cả)"
+      ]
+    },
+    {
+      "id": "a874bf8d-6021-4d6d-bcad-9e5acc9f5ac3",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "punctually",
+      "ipa": "/ˈpʌŋk.tʃu.ə.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Please be on time; the train leaves punctually at noon.",
+          "meaning": "đúng giờ, không trễ hẹn",
+          "antonyms": [
+            "late (trễ)",
+            "tardily (một cách chậm trễ)"
+          ],
+          "toeic_tip": "Chỗ trống sau động từ cần trạng từ punctually, không phải punctual.",
+          "example_vi": "Nhớ đến đúng giờ, tàu chạy đúng 12 giờ trưa.",
+          "word_family": [
+            "punctual (adj) đúng giờ",
+            "punctuality (n) sự đúng giờ"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T07:22:47.724655+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a874bf8d-6021-4d6d-bcad-9e5acc9f5ac3-wm.jpg?v=1789798495970",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/punctually-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/punctually-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "leave punctually at noon",
+          "meaning": "khởi hành đúng 12 giờ trưa",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a874bf8d-6021-4d6d-bcad-9e5acc9f5ac3-0-wm.jpg?v=1789802564801"
+        },
+        {
+          "phrase": "arrive punctually",
+          "meaning": "đến đúng giờ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a874bf8d-6021-4d6d-bcad-9e5acc9f5ac3-1-wm.jpg?v=1789802567590"
+        },
+        {
+          "phrase": "start punctually",
+          "meaning": "bắt đầu đúng giờ"
+        }
+      ],
+      "synonyms": [
+        "on time (đúng giờ)",
+        "promptly (kịp giờ)"
+      ]
+    },
+    {
+      "id": "7b7fdac6-b9d4-40e4-86ba-4740a5e425aa",
+      "part_id": "fa6ce232-fa57-4053-bf9c-4d56a54cbd6c",
+      "word": "directory",
+      "ipa": "UK: /daɪˈrek.tər.i/ | US: /dəˈrek.tɚ.i/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We consulted the directory to see where the train station was located.",
+          "meaning": "danh bạ, bảng danh mục chỉ dẫn",
+          "toeic_tip": "Trong tòa nhà, directory là bảng chỉ dẫn phòng ban, hay gặp ở Part 3.",
+          "example_vi": "Chúng tôi tra bảng chỉ dẫn để xem nhà ga nằm ở đâu.",
+          "word_family": [
+            "direct (v) chỉ đường, hướng dẫn",
+            "direction (n) phương hướng, chỉ dẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:12.868154+00:00",
+      "updated_at": "2026-09-19T07:00:30.304695+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7b7fdac6-b9d4-40e4-86ba-4740a5e425aa-wm.jpg?v=1789798513154",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/directory-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/directory-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a telephone directory",
+          "meaning": "danh bạ điện thoại",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7b7fdac6-b9d4-40e4-86ba-4740a5e425aa-0-wm.jpg?v=1789801229966"
+        },
+        {
+          "phrase": "directory assistance",
+          "meaning": "dịch vụ hỗ trợ tra danh bạ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7b7fdac6-b9d4-40e4-86ba-4740a5e425aa-1-wm.jpg?v=1789801230155"
+        },
+        {
+          "phrase": "consult the directory",
+          "meaning": "tra bảng chỉ dẫn"
+        }
+      ],
+      "synonyms": [
+        "listing (bản liệt kê)",
+        "index (mục lục)"
+      ]
+    }
+  ]
+}

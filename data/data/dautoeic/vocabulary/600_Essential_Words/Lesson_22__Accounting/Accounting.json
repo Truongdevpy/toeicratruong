@@ -1,0 +1,635 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "0f7f0542-a4df-4aad-8b7f-44837884f406",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 22: Accounting",
+    "order_index": 22,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:53.119396+00:00",
+    "updated_at": "2026-09-18T08:51:53.119396+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "061671e8-da64-4523-b55c-f86d35cd207d",
+    "test_id": "0f7f0542-a4df-4aad-8b7f-44837884f406",
+    "name": "Accounting",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:53.119396+00:00",
+    "updated_at": "2026-09-18T08:51:53.119396+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "4f4f2ac9-ca9b-449b-b016-f342e44557cd",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "client",
+      "ipa": "/ˈklaɪ.ənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We must provide excellent services for our clients, otherwise we will lose them to our competition.",
+          "meaning": "khách hàng, thân chủ",
+          "toeic_tip": "Client dùng cho dịch vụ chuyên môn, customer dùng khi mua bán hàng.",
+          "example_vi": "Chúng ta phải phục vụ khách hàng thật tốt, nếu không họ sẽ bỏ sang đối thủ.",
+          "word_family": [
+            "clientele (n) lượng khách hàng thường xuyên"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:38:39.890419+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4f4f2ac9-ca9b-449b-b016-f342e44557cd-wm.jpg?v=1789798036425",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/client-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/client-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "attract new clients",
+          "meaning": "thu hút khách hàng mới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4f4f2ac9-ca9b-449b-b016-f342e44557cd-0-wm.jpg?v=1789799906215"
+        },
+        {
+          "phrase": "a long-term client",
+          "meaning": "khách hàng lâu năm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4f4f2ac9-ca9b-449b-b016-f342e44557cd-1-wm.jpg?v=1789799919702"
+        },
+        {
+          "phrase": "client base",
+          "meaning": "tệp khách hàng"
+        }
+      ],
+      "synonyms": [
+        "customer (khách hàng)",
+        "patron (khách quen)",
+        "account (khách hàng doanh nghiệp)"
+      ]
+    },
+    {
+      "id": "f6e1f5e0-7b22-4716-8043-a05b193159f0",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "accumulate",
+      "ipa": "/əˈkjuː.mjə.leɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "They have accumulated more than enough information.",
+          "meaning": "tích lũy, gom góp, dồn lại",
+          "antonyms": [
+            "disperse (phân tán)",
+            "dissipate (tiêu tán)"
+          ],
+          "toeic_tip": "Vừa nội động vừa ngoại động: bills accumulate, accumulate data.",
+          "example_vi": "Họ đã thu thập được quá đủ thông tin.",
+          "word_family": [
+            "accumulation (n) sự tích lũy",
+            "accumulated (adj) được tích lũy"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T08:02:45.95738+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f6e1f5e0-7b22-4716-8043-a05b193159f0-wm.jpg?v=1789798027098",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accumulate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accumulate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accumulate wealth",
+          "meaning": "tích lũy tài sản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6e1f5e0-7b22-4716-8043-a05b193159f0-0-wm.jpg?v=1789804965822"
+        },
+        {
+          "phrase": "accumulate interest",
+          "meaning": "tích lũy tiền lãi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f6e1f5e0-7b22-4716-8043-a05b193159f0-1-wm.jpg?v=1789804965318"
+        },
+        {
+          "phrase": "accumulate over time",
+          "meaning": "dồn lại theo thời gian"
+        }
+      ],
+      "synonyms": [
+        "gather (thu thập)",
+        "collect (gom lại)",
+        "pile up (chất đống)"
+      ]
+    },
+    {
+      "id": "79ae59c8-5f3a-4331-b407-c6f4315c79f8",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "turnover",
+      "ipa": "UK: /ˈtɜːn.əʊ.vər/ | US: /ˈtɝːn.oʊ.vɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We have to add another production shift to keep up with the high turnover rate.",
+          "meaning": "tỷ lệ thay thế nhân sự, vòng quay hàng hóa, doanh thu",
+          "antonyms": [
+            "retention (việc giữ chân nhân viên)"
+          ],
+          "toeic_tip": "Anh-Anh turnover còn nghĩa doanh thu, phải đọc ngữ cảnh mới chọn đúng.",
+          "example_vi": "Chúng ta phải thêm một ca sản xuất nữa mới theo kịp tốc độ tiêu thụ hàng.",
+          "word_family": [
+            "turn over (v) luân chuyển, đạt doanh thu"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:58:41.421476+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/79ae59c8-5f3a-4331-b407-c6f4315c79f8-wm.jpg?v=1789798034597",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/turnover-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/turnover-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "employee turnover",
+          "meaning": "tỷ lệ nghỉ việc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79ae59c8-5f3a-4331-b407-c6f4315c79f8-0-wm.jpg?v=1789801121281"
+        },
+        {
+          "phrase": "high turnover rate",
+          "meaning": "tỷ lệ luân chuyển cao",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79ae59c8-5f3a-4331-b407-c6f4315c79f8-1-wm.jpg?v=1789801119525"
+        },
+        {
+          "phrase": "inventory turnover",
+          "meaning": "vòng quay hàng tồn kho"
+        }
+      ],
+      "synonyms": [
+        "attrition (sự hao hụt nhân sự)",
+        "replacement rate (tỷ lệ thay thế)"
+      ]
+    },
+    {
+      "id": "e9d9ba8f-7d6b-4c4a-843f-cb3f34074c03",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "build up",
+      "ipa": "/ˌbɪld ˈʌp/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The firm has built up a solid reputation for itself.",
+          "meaning": "gây dựng dần, tăng dần, tích tụ",
+          "antonyms": [
+            "break down (phá bỏ, suy sụp)",
+            "reduce (giảm bớt)"
+          ],
+          "toeic_tip": "Danh từ viết liền a buildup, động từ viết tách build up.",
+          "example_vi": "Công ty đã gây dựng được uy tín vững chắc.",
+          "word_family": [
+            "buildup (n) sự tích tụ, sự gia tăng"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T07:55:39.069123+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e9d9ba8f-7d6b-4c4a-843f-cb3f34074c03-wm.jpg?v=1789798046684",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/build-up-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/build-up-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "build up a reputation",
+          "meaning": "gây dựng uy tín",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e9d9ba8f-7d6b-4c4a-843f-cb3f34074c03-0-wm.jpg?v=1789804528114"
+        },
+        {
+          "phrase": "build up inventory",
+          "meaning": "tích trữ hàng tồn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e9d9ba8f-7d6b-4c4a-843f-cb3f34074c03-1-wm.jpg?v=1789804538929"
+        },
+        {
+          "phrase": "build up over time",
+          "meaning": "tăng dần theo thời gian"
+        }
+      ],
+      "synonyms": [
+        "accumulate (tích lũy)",
+        "develop (phát triển dần)",
+        "strengthen (củng cố)"
+      ]
+    },
+    {
+      "id": "9923fc6d-20b7-484b-99ac-7c0d7920fcd6",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "outstanding",
+      "ipa": "/ˌaʊtˈstæn.dɪŋ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "That client still has several outstanding bills.",
+          "meaning": "chưa thanh toán, còn tồn đọng; xuất sắc",
+          "antonyms": [
+            "paid (đã thanh toán)",
+            "settled (đã tất toán)"
+          ],
+          "toeic_tip": "Trong tài chính outstanding nghĩa là chưa trả, không phải xuất sắc.",
+          "example_vi": "Khách hàng đó vẫn còn mấy hóa đơn chưa thanh toán.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T07:16:10.793595+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9923fc6d-20b7-484b-99ac-7c0d7920fcd6-wm.jpg?v=1789798030676",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/outstanding-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/outstanding-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "outstanding balance",
+          "meaning": "số dư chưa thanh toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9923fc6d-20b7-484b-99ac-7c0d7920fcd6-0-wm.jpg?v=1789802157900"
+        },
+        {
+          "phrase": "outstanding bills",
+          "meaning": "hóa đơn chưa trả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9923fc6d-20b7-484b-99ac-7c0d7920fcd6-1-wm.jpg?v=1789802170661"
+        },
+        {
+          "phrase": "outstanding performance",
+          "meaning": "thành tích xuất sắc"
+        }
+      ],
+      "synonyms": [
+        "unpaid (chưa trả)",
+        "overdue (quá hạn)",
+        "due (đến hạn phải trả)"
+      ]
+    },
+    {
+      "id": "25f97284-ea36-4024-a601-35a1eb4dbd14",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "profitably",
+      "ipa": "UK: /ˈprɒf.ɪ.tə.bli/ | US: /ˈprɑː.fɪ.t̬ə.bli/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company used its accountant's advice profitably.",
+          "meaning": "một cách có lợi, sinh lời, hiệu quả",
+          "antonyms": [
+            "unprofitably (không sinh lời)",
+            "at a loss (bị lỗ)"
+          ],
+          "toeic_tip": "Phân biệt profitable (tính từ) và profitably (trạng từ bổ nghĩa động từ).",
+          "example_vi": "Công ty đã tận dụng lời khuyên của kế toán viên rất hiệu quả.",
+          "word_family": [
+            "profit (n) lợi nhuận",
+            "profitable (adj) sinh lợi"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:19:20.620195+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/25f97284-ea36-4024-a601-35a1eb4dbd14-wm.jpg?v=1789798256684",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/profitably-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/profitably-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "invest profitably",
+          "meaning": "đầu tư sinh lời",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/25f97284-ea36-4024-a601-35a1eb4dbd14-0-wm.jpg?v=1789798757899"
+        },
+        {
+          "phrase": "operate profitably",
+          "meaning": "kinh doanh có lãi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/25f97284-ea36-4024-a601-35a1eb4dbd14-1-wm.jpg?v=1789798760463"
+        },
+        {
+          "phrase": "use time profitably",
+          "meaning": "dùng thời gian hữu ích"
+        }
+      ],
+      "synonyms": [
+        "advantageously (có lợi)",
+        "lucratively (sinh lợi lớn)"
+      ]
+    },
+    {
+      "id": "de11e611-085d-47c8-a8d2-0a022a4d494e",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "asset",
+      "ipa": "/ˈæs.et/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company's assets are worth millions of dollars.",
+          "meaning": "tài sản, thứ có giá trị",
+          "antonyms": [
+            "liability (khoản nợ phải trả)"
+          ],
+          "toeic_tip": "Trái nghĩa trong kế toán là liability; asset cũng chỉ người hữu ích.",
+          "example_vi": "Tài sản của công ty trị giá hàng triệu đô la.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T07:51:58.283441+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/de11e611-085d-47c8-a8d2-0a022a4d494e-wm.jpg?v=1789798043502",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/asset-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/asset-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "company assets",
+          "meaning": "tài sản công ty",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/de11e611-085d-47c8-a8d2-0a022a4d494e-0-wm.jpg?v=1789804308197"
+        },
+        {
+          "phrase": "fixed assets",
+          "meaning": "tài sản cố định",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/de11e611-085d-47c8-a8d2-0a022a4d494e-1-wm.jpg?v=1789804318119"
+        },
+        {
+          "phrase": "a valuable asset",
+          "meaning": "một tài sản quý giá"
+        }
+      ],
+      "synonyms": [
+        "resource (nguồn lực)",
+        "property (tài sản)",
+        "holding (tài sản nắm giữ)"
+      ]
+    },
+    {
+      "id": "732d0843-5259-404a-ae18-154ab3533979",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "debt",
+      "ipa": "/det/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company has been very careful and is slowly digging itself out of debt.",
+          "meaning": "khoản nợ, món nợ",
+          "antonyms": [
+            "credit (khoản ghi có)",
+            "asset (tài sản)"
+          ],
+          "toeic_tip": "Chữ b câm, đọc /det/; cụm cố định in debt và out of debt.",
+          "example_vi": "Công ty đã rất thận trọng và đang dần thoát khỏi cảnh nợ nần.",
+          "word_family": [
+            "debtor (n) con nợ",
+            "indebted (adj) đang mắc nợ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:54:40.063737+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/732d0843-5259-404a-ae18-154ab3533979-wm.jpg?v=1789798031874",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/debt-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/debt-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "pay off a debt",
+          "meaning": "trả hết nợ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/732d0843-5259-404a-ae18-154ab3533979-0-wm.jpg?v=1789800879015"
+        },
+        {
+          "phrase": "be in debt",
+          "meaning": "mắc nợ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/732d0843-5259-404a-ae18-154ab3533979-1-wm.jpg?v=1789800879928"
+        },
+        {
+          "phrase": "outstanding debt",
+          "meaning": "khoản nợ chưa trả"
+        }
+      ],
+      "synonyms": [
+        "liability (nghĩa vụ nợ)",
+        "obligation (nghĩa vụ phải trả)",
+        "arrears (khoản nợ quá hạn)"
+      ]
+    },
+    {
+      "id": "10967f4f-d8bb-457d-80cf-699026102ee0",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "reconcile",
+      "ipa": "/ˈrek.ən.saɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The client uses his bank statements to reconcile his accounts.",
+          "meaning": "đối chiếu cho khớp, làm cho nhất quán; hòa giải",
+          "toeic_tip": "Cấu trúc reconcile A with B; trong kế toán nghĩa là khớp số liệu.",
+          "example_vi": "Vị khách dùng sao kê ngân hàng để đối chiếu lại các tài khoản của mình.",
+          "word_family": [
+            "reconciliation (n) việc đối chiếu, sự hòa giải"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:22:12.714938+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/10967f4f-d8bb-457d-80cf-699026102ee0-wm.jpg?v=1789798542835",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reconcile-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/reconcile-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reconcile an account",
+          "meaning": "đối chiếu tài khoản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/10967f4f-d8bb-457d-80cf-699026102ee0-0-wm.jpg?v=1789798929640"
+        },
+        {
+          "phrase": "reconcile the figures",
+          "meaning": "khớp lại số liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/10967f4f-d8bb-457d-80cf-699026102ee0-1-wm.jpg?v=1789798932533"
+        },
+        {
+          "phrase": "reconcile differences",
+          "meaning": "dung hòa khác biệt"
+        }
+      ],
+      "synonyms": [
+        "balance (cân đối)",
+        "harmonize (làm cho hài hòa)",
+        "settle (dàn xếp)"
+      ]
+    },
+    {
+      "id": "299916b6-b761-4f60-a0c8-f95c143163f3",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "accounting",
+      "ipa": "UK: /əˈkaʊn.tɪŋ/ | US: /əˈkaʊn.t̬ɪŋ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Good accounting is needed in all businesses.",
+          "meaning": "kế toán, việc ghi chép và tổng hợp thông tin tài chính",
+          "toeic_tip": "Không đếm được; người làm nghề là accountant, không phải accounting.",
+          "example_vi": "Doanh nghiệp nào cũng cần làm kế toán cho tốt.",
+          "word_family": [
+            "account (n) tài khoản",
+            "accountant (n) kế toán viên"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:22:56.801616+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/299916b6-b761-4f60-a0c8-f95c143163f3-wm.jpg?v=1789798559390",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accounting-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/accounting-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "accounting department",
+          "meaning": "phòng kế toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/299916b6-b761-4f60-a0c8-f95c143163f3-0-wm.jpg?v=1789798976483"
+        },
+        {
+          "phrase": "accounting system",
+          "meaning": "hệ thống kế toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/299916b6-b761-4f60-a0c8-f95c143163f3-1-wm.jpg?v=1789798976641"
+        },
+        {
+          "phrase": "accounting firm",
+          "meaning": "công ty kế toán"
+        }
+      ],
+      "synonyms": [
+        "bookkeeping (việc ghi sổ sách)",
+        "financial reporting (lập báo cáo tài chính)"
+      ]
+    },
+    {
+      "id": "79180de2-de10-4e9e-9991-e89f9fd96f8e",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "budget",
+      "ipa": "/ˈbʌdʒ.ɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The department head was pleased that she received a 10 percent increase in her budget.",
+          "meaning": "ngân sách, dự toán thu chi; lập ngân sách",
+          "toeic_tip": "budget for + khoản chi; budget còn là tính từ nghĩa giá rẻ.",
+          "example_vi": "Trưởng phòng rất hài lòng vì ngân sách của bà được tăng thêm 10 phần trăm.",
+          "word_family": [
+            "budgetary (adj) thuộc về ngân sách",
+            "budgeting (n) việc lập ngân sách"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T06:59:37.394499+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/79180de2-de10-4e9e-9991-e89f9fd96f8e-wm.jpg?v=1789798028739",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/budget-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/budget-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "stay within budget",
+          "meaning": "nằm trong ngân sách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79180de2-de10-4e9e-9991-e89f9fd96f8e-0-wm.jpg?v=1789801175960"
+        },
+        {
+          "phrase": "cut the budget",
+          "meaning": "cắt giảm ngân sách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/79180de2-de10-4e9e-9991-e89f9fd96f8e-1-wm.jpg?v=1789801177262"
+        },
+        {
+          "phrase": "budget for a project",
+          "meaning": "lập ngân sách cho dự án"
+        }
+      ],
+      "synonyms": [
+        "financial plan (kế hoạch tài chính)",
+        "allocate funds (phân bổ kinh phí)"
+      ]
+    },
+    {
+      "id": "8298da84-eafe-4aa0-b49a-732e7151f2e4",
+      "part_id": "061671e8-da64-4523-b55c-f86d35cd207d",
+      "word": "audit",
+      "ipa": "UK: /ˈɔː.dɪt/ | US: /ˈɑː.dɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "No one looks forward to an audit by the government.",
+          "meaning": "cuộc kiểm toán; kiểm toán, rà soát sổ sách tài chính",
+          "toeic_tip": "Vừa là danh từ vừa là động từ; người thực hiện gọi là auditor.",
+          "example_vi": "Chẳng ai mong bị nhà nước kiểm toán cả.",
+          "word_family": [
+            "auditor (n) kiểm toán viên",
+            "auditing (n) công việc kiểm toán"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:53.119396+00:00",
+      "updated_at": "2026-09-19T07:03:18.952875+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8298da84-eafe-4aa0-b49a-732e7151f2e4-wm.jpg?v=1789798040531",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/audit-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/audit-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "conduct an audit",
+          "meaning": "tiến hành kiểm toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8298da84-eafe-4aa0-b49a-732e7151f2e4-0-wm.jpg?v=1789801398802"
+        },
+        {
+          "phrase": "annual audit",
+          "meaning": "kiểm toán thường niên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8298da84-eafe-4aa0-b49a-732e7151f2e4-1-wm.jpg?v=1789801397451"
+        },
+        {
+          "phrase": "audit the books",
+          "meaning": "kiểm toán sổ sách"
+        }
+      ],
+      "synonyms": [
+        "examine (kiểm tra)",
+        "inspect (thanh tra)",
+        "review (rà soát)"
+      ]
+    }
+  ]
+}

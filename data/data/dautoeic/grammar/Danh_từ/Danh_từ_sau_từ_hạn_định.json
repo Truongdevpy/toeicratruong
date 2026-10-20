@@ -1,0 +1,374 @@
+{
+  "subtopic": {
+    "id": "450e6754-f966-4d3b-b884-5cd68b7c4c5f",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ sau từ hạn định",
+    "title_vi": "Danh từ sau từ hạn định",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 4,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-sau-tu-han-dinh"
+  },
+  "lessons": [
+    {
+      "id": "f868cf87-41be-40fa-b095-02f3243c4aa0",
+      "subtopic_id": "450e6754-f966-4d3b-b884-5cd68b7c4c5f",
+      "title_en": "Danh từ sau từ hạn định",
+      "title_vi": "Danh từ sau từ hạn định",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2024 · Test 3 · Câu 108",
+          "options": {
+            "A": "reserved",
+            "B": "reservation",
+            "C": "reservable",
+            "D": "reserve"
+          },
+          "question": "If your plans change, please contact us at least 24 hours before the time of your -------.",
+          "translation": "Nếu kế hoạch của quý khách thay đổi, vui lòng liên hệ với chúng tôi ít nhất 24 giờ trước thời điểm đặt chỗ của quý khách."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “reserve” nhưng khác loại từ. Chỗ trống đứng cuối câu, ngay sau tính từ sở hữu “your”, phía sau không còn từ nào.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "If your plans change,",
+                    "label": "mệnh đề điều kiện"
+                  },
+                  {
+                    "role": "V",
+                    "text": "please contact",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "us",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "at least 24 hours before the time of",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "your",
+                    "label": "sở hữu"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------.",
+                    "label": "chỗ trống"
+                  }
+                ],
+                "caption": "Chỗ trống nằm trong cụm thời gian “before the time of your -------”, ngay sau “your”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau từ hạn định (mạo từ, sở hữu, much…) cần loại từ nào.",
+                  "Nhận ra danh từ qua đuôi.",
+                  "Từ vừa là động từ vừa là danh từ thì xét nghĩa thế nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Từ hạn định đứng đầu cụm danh từ, cho biết “cái nào, của ai, bao nhiêu”: mạo từ (a, an, the), sở hữu (your, its, their, her, our), sở hữu cách (the television’s), từ chỉ lượng (much). Sau từ hạn định phải có danh từ (N).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cụm danh từ",
+                    "formula": "từ hạn định + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "DET",
+                    "text": "the / your / its / their / much / the television’s",
+                    "label": "từ hạn định"
+                  },
+                  {
+                    "role": "N",
+                    "text": "N",
+                    "label": "danh từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "(of … / with … / will be … / .)",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống ngay sau từ hạn định, phía sau là giới từ, động từ hoặc dấu chấm: chỗ trống là danh từ chính của cụm."
+              },
+              {
+                "rows": [
+                  [
+                    "Danh từ",
+                    "-tion, -ment, -ism, -age",
+                    "reservation, competition, production, recommendation, disappointment, professionalism, package"
+                  ],
+                  [
+                    "Danh từ không có đuôi riêng",
+                    "cùng dạng với động từ",
+                    "defect, interest"
+                  ],
+                  [
+                    "Tính từ",
+                    "-ive, -able, -al, -ing, -ed",
+                    "competitive, defective, productive, reservable, packable, professional, interesting, disappointed"
+                  ],
+                  [
+                    "Trạng từ",
+                    "-ly",
+                    "defectively, professionally"
+                  ],
+                  [
+                    "Dạng của động từ",
+                    "V nguyên mẫu, V-ing, V3, to V",
+                    "compete, producing, recommended, to pack"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Loại từ",
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "“much” chỉ đi với danh từ không đếm được, không đi với danh từ số nhiều: *much interest*, không nói *much interests*.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng sau từ hạn định, làm phần chính của cụm danh từ.",
+                    "form": "Danh từ (reservation, production, interest)",
+                    "example": "*your reservation*, *its production*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Động từ không đứng sau từ hạn định.",
+                    "form": "Động từ (compete, disappoint, recommend)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 không làm danh từ. V-ing không thay cho danh từ riêng cùng nghĩa như production, recommendation (xem Lưu ý).",
+                    "form": "V-ing, V3 (competing, producing, recommending, recommended, packed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "to V không đứng sau từ hạn định.",
+                    "form": "to V (to pack)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính từ cần danh từ phía sau để bổ nghĩa; ở đây phía sau không còn danh từ.",
+                    "form": "Tính từ (competitive, defective, reservable, interesting)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Trạng từ không làm phần chính của cụm danh từ sau từ hạn định.",
+                    "form": "Trạng từ (defectively, professionally)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "much chỉ đi với danh từ không đếm được.",
+                    "form": "Danh từ số nhiều sau much (interests)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng vị trí nhưng nghĩa không hợp câu: reserve là khoản dự trữ, produce là nông sản, profession là nghề.",
+                    "form": "Danh từ khác nghĩa (reserve, produce, profession)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "mạo từ + ___",
+                    "example": "*The ___ will be delivered*; *review the ___ before making…*"
+                  },
+                  {
+                    "signal": "sở hữu + ___",
+                    "example": "*the time of your ___*; *their ___ with the delay*; *its ___ of electronic goods*; *her ___ in handling…*; *those of our ___*"
+                  },
+                  {
+                    "signal": "sở hữu cách ’s + ___",
+                    "example": "*the television’s ___*"
+                  },
+                  {
+                    "signal": "much + ___",
+                    "example": "*has garnered much ___*"
+                  },
+                  {
+                    "signal": "sau ___ không còn danh từ",
+                    "example": "*your ___.*; *___ of electronic goods*; *___ will be delivered*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem từ ngay trước chỗ trống có phải từ hạn định (the, sở hữu, ’s, much) không, và sau chỗ trống có còn danh từ nào không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau từ hạn định, phía sau không còn danh từ, thì chọn danh từ theo công thức từ hạn định + N; loại động từ, V-ing, V3, to V, tính từ, trạng từ. Còn hai danh từ thì xét much và nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "CLAUSE",
+                    "text": "If your plans change,",
+                    "label": "mệnh đề điều kiện"
+                  },
+                  {
+                    "role": "V",
+                    "text": "please contact",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "us",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "TIME",
+                    "text": "at least 24 hours before the time of",
+                    "label": "thời gian"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "your",
+                    "label": "sở hữu"
+                  },
+                  {
+                    "role": "N",
+                    "text": "reservation.",
+                    "label": "danh từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: danh từ “reservation” đứng sau sở hữu “your”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “reserve” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng cuối câu, ngay sau “your”; dấu hiệu “sở hữu + ___”: “the time of your -------”.",
+                  "Bước 3: Cần từ hạn định + N; “reservation” là danh từ (đuôi -tion), vì vậy chọn “reservation” (việc đặt chỗ).",
+                  "“reserved” (A) là V3, không làm phần chính của cụm danh từ sau “your”, nên loại.",
+                  "“reservable” (C) là tính từ (đuôi -able), phía sau không có danh từ để bổ nghĩa, nên loại.",
+                  "“reserve” (D) là động từ; dạng danh từ nghĩa là khoản dự trữ, không hợp “the time of your…”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Một số từ vừa là động từ vừa là danh từ, như reserve, produce, defect, interest. Khi chúng đứng sau từ hạn định, xét nghĩa danh từ có hợp câu không.",
+                  "V-ing có thể làm danh từ, nhưng khi cùng gốc đã có danh từ riêng cùng nghĩa thì dùng danh từ đó: *its production*, không nói *its producing*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau từ hạn định (the, sở hữu, ’s, much), phía sau không còn danh từ, thì chọn danh từ.",
+                  "much đi với danh từ không đếm được, không đi với danh từ số nhiều."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

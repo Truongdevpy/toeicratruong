@@ -1,0 +1,389 @@
+{
+  "subtopic": {
+    "id": "ff7bf7ba-28d0-4342-a67a-b400c04f4a1c",
+    "topic_id": "cc36d2ea-2a1c-4938-a426-6ef366fb93a5",
+    "title_en": "Danh từ sau giới từ",
+    "title_vi": "Danh từ sau giới từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 6,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-danh-tu-sau-gioi-tu"
+  },
+  "lessons": [
+    {
+      "id": "669cab34-f2c1-4e54-9fde-e8c2c6ba3d6b",
+      "subtopic_id": "ff7bf7ba-28d0-4342-a67a-b400c04f4a1c",
+      "title_en": "Danh từ sau giới từ",
+      "title_vi": "Danh từ sau giới từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2019 · Câu 18",
+          "options": {
+            "A": "emphatic",
+            "B": "emphasis",
+            "C": "emphasize",
+            "D": "emphasized"
+          },
+          "question": "The manager presented data on employee performance with ------- on measurable achievements.",
+          "translation": "Người quản lý trình bày dữ liệu về kết quả làm việc của nhân viên, trong đó nhấn mạnh vào những thành tích đo lường được."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “emphas-” nhưng khác loại từ. Chỗ trống đứng ngay sau giới từ “with”, trước “on measurable achievements”; câu đã có động từ chính “presented”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "presented",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "data",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on employee performance",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on measurable achievements.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng ngay sau giới từ “with”; cụm “with ------- on measurable achievements” nói dữ liệu được trình bày thế nào."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau giới từ cần loại từ nào.",
+                  "Nhận ra danh từ qua đuôi.",
+                  "Khi nào V-ing đứng sau giới từ được."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Giới từ (in, on, of, for, into, with, despite…) và cụm giới từ (because of, based on, due to) đứng trước một danh từ hoặc cụm danh từ, gọi là tân ngữ của giới từ. Giữa giới từ và danh từ có thể có mạo từ, sở hữu, tính từ hoặc một danh từ bổ nghĩa.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Cơ bản",
+                    "formula": "giới từ + N"
+                  },
+                  {
+                    "label": "Có từ đứng trước danh từ",
+                    "formula": "giới từ + (mạo từ / sở hữu / tính từ / N1) + N"
+                  }
+                ]
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "We",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "chose",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "the hotel",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "because of",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "DET",
+                    "text": "its",
+                    "label": "sở hữu"
+                  },
+                  {
+                    "role": "N",
+                    "text": "location.",
+                    "label": "danh từ (tân ngữ của giới từ)"
+                  }
+                ],
+                "caption": "*We chose the hotel because of its location.* — Chúng tôi chọn khách sạn đó vì vị trí của nó. Sau cụm giới từ “because of” là sở hữu “its” rồi danh từ “location”."
+              },
+              {
+                "rows": [
+                  [
+                    "giới từ + N",
+                    "*go into production*; *for excellence in customer service*; *Despite predictions that …*"
+                  ],
+                  [
+                    "cụm giới từ + N",
+                    "*based on recommendations from the senior advisor*"
+                  ],
+                  [
+                    "giới từ + mạo từ / sở hữu / tính từ + N",
+                    "*for their cooperation*; *because of the steady investment*; *in corporate finance*"
+                  ],
+                  [
+                    "of + N",
+                    "*two years of experience*; *a high level of protection*; *the process of engine construction*"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "Sau giới từ cũng có thể là V-ing, nhưng V-ing của động từ cần tân ngữ phải có tân ngữ đi sau: *for protecting customer data*. Chỗ trống không có tân ngữ riêng, hoặc đứng sau mạo từ, sở hữu, tính từ, thì dùng danh từ.",
+                "type": "paragraph"
+              },
+              {
+                "text": "Nhận ra danh từ qua đuôi: -tion (production, prediction, cooperation, construction, recommendation, protection), -ment (investment), -ance / -ence (finance, excellence, experience), -sis (emphasis). Danh từ đếm được không có mạo từ thì dùng số nhiều: *predictions*, *recommendations*.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Làm tân ngữ của giới từ.",
+                    "form": "Danh từ (emphasis, production, experience)",
+                    "example": "*with emphasis on …*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không làm tân ngữ của giới từ.",
+                    "form": "Động từ nguyên mẫu, V-s, V-ed (emphasize, invests, predicted, financed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm tân ngữ của giới từ.",
+                    "form": "to V (to experience)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Động từ cần tân ngữ nên V-ing phải có tân ngữ đi sau.",
+                    "form": "V-ing không có tân ngữ (protecting, experiencing, recommending)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau nó không có danh từ để bổ nghĩa nên không làm tân ngữ của giới từ.",
+                    "form": "Tính từ (emphatic, productive, predictable, financial, constructive, excellent)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm tân ngữ của giới từ.",
+                    "form": "Trạng từ (financially, excellently)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đúng loại từ nhưng nghĩa không hợp: *go into production* là đưa vào sản xuất, *producer* là nhà sản xuất.",
+                    "form": "Danh từ sai nghĩa (producer, product, cooperative)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "giới từ + ___",
+                    "example": "*with ___ on measurable achievements*; *go into ___*; *Despite ___ that …*; *for ___ in customer service*"
+                  },
+                  {
+                    "signal": "cụm giới từ + ___",
+                    "example": "*based on ___ from the senior advisor*"
+                  },
+                  {
+                    "signal": "giới từ + từ hạn định / tính từ + ___",
+                    "example": "*for their ___*; *because of the steady ___*; *in corporate ___*; *based on the ___*"
+                  },
+                  {
+                    "signal": "of + ___",
+                    "example": "*two years of ___*; *a high level of ___*; *the process of engine ___*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm giới từ hoặc cụm giới từ trước chỗ trống (có thể có mạo từ, sở hữu, tính từ, danh từ xen giữa), rồi xem sau chỗ trống có tân ngữ riêng không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chọn danh từ theo công thức giới từ + N; loại động từ, to V, tính từ, trạng từ và V-ing không có tân ngữ; còn hai danh từ thì chọn theo nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "The manager",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "presented",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "data",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on employee performance",
+                    "label": "cụm giới từ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "with",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "emphasis",
+                    "label": "danh từ (tân ngữ của with)"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "on measurable achievements.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: danh từ “emphasis” là tân ngữ của giới từ “with”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “emphas-” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng ngay sau giới từ “with”, trước “on measurable achievements”; dấu hiệu “giới từ + ___”: “with -------”.",
+                  "Bước 3: Cần giới từ + N; “emphasis” là danh từ (đuôi -sis), vì vậy chọn “emphasis” (sự nhấn mạnh).",
+                  "“emphatic” (A) là tính từ (đuôi -ic), sau nó không có danh từ, không làm tân ngữ của “with”, nên loại.",
+                  "“emphasize” (C) là động từ nguyên mẫu, không làm tân ngữ của giới từ “with”, nên loại.",
+                  "“emphasized” (D) là V-ed, không làm tân ngữ của giới từ “with”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“because of”, “based on”, “due to” là cụm giới từ, đi với danh từ; “because” một mình là liên từ, đi với mệnh đề S + V.",
+                  "Sau danh từ có thể có mệnh đề “that” nói rõ nội dung của danh từ: *Despite predictions that Legend Air would perform poorly, …*"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau giới từ, cụm giới từ: cần danh từ.",
+                  "V-ing sau giới từ phải có tân ngữ nếu động từ cần tân ngữ.",
+                  "Còn hai danh từ thì chọn theo nghĩa."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

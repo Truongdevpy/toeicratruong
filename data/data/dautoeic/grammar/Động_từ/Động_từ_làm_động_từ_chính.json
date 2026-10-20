@@ -1,0 +1,370 @@
+{
+  "subtopic": {
+    "id": "743d6c48-093e-4833-90a2-88b94ce1631a",
+    "topic_id": "e9476352-d402-4041-8abc-7377e03e5a24",
+    "title_en": "Động từ làm động từ chính",
+    "title_vi": "Động từ làm động từ chính",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 29,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "tl-dong-tu-lam-dong-tu-chinh"
+  },
+  "lessons": [
+    {
+      "id": "ac424bc8-e96c-462d-8b70-fa7211c33440",
+      "subtopic_id": "743d6c48-093e-4833-90a2-88b94ce1631a",
+      "title_en": "Động từ làm động từ chính",
+      "title_vi": "Động từ làm động từ chính",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "B",
+          "source": "ETS 2018 · Câu 2",
+          "options": {
+            "A": "proposing",
+            "B": "proposed",
+            "C": "proposal",
+            "D": "proposals"
+          },
+          "question": "Several architects ------- intriguing design plans for the Hadler Building’s addition.",
+          "translation": "Một số kiến trúc sư đã đề xuất những bản thiết kế thú vị cho phần mở rộng của Tòa nhà Hadler."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án cùng gốc “propose” nhưng khác loại từ: một V-ing, một dạng V-ed và hai danh từ. Câu chưa có động từ nào khác.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Several architects",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "intriguing design plans",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the Hadler Building’s addition.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau chủ ngữ “Several architects” và trước tân ngữ “intriguing design plans”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Vị trí nào trong câu cần một động từ.",
+                  "Ở mỗi vị trí đó, động từ có dạng gì: chia thì hay nguyên mẫu.",
+                  "Nhận ra động từ, danh từ, tính từ, trạng từ qua đuôi."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Động từ nói hành động hoặc trạng thái; nhiều động từ nhận tân ngữ đứng ngay sau (*inspect the loading area*), một số đi với giới từ (*apply for*, *decide on*). Mỗi câu cần một động từ chính chia thì; sau động từ khuyết thiếu (modal), sau “to” của cụm to V và ở đầu câu mệnh lệnh thì dùng **V nguyên mẫu**.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Động từ chính",
+                    "formula": "S + V chia thì + (tân ngữ)"
+                  },
+                  {
+                    "label": "Sau modal",
+                    "formula": "will / must / should / can + V nguyên mẫu"
+                  },
+                  {
+                    "label": "Cụm to V",
+                    "formula": "to + V nguyên mẫu"
+                  },
+                  {
+                    "label": "Câu mệnh lệnh lịch sự",
+                    "formula": "Please / Kindly + V nguyên mẫu"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "Động từ chính sau chủ ngữ, chia theo thì và chủ ngữ",
+                    "*Our team reviews every invoice before payment.* — Nhóm chúng tôi kiểm tra mọi hóa đơn trước khi thanh toán."
+                  ],
+                  [
+                    "modal + V nguyên mẫu (will, must, should, can)",
+                    "*The technician will repair the printer this afternoon.* — Kỹ thuật viên sẽ sửa máy in chiều nay."
+                  ],
+                  [
+                    "to + V nguyên mẫu: sau plan, hope, want, wish, agree, decide; sau “to” chỉ mục đích (= in order to); sau be designed to, be hired to, be encouraged to; sau danh từ như the authority to, an agreement to",
+                    "*The company plans to open a new branch in May.* — Công ty dự định mở chi nhánh mới vào tháng Năm."
+                  ],
+                  [
+                    "Please / Kindly + V nguyên mẫu (câu mệnh lệnh, không có chủ ngữ)",
+                    "*Please sign the contract and return it by Friday.* — Vui lòng ký hợp đồng và gửi lại trước thứ Sáu."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Động từ chính ở hiện tại đơn: chủ ngữ số ít (Ms. Alvarez, the finance department) dùng **V-s/es**, chủ ngữ số nhiều (employees, all new hires) dùng **V nguyên mẫu**. Ở quá khứ đơn, động từ có quy tắc thêm **-ed** (proposed) với mọi chủ ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Nhận ra loại từ qua đuôi** (các đuôi có trong bài tập). Đuôi chỉ giúp nhận ra, không đúng cho mọi từ: nhiều động từ không có đuôi riêng (inspect, submit, review), còn -al có thể là danh từ (approval) hoặc tính từ (final).",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "Động từ",
+                    "-ize/-yze, -ify, -en, en- ở đầu từ",
+                    "standardize, modernize, finalize, stabilize, minimize, analyze; simplify, clarify, specify, verify, notify, qualify, justify, diversify; lengthen, widen, broaden, shorten, deepen, strengthen; enable, ensure"
+                  ],
+                  [
+                    "Danh từ",
+                    "-tion/-sion, -ment, -ance, -ity, -th, -ness, -age, -al, -sis",
+                    "inspection, decision, replacement, attendance, stability, length, completeness, shortage, approval, analysis"
+                  ],
+                  [
+                    "Danh từ chỉ người",
+                    "-er/-or, -ant, -ee, -yst",
+                    "reviewer, inspector, applicant, attendee, analyst"
+                  ],
+                  [
+                    "Tính từ",
+                    "-able, -al, -ic, -y; nhiều tính từ không có đuôi riêng",
+                    "justifiable, verifiable, minimal, final, specific, lengthy; wide, deep, short, strong, sure"
+                  ],
+                  [
+                    "Trạng từ",
+                    "-ly",
+                    "clearly, widely, finally, surely"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Loại từ",
+                  "Đuôi",
+                  "Ví dụ trong bài tập"
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng đúng vị trí động từ; động từ cần tân ngữ thì nhận tân ngữ ngay phía sau.",
+                    "form": "V nguyên mẫu sau modal, to, Please/Kindly; động từ chia thì sau chủ ngữ",
+                    "example": "*must submit their time sheets*; *Ms. Alvarez distributes the meeting minutes*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không làm động từ: không đứng sau modal, sau “to” của cụm to V hay sau Please, và không nhận tân ngữ trực tiếp. Điền danh từ sau chủ ngữ thì câu vẫn thiếu động từ chính.",
+                    "form": "Danh từ (inspection, submissions, applicant, width)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Tính từ làm vị ngữ phải có “be” (hoặc động từ nối như become, remain) đi trước, và không nhận tân ngữ.",
+                    "form": "Tính từ (wide, final, able, sure, lengthy)",
+                    "example": "*will be able to*, không nói *will able*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Bổ nghĩa cho động từ, tính từ, trạng từ khác hay cả câu; điền trạng từ thì câu vẫn thiếu động từ.",
+                    "form": "Trạng từ (widely, finally, surely)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau modal, to, Please dùng V nguyên mẫu, không dùng V-ing. V-ing làm động từ chính phải có be (am/is/are/was/were) đi trước.",
+                    "form": "V-ing (inspecting, registering, processing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau modal, to, Please dùng V nguyên mẫu. V3 đứng sau modal phải có “be” hoặc “have” đi trước.",
+                    "form": "V3/V-ed (qualified, specified, clarified, assured)",
+                    "example": "*must be qualified*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chủ ngữ số ít như “The finance department” cần V-s/es.",
+                    "form": "V nguyên mẫu với chủ ngữ số ít ở hiện tại đơn (process)",
+                    "example": "*The finance department processes …*",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "modal + ___",
+                    "example": "*will ___ the loading area*; *must ___ their time sheets*; *should ___ the quarterly planning session*; *can ___ packages*"
+                  },
+                  {
+                    "signal": "to + ___",
+                    "example": "*plans to ___ its warehouse equipment*; *in order to ___ delays*; *the authority to ___ purchases*"
+                  },
+                  {
+                    "signal": "Please / Kindly + ___",
+                    "example": "*Please ___ the attached registration form*; *Kindly ___ the front desk*"
+                  },
+                  {
+                    "signal": "chủ ngữ + ___, câu chưa có động từ chính",
+                    "example": "*Ms. Alvarez ___ the meeting minutes*; *All new hires ___ for a parking permit*; *Several architects ___ intriguing design plans*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Cùng một gốc nhưng khác loại từ (danh từ, động từ, tính từ, trạng từ, có thể có V-ing, V3) thì đây là câu từ loại.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay trước chỗ trống: modal (will, must, should, can), “to” của cụm to V, Please/Kindly ở đầu câu, hay chủ ngữ của một câu chưa có động từ chính. Xem sau chỗ trống có tân ngữ không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau modal, to, Please/Kindly chọn V nguyên mẫu; sau chủ ngữ chọn động từ chia thì hợp chủ ngữ (số ít ở hiện tại đơn dùng V-s/es). Loại danh từ, tính từ, trạng từ, V-ing, V3.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Several architects",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "proposed",
+                    "label": "động từ chính (quá khứ đơn)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "intriguing design plans",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "for the Hadler Building’s addition.",
+                    "label": "cụm giới từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “proposed” là động từ chính, nhận tân ngữ “intriguing design plans”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án cùng gốc “propose” nhưng khác loại từ nên đây là câu từ loại.",
+                  "Bước 2: Chỗ trống đứng sau chủ ngữ “Several architects”, trước tân ngữ “intriguing design plans”; dấu hiệu “chủ ngữ + ___, câu chưa có động từ chính”.",
+                  "Bước 3: Cần S + V chia thì; “proposed” là quá khứ đơn của “propose”, vì vậy chọn “proposed” (đã đề xuất).",
+                  "“proposing” (A) là V-ing, không có “are” đi trước thì không làm được động từ chính, nên loại.",
+                  "“proposal” (C) là danh từ số ít (bản đề xuất), không làm động từ và không nhận tân ngữ “intriguing design plans”, nên loại.",
+                  "“proposals” (D) là danh từ số nhiều, “Several architects proposals” không có động từ chính, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "Giữa modal và động từ có thể có trạng từ: *Staff can easily access the files from home.* — Nhân viên có thể dễ dàng truy cập tài liệu từ nhà. Nếu ngay sau chỗ trống đã có V nguyên mẫu thì chỗ trống có thể là trạng từ.",
+                  "“to” là giới từ trong một số cụm như look forward to, be committed to; sau đó dùng V-ing hoặc danh từ: *We look forward to meeting you next week.* — Chúng tôi mong được gặp anh vào tuần tới.",
+                  "Một số từ vừa là danh từ vừa là động từ (review, process). Ở vị trí động từ thì dùng như động từ và chia theo chủ ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau will, must, should, can, to (của to V), Please, Kindly: chọn V nguyên mẫu.",
+                  "Câu chưa có động từ chính: chọn động từ chia thì hợp với chủ ngữ.",
+                  "Danh từ, tính từ, trạng từ, V-ing đứng một mình không thay được động từ."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

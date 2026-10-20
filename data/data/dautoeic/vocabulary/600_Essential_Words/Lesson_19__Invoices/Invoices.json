@@ -1,0 +1,649 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "27f36718-7656-47c6-b74a-34e6c025ca2b",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 19: Invoices",
+    "order_index": 19,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:40.725598+00:00",
+    "updated_at": "2026-09-18T08:51:40.725598+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "edff0576-a831-4751-b355-6519f2166bc9",
+    "test_id": "27f36718-7656-47c6-b74a-34e6c025ca2b",
+    "name": "Invoices",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:40.725598+00:00",
+    "updated_at": "2026-09-18T08:51:40.725598+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "f8672578-c854-4988-ae74-190ba6467f1a",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "impose",
+      "ipa": "UK: /ɪmˈpəʊz/ | US: /ɪmˈpoʊz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The company will impose a surcharge for any items returned.",
+          "meaning": "áp đặt, ban hành bắt buộc; làm phiền",
+          "antonyms": [
+            "lift (dỡ bỏ)",
+            "remove (bãi bỏ)"
+          ],
+          "toeic_tip": "impose something on somebody; impose on somebody nghĩa là làm phiền.",
+          "example_vi": "Công ty sẽ thu thêm phụ phí với mọi món hàng bị trả lại.",
+          "word_family": [
+            "imposition (n) sự áp đặt, điều phiền toái"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T08:03:43.275835+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f8672578-c854-4988-ae74-190ba6467f1a-wm.jpg?v=1789798351127",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/impose-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/impose-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "impose a surcharge",
+          "meaning": "áp phụ phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f8672578-c854-4988-ae74-190ba6467f1a-0-wm.jpg?v=1789805021948"
+        },
+        {
+          "phrase": "impose a fine",
+          "meaning": "phạt tiền",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f8672578-c854-4988-ae74-190ba6467f1a-1-wm.jpg?v=1789805023117"
+        },
+        {
+          "phrase": "impose on someone",
+          "meaning": "làm phiền ai"
+        }
+      ],
+      "synonyms": [
+        "levy (đánh thuế, áp phí)",
+        "enforce (áp dụng bắt buộc)",
+        "inflict (bắt phải chịu)"
+      ]
+    },
+    {
+      "id": "facb6053-8411-4e3e-a9f9-47006b7fac98",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "mistake",
+      "ipa": "/mɪˈsteɪk/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I made a mistake in adding up your bill and we overcharged you twenty dollars.",
+          "meaning": "lỗi, sai sót",
+          "toeic_tip": "Cụm cố định make a mistake, không dùng do a mistake.",
+          "example_vi": "Tôi cộng nhầm hóa đơn nên đã thu thừa của bạn hai mươi đô.",
+          "word_family": [
+            "mistaken (adj) nhầm lẫn",
+            "mistakenly (adv) một cách nhầm lẫn"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T08:06:33.395071+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/facb6053-8411-4e3e-a9f9-47006b7fac98-wm.jpg?v=1789797613357",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mistake-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mistake-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make a mistake",
+          "meaning": "mắc lỗi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/facb6053-8411-4e3e-a9f9-47006b7fac98-0-wm.jpg?v=1789805180753"
+        },
+        {
+          "phrase": "a costly mistake",
+          "meaning": "sai lầm tốn kém",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/facb6053-8411-4e3e-a9f9-47006b7fac98-1-wm.jpg?v=1789805193243"
+        },
+        {
+          "phrase": "by mistake",
+          "meaning": "do nhầm lẫn"
+        }
+      ],
+      "synonyms": [
+        "error (lỗi)",
+        "fault (sai sót)",
+        "slip (sơ suất)"
+      ]
+    },
+    {
+      "id": "9da9ecb2-0cce-4d48-ac4c-bfcafa4e2e56",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "estimate",
+      "ipa": "UK: /ˈes.tɪ.meɪt/ | US: /ˈes.tə.meɪt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We estimated our losses this year at about five thousand dollars.",
+          "meaning": "ước tính, đánh giá; con số ước tính",
+          "toeic_tip": "Danh từ đọc /ˈes.tɪ.mət/, động từ đọc /ˈes.tɪ.meɪt/; hay ra Part 1-2.",
+          "example_vi": "Năm nay chúng tôi ước tính lỗ khoảng năm nghìn đô.",
+          "word_family": [
+            "estimation (n) sự đánh giá, nhận định",
+            "estimated (adj) được ước tính"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T07:17:28.281203+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9da9ecb2-0cce-4d48-ac4c-bfcafa4e2e56-wm.jpg?v=1789798512872",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/estimate-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/estimate-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "estimate the cost",
+          "meaning": "ước tính chi phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9da9ecb2-0cce-4d48-ac4c-bfcafa4e2e56-0-wm.jpg?v=1789802233374"
+        },
+        {
+          "phrase": "a rough estimate",
+          "meaning": "ước tính sơ bộ",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9da9ecb2-0cce-4d48-ac4c-bfcafa4e2e56-1-wm.jpg?v=1789802248049"
+        },
+        {
+          "phrase": "provide an estimate",
+          "meaning": "đưa ra báo giá ước tính"
+        }
+      ],
+      "synonyms": [
+        "approximate (ước chừng)",
+        "calculate (tính toán)",
+        "appraisal (sự định giá)"
+      ]
+    },
+    {
+      "id": "66e9bee3-633b-4a46-bab9-d6f8aff5464b",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "order",
+      "ipa": "UK: /ˈɔː.dər/ | US: /ˈɔːr.dɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The customer placed an order for ten new chairs.",
+          "meaning": "đơn đặt hàng; ra lệnh, yêu cầu",
+          "antonyms": [
+            "cancel (hủy đơn)"
+          ],
+          "toeic_tip": "Nhớ ba cụm hay ra: place an order, out of order, in order to.",
+          "example_vi": "Khách đã đặt mua mười chiếc ghế mới.",
+          "word_family": [
+            "orderly (adj) ngăn nắp, có trật tự"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T06:48:40.377114+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/66e9bee3-633b-4a46-bab9-d6f8aff5464b-wm.jpg?v=1789798309761",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/order-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/order-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "place an order",
+          "meaning": "đặt hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/66e9bee3-633b-4a46-bab9-d6f8aff5464b-0-wm.jpg?v=1789800506620"
+        },
+        {
+          "phrase": "in alphabetical order",
+          "meaning": "theo thứ tự bảng chữ cái",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/66e9bee3-633b-4a46-bab9-d6f8aff5464b-1-wm.jpg?v=1789800520239"
+        },
+        {
+          "phrase": "out of order",
+          "meaning": "hỏng, không hoạt động"
+        }
+      ],
+      "synonyms": [
+        "request (yêu cầu)",
+        "purchase order (đơn mua hàng)",
+        "command (mệnh lệnh)"
+      ]
+    },
+    {
+      "id": "e095cc37-db3e-4a96-8a0c-7a81a0702558",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "compile",
+      "ipa": "/kəmˈpaɪl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "I have compiled a list of the most popular items in our sales catalog.",
+          "meaning": "tổng hợp, thu thập từ nhiều nguồn",
+          "antonyms": [
+            "scatter (phân tán)",
+            "disperse (làm tản mát)"
+          ],
+          "toeic_tip": "Đừng nhầm compile (tổng hợp) với comply (tuân thủ).",
+          "example_vi": "Tôi đã tổng hợp danh sách những mặt hàng bán chạy nhất trong ca-ta-lô.",
+          "word_family": [
+            "compilation (n) bản tổng hợp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T07:51:46.802434+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/e095cc37-db3e-4a96-8a0c-7a81a0702558-wm.jpg?v=1789798508919",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compile-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/compile-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "compile a list",
+          "meaning": "lập danh sách tổng hợp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e095cc37-db3e-4a96-8a0c-7a81a0702558-0-wm.jpg?v=1789804305194"
+        },
+        {
+          "phrase": "compile data",
+          "meaning": "tổng hợp dữ liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/e095cc37-db3e-4a96-8a0c-7a81a0702558-1-wm.jpg?v=1789804306662"
+        },
+        {
+          "phrase": "compile a report",
+          "meaning": "soạn báo cáo"
+        }
+      ],
+      "synonyms": [
+        "gather (thu thập)",
+        "assemble (tập hợp)",
+        "collect (gom lại)"
+      ]
+    },
+    {
+      "id": "50691a3a-64e2-45a4-8d7b-8ff3853f1afe",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "charge",
+      "ipa": "UK: /tʃɑːdʒ/ | US: /tʃɑːrdʒ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The customer service representative was responsible for telling all existing customers that higher prices would be charged next month.",
+          "meaning": "tính tiền, thu phí; khoản phí, chi phí",
+          "antonyms": [
+            "refund (hoàn tiền)",
+            "free of charge (miễn phí)"
+          ],
+          "toeic_tip": "Cụm cố định free of charge (miễn phí) và in charge of (phụ trách).",
+          "example_vi": "Nhân viên chăm sóc khách hàng có nhiệm vụ báo cho khách quen rằng tháng sau giá sẽ tăng.",
+          "word_family": [
+            "chargeable (adj) phải trả phí",
+            "charger (n) bộ sạc"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T06:38:41.024843+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/50691a3a-64e2-45a4-8d7b-8ff3853f1afe-wm.jpg?v=1789798503582",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/charge-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/charge-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an extra charge",
+          "meaning": "phụ phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/50691a3a-64e2-45a4-8d7b-8ff3853f1afe-0-wm.jpg?v=1789799918588"
+        },
+        {
+          "phrase": "charge a fee",
+          "meaning": "thu phí",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/50691a3a-64e2-45a4-8d7b-8ff3853f1afe-1-wm.jpg?v=1789799920880"
+        },
+        {
+          "phrase": "free of charge",
+          "meaning": "miễn phí"
+        }
+      ],
+      "synonyms": [
+        "bill (tính tiền)",
+        "fee (khoản phí)",
+        "cost (chi phí)"
+      ]
+    },
+    {
+      "id": "a6e10897-96d0-419f-8693-646699dfe687",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "efficient",
+      "ipa": "/ɪˈfɪʃ.ənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The accountant was so efficient in processing the customer receipts that she had the job done before lunch.",
+          "meaning": "hiệu quả, ít lãng phí công sức",
+          "antonyms": [
+            "inefficient (kém hiệu quả)",
+            "wasteful (lãng phí)"
+          ],
+          "toeic_tip": "efficient là ít tốn công, effective là đạt kết quả mong muốn.",
+          "example_vi": "Kế toán xử lý biên lai khách hàng nhanh gọn đến mức xong việc trước giờ nghỉ trưa.",
+          "word_family": [
+            "efficiently (adv) một cách hiệu quả",
+            "efficiency (n) hiệu suất"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T07:22:04.58124+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/a6e10897-96d0-419f-8693-646699dfe687-wm.jpg?v=1789798369822",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/efficient-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/efficient-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "an efficient worker",
+          "meaning": "nhân viên làm việc hiệu quả",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a6e10897-96d0-419f-8693-646699dfe687-0-wm.jpg?v=1789802524442"
+        },
+        {
+          "phrase": "energy efficient",
+          "meaning": "tiết kiệm năng lượng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/a6e10897-96d0-419f-8693-646699dfe687-1-wm.jpg?v=1789802524310"
+        },
+        {
+          "phrase": "efficient use of time",
+          "meaning": "dùng thời gian hiệu quả"
+        }
+      ],
+      "synonyms": [
+        "productive (năng suất)",
+        "effective (hiệu quả)",
+        "competent (thạo việc)"
+      ]
+    },
+    {
+      "id": "10eefa80-bd67-443f-8707-369db4f5179a",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "discount",
+      "ipa": "/ˈdɪs.kaʊnt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We are offering a 10 percent discount to all new customers.",
+          "meaning": "khoản giảm giá; giảm giá",
+          "antonyms": [
+            "surcharge (phụ phí)",
+            "markup (khoản tăng giá)"
+          ],
+          "toeic_tip": "Danh từ nhấn âm đầu, động từ có thể nhấn âm sau: discount.",
+          "example_vi": "Chúng tôi giảm 10 phần trăm cho tất cả khách hàng mới.",
+          "word_family": [
+            "discounted (adj) đã giảm giá"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T06:22:02.361853+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/10eefa80-bd67-443f-8707-369db4f5179a-wm.jpg?v=1789798535774",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/discount-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/discount-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a 10 percent discount",
+          "meaning": "giảm giá 10 phần trăm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/10eefa80-bd67-443f-8707-369db4f5179a-0-wm.jpg?v=1789798918882"
+        },
+        {
+          "phrase": "offer a discount",
+          "meaning": "đưa ra mức giảm giá",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/10eefa80-bd67-443f-8707-369db4f5179a-1-wm.jpg?v=1789798922212"
+        },
+        {
+          "phrase": "at a discount",
+          "meaning": "với giá ưu đãi"
+        }
+      ],
+      "synonyms": [
+        "reduction (sự giảm)",
+        "markdown (việc hạ giá)",
+        "price cut (cắt giảm giá)"
+      ]
+    },
+    {
+      "id": "7902d342-6392-47ea-9c29-52275c1dee45",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "rectify",
+      "ipa": "UK: /ˈrek.tɪ.faɪ/ | US: /ˈrek.tə.faɪ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "He rectified the problem by giving the customer credit for the unused items that she returned.",
+          "meaning": "sửa chữa, khắc phục cho đúng",
+          "antonyms": [
+            "worsen (làm tệ thêm)"
+          ],
+          "toeic_tip": "Trang trọng hơn fix, hay xuất hiện trong thư xin lỗi khách ở Part 7.",
+          "example_vi": "Anh ấy giải quyết vụ đó bằng cách hoàn tiền cho số hàng khách trả lại chưa dùng.",
+          "word_family": [
+            "rectification (n) sự sửa chữa, việc khắc phục"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T06:57:03.387295+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7902d342-6392-47ea-9c29-52275c1dee45-wm.jpg?v=1789798395214",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rectify-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/rectify-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "rectify the problem",
+          "meaning": "khắc phục sự cố",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7902d342-6392-47ea-9c29-52275c1dee45-0-wm.jpg?v=1789801023241"
+        },
+        {
+          "phrase": "rectify an error",
+          "meaning": "sửa sai sót",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7902d342-6392-47ea-9c29-52275c1dee45-1-wm.jpg?v=1789801021316"
+        },
+        {
+          "phrase": "rectify the situation",
+          "meaning": "giải quyết tình huống"
+        }
+      ],
+      "synonyms": [
+        "correct (sửa cho đúng)",
+        "remedy (khắc phục)",
+        "fix (sửa)"
+      ]
+    },
+    {
+      "id": "aeecdd04-3c44-493a-89ef-f4689ffa836c",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "terms",
+      "ipa": "UK: /tɜːmz/ | US: /tɝːmz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The terms of payment were clearly listed at the bottom of the invoice.",
+          "meaning": "các điều khoản, điều kiện",
+          "toeic_tip": "Nghĩa điều khoản luôn ở số nhiều terms; số ít term là thuật ngữ.",
+          "example_vi": "Điều khoản thanh toán được ghi rõ ở cuối hóa đơn.",
+          "word_family": [
+            "term (n) thuật ngữ, nhiệm kỳ"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T07:26:21.255038+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/aeecdd04-3c44-493a-89ef-f4689ffa836c-wm.jpg?v=1789798456951",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/terms-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/terms-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "terms of payment",
+          "meaning": "điều khoản thanh toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/aeecdd04-3c44-493a-89ef-f4689ffa836c-0-wm.jpg?v=1789802777623"
+        },
+        {
+          "phrase": "terms and conditions",
+          "meaning": "các điều khoản và điều kiện",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/aeecdd04-3c44-493a-89ef-f4689ffa836c-1-wm.jpg?v=1789802781111"
+        },
+        {
+          "phrase": "agree to the terms",
+          "meaning": "đồng ý với điều khoản"
+        }
+      ],
+      "synonyms": [
+        "conditions (điều kiện)",
+        "provisions (điều khoản)",
+        "stipulations (quy định)"
+      ]
+    },
+    {
+      "id": "34407bd4-6ab2-47c6-b603-3f67f20bdb35",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "customer",
+      "ipa": "UK: /ˈkʌs.tə.mər/ | US: /ˈkʌs.tə.mɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Let's make sure all invoices sent to customers are kept in alphabetical order.",
+          "meaning": "khách hàng, người mua",
+          "toeic_tip": "customer là khách mua hàng, client là khách dùng dịch vụ chuyên môn.",
+          "example_vi": "Nhớ sắp xếp hóa đơn gửi cho khách theo thứ tự bảng chữ cái.",
+          "word_family": [
+            "custom (n) sự mua hàng thường xuyên",
+            "customize (v) làm theo yêu cầu khách"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T06:23:57.30662+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/34407bd4-6ab2-47c6-b603-3f67f20bdb35-wm.jpg?v=1789798595110",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/customer-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/customer-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "customer satisfaction",
+          "meaning": "sự hài lòng của khách",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/34407bd4-6ab2-47c6-b603-3f67f20bdb35-0-wm.jpg?v=1789799036956"
+        },
+        {
+          "phrase": "loyal customer",
+          "meaning": "khách hàng trung thành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/34407bd4-6ab2-47c6-b603-3f67f20bdb35-1-wm.jpg?v=1789799037151"
+        },
+        {
+          "phrase": "customer service",
+          "meaning": "dịch vụ khách hàng"
+        }
+      ],
+      "synonyms": [
+        "client (khách hàng)",
+        "patron (khách quen)",
+        "buyer (người mua)"
+      ]
+    },
+    {
+      "id": "b3968abc-e59f-4e1b-8f72-b789a87f346d",
+      "part_id": "edff0576-a831-4751-b355-6519f2166bc9",
+      "word": "promptly",
+      "ipa": "UK: /ˈprɒmpt.li/ | US: /ˈprɑːmpt.li/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We always reply promptly to customers' letters.",
+          "meaning": "ngay lập tức, đúng giờ",
+          "antonyms": [
+            "late (muộn)",
+            "belatedly (trễ nải)"
+          ],
+          "toeic_tip": "Trong thông báo Part 4, promptly at + giờ nghĩa là đúng giờ đó.",
+          "example_vi": "Chúng tôi luôn hồi đáp thư khách hàng ngay.",
+          "word_family": [
+            "prompt (adj) nhanh chóng, đúng giờ",
+            "promptness (n) sự mau lẹ"
+          ],
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:40.725598+00:00",
+      "updated_at": "2026-09-19T07:26:52.049071+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b3968abc-e59f-4e1b-8f72-b789a87f346d-wm.jpg?v=1789798441105",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/promptly-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/promptly-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "reply promptly",
+          "meaning": "trả lời ngay",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b3968abc-e59f-4e1b-8f72-b789a87f346d-0-wm.jpg?v=1789802810048"
+        },
+        {
+          "phrase": "pay promptly",
+          "meaning": "thanh toán đúng hạn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b3968abc-e59f-4e1b-8f72-b789a87f346d-1-wm.jpg?v=1789802811911"
+        },
+        {
+          "phrase": "begin promptly at nine",
+          "meaning": "bắt đầu đúng chín giờ"
+        }
+      ],
+      "synonyms": [
+        "immediately (ngay lập tức)",
+        "punctually (đúng giờ)",
+        "without delay (không chậm trễ)"
+      ]
+    }
+  ]
+}

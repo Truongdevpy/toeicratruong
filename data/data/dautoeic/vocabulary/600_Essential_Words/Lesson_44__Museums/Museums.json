@@ -1,0 +1,648 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "5987f0fd-d76c-41c2-b084-0e4f21ec37b2",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 44: Museums",
+    "order_index": 44,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:42.400197+00:00",
+    "updated_at": "2026-09-18T08:53:42.400197+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+    "test_id": "5987f0fd-d76c-41c2-b084-0e4f21ec37b2",
+    "name": "Museums",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:53:42.400197+00:00",
+    "updated_at": "2026-09-18T08:53:42.400197+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "f03137f5-25b5-47dc-a7d3-43b802e3da4c",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "specialize",
+      "ipa": "/ˈspeʃ.əl.aɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The art historian specialized in Navajo rugs.",
+          "meaning": "chuyên về, chuyên sâu vào một lĩnh vực",
+          "antonyms": [
+            "generalize (làm dàn trải, khái quát)"
+          ],
+          "toeic_tip": "Specialize in something, luôn dùng 'in', rất hay ra ở Part 5.",
+          "example_vi": "Nhà nghiên cứu mỹ thuật ấy chuyên về thảm dệt Navajo.",
+          "word_family": [
+            "specialist (n) chuyên gia",
+            "specialized (adj) chuyên biệt",
+            "specialty (n) chuyên môn"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:59:31.255392+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f03137f5-25b5-47dc-a7d3-43b802e3da4c-wm.jpg?v=1789798042118",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/specialize-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/specialize-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "specialize in something",
+          "meaning": "chuyên về lĩnh vực nào",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f03137f5-25b5-47dc-a7d3-43b802e3da4c-0-wm.jpg?v=1789804769908"
+        },
+        {
+          "phrase": "a shop specializing in",
+          "meaning": "cửa hàng chuyên bán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f03137f5-25b5-47dc-a7d3-43b802e3da4c-1-wm.jpg?v=1789804771118"
+        },
+        {
+          "phrase": "specialize in corporate law",
+          "meaning": "chuyên về luật doanh nghiệp"
+        }
+      ],
+      "synonyms": [
+        "concentrate on (tập trung vào)",
+        "focus on (chú trọng vào)"
+      ]
+    },
+    {
+      "id": "4efe666c-9e1d-4034-9ae9-89a039916299",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "leisure",
+      "ipa": "UK: /ˈleʒ.ər/ | US: /ˈliː.ʒɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The woman took up painting in her retirement, when she had more leisure time.",
+          "meaning": "thời gian rảnh, lúc nhàn rỗi",
+          "antonyms": [
+            "work (công việc)",
+            "labor (lao động)"
+          ],
+          "toeic_tip": "Không đếm được; leisure time và at one's leisure là cụm hay ra.",
+          "example_vi": "Về hưu rảnh rỗi, bà bắt đầu học vẽ.",
+          "word_family": [
+            "leisurely (adj/adv) thong thả, thư thả"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T06:37:58.649443+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/4efe666c-9e1d-4034-9ae9-89a039916299-wm.jpg?v=1789798039998",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/leisure-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/leisure-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "leisure time",
+          "meaning": "thời gian rảnh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4efe666c-9e1d-4034-9ae9-89a039916299-0-wm.jpg?v=1789799877128"
+        },
+        {
+          "phrase": "at your leisure",
+          "meaning": "lúc nào rảnh thì làm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/4efe666c-9e1d-4034-9ae9-89a039916299-1-wm.jpg?v=1789799878507"
+        },
+        {
+          "phrase": "leisure activities",
+          "meaning": "hoạt động giải trí"
+        }
+      ],
+      "synonyms": [
+        "free time (thời gian rỗi)",
+        "spare time (lúc rảnh rỗi)"
+      ]
+    },
+    {
+      "id": "c7134e7c-b6b3-4f39-ace7-1414c6259c7f",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "schedule",
+      "ipa": "UK: /ˈʃedʒ.uːl/ | US: /ˈskedʒ.uːl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We didn't schedule enough time to see all the exhibits that we were interested in.",
+          "meaning": "lên lịch, sắp lịch, xếp thời gian",
+          "antonyms": [
+            "cancel (hủy lịch)"
+          ],
+          "toeic_tip": "Be scheduled to do hoặc be scheduled for + thời điểm, hay ra Part 5.",
+          "example_vi": "Chúng tôi đã không chừa đủ thời gian để xem hết những gian trưng bày mình thích.",
+          "word_family": [
+            "schedule (n) lịch trình",
+            "scheduling (n) việc lên lịch"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:38:23.218852+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/c7134e7c-b6b3-4f39-ace7-1414c6259c7f-wm.jpg?v=1789798048289",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/schedule-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/schedule-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "schedule a meeting",
+          "meaning": "lên lịch họp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c7134e7c-b6b3-4f39-ace7-1414c6259c7f-0-wm.jpg?v=1789803502557"
+        },
+        {
+          "phrase": "be scheduled to arrive",
+          "meaning": "dự kiến đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/c7134e7c-b6b3-4f39-ace7-1414c6259c7f-1-wm.jpg?v=1789803503076"
+        },
+        {
+          "phrase": "schedule enough time",
+          "meaning": "dành đủ thời gian"
+        }
+      ],
+      "synonyms": [
+        "arrange (sắp xếp)",
+        "book (đặt lịch)",
+        "plan (lên kế hoạch)"
+      ]
+    },
+    {
+      "id": "92fc2e08-b907-4822-8a43-c975c118e2b9",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "acquire",
+      "ipa": "UK: /əˈkwaɪər/ | US: /əˈkwaɪɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The museum acquired a van Gogh during heavy bidding.",
+          "meaning": "có được, thu được, tậu được",
+          "antonyms": [
+            "lose (mất đi)",
+            "relinquish (từ bỏ)"
+          ],
+          "toeic_tip": "Danh từ acquisition còn nghĩa thương vụ mua lại công ty, hay gặp Part 7.",
+          "example_vi": "Bảo tàng tậu được một bức van Gogh sau cuộc đấu giá căng thẳng.",
+          "word_family": [
+            "acquisition (n) vật thu được, thương vụ mua lại",
+            "acquired (adj) có được về sau"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:12:18.443248+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/92fc2e08-b907-4822-8a43-c975c118e2b9-wm.jpg?v=1789798042170",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/acquire-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/acquire-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "acquire a company",
+          "meaning": "mua lại một công ty",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/92fc2e08-b907-4822-8a43-c975c118e2b9-0-wm.jpg?v=1789801929618"
+        },
+        {
+          "phrase": "acquire skills",
+          "meaning": "học được kỹ năng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/92fc2e08-b907-4822-8a43-c975c118e2b9-1-wm.jpg?v=1789801938308"
+        },
+        {
+          "phrase": "acquire a painting",
+          "meaning": "mua được một bức tranh"
+        }
+      ],
+      "synonyms": [
+        "obtain (có được)",
+        "gain (thu được)",
+        "procure (kiếm được)"
+      ]
+    },
+    {
+      "id": "8ec885dd-6fdc-4c76-a7d6-55718bcba768",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "significant",
+      "ipa": "/sɪɡˈnɪf.ɪ.kənt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The use of lambs to symbolize innocence is significant in Western art.",
+          "meaning": "đáng kể, quan trọng, có ý nghĩa lớn",
+          "antonyms": [
+            "insignificant (không đáng kể)",
+            "trivial (vụn vặt)"
+          ],
+          "toeic_tip": "Phân biệt significant (quan trọng) và significantly (đáng kể) theo vị trí.",
+          "example_vi": "Trong nghệ thuật phương Tây, hình ảnh con cừu tượng trưng cho sự trong trắng mang ý nghĩa rất lớn.",
+          "word_family": [
+            "significance (n) tầm quan trọng",
+            "significantly (adv) một cách đáng kể",
+            "signify (v) biểu thị"
+          ],
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:11:32.983346+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/8ec885dd-6fdc-4c76-a7d6-55718bcba768-wm.jpg?v=1789798052911",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/significant-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/significant-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a significant change",
+          "meaning": "một thay đổi đáng kể",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8ec885dd-6fdc-4c76-a7d6-55718bcba768-0-wm.jpg?v=1789801892416"
+        },
+        {
+          "phrase": "significant impact",
+          "meaning": "tác động lớn",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/8ec885dd-6fdc-4c76-a7d6-55718bcba768-1-wm.jpg?v=1789801892769"
+        },
+        {
+          "phrase": "play a significant role",
+          "meaning": "đóng vai trò quan trọng"
+        }
+      ],
+      "synonyms": [
+        "considerable (đáng kể)",
+        "notable (đáng chú ý)",
+        "substantial (lớn, đáng kể)"
+      ]
+    },
+    {
+      "id": "827e0a28-4487-4d32-a002-108897421782",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "respond",
+      "ipa": "UK: /rɪˈspɒnd/ | US: /rɪˈspɑːnd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You should respond to the invitation to attend the museum gala.",
+          "meaning": "trả lời, hồi đáp, phản ứng lại",
+          "antonyms": [
+            "ignore (phớt lờ)"
+          ],
+          "toeic_tip": "Respond to something, luôn có 'to'; danh từ response cũng đi với to.",
+          "example_vi": "Bạn nên trả lời lời mời dự dạ tiệc của bảo tàng.",
+          "word_family": [
+            "response (n) sự phản hồi",
+            "responsive (adj) nhạy trong phản hồi"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:05:11.14328+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/827e0a28-4487-4d32-a002-108897421782-wm.jpg?v=1789798038210",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/respond-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/respond-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "respond to an invitation",
+          "meaning": "hồi đáp lời mời",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/827e0a28-4487-4d32-a002-108897421782-0-wm.jpg?v=1789801495551"
+        },
+        {
+          "phrase": "respond promptly",
+          "meaning": "phản hồi nhanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/827e0a28-4487-4d32-a002-108897421782-1-wm.jpg?v=1789801510977"
+        },
+        {
+          "phrase": "respond positively",
+          "meaning": "phản ứng tích cực"
+        }
+      ],
+      "synonyms": [
+        "reply (trả lời)",
+        "answer (đáp lại)",
+        "react (phản ứng)"
+      ]
+    },
+    {
+      "id": "ccb73b3d-3528-41a0-95f7-bad0fab7456b",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "fashion",
+      "ipa": "/ˈfæʃ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "According to the fashion of the day, the languid pose of the sculpture was high art.",
+          "meaning": "mốt, phong cách thịnh hành, tập quán đương thời",
+          "toeic_tip": "Cụm cố định in fashion, out of fashion, không thêm mạo từ.",
+          "example_vi": "Theo gu thẩm mỹ thời đó, dáng uể oải của bức tượng được coi là nghệ thuật đỉnh cao.",
+          "word_family": [
+            "fashionable (adj) hợp mốt",
+            "fashionably (adv) theo đúng mốt"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:41:43.042859+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/ccb73b3d-3528-41a0-95f7-bad0fab7456b-wm.jpg?v=1789798056626",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fashion-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fashion-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "in fashion",
+          "meaning": "đang thịnh hành",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ccb73b3d-3528-41a0-95f7-bad0fab7456b-0-wm.jpg?v=1789803691395"
+        },
+        {
+          "phrase": "go out of fashion",
+          "meaning": "lỗi mốt",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/ccb73b3d-3528-41a0-95f7-bad0fab7456b-1-wm.jpg?v=1789803702899"
+        },
+        {
+          "phrase": "the fashion of the day",
+          "meaning": "mốt thời bấy giờ"
+        }
+      ],
+      "synonyms": [
+        "style (phong cách)",
+        "trend (xu hướng)",
+        "vogue (mốt thịnh hành)"
+      ]
+    },
+    {
+      "id": "f316441d-ea3f-4fbc-b90a-f839e53caf21",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "spectrum",
+      "ipa": "/ˈspek.trəm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The painting crosses the spectrum from symbolic to realistic representation.",
+          "meaning": "dải, phổ, loạt những thứ liên quan trải rộng",
+          "toeic_tip": "Cụm a broad/wide spectrum of; số nhiều bất quy tắc là spectra.",
+          "example_vi": "Bức tranh trải suốt từ lối thể hiện tượng trưng cho tới hiện thực.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T08:01:42.396323+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/f316441d-ea3f-4fbc-b90a-f839e53caf21-wm.jpg?v=1789798061113",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/spectrum-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/spectrum-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a broad spectrum of",
+          "meaning": "một dải rộng các",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f316441d-ea3f-4fbc-b90a-f839e53caf21-0-wm.jpg?v=1789804901507"
+        },
+        {
+          "phrase": "across the spectrum",
+          "meaning": "trên toàn dải",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/f316441d-ea3f-4fbc-b90a-f839e53caf21-1-wm.jpg?v=1789804902221"
+        },
+        {
+          "phrase": "the whole spectrum of opinion",
+          "meaning": "toàn bộ các luồng ý kiến"
+        }
+      ],
+      "synonyms": [
+        "range (phạm vi)",
+        "array (dải, tập hợp)"
+      ]
+    },
+    {
+      "id": "b63417b2-d3c0-404e-807c-4529d31b894b",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "admire",
+      "ipa": "UK: /ədˈmaɪər/ | US: /ədˈmaɪɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Raisa, admiring the famous smile, stood before the Mona Lisa for hours.",
+          "meaning": "ngưỡng mộ, chiêm ngưỡng, kính trọng",
+          "antonyms": [
+            "despise (khinh thường)",
+            "scorn (coi khinh)"
+          ],
+          "toeic_tip": "Admire someone for something; danh từ admiration đi với for.",
+          "example_vi": "Mê mẩn nụ cười trứ danh ấy, Raisa đứng hàng giờ trước bức Mona Lisa.",
+          "word_family": [
+            "admiration (n) sự ngưỡng mộ",
+            "admirable (adj) đáng ngưỡng mộ",
+            "admirer (n) người hâm mộ"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:30:30.790365+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b63417b2-d3c0-404e-807c-4529d31b894b-wm.jpg?v=1789798063874",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/admire-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/admire-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "admire the view",
+          "meaning": "ngắm cảnh đẹp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b63417b2-d3c0-404e-807c-4529d31b894b-0-wm.jpg?v=1789803030615"
+        },
+        {
+          "phrase": "admire someone for something",
+          "meaning": "nể ai vì điều gì",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b63417b2-d3c0-404e-807c-4529d31b894b-1-wm.jpg?v=1789803029875"
+        },
+        {
+          "phrase": "greatly admire",
+          "meaning": "rất ngưỡng mộ"
+        }
+      ],
+      "synonyms": [
+        "respect (kính trọng)",
+        "esteem (quý trọng)",
+        "appreciate (trân trọng)"
+      ]
+    },
+    {
+      "id": "7efe1b34-fa35-40b6-aee2-b5b793f55738",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "criticism",
+      "ipa": "UK: /ˈkrɪt.ɪ.sɪ.zəm/ | US: /ˈkrɪt̬.ə.sɪ.zəm/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "According to the criticism of the Victorian era, the painting was a masterpiece; now it is considered merely a minor work.",
+          "meaning": "sự phê bình, bài bình luận đánh giá tác phẩm",
+          "toeic_tip": "Criticism of something; ở đây nghĩa trung tính là bài phê bình, không chỉ chê.",
+          "example_vi": "Giới phê bình thời Victoria coi bức tranh là kiệt tác, còn nay người ta xem nó chỉ là tác phẩm hạng xoàng.",
+          "word_family": [
+            "criticize (v) phê bình",
+            "critic (n) nhà phê bình",
+            "critical (adj) mang tính phê bình"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:03:16.086938+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7efe1b34-fa35-40b6-aee2-b5b793f55738-wm.jpg?v=1789798054894",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/criticism-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/criticism-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "literary criticism",
+          "meaning": "phê bình văn học",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7efe1b34-fa35-40b6-aee2-b5b793f55738-0-wm.jpg?v=1789801395751"
+        },
+        {
+          "phrase": "constructive criticism",
+          "meaning": "góp ý mang tính xây dựng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7efe1b34-fa35-40b6-aee2-b5b793f55738-1-wm.jpg?v=1789801395936"
+        },
+        {
+          "phrase": "criticism of the piece",
+          "meaning": "nhận định về tác phẩm"
+        }
+      ],
+      "synonyms": [
+        "critique (bài phê bình)",
+        "commentary (lời bình luận)"
+      ]
+    },
+    {
+      "id": "2d0bdbb8-8f23-4783-af91-50450a6ee001",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "express",
+      "ipa": "/ɪkˈspres/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The sculptor was able to express his feelings better through the use of clay rather than words.",
+          "meaning": "bày tỏ, biểu đạt, thể hiện cảm xúc",
+          "antonyms": [
+            "suppress (kìm nén)",
+            "conceal (che giấu)"
+          ],
+          "toeic_tip": "Express + O trực tiếp, không có 'to'; express interest in là cụm hay ra.",
+          "example_vi": "Nhà điêu khắc gửi gắm cảm xúc qua đất sét dễ hơn nhiều so với qua lời nói.",
+          "word_family": [
+            "expression (n) sự biểu đạt, nét mặt",
+            "expressive (adj) giàu biểu cảm"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T06:23:18.946938+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/2d0bdbb8-8f23-4783-af91-50450a6ee001-wm.jpg?v=1789798573093",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/express-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/express-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "express an opinion",
+          "meaning": "bày tỏ ý kiến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2d0bdbb8-8f23-4783-af91-50450a6ee001-0-wm.jpg?v=1789798998805"
+        },
+        {
+          "phrase": "express interest in",
+          "meaning": "tỏ ý quan tâm đến",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/2d0bdbb8-8f23-4783-af91-50450a6ee001-1-wm.jpg?v=1789798996683"
+        },
+        {
+          "phrase": "express gratitude",
+          "meaning": "bày tỏ lòng biết ơn"
+        }
+      ],
+      "synonyms": [
+        "convey (truyền tải)",
+        "voice (nói ra)",
+        "articulate (diễn đạt rõ)"
+      ]
+    },
+    {
+      "id": "b196c34f-caf7-4198-9a78-1f4627cb851e",
+      "part_id": "1e1b36d8-acfe-4b42-8625-35a976d9a1b7",
+      "word": "collection",
+      "ipa": "/kəˈlek.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The museum's collection contained many works donated by famous collectors.",
+          "meaning": "bộ sưu tập, tập hợp hiện vật",
+          "toeic_tip": "Phân biệt collection (bộ sưu tập) và collective (tập thể) ở Part 5.",
+          "example_vi": "Bộ sưu tập của bảo tàng có nhiều tác phẩm do các nhà sưu tầm nổi tiếng hiến tặng.",
+          "word_family": [
+            "collect (v) sưu tầm, thu thập",
+            "collector (n) nhà sưu tầm"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:53:42.400197+00:00",
+      "updated_at": "2026-09-19T07:26:08.617848+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/b196c34f-caf7-4198-9a78-1f4627cb851e-wm.jpg?v=1789798034804",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/collection-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/collection-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "a private collection",
+          "meaning": "bộ sưu tập tư nhân",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b196c34f-caf7-4198-9a78-1f4627cb851e-0-wm.jpg?v=1789802756142"
+        },
+        {
+          "phrase": "the permanent collection",
+          "meaning": "bộ sưu tập thường trực",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/b196c34f-caf7-4198-9a78-1f4627cb851e-1-wm.jpg?v=1789802768474"
+        },
+        {
+          "phrase": "add to a collection",
+          "meaning": "bổ sung vào bộ sưu tập"
+        }
+      ],
+      "synonyms": [
+        "assortment (tập hợp nhiều loại)",
+        "array (dãy, tập hợp)"
+      ]
+    }
+  ]
+}

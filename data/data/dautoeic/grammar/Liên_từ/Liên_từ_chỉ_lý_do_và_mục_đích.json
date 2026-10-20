@@ -1,0 +1,360 @@
+{
+  "subtopic": {
+    "id": "38c48ab1-a1a4-4701-a1ce-b36a6d8b2a74",
+    "topic_id": "903e0438-ae71-4828-90e5-ee40d19ff3af",
+    "title_en": "Liên từ chỉ lý do và mục đích",
+    "title_vi": "Liên từ chỉ lý do và mục đích",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 53,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-lien-tu-chi-ly-do-va-muc-dich"
+  },
+  "lessons": [
+    {
+      "id": "ea403c32-90fd-4bc6-a167-7edd13bc7fb9",
+      "subtopic_id": "38c48ab1-a1a4-4701-a1ce-b36a6d8b2a74",
+      "title_en": "Liên từ chỉ lý do và mục đích",
+      "title_vi": "Liên từ chỉ lý do và mục đích",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2024 · Test 6 · Câu 123",
+          "options": {
+            "A": "whereas",
+            "B": "despite",
+            "C": "if not",
+            "D": "in case"
+          },
+          "question": "Please provide your phone number ------- the delivery driver needs to contact you.",
+          "translation": "Vui lòng cung cấp số điện thoại của bạn phòng khi tài xế giao hàng cần liên lạc với bạn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn từ, cụm từ nối: “whereas”, “despite”, “if not”, “in case”. Chỗ trống đứng sau câu mệnh lệnh “Please provide your phone number”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "Please",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "provide",
+                    "label": "động từ (câu mệnh lệnh)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "your phone number",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the delivery driver",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "needs",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "to contact you.",
+                    "label": "tân ngữ của needs"
+                  }
+                ],
+                "caption": "Sau chỗ trống là một mệnh đề đủ chủ ngữ “the delivery driver” và động từ “needs”."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "từ nào đứng trước được một mệnh đề S + V, từ nào chỉ đi với cụm danh từ",
+                  "nghĩa lý do, mục đích, phòng khi khác nhau thế nào",
+                  "“whereas” và “if not” mang nghĩa gì"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Liên từ chỉ lý do và mục đích đứng trước một **mệnh đề (S + V)** và nối nó với mệnh đề chính. Mệnh đề này đứng sau mệnh đề chính, hoặc đứng đầu câu và có dấu phẩy ngăn với mệnh đề chính.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Liên từ",
+                    "formula": "liên từ + S + V"
+                  },
+                  {
+                    "label": "Giới từ",
+                    "formula": "giới từ + cụm danh từ / V-ing"
+                  },
+                  {
+                    "label": "Cụm chỉ mục đích",
+                    "formula": "in order to / so as to + V nguyên mẫu"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "lý do (vì)",
+                    "because, since, as",
+                    "*The meeting was moved because the room was booked.* — Cuộc họp bị dời vì phòng đã có người đặt."
+                  ],
+                  [
+                    "lý do mới có ở hiện tại (vì giờ đây)",
+                    "now that",
+                    "*Now that the website is live, orders are rising.* — Vì giờ đây trang web đã hoạt động, đơn hàng đang tăng."
+                  ],
+                  [
+                    "mục đích (để); mệnh đề sau có thể chứa can, could, will, would",
+                    "so that, in order that",
+                    "*We start early so that we can finish by noon.* — Chúng tôi bắt đầu sớm để có thể xong trước trưa."
+                  ],
+                  [
+                    "phòng khi (làm trước để phòng một việc có thể xảy ra)",
+                    "in case",
+                    "*Save a copy in case the system shuts down.* — Hãy lưu một bản sao phòng khi hệ thống tắt."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nghĩa",
+                  "Liên từ (+ S + V)",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "**Trạng từ nối** (however, therefore, thus, consequently, moreover, furthermore, likewise, nevertheless) nối ý giữa hai câu, không nối được hai mệnh đề trong một câu. Muốn dùng thì trước nó phải là dấu chấm hoặc dấu chấm phẩy.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước mệnh đề S + V, nối nó với mệnh đề chính.",
+                    "form": "Liên từ: because, since, as, now that, so that, in order that, in case",
+                    "example": "*in case the scanner at the entrance is not working*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chỉ đi với cụm danh từ hoặc V-ing, không đi với mệnh đề.",
+                    "form": "Giới từ chỉ lý do: because of, due to, owing to, on account of, thanks to",
+                    "example": "*because of the rain*; *because it rained*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Cũng chỉ đi với cụm danh từ hoặc V-ing. “in case of” là giới từ, “in case” mới là liên từ.",
+                    "form": "Giới từ khác: during, regarding, despite, in spite of, regardless of, instead of, in case of",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đi với V nguyên mẫu, không đi với mệnh đề có chủ ngữ riêng.",
+                    "form": "in order to, so as to",
+                    "example": "*in order to finish early*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không nối được hai mệnh đề trong một câu, kể cả khi có dấu phẩy.",
+                    "form": "Trạng từ nối: however, therefore, thus, consequently, moreover, furthermore, likewise, nevertheless",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là liên từ, nối được mệnh đề, nhưng chỉ sự đối lập giữa hai sự việc, không chỉ lý do, mục đích hay phòng khi.",
+                    "form": "whereas (trong khi, ngược lại)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Muốn nói “nếu không” trước một mệnh đề thì phủ định ở động từ: *if the driver does not call*. Đặt “if not” trước “the delivery driver needs…” không thành câu đúng.",
+                    "form": "if not (nếu không)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + mệnh đề S + V",
+                    "example": "*___ the customs forms had not been completed correctly*; *___ her morning meeting with the client ran long*"
+                  },
+                  {
+                    "signal": "___ + mệnh đề S + V, mệnh đề chính",
+                    "example": "*___ most of the staff will be at the trade show, the office will close early*"
+                  },
+                  {
+                    "signal": "mệnh đề sau có can / could / would",
+                    "example": "*___ the technician can set up your laptop*; *___ every participant would have a copy*"
+                  },
+                  {
+                    "signal": "vế sau là việc có thể xảy ra",
+                    "example": "*___ the delivery driver needs to contact you*; *___ the scanner at the entrance is not working*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn liên từ, giới từ, trạng từ nối hoặc cụm in order to / so as to thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay sau chỗ trống là mệnh đề S + V hay cụm danh từ; rồi xem vế đó là lý do, mục đích hay việc có thể xảy ra so với mệnh đề chính.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau chỗ trống là mệnh đề thì chọn liên từ đúng nghĩa; loại giới từ, trạng từ nối và in order to / so as to.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "X",
+                    "text": "Please",
+                    "label": ""
+                  },
+                  {
+                    "role": "V",
+                    "text": "provide",
+                    "label": "động từ (câu mệnh lệnh)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "your phone number",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "in case",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the delivery driver",
+                    "label": "chủ ngữ vế sau"
+                  },
+                  {
+                    "role": "V",
+                    "text": "needs",
+                    "label": "động từ vế sau"
+                  },
+                  {
+                    "role": "O",
+                    "text": "to contact you.",
+                    "label": "tân ngữ của needs"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “in case” nối mệnh đề “the delivery driver needs to contact you” vào câu mệnh lệnh."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án trộn liên từ “whereas”, “in case”, giới từ “despite” và cụm “if not” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Sau chỗ trống là mệnh đề đủ chủ ngữ “the delivery driver” và động từ “needs”; dấu hiệu “___ + mệnh đề S + V” và “vế sau là việc có thể xảy ra”.",
+                  "Bước 3: Cho số điện thoại để phòng tài xế cần gọi; liên từ + S + V nghĩa phòng khi, vì vậy chọn “in case” (phòng khi).",
+                  "“whereas” (A) là liên từ chỉ sự đối lập, không hợp ý cho số để tài xế liên lạc, nên loại.",
+                  "“despite” (B) là giới từ, chỉ đi với cụm danh từ, không đi với mệnh đề “the delivery driver needs…”, nên loại.",
+                  "“if not” (C) nghĩa “nếu không”, đặt trước “the delivery driver needs…” không thành câu đúng, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“since” và “as” còn có nghĩa khác (since: từ khi; as: khi, như). Trong các câu của bài này, quan hệ lý do giữa hai vế cho thấy chúng mang nghĩa “vì”.",
+                  "“in case” khác “if”: in case là làm trước để phòng, if là chỉ làm khi việc đó xảy ra. Mệnh đề sau in case nói về tương lai vẫn dùng hiện tại đơn: *in case the scanner is not working*."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau chỗ trống là mệnh đề S + V thì chọn liên từ, không chọn giới từ hay trạng từ nối.",
+                  "because of, due to, owing to + cụm danh từ; because, since, as, now that + S + V.",
+                  "so that, in order that + S + V; in order to, so as to + V nguyên mẫu."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

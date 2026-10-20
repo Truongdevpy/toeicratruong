@@ -1,0 +1,431 @@
+{
+  "subtopic": {
+    "id": "1c27bd1c-e66f-4ebe-98d3-c0989bdbaf4c",
+    "topic_id": "62adf41b-34d5-4a71-b1bc-f0df31ba2081",
+    "title_en": "Bị động thì tiếp diễn",
+    "title_vi": "Bị động thì tiếp diễn",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 94,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-the-bi-dong-bi-dong-thi-tiep-dien"
+  },
+  "lessons": [
+    {
+      "id": "0343d76c-3d23-4e6a-ae3d-53d661b16c92",
+      "subtopic_id": "1c27bd1c-e66f-4ebe-98d3-c0989bdbaf4c",
+      "title_en": "Bị động thì tiếp diễn",
+      "title_vi": "Bị động thì tiếp diễn",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:26.066383+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2019 · Câu 27",
+          "options": {
+            "A": "to be performed",
+            "B": "would have performed",
+            "C": "had been performed",
+            "D": "are being performed"
+          },
+          "question": "Belden Hospital's chief of staff meets regularly with the staff to ensure that procedures ------- correctly.",
+          "translation": "Trưởng khối chuyên môn của Bệnh viện Belden họp định kỳ với nhân viên để bảo đảm các quy trình đang được thực hiện đúng."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “perform”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Belden Hospital's chief of staff",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "meets",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "X",
+                    "text": "regularly with the staff",
+                    "label": ""
+                  },
+                  {
+                    "role": "X",
+                    "text": "to ensure",
+                    "label": "chỉ mục đích"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "procedures",
+                    "label": "chủ ngữ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "correctly.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Chỗ trống là động từ của mệnh đề sau “that”, đứng sau chủ ngữ “procedures”; phía sau chỉ có “correctly”, không có tân ngữ."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Mệnh đề sau “that” cần động từ dạng gì.",
+                  "Quy trình tự thực hiện hay được thực hiện.",
+                  "Vế chính “meets” ở thì nào, và bị động tiếp diễn được tạo thế nào."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Bị động thì tiếp diễn dùng khi chủ ngữ **chịu** một hành động **đang diễn ra**: đang diễn ra ở hiện tại (hiện tại tiếp diễn) hoặc đang diễn ra tại một lúc trong quá khứ (quá khứ tiếp diễn).",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Hiện tại, số ít",
+                    "formula": "S + is being + V3"
+                  },
+                  {
+                    "label": "Hiện tại, số nhiều",
+                    "formula": "S + are being + V3"
+                  },
+                  {
+                    "label": "Quá khứ, số ít",
+                    "formula": "S + was being + V3"
+                  },
+                  {
+                    "label": "Quá khứ, số nhiều",
+                    "formula": "S + were being + V3"
+                  }
+                ]
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.72,
+                    "from": 0.5,
+                    "label": "is being repainted",
+                    "style": "dashed"
+                  }
+                ],
+                "points": [],
+                "caption": "is being repainted this week: việc sơn đang diễn ra quanh lúc nói, chưa xong."
+              },
+              {
+                "type": "timeline",
+                "marks": [
+                  {
+                    "at": 0.6,
+                    "now": true,
+                    "label": "bây giờ"
+                  }
+                ],
+                "spans": [
+                  {
+                    "to": 0.4,
+                    "from": 0.15,
+                    "label": "were being copied",
+                    "style": "solid"
+                  }
+                ],
+                "points": [
+                  {
+                    "at": 0.3,
+                    "label": "the power went out"
+                  }
+                ],
+                "caption": "were being copied when the power went out: việc sao chép đang diễn ra thì mất điện xen vào."
+              },
+              {
+                "rows": [
+                  [
+                    "am/is/are being + V3: đang được làm ở hiện tại",
+                    "*The printer is being repaired right now.* — Máy in đang được sửa ngay lúc này."
+                  ],
+                  [
+                    "was/were being + V3: đang được làm thì việc khác xen vào",
+                    "*The files were being copied when the power went out.* — Các tập tin đang được sao chép thì mất điện."
+                  ],
+                  [
+                    "was/were being + V3: đang được làm suốt một khoảng quá khứ",
+                    "*The system was being tested all last week.* — Hệ thống được thử nghiệm suốt tuần trước."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Chủ ngữ chịu hành động: động từ cần tân ngữ mà sau chỗ trống không có tân ngữ, hoặc có **by + người làm**.",
+                  "**is/was** đi với chủ ngữ số ít, **are/were** đi với chủ ngữ số nhiều.",
+                  "Khi being đã cho sẵn thì điền **V3**."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Chủ ngữ chịu hành động đang diễn ra ở hiện tại hoặc tại một lúc trong quá khứ.",
+                    "form": "am/is/are being + V3, was/were being + V3",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chủ ngữ không tự làm hành động; các động từ này cần tân ngữ mà sau chỗ trống không có, hoặc câu có by + người làm.",
+                    "form": "Tiếp diễn chủ động (is testing, are packing, are processing, were examining, were loading, is redesigning, is preparing, are servicing, is repainting, was repainting, was discussing, are printing, was upgrading, were rearranging, were decorating, was translating, were interviewing)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc lặp lại hoặc sự thật, không nói việc đang diễn ra.",
+                    "form": "Hiện tại đơn bị động (is tested, are packed, are serviced, is repainted)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc đã xong: không hợp câu nói hiện tại (at the moment, right now), và không nói việc đang dở khi việc khác xen vào.",
+                    "form": "Quá khứ đơn bị động (was tested, were packed, were loaded, was redesigned, was prepared, was discussed, were printed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Câu có mốc quá khứ (when + quá khứ đơn, while + quá khứ tiếp diễn, all last weekend) dùng was/were being; câu nói hiện tại dùng am/is/are being.",
+                    "form": "Sai thì tiếp diễn (are being + V3 trong câu quá khứ, were being + V3 trong câu hiện tại)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nói việc đã xong trước bây giờ hoặc trước một mốc, không nói việc đang diễn ra; dạng chủ động còn thiếu tân ngữ.",
+                    "form": "Hoàn thành (have processed, has redesigned, has prepared, had upgraded, had rearranged, have printed, has translated, had interviewed, have been examining, have been decorated, had been performed, would have performed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không làm được động từ của mệnh đề sau “that”.",
+                    "form": "to V (to be performed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Bị động tiếp diễn cần being + V3; being + V-ing, being + V nguyên mẫu sai cấu trúc, danh từ không nói được “đang được làm”.",
+                    "form": "Sau being cho sẵn: V-ing, V nguyên mẫu, danh từ (renovating, renovate, renovation)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "at the moment / right now",
+                    "example": "*Orders … ___ at the moment*; *The conference room ___ … right now*"
+                  },
+                  {
+                    "signal": "vế kia ở hiện tại",
+                    "example": "*___ more slowly than usual because two staff members are on leave*; *___ this week, so please use the side entrance*; *meets regularly … to ensure that procedures ___*"
+                  },
+                  {
+                    "signal": "when + quá khứ đơn",
+                    "example": "*___ by a guard when the fire alarm went off*; *When I walked past the meeting room, …*"
+                  },
+                  {
+                    "signal": "while + quá khứ tiếp diễn",
+                    "example": "*___ while the technicians were setting up the microphones*"
+                  },
+                  {
+                    "signal": "all + khoảng thời gian quá khứ",
+                    "example": "*___ all last weekend*"
+                  },
+                  {
+                    "signal": "being + ___",
+                    "example": "*are being ___*; *is being ___ by Chung-He Park*"
+                  },
+                  {
+                    "signal": "___ + by + người làm",
+                    "example": "*___ by a guard*; *___ by the warehouse staff*"
+                  },
+                  {
+                    "signal": "___ + không có tân ngữ",
+                    "example": "*procedures ___ correctly*; *The user guide ___ into three languages*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng chia thì của một động từ, có is/are/was/were being + V3, thì là câu chia động từ; being đã cho sẵn và đáp án là V-ing, V3, V nguyên mẫu, danh từ thì là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Tìm chủ ngữ (số ít hay số nhiều), xem sau chỗ trống có tân ngữ hay by + người làm; tìm dấu hiệu đang diễn ra: at the moment, right now, vế kia ở hiện tại, when + quá khứ đơn, while + quá khứ tiếp diễn.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Chủ ngữ chịu hành động đang diễn ra thì chọn am/is/are being + V3 (hiện tại) hoặc was/were being + V3 (quá khứ); loại dạng chủ động, dạng đơn, dạng hoàn thành và dạng sai thì.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Belden Hospital's chief of staff",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "meets",
+                    "label": "động từ chính (hiện tại)"
+                  },
+                  {
+                    "role": "X",
+                    "text": "regularly with the staff",
+                    "label": ""
+                  },
+                  {
+                    "role": "X",
+                    "text": "to ensure",
+                    "label": "chỉ mục đích"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "procedures",
+                    "label": "chủ ngữ (mệnh đề sau that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "are being performed",
+                    "label": "are being + V3"
+                  },
+                  {
+                    "role": "X",
+                    "text": "correctly.",
+                    "label": ""
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: quy trình đang được thực hiện, nên động từ trong mệnh đề sau “that” là are being + V3."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của động từ “perform”, có dạng chia thì, nên đây là câu chia động từ.",
+                  "Bước 2: Chỗ trống là động từ của mệnh đề sau “that”, chủ ngữ “procedures” số nhiều; dấu hiệu “vế kia ở hiện tại”: “meets regularly … to ensure”.",
+                  "Bước 3: Quy trình được thực hiện (chịu hành động), đang diễn ra ở hiện tại nên dùng are being + V3, vì vậy chọn “are being performed” (đang được thực hiện).",
+                  "“to be performed” (A) là to V, không làm được động từ của mệnh đề sau “that”, nên loại.",
+                  "“would have performed” (B) là chủ động, quy trình không tự thực hiện và không có tân ngữ phía sau, nên loại.",
+                  "“had been performed” (C) là quá khứ hoàn thành, câu không có mốc quá khứ, vế kia “meets” ở hiện tại, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“this week”, “this morning” tự nó không quyết định thì. Cần xem vế kia (so please use the side entrance, so no orders can leave…) để biết việc đang diễn ra ở hiện tại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Đang được làm ở hiện tại: am/is/are being + V3.",
+                  "Đang được làm thì việc khác xen vào ở quá khứ: was/were being + V3.",
+                  "Có being thì sau nó là V3."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

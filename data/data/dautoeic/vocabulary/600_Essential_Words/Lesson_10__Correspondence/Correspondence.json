@@ -1,0 +1,627 @@
+{
+  "set": {
+    "id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "600 Essential Words",
+    "description": "600 từ vựng thiết yếu cho TOEIC theo 50 chủ đề (Lesson 1–50)",
+    "source": null,
+    "order_index": 2,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:50:18.764398+00:00",
+    "updated_at": "2026-09-18T08:50:18.764398+00:00",
+    "owner_id": null,
+    "visibility": "private",
+    "is_copied_from": null,
+    "mock_test_set_id": null,
+    "scope_kind": "manual"
+  },
+  "test": {
+    "id": "3f383dee-fb72-457a-aa91-345ca92299b2",
+    "set_id": "f71acb01-fd8f-457f-a7fe-68bfb918e7e4",
+    "name": "Lesson 10: Correspondence",
+    "order_index": 10,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:05.226244+00:00",
+    "updated_at": "2026-09-18T08:51:05.226244+00:00",
+    "access_level": "free",
+    "owner_id": null,
+    "visibility": "private",
+    "mock_test_id": null,
+    "scope_kind": "mock_test",
+    "difficulty_part": null,
+    "difficulty_level": null,
+    "grammar_bank_set_id": null,
+    "listening_key": null
+  },
+  "part": {
+    "id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+    "test_id": "3f383dee-fb72-457a-aa91-345ca92299b2",
+    "name": "Correspondence",
+    "order_index": 1,
+    "is_hidden": false,
+    "created_at": "2026-09-18T08:51:05.226244+00:00",
+    "updated_at": "2026-09-18T08:51:05.226244+00:00",
+    "owner_id": null,
+    "mock_test_part_number": null,
+    "subtype_key": null
+  },
+  "words": [
+    {
+      "id": "3cc69908-4ca1-4199-8242-aad096aa8b32",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "fold",
+      "ipa": "UK: /fəʊld/ | US: /foʊld/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Fold the letter into three parts before stuffing it into the envelope.",
+          "meaning": "gấp, gấp lại",
+          "antonyms": [
+            "unfold (mở ra)"
+          ],
+          "toeic_tip": "fold into + số phần; fold in half nghĩa là gấp đôi, hay gặp ở Part 1.",
+          "example_vi": "Gấp lá thư làm ba rồi mới nhét vào phong bì.",
+          "word_family": [
+            "folded (adj) đã gấp",
+            "foldable (adj) có thể gấp lại"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 6,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:11:54.694528+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/3cc69908-4ca1-4199-8242-aad096aa8b32-wm.jpg?v=1789798314627",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fold-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/fold-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "fold a letter",
+          "meaning": "gấp lá thư",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3cc69908-4ca1-4199-8242-aad096aa8b32-0-wm.jpg?v=1789797948342"
+        },
+        {
+          "phrase": "fold in half",
+          "meaning": "gấp đôi",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/3cc69908-4ca1-4199-8242-aad096aa8b32-1-wm.jpg?v=1789797946475"
+        },
+        {
+          "phrase": "fold neatly",
+          "meaning": "gấp gọn gàng"
+        }
+      ],
+      "synonyms": [
+        "bend (bẻ cong)",
+        "crease (gấp tạo nếp)",
+        "double over (gập lại)"
+      ]
+    },
+    {
+      "id": "50cdab5f-59e4-418d-ba1a-75b7d7b43e07",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "revise",
+      "ipa": "/rɪˈvaɪz/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The brochure was revised several times before it was sent to the printer.",
+          "meaning": "sửa lại, chỉnh sửa, viết lại",
+          "toeic_tip": "Anh-Mỹ revise là sửa lại văn bản, không mang nghĩa ôn bài như Anh-Anh.",
+          "example_vi": "Tờ rơi được sửa đi sửa lại mấy lần mới đem đi in.",
+          "word_family": [
+            "revision (n) bản sửa đổi, sự sửa lại"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 12,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:39:09.715267+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/50cdab5f-59e4-418d-ba1a-75b7d7b43e07-wm.jpg?v=1789798409644",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/revise-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/revise-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "revise a document",
+          "meaning": "sửa lại một văn bản",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/50cdab5f-59e4-418d-ba1a-75b7d7b43e07-0-wm.jpg?v=1789799947607"
+        },
+        {
+          "phrase": "revise an estimate",
+          "meaning": "điều chỉnh mức dự toán",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/50cdab5f-59e4-418d-ba1a-75b7d7b43e07-1-wm.jpg?v=1789799949578"
+        },
+        {
+          "phrase": "revise upward",
+          "meaning": "điều chỉnh tăng lên"
+        }
+      ],
+      "synonyms": [
+        "edit (biên tập lại)",
+        "amend (tu chỉnh)",
+        "update (cập nhật)"
+      ]
+    },
+    {
+      "id": "9b324e4b-5cf4-4aae-a7ec-d9a12a3ffe6f",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "assemble",
+      "ipa": "/əˈsem.bəl/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "Her assistant copied and assembled the documents.",
+          "meaning": "lắp ráp, tập hợp lại, gom lại",
+          "antonyms": [
+            "disassemble (tháo rời)",
+            "scatter (làm phân tán)"
+          ],
+          "toeic_tip": "Danh từ assembly còn có nghĩa dây chuyền lắp ráp: assembly line.",
+          "example_vi": "Trợ lý của cô ấy photo rồi sắp xếp tài liệu lại thành bộ.",
+          "word_family": [
+            "assembly (n) sự lắp ráp, cuộc tập hợp",
+            "assembled (adj) đã được lắp ráp"
+          ],
+          "part_of_speech": "v"
+        }
+      ],
+      "order_index": 1,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T07:17:01.66414+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9b324e4b-5cf4-4aae-a7ec-d9a12a3ffe6f-wm.jpg?v=1789798075132",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assemble-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/assemble-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "assemble the parts",
+          "meaning": "lắp ráp các bộ phận",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b324e4b-5cf4-4aae-a7ec-d9a12a3ffe6f-0-wm.jpg?v=1789802221515"
+        },
+        {
+          "phrase": "assemble documents",
+          "meaning": "tập hợp tài liệu",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9b324e4b-5cf4-4aae-a7ec-d9a12a3ffe6f-1-wm.jpg?v=1789802181957"
+        },
+        {
+          "phrase": "assemble a team",
+          "meaning": "gây dựng một đội"
+        }
+      ],
+      "synonyms": [
+        "gather (gom lại)",
+        "put together (ghép lại)",
+        "collect (thu thập)"
+      ]
+    },
+    {
+      "id": "9af4c06a-3133-4c1e-aae1-5aafa5230b2d",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "petition",
+      "ipa": "/pəˈtɪʃ.ən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "The petition was photocopied and distributed to workers who will collect the necessary signatures.",
+          "meaning": "đơn kiến nghị, bản thỉnh nguyện; làm đơn kiến nghị",
+          "toeic_tip": "Động từ đi với for hoặc to: petition for a change, petition sb to do sth.",
+          "example_vi": "Đơn kiến nghị được photo rồi phát cho công nhân đi thu thập chữ ký.",
+          "word_family": [
+            "petitioner (n) người đứng đơn kiến nghị"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 9,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T07:17:07.533656+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/9af4c06a-3133-4c1e-aae1-5aafa5230b2d-wm.jpg?v=1789798083613",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/petition-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/petition-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "sign a petition",
+          "meaning": "ký tên vào đơn kiến nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9af4c06a-3133-4c1e-aae1-5aafa5230b2d-0-wm.jpg?v=1789802226647"
+        },
+        {
+          "phrase": "file a petition",
+          "meaning": "nộp đơn kiến nghị",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/9af4c06a-3133-4c1e-aae1-5aafa5230b2d-1-wm.jpg?v=1789802227399"
+        },
+        {
+          "phrase": "petition for",
+          "meaning": "kiến nghị đòi điều gì"
+        }
+      ],
+      "synonyms": [
+        "appeal (lời thỉnh cầu)",
+        "request (yêu cầu)",
+        "plea (lời kêu gọi)"
+      ]
+    },
+    {
+      "id": "04c33019-f20e-4fef-814c-aa81ab30e8e2",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "beforehand",
+      "ipa": "UK: /bɪˈfɔː.hænd/ | US: /bɪˈfɔːr.hænd/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "To speed up the mailing, we should prepare the labels beforehand.",
+          "meaning": "trước, từ trước, sẵn từ đầu",
+          "antonyms": [
+            "afterward (sau đó)",
+            "later (muộn hơn)"
+          ],
+          "toeic_tip": "Là trạng từ, thường đứng cuối câu; đồng nghĩa hay thay thế là in advance.",
+          "example_vi": "Muốn gửi thư nhanh thì nên in sẵn nhãn từ trước.",
+          "part_of_speech": "adv"
+        }
+      ],
+      "order_index": 2,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:17:47.572147+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/04c33019-f20e-4fef-814c-aa81ab30e8e2-wm.jpg?v=1789798133117",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/beforehand-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/beforehand-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "prepare beforehand",
+          "meaning": "chuẩn bị từ trước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/04c33019-f20e-4fef-814c-aa81ab30e8e2-0-wm.jpg?v=1789798667426"
+        },
+        {
+          "phrase": "arrange beforehand",
+          "meaning": "sắp xếp trước",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/04c33019-f20e-4fef-814c-aa81ab30e8e2-1-wm.jpg?v=1789798667082"
+        },
+        {
+          "phrase": "notify beforehand",
+          "meaning": "báo trước"
+        }
+      ],
+      "synonyms": [
+        "in advance (trước)",
+        "ahead of time (trước giờ)",
+        "previously (trước đó)"
+      ]
+    },
+    {
+      "id": "72f0c6e8-6e66-4403-a441-e3686c179958",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "layout",
+      "ipa": "/ˈleɪ.aʊt/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We had to change the layout when we changed the size of the paper.",
+          "meaning": "bố cục, cách trình bày trên trang",
+          "toeic_tip": "Danh từ viết liền layout, động từ viết rời lay out.",
+          "example_vi": "Đổi khổ giấy nên chúng tôi phải chỉnh lại bố cục.",
+          "word_family": [
+            "lay out (v) bố trí, trình bày"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 7,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:54:16.765581+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/72f0c6e8-6e66-4403-a441-e3686c179958-wm.jpg?v=1789798332976",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/layout-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/layout-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "page layout",
+          "meaning": "bố cục trang",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/72f0c6e8-6e66-4403-a441-e3686c179958-0-wm.jpg?v=1789800854005"
+        },
+        {
+          "phrase": "change the layout",
+          "meaning": "đổi bố cục",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/72f0c6e8-6e66-4403-a441-e3686c179958-1-wm.jpg?v=1789800856628"
+        },
+        {
+          "phrase": "office layout",
+          "meaning": "cách bố trí văn phòng"
+        }
+      ],
+      "synonyms": [
+        "format (định dạng)",
+        "design (thiết kế)",
+        "arrangement (cách sắp xếp)"
+      ]
+    },
+    {
+      "id": "cd13cd05-8960-4161-bb95-fea78af5c8e1",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "mention",
+      "ipa": "/ˈmen.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "There was no mention of the cost in the proposal.",
+          "meaning": "sự nhắc đến, lời đề cập; nhắc đến, đề cập",
+          "antonyms": [
+            "omit (bỏ sót, không nhắc đến)"
+          ],
+          "toeic_tip": "Sau mention là danh từ hoặc V-ing, không dùng to + V.",
+          "example_vi": "Bản đề xuất không hề nhắc gì tới chi phí.",
+          "word_family": [
+            "mentioned (adj) đã được đề cập",
+            "aforementioned (adj) đã nói ở trên"
+          ],
+          "part_of_speech": "n/v"
+        }
+      ],
+      "order_index": 8,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T07:42:01.006839+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/cd13cd05-8960-4161-bb95-fea78af5c8e1-wm.jpg?v=1789798367876",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mention-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/mention-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "make no mention of",
+          "meaning": "không hề nhắc tới",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cd13cd05-8960-4161-bb95-fea78af5c8e1-0-wm.jpg?v=1789803719357"
+        },
+        {
+          "phrase": "as mentioned above",
+          "meaning": "như đã nêu ở trên",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/cd13cd05-8960-4161-bb95-fea78af5c8e1-1-wm.jpg?v=1789803720865"
+        },
+        {
+          "phrase": "mention sth to sb",
+          "meaning": "nói với ai về việc gì"
+        }
+      ],
+      "synonyms": [
+        "refer to (nhắc đến)",
+        "bring up (nêu ra)",
+        "note (nêu rõ)"
+      ]
+    },
+    {
+      "id": "609901e1-08d0-43fb-9491-fefdccfe8bc8",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "express",
+      "ipa": "/ɪkˈspres/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "It's important that this document be there tomorrow, so please send it express mail.",
+          "meaning": "nhanh và thẳng, chuyển phát nhanh, tốc hành",
+          "antonyms": [
+            "regular (thường, không nhanh)"
+          ],
+          "toeic_tip": "Ở bài này express là tính từ; đừng nhầm với động từ express nghĩa bày tỏ.",
+          "example_vi": "Tài liệu này mai phải tới nơi, nên bạn gửi chuyển phát nhanh giúp nhé.",
+          "part_of_speech": "adj"
+        }
+      ],
+      "order_index": 5,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:43:35.860728+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/609901e1-08d0-43fb-9491-fefdccfe8bc8-wm.jpg?v=1789798379216",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/express-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/express-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "express mail",
+          "meaning": "thư chuyển phát nhanh",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/609901e1-08d0-43fb-9491-fefdccfe8bc8-0-wm.jpg?v=1789800205778"
+        },
+        {
+          "phrase": "express delivery",
+          "meaning": "giao hàng hỏa tốc",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/609901e1-08d0-43fb-9491-fefdccfe8bc8-1-wm.jpg?v=1789800215711"
+        },
+        {
+          "phrase": "express train",
+          "meaning": "tàu tốc hành"
+        }
+      ],
+      "synonyms": [
+        "rapid (nhanh)",
+        "fast (nhanh)",
+        "direct (thẳng, không dừng)"
+      ]
+    },
+    {
+      "id": "737715e0-6f21-4ce6-b3d0-d43fa9b9088f",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "courier",
+      "ipa": "UK: /ˈkʊr.i.ər/ | US: /ˈkʊr.i.ɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "We hired a courier to deliver the package.",
+          "meaning": "người đưa thư, nhân viên chuyển phát",
+          "toeic_tip": "Danh từ chỉ người, đếm được; hay xuất hiện ở thông báo giao hàng Part 7.",
+          "example_vi": "Chúng tôi thuê người chuyển phát để giao kiện hàng.",
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 4,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:55:11.742615+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/737715e0-6f21-4ce6-b3d0-d43fa9b9088f-wm.jpg?v=1789798099895",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/courier-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/courier-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "courier service",
+          "meaning": "dịch vụ chuyển phát",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/737715e0-6f21-4ce6-b3d0-d43fa9b9088f-0-wm.jpg?v=1789800910656"
+        },
+        {
+          "phrase": "hire a courier",
+          "meaning": "thuê người chuyển phát",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/737715e0-6f21-4ce6-b3d0-d43fa9b9088f-1-wm.jpg?v=1789800911590"
+        },
+        {
+          "phrase": "send by courier",
+          "meaning": "gửi qua chuyển phát nhanh"
+        }
+      ],
+      "synonyms": [
+        "messenger (người đưa tin)",
+        "delivery person (người giao hàng)",
+        "carrier (đơn vị vận chuyển)"
+      ]
+    },
+    {
+      "id": "7c634f53-5f6a-42ae-a405-8ddaa35f5970",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "complication",
+      "ipa": "UK: /ˌkɒm.plɪˈkeɪ.ʃən/ | US: /ˌkɑːm.pləˈkeɪ.ʃən/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "She will have to spend two more days in the hospital due to complications during the surgery.",
+          "meaning": "rắc rối phát sinh, tình huống phức tạp, biến chứng",
+          "toeic_tip": "Thường dùng số nhiều complications; sau due to là danh từ, không phải mệnh đề.",
+          "example_vi": "Cô ấy phải nằm viện thêm hai ngày vì ca mổ có biến chứng.",
+          "word_family": [
+            "complicate (v) làm phức tạp thêm",
+            "complicated (adj) phức tạp"
+          ],
+          "part_of_speech": "n"
+        }
+      ],
+      "order_index": 3,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:58:51.231147+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/7c634f53-5f6a-42ae-a405-8ddaa35f5970-wm.jpg?v=1789798324190",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complication-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/complication-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "cause complications",
+          "meaning": "gây ra rắc rối",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7c634f53-5f6a-42ae-a405-8ddaa35f5970-0-wm.jpg?v=1789801128836"
+        },
+        {
+          "phrase": "avoid complications",
+          "meaning": "tránh phát sinh phức tạp",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/7c634f53-5f6a-42ae-a405-8ddaa35f5970-1-wm.jpg?v=1789801131094"
+        },
+        {
+          "phrase": "complications arise",
+          "meaning": "rắc rối nảy sinh"
+        }
+      ],
+      "synonyms": [
+        "difficulty (khó khăn)",
+        "problem (vấn đề)",
+        "obstacle (trở ngại)"
+      ]
+    },
+    {
+      "id": "326ed61b-49a6-48ce-b6e2-a41abcf7997d",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "register",
+      "ipa": "UK: /ˈredʒ.ɪ.stər/ | US: /ˈredʒ.ɪ.stɚ/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "You can register this mail for an additional $2.20.",
+          "meaning": "ghi nhận, đăng ký, gửi bảo đảm; sổ ghi chép",
+          "toeic_tip": "register for a course, nhưng register with an agency; chú ý giới từ ở Part 5.",
+          "example_vi": "Thêm 2,20 đô là bạn gửi được thư bảo đảm.",
+          "word_family": [
+            "registration (n) việc đăng ký, sự ghi danh",
+            "registered (adj) đã đăng ký"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 11,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:23:47.937308+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/326ed61b-49a6-48ce-b6e2-a41abcf7997d-wm.jpg?v=1789798587044",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/register-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/register-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "register for a course",
+          "meaning": "đăng ký một khóa học",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/326ed61b-49a6-48ce-b6e2-a41abcf7997d-0-wm.jpg?v=1789799027335"
+        },
+        {
+          "phrase": "registered mail",
+          "meaning": "thư bảo đảm",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/326ed61b-49a6-48ce-b6e2-a41abcf7997d-1-wm.jpg?v=1789799027796"
+        },
+        {
+          "phrase": "sign the register",
+          "meaning": "ký vào sổ"
+        }
+      ],
+      "synonyms": [
+        "enroll (ghi danh)",
+        "sign up (đăng ký)",
+        "record (ghi lại)"
+      ]
+    },
+    {
+      "id": "005dcae1-e0bd-4c53-a7ee-01aabf452eb8",
+      "part_id": "9a3e8811-a37d-48d1-a3e7-e4ddf651f0bd",
+      "word": "proof",
+      "ipa": "/pruːf/",
+      "audio_url": null,
+      "meanings": [
+        {
+          "example": "This letter was not proofed very carefully; it is full of typing mistakes.",
+          "meaning": "soát lỗi bản in; bằng chứng",
+          "toeic_tip": "Nghĩa danh từ bằng chứng là không đếm được: proof of purchase.",
+          "example_vi": "Lá thư này soát lỗi ẩu quá, đầy lỗi đánh máy.",
+          "word_family": [
+            "proofread (v) đọc soát lỗi",
+            "proofreader (n) người soát lỗi bản in"
+          ],
+          "part_of_speech": "v/n"
+        }
+      ],
+      "order_index": 10,
+      "difficulty_level": 1,
+      "created_at": "2026-09-18T08:51:05.226244+00:00",
+      "updated_at": "2026-09-19T06:20:37.389185+00:00",
+      "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/005dcae1-e0bd-4c53-a7ee-01aabf452eb8-wm.jpg?v=1789798409813",
+      "audio_us": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/proof-us-v2.mp3",
+      "audio_uk": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/pronunciation/words/proof-uk-v2.mp3",
+      "phrases": [
+        {
+          "phrase": "proof of purchase",
+          "meaning": "bằng chứng mua hàng",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/005dcae1-e0bd-4c53-a7ee-01aabf452eb8-0-wm.jpg?v=1789798837222"
+        },
+        {
+          "phrase": "proof of identity",
+          "meaning": "giấy tờ tùy thân",
+          "image_url": "https://odlnhfaygiotcyehuysw.supabase.co/storage/v1/object/public/vocabulary-images/phrases/005dcae1-e0bd-4c53-a7ee-01aabf452eb8-1-wm.jpg?v=1789798835004"
+        },
+        {
+          "phrase": "proof a document",
+          "meaning": "soát lỗi một văn bản"
+        }
+      ],
+      "synonyms": [
+        "proofread (đọc soát lỗi)",
+        "check (kiểm tra)",
+        "evidence (bằng chứng)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "subtopic": {
+    "id": "51d86a44-cc8c-48ba-a424-896d43f7ce24",
+    "topic_id": "e17d4d8f-0799-4778-91ac-00bfb1044280",
+    "title_en": "Giới từ nhượng bộ",
+    "title_vi": "Giới từ nhượng bộ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 39,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-gioi-tu-nhuong-bo"
+  },
+  "lessons": [
+    {
+      "id": "0963a5cf-eb52-4db4-888f-3d19527b9279",
+      "subtopic_id": "51d86a44-cc8c-48ba-a424-896d43f7ce24",
+      "title_en": "Giới từ nhượng bộ",
+      "title_vi": "Giới từ nhượng bộ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "D",
+          "source": "ETS 2026 · Test 1 · Câu 121",
+          "options": {
+            "A": "even though",
+            "B": "however",
+            "C": "until",
+            "D": "despite"
+          },
+          "question": "Ennis Photography purchased all new lighting equipment ------- the high cost.",
+          "translation": "Ennis Photography đã mua toàn bộ thiết bị chiếu sáng mới dù chi phí cao."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án gồm liên từ “even though”, trạng từ “however” và hai giới từ “until”, “despite”. Chỗ trống đứng sau mệnh đề chính, trước cụm danh từ “the high cost”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ennis Photography",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "purchased",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "all new lighting equipment",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "N",
+                    "text": "the high cost.",
+                    "label": "cụm danh từ"
+                  }
+                ],
+                "caption": "Câu đã đủ chủ ngữ, động từ, tân ngữ; chỗ trống nối cụm danh từ “the high cost” vào cuối câu."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Trước cụm danh từ dùng giới từ hay liên từ.",
+                  "Chi phí cao quan hệ thế nào với việc mua thiết bị.",
+                  "Các giới từ nhượng bộ và nghĩa của chúng."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Giới từ nhượng bộ nối vào câu một điều **trái với mong đợi**: có điều đó mà việc ở vế chính vẫn xảy ra. Sau giới từ là cụm danh từ, không phải mệnh đề S + V.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Giới từ",
+                    "formula": "despite / in spite of / notwithstanding + cụm danh từ"
+                  },
+                  {
+                    "label": "Bất kể",
+                    "formula": "regardless of + cụm danh từ"
+                  },
+                  {
+                    "label": "Liên từ",
+                    "formula": "although / even though / though + S + V"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "despite, in spite of",
+                    "mặc dù, bất chấp",
+                    "*Despite the heavy rain, the event drew many visitors.* — Dù trời mưa to, sự kiện vẫn thu hút nhiều khách."
+                  ],
+                  [
+                    "notwithstanding",
+                    "mặc dù (trang trọng)",
+                    "*Notwithstanding several delays, the shipment arrived on time.* — Dù vài lần chậm trễ, lô hàng vẫn đến đúng hạn."
+                  ],
+                  [
+                    "regardless of",
+                    "bất kể, không phụ thuộc vào",
+                    "*Shipping is free regardless of the order size.* — Giao hàng miễn phí bất kể đơn hàng lớn hay nhỏ."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Giới từ",
+                  "Nghĩa",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "“regardless of” dùng khi vế chính **không thay đổi** theo cụm danh từ đó (quy mô đơn hàng, phòng ban, hình thức thanh toán, tuổi thiết bị).",
+                  "Cụm danh từ có thể kèm mệnh đề quan hệ: *regardless of the department they work in*; “they work in” bổ nghĩa cho “the department”, cả cụm vẫn là cụm danh từ."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng trước cụm danh từ, nêu điều trái mong đợi hoặc điều không ảnh hưởng đến vế chính.",
+                    "form": "despite / in spite of / notwithstanding / regardless of + cụm danh từ",
+                    "example": "*despite the high cost*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Cùng nghĩa “mặc dù, dù cho” nhưng phải đi với mệnh đề S + V, không đứng trước cụm danh từ.",
+                    "form": "Liên từ nhượng bộ (although, even though, though, even if)",
+                    "example": "*although the cost was high*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Phải đi với mệnh đề S + V; “because” còn sai nghĩa vì chỉ lý do.",
+                    "form": "Liên từ khác (while, whereas, because)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nối ý giữa hai câu, không đứng trước cụm danh từ để nối nó vào câu.",
+                    "form": "Trạng từ nối (however, nevertheless, otherwise)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Đứng được trước cụm danh từ nhưng chỉ đi với mốc thời gian; “the high cost” không phải mốc thời gian.",
+                    "form": "Giới từ thời gian “until”",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "___ + cụm danh từ",
+                    "example": "*___ its small size, the Riverton branch recorded the highest sales figures*"
+                  },
+                  {
+                    "signal": "___ + cụm danh từ kèm mệnh đề quan hệ",
+                    "example": "*___ the department they work in*; *___ the payment method the customer originally chose*"
+                  },
+                  {
+                    "signal": "cụm danh từ trái với vế chính",
+                    "example": "*___ the heavy rain, the outdoor product demonstration attracted more than two hundred visitors*"
+                  },
+                  {
+                    "signal": "vế chính không đổi theo cụm danh từ",
+                    "example": "*every package… is shipped free of charge ___ the size of the order*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Trộn giới từ, liên từ, trạng từ nối thì đây là câu giới từ – liên từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem sau chỗ trống là cụm danh từ hay mệnh đề S + V; xem cụm đó trái với vế chính hay không ảnh hưởng đến vế chính.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Trước cụm danh từ chọn despite, in spite of, notwithstanding (trái mong đợi) hoặc regardless of (bất kể); loại liên từ, trạng từ nối và từ sai nghĩa.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ennis Photography",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "purchased",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "all new lighting equipment",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "PREP",
+                    "text": "despite",
+                    "label": "giới từ nhượng bộ"
+                  },
+                  {
+                    "role": "N",
+                    "text": "the high cost.",
+                    "label": "cụm danh từ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “despite the high cost” nêu điều trái mong đợi với việc mua thiết bị."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Đáp án gồm liên từ “even though”, trạng từ “however”, giới từ “until”, “despite” nên đây là câu giới từ – liên từ.",
+                  "Bước 2: Câu đã đủ “Ennis Photography purchased all new lighting equipment”; chỗ trống đứng cuối câu; dấu hiệu “___ + cụm danh từ”: “------- the high cost”.",
+                  "Bước 3: Cần giới từ + cụm danh từ; chi phí cao mà vẫn mua là cụm danh từ trái với vế chính, vì vậy chọn “despite” (dù).",
+                  "“even though” (A) là liên từ nhượng bộ, cần mệnh đề S + V, mà “the high cost” chỉ là cụm danh từ, nên loại.",
+                  "“however” (B) là trạng từ nối (tuy nhiên), không đứng trước cụm danh từ để nối nó vào câu, nên loại.",
+                  "“until” (C) là giới từ chỉ thời gian (cho đến), đúng vị trí nhưng “the high cost” không phải mốc thời gian, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": []
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Trước cụm danh từ: despite, in spite of, notwithstanding; trước S + V: although, even though.",
+                  "Vế chính không đổi theo cụm danh từ thì dùng regardless of."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

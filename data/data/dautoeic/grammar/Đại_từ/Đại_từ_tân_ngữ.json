@@ -1,0 +1,432 @@
+{
+  "subtopic": {
+    "id": "e584e4e9-2740-41ac-a515-4ca4b7e10f57",
+    "topic_id": "319e0740-9137-4403-97c0-40287a3e1d90",
+    "title_en": "Đại từ tân ngữ",
+    "title_vi": "Đại từ tân ngữ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 97,
+    "created_at": "2026-09-22T15:26:45.048185+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-dai-tu-tan-ngu"
+  },
+  "lessons": [
+    {
+      "id": "0c877c52-1ab5-43ad-acc4-184337912228",
+      "subtopic_id": "e584e4e9-2740-41ac-a515-4ca4b7e10f57",
+      "title_en": "Đại từ tân ngữ",
+      "title_vi": "Đại từ tân ngữ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2024 · Test 4 · Câu 121",
+          "options": {
+            "A": "theirs",
+            "B": "they",
+            "C": "them",
+            "D": "themselves"
+          },
+          "question": "Ms. Cartwright told her team members that she wanted ------- to streamline the company's assembly process.",
+          "translation": "Bà Cartwright nói với các thành viên trong nhóm rằng bà muốn họ tinh giản quy trình lắp ráp của công ty."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là bốn dạng đại từ của ngôi “they”: theirs, they, them, themselves. Chỗ trống đứng trong mệnh đề sau “that”, giữa động từ “wanted” và “to streamline”.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ms. Cartwright",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "told",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "her team members",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "she",
+                    "label": "chủ ngữ (mệnh đề that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "wanted",
+                    "label": "động từ (mệnh đề that)"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to streamline the company's assembly process.",
+                    "label": "to V"
+                  }
+                ],
+                "caption": "Mệnh đề sau “that” có chủ ngữ “she” và động từ “wanted”; chỗ trống đứng ngay sau “wanted”, trước to V."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Sau động từ “want” và trước to V cần loại đại từ nào.",
+                  "Mỗi loại đại từ (chủ ngữ, tân ngữ, sở hữu, phản thân) đứng ở vị trí nào.",
+                  "Khi nào dùng đại từ phản thân thay cho đại từ tân ngữ."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "**Đại từ tân ngữ** (me, you, him, her, it, us, them) thay cho người hoặc vật **chịu tác động** của hành động. Nó đứng sau động từ hoặc sau giới từ, không đứng trước động từ làm chủ ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "rows": [
+                  [
+                    "I",
+                    "me",
+                    "my",
+                    "mine",
+                    "myself"
+                  ],
+                  [
+                    "you",
+                    "you",
+                    "your",
+                    "yours",
+                    "yourself / yourselves"
+                  ],
+                  [
+                    "he",
+                    "him",
+                    "his",
+                    "his",
+                    "himself"
+                  ],
+                  [
+                    "she",
+                    "her",
+                    "her",
+                    "hers",
+                    "herself"
+                  ],
+                  [
+                    "it",
+                    "it",
+                    "its",
+                    "(không dùng)",
+                    "itself"
+                  ],
+                  [
+                    "we",
+                    "us",
+                    "our",
+                    "ours",
+                    "ourselves"
+                  ],
+                  [
+                    "they",
+                    "them",
+                    "their",
+                    "theirs",
+                    "themselves"
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Chủ ngữ",
+                  "Tân ngữ",
+                  "Tính từ sở hữu",
+                  "Đại từ sở hữu",
+                  "Đại từ phản thân"
+                ]
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "label": "Sau động từ",
+                    "formula": "V + đại từ tân ngữ"
+                  },
+                  {
+                    "label": "Sau giới từ",
+                    "formula": "giới từ + đại từ tân ngữ"
+                  },
+                  {
+                    "label": "ask, invite, remind, want",
+                    "formula": "V + đại từ tân ngữ + to V"
+                  },
+                  {
+                    "label": "send, give",
+                    "formula": "V + đại từ tân ngữ + N (vật)"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "sau động từ",
+                    "*Please notify us when the order ships.* — Vui lòng báo cho chúng tôi khi đơn hàng được gửi đi."
+                  ],
+                  [
+                    "sau giới từ",
+                    "*The assistant booked a meeting room for them.* — Trợ lý đã đặt phòng họp cho họ."
+                  ],
+                  [
+                    "động từ + tân ngữ + to V",
+                    "*The manager asked him to call the client.* — Quản lý yêu cầu anh ấy gọi cho khách hàng."
+                  ],
+                  [
+                    "động từ + tân ngữ (người nhận) + vật",
+                    "*The supplier sent us a new price list.* — Nhà cung cấp đã gửi cho chúng tôi bảng giá mới."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Cách dùng",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "text": "Đại từ phản thân chỉ làm tân ngữ khi tân ngữ **chính là chủ ngữ**: *She introduced herself to the clients.* — Cô ấy tự giới thiệu mình với khách hàng. Tân ngữ là người khác chủ ngữ thì dùng đại từ tân ngữ.",
+                "type": "paragraph"
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng sau động từ hoặc giới từ, kể cả giữa động từ và to V hay giữa động từ và tân ngữ thứ hai.",
+                    "form": "Đại từ tân ngữ (him, her, them, us, it)",
+                    "example": "*asked her to revise*; *sent us a revised invoice*",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Chỉ làm chủ ngữ, đứng trước động từ. Không đứng sau động từ hay giới từ.",
+                    "form": "Đại từ chủ ngữ (he, she, they, we)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Luôn đứng trước một danh từ (có thể có tính từ xen giữa), không đứng trước mạo từ. Sau chỗ trống là to V, giới từ, liên từ hoặc mạo từ “a”.",
+                    "form": "Tính từ sở hữu (his, their, our, its)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Nghĩa “của riêng cô ấy / anh ấy”, cần danh từ theo sau hoặc danh từ đã nhắc trước. Câu không có danh từ nào như vậy.",
+                    "form": "her own, his own",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Thay cho “sở hữu + danh từ” đã nhắc trước. Câu không nhắc vật nào của người đó để thay.",
+                    "form": "Đại từ sở hữu (hers, ours, theirs)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Chỉ làm tân ngữ khi tân ngữ chính là chủ ngữ. Trong bài tập, chủ ngữ là người hoặc vật khác.",
+                    "form": "Đại từ phản thân (himself, herself, themselves, ourselves, itself)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Là chủ ngữ + động từ, không làm tân ngữ; câu đã có động từ “read” mà không có liên từ nối thêm mệnh đề.",
+                    "form": "it is",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "động từ + ___",
+                    "example": "*Please notify ___ once …*; *thanked ___ for preparing*; *promote ___ to a senior position*; *read ___ before Monday*"
+                  },
+                  {
+                    "signal": "giới từ + ___",
+                    "example": "*meet with ___ in the lobby*; *give the documents to ___*; *prepared the documents for ___*"
+                  },
+                  {
+                    "signal": "động từ + ___ + to V",
+                    "example": "*wanted ___ to streamline*; *asked ___ to revise*; *invited ___ to attend*; *reminded ___ to finish*"
+                  },
+                  {
+                    "signal": "động từ + ___ + tân ngữ thứ hai",
+                    "example": "*sent ___ a revised invoice*"
+                  },
+                  {
+                    "signal": "chủ ngữ khác người ở chỗ trống",
+                    "example": "*The committee asked ___*; *Ms. Okafor thanked ___*; *she wanted ___* (người được muốn là các thành viên nhóm)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Bốn đáp án là bốn dạng đại từ (chủ ngữ, tân ngữ, sở hữu, phản thân) thì đây là câu đại từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Xem ngay trước chỗ trống là động từ hay giới từ, ngay sau là gì (to V, danh từ, giới từ, liên từ, hết câu). Rồi xem chủ ngữ của câu có cùng người với chỗ trống không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau động từ hoặc giới từ, người hay vật ở chỗ trống khác chủ ngữ thì chọn đại từ tân ngữ. Loại đại từ chủ ngữ; loại tính từ sở hữu khi sau không có danh từ; loại đại từ sở hữu khi không có vật nào được thay; loại đại từ phản thân khi tân ngữ không phải chủ ngữ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "S",
+                    "text": "Ms. Cartwright",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "told",
+                    "label": "động từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "her team members",
+                    "label": "tân ngữ"
+                  },
+                  {
+                    "role": "CONJ",
+                    "text": "that",
+                    "label": "liên từ"
+                  },
+                  {
+                    "role": "S",
+                    "text": "she",
+                    "label": "chủ ngữ (mệnh đề that)"
+                  },
+                  {
+                    "role": "V",
+                    "text": "wanted",
+                    "label": "động từ (mệnh đề that)"
+                  },
+                  {
+                    "role": "O",
+                    "text": "them",
+                    "label": "tân ngữ của wanted"
+                  },
+                  {
+                    "role": "X",
+                    "text": "to streamline the company's assembly process.",
+                    "label": "to V"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “them” là tân ngữ của “wanted”, chỉ “her team members”; “to streamline …” nói điều bà muốn họ làm."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các đại từ của ngôi “they” (theirs, they, them, themselves) nên đây là câu đại từ.",
+                  "Bước 2: Chỗ trống đứng giữa “wanted” và “to streamline”; dấu hiệu “động từ + ___ + to V”: “wanted ------- to streamline”; chủ ngữ “she” khác người ở chỗ trống.",
+                  "Bước 3: Cấu trúc want + tân ngữ + to V, người được muốn làm là các thành viên nhóm, vì vậy chọn “them” (họ).",
+                  "“theirs” (A) là đại từ sở hữu, câu không nhắc vật nào của họ để thay, nên loại.",
+                  "“they” (B) là đại từ chủ ngữ, không đứng sau động từ “wanted” làm tân ngữ, nên loại.",
+                  "“themselves” (D) là đại từ phản thân số nhiều, không trùng với chủ ngữ “she” của “wanted”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "“her” vừa là đại từ tân ngữ vừa là tính từ sở hữu: sau có danh từ thì là sở hữu (*her report*), không có danh từ thì là tân ngữ (*asked her to revise*).",
+                  "Câu mệnh lệnh “Please + V …” có chủ ngữ ngầm là “you”, nên nếu tân ngữ là chính người nghe thì mới dùng “yourself”."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau động từ hoặc giới từ, cần người/vật chịu hành động: chọn đại từ tân ngữ.",
+                  "Tân ngữ trùng với chủ ngữ mới dùng đại từ phản thân.",
+                  "Tính từ sở hữu luôn cần danh từ theo sau."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}

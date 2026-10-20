@@ -1,0 +1,346 @@
+{
+  "subtopic": {
+    "id": "28952374-0204-4820-9b44-acdaab2415d8",
+    "topic_id": "e5d5fd26-6e78-4944-908a-e0681368c595",
+    "title_en": "V-ing sau giới từ",
+    "title_vi": "V-ing sau giới từ",
+    "description_en": null,
+    "description_vi": null,
+    "order_index": 37,
+    "created_at": "2026-09-23T17:54:12.710936+00:00",
+    "updated_at": "2026-09-23T20:01:52.67818+00:00",
+    "is_hidden": true,
+    "level": 1,
+    "access_level": "free",
+    "slug": "np-danh-dong-tu-v-ing-sau-gioi-tu"
+  },
+  "lessons": [
+    {
+      "id": "541a0065-8e3b-49cc-b342-f2f4ae98f2d8",
+      "subtopic_id": "28952374-0204-4820-9b44-acdaab2415d8",
+      "title_en": "V-ing sau giới từ",
+      "title_vi": "V-ing sau giới từ",
+      "video_url": null,
+      "theory_content_en": null,
+      "theory_content_vi": null,
+      "order_index": 0,
+      "created_at": "2026-09-23T17:54:23.132726+00:00",
+      "updated_at": "2026-09-23T18:25:23.428051+00:00",
+      "practice_video_url": null,
+      "content_type": "grammar_theory_v1_hidden",
+      "lesson_content_json": {
+        "sample": {
+          "answer": "C",
+          "source": "ETS 2026 · Test 8 · Câu 118",
+          "options": {
+            "A": "be reviewing",
+            "B": "reviewed",
+            "C": "reviewing",
+            "D": "reviews"
+          },
+          "question": "After extensively ------- our hiring policies, the consultant recommended a simpler process.",
+          "translation": "Sau khi xem xét kỹ lưỡng các chính sách tuyển dụng của chúng tôi, chuyên gia tư vấn đã đề xuất một quy trình đơn giản hơn."
+        },
+        "version": 1,
+        "sections": [
+          {
+            "id": "focus",
+            "title": "Câu này hỏi gì",
+            "blocks": [
+              {
+                "text": "Bốn đáp án là các dạng của động từ “review”: be reviewing, reviewed, reviewing, reviews.",
+                "type": "paragraph"
+              },
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "After",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "extensively",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "BLANK",
+                    "text": "-------",
+                    "label": "chỗ trống"
+                  },
+                  {
+                    "role": "O",
+                    "text": "our hiring policies,",
+                    "label": "tân ngữ của chỗ trống"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the consultant",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "recommended",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a simpler process.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Chỗ trống đứng sau “After” và trạng từ “extensively”, trước “our hiring policies”; cụm đầu câu này chưa có chủ ngữ riêng."
+              },
+              {
+                "text": "Muốn chọn đúng, cần biết:",
+                "type": "paragraph"
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "sau giới từ, động từ phải ở dạng nào",
+                  "trạng từ đứng giữa giới từ và động từ có làm đổi dạng động từ không",
+                  "khi nào “after” là giới từ, khi nào là liên từ"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "knowledge",
+            "title": "Kiến thức cần nắm",
+            "blocks": [
+              {
+                "text": "Sau giới từ, động từ ở dạng **V-ing** (danh động từ). V-ing vẫn nhận tân ngữ, và có thể có trạng từ đứng trước nó.",
+                "type": "paragraph"
+              },
+              {
+                "type": "formula",
+                "items": [
+                  {
+                    "formula": "giới từ + V-ing + tân ngữ"
+                  },
+                  {
+                    "formula": "giới từ + trạng từ + V-ing + tân ngữ"
+                  }
+                ]
+              },
+              {
+                "rows": [
+                  [
+                    "giới từ đứng riêng",
+                    "after, before, by (bằng cách), despite, for, instead of, upon, without",
+                    "*Please check the file before sending it.* — Vui lòng kiểm tra tệp trước khi gửi."
+                  ],
+                  [
+                    "tính từ + giới từ",
+                    "interested in, responsible for, capable of",
+                    "*Mr. Park is responsible for training new staff.* — Ông Park chịu trách nhiệm đào tạo nhân viên mới."
+                  ],
+                  [
+                    "cụm có “to” là giới từ",
+                    "be committed to, in addition to, be used to, prior to, look forward to",
+                    "*We look forward to meeting you on Monday.* — Chúng tôi mong được gặp anh vào thứ Hai."
+                  ],
+                  [
+                    "động từ + tân ngữ + giới từ",
+                    "thank somebody for",
+                    "*The manager thanked us for staying late.* — Quản lý cảm ơn chúng tôi vì đã ở lại muộn."
+                  ]
+                ],
+                "type": "table",
+                "headers": [
+                  "Nhóm",
+                  "Trong bài tập",
+                  "Ví dụ"
+                ]
+              },
+              {
+                "type": "bullets",
+                "items": [
+                  "Nhận ra “to” là giới từ: thay chỗ trống bằng một danh từ mà câu vẫn đúng. *look forward to the meeting*, *in addition to free delivery* đều đúng, nên “to” ở đây là giới từ và sau nó dùng V-ing.",
+                  "After, before vừa là giới từ vừa là liên từ. Sau chúng có chủ ngữ + động từ chia thì thì đó là mệnh đề: *After she reviewed the figures, …*; không có chủ ngữ riêng thì dùng V-ing.",
+                  "Despite là giới từ, không đi với mệnh đề; muốn dùng mệnh đề thì dùng although."
+                ]
+              },
+              {
+                "text": "**Phân biệt với các đáp án sai trong bài tập**",
+                "type": "paragraph"
+              },
+              {
+                "type": "compare",
+                "items": [
+                  {
+                    "why": "Đứng sau giới từ, nhận tân ngữ phía sau.",
+                    "form": "V-ing (reviewing, joining, hearing)",
+                    "verdict": "right"
+                  },
+                  {
+                    "why": "Không đứng sau giới từ. Với cụm có “to” là giới từ, thêm to V sẽ thành hai chữ “to” liền nhau.",
+                    "form": "to V (to join, to reduce, to hear)",
+                    "example": "sai: *committed to to reduce*",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Không đứng sau giới từ, kể cả sau “to” của look forward to, be committed to, prior to.",
+                    "form": "V nguyên mẫu (review, join, reduce)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "V3 không đứng một mình sau giới từ; quá khứ đơn cần chủ ngữ riêng, lúc đó after, before là liên từ chứ không phải giới từ.",
+                    "form": "V3 hoặc quá khứ đơn (reviewed, raised, signed)",
+                    "verdict": "wrong"
+                  },
+                  {
+                    "why": "Sau giới từ không đặt động từ chia thì; “be” nguyên mẫu cũng không đứng sau giới từ.",
+                    "form": "Dạng chia thì hoặc có “be” nguyên mẫu (reviews, be reviewing)",
+                    "verdict": "wrong"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "signals",
+            "title": "Dấu hiệu nhận biết",
+            "blocks": [
+              {
+                "type": "signals",
+                "items": [
+                  {
+                    "signal": "giới từ + ___",
+                    "example": "*Despite ___ its prices*; *by ___ the engines*; *without ___ anyone*; *instead of ___ someone*; *thanked the entire team for ___*"
+                  },
+                  {
+                    "signal": "tính từ + giới từ + ___",
+                    "example": "*interested in ___*; *responsible for ___*; *capable of ___*"
+                  },
+                  {
+                    "signal": "to là giới từ + ___",
+                    "example": "*committed to ___*; *In addition to ___*; *are used to ___*; *Prior to ___*; *look forward to ___*"
+                  },
+                  {
+                    "signal": "giới từ + trạng từ + ___",
+                    "example": "*After extensively ___ our hiring policies*"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "steps",
+            "title": "Cách làm 3 bước",
+            "blocks": [
+              {
+                "type": "steps",
+                "items": [
+                  {
+                    "text": "Là các dạng của một động từ (V-ing, to V, V3, V nguyên mẫu, có thể có một dạng chia thì) thì đây là câu dạng động từ.",
+                    "title": "Nhìn 4 đáp án"
+                  },
+                  {
+                    "text": "Nhìn từ đứng ngay trước chỗ trống (bỏ qua trạng từ): có phải giới từ không, kể cả “to” trong các cụm như look forward to; với after, before thì xem phía sau có chủ ngữ riêng không.",
+                    "title": "Phân tích câu"
+                  },
+                  {
+                    "text": "Sau giới từ chọn V-ing. Loại to V, V nguyên mẫu, V3, quá khứ đơn và dạng chia thì vì không đứng sau giới từ.",
+                    "title": "Chọn và loại"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "solution",
+            "title": "Giải câu mẫu",
+            "blocks": [
+              {
+                "type": "structure",
+                "parts": [
+                  {
+                    "role": "PREP",
+                    "text": "After",
+                    "label": "giới từ"
+                  },
+                  {
+                    "role": "X",
+                    "text": "extensively",
+                    "label": "trạng từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "reviewing",
+                    "label": "V-ing sau giới từ"
+                  },
+                  {
+                    "role": "O",
+                    "text": "our hiring policies,",
+                    "label": "tân ngữ của reviewing"
+                  },
+                  {
+                    "role": "S",
+                    "text": "the consultant",
+                    "label": "chủ ngữ"
+                  },
+                  {
+                    "role": "V",
+                    "text": "recommended",
+                    "label": "động từ chính"
+                  },
+                  {
+                    "role": "O",
+                    "text": "a simpler process.",
+                    "label": "tân ngữ"
+                  }
+                ],
+                "caption": "Câu mẫu đã điền đáp án: “reviewing” là V-ing sau giới từ “After”, nhận tân ngữ “our hiring policies”."
+              },
+              {
+                "type": "solution",
+                "lines": [
+                  "Bước 1: Bốn đáp án là các dạng của “review”, chỉ một dạng chia thì (reviews), nên đây là câu dạng động từ.",
+                  "Bước 2: Chỗ trống đứng sau “After extensively”, trước tân ngữ “our hiring policies”, không có chủ ngữ riêng; dấu hiệu “giới từ + trạng từ + ___”.",
+                  "Bước 3: Áp giới từ + trạng từ + V-ing + tân ngữ, vì vậy chọn “reviewing” (xem xét).",
+                  "“be reviewing” (A) có “be” nguyên mẫu, không đứng sau giới từ “After”, nên loại.",
+                  "“reviewed” (B) là quá khứ đơn hoặc V3, không đứng một mình sau giới từ “After”, nên loại.",
+                  "“reviews” (D) là V-s hoặc danh từ số nhiều, không có chủ ngữ riêng và không nhận tân ngữ “our hiring policies”, nên loại."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notes",
+            "title": "Lưu ý",
+            "blocks": [
+              {
+                "tone": "note",
+                "type": "callout",
+                "items": [
+                  "**be used to + V-ing** là “đã quen với”; **used to + V** là “đã từng” (thói quen trong quá khứ); **be used to + V** là “được dùng để”.",
+                  "by + V-ing chỉ cách làm, nghĩa là “bằng cách …”: *We saved time by using templates.* — Chúng tôi tiết kiệm thời gian bằng cách dùng mẫu có sẵn."
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remember",
+            "title": "Ghi nhớ",
+            "blocks": [
+              {
+                "tone": "remember",
+                "type": "callout",
+                "items": [
+                  "Sau giới từ, động từ ở dạng V-ing.",
+                  "“to” trong look forward to, be committed to, in addition to, prior to, be used to là giới từ.",
+                  "After, before không có chủ ngữ riêng theo sau thì dùng V-ing."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "html_content": null
+    }
+  ],
+  "questions": []
+}
