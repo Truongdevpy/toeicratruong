@@ -1074,7 +1074,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   };
 
   // Helper to group Part 3 & Part 4 questions belonging to the same audio conversation / talk
-  const getAudioGroup = (targetIndex: number) => {
+  const getAudioGroup = useCallback((targetIndex: number) => {
     const targetQ = questions[targetIndex];
     if (!targetQ) return [];
     if (targetQ.part !== 3 && targetQ.part !== 4) {
@@ -1104,7 +1104,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     }
 
     return [targetQ];
-  };
+  }, [questions]);
 
   const getPassageGroup = (targetIndex: number) => {
     const targetQ = questions[targetIndex];
@@ -1167,24 +1167,27 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const currentQ = questions[currentIndex] || null;
   const currentAudioGroup = useMemo(() => {
     return currentQ ? getAudioGroup(currentIndex) : [];
-  }, [currentQ, currentIndex]);
+  }, [currentQ, currentIndex, getAudioGroup]);
+
+  const currentQPart = currentQ?.part;
+  const currentQAudioUrl = currentQ?.audio_url;
+  const groupAudioUrl = currentAudioGroup[0]?.audio_url;
 
   // Active audio URL for exam mode
   const activeExamAudioUrl = useMemo(() => {
-    if (!currentQ) return null;
-    if (currentQ.part && currentQ.part > 4) return null;
+    if (currentQPart && currentQPart > 4) return null;
 
-    if (currentQ.audio_url && !isFullTapeUrl(currentQ.audio_url, overallAudio)) {
-      return currentQ.audio_url;
+    if (currentQAudioUrl && !isFullTapeUrl(currentQAudioUrl, overallAudio)) {
+      return currentQAudioUrl;
     }
-    if (currentAudioGroup && currentAudioGroup.length > 0 && currentAudioGroup[0]?.audio_url && !isFullTapeUrl(currentAudioGroup[0]?.audio_url, overallAudio)) {
-      return currentAudioGroup[0]?.audio_url;
+    if (groupAudioUrl && !isFullTapeUrl(groupAudioUrl, overallAudio)) {
+      return groupAudioUrl;
     }
-    if (overallAudio && (!currentQ.part || currentQ.part <= 4)) {
+    if (overallAudio && (!currentQPart || currentQPart <= 4)) {
       return overallAudio;
     }
     return null;
-  }, [currentQ, currentAudioGroup, overallAudio]);
+  }, [currentQAudioUrl, currentQPart, groupAudioUrl, overallAudio]);
 
   const lastPlayedAudioUrlRef = useRef<string | null>(null);
 
@@ -1197,14 +1200,16 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     setAutoAdvanceSecondsLeft(null);
 
     const audioEl = examAudioRef.current;
-    if (!audioEl || !activeExamAudioUrl) {
+    if (!audioEl) return;
+    audioEl.volume = isExamAudioMuted ? 0 : examAudioVolume;
+
+    if (!activeExamAudioUrl) {
       setIsExamAudioPlaying(false);
       return;
     }
 
     if (activeExamAudioUrl !== lastPlayedAudioUrlRef.current) {
       lastPlayedAudioUrlRef.current = activeExamAudioUrl;
-      audioEl.volume = isExamAudioMuted ? 0 : examAudioVolume;
       audioEl.src = activeExamAudioUrl;
       audioEl.load();
       const p = audioEl.play();

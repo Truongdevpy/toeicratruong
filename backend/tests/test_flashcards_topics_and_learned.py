@@ -84,3 +84,24 @@ def test_flashcards_add_and_remove():
     # Remove
     del_res = client.post("/api/practice/flashcards/remove", json={"word": add_word})
     assert del_res.status_code == 200
+
+
+def test_vocabulary_routing_not_shadowed():
+    # Verify review-due and learned are NOT shadowed by /{word_id}
+    res_due = client.get("/api/vocabulary/review-due")
+    assert res_due.status_code == 200
+    assert "cards" in res_due.json()
+    assert "due_count" in res_due.json()
+
+    res_learned = client.get("/api/vocabulary/learned")
+    assert res_learned.status_code == 200
+    assert "words" in res_learned.json()
+
+    # Valid word lookup works
+    res_word = client.get("/api/vocabulary/benchmark")
+    assert res_word.status_code == 200
+    assert res_word.json()["word"].lower() == "benchmark"
+
+    # Invalid word lookup returns 404
+    res_unknown = client.get("/api/vocabulary/nonexistentwordxyz1234567")
+    assert res_unknown.status_code == 404

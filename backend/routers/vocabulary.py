@@ -191,13 +191,6 @@ def list_vocabulary(
         "words": paged
     }
 
-@router.get("/{word_id}")
-def get_word_detail(word_id: str):
-    words = get_vocab_bank()
-    found = next((w for w in words if w["id"] == word_id or w["word"].lower() == word_id.lower()), None)
-    if not found:
-        raise HTTPException(status_code=404, detail="Không tìm thấy từ vựng")
-    return found
 
 TOPIC_KEYWORDS = {
     "office": ["office", "desk", "photocopy", "stationery", "meeting", "colleague", "department", "manager", "memo", "report", "filing", "supplies"],
@@ -401,3 +394,11 @@ def get_learned_vocabulary(
             for c in cards
         ]
     }
+
+@router.get("/{word_id}")
+def get_word_detail(word_id: str):
+    words = get_vocab_bank()
+    found = next((w for w in words if w["id"] == word_id or w["word"].lower() == word_id.lower()), None)
+    if not found:
+        raise HTTPException(status_code=404, detail="Không tìm thấy từ vựng")
+    return found

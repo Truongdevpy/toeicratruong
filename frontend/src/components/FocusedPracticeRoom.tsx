@@ -653,9 +653,10 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   const [dictResult, setDictResult] = useState<TranslateResult | null>(null);
   const [isDictLoading, setIsDictLoading] = useState<boolean>(false);
 
+  const currentQText = currentQ?.question_text;
   const questionKeywords = useMemo(() => {
-    if (!currentQ?.question_text) return [];
-    const qText = currentQ.question_text.replace(/^câu\s*(hỏi)?\s*\d+[:.]?\s*/i, '');
+    if (!currentQText) return [];
+    const qText = currentQText.replace(/^câu\s*(hỏi)?\s*\d+[:.]?\s*/i, '');
     const tokens = qText.match(/[a-zA-Z]{3,}/g) || [];
     const stopwords = new Set([
       'the', 'and', 'for', 'with', 'that', 'this', 'from', 'what', 'when',
@@ -671,7 +672,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
       if (words.length >= 6) break;
     }
     return words;
-  }, [currentQ?.question_text]);
+  }, [currentQText]);
 
   const [savedVocabs, setSavedVocabs] = useState<SavedVocabItem[]>(() => {
     try {

@@ -379,9 +379,18 @@ def leave_study_group(
 def get_posts(db: Session = Depends(get_db)):
     ensure_initial_posts(db)
     posts = db.query(models.CommunityPost).order_by(models.CommunityPost.created_at.desc()).all()
+    post_ids = [p.id for p in posts]
+    comments_by_post = {pid: [] for pid in post_ids}
+    if post_ids:
+        all_comments = db.query(models.PostComment).filter(
+            models.PostComment.post_id.in_(post_ids)
+        ).order_by(models.PostComment.created_at.asc()).all()
+        for c in all_comments:
+            if c.post_id in comments_by_post:
+                comments_by_post[c.post_id].append(c)
     result = []
     for p in posts:
-        comments = db.query(models.PostComment).filter(models.PostComment.post_id == p.id).all()
+        comments = comments_by_post.get(p.id, [])
         result.append({
             "id": p.id,
             "author_id": p.user_id,

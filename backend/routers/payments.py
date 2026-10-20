@@ -322,7 +322,7 @@ async def payment_webhook(request: Request, db: Session = Depends(get_db)):
 @router.post("/simulate-success")
 def simulate_payment_success(
     payload: Dict[str, Any],
-    user: models.User = Depends(get_current_user),
+    user: models.User = Depends(require_admin),
     db: Session = Depends(get_db)
 ):
     """

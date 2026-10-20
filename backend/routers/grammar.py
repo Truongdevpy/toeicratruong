@@ -11,6 +11,8 @@ WEB_READY_DIR = DATA_DIR / "web_ready"
 GRAMMAR_FILE = WEB_READY_DIR / "grammar_curriculum.json"
 
 _grammar_cache = None
+_formatted_topics_cache = None
+_topic_detail_cache = {}
 
 DEFAULT_GRAMMAR_META = {
     "Danh từ": {
@@ -205,6 +207,9 @@ def resolve_topic_questions(t):
 
 @router.get("")
 def list_grammar_topics():
+    global _formatted_topics_cache
+    if _formatted_topics_cache is not None:
+        return _formatted_topics_cache
     data = get_curriculum()
     topics = data.get("curriculum", [])
     
@@ -257,7 +262,7 @@ def list_grammar_topics():
             ]
         })
 
-    return {
+    _formatted_topics_cache = {
         "total": len(formatted),
         "total_topics": data.get("total_topics", len(formatted)),
         "total_lessons": data.get("total_lessons", sum(t.get("lessons_count", 0) for t in formatted)),
@@ -265,9 +270,13 @@ def list_grammar_topics():
         "groups": data.get("groups", ["Từ loại", "Động từ", "Ngữ pháp khác"]),
         "topics": formatted
     }
+    return _formatted_topics_cache
 
 @router.get("/{topic_id}")
 def get_topic_detail(topic_id: str):
+    global _topic_detail_cache
+    if topic_id in _topic_detail_cache:
+        return _topic_detail_cache[topic_id]
     data = get_curriculum()
     topics = data.get("curriculum", [])
     found = next((t for t in topics if t["id"] == topic_id or t.get("slug") == topic_id), None)
@@ -292,4 +301,5 @@ def get_topic_detail(topic_id: str):
     detail["tips"] = found.get("tips") or meta["tips"]
     detail["examples"] = found.get("examples") or meta["examples"]
     detail["practice_questions"] = all_qs
+    _topic_detail_cache[topic_id] = detail
     return detail

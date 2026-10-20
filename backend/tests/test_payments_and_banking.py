@@ -146,3 +146,25 @@ def test_admin_banking_config_and_stats():
     r_txs = client.get("/api/admin/banking/transactions", headers=admin_headers)
     assert r_txs.status_code == 200
     assert "transactions" in r_txs.json()
+
+
+def test_simulate_payment_success_rbac_restriction():
+    # Regular student cannot call simulate-success
+    r_student = client.post("/api/auth/demo", json={"role": "student"})
+    student_token = r_student.json()["access_token"]
+    student_headers = {"Authorization": f"Bearer {student_token}"}
+
+    r_unauth = client.post("/api/payments/simulate-success", json={"plan_id": "vip_1m"}, headers=student_headers)
+    assert r_unauth.status_code == 403, f"Expected 403 for student, got {r_unauth.status_code}"
+
+    # Admin CAN call simulate-success
+    r_admin = client.post("/api/auth/demo", json={"role": "admin"})
+    admin_token = r_admin.json()["access_token"]
+    admin_headers = {"Authorization": f"Bearer {admin_token}"}
+
+    r_order = client.post("/api/payments/create-order", json={"plan_id": "vip_1m"}, headers=student_headers)
+    order_id = r_order.json()["order"]["order_id"]
+
+    r_sim = client.post("/api/payments/simulate-success", json={"order_id": order_id}, headers=admin_headers)
+    assert r_sim.status_code == 200
+    assert r_sim.json()["status"] == "success"

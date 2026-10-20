@@ -59,9 +59,12 @@ def get_test_attempt_detail(
     if not attempt:
         raise HTTPException(status_code=404, detail="Không tìm thấy bài thi đã làm")
 
-    effective_uid = user.id if user else 1
-    if attempt.user_id and attempt.user_id != effective_uid:
-        raise HTTPException(status_code=403, detail="Bạn không có quyền xem bài làm này")
+    if user:
+        if attempt.user_id and attempt.user_id != user.id and user.role != "admin":
+            raise HTTPException(status_code=403, detail="Bạn không có quyền xem bài làm này")
+    else:
+        if attempt.user_id and attempt.user_id != 1:
+            raise HTTPException(status_code=403, detail="Bạn không có quyền xem bài làm này")
 
     try:
         review_answers = json.loads(attempt.review_json) if attempt.review_json else []
@@ -104,9 +107,12 @@ def delete_test_attempt(
     attempt = db.query(models.TestAttempt).filter(models.TestAttempt.id == attempt_id).first()
     if not attempt:
         raise HTTPException(status_code=404, detail="Không tìm thấy bài làm")
-    effective_uid = user.id if user else 1
-    if attempt.user_id and attempt.user_id != effective_uid:
-        raise HTTPException(status_code=403, detail="Không có quyền xóa bài làm này")
+    if user:
+        if attempt.user_id and attempt.user_id != user.id and user.role != "admin":
+            raise HTTPException(status_code=403, detail="Không có quyền xóa bài làm này")
+    else:
+        if attempt.user_id and attempt.user_id != 1:
+            raise HTTPException(status_code=403, detail="Không có quyền xóa bài làm này")
 
     db.delete(attempt)
     db.commit()
