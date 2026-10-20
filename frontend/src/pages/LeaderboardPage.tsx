@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Trophy,
   Flame,
@@ -44,7 +44,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({ onNavigate, on
 
   const myRankRef = useRef<HTMLTableRowElement>(null);
 
-  const fetchLeaderboard = async () => {
+  const fetchLeaderboard = useCallback(async () => {
     try {
       setLoading(true);
       const res = await api.getLeaderboard({
@@ -59,11 +59,11 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({ onNavigate, on
     } finally {
       setLoading(false);
     }
-  };
+  }, [activeCategory, activePeriod, activeLeague, searchQuery]);
 
   useEffect(() => {
     fetchLeaderboard();
-  }, [activeCategory, activePeriod, activeLeague, searchQuery]);
+  }, [fetchLeaderboard]);
 
   const openRulesModal = async () => {
     setIsRulesOpen(true);

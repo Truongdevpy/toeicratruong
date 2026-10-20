@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   Mic,
   MicOff,
@@ -175,7 +175,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
     };
   }, [activeShadowingLesson, activeTest, onFocusModeChange]);
 
-  const loadShadowingLessons = async () => {
+  const loadShadowingLessons = useCallback(async () => {
     try {
       setShadowingLoading(true);
       const res = await api.getShadowingLessons({
@@ -196,13 +196,13 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
     } finally {
       setShadowingLoading(false);
     }
-  };
+  }, [selectedCategory, selectedAccent, searchQuery, page]);
 
   useEffect(() => {
     if (activeMode === 'shadowing') {
       loadShadowingLessons();
     }
-  }, [activeMode, selectedCategory, selectedAccent, searchQuery, page]);
+  }, [activeMode, loadShadowingLessons]);
   const handleOpenShadowingLesson = async (lesson: ShadowingLessonSummary) => {
     try {
       setLoadingLessonDetail(true);

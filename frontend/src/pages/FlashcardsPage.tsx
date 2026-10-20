@@ -73,7 +73,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
     };
   }, [onFocusModeChange]);
 
-  const loadDeck = async (overrideFilter?: string, overrideTopic?: string) => {
+  const loadDeck = useCallback(async (overrideFilter?: string, overrideTopic?: string) => {
     setIsLoading(true);
     const fType = overrideFilter !== undefined ? overrideFilter : filterType;
     const tTopic = overrideTopic !== undefined ? overrideTopic : selectedTopic;
@@ -100,11 +100,11 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [filterType, selectedTopic]);
 
   useEffect(() => {
     loadDeck(filterType, selectedTopic);
-  }, [filterType, selectedTopic]);
+  }, [loadDeck, filterType, selectedTopic]);
 
   const currentCard = deck[currentIndex];
 

@@ -1,6 +1,6 @@
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
   Target,
   ArrowLeft,
@@ -159,7 +159,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
     }
   };
 
-  const loadVocab = async () => {
+  const loadVocab = useCallback(async () => {
     setIsLoading(true);
     try {
       const data = await api.getVocabulary({
@@ -176,7 +176,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [level, category, search, page]);
 
   useEffect(() => {
     loadSavedVocab();
@@ -187,7 +187,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
     if (activeTab === 'all') {
       loadVocab();
     }
-  }, [activeTab, level, category, page]);
+  }, [activeTab, loadVocab]);
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();

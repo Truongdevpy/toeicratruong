@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import {
   Crown,
   X,
@@ -45,7 +45,7 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
   const [friendActionLoading, setFriendActionLoading] = useState(false);
   const [friendSuccessMsg, setFriendSuccessMsg] = useState<string | null>(null);
 
-  const loadProfile = async (id: number) => {
+  const loadProfile = useCallback(async (id: number) => {
     try {
       setLoading(true);
       const res = await api.getPublicProfile(id, !isLeaderboardProfile);
@@ -55,27 +55,27 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
       setProfile({
         id,
         user_id: id,
-        full_name: `Học viên #${id}`,
+        full_name: `H?c vi?n #${id}`,
         avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
-        school_or_org: 'Cộng đồng TOEIC AI',
+        school_or_org: 'C?ng ??ng TOEIC AI',
         current_score: 680,
         target_score: 800,
         streak_days: 12,
         questions_count: 320,
         accuracy_pct: 78.5,
-        badge: 'Chiến Binh Chăm Chỉ',
+        badge: 'Chi?n Binh Ch?m Ch?',
         cheer_count: 24,
         rank: 14,
-        strengths: ['Listening Part 1 & 2', 'Reading Part 5 Ngữ pháp'],
+        strengths: ['Listening Part 1 & 2', 'Reading Part 5 Ng? ph?p'],
         weak_areas: ['Listening Part 3', 'Reading Part 7'],
         member_since: '08/2026'
       });
     } finally {
       setLoading(false);
     }
-  };
+  }, [isLeaderboardProfile]);
 
-  const checkFriendship = async (id: number) => {
+  const checkFriendship = useCallback(async (id: number) => {
     try {
       const res = await chatService.getFriendshipStatus(id);
       setFriendshipStatus(res.status);
@@ -83,7 +83,7 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
     } catch {
       setFriendshipStatus('none');
     }
-  };
+  }, []);
 
   useEffect(() => {
     if (isOpen && userId) {
@@ -96,7 +96,7 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
       setRequestId(undefined);
       setFriendSuccessMsg(null);
     }
-  }, [isOpen, userId]);
+  }, [isOpen, userId, loadProfile, checkFriendship]);
 
 
 

@@ -797,7 +797,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
 
 
 
-  const handleStartExam = async (
+  const handleStartExam = useCallback(async (
     testId: string,
     mode: 'full' | 'listening' | 'reading' | 'part' | 'parts' = 'full',
     targetPartOrParts?: number | number[],
@@ -900,7 +900,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     } finally {
       setLoading(false);
     }
-  };
+  }, [user, onOpenAuth, tests, onOpenRBAC, inProgressMap, updateInProgressRecord]);
 
 
   const _togglePlayAudio = () => {

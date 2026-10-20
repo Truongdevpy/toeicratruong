@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Play,
   Clock,
@@ -1558,12 +1558,12 @@ export const VideoLessonsPage: React.FC<VideoLessonsPageProps> = ({
     }
   });
   const [currentNote, setCurrentNote] = useState<string>('');
+  const prevVideoIdRef = useRef<string | null>(null);
 
-  useEffect(() => {
-    if (activeVideo) {
-      setCurrentNote(savedUserNotes[activeVideo.id] || '');
-    }
-  }, [activeVideo, savedUserNotes]);
+  if (activeVideo && activeVideo.id !== prevVideoIdRef.current) {
+    prevVideoIdRef.current = activeVideo.id;
+    setCurrentNote(savedUserNotes[activeVideo.id] || '');
+  }
 
   const handleSaveNote = () => {
     if (!activeVideo) return;
