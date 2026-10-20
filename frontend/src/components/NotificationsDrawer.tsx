@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Bell, CheckCheck, X, Sparkles, BookOpen, Clock, Award } from 'lucide-react';
 import { api } from '../services/api';
 import { NotificationItem } from '../types';
@@ -54,6 +54,29 @@ export const NotificationsDrawer: React.FC<NotificationsDrawerProps> = ({ isOpen
     }
   }, [isOpen]);
 
+  const drawerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (drawerRef.current && !drawerRef.current.contains(e.target as Node)) {
+        const target = e.target as HTMLElement;
+        if (!target.closest('button[title="Th?ng b?o h?c t?p"]')) {
+          onClose();
+        }
+      }
+    };
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
   const markAllRead = async () => {
     try {
       await api.markAllNotificationsRead();
@@ -77,7 +100,7 @@ export const NotificationsDrawer: React.FC<NotificationsDrawerProps> = ({ isOpen
   };
 
   return (
-    <div className="absolute right-0 top-14 w-80 sm:w-96 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+    <div ref={drawerRef} className="absolute right-0 top-14 w-80 sm:w-96 bg-white border border-slate-200 rounded-2xl shadow-xl z-50 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
       <div className="p-3.5 px-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/70">
         <div className="flex items-center gap-2">
           <Bell className="w-4 h-4 text-blue-600" />

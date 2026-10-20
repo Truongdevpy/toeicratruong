@@ -1,5 +1,5 @@
 import { formatDisplayTime } from '../utils/time';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Sparkles,
   Bot,
@@ -146,7 +146,7 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
     }
   };
 
-  const loadConversations = async () => {
+  const loadConversations = useCallback(async () => {
     try {
       const res = await api.getTutorConversations();
       if (res && Array.isArray(res.conversations)) {
@@ -155,7 +155,7 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
     } catch {
       // Fallback
     }
-  };
+  }, []);
 
   const initWelcomeMessage = () => {
     const safeList = normalizeWeakAreas(weakAreas);
@@ -190,7 +190,7 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
   }, [messages, loading, isOpen, activeTab]);
 
 
-  const handleSendMessage = async (textToSend?: string, actionType?: string) => {
+  const handleSendMessage = useCallback(async (textToSend?: string, actionType?: string) => {
     const text = textToSend || inputText;
     if (!text.trim() || loading) return;
 
@@ -261,7 +261,7 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
     } finally {
       setLoading(false);
     }
-  };
+  }, [inputText, loading, conversationId, loadConversations]);
 
   const handleSaveMemory = async () => {
     setMemorySaving(true);

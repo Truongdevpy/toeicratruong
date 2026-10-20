@@ -65,7 +65,7 @@ export const SelectionTranslator: React.FC = () => {
     }
   }, [isOpen]);
 
-  const fetchTranslate = async (textToTranslate: string, sentenceOverride?: string) => {
+  const fetchTranslate = useCallback(async (textToTranslate: string, sentenceOverride?: string) => {
     const text = textToTranslate.trim();
     if (!text) return;
 
@@ -93,7 +93,7 @@ export const SelectionTranslator: React.FC = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [sentenceContext]);
 
   useEffect(() => {
     const handleMouseUp = () => {
@@ -147,7 +147,7 @@ export const SelectionTranslator: React.FC = () => {
       document.removeEventListener('mousedown', handleClickOutside);
       window.removeEventListener('toeic:open-translator' as any, handleGlobalOpen);
     };
-  }, [handleSelectionChange]);
+  }, [handleSelectionChange, fetchTranslate]);
 
   const handleOpenTranslate = async (wordOverride?: string) => {
     const text = wordOverride || selectedText;

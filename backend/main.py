@@ -33,6 +33,16 @@ def run_db_migrations():
                 conn.commit()
         except Exception as err:
             print("DB migration check:", err)
+        # Ensure indexes exist for rapid lookups
+        try:
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_question_attempts_user_id ON question_attempts (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_test_attempts_user_id ON test_attempts (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_user_flashcards_user_id ON user_flashcards (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_notifications_user_id ON notifications (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_placement_attempts_user_id ON placement_attempts (user_id)"))
+            conn.commit()
+        except Exception as err:
+            print("DB index check:", err)
 
         # Ensure simulated community members exist for foreign key integrity
         try:

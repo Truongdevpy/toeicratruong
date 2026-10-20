@@ -1165,9 +1165,10 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   };
 
   const currentQ = questions[currentIndex] || null;
+  const hasQuestions = questions.length > 0;
   const currentAudioGroup = useMemo(() => {
-    return currentQ ? getAudioGroup(currentIndex) : [];
-  }, [currentQ, currentIndex, getAudioGroup]);
+    return hasQuestions ? getAudioGroup(currentIndex) : [];
+  }, [hasQuestions, currentIndex, getAudioGroup]);
 
   const currentQPart = currentQ?.part;
   const currentQAudioUrl = currentQ?.audio_url;

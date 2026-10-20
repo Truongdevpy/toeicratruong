@@ -1,5 +1,5 @@
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Bot,
   Send,
@@ -48,52 +48,51 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
   const [selectedQuizAnswers, setSelectedQuizAnswers] = useState<Record<string, string>>({});
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const loadConversations = async () => {
+  const loadConversations = useCallback(async () => {
     try {
       const res = await api.getTutorConversations();
       if (res && res.conversations) {
         setConversations(res.conversations);
       } else {
         setConversations([
-          { id: 1, title: 'Hỏi đáp thì hiện tại hoàn thành', date: 'Hôm nay' },
-          { id: 2, title: 'Bẫy đề thi Part 7 Double Passages', date: 'Hôm qua' },
-          { id: 3, title: 'Chiến thuật nghe số & thời gian Part 2', date: '3 ngày trước' },
+          { id: 1, title: 'H?i ??p th? hi?n t?i ho?n th?nh', date: 'H?m nay' },
+          { id: 2, title: 'B?y ?? thi Part 7 Double Passages', date: 'H?m qua' },
+          { id: 3, title: 'Chi?n thu?t nghe s? & th?i gian Part 2', date: '3 ng?y tr??c' },
         ]);
       }
     } catch {
       // Fallback
     }
-  };
+  }, []);
 
-  const initGreeting = () => {
+  const initGreeting = useCallback(() => {
     const target = profile?.target_score || 650;
     const current = profile?.current_score || 450;
     const safeList = Array.isArray(profile?.weak_areas) ? profile.weak_areas : (typeof profile?.weak_areas === 'string' ? [profile.weak_areas] : []);
-    const weakList = safeList.length > 0 ? safeList.join(', ') : 'Part 3 (Hội thoại) và Part 5 (Từ loại)';
+    const weakList = safeList.length > 0 ? safeList.join(', ') : 'Part 3 (H?i tho?i) v? Part 5 (T? lo?i)';
     
     setMessages([
       {
         id: 'msg-welcome',
         sender: 'ai',
-        text: `Chào bạn! Tôi là **Gia sư AI cá nhân hóa**, trợ lý học tập 1-kèm-1 của bạn. 🎯\n\nHệ thống ghi nhận mục tiêu của bạn là **${target} TOEIC** (hiện tại: **${current}**). Điểm yếu cần ưu tiên cải thiện: **${weakList}**.\n\nTôi có thể giúp bạn giải đáp ngữ pháp, phân tích bẫy đề thi, giải bài tập khó hoặc tạo câu đố trắc nghiệm ngay bây giờ. Bạn muốn bắt đầu với phần nào?`,
+        text: `Ch?o b?n! T?i l? **Gia s? AI c? nh?n h?a**, tr? l? h?c t?p 1-k?m-1 c?a b?n. ??\n\nH? th?ng ghi nh?n m?c ti?u c?a b?n l? **${target} TOEIC** (hi?n t?i: **${current}**). ?i?m y?u c?n ?u ti?n c?i thi?n: **${weakList}**.\n\nT?i c? th? gi?p b?n gi?i ??p ng? ph?p, ph?n t?ch b?y ?? thi, gi?i b?i t?p kh? ho?c t?o c?u ?? tr?c nghi?m ngay b?y gi?. B?n mu?n b?t ??u v?i ph?n n?o?`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }
     ]);
-  };
+  }, [profile]);
 
 
   useEffect(() => {
     if (!user) return;
     loadConversations();
     initGreeting();
-  }, [user, profile]);
-
+  }, [user, loadConversations, initGreeting]);
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, loading]);
 
 
-  const handleSendMessage = async (textToSend?: string, actionType?: string) => {
+  const handleSendMessage = useCallback(async (textToSend?: string, actionType?: string) => {
     const text = textToSend || inputText;
     if (!text.trim() || loading) return;
 
@@ -159,7 +158,7 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [inputText, loading, conversationId]);
 
   const quickActionChips = [
     { label: 'Giải thích đơn giản', action: 'explain_simpler', icon: Lightbulb },

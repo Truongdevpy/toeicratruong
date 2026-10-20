@@ -498,6 +498,10 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
 
   // Translations cache for Song ngữ
   const [translationsMap, setTranslationsMap] = useState<Record<string, string>>({});
+  const translationsMapRef = useRef(translationsMap);
+  useEffect(() => {
+    translationsMapRef.current = translationsMap;
+  }, [translationsMap]);
 
   // Auto-clear canvas on question change
   useEffect(() => {
@@ -612,7 +616,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
         if (q.option_translations?.[letter]) return;
         const optProp = 'option_' + letter.toLowerCase();
         const optText = q.options?.[letter] || (q as any)?.[optProp];
-        if (optText && optText.length > 3 && !translationsMap[optText]) {
+        if (optText && optText.length > 3 && !translationsMapRef.current[optText]) {
           api.translateLookup({ text: optText })
             .then((res) => {
               if (res && res.translation) {

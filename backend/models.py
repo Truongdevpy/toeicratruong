@@ -89,7 +89,7 @@ class PlacementAttempt(Base):
     __tablename__ = "placement_attempts"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
     test_type = Column(String(50), default="full")  # 'full', 'custom'
     estimated_score = Column(Integer, default=575)
     listening_score = Column(Integer, default=280)
@@ -111,7 +111,7 @@ class QuestionAttempt(Base):
     __tablename__ = "question_attempts"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=True, index=True)
     question_id = Column(String(100), nullable=False)
     test_id = Column(String(100), default="")
     question_number = Column(Integer, nullable=True)
@@ -131,7 +131,7 @@ class TestAttempt(Base):
     __tablename__ = "test_attempts"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=True, index=True)
     test_id = Column(String(100), nullable=False)
     test_title = Column(String(255), default="")
     test_type = Column(String(50), default="lr_full")
@@ -156,7 +156,7 @@ class UserFlashcard(Base):
     __tablename__ = "user_flashcards"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
     word_id = Column(String(100), nullable=False)
     word = Column(String(100), nullable=False)
     ipa = Column(String(100), default="")
@@ -245,7 +245,7 @@ class Notification(Base):
     __tablename__ = "notifications"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
     title = Column(String(255), nullable=False)
     message = Column(Text, nullable=False)
     type = Column(String(50), default="info")

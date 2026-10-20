@@ -86,14 +86,6 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
   const targetScore = profile?.target_score || 750;
   const initialScore = 425;
   const gainedPoints = currentScore - initialScore;
-  if (loading && !stats) {
-    return (
-      <div className="min-h-[500px] flex items-center justify-center">
-        <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin" />
-      </div>
-    );
-  }
-
   if (!user) {
     return (
       <AuthRequiredGate
@@ -103,6 +95,14 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
       />
     );
   }
+  if (loading && !stats) {
+    return (
+      <div className="min-h-[500px] flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
+
 
   return (
     <div className="min-h-screen bg-slate-50 py-8">
