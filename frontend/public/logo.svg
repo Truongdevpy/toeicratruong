@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+    <linearGradient id="capShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect width="48" height="48" rx="12" fill="url(#bgGrad)" />
+
+  <!-- Graduation Cap (Diamond Top) -->
+  <path d="M24 10L42 19L24 28L6 19L24 10Z" fill="url(#capShade)" />
+  <path d="M24 10L42 19L24 28V10Z" fill="#CBD5E1" fill-opacity="0.35" />
+
+  <!-- Lower Headband -->
+  <path d="M12 23V29C12 34.5 36 34.5 36 29V23" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Golden Tassel -->
+  <path d="M24 21V23.5C24 25.5 37.5 25 39 29.5V34" stroke="#FBBF24" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="39" cy="34" r="2.2" fill="#F59E0B" />
+  <circle cx="39" cy="34" r="1" fill="#FEF3C7" />
+
+  <!-- Glowing AI Sparkle Star -->
+  <path d="M37 6L38 9.2L41.2 10.2L38 11.2L37 14.4L36 11.2L32.8 10.2L36 9.2L37 6Z" fill="#FDE047" />
+  <circle cx="37" cy="10.2" r="0.9" fill="#FFFFFF" />
+</svg>
