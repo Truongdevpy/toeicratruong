@@ -87,3 +87,26 @@ phan_anh_extracted/
 *.db-wal
 *.sqlite-shm
 *.sqlite-wal
+
+# Scripts & Report Generation
+scripts/
+report_src/
+data/core/
+data/sites/
+data/*.py
+data/*.html
+data/study4_discovered_catalog.json
+backend/audit_*.py
+backend/check_*.py
+backend/inspect_*.py
+backend/debug_*.py
+backend/discover_*.py
+backend/find_*.py
+backend/scan_*.py
+backend/write_*.py
+inspect_*.py
+export_template_*.py
+extract_template_*.py
+check_passages.py
+generate_thesis_report.py
+main_build_report.py

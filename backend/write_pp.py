@@ -1,1 +1,0 @@
-target = r" C:\Users\truon\Downloads\toeicratruong\frontend\src\pages\PaymentPage.tsx\n
