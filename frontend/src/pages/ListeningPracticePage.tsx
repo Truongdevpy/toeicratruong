@@ -69,7 +69,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const [isVocabBasketOpen, setIsVocabBasketOpen] = useState(false);
   const [theoryModalData, setTheoryModalData] = useState<{ isOpen: boolean; title: string; levelKey: string } | null>(null);
   const [resetConfirmModal, setResetConfirmModal] = useState<{ isOpen: boolean; levelKey: string; title: string } | null>(null);
-  const [_activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
+  const [activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
 
   useEffect(() => {
     const unsub = practiceProgressStore.subscribe(() => {
@@ -174,7 +174,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     setIsPlaying(false);
 
     try {
-      const params: any = { limit: 50 };
+      const params: any = { limit: 2000 };
       if (filterType === 'level') {
         params.level = filterValue;
       } else {
@@ -185,26 +185,30 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
       practiceProgressStore.updateTotalQuestions(fullKey, allQs.length);
       const stats = practiceProgressStore.getLevelStats(fullKey, allQs.length);
 
-      // Filter out questions already answered correctly
-      const uncompleted = allQs.filter((q) => !stats.correctIds.includes(String(q.id)));
-
-      if (uncompleted.length > 0) {
-        let finalQs = uncompleted;
-        if (filterType === 'level' && (filterValue === 'Level 3' || filterValue === 'Level 4') && user?.role !== 'vip' && user?.role !== 'admin') {
-          finalQs = uncompleted.slice(0, 5);
-          showToast('👑 Gói Thường: Giới hạn 5 câu luyện tập ở Level nâng cao. Nâng cấp VIP để mở toàn bộ câu hỏi!');
-        }
-        setRunnerQuestions(finalQs);
-        if (allQs.length - uncompleted.length > 0) {
-          showToast(`Đã bỏ qua ${allQs.length - uncompleted.length} câu đã làm đúng. Đang làm ${uncompleted.length} câu chưa xong!`);
-        }
-      } else {
-        setRunnerQuestions(allQs);
-        if (allQs.length > 0) {
-          showToast('Bạn đã làm đúng tất cả các câu trong phần này! Đang mở ôn tập lại toàn bộ.');
-        }
+      // Keep all questions so drawer, indicator and progress match total questions
+      let finalQs = allQs;
+      if (filterType === 'level' && (filterValue === 'Level 3' || filterValue === 'Level 4') && user?.role !== 'vip' && user?.role !== 'admin') {
+        finalQs = allQs.slice(0, 5);
+        showToast('👹 Gói Thường: Giới hạn 5 câu luyện tập ở Level nâng cao. Nâng cấp VIP để mở toàn bộ câu hỏi!');
       }
+      setRunnerQuestions(finalQs);
 
+      // Automatically jump to the first unanswered question (skip both correct & wrong)
+      const answeredIds = new Set([
+        ...stats.correctIds,
+        ...stats.wrongIds,
+        ...Object.keys(practiceProgressStore.getLevelData(fullKey).answeredQuestions || {})
+      ]);
+      const firstUnansweredIndex = finalQs.findIndex((q) => !answeredIds.has(String(q.id)));
+      if (firstUnansweredIndex > 0) {
+        setCurrentIndex(firstUnansweredIndex);
+        showToast(`Tự động chuyển đến câu ${firstUnansweredIndex + 1} chưa làm! (${stats.answered} câu đã hoàn thành)`);
+      } else if (firstUnansweredIndex === -1 && finalQs.length > 0) {
+        setCurrentIndex(finalQs.length - 1);
+        showToast(`Bạn đã hoàn thành tất cả ${finalQs.length} câu của phần này!`);
+      } else {
+        setCurrentIndex(0);
+      }
       setRunnerPassages(res.passages || []);
       setCurrentPassageIndex(0);
       setPassageAnswers({});
@@ -447,6 +451,7 @@ if (viewMode === 'runner') {
       <FocusedPracticeRoom
         title={activeFilterName || `Luyện nghe TOEIC Part ${getPartNumber(activeTab)}`}
         levelBadge={activeFilterName?.includes('Level') ? activeFilterName.split('–')[0].trim() : `Part ${getPartNumber(activeTab)}`}
+        levelKey={activeLevelKey}
         partNumber={getPartNumber(activeTab)}
         questions={runnerQuestions}
         passages={runnerPassages}
@@ -595,7 +600,7 @@ if (viewMode === 'runner') {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {LEVEL_CONFIGS.map((lvl) => {
+                {LEVEL_CONFIGS.map((lvl, lvlIdx) => {
                   const levelCount = partMeta.by_level?.[lvl.levelKey] ?? partMeta.by_level?.[lvl.levelKey.toLowerCase()];
                   const defaultTotal = (typeof levelCount === 'number' && levelCount > 0)
                     ? levelCount
@@ -608,7 +613,7 @@ if (viewMode === 'runner') {
                   return (
                     <div
                       key={lvl.levelKey}
-                      className="bg-white border border-slate-200/90 hover:border-blue-300 rounded-3xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-sm"
+                      className={`bg-white border border-slate-200/90 hover:border-blue-300 rounded-3xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-md hover:-translate-y-1 duration-200 animate-slide-up stagger-${(lvlIdx % 8) + 1}`}
                     >
                       <div className="space-y-3">
                         {/* Header */}
@@ -646,7 +651,7 @@ if (viewMode === 'runner') {
                         {/* Progress Bar */}
                         <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
                           <div
-                            className="bg-blue-600 h-full rounded-full transition-all duration-300"
+                            className="bg-blue-600 h-full rounded-full transition-all duration-500 ease-out"
                             style={{ width: `${progressPct}%` }}
                           />
                         </div>
@@ -722,7 +727,7 @@ if (viewMode === 'runner') {
                         <button
                           type="button"
                           onClick={() => handleStartPractice('level', lvl.levelKey, `${activeTab.toUpperCase()} · ${lvl.title}`)}
-                          className="w-full py-3 min-h-[44px] bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all cursor-pointer text-center flex items-center justify-center gap-1.5"
+                          className="w-full py-3 min-h-[44px] bg-blue-600 hover:bg-blue-700 active:scale-[0.97] text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all duration-150 cursor-pointer text-center flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         >
                           <span>Học ngay</span>
                           <ArrowRight className="w-3.5 h-3.5" />

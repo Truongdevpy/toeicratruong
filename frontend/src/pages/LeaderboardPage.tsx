@@ -59,9 +59,27 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
   // 6 Criteria categories
   const [activeCategory, setActiveCategory] = useState<
     'score' | 'progress' | 'streak' | 'practice' | 'vocab_exp' | 'grammar_exp'
-  >('score');
+  >(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      const cat = p.get('metric') || p.get('category');
+      if (cat && ['score', 'progress', 'streak', 'practice', 'vocab_exp', 'grammar_exp'].includes(cat)) {
+        return cat as any;
+      }
+    }
+    return 'score';
+  });
 
-  const [activePeriod, setActivePeriod] = useState<'weekly' | 'monthly' | 'all_time'>('weekly');
+  const [activePeriod, setActivePeriod] = useState<'weekly' | 'monthly' | 'all_time'>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      const per = p.get('period');
+      if (per && ['weekly', 'monthly', 'all_time'].includes(per)) {
+        return per as any;
+      }
+    }
+    return 'weekly';
+  });
   const [activeLeague, setActiveLeague] = useState<string>('all');
   const [leagueInitialized, setLeagueInitialized] = useState(false);
 
@@ -119,11 +137,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
         setCheeredIds(prev => ({ ...prev, ...cheerMap }));
       }
 
-      if (!leagueInitialized && res.my_rank) {
-        const myLeague = getUserLeague(res.my_rank.current_score, res.my_rank.target_score);
-        setActiveLeague(myLeague);
-        setLeagueInitialized(true);
-      }
+      // Always show all learners by default
     } catch (err: any) {
       console.error('Error fetching leaderboard:', err);
       setError(err?.message || 'Không thể tải bảng xếp hạng');
@@ -136,7 +150,21 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
     fetchLeaderboard();
   }, [fetchLeaderboard]);
 
-  // Auto-sync real local study XP to leaderboard
+
+  // Sync Leaderboard URL params
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('metric', activeCategory);
+      url.searchParams.set('period', activePeriod);
+      window.history.replaceState({}, '', url.toString());
+      const catLabel = categories.find((c) => c.id === activeCategory)?.label || 'Thi đua';
+      document.title = `Bảng Xếp Hạng - ${catLabel} | TOEIC Ra Trường`;
+    } catch {}
+  }, [activeCategory, activePeriod]);
+
+    // Auto-sync real local study XP to leaderboard
   useEffect(() => {
     if (user?.id) {
       const vXp = vocabDuoService.getTotalXp(user.id);
@@ -281,11 +309,11 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
 
   const categories = [
     { id: 'score', label: 'Điểm TOEIC', icon: Trophy, desc: 'Điểm thi ETS & Năng lực chuẩn hóa' },
-    { id: 'progress', label: 'Tiến bộ tuần này', icon: TrendingUp, desc: 'Tăng trưởng điểm số cao nhất' },
+    { id: 'vocab_exp', label: 'EXP Từ vựng', icon: BookOpen, desc: 'Điểm rèn luyện từ vựng' },
+    { id: 'grammar_exp', label: 'EXP Ngữ pháp', icon: GraduationCap, desc: 'Điểm rèn luyện ngữ pháp' },
     { id: 'streak', label: 'Chuỗi ngày', icon: Flame, desc: 'Kỷ luật chuỗi ngày học liên tục' },
     { id: 'practice', label: 'Câu đã luyện', icon: Zap, desc: 'Tổng số câu hỏi hoàn thành' },
-    { id: 'vocab_exp', label: 'EXP Từ vựng', icon: BookOpen, desc: 'Điểm rèn luyện từ vựng' },
-    { id: 'grammar_exp', label: 'EXP Ngữ pháp', icon: GraduationCap, desc: 'Điểm rèn luyện ngữ pháp' }
+    { id: 'progress', label: 'Tiến bộ', icon: TrendingUp, desc: 'Tăng trưởng điểm số cao nhất' }
   ];
 
   const getDynamicColumnHeader = (cat: string) => {
@@ -524,13 +552,16 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
         )}
 
 ﻿        {/* UNIFIED CONTROLS TOOLBAR: Criteria Tabs + Period Filters + League Filters + Search */}
-        <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200/80 shadow-xs space-y-4">
+        <div className="bg-white p-4 rounded-2xl border border-slate-200/80 shadow-xs space-y-3.5">
           {/* Row 1: Criteria Tabs Pills */}
           <div>
-            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">
-              Tiêu chí xếp hạng:
+            <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 flex items-center justify-between">
+              <span>Tiêu chí xếp hạng</span>
+              <span className="text-[11px] font-normal text-slate-500 lowercase">
+                chọn một mục để xem bảng vàng tương ứng
+              </span>
             </div>
-            <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 no-scrollbar">
               {categories.map((cat) => {
                 const Icon = cat.icon;
                 const isActive = activeCategory === cat.id;
@@ -574,49 +605,6 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                   }`}
                 >
                   {p.label}
-                </button>
-              ))}
-            </div>
-
-            {/* League Filters */}
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className="text-xs font-bold text-slate-400 uppercase tracking-wider mr-1">
-                Phân hạng:
-              </span>
-
-              {/* Quick Same-Level Toggle if logged in */}
-              {user && userLeagueId && (
-                <button
-                  type="button"
-                  onClick={() => setActiveLeague(userLeagueId)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors cursor-pointer ${
-                    activeLeague === userLeagueId
-                      ? 'bg-indigo-600 text-white shadow-xs'
-                      : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100'
-                  }`}
-                  title="Xem học viên cùng trình độ với bạn"
-                >
-                  ★ Cùng trình độ
-                </button>
-              )}
-
-              {[
-                { id: 'all', label: 'Tất cả' },
-                { id: 'starter', label: 'CLB Khởi Động <650' },
-                { id: 'advanced', label: 'CLB Bứt Phá 650+' },
-                { id: 'master', label: 'CLB Master 800+' }
-              ].map((lg) => (
-                <button
-                  key={lg.id}
-                  type="button"
-                  onClick={() => setActiveLeague(lg.id)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
-                    activeLeague === lg.id
-                      ? 'bg-slate-800 text-white'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                  }`}
-                >
-                  {lg.label}
                 </button>
               ))}
             </div>
@@ -689,7 +677,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                     className="w-10 h-10 rounded-xl object-cover ring-2 ring-amber-400 shrink-0 cursor-pointer"
                   />
                   <div className="min-w-0">
-                    <div className="text-xs font-black text-slate-900 truncate">
+                    <div onClick={() => setSelectedProfileId(data.podium[0].id)} className="text-xs font-black text-slate-900 truncate cursor-pointer hover:text-blue-600">
                       {data.podium[0].full_name}
                     </div>
                     <div className="text-[11px] text-slate-500 truncate">{data.podium[0].school_or_org}</div>
@@ -721,7 +709,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                     className="w-10 h-10 rounded-xl object-cover ring-2 ring-slate-300 shrink-0 cursor-pointer"
                   />
                   <div className="min-w-0">
-                    <div className="text-xs font-black text-slate-900 truncate">
+                    <div onClick={() => setSelectedProfileId(data.podium[1].id)} className="text-xs font-black text-slate-900 truncate cursor-pointer hover:text-blue-600">
                       {data.podium[1].full_name}
                     </div>
                     <div className="text-[11px] text-slate-500 truncate">{data.podium[1].school_or_org}</div>
@@ -753,7 +741,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                     className="w-10 h-10 rounded-xl object-cover ring-2 ring-amber-600/40 shrink-0 cursor-pointer"
                   />
                   <div className="min-w-0">
-                    <div className="text-xs font-black text-slate-900 truncate">
+                    <div onClick={() => setSelectedProfileId(data.podium[2].id)} className="text-xs font-black text-slate-900 truncate cursor-pointer hover:text-blue-600">
                       {data.podium[2].full_name}
                     </div>
                     <div className="text-[11px] text-slate-500 truncate">{data.podium[2].school_or_org}</div>
@@ -981,10 +969,10 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                         <tr
                           key={entry.id}
                           ref={isMe ? myRankRef : null}
-                          className={`transition-colors ${
+                          className={`transition-all duration-200 ${
                             isMe
-                              ? 'bg-blue-50/90 border-l-4 border-blue-600 font-semibold'
-                              : 'hover:bg-slate-50/80'
+                              ? 'bg-blue-50/95 border-l-4 border-blue-600 font-semibold shadow-xs ring-1 ring-blue-500/20'
+                              : 'hover:bg-slate-50/90'
                           }`}
                         >
                           {/* Rank Badge & Horizontal Change Arrow */}
@@ -1007,7 +995,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                               </span>
                               {entry.rank_change > 0 ? (
                                 <span
-                                  className="inline-flex items-center text-xs font-black text-emerald-600 gap-0.5"
+                                  className="inline-flex items-center text-xs font-black text-emerald-600 gap-0.5 animate-slide-up duration-200"
                                   aria-label={`Tăng ${entry.rank_change} hạng`}
                                   title={`Tăng ${entry.rank_change} hạng`}
                                 >
@@ -1016,7 +1004,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                                 </span>
                               ) : entry.rank_change < 0 ? (
                                 <span
-                                  className="inline-flex items-center text-xs font-black text-rose-500 gap-0.5"
+                                  className="inline-flex items-center text-xs font-black text-rose-500 gap-0.5 animate-slide-down duration-200"
                                   aria-label={`Giảm ${Math.abs(entry.rank_change)} hạng`}
                                   title={`Giảm ${Math.abs(entry.rank_change)} hạng`}
                                 >
@@ -1100,12 +1088,14 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
 
                           {/* Primary Metric based on active category */}
                           <td className="py-3.5 px-4 text-right">
-                            <div className="text-sm font-black text-slate-900">
+                            <div className="text-sm font-black text-blue-600">
                               {entry.primary_value}
                             </div>
-                            <div className="text-xs text-slate-500 font-medium">
-                              {entry.exp_points.toLocaleString()} EXP
-                            </div>
+                            {activeCategory !== 'vocab_exp' && activeCategory !== 'grammar_exp' && (
+                              <div className="text-[11px] text-slate-400 font-medium">
+                                {entry.exp_points.toLocaleString()} EXP tổng
+                              </div>
+                            )}
                           </td>
 
                           {/* Anti-cheat Cheer Button */}

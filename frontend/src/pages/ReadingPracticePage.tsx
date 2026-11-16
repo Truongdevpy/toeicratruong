@@ -101,9 +101,12 @@ const ReadingPracticePageInner: React.FC<ReadingPracticePageProps> = ({
   const [partMeta, setPartMeta] = useState<{
     by_level: Record<string, number>;
     by_topic: Record<string, number>;
+    by_question_type: Record<string, number>;
   }>({
     by_level: {},
     by_topic: {},
+    by_question_type: {},
+
   });
 
   const [runnerQuestions, setRunnerQuestions] = useState<Question[]>([]);
@@ -160,6 +163,8 @@ const ReadingPracticePageInner: React.FC<ReadingPracticePageProps> = ({
       setPartMeta({
         by_level: res.by_level || {},
         by_topic: res.by_topic || {},
+        by_question_type: res.by_question_type || {},
+
       });
     } catch (err) {
       console.error('Failed to load part metadata', err);
@@ -198,22 +203,28 @@ const ReadingPracticePageInner: React.FC<ReadingPracticePageProps> = ({
       practiceProgressStore.updateTotalQuestions(fullKey, allQs.length);
       const stats = practiceProgressStore.getLevelStats(fullKey, allQs.length);
 
-      // Skip questions already answered correctly
-      const uncompleted = allQs.filter((q) => !stats.correctIds.includes(String(q.id)));
-
-      if (uncompleted.length > 0) {
-        let finalQs = uncompleted;
-        if (filterType === 'level' && (filterValue === 'Level 3' || filterValue === 'Level 4') && user?.role !== 'vip' && user?.role !== 'admin') {
-          finalQs = uncompleted.slice(0, 5);
-          showToast('👑 Gói Thường: Giới hạn 5 câu luyện tập ở Level nâng cao. Nâng cấp VIP để mở toàn bộ câu hỏi!');
-        }
-        setRunnerQuestions(finalQs);
-        if (allQs.length - uncompleted.length > 0) {
-          showToast(`Đã bỏ qua ${allQs.length - uncompleted.length} câu đã làm đúng. Đang làm ${uncompleted.length} câu chưa xong!`);
-        }
+      // Keep all questions so drawer, indicator and progress match total questions
+      let finalQs = allQs;
+      if (filterType === 'level' && (filterValue === 'Level 3' || filterValue === 'Level 4') && user?.role !== 'vip' && user?.role !== 'admin') {
+        finalQs = allQs.slice(0, 5);
+        showToast('👑 Gói Thường: Giới hạn 5 câu luyện tập ở Level nâng cao. Nâng cấp VIP để mở toàn bộ câu hỏi!');
+      }
+      setRunnerQuestions(finalQs);
+      // Automatically jump to the first unanswered question (skip both correct & wrong)
+      const answeredIds = new Set([
+        ...stats.correctIds,
+        ...stats.wrongIds,
+        ...Object.keys(practiceProgressStore.getLevelData(fullKey).answeredQuestions || {})
+      ]);
+      const firstUnansweredIndex = finalQs.findIndex((q) => !answeredIds.has(String(q.id)));
+      if (firstUnansweredIndex > 0) {
+        setCurrentIndex(firstUnansweredIndex);
+        showToast(`Tự động chuyển đến câu ${firstUnansweredIndex + 1} chưa làm! (${stats.answered} câu đã hoàn thành)`);
+      } else if (firstUnansweredIndex === -1 && finalQs.length > 0) {
+        setCurrentIndex(finalQs.length - 1);
+        showToast(`Bạn đã hoàn thành tất cả ${finalQs.length} câu của phần này!`);
       } else {
-        setRunnerQuestions(allQs);
-        showToast('Bạn đã làm đúng tất cả các câu trong phần này! Đang mở ôn tập lại toàn bộ.');
+        setCurrentIndex(0);
       }
       setRunnerPassages(res.passages || []);
     } catch (err) {
@@ -486,7 +497,7 @@ if (viewMode === 'runner') {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {LEVEL_CONFIGS.map((lvl) => {
+                {LEVEL_CONFIGS.map((lvl, lvlIdx) => {
                   const fullKey = `${activeTab}_${lvl.levelKey}`;
                   const levelCount = partMeta.by_level?.[lvl.levelKey] ?? partMeta.by_level?.[lvl.levelKey.toLowerCase()];
                   const defaultTotal = (typeof levelCount === 'number' && levelCount > 0) ? levelCount : 0;
@@ -497,7 +508,7 @@ if (viewMode === 'runner') {
                   return (
                     <div
                       key={lvl.levelKey}
-                      className="bg-white border border-slate-200/90 hover:border-emerald-300 rounded-3xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-sm"
+                      className={`bg-white border border-slate-200/90 hover:border-emerald-300 rounded-3xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-md hover:-translate-y-1 duration-200 animate-slide-up stagger-${(lvlIdx % 8) + 1}`}
                     >
                       <div className="space-y-3">
                         {/* Header */}
@@ -609,7 +620,7 @@ if (viewMode === 'runner') {
                         <button
                           type="button"
                           onClick={() => handleStartPractice('level', lvl.levelKey, `${activeTab.toUpperCase()} · ${lvl.title}`)}
-                          className="w-full py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all cursor-pointer text-center flex items-center justify-center gap-1.5"
+                          className="w-full py-3 min-h-[44px] bg-emerald-600 hover:bg-emerald-700 active:scale-[0.97] text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all duration-150 cursor-pointer text-center flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
                         >
                           <span>Học ngay</span>
                           <ArrowRight className="w-3.5 h-3.5" />
@@ -658,6 +669,108 @@ if (viewMode === 'runner') {
                           <button
                             type="button"
                             onClick={() => handleStartPractice('topic', topic.key, `Part 5 · ${topic.label}`)}
+                            className="px-4 py-1.5 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold text-xs rounded-xl transition-all cursor-pointer"
+                          >
+                            Học ngay
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Part 6: Phân loại dạng bài */}
+            {activeTab === 'part6' && (
+              <div className="space-y-4">
+                <div className="flex items-center gap-2 text-base font-extrabold text-slate-900">
+                  <span className="text-emerald-600 font-black text-lg">|</span>
+                  <span>Phân loại dạng bài Part 6</span>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {[
+                    { key: 'Ngữ pháp & Liên từ', label: 'Ngữ pháp & Liên từ', subtitle: 'Thì, mệnh đề quan hệ & liên từ nối câu', defaultCount: 775 },
+                    { key: 'Từ loại', label: 'Từ loại (Word Form)', subtitle: 'Nhận diện danh, tính, động, trại từ', defaultCount: 244 },
+                    { key: 'Điền cûu vào đoạn', label: 'Điền cûu vào đoạn văn', subtitle: 'Khớip ngữ cảnh và logic câu trước sau', defaultCount: 544 },
+                    { key: 'Từ vựng theo ngữ cảnh', label: 'Từ vựng theo ngữ cảnh', subtitle: 'Chọn từ vựng chính xác theo văn cảnh', defaultCount: 357 },
+                  ].map((item) => {
+                    const count = (partMeta.by_question_type && partMeta.by_question_type[item.key]) || (partMeta.by_topic && partMeta.by_topic[item.key]) || item.defaultCount;
+                    return (
+                      <div
+                        key={item.key}
+                        className="bg-white border border-slate-200/90 hover:border-emerald-300 rounded-2xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-sm"
+                      >
+                        <div className="space-y-2">
+                          <h3 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                            {item.label}
+                          </h3>
+                          <p className="text-[11px] text-slate-500 font-medium">
+                            {item.subtitle}
+                          </p>
+                          <div className="text-[11px] text-slate-400 font-medium pt-1">
+                            {count} câu hỏi · Chưa luyện tập
+                          </div>
+                        </div>
+
+                        <div className="pt-4 border-t border-slate-100 mt-4 flex justify-end">
+                          <button
+                            type="button"
+                            onClick={() => handleStartPractice('topic', item.key, `Part 6 · ${item.label}`)}
+                            className="px-4 py-1.5 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold text-xs rounded-xl transition-all cursor-pointer"
+                          >
+                            Học ngay
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {/* Part 7: Phân loại dạng bài */}
+            {activeTab === 'part7' && (
+              <div className="space-y-4">
+                <div className="flex items-center gap-2 text-base font-extrabold text-slate-900">
+                  <span className="text-emerald-600 font-black text-lg">|</span>
+                  <span>Phân loại dạng bài Part 7</span>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {[
+                    { key: 'Câu hỏi chi tiất', label: 'Câu hỏi thông tin chi tiết', subtitle: 'Xác định dữ kiện cụ thể xuất hiện trong bài đọc', defaultCount: 3276 },
+                    { key: 'Câu hỏi suy luận & Liên kất đoạn', label: 'Suy luận & Liên kết đoạn', subtitle: 'Suy luận gián tiếp và xâu chuỗi thông tin', defaultCount: 1862 },
+                    { key: 'Ý chính & Mục đích bài đọc', label: '�� chính & Mục đích bài đọc', subtitle: 'Nắm bắt chủ đề bao quát và mục đích thông điệp', defaultCount: 376 },
+                    { key: 'Từ vựng trong bài đọc', label: 'Từ vựng trong bài đọc', subtitle: 'Câu hỏi từ đồng nghĩa / nghĩa theo ngữ cảnh dùng văn', defaultCount: 290 },
+                    { key: 'Điền cûu vào văn bản', label: 'Điền cûu vào vị trí [1]-[4]', subtitle: 'Xác định vị trí thích hợp nhất để chèn cûu văn', defaultCount: 240 },
+                    { key: 'Đọc biểu đồ & Biểu mẫu', label: 'Biểu đồ, lịch & hña đơn', subtitle: 'Khai thác số liệu bảng giá, lịch trình, voucher', defaultCount: 243 },
+                    { key: 'Câu hỏi phủ định (NOT/TRUE)', label: 'Câu hỏi NOT / TRUE', subtitle: 'Tìm chi tiết KHÔNG được đề cập hoặc đúng', defaultCount: 193 },
+                    { key: 'Đoạn kép & Ba (Multi-passages)', label: 'Đoạn kép & Ba (Multi-passages)', subtitle: 'Luyện tập các đoạn văn ghép 2-3 văn bản phức hợp', defaultCount: 3000 },
+                  ].map((item) => {
+                    const count = (partMeta.by_question_type && partMeta.by_question_type[item.key]) || (partMeta.by_topic && partMeta.by_topic[item.key]) || item.defaultCount;
+                    return (
+                      <div
+                        key={item.key}
+                        className="bg-white border border-slate-200/90 hover:border-emerald-300 rounded-2xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-sm"
+                      >
+                        <div className="space-y-2">
+                          <h3 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                            {item.label}
+                          </h3>
+                          <p className="text-[11px] text-slate-500 font-medium">
+                            {item.subtitle}
+                          </p>
+                          <div className="text-[11px] text-slate-400 font-medium pt-1">
+                            {count} câu hỏi · Chưa luyện tập
+                          </div>
+                        </div>
+
+                        <div className="pt-4 border-t border-slate-100 mt-4 flex justify-end">
+                          <button
+                            type="button"
+                            onClick={() => handleStartPractice('topic', item.key, `Part 7 · ${item.label}`)}
                             className="px-4 py-1.5 bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white font-bold text-xs rounded-xl transition-all cursor-pointer"
                           >
                             Học ngay

@@ -93,7 +93,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
   // Accessibility: guest allowed routes
   const isGuestAllowed = (path?: string) => {
     if (!path) return true;
-    return path === '/' || path === '/practice/dictation' || path === '/leaderboard' || path === '/community';
+    if (path.startsWith('/dashboard') || path.startsWith('/history') || path.startsWith('/admin')) {
+      return false;
+    }
+    return true;
   };
 
   const handleItemClick = (item: NavItemConfig) => {
@@ -201,8 +204,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             collapsed ? 'justify-center px-0' : 'gap-3 px-3'
                           } ${
                             isActive
-                              ? 'bg-blue-50 text-blue-700 font-bold border-l-4 border-blue-600 shadow-2xs'
-                              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/80 font-medium'
+                              ? 'bg-blue-50 text-blue-700 font-bold border-l-4 border-blue-600 shadow-2xs ring-1 ring-blue-500/15'
+                              : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/80 font-medium active:scale-[0.98] transition-transform duration-100'
                           }`}
                         >
                           <Icon

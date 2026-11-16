@@ -21,6 +21,8 @@ import { Flashcard } from '../types';
 interface FlashcardsPageProps {
   onNavigate: (path: string) => void;
   onFocusModeChange?: (active: boolean) => void;
+  onOpenAuth?: (tab?: 'login' | 'register') => void;
+  onOpenRBAC?: () => void;
 }
 
 interface TopicOption {
@@ -251,15 +253,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [currentCard, currentIndex, deck.length]);
 
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Flashcards SRS Lặp lại ngắt quãng"
-        featureDesc="Ghi nhớ từ vựng vĩnh viễn với thuật toán SuperMemo SM-2 và phát âm chuẩn IPA."
-        onNavigate={onNavigate}
-      />
-    );
-  }
+  
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] py-8 px-4 sm:px-6 lg:px-8">
@@ -446,7 +440,12 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
             {/* Interactive Flip Card Box */}
             <div
               onClick={() => setIsFlipped(!isFlipped)}
-              className="relative min-h-[360px] bg-white border-2 border-slate-200 hover:border-amber-300 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-all cursor-pointer flex flex-col justify-between items-center text-center select-none"
+              style={{
+                transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+                transformStyle: 'preserve-3d',
+                transition: 'transform 360ms cubic-bezier(0.16, 1, 0.3, 1)',
+              }}
+              className="relative min-h-[360px] bg-white border-2 border-slate-200 hover:border-amber-300 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md cursor-pointer flex flex-col justify-between items-center text-center select-none perspective-1000"
             >
               {/* Top Card Controls */}
               <div className="w-full flex items-center justify-between gap-2">
@@ -548,7 +547,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
                       <div className="flex flex-wrap gap-1.5 text-xs text-emerald-900 font-medium">
                         {currentCard.collocations.map((col, idx) => (
                           <span key={idx} className="bg-white px-2 py-0.5 rounded border border-emerald-200">
-                            {col}
+                            {typeof col === 'string' ? col : (col as any)?.phrase || (col as any)?.meaning || ''}
                           </span>
                         ))}
                       </div>
@@ -594,7 +593,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
                 <button
                   type="button"
                   onClick={() => handleRating('again')}
-                  className="py-3 px-3 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer flex flex-col items-center shadow-xs"
+                  className="py-3 px-3 rounded-2xl bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.96] duration-150 cursor-pointer flex flex-col items-center shadow-xs focus:ring-2 focus:ring-offset-2"
                 >
                   <span className="text-sm font-black">Quên <span className="hidden sm:inline">[1]</span></span>
                   <span className="text-[11px] font-medium text-rose-600/90 mt-0.5">
@@ -604,7 +603,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
                 <button
                   type="button"
                   onClick={() => handleRating('hard')}
-                  className="py-3 px-3 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer flex flex-col items-center shadow-xs"
+                  className="py-3 px-3 rounded-2xl bg-amber-50 hover:bg-amber-100 text-amber-700 border border-amber-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.96] duration-150 cursor-pointer flex flex-col items-center shadow-xs focus:ring-2 focus:ring-offset-2"
                 >
                   <span className="text-sm font-black">Nhớ mang máng <span className="hidden sm:inline">[2]</span></span>
                   <span className="text-[11px] font-medium text-amber-600/90 mt-0.5">
@@ -614,7 +613,7 @@ export const FlashcardsPage: React.FC<FlashcardsPageProps> = ({ onNavigate, onFo
                 <button
                   type="button"
                   onClick={() => handleRating('easy')}
-                  className="py-3 px-3 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-95 cursor-pointer flex flex-col items-center shadow-xs"
+                  className="py-3 px-3 rounded-2xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.96] duration-150 cursor-pointer flex flex-col items-center shadow-xs focus:ring-2 focus:ring-offset-2"
                 >
                   <span className="text-sm font-black">Đã thuộc <span className="hidden sm:inline">[3]</span></span>
                   <span className="text-[11px] font-medium text-emerald-600/90 mt-0.5">

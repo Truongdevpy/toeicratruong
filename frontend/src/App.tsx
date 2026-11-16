@@ -653,7 +653,7 @@ function AppContent() {
         )}
 
         {/* Main Page Area with ErrorBoundary & Lazy Suspense */}
-        <main className="flex-1 pb-16 lg:pb-0">
+        <main className="flex-1 pb-16 lg:pb-0 animate-fade-in transition-opacity duration-200">
           <ErrorBoundary key={currentPath}>
             <React.Suspense fallback={
               <div className="min-h-[50vh] flex flex-col items-center justify-center space-y-3 py-16">
