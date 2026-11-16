@@ -45,7 +45,7 @@ export const MOTION_CONFIG: MotionConfig = {
 export function isReducedMotionPreferred(userMode: MotionMode = 'full'): boolean {
   if (userMode === 'off' || userMode === 'reduced') return true;
   if (typeof window === 'undefined') return false;
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  return typeof window.matchMedia === 'function' ? window.matchMedia('(prefers-reduced-motion: reduce)').matches : false;
 }
 
 /**
