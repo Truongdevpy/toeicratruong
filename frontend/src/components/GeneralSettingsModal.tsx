@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import {
   X,
   Settings,
@@ -11,10 +11,13 @@ import {
   Lightbulb,
   BookOpen,
   RotateCcw,
-  Check
+  Check,
+  Globe,
+  Sliders,
 } from 'lucide-react';
 import { useSettings } from '../context/SettingsContext';
 import { useAuth } from '../context/AuthContext';
+import { TRANSLATIONS } from '../i18n/translations';
 
 interface GeneralSettingsModalProps {
   isOpen: boolean;
@@ -22,13 +25,16 @@ interface GeneralSettingsModalProps {
   onOpenRBAC?: () => void;
 }
 
+const PRESET_SPEEDS = [0.5, 0.75, 0.9, 1.0, 1.1, 1.25, 1.5, 1.75, 2.0];
+
 export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
   isOpen,
   onClose,
-  onOpenRBAC
+  onOpenRBAC,
 }) => {
   const {
     settings,
+    setLanguage,
     toggleFloatingAITutor,
     toggleFloatingChat,
     toggleSfx,
@@ -38,11 +44,15 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
     toggleMeoLamBai,
     toggleTuVung,
     setPlaybackSpeed,
-    resetSettings
+    setVisualEffects,
+    resetSettings,
   } = useSettings();
 
   const { user } = useAuth();
   const isVipUser = Boolean(user?.is_vip || user?.role === 'vip' || user?.role === 'admin');
+
+  const lang = settings.language || (typeof window !== 'undefined' && localStorage.getItem('app_language') === 'en' ? 'en' : 'vi');
+  const t = TRANSLATIONS[lang] || TRANSLATIONS.vi;
 
   if (!isOpen) return null;
 
@@ -60,15 +70,15 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
               <Settings className="w-5 h-5" />
             </div>
             <div>
-              <h2 className="text-base font-bold text-slate-900">Cài đặt & Tùy chỉnh hiển thị</h2>
-              <p className="text-xs text-slate-500">Tùy biến nút nổi, âm thanh và trải nghiệm học</p>
+              <h2 className="text-base font-bold text-slate-900">{t.settingsTitle}</h2>
+              <p className="text-xs text-slate-500">{t.settingsSubtitle}</p>
             </div>
           </div>
           <button
             type="button"
             onClick={onClose}
             className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 hover:bg-slate-200/60 transition-colors cursor-pointer"
-            title="Đóng cài đặt"
+            title={lang === 'en' ? 'Close settings' : 'Đóng cài đặt'}
           >
             <X className="w-5 h-5" />
           </button>
@@ -76,20 +86,63 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
 
         {/* Scrollable Body */}
         <div className="p-5 sm:p-6 overflow-y-auto space-y-6">
+          {/* SECTION 0: NGÔN NGỮ GIAO DIỆN (INTERFACE LANGUAGE) */}
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                <Globe className="w-3.5 h-3.5 text-blue-600" />
+                {t.interfaceLanguage}
+              </span>
+              <span className="text-[11px] text-slate-400 font-medium">
+                {lang === 'en' ? 'English (US)' : 'Tiếng Việt'}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
+              <button
+                type="button"
+                onClick={() => setLanguage('vi')}
+                className={`py-2 px-3 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-2 ${
+                  lang === 'vi'
+                    ? 'bg-white text-blue-700 shadow-2xs ring-1 ring-blue-500/20'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <span className="text-sm">🇻🇳</span>
+                <span>Tiếng Việt</span>
+                {lang === 'vi' && <Check className="w-3.5 h-3.5 text-blue-600 ml-auto" />}
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setLanguage('en')}
+                className={`py-2 px-3 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-2 ${
+                  lang === 'en'
+                    ? 'bg-white text-blue-700 shadow-2xs ring-1 ring-blue-500/20'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+              >
+                <span className="text-sm">🇺🇸</span>
+                <span>English</span>
+                {lang === 'en' && <Check className="w-3.5 h-3.5 text-blue-600 ml-auto" />}
+              </button>
+            </div>
+          </div>
+
           {/* SECTION 1: NÚT NỔI TIỆN ÍCH (FLOATING BUTTONS) */}
           <div className="space-y-3">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
-                Nút nổi tiện ích góc màn hình
+                {t.floatingButtonsTitle}
               </span>
-              <span className="text-[11px] text-slate-400 font-medium">Mặc định bật</span>
+              <span className="text-[11px] text-slate-400 font-medium">{t.defaultOn}</span>
             </div>
 
             {/* Visual preview strip */}
             <div className="p-3 bg-gradient-to-r from-slate-100 via-indigo-50/50 to-blue-50/50 rounded-2xl border border-slate-200/80 flex items-center justify-between gap-2 text-xs">
               <span className="text-slate-600 text-[11px] font-medium hidden sm:inline">
-                Xem trước vị trí góc phải màn hình:
+                {t.previewRightCorner}
               </span>
               <div className="flex items-center gap-2 ml-auto">
                 <div
@@ -100,7 +153,7 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                   }`}
                 >
                   <Bot className="w-3 h-3" />
-                  <span>Gia sư AI</span>
+                  <span>{t.aiTutorBadge}</span>
                 </div>
                 <div
                   className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold transition-all shadow-xs ${
@@ -110,7 +163,7 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                   }`}
                 >
                   <MessageSquare className="w-3 h-3" />
-                  <span>Tin nhắn</span>
+                  <span>{t.messagesBadge}</span>
                 </div>
               </div>
             </div>
@@ -124,14 +177,14 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-xs sm:text-sm font-bold text-slate-900">
-                      Nút nổi Gia sư AI cá nhân hóa
+                      {t.floatingAITutorTitle}
                     </span>
                     <span className="px-2 py-0.5 rounded-md bg-violet-100 text-violet-800 text-[10px] font-bold">
-                      Mặc định bật
+                      {t.defaultOn}
                     </span>
                   </div>
                   <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">
-                    Nút màu tím ở góc dưới màn hình. Cho phép mở nhanh cửa sổ trò chuyện và hỏi đáp bài tập 1-1 với Gia sư AI Socratic.
+                    {t.floatingAITutorDesc}
                   </p>
                 </div>
               </div>
@@ -141,7 +194,7 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                 className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer shrink-0 ${
                   settings.showFloatingAITutor ? 'bg-gradient-to-r from-violet-600 to-indigo-600' : 'bg-slate-200'
                 }`}
-                title={settings.showFloatingAITutor ? 'Đang bật - Nhấn để ẩn' : 'Đang tắt - Nhấn để hiện'}
+                title={settings.showFloatingAITutor ? (lang === 'en' ? 'Enabled - Click to hide' : 'Đang bật - Nhấn để ẩn') : (lang === 'en' ? 'Disabled - Click to show' : 'Đang tắt - Nhấn để hiện')}
               >
                 <span
                   className={`block w-5 h-5 rounded-full bg-white shadow-xs transition-transform transform ${
@@ -160,14 +213,14 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className="text-xs sm:text-sm font-bold text-slate-900">
-                      Nút nổi Tin nhắn cộng đồng
+                      {t.floatingChatTitle}
                     </span>
                     <span className="px-2 py-0.5 rounded-md bg-blue-100 text-blue-800 text-[10px] font-bold">
-                      Mặc định bật
+                      {t.defaultOn}
                     </span>
                   </div>
                   <p className="text-[11px] text-slate-500 leading-relaxed mt-0.5">
-                    Nút màu xanh ở góc dưới màn hình. Cho phép mở nhanh danh sách bạn bè, tin nhắn riêng và trò chuyện trực tiếp.
+                    {t.floatingChatDesc}
                   </p>
                 </div>
               </div>
@@ -177,7 +230,7 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                 className={`w-12 h-6 rounded-full transition-colors relative cursor-pointer shrink-0 ${
                   settings.showFloatingChat ? 'bg-blue-600' : 'bg-slate-200'
                 }`}
-                title={settings.showFloatingChat ? 'Đang bật - Nhấn để ẩn' : 'Đang tắt - Nhấn để hiện'}
+                title={settings.showFloatingChat ? (lang === 'en' ? 'Enabled - Click to hide' : 'Đang bật - Nhấn để ẩn') : (lang === 'en' ? 'Disabled - Click to show' : 'Đang tắt - Nhấn để hiện')}
               >
                 <span
                   className={`block w-5 h-5 rounded-full bg-white shadow-xs transition-transform transform ${
@@ -191,7 +244,7 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
           {/* SECTION 2: TRẢI NGHIỆM HỌC TẬP & LÀM BÀI */}
           <div className="space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">
-              Trải nghiệm học tập & Làm bài
+              {t.studyExperienceTitle}
             </span>
 
             {/* Hiệu ứng âm thanh (SFX) */}
@@ -199,8 +252,8 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
               <div className="flex items-center gap-2.5">
                 <Volume2 className="w-4 h-4 text-slate-600" />
                 <div>
-                  <div className="text-xs font-bold text-slate-800">Hiệu ứng âm thanh (SFX)</div>
-                  <p className="text-[10px] text-slate-500">Phát âm thanh thông báo khi trả lời đúng / sai</p>
+                  <div className="text-xs font-bold text-slate-800">{t.sfxTitle}</div>
+                  <p className="text-[10px] text-slate-500">{t.sfxDesc}</p>
                 </div>
               </div>
               <button
@@ -223,8 +276,8 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
               <div className="flex items-center gap-2.5">
                 <Zap className="w-4 h-4 text-amber-500" />
                 <div>
-                  <div className="text-xs font-bold text-slate-800">Tự động chuyển câu</div>
-                  <p className="text-[10px] text-slate-500">Tự động chuyển sang câu tiếp theo khi chọn đáp án</p>
+                  <div className="text-xs font-bold text-slate-800">{t.autoAdvanceTitle}</div>
+                  <p className="text-[10px] text-slate-500">{t.autoAdvanceDesc}</p>
                 </div>
               </div>
               <button
@@ -248,12 +301,12 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                 <Crown className="w-4 h-4 text-amber-500" />
                 <div>
                   <div className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-                    Song ngữ (Anh - Việt)
+                    {t.bilingualTitle}
                     <span className="px-1.5 py-0.2 rounded-md bg-amber-100 text-amber-800 text-[10px] font-black">
                       VIP
                     </span>
                   </div>
-                  <p className="text-[10px] text-slate-500">Hiện bản dịch tiếng Việt cho câu hỏi và đáp án</p>
+                  <p className="text-[10px] text-slate-500">{t.bilingualDesc}</p>
                 </div>
               </div>
               <button
@@ -283,12 +336,12 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
                 <Crown className="w-4 h-4 text-emerald-600" />
                 <div>
                   <div className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-                    Dẫn chứng đáp án (Part 3, 4, 6, 7)
+                    {t.evidenceTitle}
                     <span className="px-1.5 py-0.2 rounded-md bg-amber-100 text-amber-800 text-[10px] font-black">
                       VIP
                     </span>
                   </div>
-                  <p className="text-[10px] text-slate-500">Tô sáng câu dẫn chứng trong bài đọc và lời thoại transcript</p>
+                  <p className="text-[10px] text-slate-500">{t.evidenceDesc}</p>
                 </div>
               </div>
               <button
@@ -317,8 +370,8 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
               <div className="flex items-center gap-2.5">
                 <Lightbulb className="w-4 h-4 text-amber-500" />
                 <div>
-                  <div className="text-xs font-bold text-slate-800">Mẹo làm bài Part 5</div>
-                  <p className="text-[10px] text-slate-500">Hiển thị mẹo phân tích ngữ cảnh và loại từ</p>
+                  <div className="text-xs font-bold text-slate-800">{t.tipsTitle}</div>
+                  <p className="text-[10px] text-slate-500">{t.tipsDesc}</p>
                 </div>
               </div>
               <button
@@ -341,8 +394,8 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
               <div className="flex items-center gap-2.5">
                 <BookOpen className="w-4 h-4 text-blue-600" />
                 <div>
-                  <div className="text-xs font-bold text-slate-800">Từ vựng quan trọng</div>
-                  <p className="text-[10px] text-slate-500">Gợi ý từ vựng cốt lõi và cho phép lưu vào Giỏ từ</p>
+                  <div className="text-xs font-bold text-slate-800">{t.vocabTitle}</div>
+                  <p className="text-[10px] text-slate-500">{t.vocabDesc}</p>
                 </div>
               </div>
               <button
@@ -361,26 +414,125 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
             </div>
           </div>
 
-          {/* SECTION 3: TỐC ĐỘ PHÁT ÂM THANH MẶC ĐỊNH */}
-          <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">
-              Tốc độ nghe audio mặc định
-            </span>
-            <div className="flex items-center gap-2 bg-slate-100 p-1 rounded-2xl border border-slate-200">
-              {[0.75, 1.0, 1.25].map((spd) => (
-                <button
-                  key={spd}
-                  type="button"
-                  onClick={() => setPlaybackSpeed(spd)}
-                  className={`flex-1 py-1.5 text-xs font-bold rounded-xl transition-all cursor-pointer ${
-                    settings.playbackSpeed === spd
-                      ? 'bg-white text-[#1E4E9E] shadow-2xs'
-                      : 'text-slate-600 hover:text-slate-900'
-                  }`}
-                >
-                  {spd}x {spd === 1.0 && '(Chuẩn ETS)'}
-                </button>
-              ))}
+          {/* SECTION 3: TỐC ĐỘ PHÁT ÂM THANH MẶC ĐỊNH (AUDIO SPEED SETTINGS & CUSTOM TUNING) */}
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                <Sliders className="w-3.5 h-3.5 text-blue-600" />
+                {t.audioSpeedTitle}
+              </span>
+              <div className="flex items-center gap-1.5 text-xs font-mono font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-lg border border-blue-200/80">
+                <span>{settings.playbackSpeed.toFixed(2)}x</span>
+                {Math.abs(settings.playbackSpeed - 1.0) < 0.01 && (
+                  <span className="text-[10px] font-sans font-semibold text-emerald-600">
+                    ({t.etsStandard})
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {/* Multi-step preset speed pills */}
+            <div className="flex flex-wrap gap-1.5 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
+              {PRESET_SPEEDS.map((spd) => {
+                const isActive = Math.abs(settings.playbackSpeed - spd) < 0.01;
+                return (
+                  <button
+                    key={spd}
+                    type="button"
+                    onClick={() => setPlaybackSpeed(spd)}
+                    className={`flex-1 min-w-[42px] py-1.5 px-1 text-xs font-bold rounded-xl transition-all cursor-pointer text-center ${
+                      isActive
+                        ? 'bg-blue-600 text-white shadow-xs scale-102 ring-1 ring-blue-500/30'
+                        : 'bg-white/80 text-slate-700 hover:bg-white hover:text-slate-900'
+                    }`}
+                  >
+                    {spd}x
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* Continuous slider & fine-tuning buttons (-0.05 / +0.05) */}
+            <div className="p-3 bg-slate-50 rounded-2xl border border-slate-200/80 flex items-center gap-3">
+              <button
+                type="button"
+                onClick={() => setPlaybackSpeed(Math.max(0.5, Math.round((settings.playbackSpeed - 0.05) * 100) / 100))}
+                className="w-8 h-8 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-black text-sm flex items-center justify-center transition-colors cursor-pointer shrink-0 shadow-2xs"
+                title={lang === 'en' ? 'Decrease speed by 0.05x' : 'Giảm 0.05x'}
+              >
+                -
+              </button>
+
+              <div className="flex-1 flex flex-col justify-center">
+                <input
+                  type="range"
+                  min="0.5"
+                  max="2.0"
+                  step="0.05"
+                  value={settings.playbackSpeed}
+                  onChange={(e) => setPlaybackSpeed(parseFloat(e.target.value))}
+                  className="w-full accent-blue-600 cursor-pointer h-2 bg-slate-200 rounded-lg"
+                />
+                <div className="flex justify-between text-[10px] text-slate-400 mt-1 font-mono">
+                  <span>0.5x</span>
+                  <span>1.0x (ETS)</span>
+                  <span>1.5x</span>
+                  <span>2.0x</span>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setPlaybackSpeed(Math.min(2.0, Math.round((settings.playbackSpeed + 0.05) * 100) / 100))}
+                className="w-8 h-8 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-black text-sm flex items-center justify-center transition-colors cursor-pointer shrink-0 shadow-2xs"
+                title={lang === 'en' ? 'Increase speed by 0.05x' : 'Tăng 0.05x'}
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          {/* Visual Effects Level Switcher */}
+          <div className="p-4 bg-white rounded-2xl border border-slate-200/90 shadow-2xs space-y-3">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0">
+                  <Sparkles className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-slate-800">
+                    {lang === 'en' ? 'Visual Effects' : 'Hiệu ứng hình ảnh'}
+                  </div>
+                  <div className="text-[11px] text-slate-500">
+                    {lang === 'en'
+                      ? 'Full (60fps) / Reduced / Off'
+                      : 'Đầy đủ (60fps) / Giảm bớt / Tắt hoàn toàn'}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-3 gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
+              {[
+                { id: 'full', label: lang === 'en' ? 'Full' : 'Đầy đủ', desc: lang === 'en' ? '60fps' : 'Đầy đủ 60fps' },
+                { id: 'reduced', label: lang === 'en' ? 'Reduced' : 'Giảm bớt', desc: lang === 'en' ? 'Soft fade' : 'Chuyển động nhẹ' },
+                { id: 'off', label: lang === 'en' ? 'Off' : 'Tắt', desc: lang === 'en' ? 'Instant' : 'Tắt chuyển động' },
+              ].map((opt) => {
+                const isActive = (settings.visualEffects || 'full') === opt.id;
+                return (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    onClick={() => setVisualEffects(opt.id as 'full' | 'reduced' | 'off')}
+                    className={`py-2 px-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center justify-center gap-0.5 ${isActive ? 'bg-purple-600 text-white shadow-xs ring-1 ring-purple-500/30' : 'bg-white/80 text-slate-700 hover:bg-white hover:text-slate-900'}`}
+                  >
+                    <span>{opt.label}</span>
+                    <span className={`text-[9px] font-normal ${isActive ? 'text-purple-100' : 'text-slate-400'}`}>
+                      {opt.desc}
+                    </span>
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -391,19 +543,19 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
             type="button"
             onClick={resetSettings}
             className="px-3.5 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-200/60 rounded-xl transition-colors cursor-pointer flex items-center gap-1.5"
-            title="Khôi phục cài đặt gốc"
+            title={lang === 'en' ? 'Reset to factory defaults' : 'Khôi phục cài đặt gốc'}
           >
             <RotateCcw className="w-3.5 h-3.5" />
-            <span>Mặc định</span>
+            <span>{t.resetDefault}</span>
           </button>
 
           <button
             type="button"
             onClick={onClose}
-            className="px-5 py-2 rounded-xl bg-[#1E4E9E] hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-colors flex items-center gap-1.5 cursor-pointer"
+            className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs shadow-xs transition-colors flex items-center gap-1.5 cursor-pointer"
           >
             <Check className="w-4 h-4" />
-            <span>Hoàn tất</span>
+            <span>{t.done}</span>
           </button>
         </div>
       </div>
