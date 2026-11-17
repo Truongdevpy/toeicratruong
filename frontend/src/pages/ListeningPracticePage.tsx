@@ -640,17 +640,17 @@ if (viewMode === 'runner') {
                   Luyện theo 4 cấp độ
                 </h2>
                 <div className="flex items-center gap-2.5">
-                  {/* Nút Đánh giá bằng AI (Màu nhấn phụ tím-indigo lấp lánh nổi bật, khác nút Học ngay xanh) */}
+                  {/* Nút Đánh giá bằng AI (Thiết kế gradient tím nổi bật, viền phát sáng và icon lấp lánh) */}
                   <button
                     type="button"
                     onClick={() => {
                       setIsAIAssessmentOpen(true);
                       syncAssessmentUrl(true, aiTimeRange);
                     }}
-                    className="text-xs font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200/90 hover:border-purple-300 px-3 py-1.5 rounded-xl transition-all flex items-center gap-1.5 cursor-pointer shadow-2xs hover:shadow-xs active:scale-95"
+                    className="text-xs font-extrabold text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 hover:from-purple-700 hover:to-indigo-700 px-3.5 py-1.5 rounded-xl transition-all flex items-center gap-1.5 cursor-pointer shadow-sm hover:shadow-md ring-2 ring-purple-400/30 active:scale-95 animate-pulse-subtle"
                     title="Gia sư AI phân tích kết quả luyện tập, tìm điểm mạnh và khắc phục điểm yếu"
                   >
-                    <Sparkles className="w-3.5 h-3.5 text-purple-600 fill-purple-600 animate-pulse" />
+                    <Sparkles className="w-4 h-4 text-amber-300 fill-amber-300 animate-spin-slow" />
                     <span>Đánh giá bằng AI</span>
                   </button>
 
