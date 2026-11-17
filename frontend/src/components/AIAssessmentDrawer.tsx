@@ -530,6 +530,35 @@ Hãy hướng dẫn cụ thể cách khắc phục các điểm yếu này trong
                 </div>
               </div>
 
+              {/* Need More Data Topics (< 5 questions) */}
+              {stats.need_more_data_topics && stats.need_more_data_topics.length > 0 && (
+                <div className="p-4 sm:p-5 rounded-2xl border border-amber-200/80 bg-amber-50/40 space-y-2.5">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-amber-900 uppercase tracking-wider flex items-center gap-1.5">
+                      <HelpCircle className="w-4 h-4 text-amber-600" />
+                      Cần làm thêm để đánh giá ({stats.need_more_data_topics.length} chủ điểm dưới 5 câu)
+                    </span>
+                    <span className="text-[11px] text-amber-700 font-medium">Chưa đủ dữ liệu kết luận</span>
+                  </div>
+                  <p className="text-[11px] text-slate-500 leading-relaxed">
+                    Theo quy chuẩn phân tích của hệ thống, các chủ điểm dưới 5 câu hỏi chưa được xem là điểm yếu hay điểm mạnh để tránh nhận định sai lệch:
+                  </p>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+                    {stats.need_more_data_topics.map((item, idx) => (
+                      <div key={idx} className="p-2.5 bg-white rounded-xl border border-amber-100 flex items-center justify-between gap-2 shadow-2xs">
+                        <div className="min-w-0">
+                          <div className="text-xs font-bold text-slate-800 truncate">{item.topic}</div>
+                          <div className="text-[10px] text-slate-400">{item.reason || `Mới làm ${item.total}/5 câu`}</div>
+                        </div>
+                        <span className="text-[10px] font-bold text-amber-800 bg-amber-100/60 px-2 py-0.5 rounded shrink-0">
+                          {item.evidence || `${item.correct}/${item.total} câu`}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* 3. Error Patterns & Behavioral Habits */}
               {assessment.patterns_vi && assessment.patterns_vi.length > 0 && (
                 <div className="p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 space-y-3">

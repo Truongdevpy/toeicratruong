@@ -194,7 +194,7 @@ def generate_ai_assessment(
 Hãy đóng vai Gia sư AI TOEIC, đọc kỹ toàn bộ khối dữ liệu đã được xác thực ở trên và phân tích kết quả học tập của học viên.
 CHÚ Ý CÁC QUY TẮC BẮT BUỘC:
 1. Tuyệt đối không tự bịa thêm số liệu, điểm số hay câu hỏi ngoài khối dữ liệu trên.
-2. Không gọi một chủ điểm là điểm yếu nếu trong dữ liệu chưa đủ 5 câu hoặc tỉ lệ đúng không thấp rõ ràng.
+2. RÀNG BUỘC ĐIỂM YẾU: Danh sách "weaknesses" CHỈ ĐƯỢC CHỌN TỪ "verified_weaknesses" trong dữ liệu. TUYỆT ĐỐI KHÔNG đưa bất kỳ chủ điểm nào trong "need_more_data_topics" hoặc các chủ điểm dưới 5 câu vào "weaknesses".
 3. Nếu 'data_confidence' là 'low' (15 - 49 câu), bắt buộc phải ghi rõ ở đầu nhận xét: 'Dữ liệu còn ít ({stats['total_count']} câu), kết luận chỉ mang tính tham khảo sơ bộ.'
 4. Phân tích nguyên nhân có thể (do từ vựng, bẫy thì, vội vàng đoán bừa hay thời gian).
 5. Trả về định dạng JSON thuần túy (không kèm markdown ngoài khối JSON) khớp chính xác với cấu trúc sau:
@@ -261,6 +261,35 @@ CHÚ Ý CÁC QUY TẮC BẮT BUỘC:
 
                 parsed = json.loads(raw_text)
                 if isinstance(parsed, dict) and "summary_vi" in parsed:
+                    # Sanitize weaknesses: strictly eliminate any topic with < 5 attempts
+                    verified_weak_names = {w["topic"].strip().lower() for w in stats["verified_weaknesses"]}
+                    need_more_names = {n["topic"].strip().lower() for n in stats["need_more_data_topics"]}
+                    sanitized_weaknesses = []
+                    for wk in parsed.get("weaknesses", []):
+                        w_topic = str(wk.get("topic") or "").strip().lower()
+                        # If topic is in need_more_names, strip it immediately!
+                        if w_topic in need_more_names:
+                            continue
+                        # If verified_weaknesses is available, prefer matching verified weaknesses
+                        if verified_weak_names:
+                            if any(vw in w_topic or w_topic in vw for vw in verified_weak_names):
+                                sanitized_weaknesses.append(wk)
+                        else:
+                            sanitized_weaknesses.append(wk)
+                    
+                    # If AI returned no valid weaknesses but verified_weaknesses exist in code stats, populate them
+                    if not sanitized_weaknesses and stats["verified_weaknesses"]:
+                        sanitized_weaknesses = [
+                            {
+                                "topic": w["topic"],
+                                "evidence": w["evidence"],
+                                "likely_cause_vi": "Cần luyện tập thêm các câu hỏi dạng bài này để cải thiện tỉ lệ chính xác.",
+                                "example_question_ids": [],
+                                "priority": idx + 1
+                            }
+                            for idx, w in enumerate(stats["verified_weaknesses"][:4])
+                        ]
+                    parsed["weaknesses"] = sanitized_weaknesses
                     ai_result = parsed
                     break
             else:

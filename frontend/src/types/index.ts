@@ -423,6 +423,7 @@ export interface AIAssessmentStats {
     correct: number;
     accuracy: number;
     reason: string;
+    evidence?: string;
   }>;
   avg_time_sec: number;
   too_fast_count: number;
