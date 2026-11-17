@@ -15,6 +15,8 @@ import {
 import { practiceProgressStore } from '../services/practiceProgressStore';
 import { VocabBasketModal } from '../components/VocabBasketModal';
 import { LevelTheoryModal } from '../components/LevelTheoryModal';
+import { AIAssessmentDrawer } from '../components/AIAssessmentDrawer';
+import { Sparkles } from 'lucide-react';
 import { historyStore } from '../services/historyStore';
 import { api } from '../services/api';
 import { Question } from '../types';
@@ -54,7 +56,48 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const { user } = useAuth();
 
 
-  const [activeTab, setActiveTab] = useState<TabType>('part1');
+  const [activeTab, setActiveTab] = useState<TabType>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      const partParam = p.get('part');
+      if (partParam === '1' || partParam === 'part1') return 'part1';
+      if (partParam === '2' || partParam === 'part2') return 'part2';
+      if (partParam === '3' || partParam === 'part3') return 'part3';
+      if (partParam === '4' || partParam === 'part4') return 'part4';
+      if (partParam === 'dictation') return 'dictation';
+    }
+    return 'part1';
+  });
+  const [isAIAssessmentOpen, setIsAIAssessmentOpen] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      return p.get('ai') === '1' || p.get('ai') === 'true';
+    }
+    return false;
+  });
+  const [aiTimeRange, setAiTimeRange] = useState<'7d' | '30d' | 'all'>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      const r = p.get('range');
+      if (r === '7d' || r === '30d' || r === 'all') return r;
+    }
+    return 'all';
+  });
+
+  const syncAssessmentUrl = (open: boolean, range?: string) => {
+    if (typeof window === 'undefined') return;
+    try {
+      const url = new URL(window.location.href);
+      if (open) {
+        url.searchParams.set('ai', '1');
+        if (range) url.searchParams.set('range', range);
+      } else {
+        url.searchParams.delete('ai');
+        url.searchParams.delete('range');
+      }
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
+  };
   const [viewMode, setViewMode] = useState<'catalog' | 'runner'>('catalog');
 
   useEffect(() => {
@@ -596,7 +639,46 @@ if (viewMode === 'runner') {
                   <BarChart3 className="w-4 h-4 text-blue-600" />
                   Luyện theo 4 cấp độ
                 </h2>
-                <span className="text-xs text-slate-400">Chọn cấp độ phù hợp mục tiêu</span>
+                <div className="flex items-center gap-2.5">
+                  {/* Nút Đánh giá bằng AI (Màu nhấn phụ tím-indigo lấp lánh nổi bật, khác nút Học ngay xanh) */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsAIAssessmentOpen(true);
+                      syncAssessmentUrl(true, aiTimeRange);
+                    }}
+                    className="text-xs font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200/90 hover:border-purple-300 px-3 py-1.5 rounded-xl transition-all flex items-center gap-1.5 cursor-pointer shadow-2xs hover:shadow-xs active:scale-95"
+                    title="Gia sư AI phân tích kết quả luyện tập, tìm điểm mạnh và khắc phục điểm yếu"
+                  >
+                    <Sparkles className="w-3.5 h-3.5 text-purple-600 fill-purple-600 animate-pulse" />
+                    <span>Đánh giá bằng AI</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setIsVocabBasketOpen(true)}
+                    className="text-xs font-bold text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 px-3 py-1.5 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer shadow-2xs"
+                  >
+                    <ShoppingBag className="w-3.5 h-3.5 text-amber-600" />
+                    <span>Giỏ từ ({practiceProgressStore.getSavedVocabs().length})</span>
+                  </button>
+                  <span className="text-xs text-slate-400 hidden lg:inline">Chọn cấp độ phù hợp mục tiêu</span>
+                </div>
+              </div>
+
+              {/* Mobile Full-width Button */}
+              <div className="sm:hidden pt-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsAIAssessmentOpen(true);
+                    syncAssessmentUrl(true, aiTimeRange);
+                  }}
+                  className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 flex items-center justify-center gap-2 shadow-2xs"
+                >
+                  <Sparkles className="w-4 h-4 text-purple-600 fill-purple-600 animate-pulse" />
+                  <span>Đánh giá kết quả luyện tập bằng AI</span>
+                </button>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -956,6 +1038,18 @@ if (viewMode === 'runner') {
             handleStartPractice('level', theoryModalData.levelKey, theoryModalData.title);
           }
         }}
+      />
+
+      {/* AI Assessment Drawer */}
+      <AIAssessmentDrawer
+        isOpen={isAIAssessmentOpen}
+        onClose={() => {
+          setIsAIAssessmentOpen(false);
+          syncAssessmentUrl(false);
+        }}
+        scope={activeTab}
+        defaultTimeRange={aiTimeRange}
+        onNavigate={onNavigate}
       />
 
       {/* Reset Level Progress Confirmation Modal */}

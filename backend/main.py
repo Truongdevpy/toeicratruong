@@ -4,14 +4,24 @@ from fastapi import FastAPI, Request, Response, HTTPException
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.staticfiles import StaticFiles
 from database import engine, Base
 import models
+import sys
+SERVER_DIR = Path(__file__).resolve().parent.parent / 'server'
+if SERVER_DIR.exists() and str(SERVER_DIR.parent) not in sys.path:
+    sys.path.insert(0, str(SERVER_DIR.parent))
+try:
+    from server.main import app as assess_subapp
+except Exception as _e:
+    assess_subapp = None
+
 from routers import (
     auth, onboarding, placement, learning_path, dashboard,
     practice, tests, dictation, vocabulary, grammar, sw,
     ai_tutor, statistics, community, achievements,
-    notifications, admin, leaderboard, chat, translate, history, payments
+    notifications, admin, leaderboard, chat, translate, history, payments, deeptutor, personalized_practice, ai_assessment
 )
 
 from sqlalchemy import text
@@ -36,8 +46,13 @@ def run_db_migrations():
         # Ensure indexes exist for rapid lookups
         try:
             conn.execute(text("CREATE INDEX IF NOT EXISTS ix_question_attempts_user_id ON question_attempts (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_question_attempts_question_id ON question_attempts (question_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_question_attempts_created_at ON question_attempts (created_at)"))
             conn.execute(text("CREATE INDEX IF NOT EXISTS ix_test_attempts_user_id ON test_attempts (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_test_attempts_created_at ON test_attempts (created_at)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_test_attempts_test_id ON test_attempts (test_id)"))
             conn.execute(text("CREATE INDEX IF NOT EXISTS ix_user_flashcards_user_id ON user_flashcards (user_id)"))
+            conn.execute(text("CREATE INDEX IF NOT EXISTS ix_user_flashcards_next_review_at ON user_flashcards (next_review_at)"))
             conn.execute(text("CREATE INDEX IF NOT EXISTS ix_notifications_user_id ON notifications (user_id)"))
             conn.execute(text("CREATE INDEX IF NOT EXISTS ix_placement_attempts_user_id ON placement_attempts (user_id)"))
             conn.commit()
@@ -88,6 +103,27 @@ allowed_origins = [
     "http://localhost:8001",
     "http://127.0.0.1:8001",
 ]
+env_origins = os.getenv("ALLOWED_ORIGINS", "")
+if env_origins:
+    allowed_origins.extend([o.strip() for o in env_origins.split(",") if o.strip()])
+app.add_middleware(GZipMiddleware, minimum_size=500)
+
+@app.on_event("startup")
+def preload_caches_background():
+    import threading
+    def _warmup():
+        try:
+            from routers.practice import get_cached_part_practice
+            for p in range(1, 8):
+                get_cached_part_practice(p)
+            from routers.tests import get_catalog
+            get_catalog()
+            print("Warmup: All 7 parts and catalog cached into memory successfully.")
+        except Exception as e:
+            print("Warmup notice:", e)
+    t = threading.Thread(target=_warmup, daemon=True)
+    t.start()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins,
@@ -113,6 +149,17 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers["X-XSS-Protection"] = "1; mode=block"
         response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
         response.headers["Permissions-Policy"] = "geolocation=(), microphone=(self), camera=()"
+        response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
+        response.headers["Content-Security-Policy"] = (
+            "default-src 'self'; "
+            "script-src 'self' 'unsafe-inline'; "
+            "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; "
+            "font-src 'self' https://fonts.gstatic.com data:; "
+            "img-src 'self' data: https: blob:; "
+            "media-src 'self' https: blob: data:; "
+            "connect-src 'self' ws: wss: https: http:; "
+            "frame-ancestors 'none';"
+        )
         
         # Enforce UTF-8 charset on JSON and HTML responses
         content_type = response.headers.get("content-type", "")
@@ -143,11 +190,24 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = BASE_DIR / "data" / "data"
 
+DISALLOWED_STATIC_EXTENSIONS = (
+    ".db", ".db-shm", ".db-wal", ".sqlite", ".sqlite3",
+    ".env", ".py", ".pyc", ".pyo", ".key", ".pem",
+    ".token", ".cert", ".crt", ".sh", ".bat", ".cmd",
+    ".ps1", ".bash", ".bak", ".tmp", ".swp", ".git",
+    ".yaml", ".yml", ".ini", ".conf", ".cfg"
+)
+
 class CORSStaticFiles(StaticFiles):
     async def get_response(self, path: str, scope):
         # Prevent access to sensitive directories and file types
         normalized_path = path.replace("\\", "/").lower()
-        if "sessions" in normalized_path or normalized_path.endswith((".db", ".env", ".py")):
+        if (
+            "sessions" in normalized_path
+            or ".." in normalized_path
+            or any(part.startswith(".") for part in normalized_path.split("/"))
+            or normalized_path.endswith(DISALLOWED_STATIC_EXTENSIONS)
+        ):
             return Response(status_code=403, content="Access Denied")
         response = await super().get_response(path, scope)
         response.headers["Access-Control-Allow-Origin"] = "*"
@@ -196,6 +256,13 @@ app.include_router(chat.router)
 app.include_router(translate.router)
 app.include_router(history.router, prefix="/api/history")
 app.include_router(payments.router)
+app.include_router(deeptutor.router)
+app.include_router(personalized_practice.router)
+app.include_router(ai_assessment.router)
+
+if assess_subapp is not None:
+    app.mount('/api/assess', assess_subapp)
+
 
 @app.get("/")
 def root_endpoint():
@@ -234,3 +301,4 @@ def health_check():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="127.0.0.1", port=8001, reload=False)
+ # trigger reload

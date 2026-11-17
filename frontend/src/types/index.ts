@@ -82,6 +82,8 @@ export interface Question {
   related_grammar?: string;
   question_type?: string;
   photo_type?: string;
+  topic?: string;
+  grammar_tags?: string[];
 }
 
 export interface Flashcard {
@@ -381,4 +383,99 @@ export interface DictationChallenge {
   }[];
 }
 
+export interface AIAssessmentStats {
+  user_id: number;
+  scope: string;
+  scope_name: string;
+  time_range: string;
+  total_count: number;
+  correct_count: number;
+  wrong_count: number;
+  accuracy: number;
+  data_confidence: 'insufficient' | 'low' | 'medium' | 'high';
+  part_breakdown: Array<{
+    part: number;
+    part_name: string;
+    total: number;
+    correct: number;
+    accuracy: number;
+  }>;
+  verified_strengths: Array<{
+    topic: string;
+    part: number;
+    total: number;
+    correct: number;
+    accuracy: number;
+    evidence: string;
+  }>;
+  verified_weaknesses: Array<{
+    topic: string;
+    part: number;
+    total: number;
+    correct: number;
+    accuracy: number;
+    evidence: string;
+  }>;
+  need_more_data_topics: Array<{
+    topic: string;
+    part: number;
+    total: number;
+    correct: number;
+    accuracy: number;
+    reason: string;
+  }>;
+  avg_time_sec: number;
+  too_fast_count: number;
+  too_slow_count: number;
+  dominant_option?: string | null;
+  trend_description: string;
+  repeated_wrong_count: number;
+  representative_wrong: Array<{
+    id: string;
+    part: number;
+    topic: string;
+    question_text: string;
+    selected_option: string;
+    correct_option: string;
+    is_repeated: boolean;
+  }>;
+}
 
+export interface AIAssessmentResult {
+  summary_vi: string;
+  data_confidence: 'insufficient' | 'low' | 'medium' | 'high';
+  strengths: Array<{
+    topic: string;
+    evidence: string;
+    comment_vi: string;
+  }>;
+  weaknesses: Array<{
+    topic: string;
+    evidence: string;
+    likely_cause_vi: string;
+    example_question_ids: string[];
+    priority: number;
+  }>;
+  patterns_vi: string[];
+  trend_vi: string;
+  study_plan: Array<{
+    day_or_step: string;
+    action_vi: string;
+    link_target: {
+      type: string;
+      params: Record<string, any>;
+    };
+  }>;
+  encouragement_vi: string;
+}
+
+export interface AIAssessmentResponse {
+  id?: number;
+  scope: string;
+  scope_name: string;
+  time_range: string;
+  stats: AIAssessmentStats;
+  assessment: AIAssessmentResult;
+  created_at: string;
+  cached?: boolean;
+}

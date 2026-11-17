@@ -718,4 +718,25 @@ export const api = {
       method: 'DELETE',
     }),
 
+  // AI Assessment Endpoints
+  analyzeAIAssessment: (data: { scope: string; time_range: string; force_refresh?: boolean }) =>
+    request<any>('/assessment/analyze', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+  getAIAssessmentHistory: (params: { scope?: string; limit?: number } = {}) => {
+    const query = new URLSearchParams();
+    if (params.scope) query.set('scope', params.scope);
+    if (params.limit) query.set('limit', params.limit.toString());
+    return request<any>(`/assessment/history?${query.toString()}`);
+  },
+  deleteAIAssessmentHistoryItem: (id: number) =>
+    request<any>(`/assessment/history/${id}`, {
+      method: 'DELETE',
+    }),
+  clearAllAIAssessmentHistory: () =>
+    request<any>('/assessment/history', {
+      method: 'DELETE',
+    }),
+
 };

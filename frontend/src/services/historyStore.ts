@@ -31,6 +31,7 @@ export interface QuestionHistoryRecord {
   questionNumber?: number;
   part: number;
   section: string;
+  topic?: string;
   questionText?: string;
   selectedOption: string;
   correctOption: string;
@@ -85,9 +86,11 @@ class HistoryStore {
     questionNumber?: number;
     part?: number;
     section?: string;
+    topic?: string;
     questionText?: string;
     selectedOption?: string;
     correctOption?: string;
+    timeSpentSec?: number;
   }) {
     if (!questionKey) return;
     const strKey = String(questionKey).trim();
@@ -102,10 +105,12 @@ class HistoryStore {
       questionNumber: meta?.questionNumber,
       part: meta?.part || 1,
       section: meta?.section || 'listening',
+      topic: meta?.topic || '',
       questionText: meta?.questionText || '',
       selectedOption: meta?.selectedOption || 'A',
       correctOption: meta?.correctOption || 'A',
       isCorrect: true,
+      timeSpentSec: meta?.timeSpentSec || 25,
       createdAt: new Date().toISOString()
     });
 
@@ -117,11 +122,12 @@ class HistoryStore {
         question_number: meta?.questionNumber,
         part: meta?.part || 1,
         section: meta?.section,
+        topic: meta?.topic || '',
         question_text: meta?.questionText,
         selected_option: meta?.selectedOption,
         correct_option: meta?.correctOption,
         is_correct: true,
-        time_spent_sec: 25
+        time_spent_sec: meta?.timeSpentSec || 25
       }).catch(() => {});
     } catch {}
   }
@@ -131,9 +137,11 @@ class HistoryStore {
     questionNumber?: number;
     part?: number;
     section?: string;
+    topic?: string;
     questionText?: string;
     selectedOption?: string;
     correctOption?: string;
+    timeSpentSec?: number;
   }) {
     if (!questionKey) return;
     const strKey = String(questionKey).trim();
@@ -146,10 +154,12 @@ class HistoryStore {
       questionNumber: meta?.questionNumber,
       part: meta?.part || 1,
       section: meta?.section || 'listening',
+      topic: meta?.topic || '',
       questionText: meta?.questionText || '',
       selectedOption: meta?.selectedOption || 'A',
       correctOption: meta?.correctOption || 'B',
       isCorrect: false,
+      timeSpentSec: meta?.timeSpentSec || 25,
       createdAt: new Date().toISOString()
     });
 
@@ -160,11 +170,12 @@ class HistoryStore {
         question_number: meta?.questionNumber,
         part: meta?.part || 1,
         section: meta?.section,
+        topic: meta?.topic || '',
         question_text: meta?.questionText,
         selected_option: meta?.selectedOption,
         correct_option: meta?.correctOption,
         is_correct: false,
-        time_spent_sec: 25
+        time_spent_sec: meta?.timeSpentSec || 25
       }).catch(() => {});
     } catch {}
   }

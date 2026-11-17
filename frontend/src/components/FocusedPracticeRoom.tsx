@@ -1,3 +1,4 @@
+import { sfx } from '../lib/sfx';
 import { AuthRequiredGate } from './AuthRequiredGate';
 import DOMPurify from 'dompurify';
 import { MorphPlayPause } from './MorphIcon';
@@ -602,7 +603,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     setDictationResults((prev) => ({ ...prev, [qKey]: result }));
 
     if (isSfxEnabled) {
-      playAudioChime(result.isMatch);
+      sfx.play(result.isMatch ? 'correct' : 'incorrect');
     }
 
     setUserAnswers((prev) => ({ ...prev, [qKey]: correctLetter }));
@@ -1020,7 +1021,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
       const isCorrect = chosenLetter.toUpperCase() === correctLetter;
 
       if (isSfxEnabled) {
-        playAudioChime(isCorrect);
+        sfx.play(isCorrect ? 'correct' : 'incorrect');
       }
 
       const activeLevelKey = levelKey || (levelBadge?.match(/Level \d+/i) ? `part${partNumber}_${levelBadge.match(/Level \d+/i)?.[0]}` : `part${partNumber}_Level 1`);
@@ -1037,9 +1038,11 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
           questionNumber: qTarget.question_number,
           part: partNumber,
           section: partNumber <= 4 ? 'listening' : 'reading',
+          topic: qTarget.topic || qTarget.question_type || qTarget.photo_type || '',
           questionText: qTarget.question_text,
           selectedOption: chosenLetter,
-          correctOption: correctLetter
+          correctOption: correctLetter,
+          timeSpentSec: 25
         });
         setStreak((prev) => {
           const nextStreak = prev + 1;
@@ -1058,9 +1061,11 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
           questionNumber: qTarget.question_number,
           part: partNumber,
           section: partNumber <= 4 ? 'listening' : 'reading',
+          topic: qTarget.topic || qTarget.question_type || qTarget.photo_type || '',
           questionText: qTarget.question_text,
           selectedOption: chosenLetter,
-          correctOption: correctLetter
+          correctOption: correctLetter,
+          timeSpentSec: 25
         });
         setStreak(0);
       }
@@ -2895,7 +2900,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                     });
 
                     if (isSfxEnabled) {
-                      playAudioChime(allCorrect);
+                      sfx.play(allCorrect ? 'correct' : 'incorrect');
                     }
                     if (allCorrect) {
                       confetti({ particleCount: 60, spread: 70, origin: { y: 0.6 } });
