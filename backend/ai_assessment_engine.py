@@ -39,9 +39,16 @@ def parse_scope(scope: str) -> Dict[str, Any]:
         return {"type": "part", "parts": [5], "name": "Ngữ pháp (Part 5)"}
     return {"type": "overall", "parts": [1, 2, 3, 4, 5, 6, 7], "name": "Toàn bộ kỹ năng TOEIC"}
 
-def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[str, Any]:
+def buildStats(
+    user_id: int,
+    scope: str,
+    time_range: str,
+    db: Session,
+    local_attempts: Optional[List[Dict[str, Any]]] = None
+) -> Dict[str, Any]:
     """
     Computes all verifiable statistics strictly by code.
+    Merges database attempts with client-synced local attempts (from historyStore/practiceProgressStore).
     AI is not allowed to compute or estimate any numbers.
     """
     parsed_scope = parse_scope(scope)
@@ -60,9 +67,69 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
     if since_date:
         query = query.filter(models.QuestionAttempt.created_at >= since_date)
 
-    attempts = query.order_by(models.QuestionAttempt.created_at.asc()).all()
+    db_attempts = query.order_by(models.QuestionAttempt.created_at.asc()).all()
+
+    # Uniform attempt dictionary
+    attempts_dict_list: List[Dict[str, Any]] = []
+    seen_q_keys = set()
+
+    for a in db_attempts:
+        k = f"{a.question_id}_{a.created_at.isoformat() if a.created_at else ''}"
+        seen_q_keys.add(k)
+        attempts_dict_list.append({
+            "question_id": a.question_id,
+            "part": a.part or 1,
+            "topic": a.topic or f"Part {a.part}",
+            "question_text": a.question_text or "",
+            "selected_option": a.selected_option or "",
+            "correct_option": a.correct_option or "",
+            "is_correct": bool(a.is_correct),
+            "time_spent_sec": a.time_spent_sec or 25,
+            "created_at": a.created_at or now
+        })
+
+    # Merge client local attempts if provided and match scope
+    if local_attempts and isinstance(local_attempts, list):
+        for la in local_attempts:
+            qid = str(la.get("questionId") or la.get("question_id") or "")
+            if not qid:
+                continue
+            p = int(la.get("part") or 1)
+            if parsed_scope["parts"] and len(parsed_scope["parts"]) < 7 and p not in parsed_scope["parts"]:
+                continue
+
+            dt_raw = la.get("createdAt") or la.get("created_at")
+            att_time = now
+            if dt_raw:
+                try:
+                    att_time = datetime.fromisoformat(str(dt_raw).replace("Z", "+00:00")).replace(tzinfo=None)
+                except Exception:
+                    att_time = now
+            if since_date and att_time < since_date:
+                continue
+
+            k = f"{qid}_{att_time.isoformat()}"
+            if k in seen_q_keys:
+                continue
+            seen_q_keys.add(k)
+
+            attempts_dict_list.append({
+                "question_id": qid,
+                "part": p,
+                "topic": str(la.get("topic") or la.get("question_type") or f"Part {p}"),
+                "question_text": str(la.get("questionText") or la.get("question_text") or ""),
+                "selected_option": str(la.get("selectedOption") or la.get("selected_option") or ""),
+                "correct_option": str(la.get("correctOption") or la.get("correct_option") or ""),
+                "is_correct": bool(la.get("isCorrect") if "isCorrect" in la else la.get("is_correct")),
+                "time_spent_sec": int(la.get("timeSpentSec") or la.get("time_spent_sec") or 25),
+                "created_at": att_time
+            })
+
+    attempts = attempts_dict_list
+    attempts.sort(key=lambda x: x["created_at"] if isinstance(x["created_at"], datetime) else now)
+
     total_count = len(attempts)
-    correct_count = sum(1 for a in attempts if a.is_correct)
+    correct_count = sum(1 for a in attempts if a["is_correct"])
     wrong_count = total_count - correct_count
     accuracy = round((correct_count / total_count * 100), 1) if total_count > 0 else 0.0
 
@@ -79,11 +146,11 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
     # Part breakdown
     part_stats: Dict[int, Dict[str, Any]] = {}
     for a in attempts:
-        p = a.part or 1
+        p = a["part"] or 1
         if p not in part_stats:
             part_stats[p] = {"part": p, "total": 0, "correct": 0}
         part_stats[p]["total"] += 1
-        if a.is_correct:
+        if a["is_correct"]:
             part_stats[p]["correct"] += 1
 
     part_breakdown = []
@@ -100,13 +167,13 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
     # Topic / Question Type breakdown
     topic_map: Dict[str, Dict[str, Any]] = {}
     for a in attempts:
-        t = (a.topic or "").strip()
+        t = (a["topic"] or "").strip()
         if not t:
-            t = f"Part {a.part}"
+            t = f"Part {a['part']}"
         if t not in topic_map:
-            topic_map[t] = {"topic": t, "part": a.part, "total": 0, "correct": 0}
+            topic_map[t] = {"topic": t, "part": a["part"], "total": 0, "correct": 0}
         topic_map[t]["total"] += 1
-        if a.is_correct:
+        if a["is_correct"]:
             topic_map[t]["correct"] += 1
 
     verified_strengths = []
@@ -126,8 +193,7 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
             "evidence": f"{t_cor}/{t_tot} câu đúng ({t_acc}%)"
         }
 
-        # Threshold rules:
-        # Under 15 total questions overall: do not classify any topic as strength/weakness
+        # Threshold rules: Under 15 total questions overall: do not classify any topic as strength/weakness
         if total_count < 15 or t_tot < 5:
             need_more_data_topics.append({
                 **entry,
@@ -139,7 +205,6 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
             elif t_acc <= 55.0:
                 verified_weaknesses.append(entry)
             elif t_acc < (accuracy - 15.0):
-                # Significantly below overall accuracy
                 verified_weaknesses.append(entry)
 
     # Sort weaknesses by total attempts (impact) and accuracy ascending
@@ -147,15 +212,15 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
     verified_strengths.sort(key=lambda x: (-x["accuracy"], -x["total"]))
 
     # Timing analysis
-    time_list = [a.time_spent_sec for a in attempts if a.time_spent_sec and a.time_spent_sec > 0]
+    time_list = [a["time_spent_sec"] for a in attempts if a["time_spent_sec"] and a["time_spent_sec"] > 0]
     avg_time_sec = round(sum(time_list) / len(time_list), 1) if time_list else 30.0
 
     # Suspicious rush (< 8 seconds) and overtime (> 2.5x standard)
     too_fast_count = 0
     too_slow_count = 0
     for a in attempts:
-        std = STANDARD_TIME_PER_PART.get(a.part, 30)
-        t = a.time_spent_sec or 30
+        std = STANDARD_TIME_PER_PART.get(a["part"], 30)
+        t = a["time_spent_sec"] or 30
         if t < 8:
             too_fast_count += 1
         elif t > (std * 2.5):
@@ -164,24 +229,24 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
     # Option bias analysis (e.g. favoring 'C' or 'A')
     option_counts = {"A": 0, "B": 0, "C": 0, "D": 0}
     for a in attempts:
-        opt = (a.selected_option or "").upper().strip()
+        opt = (a["selected_option"] or "").upper().strip()
         if opt in option_counts:
             option_counts[opt] += 1
 
     dominant_option = None
     if total_count >= 15:
         for opt, cnt in option_counts.items():
-            if cnt / total_count > 0.45:  # Over 45% selecting same option
+            if cnt / total_count > 0.45:
                 dominant_option = f"Có xu hướng chọn đáp án {opt} bất thường ({cnt}/{total_count} câu - {round(cnt/total_count*100)}%)"
 
-    # Time trend (compare first half vs second half or week by week)
+    # Time trend
     trend_description = "Chưa đủ dữ liệu để phân tích xu hướng"
     if total_count >= 20:
         mid = total_count // 2
         first_half = attempts[:mid]
         second_half = attempts[mid:]
-        acc_first = round((sum(1 for a in first_half if a.is_correct) / len(first_half) * 100), 1)
-        acc_second = round((sum(1 for a in second_half if a.is_correct) / len(second_half) * 100), 1)
+        acc_first = round((sum(1 for a in first_half if a["is_correct"]) / len(first_half) * 100), 1)
+        acc_second = round((sum(1 for a in second_half if a["is_correct"]) / len(second_half) * 100), 1)
         diff = round(acc_second - acc_first, 1)
         if diff >= 5.0:
             trend_description = f"Tiến bộ rõ rệt (+{diff}%: từ {acc_first}% lên {acc_second}%)"
@@ -191,35 +256,34 @@ def buildStats(user_id: int, scope: str, time_range: str, db: Session) -> Dict[s
             trend_description = f"Độ chính xác ổn định quanh mức {acc_second}%"
 
     # Repeated mistakes & top 20 representative wrong questions
-    wrong_attempts = [a for a in attempts if not a.is_correct]
-    wrong_by_qid: Dict[str, List[models.QuestionAttempt]] = {}
+    wrong_attempts = [a for a in attempts if not a["is_correct"]]
+    wrong_by_qid: Dict[str, List[Dict[str, Any]]] = {}
     for wa in wrong_attempts:
-        qid = wa.question_id
+        qid = wa["question_id"]
         if qid not in wrong_by_qid:
             wrong_by_qid[qid] = []
         wrong_by_qid[qid].append(wa)
 
     repeated_wrong_qids = [qid for qid, list_a in wrong_by_qid.items() if len(list_a) > 1]
 
-    # Select up to 20 representative wrong questions for the AI prompt
+    # Select up to 20 representative wrong questions
     representative_wrong = []
     seen_q = set()
     for wa in wrong_attempts:
-        if wa.question_id in seen_q:
+        if wa["question_id"] in seen_q:
             continue
-        seen_q.add(wa.question_id)
-        # Shorten text to 120 chars to conserve tokens
-        short_text = (wa.question_text or "").strip()
+        seen_q.add(wa["question_id"])
+        short_text = (wa["question_text"] or "").strip()
         if len(short_text) > 120:
             short_text = short_text[:117] + "..."
         representative_wrong.append({
-            "id": wa.question_id,
-            "part": wa.part,
-            "topic": wa.topic or f"Part {wa.part}",
-            "question_text": short_text or f"Câu hỏi Part {wa.part}",
-            "selected_option": wa.selected_option,
-            "correct_option": wa.correct_option,
-            "is_repeated": wa.question_id in repeated_wrong_qids
+            "id": wa["question_id"],
+            "part": wa["part"],
+            "topic": wa["topic"] or f"Part {wa['part']}",
+            "question_text": short_text or f"Câu hỏi Part {wa['part']}",
+            "selected_option": wa["selected_option"],
+            "correct_option": wa["correct_option"],
+            "is_repeated": wa["question_id"] in repeated_wrong_qids
         })
         if len(representative_wrong) >= 20:
             break

@@ -25,6 +25,7 @@ import {
 } from 'lucide-react';
 import { api } from '../services/api';
 import { practiceProgressStore } from '../services/practiceProgressStore';
+import { historyStore } from '../services/historyStore';
 import { AIAssessmentResponse, AIAssessmentResult, AIAssessmentStats } from '../types';
 
 interface AIAssessmentDrawerProps {
@@ -80,10 +81,16 @@ export const AIAssessmentDrawer: React.FC<AIAssessmentDrawerProps> = ({
     }, 1200);
 
     try {
+      // Gather all client-side recorded attempts from historyStore and practiceProgressStore
+      const historyAttempts = historyStore.getQuestionAttempts();
+      const levelAttempts = practiceProgressStore.getAllLevelAttempts();
+      const mergedLocalAttempts = [...historyAttempts, ...levelAttempts];
+
       const res = await api.analyzeAIAssessment({
         scope: analysisScope,
         time_range: timeRange,
-        force_refresh: forceRefresh
+        force_refresh: forceRefresh,
+        local_attempts: mergedLocalAttempts
       });
       setProgressPct(100);
       setData(res);

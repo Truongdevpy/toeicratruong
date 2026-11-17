@@ -16,6 +16,8 @@ export interface SavedVocabItem {
   word: string;
   meaning: string;
   context?: string;
+  part?: number | string;
+  level?: string;
   savedAt: string;
 }
 
@@ -65,6 +67,7 @@ class PracticeProgressStore {
     this.getSavedVocabs = this.getSavedVocabs.bind(this);
     this.addSavedVocab = this.addSavedVocab.bind(this);
     this.removeSavedVocab = this.removeSavedVocab.bind(this);
+    this.clearAllSavedVocabs = this.clearAllSavedVocabs.bind(this);
     this.getLevelData = this.getLevelData.bind(this);
     this.getLevelStats = this.getLevelStats.bind(this);
     this.recordAnswer = this.recordAnswer.bind(this);
@@ -218,21 +221,44 @@ class PracticeProgressStore {
   }
 
   // Vocabulary Basket methods
-  public getSavedVocabs(): SavedVocabItem[] {
-    return this.savedVocabs;
+  public getSavedVocabs(levelKey?: string): SavedVocabItem[] {
+    if (!levelKey) return this.savedVocabs;
+    const norm = levelKey.toLowerCase();
+    return this.savedVocabs.filter((v) => {
+      const ctx = (v.context || '').toLowerCase();
+      return ctx.includes(norm) || (!ctx && norm.includes('level 1'));
+    });
   }
 
-  public addSavedVocab(item: { word: string; meaning: string; context?: string }): boolean {
+  public addSavedVocab(item: { word: string; meaning: string; context?: string; part?: number | string; level?: string }): boolean {
     const cleanWord = item.word.trim();
     if (!cleanWord) return false;
     const exists = this.savedVocabs.some((v) => v.word.toLowerCase() === cleanWord.toLowerCase());
-    if (exists) return false;
+    if (exists) {
+      // Update part or context if not previously set
+      this.savedVocabs = this.savedVocabs.map((v) => {
+        if (v.word.toLowerCase() === cleanWord.toLowerCase()) {
+          return {
+            ...v,
+            part: v.part || item.part,
+            level: v.level || item.level,
+            meaning: v.meaning || item.meaning || '',
+            context: v.context || item.context || ''
+          };
+        }
+        return v;
+      });
+      this.saveVocabToStorage();
+      return false;
+    }
 
     this.savedVocabs = [
       {
         word: cleanWord,
         meaning: item.meaning || '',
         context: item.context || '',
+        part: item.part,
+        level: item.level,
         savedAt: new Date().toISOString()
       },
       ...this.savedVocabs
@@ -245,6 +271,46 @@ class PracticeProgressStore {
     const cleanWord = word.trim().toLowerCase();
     this.savedVocabs = this.savedVocabs.filter((v) => v.word.toLowerCase() !== cleanWord);
     this.saveVocabToStorage();
+  }
+
+  public clearAllSavedVocabs() {
+    this.savedVocabs = [];
+    this.saveVocabToStorage();
+  }
+
+  public getAllLevelAttempts(): Array<{
+    questionId: string;
+    part: number;
+    topic?: string;
+    questionText?: string;
+    selectedOption: string;
+    correctOption: string;
+    isCorrect: boolean;
+    timeSpentSec?: number;
+    createdAt?: string;
+  }> {
+    const list: any[] = [];
+    Object.entries(this.progressMap).forEach(([lvlKey, rec]) => {
+      let pNum = 5;
+      if (lvlKey.startsWith('part')) {
+        const m = lvlKey.match(/part(\d+)/);
+        if (m) pNum = parseInt(m[1], 10);
+      }
+      Object.entries(rec.answeredQuestions || {}).forEach(([qid, ans]) => {
+        list.push({
+          questionId: qid,
+          part: pNum,
+          topic: `Part ${pNum}`,
+          questionText: `Câu hỏi Part ${pNum}`,
+          selectedOption: ans.choice || 'A',
+          correctOption: ans.isCorrect ? (ans.choice || 'A') : 'B',
+          isCorrect: ans.isCorrect,
+          timeSpentSec: 25,
+          createdAt: new Date(ans.timestamp || Date.now()).toISOString()
+        });
+      });
+    });
+    return list;
   }
 }
 

@@ -719,7 +719,7 @@ export const api = {
     }),
 
   // AI Assessment Endpoints
-  analyzeAIAssessment: (data: { scope: string; time_range: string; force_refresh?: boolean }) =>
+  analyzeAIAssessment: (data: { scope: string; time_range: string; force_refresh?: boolean; local_attempts?: any[] }) =>
     request<any>('/assessment/analyze', {
       method: 'POST',
       body: JSON.stringify(data),
