@@ -204,6 +204,7 @@ export interface FocusedPracticeRoomProps {
   levelKey?: string;
   partNumber: number;
   questions: Question[];
+  overallAudio?: string | null;
   passages?: any[];
   initialIndex?: number;
   onIndexChange?: (index: number) => void;
