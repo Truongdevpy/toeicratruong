@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify": "python ../scripts/run_verify.py",
+    "test": "vitest run"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
@@ -22,6 +24,7 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.1",
     "@testing-library/dom": "^10.4.2",
     "@testing-library/react": "^16.3.3",
     "@types/node": "^24.13.3",

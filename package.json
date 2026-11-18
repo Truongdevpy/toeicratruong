@@ -1,0 +1,9 @@
+{
+  "name": "toeic-master-platform",
+  "private": true,
+  "scripts": {
+    "verify": "python scripts/run_verify.py",
+    "test": "npm --prefix frontend test",
+    "build": "npm --prefix frontend run build"
+  }
+}
