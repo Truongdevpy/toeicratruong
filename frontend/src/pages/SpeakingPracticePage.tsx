@@ -119,6 +119,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
   const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({});
   const [accentCounts, setAccentCounts] = useState<Record<string, number>>({});
   const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState<number | 'all'>(24);
   const [totalLessons, setTotalLessons] = useState(0);
 
   // Shadowing Studio state
@@ -202,7 +203,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
         accent: selectedAccent === 'all' ? undefined : selectedAccent,
         search: searchQuery || undefined,
         page,
-        limit: 24,
+        limit: pageSize === 'all' ? 1000 : pageSize,
       });
       if (res && res.lessons) {
         setShadowingLessons(res.lessons);
@@ -215,7 +216,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
     } finally {
       setShadowingLoading(false);
     }
-  }, [selectedCategory, selectedAccent, searchQuery, page]);
+  }, [selectedCategory, selectedAccent, searchQuery, page, pageSize]);
 
   useEffect(() => {
     if (activeMode === 'shadowing') {
@@ -1749,11 +1750,13 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
             <div className="pt-4">
               <Pagination
                 currentPage={page}
-                totalPages={Math.max(1, Math.ceil(totalLessons / 24))}
+                totalPages={pageSize === "all" ? 1 : Math.max(1, Math.ceil(totalLessons / pageSize))}
                 totalItems={totalLessons}
-                pageSize={24}
+                pageSize={pageSize}
                 onPageChange={(p) => setPage(p)}
-                showPageSizeSelector={false}
+                onPageSizeChange={(s) => { setPageSize(s); setPage(1); }}
+                pageSizeOptions={[12, 24, 48, 96, "all"]}
+                showPageSizeSelector={true}
                 itemLabel="bài học"
               />
             </div>

@@ -71,6 +71,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOption, setSortOption] = useState<string>('newest');
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [pageSize, setPageSize] = useState<number | 'all'>(12);
 
   // Challenges data
   const [allChallenges, setAllChallenges] = useState<DictationChallenge[]>([]);
@@ -209,12 +210,12 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
   }, [allChallenges, partFilter, difficultyFilter, lengthFilter, durationFilter, statusFilter, searchQuery, sortOption, historyMap]);
 
   // Paginated Catalog items
-  const PAGE_SIZE = 12;
-  const totalCatalogPages = Math.max(1, Math.ceil(filteredChallenges.length / PAGE_SIZE));
+  const totalCatalogPages = pageSize === 'all' ? 1 : Math.max(1, Math.ceil(filteredChallenges.length / pageSize));
   const pagedChallenges = useMemo(() => {
-    const start = (currentPage - 1) * PAGE_SIZE;
-    return filteredChallenges.slice(start, start + PAGE_SIZE);
-  }, [filteredChallenges, currentPage]);
+    if (pageSize === 'all') return filteredChallenges;
+    const start = (currentPage - 1) * pageSize;
+    return filteredChallenges.slice(start, start + pageSize);
+  }, [filteredChallenges, currentPage, pageSize]);
 
   const currentChallenge = allChallenges[activeChallengeIndex] || filteredChallenges[0];
 
@@ -1307,9 +1308,11 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
               currentPage={currentPage}
               totalPages={totalCatalogPages}
               totalItems={filteredChallenges.length}
-              pageSize={PAGE_SIZE}
+              pageSize={pageSize}
               onPageChange={(p) => setCurrentPage(p)}
-              showPageSizeSelector={false}
+              onPageSizeChange={(s) => { setPageSize(s); setCurrentPage(1); }}
+              pageSizeOptions={[6, 12, 24, 48, "all"]}
+              showPageSizeSelector={true}
               itemLabel="bài nghe"
             />
           </div>

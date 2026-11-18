@@ -189,7 +189,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
     };
   }, [isPracticeMode, selectedNode, onFocusModeChange]);
 
-  const pageSize = 24;
+  const [pageSize, setPageSize] = useState<number | 'all'>(24);
 
   const showToast = (msg: string) => {
     setToastMessage(msg);
@@ -254,8 +254,8 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
         level,
         category,
         search,
-        limit: pageSize,
-        offset: page * pageSize,
+        limit: pageSize === 'all' ? 1000 : pageSize,
+        offset: pageSize === 'all' ? 0 : page * pageSize,
       });
       setWords(data.words || []);
       setTotal(data.total || 0);
@@ -815,15 +815,17 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
             {/* Pagination Controls */}
             {total > 0 && (
               <div className="pt-4">
-                <Pagination
-                  currentPage={page + 1}
-                  totalPages={Math.max(1, Math.ceil(total / pageSize))}
-                  totalItems={total}
-                  pageSize={pageSize}
-                  onPageChange={(p) => setPage(p - 1)}
-                  showPageSizeSelector={false}
-                  itemLabel="từ vựng"
-                />
+                  <Pagination
+                    currentPage={page + 1}
+                    totalPages={pageSize === "all" ? 1 : Math.max(1, Math.ceil(total / pageSize))}
+                    totalItems={total}
+                    pageSize={pageSize}
+                    onPageChange={(p) => setPage(p - 1)}
+                    onPageSizeChange={(s) => { setPageSize(s); setPage(0); }}
+                    pageSizeOptions={[12, 24, 48, 96, "all"]}
+                    showPageSizeSelector={true}
+                    itemLabel="từ vựng"
+                  />
               </div>
             )}
           </div>

@@ -21,6 +21,8 @@ import { api } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import { CommunityPost } from '../types';
 import { formatDisplayDate, formatDisplayDateTime } from '../utils/time';
+import { usePagination } from '../hooks/usePagination';
+import { Pagination } from '../components/common/Pagination';
 
 interface CommunityPageProps {
   onNavigate: (path: string) => void;
@@ -450,6 +452,11 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
       p.category.toLowerCase().includes(selectedTag.toLowerCase());
     return matchCat && matchSearch && matchTag;
   });
+
+  const postsPagination = usePagination<CommunityPost>({
+    data: filteredPosts,
+    initialPageSize: 10,
+  });
   return (
     <div className="min-h-screen bg-[#F8FAFC] py-8 selection:bg-blue-600 selection:text-white">
       {/* Toast notification */}
@@ -503,6 +510,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
                     onClick={() => {
                       setSelectedCategory(cat);
                       setSelectedTag(null);
+                      postsPagination.resetPage();
                     }}
                     className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors cursor-pointer ${
                       selectedCategory === cat && !selectedTag
@@ -521,7 +529,10 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
                   type="text"
                   placeholder="Tìm kiếm bài viết, tác giả..."
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    postsPagination.resetPage();
+                  }}
                   className="w-full pl-9 pr-8 py-1.5 text-xs rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-colors"
                 />
                 {searchQuery && (
@@ -564,7 +575,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
               Chưa có bài viết nào trong chuyên mục này. Hãy là người đầu tiên chia sẻ!
             </div>
           ) : (
-            filteredPosts.map((post) => {
+            postsPagination.paginatedData.map((post) => {
               const isLiked = likedPosts[post.id];
               const isExpanded = expandedComments[post.id];
 
@@ -724,6 +735,22 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
               );
             })
           )}
+
+            {filteredPosts.length > 0 && (
+              <div className="pt-2">
+                <Pagination
+                  currentPage={postsPagination.currentPage}
+                  totalPages={postsPagination.totalPages}
+                  totalItems={postsPagination.totalItems}
+                  pageSize={postsPagination.pageSize}
+                  onPageChange={postsPagination.setPage}
+                  onPageSizeChange={postsPagination.setPageSize}
+                  pageSizeOptions={[5, 10, 20, 50, "all"]}
+                  showPageSizeSelector={true}
+                  itemLabel="bài viết"
+                />
+              </div>
+            )}
             </div>
           </div>
 

@@ -49,16 +49,16 @@ export const Pagination: React.FC<PaginationProps> = ({
       : totalItems || 0;
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400">
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-slate-200 text-xs text-slate-700 font-medium select-none">
       <div className="flex items-center gap-3">
         {totalItems !== undefined && totalItems > 0 && (
           <span>
-            Hiển thị <strong className="text-slate-900 dark:text-slate-100">{startItem}-{endItem}</strong> trong tổng số{' '}
-            <strong className="text-slate-900 dark:text-slate-100">{totalItems}</strong> {itemLabel}
+            Hiển thị <strong className="text-slate-950 font-black">{startItem}-{endItem}</strong> trong tổng số{' '}
+            <strong className="text-slate-950 font-black">{totalItems}</strong> {itemLabel}
           </span>
         )}
         {showPageSizeSelector && onPageSizeChange && pageSize !== undefined && (
-          <div className="flex items-center gap-1.5 pl-3 border-l border-slate-200 dark:border-slate-700">
+          <div className="flex items-center gap-1.5 pl-3 border-l border-slate-300">
             <span>Hiển thị:</span>
             <select
               value={String(pageSize)}
@@ -66,7 +66,7 @@ export const Pagination: React.FC<PaginationProps> = ({
                 const val = e.target.value === 'all' ? 'all' : Number(e.target.value);
                 onPageSizeChange(val);
               }}
-              className="px-2 py-1 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-md text-xs font-semibold text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="px-2 py-1 bg-white border border-slate-300 rounded-md text-xs font-bold text-slate-800 shadow-2xs focus:outline-none focus:ring-1 focus:ring-blue-500 cursor-pointer"
             >
               {pageSizeOptions.map((opt) => (
                 <option key={String(opt)} value={String(opt)}>
@@ -82,7 +82,7 @@ export const Pagination: React.FC<PaginationProps> = ({
         <button
           onClick={() => onPageChange(Math.max(1, currentPage - 1))}
           disabled={currentPage === 1}
-          className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="p-1.5 rounded-lg border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors shadow-2xs"
           title="Trang trước"
         >
           <ChevronLeft className="w-4 h-4" />
@@ -91,7 +91,7 @@ export const Pagination: React.FC<PaginationProps> = ({
         <div className="flex items-center gap-1">
           {pages.map((p, idx) =>
             p === 'ellipsis' ? (
-              <span key={`ell-${idx}`} className="px-2 text-slate-400">
+              <span key={`ell-${idx}`} className="px-2 text-slate-500 font-bold">
                 ...
               </span>
             ) : (
@@ -101,7 +101,7 @@ export const Pagination: React.FC<PaginationProps> = ({
                 className={`min-w-8 h-8 px-2 text-xs font-bold rounded-lg transition-colors ${
                   currentPage === p
                     ? 'bg-blue-600 text-white shadow-sm shadow-blue-500/20'
-                    : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 border border-transparent hover:border-slate-200 dark:hover:border-slate-700'
+                    : 'text-slate-700 bg-white border border-slate-200 hover:bg-slate-50 hover:border-slate-300 shadow-2xs'
                 }`}
               >
                 {p}
@@ -113,7 +113,7 @@ export const Pagination: React.FC<PaginationProps> = ({
         <button
           onClick={() => onPageChange(Math.min(totalPages, currentPage + 1))}
           disabled={currentPage === totalPages || totalPages === 0}
-          className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+          className="p-1.5 rounded-lg border border-slate-300 bg-white text-slate-700 hover:bg-slate-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors shadow-2xs"
           title="Trang tiếp theo"
         >
           <ChevronRight className="w-4 h-4" />
