@@ -71,7 +71,7 @@ export const DuolingoNodeModal: React.FC<DuolingoNodeModalProps> = ({
             </div>
             <div>
               <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600">
-                {topic.title_vi} • Bài {node.nodeIndex + 1}/9
+                {topic.title_vi} • Bài {node.nodeIndex + 1}/5
               </span>
               <h3 className="text-base font-bold text-slate-900 mt-0.5">{node.title}</h3>
             </div>
