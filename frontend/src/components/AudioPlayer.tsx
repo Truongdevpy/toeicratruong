@@ -16,6 +16,7 @@ export interface AudioPlayerProps {
   title?: string;
   autoPlay?: boolean;
   compact?: boolean;
+  skipIntroSeconds?: number;
   enableKeyboardShortcuts?: boolean;
   onEnded?: () => void;
   onTimeUpdate?: (currentTime: number, duration: number) => void;
@@ -27,6 +28,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   title,
   autoPlay = false,
   compact = false,
+  skipIntroSeconds = 3,
   enableKeyboardShortcuts = true,
   onEnded,
   onTimeUpdate,
@@ -161,6 +163,12 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
     const handleLoadedMetadata = () => {
       setDuration(audio.duration || 0);
       setIsLoading(false);
+      if (settings?.skipIntro && skipIntroSeconds > 0 && audio.currentTime < skipIntroSeconds) {
+        if ((audio.duration || 0) > skipIntroSeconds + 2) {
+          audio.currentTime = skipIntroSeconds;
+          setCurrentTime(skipIntroSeconds);
+        }
+      }
     };
 
     const handleCanPlay = () => {
@@ -612,6 +620,27 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
             title="Tua lùi 5 giây (←)"
           >
             <Rewind className="w-4 h-4" />
+          </button>
+
+          {/* Bỏ qua Intro button */}
+          <button
+            type="button"
+            onClick={() => {
+              if (audioRef.current) {
+                const target = Math.min((audioRef.current.duration || 10) - 1, (audioRef.current.currentTime || 0) + skipIntroSeconds);
+                audioRef.current.currentTime = target;
+                setCurrentTime(target);
+              }
+            }}
+            className={`px-2 py-1 text-xs font-bold rounded-lg border transition-colors cursor-pointer flex items-center gap-1 ${
+              settings?.skipIntro
+                ? 'bg-blue-600 text-white border-blue-500 shadow-2xs'
+                : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'
+            }`}
+            title={`Bỏ qua intro (${skipIntroSeconds}s)`}
+          >
+            <FastForward className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Bỏ intro</span>
           </button>
 
           <button

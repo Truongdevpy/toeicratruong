@@ -21,6 +21,7 @@ export interface AppSettings {
   showExplanation: boolean;
   showTranslation: boolean;
   showProfileOnLeaderboard: boolean;
+  skipIntro: boolean;
 }
 
 const SETTINGS_STORAGE_KEY = 'toeic_global_app_settings_v1';
@@ -45,6 +46,7 @@ const DEFAULT_SETTINGS: AppSettings = {
   showExplanation: true,
   showTranslation: true,
   showProfileOnLeaderboard: false,
+  skipIntro: false,
 };
 
 interface SettingsContextType {
@@ -64,6 +66,7 @@ interface SettingsContextType {
   toggleShowExplanation: () => void;
   toggleShowTranslation: () => void;
   toggleShowProfileOnLeaderboard: () => void;
+  toggleSkipIntro: () => void;
   setLanguage: (lang: 'vi' | 'en') => void;
   resetSettings: () => void;
   setPlaybackSpeed: (speed: number) => void;
@@ -94,6 +97,7 @@ export const SettingsProvider: React.FC<{ children: ReactNode }> = ({ children }
           showExplanation: typeof parsed.showExplanation === 'boolean' ? parsed.showExplanation : true,
           showTranslation: typeof parsed.showTranslation === 'boolean' ? parsed.showTranslation : true,
           showProfileOnLeaderboard: typeof parsed.showProfileOnLeaderboard === 'boolean' ? parsed.showProfileOnLeaderboard : false,
+          skipIntro: typeof parsed.skipIntro === 'boolean' ? parsed.skipIntro : false,
         };
       }
     } catch (err) {
@@ -225,6 +229,16 @@ export const SettingsProvider: React.FC<{ children: ReactNode }> = ({ children }
     });
   };
 
+  const toggleSkipIntro = () => {
+    setSettings((prev) => {
+      const updated = { ...prev, skipIntro: !prev.skipIntro };
+      try {
+        localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+  };
+
   const toggleShowProfileOnLeaderboard = () => {
     setSettings((prev) => {
       const updated = { ...prev, showProfileOnLeaderboard: !prev.showProfileOnLeaderboard };
@@ -341,6 +355,7 @@ export const SettingsProvider: React.FC<{ children: ReactNode }> = ({ children }
         toggleShowExplanation,
         toggleShowTranslation,
         toggleShowProfileOnLeaderboard,
+        toggleSkipIntro,
         setLanguage,
         resetSettings,
         setPlaybackSpeed,

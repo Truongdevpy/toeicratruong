@@ -5,6 +5,8 @@ export interface TranslationSet {
   audioSpeedTitle: string;
   autoAdvanceDesc: string;
   autoAdvanceTitle: string;
+  skipIntroDesc: string;
+  skipIntroTitle: string;
   bilingualDesc: string;
   bilingualTitle: string;
   community: string;
@@ -54,6 +56,8 @@ export const TRANSLATIONS: Record<'vi' | 'en', TranslationSet> = {
     audioSpeedTitle: 'Tốc độ phát âm thanh',
     autoAdvanceDesc: 'Tự động chuyển sang câu hỏi tiếp theo sau khi chọn đáp án đúng',
     autoAdvanceTitle: 'Tự động chuyển câu',
+    skipIntroDesc: 'Bỏ qua đoạn đọc hướng dẫn/đọc câu hỏi đầu câu (nhảy đến nội dung chính)',
+    skipIntroTitle: 'Bỏ qua đoạn đọc intro',
     bilingualDesc: 'Hiển thị song ngữ Anh - Việt cho phần giải thích và mẹo làm bài',
     bilingualTitle: 'Hiển thị song ngữ',
     community: 'Cộng đồng học viên',
@@ -100,6 +104,8 @@ export const TRANSLATIONS: Record<'vi' | 'en', TranslationSet> = {
     audioSpeedTitle: 'Audio Playback Speed',
     autoAdvanceDesc: 'Automatically advance to the next question when answered correctly',
     autoAdvanceTitle: 'Auto Advance Question',
+    skipIntroDesc: 'Automatically skip question intro and direction audio',
+    skipIntroTitle: 'Skip Question Intro',
     bilingualDesc: 'Display bilingual English - Vietnamese explanations and tips',
     bilingualTitle: 'Bilingual Explanations',
     community: 'Student Community',

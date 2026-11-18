@@ -11,6 +11,7 @@ import {
   Lightbulb,
   BookOpen,
   RotateCcw,
+  FastForward,
   Check,
   Globe,
   Sliders,
@@ -39,6 +40,7 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
     toggleFloatingChat,
     toggleSfx,
     toggleAutoAdvance,
+    toggleSkipIntro,
     toggleSongNgu,
     toggleDanChung,
     toggleMeoLamBai,
@@ -271,7 +273,32 @@ export const GeneralSettingsModal: React.FC<GeneralSettingsModalProps> = ({
               </button>
             </div>
 
-            {/* Tự động chuyển câu */}
+                        {/* Bỏ qua đoạn đọc intro */}
+            <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
+              <div className="flex items-center gap-2.5">
+                <FastForward className="w-4 h-4 text-blue-600" />
+                <div>
+                  <div className="text-xs font-bold text-slate-800">{t.skipIntroTitle}</div>
+                  <p className="text-[10px] text-slate-500">{t.skipIntroDesc}</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={toggleSkipIntro}
+                className={`w-11 h-6 rounded-full transition-colors relative cursor-pointer ${
+                  settings.skipIntro ? 'bg-[#1E4E9E]' : 'bg-slate-200'
+                }`}
+                title={settings.skipIntro ? 'Đang bật bỏ qua intro' : 'Đang tắt'}
+              >
+                <span
+                  className={`block w-5 h-5 rounded-full bg-white shadow-xs transition-transform transform ${
+                    settings.skipIntro ? 'translate-x-5' : 'translate-x-0.5'
+                  }`}
+                />
+              </button>
+            </div>
+
+{/* Tự động chuyển câu */}
             <div className="flex items-center justify-between p-3 rounded-2xl bg-slate-50 border border-slate-100">
               <div className="flex items-center gap-2.5">
                 <Zap className="w-4 h-4 text-amber-500" />

@@ -6,6 +6,7 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import {
   ArrowLeft,
   RotateCcw,
+  FastForward,
   Volume2,
   VolumeX,
   Check,
@@ -540,6 +541,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     toggleDienTu,
     toggleLatTu,
     toggleAutoAdvance,
+    toggleSkipIntro,
     toggleSfx,
     toggleAnnotator,
     toggleMeoLamBai,
@@ -554,6 +556,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   const isDictationMode = globalSettings.dienTu;
   const isLatTu = globalSettings.latTu;
   const isAutoAdvance = globalSettings.autoAdvance;
+  const isSkipIntro = Boolean(globalSettings.skipIntro);
   const isSfxEnabled = globalSettings.sfx;
   const isAnnotatorActive = globalSettings.annotator;
   const isMeoLamBai = Boolean(globalSettings.meoLamBai);
@@ -976,6 +979,22 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     }
   }, [isPlaying]);
 
+  // Skip intro duration calculation based on Part
+  const skipIntroSeconds = useMemo(() => {
+    if (partNumber === 1) return 3; // Number 1, Look at the picture...
+    if (partNumber === 2) return 2.5; // Number 7...
+    if (partNumber === 3 || partNumber === 4) return 3.5; // Questions X through Y refer to...
+    return 3;
+  }, [partNumber]);
+
+  const handleSkipIntro = useCallback(() => {
+    if (!audioRef.current) return;
+    const target = Math.min((audioDuration || 10) - 1, (audioRef.current.currentTime || 0) + skipIntroSeconds);
+    audioRef.current.currentTime = target;
+    setAudioCurrentTime(target);
+    showNotification(`Đã bỏ qua ${skipIntroSeconds}s mở đầu`);
+  }, [audioDuration, skipIntroSeconds]);
+
   const handleRewind = useCallback((seconds: number) => {
     if (!audioRef.current) return;
     audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - seconds);
@@ -997,9 +1016,10 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   }, [audioDuration]);
 
   useEffect(() => {
-    setAudioCurrentTime(0);
+    const startSeek = (isSkipIntro && skipIntroSeconds > 0) ? skipIntroSeconds : 0;
+    setAudioCurrentTime(startSeek);
     if (audioRef.current) {
-      audioRef.current.currentTime = 0;
+      audioRef.current.currentTime = startSeek;
       audioRef.current.playbackRate = playbackSpeed;
       if (currentAudioUrl) {
         audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {
@@ -1009,7 +1029,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
         setIsPlaying(false);
       }
     }
-  }, [currentIndex, currentPassageIndex, playbackSpeed, currentAudioUrl]);
+  }, [currentIndex, currentPassageIndex, playbackSpeed, currentAudioUrl, isSkipIntro, skipIntroSeconds]);
 
   const stats = useMemo(() => {
     let correct = 0;
@@ -1228,6 +1248,21 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
               </span>
 
               <div className="flex items-center gap-1 sm:gap-1.5">
+                {/* Nút Bỏ qua Intro */}
+                <button
+                  type="button"
+                  onClick={handleSkipIntro}
+                  className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg font-bold text-[10px] sm:text-[11px] flex items-center gap-1 transition-colors cursor-pointer border ${
+                    isSkipIntro
+                      ? 'bg-blue-600 text-white border-blue-500 shadow-2xs'
+                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'
+                  }`}
+                  title={`Bỏ qua đoạn đọc intro (${skipIntroSeconds}s)`}
+                >
+                  <FastForward className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                  <span>Bỏ intro</span>
+                </button>
+
                 {/* Rewind 3s */}
                 <button
                   type="button"
@@ -1651,6 +1686,24 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-300 fill-amber-300 shrink-0" />
             <span className="hidden 2xl:inline text-[11px]">Lật Từ</span>
+          </button>
+
+          {/* Bỏ qua đoạn đọc intro */}
+          <button
+            type="button"
+            onClick={() => {
+              toggleSkipIntro();
+              showNotification(!isSkipIntro ? 'Đã bật: Tự động bỏ qua đoạn đọc intro mở đầu câu' : 'Đã tắt bỏ qua intro');
+            }}
+            className={`px-2 py-1 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer border shrink-0 ${
+              isSkipIntro
+                ? 'bg-blue-500 text-white border-blue-400 font-bold shadow-xs ring-2 ring-blue-300'
+                : 'bg-white/10 text-white/80 border-white/15 hover:bg-white/20'
+            }`}
+            title="Tự động bỏ qua đoạn đọc intro hướng dẫn/đầu câu hỏi"
+          >
+            <FastForward className="w-3.5 h-3.5 opacity-90 shrink-0" />
+            <span className="hidden 2xl:inline text-[11px]">Bỏ intro</span>
           </button>
 
           {/* Auto advance */}
