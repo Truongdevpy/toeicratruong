@@ -47,6 +47,10 @@ const LEVEL_CONFIGS: LevelCardInfo[] = [
   { levelKey: 'Level 2', title: 'Level 2 – 200–300', badge: '200–300', scoreRange: '200–300' },
   { levelKey: 'Level 3', title: 'Level 3 – 300–400', badge: '300–400', scoreRange: '300–400' },
   { levelKey: 'Level 4', title: 'Level 4 – 400–495', badge: '400–495', scoreRange: '400–495' },
+  { levelKey: 'Level 5', title: 'Level 5 – 500–600', badge: '500–600', scoreRange: '500–600' },
+  { levelKey: 'Level 6', title: 'Level 6 – 600–700', badge: '600–700', scoreRange: '600–700' },
+  { levelKey: 'Level 7', title: 'Level 7 – 700–800', badge: '700–800', scoreRange: '700–800' },
+  { levelKey: 'Level 8', title: 'Level 8 – 800–990', badge: '800–990', scoreRange: '800–990 (Master)' },
 ];
 
 const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
