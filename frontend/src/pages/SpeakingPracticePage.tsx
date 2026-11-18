@@ -132,7 +132,25 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
   const [showManualInput, setShowManualInput] = useState(false);
   const [evaluationResult, setEvaluationResult] = useState<EvaluationResult | null>(null);
   const [evaluating, setEvaluating] = useState(false);
-  const [sentenceScores, setSentenceScores] = useState<Record<number, number>>({});
+  const [sentenceScores, setSentenceScores] = useState<Record<number, number>>(() => {
+    if (typeof window === 'undefined') return {};
+    try {
+      const stored = localStorage.getItem('toeic_speaking_scores');
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const updateSentenceScore = (idx: number, score: number) => {
+    setSentenceScores((prev) => {
+      const updated = { ...prev, [idx]: score };
+      try {
+        localStorage.setItem('toeic_speaking_scores', JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+  };
   const [recordedAudioUrl, setRecordedAudioUrl] = useState<string | null>(null);
   const [videoKey, setVideoKey] = useState(0);
   const [showShortcutsHint, setShowShortcutsHint] = useState(false);
@@ -366,10 +384,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
 
       if (res) {
         setEvaluationResult(res);
-        setSentenceScores((prev) => ({
-          ...prev,
-          [currentSentenceIndex]: res.accuracy,
-        }));
+        updateSentenceScore(currentSentenceIndex, res.accuracy);
 
         if (autoNextOnSuccess && res.accuracy >= 80 && activeShadowingLesson) {
           if (currentSentenceIndex < activeShadowingLesson.sentences.length - 1) {

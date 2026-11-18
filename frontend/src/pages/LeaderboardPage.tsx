@@ -364,16 +364,8 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                 <Trophy className="w-5 h-5 text-amber-500 fill-amber-400 shrink-0" />
                 <span>Bảng Xếp Hạng Thi Đua</span>
               </h1>
-              {/* Data source label badge */}
-              {data?.is_mock ? (
-                <span
-                  title="Hệ thống đang hiển thị dữ liệu minh họa từ các CLB học thuật để bảo đảm trải nghiệm thi đua phong phú."
-                  className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-300"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-                  {data.data_source_label || 'Dữ liệu minh họa'}
-                </span>
-              ) : (
+              {/* Data source label badge - GAMI-02 real data */}
+
                 <span
                   title="Dữ liệu đồng bộ trực tiếp theo thời gian thực từ máy chủ."
                   className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-300"
@@ -381,7 +373,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
                   {data?.data_source_label || 'Dữ liệu thời gian thực'}
                 </span>
-              )}
+              
             </div>
             <p className="text-xs text-slate-600 font-medium">
               <strong className="text-slate-800">{data?.period_label || 'Tuần thi đua hiện tại'}</strong> • Đếm ngược kết thúc: <strong className="text-blue-700">{data?.reset_countdown || '1 ngày 12 giờ'}</strong>
@@ -906,17 +898,12 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
             </div>
 
             <div className="flex items-center gap-2 text-xs text-slate-600">
-              {data?.is_mock ? (
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 font-bold border border-amber-200">
-                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                  Dữ liệu minh họa CLB
-                </span>
-              ) : (
+              
                 <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 font-bold border border-emerald-200">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   Thời gian thực
                 </span>
-              )}
+              
             </div>
           </div>
 

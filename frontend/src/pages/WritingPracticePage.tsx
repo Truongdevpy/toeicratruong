@@ -327,7 +327,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
       return {
         badge: 'Questions 1-5',
         type: 'Viết câu theo tranh',
-        targetWords: '10-25 từ',
+        targetWords: '1 câu hoàn chỉnh',
         criteria: 'Ngữ pháp chính xác & Sử dụng đúng 2 từ cho trước'
       };
     }
@@ -489,7 +489,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                     <div className="flex items-center gap-2">
                       <Sparkles className="w-5 h-5 text-amber-500" />
                       <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                        Bài viết mẫu đạt điểm tối đa (Band 200)
+                        Bài viết mẫu đạt điểm tối đa chuẩn ETS
                       </h3>
                     </div>
                     <button
@@ -721,7 +721,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
 
                       {questionAIFeedback[currentQIndex].improved_answer && (
                         <div className="space-y-1 bg-white p-3 rounded-xl border border-indigo-100">
-                          <span className="text-[11px] font-bold text-indigo-700">🎯 Bài viết tối ưu chuẩn ETS (Band 200):</span>
+                          <span className="text-[11px] font-bold text-indigo-700">🎯 Bài viết tối ưu chuẩn ETS:</span>
                           <p className="text-xs text-slate-700 italic leading-relaxed whitespace-pre-line">
                             "{questionAIFeedback[currentQIndex].improved_answer}"
                           </p>

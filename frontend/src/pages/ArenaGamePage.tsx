@@ -65,7 +65,6 @@ import { gameStorageService } from '../components/games/gameStorageService';
 
 import { GameCard } from '../components/games/GameCard';
 
-import { FeaturedGame } from '../components/games/FeaturedGame';
 
 import { GameSetupModal } from '../components/games/GameSetupModal';
 

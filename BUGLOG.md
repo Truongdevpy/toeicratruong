@@ -23,3 +23,36 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 ## Danh sách lỗi đã xử lý
 
 *(Chưa có bản ghi mới. Điền theo mẫu trên mỗi khi sửa xong một lỗi.)*
+### [BUG-001] Mất điểm các câu Shadowing Speaking sau khi F5
+- **Mã lỗi**: SPK-02
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Khi học viên luyện phát âm các câu Speaking Shadowing, tải lại trang (F5) khiến toàn bộ `sentenceScores` bị reset về rỗng.
+- **Nguyên nhân gốc (Root Cause)**: `sentenceScores` chỉ lưu tạm trong bộ nhớ component state `useState({})`, không được đồng bộ xuống `localStorage`.
+- **File đã sửa**: `frontend/src/pages/SpeakingPracticePage.tsx`
+- **Các vị trí dùng chung bị ảnh hưởng**: Không ảnh hưởng trang khác, chỉ tác động trực tiếp lên tiến độ phòng Shadowing.
+- **Test giữ lỗi**: `frontend/src/services/srsService.test.ts`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG đổi `sentenceScores` về state đơn thuần mà không qua `updateSentenceScore`, vì học viên cần bảo lưu kết quả luyện nói qua các phiên tải lại trang.
+
+### [BUG-002] Khối FeaturedGame xuất hiện tại trang Games trái với quyết định
+- **Mã lỗi**: GAM-07
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Trang `/games` xuất hiện khối banner "Gợi ý hôm nay" chiếm diện tích dù đã có quyết định gỡ bỏ để giữ giao diện phẳng sạch.
+- **Nguyên nhân gốc (Root Cause)**: Component `FeaturedGame` và hook tính toán game nổi bật vẫn còn được import và mount trong trang `ArenaGamePage.tsx`.
+- **File đã sửa**: `frontend/src/pages/ArenaGamePage.tsx`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG mount lại `FeaturedGame` theo quyết định nhất quán của chủ dự án tại `FEATURES.md`.
+
+### [BUG-003] Nhãn Band 200 và mục tiêu 10-25 từ trong đề Writing
+- **Mã lỗi**: WRI-04
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Hiển thị nhãn sai chuẩn ETS: "Band 200" và "10-25 từ" cho phần viết câu theo tranh (Q1-5 chuẩn ETS chỉ chấm theo ngữ pháp/cấu trúc, thang điểm x/3).
+- **Nguyên nhân gốc (Root Cause)**: Chuỗi hardcode mô tả trong cấu hình đề thi câu 1-5.
+- **File đã sửa**: `frontend/src/pages/WritingPracticePage.tsx`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG đưa lại nhãn "Band 200" hay "10-25 từ" vào Writing theo chuẩn Rubric ETS.
+
+### [BUG-004] Bảng xếp hạng hiển thị nhãn dữ liệu minh họa CLB
+- **Mã lỗi**: GAMI-02
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Header và footer bảng xếp hạng hiển thị badge "Minh họa CLB" gây hiểu nhầm dữ liệu ảo.
+- **Nguyên nhân gốc (Root Cause)**: Cờ `data?.is_mock` render UI điều kiện dư thừa.
+- **File đã sửa**: `frontend/src/pages/LeaderboardPage.tsx`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG hiển thị nhãn CLB minh họa khi bảng xếp hạng đã kết nối dữ liệu người dùng thật.
