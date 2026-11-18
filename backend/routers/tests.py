@@ -71,7 +71,23 @@ def get_catalog(force_reload: bool = False):
     if _catalog_cache is None or force_reload:
         if CATALOG_PATH.exists():
             try:
-                _catalog_cache = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+                raw_c = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+                valid_c = []
+                for t in raw_c:
+                    if t.get("site") == "tooich":
+                        continue
+                    tf = MOCK_DIR / t.get("file_name", f"{t.get('id')}.json")
+                    if not tf.exists():
+                        continue
+                    try:
+                        d = json.loads(tf.read_text(encoding="utf-8"))
+                        l_qs = [q for q in d.get("questions", []) if q.get("part") in [1, 2, 3, 4]]
+                        if l_qs and not all(bool(resolve_media_url(q.get("local_audio") or q.get("audio_url") or q.get("audio") or "") and not is_full_tape_audio(resolve_media_url(q.get("local_audio") or q.get("audio_url") or q.get("audio") or ""))) for q in l_qs):
+                            continue
+                    except Exception:
+                        continue
+                    valid_c.append(t)
+                _catalog_cache = valid_c
             except Exception as e:
                 print("Error loading tests_catalog:", e)
                 _catalog_cache = []

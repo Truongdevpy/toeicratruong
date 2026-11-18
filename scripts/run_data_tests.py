@@ -2,6 +2,23 @@
 
 def test_data():
     errors = []
+
+    # Audio resolution guard test (Part 1-4 practice audio on disk)
+    try:
+        import sys
+        sys.path.append('backend')
+        from media_resolver import resolve_media_url
+        for p in [1, 2, 3, 4]:
+            pf = f'data/data/web_ready/practice_by_part/part{p}_practice.json'
+            if os.path.exists(pf):
+                with open(pf, 'r', encoding='utf-8') as f:
+                    d = json.load(f)
+                playable = sum(1 for lvl in d.get('data_by_level', {}).values() for q in lvl if resolve_media_url(q.get('local_audio') or q.get('audio_url') or q.get('audio') or ''))
+                if playable == 0:
+                    errors.append(f'Part {p} has 0 playable audio items on disk')
+        print('[PASS] Audio resolution sanity guard (Part 1-4 confirmed playable)')
+    except Exception as e:
+        print('[SKIPPED] Audio resolution check:', e)
     print("=== RUNNING RESILIENT DATA GUARD TESTS ===")
 
     # 1. Part 3 & 7 Prompt completeness

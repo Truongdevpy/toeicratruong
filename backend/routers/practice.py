@@ -160,6 +160,11 @@ def get_cached_part_practice(part_number: int):
         if not part_file.exists():
             return None
         data = json.loads(part_file.read_text(encoding="utf-8"))
+        if part_number in [1, 2, 3, 4]:
+            cleaned_dbl = {}
+            for lvl, qs in data.get("data_by_level", {}).items():
+                cleaned_dbl[lvl] = [q for q in qs if resolve_media_url(q.get("local_audio") or q.get("audio_url") or q.get("audio") or q.get("sound") or "")]
+            data["data_by_level"] = cleaned_dbl
         _part_practice_cache[part_number] = data
         _part_stats_cache[part_number] = _compute_part_stats(part_number, data.get("data_by_level", {}))
     return _part_practice_cache[part_number]

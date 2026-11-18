@@ -78,3 +78,17 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Nguyên nhân gốc (Root Cause)**: Chưa tạo component `VocabPathView.tsx` và chưa gắn `viewMode: 'path' | 'list'` vào `VocabularyPage.tsx`.
 - **File đã sửa**: `frontend/src/components/vocabulary/VocabPathView.tsx`, `frontend/src/pages/VocabularyPage.tsx`
 - **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG đảo ngược chế độ "Tra cứu chi tiết" thành mặc định; "Bản đồ Lộ trình" uốn lượn phải là giao diện chính khi người học truy cập `/practice/vocabulary`.
+
+
+### [BUG-008] Audio phát Part 1-4 bị im vặng hoặc 404
+- **Mã lỗi**: BUG-01 (DATA-03, DATA-07, TEST-07)
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Khi học viên luyện nghe Part 1-4 og các đề Crawl Tooich, âm thanh bị 404 hoặc rỗng khiến trình phát im lặng.
+- **Nguyên nhân gốc**: Dữ liệu cảo Tooich trỏ vào /media/tooich/... nhưng thư mục này chêa có trên đĩa; API chêa lọc cân/ đề có file âm thanh thực sự tồn tại.
+- **File đã sửa**:
+  - `backend/routers/practice.py` (lọc trong get_cached_part_practice)
+  - `backend/routers/tests.py` (lọc đề cồ file âm thanh tốn tại và đóng phần băng liền dài 45 phút)
+  - `scripts/run_data_tests.py` (thêm guard test kiểm tra Part 1-4)
+- **Các vị trí dùng chung bị ảnh hưởng**: Trang luyện tập Nghe Part 1-4 (`/practice/listening`) và Phòng thi thử (`/mock-tests`).
+- **Test giữ lỗi**: `scripts/run_data_tests.py` (Audio resolution sanity guard) & npm run verify
+- **Ghi chú "KHÔNG đổi lại vi..."**: KHÔNG bỏ bộ lọc resolve_media_url trên đĩa; chỉ trả về cân hỏi và đề thi có file âm thanh thực sự phát được.
