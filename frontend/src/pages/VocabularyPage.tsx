@@ -107,14 +107,18 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
 
   const VOCAB_TOPICS = [
     { id: 'all', label: 'Tất cả chủ đề' },
+    { id: 'contract', label: 'Hợp đồng & Đàm phán' },
     { id: 'office', label: 'Văn phòng & Công sở' },
     { id: 'finance', label: 'Kinh doanh & Tài chính' },
     { id: 'personnel', label: 'Nhân sự & Tuyển dụng' },
     { id: 'travel', label: 'Du lịch & Khách sạn' },
     { id: 'dining', label: 'Nhà hàng & Sự kiện' },
-    { id: 'contract', label: 'Hợp đồng & Đàm phán' },
+    { id: 'marketing', label: 'Marketing & Tiếp thị' },
     { id: 'technology', label: 'Kỹ thuật & Thiết bị' },
-    { id: 'marketing', label: 'Marketing & Bán hàng' },
+    { id: 'shopping', label: 'Mua sắm & Tiêu dùng' },
+    { id: 'entertainment', label: 'Giải trí & Nghệ thuật' },
+    { id: 'health', label: 'Y tế & Sức khỏe' },
+    { id: 'housing', label: 'Bất động sản & Nhà ở' },
   ];
 
   const loadSrsDueCards = async () => {

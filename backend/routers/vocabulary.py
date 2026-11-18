@@ -78,19 +78,27 @@ TOPIC_ALIASES = {
     "personnel": ["personnel", "nhân sự", "tuyển dụng", "nhân sự & tuyển dụng", "phỏng vấn", "lương", "đãi ngộ", "thăng chức", "hiring"],
     "travel": ["travel", "du lịch", "khách sạn", "du lịch & khách sạn", "máy bay", "vé", "hành lý", "tour", "chuyến đi", "airlines", "hotels"],
     "dining": ["dining", "nhà hàng", "sự kiện", "nhà hàng & sự kiện", "ẩm thực", "ăn uống", "bữa trưa", "bữa tối", "tiệc", "cà phê", "restaurant"],
+    "marketing": ["marketing", "tiếp thị", "bán hàng", "quảng cáo", "marketing & bán hàng", "thị trường", "khuyến mãi", "sản phẩm", "sales"],
     "technology": ["technology", "kỹ thuật", "thiết bị", "kỹ thuật & thiết bị", "công nghệ", "máy tính", "phần mềm", "phần cứng", "bảo trì", "computers", "electronics"],
-    "marketing": ["marketing", "tiếp thị", "bán hàng", "quảng cáo", "marketing & bán hàng", "thị trường", "khuyến mãi", "sản phẩm", "sales"]
+    "shopping": ["shopping", "mua sắm", "tiêu dùng", "bán lẻ", "cửa hàng", "siêu thị", "giá cả", "hàng hóa", "retail"],
+    "entertainment": ["entertainment", "giải trí", "nghệ thuật", "âm nhạc", "phim ảnh", "rạp chiếu", "sân khấu", "art", "music", "movies"],
+    "health": ["health", "y tế", "sức khỏe", "bệnh viện", "bác sĩ", "thuốc", "bảo hiểm", "y khoa", "medical", "hospital"],
+    "housing": ["housing", "bất động sản", "nhà ở", "thuê nhà", "căn hộ", "xây dựng", "kiến trúc", "real estate", "property"]
 }
 
 TOPIC_PART_NAMES = {
     "contract": ["contract", "warranty", "warranties", "business planning", "agreement", "clause", "terms", "legal"],
-    "office": ["office", "board meeting", "procedure", "supplies", "stationery", "correspondence", "department", "property"],
+    "office": ["office", "board meeting", "procedure", "supplies", "stationery", "correspondence", "department"],
     "finance": ["bank", "banking", "account", "accounting", "finance", "financial", "tax", "taxes", "invoice", "invoices", "investment", "investments"],
     "personnel": ["hire", "hiring", "recruit", "interview", "salary", "salaries", "benefit", "benefits", "promotion", "promotions", "pension", "job advertising", "applying"],
     "travel": ["travel", "flight", "airline", "airlines", "hotel", "hotels", "car rental", "train", "trains", "tourism", "passenger"],
     "dining": ["dining", "eat", "eating", "restaurant", "lunch", "dinner", "cooking", "chef", "meal", "catering", "event", "events", "conference", "conferences"],
+    "marketing": ["market", "marketing", "media", "product development", "advertising", "campaign", "client"],
     "technology": ["electronic", "electronics", "computer", "computers", "technology", "device", "quality control", "inventory", "shipping"],
-    "marketing": ["market", "marketing", "shopping", "media", "product development", "theater", "museum", "museums", "movies", "music", "advertising"]
+    "shopping": ["shopping", "retail", "store", "supermarket", "discount", "merchandise", "goods", "customer"],
+    "entertainment": ["entertainment", "theater", "museum", "museums", "movies", "music", "concert", "exhibition", "art"],
+    "health": ["health", "doctor", "dentist", "pharmacy", "medical", "hospital", "clinic", "medicine", "prescription"],
+    "housing": ["housing", "apartment", "real estate", "property", "tenant", "landlord", "rent", "construction", "renovation"]
 }
 
 TOPIC_KEYWORDS = {
@@ -100,8 +108,12 @@ TOPIC_KEYWORDS = {
     "personnel": ["employ", "staff", "recruit", "interview", "resume", "cv", "salary", "wage", "promot", "train", "training", "hire", "candidat", "perform", "benefit", "retire", "pension", "qualificat", "applicant", "personnel", "payroll", "job"],
     "travel": ["flight", "hotel", "airport", "reserv", "luggage", "baggage", "ticket", "tour", "destinat", "itinerary", "passenger", "board", "boarding", "airline", "vacat", "trip", "train", "station", "transit", "passport", "visa", "check-in", "cruise", "subway"],
     "dining": ["restaurant", "menu", "chef", "meal", "food", "cater", "beverage", "drink", "dinner", "lunch", "breakfast", "banquet", "buffet", "recipe", "cook", "order", "waiter", "waitress", "dish", "dine", "dining", "table", "snack", "cafe", "coffee"],
+    "marketing": ["market", "client", "custom", "product", "launch", "campaign", "advertis", "survey", "brand", "sale", "sales", "discount", "strateg", "promot", "consum", "competit", "buyer", "distribut", "commercial", "publicit", "billboard", "sponsor"],
     "technology": ["softwar", "hardwar", "comput", "system", "network", "data", "devic", "install", "mainten", "technic", "glitch", "error", "machine", "equip", "screen", "monitor", "digit", "program", "internet", "electronic", "repair", "wire", "cable", "battery", "tool"],
-    "marketing": ["market", "client", "custom", "product", "launch", "campaign", "advertis", "survey", "brand", "sale", "sales", "discount", "strateg", "promot", "consum", "competit", "buyer", "distribut", "commercial", "publicit", "billboard", "sponsor"]
+    "shopping": ["shop", "store", "buy", "purchase", "cashier", "receipt", "discount", "refund", "exchange", "mall", "retail", "grocer", "supermarket", "shelf", "cart", "basket", "aisle", "barcode"],
+    "entertainment": ["music", "concert", "film", "movie", "theater", "cinema", "show", "perform", "artist", "actor", "actress", "exhibit", "museum", "gallery", "ticket", "festival", "audience", "stage"],
+    "health": ["doctor", "health", "hospital", "clinic", "patient", "nurse", "dentist", "medic", "prescription", "pharmacy", "drug", "illness", "symptom", "treatment", "cure", "pain", "injury", "checkup"],
+    "housing": ["house", "home", "apart", "rent", "lease", "tenant", "landlord", "flat", "room", "build", "construct", "renovat", "estate", "property", "realtor", "furnish", "decorat", "roof", "plumb"]
 }
 
 def resolve_topic_id(cat_input: str) -> str:

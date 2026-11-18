@@ -40,3 +40,5 @@
 ## 5. Các lỗi đã xác nhận sửa (Resolved Bugs)
 - **BUG-010 (DATA-02)**: Khôi phục 930 câu hỏi Part 4 bị thiếu `question_text` trong `part4_practice.json` bằng cách đối khớp 100% từ dữ liệu thô gốc `dautoeic` và `data/export/questions.json`.
   - **Kết quả kiểm tra**: `scripts/run_data_tests.py` -> `[PASS] Part 4 prompt completeness (3330/3330 questions valid)`.
+- **BUG-011 (DATA-14)**: Hoàn tất đồng bộ toàn diện 12 chủ đề từ vựng ETS (`contract`, `office`, `finance`, `personnel`, `travel`, `dining`, `marketing`, `technology`, `shopping`, `entertainment`, `health`, `housing`) trên cả 3 tầng: Backend API Filter (`vocabulary.py`), Kho Từ vựng (`VocabularyPage.tsx`), và Lộ trình Chinh phục 48 trạm (`VocabPathView.tsx`).
+  - **Kết quả kiểm tra**: `npm run verify` -> 100% PASS.

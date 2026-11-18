@@ -120,3 +120,17 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Test giữ lỗi**: `scripts/run_data_tests.py` (Part 4 prompt completeness 3330/3330 questions valid) & `npm run verify`
 - **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG ghi đè `part4_practice.json` bằng các bản xuất thiếu trường `question_text`; luôn đối khớp từ dữ liệu gốc của dự án.
 
+### [BUG-011] Đồng bộ 12 chủ đề từ vựng ETS giữa Backend API, Kho từ vựng và Lộ trình bản đồ
+- **Mã lỗi**: DATA-14 (BUG-11)
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Bộ lọc từ vựng tại `backend/routers/vocabulary.py` và thanh chọn chủ đề `VocabularyPage.tsx` trước đây chỉ hỗ trợ 8 chủ đề, lệch so với 12 Units chuẩn ETS của Lộ trình Chinh phục (`VocabPathView.tsx`).
+- **Nguyên nhân gốc**: `TOPIC_ALIASES`, `TOPIC_PART_NAMES`, và `TOPIC_KEYWORDS` trong backend thiếu 4 chủ đề: `shopping` (Mua sắm), `entertainment` (Giải trí), `health` (Y tế), `housing` (Bất động sản).
+- **File đã sửa**:
+  - `backend/routers/vocabulary.py`
+  - `frontend/src/pages/VocabularyPage.tsx`
+  - `FEATURES.md`
+  - `RUNTIME_AUDIT.md`
+- **Các vị trí dùng chung bị ảnh hưởng**: `/api/vocabulary`, `/api/vocabulary/topic-stats`, `/practice/vocabulary`, games, flashcard.
+- **Test giữ lỗi**: `frontend/src/services/vocabPath.test.ts` (12 Units/48 Nodes), `scripts/run_data_tests.py` & `npm run verify`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG quay lại cấu hình 8 chủ đề; phải duy trì đồng bộ 100% toàn bộ 12 chủ đề ETS trên toàn bộ nền tảng.
+
