@@ -4,6 +4,9 @@
   "scripts": {
     "verify": "python scripts/run_verify.py",
     "test": "npm --prefix frontend test",
-    "build": "npm --prefix frontend run build"
+    "build": "npm --prefix frontend run build",
+    "e2e": "npx playwright test",
+    "e2e:module": "npx playwright test --grep",
+    "e2e:report": "npx playwright show-report e2e/artifacts/html-report"
   }
 }

@@ -1,0 +1,45 @@
+﻿{
+  "forbidden_strings": [
+    "Duolingo",
+    "Band 200",
+    "10-25 từ",
+    "CLB Master",
+    "CLB Bứt Phá",
+    "CLB Khởi Động",
+    "Kho Từ vựng TOEIC Chuẩn Hóa",
+    "Kho Ngữ Pháp Thực Chiến",
+    "Đấu trường Gamification",
+    "Gợi ý hôm nay",
+    "Nhóm học tập mục tiêu",
+    "Phạm Minh Khôi",
+    "Đỗ Hải Yến",
+    "Vũ Gia Huy",
+    "Lê Quỳnh Trang",
+    "Đậu TOEIC",
+    "tooich.com",
+    "Mã: ",
+    "Đang chuẩn bị lộ trình",
+    "undefined",
+    "null",
+    "NaN",
+    "[object Object]",
+    "Lorem ipsum"
+  ],
+  "required_rules": [
+    {
+      "route": "/practice/vocabulary",
+      "required_text": "Lộ trình Chinh phục Từ vựng TOEIC",
+      "description": "Tiêu đề chuẩn lộ trình chinh phục từ vựng"
+    },
+    {
+      "route": "/practice/grammar",
+      "forbidden_text": "Kho Ngữ Pháp Thực Chiến",
+      "description": "Đã bỏ banner cũ, menu chỉ ghi Ngữ pháp"
+    },
+    {
+      "route": "/mock-tests",
+      "required_text": "Đề thi (200)",
+      "description": "Tab chuẩn Đề thi (200)"
+    }
+  ]
+}
