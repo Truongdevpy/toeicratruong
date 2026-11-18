@@ -58,12 +58,12 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
 
   // 6 Criteria categories
   const [activeCategory, setActiveCategory] = useState<
-    'score' | 'progress' | 'streak' | 'practice' | 'vocab_exp' | 'grammar_exp'
+    'score' | 'progress' | 'streak' | 'practice'
   >(() => {
     if (typeof window !== 'undefined') {
       const p = new URLSearchParams(window.location.search);
       const cat = p.get('metric') || p.get('category');
-      if (cat && ['score', 'progress', 'streak', 'practice', 'vocab_exp', 'grammar_exp'].includes(cat)) {
+      if (cat && ['score', 'progress', 'streak', 'practice'].includes(cat)) {
         return cat as any;
       }
     }
@@ -309,8 +309,6 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
 
   const categories = [
     { id: 'score', label: 'Điểm TOEIC', icon: Trophy, desc: 'Điểm thi ETS & Năng lực chuẩn hóa' },
-    { id: 'vocab_exp', label: 'EXP Từ vựng', icon: BookOpen, desc: 'Điểm rèn luyện từ vựng' },
-    { id: 'grammar_exp', label: 'EXP Ngữ pháp', icon: GraduationCap, desc: 'Điểm rèn luyện ngữ pháp' },
     { id: 'streak', label: 'Chuỗi ngày', icon: Flame, desc: 'Kỷ luật chuỗi ngày học liên tục' },
     { id: 'practice', label: 'Câu đã luyện', icon: Zap, desc: 'Tổng số câu hỏi hoàn thành' },
     { id: 'progress', label: 'Tiến bộ', icon: TrendingUp, desc: 'Tăng trưởng điểm số cao nhất' }
@@ -327,10 +325,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
         return 'Chuỗi ngày';
       case 'practice':
         return 'Câu đã luyện';
-      case 'vocab_exp':
-        return 'EXP Từ vựng';
-      case 'grammar_exp':
-        return 'EXP Ngữ pháp';
+
       default:
         return 'Điểm số';
     }
@@ -503,7 +498,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                 <div className="flex items-center gap-2 text-slate-700">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0 animate-ping"></span>
                   <span>
-                    Chỉ còn <strong>{data.my_rank.points_to_next} {activeCategory === 'streak' ? 'ngày' : activeCategory === 'practice' ? 'câu' : activeCategory === 'vocab_exp' ? 'EXP Từ vựng' : activeCategory === 'grammar_exp' ? 'EXP Ngữ pháp' : activeCategory === 'progress' ? 'điểm tăng' : 'điểm'}</strong> nữa để vượt qua{' '}
+                    Chỉ còn <strong>{data.my_rank.points_to_next} {activeCategory === 'streak' ? 'ngày' : activeCategory === 'practice' ? 'câu' : activeCategory === 'progress' ? 'điểm tăng' : 'điểm'}</strong> nữa để vượt qua{' '}
                     <strong className="text-blue-600">{data.my_rank.next_user_name}</strong> và thăng lên{' '}
                     <strong>Hạng #{data.my_rank.rank - 1}</strong>!
                   </span>
@@ -1078,7 +1073,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                             <div className="text-sm font-black text-blue-600">
                               {entry.primary_value}
                             </div>
-                            {activeCategory !== 'vocab_exp' && activeCategory !== 'grammar_exp' && (
+                            {(activeCategory as any) !== 'vocab_exp' && (activeCategory as any) !== 'grammar_exp' && (
                               <div className="text-[11px] text-slate-400 font-medium">
                                 {entry.exp_points.toLocaleString()} EXP tổng
                               </div>

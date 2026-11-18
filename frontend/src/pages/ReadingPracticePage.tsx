@@ -19,6 +19,8 @@ import { historyStore } from '../services/historyStore';
 import { VocabBasketModal } from '../components/VocabBasketModal';
 import { LevelTheoryModal } from '../components/LevelTheoryModal';
 import { AIAssessmentDrawer } from '../components/AIAssessmentDrawer';
+import { Pagination } from '../components/common/Pagination';
+import { usePagination } from '../hooks/usePagination';
 import { Sparkles } from 'lucide-react';
 
 interface ReadingPracticePageProps {

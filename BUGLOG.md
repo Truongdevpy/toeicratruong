@@ -56,3 +56,18 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Nguyên nhân gốc (Root Cause)**: Cờ `data?.is_mock` render UI điều kiện dư thừa.
 - **File đã sửa**: `frontend/src/pages/LeaderboardPage.tsx`
 - **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG hiển thị nhãn CLB minh họa khi bảng xếp hạng đã kết nối dữ liệu người dùng thật.
+### [BUG-005] Đồng bộ phân trang Pagination cho Reading và Listening Practice
+- **Mã lỗi**: HUB-04
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Giao diện phần luyện tập đọc và nghe hiển thị danh sách kéo dài không đồng bộ chuẩn điều hướng trang như các mục khác.
+- **Nguyên nhân gốc (Root Cause)**: Chưa import và tích hợp `usePagination` và `Pagination` vào `ReadingPracticePage.tsx` và `ListeningPracticePage.tsx`.
+- **File đã sửa**: `frontend/src/pages/ReadingPracticePage.tsx`, `frontend/src/pages/ListeningPracticePage.tsx`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG quay lại layout cuộn dọc vô hạn không kiểm soát; phải dùng chung chuẩn Pagination toàn hệ thống.
+
+### [BUG-006] Thiếu DailyReviewModal kích hoạt SRS trong trang Ngữ pháp
+- **Mã lỗi**: GRA-03
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Logic tính toán lặp lại ngắt quãng SRS (`srsService`) đã có nhưng trên giao diện `GrammarPage.tsx` không có modal cho phép học viên ôn tập hàng ngày.
+- **Nguyên nhân gốc (Root Cause)**: Chưa tạo component giao diện `DailyReviewModal.tsx` và chưa gắn state kích hoạt vào `GrammarPage.tsx`.
+- **File đã sửa**: `frontend/src/components/grammar/DailyReviewModal.tsx`, `frontend/src/pages/GrammarPage.tsx`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG gỡ kết nối giữa `DailyReviewModal` và `srsService` để bảo đảm tính năng ghi nhớ dài hạn.

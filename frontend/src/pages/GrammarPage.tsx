@@ -38,6 +38,8 @@ import {
 import { DuolingoPathView } from '../components/grammar/DuolingoPathView';
 import { DuolingoNodeModal } from '../components/grammar/DuolingoNodeModal';
 import { DuolingoPracticeModal } from '../components/grammar/DuolingoPracticeModal';
+import { DailyReviewModal } from '../components/grammar/DailyReviewModal';
+import { srsService } from '../services/srsService';
 
 interface GrammarPageProps {
   onNavigate: (path: string) => void;
@@ -85,6 +87,7 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusMod
     node: GrammarLessonNode;
     topic: GrammarTopic;
   } | null>(null);
+  const [isDailyReviewOpen, setIsDailyReviewOpen] = useState(false);
 
   // Detail panel ref for auto-scrolling
   const detailPanelRef = useRef<HTMLDivElement>(null);
@@ -758,7 +761,14 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusMod
       )}
 
       {/* Duolingo Full-Screen Practice Modal */}
-      {activePracticeNode && (
+      <DailyReviewModal
+          isOpen={isDailyReviewOpen}
+          onClose={() => setIsDailyReviewOpen(false)}
+          userId={user?.id}
+        />
+
+        {activePracticeNode && (
+        
         <DuolingoPracticeModal
           node={activePracticeNode.node}
           topic={activePracticeNode.topic}
