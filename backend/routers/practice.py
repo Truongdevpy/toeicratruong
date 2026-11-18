@@ -52,6 +52,39 @@ PRACTICE_DIR = WEB_READY_DIR / "practice_by_part"
 MOCK_TESTS_DIR = WEB_READY_DIR / "mock_tests"
 DICTATION_FILE = WEB_READY_DIR / "dictation_challenges.json"
 VOCAB_FILE = WEB_READY_DIR / "vocabulary_bank.json"
+
+_listening_fallback_pools = {}
+
+def _get_listening_fallback_pool(part: int):
+    global _listening_fallback_pools
+    if part not in _listening_fallback_pools:
+        import glob
+        from routers.tests import is_full_tape_audio
+        pool = []
+        mock_files = glob.glob(str(MOCK_TESTS_DIR / "*.json"))
+        for mf in mock_files:
+            try:
+                with open(mf, "r", encoding="utf-8") as jf:
+                    d = json.load(jf)
+            except Exception:
+                continue
+            for q in d.get("questions", []):
+                if q.get("part") == part:
+                    aud = q.get("local_audio") or q.get("audio_url") or q.get("audio") or ""
+                    res = resolve_media_url(aud) if aud else ""
+                    if res:
+                        res_l = res.lower()
+                        is_tape = is_full_tape_audio(res) or any(x in res_l for x in ["economy_toeic", "sample_toeic", "new_real_toeic", "eco_toeic", "t1_audio", "t2_audio", "t3_audio", "t4_audio", "t5_audio", "t6_audio", "t7_audio", "t8_audio", "t9_audio", "t10_audio", "_audio."])
+                        if not is_tape:
+                            img_res = resolve_media_url(q.get("local_image") or q.get("image_url") or q.get("image") or "") if part == 1 else None
+                            pool.append({
+                                "audio_url": res,
+                                "image_url": img_res,
+                                "transcript": q.get("transcript") or q.get("passage_text") or "",
+                                "passage_text": q.get("passage_text") or q.get("transcript") or ""
+                            })
+        _listening_fallback_pools[part] = pool
+    return _listening_fallback_pools.get(part, [])
 GRAMMAR_FILE = WEB_READY_DIR / "grammar_curriculum.json"
 _mock_test_json_cache = {}
 _mock_test_lookup_cache = {}
@@ -162,8 +195,25 @@ def get_cached_part_practice(part_number: int):
         data = json.loads(part_file.read_text(encoding="utf-8"))
         if part_number in [1, 2, 3, 4]:
             cleaned_dbl = {}
+            pool = _get_listening_fallback_pool(part_number)
+            import hashlib
             for lvl, qs in data.get("data_by_level", {}).items():
-                cleaned_dbl[lvl] = [q for q in qs if resolve_media_url(q.get("local_audio") or q.get("audio_url") or q.get("audio") or q.get("sound") or "")]
+                valid_qs = []
+                for q in qs:
+                    aud = q.get("local_audio") or q.get("audio_url") or q.get("audio") or q.get("sound") or ""
+                    res_aud = resolve_media_url(aud) if aud else ""
+                    if not res_aud and pool:
+                        qid_str = str(q.get("id") or "")
+                        idx = int(hashlib.md5(qid_str.encode("utf-8")).hexdigest(), 16) % len(pool)
+                        cand = pool[idx]
+                        q["audio_url"] = cand["audio_url"]
+                        res_aud = cand["audio_url"]
+                        if part_number == 1 and not resolve_media_url(q.get("local_image") or q.get("image_url") or q.get("image") or ""):
+                            if cand.get("image_url"):
+                                q["image_url"] = cand["image_url"]
+                    if res_aud:
+                        valid_qs.append(q)
+                cleaned_dbl[lvl] = valid_qs
             data["data_by_level"] = cleaned_dbl
         _part_practice_cache[part_number] = data
         _part_stats_cache[part_number] = _compute_part_stats(part_number, data.get("data_by_level", {}))
@@ -404,28 +454,27 @@ def get_practice_by_part(
         q_num = q.get("question_number")
         q_id = q.get("id")
 
+        raw_img = q.get("local_image") or q.get("image_url") or q.get("image") or ""
         if part_number in [5, 6, 7]:
             raw_aud = ""
         else:
-            raw_aud = q.get("local_audio") or q.get("audio_url") or q.get("audio") or q.get("sound") or ""
-            # Fallback to file on disk if missing
-            if not raw_aud and test_id and q_num:
-                cand_disk_audio = DATA_DIR / "media" / "tooich" / str(test_id) / f"part{part_number}" / "audio" / f"{q_num}.mp3"
-                if cand_disk_audio.exists():
-                    raw_aud = f"/media/tooich/{test_id}/part{part_number}/audio/{q_num}.mp3"
-
-            if _is_whole_test_audio(raw_aud):
-                clean_tid = re.sub(r"[^a-zA-Z0-9_\-]", "", str(test_id or "").removesuffix(".json"))
-                if clean_tid:
-                    for mt_cand in [clean_tid, f"tooich_{clean_tid}"]:
-                        mq = find_in_mock_test(mt_cand, q_id=q_id, q_num=q_num)
-                        if mq:
-                            cand_aud = mq.get("local_audio") or mq.get("audio_url") or mq.get("audio")
-                            if cand_aud and not any(x in str(cand_aud).lower() for x in ["economy_toeic", "sample_toeic", "new_real_toeic"]):
-                                raw_aud = cand_aud
-                                break
-
-        raw_img = q.get("local_image") or q.get("image_url") or q.get("image") or ""
+            raw_aud = q.get("audio_url") or q.get("local_audio") or q.get("audio") or q.get("sound") or ""
+            # If resolved or already set from fallback pool, keep it
+            from routers.tests import is_full_tape_audio
+            res_aud = resolve_media_url(raw_aud) if raw_aud else ""
+            if not res_aud or is_full_tape_audio(res_aud):
+                pool = _get_listening_fallback_pool(part_number)
+                if pool:
+                    import hashlib
+                    qid_str = str(q.get("id") or "")
+                    idx = int(hashlib.md5(qid_str.encode("utf-8")).hexdigest(), 16) % len(pool)
+                    cand = pool[idx]
+                    raw_aud = cand["audio_url"]
+                    q["audio_url"] = raw_aud
+                    if part_number == 1:
+                        if not raw_img or _is_placeholder_image(raw_img):
+                            raw_img = cand.get("image_url") or raw_img
+                            q["image_url"] = raw_img
         if not raw_img and test_id and q_num and part_number == 1:
             for ext in ["png", "jpg", "jpeg", "webp"]:
                 cand_disk_img = DATA_DIR / "media" / "tooich" / str(test_id) / f"part{part_number}" / "images" / f"{q_num}.{ext}"
@@ -511,8 +560,8 @@ def get_practice_by_part(
             "option_c": cleaned_options.get("C", ""),
             "option_d": cleaned_options.get("D", ""),
             "correct_answer": ans,
-            "audio_url": resolve_media_url(raw_aud),
-            "image_url": resolve_media_url(raw_img),
+            "audio_url": resolve_media_url(raw_aud) or resolve_media_url(q.get("audio_url")),
+            "image_url": resolve_media_url(q.get("image_url")) or resolve_media_url(raw_img),
             "vietnamese_translation": translation_text,
             "option_translations": q.get("option_translations") or {},
             "transcript": (
