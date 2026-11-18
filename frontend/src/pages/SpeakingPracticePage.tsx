@@ -26,6 +26,7 @@ import {
 import { api } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
+import { Pagination } from '../components/common/Pagination';
 
 interface SpeakingPracticePageProps {
   onNavigate: (path: string) => void;
@@ -1744,30 +1745,17 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
           )}
 
           {/* Pagination */}
-          {totalLessons > 24 && (
-            <div className="pt-6 flex items-center justify-between border-t border-slate-200">
-              <div className="text-xs text-slate-500">
-                Hiển thị trang {page} / {Math.ceil(totalLessons / 24)} • Tổng {totalLessons} bài học
-              </div>
-
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => setPage((prev) => Math.max(1, prev - 1))}
-                  disabled={page === 1}
-                  className="px-3.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-100 disabled:opacity-40 cursor-pointer"
-                >
-                  ← Trước
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setPage((prev) => prev + 1)}
-                  disabled={page * 24 >= totalLessons}
-                  className="px-3.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-100 disabled:opacity-40 cursor-pointer"
-                >
-                  Sau →
-                </button>
-              </div>
+          {totalLessons > 0 && (
+            <div className="pt-4">
+              <Pagination
+                currentPage={page}
+                totalPages={Math.max(1, Math.ceil(totalLessons / 24))}
+                totalItems={totalLessons}
+                pageSize={24}
+                onPageChange={(p) => setPage(p)}
+                showPageSizeSelector={false}
+                itemLabel="bài học"
+              />
             </div>
           )}
         </section>

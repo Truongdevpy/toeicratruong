@@ -23,6 +23,7 @@ import { api } from '../services/api';
 import { DictationChallenge, DictationCheckResponse } from '../types';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
+import { Pagination } from '../components/common/Pagination';
 
 interface DictationPracticePageProps {
   onNavigate: (path: string) => void;
@@ -1300,27 +1301,17 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
         )}
 
         {/* Catalog Pagination */}
-        {totalCatalogPages > 1 && (
-          <div className="flex items-center justify-center gap-2 pt-4">
-            <button
-              type="button"
-              disabled={currentPage <= 1}
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 disabled:opacity-40 cursor-pointer"
-            >
-              ← Trang trước
-            </button>
-            <span className="text-xs font-bold text-slate-700 px-3">
-              Trang {currentPage} / {totalCatalogPages}
-            </span>
-            <button
-              type="button"
-              disabled={currentPage >= totalCatalogPages}
-              onClick={() => setCurrentPage((p) => Math.min(totalCatalogPages, p + 1))}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 disabled:opacity-40 cursor-pointer"
-            >
-              Trang sau →
-            </button>
+        {filteredChallenges.length > 0 && (
+          <div className="pt-4">
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalCatalogPages}
+              totalItems={filteredChallenges.length}
+              pageSize={PAGE_SIZE}
+              onPageChange={(p) => setCurrentPage(p)}
+              showPageSizeSelector={false}
+              itemLabel="bài nghe"
+            />
           </div>
         )}
 

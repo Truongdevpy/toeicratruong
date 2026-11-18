@@ -3,6 +3,7 @@ import { VocabPracticeModal } from '../components/vocabulary/VocabPracticeModal'
 import { VocabUserProgress, VocabLessonNode } from '../types/vocabDuo';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
+import { Pagination } from '../components/common/Pagination';
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
   Target,
@@ -783,31 +784,19 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
             )}
 
             {/* Pagination Controls */}
-            <div className="flex items-center justify-between pt-4 border-t border-slate-200">
-              <span className="text-xs text-slate-500">
-                Hiển thị <strong>{words.length}</strong> / <strong>{total}</strong> từ vựng
-              </span>
-
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  disabled={page === 0}
-                  onClick={() => setPage((prev) => Math.max(0, prev - 1))}
-                  className="px-3.5 py-1.5 text-xs font-semibold rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40 cursor-pointer"
-                >
-                  Trang trước
-                </button>
-                <span className="text-xs font-bold text-slate-700">Trang {page + 1}</span>
-                <button
-                  type="button"
-                  disabled={(page + 1) * pageSize >= total}
-                  onClick={() => setPage((prev) => prev + 1)}
-                  className="px-3.5 py-1.5 text-xs font-semibold rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40 cursor-pointer"
-                >
-                  Trang sau
-                </button>
+            {total > 0 && (
+              <div className="pt-4">
+                <Pagination
+                  currentPage={page + 1}
+                  totalPages={Math.max(1, Math.ceil(total / pageSize))}
+                  totalItems={total}
+                  pageSize={pageSize}
+                  onPageChange={(p) => setPage(p - 1)}
+                  showPageSizeSelector={false}
+                  itemLabel="từ vựng"
+                />
               </div>
-            </div>
+            )}
           </div>
         )}
 
