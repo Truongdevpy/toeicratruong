@@ -1,3 +1,5 @@
+import { VocabPathView } from '../components/vocabulary/VocabPathView';
+import { VocabUserProgress, VocabLessonNode } from '../types/vocabDuo';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
@@ -29,6 +31,15 @@ const SAVED_VOCAB_STORAGE_KEY = 'toeic_saved_vocab_list_v2';
 export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFocusModeChange }) => {
   const { user } = useAuth();
 
+  const [viewMode, setViewMode] = useState<'path' | 'list'>('path');
+  const [vocabProgress, setVocabProgress] = useState<VocabUserProgress>(() => {
+    try {
+      const stored = localStorage.getItem('toeic_vocab_user_progress');
+      return stored ? JSON.parse(stored) : { userId: 'guest', hearts: 10, nodes: {}, skippedTopics: [], totalXp: 0 };
+    } catch {
+      return { userId: 'guest', hearts: 10, nodes: {}, skippedTopics: [], totalXp: 0 };
+    }
+  });
   const [activeTab, setActiveTab] = useState<'all' | 'saved' | 'review'>('all');
   const [level, setLevel] = useState('all');
   const [category, setCategory] = useState('all');

@@ -71,3 +71,10 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Nguyên nhân gốc (Root Cause)**: Chưa tạo component giao diện `DailyReviewModal.tsx` và chưa gắn state kích hoạt vào `GrammarPage.tsx`.
 - **File đã sửa**: `frontend/src/components/grammar/DailyReviewModal.tsx`, `frontend/src/pages/GrammarPage.tsx`
 - **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG gỡ kết nối giữa `DailyReviewModal` và `srsService` để bảo đảm tính năng ghi nhớ dài hạn.
+### [BUG-007] Thiếu bản đồ lộ trình uốn lượn tại Lộ trình Từ vựng
+- **Mã lỗi**: VOC-01
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Giao diện Lộ trình Từ vựng `/practice/vocabulary` chỉ hiển thị dạng lưới chủ đề thông thường, thiếu chế độ bản đồ uốn lượn theo phong cách Duolingo làm mặc định theo quyết định của chủ dự án.
+- **Nguyên nhân gốc (Root Cause)**: Chưa tạo component `VocabPathView.tsx` và chưa gắn `viewMode: 'path' | 'list'` vào `VocabularyPage.tsx`.
+- **File đã sửa**: `frontend/src/components/vocabulary/VocabPathView.tsx`, `frontend/src/pages/VocabularyPage.tsx`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG đảo ngược chế độ "Tra cứu chi tiết" thành mặc định; "Bản đồ Lộ trình" uốn lượn phải là giao diện chính khi người học truy cập `/practice/vocabulary`.
