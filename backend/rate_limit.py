@@ -19,10 +19,12 @@ RATE_LIMIT_RULES: Dict[str, Tuple[int, int, bool]] = {
     r"^/api/placement-test/submit$": (10, 60, True),                    # 10 placement submits / 60s by user_id
     r"^/api/ai-tutor/chat$": (20, 60, True),                            # 20 AI chats / 60s by user_id
     r"^/api/learning-path/recalculate$": (10, 60, True),                # 10 roadmap recalculations / 60s by user_id
+    r"^/api/sw/grade-(question|test)$": (15, 60, True),                  # 15 AI Speaking/Writing gradings / 60s
+    r"^/api/sw/(speaking|writing)/grade$": (15, 60, True),              # 15 AI SW submissions / 60s
+    r"^/api/payments/create-order$": (10, 60, True),                    # 10 VIP order creations / 60s
 }
 
-JWT_SECRET = os.getenv("JWT_SECRET", "super-toeic-secret-key-edtech-platform-2026")
-JWT_ALGORITHM = "HS256"
+from auth import SECRET_KEY as JWT_SECRET, ALGORITHM as JWT_ALGORITHM
 
 class SlidingWindowLimiter:
     """

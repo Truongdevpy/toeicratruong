@@ -29,7 +29,7 @@ export const FloatingChatButton: React.FC<FloatingChatButtonProps> = ({ isOpen, 
   if (isOpen || isModalOpen) return null;
 
   return (
-    <aside aria-label="Tin nhắn toàn web" className="fixed bottom-[calc(16px+env(safe-area-inset-bottom,0px))] right-4 sm:bottom-6 sm:right-6 z-[60] print:hidden">
+    <aside aria-label="Tin nhắn toàn web" className="fixed bottom-[calc(68px+env(safe-area-inset-bottom,0px))] lg:bottom-4 right-4 sm:bottom-6 sm:right-6 z-[60] print:hidden animate-float-gentle">
       <button
         type="button"
         onClick={() => { setUnreadCount(0); onToggle(); }}

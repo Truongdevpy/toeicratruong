@@ -115,6 +115,16 @@ export const PracticeHubPage: React.FC<PracticeHubPageProps> = ({ onNavigate, on
       guestAllowed: false,
     },
     {
+      title: 'Đấu trường Gamification (Mini-Games)',
+      desc: 'Luyện từ vựng & phản xạ qua 9 mini-games hấp dẫn (word rain, quiz, dictation, match words...)',
+      path: '/games',
+      icon: Trophy,
+      color: 'text-yellow-600 bg-yellow-50 border-yellow-200',
+      stats: '9 chế độ chơi • Kho tranh thài',
+      badge: 'Games',
+      guestAllowed: true,
+    },
+    {
       title: 'Bảng Xếp Hạng Thi Đua (BXH)',
       desc: 'Theo dõi thứ hạng tuần này, vinh danh Top học viên điểm số ETS cao nhất và chuỗi Streak học tập bền bỉ.',
       path: '/leaderboard',

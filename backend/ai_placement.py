@@ -64,6 +64,9 @@ def generate_ai_placement_diagnosis(
     Invokes Gemini API with Diagnostic & Profiler Prompt to evaluate placement test,
     generate root-cause traps, and create a custom AI Tutor memory profile.
     """
+    total_done = sum(dt.get('total', 0) for dt in attempts_by_part.values())
+    total_correct = sum(dt.get('correct', 0) for dt in attempts_by_part.values())
+
     matrix_str = ""
     part_names = {
         1: "Part 1 (Mô tả tranh)",
@@ -87,9 +90,18 @@ def generate_ai_placement_diagnosis(
             "correct_answer": item.get("correct")
         })
 
+    if total_done == 0:
+        extra_note = "LƯU Ý ĐẶC BIỆT: Học viên bấm nộp bài ngay khi CHƯA LÀM CÂU HỎI NÀO (0 câu hoàn thành). KHÔNG ĐƯỢC bịa điểm mạnh. Cần kết luận thẳng thắn là thí sinh chưa làm bài kiểm tra hoặc mất gốc hoàn toàn, cần xây dựng lộ trình học từ con số 0."
+    elif total_correct == 0:
+        extra_note = "LƯU Ý ĐẶC BIỆT: Học viên làm bài nhưng sai toàn bộ (0 câu đúng). KHÔNG CÓ ĐIỂM MẠNH. Yêu cầu tập trung vào việc lấy lại nền tảng ngữ pháp và từ vựng cốt lõi từ đầu."
+    else:
+        extra_note = "Hãy phân tích chi tiết căn nguyên lỗi sai và chỉ ra các bẫy đề thi ETS học viên cần khắc phục."
+
     user_prompt = f"""HỌC VIÊN: {user_name}
 MỤC TIÊU: {target_score} TOEIC
 ĐIỂM ĐÁNH GIÁ: {estimated_score} TOEIC (Listening: {listening_score}, Reading: {reading_score})
+
+{extra_note}
 
 MA TRẬN ĐÚNG/SAI THEO PART:
 {matrix_str}
@@ -97,7 +109,7 @@ MA TRẬN ĐÚNG/SAI THEO PART:
 CHI TIẾT CÂU SAI TIÊU BIỂU:
 {json.dumps(err_details, ensure_ascii=False, indent=2)}
 
-Hãy phân tích chẩn đoán chuyên sâu và xuất ra JSON cấu hình Gia sư AI cá nhân hóa theo đúng mẫu đã định nghĩa.
+Hãy phân tích chẩn đoán chuyên sâu và xuất ra duy nhất một đối tượng JSON chuẩn theo format quy định, không kèm bất kỳ giải thích nào ngoài JSON.
 """
 
     gemini_res = gemini_pool.generate_content(
@@ -126,6 +138,47 @@ Hãy phân tích chẩn đoán chuyên sâu và xuất ra JSON cấu hình Gia s
             logger.warning(f"[AIPlacement] Failed to parse Gemini JSON: {e}")
 
     # Fallback profiler: High-quality rule engine
+    total_answered = sum(p.get("total", 0) for p in attempts_by_part.values())
+    total_correct_count = sum(p.get("correct", 0) for p in attempts_by_part.values())
+
+    if total_answered == 0:
+        return {
+            "diagnostic_summary": f"Học viên nộp bài khi chưa làm câu hỏi nào (Điểm ước tính: 10 TOEIC). Cần bắt đầu học từ nền tảng phát âm cơ bản, từ vựng 300 từ đầu tiên và ngữ pháp câu đơn trước khi luyện đề.",
+            "band_level": "Mất gốc / Nhập môn (10-350)",
+            "root_cause_weaknesses": [
+                {
+                    "part": "Toàn bài thi",
+                    "weakness_title": "Chưa hoàn thành bài đánh giá",
+                    "severity": "Cao",
+                    "evidence": "Bài kiểm tra nộp trắng (0/31 câu).",
+                    "remedy": "Làm lại bài đánh giá nghiêm túc hoặc bắt đầu học lộ trình nhập môn 0-350+."
+                },
+                {
+                    "part": "Nền tảng Listening",
+                    "weakness_title": "Thiếu phản xạ âm thanh tiếng Anh",
+                    "severity": "Cao",
+                    "evidence": "Chưa có dữ liệu bài nghe Part 1 & 2.",
+                    "remedy": "Bắt đầu với bài luyện nghe chép chính tả cấp độ Beginner và học bảng phiên âm IPA."
+                },
+                {
+                    "part": "Nền tảng Reading",
+                    "weakness_title": "Thiếu cấu trúc câu đơn & từ vựng cơ bản",
+                    "severity": "Cao",
+                    "evidence": "Chưa làm các câu hỏi ngữ pháp cơ bản Part 5.",
+                    "remedy": "Học chuyên đề Danh từ, Đại từ và các thì đơn trong phần Ngữ pháp thực chiến."
+                }
+            ],
+            "pacing_issue": "Chưa có dữ liệu tốc độ làm bài thực tế",
+            "ai_tutor_persona_config": {
+                "teaching_tone": "Kiên nhẫn, tận tình, hướng dẫn từng bước từ căn bản",
+                "socratic_difficulty": "Giải thích chi tiết trực tiếp kèm ví dụ minh họa",
+                "priority_parts": [1, 2, 5]
+            },
+            "ai_memory_notes": f"Học viên nộp bài trống (Điểm 10/990, mục tiêu {target_score}). Cần dạy từ bảng chữ cái âm thanh IPA, từ vựng hình ảnh Part 1 và cấu trúc câu S-V-O cơ bản.",
+            "ai_powered": False,
+            "model_used": "Gia sư AI Rule Engine (Chế độ Nhập môn)"
+        }
+
     weak_traps = []
     lowest_parts = sorted(attempts_by_part.items(), key=lambda x: (x[1]["correct"] / max(1, x[1]["total"])))
     for p_num, p_data in lowest_parts[:3]:

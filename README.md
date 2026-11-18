@@ -58,7 +58,15 @@ Dự án được xây dựng với mục tiêu:
 - Công nghệ Word Diff so sánh độ khớp từng từ, tô màu trực quan (đúng/sai/thiếu).
 - Tính năng gợi ý chữ cái đầu, điều chỉnh tốc độ audio (0.75x, 1.0x, 1.25x), lặp lại câu.
 
-### 4. 🤖 Trợ lý học tập AI (AI DeepTutor & Gemini Pool)
+### 4. 🤖 Trợ lý học tập AI DeepTutor (Tích hợp chuẩn HKUDS DeepTutor & Gemini Pool)
+- **Kiến trúc Sư phạm HKUDS DeepTutor**:
+  - **4 Nhóm Tri thức Nhận thức (Cognitive Knowledge Types)**: `Memory` (Từ vựng, âm thanh), `Concept` (Ngữ pháp, khái niệm), `Procedure` (Quy trình nhận diện bẫy 5s, bắt âm Part 2), `Design` (Chiến thuật phân bổ 120 phút).
+  - **Thuật toán Độ thuần thục (Mastery Engine)**: Tính toán điểm thuần thục (0..1) có trọng số gần nhất (Recency-Weighted: 0.5 -> 1.0) kèm trần tin cậy (Confidence Cap) tránh may rủi.
+  - **Lập lịch Ôn tập Giãn cách (Spaced Repetition Scheduler)**: Mô hình suy giảm Ebbinghaus $R(t) = \exp(-\Delta t / S)$, tự động tạo hàng đợi ôn tập cá nhân hóa hàng ngày theo mức độ nguy cơ quên kiến thức.
+  - **Phân loại Lỗi sai 4 Tầng (Cognitive Error Taxonomy)**: Structural (kiến thức cấu trúc), Deviation (sập bẫy ETS), Application (áp dụng sai ngữ cảnh), Metacognitive (bất cẩn/vội vã).
+  - **Thử thách Feynman (Feynman Challenge)**: Học viên tự giải thích khái niệm để AI chấm điểm độ mạch lạc, chỉ ra lỗ hổng kiến thức và gợi ý mẹo 5 giây.
+- **Cụm Multi-Key Google Gemini Pool**: Tự động xoay vòng key (Key Rotation), tự động hồi phục khi chạm giới hạn rate limit (429 Cooldown) và hỗ trợ fallback qua nhiều model (`gemini-2.5-flash`, `gemini-1.5-flash`, ...).
+- **AI Security Guard**: Bộ lọc chống Prompt Injection, làm sạch mã độc và xác thực JSON đầu ra.
 - Tích hợp cụm **Multi-Key Google Gemini Pool** với cơ chế tự động xoay vòng key (Key Rotation), tự động hồi phục khi chạm giới hạn rate limit (429 Cooldown) và hỗ trợ fallback qua nhiều model (`gemini-2.5-flash`, `gemini-1.5-flash`, ...).
 - Chat hỏi đáp thắc mắc ngữ pháp, cấu trúc câu ngay khi đang làm bài.
 - Bảo mật tầng AI (AI Security): Bộ lọc chống Prompt Injection, làm sạch mã độc và xác thực JSON đầu ra.

@@ -435,7 +435,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
             </button>
             <h1 className="text-2xl font-extrabold text-slate-900 flex items-center gap-2">
               <Target className="w-6 h-6 text-pink-600" />
-              Kho Từ vựng TOEIC Chuẩn Hóa
+              Lộ trình Chinh phục Từ vựng TOEIC
             </h1>
           </div>
 
@@ -675,7 +675,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
                           <div className="mt-2.5 flex flex-wrap gap-1">
                             {w.collocations.slice(0, 2).map((c, i) => (
                               <span key={i} className="text-[10px] px-2 py-0.5 bg-slate-100 text-slate-600 rounded-md font-medium">
-                                {c}
+                                {typeof c === 'string' ? c : (c?.phrase || '')}
                               </span>
                             ))}
                           </div>

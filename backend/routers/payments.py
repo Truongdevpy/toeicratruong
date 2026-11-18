@@ -252,8 +252,9 @@ async def payment_webhook(request: Request, db: Session = Depends(get_db)):
     except Exception:
         raise HTTPException(status_code=400, detail="Malformed JSON payload.")
 
+    import os
     cfg = PaymentService.get_banking_config(db)
-    secret = (cfg.get("webhook_secret") or "").strip()
+    secret = (cfg.get("webhook_secret") or os.getenv("WEBHOOK_SECRET") or "").strip()
     if secret:
         received_sig = (
             request.headers.get("X-Webhook-Signature") or
@@ -266,8 +267,10 @@ async def payment_webhook(request: Request, db: Session = Depends(get_db)):
             received_sig = received_sig[7:].strip()
 
         if not hmac.compare_digest(secret, received_sig):
-            logger.warning("Webhook unauthorized: secret mismatch")
+            logger.warning("[SECURITY] Webhook unauthorized: signature mismatch")
             raise HTTPException(status_code=401, detail="Webhook signature verification failed")
+    else:
+        logger.warning("[SECURITY] Webhook invoked without configured secret. Set WEBHOOK_SECRET in production!")
     
     # Extract transaction data (compatible with SePay, ThueAPI, MBBank webhook payloads)
     content = str(body.get("content") or body.get("description") or body.get("transaction_code") or body.get("memo") or "").strip()

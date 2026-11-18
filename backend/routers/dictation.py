@@ -4,7 +4,9 @@ import json
 import re
 import difflib
 from pathlib import Path
-from media_resolver import resolve_media_url
+from media_resolver import resolve_media_url, _file_exists_on_disk
+import os
+import hashlib
 
 router = APIRouter(prefix="/api/dictation", tags=["dictation"])
 
@@ -31,17 +33,316 @@ def get_sets():
             _sets_cache = []
     return _sets_cache
 
+TRIM_DIR = DATA_DIR / "dautoeic" / "dictation_trimmed"
+
+def get_trimmed_audio_for_q(t_idx: int, part: int, q_num: int) -> str:
+    p_dir = TRIM_DIR / f"Test_{t_idx}" / "audio" / f"part_{part}"
+    if p_dir.exists():
+        try:
+            prefix = f"{int(q_num):03d}_audio_"
+            for f in p_dir.iterdir():
+                if f.name.startswith(prefix):
+                    return f"/dautoeic_media/dictation_trimmed/Test_{t_idx}/audio/part_{part}/{f.name}"
+        except Exception:
+            pass
+    return ""
+
+def get_trimmed_audio_for_pas(t_idx: int, part: int, order) -> str:
+    p_dir = TRIM_DIR / f"Test_{t_idx}" / "audio" / f"part_{part}"
+    if p_dir.exists():
+        try:
+            prefix = f"{int(order):03d}_audio_"
+            for f in p_dir.iterdir():
+                if f.name.startswith(prefix):
+                    return f"/dautoeic_media/dictation_trimmed/Test_{t_idx}/audio/part_{part}/{f.name}"
+        except Exception:
+            pass
+        # Fallback to order index order in directory
+        wavs = sorted([f for f in p_dir.iterdir() if f.name.endswith(".wav") or f.name.endswith(".mp3")])
+        try:
+            idx = int(order) - 1
+            if 0 <= idx < len(wavs):
+                return f"/dautoeic_media/dictation_trimmed/Test_{t_idx}/audio/part_{part}/{wavs[idx].name}"
+        except Exception:
+            pass
+    return ""
+
+def get_dictation_trimmed_audio(audio_url: str, part: int) -> str:
+    """
+    Returns the path to trimmed audio specifically for Dictation Practice (intro instructions removed).
+    If a trimmed version exists on disk, returns it; otherwise on-demand creates it or falls back to original.
+    Other sections (e.g. Listening test, full tests) never call this and retain full original intros.
+    """
+    if not audio_url:
+        return ""
+    if "/Crack_TOEIC_Vol_2/" in audio_url:
+        trimmed_url = audio_url.replace("/Crack_TOEIC_Vol_2/", "/dictation_trimmed/")
+        if _file_exists_on_disk(trimmed_url):
+            return trimmed_url
+        try:
+            rel = audio_url[len("/dautoeic_media/"):].replace("/", "\\")
+            src_path = (DATA_DIR / "dautoeic" / rel)
+            t_rel = trimmed_url[len("/dautoeic_media/"):].replace("/", "\\")
+            out_path = (DATA_DIR / "dautoeic" / t_rel)
+            if src_path.exists():
+                out_path.parent.mkdir(parents=True, exist_ok=True)
+                import subprocess
+                cut = 6.0 if part == 1 else 1.65 if part == 2 else 5.3 if part == 3 else 5.8
+                subprocess.run(["ffmpeg", "-y", "-ss", str(cut), "-i", str(src_path), "-c", "copy", str(out_path)], capture_output=True, timeout=5)
+                if out_path.exists() and out_path.stat().st_size > 1000:
+                    return trimmed_url
+        except Exception:
+            pass
+    return audio_url
+
+_verified_audio_pools = None
+
+def _build_verified_audio_pools():
+    global _verified_audio_pools
+    if _verified_audio_pools is not None:
+        return _verified_audio_pools
+
+    pools = {1: [], 2: [], 3: [], 4: []}
+    vol2_dir = DATA_DIR / "dautoeic" / "Crack_TOEIC_Vol_2"
+    if vol2_dir.exists():
+        for t in sorted(os.listdir(vol2_dir)):
+            p = vol2_dir / t
+            if not p.is_dir():
+                continue
+            q_file = p / "questions.json"
+            if q_file.exists():
+                try:
+                    qs = json.loads(q_file.read_text(encoding="utf-8"))
+                    for q in qs:
+                        part = q.get("part")
+                        if part in [1, 2]:
+                            raw_aud = q.get("local_audio") or q.get("audio") or q.get("audio_url")
+                            resolved = resolve_media_url(raw_aud) if raw_aud else ""
+                            if resolved and "listening-audio" not in resolved and _file_exists_on_disk(resolved):
+                                trimmed = get_dictation_trimmed_audio(resolved, part)
+                                pools[part].append(trimmed if _file_exists_on_disk(trimmed) else resolved)
+                except Exception:
+                    pass
+
+            pass_file = p / "passages.json"
+            if pass_file.exists():
+                try:
+                    passages = json.loads(pass_file.read_text(encoding="utf-8"))
+                    for pas in passages:
+                        part_str = str(pas.get("part") or "")
+                        if part_str in ["3", "4"]:
+                            p_num = int(part_str)
+                            raw_aud = pas.get("local_audio") or pas.get("audio") or pas.get("audio_url")
+                            resolved = resolve_media_url(raw_aud) if raw_aud else ""
+                            if resolved and "listening-audio" not in resolved and _file_exists_on_disk(resolved):
+                                trimmed = get_dictation_trimmed_audio(resolved, p_num)
+                                pools[p_num].append(trimmed if _file_exists_on_disk(trimmed) else resolved)
+                except Exception:
+                    pass
+
+    # Safety fallbacks
+    audio_dir = DATA_DIR / "dautoeic" / "media_files" / "audio"
+    if audio_dir.exists():
+        local_files = [
+            f"/dautoeic_media/media_files/audio/{f}"
+            for f in os.listdir(audio_dir)
+            if f.endswith(".mp3") or f.endswith(".wav")
+        ]
+        for p in [1, 2, 3, 4]:
+            if not pools[p] and local_files:
+                pools[p] = local_files
+
+    _verified_audio_pools = pools
+    return pools
+
+def _build_pristine_challenges():
+    items = []
+    vol2_dir = DATA_DIR / "dautoeic" / "Crack_TOEIC_Vol_2"
+    if not vol2_dir.exists():
+        return items
+
+    for t_idx in range(1, 11):
+        t_name = f"Test_{t_idx}"
+        t_path = vol2_dir / t_name
+        if not t_path.exists():
+            continue
+
+        q_file = t_path / "questions.json"
+        if q_file.exists():
+            try:
+                qs = json.loads(q_file.read_text(encoding="utf-8"))
+                for q in qs:
+                    part = q.get("part")
+                    q_num = q.get("question_number")
+                    resolved = get_trimmed_audio_for_q(t_idx, part, q_num)
+                    if not resolved:
+                        raw_aud = q.get("local_audio") or q.get("audio") or q.get("audio_url")
+                        resolved = resolve_media_url(raw_aud) if raw_aud else ""
+                        if not resolved or not _file_exists_on_disk(resolved):
+                            continue
+                        resolved = get_dictation_trimmed_audio(resolved, part)
+
+                    opts = q.get("options") or {}
+                    extra = q.get("extra") or {}
+                    dich = extra.get("dich_nghia") or ""
+
+                    if part == 1:
+                        raw_img = q.get("image_url") or q.get("image") or q.get("local_image")
+                        resolved_img = resolve_media_url(raw_img) if raw_img else ""
+                        lines = [
+                            f"(A) {opts.get('A', '')}",
+                            f"(B) {opts.get('B', '')}",
+                            f"(C) {opts.get('C', '')}",
+                            f"(D) {opts.get('D', '')}"
+                        ]
+                        full_sent = "\n".join(lines)
+                        items.append({
+                            "id": f"vol2_t{t_idx}_p1_q{q_num}",
+                            "image_url": resolved_img,
+                            "options": opts,
+                            "correct_answer": q.get("correct_answer") or q.get("answer") or "A",
+                            "set_id": f"vol2_t{t_idx}",
+                            "part": 1,
+                            "title": f"Luyện nghe Part 1 - Câu {q_num}",
+                            "audio_url": resolved,
+                            "full_sentence": full_sent,
+                            "lines": lines,
+                            "vietnamese_translation": dich or f"Mô tả hình ảnh câu {q_num} Test {t_idx}",
+                            "difficulty": "Easy" if (q_num or 1) <= 3 else "Medium",
+                            "segments": lines,
+                            "phonetic_tips": generate_phonetic_tips(full_sent),
+                            "key_vocab": extract_key_vocab(full_sent)
+                        })
+                    elif part == 2:
+                        q_text = (q.get("question_text") or q.get("question") or "").strip()
+                        lines = [
+                            f"Câu hỏi: {q_text}",
+                            f"(A) {opts.get('A', '')}",
+                            f"(B) {opts.get('B', '')}",
+                            f"(C) {opts.get('C', '')}"
+                        ]
+                        full_sent = "\n".join(lines)
+                        diff = "Easy" if (q_num or 1) <= 15 else "Hard" if (q_num or 1) >= 26 else "Medium"
+                        items.append({
+                            "id": f"vol2_t{t_idx}_p2_q{q_num}",
+                            "question_text": q_text,
+                            "options": opts,
+                            "correct_answer": q.get("correct_answer") or q.get("answer") or "A",
+                            "set_id": f"vol2_t{t_idx}",
+                            "part": 2,
+                            "title": f"Luyện nghe Part 2 - Câu {q_num}",
+                            "audio_url": resolved,
+                            "full_sentence": full_sent,
+                            "lines": lines,
+                            "vietnamese_translation": dich or f"Hỏi đáp câu {q_num} Test {t_idx}",
+                            "difficulty": diff,
+                            "segments": lines,
+                            "phonetic_tips": generate_phonetic_tips(full_sent),
+                            "key_vocab": extract_key_vocab(full_sent)
+                        })
+            except Exception:
+                pass
+
+        pass_file = t_path / "passages.json"
+        if pass_file.exists():
+            try:
+                passages = json.loads(pass_file.read_text(encoding="utf-8"))
+                for pas in passages:
+                    part_str = str(pas.get("part") or "")
+                    if part_str in ["3", "4"]:
+                        p_num = int(part_str)
+                        resolved = get_trimmed_audio_for_pas(t_idx, p_num, pas.get("order_index") or pas.get("title") or "1")
+                        if not resolved:
+                            raw_aud = pas.get("local_audio") or pas.get("audio") or pas.get("audio_url")
+                            resolved = resolve_media_url(raw_aud) if raw_aud else ""
+                            if not resolved or not _file_exists_on_disk(resolved):
+                                continue
+                            resolved = get_dictation_trimmed_audio(resolved, p_num)
+
+                        raw_text = pas.get("passage_text") or pas.get("transcript") or ""
+                        clean = re.sub(r"<[^>]+>", "\n", raw_text)
+                        lines = [l.strip() for l in clean.split("\n") if l.strip()]
+                        if not lines:
+                            continue
+
+                        raw_vi = pas.get("passage_text_2") or ""
+                        clean_vi = re.sub(r"<[^>]+>", "\n", raw_vi)
+                        vi_lines = [l.strip() for l in clean_vi.split("\n") if l.strip()]
+                        vi_text = "\n".join(vi_lines)
+
+                        order = pas.get("order_index") or pas.get("title") or "1"
+                        full_sent = "\n".join(lines)
+                        items.append({
+                            "id": f"vol2_t{t_idx}_p{p_num}_pas{order}",
+                            "set_id": f"vol2_t{t_idx}",
+                            "part": p_num,
+                            "title": f"Luyện nghe Part {p_num} - Đoạn {order}",
+                            "audio_url": resolved,
+                            "full_sentence": full_sent,
+                            "lines": lines,
+                            "vietnamese_translation": vi_text or f"Dịch nghĩa đoạn Part {p_num} Test {t_idx}",
+                            "difficulty": "Medium" if p_num == 3 else "Hard",
+                            "segments": lines,
+                            "phonetic_tips": generate_phonetic_tips(full_sent),
+                            "key_vocab": extract_key_vocab(full_sent)
+                        })
+            except Exception:
+                pass
+
+    return items
+
 def get_challenges():
     global _challenges_cache
     if _challenges_cache is None:
+        pristine = _build_pristine_challenges()
+        audio_pools = _build_verified_audio_pools()
+
+        legacy_normalized = []
         if CHALLENGES_FILE.exists():
             try:
-                data = json.loads(CHALLENGES_FILE.read_text(encoding="utf-8"))
-                _challenges_cache = data.get("challenges", [])
-            except Exception:
-                _challenges_cache = []
-        else:
-            _challenges_cache = []
+                raw_data = json.loads(CHALLENGES_FILE.read_text(encoding="utf-8"))
+                raw_list = raw_data.get("challenges", []) if isinstance(raw_data, dict) else (raw_data if isinstance(raw_data, list) else [])
+                for c in raw_list:
+                    sent = c.get("full_sentence") or c.get("transcript") or ""
+                    vi = c.get("vietnamese_translation") or c.get("translation_vi") or ""
+                    lines = c.get("lines") or [l.strip() for l in sent.split("\n") if l.strip()]
+
+                    raw_p = str(c.get("part", "1")).lower().replace("part", "").strip()
+                    p_num = int(raw_p) if raw_p.isdigit() else 1
+
+                    diff_raw = c.get("difficulty")
+                    diff_label = "Easy" if diff_raw in [1, "1", "easy", "Easy"] else "Hard" if diff_raw in [3, "3", "hard", "Hard"] else "Medium"
+
+                    aud = resolve_media_url(c.get("audio_url"))
+                    if not aud or "listening-audio" in aud or not _file_exists_on_disk(aud):
+                        pool = audio_pools.get(p_num) or audio_pools.get(1, [])
+                        if pool:
+                            cid = str(c.get("id") or "")
+                            h = int(hashlib.md5(cid.encode("utf-8")).hexdigest(), 16)
+                            aud = pool[h % len(pool)]
+                    else:
+                        aud = get_dictation_trimmed_audio(aud, p_num)
+
+                    legacy_normalized.append({
+                        "id": c["id"],
+                        "set_id": c.get("set_id"),
+                        "part": p_num,
+                        "title": c.get("title") or f"Luyện nghe Part {p_num}",
+                        "audio_url": aud,
+                        "full_sentence": sent,
+                        "lines": lines,
+                        "blanks_sentence": c.get("blanks_sentence"),
+                        "keywords": c.get("keywords") or [],
+                        "vietnamese_translation": vi,
+                        "difficulty": diff_label,
+                        "segments": c.get("segments") or lines or extract_segments(sent),
+                        "phonetic_tips": c.get("phonetic_tips") or generate_phonetic_tips(sent),
+                        "key_vocab": c.get("key_vocab") or extract_key_vocab(sent)
+                    })
+            except Exception as err:
+                print("Error normalizing legacy dictation challenges:", err)
+
+        _challenges_cache = pristine + legacy_normalized
     return _challenges_cache
 
 def get_vocab_dict():
@@ -447,15 +748,30 @@ def get_dictation_set_items(set_id: str):
         "items": result
     }
 
+@router.get("/challenges/{challenge_id}")
+def get_single_challenge(challenge_id: str):
+    challenges = get_challenges()
+    target = next((c for c in challenges if c["id"] == challenge_id), None)
+    if not target:
+        raise HTTPException(status_code=404, detail=f"Không tìm thấy bài nghe {challenge_id}")
+    return target
+
 @router.get("/challenges")
 def list_challenges(
     part: int = Query(None),
     difficulty: str = Query(None),
-    limit: int = Query(20, ge=1, le=100),
+    challenge_id: str = Query(None),
+    limit: int = Query(100, ge=1, le=500),
     page: int = Query(1, ge=1)
 ):
     challenges = get_challenges()
     filtered = challenges
+
+    if challenge_id:
+        target = next((c for c in challenges if c["id"] == challenge_id), None)
+        if target:
+            other = [c for c in filtered if c["id"] != challenge_id]
+            filtered = [target] + other
 
     if part is not None and not hasattr(part, "default") and str(part).lower() != "all":
         try:
@@ -468,32 +784,36 @@ def list_challenges(
         filtered = [c for c in filtered if str(c.get("difficulty", "")).lower() == str(difficulty).lower()]
 
     page_num = page if isinstance(page, int) else getattr(page, "default", 1) or 1
-    limit_num = limit if isinstance(limit, int) else getattr(limit, "default", 20) or 20
+    limit_num = limit if isinstance(limit, int) else getattr(limit, "default", 100) or 100
     start = (page_num - 1) * limit_num
     paged = filtered[start:start + limit_num]
 
     result = []
     for c in paged:
-        sent = c.get("full_sentence") or ""
-        vi = c.get("vietnamese_translation") or ""
-        lines = c.get("lines") or [l.strip() for l in sent.split("\n") if l.strip()]
         result.append({
             "id": c["id"],
             "set_id": c.get("set_id"),
             "part": c.get("part", 1),
             "title": c.get("title") or f"Luyện nghe Part {c.get('part', 1)}",
-            "audio_url": resolve_media_url(c.get("audio_url")),
-            "full_sentence": sent,
-            "lines": lines,
+            "audio_url": c.get("audio_url") or "",
+            "full_sentence": c.get("full_sentence") or "",
+            "lines": c.get("lines") or [],
             "blanks_sentence": c.get("blanks_sentence"),
             "keywords": c.get("keywords") or [],
-            "vietnamese_translation": vi,
+            "vietnamese_translation": c.get("vietnamese_translation") or "",
             "difficulty": c.get("difficulty") or "Medium",
-            "segments": c.get("segments") or lines or extract_segments(sent),
-            "phonetic_tips": c.get("phonetic_tips") or generate_phonetic_tips(sent),
-            "key_vocab": c.get("key_vocab") or extract_key_vocab(sent)
+            "segments": c.get("segments") or [],
+            "phonetic_tips": c.get("phonetic_tips") or [],
+            "key_vocab": c.get("key_vocab") or [],
+            "image_url": c.get("image_url"),
+            "options": c.get("options"),
+            "question_text": c.get("question_text"),
+            "correct_answer": c.get("correct_answer"),
+            "image_url": c.get("image_url"),
+            "options": c.get("options"),
+            "question_text": c.get("question_text"),
+            "correct_answer": c.get("correct_answer")
         })
-
     return {
         "total": len(filtered),
         "total_pages": math.ceil(len(filtered) / limit_num),

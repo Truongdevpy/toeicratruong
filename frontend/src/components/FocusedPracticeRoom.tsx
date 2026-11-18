@@ -302,89 +302,132 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   onExit,
   onNavigate,
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
-  const [currentPassageIndex, setCurrentPassageIndex] = useState(0);
+    const { user } = useAuth();
+  const isVipUser = Boolean(user?.role === 'vip' || user?.role === 'admin' || user?.is_vip);
+
+  // Group all questions into unified units:
+  // - Part 1, 2, 5: Single question units
+  // - Part 3, 4: 3 questions per audio group/passage
+  // - Part 6: 4 questions per passage
+  // - Part 7: 2 to 5 questions per passage
+  const effectiveGroups = useMemo(() => {
+    if (!questions || questions.length === 0) return [];
+    const groups: any[] = [];
+    const rawPassages = Array.isArray(passages) ? passages : [];
+
+    for (let i = 0; i < questions.length;) {
+      const q = questions[i];
+      const qPart = Number(q.part) || Number(rawPartNumber) || 1;
+      const isPassage = [3, 4, 6, 7].includes(qPart);
+
+      if (!isPassage) {
+        // Single question group (Part 1, 2, 5)
+        const qAudio = q.audio_url || (q as any).local_audio || (q as any).audio || null;
+        const qImage = q.image_url || (q as any).local_image || (q as any).image || null;
+        groups.push({
+          id: String(q.id || q.question_number || groups.length + 1),
+          type: 'single',
+          part: qPart,
+          passage: null,
+          audio_url: qAudio,
+          image_url: qImage,
+          passage_text: q.passage_text || '',
+          transcript: q.transcript || '',
+          questions: [q],
+          question_number: q.question_number || (i + 1),
+        });
+        i++;
+      } else {
+        // Passage group (Part 3, 4, 6, 7)
+        let passageObj = rawPassages.find((p: any) => {
+          if (Number(p.part) !== qPart) return false;
+          if (p.order_index && p.order_index === q.question_number) return true;
+          if (q.audio_url && p.audio_url && p.audio_url === q.audio_url) return true;
+          if (q.passage_text && p.passage_text && p.passage_text === q.passage_text) return true;
+          return false;
+        });
+
+        const groupQs = [q];
+        let j = i + 1;
+        const maxGroupSize = qPart === 6 ? 4 : (qPart === 7 ? 5 : 3);
+
+        while (j < questions.length) {
+          const nextQ = questions[j];
+          const nextPart = Number(nextQ.part) || qPart;
+          if (nextPart !== qPart) break;
+
+          let belongs = false;
+          if ((nextQ as any).passage_id && (q as any).passage_id && (nextQ as any).passage_id === (q as any).passage_id) {
+            belongs = true;
+          } else if (nextQ.passage_text && q.passage_text && nextQ.passage_text === q.passage_text) {
+            belongs = true;
+          } else if (nextQ.audio_url && q.audio_url && nextQ.audio_url === q.audio_url) {
+            belongs = true;
+          } else if (!nextQ.passage_text && !nextQ.audio_url && !q.passage_text && !q.audio_url) {
+            belongs = groupQs.length < (qPart === 6 ? 4 : 3);
+          }
+
+          if (belongs && groupQs.length < maxGroupSize) {
+            groupQs.push(nextQ);
+            j++;
+          } else {
+            break;
+          }
+        }
+
+        const gAudio = passageObj?.audio_url || q.audio_url || (q as any).local_audio || null;
+        const gImage = passageObj?.image_url || groupQs.find((g: any) => !!g.image_url)?.image_url || null;
+        const gText = passageObj?.passage_text || q.passage_text || '';
+        const gTranscript = passageObj?.transcript || q.transcript || q.passage_text || '';
+
+        groups.push({
+          id: passageObj?.id || (q as any).passage_id || ('group_' + (groups.length + 1)),
+          type: 'passage',
+          part: qPart,
+          passage: passageObj || null,
+          audio_url: gAudio,
+          image_url: gImage,
+          passage_text: gText,
+          transcript: gTranscript,
+          questions: groupQs,
+          question_number: q.question_number || (i + 1),
+        });
+        i = j;
+      }
+    }
+    return groups;
+  }, [questions, passages, rawPartNumber]);
+
+  // Compute initial group index from initialIndex (which may be a question index)
+  const computeInitialGroupIndex = () => {
+    if (!initialIndex || initialIndex <= 0 || !effectiveGroups.length) return 0;
+    let accumulated = 0;
+    for (let idx = 0; idx < effectiveGroups.length; idx++) {
+      accumulated += effectiveGroups[idx].questions.length;
+      if (initialIndex < accumulated) {
+        return idx;
+      }
+    }
+    return Math.min(initialIndex, effectiveGroups.length - 1);
+  };
+
+  const [currentIndex, setCurrentIndex] = useState(computeInitialGroupIndex);
+
+  const currentGroup = effectiveGroups[currentIndex] || effectiveGroups[0] || null;
+  const isPassageMode = currentGroup ? currentGroup.type === 'passage' : false;
+  const partNumber = currentGroup ? currentGroup.part : (Number(rawPartNumber) || 1);
+  const pNum = partNumber;
+
+  const currentPassageIndex = currentIndex;
+  const setCurrentPassageIndex = setCurrentIndex;
+  const effectivePassages = effectiveGroups;
+  const currentPassage = currentGroup;
+
+  const activeLevelKey = levelKey || (levelBadge?.match(/Level \d+/i) ? ('part' + partNumber + '_' + levelBadge.match(/Level \d+/i)?.[0]) : ('part' + partNumber + '_Level 1'));
 
   useEffect(() => {
     onIndexChange?.(currentIndex);
   }, [currentIndex, onIndexChange]);
-
-  // Derive robust partNumber: prioritize actual question/passage data over raw prop fallback
-  const firstQ = questions[0] || passages[0]?.questions?.[0];
-  const derivedPart = Number(
-    firstQ?.part ||
-    passages[0]?.part ||
-    (rawPartNumber && Number(rawPartNumber) > 0 ? Number(rawPartNumber) : null) ||
-    (title?.match(/Part\s*(\d)/i) ? Number(title.match(/Part\s*(\d)/i)![1]) : null) ||
-    5
-  );
-  const partNumber = derivedPart;
-  const pNum = derivedPart;
-  const activeLevelKey = levelKey || (levelBadge?.match(/Level \\d+/i) ? `part${partNumber}_${levelBadge.match(/Level \\d+/i)?.[0]}` : `part${partNumber}_Level 1`);
-
-  const { user } = useAuth();
-  const isVipUser = Boolean(user?.role === 'vip' || user?.role === 'admin' || user?.is_vip);
-
-  // 1. Group passages or use passed-in passages (MUST be initialized before any dependent logic)
-  const effectivePassages = useMemo(() => {
-    if (Array.isArray(passages) && passages.length > 0) return passages;
-    if (![3, 4, 6, 7].includes(pNum) || !questions || questions.length === 0) return [];
-    const groups: any[] = [];
-    let currentGroup: any = null;
-    questions.forEach((q) => {
-      const qAudio = q.audio_url || (q as any).local_audio || (q as any).audio;
-      const qPassageId = (q as any).passage_id;
-      const qPassageText = q.passage_text;
-
-      const belongsToCurrent = currentGroup && (
-        (qPassageId && currentGroup.passage_id === qPassageId) ||
-        (qAudio && currentGroup.audio_url === qAudio) ||
-        (qPassageText && currentGroup.passage_text === qPassageText) ||
-        (!qPassageId && !qAudio && !qPassageText && currentGroup.questions.length < (pNum === 6 ? 4 : 3))
-      );
-
-      if (belongsToCurrent && currentGroup.questions.length < 5) {
-        currentGroup.questions.push(q);
-        if (!currentGroup.image_url && q.image_url) currentGroup.image_url = q.image_url;
-        if (!currentGroup.passage_text && q.passage_text) currentGroup.passage_text = q.passage_text;
-        if (!currentGroup.transcript && (q.transcript || q.passage_text)) currentGroup.transcript = q.transcript || q.passage_text;
-      } else {
-        currentGroup = {
-          id: qPassageId || `passage_group_${groups.length + 1}`,
-          passage_id: qPassageId,
-          audio_url: qAudio,
-          image_url: q.image_url,
-          passage_text: qPassageText || '',
-          transcript: q.transcript || qPassageText || '',
-          questions: [q]
-        };
-        groups.push(currentGroup);
-      }
-    });
-    return groups;
-  }, [passages, pNum, questions]);
-
-  const isPassageMode = (pNum === 3 || pNum === 4 || pNum === 6 || pNum === 7) && effectivePassages.length > 0;
-
-  // Jump to first passage that contains an unanswered question upon entry
-  const hasInitializedPassageRef = useRef(false);
-  useEffect(() => {
-    if (isPassageMode && effectivePassages.length > 0 && !hasInitializedPassageRef.current) {
-      hasInitializedPassageRef.current = true;
-      const saved = practiceProgressStore.getLevelData(activeLevelKey)?.answeredQuestions || {};
-      const firstUnfinishedPIdx = effectivePassages.findIndex((p: any) => {
-        const pQs = p.questions || [];
-        return pQs.some((q: any) => !saved[String(q.id || q.question_number)]);
-      });
-      if (firstUnfinishedPIdx > 0) {
-        setCurrentPassageIndex(firstUnfinishedPIdx);
-      } else if (firstUnfinishedPIdx === -1 && effectivePassages.length > 0) {
-        setCurrentPassageIndex(effectivePassages.length - 1);
-      }
-    }
-  }, [isPassageMode, effectivePassages, activeLevelKey]);
-
-  const currentPassage = isPassageMode ? effectivePassages[currentPassageIndex] : null;
 
   // 2. Gemini AI Practice Grading State
   const [isAiGradingModalOpen, setIsAiGradingModalOpen] = useState(false);
@@ -429,23 +472,22 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     }
   };
 
-  // STRICT GUARANTEE: 1 audio file -> strictly the question(s) for that audio file!
-  // In passage mode (Part 3/4), render all questions for the current passage.
-  // In single-question mode (Part 1, 2, 5, etc.), render ONLY the active question at currentIndex!
+  // In passage mode (Part 3/4/6/7), render all questions for current group!
+  // In single-question mode (Part 1, 2, 5), render the single question!
   const activeQuestions = useMemo(() => {
-    if (isPassageMode && currentPassage?.questions?.length) {
-      return currentPassage.questions;
+    if (currentGroup?.questions?.length) {
+      return currentGroup.questions;
     }
     const singleQ = questions[currentIndex];
     return singleQ ? [singleQ] : [];
-  }, [isPassageMode, currentPassage, questions, currentIndex]);
-  const totalItems = isPassageMode ? effectivePassages.length : questions.length;
-  const currentQ: Question | undefined = isPassageMode ? activeQuestions[0] : questions[currentIndex];
+  }, [currentGroup, questions, currentIndex]);
+
+  const totalItems = effectiveGroups.length;
+  const currentQ: Question | undefined = activeQuestions[0] || questions[currentIndex];
 
   const displayImageUrl = useMemo(() => {
-    return currentPassage?.image_url || activeQuestions.find((q: any) => !!q.image_url)?.image_url || currentQ?.image_url;
-  }, [currentPassage, activeQuestions, currentQ]);
-
+    return currentGroup?.image_url || activeQuestions.find((q: any) => !!q.image_url)?.image_url || currentQ?.image_url || null;
+  }, [currentGroup, activeQuestions, currentQ]);
 
   // Hydrate user answers and submitted groups from saved progress so returning to the room restores answers & status
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>(() => {
@@ -2451,7 +2493,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                                     </div>
                                   ) : isQAnswered || (partNumber !== 1 && partNumber !== 2 && (optText && !optText.match(/^[A-D].?$/i))) ? (
                                     <div>
-                                      <span className="text-slate-800">{cleanOptionText(optText, letter) || ('Lựa chọn (' + letter + ')')}</span>
+                                      <span className="text-slate-800">{cleanOptionText(optText, letter) || (partNumber === 2 ? 'Lựa chọn ' + letter : (optText ? optText : 'Lựa chọn (' + letter + ')'))}</span>
                                       {isSongNgu && (qItem.option_translations?.[letter] || translationsMap[optText]) && (
                                         <p className="text-[11px] sm:text-xs text-blue-700 font-medium italic mt-0.5">
                                           ↳ {qItem.option_translations?.[letter] || translationsMap[optText]}
@@ -3198,7 +3240,23 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                       }}
                       className={`relative h-10 rounded-xl text-xs font-bold transition-all flex items-center justify-center cursor-pointer shadow-2xs ${btnStyle}`}
                     >
-                      <span>{idx + 1}</span>
+                     <span className="truncate px-0.5 text-[11px]">
+                        {(() => {
+                          if (isPassageMode) {
+                            const pQs = item.questions || [];
+                            if (pQs.length > 1) {
+                              const firstNum = pQs[0]?.question_number || (idx + 1);
+                              const lastNum = pQs[pQs.length - 1]?.question_number || (idx + pQs.length);
+                              return `$yfirstNum-${lastNum}`;
+                            } else if (pQs.length === 1 && pQs[0]?.question_number) {
+                              return `${pQs[0].question_number}`;
+                            }
+                          } else if (item.question_number) {
+                            return `${item.question_number}`;
+                          }
+                          return `${idx + 1}`;
+                        })()}
+                      </span>
                       {isFlagged && (
                         <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-amber-400 border border-white" />
                       )}

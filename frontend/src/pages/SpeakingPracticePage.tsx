@@ -1503,22 +1503,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
       {/* 1. Header Banner (Inspired by DauEnglish /speak) */}
       <section className="bg-gradient-to-b from-blue-50/90 via-white to-slate-50/70 border-b border-slate-200/80 pt-10 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-700 text-xs font-extrabold shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-            <span>Luyện nói tiếng Anh</span>
-          </div>
-
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight sm:leading-tight">
-            Nói tự nhiên{' '}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 bg-clip-text text-transparent">
-              như người bản xứ
-            </span>{' '}
-            từ từng câu ngắn
-          </h1>
-
-          <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-medium">
-            Shadowing theo video: nghe từng câu, nói theo, máy chấm từng từ với công nghệ AI Speech Evaluation.
-          </p>
+          
 
           <div className="pt-4 flex items-center justify-center">
             <div className="inline-flex p-1.5 rounded-2xl bg-slate-200/80 border border-slate-300/80 shadow-inner">

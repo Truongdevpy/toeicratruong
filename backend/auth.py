@@ -3,6 +3,8 @@ import hashlib
 import hmac
 from datetime import datetime, timedelta
 from typing import Optional
+from pathlib import Path
+from dotenv import load_dotenv
 import jwt
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
@@ -10,10 +12,16 @@ from sqlalchemy.orm import Session
 from database import get_db
 import models
 
+env_path = Path(__file__).resolve().parent / ".env"
+if env_path.exists():
+    load_dotenv(dotenv_path=env_path)
+
 SECRET_KEY = os.getenv("JWT_SECRET", "super-toeic-secret-key-edtech-platform-2026")
-ALGORITHM = "HS256"
+ALGORITHM = os.getenv("ALGORITHM", "HS256")
 ACCESS_TOKEN_EXPIRE_DAYS = 30
 SALT = b"toeic_salt_2026"
+
+GUEST_USER_ID = 999
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/auth/login", auto_error=False)
 

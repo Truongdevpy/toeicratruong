@@ -266,6 +266,16 @@ class GrammarProgressService {
     this.saveProgress(progress);
     return 5;
   }
+  public getLessonNodes(topic: any): GrammarLessonNode[] {
+    const topicId = String(topic.id);
+    return [
+      { id: topicId + '-node-0', topicId, unitIndex: 0, nodeIndex: 0, type: 'theory', title: 'Lý thuyết trọng tâm', subtitle: 'Khái niệm & Bản chất', questionCount: 5, xpReward: 15 },
+      { id: topicId + '-node-1', topicId, unitIndex: 0, nodeIndex: 1, type: 'practice_basic', title: 'Nhận diện & Luyện tập', subtitle: 'Bài tập cơ bản', questionCount: 5, xpReward: 20 },
+      { id: topicId + '-node-2', topicId, unitIndex: 0, nodeIndex: 2, type: 'traps', title: 'Bẫy đề thi ETS', subtitle: 'Các lỗi sai thường gặp', questionCount: 5, xpReward: 25 },
+      { id: topicId + '-node-3', topicId, unitIndex: 0, nodeIndex: 3, type: 'practice_adv', title: 'Luyện tập nâng cao', subtitle: 'Vận dụng thực tế Part 5, 6', questionCount: 5, xpReward: 30 },
+      { id: topicId + '-node-4', topicId, unitIndex: 0, nodeIndex: 4, type: 'checkpoint', title: 'Khảo sát Checkpoint', subtitle: 'Vượt qua để mở tiếp', questionCount: 10, xpReward: 50 },
+    ];
+  }
 }
 
 export const grammarProgressService = new GrammarProgressService();

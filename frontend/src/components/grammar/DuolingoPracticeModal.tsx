@@ -211,7 +211,7 @@ export const DuolingoPracticeModal: React.FC<DuolingoPracticeModalProps> = ({
     // Ghi nhận vào thuật toán Spaced Repetition (SRS)
     srsService.processItemReview(userId, currentQ.id, topic.id, currentQ.conceptTags || [], {
       isCorrect: isRight,
-      usedHint
+      
     });
 
     if (isRight) {
@@ -422,7 +422,7 @@ export const DuolingoPracticeModal: React.FC<DuolingoPracticeModalProps> = ({
               <DuolingoInteractiveExercise
                 question={currentQ}
                 selectedAnswer={selectedOption}
-                onSelectAnswer={(ans) => setSelectedOption(ans)}
+                onSelectAnswer={(ans: string) => setSelectedOption(ans)}
                 status={status}
                 onUseHint={() => setUsedHint(true)}
               />

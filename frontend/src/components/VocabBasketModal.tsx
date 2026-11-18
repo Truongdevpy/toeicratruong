@@ -33,6 +33,9 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
     () => practiceProgressStore.getSavedVocabs()
   );
   const [search, setSearch] = useState('');
+  const [partFilter, setPartFilter] = useState<string>('all');
+  const [levelFilter, setLevelFilter] = useState<string>('all');
+  const [showClearConfirm, setShowClearConfirm] = useState(false);
 
   if (!isOpen) return null;
 
@@ -52,12 +55,23 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
     practiceProgressStore.removeSavedVocab(word);
   };
 
-  const filtered = items.filter(
-    (item) =>
+  const handleClearAll = () => {
+    practiceProgressStore.clearAllSavedVocabs();
+    setShowClearConfirm(false);
+  };
+
+  const filtered = items.filter((item) => {
+    const matchesSearch =
       item.word.toLowerCase().includes(search.toLowerCase()) ||
       item.meaning.toLowerCase().includes(search.toLowerCase()) ||
-      (item.context && item.context.toLowerCase().includes(search.toLowerCase()))
-  );
+      (item.context && item.context.toLowerCase().includes(search.toLowerCase()));
+    if (!matchesSearch) return false;
+    if (partFilter !== 'all') {
+      const itemPart = String(item.part || '').replace(/[^0-9]/g, '');
+      return itemPart === partFilter;
+    }
+    return true;
+  });
 
   return (
     <div className="fixed inset-0 z-[70] bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 animate-in fade-in duration-200 font-sans">
@@ -137,6 +151,73 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
           </div>
         </div>
 
+        {/* Part Filter Pills & Action */}
+        <div className="px-4 py-2 border-b border-slate-100 flex items-center justify-between gap-2 shrink-0 bg-white">
+          <div className="flex items-center gap-1.5 overflow-x-auto text-xs no-scrollbar flex-1">
+            {[
+              { id: 'all', label: 'Tất cả' },
+              { id: '1', label: 'Part 1' },
+              { id: '2', label: 'Part 2' },
+              { id: '3', label: 'Part 3' },
+              { id: '4', label: 'Part 4' },
+              { id: '5', label: 'Part 5' },
+              { id: '6', label: 'Part 6' },
+              { id: '7', label: 'Part 7' },
+            ].map((p) => (
+              <button
+                key={p.id}
+                type="button"
+                onClick={() => setPartFilter(p.id)}
+                className={`px-2.5 py-1 rounded-lg font-semibold whitespace-nowrap transition-all cursor-pointer ${
+                  partFilter === p.id
+                    ? 'bg-amber-500 text-white shadow-2xs'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+
+          {items.length > 0 && (
+            <button
+              type="button"
+              onClick={() => setShowClearConfirm(true)}
+              className="px-2.5 py-1 rounded-lg text-xs font-semibold text-rose-600 hover:bg-rose-50 border border-transparent hover:border-rose-200 transition-all flex items-center gap-1 cursor-pointer shrink-0"
+              title="Xóa toàn bộ từ vựng trong giỏ"
+            >
+              <Trash2 className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">Xóa tất cả</span>
+            </button>
+          )}
+        </div>
+
+        {/* Clear All Confirmation Modal Overlay */}
+        {showClearConfirm && (
+          <div className="p-4 bg-rose-50 border-b border-rose-200 flex items-center justify-between gap-3 text-xs text-rose-900 animate-in fade-in duration-150">
+            <div className="space-y-0.5">
+              <span className="font-bold block">Bạn có chắc chắn muốn xóa toàn bộ {items.length} từ vựng?</span>
+              <span className="text-[11px] text-rose-700">Hành động này không thể hoàn tác sau khi xác nhận.</span>
+            </div>
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                type="button"
+                onClick={handleClearAll}
+                className="px-3 py-1.5 rounded-lg bg-rose-600 hover:bg-rose-700 text-white font-bold transition-colors cursor-pointer shadow-2xs"
+              >
+                Xác nhận xóa hết
+              </button>
+              <button
+                type="button"
+                onClick={() => setShowClearConfirm(false)}
+                className="px-3 py-1.5 rounded-lg bg-white border border-rose-300 text-rose-800 hover:bg-rose-100/60 font-semibold transition-colors cursor-pointer"
+              >
+                Hủy
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Word List */}
         <div className="flex-1 overflow-y-auto p-4 space-y-2.5">
           {filtered.length === 0 ? (
@@ -153,10 +234,20 @@ export const VocabBasketModal: React.FC<VocabBasketModalProps> = ({
                 className="p-3.5 rounded-2xl bg-slate-50/80 hover:bg-slate-50 border border-slate-200/80 hover:border-amber-300 transition-all flex items-start justify-between gap-3 group"
               >
                 <div className="space-y-1 min-w-0 flex-1">
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 flex-wrap">
                     <span className="font-extrabold text-sm text-slate-900">
                       {item.word}
                     </span>
+                    {item.part && (
+                      <span className="px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200/80 text-[10px] font-bold">
+                        Part {String(item.part).replace(/[^0-9]/g, '') || item.part}
+                      </span>
+                    )}
+                    {item.level && (
+                      <span className="px-1.5 py-0.5 rounded-md bg-slate-100 text-slate-600 text-[10px] font-medium">
+                        {item.level}
+                      </span>
+                    )}
                     <button
                       type="button"
                       onClick={() => handleSpeak(item.word)}

@@ -85,7 +85,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenAuth, onOp
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  <span>5,000+ từ vựng có audio</span>
+                  <span>6,800+ từ vựng có audio</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
@@ -225,7 +225,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenAuth, onOp
                 guestAllowed: false,
               },
               {
-                title: 'Kho 5,000+ Từ vựng',
+                title: 'Kho từ vựng',
                 desc: 'Lặp lại ngắt quãng SRS, flashcards thông minh và phân loại theo chủ đề.',
                 path: '/practice/vocabulary',
                 icon: Layers,

@@ -96,29 +96,67 @@ def analyze_diagnostic_results(
             elif pct < 55:
                 weak_areas.append(meta["name"])
 
-    if not strengths:
-        strengths = ["Part 1 - Mô tả tranh ảnh trực quan", "Part 5 - Nhận diện thì cơ bản"]
-    if not weak_areas:
-        weak_areas = ["Part 3 - Hội thoại có bảng biểu", "Part 5 - Biến thể Word Form", "Part 7 - Đọc lướt tìm ý chính"]
+    total_answered = total_listening_count + total_reading_count
+    total_correct = total_listening_correct + total_reading_correct
 
-    total_score, l_score, r_score = calculate_toeic_score(
-        total_listening_correct or 15,
-        total_listening_count or 30,
-        total_reading_correct or 18,
-        total_reading_count or 30
-    )
+    # If user answered no questions or got 0 correct answers:
+    if total_answered == 0 or total_correct == 0:
+        strengths = []
+        weak_areas = [
+            "Part 1 - Thiếu kỹ năng quan sát tranh và từ vựng mô tả hành động",
+            "Part 2 - Phản xạ nghe câu hỏi ngắn và bẫy phát âm",
+            "Part 5 - Nền tảng ngữ pháp cơ bản và từ loại Word Form",
+            "Part 7 - Kỹ năng đọc hiểu văn bản cơ bản"
+        ]
+        listening_pct = 0.0
+        reading_pct = 0.0
+        skills_pct = {
+            "listening": 0.0,
+            "reading": 0.0,
+            "grammar": 0.0,
+            "vocabulary": 0.0,
+            "speaking": 0.0,
+            "writing": 0.0
+        }
+        total_score, l_score, r_score = 10, 5, 5
+    else:
+        if not strengths:
+            # Only award strength if there is actual correctness
+            best_parts = sorted(
+                [p for p in part_analysis.values() if p["total"] > 0 and p["correct"] > 0],
+                key=lambda x: x["accuracy"],
+                reverse=True
+            )
+            if best_parts and best_parts[0]["accuracy"] >= 50:
+                strengths = [best_parts[0]["name"]]
+            else:
+                strengths = []
 
-    listening_pct = round((total_listening_correct / max(1, total_listening_count)) * 100, 1) if total_listening_count > 0 else 45.0
-    reading_pct = round((total_reading_correct / max(1, total_reading_count)) * 100, 1) if total_reading_count > 0 else 55.0
+        if not weak_areas:
+            weak_parts = sorted(
+                [p for p in part_analysis.values() if p["total"] > 0],
+                key=lambda x: x["accuracy"]
+            )
+            weak_areas = [p["name"] for p in weak_parts[:3]] or ["Part 5 - Biến thể Word Form", "Part 7 - Đọc lướt tìm ý chính"]
 
-    skills_pct = {
-        "listening": listening_pct,
-        "reading": reading_pct,
-        "grammar": round(reading_pct * 0.95, 1),
-        "vocabulary": round((listening_pct + reading_pct) / 2 * 1.05, 1),
-        "speaking": 52.0,
-        "writing": 58.0
-    }
+        total_score, l_score, r_score = calculate_toeic_score(
+            total_listening_correct,
+            total_listening_count or 30,
+            total_reading_correct,
+            total_reading_count or 30
+        )
+
+        listening_pct = round((total_listening_correct / max(1, total_listening_count)) * 100, 1) if total_listening_count > 0 else 0.0
+        reading_pct = round((total_reading_correct / max(1, total_reading_count)) * 100, 1) if total_reading_count > 0 else 0.0
+
+        skills_pct = {
+            "listening": listening_pct,
+            "reading": reading_pct,
+            "grammar": round(reading_pct * 0.95, 1),
+            "vocabulary": round((listening_pct + reading_pct) / 2 * 1.05, 1),
+            "speaking": max(0.0, round((listening_pct + reading_pct) / 2 * 0.8, 1)),
+            "writing": max(0.0, round(reading_pct * 0.85, 1))
+        }
 
     error_patterns = [
         {

@@ -1,3 +1,4 @@
+from functools import lru_cache
 import os
 import sqlite3
 from pathlib import Path
@@ -21,6 +22,35 @@ if CRAWLER_DB.exists():
     except Exception as e:
         print("Warning loading downloads_map:", e)
 
+# Fast filename lookup for 4000+ local media files
+_filename_map = {}
+
+def _build_filename_index():
+    global _filename_map
+    # 1. Index DauTOEIC media (exclude dictation_trimmed so regular practice keeps full audio)
+    if DAU_DIR.exists():
+        for root, _, files in os.walk(DAU_DIR):
+            if "dictation_trimmed" in root.replace("\\", "/"):
+                continue
+            for f in files:
+                ext = os.path.splitext(f)[1].lower()
+                if ext in {".mp3", ".wav", ".ogg", ".m4a", ".jpg", ".jpeg", ".png", ".webp", ".gif"}:
+                    rel = os.path.relpath(os.path.join(root, f), DAU_DIR).replace("\\", "/")
+                    _filename_map[f.lower()] = f"/dautoeic_media/{rel}"
+
+    # 2. Index Study4 / general media
+    if MEDIA_DIR.exists():
+        for root, _, files in os.walk(MEDIA_DIR):
+            for f in files:
+                ext = os.path.splitext(f)[1].lower()
+                if ext in {".mp3", ".wav", ".ogg", ".m4a", ".jpg", ".jpeg", ".png", ".webp", ".gif"}:
+                    rel = os.path.relpath(os.path.join(root, f), MEDIA_DIR).replace("\\", "/")
+                    if f.lower() not in _filename_map:
+                        _filename_map[f.lower()] = f"/media/{rel}"
+
+_build_filename_index()
+
+@lru_cache(maxsize=32768)
 def _file_exists_on_disk(url: str) -> bool:
     if url.startswith("/media/"):
         rel = url[len("/media/"):].replace("/", "\\")
@@ -33,28 +63,19 @@ def _file_exists_on_disk(url: str) -> bool:
         return (DATA_DIR / rel).is_file()
     return False
 
-def resolve_media_url(raw_url: str, media_type: str = "auto") -> str:
-    """
-    Deterministically resolves a media URL or local path to a mounted static URL.
-    Never returns random or guessed media.
-    """
-    if not raw_url:
-        return ""
-
-    raw_str = str(raw_url).strip()
-    if not raw_str:
-        return ""
-
-    # Path traversal safeguard
-    if "\0" in raw_str or "%00" in raw_str or ".." in raw_str:
-        return ""
-
+@lru_cache(maxsize=32768)
+def _resolve_media_url_cached(raw_str: str) -> str:
     # Already formatted web paths
     if raw_str.startswith("/media/") or raw_str.startswith("/dautoeic_media/") or raw_str.startswith("/data/"):
         if _file_exists_on_disk(raw_str):
             return raw_str
 
-    # 1. Lookup in downloads_map if it's a remote URL
+    # 1. Fast local filename lookup
+    bname = os.path.basename(raw_str.split("?")[0]).lower()
+    if bname and bname in _filename_map:
+        return _filename_map[bname]
+
+    # 2. Lookup in downloads_map if it's a remote URL
     local_path = _downloads_map.get(raw_str) or raw_str
     clean = str(local_path).replace("\\", "/")
 
@@ -94,5 +115,13 @@ def resolve_media_url(raw_url: str, media_type: str = "auto") -> str:
     if clean.startswith("http://") or clean.startswith("https://"):
         return clean
 
-    # Return empty string if media does not exist on disk (never pick random file)
+    # Return empty string if media does not exist on disk
     return ""
+
+def resolve_media_url(raw_url: str, media_type: str = "auto") -> str:
+    if not raw_url:
+        return ""
+    raw_str = str(raw_url).strip()
+    if not raw_str or "\0" in raw_str or "%00" in raw_str or ".." in raw_str:
+        return ""
+    return _resolve_media_url_cached(raw_str)

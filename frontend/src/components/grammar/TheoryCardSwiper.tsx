@@ -110,7 +110,7 @@ export const TheoryCardSwiper: React.FC<TheoryCardSwiperProps> = ({ cards, initi
         {card.highlightedSentence && (
           <div className="p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
             <div className="text-base sm:text-lg font-bold text-slate-900 leading-relaxed flex flex-wrap gap-1">
-              {card.highlightedSentence.segments.map((seg, sIdx) => {
+              {(card.highlightedSentence.segments || []).map((seg, sIdx) => {
                 let colorClass = 'text-slate-800';
                 let tag = '';
                 if (seg.role === 'subject') {
@@ -152,7 +152,7 @@ export const TheoryCardSwiper: React.FC<TheoryCardSwiperProps> = ({ cards, initi
               {card.ruleList.map((rule, idx) => (
                 <li key={idx} className="text-xs sm:text-sm text-emerald-950 font-medium flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
-                  <span className="leading-relaxed">{rule}</span>
+                  <span className="leading-relaxed">{typeof rule === "string" ? rule : rule.title + ": " + rule.desc}</span>
                 </li>
               ))}
             </ul>

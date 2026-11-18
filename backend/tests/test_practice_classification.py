@@ -80,3 +80,25 @@ def test_level_query_normalization():
     assert res2.status_code == 200
     data2 = res2.json()
     assert len(data2["questions"]) > 0
+
+def test_part3_topics():
+    res = client.get("/api/practice/part/3")
+    assert res.status_code == 200
+    data = res.json()
+    assert "by_topic" in data
+    topics = data["by_topic"]
+    assert len(topics) >= 15
+    assert "Lịch hẹn, cuộc họp & tiến độ công việc" in topics
+    assert "Đơn hàng, kho bãi & giao nhận" in topics
+    assert "Mua sắm, cửa hàng & đổi trả" in topics
+
+def test_part4_topics():
+    res = client.get("/api/practice/part/4")
+    assert res.status_code == 200
+    data = res.json()
+    assert "by_topic" in data
+    topics = data["by_topic"]
+    assert len(topics) >= 15
+    assert "Sự kiện, hội thảo & tiệc" in topics
+    assert "Bản tin, thời tiết & giao thông" in topics
+    assert "Mua sắm, cửa hàng & dịch vụ" in topics

@@ -26,18 +26,21 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
 
   const [loading, setLoading] = useState(true);
   const [stats, setStats] = useState<any | null>(null);
+  const [weeklyReport, setWeeklyReport] = useState<any | null>(null);
   const [timePeriod, setTimePeriod] = useState<'day' | 'week' | 'month'>('day');
   const [timeBreakdown, setTimeBreakdown] = useState<any>({ by_day: [], by_week: [], by_month: [] });
 
   const loadStatistics = async () => {
     try {
       setLoading(true);
-      const [res, breakdownRes] = await Promise.all([
+      const [res, breakdownRes, reportRes] = await Promise.all([
         api.getStatisticsSummary().catch(() => null),
-        api.getStudyTimeBreakdown('all').catch(() => null)
+        api.getStudyTimeBreakdown('all').catch(() => null),
+        api.getWeeklyReport().catch(() => null)
       ]);
       if (res) setStats(res);
       if (breakdownRes) setTimeBreakdown(breakdownRes);
+      if (reportRes) setWeeklyReport(reportRes);
     } catch {
       // Fallback data matching PRD
       setStats({
@@ -534,10 +537,10 @@ export const StatisticsPage: React.FC<StatisticsPageProps> = ({ onNavigate }) =>
             </div>
 
             <button
-              onClick={() => onNavigate('/ai-tutor')}
+              onClick={() => onNavigate('/learning-path')}
               className="w-full py-3 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600 text-white font-bold text-xs shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
-              Thảo luận kế hoạch với AI Tutor <ArrowRight className="w-4 h-4" />
+              Xem Lộ Trình Cá Nhân Hóa Của AI <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>

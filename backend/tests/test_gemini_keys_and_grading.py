@@ -24,7 +24,7 @@ def admin_token():
         admin = models.User(
             email="admin@toeicai.vn",
             password_hash=pwd_context.hash("admin123"),
-            full_name="Qu?n tr? vi�n H? th?ng",
+            full_name="Quản trị viên Hệ thống",
             role="admin",
             is_active=True
         )
@@ -77,7 +77,7 @@ def test_practice_ai_grade_endpoint():
     payload = {
         "skill": "reading",
         "part": 5,
-        "title": "Luy?n d?c Part 5 - C�u 101-104",
+        "title": "Luyện đọc Part 5 - Câu 101-104",
         "answers": [
             {
                 "question_number": 101,
@@ -93,7 +93,7 @@ def test_practice_ai_grade_endpoint():
                 "selected_option": "A",
                 "correct_option": "C",
                 "is_correct": False,
-                "explanation": "C?n t�nh t? 'impressive' d?ng tru?c danh t? 'results'."
+                "explanation": "Cần tính từ 'impressive' đứng trước danh từ 'results'."
             }
         ]
     }

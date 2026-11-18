@@ -110,8 +110,13 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
   const loadTopLearners = async () => {
     try {
       const res = await api.getLeaderboard({ category: 'score', period: 'weekly' });
-      if (res && res.rankings && res.rankings.length > 0) {
-        setTopLearners(res.rankings.slice(0, 4));
+      if (res) {
+        const all: any[] = [
+          ...(Array.isArray(res.podium) ? res.podium : []),
+          ...(Array.isArray(res.rankings) ? res.rankings : [])
+        ];
+        all.sort((a, b) => (a.rank || 0) - (b.rank || 0));
+        setTopLearners(all.slice(0, 5));
       }
     } catch {}
   };
@@ -174,12 +179,38 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
     }
   };
 
+  const getSavedLikes = (): Record<number, boolean> => {
+    try {
+      const key = user?.id ? ("toeic_liked_posts_" + user.id) : "toeic_liked_posts_guest";
+      return JSON.parse(localStorage.getItem(key) || '{}');
+    } catch {
+      return {};
+    }
+  };
+
+  const saveLikes = (updated: Record<number, boolean>) => {
+    try {
+      const key = user?.id ? ("toeic_liked_posts_" + user.id) : "toeic_liked_posts_guest";
+      localStorage.setItem(key, JSON.stringify(updated));
+    } catch {}
+  };
+
   const loadPosts = async () => {
     try {
       setLoading(true);
       const res = await api.getCommunityPosts();
       if (res && res.posts) {
         setPosts(res.posts);
+        const localLikes = getSavedLikes();
+        const initialLikes: Record<number, boolean> = {};
+        res.posts.forEach((p: any) => {
+          if (p.user_has_liked !== undefined) {
+            initialLikes[p.id] = Boolean(p.user_has_liked);
+          } else {
+            initialLikes[p.id] = Boolean(localLikes[p.id]);
+          }
+        });
+        setLikedPosts((prev) => ({ ...localLikes, ...initialLikes, ...prev }));
       }
       if (res && typeof res.total_learners === 'number') {
         setTotalLearners(res.total_learners);
@@ -252,19 +283,54 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
       onOpenAuth?.('login');
       return;
     }
+
+    const currentLiked = Boolean(likedPosts[postId]);
+    const nextLiked = !currentLiked;
+
+    // Optimistic UI update
+    setLikedPosts((prev) => {
+      const updated = { ...prev, [postId]: nextLiked };
+      saveLikes(updated);
+      return updated;
+    });
+
+    setPosts((prev) =>
+      prev.map((p) =>
+        p.id === postId
+          ? { ...p, likes_count: Math.max(0, (p.likes_count || 0) + (nextLiked ? 1 : -1)) }
+          : p
+      )
+    );
+
     try {
-      await api.likePost(postId);
-      setLikedPosts((prev) => ({ ...prev, [postId]: !prev[postId] }));
+      const res = await api.likePost(postId);
+      if (res && typeof res.liked === 'boolean') {
+        setLikedPosts((prev) => {
+          const updated = { ...prev, [postId]: res.liked };
+          saveLikes(updated);
+          return updated;
+        });
+      }
+      if (res && typeof res.likes_count === 'number') {
+        setPosts((prev) =>
+          prev.map((p) => (p.id === postId ? { ...p, likes_count: res.likes_count } : p))
+        );
+      }
+    } catch {
+      // Rollback on failure
+      setLikedPosts((prev) => {
+        const rollback = { ...prev, [postId]: currentLiked };
+        saveLikes(rollback);
+        return rollback;
+      });
       setPosts((prev) =>
         prev.map((p) =>
           p.id === postId
-            ? { ...p, likes_count: p.likes_count + (likedPosts[postId] ? -1 : 1) }
+            ? { ...p, likes_count: Math.max(0, (p.likes_count || 0) + (currentLiked ? 1 : -1)) }
             : p
         )
       );
-    } catch {
-      // Optimistic update
-      setLikedPosts((prev) => ({ ...prev, [postId]: !prev[postId] }));
+      showToast('Không thể cập nhật lượt thích. Vui lòng thử lại!');
     }
   };
 
@@ -702,115 +768,7 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
                 })}
               </div>
             </div>
-
-            {/* Widget 2: Study Groups by Target (Real Data from DB) */}
-            <div className="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-xs space-y-3.5">
-              <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
-                <div className="flex items-center gap-2">
-                  <Compass className="w-4 h-4 text-blue-600" />
-                  <h3 className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                    Nhóm Học Tập Mục Tiêu
-                  </h3>
-                </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-[11px] font-semibold text-blue-600">{studyGroups.length} Nhóm</span>
-                  {user?.role === 'admin' && (
-                    <button
-                      type="button"
-                      onClick={() => setIsCreateGroupOpen(true)}
-                      className="inline-flex items-center gap-1 px-2.5 py-1 bg-blue-50 hover:bg-blue-600 hover:text-white text-blue-600 border border-blue-200 rounded-lg text-[11px] font-bold transition-all cursor-pointer shadow-2xs"
-                      title="Admin tạo nhóm học mới"
-                    >
-                      <Plus className="w-3 h-3" />
-                      <span>Tạo nhóm</span>
-                    </button>
-                  )}
-                </div>
-              </div>
-
-              {loadingGroups ? (
-                <div className="py-6 text-center text-xs text-slate-400">Đang tải danh sách nhóm học...</div>
-              ) : studyGroups.length === 0 ? (
-                <div className="py-6 text-center text-xs text-slate-400">
-                  Chưa có nhóm học nào.
-                  {user?.role === 'admin' && ' Bấm "Tạo nhóm" ở trên để tạo nhóm đầu tiên!'}
-                </div>
-              ) : (
-                <div className="space-y-3 pt-1">
-                  {studyGroups.map((group: any) => (
-                    <div
-                      key={group.id}
-                      className="p-3.5 rounded-2xl bg-slate-50 hover:bg-blue-50/40 border border-slate-200/70 transition-all flex flex-col gap-2"
-                    >
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="min-w-0 flex-1">
-                          <div className="flex items-center gap-1.5 flex-wrap">
-                            <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-blue-100 text-blue-800 border border-blue-200">
-                              {group.target_score || 'TOEIC'}
-                            </span>
-                            <h4 className="text-xs font-bold text-slate-900 truncate">{group.name}</h4>
-                          </div>
-                          {group.description && (
-                            <p className="text-[11px] text-slate-500 line-clamp-1 mt-1">{group.description}</p>
-                          )}
-                          {group.schedule_info && (
-                            <div className="flex items-center gap-1.5 text-[10px] text-slate-400 mt-1">
-                              <Clock className="w-3 h-3 text-slate-400 shrink-0" />
-                              <span className="truncate">{group.schedule_info}</span>
-                            </div>
-                          )}
-                        </div>
-
-                        {user?.role === 'admin' && (
-                          <button
-                            type="button"
-                            onClick={() => handleDeleteGroup(group.id, group.name)}
-                            title="Xóa nhóm (Quyền Admin)"
-                            className="p-1.5 text-slate-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors cursor-pointer shrink-0"
-                          >
-                            <Trash2 className="w-3.5 h-3.5" />
-                          </button>
-                        )}
-                      </div>
-
-                      <div className="flex items-center justify-between pt-1 border-t border-slate-200/60">
-                        <div className="flex items-center gap-2 text-[11px] text-slate-500">
-                          <span>{Number(group.members_count || 1).toLocaleString()} thành viên</span>
-                          <span>•</span>
-                          <span className="text-emerald-600 font-semibold flex items-center gap-1">
-                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                            {group.active || `${group.active_online || 1} online`}
-                          </span>
-                        </div>
-
-                        <div className="flex items-center gap-1.5">
-                          <button
-                            type="button"
-                            onClick={() => handleJoinGroup(group.id, group.name)}
-                            className={`px-2.5 py-1 text-xs font-bold rounded-xl transition-all cursor-pointer ${
-                              joinedGroups[group.id]
-                                ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
-                                : 'bg-white hover:bg-slate-100 text-slate-700 border border-slate-200'
-                            }`}
-                          >
-                            {joinedGroups[group.id] ? 'Đã tham gia' : 'Tham gia'}
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => onOpenChat?.()}
-                            className="px-2.5 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl shadow-2xs transition-colors shrink-0 cursor-pointer"
-                          >
-                            Nhắn tin
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Widget 3: Mini Leaderboard (Real Data from DB) */}
+{/* Widget 3: Mini Leaderboard (Real Data from DB) */}
             <div className="bg-white rounded-3xl p-5 border border-slate-200/90 shadow-xs space-y-3.5">
               <div className="flex items-center justify-between border-b border-slate-100 pb-2.5">
                 <div className="flex items-center gap-2">
@@ -961,127 +919,6 @@ export const CommunityPage: React.FC<CommunityPageProps> = ({
                     className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs cursor-pointer"
                   >
                     {isSubmittingPost ? 'Đang đăng...' : 'Đăng bài ngay'}
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        )}
-
-        {/* Modal Admin Create Study Group */}
-        {isCreateGroupOpen && (
-          <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
-            <div className="bg-white rounded-3xl max-w-md w-full p-6 space-y-4 shadow-2xl animate-in fade-in zoom-in-95 duration-200">
-              <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
-                    <Compass className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-slate-900">Tạo Nhóm Học Tập Mới</h3>
-                    <p className="text-[11px] text-slate-500">Quyền Quản trị viên (Admin)</p>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setIsCreateGroupOpen(false)}
-                  className="p-1 rounded-lg hover:bg-slate-100 text-slate-400 hover:text-slate-600 cursor-pointer"
-                >
-                  <X className="w-5 h-5" />
-                </button>
-              </div>
-
-              <form onSubmit={handleCreateGroupSubmit} className="space-y-3.5">
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">
-                    Tên nhóm học <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    placeholder="VD: Chiến binh TOEIC 800+ K54"
-                    value={groupFormData.name}
-                    onChange={(e) => setGroupFormData({ ...groupFormData, name: e.target.value })}
-                    className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Điểm mục tiêu</label>
-                    <select
-                      value={groupFormData.target_score}
-                      onChange={(e) => setGroupFormData({ ...groupFormData, target_score: e.target.value })}
-                      className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
-                    >
-                      <option value="500-650+">500-650+ (Cơ bản)</option>
-                      <option value="700-850+">700-850+ (Bứt phá)</option>
-                      <option value="900+">900+ (Master)</option>
-                      <option value="All levels">All levels (Tất cả)</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Lịch học / Hoạt động</label>
-                    <input
-                      type="text"
-                      placeholder="VD: Thứ 2, 4, 6 lúc 19:30"
-                      value={groupFormData.schedule_info}
-                      onChange={(e) => setGroupFormData({ ...groupFormData, schedule_info: e.target.value })}
-                      className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-1">Mô tả nhóm</label>
-                  <textarea
-                    rows={3}
-                    placeholder="Mục tiêu, phương pháp ôn luyện và quy tắc sinh hoạt nhóm..."
-                    value={groupFormData.description}
-                    onChange={(e) => setGroupFormData({ ...groupFormData, description: e.target.value })}
-                    className="w-full p-2.5 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Số thành viên ban đầu</label>
-                    <input
-                      type="number"
-                      min={1}
-                      value={groupFormData.members_count}
-                      onChange={(e) => setGroupFormData({ ...groupFormData, members_count: parseInt(e.target.value) || 1 })}
-                      className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold text-slate-700 mb-1">Số online ban đầu</label>
-                    <input
-                      type="number"
-                      min={0}
-                      value={groupFormData.active_online}
-                      onChange={(e) => setGroupFormData({ ...groupFormData, active_online: parseInt(e.target.value) || 0 })}
-                      className="w-full px-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-end gap-3 pt-2">
-                  <button
-                    type="button"
-                    onClick={() => setIsCreateGroupOpen(false)}
-                    className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100 cursor-pointer"
-                  >
-                    Hủy
-                  </button>
-                  <button
-                    type="submit"
-                    disabled={isSubmittingGroup}
-                    className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs cursor-pointer disabled:opacity-50"
-                  >
-                    {isSubmittingGroup ? 'Đang tạo...' : 'Tạo nhóm ngay'}
                   </button>
                 </div>
               </form>

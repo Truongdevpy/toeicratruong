@@ -101,10 +101,12 @@ def get_conversations(
             models.AIMessage.conversation_id == c.id
         ).order_by(models.AIMessage.created_at.desc()).first()
 
+        created_str = c.created_at.strftime("%d/%m %H:%M") if c.created_at else ""
         result.append({
             "id": c.id,
             "title": c.title,
             "created_at": c.created_at.isoformat(),
+            "date": created_str,
             "last_message": last_msg.content[:50] + "..." if last_msg else ""
         })
     return {"conversations": result}

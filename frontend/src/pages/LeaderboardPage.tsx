@@ -284,8 +284,8 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
     initialPage: 1,
     initialPageSize: 15,
     syncUrl: false,
-    scrollToTopOnPageChange: true,
-    scrollTargetId: 'leaderboard-table-top'
+    // scrollToTopOnPageChange: true,
+    // scrollTargetId: 'leaderboard-table-top'
   });
 
   useEffect(() => {
@@ -296,7 +296,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
     if (data?.my_rank) {
       const myIdx = allDisplayRankings.findIndex((r: LeaderboardEntry) => r.id === data.my_rank?.id);
       if (myIdx >= 0) {
-        const targetPage = Math.floor(myIdx / lbPagination.pageSize) + 1;
+        const targetPage = Math.floor(myIdx / (typeof lbPagination.pageSize === "number" ? lbPagination.pageSize : 15)) + 1;
         if (targetPage !== lbPagination.currentPage) {
           lbPagination.setPage(targetPage);
         }
@@ -1256,7 +1256,7 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                   {(rules?.scoring_system || [
                     { activity: 'Làm đề thi thử ETS (Full Test)', exp: '+100 EXP', desc: 'Hoàn thành 200 câu thi chuẩn' },
                     { activity: 'Luyện tập theo Part', exp: '+10 EXP / câu', desc: 'Làm đúng câu hỏi luyện tập' },
-                    { activity: 'Học từ vựng Duolingo', exp: '+15 EXP / bài', desc: 'Hoàn thành 1 bài thẻ từ vựng' },
+                    { activity: 'Học từ vựng theo Lộ trình Chinh phục', exp: '+15 EXP / bài', desc: 'Hoàn thành 1 bài thẻ từ vựng' },
                     { activity: 'Học ngữ pháp ETS', exp: '+20 EXP / bài', desc: 'Hoàn thành bài tập lý thuyết' },
                     { activity: 'Duy trì Streak mỗi ngày', exp: '+25 EXP / ngày', desc: 'Đăng nhập và luyện tập đều đặn' },
                     { activity: 'Đạt điểm tuyệt đối đề thi', exp: '+150 EXP thưởng', desc: 'Đạt độ chính xác 95% trở lên' },
@@ -1267,31 +1267,6 @@ export const LeaderboardPage: React.FC<LeaderboardPageProps> = ({
                         <span className="text-blue-600 font-black">{item.exp}</span>
                       </div>
                       <p className="text-[11px] text-slate-500">{item.desc}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Leagues Info */}
-              <div className="space-y-3">
-                <h4 className="text-sm font-black text-slate-900 flex items-center gap-2">
-                  <Award className="w-4 h-4 text-blue-600" />
-                  Hệ Thống Phân Hạng CLB Thi Đua
-                </h4>
-                <div className="space-y-2">
-                  {(rules?.leagues_info || [
-                    { league: 'CLB Master (800+)', criteria: 'Điểm ETS >= 800', perk: 'Huy hiệu Vương Miện Vàng, mở khóa phòng thi mô phỏng VIP' },
-                    { league: 'CLB Bứt Phá (650-795)', criteria: 'Điểm ETS 650 - 795', perk: 'Huy hiệu Kim Cương Xanh, hỗ trợ AI giải chi tiết không giới hạn' },
-                    { league: 'CLB Khởi Động (<650)', criteria: 'Điểm ETS < 650', perk: 'Huy hiệu Ngôi Sao Bạc, lộ trình cá nhân hóa tăng tốc 200 điểm' },
-                  ]).map((lg, idx) => (
-                    <div key={idx} className="p-3 bg-slate-50 rounded-xl border border-slate-200/70 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                      <div>
-                        <div className="font-bold text-slate-900">{lg.league}</div>
-                        <div className="text-[11px] text-slate-500">{lg.criteria}</div>
-                      </div>
-                      <div className="text-[11px] font-semibold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200/60 self-start sm:self-auto">
-                        {lg.perk}
-                      </div>
                     </div>
                   ))}
                 </div>

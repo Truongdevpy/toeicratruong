@@ -348,36 +348,7 @@ export const GrammarPage: React.FC<GrammarPageProps> = ({ onNavigate, onFocusMod
           </div>
         </div>
 
-        {/* Header Title & Ask AI Banner */}
-        <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-white p-5 sm:p-6 rounded-3xl border border-slate-200/80 shadow-2xs">
-          <div>
-            <div className="flex items-center gap-2 mb-1.5">
-              <span className="inline-flex items-center gap-1 px-3 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-700">
-                <BookOpen className="w-3.5 h-3.5" /> {topics.length || 15} Chuyên đề trọng điểm
-              </span>
-              <span className="text-xs text-slate-500 font-medium hidden sm:inline">
-                Bám sát cấu trúc đề thi ETS TOEIC 2026
-              </span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              Kho Ngữ Pháp Thực Chiến TOEIC
-            </h1>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1 max-w-2xl leading-relaxed">
-              Lộ trình mở khóa bài học tương tác: nắm vững lý thuyết cốt lõi, bẫy đề thi và làm chủ các câu hỏi Part 5 & 6.
-            </p>
-          </div>
-
-          <div className="flex items-center gap-2 shrink-0">
-            <button
-              onClick={() => onNavigate('/ai-tutor')}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold rounded-2xl shadow-md shadow-blue-500/20 hover:from-blue-700 hover:to-indigo-700 transition-all cursor-pointer"
-            >
-              <Bot className="w-4 h-4" />
-              Hỏi AI Tutor ngữ pháp
-              <ArrowRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
-        </div>
+        
 
         {/* Global Controls & Mode Switcher Bar */}
         <div className="bg-white p-4 rounded-3xl border border-slate-200/80 shadow-2xs space-y-3 mb-8">

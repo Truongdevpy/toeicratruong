@@ -369,10 +369,10 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
     initialPage: 1,
     initialPageSize: 9,
     syncUrl: !activeTest,
-    pageParamName: 'page',
-    sizeParamName: 'size',
-    scrollToTopOnPageChange: true,
-    scrollTargetId: 'writing-catalog-top',
+    
+    
+    
+    
   });
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-﻿import { Question } from '../types';
+import { Question } from '../types';
 
 export interface EvidenceItem {
   qNum: number | string;
@@ -20,24 +20,94 @@ const STOPWORDS = new Set([
 ]);
 
 /**
- * Clean HTML tags and return plain text
+ * Clean HTML tags and return plain text, unescaping literal \n \r \t
  */
-export function stripHtml(html: string): string {
+export function stripHtml(html: any): string {
   if (!html) return '';
-  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  if (typeof html !== 'string') {
+    if (Array.isArray(html)) {
+      return html
+        .map((item) => {
+          if (typeof item === 'string') return item;
+          if (item && typeof item === 'object') {
+            const spk = item.speaker ? item.speaker + ': ' : '';
+            return spk + (item.text || item.en || '');
+          }
+          return '';
+        })
+        .filter(Boolean)
+        .join('\n');
+    }
+    if (typeof html === 'object' && html !== null) {
+      return html.text || html.transcript || html.passage_text || JSON.stringify(html);
+    }
+    return String(html);
+  }
+  // Unescape literal escaped newlines/tabs from JSON
+  const unescaped = html
+    .replace(/\\r\\n/g, '\n')
+    .replace(/\\n/g, '\n')
+    .replace(/\\r/g, '')
+    .replace(/\\t/g, ' ');
+  return unescaped.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
 /**
- * Split text into individual sentences
+ * Split text into individual sentences safely handling honorifics & timestamps
  */
 export function splitSentences(text: string): string[] {
   if (!text) return [];
-  const clean = stripHtml(text);
-  // Split on period, exclamation, question mark followed by whitespace or line break
+  let clean = stripHtml(text);
+
+  // Protect honorifics and time strings from splitting on dot
+  clean = clean.replace(/\b(Mr|Mrs|Ms|Dr|Prof|Inc|Corp|Ltd|Co|approx|dept|vs)\./gi, '$1@DOT@');
+  clean = clean.replace(/\b([AP]\.M\.)/gi, (m) => m.replace(/\./g, '@DOT@'));
+
   return clean
     .split(/(?<=[.!?])\s+|\n+/)
-    .map((s) => s.trim())
-    .filter((s) => s.length >= 8);
+    .map((s) => s.replace(/@DOT@/g, '.').trim())
+    .filter((s) => s.length >= 5);
+}
+
+/**
+ * Find the best corresponding sentence in passage given an evidence string or query
+ */
+export function findBestSentenceInPassage(query: string, sentences: string[]): string | null {
+  if (!query || sentences.length === 0) return null;
+  const lowerQuery = query.toLowerCase().trim();
+
+  // 1. Direct substring match
+  for (const sent of sentences) {
+    const sLower = sent.toLowerCase();
+    if (sLower.includes(lowerQuery) || lowerQuery.includes(sLower)) {
+      return sent;
+    }
+  }
+
+  // 2. Token overlap score
+  const queryTokens = (lowerQuery.match(/[a-zA-Z]{3,}/g) || []).filter((t) => !STOPWORDS.has(t));
+  if (queryTokens.length === 0) return null;
+  const tokenSet = new Set(queryTokens);
+
+  let bestSent: string | null = null;
+  let bestScore = 0;
+
+  for (const sent of sentences) {
+    const sentTokens = (sent.toLowerCase().match(/[a-zA-Z]{3,}/g) || []).filter((t) => !STOPWORDS.has(t));
+    let score = 0;
+    for (const t of sentTokens) {
+      if (tokenSet.has(t)) score++;
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      bestSent = sent;
+    }
+  }
+
+  if (bestScore >= 2 || (queryTokens.length === 1 && bestScore === 1)) {
+    return bestSent;
+  }
+  return null;
 }
 
 /**
@@ -49,49 +119,58 @@ export function extractEvidenceFromQuestion(
 ): { text: string; translation?: string; paraphrase?: string } {
   const fullText = fullPassageOrTranscript || q.passage_text || q.transcript || '';
   const sentences = splitSentences(fullText);
-
-  // 1. Direct explicit evidence field if provided in question object
   const anyQ = q as any;
-  if (anyQ.evidence && typeof anyQ.evidence === 'string' && anyQ.evidence.trim().length > 5) {
+
+  // 1. If explicit evidence text is provided in question metadata
+  const explicitEv = anyQ.evidence || anyQ.evidence_text || '';
+  const explicitTrans = anyQ.evidence_vi || anyQ.evidence_translation || '';
+  const explicitPara = anyQ.paraphrase || '';
+
+  if (explicitEv && typeof explicitEv === 'string' && explicitEv.trim().length > 5) {
+    const trimmedEv = explicitEv.trim();
+    // Verify if it maps to a sentence in the passage
+    const matchedSent = findBestSentenceInPassage(trimmedEv, sentences);
+    if (matchedSent) {
+      return {
+        text: matchedSent,
+        translation: explicitTrans,
+        paraphrase: explicitPara
+      };
+    }
     return {
-      text: anyQ.evidence.trim(),
-      translation: anyQ.evidence_vi || anyQ.evidence_translation || '',
-      paraphrase: anyQ.paraphrase || ''
+      text: trimmedEv,
+      translation: explicitTrans,
+      paraphrase: explicitPara
     };
   }
 
   // 2. Parse Explanation for explicit "Dẫn chứng:", "Script:", or quotes with translations
   const expl = q.explanation_vi || anyQ.explanation_en || q.explanation || '';
-  if (expl) {
-    // Pattern 1: Dẫn chứng / Script: "..." (Dịch: ...)
-    const explRegex = /(?:dẫn chứng|script|câu trước|câu sau|đoạn \d+|dịch nghĩa)[^:"]*:\s*["“']([^"”']{8,})["”'](?:\s*\(([^)]+)\))?/i;
+  if (expl && typeof expl === 'string') {
+    const explRegex = /(?:dẫn chứng|script|câu trước|câu sau|đoạn \d+|dịch nghĩa)[^:"]*:\s*["“'‘]([^"”'’]{8,})["”'’](?:\s*\(([^)]+)\))?/i;
     const match = expl.match(explRegex);
     if (match) {
       const quote = match[1].trim();
       const trans = (match[2] || '').trim();
-
-      // Find best corresponding sentence in the actual passage/transcript
       const mPara = expl.match(/Paraphrase:\s*([^\n\r]+)/i);
-      const paraphrase = anyQ.paraphrase || (mPara ? mPara[1].trim() : undefined);
-      if (sentences.length > 0) {
-        for (const sent of sentences) {
-          if (sent.toLowerCase().includes(quote.toLowerCase()) || quote.toLowerCase().includes(sent.toLowerCase())) {
-            return { text: sent, translation: trans, paraphrase };
-          }
-        }
-      }
-      return { text: quote, translation: trans, paraphrase };
+      const paraphrase = explicitPara || (mPara ? mPara[1].trim() : undefined);
+
+      const matchedSent = findBestSentenceInPassage(quote, sentences);
+      return {
+        text: matchedSent || quote,
+        translation: trans || explicitTrans,
+        paraphrase
+      };
     }
 
-    // Pattern 2: Any English quote in explanation of length >= 12 chars that exists in passage
-    const quoteMatches = expl.match(/["“']([^"”']{12,})["”']/g) || [];
+    // Pattern 2: Any English quote in explanation of length >= 12 chars
+    const quoteMatches = expl.match(/["“'‘]([^"”'’]{12,})["”'’]/g) || [];
     for (const rawQuote of quoteMatches) {
-      const cleanQuote = rawQuote.replace(/["“'”]/g, '').trim();
+      const cleanQuote = rawQuote.replace(/["“'‘”’]/g, '').trim();
       if (cleanQuote.length >= 12 && sentences.length > 0) {
-        for (const sent of sentences) {
-          if (sent.toLowerCase().includes(cleanQuote.toLowerCase()) || cleanQuote.toLowerCase().includes(sent.toLowerCase())) {
-            return { text: sent };
-          }
+        const matchedSent = findBestSentenceInPassage(cleanQuote, sentences);
+        if (matchedSent) {
+          return { text: matchedSent, translation: explicitTrans, paraphrase: explicitPara };
         }
       }
     }
@@ -107,9 +186,9 @@ export function extractEvidenceFromQuestion(
           sent.includes(`(${qNum})`) ||
           sent.includes(`___${qNum}___`) ||
           sent.includes(`_${qNum}_`) ||
-          new RegExp(`\\b${qNum}\\.`, 'i').test(sent)
+          new RegExp(`\\b${qNum}\\b`, 'i').test(sent)
         ) {
-          return { text: sent };
+          return { text: sent, translation: explicitTrans, paraphrase: explicitPara };
         }
       }
     }
@@ -122,29 +201,12 @@ export function extractEvidenceFromQuestion(
     const optProp = `option_${correctLetter.toLowerCase()}`;
     const correctOptText = opts[correctLetter] || (anyQ)[optProp] || '';
 
-    const queryStr = `${q.question_text || ''} ${correctOptText}`.toLowerCase();
-    const queryTokens = (queryStr.match(/[a-zA-Z]{3,}/g) || []).filter((t) => !STOPWORDS.has(t));
-    const tokenSet = new Set(queryTokens);
-
-    let bestSent = sentences[0];
-    let bestScore = -1;
-
-    for (const sent of sentences) {
-      const sentTokens = (sent.toLowerCase().match(/[a-zA-Z]{3,}/g) || []).filter((t) => !STOPWORDS.has(t));
-      let score = 0;
-      for (const t of sentTokens) {
-        if (tokenSet.has(t)) score++;
-      }
-      if (score > bestScore) {
-        bestScore = score;
-        bestSent = sent;
-      }
+    const queryStr = `${q.question_text || ''} ${correctOptText}`;
+    const matchedSent = findBestSentenceInPassage(queryStr, sentences);
+    if (matchedSent) {
+      return { text: matchedSent, translation: explicitTrans, paraphrase: explicitPara };
     }
-
-    if (bestScore > 0) {
-      return { text: bestSent };
-    }
-    return { text: sentences[0] };
+    return { text: sentences[0], translation: explicitTrans, paraphrase: explicitPara };
   }
 
   return { text: '' };
@@ -154,14 +216,22 @@ export function extractEvidenceFromQuestion(
  * Highlight passage HTML or plain text with color-coded evidence marks
  */
 export function highlightPassageWithEvidence(
-  passageContent: string,
+  passageContent: any,
   evidenceList: EvidenceItem[]
 ): string {
-  if (!passageContent || !evidenceList || evidenceList.length === 0) {
-    return passageContent;
+  let safeContent = typeof passageContent === 'string' ? passageContent : stripHtml(passageContent);
+  if (!safeContent || !evidenceList || evidenceList.length === 0) {
+    return safeContent;
   }
 
-  let result = passageContent;
+  // Unescape literal escaped newlines in passage content
+  safeContent = safeContent
+    .replace(/\\r\\n/g, '\n')
+    .replace(/\\n/g, '\n')
+    .replace(/\\r/g, '')
+    .replace(/\\t/g, '    ');
+
+  let result = safeContent;
 
   const colorPalettes = [
     {
@@ -184,14 +254,17 @@ export function highlightPassageWithEvidence(
 
   evidenceList.forEach((ev, idx) => {
     const qNum = ev.qNum;
-    const targetText = (ev.text || '').trim();
+    let targetText = (ev.text || '').trim();
     if (!targetText || targetText.length < 8) return;
+
+    // Also clean unescaped newlines in targetText
+    targetText = targetText.replace(/\\n/g, '\n');
 
     const palette = colorPalettes[idx % colorPalettes.length];
     const badgeCls = ev.badgeClass || palette.badge;
     const markCls = ev.markClass || palette.mark;
 
-    // Check if target text already exists in result (case-insensitive substring match)
+    // Check if target text already exists in result
     let matchedStr: string | null = null;
     const lowerResult = result.toLowerCase();
     const lowerTarget = targetText.toLowerCase();
@@ -218,7 +291,7 @@ export function highlightPassageWithEvidence(
       const replacement = `
         <mark id="evidence-clue-${qNum}" data-evidence-q="${qNum}" class="${markCls} px-1.5 py-0.5 rounded-md inline shadow-2xs transition-all duration-300 cursor-pointer hover:ring-2 hover:ring-amber-400" title="Nhấn để xem câu hỏi ${qNum}">
           <span class="inline-flex items-center gap-0.5 px-1.5 py-0.2 rounded-md ${badgeCls} text-[10px] font-black mr-1 shadow-2xs select-none pointer-events-none">
-            🎯 Câu ${qNum}
+            🔍 Câu ${qNum}
           </span>
           ${matchedStr}
         </mark>

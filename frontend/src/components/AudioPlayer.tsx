@@ -1,5 +1,6 @@
 import { MorphPlayPause, MorphVolume } from './MorphIcon';
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { useSettings } from '../context/SettingsContext';
 import {
   RotateCcw,
   AlertCircle,
@@ -32,15 +33,52 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   className = '',
 }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  // Prevent overlapping audio: pause this audio if another audio starts playing
+  useEffect(() => {
+    const onOtherPlay = (e: any) => {
+      if (audioRef.current && e.detail?.id !== audioRef.current && !audioRef.current.paused) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
+    };
+    window.addEventListener('toeic-audio-play', onOtherPlay);
+    return () => window.removeEventListener('toeic-audio-play', onOtherPlay);
+  }, []);
+
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [hasError, setHasError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [autoplayBlocked, setAutoplayBlocked] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [playbackRate, setPlaybackRate] = useState(1.0);
+  const { settings, setPlaybackSpeed: setGlobalPlaybackSpeed } = useSettings();
+  const [playbackRate, setPlaybackRate] = useState(settings?.playbackSpeed || 1.0);
+
+  useEffect(() => {
+    if (settings?.playbackSpeed) {
+      setPlaybackRate(settings.playbackSpeed);
+      if (audioRef.current) {
+        audioRef.current.playbackRate = settings.playbackSpeed;
+      }
+    }
+  }, [settings?.playbackSpeed]);
+
+  useEffect(() => {
+    const onSpeed = (e: any) => {
+      const spd = e.detail;
+      if (typeof spd === 'number') {
+        setPlaybackRate(spd);
+        if (audioRef.current) {
+          audioRef.current.playbackRate = spd;
+        }
+      }
+    };
+    window.addEventListener('toeic-playback-speed-changed', onSpeed);
+    return () => window.removeEventListener('toeic-playback-speed-changed', onSpeed);
+  }, []);
   const [volume, setVolume] = useState<number>(() => {
     const saved = localStorage.getItem('toeic_audio_volume');
     return saved !== null ? parseFloat(saved) : 1.0;
@@ -83,18 +121,26 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
     audio.load();
 
+    setAutoplayBlocked(false);
     if (autoPlay) {
       const playPromise = audio.play();
       if (playPromise !== undefined) {
         playPromise
-          .then(() => setIsPlaying(true))
+          .then(() => {
+            setIsPlaying(true);
+            setIsLoading(false);
+            setAutoplayBlocked(false);
+            window.dispatchEvent(new CustomEvent('toeic-audio-play', { detail: { id: audio } }));
+          })
           .catch((err) => {
-            // Autoplay policy prevented playback, normal browser behavior
-            if (err.name !== 'NotAllowedError') {
+            setIsPlaying(false);
+            setIsLoading(false);
+            if (err.name === 'NotAllowedError') {
+              setAutoplayBlocked(true);
+            } else if (err.name !== 'AbortError') {
               setHasError(true);
               setErrorMessage('Không thể tự động phát âm thanh.');
             }
-            setIsPlaying(false);
           });
       }
     }
@@ -190,6 +236,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         .then(() => {
           setIsPlaying(true);
           setIsLoading(false);
+          window.dispatchEvent(new CustomEvent('toeic-audio-play', { detail: { id: audio } }));
         })
         .catch((err) => {
           setIsLoading(false);
@@ -265,9 +312,11 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   };
 
   const handleSpeedChange = (rate: number) => {
-    setPlaybackRate(rate);
+    const validRate = Math.max(0.5, Math.min(2.0, Math.round(rate * 100) / 100));
+    setPlaybackRate(validRate);
+    setGlobalPlaybackSpeed(validRate);
     if (audioRef.current) {
-      audioRef.current.playbackRate = rate;
+      audioRef.current.playbackRate = validRate;
     }
   };
 
@@ -304,18 +353,35 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         ref={containerRef}
         className={`flex items-center gap-2.5 bg-slate-50 border border-slate-200/80 rounded-xl px-3 py-2 shadow-2xs ${className}`}
       >
-        <audio ref={audioRef} src={resolvedSrc} preload="metadata" />
+        <audio
+          ref={audioRef}
+          src={resolvedSrc}
+          preload="metadata"
+          playsInline
+          onLoadedMetadata={() => {
+            if (audioRef.current) {
+              audioRef.current.playbackRate = playbackRate;
+              setDuration(audioRef.current.duration);
+            }
+          }}
+          onPlay={() => {
+            if (audioRef.current) {
+              audioRef.current.playbackRate = playbackRate;
+            }
+          }}
+        />
 
         <button
           type="button"
           onClick={togglePlay}
-          className="p-1.5 rounded-lg bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center transition-colors cursor-pointer shrink-0"
+          className="w-11 h-11 min-w-[44px] min-h-[44px] rounded-xl bg-primary hover:bg-primary-pressed text-on-primary shadow-xs flex items-center justify-center transition-all cursor-pointer shrink-0 active:scale-95"
           title={isPlaying ? 'Tạm dừng (Space)' : 'Phát audio (Space)'}
+          aria-label={isPlaying ? 'Tạm dừng' : 'Phát audio'}
         >
           {isLoading ? (
-            <Loader2 className="w-3.5 h-3.5 animate-spin" />
+            <Loader2 className="w-4 h-4 animate-spin" />
           ) : (
-            <MorphPlayPause isPlaying={isPlaying} size={14} className="fill-current" />
+            <MorphPlayPause isPlaying={isPlaying} size={18} className="fill-current" />
           )}
         </button>
 
@@ -408,7 +474,23 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
       ref={containerRef}
       className={`bg-white border border-slate-200/90 rounded-2xl p-4 my-3 shadow-xs space-y-3 transition-all ${className}`}
     >
-      <audio ref={audioRef} src={resolvedSrc} preload="metadata" />
+      <audio
+          ref={audioRef}
+          src={resolvedSrc}
+          preload="metadata"
+          playsInline
+          onLoadedMetadata={() => {
+            if (audioRef.current) {
+              audioRef.current.playbackRate = playbackRate;
+              setDuration(audioRef.current.duration);
+            }
+          }}
+          onPlay={() => {
+            if (audioRef.current) {
+              audioRef.current.playbackRate = playbackRate;
+            }
+          }}
+        />
 
       {/* Header Info Bar */}
       <div className="flex items-center justify-between">
@@ -485,6 +567,26 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
         </div>
       )}
 
+      {/* Autoplay Blocked Banner */}
+      {autoplayBlocked && !isPlaying && (
+        <div className="bg-blue-50 border border-blue-200 text-blue-900 text-xs px-3.5 py-2.5 rounded-xl flex items-center justify-between animate-in fade-in">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-blue-600 animate-ping shrink-0" />
+            <span className="font-medium">Trình duyệt đã chặn tự phát âm thanh. Nhấn nút để nghe ngay.</span>
+          </div>
+          <button
+            type="button"
+            onClick={() => {
+              setAutoplayBlocked(false);
+              togglePlay();
+            }}
+            className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-2xs flex items-center gap-1.5 transition-colors cursor-pointer shrink-0"
+          >
+            <span>Phát âm thanh</span>
+          </button>
+        </div>
+      )}
+
       {/* Main Controls Row */}
       <div className="flex flex-col sm:flex-row sm:items-center gap-3">
         {/* Play/Pause & Replay Buttons */}
@@ -492,13 +594,14 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
           <button
             type="button"
             onClick={togglePlay}
-            className="w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 active:scale-95 text-white flex items-center justify-center transition-all shadow-sm cursor-pointer"
+            className="w-12 h-12 min-w-[48px] min-h-[48px] rounded-2xl bg-primary hover:bg-primary-pressed active:scale-95 text-on-primary flex items-center justify-center transition-all shadow-md cursor-pointer"
             title={isPlaying ? 'Tạm dừng (Space)' : 'Phát audio (Space)'}
+            aria-label={isPlaying ? 'Tạm dừng' : 'Phát audio'}
           >
             {isLoading ? (
               <Loader2 className="w-5 h-5 animate-spin" />
             ) : (
-              <MorphPlayPause isPlaying={isPlaying} size={20} className="fill-current" />
+              <MorphPlayPause isPlaying={isPlaying} size={22} className="fill-current" />
             )}
           </button>
 
@@ -553,22 +656,43 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
         {/* Speed Selector & Volume Controls */}
         <div className="flex items-center justify-between sm:justify-start gap-2 pt-1 sm:pt-0 border-t sm:border-t-0 border-slate-100">
-          {/* Speed Presets */}
-          <div className="flex items-center gap-1">
-            {[0.75, 1.0, 1.25].map((rate) => (
+          {/* Speed Presets & Custom Stepper */}
+          <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200">
+            {[0.75, 1.0, 1.25, 1.5].map((rate) => (
               <button
                 key={rate}
                 type="button"
                 onClick={() => handleSpeedChange(rate)}
                 className={`px-2 py-1 text-xs font-semibold rounded-md transition-colors cursor-pointer ${
-                  playbackRate === rate
+                  Math.abs(playbackRate - rate) < 0.01
                     ? 'bg-blue-600 text-white shadow-2xs font-bold'
-                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                    : 'text-slate-700 hover:bg-slate-200'
                 }`}
               >
                 {rate}x
               </button>
             ))}
+            {![0.75, 1.0, 1.25, 1.5].some((r) => Math.abs(r - playbackRate) < 0.01) && (
+              <span className="px-1.5 py-0.5 text-xs font-bold bg-blue-600 text-white rounded shadow-2xs">
+                {playbackRate.toFixed(2)}x
+              </span>
+            )}
+            <button
+              type="button"
+              onClick={() => handleSpeedChange(playbackRate - 0.05)}
+              className="px-1.5 py-0.5 text-xs font-bold text-slate-600 hover:text-slate-900 cursor-pointer"
+              title="Giảm 0.05x"
+            >
+              -
+            </button>
+            <button
+              type="button"
+              onClick={() => handleSpeedChange(playbackRate + 0.05)}
+              className="px-1.5 py-0.5 text-xs font-bold text-slate-600 hover:text-slate-900 cursor-pointer"
+              title="Tăng 0.05x"
+            >
+              +
+            </button>
           </div>
 
           {/* Volume Control */}

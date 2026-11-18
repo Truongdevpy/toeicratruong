@@ -177,12 +177,18 @@ export const api = {
     }),
 
   // Flashcards
-  getFlashcards: (filterType = 'all', topic = 'all') => {
-    const params = new URLSearchParams();
-    if (filterType) params.set('filter_type', filterType);
-    if (topic && topic !== 'all') params.set('topic', topic);
-    return request<any>(`/practice/flashcards?${params.toString()}`);
-  },
+    getFlashcards: (filterType = 'all', topic = 'all', part = 'all') => {
+      const params = new URLSearchParams();
+      if (filterType) params.set('filter_type', filterType);
+      if (topic && topic !== 'all') params.set('topic', topic);
+      if (part && part !== 'all') params.set('part', part);
+      return request<any>(`/practice/flashcards?${params.toString()}`);
+    },
+    syncFlashcards: (items: any[]) =>
+      request<any>('/practice/flashcards/sync', {
+        method: 'POST',
+        body: JSON.stringify({ items }),
+      }),
   reviewFlashcard: (data: { word_id?: string; word?: string; rating: string; [key: string]: any }) =>
     request<any>('/practice/flashcards/review', {
       method: 'POST',

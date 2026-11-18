@@ -68,7 +68,7 @@ export const QuestionImage: React.FC<QuestionImageProps> = ({
 
   // If no source is provided
   if (!resolvedSrc) {
-    if (part === 1 || part === 3 || part === 4 || part === 7) {
+    if (part === 1) {
       return (
         <div className={`my-3 p-4 bg-slate-50 border border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center text-center space-y-1.5 ${containerClass}`}>
           <ImageIcon className="w-6 h-6 text-slate-400" />

@@ -1,8 +1,9 @@
+# -*- coding: utf-8 -*-
 import time
 import logging
 from collections import defaultdict
 from pathlib import Path
-from typing import Optional, Dict, List
+from typing import Optional, Dict, List, Any
 from fastapi import HTTPException, status
 
 logger = logging.getLogger("security")
@@ -38,8 +39,43 @@ def clear_login_failures(identifier: str) -> None:
     if identifier in _login_failures:
         del _login_failures[identifier]
 
+def mask_email(email: str) -> str:
+    """
+    Masks email for privacy protection in server logs.
+    Example: 'student@toeicai.vn' -> 'st***t@toeicai.vn'
+    """
+    if not email or "@" not in email:
+        return "***"
+    parts = email.split("@", 1)
+    name_part, domain = parts[0], parts[1]
+    if len(name_part) <= 2:
+        masked_name = name_part[0] + "*"
+    else:
+        masked_name = name_part[:2] + "***" + name_part[-1]
+    return f"{masked_name}@{domain}"
+
+def redact_sensitive_data(val: Any) -> Any:
+    """
+    Recursively strips passwords, tokens, secrets, and masks emails in log payloads.
+    """
+    if isinstance(val, dict):
+        redacted = {}
+        for k, v in val.items():
+            k_lower = str(k).lower()
+            if any(term in k_lower for term in ("password", "token", "secret", "authorization", "cookie")):
+                redacted[k] = "[REDACTED]"
+            elif "email" in k_lower and isinstance(v, str):
+                redacted[k] = mask_email(v)
+            else:
+                redacted[k] = redact_sensitive_data(v)
+        return redacted
+    elif isinstance(val, list):
+        return [redact_sensitive_data(item) for item in val]
+    return val
+
 def log_security_event(event_type: str, user_id: Optional[int] = None, details: Optional[dict] = None) -> None:
-    msg = f"Event: {event_type} | UserID: {user_id} | Details: {details or {}}"
+    safe_details = redact_sensitive_data(details or {})
+    msg = f"Event: {event_type} | UserID: {user_id} | Details: {safe_details}"
     logger.info(msg)
 
 def sanitize_safe_path(base_dir: Path, requested_path: str) -> Path:

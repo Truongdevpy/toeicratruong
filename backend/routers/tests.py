@@ -7,7 +7,7 @@ from pathlib import Path
 from database import get_db
 import models
 from typing import Optional
-from auth import get_current_user, get_current_user_optional
+from auth import get_current_user, get_current_user_optional, GUEST_USER_ID
 from personalization_engine import calculate_toeic_score
 from media_resolver import resolve_media_url
 
@@ -16,9 +16,12 @@ router = APIRouter(tags=["tests"])
 def clean_question_and_options(part: int, q_text: str, options: dict, q_num: int = None):
     cleaned_q = (q_text or "").strip()
     
+    # Remove any source tags like 'Part 1 Đậu TOEIC #1' or 'dau toeic'
+    cleaned_q = re.sub(r"(?:Part\s*\d+\s*)?(?:Đậu|dau)\s*TOEIC(?:\s*#\d+)?", "", cleaned_q, flags=re.IGNORECASE).strip()
+    cleaned_q = re.sub(r"^\[(?:Q|Part|Test)?[0-9a-zA-Z_\-]+\]\s*", "", cleaned_q).strip()
+
     if part == 1:
-        if not cleaned_q or re.match(r"^[A-D.\s]+$", cleaned_q) or cleaned_q.startswith("Câu"):
-            cleaned_q = "Nghe 4 phương án và chọn câu miêu tả đúng nhất cho bức tranh."
+        cleaned_q = "Nghe 4 phương án và chọn câu miêu tả đúng nhất cho bức tranh."
     elif part == 2:
         if not cleaned_q or re.match(r"^[A-D.\s]+$", cleaned_q) or cleaned_q.startswith("Câu"):
             cleaned_q = "Nghe câu hỏi và chọn câu phản hồi phù hợp nhất trong 3 đáp án."
@@ -27,8 +30,10 @@ def clean_question_and_options(part: int, q_text: str, options: dict, q_num: int
         if m:
             cleaned_q = cleaned_q[:m.start()].strip()
         if not cleaned_q or re.match(r"^[A-D.\s]+$", cleaned_q):
-            cleaned_q = f"Chọn từ thích hợp nhất để hoàn thành câu."
+            cleaned_q = "Chọn từ thích hợp nhất để hoàn thành câu."
     elif part == 6:
+        if re.search(r"(\u00c3|\u00c4|\u00e1\u00bb|Ch\u00e1\u00bb)", cleaned_q):
+            cleaned_q = f"Chọn từ/câu thích hợp điền vào vị trí [{q_num}]:" if q_num else "Chọn từ/câu thích hợp điền vào chỗ trống:"
         if re.match(r"^\(?[A-D][\.\)\:\-]", cleaned_q) or not cleaned_q or re.match(r"^[A-D.\s]+$", cleaned_q):
             cleaned_q = f"Chọn từ hoặc câu thích hợp nhất để điền vào chỗ trống [{q_num or ''}]:".replace("[]", "").strip()
         else:
@@ -48,11 +53,10 @@ def clean_question_and_options(part: int, q_text: str, options: dict, q_num: int
             cleaned_opts[letter] = ""
             continue
         val = str(opt_val).strip()
-        val = re.sub(rf"^\(?{letter}[\.\)\:\-]?\s*", "", val, flags=re.I).strip()
+        val = re.sub(rf"^(?:\({letter}\)|{letter}[\.\)\:\-])\s*", "", val, flags=re.I).strip()
         cleaned_opts[letter] = val
 
     return cleaned_q, cleaned_opts
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = BASE_DIR / "data" / "data"
@@ -149,7 +153,7 @@ def list_tests(
     part: int = Query(None),
     search: str = Query(None),
     sort: str = Query("name_asc"),
-    limit: int = Query(20, ge=1, le=300),
+    limit: int = Query(20, ge=1, le=1000),
     page: int = Query(1, ge=1)
 ):
     catalog = get_catalog()
@@ -207,13 +211,17 @@ def list_tests(
     for idx, t in enumerate(paged):
         t_name = t.get("name", "TOEIC Test")
         t_type = t.get("test_type", "lr_full")
-        year = 2026
-        if "2024" in t_name or "2024" in t.get("slug", ""):
-            year = 2024
-        elif "2023" in t_name or "2023" in t.get("slug", ""):
-            year = 2023
-        elif "old" in t.get("slug", "").lower():
-            year = 2020
+        raw_year = t.get("year")
+        if raw_year and str(raw_year).isdigit():
+            year = int(raw_year)
+        else:
+            m = re.search(r"(20\d\d)", t_name + " " + t.get("slug", ""))
+            if m:
+                year = int(m.group(1))
+            elif "old" in t.get("slug", "").lower():
+                year = 2020
+            else:
+                year = 2026
 
         sections = ["Listening (100 câu)", "Reading (100 câu)"]
         parts = [1, 2, 3, 4, 5, 6, 7]
@@ -705,7 +713,7 @@ def submit_test(
         numeric_total_score = raw_tot if isinstance(raw_tot, int) else (int(res_data.get("listening_score") or 0) + int(res_data.get("reading_score") or 0))
 
         test_attempt = models.TestAttempt(
-            user_id=user.id if user else 1,
+            user_id=user.id if user else GUEST_USER_ID,
             test_id=test_id,
             test_title=meta.get("title") or (catalog_entry.get("name") if catalog_entry else test_id),
             test_type=test_type,
@@ -730,7 +738,7 @@ def submit_test(
         for rev in review_answers:
             q_num = rev.get("question_number")
             q_attempt = models.QuestionAttempt(
-                user_id=user.id if user else 1,
+                user_id=user.id if user else GUEST_USER_ID,
                 question_id=str(f"{test_id}_{q_num}"),
                 test_id=test_id,
                 question_number=q_num,

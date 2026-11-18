@@ -14,7 +14,8 @@ import {
   Plus,
   HelpCircle,
   Clock,
-  ArrowRight
+  ArrowRight,
+  Trash2
 } from 'lucide-react';
 import { api } from '../services/api';
 import { useAuth } from '../context/AuthContext';
@@ -44,49 +45,110 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
   const [inputText, setInputText] = useState('');
   const [loading, setLoading] = useState(false);
   const [conversationId, setConversationId] = useState<number | undefined>(undefined);
-  const [conversations, setConversations] = useState<{ id: number; title: string; date: string }[]>([]);
+  const [conversations, setConversations] = useState<{ id: number; title: string; date?: string; created_at?: string }[]>([]);
   const [selectedQuizAnswers, setSelectedQuizAnswers] = useState<Record<string, string>>({});
   const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const loadConversations = useCallback(async () => {
-    try {
-      const res = await api.getTutorConversations();
-      if (res && res.conversations) {
-        setConversations(res.conversations);
-      } else {
-        setConversations([
-          { id: 1, title: 'H?i ??p th? hi?n t?i ho?n th?nh', date: 'H?m nay' },
-          { id: 2, title: 'B?y ?? thi Part 7 Double Passages', date: 'H?m qua' },
-          { id: 3, title: 'Chi?n thu?t nghe s? & th?i gian Part 2', date: '3 ng?y tr??c' },
-        ]);
-      }
-    } catch {
-      // Fallback
-    }
-  }, []);
 
   const initGreeting = useCallback(() => {
     const target = profile?.target_score || 650;
     const current = profile?.current_score || 450;
     const safeList = Array.isArray(profile?.weak_areas) ? profile.weak_areas : (typeof profile?.weak_areas === 'string' ? [profile.weak_areas] : []);
-    const weakList = safeList.length > 0 ? safeList.join(', ') : 'Part 3 (H?i tho?i) v? Part 5 (T? lo?i)';
+    const weakList = safeList.length > 0 ? safeList.join(', ') : 'Part 3 (Hội thoại) và Part 5 (Từ loại)';
     
     setMessages([
       {
         id: 'msg-welcome',
         sender: 'ai',
-        text: `Ch?o b?n! T?i l? **Gia s? AI c? nh?n h?a**, tr? l? h?c t?p 1-k?m-1 c?a b?n. ??\n\nH? th?ng ghi nh?n m?c ti?u c?a b?n l? **${target} TOEIC** (hi?n t?i: **${current}**). ?i?m y?u c?n ?u ti?n c?i thi?n: **${weakList}**.\n\nT?i c? th? gi?p b?n gi?i ??p ng? ph?p, ph?n t?ch b?y ?? thi, gi?i b?i t?p kh? ho?c t?o c?u ?? tr?c nghi?m ngay b?y gi?. B?n mu?n b?t ??u v?i ph?n n?o?`,
+        text: `Chào bạn! Tôi là **Gia sư AI cá nhân hóa**, trợ lý học tập 1-kèm-1 của bạn. 🎯\n\nHệ thống ghi nhận mục tiêu của bạn là **${target} TOEIC** (hiện tại: **${current}**). Điểm yếu cần ưu tiên cải thiện: **${weakList}**.\n\nTôi có thể giúp bạn giải đáp ngữ pháp, phân tích bẫy đề thi, giải bài tập khó hoặc tạo câu đố trắc nghiệm ngay bây giờ. Bạn muốn bắt đầu với phần nào?`,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
       }
     ]);
   }, [profile]);
 
+  const handleSelectConversation = useCallback(async (convId: number) => {
+    setConversationId(convId);
+    setLoading(true);
+    try {
+      const res = await api.getTutorMessages(convId);
+      if (res && res.messages && res.messages.length > 0) {
+        const loaded: ChatMessage[] = res.messages.map((m: any) => ({
+          id: `msg-${m.id}`,
+          sender: m.sender,
+          text: m.content,
+          action: m.prompt_action,
+          quiz: m.quiz || (m.quiz_data && m.quiz_data[0]),
+          timestamp: m.created_at
+            ? new Date(m.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            : 'Vừa xong'
+        }));
+        setMessages(loaded);
+      } else {
+        initGreeting();
+      }
+    } catch (err) {
+      console.error('Error loading tutor messages:', err);
+      initGreeting();
+    } finally {
+      setLoading(false);
+    }
+  }, [initGreeting]);
+
+  const loadConversations = useCallback(async (selectId?: number) => {
+    try {
+      const res = await api.getTutorConversations();
+      const list = res?.conversations || [];
+      setConversations(list);
+
+      const targetId = selectId !== undefined ? selectId : (conversationId !== undefined ? conversationId : (list.length > 0 ? list[0].id : undefined));
+
+      if (targetId !== undefined) {
+        setConversationId(targetId);
+        const msgRes = await api.getTutorMessages(targetId);
+        if (msgRes && msgRes.messages && msgRes.messages.length > 0) {
+          const loaded: ChatMessage[] = msgRes.messages.map((m: any) => ({
+            id: `msg-${m.id}`,
+            sender: m.sender,
+            text: m.content,
+            action: m.prompt_action,
+            quiz: m.quiz || (m.quiz_data && m.quiz_data[0]),
+            timestamp: m.created_at
+              ? new Date(m.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+              : 'Vừa xong'
+          }));
+          setMessages(loaded);
+          return;
+        }
+      }
+      initGreeting();
+    } catch {
+      initGreeting();
+    }
+  }, [conversationId, initGreeting]);
+
+  const handleDeleteConversation = async (e: React.MouseEvent, convId: number) => {
+    e.stopPropagation();
+    try {
+      await api.deleteTutorConversation(convId);
+      const remaining = conversations.filter((c) => c.id !== convId);
+      setConversations(remaining);
+      if (conversationId === convId) {
+        if (remaining.length > 0) {
+          handleSelectConversation(remaining[0].id);
+        } else {
+          setConversationId(undefined);
+          initGreeting();
+        }
+      }
+    } catch (err) {
+      console.error('Error deleting conversation:', err);
+    }
+  };
 
   useEffect(() => {
     if (!user) return;
     loadConversations();
-    initGreeting();
-  }, [user, loadConversations, initGreeting]);
+  }, [user]);
+
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, loading]);
@@ -115,8 +177,13 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
         conversation_id: conversationId
       });
 
-      if (res && res.conversation_id && !conversationId) {
-        setConversationId(res.conversation_id);
+      if (res && res.conversation_id) {
+        if (!conversationId) {
+          setConversationId(res.conversation_id);
+        }
+        api.getTutorConversations().then((cRes) => {
+          if (cRes?.conversations) setConversations(cRes.conversations);
+        }).catch(() => {});
       }
 
       const aiMsg: ChatMessage = {
@@ -272,28 +339,30 @@ export const AITutorPage: React.FC<AITutorPageProps> = ({ onNavigate }) => {
 
               <div className="flex-1 overflow-y-auto space-y-1.5 pr-1">
                 {conversations.map((c) => (
-                  <button
+                  <div
                     key={c.id}
-                    onClick={() => {
-                      setConversationId(c.id);
-                      setMessages([
-                        {
-                          id: `hist-${c.id}`,
-                          sender: 'ai',
-                          text: `Tiếp tục thảo luận về: **${c.title}**. Bạn muốn ôn tập lại các ví dụ hay làm câu hỏi kiểm tra nhanh?`,
-                          timestamp: 'Vừa xong'
-                        }
-                      ]);
-                    }}
-                    className={`w-full text-left p-2.5 rounded-xl text-xs transition-colors flex flex-col gap-0.5 ${
+                    onClick={() => handleSelectConversation(c.id)}
+                    className={`group relative w-full text-left p-2.5 rounded-xl text-xs transition-colors flex items-center justify-between cursor-pointer ${
                       conversationId === c.id
-                        ? 'bg-blue-50 text-blue-700 font-semibold'
+                        ? 'bg-blue-50 text-blue-700 font-semibold border border-blue-200/80 shadow-2xs'
                         : 'text-slate-600 hover:bg-slate-50'
                     }`}
                   >
-                    <span className="truncate">{c.title}</span>
-                    <span className="text-[10px] text-slate-400 font-normal">{c.date}</span>
-                  </button>
+                    <div className="flex flex-col gap-0.5 truncate pr-2 flex-1">
+                      <span className="truncate font-medium">{c.title}</span>
+                      <span className="text-[10px] text-slate-400 font-normal">
+                        {c.date || (c.created_at ? new Date(c.created_at).toLocaleDateString('vi-VN') : '')}
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={(e) => handleDeleteConversation(e, c.id)}
+                      className="opacity-0 group-hover:opacity-100 p-1 hover:bg-red-50 text-slate-400 hover:text-red-600 rounded-lg transition-all"
+                      title="Xóa cuộc trò chuyện này"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
                 ))}
               </div>
 

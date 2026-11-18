@@ -48,6 +48,7 @@ const WritingPracticePage = React.lazy(() => import('./pages/WritingPracticePage
 const VideoLessonsPage = React.lazy(() => import('./pages/VideoLessonsPage').then(m => ({ default: m.VideoLessonsPage })));
 const PaymentPage = React.lazy(() => import('./pages/PaymentPage').then(m => ({ default: m.PaymentPage })));
 const DesignPreviewPage = React.lazy(() => import('./pages/DesignPreviewPage').then(m => ({ default: m.DesignPreviewPage })));
+const ArenaGamePage = React.lazy(() => import('./pages/ArenaGamePage').then(m => ({ default: m.ArenaGamePage })));
 
 function AppContent() {
   const { user } = useAuth();
@@ -251,6 +252,11 @@ function AppContent() {
           );
         }
         return <PracticeHubPage onNavigate={handleNavigate} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
+
+      case '/games':
+      case '/game':
+      case '/practice/games':
+        return <ArenaGamePage onNavigate={handleNavigate} onFocusModeChange={setIsFocusMode} />;
 
       case '/practice/dictation':
       case '/dictation':

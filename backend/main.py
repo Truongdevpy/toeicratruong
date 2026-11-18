@@ -21,7 +21,7 @@ from routers import (
     auth, onboarding, placement, learning_path, dashboard,
     practice, tests, dictation, vocabulary, grammar, sw,
     ai_tutor, statistics, community, achievements,
-    notifications, admin, leaderboard, chat, translate, history, payments, deeptutor, personalized_practice, ai_assessment
+    notifications, admin, leaderboard, chat, translate, history, payments, ai_assessment
 )
 
 from sqlalchemy import text
@@ -256,8 +256,6 @@ app.include_router(chat.router)
 app.include_router(translate.router)
 app.include_router(history.router, prefix="/api/history")
 app.include_router(payments.router)
-app.include_router(deeptutor.router)
-app.include_router(personalized_practice.router)
 app.include_router(ai_assessment.router)
 
 if assess_subapp is not None:

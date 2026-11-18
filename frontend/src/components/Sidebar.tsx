@@ -191,7 +191,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               {(!isGroupCollapsed || collapsed) && (
                 <div className="space-y-1">
                   {group.items.map((item) => {
-                    const Icon = item.icon;
+                    const Icon = item.icon || (() => null);
                     const isActive = isRouteActive(currentPath, item.path);
 
                     return (

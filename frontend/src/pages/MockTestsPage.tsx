@@ -43,9 +43,6 @@ import { useAuth } from '../context/AuthContext';
 import { AudioPlayer } from '../components/AudioPlayer';
 import { QuestionImage } from '../components/QuestionImage';
 import { FocusedPracticeRoom } from '../components/FocusedPracticeRoom';
-import { usePagination } from '../hooks/usePagination';
-import { Pagination } from '../components/common/Pagination';
-import { LoadMoreButton } from '../components/common/LoadMoreButton';
 
 const safeFormatDateTime = (dateStr?: any): string => {
   if (!dateStr) return '--';
@@ -119,7 +116,6 @@ type SortOption = 'name_asc' | 'name_desc' | 'newest' | 'oldest' | 'popular' | '
 const HISTORY_STORAGE_KEY = 'toeic_test_attempt_history';
 const IN_PROGRESS_STORAGE_KEY = 'toeic_test_in_progress_state';
 const ACTIVE_EXAM_STORAGE_KEY = 'toeic_active_exam_session_v2';
-const IS_EXAM_ACTIVE_KEY = 'toeic_is_exam_active_flag';
 
 interface ActiveExamSession {
   testId: string;
@@ -151,8 +147,13 @@ const TOEIC_PARTS_INFO: Record<number, { title: string; desc: string; defaultQs:
 const cleanDisplayQuestionText = (text?: string, part?: number, qNum?: number | string): string => {
   if (!text) return '';
   let clean = text.trim();
-  if (part === 1 || part === 2) {
+  if (part === 1) {
     return '';
+  }
+  if (part === 2) {
+    if (!clean || clean.startsWith('Câu') || /^[A-D.\s]+$/.test(clean)) {
+      return '';
+    }
   }
   if (part === 6) {
     if (/^[A-D][.)]/i.test(clean) || !clean || /^[A-D.\s]+$/.test(clean) || clean.toLowerCase().startsWith('câu hỏi')) {
@@ -300,30 +301,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
 }) => {
   const { user } = useAuth();
 
-  const syncTestUrlParams = (testId: string | null, mode?: string, qIndex?: number, part?: number) => {
-    if (typeof window === 'undefined') return;
-    try {
-      const url = new URL(window.location.href);
-      if (testId) {
-        url.searchParams.set('test', testId);
-        if (mode) url.searchParams.set('mode', mode);
-        if (typeof qIndex === 'number') url.searchParams.set('q', String(qIndex + 1));
-        if (part && part > 0) url.searchParams.set('part', String(part));
-        const pStr = part ? (' Part ' + part) : '';
-        const qStr = typeof qIndex === 'number' ? (' - Câu ' + (qIndex + 1)) : '';
-        document.title = (testId ? testId.toUpperCase() : '') + ' | TOEIC Ra Trường';
-      } else {
-        url.searchParams.delete('test');
-        url.searchParams.delete('mode');
-        url.searchParams.delete('q');
-        url.searchParams.delete('part');
-        document.title = (testId ? testId.toUpperCase() : '') + ' | TOEIC Ra Trường';
-      }
-      window.history.replaceState({}, '', url.toString());
-    } catch {}
-  };
-
-
 
   const [catalogTab, setCatalogTab] = useState<'catalog' | 'progress' | 'test_history' | 'question_history'>(() => {
     if (typeof window !== 'undefined') {
@@ -348,39 +325,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const [testHistoryList, setTestHistoryList] = useState<TestHistoryRecord[]>(() => historyStore.getTestAttempts());
   const [questionHistoryList, setQuestionHistoryList] = useState<QuestionHistoryRecord[]>(() => historyStore.getQuestionAttempts());
   const [historySearchQuery, setHistorySearchQuery] = useState('');
-  const [examAiExplainLoading, setExamAiExplainLoading] = useState<Record<string, boolean>>({});
-  const [examAiExplainResults, setExamAiExplainResults] = useState<Record<string, string>>({});
-
-  const handleExamExplainWithAi = async (qTarget: any) => {
-    const qKey = String(qTarget.id || qTarget.question_number);
-    setExamAiExplainLoading((prev) => ({ ...prev, [qKey]: true }));
-    try {
-      const optsObj: Record<string, string> = {
-        A: qTarget.option_a || (qTarget.options as any)?.A || '',
-        B: qTarget.option_b || (qTarget.options as any)?.B || '',
-        C: qTarget.option_c || (qTarget.options as any)?.C || '',
-        D: qTarget.option_d || (qTarget.options as any)?.D || ''
-      };
-      const res = await api.explainQuestionWithAI({
-        part: Number(qTarget.part) || 5,
-        question_number: Number(qTarget.question_number) || 1,
-        question_text: qTarget.question_text || '',
-        options: optsObj,
-        correct_answer: (qTarget.correct_answer || 'A').toUpperCase(),
-        selected_option: answers[qTarget.id] || answers[qKey] || '',
-        passage_text: qTarget.passage_text || '',
-        transcript: qTarget.transcript || '',
-        explanation: qTarget.explanation || ''
-      });
-      if (res && res.explanation) {
-        setExamAiExplainResults((prev) => ({ ...prev, [qKey]: res.explanation }));
-      }
-    } catch (err) {
-      console.warn('AI Explain Error', err);
-    } finally {
-      setExamAiExplainLoading((prev) => ({ ...prev, [qKey]: false }));
-    }
-  };
   const [historyModeFilter, setHistoryModeFilter] = useState<'all' | 'full' | 'listening' | 'reading' | 'part'>('all');
   const [historySortBy, setHistorySortBy] = useState<'latest' | 'score_high' | 'score_low'>('latest');
   const [qHistoryStatusFilter, setQHistoryStatusFilter] = useState<'all' | 'correct' | 'wrong'>('all');
@@ -398,7 +342,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   // Filter & Search states
   const [selectedCategory, setSelectedCategory] = useState<SkillCategory>('all');
   const [selectedPart, setSelectedPart] = useState<number | 'all'>('all');
-  const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
   const [selectedDifficulty, setSelectedDifficulty] = useState<DifficultyFilter>('all');
   const [selectedQuestionCount, setSelectedQuestionCount] = useState<QuestionCountFilter>('all');
   const [selectedDuration, setSelectedDuration] = useState<DurationFilter>('all');
@@ -420,12 +363,9 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
 
   // Practice session state (FocusedPracticeRoom runner)
   const [practiceSession, setPracticeSession] = useState<{
-    testId?: string;
     title: string;
     partNumber: number;
-    parts?: number[];
     questions: any[];
-    initialIndex?: number;
   } | null>(null);
 
   // Exam Audio State without seekbar ("khi thi thì k có tua lại audio và tự chuyển câu")
@@ -470,27 +410,16 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const [reviewFilter, setReviewFilter] = useState<'all' | 'incorrect'>('all');
   const [viewMode, setViewMode] = useState<'single' | 'continuous'>('single');
 
-  // Notify parent layout (App.tsx) of active exam session to hide marketing header & sync sfx exam mode
+  // Notify parent layout (App.tsx) of active exam session to hide marketing header
   useEffect(() => {
-    const isExam = Boolean(activeTestId && !testResult);
     onExamActiveChange?.(Boolean(activeTestId || testResult || practiceSession));
-    window.dispatchEvent(new CustomEvent('toeic-exam-mode', { detail: { active: isExam } }));
-    if (typeof document !== 'undefined') {
-      if (isExam) {
-        document.body.classList.add('exam-mode-active');
-      } else {
-        document.body.classList.remove('exam-mode-active');
-      }
-    }
   }, [activeTestId, testResult, practiceSession, onExamActiveChange]);
 
   useEffect(() => {
-    return () => {
+    
+
+  return () => {
       onExamActiveChange?.(false);
-      window.dispatchEvent(new CustomEvent('toeic-exam-mode', { detail: { active: false } }));
-      if (typeof document !== 'undefined') {
-        document.body.classList.remove('exam-mode-active');
-      }
     };
   }, [onExamActiveChange]);
 
@@ -551,69 +480,30 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         setInProgressMap(seedInProg);
       }
 
-      // Check URL query parameters for test and mode (?test=...&mode=practice&q=...)
-      const searchParams = new URLSearchParams(window.location.search);
-      const urlTestId = searchParams.get('test');
-      const urlMode = searchParams.get('mode');
-      const urlQ = parseInt(searchParams.get('q') || '1', 10);
-      const urlPart = parseInt(searchParams.get('part') || '0', 10);
-      const initialQIndex = isNaN(urlQ) || urlQ < 1 ? 0 : urlQ - 1;
-
-      // Only restore exam if this was a page reload during an active exam session
-      const isExamActive = sessionStorage.getItem(IS_EXAM_ACTIVE_KEY);
+      // Check Active Exam Session to prevent losing exam on reload ("reload mất bài")
       const activeRaw = localStorage.getItem(ACTIVE_EXAM_STORAGE_KEY);
-
-      if (isExamActive && activeRaw) {
+      if (activeRaw) {
         const session: ActiveExamSession = JSON.parse(activeRaw);
         if (session && session.testId && session.questions && session.questions.length > 0) {
           const elapsedSec = Math.floor((Date.now() - (session.lastSavedAt || Date.now())) / 1000);
           const adjustedTime = Math.max(0, session.timeLeft - elapsedSec);
 
           if (adjustedTime > 0) {
-            const restoredIdx = urlTestId === session.testId && initialQIndex < session.questions.length ? initialQIndex : (session.currentIndex || 0);
             setActiveTestId(session.testId);
             setTestTitle(session.testTitle);
             setExamMode(session.mode || 'full');
             setTargetPart(session.targetPart);
             setQuestions(session.questions);
             setOverallAudio(session.overallAudio);
-            setCurrentIndex(restoredIdx);
+            setCurrentIndex(session.currentIndex || 0);
             setAnswers(session.answers || {});
             setFlagged(session.flagged || {});
             setTimeLeft(adjustedTime);
             setViewMode(session.viewMode || 'single');
-            syncTestUrlParams(session.testId, 'exam', restoredIdx, session.targetPart);
           } else {
-            sessionStorage.removeItem(IS_EXAM_ACTIVE_KEY);
             localStorage.removeItem(ACTIVE_EXAM_STORAGE_KEY);
           }
         }
-      } else if (urlTestId) {
-        // Direct link or reload on a test
-        api.getTestDetail(urlTestId).then((res) => {
-          if (res && res.questions && res.questions.length > 0) {
-            let filteredQs = res.questions;
-            if (urlPart > 0 && urlPart <= 7) {
-              filteredQs = res.questions.filter((q: any) => q.part === urlPart);
-            }
-            if (urlMode === 'practice') {
-              const safeIdx = Math.min(Math.max(0, initialQIndex), filteredQs.length - 1);
-              setPracticeSession({
-                testId: urlTestId,
-                title: cleanBranding(res.title || 'Đề thi TOEIC'),
-                partNumber: urlPart || filteredQs[0]?.part || 1,
-                parts: urlPart ? [urlPart] : undefined,
-                questions: filteredQs,
-                initialIndex: safeIdx,
-              });
-              onExamActiveChange?.(true);
-              syncTestUrlParams(urlTestId, 'practice', safeIdx, urlPart || filteredQs[0]?.part);
-            }
-          }
-        }).catch(() => {});
-      } else {
-        sessionStorage.removeItem(IS_EXAM_ACTIVE_KEY);
-        localStorage.removeItem(ACTIVE_EXAM_STORAGE_KEY);
       }
     } catch {}
   }, []);
@@ -679,7 +569,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const loadTestsCatalog = async () => {
     try {
       setLoading(true);
-      const res = await api.getTests({ limit: 500, page: 1, sort: 'name_asc' });
+      const res = await api.getTests({ limit: 200, page: 1, sort: 'name_asc' });
       setTests(res?.tests || []);
     } catch {
       // Fallback
@@ -835,10 +725,9 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   }, []);
 
 
-  // Save active exam state continuously to localStorage & sync URL
+  // Save active exam state continuously to localStorage
   useEffect(() => {
     if (!activeTestId || questions.length === 0 || testResult) return;
-    syncTestUrlParams(activeTestId, 'exam', currentIndex, targetPart);
 
     try {
       const session: ActiveExamSession = {
@@ -855,7 +744,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         lastSavedAt: Date.now(),
         viewMode,
       };
-      sessionStorage.setItem(IS_EXAM_ACTIVE_KEY, 'true');
       localStorage.setItem(ACTIVE_EXAM_STORAGE_KEY, JSON.stringify(session));
     } catch {}
   }, [activeTestId, testTitle, examMode, targetPart, questions, overallAudio, currentIndex, answers, flagged, timeLeft, viewMode, testResult]);
@@ -966,7 +854,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         setOverallAudio(res.overall_audio || null);
         setActiveTestId(testId);
         setCurrentIndex(0);
-        syncTestUrlParams(testId, 'exam', 0, targetPart);
         setAnswers(initialAnswers);
         setFlagged({});
         setTimeLeft(initialTime);
@@ -1194,23 +1081,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
       return [targetQ];
     }
 
-    // 1. Match by passage_id if available
-    const pid = (targetQ as any).passage_id;
-    if (pid) {
-      let start = targetIndex;
-      while (start > 0 && questions[start - 1].part === targetQ.part && (questions[start - 1] as any).passage_id === pid) {
-        start--;
-      }
-      let end = targetIndex;
-      while (end < questions.length - 1 && questions[end + 1].part === targetQ.part && (questions[end + 1] as any).passage_id === pid) {
-        end++;
-      }
-      if (end >= start) {
-        return questions.slice(start, end + 1);
-      }
-    }
-
-    // 2. Match by audio_url if available
     if (targetQ.audio_url) {
       let start = targetIndex;
       while (start > 0 && questions[start - 1].part === targetQ.part && questions[start - 1].audio_url === targetQ.audio_url) {
@@ -1225,7 +1095,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
       }
     }
 
-    // 3. Fallback: group in 3s by index in part
     const partQs = questions.filter((q) => q.part === targetQ.part);
     const idxInPart = partQs.findIndex((q) => q.id === targetQ.id || q.question_number === targetQ.question_number);
     if (idxInPart >= 0) {
@@ -1402,17 +1271,12 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
           filteredQs = res.questions.filter((q: any) => selectedParts.includes(q.part));
         }
         setSelectedTestForModal(null);
-        const pNum = selectedParts[0] || 1;
         setPracticeSession({
-          testId,
           title: cleanBranding(res.title || targetTestObj?.title || 'Đề thi TOEIC'),
-          partNumber: pNum,
-          parts: selectedParts,
+          partNumber: selectedParts[0] || 1,
           questions: filteredQs,
-          initialIndex: 0,
         });
         onExamActiveChange?.(true);
-        syncTestUrlParams(testId, 'practice', 0, pNum);
       }
     } catch (err: any) {
       alert('Không thể tải bài luyện tập: ' + (err?.message || 'Lỗi mạng'));
@@ -1492,14 +1356,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   const answeredCount = Object.keys(answers).length;
   const flaggedCount = Object.values(flagged).filter(Boolean).length;
 
-  const availableYears = useMemo(() => {
-    const yearsSet = new Set<number>();
-    tests.forEach((t) => {
-      if (t.year && t.year > 2000) yearsSet.add(t.year);
-    });
-    return Array.from(yearsSet).sort((a, b) => b - a);
-  }, [tests]);
-
   const filteredTests = useMemo(() => {
     return tests
       .filter((t) => {
@@ -1525,10 +1381,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         if (selectedPart !== 'all') {
           const hasPart = t.parts?.includes(selectedPart) || (t.test_type === 'lr_full' && selectedPart >= 1 && selectedPart <= 7);
           if (!hasPart) return false;
-        }
-
-        if (selectedYear !== 'all') {
-          if (t.year !== selectedYear) return false;
         }
 
         if (selectedDifficulty !== 'all') {
@@ -1616,8 +1468,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
       });
   }, [
     tests,
-    selectedYear,
-    selectedYear,
     selectedCategory,
     selectedPart,
     selectedDifficulty,
@@ -1631,37 +1481,8 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     getTestStats,
   ]);
 
-  // ----------------- CATALOG PAGINATION -----------------
-  const testPagination = usePagination({
-    data: filteredTests,
-    initialPage: 1,
-    initialPageSize: 12,
-    syncUrl: true,
-    pageParamName: 'page',
-    sizeParamName: 'size',
-    scrollToTopOnPageChange: true,
-    scrollTargetId: 'mock-tests-catalog-top',
-  });
-
-  // Reset to page 1 whenever filters change
-  useEffect(() => {
-    testPagination.resetPage();
-  }, [
-    selectedCategory,
-    selectedPart,
-    selectedDifficulty,
-    selectedQuestionCount,
-    selectedDuration,
-    selectedStatus,
-    selectedRecentScore,
-    selectedHighestScore,
-    searchQuery,
-    sortBy,
-  ]);
-
   const activeFiltersCount = useMemo(() => {
     let count = 0;
-    if (selectedYear !== 'all') count++;
     if (selectedCategory !== 'all') count++;
     if (selectedPart !== 'all') count++;
     if (selectedDifficulty !== 'all') count++;
@@ -1687,7 +1508,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
   ]);
 
   const handleResetFilters = () => {
-    setSelectedYear('all');
     setSelectedCategory('all');
     setSelectedPart('all');
     setSelectedDifficulty('all');
@@ -1722,16 +1542,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         return (isNaN(timeB) ? 0 : timeB) - (isNaN(timeA) ? 0 : timeA);
       });
   }, [testHistoryList, historyModeFilter, historySearchQuery, historySortBy]);
-
-  // ----------------- TEST HISTORY LOAD MORE -----------------
-  const [testHistoryVisibleCount, setTestHistoryVisibleCount] = useState(10);
-  const visibleTestHistory = useMemo(() => {
-    return filteredTestHistory.slice(0, testHistoryVisibleCount);
-  }, [filteredTestHistory, testHistoryVisibleCount]);
-
-  useEffect(() => {
-    setTestHistoryVisibleCount(10);
-  }, [historySearchQuery, historyModeFilter, historySortBy]);
 
   const filteredQuestionHistory = useMemo(() => {
     return questionHistoryList.filter((item) => {
@@ -2027,14 +1837,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
                           {q.transcript && (
                             <div className="p-3 bg-amber-50/50 rounded-xl border border-amber-200/60 text-xs text-amber-900 space-y-1">
                               <span className="font-bold text-amber-800 block">Transcript lời thoại:</span>
-                              {/<[a-z][\s\S]*>/i.test(q.transcript) ? (
-                                <div
-                                  className="leading-relaxed whitespace-pre-line [&_p]:mb-1 [&_strong]:font-bold [&_b]:font-bold"
-                                  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(q.transcript) }}
-                                />
-                              ) : (
-                                <p className="leading-relaxed whitespace-pre-line">{q.transcript}</p>
-                              )}
+                              <p className="leading-relaxed whitespace-pre-line">{q.transcript}</p>
                             </div>
                           )}
 
@@ -2068,38 +1871,9 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
                           )}
 
                           {q.explanation && (
-                            <div className="p-3 bg-white/80 rounded-xl border border-slate-200/60 text-xs text-slate-700 space-y-2">
-                              <div className="flex items-center justify-between">
-                                <span className="font-bold text-slate-900 block">Giải thích chi tiết:</span>
-                                <button
-                                  type="button"
-                                  onClick={() => handleExamExplainWithAi(q)}
-                                  disabled={Boolean(examAiExplainLoading[String(q.id || q.question_number)])}
-                                  className="px-2.5 py-1 rounded-xl bg-purple-50 hover:bg-purple-100 border border-purple-200 text-purple-700 font-bold text-[11px] transition-all flex items-center gap-1.5 cursor-pointer shadow-2xs disabled:opacity-60"
-                                >
-                                  <Sparkles className="w-3.5 h-3.5 text-purple-600" />
-                                  <span>{examAiExplainLoading[String(q.id || q.question_number)] ? 'AI đang phân tích...' : '✨ Giải thích chi tiết bằng AI'}</span>
-                                </button>
-                              </div>
-                              {/<[a-z][\s\S]*>/i.test(q.explanation) ? (
-                                <div
-                                  className="leading-relaxed whitespace-pre-line [&_p]:mb-1 [&_strong]:font-bold [&_b]:font-bold"
-                                  dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(q.explanation) }}
-                                />
-                              ) : (
-                                <p className="leading-relaxed whitespace-pre-line">{q.explanation}</p>
-                              )}
-                              {examAiExplainResults[String(q.id || q.question_number)] && (
-                                <div className="mt-2.5 p-3.5 rounded-2xl bg-purple-50/50 border border-purple-200 text-xs text-slate-800 space-y-1.5">
-                                  <div className="flex items-center gap-1.5 font-bold text-purple-900">
-                                    <Sparkles className="w-4 h-4 text-purple-600" />
-                                    <span>Phân tích Giảng viên AI:</span>
-                                  </div>
-                                  <div className="whitespace-pre-line leading-relaxed">
-                                    {examAiExplainResults[String(q.id || q.question_number)]}
-                                  </div>
-                                </div>
-                              )}
+                            <div className="p-3 bg-white/80 rounded-xl border border-slate-200/60 text-xs text-slate-700 space-y-1">
+                              <span className="font-bold text-slate-900 block">Giải thích chi tiết:</span>
+                              <p className="leading-relaxed whitespace-pre-line">{q.explanation}</p>
                             </div>
                           )}
 
@@ -2159,16 +1933,9 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
         levelBadge="Luyện tập"
         partNumber={practiceSession.partNumber}
         questions={practiceSession.questions}
-        initialIndex={practiceSession.initialIndex ?? 0}
-        onIndexChange={(idx) => {
-          if (practiceSession.testId) {
-            syncTestUrlParams(practiceSession.testId, 'practice', idx, practiceSession.partNumber);
-          }
-        }}
         onExit={() => {
           setPracticeSession(null);
           onExamActiveChange?.(false);
-          syncTestUrlParams(null);
         }}
         onNavigate={onNavigate}
       />
@@ -2203,26 +1970,17 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
             <button
               type="button"
               onClick={() => {
-                if (window.confirm('Bạn có chắc chắn muốn thoát khỏi bài thi và quay lại danh sách đề thi?')) {
-                  localStorage.removeItem(ACTIVE_EXAM_STORAGE_KEY);
-                  if (activeTestId) {
-                    removeInProgressRecord(activeTestId);
-                  }
+                if (window.confirm('Bạn có chắc chắn muốn tạm dừng và thoát khỏi phòng thi?')) {
                   setActiveTestId(null);
-                  syncTestUrlParams(null);
-                  setQuestions([]);
-                  setAnswers({});
-                  setFlagged({});
                   if (examAudioRef.current) examAudioRef.current.pause();
                   setIsExamAudioPlaying(false);
                   setAutoAdvanceSecondsLeft(null);
                 }
               }}
-              className="px-2.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer shrink-0 flex items-center gap-1.5 text-xs font-bold"
-              title="Rời khỏi bài thi"
+              className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer shrink-0"
+              title="Thoát phòng thi"
             >
-              <ChevronLeft className="w-4 h-4" />
-              <span>Rời phòng thi</span>
+              <ChevronLeft className="w-5 h-5" />
             </button>
 
             <GraduationCap className="w-5 h-5 text-amber-300 shrink-0 hidden sm:block" />
@@ -2443,193 +2201,116 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
 
           {/* ================= RIGHT COLUMN: Question + Options + Bottom Nav ================= */}
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-5 sm:p-6 flex flex-col justify-between space-y-5 min-h-[480px]">
-            {/* Multi-question container for Part 3 & 4 Audio Group (e.g. Q32-34) */}
-            {(currentQ?.part === 3 || currentQ?.part === 4) && currentAudioGroup.length > 1 ? (
-              <div className="space-y-6 flex-1 overflow-y-auto max-h-[640px] pr-1">
-                <div className="flex items-center justify-between pb-2 border-b border-slate-100">
-                  <span className="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-200">
-                    Questions {currentAudioGroup[0]?.question_number} - {currentAudioGroup[currentAudioGroup.length - 1]?.question_number}
-                  </span>
-                  <span className="text-xs text-slate-400 font-medium">
-                    {currentQ?.part === 3 ? 'Đoạn hội thoại' : 'Bài nói ngắn'} ({currentAudioGroup.length} câu)
-                  </span>
+            {/* Question Header */}
+            <div>
+              <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-1">
+                Question
+              </span>
+              <div className="space-y-1">
+                <div className="text-2xl sm:text-3xl font-black text-slate-900">
+                  {currentQ?.question_number || currentIndex + 1}.
                 </div>
+                {(() => {
+                  const prompt = cleanDisplayQuestionText(currentQ?.question_text, currentQ?.part, currentQ?.question_number || currentIndex + 1);
+                  if (!prompt) return null;
+                  return (
+                    <p className="text-sm sm:text-base font-bold text-slate-800 leading-snug">
+                      {prompt}
+                    </p>
+                  );
+                })()}
+              </div>
+            </div>
 
-                {currentAudioGroup.map((subQ, sIdx) => {
-                  const subQKey = subQ.id || `sim-${activeTestId}-q${subQ.question_number || sIdx + 1}`;
-                  const prompt = cleanDisplayQuestionText(subQ.question_text, subQ.part, subQ.question_number);
+            {/* Speaking / Writing Special Modes */}
+            {isSpeakingTest ? (
+              <div className="space-y-4 py-4 flex-1 flex flex-col justify-center items-center text-center">
+                <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 max-w-sm w-full space-y-3">
+                  <div className="text-xs font-bold text-slate-700">Ghi âm câu trả lời của bạn:</div>
+                  <div className="flex items-center justify-center gap-3">
+                    {!isRecording ? (
+                      <button
+                        type="button"
+                        onClick={startRecording}
+                        className="px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold flex items-center gap-2 cursor-pointer shadow-xs"
+                      >
+                        <Mic className="w-4 h-4" /> Bắt đầu ghi âm
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        onClick={stopRecording}
+                        className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold flex items-center gap-2 cursor-pointer shadow-xs animate-pulse"
+                      >
+                        <MicOff className="w-4 h-4" /> Dừng ghi âm ({recordingSeconds}s)
+                      </button>
+                    )}
+                  </div>
+                  {recordedAudioUrl && (
+                    <audio src={recordedAudioUrl} controls className="w-full mt-2" />
+                  )}
+                </div>
+              </div>
+            ) : isWritingTest ? (
+              <div className="space-y-3 py-2 flex-1 flex flex-col justify-center">
+                <label className="text-xs font-bold text-slate-700">Nhập câu trả lời Writing:</label>
+                <textarea
+                  value={answers[currentQKey] || ''}
+                  onChange={(e) => handleWritingInput(e.target.value)}
+                  placeholder="Type your response here..."
+                  rows={6}
+                  className="w-full p-3.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 text-sm font-sans"
+                />
+              </div>
+            ) : (
+              /* Normal Options List (A, B, C, D) */
+              <div className="space-y-3 flex-1 flex flex-col justify-center py-2">
+                {['A', 'B', 'C', 'D'].map((letter) => {
+                  if (currentQ?.part === 2 && letter === 'D') return null;
+                  const isSelected = answers[currentQKey] === letter;
+                  const rawOptionText = currentQ?.options ? currentQ.options[letter] : (currentQ as any)?.[`option_${letter.toLowerCase()}`];
+                  const hasOptionText = rawOptionText && rawOptionText.trim().length > 0 && rawOptionText.trim() !== `(${letter})` && rawOptionText.trim() !== `${letter}.`;
 
                   return (
-                    <div key={subQKey} className="p-4 rounded-xl border border-slate-100 bg-slate-50/50 space-y-3">
-                      <div className="space-y-1">
-                        <div className="text-lg sm:text-xl font-black text-slate-900">
-                          {subQ.question_number}.
-                        </div>
-                        {prompt && (
-                          <p className="text-xs sm:text-sm font-bold text-slate-800 leading-snug">
-                            {prompt}
-                          </p>
-                        )}
-                      </div>
-
-                      <div className="space-y-2">
-                        {['A', 'B', 'C', 'D'].map((letter) => {
-                          const isSelected = answers[subQKey] === letter;
-                          const rawOptionText = subQ.options ? subQ.options[letter] : (subQ as any)?.[`option_${letter.toLowerCase()}`];
-
-                          return (
-                            <button
-                              key={letter}
-                              type="button"
-                              onClick={() => handleSelectAnswer(subQKey, letter)}
-                              className={`w-full text-left p-2.5 sm:p-3 rounded-xl border text-xs sm:text-sm flex items-center gap-3 transition-all cursor-pointer ${
-                                isSelected
-                                  ? 'bg-blue-50/90 border-2 border-blue-600 text-blue-950 font-semibold shadow-xs'
-                                  : 'bg-white hover:bg-slate-50 border-slate-200 text-slate-800'
-                              }`}
-                            >
-                              <span
-                                className={`w-6 h-6 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0 transition-colors ${
-                                  isSelected
-                                    ? 'bg-blue-600 text-white shadow-xs'
-                                    : 'border border-slate-300 text-slate-600 bg-white'
-                                }`}
-                              >
-                                {isSelected ? '●' : letter}
-                              </span>
-                              <span className="leading-snug flex-1">
-                                {cleanOptionText(rawOptionText, letter) || `(${letter})`}
-                              </span>
-                            </button>
-                          );
-                        })}
-                      </div>
-                    </div>
+                    <button
+                      key={letter}
+                      type="button"
+                      onClick={() => handleSelectAnswer(currentQKey, letter)}
+                      className={`w-full text-left p-3.5 sm:p-4 rounded-xl border text-sm sm:text-base flex items-center gap-3.5 transition-all cursor-pointer ${
+                        isSelected
+                          ? 'bg-blue-50/90 border-2 border-blue-600 text-blue-950 font-semibold shadow-xs'
+                          : 'bg-white hover:bg-slate-50 border-slate-200/90 text-slate-800'
+                      }`}
+                    >
+                      <span
+                        className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 transition-colors ${
+                          isSelected
+                            ? 'bg-blue-600 text-white shadow-xs'
+                            : 'border border-slate-300 text-slate-600 bg-white'
+                        }`}
+                      >
+                        {isSelected ? '●' : letter}
+                      </span>
+                      <span className="leading-snug flex-1">
+                        {currentQ?.part <= 2 && !hasOptionText
+                          ? `(${letter})`
+                          : cleanOptionText(rawOptionText, letter) || `(${letter})`}
+                      </span>
+                    </button>
                   );
                 })}
               </div>
-            ) : (
-              /* Single Question View for other Parts */
-              <>
-                <div>
-                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block mb-1">
-                    Question
-                  </span>
-                  <div className="space-y-1">
-                    <div className="text-2xl sm:text-3xl font-black text-slate-900">
-                      {currentQ?.question_number || currentIndex + 1}.
-                    </div>
-                    {(() => {
-                      const prompt = cleanDisplayQuestionText(currentQ?.question_text, currentQ?.part, currentQ?.question_number || currentIndex + 1);
-                      if (!prompt) return null;
-                      return (
-                        <p className="text-sm sm:text-base font-bold text-slate-800 leading-snug">
-                          {prompt}
-                        </p>
-                      );
-                    })()}
-                  </div>
-                </div>
-
-                {/* Speaking / Writing Special Modes */}
-                {isSpeakingTest ? (
-                  <div className="space-y-4 py-4 flex-1 flex flex-col justify-center items-center text-center">
-                    <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 max-w-sm w-full space-y-3">
-                      <div className="text-xs font-bold text-slate-700">Ghi âm câu trả lời của bạn:</div>
-                      <div className="flex items-center justify-center gap-3">
-                        {!isRecording ? (
-                          <button
-                            type="button"
-                            onClick={startRecording}
-                            className="px-4 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold flex items-center gap-2 cursor-pointer shadow-xs"
-                          >
-                            <Mic className="w-4 h-4" /> Bắt đầu ghi âm
-                          </button>
-                        ) : (
-                          <button
-                            type="button"
-                            onClick={stopRecording}
-                            className="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold flex items-center gap-2 cursor-pointer shadow-xs animate-pulse"
-                          >
-                            <MicOff className="w-4 h-4" /> Dừng ghi âm ({recordingSeconds}s)
-                          </button>
-                        )}
-                      </div>
-                      {recordedAudioUrl && (
-                        <audio src={recordedAudioUrl} controls className="w-full mt-2" />
-                      )}
-                    </div>
-                  </div>
-                ) : isWritingTest ? (
-                  <div className="space-y-3 py-2 flex-1 flex flex-col justify-center">
-                    <label className="text-xs font-bold text-slate-700">Nhập câu trả lời Writing:</label>
-                    <textarea
-                      value={answers[currentQKey] || ''}
-                      onChange={(e) => handleWritingInput(e.target.value)}
-                      placeholder="Type your response here..."
-                      rows={6}
-                      className="w-full p-3.5 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-1 focus:ring-blue-600 text-sm font-sans"
-                    />
-                  </div>
-                ) : (
-                  /* Normal Options List (A, B, C, D) */
-                  <div className="space-y-3 flex-1 flex flex-col justify-center py-2">
-                    {['A', 'B', 'C', 'D'].map((letter) => {
-                      if (currentQ?.part === 2 && letter === 'D') return null;
-                      const isSelected = answers[currentQKey] === letter;
-                      const rawOptionText = currentQ?.options ? currentQ.options[letter] : (currentQ as any)?.[`option_${letter.toLowerCase()}`];
-                      const hasOptionText = rawOptionText && rawOptionText.trim().length > 0 && rawOptionText.trim() !== `(${letter})` && rawOptionText.trim() !== `${letter}.`;
-
-                      return (
-                        <button
-                          key={letter}
-                          type="button"
-                          onClick={() => handleSelectAnswer(currentQKey, letter)}
-                          className={`w-full text-left p-3.5 sm:p-4 rounded-xl border text-sm sm:text-base flex items-center gap-3.5 transition-all cursor-pointer ${
-                            isSelected
-                              ? 'bg-blue-50/90 border-2 border-blue-600 text-blue-950 font-semibold shadow-xs'
-                              : 'bg-white hover:bg-slate-50 border-slate-200/90 text-slate-800'
-                          }`}
-                        >
-                          <span
-                            className={`w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold shrink-0 transition-colors ${
-                              isSelected
-                                ? 'bg-blue-600 text-white shadow-xs'
-                                : 'border border-slate-300 text-slate-600 bg-white'
-                            }`}
-                          >
-                            {isSelected ? '●' : letter}
-                          </span>
-                          <span className="leading-snug flex-1">
-                            {currentQ?.part === 1 || currentQ?.part === 2
-                              ? `(${letter})`
-                              : cleanOptionText(rawOptionText, letter) || `(${letter})`}
-                          </span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
-              </>
             )}
 
             {/* Bottom Navigation Controls */}
             <div className="pt-4 border-t border-slate-100 flex items-center justify-between gap-2 flex-wrap">
               <button
                 type="button"
-                onClick={() => {
-                  if ((currentQ?.part === 3 || currentQ?.part === 4) && currentAudioGroup.length > 1) {
-                    const firstInGroup = currentAudioGroup[0];
-                    const firstIdx = questions.findIndex((q) => q.id === firstInGroup.id);
-                    setCurrentIndex(Math.max(0, (firstIdx >= 0 ? firstIdx : currentIndex) - 1));
-                  } else {
-                    setCurrentIndex((prev) => Math.max(0, prev - 1));
-                  }
-                }}
+                onClick={() => setCurrentIndex((prev) => Math.max(0, prev - 1))}
                 disabled={currentIndex === 0}
                 className="px-3.5 py-2 rounded-xl border border-slate-200 text-xs sm:text-sm font-bold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer flex items-center gap-1.5"
               >
-                <ChevronLeft className="w-4 h-4" /> {(currentQ?.part === 3 || currentQ?.part === 4) && currentAudioGroup.length > 1 ? 'Cụm câu trước' : 'Câu trước'}
+                <ChevronLeft className="w-4 h-4" /> Câu trước
               </button>
 
               <button
@@ -2647,19 +2328,11 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
 
               <button
                 type="button"
-                onClick={() => {
-                  if ((currentQ?.part === 3 || currentQ?.part === 4) && currentAudioGroup.length > 1) {
-                    const lastInGroup = currentAudioGroup[currentAudioGroup.length - 1];
-                    const lastIdx = questions.findIndex((q) => q.id === lastInGroup.id);
-                    setCurrentIndex(Math.min(questions.length - 1, (lastIdx >= 0 ? lastIdx : currentIndex) + 1));
-                  } else {
-                    setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1));
-                  }
-                }}
+                onClick={() => setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1))}
                 disabled={currentIndex === questions.length - 1}
                 className="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm font-bold disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer flex items-center gap-1.5 shadow-xs"
               >
-                {(currentQ?.part === 3 || currentQ?.part === 4) && currentAudioGroup.length > 1 ? 'Cụm câu tiếp theo' : 'Câu tiếp theo'} <ChevronRight className="w-4 h-4" />
+                Câu tiếp theo <ChevronRight className="w-4 h-4" />
               </button>
 
               <button
@@ -2837,7 +2510,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
             }`}
           >
             <BookOpen className="w-4 h-4" />
-            <span>Kho đề thi ({tests.length})</span>
+            <span>Đề thi ({tests.length})</span>
           </button>
 
           <button
@@ -2939,31 +2612,32 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
             </div>
           </div>
 
-          {/* Year Filter Tabs (Lọc theo Năm Đề Thi) */}
+          {/* Primary Skill Category Tabs */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs scrollbar-none">
-            <button
-              type="button"
-              onClick={() => setSelectedYear('all')}
-              className={`px-4 py-2 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
-                selectedYear === 'all'
-                  ? 'bg-blue-600 text-white shadow-xs'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
-            >
-              Tất cả các năm
-            </button>
-            {availableYears.map((yr) => (
+            {[
+              { id: 'all', label: 'Tất cả đề' },
+              { id: 'full_test', label: 'Full Test (200 câu)' },
+              { id: 'listening', label: 'TOEIC Listening' },
+              { id: 'reading', label: 'TOEIC Reading' },
+              { id: 'part', label: 'Luyện theo Part' },
+              { id: 'sw', label: 'Speaking & Writing' },
+            ].map((cat) => (
               <button
-                key={yr}
+                key={cat.id}
                 type="button"
-                onClick={() => setSelectedYear(yr)}
-                className={`px-4 py-2 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
-                  selectedYear === yr
+                onClick={() => {
+                  setSelectedCategory(cat.id as SkillCategory);
+                  if (cat.id !== 'part' && selectedPart !== 'all') {
+                    setSelectedPart('all');
+                  }
+                }}
+                className={`px-3.5 py-2 rounded-xl font-bold whitespace-nowrap transition-all cursor-pointer ${
+                  selectedCategory === cat.id
                     ? 'bg-blue-600 text-white shadow-xs'
                     : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
                 }`}
               >
-                Năm {yr}
+                {cat.label}
               </button>
             ))}
           </div>
@@ -3167,8 +2841,8 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
               </button>
             </div>
           ) : (
-            <div id="mock-tests-catalog-top" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {testPagination.paginatedData.map((test) => {
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredTests.map((test) => {
                 const stats = getTestStats(test.id);
                 const displayTitle = cleanBranding(test.title);
 
@@ -3366,21 +3040,6 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
               })}
             </div>
           )}
-
-          {/* Catalog Pagination Component */}
-          {!loading && filteredTests.length > 0 && (
-            <Pagination
-              currentPage={testPagination.currentPage}
-              totalPages={testPagination.totalPages}
-              totalItems={testPagination.totalItems}
-              pageSize={testPagination.pageSize}
-              onPageChange={testPagination.setPage}
-              onPageSizeChange={testPagination.setPageSize}
-              pageSizeOptions={[12, 24, 48, 100, 200, 'all']}
-              itemLabel="đề thi"
-              showPageSizeSelector={true}
-            />
-          )}
         </div>
       </div>
     )}
@@ -3495,7 +3154,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
           </div>
         ) : (
           <div className="space-y-3">
-            {visibleTestHistory.map((item) => {
+            {filteredTestHistory.map((item) => {
               const modeLabel =
                 item.mode === 'listening'
                   ? 'Listening'
@@ -3594,16 +3253,6 @@ return (
                 </div>
               );
             })}
-
-            {/* Test History Load More */}
-            <LoadMoreButton
-              hasMore={visibleTestHistory.length < filteredTestHistory.length}
-              currentCount={visibleTestHistory.length}
-              totalCount={filteredTestHistory.length}
-              itemLabel="bài thi đã nộp"
-              step={10}
-              onLoadMore={() => setTestHistoryVisibleCount((prev) => prev + 10)}
-            />
           </div>
         )}
       </div>
@@ -3834,14 +3483,17 @@ return (
               </div>
             ))}
 
-            <LoadMoreButton
-              hasMore={qHistoryLimit < filteredQuestionHistory.length}
-              currentCount={Math.min(qHistoryLimit, filteredQuestionHistory.length)}
-              totalCount={filteredQuestionHistory.length}
-              itemLabel="câu hỏi"
-              step={30}
-              onLoadMore={() => setQHistoryLimit((prev) => prev + 30)}
-            />
+            {filteredQuestionHistory.length > qHistoryLimit && (
+              <div className="text-center pt-2">
+                <button
+                  type="button"
+                  onClick={() => setQHistoryLimit((prev) => prev + 30)}
+                  className="px-5 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 shadow-2xs transition-colors cursor-pointer"
+                >
+                  Xem thêm 30 câu hỏi (còn lại {filteredQuestionHistory.length - qHistoryLimit} câu)
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -4276,5 +3928,19 @@ return (
 };
 
 export const MockTestsPage: React.FC<MockTestsPageProps> = (props) => {
+  const { user } = useAuth();
+
+  if (!user) {
+    return (
+      <AuthRequiredGate
+        featureName="Kho Đề thi thử TOEIC"
+        featureDesc="Thi thử 200 câu format chuẩn ETS với audio phòng thi, đồng hồ đếm ngược và chấm điểm tự động. Vui lòng đăng nhập để bắt đầu thi thử."
+        onNavigate={props.onNavigate}
+        onOpenAuth={props.onOpenAuth}
+        onOpenRBAC={props.onOpenRBAC}
+      />
+    );
+  }
+
   return <MockTestsPageInner {...props} />;
 };

@@ -87,6 +87,8 @@ export interface Question {
 }
 
 export interface Flashcard {
+  part?: string;
+  source_context?: string;
   id: number;
   word_id?: string;
   word: string;
