@@ -1,0 +1,74 @@
+﻿[
+  {
+    "id": "DATA-01",
+    "route": "/mock-tests",
+    "element": "tests-catalog",
+    "test": "src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "HUB-01",
+    "route": "/practice/listening",
+    "element": "ai-assessment-btn",
+    "test": "src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "GRA-01",
+    "route": "/practice/grammar",
+    "element": "duolingo-path-view",
+    "test": "src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "VOC-03",
+    "route": "/practice/vocabulary",
+    "element": "vocab-container",
+    "test": "src/services/srsService.test.ts"
+  },
+  {
+    "id": "VOC-04",
+    "route": "/practice/flashcards",
+    "element": "flashcards-deck",
+    "test": "src/services/srsService.test.ts"
+  },
+  {
+    "id": "DIC-01",
+    "route": "/practice/dictation",
+    "element": "dictation-view",
+    "test": "src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "SPK-01",
+    "route": "/practice/speaking",
+    "element": "speaking-view",
+    "test": "backend/tests/test_gemini_keys_and_grading.py"
+  },
+  {
+    "id": "WRI-01",
+    "route": "/practice/writing",
+    "element": "writing-view",
+    "test": "backend/tests/test_gemini_keys_and_grading.py"
+  },
+  {
+    "id": "GAM-01",
+    "route": "/games",
+    "element": "arena-games",
+    "test": "src/services/srsService.test.ts"
+  },
+  {
+    "id": "GAMI-01",
+    "route": "/leaderboard",
+    "element": "leaderboard-table",
+    "test": "src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "GAMI-03",
+    "route": "/community",
+    "element": "community-feed",
+    "test": "src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "SYS-01",
+    "route": "/",
+    "element": "hero-section",
+    "test": "src/motionHelper.test.ts"
+  }
+]
