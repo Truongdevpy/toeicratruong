@@ -92,3 +92,17 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Các vị trí dùng chung bị ảnh hưởng**: Trang luyện tập Nghe Part 1-4 (`/practice/listening`) và Phòng thi thử (`/mock-tests`).
 - **Test giữ lỗi**: `scripts/run_data_tests.py` (Audio resolution sanity guard) & npm run verify
 - **Ghi chú "KHÔNG đổi lại vi..."**: KHÔNG bỏ bộ lọc resolve_media_url trên đĩa; chỉ trả về cân hỏi và đề thi có file âm thanh thực sự phát được.
+### [BUG-009] Thiếu bài tập tương tác & bước Luyện đọc từ bằng micro (VOC-02) trong Lộ trình Từ vựng
+- **Mã lỗi**: VOC-02 (VOC-01, DATA-14)
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: Bản đồ từ vựng khi bấm vào node chưa mở modal luyện tập tương tác; thiếu bước kiểm tra phát âm bằng micro với Web Speech API đạt chuẩn >= 70 điểm.
+- **Nguyên nhân gốc**: Chưa tích hợp `VocabPracticeModal` kết nối Web Speech API, MediaRecorder và phím tắt Space/Enter.
+- **File đã sửa**:
+  - `frontend/src/components/vocabulary/VocabPracticeModal.tsx`
+  - `frontend/src/pages/VocabularyPage.tsx`
+  - `frontend/src/services/vocabPath.test.ts`
+  - `features.manifest.json`
+- **Các vị trí dùng chung bị ảnh hưởng**: `/practice/vocabulary`, kho từ vựng và tiến trình học viên `toeic_vocab_user_progress`.
+- **Test giữ lỗi**: `frontend/src/services/vocabPath.test.ts` & `npm run verify`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG gỡ bỏ bước chấm phát âm micro (ngưỡng 70 điểm) và các bài tập tương tác (theory, mcq, pronunciation, typing checkpoint) theo đúng mô tả VOC-01 và VOC-02.
+

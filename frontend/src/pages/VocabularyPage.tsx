@@ -1,4 +1,5 @@
-import { VocabPathView } from '../components/vocabulary/VocabPathView';
+import { VocabPathView, VOCAB_UNITS } from '../components/vocabulary/VocabPathView';
+import { VocabPracticeModal } from '../components/vocabulary/VocabPracticeModal';
 import { VocabUserProgress, VocabLessonNode } from '../types/vocabDuo';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
@@ -31,7 +32,47 @@ const SAVED_VOCAB_STORAGE_KEY = 'toeic_saved_vocab_list_v2';
 export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFocusModeChange }) => {
   const { user } = useAuth();
 
-  const [viewMode, setViewMode] = useState<'path' | 'list'>('path');
+  const [viewMode, setViewMode] = useState<'path' | 'list'>(() => {
+    if (typeof window !== 'undefined' && window.location.search.includes('tab=list')) return 'list';
+    return 'path';
+  });
+  const [selectedNode, setSelectedNode] = useState<VocabLessonNode | null>(null);
+  const handleCompleteNode = (earnedXp: number, stars: number) => {
+    if (!selectedNode) return;
+    setVocabProgress((prev) => {
+      const updatedNodes = {
+        ...prev.nodes,
+        [selectedNode.id]: {
+          status: 'completed' as const,
+          stars: Math.max(stars, prev.nodes[selectedNode.id]?.stars || 0),
+          scorePercent: 100,
+          completedAt: new Date().toISOString(),
+          attemptsCount: (prev.nodes[selectedNode.id]?.attemptsCount || 0) + 1,
+        }
+      };
+      const nextNodeId = 'v_u' + selectedNode.unitIndex + '_n' + (selectedNode.nodeIndex + 1);
+      if (!updatedNodes[nextNodeId]) {
+        updatedNodes[nextNodeId] = {
+          status: 'unlocked' as const,
+          stars: 0,
+          scorePercent: 0,
+          attemptsCount: 0,
+        };
+      }
+      const updated = {
+        ...prev,
+        nodes: updatedNodes,
+        totalXp: (prev.totalXp || 0) + earnedXp,
+        lastActiveNodeId: selectedNode.id,
+      };
+      try {
+        localStorage.setItem('toeic_vocab_user_progress', JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+    setSelectedNode(null);
+    showToast('🎉 Xuất sắc! Bạn đã hoàn thành bài học và mở khóa trạm tiếp theo!');
+  };
   const [vocabProgress, setVocabProgress] = useState<VocabUserProgress>(() => {
     try {
       const stored = localStorage.getItem('toeic_vocab_user_progress');
@@ -106,11 +147,11 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
   };
 
   useEffect(() => {
-    onFocusModeChange?.(isPracticeMode);
+    onFocusModeChange?.(isPracticeMode || Boolean(selectedNode));
     return () => {
       onFocusModeChange?.(false);
     };
-  }, [isPracticeMode, onFocusModeChange]);
+  }, [isPracticeMode, selectedNode, onFocusModeChange]);
 
   const pageSize = 24;
 
@@ -450,7 +491,30 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
             </h1>
           </div>
 
-          {/* Primary View Switcher: All Words vs Saved Words */}
+          
+
+          {/* View Mode Toggle (Lộtrình/Ban đồ va Tra cứu chi tiết) */}
+          <div className="flex items-center bg-slate-200/80 p-1 rounded-2xl border border-slate-300/60 shadow-2xs">
+            <button
+              type="button"
+              data-testid="vocab-path-view-btn"
+              onClick={() => setViewMode('path')}
+              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${viewMode === 'path' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
+            >
+              <Target className="w-4 h-4 text-emerald-600" />
+              <span>Bản đồ Lộ trình</span>
+            </button>
+            <button
+              type="button"
+              data-testid="vocab-list-view-btn"
+              onClick={() => setViewMode('list')}
+              className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${viewMode === 'list' ? 'bg-white text-slate-900 shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
+            >
+              <Search className="w-4 h-4 text-slate-700" />
+              <span>Tra cứu chi tiết</span>
+            </button>
+          </div>
+{/* Primary View Switcher: All Words vs Saved Words */}
           <div className="flex items-center bg-slate-200/80 p-1 rounded-2xl border border-slate-300/60 shadow-2xs">
             <button
               type="button"
@@ -520,6 +584,17 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
           </div>
         </div>
 
+                {viewMode === 'path' && (
+          <div data-testid="vocab-path-container" className="animate-in fade-in duration-150">
+            <VocabPathView
+              progress={vocabProgress}
+              onSelectNode={(node) => setSelectedNode(node)}
+            />
+          </div>
+        )}
+
+        {viewMode === 'list' && (
+          <>
         {/* --- VIEW 1: ALL VOCABULARY --- */}
         {activeTab === 'all' && (
           <div className="space-y-6 animate-in fade-in duration-150">
@@ -855,8 +930,23 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
             )}
           </div>
         )}
+          </>
+        )}
               </>
       )}
+
+      {/* Vocab Duo Interactive Practice Modal (VOC-01, VOC-02) */}
+      {selectedNode && (
+        <VocabPracticeModal
+          node={selectedNode}
+          words={words}
+          hearts={vocabProgress.hearts}
+          isVip={user?.is_vip}
+          onClose={() => setSelectedNode(null)}
+          onComplete={handleCompleteNode}
+        />
+      )}
+
       </div>
     </div>
   );

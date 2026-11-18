@@ -23,7 +23,7 @@ Quy ước: mục có dấu [QUYẾT ĐỊNH] là chỗ các lần yêu cầu tr
 - DATA-11 Mock-tests: không đề trùng ID/nội dung, phân loại theo năm, tab "Đề thi (200)", sidebar "Đề thi". [Guard Test: scripts/run_data_tests.py]
 - DATA-12 Tích hợp đề cào (dau_crack-toeic, study4_*, tooich_raw 80 đề): đường dẫn media đúng; có dictation_challenges.json, vocabulary_bank.json, tests_catalog.json. [Guard Test: scripts/run_data_tests.py]
 - DATA-13 Đề thi thử bỏ các đề Part 1 dính logo nhưng vẫn giữ Part 2-7 ở phần luyện tập. [Guard Test: scripts/run_data_tests.py]
-- DATA-14 Kho từ vựng khoảng 5.000 từ, 12 chủ đề, 3 tầng (Chủ đề, Nhóm nhỏ, Bài 6-8 từ). Số từ mỗi chủ đề khớp 100% giữa Kho từ vựng, Game và Lộ trình. [Guard Test: Đang chờ hoàn thiện ở Đợt 2/3]
+- DATA-14 Kho từ vựng khoảng 5.000 từ, 12 chủ đề, 3 tầng (Chủ đề, Nhóm nhỏ, Bài 6-8 từ). Số từ mỗi chủ đề khớp 100% giữa Kho từ vựng, Game và Lộ trình. [Guard Test: scripts/run_data_tests.py]
 - DATA-15 Không dữ liệu ảo: đã xóa seed users; Bảng xếp hạng và widget "Top tích cực tuần này" dùng dữ liệu thật (users, user_profiles, question_attempts). [Guard Test: scripts/run_data_tests.py]
 
 ## 2. Phòng làm bài / Mock-tests
@@ -53,8 +53,8 @@ Quy ước: mục có dấu [QUYẾT ĐỊNH] là chỗ các lần yêu cầu tr
 
 ## 4. Từ vựng và Flashcard
 
-- VOC-01 Lộ trình Chinh phục Từ vựng (/practice/vocabulary): bản đồ uốn lượn, tim, XP, sao, mở khóa tuần tự, checkpoint 5-10 từ, bài đa dạng (flashcard, nghe chọn nghĩa, gõ từ, nối từ, trắc nghiệm), tự cuộn tới điểm học hiện tại, lưu tiến trình. Tiêu đề "Lộ trình Chinh phục Từ vựng TOEIC". Có nút chuyển sang "Tra cứu chi tiết". Không còn chữ "Duolingo" trong giao diện. [Guard Test: Đang chờ hoàn thiện ở Đợt 2/3]
-- VOC-02 Bước "Luyện đọc từ": micro, Web Speech API + MediaRecorder, chấm 0-100, đạt từ 70, thử lại tối đa 3 lần, xử lý ngoại lệ (không có micro, ồn, im), phím Space để thu và Enter để tiếp. [Guard Test: Đang chờ hoàn thiện ở Đợt 2/3]
+- VOC-01 Lộ trình Chinh phục Từ vựng (/practice/vocabulary): bản đồ uốn lượn, tim, XP, sao, mở khóa tuần tự, checkpoint 5-10 từ, bài đa dạng (flashcard, nghe chọn nghĩa, gõ từ, nối từ, trắc nghiệm), tự cuộn tới điểm học hiện tại, lưu tiến trình. Tiêu đề "Lộ trình Chinh phục Từ vựng TOEIC". Có nút chuyển sang "Tra cứu chi tiết". Không còn chữ "Duolingo" trong giao diện. [Guard Test: frontend/src/services/vocabPath.test.ts]
+- VOC-02 Bước "Luyện đọc từ": micro, Web Speech API + MediaRecorder, chấm 0-100, đạt từ 70, thử lại tối đa 3 lần, xử lý ngoại lệ (không có micro, ồn, im), phím Space để thu và Enter để tiếp. [Guard Test: frontend/src/services/vocabPath.test.ts]
 - VOC-03 Lưu từ vựng: giao diện cập nhật ngay (không cần F5), nhớ từ thuộc Part nào, có nút "Xóa tất cả", không bắt buộc 10 từ. [Guard Test: frontend/src/services/srsService.test.ts]
 - VOC-04 Flashcard SRS (/practice/flashcards): lật thẻ, đánh giá 1-4, lọc chủ đề, phiên 10/20/tất cả, phát âm, đánh dấu sao. [Guard Test: frontend/src/services/srsService.test.ts]
 
