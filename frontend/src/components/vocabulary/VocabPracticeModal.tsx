@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+﻿import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
   Heart,
@@ -12,7 +12,8 @@ import {
   Mic,
   MicOff,
   Flame,
-  Award
+  Award,
+  FastForward
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { VocabLessonNode } from '../../types/vocabDuo';
@@ -51,7 +52,7 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
   const [speechError, setSpeechError] = useState<string | null>(null);
   const recognitionRef = useRef<any>(null);
 
-  // Take words for this node
+  // Take words for this node (6 to 10 words per lesson)
   const lessonWords = React.useMemo(() => {
     if (!words || words.length === 0) {
       return [
@@ -67,37 +68,97 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
         {
           id: 'fb2',
           word: 'negotiate',
-          ipa: 'nɪɡoʊʃieɪt',
+          ipa: 'nɪˈɡoʊʃieɪt',
           part_of_speech: 'verb',
           meaning: 'đàm phán, thương lượng',
-          example: 'We need to negotiate the terms of payment.',
-          example_vi: 'Chúng ta cần thương lượng các điều khoản thanh toán.'
+          example: 'We negotiated the price down.',
+          example_vi: 'Chúng tôi đã thương lượng để giảm giá.'
         },
         {
           id: 'fb3',
           word: 'agreement',
-          ipa: 'əɡriːmənt',
+          ipa: 'əˈɡriːmənt',
           part_of_speech: 'noun',
-          meaning: 'sự thỏa thuận, hợp đồng',
+          meaning: 'thỏa thuận, sự đồng thuận',
           example: 'Both sides reached an agreement.',
-          example_vi: 'Cả hai bên đã đạt được thỏa thuận.'
+          example_vi: 'Cả hai bên đã đạt được sự thỏa thuận.'
+        },
+        {
+          id: 'fb4',
+          word: 'obligate',
+          ipa: 'ˈɑːblɪɡeɪt',
+          part_of_speech: 'verb',
+          meaning: 'bắt buộc, có nghĩa vụ',
+          example: 'The client is obligated to pay.',
+          example_vi: 'Khách hàng có nghĩa vụ thanh toán.'
+        },
+        {
+          id: 'fb5',
+          word: 'provision',
+          ipa: 'prəˈvɪʒn',
+          part_of_speech: 'noun',
+          meaning: 'điều khoản trong hợp đồng',
+          example: 'The contract includes a cancel provision.',
+          example_vi: 'Hợp đồng gồm điều khoản hủy bỏ.'
+        },
+        {
+          id: 'fb6',
+          word: 'specify',
+          ipa: 'ˈspesɪfaɪ',
+          part_of_speech: 'verb',
+          meaning: 'chỉ rõ, ghi rõ',
+          example: 'The terms specify the delivery date.',
+          example_vi: 'Các điều khoản chỉ rõ ngày giao hàng.'
         }
-      ] as VocabWord[];
+      ];
     }
-    const count = Math.min(node.wordCount || 5, words.length);
-    const start = (node.nodeIndex * 5) % words.length;
-    let slice = words.slice(start, start + count);
-    if (slice.length < 3) {
-      slice = words.slice(0, 5);
-    }
-    return slice;
-  }, [words, node]);
+    // Pick 6-10 words
+    const count = Math.min(Math.max(node.wordCount || 6, 6), 10);
+    const start = (node.nodeIndex * count) % Math.max(words.length - count, 1);
+    return words.slice(start, start + count);
+  }, [words, node.wordCount, node.nodeIndex]);
 
   const currentWord = lessonWords[stepIndex] || lessonWords[0];
   const isLastStep = stepIndex >= lessonWords.length - 1;
 
-  // Cleanup speech on unmount
+  // Options for MCQ step
+  const options = React.useMemo(() => {
+    if (!currentWord) return [];
+    const others = lessonWords.filter((w) => w.id !== currentWord.id).map((w) => w.meaning);
+    const shuffledOthers = others.sort(() => 0.5 - Math.random()).slice(0, 3);
+    const combined = [currentWord.meaning, ...shuffledOthers];
+    return combined.sort(() => 0.5 - Math.random());
+  }, [currentWord, lessonWords]);
+
+  // Voice Speech Recognition init
   useEffect(() => {
+    const SpeechRecognition =
+      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+
+    if (SpeechRecognition) {
+      const recognition = new SpeechRecognition();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = 'en-US';
+
+      recognition.onresult = (event: any) => {
+        const transcript = event.results[0][0].transcript;
+        setSpeechTranscript(transcript);
+        evaluateSpeech(transcript);
+      };
+
+      recognition.onerror = (event: any) => {
+        setIsRecording(false);
+        setSpeechError(`Lỗi mic: ${event.error}. Bạn có thể bấm Thử lại hoặc Bỏ qua.`);
+      };
+
+      recognition.onend = () => {
+        setIsRecording(false);
+      };
+
+      recognitionRef.current = recognition;
+    }
+
     return () => {
       if (recognitionRef.current) {
         try {
@@ -105,109 +166,20 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
         } catch {}
       }
     };
-  }, []);
+  }, [currentWord]);
 
-  // Keyboard shortcut listener: Space to toggle mic (on pronunciation node), Enter to next
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.code === 'Space' && node.type === 'collocations' && !isAnswerChecked) {
-        e.preventDefault();
-        toggleRecording();
-      } else if (e.code === 'Enter' && isAnswerChecked) {
-        e.preventDefault();
-        handleNextStep();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [node.type, isAnswerChecked, isRecording, speechAttempts]);
-
-  const toggleRecording = () => {
-    if (isRecording) {
-      stopRecording();
-    } else {
-      startRecording();
-    }
-  };
-
-  const startRecording = () => {
-    setSpeechError(null);
-    setSpeechTranscript('');
-    const SpeechRecognition =
-      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-
-    if (!SpeechRecognition) {
-      setSpeechError('Trình duyệt không hỗ trợ Web Speech API. Tự động chấm đạt chuẩn mẫu.');
-      setSpeechScore(85);
-      setIsCorrect(true);
-      setIsAnswerChecked(true);
-      return;
-    }
-
-    try {
-      const recognition = new SpeechRecognition();
-      recognitionRef.current = recognition;
-      recognition.lang = 'en-US';
-      recognition.continuous = false;
-      recognition.interimResults = false;
-
-      recognition.onstart = () => {
-        setIsRecording(true);
-      };
-
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0]?.[0]?.transcript?.trim() || '';
-        setSpeechTranscript(transcript);
-        evaluateSpeech(transcript);
-      };
-
-      recognition.onerror = (event: any) => {
-        console.warn('Speech error:', event.error);
-        if (event.error === 'not-allowed') {
-          setSpeechError('Không có quyền micro. Vui lòng cấp quyền micro.');
-        } else if (event.error === 'no-speech') {
-          setSpeechError('Không nghe thấy giọng nói (im lặng). Vui lòng thử lại!');
-        } else {
-          setSpeechError('Lỗi thu âm: ' + event.error);
-        }
-        setIsRecording(false);
-      };
-
-      recognition.onend = () => {
-        setIsRecording(false);
-      };
-
-      recognition.start();
-    } catch (err: any) {
-      setSpeechError('Không thể khởi tạo micro: ' + (err?.message || 'Lỗi không xác định'));
-      setIsRecording(false);
-    }
-  };
-
-  const stopRecording = () => {
-    if (recognitionRef.current) {
-      try {
-        recognitionRef.current.stop();
-      } catch {}
-    }
-    setIsRecording(false);
-  };
-
-  const evaluateSpeech = (transcript: string) => {
-    setIsRecording(false);
-    const target = (currentWord.word || '').trim().toLowerCase();
-    const spoken = transcript.trim().toLowerCase();
+  // Speech evaluation
+  const evaluateSpeech = (spoken: string) => {
+    const target = currentWord.word.toLowerCase().trim();
+    const cleanSpoken = spoken.toLowerCase().trim();
 
     let score = 0;
-    if (spoken === target) {
-      score = 100;
-    } else if (spoken.includes(target) || target.includes(spoken)) {
-      score = 85;
+    if (cleanSpoken.includes(target) || target.includes(cleanSpoken)) {
+      score = 95;
     } else {
       let matchCount = 0;
-      for (let i = 0; i < Math.min(target.length, spoken.length); i++) {
-        if (target[i] === spoken[i]) matchCount++;
+      for (let i = 0; i < Math.min(target.length, cleanSpoken.length); i++) {
+        if (target[i] === cleanSpoken[i]) matchCount++;
       }
       score = Math.round((matchCount / Math.max(target.length, 1)) * 100);
     }
@@ -257,11 +229,10 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
   };
 
   const handleCheckTyped = () => {
-    if (isAnswerChecked) return;
-    const cleanInput = typedInput.trim().toLowerCase();
-    const cleanTarget = (currentWord.word || '').trim().toLowerCase();
-    const correct = cleanInput === cleanTarget;
-
+    if (isAnswerChecked || !typedInput.trim()) return;
+    const cleanUser = typedInput.trim().toLowerCase();
+    const cleanTarget = currentWord.word.trim().toLowerCase();
+    const correct = cleanUser === cleanTarget;
     setIsCorrect(correct);
     setIsAnswerChecked(true);
 
@@ -274,329 +245,319 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
     }
   };
 
-  const handleNextStep = () => {
-    if (isLastStep) {
-      try {
-        confetti({
-          particleCount: 80,
-          spread: 60,
-          origin: { y: 0.6 }
-        });
-      } catch {}
-
-      const stars = scoreCount >= lessonWords.length * 0.8 ? 3 : scoreCount >= lessonWords.length * 0.5 ? 2 : 1;
-      onComplete(node.xpReward, stars);
-      return;
-    }
-
-    setStepIndex((idx) => idx + 1);
-    setSelectedOption(null);
-    setIsAnswerChecked(false);
-    setIsCorrect(false);
-    setTypedInput('');
-    setSpeechTranscript('');
-    setSpeechScore(null);
-    setSpeechAttempts(0);
-    setSpeechError(null);
+  const handleSkipSpeech = () => {
+    setIsCorrect(true);
+    setIsAnswerChecked(true);
   };
 
-  const distractors = React.useMemo(() => {
-    return lessonWords
-      .filter((w) => w.word !== currentWord.word)
-      .slice(0, 3)
-      .map((w) => w.meaning);
-  }, [lessonWords, currentWord]);
+  const handleNextStep = () => {
+    if (isLastStep) {
+      confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+      const stars = scoreCount >= lessonWords.length * 0.8 ? 3 : scoreCount >= lessonWords.length * 0.5 ? 2 : 1;
+      onComplete(node.xpReward, stars);
+    } else {
+      setStepIndex((i) => i + 1);
+      setSelectedOption(null);
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setTypedInput('');
+      setSpeechTranscript('');
+      setSpeechScore(null);
+      setSpeechAttempts(0);
+      setSpeechError(null);
+    }
+  };
 
-  const options = React.useMemo(() => {
-    const list = [currentWord.meaning, ...distractors];
-    return list.sort(() => 0.5 - Math.random());
-  }, [currentWord, distractors]);
+  const toggleRecording = () => {
+    if (isRecording) {
+      try {
+        recognitionRef.current?.stop();
+      } catch {}
+      setIsRecording(false);
+    } else {
+      setSpeechError(null);
+      setSpeechScore(null);
+      setSpeechTranscript('');
+      try {
+        recognitionRef.current?.start();
+        setIsRecording(true);
+      } catch (err: any) {
+        setSpeechError('Không thể khởi động micro. Vui lòng cấp quyền micro cho trình duyệt!');
+      }
+    }
+  };
 
   return (
     <div
       data-testid="vocab-practice-modal"
-      className="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+      className="fixed inset-0 z-50 bg-[#131F24] flex flex-col select-none overflow-hidden animate-in fade-in duration-200"
     >
-      <div className="bg-white w-full max-w-xl rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
-        {/* Header */}
-        <div className="p-4 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
-          <button
-            type="button"
-            onClick={onClose}
-            className="p-2 text-slate-400 hover:text-slate-600 rounded-xl hover:bg-slate-100 transition-colors cursor-pointer"
-          >
-            <X className="w-5 h-5" />
-          </button>
+      {/* Fullscreen Header */}
+      <div className="w-full max-w-3xl mx-auto px-4 py-4 flex items-center justify-between gap-4 shrink-0">
+        <button
+          type="button"
+          onClick={onClose}
+          className="p-2 text-slate-400 hover:text-white rounded-xl hover:bg-slate-800 transition-colors cursor-pointer"
+        >
+          <X className="w-6 h-6" />
+        </button>
 
-          {/* Progress bar */}
-          <div className="flex-1 mx-4">
-            <div className="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden">
-              <div
-                className="bg-emerald-500 h-full rounded-full transition-all duration-300"
-                style={{ width: `${((stepIndex + 1) / lessonWords.length) * 100}%` }}
-              />
-            </div>
-          </div>
-
-          {/* Hearts counter */}
-          <div className="flex items-center gap-1.5 px-3 py-1 bg-rose-50 text-rose-600 rounded-full font-bold text-xs border border-rose-200">
-            <Heart className="w-4 h-4 fill-current" />
-            <span>{isVip ? '∞' : hearts}</span>
+        {/* Progress bar */}
+        <div className="flex-1 mx-2">
+          <div className="w-full bg-slate-800 h-3 rounded-full overflow-hidden border border-slate-700">
+            <div
+              className="bg-[#58CC02] h-full rounded-full transition-all duration-300"
+              style={{ width: `${((stepIndex + 1) / lessonWords.length) * 100}%` }}
+            />
           </div>
         </div>
 
-        {/* Body Content */}
-        <div className="p-6 overflow-y-auto space-y-6 flex-1">
-          {/* Node Badge */}
-          <div className="flex items-center justify-between text-xs font-semibold text-slate-400">
-            <span className="uppercase tracking-wider">
-              {node.title} • Câu {stepIndex + 1}/{lessonWords.length}
-            </span>
-            <span className="flex items-center gap-1 text-amber-600 bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200 font-bold">
-              <Flame className="w-3.5 h-3.5" /> +{node.xpReward} XP
-            </span>
-          </div>
+        {/* Hearts counter */}
+        <div className="flex items-center gap-1.5 px-3 py-1.5 bg-rose-500/20 text-rose-400 rounded-2xl font-black text-xs border border-rose-500/30">
+          <Heart className="w-4 h-4 fill-current text-rose-500" />
+          <span>{isVip ? '∞' : hearts}</span>
+        </div>
+      </div>
 
-          {/* NODE TYPE 1: THEORY / FLASHCARD */}
-          {node.type === 'theory' && (
-            <div className="space-y-6 text-center">
-              <div className="p-8 rounded-3xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-100 shadow-xs space-y-3">
-                <span className="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
-                  {currentWord.part_of_speech || 'noun'}
-                </span>
-                <h3 className="text-3xl font-black text-slate-900 tracking-tight flex items-center justify-center gap-2">
-                  <span>{currentWord.word}</span>
-                  <button
-                    type="button"
-                    onClick={playWordAudio}
-                    className="p-1.5 rounded-xl bg-white/80 hover:bg-white text-emerald-600 shadow-2xs hover:scale-105 transition-all cursor-pointer"
-                  >
-                    <Volume2 className="w-5 h-5" />
-                  </button>
-                </h3>
-                {currentWord.ipa && (
-                  <div className="text-sm font-mono text-emerald-700 font-semibold">
-                    /{currentWord.ipa}/
-                  </div>
-                )}
-                <div className="pt-2 text-lg font-bold text-slate-800 border-t border-emerald-200/60">
-                  {currentWord.meaning}
-                </div>
-              </div>
+      {/* Main Fullscreen Body */}
+      <div className="w-full max-w-xl mx-auto flex-1 flex flex-col justify-center px-4 py-6 overflow-y-auto">
+        <div className="text-xs font-bold text-slate-400 uppercase tracking-wider text-center mb-4">
+          {node.title} • Từ {stepIndex + 1}/{lessonWords.length}
+        </div>
 
-              {currentWord.example && (
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/80 text-left text-xs space-y-1">
-                  <div className="font-semibold text-slate-700">Ví dụ: "{currentWord.example}"</div>
-                  {currentWord.example_vi && (
-                    <div className="text-slate-500 italic">Dịch: "{currentWord.example_vi}"</div>
-                  )}
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* NODE TYPE 2: PRACTICE MCQ */}
-          {node.type === 'practice_basic' && (
-            <div className="space-y-5">
-              <div className="text-center space-y-2">
-                <h3 className="text-2xl font-black text-slate-900">{currentWord.word}</h3>
-                <p className="text-xs text-slate-500">Chọn nghĩa tiếng Việt chính xác:</p>
-              </div>
-
-              <div className="grid grid-cols-1 gap-2.5">
-                {options.map((opt, i) => {
-                  const isOptSelected = selectedOption === opt;
-                  let style = 'border-slate-200 hover:border-slate-300 bg-white text-slate-700';
-
-                  if (isAnswerChecked) {
-                    if (opt === currentWord.meaning) {
-                      style = 'border-emerald-500 bg-emerald-50 text-emerald-950 font-bold';
-                    } else if (isOptSelected && !isCorrect) {
-                      style = 'border-rose-500 bg-rose-50 text-rose-950';
-                    }
-                  }
-
-                  return (
-                    <button
-                      key={i}
-                      type="button"
-                      disabled={isAnswerChecked}
-                      onClick={() => handleSelectOption(opt)}
-                      className={`p-4 rounded-2xl border-2 text-sm text-left transition-all cursor-pointer ${style}`}
-                    >
-                      <span className="font-bold mr-2">{String.fromCharCode(65 + i)}.</span>
-                      {opt}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* NODE TYPE 3: PRONUNCIATION / MICRO CHECK (VOC-02) */}
-          {node.type === 'collocations' && (
-            <div className="space-y-6 text-center">
-              <div className="space-y-1">
-                <span className="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-200 uppercase">
-                  VOC-02 • Luyện đọc phát âm
-                </span>
-                <h3 className="text-3xl font-black text-slate-900 mt-2">{currentWord.word}</h3>
-                {currentWord.ipa && (
-                  <p className="text-sm font-mono text-slate-500 font-semibold">/{currentWord.ipa}/</p>
-                )}
-                <p className="text-xs text-slate-400 mt-1">Nghĩa: {currentWord.meaning}</p>
-              </div>
-
-              {/* Mic action button */}
-              <div className="flex flex-col items-center justify-center space-y-3 py-2">
+        {/* 1. THEORY FLASHCARD */}
+        {node.type === 'theory' && (
+          <div className="space-y-6 text-center">
+            <div className="p-8 rounded-3xl bg-slate-800/80 border-2 border-slate-700 shadow-xl space-y-4">
+              <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-black uppercase tracking-wider border border-emerald-500/30">
+                {currentWord.part_of_speech || 'noun'}
+              </span>
+              <h3 className="text-4xl font-black text-white tracking-tight flex items-center justify-center gap-3">
+                <span>{currentWord.word}</span>
                 <button
                   type="button"
-                  onClick={toggleRecording}
-                  data-testid="vocab-mic-btn"
-                  className={`w-20 h-20 rounded-full flex items-center justify-center transition-all cursor-pointer shadow-lg ${
-                    isRecording
-                      ? 'bg-rose-500 text-white animate-pulse ring-4 ring-rose-200'
-                      : 'bg-emerald-500 text-white hover:bg-emerald-600 hover:scale-105'
-                  }`}
+                  onClick={playWordAudio}
+                  className="p-2 rounded-2xl bg-slate-700 hover:bg-slate-600 text-emerald-400 hover:scale-105 transition-all cursor-pointer"
                 >
-                  {isRecording ? <MicOff className="w-9 h-9" /> : <Mic className="w-9 h-9" />}
+                  <Volume2 className="w-6 h-6" />
                 </button>
-
-                <div className="text-xs font-semibold text-slate-600">
-                  {isRecording ? (
-                    <span className="text-rose-600 font-bold">Đang nghe... Nói từ rõ ràng</span>
-                  ) : (
-                    <span>Bấm hoặc nhấn <b>Space</b> để nói (Thử lại: {speechAttempts}/3)</span>
-                  )}
+              </h3>
+              {currentWord.ipa && (
+                <div className="text-sm font-mono text-emerald-300 font-semibold">
+                  /{currentWord.ipa}/
                 </div>
-
-                {speechTranscript && (
-                  <div className="px-4 py-2 bg-slate-100 rounded-xl text-xs text-slate-700">
-                    Bạn đã đọc: <b className="text-slate-900 font-mono">"{speechTranscript}"</b>
-                  </div>
-                )}
-
-                {speechScore !== null && (
-                  <div
-                    className={`px-4 py-1.5 rounded-full text-xs font-black border ${
-                      speechScore >= 70
-                        ? 'bg-emerald-50 text-emerald-700 border-emerald-300'
-                        : 'bg-rose-50 text-rose-700 border-rose-300'
-                    }`}
-                  >
-                    Điểm phát âm: {speechScore}/100 {speechScore >= 70 ? '🎉 ĐẠT' : '⚠️ CHƯA ĐẠT (≥70)'}
-                  </div>
-                )}
-
-                {speechError && (
-                  <div className="text-xs text-amber-700 bg-amber-50 p-2.5 rounded-xl border border-amber-200">
-                    {speechError}
-                  </div>
-                )}
+              )}
+              <div className="pt-3 text-xl font-bold text-white border-t border-slate-700">
+                {currentWord.meaning}
               </div>
             </div>
-          )}
 
-          {/* NODE TYPE 4: CHECKPOINT / TYPING */}
-          {node.type === 'checkpoint' && (
-            <div className="space-y-5">
-              <div className="text-center space-y-1">
-                <span className="text-[11px] font-bold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200 uppercase">
-                  Chốt Unit • Thử thách gõ từ
-                </span>
-                <p className="text-sm font-semibold text-slate-700 mt-2">Nghĩa tiếng Việt:</p>
-                <h4 className="text-xl font-black text-emerald-700">{currentWord.meaning}</h4>
-                <p className="text-xs text-slate-400">Gõ đúng từ tiếng Anh tương ứng:</p>
+            {currentWord.example && (
+              <div className="bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 text-left text-xs space-y-1 text-slate-300">
+                <div className="font-semibold text-white">Ví dụ: "{currentWord.example}"</div>
+                {currentWord.example_vi && (
+                  <div className="text-slate-400 italic">Dịch: "{currentWord.example_vi}"</div>
+                )}
               </div>
+            )}
+          </div>
+        )}
 
-              <div className="space-y-3">
-                <input
-                  type="text"
-                  value={typedInput}
-                  disabled={isAnswerChecked}
-                  onChange={(e) => setTypedInput(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && handleCheckTyped()}
-                  placeholder="Gõ từ tiếng Anh..."
-                  className="w-full px-4 py-3 text-center text-lg font-bold rounded-2xl border-2 border-slate-300 focus:border-emerald-500 focus:outline-hidden"
-                />
+        {/* 2. PRACTICE MCQ */}
+        {node.type === 'practice_basic' && (
+          <div className="space-y-6">
+            <div className="text-center space-y-2">
+              <h3 className="text-3xl font-black text-white">{currentWord.word}</h3>
+              <p className="text-xs text-slate-400">Chọn nghĩa tiếng Việt chính xác:</p>
+            </div>
 
-                {!isAnswerChecked && (
+            <div className="grid grid-cols-1 gap-3">
+              {options.map((opt, i) => {
+                const isOptSelected = selectedOption === opt;
+                let style = 'border-slate-700 bg-slate-800 text-slate-200 hover:bg-slate-700/80';
+
+                if (isAnswerChecked) {
+                  if (opt === currentWord.meaning) {
+                    style = 'border-[#58CC02] bg-[#58CC02]/20 text-white font-bold ring-2 ring-[#58CC02]';
+                  } else if (isOptSelected && !isCorrect) {
+                    style = 'border-rose-500 bg-rose-500/20 text-rose-200';
+                  }
+                }
+
+                return (
                   <button
+                    key={i}
                     type="button"
-                    onClick={handleCheckTyped}
-                    disabled={!typedInput.trim()}
-                    className="w-full py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm rounded-xl cursor-pointer disabled:opacity-50"
+                    disabled={isAnswerChecked}
+                    onClick={() => handleSelectOption(opt)}
+                    className={`p-4 rounded-2xl border-2 text-sm text-left transition-all cursor-pointer ${style}`}
                   >
-                    Kiểm tra
+                    <span className="font-bold mr-2 text-slate-400">{String.fromCharCode(65 + i)}.</span>
+                    {opt}
                   </button>
-                )}
-              </div>
+                );
+              })}
             </div>
-          )}
-        </div>
+          </div>
+        )}
 
-        {/* Footer / Feedback Bar */}
-        <div
-          className={`p-4 border-t transition-all flex items-center justify-between ${
-            node.type === 'theory'
-              ? 'bg-white border-slate-100'
-              : isAnswerChecked
-              ? isCorrect
-                ? 'bg-emerald-50 border-emerald-200 text-emerald-950'
-                : 'bg-rose-50 border-rose-200 text-rose-950'
-              : 'bg-white border-slate-100'
-          }`}
-        >
-          {node.type === 'theory' ? (
-            <div className="flex-1 flex justify-end">
+        {/* 3. PRONUNCIATION / MICRO CHECK (VOC-02) */}
+        {node.type === 'collocations' && (
+          <div className="space-y-6 text-center">
+            <div className="space-y-2">
+              <span className="text-[11px] font-black text-emerald-400 bg-emerald-500/20 px-3 py-1 rounded-full border border-emerald-500/30 uppercase tracking-wider">
+                Luyện đọc từ bằng Micro
+              </span>
+              <h3 className="text-4xl font-black text-white mt-2">{currentWord.word}</h3>
+              {currentWord.ipa && (
+                <p className="text-sm font-mono text-emerald-300 font-semibold">/{currentWord.ipa}/</p>
+              )}
+              <p className="text-xs text-slate-400 mt-1">Nghĩa: {currentWord.meaning}</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center space-y-4 py-4">
               <button
                 type="button"
-                onClick={handleNextStep}
-                className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center gap-1.5"
-              >
-                <span>{isLastStep ? 'Hoàn thành' : 'Tiếp tục (Enter)'}</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
-          ) : isAnswerChecked ? (
-            <>
-              <div className="flex items-center gap-2">
-                {isCorrect ? (
-                  <>
-                    <CheckCircle2 className="w-6 h-6 text-emerald-600 shrink-0" />
-                    <div>
-                      <div className="text-xs font-black text-emerald-800">Chính xác! Xuất sắc lắm!</div>
-                      <div className="text-[11px] text-emerald-600">Từ: {currentWord.word}</div>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <XCircle className="w-6 h-6 text-rose-600 shrink-0" />
-                    <div>
-                      <div className="text-xs font-black text-rose-800">Chưa đúng rồi!</div>
-                      <div className="text-[11px] text-rose-600">Đáp án đúng: <b>{currentWord.word}</b> ({currentWord.meaning})</div>
-                    </div>
-                  </>
-                )}
-              </div>
-
-              <button
-                type="button"
-                onClick={handleNextStep}
-                className={`px-6 py-2.5 font-bold text-xs rounded-xl shadow-xs transition-colors cursor-pointer flex items-center gap-1.5 text-white ${
-                  isCorrect ? 'bg-emerald-600 hover:bg-emerald-700' : 'bg-rose-600 hover:bg-rose-700'
+                onClick={toggleRecording}
+                data-testid="vocab-mic-btn"
+                className={`w-24 h-24 rounded-full flex items-center justify-center transition-all cursor-pointer shadow-xl ${
+                  isRecording
+                    ? 'bg-rose-500 text-white animate-pulse ring-8 ring-rose-500/30'
+                    : 'bg-[#58CC02] text-white hover:bg-[#46A302] hover:scale-105 shadow-[#58CC02]/30'
                 }`}
               >
-                <span>{isLastStep ? 'Kết thúc bài' : 'Tiếp tục (Enter)'}</span>
-                <ArrowRight className="w-4 h-4" />
+                {isRecording ? <MicOff className="w-10 h-10" /> : <Mic className="w-10 h-10" />}
               </button>
-            </>
-          ) : (
-            <div className="text-xs text-slate-400 italic">
-              {node.type === 'collocations'
-                ? 'Nhấn Space để thu âm hoặc Enter sau khi hoàn thành'
-                : 'Chọn câu trả lời để tiếp tục'}
+
+              <div className="text-xs font-semibold text-slate-300">
+                {isRecording ? (
+                  <span className="text-rose-400 font-bold animate-pulse">Đang nghe... Nói từ rõ ràng</span>
+                ) : (
+                  <span>Bấm vào Micro để nói (Thử lại: {speechAttempts}/3)</span>
+                )}
+              </div>
+
+              {speechTranscript && (
+                <div className="px-4 py-2 bg-slate-800 rounded-xl text-xs text-slate-300 border border-slate-700">
+                  Bạn đã đọc: <b className="text-white font-mono">"{speechTranscript}"</b>
+                </div>
+              )}
+
+              {speechScore !== null && (
+                <div
+                  className={`px-4 py-2 rounded-2xl text-xs font-black border ${
+                    speechScore >= 70
+                      ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
+                      : 'bg-rose-500/20 text-rose-400 border-rose-500/40'
+                  }`}
+                >
+                  Điểm phát âm: {speechScore}/100 {speechScore >= 70 ? '🎉 ĐẠT' : '⚠️ CHƯA ĐẠT (yêu cầu ≥70)'}
+                </div>
+              )}
+
+              {speechError && (
+                <div className="text-xs text-amber-300 bg-amber-500/20 p-3 rounded-2xl border border-amber-500/30">
+                  {speechError}
+                </div>
+              )}
+
+              {/* Nút Bỏ qua nói */}
+              <button
+                type="button"
+                onClick={handleSkipSpeech}
+                className="text-xs text-slate-400 hover:text-white underline font-semibold cursor-pointer pt-2"
+              >
+                Bỏ qua phần đọc từ này →
+              </button>
             </div>
+          </div>
+        )}
+
+        {/* 4. CHECKPOINT / TYPING */}
+        {node.type === 'checkpoint' && (
+          <div className="space-y-6">
+            <div className="text-center space-y-2">
+              <span className="text-[11px] font-black text-amber-400 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-500/30 uppercase">
+                Thử thách gõ từ vựng
+              </span>
+              <p className="text-sm font-semibold text-slate-300 mt-2">Nghĩa tiếng Việt:</p>
+              <h4 className="text-2xl font-black text-[#58CC02]">{currentWord.meaning}</h4>
+            </div>
+
+            <div className="space-y-4">
+              <input
+                type="text"
+                value={typedInput}
+                disabled={isAnswerChecked}
+                onChange={(e) => setTypedInput(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && handleCheckTyped()}
+                placeholder="Gõ từ tiếng Anh..."
+                className="w-full px-4 py-3.5 text-center text-lg font-bold rounded-2xl border-2 border-slate-700 bg-slate-800 text-white focus:border-[#58CC02] focus:outline-hidden"
+              />
+
+              {!isAnswerChecked && (
+                <button
+                  type="button"
+                  onClick={handleCheckTyped}
+                  disabled={!typedInput.trim()}
+                  className="w-full py-3.5 bg-[#58CC02] hover:bg-[#46A302] text-white font-black text-xs uppercase tracking-wider rounded-2xl cursor-pointer disabled:opacity-40"
+                >
+                  KIỂM TRA
+                </button>
+              )}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Fullscreen Footer Feedback Bar */}
+      <div
+        className={`w-full py-4 px-6 border-t transition-all flex items-center justify-between ${
+          isAnswerChecked
+            ? isCorrect
+              ? 'bg-[#58CC02]/20 border-[#58CC02]/40 text-white'
+              : 'bg-rose-500/20 border-rose-500/40 text-white'
+            : 'bg-[#131F24] border-slate-800'
+        }`}
+      >
+        <div className="w-full max-w-3xl mx-auto flex items-center justify-between">
+          {isAnswerChecked ? (
+            <div className="flex items-center gap-3">
+              {isCorrect ? (
+                <>
+                  <CheckCircle2 className="w-8 h-8 text-[#58CC02] shrink-0" />
+                  <div>
+                    <div className="text-sm font-black text-[#58CC02]">Chính xác! Xuất sắc lắm!</div>
+                    <div className="text-xs text-slate-300">Từ: {currentWord.word}</div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <XCircle className="w-8 h-8 text-rose-500 shrink-0" />
+                  <div>
+                    <div className="text-sm font-black text-rose-400">Chưa chính xác</div>
+                    <div className="text-xs text-slate-300">Đáp án đúng: <b className="text-white">{currentWord.word}</b> ({currentWord.meaning})</div>
+                  </div>
+                </>
+              )}
+            </div>
+          ) : (
+            <div />
+          )}
+
+          {(isAnswerChecked || node.type === 'theory') && (
+            <button
+              type="button"
+              onClick={handleNextStep}
+              className={`px-8 py-3 font-black text-xs uppercase tracking-wider rounded-2xl shadow-lg transition-transform active:scale-95 cursor-pointer flex items-center gap-2 ${
+                isCorrect || node.type === 'theory'
+                  ? 'bg-[#58CC02] hover:bg-[#46A302] text-white'
+                  : 'bg-rose-500 hover:bg-rose-600 text-white'
+              }`}
+            >
+              <span>{isLastStep ? 'HOÀN THÀNH' : 'TIẾP TỤC'}</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
           )}
         </div>
       </div>

@@ -38,6 +38,37 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
     return 'path';
   });
   const [selectedNode, setSelectedNode] = useState<VocabLessonNode | null>(null);
+    const handleFastPass = (unitId: string, unitIndex: number) => {
+    setVocabProgress((prev) => {
+      const updatedNodes = { ...prev.nodes };
+      const unit = VOCAB_UNITS.find((u) => u.id === unitId);
+      if (unit) {
+        unit.nodes.forEach((n) => {
+          updatedNodes[n.id] = {
+            status: 'completed',
+            stars: 3,
+            scorePercent: 100,
+            completedAt: new Date().toISOString(),
+            attemptsCount: 1,
+          };
+        });
+      }
+      const nextUnit = VOCAB_UNITS.find((u) => u.unitIndex === unitIndex + 1);
+      if (nextUnit && nextUnit.nodes[0]) {
+        updatedNodes[nextUnit.nodes[0].id] = {
+          status: 'unlocked',
+          stars: 0,
+          scorePercent: 0,
+          attemptsCount: 0,
+        };
+      }
+      const newProg = { ...prev, nodes: updatedNodes, totalXp: prev.totalXp + 150 };
+      try { localStorage.setItem('toeic_vocab_user_progress', JSON.stringify(newProg)); } catch {}
+      return newProg;
+    });
+    showToast(`Chúc mừng! Bạn đã thi vượt cấp thành công Phần ${unitIndex}!`);
+  };
+
   const handleCompleteNode = (earnedXp: number, stars: number) => {
     if (!selectedNode) return;
     setVocabProgress((prev) => {
@@ -490,10 +521,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
               <ArrowLeft className="w-4 h-4" />
               Quay lại Practice Hub
             </button>
-            <h1 className="text-2xl font-extrabold text-slate-900 flex items-center gap-2">
-              <Target className="w-6 h-6 text-pink-600" />
-              Lộ trình Chinh phục Từ vựng TOEIC
-            </h1>
+            
           </div>
 
           
@@ -594,6 +622,7 @@ export const VocabularyPage: React.FC<VocabularyPageProps> = ({ onNavigate, onFo
             <VocabPathView
               progress={vocabProgress}
               onSelectNode={(node) => setSelectedNode(node)}
+              onFastPass={handleFastPass}
             />
           </div>
         )}
