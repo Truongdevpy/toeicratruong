@@ -36,3 +36,7 @@
 3. **Phân trang thống nhất (HUB-04)**: Đã tích hợp `Pagination` cho Listening & Reading.
 4. **Bảo mật & Rate limit**: Cần duy trì mock cho các kiểm thử tự động để tránh cạn kiệt hạn ngạch Gemini.
 5. **Giao diện Responsive**: Mobile và Desktop hiển thị hài hòa theo đúng breakpoints của Tailwind CSS.
+
+## 5. Các lỗi đã xác nhận sửa (Resolved Bugs)
+- **BUG-010 (DATA-02)**: Khôi phục 930 câu hỏi Part 4 bị thiếu `question_text` trong `part4_practice.json` bằng cách đối khớp 100% từ dữ liệu thô gốc `dautoeic` và `data/export/questions.json`.
+  - **Kết quả kiểm tra**: `scripts/run_data_tests.py` -> `[PASS] Part 4 prompt completeness (3330/3330 questions valid)`.

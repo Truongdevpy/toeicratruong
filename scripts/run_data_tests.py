@@ -21,14 +21,17 @@ def test_data():
         print('[SKIPPED] Audio resolution check:', e)
     print("=== RUNNING RESILIENT DATA GUARD TESTS ===")
 
-    # 1. Part 3 & 7 Prompt completeness
-    for pno in [3, 7]:
+    # 1. Part 3, 4 & 7 Prompt completeness (DATA-02)
+    for pno in [3, 4, 7]:
         p = f'data/data/web_ready/practice_by_part/part{pno}_practice.json'
         if os.path.exists(p):
             with open(p, 'r', encoding='utf-8') as f:
                 d = json.load(f)
                 qs = d.get('questions', [])
-                missing = [q for q in qs if not q.get('question_text') or not str(q.get('question_text')).strip()]
+                if not qs and 'data_by_level' in d:
+                    for lvl_list in d['data_by_level'].values():
+                        qs.extend(lvl_list)
+                missing = [q for q in qs if not (q.get('question_text') or q.get('question') or q.get('prompt')) or not str(q.get('question_text') or q.get('question') or q.get('prompt')).strip()]
                 if missing:
                     errors.append(f"Part {pno} has {len(missing)} questions with missing question_text")
                 else:

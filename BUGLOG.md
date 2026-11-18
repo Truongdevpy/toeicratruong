@@ -106,3 +106,17 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Test giữ lỗi**: `frontend/src/services/vocabPath.test.ts` & `npm run verify`
 - **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG gỡ bỏ bước chấm phát âm micro (ngưỡng 70 điểm) và các bài tập tương tác (theory, mcq, pronunciation, typing checkpoint) theo đúng mô tả VOC-01 và VOC-02.
 
+### [BUG-010] 930 câu hỏi Part 4 thiếu question_text trong kho luyện tập
+- **Mã lỗi**: DATA-02 (BUG-10)
+- **Ngày phát hiện / sửa**: 2026-11-18
+- **Triệu chứng**: 930 câu hỏi Part 4 trong `part4_practice.json` bị để trống `question_text`/`question`, khiến người học chỉ thấy 4 phương án A-D mà không có đề bài.
+- **Nguyên nhân gốc**: Khi tổng hợp file `part4_practice.json`, các bản ghi từ nguồn `dautoeic` chưa được map trường `question_text` từ file `questions.json` gốc.
+- **File đã sửa**:
+  - `data/data/web_ready/practice_by_part/part4_practice.json`
+  - `scripts/run_data_tests.py`
+  - `FEATURES.md`
+  - `RUNTIME_AUDIT.md`
+- **Các vị trí dùng chung bị ảnh hưởng**: Trang luyện tập Listening Part 4 (`/practice/listening`) và API `/api/practice/part/4`.
+- **Test giữ lỗi**: `scripts/run_data_tests.py` (Part 4 prompt completeness 3330/3330 questions valid) & `npm run verify`
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG ghi đè `part4_practice.json` bằng các bản xuất thiếu trường `question_text`; luôn đối khớp từ dữ liệu gốc của dự án.
+
