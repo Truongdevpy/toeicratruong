@@ -116,6 +116,38 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const [resetConfirmModal, setResetConfirmModal] = useState<{ isOpen: boolean; levelKey: string; title: string } | null>(null);
   const [activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
 
+  // Deeplink auto-resume on mount or URL change
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const urlLevel = params.get('level');
+    const urlCategory = params.get('category');
+    const urlQ = parseInt(params.get('q') || '1', 10);
+
+    if (urlLevel && viewMode === 'catalog') {
+      const targetLvl = urlLevel.startsWith('Level') ? urlLevel : `Level ${urlLevel}`;
+      const filterTitle = `Part ${getPartNumber(activeTab)} · ${targetLvl}`;
+      handleStartPractice('level', targetLvl, filterTitle);
+    } else if (urlCategory && viewMode === 'catalog') {
+      handleStartPractice('category', urlCategory, urlCategory);
+    }
+  }, [activeTab]);
+
+  // Sync URL when question changes in runner
+  const handleRunnerIndexChange = (newIdx: number) => {
+    if (typeof window === 'undefined' || viewMode !== 'runner') return;
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('part', String(getPartNumber(activeTab)));
+      if (activeFilterName?.includes('Level')) {
+        const lvl = activeFilterName.match(/Level \d+/i)?.[0];
+        if (lvl) url.searchParams.set('level', lvl);
+      }
+      url.searchParams.set('q', String(newIdx + 1));
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
+  };
+
   useEffect(() => {
     const unsub = practiceProgressStore.subscribe(() => {
       setStoreVersion((v) => v + 1);
@@ -494,6 +526,7 @@ if (viewMode === 'runner') {
     }
     return (
       <FocusedPracticeRoom
+        onIndexChange={handleRunnerIndexChange}
         title={activeFilterName || `Luyện nghe TOEIC Part ${getPartNumber(activeTab)}`}
         levelBadge={activeFilterName?.includes('Level') ? activeFilterName.split('–')[0].trim() : `Part ${getPartNumber(activeTab)}`}
         levelKey={activeLevelKey}
@@ -501,7 +534,16 @@ if (viewMode === 'runner') {
         questions={runnerQuestions}
         passages={runnerPassages}
         initialIndex={currentIndex}
-        onExit={() => setViewMode('catalog')}
+        onExit={() => {
+          setViewMode('catalog');
+          if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href);
+            url.searchParams.delete('level');
+            url.searchParams.delete('category');
+            url.searchParams.delete('q');
+            window.history.replaceState({}, '', url.toString());
+          }
+        }}
         onNavigate={onNavigate}
       />
     );
