@@ -139,6 +139,28 @@ export const test = base.extend<{
       }
     });
 
+    // Auto-authenticate as VIP test user
+    await page.addInitScript(() => {
+      localStorage.setItem('toeic_token', 'mock_e2e_vip_token');
+    });
+
+    await page.route('**/api/auth/me', async (route) => {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({
+          id: 9,
+          email: 'vip@toeicai.vn',
+          full_name: 'Hoc vien VIP',
+          role: 'vip',
+          is_vip: true,
+          streak: 15,
+          xp: 2500,
+          target_score: 850
+        })
+      });
+    });
+
     await use(page);
 
     // 4. Post-navigation DOM Invariant Checks

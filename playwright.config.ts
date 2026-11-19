@@ -1,4 +1,4 @@
-﻿import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './e2e/specs',
@@ -16,10 +16,11 @@ export default defineConfig({
     ['html', { outputFolder: 'e2e/artifacts/html-report', open: 'never' }]
   ],
   use: {
+    channel: 'chrome',
     baseURL: 'http://localhost:5173',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    video: 'off',
     launchOptions: {
       args: ['--autoplay-policy=no-user-gesture-required']
     }

@@ -8,5 +8,8 @@
     "e2e": "npx playwright test",
     "e2e:module": "npx playwright test --grep",
     "e2e:report": "npx playwright show-report e2e/artifacts/html-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
   }
 }
