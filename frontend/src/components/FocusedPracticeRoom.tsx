@@ -2,6 +2,7 @@ import { sfx } from '../lib/sfx';
 import { AuthRequiredGate } from './AuthRequiredGate';
 import DOMPurify from 'dompurify';
 import { MorphPlayPause } from './MorphIcon';
+import commonVocabDictionary from '../data/commonVocabDictionary.json';
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   ArrowLeft,
@@ -2699,25 +2700,70 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                             }
                           } catch {}
                         }
-                        // 3. Fallback: tokens from question_text
-                        if (qItem?.question_text) {
-                          const qText = qItem.question_text.replace(/^câu\s*(hỏi)?\s*\d+[:.]?\s*/i, '');
-                          const tokens = qText.match(/[a-zA-Z]{4,}/g) || [];
-                          const stopwords = new Set([
-                            'the', 'and', 'for', 'with', 'that', 'this', 'from', 'what', 'when',
-                            'where', 'which', 'who', 'will', 'would', 'could', 'should', 'have',
-                            'has', 'had', 'does', 'did', 'are', 'was', 'were', 'about', 'their', 'there'
-                          ]);
-                          const extracted: Array<{ word: string; meaning?: string }> = [];
-                          for (const t of tokens) {
-                            const w = t.toLowerCase();
-                            if (!stopwords.has(w) && !extracted.some(x => x.word.toLowerCase() === w)) {
-                              extracted.push({ word: w });
-                            }
-                            if (extracted.length >= 4) break;
-                          }
-                          return extracted;
+                        // 3. Smart Extraction from transcript, options, question_text with authentic meaning lookup
+                        const candidateTexts: string[] = [];
+                        if (qItem?.transcript) candidateTexts.push(qItem.transcript);
+                        if (qItem?.options) {
+                          Object.values(qItem.options).forEach((optVal: any) => {
+                            if (typeof optVal === 'string') candidateTexts.push(optVal);
+                          });
                         }
+                        ['option_a', 'option_b', 'option_c', 'option_d'].forEach((prop) => {
+                          const val = (qItem as any)?.[prop];
+                          if (typeof val === 'string') candidateTexts.push(val);
+                        });
+                        if (qItem?.question_text) {
+                          const cleanedPrompt = qItem.question_text
+                            .replace(/^câu\s*(hỏi)?\s*\d+[:.]?\s*/i, '')
+                            .replace(/nghe\s*\d*\s*phương\s*án.*$/i, '')
+                            .replace(/chọn\s*câu\s*miêu\s*tả.*$/i, '')
+                            .replace(/bức\s*tranh.*$/i, '');
+                          if (cleanedPrompt.trim()) candidateTexts.push(cleanedPrompt);
+                        }
+
+                        const combinedText = candidateTexts.join(' ');
+                        const rawWords = combinedText.match(/[a-zA-Z]{3,}/g) || [];
+                        const stopwords = new Set([
+                          'the', 'and', 'for', 'with', 'that', 'this', 'from', 'what', 'when',
+                          'where', 'which', 'who', 'will', 'would', 'could', 'should', 'have',
+                          'has', 'had', 'does', 'did', 'are', 'was', 'were', 'about', 'their',
+                          'there', 'they', 'them', 'she', 'his', 'her', 'hers', 'him', 'its',
+                          'into', 'some', 'than', 'then', 'very', 'just', 'more', 'also', 'been',
+                          'being', 'each', 'most', 'other', 'both', 'such', 'like', 'same'
+                        ]);
+
+                        const extractedMap = new Map<string, string>();
+                        const vocabDict = commonVocabDictionary as Record<string, string>;
+
+                        for (const rawW of rawWords) {
+                          const w = rawW.toLowerCase();
+                          if (stopwords.has(w) || w.length < 3) continue;
+
+                          const baseCandidates = [
+                            w,
+                            w.endsWith('ing') ? w.slice(0, -3) : '',
+                            w.endsWith('ing') && w.length > 5 ? w.slice(0, -4) : '',
+                            w.endsWith('ed') ? w.slice(0, -2) : '',
+                            w.endsWith('s') && !w.endsWith('ss') ? w.slice(0, -1) : '',
+                            w.endsWith('es') ? w.slice(0, -2) : ''
+                          ].filter(Boolean);
+
+                          for (const cand of baseCandidates) {
+                            if (vocabDict[cand] && !extractedMap.has(cand)) {
+                              extractedMap.set(cand, vocabDict[cand]);
+                              break;
+                            }
+                          }
+                          if (extractedMap.size >= 5) break;
+                        }
+
+                        if (extractedMap.size > 0) {
+                          return Array.from(extractedMap.entries()).map(([word, meaning]) => ({
+                            word,
+                            meaning
+                          }));
+                        }
+
                         return [];
                       })();
 
