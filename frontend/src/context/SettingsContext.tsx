@@ -22,6 +22,7 @@ export interface AppSettings {
   showTranslation: boolean;
   showProfileOnLeaderboard: boolean;
   skipIntro: boolean;
+  skipIntroSecondsPart2?: number;
 }
 
 const SETTINGS_STORAGE_KEY = 'toeic_global_app_settings_v1';
@@ -47,6 +48,7 @@ const DEFAULT_SETTINGS: AppSettings = {
   showTranslation: true,
   showProfileOnLeaderboard: false,
   skipIntro: false,
+  skipIntroSecondsPart2: 1.2,
 };
 
 interface SettingsContextType {
@@ -98,6 +100,7 @@ export const SettingsProvider: React.FC<{ children: ReactNode }> = ({ children }
           showTranslation: typeof parsed.showTranslation === 'boolean' ? parsed.showTranslation : true,
           showProfileOnLeaderboard: typeof parsed.showProfileOnLeaderboard === 'boolean' ? parsed.showProfileOnLeaderboard : false,
           skipIntro: typeof parsed.skipIntro === 'boolean' ? parsed.skipIntro : false,
+          skipIntroSecondsPart2: typeof parsed.skipIntroSecondsPart2 === 'number' ? parsed.skipIntroSecondsPart2 : 1.2,
         };
       }
     } catch (err) {

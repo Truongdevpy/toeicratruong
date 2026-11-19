@@ -28,7 +28,7 @@ export const AudioPlayer: React.FC<AudioPlayerProps> = ({
   title,
   autoPlay = false,
   compact = false,
-  skipIntroSeconds = 3,
+  skipIntroSeconds = 1.2,
   enableKeyboardShortcuts = true,
   onEnded,
   onTimeUpdate,

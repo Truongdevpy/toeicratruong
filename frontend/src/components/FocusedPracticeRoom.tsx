@@ -979,13 +979,18 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     }
   }, [isPlaying]);
 
-  // Skip intro duration calculation based on Part
+  // Skip intro duration calculation based on Part (an toàn, chỉ bỏ lời xướng số câu, không cắt vào câu hỏi)
   const skipIntroSeconds = useMemo(() => {
-    if (partNumber === 1) return 3; // Number 1, Look at the picture...
-    if (partNumber === 2) return 2.5; // Number 7...
-    if (partNumber === 3 || partNumber === 4) return 3.5; // Questions X through Y refer to...
-    return 3;
-  }, [partNumber]);
+    if (partNumber === 1) return 2.5; // Number 1...
+    if (partNumber === 2) {
+      // Part 2 intro chỉ có 'Number 7.' (~1.0s - 1.2s). Giới hạn tối đa 1.2s để không cắt vào câu hỏi
+      return typeof globalSettings?.skipIntroSecondsPart2 === 'number'
+        ? Math.min(1.5, Math.max(0.5, globalSettings.skipIntroSecondsPart2))
+        : 1.2;
+    }
+    if (partNumber === 3 || partNumber === 4) return 3.0; // Questions X through Y refer to...
+    return 1.5;
+  }, [partNumber, globalSettings?.skipIntroSecondsPart2]);
 
   const handleSkipIntro = useCallback(() => {
     if (!audioRef.current) return;
