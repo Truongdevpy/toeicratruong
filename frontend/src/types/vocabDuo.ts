@@ -1,7 +1,5 @@
 // -*- coding: utf-8 -*-
-import { VocabWord } from './index';
-
-export type VocabNodeType = 'theory' | 'practice_basic' | 'collocations' | 'checkpoint';
+export type VocabNodeType = 'theory' | 'practice_basic' | 'collocations' | 'checkpoint' | 'comprehensive';
 
 export interface VocabLessonNode {
   id: string;

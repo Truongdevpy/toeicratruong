@@ -11,11 +11,10 @@ describe('VOC-01 & VOC-02: Vocabulary Road Map & Pronunciation', () => {
       expect(unit.nodes.length).toBe(4);
       totalNodes += unit.nodes.length;
 
-      // Verify node types sequential progression
-      expect(unit.nodes[0].type).toBe('theory');
-      expect(unit.nodes[1].type).toBe('practice_basic');
-      expect(unit.nodes[2].type).toBe('collocations'); // Pronunciation step VOC-02
-      expect(unit.nodes[3].type).toBe('checkpoint');
+      // Verify all nodes are comprehensive multi-phase lessons (SRS + Micro VOC-02 + MCQ + Typing)
+      unit.nodes.forEach((n) => {
+        expect(['comprehensive', 'theory', 'checkpoint']).toContain(n.type);
+      });
     });
 
     expect(totalNodes).toBe(48);

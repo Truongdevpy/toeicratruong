@@ -43,6 +43,8 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
   const [isCorrect, setIsCorrect] = useState(false);
   const [typedInput, setTypedInput] = useState('');
   const [scoreCount, setScoreCount] = useState(0);
+  type ExerciseMode = 'card' | 'mcq' | 'fill' | 'speak';
+  const [exerciseMode, setExerciseMode] = useState<ExerciseMode>('card');
 
   // Micro & Speech Recognition state for VOC-02
   const [isRecording, setIsRecording] = useState(false);
@@ -251,12 +253,36 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
   };
 
   const handleNextStep = () => {
+    if (exerciseMode === 'card') {
+      setExerciseMode('mcq');
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      return;
+    }
+    if (exerciseMode === 'mcq') {
+      setExerciseMode('fill');
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setTypedInput('');
+      return;
+    }
+    if (exerciseMode === 'fill') {
+      setExerciseMode('speak');
+      setIsAnswerChecked(false);
+      setIsCorrect(false);
+      setSpeechTranscript('');
+      setSpeechScore(null);
+      setSpeechAttempts(0);
+      setSpeechError(null);
+      return;
+    }
     if (isLastStep) {
       confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
-      const stars = scoreCount >= lessonWords.length * 0.8 ? 3 : scoreCount >= lessonWords.length * 0.5 ? 2 : 1;
+      const stars = scoreCount >= lessonWords.length * 2.5 ? 3 : scoreCount >= lessonWords.length * 1.5 ? 2 : 1;
       onComplete(node.xpReward, stars);
     } else {
       setStepIndex((i) => i + 1);
+      setExerciseMode('card');
       setSelectedOption(null);
       setIsAnswerChecked(false);
       setIsCorrect(false);
@@ -326,7 +352,7 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
         </div>
 
         {/* 1. THEORY FLASHCARD */}
-        {node.type === 'theory' && (
+        {exerciseMode === 'card' && (
           <div className="space-y-6 text-center">
             <div className="p-8 rounded-3xl bg-slate-800/80 border-2 border-slate-700 shadow-xl space-y-4">
               <span className="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-black uppercase tracking-wider border border-emerald-500/30">
@@ -364,7 +390,7 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
         )}
 
         {/* 2. PRACTICE MCQ */}
-        {node.type === 'practice_basic' && (
+        {exerciseMode === 'mcq' && (
           <div className="space-y-6">
             <div className="text-center space-y-2">
               <h3 className="text-3xl font-black text-white">{currentWord.word}</h3>
@@ -402,7 +428,7 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
         )}
 
         {/* 3. PRONUNCIATION / MICRO CHECK (VOC-02) */}
-        {node.type === 'collocations' && (
+        {exerciseMode === 'speak' && (
           <div className="space-y-6 text-center">
             <div className="space-y-2">
               <span className="text-[11px] font-black text-emerald-400 bg-emerald-500/20 px-3 py-1 rounded-full border border-emerald-500/30 uppercase tracking-wider">
@@ -474,7 +500,7 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
         )}
 
         {/* 4. CHECKPOINT / TYPING */}
-        {node.type === 'checkpoint' && (
+        {exerciseMode === 'fill' && (
           <div className="space-y-6">
             <div className="text-center space-y-2">
               <span className="text-[11px] font-black text-amber-400 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-500/30 uppercase">
@@ -545,12 +571,12 @@ export const VocabPracticeModal: React.FC<VocabPracticeModalProps> = ({
             <div />
           )}
 
-          {(isAnswerChecked || node.type === 'theory') && (
+          {(isAnswerChecked || exerciseMode === 'card') && (
             <button
               type="button"
               onClick={handleNextStep}
               className={`px-8 py-3 font-black text-xs uppercase tracking-wider rounded-2xl shadow-lg transition-transform active:scale-95 cursor-pointer flex items-center gap-2 ${
-                isCorrect || node.type === 'theory'
+                isCorrect || exerciseMode === 'card'
                   ? 'bg-[#58CC02] hover:bg-[#46A302] text-white'
                   : 'bg-rose-500 hover:bg-rose-600 text-white'
               }`}
