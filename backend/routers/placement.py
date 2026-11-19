@@ -2,7 +2,9 @@ from ai_placement import generate_ai_placement_diagnosis
 from media_resolver import resolve_media_url
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 import json
+import re
 from typing import Optional
 from database import get_db
 import models
@@ -15,28 +17,144 @@ router = APIRouter(prefix="/api/placement-test", tags=["placement"])
 @router.get("/questions")
 def get_placement_questions(
     test_type: str = Query("full", description="full or custom"),
+    skills: Optional[str] = Query(None, description="Comma-separated skills: Listening,Reading,Grammar,Vocabulary"),
     db: Session = Depends(get_db)
 ):
-    """
-    Returns a balanced set of diagnostic questions across Listening (Parts 1-4)
-    and Reading (Parts 5-7).
-    """
     selected_questions = []
 
-    part_quotas = {
-        1: 4,
-        2: 5,
-        3: 4,
-        4: 3,
-        5: 8,
-        6: 3,
-        7: 4
-    }
+    active_skills = set()
+    if test_type == "custom" and skills:
+        active_skills = {s.strip().lower() for s in skills.split(",") if s.strip()}
+    else:
+        active_skills = {"listening", "reading", "grammar", "vocabulary"}
 
-    for part_num, quota in part_quotas.items():
-        qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == part_num).limit(quota).all()
-        for q in qs:
-            passage = None
+    include_listening = "listening" in active_skills
+    include_reading = "reading" in active_skills
+    include_grammar = "grammar" in active_skills
+    include_vocab = "vocabulary" in active_skills
+
+    # Listening Parts: 1, 2, 3, 4
+    if include_listening:
+        # 1. Part 1: 4 individual questions
+        p1_qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 1).limit(4).all()
+        for q in p1_qs:
+            selected_questions.append((q, None))
+
+        # 2. Part 2: 5 individual questions
+        p2_qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 2).limit(5).all()
+        for q in p2_qs:
+            selected_questions.append((q, None))
+
+        # 3. Part 3: 1 cohesive passage group of 3 questions
+        p3_group = (
+            db.query(models.CachedQuestion.passage_id)
+            .filter(models.CachedQuestion.part == 3, models.CachedQuestion.passage_id.isnot(None))
+            .group_by(models.CachedQuestion.passage_id)
+            .having(func.count() == 3)
+            .first()
+        )
+        if p3_group and p3_group[0]:
+            qs = (
+                db.query(models.CachedQuestion)
+                .filter(models.CachedQuestion.passage_id == p3_group[0])
+                .order_by(models.CachedQuestion.question_number)
+                .all()
+            )
+            for q in qs:
+                selected_questions.append((q, None))
+        else:
+            qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 3).limit(3).all()
+            for q in qs:
+                selected_questions.append((q, None))
+
+        # 4. Part 4: 1 cohesive passage group of 3 questions
+        p4_group = (
+            db.query(models.CachedQuestion.passage_id)
+            .filter(models.CachedQuestion.part == 4, models.CachedQuestion.passage_id.isnot(None))
+            .group_by(models.CachedQuestion.passage_id)
+            .having(func.count() == 3)
+            .first()
+        )
+        if p4_group and p4_group[0]:
+            qs = (
+                db.query(models.CachedQuestion)
+                .filter(models.CachedQuestion.passage_id == p4_group[0])
+                .order_by(models.CachedQuestion.question_number)
+                .all()
+            )
+            for q in qs:
+                selected_questions.append((q, None))
+        else:
+            qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 4).limit(3).all()
+            for q in qs:
+                selected_questions.append((q, None))
+
+    # Grammar / Vocab (Part 5)
+    p5_count = 0
+    if include_grammar and include_vocab:
+        p5_count = 8
+    elif include_grammar or include_vocab:
+        p5_count = 5
+
+    if p5_count > 0:
+        p5_qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 5).limit(p5_count).all()
+        for q in p5_qs:
+            selected_questions.append((q, None))
+
+    # Reading Passages (Part 6 & Part 7)
+    if include_reading:
+        # 6. Part 6: 1 cohesive passage group of 4 questions
+        p6_group = (
+            db.query(models.CachedQuestion.passage_id)
+            .filter(models.CachedQuestion.part == 6, models.CachedQuestion.passage_id.isnot(None))
+            .group_by(models.CachedQuestion.passage_id)
+            .having(func.count() == 4)
+            .first()
+        )
+        if p6_group and p6_group[0]:
+            qs = (
+                db.query(models.CachedQuestion)
+                .filter(models.CachedQuestion.passage_id == p6_group[0])
+                .order_by(models.CachedQuestion.question_number)
+                .all()
+            )
+            p_obj = db.query(models.CachedPassage).filter(models.CachedPassage.id == p6_group[0]).first()
+            passage_text = p_obj.passage_text if p_obj else None
+            for q in qs:
+                selected_questions.append((q, passage_text))
+        else:
+            qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 6).limit(4).all()
+            for q in qs:
+                selected_questions.append((q, None))
+
+        # 7. Part 7: 1 cohesive passage group of 4 questions
+        p7_group = (
+            db.query(models.CachedQuestion.passage_id)
+            .filter(models.CachedQuestion.part == 7, models.CachedQuestion.passage_id.isnot(None))
+            .group_by(models.CachedQuestion.passage_id)
+            .having(func.count() == 4)
+            .first()
+        )
+        if p7_group and p7_group[0]:
+            qs = (
+                db.query(models.CachedQuestion)
+                .filter(models.CachedQuestion.passage_id == p7_group[0])
+                .order_by(models.CachedQuestion.question_number)
+                .all()
+            )
+            p_obj = db.query(models.CachedPassage).filter(models.CachedPassage.id == p7_group[0]).first()
+            passage_text = p_obj.passage_text if p_obj else None
+            for q in qs:
+                selected_questions.append((q, passage_text))
+        else:
+            qs = db.query(models.CachedQuestion).filter(models.CachedQuestion.part == 7).limit(4).all()
+            for q in qs:
+                selected_questions.append((q, None))
+
+    formatted_questions = []
+    for idx, (q, override_passage) in enumerate(selected_questions):
+        passage = override_passage
+        if not passage and q.part in (6, 7):
             if q.passage_id:
                 passage_obj = db.query(models.CachedPassage).filter(models.CachedPassage.id == q.passage_id).first()
                 if passage_obj:
@@ -44,27 +162,37 @@ def get_placement_questions(
             elif q.passage_text:
                 passage = q.passage_text
 
-            selected_questions.append({
-                "id": q.id,
-                "part": q.part,
-                "section": q.section,
-                "question_number": len(selected_questions) + 1,
-                "question_text": q.question_text,
-                "option_a": q.option_a,
-                "option_b": q.option_b,
-                "option_c": q.option_c,
-                "option_d": q.option_d,
-                "audio_url": resolve_media_url(q.audio_url, media_type="audio"),
-                "image_url": resolve_media_url(q.image_url, media_type="image"),
-                "passage_text": passage,
-                "difficulty_level": q.difficulty_level
-            })
+        # Clean question text for Part 6 so it displays standard fill-the-blank prompt instead of repeating 'Questions 135-138 refer to...'
+        q_text = q.question_text or ""
+        if q.part == 6 and re.search(r'Questions?\s*\d+-\d+\s*refer\s*to', q_text, re.IGNORECASE):
+            q_text = f"Chọn từ hoặc câu thích hợp nhất để điền vào vị trí trống [{idx + 1}]."
+
+        formatted_questions.append({
+            "id": q.id,
+            "part": q.part,
+            "section": q.section,
+            "question_number": idx + 1,
+            "original_number": q.question_number,
+            "passage_id": q.passage_id,
+            "question_text": q_text,
+            "option_a": q.option_a,
+            "option_b": q.option_b,
+            "option_c": q.option_c,
+            "option_d": q.option_d,
+            "audio_url": resolve_media_url(q.audio_url, media_type="audio"),
+            "image_url": resolve_media_url(q.image_url, media_type="image"),
+            "passage_text": passage if q.part in (6, 7) else None,
+            "difficulty_level": q.difficulty_level
+        })
+
+    total_q = len(formatted_questions)
+    calc_duration = max(10, min(60, int(total_q * 0.8) + 1))
 
     return {
         "test_type": test_type,
-        "total_questions": len(selected_questions),
-        "duration_minutes": 25,
-        "questions": selected_questions
+        "total_questions": total_q,
+        "duration_minutes": calc_duration if test_type == "custom" else 25,
+        "questions": formatted_questions
     }
 
 @router.post("/submit")
@@ -168,9 +296,11 @@ def submit_placement_test(
         vocabulary_pct=analysis["skills_pct"]["vocabulary"],
         speaking_pct=analysis["skills_pct"]["speaking"],
         writing_pct=analysis["skills_pct"]["writing"],
-        strengths_json=json.dumps(analysis["strengths"]),
-        weak_areas_json=json.dumps(analysis["weak_areas"]),
-        detailed_analysis_json=json.dumps(analysis["part_analysis"])
+        strengths_json=json.dumps(analysis["strengths"], ensure_ascii=False),
+        weak_areas_json=json.dumps(analysis["weak_areas"], ensure_ascii=False),
+        detailed_analysis_json=json.dumps(analysis["part_analysis"], ensure_ascii=False),
+        error_patterns_json=json.dumps(analysis.get("error_patterns", []), ensure_ascii=False),
+        ai_summary=analysis.get("ai_summary", "")
     )
     db.add(attempt)
 
@@ -220,6 +350,13 @@ def get_latest_placement_result(
     strengths = json.loads(attempt.strengths_json) if attempt.strengths_json else []
     weak_areas = json.loads(attempt.weak_areas_json) if attempt.weak_areas_json else []
     part_analysis = json.loads(attempt.detailed_analysis_json) if attempt.detailed_analysis_json else {}
+    error_patterns = json.loads(attempt.error_patterns_json) if getattr(attempt, 'error_patterns_json', None) else []
+    ai_summary = getattr(attempt, 'ai_summary', None) or (
+        f"Trình độ hiện tại của bạn đạt TOEIC {attempt.estimated_score} "
+        f"(Listening: {attempt.listening_score}, Reading: {attempt.reading_score}). "
+        + (f"Điểm mạnh nổi bật: {strengths[0]}. " if strengths else "Chưa ghi nhận điểm mạnh nổi bật do chưa có câu trả lời đúng. ")
+        + f"Điểm yếu cần tập trung: {weak_areas[0] if weak_areas else 'Củng cố nền tảng ngữ pháp & từ vựng cốt lõi'}."
+    )
 
     return {
         "estimated_score": attempt.estimated_score,
@@ -236,30 +373,6 @@ def get_latest_placement_result(
         "part_analysis": part_analysis,
         "strengths": strengths,
         "weak_areas": weak_areas,
-        "error_patterns": [
-            {
-                "category": "Nghe bẫy đồng âm (Distractors)",
-                "severity": "Cao",
-                "description": "Thường bị lừa bởi các từ đồng âm hoặc âm gần giống trong Part 2 và Part 3.",
-                "recommendation": "Luyện nghe bắt từ khóa (Keywords) thay vì cố dịch từng từ theo thứ tự."
-            },
-            {
-                "category": "Ngữ pháp Word Form (Từ loại)",
-                "severity": "Trung bình",
-                "description": "Gặp khó khăn khi xác định nhanh hậu tố danh từ ghép và vị trí trạng từ trong câu phức Part 5.",
-                "recommendation": "Học nhóm hậu tố đặc biệt (-al, -ive, -ment, -ance) và làm 30 bài tập chuyên sâu."
-            },
-            {
-                "category": "Kỹ năng Skimming & Scanning Part 7",
-                "severity": "Cao",
-                "description": "Đọc quá kỹ từng dòng trong đoạn đơn, dẫn tới thiếu thời gian làm các đoạn văn kép.",
-                "recommendation": "Áp dụng kỹ thuật đọc câu hỏi trước để định vị từ khóa trong bài đọc."
-            }
-        ],
-        "ai_summary": (
-            f"Trình độ hiện tại của bạn đạt TOEIC {attempt.estimated_score} "
-            f"(Listening: {attempt.listening_score}, Reading: {attempt.reading_score}). "
-            f"Điểm mạnh nổi bật: {strengths[0] if strengths else 'Part 1'}. "
-            f"Điểm yếu cần tập trung cải thiện: {weak_areas[0] if weak_areas else 'Part 3 và Word Form'}."
-        )
+        "error_patterns": error_patterns,
+        "ai_summary": ai_summary
     }

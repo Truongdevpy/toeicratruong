@@ -1,0 +1,7 @@
+dataset,total_records,valid_records,missing_fields,status,details
+Part 3 Practice,4680,4680,0,PASS,100% questions have question_text and prompt
+Part 4 Practice,3330,3330,0,PASS,930 missing prompts restored and verified via BUG-010
+Part 7 Practice,6480,6480,0,PASS,100% single/double/triple passages intact
+Vocabulary Bank,5095,5095,0,PASS,"5095 words checked, 12 ETS topics fully synchronized"
+Mock Tests Catalog,407,407,0,PASS,"All test IDs unique, no duplicate IDs"
+Database Users,0,0,0,PASS,"0 fake seed users found, completely sanitized"

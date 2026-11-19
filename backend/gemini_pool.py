@@ -33,12 +33,13 @@ class GeminiPoolService:
         self._load_keys()
         self._current_index = 0
         self.models_priority = [
-            "gemini-3-flash-preview",
-            "gemini-3.8-flash",
-            "gemini-flash-latest",
+            "gemini-2.5-flash-lite",
+            "gemini-flash-lite-latest",
+            "gemini-3.1-flash-lite",
+            "gemini-3.5-flash-lite",
             "gemini-2.5-flash",
-            "gemini-1.5-flash",
-            "gemini-1.5-pro"
+            "gemini-flash-latest",
+            "gemini-3-flash-preview"
         ]
 
     def _load_keys(self):
@@ -78,12 +79,26 @@ class GeminiPoolService:
         # If all keys cooling, return the one whose cooldown expires earliest
         return min(self.trackers, key=lambda t: t.cooling_until)
 
+    def generate_text(
+        self,
+        prompt: str,
+        temperature: float = 0.3,
+        system_instruction: str = "Bạn là chuyên gia luyện thi TOEIC 990 hàng đầu."
+    ) -> str:
+        res = self.generate_content(
+            system_instruction=system_instruction,
+            user_prompt=prompt,
+            temperature=temperature
+        )
+        return res.get("text", "")
+
     def generate_content(
         self,
         system_instruction: str,
         user_prompt: str,
         max_tokens: int = 2048,
-        temperature: float = 0.7
+        temperature: float = 0.7,
+        response_mime_type: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Calls Gemini API using the API Key pool with automatic failover and rate-limit recovery.
@@ -117,7 +132,8 @@ class GeminiPoolService:
             "generationConfig": {
                 "temperature": temperature,
                 "topP": 0.9,
-                "maxOutputTokens": max_tokens
+                "maxOutputTokens": max_tokens,
+                **({"responseMimeType": response_mime_type} if response_mime_type else {})
             }
         }
 
@@ -129,7 +145,7 @@ class GeminiPoolService:
             for model_name in self.models_priority:
                 url = f"{GEMINI_API_BASE}/{model_name}:generateContent?key={tracker.key}"
                 try:
-                    with httpx.Client(timeout=7.0) as client:
+                    with httpx.Client(timeout=25.0) as client:
                         response = client.post(url, json=payload, headers={"Content-Type": "application/json"})
                     
                     if response.status_code == 200:
@@ -139,7 +155,10 @@ class GeminiPoolService:
                             raw_text = candidates[0].get("content", {}).get("parts", [{}])[0].get("text", "")
                             tracker.request_count += 1
                             parsed_quiz = self._extract_quiz_from_text(raw_text)
+                            # Only strip quiz block if it actually contained a quiz; if raw_text is purely JSON (e.g. grading), preserve it
                             clean_text = self._strip_quiz_json_block(raw_text)
+                            if not clean_text and raw_text:
+                                clean_text = raw_text.strip()
 
                             return {
                                 "success": True,
@@ -151,9 +170,9 @@ class GeminiPoolService:
 
                     # Handle 429 Too Many Requests / Resource Exhausted
                     if response.status_code == 429 or "RESOURCE_EXHAUSTED" in response.text:
-                        tracker.mark_rate_limited(cooldown_seconds=65.0)
-                        last_error = "Rate limit (429) hit, switching to next key."
-                        break # Break model loop, switch to next key in tracker loop
+                        logger.warning(f"[GeminiPool] Model {model_name} rate-limited (429). Trying fallback model...")
+                        last_error = f"Rate limit (429) hit on {model_name}."
+                        continue # Try next fallback model with the same key
 
                     # Handle 404 (Model not supported on this endpoint)
                     if response.status_code == 404:

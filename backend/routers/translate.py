@@ -108,7 +108,35 @@ def load_vocab_store() -> Dict[str, Dict[str, Any]]:
     _vocab_store = store
     return _vocab_store
 
+_translation_memory_cache: Dict[str, str] = {}
+
 def fetch_translation(text: str, src: str = "en", dest: str = "vi") -> str:
+    clean_q = text.strip()
+    if not clean_q:
+        return ""
+    cache_key = f"{src}_{dest}_{clean_q.lower()}"
+    if cache_key in _translation_memory_cache:
+        return _translation_memory_cache[cache_key]
+
+    headers_list = [
+        {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"},
+        {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"}
+    ]
+
+    # Provider 1: Google clients5 dict-chrome-ex (Very high quota, doesn't easily 429)
+    try:
+        url = f"https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl={src}&tl={dest}&q={urllib.parse.quote(clean_q)}"
+        req = urllib.request.Request(url, headers=headers_list[0])
+        with urllib.request.urlopen(req, timeout=3) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            if isinstance(data, list) and len(data) > 0 and isinstance(data[0], str) and data[0].strip():
+                result = data[0].strip()
+                _translation_memory_cache[cache_key] = result
+                return result
+    except Exception:
+        pass
+
+    # Provider 2: Google translate.googleapis.com client=gtx
     try:
         url = (
             "https://translate.googleapis.com/translate_a/single?client=gtx&sl="
@@ -116,15 +144,49 @@ def fetch_translation(text: str, src: str = "en", dest: str = "vi") -> str:
             + "&tl="
             + dest
             + "&dt=t&q="
-            + urllib.parse.quote(text)
+            + urllib.parse.quote(clean_q)
         )
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
-        with urllib.request.urlopen(req, timeout=4) as response:
+        req = urllib.request.Request(url, headers=headers_list[1])
+        with urllib.request.urlopen(req, timeout=3) as response:
             res = json.loads(response.read().decode("utf-8"))
             translated = "".join([item[0] for item in res[0] if item and item[0]])
-            return translated.strip()
+            if translated.strip():
+                result = translated.strip()
+                _translation_memory_cache[cache_key] = result
+                return result
     except Exception:
-        return ""
+        pass
+
+    # Provider 3: MyMemory API fallback
+    try:
+        mm_url = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(clean_q)}&langpair={src}|{dest}"
+        req = urllib.request.Request(mm_url, headers=headers_list[0])
+        with urllib.request.urlopen(req, timeout=3) as response:
+            res = json.loads(response.read().decode("utf-8"))
+            mm_trans = res.get("responseData", {}).get("translatedText", "").strip()
+            if mm_trans and "MYMEMORY WARNING" not in mm_trans.upper():
+                _translation_memory_cache[cache_key] = mm_trans
+                return mm_trans
+    except Exception:
+        pass
+
+    # Provider 4: Gemini AI fallback
+    try:
+        from gemini_pool import gemini_pool
+        ai_res = gemini_pool.generate_content(
+            system_instruction="You are a professional English-Vietnamese translator. Return ONLY the direct Vietnamese translation word or short phrase, with no notes, explanations, or quotes.",
+            user_prompt=f"Translate to Vietnamese: {clean_q}",
+            max_tokens=60,
+            temperature=0.1
+        )
+        ai_text = (ai_res.get("text") or "").strip()
+        if ai_text and len(ai_text) < 100 and "sorry" not in ai_text.lower():
+            _translation_memory_cache[cache_key] = ai_text
+            return ai_text
+    except Exception:
+        pass
+
+    return ""
 
 def fetch_google_dict_details(text: str, src: str = "en", dest: str = "vi") -> Dict[str, Any]:
     try:
@@ -136,8 +198,8 @@ def fetch_google_dict_details(text: str, src: str = "en", dest: str = "vi") -> D
             + "&dt=t&dt=bd&dt=rm&dt=ss&dt=md&q="
             + urllib.parse.quote(text)
         )
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
-        with urllib.request.urlopen(req, timeout=4) as response:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"})
+        with urllib.request.urlopen(req, timeout=3) as response:
             res = json.loads(response.read().decode("utf-8"))
             translated = "".join([item[0] for item in res[0] if item and item[0]])
 
@@ -647,8 +709,14 @@ def translate_lookup(payload: dict):
                 if len(key_vocab) >= 4:
                     break
 
+    if not translation and word_detail:
+        translation = word_detail.get("context_meaning") or word_detail.get("meaning") or ""
+
     if not translation:
-        translation = "Không thể lấy bản dịch lúc này. Vui lòng thử lại."
+        translation = fetch_translation(text)
+
+    if not translation:
+        translation = text
 
     return {
         "original_text": text,

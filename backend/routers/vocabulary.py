@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from database import get_db
 import models
-from auth import get_current_user_optional
+from auth import get_current_user_optional, GUEST_USER_ID
 
 router = APIRouter(prefix="/api/vocabulary", tags=["vocabulary"])
 
@@ -26,9 +26,9 @@ def get_vocab_bank():
                 raw_list = json.loads(VOCAB_FILE.read_text(encoding="utf-8"))
                 processed = []
                 for item in raw_list:
-                    # Parse meanings_json
+                    # Parse meanings or meanings_json
                     meanings = []
-                    meanings_raw = item.get("meanings_json")
+                    meanings_raw = item.get("meanings") or item.get("meanings_json")
                     if meanings_raw:
                         if isinstance(meanings_raw, str):
                             try:
@@ -47,15 +47,21 @@ def get_vocab_bank():
                         "part_name": item.get("part_name", "All"),
                         "test_name": item.get("test_name", ""),
                         "set_name": item.get("set_name", ""),
+                        "category": item.get("category") or item.get("topic") or "office",
+                        "topic": item.get("topic") or item.get("category") or "office",
+                        "level": item.get("level") or "TOEIC 650",
                         "meaning": first_meaning.get("meaning", ""),
                         "part_of_speech": first_meaning.get("part_of_speech", ""),
                         "example": first_meaning.get("example", ""),
                         "example_vi": first_meaning.get("example_vi", ""),
                         "toeic_tip": first_meaning.get("toeic_tip", ""),
-                        "word_family": first_meaning.get("word_family", []),
-                        "collocations": first_meaning.get("collocations", []),
+                        "word_family": first_meaning.get("word_family") or item.get("word_family") or [],
+                        "collocations": first_meaning.get("collocations") or item.get("phrases") or [],
+                        "synonyms": item.get("synonyms") or first_meaning.get("synonyms") or [],
                         "antonyms": first_meaning.get("antonyms", []),
-                        "audio_url": resolve_media_url(item.get("audio_url"), media_type="audio") if item.get("audio_url") else None
+                        "audio_us": item.get("audio_us"),
+                        "audio_uk": item.get("audio_uk"),
+                        "audio_url": resolve_media_url(item.get("audio_url") or item.get("audio_us") or item.get("audio_uk"), media_type="audio") if (item.get("audio_url") or item.get("audio_us") or item.get("audio_uk")) else None
                     })
                 _vocab_cache = processed
             except Exception as e:
@@ -72,19 +78,27 @@ TOPIC_ALIASES = {
     "personnel": ["personnel", "nhân sự", "tuyển dụng", "nhân sự & tuyển dụng", "phỏng vấn", "lương", "đãi ngộ", "thăng chức", "hiring"],
     "travel": ["travel", "du lịch", "khách sạn", "du lịch & khách sạn", "máy bay", "vé", "hành lý", "tour", "chuyến đi", "airlines", "hotels"],
     "dining": ["dining", "nhà hàng", "sự kiện", "nhà hàng & sự kiện", "ẩm thực", "ăn uống", "bữa trưa", "bữa tối", "tiệc", "cà phê", "restaurant"],
+    "marketing": ["marketing", "tiếp thị", "bán hàng", "quảng cáo", "marketing & bán hàng", "thị trường", "khuyến mãi", "sản phẩm", "sales"],
     "technology": ["technology", "kỹ thuật", "thiết bị", "kỹ thuật & thiết bị", "công nghệ", "máy tính", "phần mềm", "phần cứng", "bảo trì", "computers", "electronics"],
-    "marketing": ["marketing", "tiếp thị", "bán hàng", "quảng cáo", "marketing & bán hàng", "thị trường", "khuyến mãi", "sản phẩm", "sales"]
+    "shopping": ["shopping", "mua sắm", "tiêu dùng", "bán lẻ", "cửa hàng", "siêu thị", "giá cả", "hàng hóa", "retail"],
+    "entertainment": ["entertainment", "giải trí", "nghệ thuật", "âm nhạc", "phim ảnh", "rạp chiếu", "sân khấu", "art", "music", "movies"],
+    "health": ["health", "y tế", "sức khỏe", "bệnh viện", "bác sĩ", "thuốc", "bảo hiểm", "y khoa", "medical", "hospital"],
+    "housing": ["housing", "bất động sản", "nhà ở", "thuê nhà", "căn hộ", "xây dựng", "kiến trúc", "real estate", "property"]
 }
 
 TOPIC_PART_NAMES = {
     "contract": ["contract", "warranty", "warranties", "business planning", "agreement", "clause", "terms", "legal"],
-    "office": ["office", "board meeting", "procedure", "supplies", "stationery", "correspondence", "department", "property"],
+    "office": ["office", "board meeting", "procedure", "supplies", "stationery", "correspondence", "department"],
     "finance": ["bank", "banking", "account", "accounting", "finance", "financial", "tax", "taxes", "invoice", "invoices", "investment", "investments"],
     "personnel": ["hire", "hiring", "recruit", "interview", "salary", "salaries", "benefit", "benefits", "promotion", "promotions", "pension", "job advertising", "applying"],
     "travel": ["travel", "flight", "airline", "airlines", "hotel", "hotels", "car rental", "train", "trains", "tourism", "passenger"],
     "dining": ["dining", "eat", "eating", "restaurant", "lunch", "dinner", "cooking", "chef", "meal", "catering", "event", "events", "conference", "conferences"],
+    "marketing": ["market", "marketing", "media", "product development", "advertising", "campaign", "client"],
     "technology": ["electronic", "electronics", "computer", "computers", "technology", "device", "quality control", "inventory", "shipping"],
-    "marketing": ["market", "marketing", "shopping", "media", "product development", "theater", "museum", "museums", "movies", "music", "advertising"]
+    "shopping": ["shopping", "retail", "store", "supermarket", "discount", "merchandise", "goods", "customer"],
+    "entertainment": ["entertainment", "theater", "museum", "museums", "movies", "music", "concert", "exhibition", "art"],
+    "health": ["health", "doctor", "dentist", "pharmacy", "medical", "hospital", "clinic", "medicine", "prescription"],
+    "housing": ["housing", "apartment", "real estate", "property", "tenant", "landlord", "rent", "construction", "renovation"]
 }
 
 TOPIC_KEYWORDS = {
@@ -94,8 +108,12 @@ TOPIC_KEYWORDS = {
     "personnel": ["employ", "staff", "recruit", "interview", "resume", "cv", "salary", "wage", "promot", "train", "training", "hire", "candidat", "perform", "benefit", "retire", "pension", "qualificat", "applicant", "personnel", "payroll", "job"],
     "travel": ["flight", "hotel", "airport", "reserv", "luggage", "baggage", "ticket", "tour", "destinat", "itinerary", "passenger", "board", "boarding", "airline", "vacat", "trip", "train", "station", "transit", "passport", "visa", "check-in", "cruise", "subway"],
     "dining": ["restaurant", "menu", "chef", "meal", "food", "cater", "beverage", "drink", "dinner", "lunch", "breakfast", "banquet", "buffet", "recipe", "cook", "order", "waiter", "waitress", "dish", "dine", "dining", "table", "snack", "cafe", "coffee"],
+    "marketing": ["market", "client", "custom", "product", "launch", "campaign", "advertis", "survey", "brand", "sale", "sales", "discount", "strateg", "promot", "consum", "competit", "buyer", "distribut", "commercial", "publicit", "billboard", "sponsor"],
     "technology": ["softwar", "hardwar", "comput", "system", "network", "data", "devic", "install", "mainten", "technic", "glitch", "error", "machine", "equip", "screen", "monitor", "digit", "program", "internet", "electronic", "repair", "wire", "cable", "battery", "tool"],
-    "marketing": ["market", "client", "custom", "product", "launch", "campaign", "advertis", "survey", "brand", "sale", "sales", "discount", "strateg", "promot", "consum", "competit", "buyer", "distribut", "commercial", "publicit", "billboard", "sponsor"]
+    "shopping": ["shop", "store", "buy", "purchase", "cashier", "receipt", "discount", "refund", "exchange", "mall", "retail", "grocer", "supermarket", "shelf", "cart", "basket", "aisle", "barcode"],
+    "entertainment": ["music", "concert", "film", "movie", "theater", "cinema", "show", "perform", "artist", "actor", "actress", "exhibit", "museum", "gallery", "ticket", "festival", "audience", "stage"],
+    "health": ["doctor", "health", "hospital", "clinic", "patient", "nurse", "dentist", "medic", "prescription", "pharmacy", "drug", "illness", "symptom", "treatment", "cure", "pain", "injury", "checkup"],
+    "housing": ["house", "home", "apart", "rent", "lease", "tenant", "landlord", "flat", "room", "build", "construct", "renovat", "estate", "property", "realtor", "furnish", "decorat", "roof", "plumb"]
 }
 
 def resolve_topic_id(cat_input: str) -> str:
@@ -110,12 +128,20 @@ def resolve_topic_id(cat_input: str) -> str:
 def match_topic(item: dict, topic_id: str) -> bool:
     if not topic_id or topic_id == "all":
         return True
+    target = topic_id.lower().strip()
+    item_cat = (item.get("category") or item.get("topic") or "").lower().strip()
+    if item_cat:
+        resolved_cat = resolve_topic_id(item_cat)
+        if resolved_cat in TOPIC_ALIASES:
+            return resolved_cat == target
+        if resolved_cat == target:
+            return True
     pname = item.get("part_name", "").lower()
-    if any(k in pname for k in TOPIC_PART_NAMES.get(topic_id, [])):
+    if any(k in pname for k in TOPIC_PART_NAMES.get(target, [])):
         return True
     
     text = f"{item.get('word', '')} {item.get('meaning', '')} {item.get('example', '')}".lower()
-    for kw in TOPIC_KEYWORDS.get(topic_id, []):
+    for kw in TOPIC_KEYWORDS.get(target, []):
         if kw in text:
             return True
     return False
@@ -123,15 +149,31 @@ def match_topic(item: dict, topic_id: str) -> bool:
 def match_level(item: dict, lvl: str) -> bool:
     if not lvl or lvl.lower() == "all":
         return True
+    item_lvl = (item.get("level") or "").lower().strip()
+    req_lvl = lvl.lower().strip()
+    if req_lvl in item_lvl or item_lvl in req_lvl:
+        return True
     w = item.get("word", "").strip()
-    l_lower = lvl.lower()
-    if "500" in l_lower:
-        return len(w) <= 6
-    elif "650" in l_lower:
-        return 7 <= len(w) <= 8
-    elif "750" in l_lower or "900" in l_lower:
-        return len(w) >= 9
+    if "500" in req_lvl:
+        return "500" in item_lvl or len(w) <= 6
+    elif "650" in req_lvl:
+        return "650" in item_lvl or (7 <= len(w) <= 9)
+    elif "750" in req_lvl or "900" in req_lvl:
+        return "750" in item_lvl or len(w) >= 10
     return True
+
+@router.get("/topic-stats")
+def get_topic_stats():
+    words = get_vocab_bank()
+    counts = {tid: 0 for tid in TOPIC_ALIASES}
+    counts["total"] = len(words)
+    for w in words:
+        cat = resolve_topic_id(w.get("category") or w.get("topic") or "office")
+        if cat in counts:
+            counts[cat] += 1
+        else:
+            counts["office"] += 1
+    return counts
 
 @router.get("")
 def list_vocabulary(
@@ -139,24 +181,28 @@ def list_vocabulary(
     part: str = Query(None),
     category: str = Query(None),
     level: str = Query(None),
-    limit: int = Query(50, ge=1, le=100),
+    limit: int = Query(50, ge=1, le=10000),
     page: int = Query(1, ge=1)
 ):
+    if not isinstance(page, int):
+        page = 1
+    if not isinstance(limit, int):
+        limit = 50
     words = get_vocab_bank()
     filtered = words
 
-    if search:
+    if search and isinstance(search, str):
         kw = search.lower().strip()
         filtered = [
             w for w in filtered
-            if kw in w["word"].lower() or kw in w["meaning"].lower() or kw in w["example"].lower()
+            if kw in w["word"].lower() or kw in w["meaning"].lower() or kw in w.get("example", "").lower()
         ]
 
-    if part and part != "all":
+    if part and isinstance(part, str) and part != "all":
         p_clean = part.upper()
         filtered = [w for w in filtered if p_clean in w["part_name"].upper()]
 
-    if category and category != "all":
+    if category and isinstance(category, str) and category != "all":
         tid = resolve_topic_id(category)
         if tid in TOPIC_ALIASES or tid in TOPIC_KEYWORDS:
             filtered = [w for w in filtered if match_topic(w, tid)]
@@ -170,7 +216,7 @@ def list_vocabulary(
                 or cat_clean in w.get("meaning", "").lower()
             ]
 
-    if level and level != "all":
+    if level and isinstance(level, str) and level != "all":
         filtered = [w for w in filtered if match_level(w, level)]
 
     start = (page - 1) * limit
@@ -178,8 +224,11 @@ def list_vocabulary(
 
     # Enrich words with category and level attributes for client UI
     for w in paged:
-        w_len = len(w.get("word", ""))
-        w["level"] = "TOEIC 500" if w_len <= 6 else "TOEIC 650" if w_len <= 8 else "TOEIC 750+"
+        if not w.get("level"):
+            w_len = len(w.get("word", ""))
+            w["level"] = "TOEIC 500" if w_len <= 6 else "TOEIC 650" if w_len <= 9 else "TOEIC 750+"
+        if not w.get("category"):
+            w["category"] = w.get("topic") or "office"
         if "audio_url" in w and not w.get("audio_us"):
             w["audio_us"] = w["audio_url"]
 
@@ -192,16 +241,7 @@ def list_vocabulary(
     }
 
 
-TOPIC_KEYWORDS = {
-    "office": ["office", "desk", "photocopy", "stationery", "meeting", "colleague", "department", "manager", "memo", "report", "filing", "supplies"],
-    "finance": ["finance", "bank", "budget", "invoice", "payment", "revenue", "profit", "expense", "audit", "account", "tax", "cost", "fund"],
-    "personnel": ["employee", "staff", "recruit", "interview", "resume", "salary", "promotion", "training", "hire", "candidate", "performance", "benefits"],
-    "travel": ["flight", "hotel", "airport", "reservation", "luggage", "ticket", "tourism", "destination", "itinerary", "passenger", "board"],
-    "dining": ["restaurant", "menu", "chef", "meal", "food", "catering", "beverage", "dinner", "banquet", "buffet", "recipe"],
-    "marketing": ["market", "client", "customer", "product", "launch", "campaign", "advertising", "survey", "brand", "sales", "discount", "strategy"],
-    "contract": ["contract", "agreement", "negotiate", "clause", "terms", "sign", "partner", "legal", "warranty", "penalty", "vendor"],
-    "technology": ["software", "hardware", "computer", "system", "network", "data", "device", "install", "maintenance", "technical", "glitch", "error"]
-}
+# (Using primary TOPIC_KEYWORDS defined above)
 
 def classify_word_topic(word: str, meaning: str, context: str) -> str:
     text = f"{word} {meaning} {context}".lower()
@@ -219,7 +259,7 @@ def get_vocabulary_review_due(
     Returns words due for review via Spaced Repetition (SRS).
     If user has no cards, automatically seeds initial deck from bank.
     """
-    user_id = user.id if user else 1
+    user_id = user.id if user else GUEST_USER_ID
     now = datetime.utcnow()
     cards = db.query(models.UserFlashcard).filter(
         models.UserFlashcard.user_id == user_id,
@@ -294,13 +334,16 @@ def submit_vocabulary_review(
     Updates flashcard review intervals using SM-2 Spaced Repetition Algorithm.
     Grade: 1=Again, 2=Hard, 3=Good, 4=Easy
     """
-    user_id = user.id if user else 1
+    user_id = user.id if user else GUEST_USER_ID
     word_id = payload.get("word_id")
     grade = int(payload.get("grade", 3))
 
+    from sqlalchemy import func
     card = db.query(models.UserFlashcard).filter(
         models.UserFlashcard.user_id == user_id,
-        (models.UserFlashcard.word_id == word_id) | (models.UserFlashcard.id == word_id)
+        (models.UserFlashcard.word_id == str(word_id)) |
+        (func.lower(models.UserFlashcard.word) == str(word_id).strip().lower()) |
+        (models.UserFlashcard.id == (int(word_id) if str(word_id).isdigit() else -1))
     ).first()
 
     if not card:
@@ -368,7 +411,7 @@ def get_learned_vocabulary(
     """
     Returns all vocabulary words learned by the user with SRS status.
     """
-    user_id = user.id if user else 1
+    user_id = user.id if user else GUEST_USER_ID
     cards = db.query(models.UserFlashcard).filter(
         models.UserFlashcard.user_id == user_id
     ).order_by(models.UserFlashcard.last_reviewed_at.desc()).all()

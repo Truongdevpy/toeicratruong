@@ -8,7 +8,8 @@ import {
   Headphones,
   BookOpen,
   BarChart3,
-  Target
+  Target,
+  Video
 } from 'lucide-react';
 import { api } from '../services/api';
 
@@ -45,19 +46,23 @@ export const PlacementResultPage: React.FC<PlacementResultPageProps> = ({ onNavi
     );
   }
 
-  const estimatedScore = result?.estimated_score || 575;
-  const listeningScore = result?.listening_score || 280;
-  const readingScore = result?.reading_score || 295;
+  const estimatedScore = result?.estimated_score ?? 10;
+  const listeningScore = result?.listening_score ?? 5;
+  const readingScore = result?.reading_score ?? 5;
   const skills = result?.skills_pct || {
-    listening: 42,
-    reading: 76,
-    grammar: 48,
-    vocabulary: 62,
-    speaking: 55,
-    writing: 60,
+    listening: 0,
+    reading: 0,
+    grammar: 0,
+    vocabulary: 0,
+    speaking: 0,
+    writing: 0,
   };
-  const strengths = result?.strengths || ['Reading Part 5 Basic Grammar', 'Listening Part 1 Photos', 'Everyday Vocabulary'];
-  const weakAreas = result?.weak_areas || ['Listening Part 3 (Conversations)', 'Word Form (Suffixes)', 'Reading Part 7 (Passages)'];
+  const strengths = result?.strengths || [];
+  const weakAreas = result?.weak_areas || [
+    'Part 1 - Quan sát tranh và từ vựng mô tả hành động',
+    'Part 2 - Phản xạ nghe câu hỏi ngắn và bẫy phát âm',
+    'Part 5 - Nền tảng ngữ pháp cơ bản và từ loại Word Form'
+  ];
   const errorPatterns = result?.error_patterns || [];
   const _partAnalysis = result?.part_analysis || {};
 
@@ -162,12 +167,18 @@ export const PlacementResultPage: React.FC<PlacementResultPageProps> = ({ onNavi
                 Điểm mạnh nổi bật (Strengths)
               </h3>
               <div className="space-y-2">
-                {strengths.map((st: string, idx: number) => (
-                  <div key={idx} className="p-3 bg-emerald-50/70 border border-emerald-200/60 rounded-xl text-xs text-emerald-900 font-medium flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
-                    {st}
+                {strengths && strengths.length > 0 ? (
+                  strengths.map((st: string, idx: number) => (
+                    <div key={idx} className="p-3 bg-emerald-50/70 border border-emerald-200/60 rounded-xl text-xs text-emerald-900 font-medium flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 shrink-0"></span>
+                      {st}
+                    </div>
+                  ))
+                ) : (
+                  <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs text-slate-500 italic">
+                    Chưa ghi nhận điểm mạnh nổi bật (do chưa hoàn thành câu hỏi hoặc chưa có câu đúng). Hệ thống khuyến nghị bắt đầu củng cố kiến thức từ lộ trình cơ bản.
                   </div>
-                ))}
+                )}
               </div>
             </div>
 
@@ -220,6 +231,70 @@ export const PlacementResultPage: React.FC<PlacementResultPageProps> = ({ onNavi
             <Target className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
             <div>
               <strong>Kết luận của Trợ lý AI:</strong> {result?.ai_summary || 'Hệ thống đã nhận diện được các phần điểm còn thiếu và đã thiết lập lộ trình thích ứng riêng cho bạn.'}
+            </div>
+          </div>
+
+
+          {/* Recommended Video Lessons based on weak points */}
+          <div className="p-6 bg-linear-to-br from-indigo-50/70 via-blue-50/50 to-white border border-blue-200/80 rounded-3xl space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-sm font-bold text-slate-900">
+                <Video className="w-4 h-4 text-blue-600" />
+                Kho video bài giảng trọng tâm bổ trợ theo điểm yếu
+              </div>
+              <button
+                type="button"
+                onClick={() => onNavigate('/video-lessons')}
+                className="text-xs font-bold text-blue-600 hover:text-blue-700 flex items-center gap-1 cursor-pointer"
+              >
+                Xem tất cả 58+ video
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[
+                {
+                  title: 'Chiến thuật giải trọn cụm 3 câu Part 3 & Part 4',
+                  part: 'Part 3-4',
+                  tag: 'Listening Cluster',
+                  duration: '27:30',
+                },
+                {
+                  title: 'Part 6 Text Completion: Kỹ năng bắt mạch bài văn',
+                  part: 'Part 6',
+                  tag: 'Reading Điền từ',
+                  duration: '29:45',
+                },
+                {
+                  title: 'Bí kíp đọc hiểu Part 7 & kỹ năng Skimming / Scanning',
+                  part: 'Part 7',
+                  tag: 'Reading Passage',
+                  duration: '31:20',
+                },
+              ].map((v, idx) => (
+                <div
+                  key={idx}
+                  onClick={() => onNavigate('/video-lessons')}
+                  className="p-3.5 bg-white border border-slate-200/90 rounded-2xl shadow-2xs hover:shadow-sm hover:border-blue-400 transition-all cursor-pointer group flex flex-col justify-between"
+                >
+                  <div className="space-y-1.5">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100">
+                        {v.part}
+                      </span>
+                      <span className="text-[10px] text-slate-400 font-medium">{v.duration}</span>
+                    </div>
+                    <h4 className="text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+                      {v.title}
+                    </h4>
+                  </div>
+                  <div className="pt-2 mt-2 border-t border-slate-100 text-[11px] font-semibold text-blue-600 flex items-center gap-1">
+                    <span>Xem bài giảng</span>
+                    <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 

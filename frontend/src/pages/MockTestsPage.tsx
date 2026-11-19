@@ -43,6 +43,8 @@ import { useAuth } from '../context/AuthContext';
 import { AudioPlayer } from '../components/AudioPlayer';
 import { QuestionImage } from '../components/QuestionImage';
 import { FocusedPracticeRoom } from '../components/FocusedPracticeRoom';
+import { usePagination } from '../hooks/usePagination';
+import { Pagination } from '../components/common/Pagination';
 
 const safeFormatDateTime = (dateStr?: any): string => {
   if (!dateStr) return '--';
@@ -1559,6 +1561,33 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
     });
   }, [questionHistoryList, qHistoryStatusFilter, qHistoryPartFilter, qHistorySearch]);
 
+  const testsPagination = usePagination<TestItem>({
+    data: filteredTests,
+    initialPageSize: 9,
+      });
+
+  const testHistoryPagination = usePagination<TestHistoryRecord>({
+    data: filteredTestHistory,
+    initialPageSize: 10,
+      });
+
+  const qHistoryPagination = usePagination<QuestionHistoryRecord>({
+    data: filteredQuestionHistory,
+    initialPageSize: 15,
+      });
+
+  useEffect(() => {
+    testsPagination.resetPage();
+  }, [searchQuery, selectedCategory, selectedPart, selectedDifficulty, sortBy]);
+
+  useEffect(() => {
+    testHistoryPagination.resetPage();
+  }, [historySearchQuery, historyModeFilter, historySortBy]);
+
+  useEffect(() => {
+    qHistoryPagination.resetPage();
+  }, [qHistorySearch, qHistoryPartFilter, qHistoryStatusFilter]);
+
   // 1. Result View
   if (testResult) {
     return (
@@ -2510,7 +2539,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
             }`}
           >
             <BookOpen className="w-4 h-4" />
-            <span>Kho đề thi ({tests.length})</span>
+            <span>Đề thi ({tests.length})</span>
           </button>
 
           <button
@@ -2842,7 +2871,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredTests.map((test) => {
+              {testsPagination.paginatedData.map((test) => {
                 const stats = getTestStats(test.id);
                 const displayTitle = cleanBranding(test.title);
 
@@ -3040,6 +3069,22 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
               })}
             </div>
           )}
+
+          {/* Catalog Pagination */}
+          {filteredTests.length > 0 && (
+            <div className="pt-4">
+              <Pagination
+                currentPage={testsPagination.currentPage}
+                totalPages={testsPagination.totalPages}
+                totalItems={testsPagination.totalItems}
+                pageSize={testsPagination.pageSize}
+                onPageChange={testsPagination.setPage}
+                onPageSizeChange={testsPagination.setPageSize}
+                pageSizeOptions={[6, 9, 12, 18, 30, 'all']}
+                itemLabel="đề thi"
+              />
+            </div>
+          )}
         </div>
       </div>
     )}
@@ -3154,7 +3199,7 @@ const MockTestsPageInner: React.FC<MockTestsPageProps> = ({
           </div>
         ) : (
           <div className="space-y-3">
-            {filteredTestHistory.map((item) => {
+            {testHistoryPagination.paginatedData.map((item) => {
               const modeLabel =
                 item.mode === 'listening'
                   ? 'Listening'
@@ -3253,6 +3298,22 @@ return (
                 </div>
               );
             })}
+          </div>
+        )}
+
+        {/* Test History Pagination */}
+        {filteredTestHistory.length > 0 && (
+          <div className="pt-4">
+            <Pagination
+              currentPage={testHistoryPagination.currentPage}
+              totalPages={testHistoryPagination.totalPages}
+              totalItems={testHistoryPagination.totalItems}
+              pageSize={testHistoryPagination.pageSize}
+              onPageChange={testHistoryPagination.setPage}
+              onPageSizeChange={testHistoryPagination.setPageSize}
+              pageSizeOptions={[5, 10, 20, 50, 'all']}
+              itemLabel="bài thi"
+            />
           </div>
         )}
       </div>
@@ -3408,7 +3469,7 @@ return (
           </div>
         ) : (
           <div className="space-y-3">
-            {filteredQuestionHistory.slice(0, qHistoryLimit).map((item) => (
+            {qHistoryPagination.paginatedData.map((item) => (
               <div
                 key={item.id}
                 className={`p-4 sm:p-5 rounded-2xl border transition-all ${
@@ -3483,15 +3544,19 @@ return (
               </div>
             ))}
 
-            {filteredQuestionHistory.length > qHistoryLimit && (
-              <div className="text-center pt-2">
-                <button
-                  type="button"
-                  onClick={() => setQHistoryLimit((prev) => prev + 30)}
-                  className="px-5 py-2.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-700 shadow-2xs transition-colors cursor-pointer"
-                >
-                  Xem thêm 30 câu hỏi (còn lại {filteredQuestionHistory.length - qHistoryLimit} câu)
-                </button>
+            {/* Question History Pagination */}
+            {filteredQuestionHistory.length > 0 && (
+              <div className="pt-4">
+                <Pagination
+                  currentPage={qHistoryPagination.currentPage}
+                  totalPages={qHistoryPagination.totalPages}
+                  totalItems={qHistoryPagination.totalItems}
+                  pageSize={qHistoryPagination.pageSize}
+                  onPageChange={qHistoryPagination.setPage}
+                  onPageSizeChange={qHistoryPagination.setPageSize}
+                  pageSizeOptions={[10, 15, 30, 50, 'all']}
+                  itemLabel="câu hỏi"
+                />
               </div>
             )}
           </div>

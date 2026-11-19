@@ -1,0 +1,457 @@
+[
+  {
+    "id": "DATA-01",
+    "name": "Deep link toan app",
+    "route": "/practice/dictation",
+    "element": "dictation-view",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "DATA-03",
+    "name": "Nhan dang bai ETS",
+    "route": "/practice/listening",
+    "element": "listening-practice",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-04",
+    "name": "Tu vung quan trong",
+    "route": "/practice/reading",
+    "element": "reading-practice",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-05",
+    "name": "Part 1 anh sach watermark",
+    "route": "/practice/listening",
+    "element": "part1-photo",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-06",
+    "name": "Phan loai Part 1 4 dang",
+    "route": "/practice/listening",
+    "element": "part1-categories",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-07",
+    "name": "Audio ma hoa va cat cau",
+    "route": "/practice/dictation",
+    "element": "audio-player",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-08",
+    "name": "Chong Mojibake UTF-8",
+    "route": "/practice/reading",
+    "element": "passage-view",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-09",
+    "name": "So cau hien thi khop thuc te",
+    "route": "/practice/reading",
+    "element": "level-badge",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-11",
+    "name": "Mock tests khong trung ID",
+    "route": "/mock-tests",
+    "element": "mock-catalog",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-12",
+    "name": "Tich hop de thi cao",
+    "route": "/mock-tests",
+    "element": "tests-catalog",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-13",
+    "name": "Bo de Part 1 loi giu Part 2-7",
+    "route": "/mock-tests",
+    "element": "mock-tests-list",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "DATA-15",
+    "name": "Khong du lieu ao seed user",
+    "route": "/leaderboard",
+    "element": "leaderboard-table",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "TEST-01",
+    "name": "Giao dien doi theo Part",
+    "route": "/practice/listening",
+    "element": "effective-groups",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-02",
+    "name": "QuestionImage chi o Part 1",
+    "route": "/practice/listening",
+    "element": "question-image",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-03",
+    "name": "An transcript va cau Part 2",
+    "route": "/practice/listening",
+    "element": "part2-options",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-04",
+    "name": "Part 3, 4 cum 3 cau 1 audio",
+    "route": "/practice/listening",
+    "element": "passage-group",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-05",
+    "name": "Part 6, 7 chia doi man hinh",
+    "route": "/practice/reading",
+    "element": "split-pane",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-06",
+    "name": "Drawer danh sach theo dai",
+    "route": "/practice/reading",
+    "element": "range-drawer",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-07",
+    "name": "Audio tu phat khi chuyen cau",
+    "route": "/practice/listening",
+    "element": "audio-player",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-08",
+    "name": "Bang cau hoi trang thai mau",
+    "route": "/practice/reading",
+    "element": "question-status-grid",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-09",
+    "name": "Thoat giua chung luu tien do",
+    "route": "/practice/grammar",
+    "element": "checkpoint-dialog",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "TEST-10",
+    "name": "Focus Mode khong ket state",
+    "route": "/practice/reading",
+    "element": "focus-room",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "TEST-11",
+    "name": "Mo bai nhanh in-memory",
+    "route": "/practice/reading",
+    "element": "fast-loader",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "TEST-12",
+    "name": "Evidence highlight chuan Part 7",
+    "route": "/practice/reading",
+    "element": "evidence-clue",
+    "test": "frontend/src/utils/evidenceExtractor.test.ts"
+  },
+  {
+    "id": "TEST-13",
+    "name": "Placement Test khong lo transcript",
+    "route": "/placement-test",
+    "element": "placement-card",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "TEST-14",
+    "name": "Cham bai AI giai thich Part 1-7",
+    "route": "/practice/reading",
+    "element": "ai-explain-btn",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "TEST-15",
+    "name": "Hoi dap AI Tutor tai cau hoi",
+    "route": "/practice/reading",
+    "element": "ai-tutor-dock",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "HUB-01",
+    "name": "Danh gia AI Practice Hub",
+    "route": "/practice/listening",
+    "element": "ai-assessment-btn",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "HUB-02",
+    "name": "Phan loai dang bai ngoai Part 6, 7",
+    "route": "/practice/reading",
+    "element": "topic-classifier",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "HUB-03",
+    "name": "Footer chi o trang chu",
+    "route": "/",
+    "element": "footer-root",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "HUB-04",
+    "name": "Phan trang chuan Pagination",
+    "route": "/practice/reading",
+    "element": "pagination-nav",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "VOC-03",
+    "name": "Luu tu vung gio tu practiceProgressStore",
+    "route": "/practice/vocabulary",
+    "element": "vocab-basket",
+    "test": "frontend/src/services/srsService.test.ts"
+  },
+  {
+    "id": "VOC-04",
+    "name": "Flashcard SRS lat the 3D",
+    "route": "/practice/flashcards",
+    "element": "flip-card-3d",
+    "test": "frontend/src/services/srsService.test.ts"
+  },
+  {
+    "id": "GRA-01",
+    "name": "Lo trinh Ngu phap DuolingoPathView",
+    "route": "/practice/grammar",
+    "element": "duolingo-path",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "GRA-02",
+    "name": "Modal bai hoc ngu phap",
+    "route": "/practice/grammar",
+    "element": "practice-modal",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "GRA-03",
+    "name": "DailyReviewModal SRS ngu phap",
+    "route": "/practice/grammar",
+    "element": "daily-review-modal",
+    "test": "frontend/src/services/srsService.test.ts"
+  },
+  {
+    "id": "DIC-01",
+    "name": "Dictation Part 1 4 dong A-D",
+    "route": "/practice/dictation",
+    "element": "dictation-p1",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "DIC-02",
+    "name": "Dictation Part 2 cau hoi + A-C",
+    "route": "/practice/dictation",
+    "element": "dictation-p2",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "DIC-03",
+    "name": "Dictation Part 3, 4 de trung binh kho",
+    "route": "/practice/dictation",
+    "element": "dictation-p34",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "DIC-04",
+    "name": "So sanh tu thong minh Word Diff",
+    "route": "/practice/dictation",
+    "element": "diff-tokens",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "DIC-05",
+    "name": "Giao dien nghe chep sach ID",
+    "route": "/practice/dictation",
+    "element": "dictation-card",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "SPK-01",
+    "name": "Bo banner khau hieu speaking",
+    "route": "/practice/speaking",
+    "element": "speaking-header",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "SPK-02",
+    "name": "Luu sentenceScores qua F5",
+    "route": "/practice/speaking",
+    "element": "score-badge",
+    "test": "frontend/src/services/srsService.test.ts"
+  },
+  {
+    "id": "SPK-03",
+    "name": "Cham diem that bang Gemini",
+    "route": "/practice/speaking",
+    "element": "ai-grade-btn",
+    "test": "backend/tests/test_gemini_keys_and_grading.py"
+  },
+  {
+    "id": "SPK-04",
+    "name": "Luyen phat am tung tu 0-100",
+    "route": "/practice/speaking",
+    "element": "pronunciation-meter",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "WRI-01",
+    "name": "Kho de Writing 1-8 phan trang",
+    "route": "/practice/writing",
+    "element": "writing-pagination",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "WRI-02",
+    "name": "Cham bai Writing Gemini",
+    "route": "/practice/writing",
+    "element": "writing-eval",
+    "test": "backend/tests/test_gemini_keys_and_grading.py"
+  },
+  {
+    "id": "WRI-03",
+    "name": "Go bua ky tu khong diem cao",
+    "route": "/practice/writing",
+    "element": "rubric-score",
+    "test": "backend/tests/test_gemini_keys_and_grading.py"
+  },
+  {
+    "id": "WRI-04",
+    "name": "Bo Band 200 va 10-25 tu",
+    "route": "/practice/writing",
+    "element": "writing-prompt",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "GAM-01",
+    "name": "9 mini games Ban C",
+    "route": "/games",
+    "element": "games-grid",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAM-02",
+    "name": "GameSetupModal modal desktop bottom-sheet",
+    "route": "/games",
+    "element": "game-setup-modal",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAM-03",
+    "name": "Che do Vo han ket qua",
+    "route": "/games",
+    "element": "infinite-mode",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAM-04",
+    "name": "gameDataService tai lo nho co cache",
+    "route": "/games",
+    "element": "game-cache",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAM-05",
+    "name": "Khong hien so lieu gia khi chua co lich su",
+    "route": "/games",
+    "element": "empty-history",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAM-06",
+    "name": "Loi game da sua deeplink rieng",
+    "route": "/games",
+    "element": "game-deeplink",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "GAM-07",
+    "name": "Giao dien theme bo banner",
+    "route": "/games",
+    "element": "games-container",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAMI-01",
+    "name": "He thong Tim XP streak that",
+    "route": "/leaderboard",
+    "element": "user-streak-card",
+    "test": "frontend/src/services/grammarProgressService.test.ts"
+  },
+  {
+    "id": "GAMI-02",
+    "name": "Bang xep hang gon bo CLB mo phong",
+    "route": "/leaderboard",
+    "element": "realtime-badge",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "GAMI-03",
+    "name": "Cong dong like va bai dang con sau F5",
+    "route": "/community",
+    "element": "community-feed",
+    "test": "e2e/flows.spec.ts"
+  },
+  {
+    "id": "GAMI-04",
+    "name": "Ho so doi ten avatar",
+    "route": "/dashboard",
+    "element": "edit-profile-btn",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "SYS-01",
+    "name": "Khong trang trang build 0 loi",
+    "route": "/",
+    "element": "app-root",
+    "test": "e2e/smoke.spec.ts"
+  },
+  {
+    "id": "SYS-03",
+    "name": "Unit test cho srsService",
+    "route": "/practice/grammar",
+    "element": "srs-logic",
+    "test": "frontend/src/services/srsService.test.ts"
+  },
+  {
+    "id": "SYS-04",
+    "name": "Khoa API nam o server",
+    "route": "/",
+    "element": "backend-env",
+    "test": "scripts/run_data_tests.py"
+  },
+  {
+    "id": "VOC-01",
+    "name": "Lo trinh Chinh phuc Tu vung TOEIC ban do uon luon",
+    "route": "/practice/vocabulary",
+    "element": "vocab-path-container",
+    "test": "frontend/src/services/vocabPath.test.ts"
+  },
+  {
+    "id": "VOC-02",
+    "name": "Luyen doc tu bang micro cham diem 0-100",
+    "route": "/practice/vocabulary",
+    "element": "vocab-mic-btn",
+    "test": "frontend/src/services/vocabPath.test.ts"
+  }
+]

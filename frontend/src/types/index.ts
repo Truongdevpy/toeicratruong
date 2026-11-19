@@ -1,4 +1,4 @@
-export interface User {
+﻿export interface User {
   id: number;
   email: string;
   full_name: string;
@@ -77,20 +77,27 @@ export interface Question {
   options?: Record<string, string>;
   option_translations?: Record<string, string>;
   difficulty_level?: number;
+  level?: string;
   key_vocab?: { word: string; meaning: string }[];
   related_grammar?: string;
+  question_type?: string;
+  photo_type?: string;
+  topic?: string;
+  grammar_tags?: string[];
 }
 
 export interface Flashcard {
+  part?: string;
+  source_context?: string;
   id: number;
-  word_id: string;
+  word_id?: string;
   word: string;
   ipa: string;
   meaning: string;
   part_of_speech: string;
   example: string;
   example_vi?: string;
-  collocations?: string[];
+  collocations?: (string | { phrase?: string; meaning?: string; image_url?: string })[];
   word_family?: string[];
   toeic_tip?: string;
   audio_url?: string;
@@ -102,7 +109,13 @@ export interface Flashcard {
   topic_name?: string;
   topic_icon?: string;
   is_learned?: boolean;
+  is_new?: boolean;
+  is_due?: boolean;
+  is_learning?: boolean;
+  is_mastered?: boolean;
   from_db?: boolean;
+  is_weak_area?: boolean;
+  next_review_at?: string | null;
 }
 
 export interface VocabWord {
@@ -121,7 +134,7 @@ export interface VocabWord {
   audio_uk?: string;
   image_url?: string;
   synonyms?: string[];
-  collocations?: string[];
+  collocations?: (string | { phrase?: string; meaning?: string; image_url?: string })[];
 }
 
 export interface GrammarQuestion {
@@ -156,6 +169,8 @@ export interface GrammarTopic {
   questions_count?: number;
   lessons_count?: number;
   subtopics_count?: number;
+  subtitle?: string;
+  badge_color?: string;
   practice_questions?: GrammarQuestion[];
 }
 
@@ -191,6 +206,7 @@ export interface CommunityPost {
   content: string;
   category: string;
   likes_count: number;
+  user_has_liked?: boolean;
   comments_count: number;
   created_at: string;
   created_at_raw?: string;
@@ -234,6 +250,8 @@ export interface LeaderboardEntry {
   streak_days: number;
   questions_count: number;
   exp_points: number;
+  vocab_exp?: number;
+  grammar_exp?: number;
   score_growth: number;
   accuracy_pct: number;
   badge: string;
@@ -242,9 +260,15 @@ export interface LeaderboardEntry {
   primary_value: string;
   primary_num: number;
   is_me: boolean;
+  is_anonymous?: boolean;
+  is_cheered?: boolean;
   percentile_label?: string;
-  points_to_next?: number;
-  next_user_name?: string;
+  points_to_next?: number | null;
+  next_user_name?: string | null;
+  score_status?: 'estimated' | 'insufficient_data';
+  score_label?: string;
+  score_hint?: string | null;
+  score_explanation?: string;
 }
 
 export interface LeaderboardResponse {
@@ -254,6 +278,9 @@ export interface LeaderboardResponse {
   reset_countdown: string;
   league: string;
   total_participants: number;
+  data_source_label?: string;
+  is_mock?: boolean;
+  cheered_today?: number[];
   podium: LeaderboardEntry[];
   rankings: LeaderboardEntry[];
   my_rank: LeaderboardEntry | null;
@@ -328,6 +355,16 @@ export interface DictationCheckResponse {
 
 export interface DictationChallenge {
   id: string;
+  image_url?: string;
+  options?: {
+    A?: string;
+    B?: string;
+    C?: string;
+    D?: string;
+    [key: string]: string | undefined;
+  };
+  question_text?: string;
+  correct_answer?: string;
   set_id?: string;
   part: number;
   title: string;
@@ -346,4 +383,102 @@ export interface DictationChallenge {
     meaning: string;
     part_of_speech: string;
   }[];
+}
+
+export interface AIAssessmentStats {
+  user_id: number;
+  scope: string;
+  scope_name: string;
+  time_range: string;
+  total_count: number;
+  correct_count: number;
+  wrong_count: number;
+  accuracy: number;
+  data_confidence: 'insufficient' | 'low' | 'medium' | 'high';
+  part_breakdown: Array<{
+    part: number;
+    part_name: string;
+    total: number;
+    correct: number;
+    accuracy: number;
+  }>;
+  verified_strengths: Array<{
+    topic: string;
+    part: number;
+    total: number;
+    correct: number;
+    accuracy: number;
+    evidence: string;
+  }>;
+  verified_weaknesses: Array<{
+    topic: string;
+    part: number;
+    total: number;
+    correct: number;
+    accuracy: number;
+    evidence: string;
+  }>;
+  need_more_data_topics: Array<{
+    topic: string;
+    part: number;
+    total: number;
+    correct: number;
+    accuracy: number;
+    reason: string;
+    evidence?: string;
+  }>;
+  avg_time_sec: number;
+  too_fast_count: number;
+  too_slow_count: number;
+  dominant_option?: string | null;
+  trend_description: string;
+  repeated_wrong_count: number;
+  representative_wrong: Array<{
+    id: string;
+    part: number;
+    topic: string;
+    question_text: string;
+    selected_option: string;
+    correct_option: string;
+    is_repeated: boolean;
+  }>;
+}
+
+export interface AIAssessmentResult {
+  summary_vi: string;
+  data_confidence: 'insufficient' | 'low' | 'medium' | 'high';
+  strengths: Array<{
+    topic: string;
+    evidence: string;
+    comment_vi: string;
+  }>;
+  weaknesses: Array<{
+    topic: string;
+    evidence: string;
+    likely_cause_vi: string;
+    example_question_ids: string[];
+    priority: number;
+  }>;
+  patterns_vi: string[];
+  trend_vi: string;
+  study_plan: Array<{
+    day_or_step: string;
+    action_vi: string;
+    link_target: {
+      type: string;
+      params: Record<string, any>;
+    };
+  }>;
+  encouragement_vi: string;
+}
+
+export interface AIAssessmentResponse {
+  id?: number;
+  scope: string;
+  scope_name: string;
+  time_range: string;
+  stats: AIAssessmentStats;
+  assessment: AIAssessmentResult;
+  created_at: string;
+  cached?: boolean;
 }

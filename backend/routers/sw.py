@@ -13,16 +13,12 @@ SW_FILE = WEB_READY_DIR / "speaking_and_writing_tests.json"
 _sw_cache = None
 
 def get_sw_data():
-    global _sw_cache
-    if _sw_cache is None:
-        if SW_FILE.exists():
-            try:
-                _sw_cache = json.loads(SW_FILE.read_text(encoding="utf-8"))
-            except Exception:
-                _sw_cache = {"speaking_tests": [], "writing_tests": []}
-        else:
-            _sw_cache = {"speaking_tests": [], "writing_tests": []}
-    return _sw_cache
+    if SW_FILE.exists():
+        try:
+            return json.loads(SW_FILE.read_text(encoding="utf-8"))
+        except Exception:
+            return {"speaking_tests": [], "writing_tests": []}
+    return {"speaking_tests": [], "writing_tests": []}
 
 @router.get("/tests")
 def list_sw_tests(test_type: str = Query(None)):
@@ -76,6 +72,8 @@ def get_sw_test_detail(test_id: str):
             "prompt": q.get("prompt"),
             "context": q.get("context"),
             "image_url": img_url,
+            "sample_sentences": q.get("sample_sentences", []),
+            "words": q.get("words", []),
             "options": q.get("options", {})
         })
 
@@ -96,6 +94,7 @@ from ai_grading import (
     grade_writing_question,
     grade_sw_full_session
 )
+from ai_security import sanitize_user_input
 
 @router.post("/grade-question")
 def grade_single_sw_question(
@@ -109,12 +108,14 @@ def grade_single_sw_question(
     test_type = payload.get("test_type", "speaking").lower()
     user_name = user.full_name if user else "Học viên"
     target_score = user.profile.target_score if (user and user.profile) else 160
-    user_answer = payload.get("user_answer", "").strip()
+    raw_ans = payload.get("user_answer", "").strip()
+    user_answer = sanitize_user_input(raw_ans, max_length=5000) if raw_ans else "No response provided"
 
     question_data = {
         "question_number": payload.get("question_number", 1),
         "prompt": payload.get("prompt", ""),
-        "context": payload.get("context", "")
+        "context": payload.get("context", ""),
+        "sample_sentences": payload.get("sample_sentences", [])
     }
 
     if "speaking" in test_type:
@@ -148,10 +149,23 @@ def grade_full_sw_test(
     user_name = user.full_name if user else "Học viên"
     target_score = user.profile.target_score if (user and user.profile) else 160
 
+    sanitized_answers = []
+    for a in answers:
+        if isinstance(a, dict):
+            raw_a = str(a.get("user_answer") or a.get("answer") or a.get("user_text") or "").strip()
+            clean_a = sanitize_user_input(raw_a, max_length=5000) if raw_a else ""
+            a_copy = dict(a)
+            a_copy["user_answer"] = clean_a
+            a_copy["answer"] = clean_a
+            a_copy["user_text"] = clean_a
+            sanitized_answers.append(a_copy)
+        else:
+            sanitized_answers.append(a)
+
     result = grade_sw_full_session(
         test_type=test_type,
         test_name=test_name,
-        answers=answers,
+        answers=sanitized_answers,
         user_name=user_name,
         target_score=target_score
     )
@@ -300,26 +314,62 @@ def evaluate_shadowing(payload: Dict[str, Any]):
             "words": []
         }
 
+    if not user_tokens:
+        return {
+            "accuracy": 0,
+            "status": "retry",
+            "feedback_vi": "Chưa nhận diện được giọng nói. Bạn hãy bấm Micro và nói to, rõ ràng hơn nhé!",
+            "words": [{"word": w, "status": "missing"} for w in target_tokens]
+        }
+
     matcher = difflib.SequenceMatcher(None, target_tokens, user_tokens)
     words_result = []
-    correct_count = 0
+    earned_score = 0.0
 
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
         if tag == "equal":
             for idx in range(i1, i2):
                 words_result.append({
                     "word": target_tokens[idx],
-                    "status": "correct"
+                    "status": "correct",
+                    "spoken": target_tokens[idx]
                 })
-                correct_count += 1
+                earned_score += 1.0
         elif tag == "replace":
             for idx in range(i1, i2):
                 spoken = user_tokens[j1 + (idx - i1)] if (j1 + (idx - i1)) < j2 else ""
-                words_result.append({
-                    "word": target_tokens[idx],
-                    "spoken": spoken,
-                    "status": "incorrect"
-                })
+                sim = difflib.SequenceMatcher(None, target_tokens[idx], spoken).ratio() if spoken else 0.0
+                
+                # Check for common contractions & endings (e.g. arrive vs arrived, you vs you're, hotel vs hotels)
+                t_word = target_tokens[idx]
+                is_close_ending = (
+                    (t_word.endswith("ed") and t_word[:-2] == spoken) or
+                    (spoken.endswith("ed") and spoken[:-2] == t_word) or
+                    (t_word.endswith("s") and t_word[:-1] == spoken) or
+                    (spoken.endswith("s") and spoken[:-1] == t_word) or
+                    (t_word.endswith("ing") and t_word[:-3] == spoken)
+                )
+
+                if sim >= 0.70 or is_close_ending:
+                    words_result.append({
+                        "word": target_tokens[idx],
+                        "spoken": spoken,
+                        "status": "correct"
+                    })
+                    earned_score += 0.95
+                elif sim >= 0.45:
+                    words_result.append({
+                        "word": target_tokens[idx],
+                        "spoken": spoken,
+                        "status": "partial"
+                    })
+                    earned_score += 0.65
+                else:
+                    words_result.append({
+                        "word": target_tokens[idx],
+                        "spoken": spoken,
+                        "status": "incorrect"
+                    })
         elif tag == "delete":
             for idx in range(i1, i2):
                 words_result.append({
@@ -333,16 +383,16 @@ def evaluate_shadowing(payload: Dict[str, Any]):
                     "status": "extra"
                 })
 
-    accuracy = round((correct_count / max(1, len(target_tokens))) * 100)
+    accuracy = min(100, round((earned_score / max(1, len(target_tokens))) * 100))
 
-    if accuracy >= 90:
-        feedback = "Xuất sắc! Phát âm và ngữ điệu rất chuẩn xác, tự nhiên như người bản xứ."
+    if accuracy >= 85:
+        feedback = "Xuất sắc! Phát âm và nhịp điệu rất chuẩn xác, tự nhiên như người bản xứ."
         status = "excellent"
     elif accuracy >= 70:
-        feedback = "Khá tốt! Bạn đã phát âm đúng hầu hết các từ chính, hãy chú ý các từ bị thiếu/chưa rõ."
+        feedback = "Khá tốt! Bạn đã phát âm đúng hầu hết các từ chính, giữ vững phong độ nhé!"
         status = "good"
     elif accuracy >= 40:
-        feedback = "Cố gắng lên! Hãy nghe lại câu mẫu và nhại theo từng cụm ngắn 2-3 từ trước nhé."
+        feedback = "Tốt hơn rồi! Hãy nghe lại câu mẫu và nhại theo ngữ điệu từng cụm ngắn 2-3 từ nhé."
         status = "needs_work"
     else:
         feedback = "Chưa nhận diện rõ âm thanh. Vui lòng nói to, rõ ràng và gần micro hơn."

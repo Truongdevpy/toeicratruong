@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import json
 from datetime import datetime
 from typing import Optional, List
@@ -7,7 +8,7 @@ from sqlalchemy import desc, func
 
 from database import get_db
 import models
-from auth import get_current_user_optional, get_current_user
+from auth import get_current_user_optional, get_current_user, GUEST_USER_ID
 
 router = APIRouter(tags=["history"])
 
@@ -18,9 +19,10 @@ def get_test_history(
     user: Optional[models.User] = Depends(get_current_user_optional),
     db: Session = Depends(get_db)
 ):
-    effective_uid = user.id if user else 1
-    query = db.query(models.TestAttempt).filter(models.TestAttempt.user_id == effective_uid)
+    if not user:
+        return {"total": 0, "items": []}
 
+    query = db.query(models.TestAttempt).filter(models.TestAttempt.user_id == user.id)
     total = query.count()
     items = query.order_by(desc(models.TestAttempt.created_at)).offset(offset).limit(limit).all()
 
@@ -59,12 +61,9 @@ def get_test_attempt_detail(
     if not attempt:
         raise HTTPException(status_code=404, detail="Không tìm thấy bài thi đã làm")
 
-    if user:
-        if attempt.user_id and attempt.user_id != user.id and user.role != "admin":
-            raise HTTPException(status_code=403, detail="Bạn không có quyền xem bài làm này")
-    else:
-        if attempt.user_id and attempt.user_id != 1:
-            raise HTTPException(status_code=403, detail="Bạn không có quyền xem bài làm này")
+    # IDOR Protection: only owner or admin can view
+    if not user or (attempt.user_id and attempt.user_id != user.id and getattr(user, "role", "") != "admin"):
+        raise HTTPException(status_code=403, detail="Bạn không có quyền xem bài làm này")
 
     try:
         review_answers = json.loads(attempt.review_json) if attempt.review_json else []
@@ -107,12 +106,10 @@ def delete_test_attempt(
     attempt = db.query(models.TestAttempt).filter(models.TestAttempt.id == attempt_id).first()
     if not attempt:
         raise HTTPException(status_code=404, detail="Không tìm thấy bài làm")
-    if user:
-        if attempt.user_id and attempt.user_id != user.id and user.role != "admin":
-            raise HTTPException(status_code=403, detail="Không có quyền xóa bài làm này")
-    else:
-        if attempt.user_id and attempt.user_id != 1:
-            raise HTTPException(status_code=403, detail="Không có quyền xóa bài làm này")
+
+    # IDOR Protection: only owner or admin can delete
+    if not user or (attempt.user_id and attempt.user_id != user.id and getattr(user, "role", "") != "admin"):
+        raise HTTPException(status_code=403, detail="Không có quyền xóa bài làm này")
 
     db.delete(attempt)
     db.commit()
@@ -127,8 +124,11 @@ def get_question_history(
     user: Optional[models.User] = Depends(get_current_user_optional),
     db: Session = Depends(get_db)
 ):
-    effective_uid = user.id if user else 1
-    query = db.query(models.QuestionAttempt).filter(models.QuestionAttempt.user_id == effective_uid)
+    if user:
+        query = db.query(models.QuestionAttempt).filter(models.QuestionAttempt.user_id == user.id)
+    else:
+        query = db.query(models.QuestionAttempt).filter(models.QuestionAttempt.user_id.is_(None))
+
     if part is not None:
         query = query.filter(models.QuestionAttempt.part == part)
     if is_correct is not None:
@@ -170,7 +170,7 @@ def record_question_attempt(
         raise HTTPException(status_code=400, detail="Thiếu question_id")
 
     attempt = models.QuestionAttempt(
-        user_id=user.id if user else 1,
+        user_id=user.id if user else None,
         question_id=q_id,
         test_id=str(payload.get("test_id") or ""),
         question_number=payload.get("question_number"),
@@ -195,11 +195,16 @@ def get_correct_question_ids(
     user: Optional[models.User] = Depends(get_current_user_optional),
     db: Session = Depends(get_db)
 ):
-    effective_uid = user.id if user else 1
-    query = db.query(models.QuestionAttempt.question_id).filter(
-        models.QuestionAttempt.is_correct == True,
-        models.QuestionAttempt.user_id == effective_uid
-    )
+    if user:
+        query = db.query(models.QuestionAttempt.question_id).filter(
+            models.QuestionAttempt.is_correct == True,
+            models.QuestionAttempt.user_id == user.id
+        )
+    else:
+        query = db.query(models.QuestionAttempt.question_id).filter(
+            models.QuestionAttempt.is_correct == True,
+            models.QuestionAttempt.user_id.is_(None)
+        )
 
     rows = query.distinct().all()
     return {"correct_question_ids": [r[0] for r in rows]}
@@ -209,15 +214,23 @@ def get_history_summary(
     user: Optional[models.User] = Depends(get_current_user_optional),
     db: Session = Depends(get_db)
 ):
-    effective_uid = user.id if user else 1
-    t_query = db.query(models.TestAttempt).filter(models.TestAttempt.user_id == effective_uid)
+    if not user:
+        return {
+            "total_tests": 0,
+            "best_score": 0,
+            "recent_score": 0,
+            "recent_test_title": "",
+            "total_questions": 0,
+            "correct_questions": 0,
+            "accuracy": 0.0
+        }
 
+    t_query = db.query(models.TestAttempt).filter(models.TestAttempt.user_id == user.id)
     total_tests = t_query.count()
     best_score_record = t_query.order_by(desc(models.TestAttempt.total_score)).first()
     recent_test_record = t_query.order_by(desc(models.TestAttempt.created_at)).first()
 
-    q_query = db.query(models.QuestionAttempt).filter(models.QuestionAttempt.user_id == effective_uid)
-
+    q_query = db.query(models.QuestionAttempt).filter(models.QuestionAttempt.user_id == user.id)
     total_questions = q_query.count()
     correct_questions = q_query.filter(models.QuestionAttempt.is_correct == True).count()
     accuracy = round((correct_questions / max(1, total_questions)) * 100, 1) if total_questions > 0 else 0.0

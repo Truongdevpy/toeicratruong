@@ -31,6 +31,107 @@ interface VideoLesson {
 }
 
 const VIDEO_LESSONS: VideoLesson[] = [
+{
+  "id": "vid-toeic-adv-01",
+  "youtubeId": "3Kk9AkmVz_I",
+  "title": "Mẹo làm Full 100 câu TOEIC Listening không bị đuối sức",
+  "category": "listening",
+  "part": "Part 1-4",
+  "duration": "28:15",
+  "level": "Nâng cao (650 - 990)",
+  "views": 65200,
+  "thumbnailUrl": "https://img.youtube.com/vi/3Kk9AkmVz_I/hqdefault.jpg",
+  "videoUrl": "https://www.youtube-nocookie.com/embed/3Kk9AkmVz_I?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&controls=1&disablekb=0&playsinline=1&enablejsapi=1",
+  "instructor": "TOEIC Master Coach",
+  "summary": "Chiến thuật giữ nhịp thở, kỹ thuật đọc trước câu hỏi Part 3-4 trong 8 giây nghỉ giữa các bài nói.",
+  "keyPoints": [
+    "Quy tắc mắt đi trước tai: đọc câu hỏi trước khi loa bắt đầu đọc đoạn thoại",
+    "Đánh dấu nhanh từ khóa hỏi: Who, What, Where, Problem, Next action",
+    "Không bao giờ ngoái lại câu trước nếu lỡ mất nhịp để bảo vệ điểm số chuỗi sau"
+  ],
+  "tags": [
+    "Listening",
+    "Chiến thuật",
+    "Part 3",
+    "Part 4"
+  ]
+},
+{
+  "id": "vid-toeic-adv-02",
+  "youtubeId": "qj79g9wW-i0",
+  "title": "Giải đề TOEIC Reading Part 7: Chiến thuật xử lý đoạn kép & đoạn ba",
+  "category": "reading",
+  "part": "Part 7",
+  "duration": "35:20",
+  "level": "Nâng cao (750 - 990)",
+  "views": 51300,
+  "thumbnailUrl": "https://img.youtube.com/vi/qj79g9wW-i0/hqdefault.jpg",
+  "videoUrl": "https://www.youtube-nocookie.com/embed/qj79g9wW-i0?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&controls=1&disablekb=0&playsinline=1&enablejsapi=1",
+  "instructor": "Thầy Hoàng TOEIC 990",
+  "summary": "Phương pháp định vị câu hỏi liên kết cross-reference giữa email, hóa đơn và lịch trình trong Part 7.",
+  "keyPoints": [
+    "Tìm mối liên hệ logic giữa bài đọc 1 và bài đọc 2 (tên người, số hóa đơn, ngày hẹn)",
+    "Kỹ thuật quét skimming 15 giây lấy cấu trúc đoạn văn trước khi trả lời",
+    "Xử lý dạng câu hỏi suy luận (suggested, implied) chính xác 100%"
+  ],
+  "tags": [
+    "Reading",
+    "Part 7",
+    "Đoạn kép",
+    "Đoạn ba"
+  ]
+},
+{
+  "id": "vid-toeic-adv-03",
+  "youtubeId": "tmg4k4aQj4E",
+  "title": "Tổng hợp 50 bẫy Ngữ pháp Part 5 kinh điển đề thi ETS 2024-2026",
+  "category": "grammar",
+  "part": "Part 5",
+  "duration": "42:10",
+  "level": "Mọi trình độ (450 - 850)",
+  "views": 89400,
+  "thumbnailUrl": "https://img.youtube.com/vi/tmg4k4aQj4E/hqdefault.jpg",
+  "videoUrl": "https://www.youtube-nocookie.com/embed/tmg4k4aQj4E?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&controls=1&disablekb=0&playsinline=1&enablejsapi=1",
+  "instructor": "Ms Hoa TOEIC Intensive",
+  "summary": "Phân tích các bẫy liên từ so với giới từ (Although vs Despite), đại từ phản thân và mệnh đề quan hệ rút gọn.",
+  "keyPoints": [
+    "Phân biệt rõ ràng cấu trúc S + V với Cụm danh từ / V-ing sau liên từ/giới từ",
+    "Bẫy chia thì động từ giả định (Subjunctive mood): recommend, require, insist that S + (should) V-bare",
+    "Các cụm cố định thường gặp trong văn phòng doanh nghiệp quốc tế"
+  ],
+  "tags": [
+    "Grammar",
+    "Part 5",
+    "Bẫy ngữ pháp",
+    "ETS"
+  ]
+},
+{
+  "id": "vid-toeic-adv-04",
+  "youtubeId": "o6jD5K_B8uM",
+  "title": "Phương pháp Shadowing luyện nghe TOEIC bắt âm chuẩn bản xứ",
+  "category": "tips",
+  "part": "Part 1-4",
+  "duration": "18:50",
+  "level": "Mọi trình độ (0 - 990)",
+  "views": 42100,
+  "thumbnailUrl": "https://img.youtube.com/vi/o6jD5K_B8uM/hqdefault.jpg",
+  "videoUrl": "https://www.youtube-nocookie.com/embed/o6jD5K_B8uM?autoplay=1&rel=0&modestbranding=1&iv_load_policy=3&controls=1&disablekb=0&playsinline=1&enablejsapi=1",
+  "instructor": "TOEIC Shadowing Lab",
+  "summary": "Cách nhại giọng theo transcript giúp tai quen phản xạ nuốt âm, nối âm và ngữ điệu người bản ngữ Anh, Mỹ, Úc.",
+  "keyPoints": [
+    "Bước 1: Nghe và đọc thầm theo transcript hiểu nội dung",
+    "Bước 2: Bật tốc độ 0.75x và nói đuổi sát ngay sau người nói 0.5 giây",
+    "Bước 3: Tăng dần tốc độ 1.0x và 1.25x để tạo phản xạ vô thức khi vào phòng thi thật"
+  ],
+  "tags": [
+    "Shadowing",
+    "Tips",
+    "Listening",
+    "Luyện nghe"
+  ]
+},
+
   {
     "id": "vid-01",
     "youtubeId": "iKyQzEsil3E",

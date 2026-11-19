@@ -1,10 +1,13 @@
+import { sfx } from '../lib/sfx';
 import { AuthRequiredGate } from './AuthRequiredGate';
 import DOMPurify from 'dompurify';
 import { MorphPlayPause } from './MorphIcon';
+import commonVocabDictionary from '../data/commonVocabDictionary.json';
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import {
   ArrowLeft,
   RotateCcw,
+  FastForward,
   Volume2,
   VolumeX,
   Check,
@@ -203,8 +206,10 @@ export interface FocusedPracticeRoomProps {
   levelKey?: string;
   partNumber: number;
   questions: Question[];
+  overallAudio?: string | null;
   passages?: any[];
   initialIndex?: number;
+  onIndexChange?: (index: number) => void;
   onExit: () => void;
   onNavigate?: (path: string) => void;
 }
@@ -255,6 +260,38 @@ function playAudioChime(isCorrect: boolean) {
   } catch {}
 }
 
+const getRefinedQuestionType = (q: any): string | null => {
+  const rawType = q?.question_type || q?.topic;
+  const qText = (q?.question_text || '').toLowerCase();
+  if (qText) {
+    if (qText.includes('look at the graphic') || qText.includes('look at the chart') || qText.includes('look at the table') || qText.includes('look at the image') || qText.includes('look at the menu') || qText.includes('look at the map') || qText.includes('look at the schedule') || qText.includes('look at the sign')) {
+      return 'Câu hỏi biểu đồ / hình ảnh';
+    }
+    if (qText.includes('mean when') || qText.includes('imply when') || qText.includes('mean by') || qText.includes('why does the speaker say') || qText.includes('why does the man say') || qText.includes('why does the woman say')) {
+      return 'Ý định người nói (Hàm ý)';
+    }
+    if (qText.includes('topic') || qText.includes('mainly about') || qText.includes('purpose') || qText.includes('main topic') || qText.includes('why is the speaker calling') || qText.includes('why are they meeting') || qText.includes('what are the speakers discussing') || qText.includes('what is being announced') || qText.includes('what is the announcement about') || qText.includes('what is the report about') || qText.includes('what is the message about') || qText.includes('what is the talk about')) {
+      return 'Chủ đề & Mục đích chính';
+    }
+    if (qText.includes('who most likely is') || qText.includes('who is the speaker') || qText.includes('who are the speakers') || qText.includes('who is the listener') || qText.includes('who is the audience') || qText.includes('who is speaking') || qText.includes('where does the speaker work') || qText.includes('where most likely are the speakers') || qText.includes('where does the conversation take place') || qText.includes('where is the talk taking place') || qText.includes('where is the announcement being made')) {
+      return 'Danh tính & Nơi chốn';
+    }
+    if (qText.includes('will the speaker do next') || qText.includes('will the man do next') || qText.includes('will the woman do next') || qText.includes('will happen next') || qText.includes('do next') || qText.includes('will do later') || qText.includes('going to do next') || qText.includes('what is planned')) {
+      return 'Hành động tiếp theo';
+    }
+    if (qText.includes('what does the speaker ask') || qText.includes('what does the speaker suggest') || qText.includes('what does the speaker request') || qText.includes('what does the man suggest') || qText.includes('what does the woman suggest') || qText.includes('what is the listener asked to do') || qText.includes('what does the speaker offer') || qText.includes('what does the speaker want the listener to') || qText.includes('what is recommended')) {
+      return 'Yêu cầu & Đề xuất';
+    }
+    if (qText.includes('problem') || qText.includes('concern') || qText.includes('trouble') || qText.includes('complain') || qText.includes('what went wrong') || qText.includes('difficulty')) {
+      return 'Vấn đề & Khó khăn';
+    }
+  }
+  if (rawType && rawType !== 'Câu hỏi chi tiết' && rawType !== 'Tiêu chuẩn' && rawType !== 'General') {
+    return rawType;
+  }
+  return null;
+};
+
 const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   title,
   levelBadge = 'Lv.1',
@@ -263,68 +300,136 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   questions = [],
   passages = [],
   initialIndex = 0,
+  onIndexChange,
   onExit,
   onNavigate,
 }) => {
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
-  const [currentPassageIndex, setCurrentPassageIndex] = useState(0);
-
-  // Derive robust partNumber: prioritize actual question/passage data over raw prop fallback
-  const firstQ = questions[0] || passages[0]?.questions?.[0];
-  const derivedPart = Number(
-    firstQ?.part ||
-    passages[0]?.part ||
-    (rawPartNumber && Number(rawPartNumber) > 0 ? Number(rawPartNumber) : null) ||
-    (title?.match(/Part\s*(\d)/i) ? Number(title.match(/Part\s*(\d)/i)![1]) : null) ||
-    5
-  );
-  const partNumber = derivedPart;
-  const pNum = derivedPart;
-
-  const { user } = useAuth();
+    const { user } = useAuth();
   const isVipUser = Boolean(user?.role === 'vip' || user?.role === 'admin' || user?.is_vip);
 
-  // 1. Group passages or use passed-in passages (MUST be initialized before any dependent logic)
-  const effectivePassages = useMemo(() => {
-    if (Array.isArray(passages) && passages.length > 0) return passages;
-    if (![3, 4, 6, 7].includes(pNum) || !questions || questions.length === 0) return [];
+  // Group all questions into unified units:
+  // - Part 1, 2, 5: Single question units
+  // - Part 3, 4: 3 questions per audio group/passage
+  // - Part 6: 4 questions per passage
+  // - Part 7: 2 to 5 questions per passage
+  const effectiveGroups = useMemo(() => {
+    if (!questions || questions.length === 0) return [];
     const groups: any[] = [];
-    let currentGroup: any = null;
-    questions.forEach((q) => {
-      const qAudio = q.audio_url || (q as any).local_audio || (q as any).audio;
-      const qPassageId = (q as any).passage_id;
-      const qPassageText = q.passage_text;
+    const rawPassages = Array.isArray(passages) ? passages : [];
 
-      const belongsToCurrent = currentGroup && (
-        (qPassageId && currentGroup.passage_id === qPassageId) ||
-        (qAudio && currentGroup.audio_url === qAudio) ||
-        (qPassageText && currentGroup.passage_text === qPassageText) ||
-        (!qPassageId && !qAudio && !qPassageText && currentGroup.questions.length < (pNum === 6 ? 4 : 3))
-      );
+    for (let i = 0; i < questions.length;) {
+      const q = questions[i];
+      const qPart = Number(q.part) || Number(rawPartNumber) || 1;
+      const isPassage = [3, 4, 6, 7].includes(qPart);
 
-      if (belongsToCurrent && currentGroup.questions.length < 5) {
-        currentGroup.questions.push(q);
-        if (!currentGroup.image_url && q.image_url) currentGroup.image_url = q.image_url;
-        if (!currentGroup.passage_text && q.passage_text) currentGroup.passage_text = q.passage_text;
-        if (!currentGroup.transcript && (q.transcript || q.passage_text)) currentGroup.transcript = q.transcript || q.passage_text;
-      } else {
-        currentGroup = {
-          id: qPassageId || `passage_group_${groups.length + 1}`,
-          passage_id: qPassageId,
+      if (!isPassage) {
+        // Single question group (Part 1, 2, 5)
+        const qAudio = q.audio_url || (q as any).local_audio || (q as any).audio || null;
+        const qImage = q.image_url || (q as any).local_image || (q as any).image || null;
+        groups.push({
+          id: String(q.id || q.question_number || groups.length + 1),
+          type: 'single',
+          part: qPart,
+          passage: null,
           audio_url: qAudio,
-          image_url: q.image_url,
-          passage_text: qPassageText || '',
-          transcript: q.transcript || qPassageText || '',
-          questions: [q]
-        };
-        groups.push(currentGroup);
-      }
-    });
-    return groups;
-  }, [passages, pNum, questions]);
+          image_url: qImage,
+          passage_text: q.passage_text || '',
+          transcript: q.transcript || '',
+          questions: [q],
+          question_number: q.question_number || (i + 1),
+        });
+        i++;
+      } else {
+        // Passage group (Part 3, 4, 6, 7)
+        let passageObj = rawPassages.find((p: any) => {
+          if (Number(p.part) !== qPart) return false;
+          if (p.order_index && p.order_index === q.question_number) return true;
+          if (q.audio_url && p.audio_url && p.audio_url === q.audio_url) return true;
+          if (q.passage_text && p.passage_text && p.passage_text === q.passage_text) return true;
+          return false;
+        });
 
-  const isPassageMode = (pNum === 3 || pNum === 4 || pNum === 6 || pNum === 7) && effectivePassages.length > 0;
-  const currentPassage = isPassageMode ? effectivePassages[currentPassageIndex] : null;
+        const groupQs = [q];
+        let j = i + 1;
+        const maxGroupSize = qPart === 6 ? 4 : (qPart === 7 ? 5 : 3);
+
+        while (j < questions.length) {
+          const nextQ = questions[j];
+          const nextPart = Number(nextQ.part) || qPart;
+          if (nextPart !== qPart) break;
+
+          let belongs = false;
+          if ((nextQ as any).passage_id && (q as any).passage_id && (nextQ as any).passage_id === (q as any).passage_id) {
+            belongs = true;
+          } else if (nextQ.passage_text && q.passage_text && nextQ.passage_text === q.passage_text) {
+            belongs = true;
+          } else if (nextQ.audio_url && q.audio_url && nextQ.audio_url === q.audio_url) {
+            belongs = true;
+          } else if (!nextQ.passage_text && !nextQ.audio_url && !q.passage_text && !q.audio_url) {
+            belongs = groupQs.length < (qPart === 6 ? 4 : 3);
+          }
+
+          if (belongs && groupQs.length < maxGroupSize) {
+            groupQs.push(nextQ);
+            j++;
+          } else {
+            break;
+          }
+        }
+
+        const gAudio = passageObj?.audio_url || q.audio_url || (q as any).local_audio || null;
+        const gImage = passageObj?.image_url || groupQs.find((g: any) => !!g.image_url)?.image_url || null;
+        const gText = passageObj?.passage_text || q.passage_text || '';
+        const gTranscript = passageObj?.transcript || q.transcript || q.passage_text || '';
+
+        groups.push({
+          id: passageObj?.id || (q as any).passage_id || ('group_' + (groups.length + 1)),
+          type: 'passage',
+          part: qPart,
+          passage: passageObj || null,
+          audio_url: gAudio,
+          image_url: gImage,
+          passage_text: gText,
+          transcript: gTranscript,
+          questions: groupQs,
+          question_number: q.question_number || (i + 1),
+        });
+        i = j;
+      }
+    }
+    return groups;
+  }, [questions, passages, rawPartNumber]);
+
+  // Compute initial group index from initialIndex (which may be a question index)
+  const computeInitialGroupIndex = () => {
+    if (!initialIndex || initialIndex <= 0 || !effectiveGroups.length) return 0;
+    let accumulated = 0;
+    for (let idx = 0; idx < effectiveGroups.length; idx++) {
+      accumulated += effectiveGroups[idx].questions.length;
+      if (initialIndex < accumulated) {
+        return idx;
+      }
+    }
+    return Math.min(initialIndex, effectiveGroups.length - 1);
+  };
+
+  const [currentIndex, setCurrentIndex] = useState(computeInitialGroupIndex);
+
+  const currentGroup = effectiveGroups[currentIndex] || effectiveGroups[0] || null;
+  const isPassageMode = currentGroup ? currentGroup.type === 'passage' : false;
+  const partNumber = currentGroup ? currentGroup.part : (Number(rawPartNumber) || 1);
+  const pNum = partNumber;
+
+  const currentPassageIndex = currentIndex;
+  const setCurrentPassageIndex = setCurrentIndex;
+  const effectivePassages = effectiveGroups;
+  const currentPassage = currentGroup;
+
+  const activeLevelKey = levelKey || (levelBadge?.match(/Level \d+/i) ? ('part' + partNumber + '_' + levelBadge.match(/Level \d+/i)?.[0]) : ('part' + partNumber + '_Level 1'));
+
+  useEffect(() => {
+    onIndexChange?.(currentIndex);
+  }, [currentIndex, onIndexChange]);
 
   // 2. Gemini AI Practice Grading State
   const [isAiGradingModalOpen, setIsAiGradingModalOpen] = useState(false);
@@ -369,24 +474,56 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     }
   };
 
-  // STRICT GUARANTEE: 1 audio file -> strictly the question(s) for that audio file!
-  // In passage mode (Part 3/4), render all questions for the current passage.
-  // In single-question mode (Part 1, 2, 5, etc.), render ONLY the active question at currentIndex!
+  // In passage mode (Part 3/4/6/7), render all questions for current group!
+  // In single-question mode (Part 1, 2, 5), render the single question!
   const activeQuestions = useMemo(() => {
-    if (isPassageMode && currentPassage?.questions?.length) {
-      return currentPassage.questions;
+    if (currentGroup?.questions?.length) {
+      return currentGroup.questions;
     }
     const singleQ = questions[currentIndex];
     return singleQ ? [singleQ] : [];
-  }, [isPassageMode, currentPassage, questions, currentIndex]);
-  const totalItems = isPassageMode ? effectivePassages.length : questions.length;
-  const currentQ: Question | undefined = isPassageMode ? activeQuestions[0] : questions[currentIndex];
+  }, [currentGroup, questions, currentIndex]);
+
+  const totalItems = effectiveGroups.length;
+  const currentQ: Question | undefined = activeQuestions[0] || questions[currentIndex];
 
   const displayImageUrl = useMemo(() => {
-    return currentPassage?.image_url || activeQuestions.find((q: any) => !!q.image_url)?.image_url || currentQ?.image_url;
-  }, [currentPassage, activeQuestions, currentQ]);
+    return currentGroup?.image_url || activeQuestions.find((q: any) => !!q.image_url)?.image_url || currentQ?.image_url || null;
+  }, [currentGroup, activeQuestions, currentQ]);
 
-  const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
+  // Hydrate user answers and submitted groups from saved progress so returning to the room restores answers & status
+  const [userAnswers, setUserAnswers] = useState<Record<string, string>>(() => {
+    try {
+      const saved = practiceProgressStore.getLevelData(activeLevelKey)?.answeredQuestions || {};
+      const answers: Record<string, string> = {};
+      Object.entries(saved).forEach(([qId, val]) => {
+        if (val && val.choice) {
+          answers[String(qId)] = val.choice;
+        }
+      });
+      return answers;
+    } catch {
+      return {};
+    }
+  });
+
+  const [submittedGroups, setSubmittedGroups] = useState<Record<string, boolean>>(() => {
+    try {
+      const saved = practiceProgressStore.getLevelData(activeLevelKey)?.answeredQuestions || {};
+      const groups: Record<string, boolean> = {};
+      if (isPassageMode && effectivePassages.length > 0) {
+        effectivePassages.forEach((p: any, pIdx: number) => {
+          const pQs = p.questions || [];
+          if (pQs.length > 0 && pQs.every((q: any) => Boolean(saved[String(q.id || q.question_number)]))) {
+            groups[`passage_${pIdx}`] = true;
+          }
+        });
+      }
+      return groups;
+    } catch {
+      return {};
+    }
+  });
   const [flaggedItems, setFlaggedItems] = useState<Record<string, boolean>>({});
   const [editingNoteTarget, setEditingNoteTarget] = useState<{ key: string; num: number | string } | null>(null);
   const [savedNotes, setSavedNotes] = useState<Record<string, string>>(() => {
@@ -405,6 +542,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     toggleDienTu,
     toggleLatTu,
     toggleAutoAdvance,
+    toggleSkipIntro,
     toggleSfx,
     toggleAnnotator,
     toggleMeoLamBai,
@@ -419,6 +557,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   const isDictationMode = globalSettings.dienTu;
   const isLatTu = globalSettings.latTu;
   const isAutoAdvance = globalSettings.autoAdvance;
+  const isSkipIntro = Boolean(globalSettings.skipIntro);
   const isSfxEnabled = globalSettings.sfx;
   const isAnnotatorActive = globalSettings.annotator;
   const isMeoLamBai = Boolean(globalSettings.meoLamBai);
@@ -432,6 +571,41 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     setFlippedChoices({});
   }, [currentIndex, currentPassageIndex]);
   const [dictationInputs, setDictationInputs] = useState<Record<string, string>>({});
+  const [aiExplainLoadingMap, setAiExplainLoadingMap] = useState<Record<string, boolean>>({});
+  const [aiExplainResultMap, setAiExplainResultMap] = useState<Record<string, string>>({});
+
+  const handleExplainWithAi = async (qTarget: Question) => {
+    const qKey = String(qTarget.id || qTarget.question_number);
+    setAiExplainLoadingMap((prev) => ({ ...prev, [qKey]: true }));
+    try {
+      const userSel = userAnswers[qKey] || '';
+      const optsObj: Record<string, string> = {
+        A: qTarget.option_a || (qTarget.options as any)?.A || '',
+        B: qTarget.option_b || (qTarget.options as any)?.B || '',
+        C: qTarget.option_c || (qTarget.options as any)?.C || '',
+        D: qTarget.option_d || (qTarget.options as any)?.D || ''
+      };
+      const res = await api.explainQuestionWithAI({
+        part: Number(partNumber) || 3,
+        question_number: Number(qTarget.question_number) || 1,
+        question_text: qTarget.question_text || '',
+        options: optsObj,
+        correct_answer: (qTarget.correct_answer || 'A').toUpperCase(),
+        selected_option: userSel,
+        passage_text: (currentPassage as any)?.passage_text || '',
+        transcript: qTarget.transcript || currentFullText || '',
+        explanation: qTarget.explanation || ''
+      });
+      if (res && res.explanation) {
+        setAiExplainResultMap((prev) => ({ ...prev, [qKey]: res.explanation }));
+      }
+    } catch (err) {
+      console.warn('AI Explain Error', err);
+      showNotification('Không thể tải giải thích AI lúc này. Vui lòng thử lại!');
+    } finally {
+      setAiExplainLoadingMap((prev) => ({ ...prev, [qKey]: false }));
+    }
+  };
   const [dictationResults, setDictationResults] = useState<Record<string, DictationResult>>({});
 
   const handleCheckDictation = (qTarget: Question) => {
@@ -476,7 +650,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     setDictationResults((prev) => ({ ...prev, [qKey]: result }));
 
     if (isSfxEnabled) {
-      playAudioChime(result.isMatch);
+      sfx.play(result.isMatch ? 'correct' : 'incorrect');
     }
 
     setUserAnswers((prev) => ({ ...prev, [qKey]: correctLetter }));
@@ -806,6 +980,27 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
     }
   }, [isPlaying]);
 
+  // Skip intro duration calculation based on Part (an toàn, chỉ bỏ lời xướng số câu, không cắt vào câu hỏi)
+  const skipIntroSeconds = useMemo(() => {
+    if (partNumber === 1) return 2.5; // Number 1...
+    if (partNumber === 2) {
+      // Part 2 intro chỉ có 'Number 7.' (~1.0s - 1.2s). Giới hạn tối đa 1.2s để không cắt vào câu hỏi
+      return typeof globalSettings?.skipIntroSecondsPart2 === 'number'
+        ? Math.min(1.5, Math.max(0.5, globalSettings.skipIntroSecondsPart2))
+        : 1.2;
+    }
+    if (partNumber === 3 || partNumber === 4) return 3.0; // Questions X through Y refer to...
+    return 1.5;
+  }, [partNumber, globalSettings?.skipIntroSecondsPart2]);
+
+  const handleSkipIntro = useCallback(() => {
+    if (!audioRef.current) return;
+    const target = Math.min((audioDuration || 10) - 1, (audioRef.current.currentTime || 0) + skipIntroSeconds);
+    audioRef.current.currentTime = target;
+    setAudioCurrentTime(target);
+    showNotification(`Đã bỏ qua ${skipIntroSeconds}s mở đầu`);
+  }, [audioDuration, skipIntroSeconds]);
+
   const handleRewind = useCallback((seconds: number) => {
     if (!audioRef.current) return;
     audioRef.current.currentTime = Math.max(0, audioRef.current.currentTime - seconds);
@@ -827,9 +1022,10 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   }, [audioDuration]);
 
   useEffect(() => {
-    setAudioCurrentTime(0);
+    const startSeek = (isSkipIntro && skipIntroSeconds > 0) ? skipIntroSeconds : 0;
+    setAudioCurrentTime(startSeek);
     if (audioRef.current) {
-      audioRef.current.currentTime = 0;
+      audioRef.current.currentTime = startSeek;
       audioRef.current.playbackRate = playbackSpeed;
       if (currentAudioUrl) {
         audioRef.current.play().then(() => setIsPlaying(true)).catch(() => {
@@ -839,7 +1035,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
         setIsPlaying(false);
       }
     }
-  }, [currentIndex, currentPassageIndex, playbackSpeed, currentAudioUrl]);
+  }, [currentIndex, currentPassageIndex, playbackSpeed, currentAudioUrl, isSkipIntro, skipIntroSeconds]);
 
   const stats = useMemo(() => {
     let correct = 0;
@@ -882,73 +1078,76 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
 
   const handleSelectOption = useCallback((qTarget: Question, chosenLetter: string) => {
     const qKey = String(qTarget.id || qTarget.question_number || (currentIndex + 1));
-    if (userAnswers[qKey]) return;
+    if (isPassageMode && Boolean(submittedGroups["passage_" + currentPassageIndex])) return;
+    if (!isPassageMode && userAnswers[qKey]) return;
 
-    const correctLetter = (qTarget.correct_answer || 'A').toUpperCase();
-    const isCorrect = chosenLetter.toUpperCase() === correctLetter;
-
+    // In passage mode, allow freely selecting/changing options before submitting!
     setUserAnswers((prev) => ({ ...prev, [qKey]: chosenLetter }));
 
-    if (isSfxEnabled) {
-      playAudioChime(isCorrect);
-    }
+    // Only immediately grade & chime in single-question mode (Part 1, 2, 5)
+    if (!isPassageMode) {
+      const correctLetter = (qTarget.correct_answer || 'A').toUpperCase();
+      const isCorrect = chosenLetter.toUpperCase() === correctLetter;
 
-    const activeLevelKey = levelKey || (levelBadge?.match(/Level \d+/i) ? `part${partNumber}_${levelBadge.match(/Level \d+/i)?.[0]}` : `part${partNumber}_Level 1`);
-    practiceProgressStore.recordAnswer(
-      activeLevelKey,
-      String(qTarget.id || qKey),
-      chosenLetter,
-      isCorrect,
-      totalItems
-    );
+      if (isSfxEnabled) {
+        sfx.play(isCorrect ? 'correct' : 'incorrect');
+      }
 
-    if (isCorrect) {
-      historyStore.markQuestionCorrect(qTarget.id || qKey, {
-        questionNumber: qTarget.question_number,
-        part: partNumber,
-        section: partNumber <= 4 ? 'listening' : 'reading',
-        questionText: qTarget.question_text,
-        selectedOption: chosenLetter,
-        correctOption: correctLetter
-      });
-      setStreak((prev) => {
-        const nextStreak = prev + 1;
-        if (nextStreak > 0 && nextStreak % 5 === 0) {
-          confetti({
-            particleCount: 50,
-            spread: 60,
-            origin: { y: 0.6 }
-          });
-          showNotification(`🔥 Chuỗi ${nextStreak} câu trả lời đúng liên tiếp!`);
-        }
-        return nextStreak;
-      });
-    } else {
-      historyStore.markQuestionIncorrect(qTarget.id || qKey, {
-        questionNumber: qTarget.question_number,
-        part: partNumber,
-        section: partNumber <= 4 ? 'listening' : 'reading',
-        questionText: qTarget.question_text,
-        selectedOption: chosenLetter,
-        correctOption: correctLetter
-      });
-      setStreak(0);
-    }
+      const activeLevelKey = levelKey || (levelBadge?.match(/Level \d+/i) ? `part${partNumber}_${levelBadge.match(/Level \d+/i)?.[0]}` : `part${partNumber}_Level 1`);
+      practiceProgressStore.recordAnswer(
+        activeLevelKey,
+        String(qTarget.id || qKey),
+        chosenLetter,
+        isCorrect,
+        totalItems
+      );
 
-    if (isAutoAdvance) {
-      setTimeout(() => {
-        if (isPassageMode) {
-          if (currentPassageIndex < effectivePassages.length - 1) {
-            setCurrentPassageIndex((prev) => prev + 1);
+      if (isCorrect) {
+        historyStore.markQuestionCorrect(qTarget.id || qKey, {
+          questionNumber: qTarget.question_number,
+          part: partNumber,
+          section: partNumber <= 4 ? 'listening' : 'reading',
+          topic: qTarget.topic || qTarget.question_type || qTarget.photo_type || '',
+          questionText: qTarget.question_text,
+          selectedOption: chosenLetter,
+          correctOption: correctLetter,
+          timeSpentSec: 25
+        });
+        setStreak((prev) => {
+          const nextStreak = prev + 1;
+          if (nextStreak > 0 && nextStreak % 5 === 0) {
+            confetti({
+              particleCount: 50,
+              spread: 60,
+              origin: { y: 0.6 }
+            });
+            showNotification(`🔥 Chuỗi ${nextStreak} câu trả lời đúng liên tiếp!`);
           }
-        } else {
+          return nextStreak;
+        });
+      } else {
+        historyStore.markQuestionIncorrect(qTarget.id || qKey, {
+          questionNumber: qTarget.question_number,
+          part: partNumber,
+          section: partNumber <= 4 ? 'listening' : 'reading',
+          topic: qTarget.topic || qTarget.question_type || qTarget.photo_type || '',
+          questionText: qTarget.question_text,
+          selectedOption: chosenLetter,
+          correctOption: correctLetter,
+          timeSpentSec: 25
+        });
+        setStreak(0);
+      }
+
+      if (isAutoAdvance) {
+        setTimeout(() => {
           if (currentIndex < questions.length - 1) {
             setCurrentIndex((prev) => prev + 1);
           }
-        }
-      }, 1400);
+        }, 1400);
+      }
     }
-  }, [userAnswers, isSfxEnabled, isAutoAdvance, isPassageMode, currentPassageIndex, effectivePassages.length, currentIndex, questions.length, totalItems, levelKey, partNumber, levelBadge]);
+  }, [userAnswers, isSfxEnabled, isAutoAdvance, isPassageMode, submittedGroups, currentPassageIndex, currentIndex, questions.length, totalItems, levelKey, partNumber, levelBadge]);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -1055,6 +1254,21 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
               </span>
 
               <div className="flex items-center gap-1 sm:gap-1.5">
+                {/* Nút Bỏ qua Intro */}
+                <button
+                  type="button"
+                  onClick={handleSkipIntro}
+                  className={`px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg font-bold text-[10px] sm:text-[11px] flex items-center gap-1 transition-colors cursor-pointer border ${
+                    isSkipIntro
+                      ? 'bg-blue-600 text-white border-blue-500 shadow-2xs'
+                      : 'bg-slate-100 hover:bg-slate-200 text-slate-700 border-slate-200'
+                  }`}
+                  title={`Bỏ qua đoạn đọc intro (${skipIntroSeconds}s)`}
+                >
+                  <FastForward className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                  <span>Bỏ intro</span>
+                </button>
+
                 {/* Rewind 3s */}
                 <button
                   type="button"
@@ -1205,6 +1419,13 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
   const activeQKey = currentQ ? String(currentQ.id || currentQ.question_number || currentIndex + 1) : '';
   const currentAnswer = userAnswers[activeQKey];
   const isCurrentAnswered = Boolean(currentAnswer);
+  const currentPassageKey = `passage_${currentPassageIndex}`;
+  const isCurrentPassageSubmitted = Boolean(submittedGroups[currentPassageKey]);
+  const activeQuestionsAnsweredCount = activeQuestions.filter((q: any) => {
+    const qKey = String(q.id || q.question_number);
+    return Boolean(userAnswers[qKey]);
+  }).length;
+  const isAllActiveQuestionsAnswered = activeQuestions.length > 0 && activeQuestionsAnsweredCount === activeQuestions.length;
   const isCurrentCorrect = isCurrentAnswered && currentAnswer.toUpperCase() === (currentQ?.correct_answer || 'A').toUpperCase();
   const isCurrentWrong = isCurrentAnswered && !isCurrentCorrect;
 
@@ -1473,6 +1694,24 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
             <span className="hidden 2xl:inline text-[11px]">Lật Từ</span>
           </button>
 
+          {/* Bỏ qua đoạn đọc intro */}
+          <button
+            type="button"
+            onClick={() => {
+              toggleSkipIntro();
+              showNotification(!isSkipIntro ? 'Đã bật: Tự động bỏ qua đoạn đọc intro mở đầu câu' : 'Đã tắt bỏ qua intro');
+            }}
+            className={`px-2 py-1 rounded-lg text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer border shrink-0 ${
+              isSkipIntro
+                ? 'bg-blue-500 text-white border-blue-400 font-bold shadow-xs ring-2 ring-blue-300'
+                : 'bg-white/10 text-white/80 border-white/15 hover:bg-white/20'
+            }`}
+            title="Tự động bỏ qua đoạn đọc intro hướng dẫn/đầu câu hỏi"
+          >
+            <FastForward className="w-3.5 h-3.5 opacity-90 shrink-0" />
+            <span className="hidden 2xl:inline text-[11px]">Bỏ intro</span>
+          </button>
+
           {/* Auto advance */}
           <button
             type="button"
@@ -1739,7 +1978,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                   )}
                 </div>
 
-                {(isDanChung || isCurrentAnswered) && currentFullText && (
+                {((isPassageMode && (partNumber === 3 || partNumber === 4)) ? (isDanChung || isCurrentPassageSubmitted) : (isDanChung || isCurrentAnswered)) && currentFullText && (
                   <div
                     ref={transcriptContainerRef}
                     onClick={handlePassageClick}
@@ -1755,19 +1994,25 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                         </span>
                       )}
                     </div>
-                    {isDanChung ? (
-                      <div
-                        className="whitespace-pre-line leading-relaxed"
-                        dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(
-                            highlightPassageWithEvidence(currentFullText, evidenceList),
-                            { ADD_ATTR: ['id', 'data-evidence-q', 'target', 'class'] }
-                          )
-                        }}
-                      />
-                    ) : (
-                      <p className="whitespace-pre-line leading-relaxed">{currentFullText}</p>
-                    )}
+                    {(() => {
+                      const processed = isDanChung
+                        ? highlightPassageWithEvidence(currentFullText, evidenceList)
+                        : currentFullText;
+                      const hasHtml = /<[a-z][\s\S]*>/i.test(processed);
+                      if (hasHtml || isDanChung) {
+                        return (
+                          <div
+                            className="whitespace-pre-line leading-relaxed [&_p]:mb-2 [&_strong]:font-bold [&_b]:font-bold"
+                            dangerouslySetInnerHTML={{
+                              __html: DOMPurify.sanitize(processed, {
+                                ADD_ATTR: ['id', 'data-evidence-q', 'target', 'class']
+                              })
+                            }}
+                          />
+                        );
+                      }
+                      return <p className="whitespace-pre-line leading-relaxed">{currentFullText}</p>;
+                    })()}
                   </div>
                 )}
               </div>
@@ -2019,7 +2264,20 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                     )}
 
                     {/* Question Number & Text */}
-                    <div className="space-y-1.5">
+                                        {/* Question Type Badge (Only rendered when distinctive & informative) */}
+                    {(() => {
+                      const badgeType = getRefinedQuestionType(qItem);
+                      if (!badgeType) return null;
+                      return (
+                        <div className="flex items-center gap-1.5 flex-wrap pb-1">
+                          <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-blue-50 text-[#1E4E9E] border border-blue-200 text-[11px] font-bold shadow-2xs">
+                            <span>🏷️ Dạng bài:</span>
+                            <span>{badgeType}</span>
+                          </span>
+                        </div>
+                      );
+                    })()}
+<div className="space-y-1.5">
                       <div className="flex items-center justify-between gap-2 flex-wrap">
                         <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug flex items-baseline gap-2 flex-wrap min-w-0 break-words">
                         <span className="text-[#1E4E9E] font-black text-lg">
@@ -2247,17 +2505,22 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                           let cardStyle = 'border-slate-200/90 bg-white hover:border-blue-300 hover:bg-blue-50/20 text-slate-800';
                           let badgeStyle = 'bg-slate-100 text-slate-700 border-slate-200';
 
-                          if (isQAnswered) {
+                          const isGroupSubmitted = isPassageMode ? isCurrentPassageSubmitted : isQAnswered;
+
+                          if (isGroupSubmitted) {
                             if (isCorrect) {
-                              cardStyle = 'border-emerald-500 bg-emerald-50/70 text-emerald-950 font-semibold ring-1 ring-emerald-400';
+                              cardStyle = 'border-emerald-500 bg-emerald-50/70 text-emerald-950 font-semibold ring-1 ring-emerald-400 animate-correct-glow';
                               badgeStyle = 'bg-emerald-600 text-white border-emerald-600';
                             } else if (isSelected && !isCorrect) {
-                              cardStyle = 'border-rose-400 bg-rose-50/70 text-rose-950 font-medium ring-1 ring-rose-300';
+                              cardStyle = 'border-rose-400 bg-rose-50/70 text-rose-950 font-medium ring-1 ring-rose-300 animate-shake-wrong';
                               badgeStyle = 'bg-rose-600 text-white border-rose-600';
                             } else {
                               cardStyle = 'border-slate-200/60 bg-slate-50/40 text-slate-400 opacity-70';
                               badgeStyle = 'bg-slate-100 text-slate-400 border-slate-200';
                             }
+                          } else if (isSelected) {
+                            cardStyle = 'border-blue-500 bg-blue-50/60 text-blue-950 font-semibold ring-2 ring-blue-400/50';
+                            badgeStyle = 'bg-blue-600 text-white border-blue-600';
                           } else if (isLatTu && !isCardFlipped) {
                             cardStyle = 'border-2 border-dashed border-amber-300/80 bg-amber-50/30 hover:bg-amber-100/50 text-slate-800 hover:border-amber-400';
                             badgeStyle = 'bg-amber-100 text-amber-900 border-amber-300';
@@ -2267,7 +2530,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                             <div
                               key={letter}
                               onClick={() => {
-                                if (isQAnswered) return;
+                                if (isPassageMode ? isCurrentPassageSubmitted : isQAnswered) return;
                                 if (isLatTu && !isCardFlipped) {
                                   setFlippedChoices((prev) => ({ ...prev, [letter]: true }));
                                   showNotification(`Đã lật thẻ (${letter})`);
@@ -2275,7 +2538,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                                   handleSelectOption(qItem, letter);
                                 }
                               }}
-                              className={'p-3 sm:p-3.5 rounded-2xl border transition-all flex items-center justify-between gap-3 cursor-pointer ' + cardStyle}
+                              className={'p-3 sm:p-3.5 rounded-2xl border transition-all active:scale-[0.99] duration-150 flex items-center justify-between gap-3 cursor-pointer ' + cardStyle}
                             >
                               <div className="flex items-center gap-3 min-w-0">
                                 <span className={'w-7 h-7 rounded-xl flex items-center justify-center font-bold text-xs shrink-0 border ' + badgeStyle}>
@@ -2289,7 +2552,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                                     </div>
                                   ) : isQAnswered || (partNumber !== 1 && partNumber !== 2 && (optText && !optText.match(/^[A-D].?$/i))) ? (
                                     <div>
-                                      <span className="text-slate-800">{cleanOptionText(optText, letter) || ('Lựa chọn (' + letter + ')')}</span>
+                                      <span className="text-slate-800">{cleanOptionText(optText, letter) || (partNumber === 2 ? 'Lựa chọn ' + letter : (optText ? optText : 'Lựa chọn (' + letter + ')'))}</span>
                                       {isSongNgu && (qItem.option_translations?.[letter] || translationsMap[optText]) && (
                                         <p className="text-[11px] sm:text-xs text-blue-700 font-medium italic mt-0.5">
                                           ↳ {qItem.option_translations?.[letter] || translationsMap[optText]}
@@ -2299,7 +2562,7 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                                   ) : (
                                     <div>
                                       <span className="text-slate-700 font-medium">({letter})</span>
-                                      {isSongNgu && isQAnswered && (qItem.option_translations?.[letter] || translationsMap[optText]) && (
+                                      {isSongNgu && isGroupSubmitted && (qItem.option_translations?.[letter] || translationsMap[optText]) && (
                                         <p className="text-[11px] sm:text-xs text-blue-700 font-medium italic mt-0.5">
                                           ↳ {qItem.option_translations?.[letter] || translationsMap[optText]}
                                         </p>
@@ -2313,8 +2576,8 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                                   Lật xem
                                 </span>
                               )}
-                              {isQAnswered && isCorrect && <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />}
-                              {isQAnswered && isSelected && !isCorrect && <XCircle className="w-5 h-5 text-rose-600 shrink-0" />}
+                              {isGroupSubmitted && isCorrect && <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0" />}
+                              {isGroupSubmitted && isSelected && !isCorrect && <XCircle className="w-5 h-5 text-rose-600 shrink-0" />}
                             </div>
                           );
                         })}
@@ -2414,27 +2677,93 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                     {/* 📚 Từ vựng quan trọng trong câu (Directly beneath answers) */}
                     {(() => {
                       const vocabList: Array<{ word: string; meaning?: string }> = (() => {
+                        // 1. Direct vocabulary array from API/backend
                         if (Array.isArray((qItem as any)?.vocabulary) && (qItem as any).vocabulary.length > 0) {
-                          return (qItem as any).vocabulary.map((v: any) => typeof v === 'string' ? { word: v, meaning: '' } : v);
+                          return (qItem as any).vocabulary.map((v: any) =>
+                            typeof v === 'string'
+                              ? { word: v, meaning: '' }
+                              : { word: v.word || v.lemma || '', meaning: v.meaning || v.meaning_vi || v.vi || '' }
+                          ).filter((item: any) => Boolean(item.word));
                         }
-                        if (qItem?.question_text) {
-                          const qText = qItem.question_text.replace(/^câu\s*(hỏi)?\s*\d+[:.]?\s*/i, '');
-                          const tokens = qText.match(/[a-zA-Z]{4,}/g) || [];
-                          const stopwords = new Set([
-                            'the', 'and', 'for', 'with', 'that', 'this', 'from', 'what', 'when',
-                            'where', 'which', 'who', 'will', 'would', 'could', 'should', 'have',
-                            'has', 'had', 'does', 'did', 'are', 'was', 'were', 'about', 'their', 'there'
-                          ]);
-                          const extracted: Array<{ word: string; meaning?: string }> = [];
-                          for (const t of tokens) {
-                            const w = t.toLowerCase();
-                            if (!stopwords.has(w) && !extracted.some(x => x.word.toLowerCase() === w)) {
-                              extracted.push({ word: w });
+                        // 2. tu_vung property (JSON string or object)
+                        const rawTuVung = (qItem as any)?.tu_vung || (qItem as any)?.key_vocab;
+                        if (rawTuVung) {
+                          try {
+                            const parsed = typeof rawTuVung === 'string' ? JSON.parse(rawTuVung) : rawTuVung;
+                            const list = Array.isArray(parsed) ? parsed : (parsed?.vocabulary || parsed?.words || []);
+                            if (Array.isArray(list) && list.length > 0) {
+                              return list.map((v: any) =>
+                                typeof v === 'string'
+                                  ? { word: v, meaning: '' }
+                                  : { word: v.word || v.lemma || '', meaning: v.meaning_vi || v.meaning || v.vi || '' }
+                              ).filter((item: any) => Boolean(item.word));
                             }
-                            if (extracted.length >= 4) break;
-                          }
-                          return extracted;
+                          } catch {}
                         }
+                        // 3. Smart Extraction from transcript, options, question_text with authentic meaning lookup
+                        const candidateTexts: string[] = [];
+                        if (qItem?.transcript) candidateTexts.push(qItem.transcript);
+                        if (qItem?.options) {
+                          Object.values(qItem.options).forEach((optVal: any) => {
+                            if (typeof optVal === 'string') candidateTexts.push(optVal);
+                          });
+                        }
+                        ['option_a', 'option_b', 'option_c', 'option_d'].forEach((prop) => {
+                          const val = (qItem as any)?.[prop];
+                          if (typeof val === 'string') candidateTexts.push(val);
+                        });
+                        if (qItem?.question_text) {
+                          const cleanedPrompt = qItem.question_text
+                            .replace(/^câu\s*(hỏi)?\s*\d+[:.]?\s*/i, '')
+                            .replace(/nghe\s*\d*\s*phương\s*án.*$/i, '')
+                            .replace(/chọn\s*câu\s*miêu\s*tả.*$/i, '')
+                            .replace(/bức\s*tranh.*$/i, '');
+                          if (cleanedPrompt.trim()) candidateTexts.push(cleanedPrompt);
+                        }
+
+                        const combinedText = candidateTexts.join(' ');
+                        const rawWords = combinedText.match(/[a-zA-Z]{3,}/g) || [];
+                        const stopwords = new Set([
+                          'the', 'and', 'for', 'with', 'that', 'this', 'from', 'what', 'when',
+                          'where', 'which', 'who', 'will', 'would', 'could', 'should', 'have',
+                          'has', 'had', 'does', 'did', 'are', 'was', 'were', 'about', 'their',
+                          'there', 'they', 'them', 'she', 'his', 'her', 'hers', 'him', 'its',
+                          'into', 'some', 'than', 'then', 'very', 'just', 'more', 'also', 'been',
+                          'being', 'each', 'most', 'other', 'both', 'such', 'like', 'same'
+                        ]);
+
+                        const extractedMap = new Map<string, string>();
+                        const vocabDict = commonVocabDictionary as Record<string, string>;
+
+                        for (const rawW of rawWords) {
+                          const w = rawW.toLowerCase();
+                          if (stopwords.has(w) || w.length < 3) continue;
+
+                          const baseCandidates = [
+                            w,
+                            w.endsWith('ing') ? w.slice(0, -3) : '',
+                            w.endsWith('ing') && w.length > 5 ? w.slice(0, -4) : '',
+                            w.endsWith('ed') ? w.slice(0, -2) : '',
+                            w.endsWith('s') && !w.endsWith('ss') ? w.slice(0, -1) : '',
+                            w.endsWith('es') ? w.slice(0, -2) : ''
+                          ].filter(Boolean);
+
+                          for (const cand of baseCandidates) {
+                            if (vocabDict[cand] && !extractedMap.has(cand)) {
+                              extractedMap.set(cand, vocabDict[cand]);
+                              break;
+                            }
+                          }
+                          if (extractedMap.size >= 5) break;
+                        }
+
+                        if (extractedMap.size > 0) {
+                          return Array.from(extractedMap.entries()).map(([word, meaning]) => ({
+                            word,
+                            meaning
+                          }));
+                        }
+
                         return [];
                       })();
 
@@ -2583,31 +2912,71 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                                 showNotification('👑 Tính năng Dẫn chứng chỉ dành riêng cho Gói VIP Pro. Nâng cấp VIP để sử dụng!');
                                 return;
                               }
-                              toggleDanChung();
-                              showNotification('Đã bật hiển thị Dẫn chứng');
+                              setShowClueByQuestion((prev) => ({ ...prev, [qKey]: true }));
+                              showNotification("Đã mở dẫn chứng cho câu " + qNum);
                             }}
                             className="px-2.5 py-1 rounded-xl bg-white border border-slate-200 hover:border-emerald-400 text-slate-700 hover:text-emerald-700 font-bold text-[11px] transition-all cursor-pointer shadow-2xs flex items-center gap-1"
                           >
                             <span>✍️</span>
-                            <span>Bật dẫn chứng</span>
+                            <span>Bật dẫn chứng câu này</span>
                           </button>
                         </div>
                       );
                     })()}
 
-                    {/* Question Transcript & Explanation when answered */}
-                    {isQAnswered && (
+                    {/* Question Transcript & Explanation when submitted */}
+                    {(isPassageMode ? isCurrentPassageSubmitted : isQAnswered) && (
                       <div className="space-y-2 pt-1">
                         {qItem.transcript && (
                           <div className="p-3 bg-slate-50 rounded-xl border border-slate-200 text-xs text-slate-800 leading-relaxed">
                             <span className="font-bold text-slate-700 block mb-0.5">Lời thoại câu {qItem.question_number}:</span>
-                            <p className="font-mono whitespace-pre-line">{qItem.transcript}</p>
+                            {/<[a-z][\s\S]*>/i.test(qItem.transcript) ? (
+                              <div
+                                className="font-mono whitespace-pre-line [&_p]:mb-1 [&_strong]:font-bold [&_b]:font-bold"
+                                dangerouslySetInnerHTML={{
+                                  __html: DOMPurify.sanitize(qItem.transcript)
+                                }}
+                              />
+                            ) : (
+                              <p className="font-mono whitespace-pre-line">{qItem.transcript}</p>
+                            )}
                           </div>
                         )}
                         {qItem.explanation && (
-                          <div className="p-3 bg-blue-50/50 rounded-xl border border-blue-100 text-xs text-slate-700 leading-relaxed">
-                            <span className="font-bold text-[#1E4E9E] block mb-0.5">Giải thích:</span>
-                            <p className="whitespace-pre-line">{qItem.explanation}</p>
+                          <div className="p-3 bg-blue-50/50 rounded-xl border border-blue-100 text-xs text-slate-700 leading-relaxed space-y-2">
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-[#1E4E9E] block mb-0.5">Giải thích:</span>
+                              <button
+                                type="button"
+                                onClick={() => handleExplainWithAi(qItem)}
+                                disabled={Boolean(aiExplainLoadingMap[qKey])}
+                                className="px-2.5 py-1 rounded-xl bg-purple-50 hover:bg-purple-100 border border-purple-200 text-purple-700 font-bold text-[11px] transition-all flex items-center gap-1.5 cursor-pointer shadow-2xs disabled:opacity-60"
+                              >
+                                <Sparkles className="w-3.5 h-3.5 text-purple-600" />
+                                <span>{aiExplainLoadingMap[qKey] ? 'AI đang phân tích...' : '✨ Giải thích chi tiết bằng AI'}</span>
+                              </button>
+                            </div>
+                            {/<[a-z][\s\S]*>/i.test(qItem.explanation) ? (
+                              <div
+                                className="whitespace-pre-line [&_p]:mb-1 [&_strong]:font-bold [&_b]:font-bold"
+                                dangerouslySetInnerHTML={{
+                                  __html: DOMPurify.sanitize(qItem.explanation)
+                                }}
+                              />
+                            ) : (
+                              <p className="whitespace-pre-line">{qItem.explanation}</p>
+                            )}
+                            {aiExplainResultMap[qKey] && (
+                              <div className="mt-3 p-3.5 rounded-2xl bg-white border border-purple-200 shadow-2xs space-y-2 text-xs">
+                                <div className="flex items-center gap-1.5 font-bold text-purple-900 border-b border-purple-100 pb-1.5">
+                                  <Sparkles className="w-4 h-4 text-purple-600" />
+                                  <span>Phân tích Giảng viên AI (Tại sao đúng / Vì sao từng phương án sai):</span>
+                                </div>
+                                <div className="whitespace-pre-line leading-relaxed text-slate-800 prose prose-sm max-w-none">
+                                  {aiExplainResultMap[qKey]}
+                                </div>
+                              </div>
+                            )}
                           </div>
                         )}
                       </div>
@@ -2621,11 +2990,79 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
           {/* Bottom Next / Finish Actions */}
           <div className="pt-3 border-t border-slate-100 flex items-center justify-between shrink-0">
             <span className="text-xs text-slate-400 font-medium">
-              {isCurrentAnswered ? (<span>Nhấn Next <span className="hidden sm:inline">[▶]</span> để sang câu tiếp</span>) : 'Chọn đáp án để xem giải thích'}
+              {isPassageMode
+                ? (isCurrentPassageSubmitted
+                    ? (<span>Đã nộp bài đoạn này. Nhấn <strong>Đoạn tiếp theo [▶]</strong> để tiếp tục</span>)
+                    : (<span>Đã chọn ({activeQuestionsAnsweredCount}/{activeQuestions.length} câu) - Nhấn Nộp bài để xem kết quả & giải thích</span>))
+                : (isCurrentAnswered
+                    ? (<span>Nhấn Next <span className="hidden sm:inline">[▶]</span> để sang câu tiếp</span>)
+                    : 'Chọn đáp án để xem giải thích')}
             </span>
 
             {isPassageMode ? (
-              currentPassageIndex < effectivePassages.length - 1 ? (
+              !isCurrentPassageSubmitted ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSubmittedGroups((prev) => ({ ...prev, [currentPassageKey]: true }));
+                    let allCorrect = true;
+                    let correctCount = 0;
+                    const activeLevelKey = levelKey || (levelBadge?.match(/Level \d+/i) ? `part${partNumber}_${levelBadge.match(/Level \d+/i)?.[0]}` : `part${partNumber}_Level 1`);
+
+                    activeQuestions.forEach((q: any) => {
+                      const qKey = String(q.id || q.question_number);
+                      const userChoice = userAnswers[qKey];
+                      if (userChoice) {
+                        const correctChoice = (q.correct_answer || 'A').toUpperCase();
+                        const isCorr = userChoice.toUpperCase() === correctChoice;
+                        if (isCorr) {
+                          correctCount++;
+                          historyStore.markQuestionCorrect(q.id || qKey, {
+                            questionNumber: q.question_number,
+                            part: partNumber,
+                            section: partNumber <= 4 ? 'listening' : 'reading',
+                            questionText: q.question_text,
+                            selectedOption: userChoice,
+                            correctOption: correctChoice
+                          });
+                        } else {
+                          allCorrect = false;
+                          historyStore.markQuestionIncorrect(q.id || qKey, {
+                            questionNumber: q.question_number,
+                            part: partNumber,
+                            section: partNumber <= 4 ? 'listening' : 'reading',
+                            questionText: q.question_text,
+                            selectedOption: userChoice,
+                            correctOption: correctChoice
+                          });
+                        }
+                        practiceProgressStore.recordAnswer(
+                          activeLevelKey,
+                          String(q.id || qKey),
+                          userChoice,
+                          isCorr,
+                          totalItems
+                        );
+                      }
+                    });
+
+                    if (isSfxEnabled) {
+                      sfx.play(allCorrect ? 'correct' : 'incorrect');
+                    }
+                    if (allCorrect) {
+                      confetti({ particleCount: 60, spread: 70, origin: { y: 0.6 } });
+                      showNotification(`🎉 Xuất sắc! Đúng cả ${correctCount}/${activeQuestions.length} câu!`);
+                    } else {
+                      showNotification(`Đã nộp bài! Bạn làm đúng ${correctCount}/${activeQuestions.length} câu. Hãy xem giải thích chi tiết!`);
+                    }
+                  }}
+                  disabled={activeQuestionsAnsweredCount === 0}
+                  className="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none text-white font-bold text-xs shadow-xs transition-colors flex items-center gap-1.5 cursor-pointer"
+                >
+                  <CheckCircle2 className="w-4 h-4" />
+                  <span>Nộp bài & Xem kết quả ({activeQuestionsAnsweredCount}/{activeQuestions.length})</span>
+                </button>
+              ) : currentPassageIndex < effectivePassages.length - 1 ? (
                 <button
                   type="button"
                   onClick={() => setCurrentPassageIndex((prev) => prev + 1)}
@@ -2700,16 +3137,6 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
           </button>
 
           {/* Chấm bài & Chẩn đoán AI (Gemini) */}
-          <button
-            type="button"
-            onClick={handleRunAiGrading}
-            className="flex items-center gap-1.5 p-2 sm:px-3 sm:py-1.5 rounded-xl border border-indigo-200 bg-gradient-to-r from-blue-50 to-indigo-50 text-indigo-700 hover:from-blue-100 hover:to-indigo-100 text-xs font-bold transition-all cursor-pointer shadow-2xs"
-            title="Chấm điểm, phân tích bẫy đề thi và nhận mẹo 5 giây bằng Gemini AI"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
-            <span className="hidden sm:inline">Chấm bài AI</span>
-          </button>
-
           {/* Tra từ (Dictionary) */}
           <button
             type="button"
@@ -2917,7 +3344,23 @@ const FocusedPracticeRoomInner: React.FC<FocusedPracticeRoomProps> = ({
                       }}
                       className={`relative h-10 rounded-xl text-xs font-bold transition-all flex items-center justify-center cursor-pointer shadow-2xs ${btnStyle}`}
                     >
-                      <span>{idx + 1}</span>
+                     <span className="truncate px-0.5 text-[11px]">
+                        {(() => {
+                          if (isPassageMode) {
+                            const pQs = item.questions || [];
+                            if (pQs.length > 1) {
+                              const firstNum = pQs[0]?.question_number || (idx + 1);
+                              const lastNum = pQs[pQs.length - 1]?.question_number || (idx + pQs.length);
+                              return `$yfirstNum-${lastNum}`;
+                            } else if (pQs.length === 1 && pQs[0]?.question_number) {
+                              return `${pQs[0].question_number}`;
+                            }
+                          } else if (item.question_number) {
+                            return `${item.question_number}`;
+                          }
+                          return `${idx + 1}`;
+                        })()}
+                      </span>
                       {isFlagged && (
                         <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-amber-400 border border-white" />
                       )}

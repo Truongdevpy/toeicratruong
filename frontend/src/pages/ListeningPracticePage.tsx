@@ -15,6 +15,10 @@ import {
 import { practiceProgressStore } from '../services/practiceProgressStore';
 import { VocabBasketModal } from '../components/VocabBasketModal';
 import { LevelTheoryModal } from '../components/LevelTheoryModal';
+import { AIAssessmentDrawer } from '../components/AIAssessmentDrawer';
+import { Pagination } from '../components/common/Pagination';
+import { usePagination } from '../hooks/usePagination';
+import { Sparkles } from 'lucide-react';
 import { historyStore } from '../services/historyStore';
 import { api } from '../services/api';
 import { Question } from '../types';
@@ -43,6 +47,10 @@ const LEVEL_CONFIGS: LevelCardInfo[] = [
   { levelKey: 'Level 2', title: 'Level 2 – 200–300', badge: '200–300', scoreRange: '200–300' },
   { levelKey: 'Level 3', title: 'Level 3 – 300–400', badge: '300–400', scoreRange: '300–400' },
   { levelKey: 'Level 4', title: 'Level 4 – 400–495', badge: '400–495', scoreRange: '400–495' },
+  { levelKey: 'Level 5', title: 'Level 5 – 500–600', badge: '500–600', scoreRange: '500–600' },
+  { levelKey: 'Level 6', title: 'Level 6 – 600–700', badge: '600–700', scoreRange: '600–700' },
+  { levelKey: 'Level 7', title: 'Level 7 – 700–800', badge: '700–800', scoreRange: '700–800' },
+  { levelKey: 'Level 8', title: 'Level 8 – 800–990', badge: '800–990', scoreRange: '800–990 (Master)' },
 ];
 
 const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
@@ -54,7 +62,48 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const { user } = useAuth();
 
 
-  const [activeTab, setActiveTab] = useState<TabType>('part1');
+  const [activeTab, setActiveTab] = useState<TabType>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      const partParam = p.get('part');
+      if (partParam === '1' || partParam === 'part1') return 'part1';
+      if (partParam === '2' || partParam === 'part2') return 'part2';
+      if (partParam === '3' || partParam === 'part3') return 'part3';
+      if (partParam === '4' || partParam === 'part4') return 'part4';
+      if (partParam === 'dictation') return 'dictation';
+    }
+    return 'part1';
+  });
+  const [isAIAssessmentOpen, setIsAIAssessmentOpen] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      return p.get('ai') === '1' || p.get('ai') === 'true';
+    }
+    return false;
+  });
+  const [aiTimeRange, setAiTimeRange] = useState<'7d' | '30d' | 'all'>(() => {
+    if (typeof window !== 'undefined') {
+      const p = new URLSearchParams(window.location.search);
+      const r = p.get('range');
+      if (r === '7d' || r === '30d' || r === 'all') return r;
+    }
+    return 'all';
+  });
+
+  const syncAssessmentUrl = (open: boolean, range?: string) => {
+    if (typeof window === 'undefined') return;
+    try {
+      const url = new URL(window.location.href);
+      if (open) {
+        url.searchParams.set('ai', '1');
+        if (range) url.searchParams.set('range', range);
+      } else {
+        url.searchParams.delete('ai');
+        url.searchParams.delete('range');
+      }
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
+  };
   const [viewMode, setViewMode] = useState<'catalog' | 'runner'>('catalog');
 
   useEffect(() => {
@@ -69,7 +118,39 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
   const [isVocabBasketOpen, setIsVocabBasketOpen] = useState(false);
   const [theoryModalData, setTheoryModalData] = useState<{ isOpen: boolean; title: string; levelKey: string } | null>(null);
   const [resetConfirmModal, setResetConfirmModal] = useState<{ isOpen: boolean; levelKey: string; title: string } | null>(null);
-  const [_activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
+  const [activeLevelKey, setActiveLevelKey] = useState<string>('part1_Level 1');
+
+  // Deeplink auto-resume on mount or URL change
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const urlLevel = params.get('level');
+    const urlCategory = params.get('category');
+    const urlQ = parseInt(params.get('q') || '1', 10);
+
+    if (urlLevel && viewMode === 'catalog') {
+      const targetLvl = urlLevel.startsWith('Level') ? urlLevel : `Level ${urlLevel}`;
+      const filterTitle = `Part ${getPartNumber(activeTab)} · ${targetLvl}`;
+      handleStartPractice('level', targetLvl, filterTitle, urlQ > 0 ? urlQ - 1 : 0);
+    } else if (urlCategory && viewMode === 'catalog') {
+      handleStartPractice('category', urlCategory, urlCategory, urlQ > 0 ? urlQ - 1 : 0);
+    }
+  }, [activeTab]);
+
+  // Sync URL when question changes in runner
+  const handleRunnerIndexChange = (newIdx: number) => {
+    if (typeof window === 'undefined' || viewMode !== 'runner') return;
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.set('part', String(getPartNumber(activeTab)));
+      if (activeFilterName?.includes('Level')) {
+        const lvl = activeFilterName.match(/Level \d+/i)?.[0];
+        if (lvl) url.searchParams.set('level', lvl);
+      }
+      url.searchParams.set('q', String(newIdx + 1));
+      window.history.replaceState({}, '', url.toString());
+    } catch {}
+  };
 
   useEffect(() => {
     const unsub = practiceProgressStore.subscribe(() => {
@@ -154,7 +235,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     }
   }, [activeTab, viewMode]);
 
-  const handleStartPractice = async (filterType: 'level' | 'category', filterValue: string, titleLabel: string) => {
+  const handleStartPractice = async (filterType: 'level' | 'category', filterValue: string, titleLabel: string, targetQIndex?: number) => {
     if (!user) {
       onOpenAuth?.('login');
       return;
@@ -174,7 +255,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     setIsPlaying(false);
 
     try {
-      const params: any = { limit: 50 };
+      const params: any = { limit: 2000 };
       if (filterType === 'level') {
         params.level = filterValue;
       } else {
@@ -185,26 +266,35 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
       practiceProgressStore.updateTotalQuestions(fullKey, allQs.length);
       const stats = practiceProgressStore.getLevelStats(fullKey, allQs.length);
 
-      // Filter out questions already answered correctly
-      const uncompleted = allQs.filter((q) => !stats.correctIds.includes(String(q.id)));
+      // Keep all questions so drawer, indicator and progress match total questions
+      let finalQs = allQs;
+      if (filterType === 'level' && (filterValue === 'Level 3' || filterValue === 'Level 4') && user?.role !== 'vip' && user?.role !== 'admin') {
+        finalQs = allQs.slice(0, 5);
+        showToast('👹 Gói Thường: Giới hạn 5 câu luyện tập ở Level nâng cao. Nâng cấp VIP để mở toàn bộ câu hỏi!');
+      }
+      setRunnerQuestions(finalQs);
 
-      if (uncompleted.length > 0) {
-        let finalQs = uncompleted;
-        if (filterType === 'level' && (filterValue === 'Level 3' || filterValue === 'Level 4') && user?.role !== 'vip' && user?.role !== 'admin') {
-          finalQs = uncompleted.slice(0, 5);
-          showToast('👑 Gói Thường: Giới hạn 5 câu luyện tập ở Level nâng cao. Nâng cấp VIP để mở toàn bộ câu hỏi!');
-        }
-        setRunnerQuestions(finalQs);
-        if (allQs.length - uncompleted.length > 0) {
-          showToast(`Đã bỏ qua ${allQs.length - uncompleted.length} câu đã làm đúng. Đang làm ${uncompleted.length} câu chưa xong!`);
-        }
+      // If explicit target question index was requested via deeplink (e.g. ?q=1), respect it
+      if (typeof targetQIndex === 'number' && targetQIndex >= 0 && targetQIndex < finalQs.length) {
+        setCurrentIndex(targetQIndex);
       } else {
-        setRunnerQuestions(allQs);
-        if (allQs.length > 0) {
-          showToast('Bạn đã làm đúng tất cả các câu trong phần này! Đang mở ôn tập lại toàn bộ.');
+        // Automatically jump to the first unanswered question (skip both correct & wrong)
+        const answeredIds = new Set([
+          ...stats.correctIds,
+          ...stats.wrongIds,
+          ...Object.keys(practiceProgressStore.getLevelData(fullKey).answeredQuestions || {})
+        ]);
+        const firstUnansweredIndex = finalQs.findIndex((q) => !answeredIds.has(String(q.id)));
+        if (firstUnansweredIndex > 0) {
+          setCurrentIndex(firstUnansweredIndex);
+          showToast(`Tự động chuyển đến câu ${firstUnansweredIndex + 1} chưa làm! (${stats.answered} câu đã hoàn thành)`);
+        } else if (firstUnansweredIndex === -1 && finalQs.length > 0) {
+          setCurrentIndex(finalQs.length - 1);
+          showToast(`Bạn đã hoàn thành tất cả ${finalQs.length} câu của phần này!`);
+        } else {
+          setCurrentIndex(0);
         }
       }
-
       setRunnerPassages(res.passages || []);
       setCurrentPassageIndex(0);
       setPassageAnswers({});
@@ -445,13 +535,24 @@ if (viewMode === 'runner') {
     }
     return (
       <FocusedPracticeRoom
+        onIndexChange={handleRunnerIndexChange}
         title={activeFilterName || `Luyện nghe TOEIC Part ${getPartNumber(activeTab)}`}
         levelBadge={activeFilterName?.includes('Level') ? activeFilterName.split('–')[0].trim() : `Part ${getPartNumber(activeTab)}`}
+        levelKey={activeLevelKey}
         partNumber={getPartNumber(activeTab)}
         questions={runnerQuestions}
         passages={runnerPassages}
         initialIndex={currentIndex}
-        onExit={() => setViewMode('catalog')}
+        onExit={() => {
+          setViewMode('catalog');
+          if (typeof window !== 'undefined') {
+            const url = new URL(window.location.href);
+            url.searchParams.delete('level');
+            url.searchParams.delete('category');
+            url.searchParams.delete('q');
+            window.history.replaceState({}, '', url.toString());
+          }
+        }}
         onNavigate={onNavigate}
       />
     );
@@ -591,11 +692,50 @@ if (viewMode === 'runner') {
                   <BarChart3 className="w-4 h-4 text-blue-600" />
                   Luyện theo 4 cấp độ
                 </h2>
-                <span className="text-xs text-slate-400">Chọn cấp độ phù hợp mục tiêu</span>
+                <div className="flex items-center gap-2.5">
+                  {/* Nút Đánh giá bằng AI (Thiết kế gradient tím nổi bật, viền phát sáng và icon lấp lánh) */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setIsAIAssessmentOpen(true);
+                      syncAssessmentUrl(true, aiTimeRange);
+                    }}
+                    className="text-xs font-extrabold text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 hover:from-purple-700 hover:to-indigo-700 px-3.5 py-1.5 rounded-xl transition-all flex items-center gap-1.5 cursor-pointer shadow-sm hover:shadow-md ring-2 ring-purple-400/30 active:scale-95 animate-pulse-subtle"
+                    title="Gia sư AI phân tích kết quả luyện tập, tìm điểm mạnh và khắc phục điểm yếu"
+                  >
+                    <Sparkles className="w-4 h-4 text-amber-300 fill-amber-300 animate-spin-slow" />
+                    <span>Đánh giá bằng AI</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => setIsVocabBasketOpen(true)}
+                    className="text-xs font-bold text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200/80 px-3 py-1.5 rounded-xl transition-colors flex items-center gap-1.5 cursor-pointer shadow-2xs"
+                  >
+                    <ShoppingBag className="w-3.5 h-3.5 text-amber-600" />
+                    <span>Giỏ từ ({practiceProgressStore.getSavedVocabs().length})</span>
+                  </button>
+                  <span className="text-xs text-slate-400 hidden lg:inline">Chọn cấp độ phù hợp mục tiêu</span>
+                </div>
+              </div>
+
+              {/* Mobile Full-width Button */}
+              <div className="sm:hidden pt-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsAIAssessmentOpen(true);
+                    syncAssessmentUrl(true, aiTimeRange);
+                  }}
+                  className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-purple-700 bg-purple-50 hover:bg-purple-100 border border-purple-200 flex items-center justify-center gap-2 shadow-2xs"
+                >
+                  <Sparkles className="w-4 h-4 text-purple-600 fill-purple-600 animate-pulse" />
+                  <span>Đánh giá kết quả luyện tập bằng AI</span>
+                </button>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {LEVEL_CONFIGS.map((lvl) => {
+                {LEVEL_CONFIGS.map((lvl, lvlIdx) => {
                   const levelCount = partMeta.by_level?.[lvl.levelKey] ?? partMeta.by_level?.[lvl.levelKey.toLowerCase()];
                   const defaultTotal = (typeof levelCount === 'number' && levelCount > 0)
                     ? levelCount
@@ -608,7 +748,7 @@ if (viewMode === 'runner') {
                   return (
                     <div
                       key={lvl.levelKey}
-                      className="bg-white border border-slate-200/90 hover:border-blue-300 rounded-3xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-sm"
+                      className={`bg-white border border-slate-200/90 hover:border-blue-300 rounded-3xl p-5 shadow-xs transition-all flex flex-col justify-between group hover:shadow-md hover:-translate-y-1 duration-200 animate-slide-up stagger-${(lvlIdx % 8) + 1}`}
                     >
                       <div className="space-y-3">
                         {/* Header */}
@@ -646,7 +786,7 @@ if (viewMode === 'runner') {
                         {/* Progress Bar */}
                         <div className="w-full bg-slate-100 h-1.5 rounded-full overflow-hidden">
                           <div
-                            className="bg-blue-600 h-full rounded-full transition-all duration-300"
+                            className="bg-blue-600 h-full rounded-full transition-all duration-500 ease-out"
                             style={{ width: `${progressPct}%` }}
                           />
                         </div>
@@ -722,7 +862,7 @@ if (viewMode === 'runner') {
                         <button
                           type="button"
                           onClick={() => handleStartPractice('level', lvl.levelKey, `${activeTab.toUpperCase()} · ${lvl.title}`)}
-                          className="w-full py-3 min-h-[44px] bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all cursor-pointer text-center flex items-center justify-center gap-1.5"
+                          className="w-full py-3 min-h-[44px] bg-blue-600 hover:bg-blue-700 active:scale-[0.97] text-white font-bold text-xs sm:text-sm rounded-xl shadow-xs transition-all duration-150 cursor-pointer text-center flex items-center justify-center gap-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         >
                           <span>Học ngay</span>
                           <ArrowRight className="w-3.5 h-3.5" />
@@ -951,6 +1091,18 @@ if (viewMode === 'runner') {
             handleStartPractice('level', theoryModalData.levelKey, theoryModalData.title);
           }
         }}
+      />
+
+      {/* AI Assessment Drawer */}
+      <AIAssessmentDrawer
+        isOpen={isAIAssessmentOpen}
+        onClose={() => {
+          setIsAIAssessmentOpen(false);
+          syncAssessmentUrl(false);
+        }}
+        scope={activeTab}
+        defaultTimeRange={aiTimeRange}
+        onNavigate={onNavigate}
       />
 
       {/* Reset Level Progress Confirmation Modal */}

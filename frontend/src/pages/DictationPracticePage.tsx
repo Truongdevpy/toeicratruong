@@ -23,6 +23,7 @@ import { api } from '../services/api';
 import { DictationChallenge, DictationCheckResponse } from '../types';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
+import { Pagination } from '../components/common/Pagination';
 
 interface DictationPracticePageProps {
   onNavigate: (path: string) => void;
@@ -70,6 +71,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
   const [sortOption, setSortOption] = useState<string>('newest');
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [pageSize, setPageSize] = useState<number | 'all'>(12);
 
   // Challenges data
   const [allChallenges, setAllChallenges] = useState<DictationChallenge[]>([]);
@@ -208,12 +210,12 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
   }, [allChallenges, partFilter, difficultyFilter, lengthFilter, durationFilter, statusFilter, searchQuery, sortOption, historyMap]);
 
   // Paginated Catalog items
-  const PAGE_SIZE = 12;
-  const totalCatalogPages = Math.max(1, Math.ceil(filteredChallenges.length / PAGE_SIZE));
+  const totalCatalogPages = pageSize === 'all' ? 1 : Math.max(1, Math.ceil(filteredChallenges.length / pageSize));
   const pagedChallenges = useMemo(() => {
-    const start = (currentPage - 1) * PAGE_SIZE;
-    return filteredChallenges.slice(start, start + PAGE_SIZE);
-  }, [filteredChallenges, currentPage]);
+    if (pageSize === 'all') return filteredChallenges;
+    const start = (currentPage - 1) * pageSize;
+    return filteredChallenges.slice(start, start + pageSize);
+  }, [filteredChallenges, currentPage, pageSize]);
 
   const currentChallenge = allChallenges[activeChallengeIndex] || filteredChallenges[0];
 
@@ -1027,37 +1029,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
         {/* Filter Controls Suite */}
         <div className="bg-white border border-slate-200/90 rounded-3xl p-5 sm:p-6 shadow-xs space-y-4">
           
-          {/* 1. Skill Category Tabs - Exclusively TOEIC Listening */}
-          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 border-b border-slate-100">
-            {[
-              { id: 'all', label: '🎧 Tất cả bài nghe (Part 1-4)' },
-              { id: 'p1', label: '🖼️ Part 1 (Mô tả tranh)' },
-              { id: 'p2', label: '❓ Part 2 (Hỏi & Đáp)' },
-              { id: 'p3', label: '💬 Part 3 (Hội thoại)' },
-              { id: 'p4', label: '📢 Part 4 (Bài nói ngắn)' },
-            ].map((cat) => (
-              <button
-                key={cat.id}
-                type="button"
-                onClick={() => {
-                  if (cat.id === 'p1') setPartFilter(1);
-                  else if (cat.id === 'p2') setPartFilter(2);
-                  else if (cat.id === 'p3') setPartFilter(3);
-                  else if (cat.id === 'p4') setPartFilter(4);
-                  else setPartFilter('all');
-                  setCategoryFilter(cat.id as any);
-                  setCurrentPage(1);
-                }}
-                className={`px-4 py-2 rounded-2xl text-xs font-bold whitespace-nowrap transition-all cursor-pointer flex items-center gap-2 ${
-                  categoryFilter === cat.id
-                    ? 'bg-blue-600 text-white shadow-xs'
-                    : 'bg-slate-100 hover:bg-slate-200 text-slate-700'
-                }`}
-              >
-                <span>{cat.label}</span>
-              </button>
-            ))}
-          </div>
+          
 
           {/* 2. Parts Quick Filter Chips - Listening Parts Only */}
           <div className="flex flex-wrap items-center gap-1.5">
@@ -1180,7 +1152,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
                   setSearchQuery(e.target.value);
                   setCurrentPage(1);
                 }}
-                placeholder="Tìm theo tên đề, mã đề (DICT-01), part, chủ đề (văn phòng, hội thoại...)..."
+                placeholder="Tìm theo tên đề, part, chủ đề (văn phòng, hội thoại...)..."
                 className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-800 focus:outline-hidden focus:ring-2 focus:ring-blue-500 focus:bg-white"
               />
             </div>
@@ -1278,9 +1250,7 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
                       <h3 className="text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2">
                         {item.title || `Bài luyện nghe Part ${item.part} #${idx + 1}`}
                       </h3>
-                      <p className="text-[11px] text-slate-400 font-mono mt-0.5">
-                        Mã: {item.id.slice(0, 16)}...
-                      </p>
+                      
                     </div>
 
                     {/* Metadata summary */}
@@ -1332,27 +1302,19 @@ export const DictationPracticePage: React.FC<DictationPracticePageProps> = ({
         )}
 
         {/* Catalog Pagination */}
-        {totalCatalogPages > 1 && (
-          <div className="flex items-center justify-center gap-2 pt-4">
-            <button
-              type="button"
-              disabled={currentPage <= 1}
-              onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 disabled:opacity-40 cursor-pointer"
-            >
-              ← Trang trước
-            </button>
-            <span className="text-xs font-bold text-slate-700 px-3">
-              Trang {currentPage} / {totalCatalogPages}
-            </span>
-            <button
-              type="button"
-              disabled={currentPage >= totalCatalogPages}
-              onClick={() => setCurrentPage((p) => Math.min(totalCatalogPages, p + 1))}
-              className="px-3 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:bg-slate-50 disabled:opacity-40 cursor-pointer"
-            >
-              Trang sau →
-            </button>
+        {filteredChallenges.length > 0 && (
+          <div className="pt-4">
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalCatalogPages}
+              totalItems={filteredChallenges.length}
+              pageSize={pageSize}
+              onPageChange={(p) => setCurrentPage(p)}
+              onPageSizeChange={(s) => { setPageSize(s); setCurrentPage(1); }}
+              pageSizeOptions={[6, 12, 24, 48, "all"]}
+              showPageSizeSelector={true}
+              itemLabel="bài nghe"
+            />
           </div>
         )}
 

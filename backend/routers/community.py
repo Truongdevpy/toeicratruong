@@ -376,11 +376,21 @@ def leave_study_group(
     }
 
 @router.get("/posts")
-def get_posts(db: Session = Depends(get_db)):
+def get_posts(
+    user = Depends(get_current_user_optional),
+    db: Session = Depends(get_db)
+):
     ensure_initial_posts(db)
     posts = db.query(models.CommunityPost).order_by(models.CommunityPost.created_at.desc()).all()
     post_ids = [p.id for p in posts]
     comments_by_post = {pid: [] for pid in post_ids}
+    user_liked_post_ids = set()
+    if user and post_ids:
+        liked_rows = db.query(models.PostLike.post_id).filter(
+            models.PostLike.user_id == user.id,
+            models.PostLike.post_id.in_(post_ids)
+        ).all()
+        user_liked_post_ids = {r[0] for r in liked_rows}
     if post_ids:
         all_comments = db.query(models.PostComment).filter(
             models.PostComment.post_id.in_(post_ids)
@@ -399,7 +409,8 @@ def get_posts(db: Session = Depends(get_db)):
             "title": p.title,
             "content": p.content,
             "category": p.category,
-            "likes_count": p.likes_count,
+            "likes_count": p.likes_count or 0,
+            "user_has_liked": (p.id in user_liked_post_ids),
             "comments_count": len(comments),
             "created_at": format_vn_time(p.created_at, "%d/%m/%Y") if p.created_at else "",
             "created_at_raw": to_iso_utc(p.created_at),
@@ -504,6 +515,22 @@ def like_post(
     post = db.query(models.CommunityPost).filter(models.CommunityPost.id == post_id).first()
     if not post:
         raise HTTPException(status_code=404, detail="Bài viết không tồn tại")
-    post.likes_count = (post.likes_count or 0) + 1
-    db.commit()
-    return {"likes_count": post.likes_count}
+    
+    existing_like = db.query(models.PostLike).filter(
+        models.PostLike.post_id == post_id,
+        models.PostLike.user_id == user.id
+    ).first()
+
+    if existing_like:
+        # Bỏ thích (Unlike)
+        db.delete(existing_like)
+        post.likes_count = max(0, (post.likes_count or 1) - 1)
+        db.commit()
+        return {"likes_count": post.likes_count, "liked": False, "message": "Đã bỏ thích bài viết"}
+    else:
+        # Thích bài viết (Like)
+        new_like = models.PostLike(post_id=post_id, user_id=user.id)
+        db.add(new_like)
+        post.likes_count = (post.likes_count or 0) + 1
+        db.commit()
+        return {"likes_count": post.likes_count, "liked": True, "message": "Đã thích bài viết"}

@@ -1,7 +1,9 @@
 import sqlite3
+import random
 from fastapi import APIRouter, HTTPException, Query
 import json
 from pathlib import Path
+from typing import Optional, List, Dict, Any
 
 router = APIRouter(prefix="/api/grammar", tags=["grammar"])
 
@@ -9,10 +11,32 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = BASE_DIR / "data" / "data"
 WEB_READY_DIR = DATA_DIR / "web_ready"
 GRAMMAR_FILE = WEB_READY_DIR / "grammar_curriculum.json"
+CRAWLER_DB = DATA_DIR / "crawler.db"
 
 _grammar_cache = None
 _formatted_topics_cache = None
 _topic_detail_cache = {}
+
+CATEGORY_MAP = {
+    "d62945da-345b-4dad-bc21-bc9f1f07cd74": ("Từ loại & Cấu tạo từ", "Nouns & Word Forms", "text-blue-600 bg-blue-50 border-blue-200", "Bắt buộc 100% đề ETS. Nhận diện đuôi chỉ người/vật và vị trí danh từ trong câu."),
+    "91390352-861b-4499-8641-5bcba42d67c4": ("Từ loại & Cấu tạo từ", "Adjectives", "text-blue-600 bg-blue-50 border-blue-200", "Đứng trước danh từ hoặc sau linking verb. Phân biệt tính từ đuôi -ed và -ing."),
+    "f2c80ee2-c12f-41c8-9bbd-e33b7c8fdfc8": ("Từ loại & Cấu tạo từ", "Adverbs", "text-blue-600 bg-blue-50 border-blue-200", "Bổ nghĩa cho động từ, tính từ hoặc toàn câu. Dấu hiệu đuôi -ly và trạng từ tần suất."),
+    "7040de07-a601-40c7-9736-4e1ca9ebf62b": ("Từ loại & Cấu tạo từ", "Pronouns", "text-blue-600 bg-blue-50 border-blue-200", "Đại từ nhân xưng, tính từ sở hữu, đại từ phản thân (-self) và đại từ chỉ định."),
+
+    "3293dd00-8a54-4341-9e5a-20ca900bc377": ("Động từ & Các thì", "Tenses & Time Markers", "text-emerald-600 bg-emerald-50 border-emerald-200", "12 thì tiếng Anh, tập trung thì Hiện tại hoàn thành, Quá khứ đơn, Tương lai đơn."),
+    "33d90f95-9277-4f14-b9b5-f6dc9a9d30ab": ("Động từ & Các thì", "Verb Forms (To-V / V-bare)", "text-emerald-600 bg-emerald-50 border-emerald-200", "Động từ chính vs động từ phụ, cấu trúc To-V chỉ mục đích, V-bare sau modal verbs."),
+    "22619c80-cb9b-4b5a-8885-d461a8047539": ("Động từ & Các thì", "Gerunds (V-ing)", "text-emerald-600 bg-emerald-50 border-emerald-200", "V-ing làm chủ ngữ, tân ngữ, và đi sau các giới từ hoặc động từ đặc biệt."),
+    "42bdb627-d767-4c8a-a387-4c442b8bc6cd": ("Động từ & Các thì", "Imperatives", "text-emerald-600 bg-emerald-50 border-emerald-200", "Câu mệnh lệnh, hướng dẫn vận hành, bắt đầu bằng động từ nguyên thể không chia."),
+
+    "b1956d6b-d149-405f-8776-63ebce5b01e7": ("Cấu trúc câu & Mối quan hệ", "Subject-Verb Agreement", "text-purple-600 bg-purple-50 border-purple-200", "Hòa hợp giữa chủ ngữ số ít/số nhiều, đại từ bất định và cụm giới từ chen ngang."),
+    "7c45888d-f5ec-4483-94e4-0f8fdc96e57a": ("Cấu trúc câu & Mối quan hệ", "Passive Voice", "text-purple-600 bg-purple-50 border-purple-200", "Thể bị động: S + be + V3/ed. Nhận diện câu thiếu tân ngữ trực tiếp."),
+    "666363f0-a9ea-44c1-ba35-95d83bc3ba6a": ("Cấu trúc câu & Mối quan hệ", "Comparisons", "text-purple-600 bg-purple-50 border-purple-200", "So sánh bằng (as...as), hơn (-er/more...than), nhất (-est/the most) và kép (the more...the more)."),
+    "ff82cdcd-4a69-4c7f-b5c3-30e1c3775b9e": ("Cấu trúc câu & Mối quan hệ", "Conditionals (If / Unless)", "text-purple-600 bg-purple-50 border-purple-200", "Câu điều kiện loại 1, 2, 3 và đảo ngữ câu điều kiện hay bẫy trong Part 5."),
+
+    "84507512-ab2d-4194-a976-51138ad24b1c": ("Mệnh đề & Từ nối", "Conjunctions & Prepositions", "text-amber-600 bg-amber-50 border-amber-200", "Phân biệt liên từ (+ mệnh đề) và giới từ (+ cụm danh từ): because vs because of, although vs despite."),
+    "46b6b197-8fc6-49c4-8d82-f21968f0fe7a": ("Mệnh đề & Từ nối", "Relative Clauses", "text-amber-600 bg-amber-50 border-amber-200", "Đại từ quan hệ Who, Whom, Which, That, Whose và kỹ thuật rút gọn V-ing / V3-ed."),
+    "0b1ae68b-c853-4028-8aec-7582e6f5e654": ("Mệnh đề & Từ nối", "Adverb Clauses & Reduction", "text-amber-600 bg-amber-50 border-amber-200", "Mệnh đề trạng ngữ chỉ thời gian, nguyên nhân, nhượng bộ và rút gọn chủ ngữ.")
+}
 
 DEFAULT_GRAMMAR_META = {
     "Danh từ": {
@@ -107,77 +131,78 @@ DEFAULT_GRAMMAR_META = {
         ]
     },
     "Đại từ": {
-        "formula": "Subject Pronoun / Object Pronoun / Possessive Pronoun / Reflexive",
+        "formula": "Subject Pronoun / Object Pronoun / Possessive Adjective / Reflexive Pronoun",
         "tips": [
-            "Đại từ phản thân (myself, himself) dùng để nhấn mạnh hoặc khi chủ ngữ và tân ngữ là một.",
-            "Tính từ sở hữu cần đi với danh từ, đại từ sở hữu đứng độc lập."
+            "Trước danh từ dùng tính từ sở hữu (their/our/its).",
+            "Sau động từ/giới từ dùng tân ngữ (them/us/him) hoặc phản thân (-self) nếu chủ ngữ cùng đối tượng."
         ],
         "examples": [
-            {"en": "The CEO drafted the speech himself.", "vi": "Đích thân Tổng giám đốc đã soạn thảo bài phát biểu."}
+            {"en": "The CEO congratulated all employees on their outstanding performance.", "vi": "Tổng giám đốc đã chúc mừng toàn thể nhân viên về thành tích xuất sắc của họ."}
         ]
     },
     "So sánh": {
-        "formula": "Comparative: Adj-er / more + Adj than; Superlative: the Adj-est / the most + Adj",
+        "formula": "Equality: as + Adj/Adv + as | Comparative: -er/more than | Superlative: the -est/most",
         "tips": [
-            "Chú ý từ nhận biết: 'than' cho so sánh hơn, 'the' cho so sánh nhất.",
-            "So sánh bằng: as + adj/adv + as."
+            "Nhận diện 'than' để chọn so sánh hơn, nhận diện 'the' để chọn so sánh nhất.",
+            "Trạng từ nhấn mạnh so sánh hơn: much, far, significantly, slightly."
         ],
         "examples": [
-            {"en": "The new model is more efficient than the older version.", "vi": "Mẫu máy mới hoạt động hiệu quả hơn phiên bản cũ."}
+            {"en": "This quarter's sales were significantly higher than last year's.", "vi": "Doanh số quý này cao hơn đáng kể so với năm ngoái."}
         ]
     },
     "Liên từ giới từ": {
-        "formula": "Conjunction + Clause (S + V) vs Preposition + Noun Phrase / V-ing",
+        "formula": "Conjunction + Clause (S + V) vs Preposition + Noun / Noun Phrase",
         "tips": [
-            "Phân biệt cặp từ nghĩa giống nhau: Because (liên từ) vs Because of (giới từ).",
-            "Although/Even though (liên từ) vs Despite/In spite of (giới từ)."
+            "Because / Although / While đi với mệnh đề (S + V).",
+            "Because of / Despite / During đi với cụm danh từ (Noun Phrase)."
         ],
         "examples": [
-            {"en": "Despite the severe storm, shipments arrived on time.", "vi": "Bất chấp cơn bão dữ dội, các chuyến hàng vẫn đến đúng giờ."}
+            {"en": "The event was canceled because of inclement weather.", "vi": "Sự kiện đã bị hủy bỏ do thời tiết xấu."}
         ]
     },
     "Mệnh đề quan hệ": {
-        "formula": "Noun + Who / Whom / Which / That / Whose + Clause",
+        "formula": "Who/Whom (person), Which (thing), That (person/thing), Whose (possession)",
         "tips": [
-            "Who thay thế cho người làm chủ ngữ, Whom làm tân ngữ, Which cho vật.",
-            "Whose chỉ sở hữu, sau whose luôn là danh từ không có mạo từ."
+            "Who làm chủ ngữ, Whom làm tân ngữ, Whose thay cho tính từ sở hữu.",
+            "Rút gọn chủ động -> V-ing, rút gọn bị động -> V3/ed."
         ],
         "examples": [
-            {"en": "The engineer who designed the blueprint won an award.", "vi": "Kỹ sư người thiết kế bản vẽ đã đoạt giải thưởng."}
+            {"en": "Applicants who meet all requirements will be contacted.", "vi": "Những ứng viên đáp ứng đủ yêu cầu sẽ được liên hệ."}
         ]
     },
     "Câu điều kiện": {
-        "formula": "Type 1: If + V(s/es), will + V / Type 2: If + V2/ed, would + V / Type 3: If + had + V3/ed, would have + V3/ed",
+        "formula": "Type 1: If + S + V(s/es), S + will/can + V | Type 2: If + S + V2/ed, S + would + V",
         "tips": [
-            "Xác định đúng loại câu điều kiện dựa vào mệnh đề chính hoặc mệnh đề If.",
-            "Đảo ngữ câu điều kiện: Should (Type 1), Were (Type 2), Had (Type 3)."
+            "Unless = If not (trừ khi).",
+            "Đảo ngữ loại 1: Should + S + V-inf, S + will + V."
         ],
         "examples": [
-            {"en": "If you require assistance, our support team will help you.", "vi": "Nếu bạn cần hỗ trợ, đội ngũ kỹ thuật của chúng tôi sẽ giúp bạn."}
+            {"en": "If you require further assistance, please contact customer support.", "vi": "Nếu quý khách cần thêm sự trợ giúp, vui lòng liên hệ bộ phận hỗ trợ khách hàng."}
         ]
     },
     "Mệnh đề trạng ngữ": {
-        "formula": "Subordinating Conjunction (When/While/Although/Since) + S + V, S + V",
+        "formula": "Time: when/while/before/after | Reason: because/since | Concession: although/though",
         "tips": [
-            "Rút gọn mệnh đề trạng ngữ: dùng V-ing khi chủ động, V3/ed khi bị động.",
-            "Chú ý hòa hợp thì giữa 2 mệnh đề."
+            "Mệnh đề trạng ngữ chỉ thời gian không dùng thì tương lai (will), dùng hiện tại đơn.",
+            "Rút gọn mệnh đề trạng ngữ khi hai mệnh đề cùng chủ ngữ: V-ing hoặc V3/ed."
         ],
         "examples": [
-            {"en": "While attending the conference, she met several clients.", "vi": "Trong khi tham dự hội nghị, cô ấy đã gặp nhiều khách hàng."}
+            {"en": "Before submitting the proposal, make sure all figures are verified.", "vi": "Trước khi nộp đề xuất, hãy đảm bảo mọi số liệu đều đã được xác minh."}
         ]
     }
 }
 
 def get_curriculum():
     global _grammar_cache
-    if _grammar_cache is None:
-        if GRAMMAR_FILE.exists():
-            try:
-                _grammar_cache = json.loads(GRAMMAR_FILE.read_text(encoding="utf-8"))
-            except Exception:
-                _grammar_cache = {"curriculum": []}
-        else:
+    if _grammar_cache is not None:
+        return _grammar_cache
+    if GRAMMAR_FILE.exists():
+        try:
+            _grammar_cache = json.loads(GRAMMAR_FILE.read_text(encoding="utf-8"))
+        except Exception:
             _grammar_cache = {"curriculum": []}
+    else:
+        _grammar_cache = {"curriculum": []}
     return _grammar_cache
 
 def resolve_topic_questions(t):
@@ -185,21 +210,17 @@ def resolve_topic_questions(t):
     if not all_qs:
         for s in t.get("subtopics", []):
             all_qs.extend(s.get("practice_questions") or [])
-    if not all_qs and (DATA_DIR / "crawler.db").exists():
+    if CRAWLER_DB.exists():
         try:
-            conn_g = sqlite3.connect(DATA_DIR / "crawler.db")
+            conn_g = sqlite3.connect(CRAWLER_DB)
             conn_g.row_factory = sqlite3.Row
             cur_g = conn_g.cursor()
-            cur_g.execute("SELECT * FROM grammar_questions WHERE topic_id=? ORDER BY id LIMIT 30", (t["id"],))
+            cur_g.execute("SELECT raw_json FROM grammar_questions WHERE topic_id=? ORDER BY id", (t["id"],))
             rows = cur_g.fetchall()
-            if not rows and t.get("title_vi"):
-                cur_g.execute("""
-                    SELECT gq.* FROM grammar_questions gq 
-                    JOIN grammar_topics gt ON gt.id = gq.topic_id 
-                    WHERE gt.title_vi = ? ORDER BY gq.id LIMIT 30
-                """, (t["title_vi"],))
-                rows = cur_g.fetchall()
-            all_qs = [dict(r) for r in rows]
+            if rows:
+                db_qs = [json.loads(r[0]) for r in rows if r[0]]
+                if db_qs:
+                    all_qs = db_qs
             conn_g.close()
         except Exception:
             pass
@@ -210,14 +231,23 @@ def list_grammar_topics():
     global _formatted_topics_cache
     if _formatted_topics_cache is not None:
         return _formatted_topics_cache
+
     data = get_curriculum()
     topics = data.get("curriculum", [])
     
+    # Filter only topics that have real practice questions in crawler.db / curriculum
     formatted = []
+    
     for t in topics:
+        tid = t["id"]
+        # Only retain the 15 valid topics with full authentic question banks
+        if tid not in CATEGORY_MAP and len(t.get("practice_questions") or []) == 0:
+            continue
+
+        cat_info = CATEGORY_MAP.get(tid, ("Ngữ pháp TOEIC", t.get("title_en") or "Grammar", "text-blue-600 bg-blue-50 border-blue-200", "Chuyên đề ngữ pháp thường gặp."))
         sub_list = t.get("subtopics", [])
         all_qs = resolve_topic_questions(t)
-        total_q = t.get("questions_count") or len(all_qs) or sum(len(s.get("practice_questions", [])) for s in sub_list)
+        total_q = len(all_qs) or t.get("questions_count", 0)
         t_title = t.get("title_vi") or ""
         meta = DEFAULT_GRAMMAR_META.get(t_title, {
             "formula": t.get("formula") or f"S + V + C ({t_title})",
@@ -239,44 +269,107 @@ def list_grammar_topics():
             "slug": t.get("slug"),
             "title_vi": t.get("title_vi"),
             "title_en": t.get("title_en"),
-            "category": t.get("category") or t.get("group") or "Ngữ pháp TOEIC",
-            "group": t.get("group") or t.get("category") or "Ngữ pháp TOEIC",
-            "description_vi": t.get("description_vi"),
+            "category": cat_info[0],
+            "group": cat_info[0],
+            "subtitle": cat_info[1],
+            "badge_color": cat_info[2],
+            "description_vi": cat_info[3] or t.get("description_vi"),
             "formula": formula,
             "theory_html": t.get("theory_html", ""),
             "tips": tips,
             "examples": examples,
-            "subtopics_count": t.get("subtopics_count", len(sub_list)),
-            "lessons_count": t.get("lessons_count", 0),
-            "questions_count": total_q if total_q > 0 else len(all_qs),
+            "subtopics_count": len(sub_list),
+            "lessons_count": len(sub_list),
+            "questions_count": total_q,
             "practice_questions": all_qs[:10],
             "subtopics": [
                 {
                     "id": s["id"],
                     "title_vi": s.get("title_vi"),
                     "title_en": s.get("title_en"),
-                    "lessons_count": s.get("lessons_count", len(s.get("lessons", []))),
-                    "questions_count": s.get("questions_count", len(s.get("practice_questions", [])))
+                    "questions_count": len(s.get("practice_questions", []))
                 }
                 for s in sub_list
             ]
         })
 
-    _formatted_topics_cache = {
+    unique_groups = ["Tất cả", "Từ loại & Cấu tạo từ", "Động từ & Các thì", "Cấu trúc câu & Mối quan hệ", "Mệnh đề & Từ nối"]
+    
+    res = {
         "total": len(formatted),
-        "total_topics": data.get("total_topics", len(formatted)),
-        "total_lessons": data.get("total_lessons", sum(t.get("lessons_count", 0) for t in formatted)),
-        "total_questions": data.get("total_questions", sum(t["questions_count"] for t in formatted)),
-        "groups": data.get("groups", ["Từ loại", "Động từ", "Ngữ pháp khác"]),
+        "total_topics": len(formatted),
+        "total_lessons": sum(t.get("lessons_count", 0) for t in formatted),
+        "total_questions": sum(t["questions_count"] for t in formatted),
+        "groups": unique_groups,
         "topics": formatted
     }
-    return _formatted_topics_cache
+    _formatted_topics_cache = res
+    return res
+
+@router.get("/random-practice")
+def get_random_grammar_practice(
+    topic_id: Optional[str] = Query(None),
+    limit: int = Query(20, ge=5, le=100)
+):
+    """
+    Returns randomized TOEIC grammar questions for self-practice sessions.
+    Can be filtered by specific topic_id or cross-topic mix.
+    """
+    questions = []
+    if CRAWLER_DB.exists():
+        try:
+            conn = sqlite3.connect(CRAWLER_DB)
+            cur = conn.cursor()
+            if topic_id and topic_id != "all":
+                cur.execute(
+                    "SELECT raw_json FROM grammar_questions WHERE topic_id=? ORDER BY RANDOM() LIMIT ?",
+                    (topic_id, limit)
+                )
+            else:
+                cur.execute(
+                    "SELECT raw_json FROM grammar_questions ORDER BY RANDOM() LIMIT ?",
+                    (limit,)
+                )
+            rows = cur.fetchall()
+            conn.close()
+
+            for r in rows:
+                try:
+                    q = json.loads(r[0])
+                    opts = [
+                        f"A. {q.get('option_a') or ''}",
+                        f"B. {q.get('option_b') or ''}",
+                        f"C. {q.get('option_c') or ''}",
+                        f"D. {q.get('option_d') or ''}"
+                    ]
+                    questions.append({
+                        "id": q.get("id"),
+                        "topic_id": q.get("topic_id"),
+                        "question_text": q.get("question_text"),
+                        "options": opts,
+                        "option_a": q.get("option_a"),
+                        "option_b": q.get("option_b"),
+                        "option_c": q.get("option_c"),
+                        "option_d": q.get("option_d"),
+                        "correct_answer": (q.get("correct_answer") or "A").strip().upper(),
+                        "explanation_vi": q.get("explanation_vi") or "",
+                        "translation_vi": q.get("translation_vi") or "",
+                        "vocabulary": q.get("vocabulary")
+                    })
+                except Exception:
+                    pass
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=str(e))
+
+    return {
+        "total": len(questions),
+        "limit": limit,
+        "topic_id": topic_id or "all",
+        "questions": questions
+    }
 
 @router.get("/{topic_id}")
 def get_topic_detail(topic_id: str):
-    global _topic_detail_cache
-    if topic_id in _topic_detail_cache:
-        return _topic_detail_cache[topic_id]
     data = get_curriculum()
     topics = data.get("curriculum", [])
     found = next((t for t in topics if t["id"] == topic_id or t.get("slug") == topic_id), None)
@@ -297,9 +390,67 @@ def get_topic_detail(topic_id: str):
     })
 
     detail = dict(found)
+    cat_info = CATEGORY_MAP.get(found["id"], ("Ngữ pháp TOEIC", found.get("title_en") or "Grammar", "text-blue-600 bg-blue-50 border-blue-200", "Chuyên đề ngữ pháp thường gặp."))
+    detail["category"] = cat_info[0]
+    detail["group"] = cat_info[0]
+    detail["subtitle"] = cat_info[1]
+    detail["badge_color"] = cat_info[2]
     detail["formula"] = found.get("formula") or meta["formula"]
     detail["tips"] = found.get("tips") or meta["tips"]
     detail["examples"] = found.get("examples") or meta["examples"]
     detail["practice_questions"] = all_qs
-    _topic_detail_cache[topic_id] = detail
+    detail["questions_count"] = len(all_qs)
     return detail
+
+from pydantic import BaseModel
+
+class GrammarAIExplainRequest(BaseModel):
+    question: str
+    options: List[str] = []
+    correct_answer: str = ""
+    user_choice: Optional[str] = None
+    topic_title: Optional[str] = None
+
+@router.post("/ai-explain")
+def explain_grammar_with_ai(payload: GrammarAIExplainRequest):
+    """
+    Sử dụng Gemini API (thông qua unified ai service / gemini_pool) để giải thích chi tiết
+    câu hỏi ngữ pháp, cung cấp mẹo giải 5 giây và chỉ ra bẫy ETS.
+    """
+    try:
+        from ai_service_unified import ai_generate_explanation_and_tip
+        
+        # Chuyển options dạng list thành dictionary A, B, C, D
+        opts_dict = {}
+        for opt in payload.options:
+            letter = opt.strip()[:1].upper()
+            if letter in ["A", "B", "C", "D"]:
+                opts_dict[letter] = opt.strip()
+            else:
+                idx = len(opts_dict)
+                if idx < 4:
+                    l = ["A", "B", "C", "D"][idx]
+                    opts_dict[l] = opt.strip()
+
+        result = ai_generate_explanation_and_tip(
+            question_text=payload.question,
+            options=opts_dict,
+            correct_answer=payload.correct_answer or "A",
+            user_choice=payload.user_choice or ""
+        )
+
+        return {
+            "success": True,
+            "explanation": result.get("explanation_vi", ""),
+            "tip": result.get("toeic_tip", ""),
+            "trap": result.get("trap_warning", ""),
+            "source": "gemini_ai"
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "explanation": f"Đáp án chuẩn là ({payload.correct_answer}). Hãy phân tích kỹ các thành phần ngữ pháp đứng trước và sau chỗ trống.",
+            "tip": "Nhận diện từ loại (N/V/Adj/Adv) hoặc thì câu từ các dấu hiệu nhận biết.",
+            "trap": "Cảnh giác các đuôi từ dễ gây nhầm lẫn.",
+            "source": "fallback_rule"
+        }

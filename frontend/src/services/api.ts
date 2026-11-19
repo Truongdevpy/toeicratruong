@@ -69,10 +69,16 @@ export const api = {
     }),
 
   // Placement Test
-  getPlacementQuestions: (testType = 'full') =>
-    request<{ test_type: string; total_questions: number; duration_minutes: number; questions: any[] }>(
-      `/placement-test/questions?test_type=${testType}`
-    ),
+  getPlacementQuestions: (testType = 'full', skills?: string[]) => {
+    const params = new URLSearchParams();
+    params.append('test_type', testType);
+    if (skills && skills.length > 0) {
+      params.append('skills', skills.join(','));
+    }
+    return request<{ test_type: string; total_questions: number; duration_minutes: number; questions: any[] }>(
+      `/placement-test/questions?${params.toString()}`
+    );
+  },
   submitPlacementTest: (data: { test_type: string; answers: Record<string, string>; time_spent_seconds?: number }) =>
     request<any>('/placement-test/submit', {
       method: 'POST',
@@ -124,10 +130,12 @@ export const api = {
     }),
 
   // Practice by Part (Parts 1 to 7)
-  getPracticeByPart: (part: number, params: { level?: string; category?: string; page?: number; limit?: number } = {}) => {
+  getPracticeByPart: (part: number, params: { level?: string; category?: string; special_type?: string; section?: string; page?: number; limit?: number } = {}) => {
     const query = new URLSearchParams();
     if (params.level) query.set('level', params.level);
     if (params.category) query.set('category', params.category);
+    if (params.special_type) query.set('special_type', params.special_type);
+    if (params.section) query.set('section', params.section);
     if (params.page) query.set('page', String(params.page));
     if (params.limit) query.set('limit', String(params.limit));
     return request<any>(`/practice/part/${part}?${query.toString()}`);
@@ -152,14 +160,16 @@ export const api = {
     return request<any>(`/dictation/sets?${query.toString()}`);
   },
   getDictationSetItems: (setId: string) => request<any>(`/dictation/sets/${setId}`),
-  getDictationChallenges: (params: { part?: number; difficulty?: string; limit?: number; page?: number } = {}) => {
+  getDictationChallenges: (params: { part?: number; difficulty?: string; challenge_id?: string; limit?: number; page?: number } = {}) => {
     const query = new URLSearchParams();
-    if (params.part) query.set('part', String(params.part));
+    if (params.part !== undefined) query.set('part', String(params.part));
     if (params.difficulty) query.set('difficulty', params.difficulty);
+    if (params.challenge_id) query.set('challenge_id', params.challenge_id);
     if (params.limit) query.set('limit', String(params.limit));
     if (params.page) query.set('page', String(params.page));
     return request<any>(`/dictation/challenges?${query.toString()}`);
   },
+  getDictationChallengeDetail: (challengeId: string) => request<any>(`/dictation/challenges/${challengeId}`),
   checkDictation: (data: { challenge_id?: string; question_id?: string; user_text: string; target_text?: string; mode?: string }) =>
     request<any>('/dictation/check', {
       method: 'POST',
@@ -167,12 +177,18 @@ export const api = {
     }),
 
   // Flashcards
-  getFlashcards: (filterType = 'all', topic = 'all') => {
-    const params = new URLSearchParams();
-    if (filterType) params.set('filter_type', filterType);
-    if (topic && topic !== 'all') params.set('topic', topic);
-    return request<any>(`/practice/flashcards?${params.toString()}`);
-  },
+    getFlashcards: (filterType = 'all', topic = 'all', part = 'all') => {
+      const params = new URLSearchParams();
+      if (filterType) params.set('filter_type', filterType);
+      if (topic && topic !== 'all') params.set('topic', topic);
+      if (part && part !== 'all') params.set('part', part);
+      return request<any>(`/practice/flashcards?${params.toString()}`);
+    },
+    syncFlashcards: (items: any[]) =>
+      request<any>('/practice/flashcards/sync', {
+        method: 'POST',
+        body: JSON.stringify({ items }),
+      }),
   reviewFlashcard: (data: { word_id?: string; word?: string; rating: string; [key: string]: any }) =>
     request<any>('/practice/flashcards/review', {
       method: 'POST',
@@ -190,6 +206,7 @@ export const api = {
     }),
 
   // Vocabulary (5,165 words bank)
+  getVocabularyTopicStats: () => request<Record<string, number>>('/vocabulary/topic-stats'),
   getVocabulary: (params: { search?: string; part?: string; category?: string; level?: string; limit?: number; page?: number; offset?: number } = {}) => {
     const query = new URLSearchParams();
     if (params.search) query.set('search', params.search);
@@ -205,6 +222,17 @@ export const api = {
   // Grammar (38 topics, 174 subtopics)
   getGrammarTopics: () => request<any>('/grammar'),
   getGrammarTopicDetail: (topicId: string) => request<any>(`/grammar/${topicId}`),
+  explainGrammarWithAI: (payload: { question: string; options: string[]; correct_answer: string; user_choice?: string; topic_title?: string }) =>
+    request<{ success: boolean; explanation: string; tip?: string; trap?: string; source?: string }>('/grammar/ai-explain', {
+      method: 'POST',
+      body: JSON.stringify(payload)
+    }),
+  getRandomGrammarPractice: (params: { topic_id?: string; limit?: number } = {}) => {
+    const q = new URLSearchParams();
+    if (params.topic_id && params.topic_id !== 'all') q.set('topic_id', params.topic_id);
+    if (params.limit) q.set('limit', String(params.limit));
+    return request<any>(`/grammar/random-practice?${q.toString()}`);
+  },
 
   // Speaking & Writing Tests
   getSWTests: (params: { test_type?: string } = {}) => {
@@ -234,6 +262,39 @@ export const api = {
   },
   getShadowingLessonDetail: (lessonId: string) =>
     request<any>(`/sw/shadowing-lessons/${lessonId}`),
+  assessPronunciation: async (audioBlob: Blob, text: string, targetIpa?: string): Promise<any> => {
+    const formData = new FormData();
+    formData.append("audio", audioBlob, "recording.webm");
+    formData.append("text", text);
+    if (targetIpa) {
+      formData.append("target_ipa", targetIpa);
+    }
+    let response: Response;
+    try {
+      response = await fetch("/api/assess/api/assess", {
+        method: "POST",
+        body: formData,
+      });
+      if (!response.ok) {
+        const baseUrl = (import.meta as any).env?.VITE_ASSESS_API_URL || "http://127.0.0.1:8000";
+        response = await fetch(`${baseUrl}/api/assess`, {
+          method: "POST",
+          body: formData,
+        });
+      }
+    } catch {
+      const baseUrl = (import.meta as any).env?.VITE_ASSESS_API_URL || "http://127.0.0.1:8000";
+      response = await fetch(`${baseUrl}/api/assess`, {
+        method: "POST",
+        body: formData,
+      });
+    }
+    if (!response.ok) {
+      const errData = await response.json().catch(() => ({}));
+      throw new Error(errData.detail || `Lỗi kết nối backend chấm điểm: ${response.status}`);
+    }
+    return response.json();
+  },
   evaluateShadowing: (data: {
     target_text: string;
     user_speech: string;
@@ -251,6 +312,7 @@ export const api = {
     context?: string;
     user_answer: string;
     audio_url?: string;
+    sample_sentences?: string[];
   }) =>
     request<any>('/sw/grade-question', {
       method: 'POST',
@@ -484,6 +546,16 @@ export const api = {
     request<any>(`/leaderboard/cheer/${profileId}`, {
       method: 'POST',
     }),
+  updateLeaderboardPrivacy: (is_anonymous: boolean) =>
+    request<any>('/leaderboard/privacy', {
+      method: 'POST',
+      body: JSON.stringify({ is_anonymous }),
+    }),
+  syncLeaderboardExp: (data: { vocab_exp?: number; grammar_exp?: number }) =>
+    request<any>('/leaderboard/sync-exp', {
+      method: 'POST',
+      body: JSON.stringify(data)
+    }),
   getLeaderboardRules: () => request<any>('/leaderboard/rules'),
 
   // Translate & Dictionary Lookup (Phase 6)
@@ -554,6 +626,17 @@ export const api = {
     }),
 
   // AI Practice Grading & Diagnostic (Gemini DeepTutor)
+    explainQuestionWithAI: (data: {
+    part: number;
+    question_number: number;
+    question_text: string;
+    options: Record<string, string>;
+    correct_answer: string;
+    selected_option?: string;
+    passage_text?: string;
+    transcript?: string;
+    explanation?: any;
+  }) => request<any>('/practice/explain-question', { method: 'POST', body: JSON.stringify(data) }),
   aiGradePractice: (data: {
     skill: string;
     part: number;
@@ -638,6 +721,27 @@ export const api = {
     }),
   deleteAdminPoolQuestion: (questionId: string) =>
     request<any>(`/admin/questions/pool/${questionId}`, {
+      method: 'DELETE',
+    }),
+
+  // AI Assessment Endpoints
+  analyzeAIAssessment: (data: { scope: string; time_range: string; force_refresh?: boolean; local_attempts?: any[] }) =>
+    request<any>('/assessment/analyze', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    }),
+  getAIAssessmentHistory: (params: { scope?: string; limit?: number } = {}) => {
+    const query = new URLSearchParams();
+    if (params.scope) query.set('scope', params.scope);
+    if (params.limit) query.set('limit', params.limit.toString());
+    return request<any>(`/assessment/history?${query.toString()}`);
+  },
+  deleteAIAssessmentHistoryItem: (id: number) =>
+    request<any>(`/assessment/history/${id}`, {
+      method: 'DELETE',
+    }),
+  clearAllAIAssessmentHistory: () =>
+    request<any>('/assessment/history', {
       method: 'DELETE',
     }),
 

@@ -1,7 +1,10 @@
 import { BrandLogo } from './components/BrandLogo';
 import React, { useState, useEffect } from 'react';
 import { AuthProvider } from './context/AuthContext';
-import { Navbar } from './components/Navbar';
+import { Sidebar } from './components/Sidebar';
+import { TopBar } from './components/TopBar';
+import { BottomTabBar } from './components/BottomTabBar';
+import { EditProfileModal } from './components/EditProfileModal';
 import { AuthModal } from './components/AuthModal';
 import { ChatModal } from './components/ChatModal';
 import { UserProfileModal } from './components/UserProfileModal';
@@ -15,6 +18,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { useAuth } from './context/AuthContext';
 import { SettingsProvider, useSettings } from './context/SettingsContext';
 import { GeneralSettingsModal } from './components/GeneralSettingsModal';
+import { TRANSLATIONS } from './i18n/translations';
 
 // Eagerly loaded landing page
 import { HomePage } from './pages/HomePage';
@@ -43,20 +47,33 @@ const SpeakingPracticePage = React.lazy(() => import('./pages/SpeakingPracticePa
 const WritingPracticePage = React.lazy(() => import('./pages/WritingPracticePage').then(m => ({ default: m.WritingPracticePage })));
 const VideoLessonsPage = React.lazy(() => import('./pages/VideoLessonsPage').then(m => ({ default: m.VideoLessonsPage })));
 const PaymentPage = React.lazy(() => import('./pages/PaymentPage').then(m => ({ default: m.PaymentPage })));
+const DesignPreviewPage = React.lazy(() => import('./pages/DesignPreviewPage').then(m => ({ default: m.DesignPreviewPage })));
+const ArenaGamePage = React.lazy(() => import('./pages/ArenaGamePage').then(m => ({ default: m.ArenaGamePage })));
 
 function AppContent() {
   const { user } = useAuth();
   const { settings } = useSettings();
+  const lang = settings.language || (typeof window !== 'undefined' && localStorage.getItem('app_language') === 'en' ? 'en' : 'vi');
+  const t = TRANSLATIONS[lang] || TRANSLATIONS.vi;
   const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState<string>(() => {
-    return window.location.pathname && window.location.pathname !== '/'
-      ? window.location.pathname
-      : '/';
+    if (typeof window !== 'undefined' && window.location.pathname && window.location.pathname !== '/') {
+      return window.location.pathname + (window.location.search || '');
+    }
+    return '/';
   });
 
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [isRBACModalOpen, setIsRBACModalOpen] = useState(false);
   const [isFocusMode, setIsFocusMode] = useState(false);
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('toeic_sidebar_collapsed') === 'true';
+    }
+    return false;
+  });
+  const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false);
+  const [isEditProfileOpen, setIsEditProfileOpen] = useState(false);
 
   const handleOpenRBAC = () => setIsRBACModalOpen(true);
 
@@ -87,14 +104,23 @@ function AppContent() {
   useEffect(() => {
     const handlePopState = () => {
       setIsFocusMode(false);
-      setCurrentPath(window.location.pathname || '/');
+      setCurrentPath((window.location.pathname || '/') + (window.location.search || ''));
     };
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   const isGuestAllowedPath = (path: string) => {
-    return path === '/' || path === '/practice/dictation' || path === '/dictation' || path === '/leaderboard' || path === '/community';
+    const p = (path.split('?')[0].split('#')[0].replace(/\/+$/, '') || '/').toLowerCase();
+    return (
+      p === '/' ||
+      p === '/practice/dictation' ||
+      p === '/dictation' ||
+      p.startsWith('/practice/dictation') ||
+      p === '/practice/listening/dictation' ||
+      p === '/leaderboard' ||
+      p === '/community'
+    );
   };
 
   const handleProtectedNavigate = (path: string) => {
@@ -118,6 +144,97 @@ function AppContent() {
   };
   const renderCurrentPage = () => {
     const cleanPath = (currentPath.split('?')[0].split('#')[0].replace(/\/+$/, '') || '/').toLowerCase();
+
+    // Module prefix matching for subpaths and deep-links
+    if (
+      cleanPath === '/practice/dictation' ||
+      cleanPath === '/dictation' ||
+      cleanPath.startsWith('/practice/dictation') ||
+      cleanPath === '/practice/listening/dictation'
+    ) {
+      return <DictationPracticePage onNavigate={handleNavigate} onFocusModeChange={setIsFocusMode} onOpenAuth={handleOpenAuth} />;
+    }
+
+    if (
+      cleanPath === '/practice/listening' ||
+      cleanPath === '/listening' ||
+      cleanPath.startsWith('/practice/listening') ||
+      cleanPath.startsWith('/listening/')
+    ) {
+      if (!user) {
+        return (
+          <AuthRequiredGate
+            featureName="Luyện nghe (Listening Parts 1-4)"
+            featureDesc="Luyện nghe 4 Parts chuẩn ETS với audio phòng thi, transcript song ngữ và chấm điểm AI."
+            onNavigate={handleNavigate}
+            onOpenAuth={handleOpenAuth}
+            onOpenRBAC={handleOpenRBAC}
+          />
+        );
+      }
+      return <ListeningPracticePage onNavigate={handleNavigate} onFocusModeChange={(active) => setIsFocusMode(active)} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
+    }
+
+    if (
+      cleanPath === '/practice/reading' ||
+      cleanPath === '/reading' ||
+      cleanPath.startsWith('/practice/reading') ||
+      cleanPath.startsWith('/reading/')
+    ) {
+      if (!user) {
+        return (
+          <AuthRequiredGate
+            featureName="Luyện đọc (Reading Parts 5-7)"
+            featureDesc="Luyện đọc chia đôi màn hình chuẩn thi thật, phân tích ngữ pháp và tra từ ngữ cảnh."
+            onNavigate={handleNavigate}
+            onOpenAuth={handleOpenAuth}
+            onOpenRBAC={handleOpenRBAC}
+          />
+        );
+      }
+      return <ReadingPracticePage onNavigate={handleNavigate} onFocusModeChange={(active) => setIsFocusMode(active)} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
+    }
+
+    if (
+      cleanPath === '/practice/writing' ||
+      cleanPath === '/writing' ||
+      cleanPath.startsWith('/practice/writing') ||
+      cleanPath.startsWith('/writing/')
+    ) {
+      if (!user) {
+        return (
+          <AuthRequiredGate
+            featureName="Luyện viết (TOEIC Writing)"
+            featureDesc="45 đề thi viết câu theo tranh, phản hồi email và bài luận 300+ từ với chấm điểm AI."
+            onNavigate={handleNavigate}
+            onOpenAuth={handleOpenAuth}
+            onOpenRBAC={handleOpenRBAC}
+          />
+        );
+      }
+      return <WritingPracticePage onNavigate={handleNavigate} onFocusModeChange={setIsFocusMode} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
+    }
+
+    if (
+      cleanPath === '/practice/speaking' ||
+      cleanPath === '/speaking' ||
+      cleanPath.startsWith('/practice/speaking') ||
+      cleanPath.startsWith('/speaking/')
+    ) {
+      if (!user) {
+        return (
+          <AuthRequiredGate
+            featureName="Luyện nói (TOEIC Speaking)"
+            featureDesc="45 đề thi nói đọc to văn bản, miêu tả tranh và trả lời câu hỏi kèm phòng thu âm."
+            onNavigate={handleNavigate}
+            onOpenAuth={handleOpenAuth}
+            onOpenRBAC={handleOpenRBAC}
+          />
+        );
+      }
+      return <SpeakingPracticePage onNavigate={handleNavigate} onFocusModeChange={setIsFocusMode} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
+    }
+
     switch (cleanPath) {
       case '/':
         return <HomePage onNavigate={handleNavigate} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
@@ -136,6 +253,11 @@ function AppContent() {
         }
         return <PracticeHubPage onNavigate={handleNavigate} onOpenAuth={handleOpenAuth} onOpenRBAC={handleOpenRBAC} />;
 
+      case '/games':
+      case '/game':
+      case '/practice/games':
+        return <ArenaGamePage onNavigate={handleNavigate} onFocusModeChange={setIsFocusMode} />;
+
       case '/practice/dictation':
       case '/dictation':
         // RBAC: Guest can view dictation list, but practicing prompts auth
@@ -143,7 +265,7 @@ function AppContent() {
 
       case '/leaderboard':
         // RBAC: Public Leaderboard
-        return <LeaderboardPage onNavigate={handleNavigate} onOpenAuth={handleOpenAuth} onViewProfile={handleViewProfile} />;
+        return <LeaderboardPage onNavigate={handleNavigate} onOpenAuth={handleOpenAuth} onViewProfile={handleViewProfile} onOpenChat={handleOpenChat} />;
 
       case '/community':
         // RBAC: Public Community Forum
@@ -216,7 +338,7 @@ function AppContent() {
           return (
             <AuthRequiredGate
               featureName="Kho Từ vựng theo lộ trình"
-              featureDesc="5,000+ từ vựng cốt lõi phân theo band điểm, chủ đề thương mại và collocations thi thật."
+              featureDesc="Kho từ vựng cốt lõi phân theo band điểm, chủ đề thương mại và collocations thi thật."
               onNavigate={handleNavigate}
               onOpenAuth={handleOpenAuth}
               onOpenRBAC={handleOpenRBAC}
@@ -415,6 +537,8 @@ function AppContent() {
           );
         }
         return <OnboardingPage onNavigate={handleNavigate} />;
+      case '/design-preview':
+        return <DesignPreviewPage />;
       case '/payment':
       case '/checkout':
       case '/pricing':
@@ -461,37 +585,95 @@ function AppContent() {
   };
 
   const isPracticeOrExamMode = isFocusMode;
+  const isHomePage = (() => {
+    const p = (currentPath.split('?')[0].split('#')[0].replace(/\/+$/, '') || '/').toLowerCase();
+    return p === '/' || p === '';
+  })();
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
-      {/* Universal Navbar - Hidden during focused practice and exam mode */}
+    <div className="min-h-screen bg-slate-50 flex font-sans text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
       {!isPracticeOrExamMode && (
-        <Navbar
-          currentPath={currentPath}
-          onNavigate={handleProtectedNavigate}
-          onOpenAuth={handleOpenAuth}
-          onOpenChat={handleOpenChat}
-          onOpenRBAC={handleOpenRBAC}
-          onOpenSettings={() => setIsSettingsModalOpen(true)}
-        />
+        <>
+          {/* Desktop Left Sidebar (>=1024px) */}
+          <div className="hidden lg:block shrink-0">
+            <Sidebar
+              currentPath={currentPath}
+              isCollapsed={isSidebarCollapsed}
+              onToggleCollapse={() => {
+                setIsSidebarCollapsed((prev) => {
+                  const next = !prev;
+                  if (typeof window !== 'undefined') {
+                    localStorage.setItem('toeic_sidebar_collapsed', String(next));
+                  }
+                  return next;
+                });
+              }}
+              onNavigate={handleProtectedNavigate}
+              onOpenAuth={handleOpenAuth}
+              onOpenRBAC={handleOpenRBAC}
+              onOpenSettings={() => setIsSettingsModalOpen(true)}
+              onOpenProfileModal={() => setIsEditProfileOpen(true)}
+            />
+          </div>
+
+          {/* Mobile Drawer Navigation (<1024px) */}
+          {isMobileDrawerOpen && (
+            <div className="lg:hidden fixed inset-0 z-50 flex">
+              <div
+                className="fixed inset-0 bg-slate-900/40 backdrop-blur-xs transition-opacity"
+                onClick={() => setIsMobileDrawerOpen(false)}
+                aria-hidden="true"
+              />
+              <Sidebar
+                currentPath={currentPath}
+                isCollapsed={false}
+                isMobileDrawer={true}
+                onCloseMobileDrawer={() => setIsMobileDrawerOpen(false)}
+                onToggleCollapse={() => {}}
+                onNavigate={handleProtectedNavigate}
+                onOpenAuth={handleOpenAuth}
+                onOpenRBAC={handleOpenRBAC}
+                onOpenSettings={() => setIsSettingsModalOpen(true)}
+                onOpenProfileModal={() => setIsEditProfileOpen(true)}
+              />
+            </div>
+          )}
+        </>
       )}
 
-      {/* Main Page Area with ErrorBoundary & Lazy Suspense */}
-      <main className="flex-1">
-        <ErrorBoundary key={currentPath}>
-          <React.Suspense fallback={
-            <div className="min-h-[50vh] flex flex-col items-center justify-center space-y-3 py-16">
-              <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-              <p className="text-xs font-semibold text-slate-500 animate-pulse">Đang tải nội dung...</p>
-            </div>
-          }>
-            {renderCurrentPage()}
-          </React.Suspense>
-        </ErrorBoundary>
-      </main>
+      {/* Main Content Area with Dynamic Padding for Collapsed/Expanded Sidebar */}
+      <div
+        className={`flex-1 flex flex-col min-w-0 transition-[padding] duration-200 ease-in-out ${
+          !isPracticeOrExamMode ? (isSidebarCollapsed ? 'lg:pl-[72px]' : 'lg:pl-[260px]') : ''
+        }`}
+      >
+        {/* Slim TopBar (56px) */}
+        {!isPracticeOrExamMode && (
+          <TopBar
+            onNavigate={handleProtectedNavigate}
+            onOpenAuth={handleOpenAuth}
+            onOpenRBAC={handleOpenRBAC}
+            onOpenSettings={() => setIsSettingsModalOpen(true)}
+            onOpenMobileDrawer={() => setIsMobileDrawerOpen(true)}
+          />
+        )}
 
-      {/* Universal Footer - Hidden during focused exam mode */}
-      {!isPracticeOrExamMode && (
+        {/* Main Page Area with ErrorBoundary & Lazy Suspense */}
+        <main className="flex-1 pb-16 lg:pb-0 animate-fade-in transition-opacity duration-200">
+          <ErrorBoundary key={currentPath}>
+            <React.Suspense fallback={
+              <div className="min-h-[50vh] flex flex-col items-center justify-center space-y-3 py-16">
+                <div className="w-10 h-10 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+                <p className="text-xs font-semibold text-slate-500 animate-pulse">Đang tải nội dung...</p>
+              </div>
+            }>
+              {renderCurrentPage()}
+            </React.Suspense>
+          </ErrorBoundary>
+        </main>
+
+        {/* Footer - Chỉ hiển thị duy nhất tại trang chủ (/) */}
+      {!isPracticeOrExamMode && isHomePage && (
         <footer className="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
@@ -502,36 +684,36 @@ function AppContent() {
           </div>
 
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-3">Luyện tập</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-3">{t.practiceGroup}</h4>
             <ul className="space-y-2 text-xs">
-              <li><button onClick={() => handleProtectedNavigate('/practice/listening')} className="hover:text-white">Luyện nghe Parts 1-4</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/practice/reading')} className="hover:text-white">Luyện đọc Parts 5-7</button></li>
-              <li><button onClick={() => handleNavigate('/practice/dictation')} className="hover:text-white">Chép chính tả (Dictation)</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/practice/speaking')} className="hover:text-white">Luyện nói (Speaking)</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/practice/writing')} className="hover:text-white">Luyện viết (Writing)</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/practice/flashcards')} className="hover:text-white">Flashcards SRS</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/practice/listening')} className="hover:text-white">{lang === 'en' ? 'Listening Practice (Parts 1-4)' : 'Luyện nghe Parts 1-4'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/practice/reading')} className="hover:text-white">{lang === 'en' ? 'Reading Practice (Parts 5-7)' : 'Luyện đọc Parts 5-7'}</button></li>
+              <li><button onClick={() => handleNavigate('/practice/dictation')} className="hover:text-white">{lang === 'en' ? 'Dictation Practice' : 'Chép chính tả (Dictation)'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/practice/speaking')} className="hover:text-white">{lang === 'en' ? 'Speaking Practice' : 'Luyện nói (Speaking)'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/practice/writing')} className="hover:text-white">{lang === 'en' ? 'Writing Practice' : 'Luyện viết (Writing)'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/practice/flashcards')} className="hover:text-white">{lang === 'en' ? 'Flashcards SRS' : 'Flashcards SRS'}</button></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-3">Tính năng AI</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-3">{t.aiFeatures}</h4>
             <ul className="space-y-2 text-xs">
-              <li><button onClick={() => handleProtectedNavigate('/learning-path')} className="hover:text-white">Lộ trình học thích ứng</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/ai-tutor')} className="hover:text-white">Gia sư AI cá nhân hóa</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/mock-tests')} className="hover:text-white">Đề thi Crack TOEIC Vol 2</button></li>
-              <li><button onClick={() => handleProtectedNavigate('/statistics')} className="hover:text-white">Thống kê điểm số</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/learning-path')} className="hover:text-white">{lang === 'en' ? 'Adaptive AI Learning Path' : 'Lộ trình học thích ứng'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/ai-tutor')} className="hover:text-white">{lang === 'en' ? 'Personalized AI Tutor' : 'Gia sư AI cá nhân hóa'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/mock-tests')} className="hover:text-white">{lang === 'en' ? 'ETS Mock Tests Simulation' : 'Đề thi Crack TOEIC Vol 2'}</button></li>
+              <li><button onClick={() => handleProtectedNavigate('/statistics')} className="hover:text-white">{lang === 'en' ? 'Score Statistics & Analytics' : 'Thống kê điểm số'}</button></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-3">Tài khoản & Hệ thống</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider mb-3">{t.accountSystem}</h4>
             <ul className="space-y-2 text-xs">
-              <li><button onClick={() => handleOpenAuth('login')} className="hover:text-white">Đăng nhập học viên</button></li>
-              <li><button onClick={() => handleOpenAuth('register')} className="hover:text-white">Đăng ký tài khoản</button></li>
-              <li><button onClick={handleOpenRBAC} className="hover:text-amber-200 text-amber-400 font-bold flex items-center gap-1">👑 Quyền lợi gói học & VIP</button></li>
-              <li><button onClick={() => handleNavigate('/leaderboard')} className="hover:text-white text-amber-300 font-semibold">Bảng xếp hạng thi đua</button></li>
-              <li><button onClick={() => handleNavigate('/community')} className="hover:text-white">Cộng đồng học viên</button></li>
-              {user?.role === 'admin' && (<li><button onClick={() => handleNavigate('/admin')} className="hover:text-white text-amber-400">Cổng Quản trị Admin</button></li>)}
+              <li><button onClick={() => handleOpenAuth('login')} className="hover:text-white">{t.login}</button></li>
+              <li><button onClick={() => handleOpenAuth('register')} className="hover:text-white">{lang === 'en' ? 'Sign Up' : 'Đăng ký tài khoản'}</button></li>
+              <li><button onClick={handleOpenRBAC} className="hover:text-amber-200 text-amber-400 font-bold flex items-center gap-1">👑 {t.planBenefits}</button></li>
+              <li><button onClick={() => handleNavigate('/leaderboard')} className="hover:text-white text-amber-300 font-semibold">{t.leaderboard}</button></li>
+              <li><button onClick={() => handleNavigate('/community')} className="hover:text-white">{t.community}</button></li>
+              {user?.role === 'admin' && (<li><button onClick={() => handleNavigate('/admin')} className="hover:text-white text-amber-400">{lang === 'en' ? 'Admin Portal' : 'Cổng Quản trị Admin'}</button></li>)}
             </ul>
           </div>
         </div>
@@ -539,19 +721,30 @@ function AppContent() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 mt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
           <div>© 2026 TOEIC Ra Trường Platform. All rights reserved.</div>
           <div className="mt-2 sm:mt-0 flex gap-4">
-            <span className="hover:text-slate-400 cursor-pointer">Chính sách bảo mật</span>
-            <span className="hover:text-slate-400 cursor-pointer">Điều khoản sử dụng</span>
-            <span className="hover:text-slate-400 cursor-pointer">Quy chế thi ETS</span>
+            <span className="hover:text-slate-400 cursor-pointer">{t.privacyPolicy}</span>
+            <span className="hover:text-slate-400 cursor-pointer">{t.termsOfUse}</span>
+            <span className="hover:text-slate-400 cursor-pointer">{t.etsRules}</span>
             <button
               type="button"
               onClick={() => setIsSettingsModalOpen(true)}
               className="hover:text-amber-400 text-slate-400 transition-colors cursor-pointer"
             >
-              ⚙️ Cài đặt & Nút nổi
+              ⚙️ {t.settingsTitle}
             </button>
           </div>
         </div>
       </footer>
+      )}
+      </div>
+
+      {/* Mobile Bottom Tab Bar (<1024px) */}
+      {!isPracticeOrExamMode && (
+        <BottomTabBar
+          currentPath={currentPath}
+          onNavigate={handleProtectedNavigate}
+          onOpenAuth={handleOpenAuth}
+          onOpenMoreDrawer={() => setIsMobileDrawerOpen(true)}
+        />
       )}
 
       {/* Global Realtime Message Toast Popup */}
@@ -613,6 +806,12 @@ function AppContent() {
         }}
         onOpenRBAC={handleOpenRBAC}
         onNavigate={handleNavigate}
+      />
+
+      {/* Edit Profile Modal (Name & Avatar) */}
+      <EditProfileModal
+        isOpen={isEditProfileOpen}
+        onClose={() => setIsEditProfileOpen(false)}
       />
 
       {/* Auth Modal */}

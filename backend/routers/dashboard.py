@@ -1,3 +1,4 @@
+﻿import re
 # -*- coding: utf-8 -*-
 from datetime import datetime
 from fastapi import APIRouter, Depends
@@ -90,13 +91,16 @@ def get_dashboard_overview(
 
     overall_acc = round((correct_attempts / total_attempts) * 100, 1) if total_attempts > 0 else 0.0
 
+    raw_name = re.sub(r"\(.*?\)", "", user.full_name or "").strip()
+    short_name = raw_name.split()[-1] if raw_name else "bạn"
+
     return {
         "user": {
             "full_name": user.full_name,
             "avatar_url": user.avatar_url,
             "role": user.role
         },
-        "greeting": f"Chào {user.full_name.split()[-1] if user.full_name else 'bạn'} 👋",
+        "greeting": f"Chào {short_name} 👋",
         "subtitle": "Hôm nay bạn muốn học gì?",
         "current_goal": {
             "current_score": current_score,
@@ -125,3 +129,4 @@ def get_dashboard_overview(
             "study_hours": total_study_hours
         }
     }
+

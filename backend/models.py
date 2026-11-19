@@ -28,6 +28,7 @@ class User(Base):
     notifications = relationship("Notification", back_populates="user", cascade="all, delete-orphan")
     achievements = relationship("Achievement", back_populates="user", cascade="all, delete-orphan")
     payments = relationship("Payment", back_populates="user", cascade="all, delete-orphan")
+    ai_assessments = relationship("AIAssessmentRecord", back_populates="user", cascade="all, delete-orphan")
 
 class UserProfile(Base):
     __tablename__ = "user_profiles"
@@ -202,6 +203,7 @@ class CommunityPost(Base):
 
     user = relationship("User", back_populates="posts")
     comments = relationship("PostComment", back_populates="post", cascade="all, delete-orphan")
+    likes = relationship("PostLike", back_populates="post", cascade="all, delete-orphan")
 
 class PostComment(Base):
     __tablename__ = "post_comments"
@@ -215,6 +217,16 @@ class PostComment(Base):
     created_at = Column(DateTime, default=datetime.utcnow)
 
     post = relationship("CommunityPost", back_populates="comments")
+
+class PostLike(Base):
+    __tablename__ = "post_likes"
+
+    id = Column(Integer, primary_key=True, index=True)
+    post_id = Column(Integer, ForeignKey("community_posts.id"), nullable=False, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False, index=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    post = relationship("CommunityPost", back_populates="likes")
 
 class AIConversation(Base):
     __tablename__ = "ai_conversations"
@@ -375,6 +387,8 @@ class LeaderboardProfile(Base):
     streak_days = Column(Integer, default=7)
     questions_count = Column(Integer, default=150)
     exp_points = Column(Integer, default=1250)
+    vocab_exp = Column(Integer, default=500)
+    grammar_exp = Column(Integer, default=500)
     score_growth = Column(Integer, default=45)
     accuracy_pct = Column(Float, default=75.0)
     badge = Column(String(100), default="Học viên tích cực")
@@ -510,3 +524,21 @@ class BankTransaction(Base):
     processed_at = Column(DateTime, nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow, nullable=False)
+
+
+class AIAssessmentRecord(Base):
+    __tablename__ = "ai_assessments"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), index=True, nullable=False)
+    scope = Column(String(50), default="overall", index=True) # e.g. "part5", "reading", "listening", "overall"
+    time_range = Column(String(20), default="all") # "7d", "30d", "all"
+    total_questions = Column(Integer, default=0)
+    accuracy = Column(Float, default=0.0)
+    data_confidence = Column(String(20), default="low") # "low", "medium", "high"
+    summary_vi = Column(Text, default="")
+    stats_json = Column(Text, default="{}")
+    result_json = Column(Text, default="{}")
+    created_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+
+    user = relationship("User", back_populates="ai_assessments")

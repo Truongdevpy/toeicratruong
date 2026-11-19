@@ -26,6 +26,7 @@ import {
 import { api } from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import { AuthRequiredGate } from '../components/AuthRequiredGate';
+import { Pagination } from '../components/common/Pagination';
 
 interface SpeakingPracticePageProps {
   onNavigate: (path: string) => void;
@@ -118,6 +119,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
   const [categoryCounts, setCategoryCounts] = useState<Record<string, number>>({});
   const [accentCounts, setAccentCounts] = useState<Record<string, number>>({});
   const [page, setPage] = useState(1);
+  const [pageSize, setPageSize] = useState<number | 'all'>(24);
   const [totalLessons, setTotalLessons] = useState(0);
 
   // Shadowing Studio state
@@ -132,7 +134,25 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
   const [showManualInput, setShowManualInput] = useState(false);
   const [evaluationResult, setEvaluationResult] = useState<EvaluationResult | null>(null);
   const [evaluating, setEvaluating] = useState(false);
-  const [sentenceScores, setSentenceScores] = useState<Record<number, number>>({});
+  const [sentenceScores, setSentenceScores] = useState<Record<number, number>>(() => {
+    if (typeof window === 'undefined') return {};
+    try {
+      const stored = localStorage.getItem('toeic_speaking_scores');
+      return stored ? JSON.parse(stored) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const updateSentenceScore = (idx: number, score: number) => {
+    setSentenceScores((prev) => {
+      const updated = { ...prev, [idx]: score };
+      try {
+        localStorage.setItem('toeic_speaking_scores', JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+  };
   const [recordedAudioUrl, setRecordedAudioUrl] = useState<string | null>(null);
   const [videoKey, setVideoKey] = useState(0);
   const [showShortcutsHint, setShowShortcutsHint] = useState(false);
@@ -183,7 +203,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
         accent: selectedAccent === 'all' ? undefined : selectedAccent,
         search: searchQuery || undefined,
         page,
-        limit: 24,
+        limit: pageSize === 'all' ? 1000 : pageSize,
       });
       if (res && res.lessons) {
         setShadowingLessons(res.lessons);
@@ -196,7 +216,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
     } finally {
       setShadowingLoading(false);
     }
-  }, [selectedCategory, selectedAccent, searchQuery, page]);
+  }, [selectedCategory, selectedAccent, searchQuery, page, pageSize]);
 
   useEffect(() => {
     if (activeMode === 'shadowing') {
@@ -366,10 +386,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
 
       if (res) {
         setEvaluationResult(res);
-        setSentenceScores((prev) => ({
-          ...prev,
-          [currentSentenceIndex]: res.accuracy,
-        }));
+        updateSentenceScore(currentSentenceIndex, res.accuracy);
 
         if (autoNextOnSuccess && res.accuracy >= 80 && activeShadowingLesson) {
           if (currentSentenceIndex < activeShadowingLesson.sentences.length - 1) {
@@ -1503,22 +1520,7 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
       {/* 1. Header Banner (Inspired by DauEnglish /speak) */}
       <section className="bg-gradient-to-b from-blue-50/90 via-white to-slate-50/70 border-b border-slate-200/80 pt-10 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-700 text-xs font-extrabold shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-            <span>Luyện nói tiếng Anh</span>
-          </div>
-
-          <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight max-w-4xl mx-auto leading-tight sm:leading-tight">
-            Nói tự nhiên{' '}
-            <span className="bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 bg-clip-text text-transparent">
-              như người bản xứ
-            </span>{' '}
-            từ từng câu ngắn
-          </h1>
-
-          <p className="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto font-medium">
-            Shadowing theo video: nghe từng câu, nói theo, máy chấm từng từ với công nghệ AI Speech Evaluation.
-          </p>
+          
 
           <div className="pt-4 flex items-center justify-center">
             <div className="inline-flex p-1.5 rounded-2xl bg-slate-200/80 border border-slate-300/80 shadow-inner">
@@ -1744,30 +1746,19 @@ export const SpeakingPracticePageInner: React.FC<SpeakingPracticePageProps> = ({
           )}
 
           {/* Pagination */}
-          {totalLessons > 24 && (
-            <div className="pt-6 flex items-center justify-between border-t border-slate-200">
-              <div className="text-xs text-slate-500">
-                Hiển thị trang {page} / {Math.ceil(totalLessons / 24)} • Tổng {totalLessons} bài học
-              </div>
-
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => setPage((prev) => Math.max(1, prev - 1))}
-                  disabled={page === 1}
-                  className="px-3.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-100 disabled:opacity-40 cursor-pointer"
-                >
-                  ← Trước
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setPage((prev) => prev + 1)}
-                  disabled={page * 24 >= totalLessons}
-                  className="px-3.5 py-1.5 rounded-xl border border-slate-200 text-xs font-bold text-slate-700 hover:bg-slate-100 disabled:opacity-40 cursor-pointer"
-                >
-                  Sau →
-                </button>
-              </div>
+          {totalLessons > 0 && (
+            <div className="pt-4">
+              <Pagination
+                currentPage={page}
+                totalPages={pageSize === "all" ? 1 : Math.max(1, Math.ceil(totalLessons / pageSize))}
+                totalItems={totalLessons}
+                pageSize={pageSize}
+                onPageChange={(p) => setPage(p)}
+                onPageSizeChange={(s) => { setPageSize(s); setPage(1); }}
+                pageSizeOptions={[12, 24, 48, 96, "all"]}
+                showPageSizeSelector={true}
+                itemLabel="bài học"
+              />
             </div>
           )}
         </section>

@@ -389,11 +389,11 @@ export const FloatingAITutor: React.FC<FloatingAITutorProps> = ({
   // If floating window is closed, render the floating trigger button
   if (!isOpen) {
     return (
-      <aside aria-label="Gia sư AI cá nhân hóa" className={`fixed bottom-4 ${showFloatingChat ? 'right-32 sm:right-36' : 'right-4 sm:right-6'} sm:bottom-6 z-[8000] print:hidden transition-all duration-200`}>
+      <aside aria-label="Gia sư AI cá nhân hóa" className={`fixed bottom-[calc(68px+env(safe-area-inset-bottom,0px))] lg:bottom-4 ${showFloatingChat ? 'right-32 sm:right-36' : 'right-4 sm:right-6'} sm:bottom-6 z-[8000] print:hidden transition-all duration-200 animate-float-gentle`}>
         <button
           type="button"
           onClick={onToggle}
-          className="group relative flex items-center gap-2 bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 hover:from-violet-700 hover:via-indigo-700 hover:to-blue-700 text-white font-bold text-sm px-4 py-2.5 rounded-full shadow-lg shadow-indigo-500/25 transition-all hover:scale-105 active:scale-95 cursor-pointer select-none"
+          className="group relative flex items-center gap-2 bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 hover:from-violet-700 hover:via-indigo-700 hover:to-blue-700 text-white font-bold text-sm px-4 py-2.5 rounded-full shadow-lg shadow-indigo-500/25 transition-all hover:scale-105 active:scale-95 cursor-pointer select-none animate-ai-breathe"
           title="Mở Gia sư AI cá nhân hóa & Trí nhớ học tập"
         >
           <div className="relative flex items-center justify-center w-6 h-6 rounded-lg bg-white/20 backdrop-blur-xs">

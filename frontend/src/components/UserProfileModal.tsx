@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Crown,
   X,
@@ -45,7 +45,7 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
   const [friendActionLoading, setFriendActionLoading] = useState(false);
   const [friendSuccessMsg, setFriendSuccessMsg] = useState<string | null>(null);
 
-  const loadProfile = useCallback(async (id: number) => {
+  const loadProfile = async (id: number) => {
     try {
       setLoading(true);
       const res = await api.getPublicProfile(id, !isLeaderboardProfile);
@@ -55,27 +55,27 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
       setProfile({
         id,
         user_id: id,
-        full_name: `H?c vi?n #${id}`,
+        full_name: `Học viên #${id}`,
         avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150',
-        school_or_org: 'C?ng ??ng TOEIC AI',
+        school_or_org: 'Cộng đồng TOEIC AI',
         current_score: 680,
         target_score: 800,
         streak_days: 12,
         questions_count: 320,
         accuracy_pct: 78.5,
-        badge: 'Chi?n Binh Ch?m Ch?',
+        badge: 'Chiến Binh Chăm Chỉ',
         cheer_count: 24,
         rank: 14,
-        strengths: ['Listening Part 1 & 2', 'Reading Part 5 Ng? ph?p'],
+        strengths: ['Listening Part 1 & 2', 'Reading Part 5 Ngữ pháp'],
         weak_areas: ['Listening Part 3', 'Reading Part 7'],
         member_since: '08/2026'
       });
     } finally {
       setLoading(false);
     }
-  }, [isLeaderboardProfile]);
+  };
 
-  const checkFriendship = useCallback(async (id: number) => {
+  const checkFriendship = async (id: number) => {
     try {
       const res = await chatService.getFriendshipStatus(id);
       setFriendshipStatus(res.status);
@@ -83,12 +83,11 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
     } catch {
       setFriendshipStatus('none');
     }
-  }, []);
+  };
 
   useEffect(() => {
     if (isOpen && userId) {
       loadProfile(userId);
-      checkFriendship(userId);
     } else {
       setProfile(null);
       setCheered(false);
@@ -96,18 +95,33 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
       setRequestId(undefined);
       setFriendSuccessMsg(null);
     }
-  }, [isOpen, userId, loadProfile, checkFriendship]);
+  }, [isOpen, userId]);
+
+  useEffect(() => {
+    const realUid = profile?.user_id;
+    if (isOpen && realUid && currentUser && realUid !== currentUser.id) {
+      checkFriendship(realUid);
+    } else {
+      setFriendshipStatus('none');
+      setRequestId(undefined);
+    }
+  }, [isOpen, profile?.user_id, currentUser]);
 
 
 
   const handleSendFriendRequest = async () => {
-    const targetId = profile?.user_id || profile?.id || userId;
-    if (!targetId || friendActionLoading) return;
+    const targetId = profile?.user_id || (!isLeaderboardProfile ? (profile?.id || userId) : null);
+    if (!targetId || friendActionLoading) {
+      if (!profile?.user_id && isLeaderboardProfile) {
+        alert('Tài khoản này là tài khoản thi đua mẫu, chưa liên kết với người dùng thực để kết bạn.');
+      }
+      return;
+    }
     try {
       setFriendActionLoading(true);
       const res = await chatService.sendFriendRequest(targetId);
       setFriendSuccessMsg(res.message);
-      if (res.message && (res.message.includes('thành công') || res.message.includes('th?nh c?ng'))) {
+      if (res.message && res.message.includes('thành công')) {
         setFriendshipStatus('friends');
       } else {
         setFriendshipStatus('pending_sent');
@@ -133,8 +147,22 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
     }
   };
 
+  const handleDeclineFriendRequest = async () => {
+    if (!requestId || friendActionLoading) return;
+    try {
+      setFriendActionLoading(true);
+      await chatService.respondFriendRequest(requestId, 'reject');
+      setFriendshipStatus('none');
+      setFriendSuccessMsg('Đã từ chối lời mời kết bạn');
+    } catch {
+      alert('Không thể từ chối kết bạn');
+    } finally {
+      setFriendActionLoading(false);
+    }
+  };
+
   const handleRemoveFriend = async () => {
-    const targetId = profile?.user_id || profile?.id || userId;
+    const targetId = profile?.user_id || (!isLeaderboardProfile ? (profile?.id || userId) : null);
     if (!targetId || friendActionLoading) return;
     if (!window.confirm('Bạn có chắc muốn hủy kết bạn với người này không?')) return;
     try {
@@ -160,8 +188,12 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
 
   if (!isOpen) return null;
 
-  const targetUserId = profile?.user_id || profile?.id || userId;
-  const isSelf = currentUser && targetUserId === currentUser.id;
+  const targetUserId = profile?.user_id || (!isLeaderboardProfile ? (profile?.id || userId) : null);
+  const isSelf = Boolean(
+    currentUser &&
+    ((profile?.user_id && currentUser.id === profile.user_id) ||
+     (!profile?.user_id && !isLeaderboardProfile && (userId === currentUser.id || profile?.id === currentUser.id)))
+  );
 
   return (
     <div className="fixed inset-0 z-[9000] flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs">
@@ -263,15 +295,26 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
                       )}
 
                       {friendshipStatus === 'pending_received' && (
-                        <button
-                          type="button"
-                          onClick={handleAcceptFriendRequest}
-                          disabled={friendActionLoading}
-                          className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1 shadow-2xs transition-colors cursor-pointer"
-                        >
-                          <UserCheck className="w-3.5 h-3.5" />
-                          <span>Đồng ý</span>
-                        </button>
+                        <div className="flex items-center gap-1.5">
+                          <button
+                            type="button"
+                            onClick={handleAcceptFriendRequest}
+                            disabled={friendActionLoading}
+                            className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1 shadow-2xs transition-colors cursor-pointer"
+                          >
+                            <UserCheck className="w-3.5 h-3.5" />
+                            <span>Đồng ý</span>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={handleDeclineFriendRequest}
+                            disabled={friendActionLoading}
+                            className="px-2.5 py-1.5 rounded-xl bg-slate-100 hover:bg-rose-50 text-slate-600 hover:text-rose-600 text-xs font-semibold flex items-center gap-1 border border-slate-200 transition-colors cursor-pointer"
+                          >
+                            <X className="w-3.5 h-3.5" />
+                            <span>Từ chối</span>
+                          </button>
+                        </div>
                       )}
 
                       {friendshipStatus === 'friends' && (
@@ -296,8 +339,12 @@ export const UserProfileModal: React.FC<UserProfileModalProps> = ({
                     <button
                       type="button"
                       onClick={() => {
-                        onClose();
-                        onOpenChat(targetUserId);
+                        if (targetUserId) {
+                          onClose();
+                          onOpenChat(targetUserId);
+                        } else {
+                          alert('Tài khoản này là tài khoản thi đua mẫu, chưa có hộp thư trực tiếp.');
+                        }
                       }}
                       className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold flex items-center gap-1 shadow-2xs transition-colors cursor-pointer"
                     >

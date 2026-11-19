@@ -15,9 +15,12 @@ import {
   Copy,
   FileCheck,
   Bot,
-  Loader2
+  Loader2,
+  CheckCircle2
 } from 'lucide-react';
 import { api } from '../services/api';
+import { usePagination } from '../hooks/usePagination';
+import { Pagination } from '../components/common/Pagination';
 
 interface WritingPracticePageProps {
   onNavigate: (path: string) => void;
@@ -31,6 +34,8 @@ interface SWQuestion {
   question_type: string;
   prompt: string;
   context: string;
+  sample_sentences?: string[];
+  words?: string[];
   image_url?: string;
 }
 
@@ -57,11 +62,49 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
   const [currentQIndex, setCurrentQIndex] = useState(0);
 
   useEffect(() => {
+    const isExam = Boolean(activeTest);
     onFocusModeChange?.(Boolean(activeTest));
+    window.dispatchEvent(new CustomEvent('toeic-exam-mode', { detail: { active: isExam } }));
     return () => {
       onFocusModeChange?.(false);
+      window.dispatchEvent(new CustomEvent('toeic-exam-mode', { detail: { active: false } }));
     };
   }, [activeTest, onFocusModeChange]);
+
+  // Sync active test and question index into URL
+  useEffect(() => {
+    if (activeTest) {
+      const qNum = currentQIndex + 1;
+      const expectedSearch = `?test=${encodeURIComponent(activeTest.id)}&q=${qNum}`;
+      if (window.location.search !== expectedSearch) {
+        window.history.replaceState({ testId: activeTest.id, q: qNum }, '', `/practice/writing${expectedSearch}`);
+      }
+    }
+  }, [activeTest, currentQIndex]);
+
+  // Restore test and question from URL params on mount / after tests loaded
+  useEffect(() => {
+    if (tests.length === 0 || activeTest) return;
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const testParam = params.get('test') || params.get('id');
+      const qParam = Number(params.get('q'));
+      if (testParam) {
+        const found = tests.find(
+          (t) => t.id === testParam || t.slug === testParam || t.id.toLowerCase() === testParam.toLowerCase()
+        );
+        if (found) {
+          handleStartTest(found).then(() => {
+            if (qParam > 0) {
+              setCurrentQIndex(Math.max(0, qParam - 1));
+            }
+          });
+        }
+      }
+    } catch (err) {
+      console.error('Error restoring writing test from URL:', err);
+    }
+  }, [tests]);
 
   // User Essay Answers Map: question_number -> text
   const [answersMap, setAnswersMap] = useState<Record<number, string>>({});
@@ -88,6 +131,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
         question_number: currentQ.question_number,
         prompt: currentQ.prompt,
         context: currentQ.context,
+        sample_sentences: currentQ.sample_sentences || [],
         user_answer: ans || 'Học viên chưa nhập câu trả lời hoàn chỉnh.'
       });
       if (res) {
@@ -132,6 +176,17 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
       const res = await api.getSWTests({ test_type: 'writing' });
       if (res && res.tests && res.tests.length > 0) {
         setTests(res.tests);
+        // Check URL params to auto-restore session
+        const params = new URLSearchParams(window.location.search);
+        const testParam = params.get('test');
+        if (testParam) {
+          const matched = res.tests.find((t: any) => t.id === testParam || t.slug === testParam);
+          if (matched) {
+            handleStartTest(matched);
+            const qParam = Number(params.get('q')) || 1;
+            setCurrentQIndex(Math.max(0, qParam - 1));
+          }
+        }
       } else {
         const fallbacks: SWTest[] = Array.from({ length: 45 }, (_, i) => ({
           id: `sw_wr_${i + 1}`,
@@ -162,10 +217,18 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
     loadWritingTests();
   }, []);
 
+  const handleExitTest = () => {
+    window.history.replaceState({}, '', '/practice/writing');
+    setActiveTest(null);
+    setCompletedSummary(false);
+    setFullSessionAIFeedback(null);
+  };
+
   const handleStartTest = async (test: SWTest) => {
     try {
       setActiveTest(test);
-      setCurrentQIndex(0);
+      const startIdx = selectedPartFilter === 'q6_7' ? 5 : selectedPartFilter === 'q8' ? 7 : 0;
+      setCurrentQIndex(startIdx);
       setAnswersMap({});
       setQuestionAIFeedback({});
       setFullSessionAIFeedback(null);
@@ -264,7 +327,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
       return {
         badge: 'Questions 1-5',
         type: 'Viết câu theo tranh',
-        targetWords: '10-25 từ',
+        targetWords: '1 câu hoàn chỉnh',
         criteria: 'Ngữ pháp chính xác & Sử dụng đúng 2 từ cho trước'
       };
     }
@@ -300,6 +363,21 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
       t.id.toLowerCase().includes(searchQuery.toLowerCase())
     );
   });
+
+  const pagination = usePagination<SWTest>({
+    data: filteredTests,
+    initialPage: 1,
+    initialPageSize: 9,
+    syncUrl: !activeTest,
+    
+    
+    
+    
+  });
+
+  useEffect(() => {
+    pagination.resetPage();
+  }, [searchQuery, selectedPartFilter]);
   return (
     <div className="min-h-screen bg-slate-50 pb-16">
 
@@ -312,14 +390,14 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
               <div className="flex items-center gap-3 min-w-0">
                 <button
                   type="button"
-                  onClick={() => setActiveTest(null)}
+                  onClick={handleExitTest}
                   className="px-3 py-1.5 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition-colors cursor-pointer"
                 >
                   ← Danh sách đề
                 </button>
                 <div className="min-w-0">
                   <h2 className="text-sm sm:text-base font-bold text-slate-900 truncate">
-                    {activeTest.name.replace(/^study4_|^dautoeic_/i, '')}
+                    {activeTest.name.replace(/^study4_|^dautoeic_/i, '').replace(/Đậu\s*TOEIC\s*/gi, 'TOEIC ')}
                   </h2>
                   <div className="text-xs text-slate-500">
                     Câu hỏi {currentQIndex + 1} / {questions.length} • {typeInfo?.type}
@@ -411,7 +489,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                     <div className="flex items-center gap-2">
                       <Sparkles className="w-5 h-5 text-amber-500" />
                       <h3 className="font-bold text-sm sm:text-base text-slate-900">
-                        Bài viết mẫu đạt điểm tối đa (Band 200)
+                        Bài viết mẫu đạt điểm tối đa chuẩn ETS
                       </h3>
                     </div>
                     <button
@@ -434,14 +512,25 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                             ? 'Email mẫu tiêu chuẩn công sở:'
                             : 'Dàn ý & Đoạn mở bài mẫu:'}
                         </div>
-                        <p className="leading-relaxed italic whitespace-pre-line">
-                          {currentQ.question_number <= 5 &&
-                            `"The colleagues are gathering around the conference table to discuss the new marketing project."`}
-                          {currentQ.question_number > 5 && currentQ.question_number <= 7 &&
-                            `Dear Hiring Team,\\n\\nI am writing to express my strong interest in the Accounting Supervisor position at your company. With over four years of auditing and financial reporting experience, I am confident in leading your accounting team effectively.\\n\\nCould you please let me know what the core day-to-day responsibilities will be during the first three months? Additionally, does the company offer support for professional CPA certification?\\n\\nSincerely,\\nAlex Morgan`}
-                          {currentQ.question_number === 8 &&
-                            `"In today's fast-paced corporate environment, the debate over internal promotion versus hiring external leaders is prominent. While hiring from the outside can bring fresh perspectives, I firmly believe that promoting employees from within is a far more effective strategy for long-term organizational success. First, internal promotions foster high motivation and loyalty. Second, internal candidates already possess deep familiarity with company culture and processes, minimizing onboarding disruption."`}
-                        </p>
+                        <div className="leading-relaxed whitespace-pre-line space-y-2">
+                          {currentQ.sample_sentences && currentQ.sample_sentences.length > 0 ? (
+                            currentQ.sample_sentences.map((s, idx) => (
+                              <div key={idx} className="flex items-start gap-2">
+                                <span className="font-bold text-amber-800 select-none">Mẫu {idx + 1}:</span>
+                                <span className="italic font-medium text-amber-950">"{s}"</span>
+                              </div>
+                            ))
+                          ) : (
+                            <p className="italic">
+                              {currentQ.question_number <= 5 &&
+                                `"A waiter is pouring a cold beverage into a clean glass."`}
+                              {currentQ.question_number > 5 && currentQ.question_number <= 7 &&
+                                `Dear Hiring Team,\n\nI am writing to express my strong interest in the position and provide the requested details.`}
+                              {currentQ.question_number === 8 &&
+                                `"In today's fast-paced environment, having strong teamwork and clear communication is essential for overall productivity."`}
+                            </p>
+                          )}
+                        </div>
                       </div>
 
                       <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-[11px] text-slate-500">
@@ -542,21 +631,37 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                             AI
                           </div>
                           <div>
-                            <h4 className="text-xs font-black text-indigo-950">Gia sư AI Chấm Điểm & Sửa Bài</h4>
-                            <p className="text-[10px] text-slate-500">Chuẩn khảo thí TOEIC Writing ETS</p>
+                            <div className="flex items-center gap-2">
+                              <h4 className="text-xs font-black text-indigo-950">Gia sư AI Chấm Điểm & Sửa Bài</h4>
+                              {questionAIFeedback[currentQIndex]?.model_used && (
+                                <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-extrabold border border-emerald-300">
+                                  ⚡ {questionAIFeedback[currentQIndex].model_used}
+                                </span>
+                              )}
+                            </div>
+                            <p className="text-[10px] text-slate-500">Chấm trực tiếp bằng Google Gemini AI theo chuẩn ETS</p>
                           </div>
                         </div>
 
                         <div className="flex flex-wrap items-center gap-1.5 text-[11px] font-bold">
-                          <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
-                            Ngữ pháp: {questionAIFeedback[currentQIndex].grammar_score || 4.2}/5.0
-                          </span>
-                          <span className="px-2 py-0.5 rounded bg-blue-100 text-blue-800">
-                            Từ vựng: {questionAIFeedback[currentQIndex].vocabulary_score || 4.0}/5.0
-                          </span>
-                          <span className="px-2 py-0.5 rounded bg-purple-100 text-purple-800">
-                            Bố cục: {questionAIFeedback[currentQIndex].organization_score || 4.5}/5.0
-                          </span>
+                          {(() => {
+                            const rMax = questionAIFeedback[currentQIndex].rubric_max || (currentQIndex < 5 ? 3 : currentQIndex < 7 ? 4 : 5);
+                            return (
+                              <>
+                                <span className="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                                  Ngữ pháp: {questionAIFeedback[currentQIndex].grammar_score ?? 0}/{rMax}.0
+                                </span>
+                                <span className="px-2 py-0.5 rounded bg-blue-100 text-blue-800">
+                                  Từ vựng: {questionAIFeedback[currentQIndex].vocabulary_score ?? 0}/{rMax}.0
+                                </span>
+                                {rMax > 3 && (
+                                  <span className="px-2 py-0.5 rounded bg-purple-100 text-purple-800">
+                                    Bố cục: {questionAIFeedback[currentQIndex].organization_score ?? 0}/{rMax}.0
+                                  </span>
+                                )}
+                              </>
+                            );
+                          })()}
                         </div>
                       </div>
 
@@ -570,13 +675,25 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                         </p>
                       </div>
 
-                      {questionAIFeedback[currentQIndex].corrections && questionAIFeedback[currentQIndex].corrections.length > 0 && (
+                      {(() => {
+                        const validCorrections = (questionAIFeedback[currentQIndex].corrections || []).filter(
+                          (c: any) => String(c.original || '').trim().toLowerCase() !== String(c.corrected || '').trim().toLowerCase()
+                        );
+                        if (validCorrections.length === 0) {
+                          return (
+                            <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-3 flex items-center gap-2 text-xs font-bold text-emerald-800">
+                              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                              <span>Câu đúng ngữ pháp, không có lỗi cần sửa.</span>
+                            </div>
+                          );
+                        }
+                        return (
                         <div className="space-y-2 bg-white p-3 rounded-xl border border-indigo-100">
                           <span className="text-[11px] font-bold text-indigo-900 block">
                             📝 Sửa lỗi câu & cách diễn đạt chuẩn ETS:
                           </span>
                           <div className="space-y-2">
-                            {questionAIFeedback[currentQIndex].corrections.map((corr: any, idx: number) => (
+                            {validCorrections.map((corr: any, idx: number) => (
                               <div key={idx} className="text-xs space-y-1 bg-slate-50 p-2 rounded-lg border border-slate-200/80">
                                 {corr.original && (
                                   <div className="text-red-700 line-through">
@@ -599,11 +716,12 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                             ))}
                           </div>
                         </div>
-                      )}
+                        );
+                      })()}
 
                       {questionAIFeedback[currentQIndex].improved_answer && (
                         <div className="space-y-1 bg-white p-3 rounded-xl border border-indigo-100">
-                          <span className="text-[11px] font-bold text-indigo-700">🎯 Bài viết tối ưu chuẩn ETS (Band 200):</span>
+                          <span className="text-[11px] font-bold text-indigo-700">🎯 Bài viết tối ưu chuẩn ETS:</span>
                           <p className="text-xs text-slate-700 italic leading-relaxed whitespace-pre-line">
                             "{questionAIFeedback[currentQIndex].improved_answer}"
                           </p>
@@ -755,11 +873,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                     </button>
                     <button
                       type="button"
-                      onClick={() => {
-                        setCompletedSummary(false);
-                        setActiveTest(null);
-                        setFullSessionAIFeedback(null);
-                      }}
+                      onClick={handleExitTest}
                       className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs cursor-pointer"
                     >
                       Luyện đề khác
@@ -786,7 +900,7 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
 
               <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0">
                 {[
-                  { id: 'all', label: 'Tất cả (45 đề)' },
+                  { id: 'all', label: `Tất cả (${tests.length} đề)` },
                   { id: 'q1_5', label: 'Q1-5: Viết câu theo tranh' },
                   { id: 'q6_7', label: 'Q6-7: Trả lời Email' },
                   { id: 'q8', label: 'Q8: Bài luận quan điểm' },
@@ -820,54 +934,71 @@ const WritingPracticePageInner: React.FC<WritingPracticePageProps> = ({ onFocusM
                 <p className="text-xs text-slate-400">Hãy thử tìm từ khóa khác như "Test 1" hoặc "Writing".</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                {filteredTests.map((test, index) => {
-                  const cleanTitle = test.name.replace(/^study4_|^dautoeic_/i, '');
-                    
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {pagination.paginatedData.map((test, index) => {
+                    const cleanTitle = test.name
+                      .replace(/^study4_|^dautoeic_/i, '')
+                      .replace(/Đậu\s*TOEIC\s*/gi, 'TOEIC ');
+                    const globalIndex = pagination.startIndex + index + 1;
 
-return (
-                    <div
-                      key={test.id}
-                      className="bg-white border border-slate-200/90 hover:border-blue-400 rounded-3xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
-                    >
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                          <span className="px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200/60 text-[10px] font-bold">
-                            ETS Writing #{(index + 1).toString().padStart(2, '0')}
-                          </span>
-                          <span className="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
-                            <Clock className="w-3.5 h-3.5" /> 60 phút
-                          </span>
+                    return (
+                      <div
+                        key={test.id}
+                        className="bg-white border border-slate-200/90 hover:border-blue-400 rounded-3xl p-5 sm:p-6 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group"
+                      >
+                        <div className="space-y-3">
+                          <div className="flex items-center justify-between">
+                            <span className="px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-200/60 text-[10px] font-bold">
+                              ETS Writing #{globalIndex.toString().padStart(2, '0')}
+                            </span>
+                            <span className="text-[11px] font-semibold text-slate-400 flex items-center gap-1">
+                              <Clock className="w-3.5 h-3.5" /> 60 phút
+                            </span>
+                          </div>
+
+                          <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2">
+                            {cleanTitle}
+                          </h3>
+
+                          <div className="flex items-center gap-2 text-xs text-slate-500">
+                            <span>{test.total_questions || 8} câu hỏi</span>
+                            <span>•</span>
+                            <span>Chuẩn format ETS</span>
+                          </div>
                         </div>
 
-                        <h3 className="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-2">
-                          {cleanTitle}
-                        </h3>
+                        <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                          <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
+                            Có đếm từ & bài mẫu
+                          </span>
 
-                        <div className="flex items-center gap-2 text-xs text-slate-500">
-                          <span>{test.total_questions || 8} câu hỏi</span>
-                          <span>?</span>
-                          <span>Chuẩn format ETS</span>
+                          <button
+                            type="button"
+                            onClick={() => handleStartTest(test)}
+                            className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+                          >
+                            <span>Luyện ngay</span>
+                            <ArrowRight className="w-3.5 h-3.5" />
+                          </button>
                         </div>
                       </div>
+                    );
+                  })}
+                </div>
 
-                      <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-                        <span className="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
-                          Có đếm từ & bài mẫu
-                        </span>
-
-                        <button
-                          type="button"
-                          onClick={() => handleStartTest(test)}
-                          className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs flex items-center gap-1.5 transition-colors cursor-pointer"
-                        >
-                          <span>Luyện ngay</span>
-                          <ArrowRight className="w-3.5 h-3.5" />
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
+                {/* Writing Tests Pagination */}
+                <Pagination
+                  currentPage={pagination.currentPage}
+                  totalPages={pagination.totalPages}
+                  totalItems={pagination.totalItems}
+                  pageSize={pagination.pageSize}
+                  onPageChange={pagination.setPage}
+                  onPageSizeChange={pagination.setPageSize}
+                  pageSizeOptions={[6, 9, 12, 18, 30, 'all']}
+                  itemLabel="đề thi"
+                  showPageSizeSelector={true}
+                />
               </div>
             )}
           </div>
@@ -879,19 +1010,5 @@ return (
 
 
 export const WritingPracticePage: React.FC<WritingPracticePageProps> = (props) => {
-  const { user } = useAuth();
-
-  if (!user) {
-    return (
-      <AuthRequiredGate
-        featureName="Luyện viết (TOEIC Writing)"
-        featureDesc="45 đề thi viết câu theo tranh, phản hồi email và bài luận 300+ từ với chấm điểm AI."
-        onNavigate={props.onNavigate}
-        onOpenAuth={props.onOpenAuth}
-        onOpenRBAC={props.onOpenRBAC}
-      />
-    );
-  }
-
   return <WritingPracticePageInner {...props} />;
 };
