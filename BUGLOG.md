@@ -22,6 +22,16 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 
 ## Danh sách lỗi đã xử lý
 
+### [BUG-012] GitHub từ chối push do JSON vượt giới hạn 100 MiB
+- **Mã lỗi**: BUG-012
+- **Ngày phát hiện / sửa**: 2026-11-19
+- **Triệu chứng**: Các commit chưa push chứa nhiều phiên bản Part 3/4/7 JSON vượt 100 MiB.
+- **Nguyên nhân gốc**: Git thường lưu cả phiên bản lớn trong lịch sử; chỉ giảm file hiện tại không loại được blob cũ.
+- **File đã sửa**: `.gitattributes`, `.github/workflows/verify.yml`, `README.md`; chuyển media và practice JSON trong lịch sử chưa công bố sang Git LFS.
+- **Các vị trí dùng chung bị ảnh hưởng**: Checkout local, CI, API luyện tập và media; đường dẫn và nội dung tài nguyên được giữ nguyên. Theo quyết định chủ dự án, database cập nhật không được công bố; các commit chuẩn bị push giữ bản database đã có tại `origin/main`.
+- **Test giữ lỗi**: Chạy `git lfs fsck`; kiểm tra blob của `origin/main..HEAD` không vượt 100 MiB; so sánh nội dung tài nguyên với commit trước chuyển đổi; xác minh mọi commit chưa công bố giữ đúng blob database của remote; chạy `npm run build`.
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG bỏ LFS hoặc chỉ thêm `.gitignore` để xử lý file lớn đã nằm trong lịch sử. CI và máy clone cần tải LFS trước khi đọc JSON/audio/ảnh. Không push các nhánh backup chứa database cập nhật.
+
 *(Chưa có bản ghi mới. Điền theo mẫu trên mỗi khi sửa xong một lỗi.)*
 ### [BUG-001] Mất điểm các câu Shadowing Speaking sau khi F5
 - **Mã lỗi**: SPK-02

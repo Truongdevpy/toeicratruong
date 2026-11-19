@@ -234,6 +234,21 @@ Hệ thống đã chuẩn bị sẵn các tài khoản demo tương ứng với 
 
 ### 2. Cài đặt Backend (FastAPI)
 
+Trước khi chạy dự án, cài [Git LFS](https://git-lfs.com/) và tải đầy đủ dữ liệu
+từ thư mục gốc repository:
+
+```bash
+git lfs install
+git lfs pull
+git lfs fsck
+```
+
+Audio, ảnh và JSON trong `data/data/web_ready/practice_by_part/` được quản lý
+bằng LFS. Dùng `git clone` rồi `git lfs pull`; không dùng bản ZIP thay cho
+checkout đã tải LFS. File con trỏ LFS chưa tải không phải dữ liệu để chạy app.
+Khi thêm tài nguyên mới, giữ các quy tắc trong `.gitattributes` và chạy
+`git lfs status` trước khi commit. LFS có hạn mức lưu trữ/băng thông theo tài khoản.
+
 1. Mở cửa sổ terminal, di chuyển vào thư mục `backend`:
    ```bash
    cd backend
