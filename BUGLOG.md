@@ -27,10 +27,10 @@ Tài liệu này lưu lại toàn bộ các lỗi phát sinh trong quá trình p
 - **Ngày phát hiện / sửa**: 2026-11-19
 - **Triệu chứng**: Các commit chưa push chứa nhiều phiên bản Part 3/4/7 JSON vượt 100 MiB.
 - **Nguyên nhân gốc**: Git thường lưu cả phiên bản lớn trong lịch sử; chỉ giảm file hiện tại không loại được blob cũ.
-- **File đã sửa**: `.gitattributes`, `.github/workflows/verify.yml`, `README.md`; chuyển media và practice JSON trong lịch sử chưa công bố sang Git LFS.
+- **File đã sửa**: `.gitattributes`, `.gitignore`, `.github/workflows/verify.yml`, `README.md`, `assets/manifest.json`, `assets/catalog.json`, `tools/restore_assets.py`, `tools/test_restore_assets.py`; chuyển media và practice JSON sang GitHub Releases do tài khoản bị chặn ngân sách LFS.
 - **Các vị trí dùng chung bị ảnh hưởng**: Checkout local, CI, API luyện tập và media; đường dẫn và nội dung tài nguyên được giữ nguyên. Theo quyết định chủ dự án, database cập nhật không được công bố; các commit chuẩn bị push giữ bản database đã có tại `origin/main`.
-- **Test giữ lỗi**: Chạy `git lfs fsck`; kiểm tra blob của `origin/main..HEAD` không vượt 100 MiB; so sánh nội dung tài nguyên với commit trước chuyển đổi; xác minh mọi commit chưa công bố giữ đúng blob database của remote; chạy `npm run build`.
-- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG bỏ LFS hoặc chỉ thêm `.gitignore` để xử lý file lớn đã nằm trong lịch sử. CI và máy clone cần tải LFS trước khi đọc JSON/audio/ảnh. Không push các nhánh backup chứa database cập nhật.
+- **Test giữ lỗi**: `python -m unittest discover -s tools -p "test_*.py"`; `python tools/restore_assets.py --verify-only`; kiểm tra blob của `origin/main..HEAD` không vượt 100 MiB; so sánh tài nguyên với commit trước chuyển đổi; xác minh mọi commit chưa công bố giữ đúng blob database của remote; chạy `npm run build`.
+- **Ghi chú "KHÔNG đổi lại vì..."**: KHÔNG chỉ thêm `.gitignore` để xử lý file lớn đã nằm trong lịch sử. CI và máy clone cần khôi phục assets trước khi đọc JSON/audio/ảnh. Không push các nhánh backup chứa database cập nhật. Không sửa archive đã công bố vì catalog khóa SHA-256.
 
 *(Chưa có bản ghi mới. Điền theo mẫu trên mỗi khi sửa xong một lỗi.)*
 ### [BUG-001] Mất điểm các câu Shadowing Speaking sau khi F5

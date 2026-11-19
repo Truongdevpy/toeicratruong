@@ -234,20 +234,24 @@ Hệ thống đã chuẩn bị sẵn các tài khoản demo tương ứng với 
 
 ### 2. Cài đặt Backend (FastAPI)
 
-Trước khi chạy dự án, cài [Git LFS](https://git-lfs.com/) và tải đầy đủ dữ liệu
-từ thư mục gốc repository:
+Trước khi chạy dự án, tải và kiểm tra dữ liệu từ thư mục gốc repository:
 
 ```bash
-git lfs install
-git lfs pull
-git lfs fsck
+python tools/restore_assets.py
+python tools/restore_assets.py --verify-only
 ```
 
-Audio, ảnh và JSON trong `data/data/web_ready/practice_by_part/` được quản lý
-bằng LFS. Dùng `git clone` rồi `git lfs pull`; không dùng bản ZIP thay cho
-checkout đã tải LFS. File con trỏ LFS chưa tải không phải dữ liệu để chạy app.
-Khi thêm tài nguyên mới, giữ các quy tắc trong `.gitattributes` và chạy
-`git lfs status` trước khi commit. LFS có hạn mức lưu trữ/băng thông theo tài khoản.
+Audio, ảnh và JSON trong `data/data/web_ready/practice_by_part/` được lưu tại
+[GitHub Releases](https://github.com/Truongdevpy/toeicratruong/releases/tag/runtime-assets-20261119),
+không dùng Git LFS. Script tải các gói cần thiết, kiểm tra SHA-256 và khôi phục
+đúng đường dẫn theo `assets/manifest.json`. Cần Python 3.11+ và đủ dung lượng
+cho dữ liệu giải nén cùng các gói tải về. Chạy lại sẽ bỏ qua file đã đúng hash;
+file local khác hash được giữ nguyên và báo lỗi để tránh mất chỉnh sửa.
+Có thể tải các ZIP thủ công rồi chạy
+`python tools/restore_assets.py --archive-dir PATH_TO_ZIPS`.
+Không chỉ clone code rồi khởi động app khi chưa khôi phục tài nguyên.
+Khi cập nhật tài nguyên, công bố release mới và cập nhật manifest/catalog
+với đúng hash; không sửa file đã công bố dưới cùng tên release.
 
 1. Mở cửa sổ terminal, di chuyển vào thư mục `backend`:
    ```bash

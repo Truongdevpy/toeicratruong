@@ -3,6 +3,19 @@
 # ==============================================================================
 
 # Operating System Files
+# Runtime assets: see assets/manifest.json and tools/restore_assets.py.
+.asset-downloads/
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.webp
+data/data/web_ready/practice_by_part/*.json
+
 .DS_Store
 Thumbs.db
 desktop.ini
