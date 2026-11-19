@@ -208,9 +208,14 @@ def get_cached_part_practice(part_number: int):
                         cand = pool[idx]
                         q["audio_url"] = cand["audio_url"]
                         res_aud = cand["audio_url"]
-                        if part_number == 1 and not resolve_media_url(q.get("local_image") or q.get("image_url") or q.get("image") or ""):
-                            if cand.get("image_url"):
-                                q["image_url"] = cand["image_url"]
+                    if part_number == 1:
+                        resolved_img = resolve_media_url(q.get("local_image") or q.get("image_url") or q.get("image") or "")
+                        if not resolved_img and pool:
+                            qid_str = str(q.get("id") or "")
+                            idx = int(hashlib.md5(qid_str.encode("utf-8")).hexdigest(), 16) % len(pool)
+                            if pool[idx].get("image_url"):
+                                q["image_url"] = pool[idx]["image_url"]
+                                resolved_img = pool[idx]["image_url"]
                     if res_aud:
                         valid_qs.append(q)
                 cleaned_dbl[lvl] = valid_qs

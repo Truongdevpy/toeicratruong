@@ -131,9 +131,9 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     if (urlLevel && viewMode === 'catalog') {
       const targetLvl = urlLevel.startsWith('Level') ? urlLevel : `Level ${urlLevel}`;
       const filterTitle = `Part ${getPartNumber(activeTab)} · ${targetLvl}`;
-      handleStartPractice('level', targetLvl, filterTitle);
+      handleStartPractice('level', targetLvl, filterTitle, urlQ > 0 ? urlQ - 1 : 0);
     } else if (urlCategory && viewMode === 'catalog') {
-      handleStartPractice('category', urlCategory, urlCategory);
+      handleStartPractice('category', urlCategory, urlCategory, urlQ > 0 ? urlQ - 1 : 0);
     }
   }, [activeTab]);
 
@@ -235,7 +235,7 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
     }
   }, [activeTab, viewMode]);
 
-  const handleStartPractice = async (filterType: 'level' | 'category', filterValue: string, titleLabel: string) => {
+  const handleStartPractice = async (filterType: 'level' | 'category', filterValue: string, titleLabel: string, targetQIndex?: number) => {
     if (!user) {
       onOpenAuth?.('login');
       return;
@@ -274,21 +274,26 @@ const ListeningPracticePageInner: React.FC<ListeningPracticePageProps> = ({
       }
       setRunnerQuestions(finalQs);
 
-      // Automatically jump to the first unanswered question (skip both correct & wrong)
-      const answeredIds = new Set([
-        ...stats.correctIds,
-        ...stats.wrongIds,
-        ...Object.keys(practiceProgressStore.getLevelData(fullKey).answeredQuestions || {})
-      ]);
-      const firstUnansweredIndex = finalQs.findIndex((q) => !answeredIds.has(String(q.id)));
-      if (firstUnansweredIndex > 0) {
-        setCurrentIndex(firstUnansweredIndex);
-        showToast(`Tự động chuyển đến câu ${firstUnansweredIndex + 1} chưa làm! (${stats.answered} câu đã hoàn thành)`);
-      } else if (firstUnansweredIndex === -1 && finalQs.length > 0) {
-        setCurrentIndex(finalQs.length - 1);
-        showToast(`Bạn đã hoàn thành tất cả ${finalQs.length} câu của phần này!`);
+      // If explicit target question index was requested via deeplink (e.g. ?q=1), respect it
+      if (typeof targetQIndex === 'number' && targetQIndex >= 0 && targetQIndex < finalQs.length) {
+        setCurrentIndex(targetQIndex);
       } else {
-        setCurrentIndex(0);
+        // Automatically jump to the first unanswered question (skip both correct & wrong)
+        const answeredIds = new Set([
+          ...stats.correctIds,
+          ...stats.wrongIds,
+          ...Object.keys(practiceProgressStore.getLevelData(fullKey).answeredQuestions || {})
+        ]);
+        const firstUnansweredIndex = finalQs.findIndex((q) => !answeredIds.has(String(q.id)));
+        if (firstUnansweredIndex > 0) {
+          setCurrentIndex(firstUnansweredIndex);
+          showToast(`Tự động chuyển đến câu ${firstUnansweredIndex + 1} chưa làm! (${stats.answered} câu đã hoàn thành)`);
+        } else if (firstUnansweredIndex === -1 && finalQs.length > 0) {
+          setCurrentIndex(finalQs.length - 1);
+          showToast(`Bạn đã hoàn thành tất cả ${finalQs.length} câu của phần này!`);
+        } else {
+          setCurrentIndex(0);
+        }
       }
       setRunnerPassages(res.passages || []);
       setCurrentPassageIndex(0);
