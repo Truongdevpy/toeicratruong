@@ -841,6 +841,11 @@ export const VocabPathView: React.FC<VocabPathViewProps> = ({
                     >
                       {getNodeIcon(node, isCompleted, !isUnlocked)}
 
+                      {/* Lesson number badge (Duolingo style) */}
+                      <span className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-100 text-[11px] font-black flex items-center justify-center border-2 border-slate-200 dark:border-slate-700 shadow-sm pointer-events-none">
+                        {nIdx + 1}
+                      </span>
+
                       {/* Stars count under node */}
                       {isCompleted && (
                         <div className="absolute -bottom-2 flex items-center gap-0.5">
@@ -850,6 +855,16 @@ export const VocabPathView: React.FC<VocabPathViewProps> = ({
                         </div>
                       )}
                     </button>
+
+                    {/* Node Title & Subtitle Badge below 3D button */}
+                    <div className="text-center mt-2 max-w-[130px] pointer-events-none select-none">
+                      <div className="text-xs font-black text-slate-800 dark:text-slate-100 truncate tracking-tight">
+                        {node.title}
+                      </div>
+                      <div className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold truncate">
+                        {node.subtitle} • {node.wordCount} từ
+                      </div>
+                    </div>
 
                     {/* Popover Tooltip Dialog on Node Click (Photos 2 & 9) */}
                     {activeTooltipNodeId === node.id && (
